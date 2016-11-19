@@ -69,8 +69,8 @@
 
                 this.alert = $('<div class="' + this.opt.id + '-alert">' + _opt.strings.formula + '</div>');
                 this.alert.insertBefore(_this.container);
-
-                this.text = $('<textarea id="' + this.opt.id + '-text" name="' + this.opt.id + '-text" class="' + this.opt.id + '-text"></textarea>');
+                //this.text = $('<textarea id="' + this.opt.id + '-text" name="' + this.opt.id + '-text" class="' + this.opt.id + '-text"></textarea>');
+                this.text = $('<input type="text" id="' + this.opt.id + '-text" name="' + this.opt.id + '-text" class="' + this.opt.id + '-text" />');
                 this.text.insertAfter(this.container).focus();
                 this.text.bind('blur', function() {
                     if(_this.cursor !== null) {

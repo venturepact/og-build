@@ -4042,10 +4042,14 @@
         }
     }), a.extend(a.FE.DEFAULTS, {
         toolbarBottom: !1,
-        toolbarButtons: ["fullscreen", "bold", "italic", "underline", "strikeThrough", "subscript", "superscript", "fontFamily", "fontSize", "|", "color", "emoticons", "inlineStyle", "paragraphStyle", "|", "paragraphFormat", "align", "formatOL", "formatUL", "outdent", "indent", "quote", "insertHR", "-", "insertLink", "insertImage", "insertVideo", "insertFile", "insertTable", "undo", "redo", "clearFormatting", "selectAll", "html", "applyFormat", "removeFormat"],
-        toolbarButtonsXS: ["bold", "italic", "fontFamily", "fontSize", "|", "undo", "redo"],
-        toolbarButtonsSM: ["bold", "italic", "underline", "|", "fontFamily", "fontSize", "insertLink", "insertImage", "table", "|", "undo", "redo"],
-        toolbarButtonsMD: ["fullscreen", "bold", "italic", "underline", "fontFamily", "fontSize", "color", "paragraphStyle", "paragraphFormat", "align", "formatOL", "formatUL", "outdent", "indent", "quote", "insertHR", "-", "insertLink", "insertImage", "insertVideo", "insertFile", "insertTable", "undo", "redo", "clearFormatting"],
+        toolbarButtons: ["bold", "italic", "underline"],
+        toolbarButtonsXS: ["bold", "italic", "underline"],
+        toolbarButtonsSM: ["bold", "italic", "underline"],
+        toolbarButtonsMD: ["bold", "italic", "underline"],
+        // toolbarButtons: ["fullscreen", "bold", "italic", "underline", "strikeThrough", "subscript", "superscript", "fontFamily", "fontSize", "|", "color", "emoticons", "inlineStyle", "paragraphStyle", "|", "paragraphFormat", "align", "formatOL", "formatUL", "outdent", "indent", "quote", "insertHR", "-", "insertLink", "insertImage", "insertVideo", "insertFile", "insertTable", "undo", "redo", "clearFormatting", "selectAll", "html", "applyFormat", "removeFormat"],
+        // toolbarButtonsXS: ["bold", "italic", "fontFamily", "fontSize", "|", "undo", "redo"],
+        // toolbarButtonsSM: ["bold", "italic", "underline", "|", "fontFamily", "fontSize", "insertLink", "insertImage", "table", "|", "undo", "redo"],
+        // toolbarButtonsMD: ["fullscreen", "bold", "italic", "underline", "fontFamily", "fontSize", "color", "paragraphStyle", "paragraphFormat", "align", "formatOL", "formatUL", "outdent", "indent", "quote", "insertHR", "-", "insertLink", "insertImage", "insertVideo", "insertFile", "insertTable", "undo", "redo", "clearFormatting"],
         toolbarContainer: null,
         toolbarInline: !1,
         toolbarSticky: !0,
@@ -4082,7 +4086,7 @@
         }
 
         function g() {
-            b.events.$on(a(b.o_win), "resize", f, !0), b.events.$on(a(b.o_win), "orientationchange", f, !0)
+           b.events.$on(a(b.o_win), "resize", f, !0), b.events.$on(a(b.o_win), "orientationchange", f, !0)
         }
 
         function h(c, d) {
