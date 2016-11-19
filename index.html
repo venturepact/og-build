@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    Outgrow
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="When Great Minds Don’t Think Alike" />
+  <meta property="og:description" content="How much does culture influence creative thinking?" />
+  <meta property="og:image" content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" id="favicon" type="image/png" href="assets/images/favicon-latest.ico" />
+
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Your custom styles -->
+  <link href="assets/css/extra.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+  <link href="assets/css/sahil-hover.css" rel="stylesheet">
+  <link href="assets/css/custom-material.css" rel="stylesheet">
+
+  <!-- Bootstrap Material Design : CSS -->
+  <!--<link href="assets/bootstrap-material/css/bootstrap-material-design.css" rel="stylesheet">-->
+  <!--<link href="assets/bootstrap-material/css/ripples.min.css" rel="stylesheet">-->
+  <!-- Dropdown : CSS -->
+
+  <!-- ADDED BY DEVESH START-->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">-->
+  <!-- ADDED BY DEVESH END -->
+  <link href="assets/css/jquery.dropdown.css" rel="stylesheet">
+  <!-- Bootstrap Switch Master : CSS -->
+  <link href="assets/css/bootstrap-switch.css" rel="stylesheet">
+
+  <link href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" rel="stylesheet">
+  <!-- css end -->
+
+  <!-- inject:css -->
+  <!-- endinject -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+  <script>
+    //Intercom
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/{app_id}';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+  <!--<script src="assets/js/bootstrap-switch.js"></script>-->
+  <!--<script src="assets/js/bootstrap-select.js"></script>-->
+  <script src="assets/js/responsive-tabs.js"></script>
+  <script src="assets/js/wysiwyg.js"></script>
+  <script src="assets/js/timezones.full.js"></script>
+  <script src="assets/js/jquery.creditCardValidator.js"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMGMieCyF6dY6nnRCkga45GVCXVuydaLA&libraries=places"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.3.0/tinycolor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.1.0/bootstrap-slider.min.js"></script>-->
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.1/bootstrap-material-design.min.css"></script>-->
+  <script src="assets/js/bootstrap.colorpickersliders.js"></script>
+  <!--<script src="assets/js/bootstrap-slider.min.js"></script>-->
+  <script src="assets/js/ion.rangeSlider.min.js"></script>
+  <!--<script src="assets/js/selectize.min.js"></script>-->
+  <!--<script src="assets/js/bootstrap-datepicker.min.js"></script>-->
+  <!-- <script src="assets/js/custom.js"></script> -->
+  <!--<script type="text/javascript" src="node_modules/jquery-formula/src/jquery.formula.js"></script>-->
+  <script async src="http://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script type="text/javascript" src="assets/js/jquery.formula.js"></script>
+  <script type="text/javascript" src="assets/js/mCustomScrollbar.concat.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+  <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+  <script type="text/javascript" src="assets/js/fusioncharts.js"></script>
+  <script type="text/javascript" src="assets/js/fusioncharts.widgets.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.3.0/math.min.js"></script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"></script>
+
+  <script type="text/javascript" src="assets/js/bootbox.js"></script>
+  <!-- Filepicker -->
+  <script src="assets/js/filepicker.js"></script>
+
+  <!-- Time zone :js -->
+  <script type="text/javascript" src="assets/js/timezones.full.min.js"></script>
+
+  <!--FancyBox-->
+  <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>-->
+  <script type="text/javascript" src="assets/js/fancybox.js"></script>
+
+
+  <!-- Dropdown :js -->
+  <script type="text/javascript" src="assets/js/jquery.dropdown.js"></script>
+  <!-- Bootstrap Material Design : jQuery -->
+  <script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script>
+  <script type="text/javascript" src="assets/bootstrap-material/js/ripples.min.js"></script>
+  <!--Added By Devesh Start-->
+  <script type="text/javascript" src="assets/js/app.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.12/datatables.min.js"></script>
+  <!--Added By Devesh End-->
+  <script type="text/javascript">
+
+
+    // Modal slide effect js
+    $(document).on('click', '.next-step', function (e) {
+      // For Hiding the current slide
+      $('.slide1').addClass('hide');
+      $('.slide2').removeClass('hide');
+      $('.slideimg2').show('slide', {
+        direction: 'right',
+        easing: 'linear'
+      }, 400);
+
+      // $('.slide2-content').show('slide', {
+      //     direction: 'right',
+      //     easing: 'linear'
+      // }, 400);
+    });
+
+    $(document).ready(function () {
+
+      window.toastNotification = function(message) {
+        $(".toast span").text(message);
+        $(".toast").show();
+        $('.toast').animate({
+          bottom: '+90px',
+          easing: 'linear'
+          }, 1500);
+        $('.toast').css("bottom","0px");
+        $('.toast').delay(1000).fadeOut(500);
+      }
+
+      $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+      })
+
+      $("[name='my-checkbox']").bootstrapSwitch();
+
+    });
+
+    $(document).on('click', '.toast-btn', function() {
+      $('.toast').css("bottom","0px");
+        $('.toast').hide();
+
+        // alert("dfgsdf");
+        // $('.toast').animate({
+        // bottom: '-90px',
+        // easing: 'linear'
+        // }, 1);
+    });
+
+    $("#dropdown-menu select").dropdown();
+
+  </script>
+
+  <script type="text/javascript" src="https://static.leaddyno.com/js"></script>
+  <script>
+      // If you use multiple sub-domains, set the root domain here
+      LeadDyno.domain = "outgrow.co";
+      LeadDyno.key = "607cbd9bd45338b858d79550ab7f6b05faa01c0f";
+      LeadDyno.recordVisit();
+      LeadDyno.autoWatch();
+  </script>
+
+  <script type="text/javascript">var _kmq = _kmq || [];
+  var _kmk = _kmk || '41ec14671b03954fde573bdbeb2ec11956b53ce7';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//scripts.kissmetrics.com/' + _kmk + '.2.js');
+  </script>
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  //For In App Analytics - M
+  ga('create', 'UA-82253758-1', 'auto', 'devteam');
+  //For Marketing Analytics - N
+  ga('create', 'UA-82638968-1', 'auto', 'markettingteam');
+  ga('markettingteam.send', 'pageview');
+  </script>
+</head>
+
+<body class="">
+  <!--Appcues Code-->
+  <script src="//fast.appcues.com/20052.js"></script>
+  <div class="toast"><i class="material-icons toast-ic">check</i>
+    <span></span>
+    <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button>
+  </div>
+  <div id="">
+    <sd-app>
+      <div style="position: fixed; top:0;left:0;right:0; bottom:0;"><img src="assets/images/logoAnim.gif" class="" style="position:absolute; left:50%;top:50%;margin:-100px 0 0 -100px;"
+        /></div>
+    </sd-app>
+  </div>
+  <script>
+  // function.name (all IE)
+  // Remove once https://github.com/angular/angular/issues/6501 is fixed.
+  /*! @source http://stackoverflow.com/questions/6903762/function-name-not-supported-in-ie*/
+  if (!Object.hasOwnProperty('name')) {
+    Object.defineProperty(Function.prototype, 'name', {
+      get: function() {
+        var matches = this.toString().match(/^\s*function\s*((?![0-9])[a-zA-Z0-9_$]*)\s*\(/);
+        var name = matches && matches.length > 1 ? matches[1] : "";
+        // For better performance only parse once, and then cache the
+        // result through a new accessor for repeated access.
+        Object.defineProperty(this, 'name', {value: name});
+        return name;
+      }
+    });
+  }
+  google.charts.load('current', {packages: ['corechart', 'line', 'bar']});
+
+</script>
+
+  <script>
+  // Fixes undefined module function in SystemJS bundle
+  function module() {}
+</script>
+
+  <!-- shims:js -->
+  <!-- endinject -->
+<script type="text/javascript">
+  //Usersnap
+  (function() {
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = '//api.usersnap.com/load/'+
+          '261ef3ad-9942-4aa6-8418-c67c79aa25fe.js';
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+  })();
+</script>
+  <div id="premiumModal" class="modal fade two-side" tabindex="-1" role="dialog">
+    <div class="modal-dialog model-full">
+        <div class="modal-content modal-bg">
+            <div class="modal-body og-message">
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+                <div class="col-md-12 np">
+                    <div class="modal-left">
+                        <div class="text-center table-center">
+                            <!-- <p class="font-italic text-grey">or login with</p> -->
+                            <img class="modal-logo" src="assets/images/black_g.png" alt="Logo"><br/>
+                            <span class="premium-label">PREMIUM</span>
+                            <p>Remove Outgrow branding completely and play it like a pro blah blah blah, this is just dummy copy. Learn more about it there.</p>
+                            <a href="/settings/membership" class="btn btn-red next-step btn-login" id="btnSignUp" type="submit">Upgrade to Pro</a>
+                            <br/><a href="" data-dismiss="modal">I will try later</a>
+                        </div>
+                    </div>
+                    <div class="modal-right">
+                        <div class="table-center">
+                            <img class="" src="assets/images/login-img.png" alt="img">
+                            <p>You have to upgrade your plan for more feature usage Either you have crossed the limit or this feature is not available in your current plan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer col-md-12 np hide">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+</html>
