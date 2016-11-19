@@ -791,6 +791,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
             text-align: left;
             /*min-height: 30px;*/
             text-transform: capitalize;
+            transition: all 0.3s ease 0s;
         }
 
         .name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title:hover{
@@ -1101,6 +1102,27 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
       }
 
   /* End: Help Dropdown */
+
+  /* Start: help icon */
+        .icon-help {
+            z-index: 9;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .icon-help i.material-icons {
+            font-size: 18px;
+            color: #bec5c9;
+            transition: all 0.3s ease;
+        }
+
+        .icon-help i.material-icons:hover,
+        .icon-help i.material-icons:focus
+        .icon-help i.material-icons:active{
+            color: #fb545b;
+        }
+
+  /* End: help icon */
 
   /* Start: Header responsive */
   @media screen and (min-width: 768px) and (max-width: 768px){
@@ -11444,3 +11466,30 @@ a.live-url.preview_copy {
    100% { transform: rotate(360deg); }
  }
 
+
+.icon-help.popover-wrapper .popover-block {
+    position: relative;
+    top: 8px;
+    left: 75px;
+    min-width: 70px;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 0px;
+    background: #62696d;
+    color: #fff !important;
+    border-radius: 4px !important;
+    border: none;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.24);
+    display: none;
+    z-index: 9;
+    width: 50px;
+    text-align: center;
+}
+
+.icon-help.popover-wrapper .popover-block:before {
+    right: 27px;
+}
+
+.icon-help.popover-wrapper:hover .popover-block {
+    display: block;
+}
