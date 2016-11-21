@@ -2615,23 +2615,37 @@ a.text-red:hover , a.text-red:focus {
         }
 
         .my-profile .form-group.time-zone label.control-label {
-          top: -20px;
-          font-family: montserratregular;
-          font-size: 11px;
-          text-transform: uppercase;
-          color: #8e989f !important;
-          position: absolute;
+            top: -20px;
+            font-family: montserratregular;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #8e989f !important;
+            position: absolute;
         }
 
         .my-profile .time-zone select.form-control {
-          -webkit-appearance: menulist;
-          -moz-appearance: menulist;
-          margin-left: -3px;
+            /*-webkit-appearance: menulist;
+            -moz-appearance: menulist;
+            margin-left: -3px;*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .my-profile .time-zone .select-caret {
+            background-image: url(../../assets/images/icon-arrow-down.png);
+            background-position: 100% 0%;
+            background-size: 7px 13px;
+            position: absolute;
+            z-index: 999999999 !important;
+            right: 0px;
+            padding: 10px;
+            background-repeat: no-repeat;
+            top: 10px;
         }
 
         .my-profile .time-zone .alert.alert-danger {
             top: -5px;
-        }
+        }        
 
         .my-profile .btn-white{
           background: #fff;
