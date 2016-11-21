@@ -1,0 +1,149 @@
+a{
+  cursor: pointer;
+}
+.pic-wrapper .pic {
+    border: 10px solid #fff;
+    float: left;
+    height: 270px;
+    /* margin: 10px; */
+    overflow: hidden;
+    width: 400px;
+    position: relative;
+    background: #fff;
+    /*padding: 10px;*/
+    cursor: pointer;
+}
+.pic-wrapper:first-child{margin-left: 0px;}
+.pic:hover .mask{
+	display:table;
+	background:rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+.pic:hover .mask a{
+    opacity: 1;
+    transform: scale(1, 1);
+    transition-delay: 0.3s;
+}
+.mask{
+	position:absolute;
+	background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    overflow: visible;
+    transition: all 0.4s ease-in-out 0s;
+	text-align:center;
+	height:250px;
+	width:100%;
+}
+.mask a{
+	opacity: 0;
+    position: relative;
+    top: 7px;
+    transform: scale(0, 0);
+    transition: transform 0.2s ease-in 0.1s, opacity 0.1s ease-in-out 0s;
+}
+.mask a{
+	color:#fff;
+	display:table-cell;
+	vertical-align:middle;
+}
+.sidepan img.moving {
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin-left: 0px;
+	-webkit-transition: margin 5s ease;
+    -moz-transition: margin 5s ease;
+       -o-transition: margin 5s ease;
+      -ms-transition: margin 5s ease;
+          transition: margin 5s ease;
+}
+.sidepan:hover img.moving{
+	margin-left: -2146px;
+}
+.sidepan img.moving:hover {
+  margin-left: -2146px;
+}
+.sidepan img.base {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+.sidepan2 img.moving {
+	position:absolute;
+	left:0px;
+	top:0px;
+	margin-left: 0px;
+	-webkit-transition: margin 5s ease;
+    -moz-transition: margin 5s ease;
+       -o-transition: margin 5s ease;
+      -ms-transition: margin 5s ease;
+          transition: margin 5s ease;
+}
+
+.sidepan2 img.moving:hover {
+  margin-left: -1730px;
+}
+.sidepan2 img.base {
+  float:left;
+  width: 100%;
+}
+
+.vertpan img {
+  margin-top: 0px;
+  -webkit-transition: margin 5s ease;
+     -moz-transition: margin 5s ease;
+       -o-transition: margin 5s ease;
+      -ms-transition: margin 5s ease;
+          transition: margin 5s ease;
+}
+
+.vertpan img:hover {
+  margin-top: -1282px;
+}
+.vertpan img.base {
+    width: 100%;
+    float: left;
+}
+.vertpan2 img {
+  margin-top: 0px;
+  -webkit-transition: margin 7s ease;
+     -moz-transition: margin 7s ease;
+       -o-transition: margin 7s ease;
+      -ms-transition: margin 7s ease;
+          transition: margin 7s ease;
+}
+
+.vertpan2 img:hover {
+  margin-top: -1811px;
+}
+.vertpan2 img.base {
+    float: left;
+    width: 100%;
+}
+.pic-wrapper:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.12);
+}
+.pic-wrapper.active {
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.12);
+}
+.pic-wrapper {
+    float: left;
+    background: #fff;
+    border: 1px solid #dae2e6;
+    margin-left: 41px;
+    margin-bottom: 30px;
+}
+
+/* responsive of pic blocks */
+@media screen and (min-width: 1200px) and (max-width: 1279px)
+{
+  .pic{width: 366px;}
+}
+@media screen and (min-width: 1024px) and (max-width: 1024px)
+{
+  .pic{width: 286px;}
+}
+@media screen and (min-width: 1080px) and (max-width: 1920px)
+{
+  .pic{width: 371px;}
+}
