@@ -33,8 +33,8 @@
 			curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-type:application/json'));
 			curl_setopt($curl, CURLOPT_POST, 1);
 			curl_setopt($curl, CURLOPT_POSTFIELDS, $jsonData);
-			$response = curl_exec($curl);
-			$json = json_decode($response,true);
+			$responseData = curl_exec($curl);
+			$json = json_decode($responseData,true);
 			$shortUrl = isset($json['id']) ? $json['id'] : $longUrl;
 			//close connection
 			curl_close($curl);
