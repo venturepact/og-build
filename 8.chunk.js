@@ -1106,7 +1106,7 @@ var DefaultJSON = (function () {
         // LANDING Page starts //
         // section 1 of LANDING page
         var section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Logo Heading', 't1-landing-top');
-        var item0 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('logo', 'https://cdn.filestackcontent.com/xXkjxAsFT9aNbkL5dzhI', 'textfield help', '', 't1-logo');
+        var item0 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('logo', 'https://cdn.filestackcontent.com/RycvxkK6QgSX2OAVqPm6', 'textfield help', '', 't1-logo');
         // let item0 = new Item('Item', '../../+builder/assets/template1-logo.png', 'textfield help');
         section1.addItems(item0);
         // section 2 of LANDING page
@@ -1149,7 +1149,7 @@ var DefaultJSON = (function () {
         var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', '');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '' },
             { label: 'Outdoor', icon: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '', ' http://www.example.com  ');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START
@@ -1248,7 +1248,7 @@ var DefaultJSON = (function () {
         var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', '');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '' },
             { label: 'Outdoor', icon: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '', 'http://www.example.com');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START

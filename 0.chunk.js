@@ -5584,13 +5584,9 @@ var ShareLinks = (function () {
         this._urlShortner.googleShortner(this.resultLink).subscribe(function (body) {
             _this.shortURL = body.id;
         });
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
-        else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
         this.mailSrcUrl = 'mailto:?Subject=Calculator Result&Body=' + this.resultLink;
         this.twitterSrcUrl = "https://twitter.com/intent/tweet?status=" + encodeURI(this.title) + "+" + this.resultLink;
-        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.resultLink + "&title=" + encodeURI(this.title) + "\n                &summary=" + encodeURI(description) + "&source=LinkedIn";
+        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.resultLink + "&title=" + encodeURI(this.title) + "\n                &summary=" + encodeURI(this.jsonBuilderHelper.getJSONBuilt().description) + "&source=LinkedIn";
         //Initialize FB
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -5635,17 +5631,13 @@ var ShareLinks = (function () {
     };
     ShareLinks.prototype.facebookShare = function () {
         this.updateResultLink();
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
-        else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
         var image = 'http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:3000/' + this.shortURL;
         FB.ui({
             method: 'feed',
             display: 'popup',
             name: this.title,
             //caption: this.title,
-            description: description,
+            description: this.jsonBuilderHelper.getJSONBuilt().description,
             link: this.resultLink,
             picture: image
         }, function (response) { });
@@ -6786,7 +6778,7 @@ var DefaultJSON = (function () {
         // LANDING Page starts //
         // section 1 of LANDING page
         var section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Logo Heading', 't1-landing-top');
-        var item0 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('logo', 'https://cdn.filestackcontent.com/xXkjxAsFT9aNbkL5dzhI', 'textfield help', '', 't1-logo');
+        var item0 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('logo', 'https://cdn.filestackcontent.com/RycvxkK6QgSX2OAVqPm6', 'textfield help', '', 't1-logo');
         // let item0 = new Item('Item', '../../+builder/assets/template1-logo.png', 'textfield help');
         section1.addItems(item0);
         // section 2 of LANDING page
@@ -6829,7 +6821,7 @@ var DefaultJSON = (function () {
         var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', '');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '' },
             { label: 'Outdoor', icon: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '', ' http://www.example.com  ');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START
@@ -6928,7 +6920,7 @@ var DefaultJSON = (function () {
         var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', '');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '' },
             { label: 'Outdoor', icon: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '', 'http://www.example.com');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START
@@ -11373,7 +11365,10 @@ var ConfigEmbeddedCodeComponent = (function () {
             this.iloaderJS = '//' + __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION + '/js/iloader.js';
         else
             this.iloaderJS = '//' + __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION + '/js/loader/iloader.js';
-        this.src = '//' + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt()._id;
+        if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL === 'https://')
+            this.src = 'https://' + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt()._id;
+        else
+            this.src = '//' + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt()._id;
         this.smallPageCode = "<div><div id='og-iframe-container' data-url='" + this.src + "' data-width='50%'></div><script src='" + this.iloaderJS + "' async></script></div>";
         this.fullPageCode = "<div><div id='og-iframe-container' data-url='" + this.src + "' data-width='100%'></div><script src='" + this.iloaderJS + "' async></script></div>";
     };
@@ -11818,13 +11813,13 @@ var ConfigShareCalculatorComponent = (function () {
     ConfigShareCalculatorComponent.prototype.ngOnInit = function () {
         var _this = this;
         console.log('Init of shared calculator');
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
+        if (this.jsonBuilderHelper.getJSONBuilt().title != '')
+            var shareTitle = this.jsonBuilderHelper.getJSONBuilt().title;
         else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
+            var shareTitle = this.jsonBuilderHelper.getJSONBuilt().name;
         this.srcUrl = __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt().url;
-        this.twitterSrcUrl = "https://twitter.com/intent/tweet?status=" + encodeURI(this.jsonBuilderHelper.getJSONBuilt().name) + "+" + this.srcUrl;
-        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.srcUrl + "&title=" + encodeURI(this.jsonBuilderHelper.getJSONBuilt().name) + "\n                &summary=" + encodeURI(description) + "&source=LinkedIn";
+        this.twitterSrcUrl = "https://twitter.com/intent/tweet?status=" + encodeURI(shareTitle) + "+" + this.srcUrl;
+        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.srcUrl + "&title=" + encodeURI(shareTitle) + "\n                &summary=" + encodeURI(this.jsonBuilderHelper.getJSONBuilt().description) + "&source=LinkedIn";
         this._urlShortner.googleShortner(this.srcUrl).subscribe(function (body) {
             _this.shortURL = body.id;
         });
@@ -11855,17 +11850,17 @@ var ConfigShareCalculatorComponent = (function () {
     };
     ConfigShareCalculatorComponent.prototype.facebookShare = function () {
         // let resultLink = environment.PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + environment.APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt().url;
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
+        if (this.jsonBuilderHelper.getJSONBuilt().title != '')
+            var shareTitle = this.jsonBuilderHelper.getJSONBuilt().title;
         else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
+            var shareTitle = this.jsonBuilderHelper.getJSONBuilt().name;
         var image = 'http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:3000/' + this.shortURL;
         FB.ui({
             method: 'feed',
             display: 'popup',
-            name: this.jsonBuilderHelper.getJSONBuilt().name,
+            name: shareTitle,
             //caption: this.jsonBuilderHelper.getJSONBuilt().name,
-            description: description,
+            description: this.jsonBuilderHelper.getJSONBuilt().description,
             link: this.srcUrl,
             picture: image
         }, function (response) {

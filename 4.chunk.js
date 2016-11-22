@@ -3934,13 +3934,9 @@ var ShareLinks = (function () {
         this._urlShortner.googleShortner(this.resultLink).subscribe(function (body) {
             _this.shortURL = body.id;
         });
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
-        else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
         this.mailSrcUrl = 'mailto:?Subject=Calculator Result&Body=' + this.resultLink;
         this.twitterSrcUrl = "https://twitter.com/intent/tweet?status=" + encodeURI(this.title) + "+" + this.resultLink;
-        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.resultLink + "&title=" + encodeURI(this.title) + "\n                &summary=" + encodeURI(description) + "&source=LinkedIn";
+        this.linkedInSrcUrl = "https://www.linkedin.com/shareArticle?mini=true&url=" + this.resultLink + "&title=" + encodeURI(this.title) + "\n                &summary=" + encodeURI(this.jsonBuilderHelper.getJSONBuilt().description) + "&source=LinkedIn";
         //Initialize FB
         (function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
@@ -3985,17 +3981,13 @@ var ShareLinks = (function () {
     };
     ShareLinks.prototype.facebookShare = function () {
         this.updateResultLink();
-        if (this.jsonBuilderHelper.getJSONBuilt().description != '')
-            var description = this.jsonBuilderHelper.getJSONBuilt().description;
-        else
-            var description = this.jsonBuilderHelper.getJSONBuilt().name;
         var image = 'http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:3000/' + this.shortURL;
         FB.ui({
             method: 'feed',
             display: 'popup',
             name: this.title,
             //caption: this.title,
-            description: description,
+            description: this.jsonBuilderHelper.getJSONBuilt().description,
             link: this.resultLink,
             picture: image
         }, function (response) { });
