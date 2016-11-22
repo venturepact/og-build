@@ -60,24 +60,27 @@ var CalculatorComponent = (function () {
         var _this = this;
         this._calService.getCompanyApp(name, this.subdomain)
             .subscribe(function (response) {
-            if (_this.loggedIn) {
-                response.status = 'DEV';
-                localStorage.setItem('template', JSON.stringify(response));
-                _this._router.navigate(['/preview']);
-            }
-            else {
-                if (response.mode != 'PRIVATE') {
-                    //handle tracking
-                    _this.googleAnalytics(response);
-                    //localStorage.setItem('template', JSON.stringify(response));
-                    _this.JSON_Template = response;
-                    _this.tempName = response.template;
+            if (response != 'CALC_NOT_FOUND') {
+                if (_this.loggedIn) {
+                    response.status = 'DEV';
+                    localStorage.setItem('template', JSON.stringify(response));
+                    _this._router.navigate(['/preview']);
                 }
-                else
-                    _this.pageStatus = 'Private';
+                else {
+                    if (response.mode != 'PRIVATE') {
+                        //handle tracking
+                        _this.googleAnalytics(response);
+                        //localStorage.setItem('template', JSON.stringify(response));
+                        _this.JSON_Template = response;
+                        _this.tempName = response.template;
+                    }
+                    else
+                        _this.pageStatus = 'Private';
+                }
             }
+            else
+                _this.pageStatus = 'Not-Found';
         }, function (error) {
-            _this.pageStatus = 'Not-Found';
             console.log(error);
         });
     };
@@ -5787,8 +5790,7 @@ var CalculatorService = (function (_super) {
     CalculatorService.prototype.getCompanyApp = function (url, company) {
         var URL = this._url + '/builder/get_company_calculator/' + url + '/' + company;
         return this._http.get(URL, this.options)
-            .map(this.extractData)
-            .catch(this.handleError);
+            .map(this.extractData);
     };
     CalculatorService.prototype.getApp = function (url) {
         var URL = this._url + '/builder/get_calculator/' + url;

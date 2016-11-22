@@ -14103,6 +14103,7 @@ var EditorRadioButton = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_builder_service__ = __webpack_require__(798);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_JSONUpdateItemTracker_service__ = __webpack_require__(802);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__templates_services_recommendation_service__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return EditorRecommended; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -14113,6 +14114,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -14190,7 +14192,7 @@ var EditorRecommended = (function () {
         this.loader = false;
     };
     EditorRecommended.prototype.addOptionAndRefresh = function (input) {
-        this.jsonBuilderHelper.getJSONBuilt().addformula(input, input.replace(/[^A-Z0-9]+/ig, "_"), 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', 'Outcome description will come here', 'Page title will come here', 'Button Text', 'http://outgrow.us/');
+        this.jsonBuilderHelper.getJSONBuilt().addformula(input, input.replace(/[^A-Z0-9]+/ig, "_"), 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', 'Outcome description will come here', 'Page title will come here', 'Button Text', (__WEBPACK_IMPORTED_MODULE_7__environments_environment__["a" /* environment */].PROTOCOL + __WEBPACK_IMPORTED_MODULE_7__environments_environment__["a" /* environment */].APP_EXTENSION));
         for (var select in this.selectInputs) {
             this.selectInputs[select].selectize.addOption({ value: input.replace(/[^A-Z0-9]+/ig, "_"), name: input });
             this.selectInputs[select].selectize.refreshOptions(false);
