@@ -3927,7 +3927,8 @@ var ShareLinks = (function () {
         else
             this.title = 'I Got ' + this.jsonBuilderHelper.getSelectedFormula().name + '.';
         this.resultLink = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt().url;
-        this._urlShortner.googleShortner(this.resultLink).subscribe(function (body) {
+        var fbImgUrl = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].APP_EXTENSION + '/seo/' + this.jsonBuilderHelper.getJSONBuilt().url;
+        this._urlShortner.googleShortner(fbImgUrl).subscribe(function (body) {
             _this.shortURL = body.id;
         });
         this.mailSrcUrl = 'mailto:?Subject=Calculator Result&Body=' + this.resultLink;
