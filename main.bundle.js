@@ -2328,7 +2328,9 @@ var environment = {
     APP_EXTENSION: 'outgrow.co',
     PARENT_APP_DOMAIN: 'app.outgrow.co',
     INTERCOM_ID: "r841gnag",
-    PROTOCOL: 'https://'
+    PROTOCOL: 'https://',
+    FILE_PICKER_API: 'A3ygIw4hISSCdApqW4SAwz',
+    FB_API: '1583386878623593'
 };
 
 
@@ -60269,6 +60271,10 @@ var AppModule = (function () {
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CALCULATOR_ROUTES; });
 
 var CALCULATOR_ROUTES = [
+    {
+        path: 'seo',
+        loadChildren: 'app/site/templates/calculator.module#CalculatorModule'
+    },
     {
         path: 'calc',
         loadChildren: 'app/site/templates/calculator.module#CalculatorModule'
