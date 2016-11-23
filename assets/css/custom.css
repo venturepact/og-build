@@ -717,7 +717,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
   #new-header .navbar-right-block {
       margin-top: 11px;
       padding-right: 0px;
-      padding-left: 25px;
+      padding-left: 12px;
       margin-bottom: -6px;
   }
 
@@ -725,7 +725,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
       border-left: 1px solid #dae2e6;
       color: #fb545b;
       font-size: 18px;
-      width: 12%;
+      width: 150px;
   }
 
   #new-header .navbar-right a.navbar-name {
@@ -754,14 +754,14 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
             position: relative;
             margin: 0px 0px;
             float: left;
-            width: 78%;
-            margin-right: 5px;
+            width: 100%;
         }
         .navbar-rightside button.btn.btn-default.dropdown-toggle {
               margin-top: 7px;
           }
           .navbar-rightside .name-dropdown-wrapper.btn-group{
               width:auto;
+              margin-right: 5px;
           }
           .navbar-rightside .name-dropdown-wrapper .dropdown-menu {
               top: 40px;
@@ -1143,6 +1143,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
       nav .cookies-header{
           padding: 8px 10px;
       }
+
 
   }
 
