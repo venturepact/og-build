@@ -4315,7 +4315,7 @@ var TextField = (function () {
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['minval']) {
-                    this.ValidationMessage = 'Minimum ' + this.data.props.minVal + ' value required!';
+                    this.ValidationMessage = 'Minimum Required Value is ' + this.data.props.minVal;
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['maxval']) {
@@ -6353,6 +6353,10 @@ var BuilderComponent = (function () {
                 }
                 else {
                     var app = new __WEBPACK_IMPORTED_MODULE_4__models_model__["c" /* App */]().deserialize(response);
+                    if (localStorage.getItem('lead_hide') === 'true') {
+                        _this.hideLeadform(app);
+                        localStorage.removeItem('lead_hide');
+                    }
                     //app.setTemplateName('home_loan_calculator');
                     _this.jsonBuilderHelper.setTemplate(app);
                     _this.initializeJqueryStuff();
@@ -6369,6 +6373,19 @@ var BuilderComponent = (function () {
             });
         }
     };
+    BuilderComponent.prototype.hideLeadform = function (app) {
+        for (var _i = 0, _a = app.pages; _i < _a.length; _i++) {
+            var page = _a[_i];
+            for (var _b = 0, _c = page.sections; _b < _c.length; _b++) {
+                var section = _c[_b];
+                if (section.type === 'LeadFormQ') {
+                    section.visible = false;
+                    section.items[0].visible = false;
+                    break;
+                }
+            }
+        }
+    };
     BuilderComponent.prototype.changeTemplate = function (projectId, templateName) {
         var _this = this;
         this._builderService.changeTemplate(projectId, templateName).subscribe(function (response) {
@@ -6376,6 +6393,9 @@ var BuilderComponent = (function () {
                 _this._router.navigate(['/dashboard']);
             }
             else {
+                if (templateName === 'sound-cloud') {
+                    localStorage.setItem('lead_hide', 'true');
+                }
                 localStorage.removeItem('temp_name');
                 window.location.reload(true);
             }

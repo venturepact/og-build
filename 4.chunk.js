@@ -4489,7 +4489,7 @@ var TextField = (function () {
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['minval']) {
-                    this.ValidationMessage = 'Minimum ' + this.data.props.minVal + ' value required!';
+                    this.ValidationMessage = 'Minimum Required Value is ' + this.data.props.minVal;
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['maxval']) {
