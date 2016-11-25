@@ -1,13 +1,13 @@
 webpackJsonp([8,11],{
 
-/***/ 1013:
+/***/ 1012:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_services_DefaultJSON_service__ = __webpack_require__(853);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_services_DefaultJSON_service__ = __webpack_require__(850);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TemplatesComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -205,7 +205,7 @@ var TemplatesComponent = (function () {
     TemplatesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-templates',
-            template: __webpack_require__(1142),
+            template: __webpack_require__(1143),
             styles: [__webpack_require__(1069)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["e" /* CompanyService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__templates_services_DefaultJSON_service__["a" /* DefaultJSON */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__templates_services_DefaultJSON_service__["a" /* DefaultJSON */]) === 'function' && _d) || Object])
@@ -224,22 +224,22 @@ module.exports = "/* Choose Template css start (sahil) */\n\n.choosetem-topsec {
 
 /***/ },
 
-/***/ 1142:
+/***/ 1143:
 /***/ function(module, exports) {
 
-module.exports = "<sd-toolbar></sd-toolbar>\n<div class=\"preloader\" *ngIf=\"loader==0\">\n  <div class=\"status\">&nbsp;</div>\n</div>\n<!-- Choose temp top Section -->\n<div class=\"col-md-12 col-sm-12 col-xs-12 choosetem-topsec\">\n  <h3>Select from one of our beautiful & optimized templates.</h3>\n  <p>\n    All of our templates have been optimized for lead conversion, SEO and are build using the latest design standards.\n  </p>\n</div>\n<!-- Choose temp top Section End-->\n<!-- Choose temp boxes start (sahil) -->\n<div class=\"col-xs-12 np choosetemp-boxes-outr\" *ngIf=\"templates.length\">\n  <div>\n    <div class=\"col-xs-12 col-sm-6 col-md-6\" *ngFor=\"let template of getAvailableTemplates();let s = index\">\n      <div class=\"choosetemp-box2\" [class.temp2]=\"s%2==1\" [class.temp1]=\"s%2==0\">\n        <figure class=\"choosetemp-box-figure2 col-sm-12 col-xs-12 np\">\n          <div class=\"choosetemp-top1\">\n            <div class=\"hs_container hs_container_1920\">\n              <!-- <div class=\"hs_area hs_area1\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">\n                  <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n              </div>  -->\n              <div class=\"hs_area hs_area1\" (click)=\"selectTemplate(template.selector, $event)\">\n                <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n              </div>\n            </div>\n          </div>\n        </figure>\n        <ul class=\"choosetemp-social col-sm-1 col-xs-12 hide\">\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">share</i> 4500\n            </a>\n          </li>\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">favorite</i> 2520\n            </a>\n          </li>\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">people</i> 3550\n            </a>\n          </li>\n        </ul>\n        <div class=\"choosetemp-actions\">\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n            <h3 class=\"col-md-9 col-sm-9 col-xs-9 np ct-w100\">{{template.name}}</h3>\n            <div class=\"col-md-3 col-sm-3 col-xs-3 np ct-w100\">\n              <button type=\"\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(template.selector, $event)\">Use Template</button>\n            </div>\n            <p>\n              {{template.description}}\n            </p>\n          </div>\n          <button type=\"\" class=\"btn btn-red-outline btn-hover hide\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">Preview</button>\n          <label class=\"choosetemp-label\" *ngIf=\"template.isPremium\">PREMIUM</label>\n        </div>\n\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-6 col-sm-6 col-xs-12\" *ngFor=\"let template of getNotAvailableTemplates();let s = index\">\n    <div class=\"choosetemp-box2\" [class.temp2]=\"s%2==1\" [class.temp1]=\"s%2==0\">\n      <!-- <figure class=\"choosetemp-box-figure2 col-sm-12 col-xs-12 np\">\n          <div class=\"choosetemp-top1\">\n              <div class=\"hs_container\">\n                  <div class=\"hs_area hs_area1\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">\n                      <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n                  </div>\n                   <div class=\"hs_area hs_area1\">\n                      <div class=\"not-available\">\n                          <i class=\"material-icons\">lock</i>\n                          <img  [src]=\"template.previewImages[0]\" class=\"test\" [class.hs_visible]=\"true\" alt=\"\"/>\n                      </div>\n                  </div>\n              </div>\n          </div>\n      </figure> -->\n\n      <div class=\"col-xs-12 col-sm-12 np\" >\n        <div class=\"choose-temp-soon\">\n          <img [src]=\"template.previewImages[0]\" class=\"hs_visible\">\n          <div class=\"choose-temp-soon-hover\">\n            <i class=\"material-icons\">lock</i>\n          </div>\n        </div>\n      </div>\n      <ul class=\"choosetemp-social col-sm-1 col-xs-12 hide\">\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">share</i> 4500\n          </a>\n        </li>\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">favorite</i> 2520\n          </a>\n        </li>\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">people</i> 3550\n          </a>\n        </li>\n      </ul>\n      <div class=\"choosetemp-actions\">\n        <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n          <!--<h3 class=\"col-md-12 col-sm-12 col-xs-12 np\">{{template.name}}</h3>-->\n          <!-- <div class=\"col-md-3 col-sm-3 col-xs-3 np\">\n               <button type=\"\" *ngIf=\"template.available\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(template.selector, $event)\">Use Template</button>\n           </div>-->\n          <!--<p>\n              {{template.description}}\n          </p>-->\n        </div>\n        <button type=\"\" class=\"btn btn-red-outline btn-hover hide\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">Preview</button>\n        <label class=\"choosetemp-label\" *ngIf=\"template.isPremium\">PREMIUM</label>\n      </div>\n\n    </div>\n\n  </div>\n</div>\n<!--  Choose temp boxes end (sahil) -->\n\n<!-- Start: Modal Template Preview -->\n<div id=\"temp-preview\" class=\"modal fade temp-preview\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"temp-preview-dialog modal-anim\">\n    <!-- Modal content-->\n    <div class=\"temp-preview-content modal-bg\">\n      <!-- <div class=\"temp-preview-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <i class=\"material-icons\">close</i></button>\n              <h4 class=\"modal-title\">Login</h4>\n      </div> -->\n      <div class=\"temp-preview-body\">\n        <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\" (click)=\"appJson=undefined\">\n          <i class=\"material-icons\">close</i>\n        </button>\n        <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n          <div class=\"col-md-12 col-sm-12 col-xs-12 responsive-menu\">\n            <button type=\"\" class=\"btn btn-red-outline btn-hover btn-preview hide\" data-toggle=\"modal\" data-target=\"#temp-preview\">Preview</button>\n            <button type=\"\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(tempname,$event)\">Use Template</button>\n          </div>\n\n          <!-- <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n                 <iframe src=\"http://app.outgrow.us/design/backup/preview-template-1\"></iframe>\n          </div> -->\n\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\" *ngIf=\"tempname==='one-page-slider'\">\n            <img src=\"assets/images/temp1.jpg\" class=\"img-responsive\">\n          </div>\n\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\" *ngIf=\"tempname==='sound-cloud'\">\n            <img src=\"assets/images/temp2.jpg\" class=\"img-responsive\">\n          </div>\n\n          <!-- <div class=\"col-md-12 col-sm-12 col-xs-12\">\n                 <og-preview *ngIf=\"appJson\" [json]=\"appJson\"></og-preview>\n          </div> -->\n        </div>\n      </div>\n      <!-- <div class=\"modal-footer\">\n\n      </div> -->\n    </div>\n  </div>\n</div>\n<!-- End: Modal Template Preview -->\n"
+module.exports = "<sd-toolbar [page]=\"'templates'\"></sd-toolbar>\n<div class=\"preloader\" *ngIf=\"loader==0\">\n  <div class=\"status\">&nbsp;</div>\n</div>\n<!-- Choose temp top Section -->\n<div class=\"col-md-12 col-sm-12 col-xs-12 choosetem-topsec\">\n  <h3>Select from one of our beautiful & optimized templates.</h3>\n  <p>\n    All of our templates have been optimized for lead conversion, SEO and are build using the latest design standards.\n  </p>\n</div>\n<!-- Choose temp top Section End-->\n<!-- Choose temp boxes start (sahil) -->\n<div class=\"col-xs-12 np choosetemp-boxes-outr\" *ngIf=\"templates.length\">\n  <div>\n    <div class=\"col-xs-12 col-sm-6 col-md-6\" *ngFor=\"let template of getAvailableTemplates();let s = index\">\n      <div class=\"choosetemp-box2\" [class.temp2]=\"s%2==1\" [class.temp1]=\"s%2==0\">\n        <figure class=\"choosetemp-box-figure2 col-sm-12 col-xs-12 np\">\n          <div class=\"choosetemp-top1\">\n            <div class=\"hs_container hs_container_1920\">\n              <!-- <div class=\"hs_area hs_area1\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">\n                  <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n              </div>  -->\n              <div class=\"hs_area hs_area1\" (click)=\"selectTemplate(template.selector, $event)\">\n                <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n              </div>\n            </div>\n          </div>\n        </figure>\n        <ul class=\"choosetemp-social col-sm-1 col-xs-12 hide\">\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">share</i> 4500\n            </a>\n          </li>\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">favorite</i> 2520\n            </a>\n          </li>\n          <li>\n            <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n              <i class=\"material-icons\">people</i> 3550\n            </a>\n          </li>\n        </ul>\n        <div class=\"choosetemp-actions\">\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n            <h3 class=\"col-md-9 col-sm-9 col-xs-9 np ct-w100\">{{template.name}}</h3>\n            <div class=\"col-md-3 col-sm-3 col-xs-3 np ct-w100\">\n              <button type=\"\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(template.selector, $event)\">Use Template</button>\n            </div>\n            <p>\n              {{template.description}}\n            </p>\n          </div>\n          <button type=\"\" class=\"btn btn-red-outline btn-hover hide\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">Preview</button>\n          <label class=\"choosetemp-label\" *ngIf=\"template.isPremium\">PREMIUM</label>\n        </div>\n\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-6 col-sm-6 col-xs-12\" *ngFor=\"let template of getNotAvailableTemplates();let s = index\">\n    <div class=\"choosetemp-box2\" [class.temp2]=\"s%2==1\" [class.temp1]=\"s%2==0\">\n      <!-- <figure class=\"choosetemp-box-figure2 col-sm-12 col-xs-12 np\">\n          <div class=\"choosetemp-top1\">\n              <div class=\"hs_container\">\n                  <div class=\"hs_area hs_area1\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">\n                      <img *ngFor=\"let image of template.previewImages; let i = index\" [src]=\"image\" [class.hs_visible]=\"i==0\" alt=\"\" />\n                  </div>\n                   <div class=\"hs_area hs_area1\">\n                      <div class=\"not-available\">\n                          <i class=\"material-icons\">lock</i>\n                          <img  [src]=\"template.previewImages[0]\" class=\"test\" [class.hs_visible]=\"true\" alt=\"\"/>\n                      </div>\n                  </div>\n              </div>\n          </div>\n      </figure> -->\n\n      <div class=\"col-xs-12 col-sm-12 np\" >\n        <div class=\"choose-temp-soon\">\n          <img [src]=\"template.previewImages[0]\" class=\"hs_visible\">\n          <div class=\"choose-temp-soon-hover\">\n            <i class=\"material-icons\">lock</i>\n          </div>\n        </div>\n      </div>\n      <ul class=\"choosetemp-social col-sm-1 col-xs-12 hide\">\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">share</i> 4500\n          </a>\n        </li>\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">favorite</i> 2520\n          </a>\n        </li>\n        <li>\n          <a href=\"javascript:void(0);\" class=\"hvr-float-shadow\">\n            <i class=\"material-icons\">people</i> 3550\n          </a>\n        </li>\n      </ul>\n      <div class=\"choosetemp-actions\">\n        <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n          <!--<h3 class=\"col-md-12 col-sm-12 col-xs-12 np\">{{template.name}}</h3>-->\n          <!-- <div class=\"col-md-3 col-sm-3 col-xs-3 np\">\n               <button type=\"\" *ngIf=\"template.available\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(template.selector, $event)\">Use Template</button>\n           </div>-->\n          <!--<p>\n              {{template.description}}\n          </p>-->\n        </div>\n        <button type=\"\" class=\"btn btn-red-outline btn-hover hide\" data-toggle=\"modal\" data-target=\"#temp-preview\" (click)=\"onPreview(template.selector)\">Preview</button>\n        <label class=\"choosetemp-label\" *ngIf=\"template.isPremium\">PREMIUM</label>\n      </div>\n\n    </div>\n\n  </div>\n</div>\n<!--  Choose temp boxes end (sahil) -->\n\n<!-- Start: Modal Template Preview -->\n<div id=\"temp-preview\" class=\"modal fade temp-preview\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"temp-preview-dialog modal-anim\">\n    <!-- Modal content-->\n    <div class=\"temp-preview-content modal-bg\">\n      <!-- <div class=\"temp-preview-header\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <i class=\"material-icons\">close</i></button>\n              <h4 class=\"modal-title\">Login</h4>\n      </div> -->\n      <div class=\"temp-preview-body\">\n        <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\" (click)=\"appJson=undefined\">\n          <i class=\"material-icons\">close</i>\n        </button>\n        <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n          <div class=\"col-md-12 col-sm-12 col-xs-12 responsive-menu\">\n            <button type=\"\" class=\"btn btn-red-outline btn-hover btn-preview hide\" data-toggle=\"modal\" data-target=\"#temp-preview\">Preview</button>\n            <button type=\"\" class=\"btn btn-red-outline btn-hover\" (click)=\"selectTemplate(tempname,$event)\">Use Template</button>\n          </div>\n\n          <!-- <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n                 <iframe src=\"http://app.outgrow.us/design/backup/preview-template-1\"></iframe>\n          </div> -->\n\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\" *ngIf=\"tempname==='one-page-slider'\">\n            <img src=\"assets/images/temp1.jpg\" class=\"img-responsive\">\n          </div>\n\n          <div class=\"col-md-12 col-sm-12 col-xs-12 np\" *ngIf=\"tempname==='sound-cloud'\">\n            <img src=\"assets/images/temp2.jpg\" class=\"img-responsive\">\n          </div>\n\n          <!-- <div class=\"col-md-12 col-sm-12 col-xs-12\">\n                 <og-preview *ngIf=\"appJson\" [json]=\"appJson\"></og-preview>\n          </div> -->\n        </div>\n      </div>\n      <!-- <div class=\"modal-footer\">\n\n      </div> -->\n    </div>\n  </div>\n</div>\n<!-- End: Modal Template Preview -->\n"
 
 /***/ },
 
-/***/ 790:
+/***/ 787:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_component__ = __webpack_require__(1013);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__templates_services_DefaultJSON_service__ = __webpack_require__(853);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_component__ = __webpack_require__(1012);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__templates_services_DefaultJSON_service__ = __webpack_require__(850);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_toolbar_module__ = __webpack_require__(404);
 /* harmony export (binding) */ __webpack_require__.d(exports, "TemplatesModule", function() { return TemplatesModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -280,15 +280,15 @@ var TemplatesModule = (function () {
 
 /***/ },
 
-/***/ 797:
+/***/ 794:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model__ = __webpack_require__(813);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(807);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(808);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(806);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(803);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(808);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__app_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__page_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__section_model__["a"]; });
@@ -303,11 +303,11 @@ var TemplatesModule = (function () {
 
 /***/ },
 
-/***/ 806:
+/***/ 803:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__itemNames_store__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__itemNames_store__ = __webpack_require__(809);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Item; });
 
 var Item = (function () {
@@ -520,11 +520,11 @@ var Item = (function () {
 
 /***/ },
 
-/***/ 807:
+/***/ 804:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__section_model__ = __webpack_require__(808);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__section_model__ = __webpack_require__(805);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Page; });
 
 var Page = (function () {
@@ -577,11 +577,11 @@ var Page = (function () {
 
 /***/ },
 
-/***/ 808:
+/***/ 805:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_model__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_model__ = __webpack_require__(803);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Section; });
 
 var Section = (function () {
@@ -647,7 +647,7 @@ var Section = (function () {
 
 /***/ },
 
-/***/ 811:
+/***/ 808:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -672,7 +672,7 @@ var CalcEmail = (function () {
 
 /***/ },
 
-/***/ 812:
+/***/ 809:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -695,11 +695,11 @@ var RECOMMENDED_ITEMS = {
 
 /***/ },
 
-/***/ 813:
+/***/ 810:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_model__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_model__ = __webpack_require__(804);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return App; });
 
 var App = (function () {
@@ -830,12 +830,12 @@ var App = (function () {
 
 /***/ },
 
-/***/ 853:
+/***/ 850:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_models_model__ = __webpack_require__(797);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_models_model__ = __webpack_require__(794);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DefaultJSON; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1136,20 +1136,20 @@ var DefaultJSON = (function () {
         questionPage.addSections(leadSection);
         // SUB Section1(Questions) of Question Page
         section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Production Requirements', 't1-question-mid', 'Tell us a little bit more!');
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('slider', 'How many actors do you need in your video?', '', undefined, undefined, 1, 20);
-        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('slider', 'How many locations do you need to shoot at?', '', undefined, undefined, 1, 10);
-        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('checkbox', 'Where are you going to publish this video?', '');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('slider', 'How many actors do you need in your video?', 'Please add the help text', undefined, undefined, 1, 20);
+        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('slider', 'How many locations do you need to shoot at?', 'Please add the help text', undefined, undefined, 1, 10);
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('checkbox', 'Where are you going to publish this video?', 'Please add the help text');
         item3.addFieldToCheckbox([{ label: 'Web', icon: '' },
             { label: 'TV', icon: '' }]);
-        item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What do you expect the length of the video to be?', '', '');
+        item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What do you expect the length of the video to be?', 'Please add the help text', '');
         item4.addFieldToCheckbox([{ label: 'Less than 1 minute', icon: '' },
             { label: '1-5 minute', icon: '' },
             { label: '5-20 minutes', icon: '' },
             { label: 'Over 20 minutes', icon: '' }]);
-        var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', '');
+        var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('radio_button', 'What sort of a setting are you considering?', 'Please add the help text');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '' },
             { label: 'Outdoor', icon: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', '', ' http://www.example.com  ');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'Where can we find your brand assets for reference?', 'Please add the help text', ' http://www.example.com  ');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START

@@ -1,6 +1,6 @@
 webpackJsonp([6,11],{
 
-/***/ 1010:
+/***/ 1009:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9,11 +9,11 @@ webpackJsonp([6,11],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_validators_email_validator__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(795);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_feature_access_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_models_company__ = __webpack_require__(403);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_models_user__ = __webpack_require__(882);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_models_user__ = __webpack_require__(879);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__ = __webpack_require__(807);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DashboardComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -120,12 +120,21 @@ var DashboardComponent = (function () {
             railVisible: true,
             alwaysVisible: true
         });
+        this._script.load('bootBox')
+            .then(function (data) {
+            console.log('Scripts Loaded', data);
+        })
+            .catch(function (error) {
+            //any error
+        });
     };
     DashboardComponent.prototype.ngAfterViewInit = function () {
         var _this = this;
         jQuery('#calquiz-modal').on('hidden.bs.modal', function () {
             _this.reset = false;
         });
+        /*hide help icon on dashboard for mobile screen */
+        setTimeout(function () { return jQuery('.builder-help-icon').addClass('hide'); }, 2000);
     };
     /*=== Methods to collect data for intercom ===*/
     DashboardComponent.prototype.getAllLeadsCount = function (user_status) {
@@ -584,7 +593,7 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-dashboard',
-            template: __webpack_require__(1140),
+            template: __webpack_require__(1141),
             styles: [__webpack_require__(1067)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__["a" /* CalculatorAnalytics */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__["a" /* CalculatorAnalytics */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["h" /* MembershipService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["h" /* MembershipService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["i" /* DashboardService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["i" /* DashboardService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__["a" /* BuilderService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__["a" /* BuilderService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_6__shared_services_feature_access_service__["a" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__shared_services_feature_access_service__["a" /* FeatureAuthService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _h) || Object, (typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _j) || Object, (typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */]) === 'function' && _k) || Object, (typeof (_l = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* Script */]) === 'function' && _l) || Object])
@@ -603,26 +612,26 @@ module.exports = "body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {\n  font-fam
 
 /***/ },
 
-/***/ 1140:
+/***/ 1141:
 /***/ function(module, exports) {
 
 module.exports = "<sd-toolbar [page]=\"'dashboard'\"></sd-toolbar>\n<div class=\"preloader\" *ngIf=\"loader==0\">\n  <div class=\"status\">&nbsp;</div>\n</div>\n<!--<div class=\"loader\" *ngIf=\"loader==0\"></div>-->\n<div class=\"dashboard-toast\" style=\"display: none; bottom:60px;\"><i class=\"material-icons toast-ic\">check</i>\n  <span class=\"dash-toast-msg\">Calculator Deleted Successfully.</span>\n  <button type=\"button\" class=\"btn d-toast-btn\"><i class=\"material-icons\">clear</i></button>\n</div>\n<!-- Dashboard Section -->\n<div class=\"col-md-12 dashboard-topsec\">\n  <div class=\"col-md-4 col-sm-12 col-xs-12\">\n    <div class=\"dash-circle\">{{currentCompanyInit}}</div>\n    <div class=\"dash-prog-outer\">\n      <h2>Hey {{(username.substr(0,username.indexOf(' '))=='')?username:username.substr(0,username.indexOf(' '))}}, <br>We wish you a productive day :)</h2>\n      <h5 class=\"ellipsis hide\">{{currentCompany.name}}</h5>\n      <div class=\"btn-group company-dropdown-wrapper hide\">\n        <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n          <i class=\"material-icons\">keyboard_arrow_down</i>\n        </button>\n        <ul class=\"dropdown-menu\">\n          <li>\n            <a href=\"javascript:void(0);\" (click)=\"callGA('ADDCOMPANY')\" class=\"hvr-sweep-to-right add-new-company\" data-toggle=\"modal\" data-target=\"#add-new-company\">\n              <i class=\"material-icons\">playlist_add</i> &nbsp;Add New Company\n            </a>\n          </li>\n          <div class=\"company-dropdown-main\">\n            <div class=\"company-dropdown-list\" [class.slimscroll]=\"myCompaniesList.length > 3\">\n              <li *ngFor=\"let company of myCompaniesList\">\n                <a href=\"//{{company.sub_domain}}{{subdomainExtension}}/dashboard\" class=\"hvr-sweep-to-right\" *ngIf=\"company.user_company.active\">\n                  <div class=\"company-block\">\n                    <span class=\"company-block-inner\">{{company.name[0]}}</span>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">{{company.name}}</span>\n                    <span class=\"company-site ellipsis\">{{company.sub_domain}}{{subdomainExtension}}</span>\n                  </div>\n                </a>\n              </li>\n            </div>\n          </div>\n        </ul>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-6 col-sm-12 col-xs-12\">\n    <div class=\"circle-sec\">\n      <div class=\"dash-circle-red\"><i class=\"material-icons\">person</i></div>\n      <div class=\"circle-cal-outer\">\n        <h2>{{totalUniqueVisitors}}</h2>\n        <h5>Unique Visitors</h5>\n      </div>\n    </div>\n    <div class=\"circle-sec\">\n      <div class=\"dash-circle-pink\"><i class=\"material-icons\">check_circle</i></div>\n      <div class=\"circle-cal-outer\">\n        <h2>{{totalLeads}}</h2>\n        <h5>Leads Generated</h5>\n      </div>\n    </div>\n    <div class=\"circle-sec\">\n      <div class=\"dash-circle-d-pink\"><i class=\"material-icons\">trending_up</i></div>\n      <div class=\"circle-cal-outer\">\n        <h2>{{overallConversionRate}}%</h2>\n        <h5>Conversion Rate</h5>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-2 col-sm-12 col-xs-12\">\n    <ul class=\"user-outr\">\n\n      <li *ngFor=\"let user of currentCompanyUsers\">\n        <a href=\"javascript:void(0);\" class=\"more-users popover-wrapper\">\n          <span>{{user.name[0]}}</span>\n          <div class=\"more-popover-block single-user\">\n            <p class=\"ellipsis\">{{user.name}}</p>\n            <label class=\"ellipsis\">{{user.user_company.role}}</label>\n          </div>\n        </a>\n      </li>\n      <li *ngIf=\"moreCompanyUsers.length > 0\">\n        <a href=\"javascript:void(0);\" class=\"more-users popover-wrapper\">\n          <i class=\"material-icons\">more_horiz</i>\n          <div class=\"more-popover-block \">\n            <ul>\n              <li *ngFor=\"let user of moreCompanyUsers\">\n                <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\">\n                  <span>{{user.name[0]}}</span>\n                  <div class=\"more-users-list\">\n                    <p class=\"ellipsis\">{{user.name}}</p>\n                    <label class=\"ellipsis\">{{user.user_company.role}}</label>\n                  </div>\n                </a>\n              </li>\n            </ul>\n          </div>\n        </a>\n      </li>\n      <li>\n        <a (click)=\"callGA('ADDUSER')\" href=\"javascript:void(0);\" class=\"add-user popover-wrapper\" data-toggle=\"modal\" data-target=\"#add-new-user\">\n          <i class=\"material-icons\">add</i>\n          <div class=\"popover-block\">Add collaborator</div>\n        </a>\n      </li>\n    </ul>\n  </div>\n</div>\n<!-- Dashboard Section End-->\n<!-- Dashboard 3 boxes start (sahil) -->\n<div class=\"col-xs-12 dash-boxes-outr\">\n  <div class=\"col-xs-12 col-sm-12 col-md-4\">\n    <div class=\"dash-box dash-top3\">\n      <div class=\"dash-top3-textinner hide\">\n        <label>Now</label>\n        <h3>Create a New Experience</h3>\n      </div>\n      <div class=\"dash-top3circletable\">\n        <!--<a href=\"javascript:void(0);\" class=\"dash-top3-circle\" (click)=\"addNewCalc();callGA('ADDCALC')\"  data-toggle=\"modal\" data-target=\"#calquiz-modal\">-->\n        <a href=\"javascript:void(0);\" class=\"dash-top3-circle\"  (click)=\"initCalcQuiz()\" data-toggle=\"modal\" data-target=\"#calquiz-modal\">\n          <i class=\"material-icons\">add_circle_outline</i> Create a New Experience\n        </a>\n      </div>\n    </div>\n  </div>\n  <div *ngFor=\"let app of apps\">\n    <div class=\"col-xs-12 col-sm-12 col-md-4 \">\n      <div class=\"dash-box\">\n        <figure>\n          <div class=\"dash-box-top\" *ngIf=\"app.pages[0].bgImage\" [style.backgroundImage]=\"'url(' + app.pages[0].bgImage + ')' | safeStyle\">\n          </div>\n          <div class=\"dash-box-top\" *ngIf=\"!app.pages[0].bgImage\">\n          </div>\n        </figure>\n        <div class=\"dash-top2-textinner\">\n          <div class=\"\">\n            <span class=\"company-dropdown-title-active ellipsis\" *ngIf=\"app.liveApp\">Published: {{app.createdAt}}</span>\n            <span class=\"company-dropdown-title-active ellipsis\" *ngIf=\"!app.liveApp\">Last Edited: {{app.updatedAt}}</span>\n          </div>\n          <div class=\"dash-pullout-new\">\n            <i class=\"material-icons\">more_vert</i>\n            <ul class=\"new-dropdown-menu\">\n              <li>\n                <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"openOldCalc(app,'build');callGA('EDITCALC')\">\n                  <div class=\"company-block\">\n                    <i class=\"material-icons\">format_paint</i>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">&nbsp;Edit</span>\n                  </div>\n                </a>\n              </li>\n              <li>\n                <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\" checkAnalytics(app,'analytics');callGA('ANALYTICS')\">\n                  <div class=\"company-block\">\n                    <i class=\"material-icons\">trending_up</i>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">&nbsp;Analytics</span>\n                  </div>\n                </a>\n              </li>\n              <li>\n                <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"openOldCalc(app,'config');selectSubTab('settings');callGA('SETTINGS');\">\n                  <div class=\"company-block\">\n                    <i class=\"material-icons\">mode_edit</i>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">&nbsp;Settings</span>\n                  </div>\n                </a>\n              </li>\n              <li>\n                <a class=\"hvr-sweep-to-right\" (click)=\"duplicateApp(app._id);callGA('DUPLICATE')\">\n                  <div class=\"company-block\">\n                    <i class=\"material-icons\">content_copy</i>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">&nbsp;Duplicate</span>\n                  </div>\n                </a>\n              </li>\n              <li>\n                <a href=\"javascript:void(0);\" (click)=\"deleteApp(app._id);callGA('DELETE')\" class=\"hvr-sweep-to-right\">\n                  <div class=\"company-block\">\n                    <i class=\"material-icons\">delete</i>\n                  </div>\n                  <div class=\"company-block-content\">\n                    <span class=\"company-title ellipsis\">&nbsp;Delete</span>\n                  </div>\n                </a>\n              </li>\n            </ul>\n          </div>\n          <div class=\"btn-group company-dropdown-wrapper hide\">\n            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n              <div class=\"das-box-menu\">\n                <i class=\"material-icons\">more_vert</i>\n                <ul class=\"dropdown-menu\">\n                  <li>\n                    <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"openOldCalc(app,'build');callGA('EDITCALC')\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">format_paint</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;Edit Design</span>\n                      </div>\n                    </a>\n                  </li>\n                  <li>\n                    <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"openOldCalc(app,'config');selectSubTab('settings');callGA('SETTINGS')\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">mode_edit</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;Edit Settings</span>\n                      </div>\n                    </a>\n                  </li>\n                  <li>\n                    <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"checkAnalytics();callGA('ANALYTICS')\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">trending_up</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;View Analytics</span>\n                      </div>\n                    </a>\n                  </li>\n                  <li>\n                    <a class=\"hvr-sweep-to-right\" (click)=\"duplicateApp(app._id);callGA('DUPLICATE')\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">content_copy</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;Duplicate Calc</span>\n                      </div>\n                    </a>\n                  </li>\n                  <li>\n                    <a href=\"javascript:void(0);\" class=\"hvr-sweep-to-right\" (click)=\"openOldCalc(app,'config');selectSubTab('share-your-calculator');callGA('SHARE')\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">computer</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;Publish / Share</span>\n                      </div>\n                    </a>\n                  </li>\n                  <li>\n                    <a href=\"javascript:void(0);\" (click)=\"deleteApp(app._id);callGA('DELETE')\" class=\"hvr-sweep-to-right\">\n                      <div class=\"company-block\">\n                        <i class=\"material-icons\">delete</i>\n                      </div>\n                      <div class=\"company-block-content\">\n                        <span class=\"company-title ellipsis\">&nbsp;Delete</span>\n                      </div>\n                    </a>\n                  </li>\n                </ul>\n              </div>\n            </button>\n          </div>\n          <h3>{{app.name}}</h3>\n          <div class=\"col-xs-12 text-center\">\n            <a href=\"javascript:void(0);\" (click)=\"openOldCalc(app,'build');callGA('OPENCALC')\" class=\"dash-box-send\">\n              <i class=\"material-icons\">send</i>\n            </a>\n          </div>\n        </div>\n        <div class=\"dash-box-bottom\">\n          <ul>\n            <li>\n              <i class=\"material-icons\">public</i>\n              <label class=\"text\">Status</label>\n              <div class=\"switch-outr\">\n                <div class=\"dummy-switch\" [class.red]=\"app.mode=='PUBLIC'\">\n                  <p>{{(app.mode=='PUBLIC')?'Live':'Draft'}}</p>\n                </div>\n              </div>\n            </li>\n            <li>\n              <i class=\"material-icons\">person</i>\n              <label class=\"text\">Unique Visits</label>\n              <span class=\"value\">{{ (app.uniqueViews!=undefined)?app.uniqueViews:'--' }}</span>\n            </li>\n            <li>\n              <i class=\"material-icons\">reorder</i>\n              <label class=\"text\">Leads Generated</label>\n              <span class=\"value\">{{ (app.leads!=undefined)?app.leads:'--' }}</span>\n            </li>\n            <li>\n              <i class=\"material-icons\">done_all</i>\n              <label class=\"text\">Conversion Rate</label>\n              <span class=\"value\">{{ (app.conversionRate!=undefined)?app.conversionRate+'%':'--' }}</span>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!-- Dashboard 3 boxes end (sahil) -->\n\n<div id=\"add-new-company\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n  <div class=\"modal-dialog\">\n    Modal content\n    <div class=\"modal-content modal-bg\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <i class=\"material-icons\">close</i>\n        </button>\n        <h5 class=\"modal-title\">Create a New Company</h5>\n      </div>\n      <div class=\"modal-body\">\n        <div class=\"sahil-material\">\n          <form [formGroup]=\"createCompanyForm\" (ngSubmit)=\"createCompany()\">\n            <div class=\"form-group label-floating\">\n              <label class=\"control-label\" for=\"companyname\"> New Company Name</label>\n              <input class=\"form-control\" id=\"companyname\" type=\"text\" name=\"companyname\" formControlName=\"companyname\" (focus)=\"hideError()\">\n            </div>\n            <div *ngIf=\"createCompanyForm.controls.companyname.touched && !createCompanyForm.controls.companyname.valid\" class=\"alert alert-danger\">\n              <p *ngIf=\"createCompanyForm.controls.companyname.errors.required\">Company Name is required.</p>\n              <p *ngIf=\"createCompanyForm.controls.companyname.errors.minlength\">Min 3 character is required.</p>\n            </div>\n            <div class=\"form-group label-floating\">\n              <label class=\"control-label\" for=\"domain\"> Company Url</label>\n              <input class=\"form-control\" id=\"domain\" type=\"text\" name=\"domain\" formControlName=\"domain\" (focus)=\"hideError()\">\n              <label class=\"in-active\">{{subdomainExtension}}</label>\n            </div>\n            <div *ngIf=\"createCompanyForm.controls.domain.touched && !createCompanyForm.controls.domain.valid\" class=\"alert alert-danger\">\n              <p *ngIf=\"createCompanyForm.controls.domain.errors.required\">Company Name is required.</p>\n              <p *ngIf=\"createCompanyForm.controls.domain.errors.minlength\">Min 3 character is required.</p>\n              <p *ngIf=\"createCompanyForm.controls.domain.errors.pattern\">\n                Invalid Url\n              </p>\n            </div>\n            <button type=\"submit\" id=\"btnCreateCompany\" class=\"btn btn-red-outline btn-add-user btn-hover\" [disabled]=\"!createCompanyForm.valid\">Add New Company</button>\n          </form>\n          <div class=\"alert alert-danger hide\" id=\"success-addCompany\">\n            {{Message}}\n          </div>\n        </div>\n      </div>\n      <div class=\"modal-footer\">\n        Your company will be created immediately. As soon as the company is created, you can start adding users to collaborate.\n      </div>\n    </div>\n  </div>\n</div>\n\n<div id=\"add-new-user\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n    <div class=\"modal-dialog\">\n        <div class=\"modal-content modal-bg\">\n            <div class=\"modal-header\">\n                <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                    <i class=\"material-icons\">close</i>\n                </button>\n                <h5 class=\"modal-title\">Add New User</h5>\n            </div>\n            <form [formGroup]=\"inviteUserForm\" (ngSubmit)=\"inviteUser()\" id=\"inviteUserForm\">\n                <div class=\"modal-body\">\n                    <div class=\"alert alert-danger custom-alert hide\" id=\"success-addUser\">\n                        <p>\n                            <span class=\"mat-icon\">\n                                <i class=\"material-icons\">report_problem</i>\n                            </span>\n                            <span id=\"dashboardAdduserMessage\"></span>\n                        </p>\n                    </div>\n                    <div class=\"sahil-material\">\n                        <div class=\"form-group label-floating name\">\n                            <label class=\"control-label\" for=\"inputName\"> Name</label>\n                            <input class=\"form-control\" id=\"inputName\" type=\"text\" formControlName=\"userName\" name=\"userName\" autocomplete=\"off\">\n                        </div>\n                        <div *ngIf=\"inviteUserForm.controls.userName.touched && !inviteUserForm.controls.userName.valid\" class=\"alert alert-danger\">\n                            <p *ngIf=\"inviteUserForm.controls.userName.errors.required\">Name is required.</p>\n                            <p *ngIf=\"inviteUserForm.controls.userName.errors.minlength\">\n\t\t\t\t\t\t\t\t<span class=\"mat-icon\">\n\t\t\t\t\t\t\t\t  \t<i class=\"material-icons\">report_problem</i>\n\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\tMin 3 character is required.\n\t\t\t\t\t\t\t</p>\n                        </div>\n                        <div class=\"form-group label-floating email\">\n                            <label class=\"control-label\" for=\"inputEmail\"> Email Address</label>\n                            <input class=\"form-control\" id=\"inputEmail\" type=\"email\" formControlName=\"userEmail\" name=\"userEmail\" autocomplete=\"off\">\n                        </div>\n                        <div *ngIf=\"inviteUserForm.controls.userEmail.touched && !inviteUserForm.controls.userEmail.valid\" class=\"alert alert-danger\">\n                            <p *ngIf=\"inviteUserForm.controls.userEmail.errors.required\">Email is required.</p>\n                            <p *ngIf=\"inviteUserForm.controls.userEmail.errors.checkmail\">Invalid Email.</p>\n                        </div>\n                        <div class=\"form-group form-group-radio\">\n                            <label class=\"radio-inline\">\n                                <input type=\"radio\" value=\"ADMIN\" id=\"radioAdmin\" formControlName=\"userRole\" name=\"userRole\">\n                                <label for=\"radioAdmin\"> </label> Admin {{userRole}}\n                            </label>\n                            <label class=\"radio-inline\">\n                                <input type=\"radio\" value=\"MANAGER\" id=\"radioManager\" formControlName=\"userRole\" name=\"userRole\">\n                                <label for=\"radioManager\"> </label> Manager\n                            </label>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"modal-footer\">\n                    <button type=\"submit\" [disabled]=\"!inviteUserForm.valid\" class=\"btn btn-red-outline btn-add-user btn-hover\" id=\"btnInvite\">Add New User</button>\n                </div>\n            </form>\n        </div>\n    </div>\n</div>\n<!--- cal quiz modal -->\n<div id=\"calquiz-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\">\n    <div class=\"modal-dialog custom-width\">\n        <div class=\"modal-content modal-bg\">\n                <div class=\"modal-body\">\n                    <div class=\"calquiz-outr\">\n                        <div class=\"step1\">\n                             <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                                    <i class=\"material-icons\">close</i>\n                                </button>\n                                <h5 class=\"modal-title\">What will You Create Today? </h5>\n                            </div>\n                            <!--<div class=\"calquiz-left\">\n                                <label class=\"check-icon\">\n                                    <input type=\"radio\" value=\"Numerical\" name=\"calQuiz\" id=\"radio1\" (click) = \"selectCalc()\">\n                                    <label for=\"radio1\">\n                                        <span class=\"outer-border \">\n                                            <i class=\"material-icons\">dialpad</i>\n                                        </span>\n                                    </label>\n                                    <div class=\"col-md-12 col-sm-12 col-xs-12 np calc-quiz-margin\">\n                                        <h3>Numerical Calculator</h3>\n                                        <span class=\"col-md-6 col-sm-12 col-xs-12 np\">Gives a result in the form of a number like a price estimate, percentage or\n\n\t\t\t\tscore.</span>\n                                        <p class=\"col-md-6 col-sm-12 col-xs-12 np\">\n                                           How much does it cost to remodel your kitchen?<br/>\n                                           What is the risk of getting zika?  <br/>\n                                           How much do you really know about the Lakers?\n                                        </p>\n                                    </div>\n                                </label>\n                            </div>-->\n                            <!--<div class=\"calquiz-right\">\n                                <label class=\"check-icon ic\">\n                                    <input type=\"radio\" value=\"Recommendation\" name=\"calQuiz\" id=\"radio2\" (click) = \"selectCalc()\" >\n                                    <label for=\"radio2\">\n                                        <span class=\"outer-border\">\n                                            <i class=\"material-icons\">filter_vintage</i>\n                                        </span>\n                                    </label>\n                                    <div class=\"col-md-12 col-sm-12 col-xs-12 np calc-quiz-margin\">\n                                        <h3>Outcome Quiz</h3>\n                                        <span class=\"col-md-6 col-sm-12 col-xs-12 np\">Gives a result in the form of a recommendation or a suggestion.</span>\n                                        <p class=\"col-md-6 col-sm-12 col-xs-12 np\">\n                                            Which jeans should you wear?<br/>\n                                            Which insurance plan is right for you?<br/>\n                                            Which celebrity matches your style?\n                                        </p>\n                                    </div>\n                                </label>\n                            </div>-->\n                            <div class=\"col-md-12 col-sm-12 col-xs-12 np\">\n                                <div class=\"calquiz-left\">\n                                    <label class=\"check-icon\">\n                                            <input type=\"radio\" value=\"Numerical\" name=\"calQuiz\" id=\"radio1\" (click) = \"selectCalc()\">\n                                            <label for=\"radio1\">\n                                                <span class=\"outer-border \">\n                                                    <!--<i class=\"material-icons\">dialpad</i>-->\n                                                    <span class=\"animated-icon animated-calc\">\n                                                    </span>\n                                                </span>\n                                            </label>\n                                            <div class=\"calc-quiz-margin\">\n                                                <h3>Numerical Calculator</h3>\n                                                <span class=\"\">Gives a result in the form of a number like a price estimate, percentage or score.</span>\n                                            </div>\n                                            <div class=\"col-md-6 col-sm-6 col-xs-12 np res-outer\">\n                                                <h3 class=\"example-heading\">Examples</h3>\n                                                <p class=\"col-md-6 col-sm-12 col-xs-12 np\">\n                                                How much does it cost to remodel your kitchen?<br>\n                                                What is the risk of getting zika?    <br>\n                                                How much do you really know about the Lakers?\n                                                </p>\n                                            </div>\n                                        </label>\n                                    </div>\n                                    <div class=\"calquiz-right\">\n                                        <label class=\"check-icon ic\">\n                                                <input type=\"radio\" value=\"Recommendation\" name=\"calQuiz\" id=\"radio2\" (click) = \"selectCalc()\">\n                                                <label for=\"radio2\">\n                                                    <span class=\"outer-border\">\n                                                        <!--<i class=\"material-icons\">insert_photo</i>-->\n                                                        <span class=\"animated-icon animated-recom\">\n                                                        </span>\n                                                    </span>\n                                                </label>\n                                                <div class=\"calc-quiz-margin\">\n                                                    <h3>Outcome Quiz</h3>\n                                                    <span class=\"col-md-7 col-sm-12 col-xs-12 np\">Gives a result in the form of a recommendation or a suggestion.</span>\n                                                </div>\n                                                <div class=\"col-md-6 col-sm-6 col-xs-12 np res-outer\">\n                                                    <h3 class=\"example-heading\">Examples</h3>\n                                                    <p class=\"col-md-6 col-sm-12 col-xs-12 np\">\n                                                    Which jeans should you wear?<br>\n                                                    Which insurance plan is right for you? <br>\n                                                    Which celebrity matches your style?\n                                                    </p>\n                                                </div>\n                                            </label>\n                                    </div>\n                                </div>\n                        </div>\n                   <form [formGroup] = \"calcNameform\" (ngSubmit) = \"onAddNewCalc()\" id=\"type-calc\" novalidate>\n                        <div class=\"step2 hide\">\n                             <div class=\"modal-header\">\n                                <button type=\"button\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\n                                    <i class=\"material-icons\">close</i>\n                                </button>\n                                <h5 class=\"modal-title\">Add a Title </h5>\n                            </div>\n                            <div class=\"calquiz-left calquiz-right full-width\">\n                                <div class=\"back-icon\" (click)=\"goBack()\">\n                                    <i class=\"material-icons\">arrow_back</i>\n                                </div>\n                                <label class=\"check-icon\">\n                                    <input type=\"radio\" checked=\"checked\" id=\"lopa\" name=\"noname\">\n                                    <label for=\"lopa\">\n                                        <span class=\"outer-border\">\n                                            <i class=\"material-icons\" *ngIf=\"calcType ==='Numerical'\">dialpad</i>\n                                            <i class=\"material-icons\" *ngIf=\"calcType ==='Recommendation'\">insert_photo</i>\n                                        </span>\n                                    </label>\n                                </label>\n                                <div class=\"col-md-12 col-sm-12 col-xs-12 np calc-quiz-margin text-center\">\n                                    <div>\n                                        <h3 *ngIf=\"calcType ==='Recommendation'\">Quiz Title</h3>\n                                        <h3 *ngIf=\"calcType ==='Numerical'\">Calculator Title</h3>\n                                        <input type=\"text\" placeholder=\"{{calcType=='Recommendation'?'Which insurance plan is right for you?':'Estimate the Cost of Building a Website'}}\"  (blur)=\"reset = true;\" formControlName=\"calcName\" name=\"calcName\" class=\"calcName-input\" >\n                                        <div *ngIf=\"(calcNameform.controls.calcName.touched && !calcNameform.controls.calcName.valid) && reset\" class=\"alert alert-danger\">\n                                            <p >\n                                                <span  class=\"mat-icon\">\n                                                    <i class=\"material-icons\">report_problem</i>\n                                                </span>\n                                                <span *ngIf=\"calcType ==='Numerical'\">Calculator name is required.</span>\n                                                <span *ngIf=\"calcType ==='Recommendation'\">Quiz title is required.</span>\n                                            </p>\n                                        </div>\n                                    </div>\n                                </div>\n                            </div>\n                             <button  class=\"btn btn-red btn-hover\">\n                                <span *ngIf=\"calcType ==='Numerical'\">Select Template</span>\n                                <span *ngIf=\"calcType ==='Recommendation'\">Get Started</span>\n                            </button>\n                        </div>\n                    </form>\n                </div>\n            </div>\n        </div>\n    </div> </div>\n<!--- cal quiz modal -->\n\n<div class=\"float-changes-updated hide\">\n  <div class=\"col-md-12 np\">\n    <span class=\"icon-done\"><i class=\"material-icons\">done</i></span>\n    <span id=\"floatMessage\">{{ Message }} </span>\n  </div>\n</div>\n"
 
 /***/ },
 
-/***/ 789:
+/***/ 786:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_modules_shared_module__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(1009);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_membership_service__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__analytics_services_calculator_analytics_service__ = __webpack_require__(810);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__analytics_services_calculator_analytics_service__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(795);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_dashboard_service__ = __webpack_require__(246);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__templates_controls_controls_module__ = __webpack_require__(809);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__templates_controls_controls_module__ = __webpack_require__(806);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__toolbar_toolbar_module__ = __webpack_require__(404);
 /* harmony export (binding) */ __webpack_require__.d(exports, "DashboardModule", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -668,13 +677,13 @@ var DashboardModule = (function () {
 
 /***/ },
 
-/***/ 794:
+/***/ 791:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_model__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_service__ = __webpack_require__(798);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_model__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_service__ = __webpack_require__(795);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return JSONBuilder; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -989,6 +998,8 @@ var JSONBuilder = (function () {
         var index = jQuery.inArray(this.selectedControl, this.selectedSection.items);
         //replace oldControl with newControl at index
         this.selectedSection.items[index].type = newControl;
+        if (newControl == 'slider')
+            this.selectedSection.items[index].config.validations.required.status = false;
         this.tvs.updateFormGroup(this.selectedSection);
     };
     JSONBuilder.prototype.deleteControl = function () {
@@ -1227,7 +1238,7 @@ var JSONBuilder = (function () {
 
 /***/ },
 
-/***/ 795:
+/***/ 792:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1343,14 +1354,14 @@ var AnalyticService = (function (_super) {
 
 /***/ },
 
-/***/ 796:
+/***/ 793:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_models_model__ = __webpack_require__(797);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__analytic_service__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_models_model__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__analytic_service__ = __webpack_require__(792);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RecommendationService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1473,15 +1484,15 @@ var RecommendationService = (function () {
 
 /***/ },
 
-/***/ 797:
+/***/ 794:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model__ = __webpack_require__(813);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(807);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(808);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(806);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(811);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_model__ = __webpack_require__(810);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(803);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(808);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__app_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__page_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__section_model__["a"]; });
@@ -1496,7 +1507,7 @@ var RecommendationService = (function () {
 
 /***/ },
 
-/***/ 798:
+/***/ 795:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1652,7 +1663,7 @@ var BuilderService = (function (_super) {
 
 /***/ },
 
-/***/ 799:
+/***/ 796:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1722,13 +1733,13 @@ var CustomValidator = (function () {
 
 /***/ },
 
-/***/ 800:
+/***/ 797:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__templates_services_analytic_service__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__templates_services_analytic_service__ = __webpack_require__(792);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FormulaService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2136,7 +2147,7 @@ var FormulaService = (function () {
 
 /***/ },
 
-/***/ 805:
+/***/ 802:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2185,11 +2196,11 @@ var UrlShortner = (function (_super) {
 
 /***/ },
 
-/***/ 806:
+/***/ 803:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__itemNames_store__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__itemNames_store__ = __webpack_require__(809);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Item; });
 
 var Item = (function () {
@@ -2402,11 +2413,11 @@ var Item = (function () {
 
 /***/ },
 
-/***/ 807:
+/***/ 804:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__section_model__ = __webpack_require__(808);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__section_model__ = __webpack_require__(805);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Page; });
 
 var Page = (function () {
@@ -2459,11 +2470,11 @@ var Page = (function () {
 
 /***/ },
 
-/***/ 808:
+/***/ 805:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_model__ = __webpack_require__(806);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__item_model__ = __webpack_require__(803);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Section; });
 
 var Section = (function () {
@@ -2529,23 +2540,23 @@ var Section = (function () {
 
 /***/ },
 
-/***/ 809:
+/***/ 806:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__controls__ = __webpack_require__(821);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_themeColor_directive__ = __webpack_require__(817);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_result_directive__ = __webpack_require__(816);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_htmlprocessor_directive__ = __webpack_require__(815);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__builder_services_UrlShortner_service__ = __webpack_require__(805);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_customValidation__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__control_component__ = __webpack_require__(820);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__controls__ = __webpack_require__(818);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_themeColor_directive__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_result_directive__ = __webpack_require__(813);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_htmlprocessor_directive__ = __webpack_require__(812);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__builder_services_UrlShortner_service__ = __webpack_require__(802);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_customValidation__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__control_component__ = __webpack_require__(817);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_modules_shared_module__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_fetchResult_directive__ = __webpack_require__(814);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_fetchResult_directive__ = __webpack_require__(811);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pipes_pipes_module__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_recommendation_service__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_recommendation_service__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ControlsModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2590,7 +2601,7 @@ var ControlsModule = (function () {
 
 /***/ },
 
-/***/ 810:
+/***/ 807:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2653,7 +2664,7 @@ var CalculatorAnalytics = (function (_super) {
 
 /***/ },
 
-/***/ 811:
+/***/ 808:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2678,7 +2689,7 @@ var CalcEmail = (function () {
 
 /***/ },
 
-/***/ 812:
+/***/ 809:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2701,11 +2712,11 @@ var RECOMMENDED_ITEMS = {
 
 /***/ },
 
-/***/ 813:
+/***/ 810:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_model__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__page_model__ = __webpack_require__(804);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return App; });
 
 var App = (function () {
@@ -2836,13 +2847,13 @@ var App = (function () {
 
 /***/ },
 
-/***/ 814:
+/***/ 811:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_formula_service__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_formula_service__ = __webpack_require__(797);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FetchResult; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2886,13 +2897,13 @@ var FetchResult = (function () {
 
 /***/ },
 
-/***/ 815:
+/***/ 812:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_formula_service__ = __webpack_require__(800);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_formula_service__ = __webpack_require__(797);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HtmlProcessor; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2940,12 +2951,12 @@ var HtmlProcessor = (function () {
 
 /***/ },
 
-/***/ 816:
+/***/ 813:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Result; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2997,12 +3008,12 @@ var Result = (function () {
 
 /***/ },
 
-/***/ 817:
+/***/ 814:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ThemeColor; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3077,7 +3088,7 @@ var ThemeColor = (function () {
 
 /***/ },
 
-/***/ 818:
+/***/ 815:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3120,15 +3131,15 @@ var Button = (function () {
 
 /***/ },
 
-/***/ 819:
+/***/ 816:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Checkbox; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3226,7 +3237,7 @@ var Checkbox = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'checkbox',
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None,
-            template: __webpack_require__(842)
+            template: __webpack_require__(839)
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */]) === 'function' && _d) || Object])
     ], Checkbox);
@@ -3237,7 +3248,7 @@ var Checkbox = (function () {
 
 /***/ },
 
-/***/ 820:
+/***/ 817:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3286,7 +3297,7 @@ var Control = (function () {
     Control = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'control',
-            template: "\n          <textfield *ngIf=\"data.type=='textfield'\" [data]=\"data\" [form]=\"form\" ></textfield>\n          <text_area *ngIf=\"data.type=='text-area'\" [data]=\"data\"  ></text_area>\n          <selectbox *ngIf=\"data.type=='selectbox'\" [data]=\"data\" [form]=\"form\" ></selectbox>\n          <radio-button *ngIf=\"data.type=='radio_button'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></radio-button>\n          <og-header *ngIf=\"data.type=='header'\" [data]=\"data\" ></og-header>\n          <sub_header *ngIf=\"data.type=='sub_header'\" [data]=\"data\" ></sub_header>\n          <click-button *ngIf=\"data.type=='click_button'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></click-button>\n      \t\t<logo *ngIf=\"data.type=='logo'\" [data]=\"data\" ></logo>\n          <slider *ngIf=\"data.type=='slider'\" [data]=\"data\" ></slider>\n          <leadform_question *ngIf=\"data.type=='leadform_question'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></leadform_question>\n          <leadform *ngIf=\"data.type=='leadform'\" [data]=\"data\" [page]=\"page\"\n           (controlOutput)=\"onControlOutput($event)\" ></leadform>\n          <poweredby *ngIf=\"data.type=='poweredby'\"  [data]=\"data\" ></poweredby>\n          <footer-links *ngIf=\"data.type=='footer_links'\"  [data]=\"data\" ></footer-links>\n          <checkbox *ngIf=\"data.type=='checkbox'\" [data]=\"data\" [form]=\"form\" ></checkbox>\n          <switchbox *ngIf=\"data.type=='switchbox'\" [data]=\"data\" [form]=\"form\" ></switchbox>\n          <result_output *ngIf=\"data.type=='result_output'\" [data]=\"data\" ></result_output>\n          <result_header *ngIf=\"data.type=='result_header'\" [data]=\"data\" ></result_header>\n          <share_links *ngIf=\"data.type=='share_links'\"  [data]=\"data\" ></share_links>\n          <result_disclaimer *ngIf=\"data.type=='result_disclaimer'\" [data]=\"data\" ></result_disclaimer>\n          <result_redo *ngIf=\"data.type=='result_redo'\" [data]=\"data\" ></result_redo>\n      ",
+            template: "\n          <textfield *ngIf=\"data.type=='textfield'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></textfield>\n          <text_area *ngIf=\"data.type=='text-area'\" [data]=\"data\"  ></text_area>\n          <selectbox *ngIf=\"data.type=='selectbox'\" [data]=\"data\" [form]=\"form\" ></selectbox>\n          <radio-button *ngIf=\"data.type=='radio_button'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></radio-button>\n          <og-header *ngIf=\"data.type=='header'\" [data]=\"data\" ></og-header>\n          <sub_header *ngIf=\"data.type=='sub_header'\" [data]=\"data\" ></sub_header>\n          <click-button *ngIf=\"data.type=='click_button'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></click-button>\n      \t\t<logo *ngIf=\"data.type=='logo'\" [data]=\"data\" ></logo>\n          <slider *ngIf=\"data.type=='slider'\" [data]=\"data\" ></slider>\n          <leadform_question *ngIf=\"data.type=='leadform_question'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></leadform_question>\n          <leadform *ngIf=\"data.type=='leadform'\" [data]=\"data\" [page]=\"page\"\n           (controlOutput)=\"onControlOutput($event)\" ></leadform>\n          <poweredby *ngIf=\"data.type=='poweredby'\"  [data]=\"data\" ></poweredby>\n          <footer-links *ngIf=\"data.type=='footer_links'\"  [data]=\"data\" ></footer-links>\n          <checkbox *ngIf=\"data.type=='checkbox'\" [data]=\"data\" [form]=\"form\"></checkbox>\n          <switchbox *ngIf=\"data.type=='switchbox'\" [data]=\"data\" [form]=\"form\" ></switchbox>\n          <result_output *ngIf=\"data.type=='result_output'\" [data]=\"data\" ></result_output>\n          <result_header *ngIf=\"data.type=='result_header'\" [data]=\"data\" ></result_header>\n          <share_links *ngIf=\"data.type=='share_links'\"  [data]=\"data\" ></share_links>\n          <result_disclaimer *ngIf=\"data.type=='result_disclaimer'\" [data]=\"data\" ></result_disclaimer>\n          <result_redo *ngIf=\"data.type=='result_redo'\" [data]=\"data\" ></result_redo>\n      ",
         }), 
         __metadata('design:paramtypes', [])
     ], Control);
@@ -3297,30 +3308,30 @@ var Control = (function () {
 
 /***/ },
 
-/***/ 821:
+/***/ 818:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__textfield_textfield_component__ = __webpack_require__(839);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__textarea_textarea_component__ = __webpack_require__(838);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__selectbox_selectbox_component__ = __webpack_require__(833);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radiobutton_radiobutton_component__ = __webpack_require__(828);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__header_header_component__ = __webpack_require__(824);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sub_header_sub_header_component__ = __webpack_require__(836);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__button_button_component__ = __webpack_require__(818);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_logo_component__ = __webpack_require__(827);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__slider_slider_component__ = __webpack_require__(835);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__leadform_leadform_component__ = __webpack_require__(825);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__leadform_question_leadform_question_component__ = __webpack_require__(826);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__footer_poweredby_component__ = __webpack_require__(823);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__footer_footer_links_component__ = __webpack_require__(822);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__checkbox_checkbox_component__ = __webpack_require__(819);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__switch_switchbox_component__ = __webpack_require__(837);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__resultoutput_resultoutput_component__ = __webpack_require__(831);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__resultheader_resultheader_component__ = __webpack_require__(830);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sharelinks_sharelinks_component__ = __webpack_require__(834);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__resultredo_redo_component__ = __webpack_require__(832);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__resultdisclaimer_resultdisclaimer_component__ = __webpack_require__(829);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__textfield_textfield_component__ = __webpack_require__(836);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__textarea_textarea_component__ = __webpack_require__(835);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__selectbox_selectbox_component__ = __webpack_require__(830);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__radiobutton_radiobutton_component__ = __webpack_require__(825);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__header_header_component__ = __webpack_require__(821);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sub_header_sub_header_component__ = __webpack_require__(833);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__button_button_component__ = __webpack_require__(815);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__logo_logo_component__ = __webpack_require__(824);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__slider_slider_component__ = __webpack_require__(832);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__leadform_leadform_component__ = __webpack_require__(822);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__leadform_question_leadform_question_component__ = __webpack_require__(823);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__footer_poweredby_component__ = __webpack_require__(820);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__footer_footer_links_component__ = __webpack_require__(819);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__checkbox_checkbox_component__ = __webpack_require__(816);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__switch_switchbox_component__ = __webpack_require__(834);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__resultoutput_resultoutput_component__ = __webpack_require__(828);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__resultheader_resultheader_component__ = __webpack_require__(827);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sharelinks_sharelinks_component__ = __webpack_require__(831);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__resultredo_redo_component__ = __webpack_require__(829);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__resultdisclaimer_resultdisclaimer_component__ = __webpack_require__(826);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CONTROLS; });
 
 
@@ -3368,7 +3379,7 @@ var CONTROLS = [
 
 /***/ },
 
-/***/ 822:
+/***/ 819:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3407,7 +3418,7 @@ var FooterLinksComponent = (function () {
 
 /***/ },
 
-/***/ 823:
+/***/ 820:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3438,7 +3449,7 @@ var PoweredByComponent = (function () {
     PoweredByComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'poweredby',
-            template: "\n\t\t<div class=\" text-right\" *ngIf=\"data.visible == true\" >\n\t\t\t<div class=\" powered-by\">\n\t\t\t\t<span>Powered by </span>\n\t\t\t\t<a href=\"{{url}}\" target=\"_blank\">\n\t\t\t\t\t\t<img src=\"https://cdn.filestackcontent.com/aGXPG3NCRemoiIEP7xtg\" alt=\"Powered By\">\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t",
+            template: "\n\t\t<div class=\" text-right\" *ngIf=\"data.visible == true\" >\n\t\t\t<div class=\" powered-by\">\n\t\t\t\t<span>Powered by </span>\n\t\t\t\t<a href=\"{{url}}\" target=\"_blank\">\n\t\t\t\t\t\t<img src=\"https://cdn.filestackcontent.com/tqowVp1lQYSVmPLRr8Hu\" alt=\"Powered By\">\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t",
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None
         }), 
         __metadata('design:paramtypes', [])
@@ -3449,7 +3460,7 @@ var PoweredByComponent = (function () {
 
 /***/ },
 
-/***/ 824:
+/***/ 821:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3488,15 +3499,15 @@ var Header = (function () {
 
 /***/ },
 
-/***/ 825:
+/***/ 822:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_customValidation__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_customValidation__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LeadForm; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3593,7 +3604,7 @@ var LeadForm = (function () {
     LeadForm = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'leadform',
-            template: __webpack_require__(843),
+            template: __webpack_require__(840),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _b) || Object])
@@ -3605,15 +3616,15 @@ var LeadForm = (function () {
 
 /***/ },
 
-/***/ 826:
+/***/ 823:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_customValidation__ = __webpack_require__(799);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_customValidation__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LeadFormQuestion; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3705,7 +3716,7 @@ var LeadFormQuestion = (function () {
     LeadFormQuestion = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'leadform_question',
-            template: __webpack_require__(844),
+            template: __webpack_require__(841),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _b) || Object])
@@ -3717,7 +3728,7 @@ var LeadFormQuestion = (function () {
 
 /***/ },
 
-/***/ 827:
+/***/ 824:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3755,15 +3766,15 @@ var Logo = (function () {
 
 /***/ },
 
-/***/ 828:
+/***/ 825:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RadioButton; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3810,7 +3821,10 @@ var RadioButton = (function () {
         radioItem.selected = true;
         this.data.props.currentLabel = radioItem.label;
         this.data.props.currentValue = radioItem.value;
-        this.controlOutput.emit(true);
+        var self = this;
+        setTimeout(function () {
+            self.controlOutput.emit(true);
+        }, 1000);
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
             /* if key is undefined then push in array */
             if (this._analyticService.getVisitorKey() == '')
@@ -3857,7 +3871,7 @@ var RadioButton = (function () {
     RadioButton = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'radio-button',
-            template: __webpack_require__(845)
+            template: __webpack_require__(842)
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */]) === 'function' && _d) || Object])
     ], RadioButton);
@@ -3868,7 +3882,7 @@ var RadioButton = (function () {
 
 /***/ },
 
-/***/ 829:
+/***/ 826:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3907,7 +3921,7 @@ var ResultDisclaimer = (function () {
 
 /***/ },
 
-/***/ 830:
+/***/ 827:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3946,12 +3960,12 @@ var ResultHeader = (function () {
 
 /***/ },
 
-/***/ 831:
+/***/ 828:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ResultOutput; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -3976,7 +3990,7 @@ var ResultOutput = (function () {
     ResultOutput = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'result_output',
-            template: __webpack_require__(846),
+            template: __webpack_require__(843),
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _a) || Object])
@@ -3988,7 +4002,7 @@ var ResultOutput = (function () {
 
 /***/ },
 
-/***/ 832:
+/***/ 829:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4029,15 +4043,15 @@ var RedoComponent = (function () {
 
 /***/ },
 
-/***/ 833:
+/***/ 830:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(796);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__ = __webpack_require__(793);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SelectBox; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4166,7 +4180,7 @@ var SelectBox = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'selectbox',
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None,
-            template: __webpack_require__(847),
+            template: __webpack_require__(844),
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_recommendation_service__["a" /* RecommendationService */]) === 'function' && _d) || Object])
     ], SelectBox);
@@ -4177,15 +4191,15 @@ var SelectBox = (function () {
 
 /***/ },
 
-/***/ 834:
+/***/ 831:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(795);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(792);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(794);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_UrlShortner_service__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_UrlShortner_service__ = __webpack_require__(802);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ShareLinks; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4315,13 +4329,13 @@ var ShareLinks = (function () {
 
 /***/ },
 
-/***/ 835:
+/***/ 832:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Slider; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4427,11 +4441,11 @@ var Slider = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'slider',
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None,
-            template: __webpack_require__(848),
+            template: __webpack_require__(845),
             // template:'Hello',
             styles: [
-                __webpack_require__(840),
-                __webpack_require__(841),
+                __webpack_require__(837),
+                __webpack_require__(838),
             ],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _b) || Object])
@@ -4443,7 +4457,7 @@ var Slider = (function () {
 
 /***/ },
 
-/***/ 836:
+/***/ 833:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4482,14 +4496,14 @@ var SubHeader = (function () {
 
 /***/ },
 
-/***/ 837:
+/***/ 834:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SwitchBox; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4584,7 +4598,7 @@ var SwitchBox = (function () {
             selector: 'switchbox',
             viewProviders: [],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None,
-            template: __webpack_require__(849),
+            template: __webpack_require__(846),
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _c) || Object])
     ], SwitchBox);
@@ -4595,13 +4609,13 @@ var SwitchBox = (function () {
 
 /***/ },
 
-/***/ 838:
+/***/ 835:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TextArea; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -4666,13 +4680,13 @@ var TextArea = (function () {
 
 /***/ },
 
-/***/ 839:
+/***/ 836:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(795);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(794);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(792);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(791);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(36);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TextField; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -4692,6 +4706,7 @@ var TextField = (function () {
     function TextField(_analyticService, jsonBuilderHelper) {
         this._analyticService = _analyticService;
         this.jsonBuilderHelper = jsonBuilderHelper;
+        this.controlOutput = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* EventEmitter */]();
     }
     TextField.prototype.ngOnInit = function () {
         this.data.props.currentValue = this.data.props.defaultValue;
@@ -4705,7 +4720,7 @@ var TextField = (function () {
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['minval']) {
-                    this.ValidationMessage = 'Minimum ' + this.data.props.minVal + ' value required!';
+                    this.ValidationMessage = 'Minimum Required Value is ' + this.data.props.minVal;
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['maxval']) {
@@ -4731,6 +4746,14 @@ var TextField = (function () {
         enumerable: true,
         configurable: true
     });
+    TextField.prototype.keyPressed = function (e) {
+        var code = e.keyCode || e.which;
+        if (code == 13) {
+            this.controlOutput.emit(true);
+            e.preventDefault();
+            return false;
+        }
+    };
     TextField.prototype.onBlur = function () {
         var _this = this;
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
@@ -4762,11 +4785,15 @@ var TextField = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Input */])(), 
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormGroup */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormGroup */]) === 'function' && _a) || Object)
     ], TextField.prototype, "form", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Output */])(), 
+        __metadata('design:type', Object)
+    ], TextField.prototype, "controlOutput", void 0);
     TextField = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'textfield',
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None,
-            template: __webpack_require__(850)
+            template: __webpack_require__(847)
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__["a" /* AnalyticService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__["a" /* AnalyticService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__["a" /* JSONBuilder */]) === 'function' && _c) || Object])
     ], TextField);
@@ -4777,88 +4804,88 @@ var TextField = (function () {
 
 /***/ },
 
-/***/ 840:
+/***/ 837:
 /***/ function(module, exports) {
 
 module.exports = "/* Ion.RangeSlider\n// css version 2.0.3\n// © 2013-2014 Denis Ineshin | IonDen.com\n// ===================================================================================================================*/\n\n/* =====================================================================================================================\n// RangeSlider */\n\n.irs {\n    position: relative; display: block;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n     -khtml-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n}\n    .irs-line {\n        position: relative; display: block;\n        overflow: hidden;\n        outline: none !important;\n    }\n        .irs-line-left, .irs-line-mid, .irs-line-right {\n            position: absolute; display: block;\n            top: 0;\n        }\n        .irs-line-left {\n            left: 0; width: 11%;\n        }\n        .irs-line-mid {\n            left: 9%; width: 82%;\n        }\n        .irs-line-right {\n            right: 0; width: 11%;\n        }\n\n    .irs-bar {\n        position: absolute; display: block;\n        left: 0; width: 0;\n    }\n        .irs-bar-edge {\n            position: absolute; display: block;\n            top: 0; left: 0;\n        }\n\n    .irs-shadow {\n        position: absolute; display: none;\n        left: 0; width: 0;\n    }\n\n    .irs-slider {\n        position: absolute; display: block;\n        cursor: default;\n        z-index: 1;\n    }\n        .irs-slider.single {\n\n        }\n        .irs-slider.from {\n\n        }\n        .irs-slider.to {\n\n        }\n        .irs-slider.type_last {\n            z-index: 2;\n        }\n\n    .irs-min {\n        position: absolute; display: block;\n        left: 0;\n        cursor: default;\n    }\n    .irs-max {\n        position: absolute; display: block;\n        right: 0;\n        cursor: default;\n    }\n\n    .irs-from, .irs-to, .irs-single {\n        position: absolute; display: block;\n        top: 0; left: 0;\n        cursor: default;\n        white-space: nowrap;\n    }\n\n.irs-grid {\n    position: absolute; display: none;\n    bottom: 0; left: 0;\n    width: 100%; height: 20px;\n}\n.irs-with-grid .irs-grid {\n    display: block;\n}\n    .irs-grid-pol {\n        position: absolute;\n        top: 0; left: 0;\n        width: 1px; height: 8px;\n        background: #000;\n    }\n    .irs-grid-pol.small {\n        height: 4px;\n    }\n    .irs-grid-text {\n        position: absolute;\n        bottom: 0; left: 0;\n        white-space: nowrap;\n        text-align: center;\n        font-size: 9px; line-height: 9px;\n        padding: 0 3px;\n        color: #000;\n    }\n\n.irs-disable-mask {\n    position: absolute; display: block;\n    top: 0; left: -1%;\n    width: 102%; height: 100%;\n    cursor: default;\n    background: rgba(0,0,0,0.0);\n    z-index: 2;\n}\n.irs-disabled {\n    opacity: 0.4;\n}\n.lt-ie9 .irs-disabled {\n    filter: alpha(opacity=40);\n}\n\n\n.irs-hidden-input {\n    position: absolute !important;\n    display: block !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 0 !important;\n    height: 0 !important;\n    font-size: 0 !important;\n    line-height: 0 !important;\n    padding: 0 !important;\n    margin: 0 !important;\n    outline: none !important;\n    z-index: -9999 !important;\n    background: none !important;\n    border-style: solid !important;\n    border-color: transparent !important;\n}\n"
 
 /***/ },
 
-/***/ 841:
+/***/ 838:
 /***/ function(module, exports) {
 
 module.exports = "/* Ion.RangeSlider, Simple Skin\n// css version 2.0.3\n// © Denis Ineshin, 2014    https://github.com/IonDen\n// © guybowden, 2014        https://github.com/guybowden\n// ===================================================================================================================*/\n\n/* =====================================================================================================================\n// Skin details */\n\n.irs {\n    height: 55px;\n}\n.irs-with-grid {\n    height: 75px;\n}\n.irs-line {\n    height: 10px; top: 33px;\n    background: #EEE;\n    background: linear-gradient(to bottom, #DDD -50%, #FFF 150%); /* W3C */\n    border: 1px solid #CCC;\n    border-radius: 16px;\n    -moz-border-radius: 16px;\n}\n    .irs-line-left {\n        height: 8px;\n    }\n    .irs-line-mid {\n        height: 8px;\n    }\n    .irs-line-right {\n        height: 8px;\n    }\n\n.irs-bar {\n    height: 10px; top: 33px;\n    border-top: 1px solid #428bca;\n    border-bottom: 1px solid #428bca;\n    background: #428bca;\n    background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */\n}\n    .irs-bar-edge {\n        height: 10px; top: 33px;\n        width: 14px;\n        border: 1px solid #428bca;\n        border-right: 0;\n        background: #428bca;\n        background: linear-gradient(to top, rgba(66,139,202,1) 0%,rgba(127,195,232,1) 100%); /* W3C */\n        border-radius: 16px 0 0 16px;\n        -moz-border-radius: 16px 0 0 16px;\n    }\n\n.irs-shadow {\n    height: 2px; top: 38px;\n    background: #000;\n    opacity: 0.3;\n    border-radius: 5px;\n    -moz-border-radius: 5px;\n}\n.lt-ie9 .irs-shadow {\n    filter: alpha(opacity=30);\n}\n\n.irs-slider {\n    top: 25px;\n    width: 27px; height: 27px;\n    border: 1px solid #AAA;\n    background: #DDD;\n    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(220,220,220,1) 20%,rgba(255,255,255,1) 100%); /* W3C */\n    border-radius: 27px;\n    -moz-border-radius: 27px;\n    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);\n    cursor: pointer;\n}\n\n.irs-slider.state_hover, .irs-slider:hover {\n    background: #FFF;\n}\n\n.irs-min, .irs-max {\n    color: #333;\n    font-size: 12px; line-height: 1.333;\n    text-shadow: none;\n    top: 0;\n    padding: 1px 14px;\n    background: rgba(0,0,0,0.1);\n    border-radius: 8px;\n    -moz-border-radius: 8px;\n}\n\n.lt-ie9 .irs-min, .lt-ie9 .irs-max {\n    background: #ccc;\n}\n\n.irs-from {\n    color: #fff;\n    font-size: 14px; line-height: 1.333;\n    text-shadow: none;\n    padding: 1px 14px;\n    background: #428bca;\n    border-radius:8px;\n    -moz-border-radius: 8px;\n}\n\n.irs-to {\n    color: #fff;\n    font-size: 14px; line-height: 1.333;\n    text-shadow: none;\n    padding: 1px 14px;\n    background: #428bca;\n    border-radius:8px;\n    -moz-border-radius: 8px;\n}\n\n.irs-single {\n    color: #fff;\n    font-size: 12px; line-height: 1.333;\n    text-shadow: none;\n    padding: 1px 14px;\n    background: #428bca;\n    border-radius: 8px;\n    -moz-border-radius: 8px;\n}\n.lt-ie9 .irs-from, .lt-ie9 .irs-to, .lt-ie9 .irs-single {\n    background: #999;\n}\n\n.irs-grid {\n    height: 27px;\n}\n.irs-grid-pol {\n    opacity: 0.5;\n    background: #428bca;\n}\n.irs-grid-pol.small {\n    background: #999;\n}\n\n.irs-grid-text {\n    bottom: 5px;\n    color: #99a4ac;\n}\n\n.irs-disabled {\n}\n"
 
 /***/ },
 
-/***/ 842:
+/***/ 839:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"check-comp\" [formGroup]=\"form.controls[data._id]\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\" />\n  </div>\n  <div [class.checkbox-outer-base]=\"!data.isIconPresent && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\"\n       [class.checkbox-outer]=\"data.isIconPresent && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\"\n       [class.pic-selector]=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\"\n       [class.active]=\"checkbox_item.selected\"\n       *ngFor=\"let checkbox_item of data.options, let i = index\" tabindex=\"0\"\n  >\n    <label onclick=\"\" class=\"control control--checkbox\"  [ngStyle]=\"{'background-image': 'url('+((data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card')?checkbox_item.imageURL:'')+')'}\" >\n      <span *ngIf=\"!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card'\">{{checkbox_item.label}}</span>\n      <input type=\"checkbox\"\n             [id]=\"data._id\"\n             (change)=\"onChange($event,i)\"\n             id=\"{{data._id}}{{i}}\"\n             [checked]=\"checkbox_item.selected\"\n             [formControlName]=\"i\"\n             value=\"{{checkbox_item.value}}\"\n      >\n      <div class=\"control__indicator check-set\">\n        <i\n          class=\"material-icons\"\n          *ngIf=\"checkbox_item.icon != '' && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\"\n        >\n          {{checkbox_item.icon}}\n        </i>\n        <i\n          class=\"material-icons\"\n          *ngIf=\"checkbox_item.icon == '' && data.isIconPresent && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\"\n        >\n          landscape\n        </i>\n        <div class=\"label-image\" *ngIf=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\"></div>\n        <span class=\"img-overlay\" *ngIf=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n          <span class=\"text-overlay\">\n            <span>{{checkbox_item.label}}</span>\n          </span>\n        </span>\n      </div>\n    </label>\n  </div>\n\n  <div class=\"errorMessage\" *ngIf=\"(form.controls[data._id].touched || touched) && !isValid\">\n    {{data.config.validations.required.message}}\n  </div>\n</div>\n"
 
 /***/ },
 
-/***/ 843:
+/***/ 840:
 /***/ function(module, exports) {
 
 module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\"  *ngIf=\"data.visible\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\"lead-heading-temp1\" *ngIf=\"page && page.type ==='Result'\">\n      {{page.sections[2].title}}\n    </div>\n    <div>\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n          <input tabindex=\"0\"\n                 placeholder=\"{{field.placeholder}}\"\n                 type=\"{{field.type}}\"\n                 (blur) = \"onTouched(i)\"\n                 [formControlName]=\"i\"\n                 [(ngModel)]=\"field.value\"\n          >\n          <div *ngIf=\"formGroup().controls[i].touched\">\n                    <span\n                      *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                     {{field.placeholder}} is required.\n                    </span>\n            <span\n              *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                      Not a valid Email!\n                    </span>\n            <span\n              *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                      Not a valid Phone Number!\n                    </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"container-temp text-center\">\n    <button class=\"btn prime-action\"\n    >\n      <!--[themeColor]=\"['background']\"-->\n      {{data.props.title}}\n    </button>\n  </div>\n</form>\n"
 
 /***/ },
 
-/***/ 844:
+/***/ 841:
 /***/ function(module, exports) {
 
 module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\" text-center question-section\">\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n          <div class=\"section-head\"> <div class=\"pull-left\">{{field.name}} </div> </div>\n          <input tabindex=\"0\"\n                 placeholder=\"{{field.placeholder}}\"\n                 type=\"{{field.type}}\"\n                 (blur) = \"onTouched(i)\"\n                 [formControlName]=\"i\"\n                 [(ngModel)]=\"field.value\"\n          >\n          <div *ngIf=\"formGroup().controls[i].touched\">\n                    <span\n                      *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                      {{field.placeholder}} is required.\n                    </span>\n            <span\n              *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                      Not a valid Email!\n                    </span>\n            <span\n              *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                      Not a valid Phone Number!\n                    </span>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"w100 text-center\">\n    <button class=\"btn prime-action sliding-next og-lead-ques\"\n    >\n      <!--[themeColor]=\"['background']\"-->\n      {{data.props.title}}\n    </button>\n  </div>\n</form>\n"
 
 /***/ },
 
-/***/ 845:
+/***/ 842:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"check-comp\" [formGroup]=\"form.controls[data._id]\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\" />\n  </div>\n  <div class=\"radio-outer\" \n    [class.active]=\"radio_item.selected\" \n    *ngFor=\"let radio_item of data.options, let i = index\" \n    tabindex=\"0\"\n    [class.pic-selector]=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\"\n  >\n    <label onclick=\"\" class=\"control control--radio lable-style\" [ngStyle]=\"{'background-image': 'url('+((data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card')?radio_item.imageURL:'')+')'}\">\n      <span *ngIf=\"!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card'\">{{radio_item.label}}</span>\n      <input type=\"radio\"\n             id=\"{{data._id}}{{i}}\"\n             [formControlName]=\"i\"\n             [checked]=\"radio_item.selected\"\n             (change)=\"onClick(radio_item)\"\n      />\n      <div class=\"control__indicator icon-set\" [class.icon-set]=\"data.isIconPresent && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\">\n        <i\n          class=\"material-icons\"\n          *ngIf=\"(radio_item.icon != '' && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card'))\"\n        >\n          {{radio_item.icon}}\n        </i>\n        <i\n          class=\"material-icons\"\n          *ngIf=\"radio_item.icon == '' && data.isIconPresent  && (!data.optionImageVisible || jsonBuilderHelper.getJSONBuilt().template != 'one-page-card')\"\n        >\n          landscape\n        </i>\n        <div class=\"label-image\" *ngIf=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\"></div>\n        <span class=\"img-overlay\" *ngIf=\"data.optionImageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n          <span class=\"text-overlay\">\n            <span>{{radio_item.label}}</span>\n          </span>\n        </span>\n      </div>\n    </label>\n  </div>\n  <!-- <span *ngIf=\"form.controls[data._id].touched\">\n      <div class=\"errorMessage\" *ngIf=\"!isValid\">{{data.config.validations.required.message}}</div>\n  </span> -->\n  <div class=\"errorMessage\" *ngIf=\"(form.controls[data._id].touched) && !isValid\">\n    {{data.config.validations.required.message}}\n  </div>\n</div>"
 
 /***/ },
 
-/***/ 846:
+/***/ 843:
 /***/ function(module, exports) {
 
 module.exports = "<div *ngIf=\"data.visible == true\">\n  <div\n\n  >\n    <div\n      class=\"small-top-sec\"\n      *ngIf=\"!data.hasOwnProperty('result')\"\n      [htmlProcess]=\"data.props.title\"\n    >\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
 
-/***/ 847:
+/***/ 844:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"dropdown-set\">\n  <div class=\"control-group select\" [formGroup]=\"form\" tabindex=\"0\">\n    <select class=\"demo-default {{data._id}} \" [(ngModel)]=\"data.props.currentValue\" [id]=\"data._id\" (change)=\"onChange($event)\" [formControlName]=\"data._id\">\n      <option tabindex=\"0\"\n              *ngFor=\"let option of data.options; let i = index\"\n              id=\"{{data._id}}{{i}}\"\n              [value]=\"option.value\"\n              [selected]=\"option.selected\"\n      >\n        {{option.label}}\n      </option>\n    </select>\n    <div class=\"select__arrow\"></div>\n    <div class=\"errorMessage\" *ngIf=\"!form.controls[data._id].pristine && !isValid\">\n      {{data.config.validations.required.message}}\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
 
-/***/ 848:
+/***/ 845:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"slider-set\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\" />\n  </div>\n  <div class=\"range-slider\">\n    <div class=\"well1\" tabindex=\"0\">\n      <input id=\"{{data._id}}\" type=\"text\" />\n    </div>\n  </div>\n</div>\n"
 
 /***/ },
 
-/***/ 849:
+/***/ 846:
 /***/ function(module, exports) {
 
 module.exports = "<div [formGroup]=\"form.controls[data._id]\">\n\t<div class=\"switch-outer text-right\" *ngFor=\"let switch_item of data.options, let i = index\">\n\t\t<div class=\"switch-que\">{{switch_item.label}}</div>\n\t\t<div class=\"pull-right\">\n\t\t\t<div class=\"switch \">\n\t\t\t\t<input \n\t\t\t\t\ttype=\"checkbox\"\n\t\t\t\t\t[id]=\"data._id\"\n\t\t\t\t\t[formControlName]=\"i\"\n\t\t\t\t\tclass=\"cmn-toggle cmn-toggle-round-flat\"  \n\t\t\t\t\tid=\"{{data._id}}{{i}}\"\n\t\t\t\t\t[checked]=\"switch_item.selected\"\n\t\t\t\t\t(change)=\"onChange(switch_item,i)\"\n\t\t\t\t\tplaceholder=\"{{data.config.placeholder}}\" \n\t\t\t\t\tvalue=\"{{switch_item.value}}\"\n\t\t\t\t>\n\t\t\t\t<label attr.for=\"{{data._id}}{{i}}\"></label>\n\t\t\t\t\t<!--[themeColor]=\"['background']\"-->\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">\n\t\t{{data.config.validations.required.message}}\n\t</div>\n</div>"
 
 /***/ },
 
-/***/ 850:
+/***/ 847:
 /***/ function(module, exports) {
 
-module.exports = "<div [formGroup]=\"form\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\" />\n  </div>\n  <div class=\"input-field\">\n    <input tabindex=\"0\"\n           type=\"{{data.config.type}}\"\n           placeholder=\"{{data.config.placeholder}}\"\n           [id]=\"data._id\"\n           [(ngModel)]=\"data.props.currentValue\"\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\n           [formControlName]=\"data._id\"\n           (blur)=\"onBlur()\"\n    >\n  </div>\n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\n</div>\n"
+module.exports = "<div [formGroup]=\"form\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\" />\n  </div>\n  <div class=\"input-field\">\n    <input tabindex=\"0\"\n           type=\"{{data.config.type}}\"\n           placeholder=\"{{data.config.placeholder}}\"\n           [id]=\"data._id\"\n           [(ngModel)]=\"data.props.currentValue\"\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\n           [formControlName]=\"data._id\"\n           (blur)=\"onBlur()\"\n           (keypress)=\"keyPressed($event)\"\n    >\n  </div>\n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\n</div>\n"
 
 /***/ },
 
-/***/ 882:
+/***/ 879:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_emails__ = __webpack_require__(889);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_emails__ = __webpack_require__(886);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__userCompany__ = __webpack_require__(408);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return User; });
 
@@ -4896,7 +4923,7 @@ var User = (function () {
 
 /***/ },
 
-/***/ 889:
+/***/ 886:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
