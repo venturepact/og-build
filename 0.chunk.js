@@ -1046,7 +1046,7 @@ var FormulaPopComponent = (function () {
             if (genericQuestion[i] == 'Q') {
                 j = ++i;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(genericQuestion[i])))
+                while (!isNaN(parseFloat(genericQuestion[i])))
                     currentQuesNumber += genericQuestion[i++];
                 var val = this.getValueOfQuestionNumber(currentQuesNumber, quesArray[itterator], lowerOrHigherOrRandom);
                 genericQuestion = genericQuestion.substring(0, j - 1) +
@@ -1109,16 +1109,16 @@ var FormulaPopComponent = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 var randNumber = 0;
                 if (currentQuesObject) {
                     if (currentQuesObject.type == 'slider') {
-                        var arr = [], sum = parseInt(currentQuesObject.props.minVal);
-                        while (sum <= parseInt(currentQuesObject.props.maxVal)) {
+                        var arr = [], sum = parseFloat(currentQuesObject.props.minVal);
+                        while (sum <= parseFloat(currentQuesObject.props.maxVal)) {
                             arr.push(sum);
-                            sum += parseInt(currentQuesObject.props.steps);
+                            sum += parseFloat(currentQuesObject.props.steps);
                         }
                         if (currentQuesNumber in mapForRandomValues)
                             randNumber = mapForRandomValues[currentQuesNumber];
@@ -1128,8 +1128,8 @@ var FormulaPopComponent = (function () {
                         }
                     }
                     else if (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number') {
-                        var arr = [], sum = parseInt(currentQuesObject.props.minVal);
-                        while (sum <= parseInt(currentQuesObject.props.maxVal)) {
+                        var arr = [], sum = parseFloat(currentQuesObject.props.minVal);
+                        while (sum <= parseFloat(currentQuesObject.props.maxVal)) {
                             arr.push(sum);
                             sum += 1;
                         }
@@ -1166,7 +1166,7 @@ var FormulaPopComponent = (function () {
                     }
                     jQuery('#random-ques-nums')[0].innerHTML += '<th>Q' + currentQuesNumber + '</th>';
                     if (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number')) {
-                        jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + randNumber + ')</td>';
+                        jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + randNumber.toPrecision(2) + ')</td>';
                     }
                     else {
                         jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + currentQuesObject.options[randNumber].label + ')</td>';
@@ -3000,7 +3000,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 //for marking as mandatory
@@ -3029,7 +3029,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 if (currentQuesObject) {
@@ -3058,7 +3058,7 @@ var FormulaService = (function () {
             this.updateFormulaValidity(this.jsonBuilderHelper.getJSONBuilt().formula[formula].result, formula);
             if (!this.jsonBuilderHelper.getJSONBuilt().formula[formula].isValid) {
                 areAllFormulasValid = false;
-                allInvalidFormulas += 'Result ' + (parseInt(formula) + 1) + ',';
+                allInvalidFormulas += 'Result ' + (parseFloat(formula) + 1) + ',';
             }
         }
         if (areAllFormulasValid)
@@ -3077,12 +3077,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if (!currentQuesObject || ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area')) {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -3100,12 +3100,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area') {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -3129,7 +3129,7 @@ var FormulaService = (function () {
             finalAnswer = 0;
         }
         if (finalAnswer == undefined)
-            finalAnswer = '{R' + (parseInt(formulaIndex) + 1) + '}';
+            finalAnswer = '{R' + (parseFloat(formulaIndex) + 1) + '}';
         var quesNowObject = this.jsonBuilderHelper.getJSONBuilt().formula[formulaIndex];
         var lower, upper;
         if (quesNowObject.range.status) {
@@ -3212,7 +3212,7 @@ var FormulaService = (function () {
             if (genericQuestion[i] == 'Q') {
                 j = ++i;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(genericQuestion[i])))
+                while (!isNaN(parseFloat(genericQuestion[i])))
                     currentQuesNumber += genericQuestion[i++];
                 genericQuestion = genericQuestion.substring(0, j - 1) +
                     this.getValueOfQuestionNumber(currentQuesNumber) +
@@ -14019,16 +14019,16 @@ var EditorResultPage = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.QuestionnaireJson[currentQuesNumber - 1];
                 if (currentQuesObject) {
                     var randNumber = 0;
                     if (currentQuesObject.type == 'slider') {
-                        var arr = [], sum = parseInt(currentQuesObject.props.minVal);
-                        while (sum <= parseInt(currentQuesObject.props.maxVal)) {
+                        var arr = [], sum = parseFloat(currentQuesObject.props.minVal);
+                        while (sum <= parseFloat(currentQuesObject.props.maxVal)) {
                             arr.push(sum);
-                            sum += parseInt(currentQuesObject.props.steps);
+                            sum += parseFloat(currentQuesObject.props.steps);
                         }
                         if (currentQuesNumber in mapForRandomValues)
                             randNumber = mapForRandomValues[currentQuesNumber];
@@ -14038,8 +14038,8 @@ var EditorResultPage = (function () {
                         }
                     }
                     else if (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number') {
-                        var arr = [], sum = parseInt(currentQuesObject.props.minVal);
-                        while (sum <= parseInt(currentQuesObject.props.maxVal)) {
+                        var arr = [], sum = parseFloat(currentQuesObject.props.minVal);
+                        while (sum <= parseFloat(currentQuesObject.props.maxVal)) {
                             arr.push(sum);
                             sum += 1;
                         }
@@ -14073,7 +14073,7 @@ var EditorResultPage = (function () {
                     /* range Values Calculation --END*/
                     jQuery('#random-ques-nums')[0].innerHTML += '<th>Q' + currentQuesNumber + '</th>';
                     if (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number')) {
-                        jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + randNumber + ')</td>';
+                        jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + randNumber.toPrecision(2) + ')</td>';
                     }
                     else {
                         jQuery('#random-ques-titles')[0].innerHTML += '<td> (' + currentQuesObject.options[randNumber].label + ')</td>';
@@ -14192,7 +14192,7 @@ var EditorResultPage = (function () {
             if (genericQuestion[i] == 'Q') {
                 j = ++i;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(genericQuestion[i])))
+                while (!isNaN(parseFloat(genericQuestion[i])))
                     currentQuesNumber += genericQuestion[i++];
                 var val = this.getValueOfQuestionNumber(currentQuesNumber, quesArray[itterator], lowerOrHigherOrRandom);
                 genericQuestion = genericQuestion.substring(0, j - 1) +
