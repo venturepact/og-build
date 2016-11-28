@@ -1901,7 +1901,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 //for marking as mandatory
@@ -1930,7 +1930,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 if (currentQuesObject) {
@@ -1959,7 +1959,7 @@ var FormulaService = (function () {
             this.updateFormulaValidity(this.jsonBuilderHelper.getJSONBuilt().formula[formula].result, formula);
             if (!this.jsonBuilderHelper.getJSONBuilt().formula[formula].isValid) {
                 areAllFormulasValid = false;
-                allInvalidFormulas += 'Result ' + (parseInt(formula) + 1) + ',';
+                allInvalidFormulas += 'Result ' + (parseFloat(formula) + 1) + ',';
             }
         }
         if (areAllFormulasValid)
@@ -1978,12 +1978,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if (!currentQuesObject || ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area')) {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -2001,12 +2001,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area') {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -2030,7 +2030,7 @@ var FormulaService = (function () {
             finalAnswer = 0;
         }
         if (finalAnswer == undefined)
-            finalAnswer = '{R' + (parseInt(formulaIndex) + 1) + '}';
+            finalAnswer = '{R' + (parseFloat(formulaIndex) + 1) + '}';
         var quesNowObject = this.jsonBuilderHelper.getJSONBuilt().formula[formulaIndex];
         var lower, upper;
         if (quesNowObject.range.status) {
@@ -2113,7 +2113,7 @@ var FormulaService = (function () {
             if (genericQuestion[i] == 'Q') {
                 j = ++i;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(genericQuestion[i])))
+                while (!isNaN(parseFloat(genericQuestion[i])))
                     currentQuesNumber += genericQuestion[i++];
                 genericQuestion = genericQuestion.substring(0, j - 1) +
                     this.getValueOfQuestionNumber(currentQuesNumber) +
@@ -3821,7 +3821,10 @@ var RadioButton = (function () {
         radioItem.selected = true;
         this.data.props.currentLabel = radioItem.label;
         this.data.props.currentValue = radioItem.value;
-        this.controlOutput.emit(true);
+        var self = this;
+        setTimeout(function () {
+            self.controlOutput.emit(true);
+        }, 1000);
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
             /* if key is undefined then push in array */
             if (this._analyticService.getVisitorKey() == '')
