@@ -133,6 +133,8 @@ var DashboardComponent = (function () {
         jQuery('#calquiz-modal').on('hidden.bs.modal', function () {
             _this.reset = false;
         });
+        /*hide help icon on dashboard for mobile screen */
+        setTimeout(function () { return jQuery('.builder-help-icon').addClass('hide'); }, 2000);
     };
     /*=== Methods to collect data for intercom ===*/
     DashboardComponent.prototype.getAllLeadsCount = function (user_status) {
@@ -1899,7 +1901,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 //for marking as mandatory
@@ -1928,7 +1930,7 @@ var FormulaService = (function () {
             if (rawFormula[i] == 'Q') {
                 i++;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(rawFormula[i])))
+                while (!isNaN(parseFloat(rawFormula[i])))
                     currentQuesNumber += rawFormula[i++];
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 if (currentQuesObject) {
@@ -1957,7 +1959,7 @@ var FormulaService = (function () {
             this.updateFormulaValidity(this.jsonBuilderHelper.getJSONBuilt().formula[formula].result, formula);
             if (!this.jsonBuilderHelper.getJSONBuilt().formula[formula].isValid) {
                 areAllFormulasValid = false;
-                allInvalidFormulas += 'Result ' + (parseInt(formula) + 1) + ',';
+                allInvalidFormulas += 'Result ' + (parseFloat(formula) + 1) + ',';
             }
         }
         if (areAllFormulasValid)
@@ -1976,12 +1978,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if (!currentQuesObject || ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area')) {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -1999,12 +2001,12 @@ var FormulaService = (function () {
                 if (rawFormula[i] == 'Q') {
                     i++;
                     var currentQuesNumber = '';
-                    while (!isNaN(parseInt(rawFormula[i])))
+                    while (!isNaN(parseFloat(rawFormula[i])))
                         currentQuesNumber += rawFormula[i++];
                     var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                     if ((currentQuesObject.type == 'textfield' && (currentQuesObject.config.type == 'text' || currentQuesObject.config.type == 'email'))
                         || currentQuesObject.type == 'text-area') {
-                        errorResultList += 'Result ' + (parseInt(formula) + 1) + ',';
+                        errorResultList += 'Result ' + (parseFloat(formula) + 1) + ',';
                         break;
                     }
                 }
@@ -2028,7 +2030,7 @@ var FormulaService = (function () {
             finalAnswer = 0;
         }
         if (finalAnswer == undefined)
-            finalAnswer = '{R' + (parseInt(formulaIndex) + 1) + '}';
+            finalAnswer = '{R' + (parseFloat(formulaIndex) + 1) + '}';
         var quesNowObject = this.jsonBuilderHelper.getJSONBuilt().formula[formulaIndex];
         var lower, upper;
         if (quesNowObject.range.status) {
@@ -2111,7 +2113,7 @@ var FormulaService = (function () {
             if (genericQuestion[i] == 'Q') {
                 j = ++i;
                 currentQuesNumber = '';
-                while (!isNaN(parseInt(genericQuestion[i])))
+                while (!isNaN(parseFloat(genericQuestion[i])))
                     currentQuesNumber += genericQuestion[i++];
                 genericQuestion = genericQuestion.substring(0, j - 1) +
                     this.getValueOfQuestionNumber(currentQuesNumber) +
@@ -3295,7 +3297,7 @@ var Control = (function () {
     Control = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
             selector: 'control',
-            template: "\n          <textfield *ngIf=\"data.type=='textfield'\" [data]=\"data\" [form]=\"form\" ></textfield>\n          <text_area *ngIf=\"data.type=='text-area'\" [data]=\"data\"  ></text_area>\n          <selectbox *ngIf=\"data.type=='selectbox'\" [data]=\"data\" [form]=\"form\" ></selectbox>\n          <radio-button *ngIf=\"data.type=='radio_button'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></radio-button>\n          <og-header *ngIf=\"data.type=='header'\" [data]=\"data\" ></og-header>\n          <sub_header *ngIf=\"data.type=='sub_header'\" [data]=\"data\" ></sub_header>\n          <click-button *ngIf=\"data.type=='click_button'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></click-button>\n      \t\t<logo *ngIf=\"data.type=='logo'\" [data]=\"data\" ></logo>\n          <slider *ngIf=\"data.type=='slider'\" [data]=\"data\" ></slider>\n          <leadform_question *ngIf=\"data.type=='leadform_question'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></leadform_question>\n          <leadform *ngIf=\"data.type=='leadform'\" [data]=\"data\" [page]=\"page\"\n           (controlOutput)=\"onControlOutput($event)\" ></leadform>\n          <poweredby *ngIf=\"data.type=='poweredby'\"  [data]=\"data\" ></poweredby>\n          <footer-links *ngIf=\"data.type=='footer_links'\"  [data]=\"data\" ></footer-links>\n          <checkbox *ngIf=\"data.type=='checkbox'\" [data]=\"data\" [form]=\"form\" ></checkbox>\n          <switchbox *ngIf=\"data.type=='switchbox'\" [data]=\"data\" [form]=\"form\" ></switchbox>\n          <result_output *ngIf=\"data.type=='result_output'\" [data]=\"data\" ></result_output>\n          <result_header *ngIf=\"data.type=='result_header'\" [data]=\"data\" ></result_header>\n          <share_links *ngIf=\"data.type=='share_links'\"  [data]=\"data\" ></share_links>\n          <result_disclaimer *ngIf=\"data.type=='result_disclaimer'\" [data]=\"data\" ></result_disclaimer>\n          <result_redo *ngIf=\"data.type=='result_redo'\" [data]=\"data\" ></result_redo>\n      ",
+            template: "\n          <textfield *ngIf=\"data.type=='textfield'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></textfield>\n          <text_area *ngIf=\"data.type=='text-area'\" [data]=\"data\"  ></text_area>\n          <selectbox *ngIf=\"data.type=='selectbox'\" [data]=\"data\" [form]=\"form\" ></selectbox>\n          <radio-button *ngIf=\"data.type=='radio_button'\" [data]=\"data\" [form]=\"form\" (controlOutput)=\"onControlOutput($event)\"></radio-button>\n          <og-header *ngIf=\"data.type=='header'\" [data]=\"data\" ></og-header>\n          <sub_header *ngIf=\"data.type=='sub_header'\" [data]=\"data\" ></sub_header>\n          <click-button *ngIf=\"data.type=='click_button'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></click-button>\n      \t\t<logo *ngIf=\"data.type=='logo'\" [data]=\"data\" ></logo>\n          <slider *ngIf=\"data.type=='slider'\" [data]=\"data\" ></slider>\n          <leadform_question *ngIf=\"data.type=='leadform_question'\" [data]=\"data\"\n            (controlOutput)=\"onControlOutput($event)\" ></leadform_question>\n          <leadform *ngIf=\"data.type=='leadform'\" [data]=\"data\" [page]=\"page\"\n           (controlOutput)=\"onControlOutput($event)\" ></leadform>\n          <poweredby *ngIf=\"data.type=='poweredby'\"  [data]=\"data\" ></poweredby>\n          <footer-links *ngIf=\"data.type=='footer_links'\"  [data]=\"data\" ></footer-links>\n          <checkbox *ngIf=\"data.type=='checkbox'\" [data]=\"data\" [form]=\"form\"></checkbox>\n          <switchbox *ngIf=\"data.type=='switchbox'\" [data]=\"data\" [form]=\"form\" ></switchbox>\n          <result_output *ngIf=\"data.type=='result_output'\" [data]=\"data\" ></result_output>\n          <result_header *ngIf=\"data.type=='result_header'\" [data]=\"data\" ></result_header>\n          <share_links *ngIf=\"data.type=='share_links'\"  [data]=\"data\" ></share_links>\n          <result_disclaimer *ngIf=\"data.type=='result_disclaimer'\" [data]=\"data\" ></result_disclaimer>\n          <result_redo *ngIf=\"data.type=='result_redo'\" [data]=\"data\" ></result_redo>\n      ",
         }), 
         __metadata('design:paramtypes', [])
     ], Control);
@@ -3819,7 +3821,10 @@ var RadioButton = (function () {
         radioItem.selected = true;
         this.data.props.currentLabel = radioItem.label;
         this.data.props.currentValue = radioItem.value;
-        this.controlOutput.emit(true);
+        var self = this;
+        setTimeout(function () {
+            self.controlOutput.emit(true);
+        }, 1000);
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
             /* if key is undefined then push in array */
             if (this._analyticService.getVisitorKey() == '')
@@ -4701,6 +4706,7 @@ var TextField = (function () {
     function TextField(_analyticService, jsonBuilderHelper) {
         this._analyticService = _analyticService;
         this.jsonBuilderHelper = jsonBuilderHelper;
+        this.controlOutput = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* EventEmitter */]();
     }
     TextField.prototype.ngOnInit = function () {
         this.data.props.currentValue = this.data.props.defaultValue;
@@ -4714,7 +4720,7 @@ var TextField = (function () {
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['minval']) {
-                    this.ValidationMessage = 'Minimum ' + this.data.props.minVal + ' value required!';
+                    this.ValidationMessage = 'Minimum Required Value is ' + this.data.props.minVal;
                     return false;
                 }
                 else if (this.form.controls[this.data._id].errors['maxval']) {
@@ -4740,6 +4746,14 @@ var TextField = (function () {
         enumerable: true,
         configurable: true
     });
+    TextField.prototype.keyPressed = function (e) {
+        var code = e.keyCode || e.which;
+        if (code == 13) {
+            this.controlOutput.emit(true);
+            e.preventDefault();
+            return false;
+        }
+    };
     TextField.prototype.onBlur = function () {
         var _this = this;
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
@@ -4771,6 +4785,10 @@ var TextField = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["l" /* Input */])(), 
         __metadata('design:type', (typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormGroup */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["d" /* FormGroup */]) === 'function' && _a) || Object)
     ], TextField.prototype, "form", void 0);
+    __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Output */])(), 
+        __metadata('design:type', Object)
+    ], TextField.prototype, "controlOutput", void 0);
     TextField = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
             selector: 'textfield',
@@ -4859,7 +4877,7 @@ module.exports = "<div [formGroup]=\"form.controls[data._id]\">\r\n\t<div class=
 /***/ 846:
 /***/ function(module, exports) {
 
-module.exports = "<div [formGroup]=\"form\">\r\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\r\n    <img [src]=\"data.imageURL\" />\r\n  </div>\r\n  <div class=\"input-field\">\r\n    <input tabindex=\"0\"\r\n           type=\"{{data.config.type}}\"\r\n           placeholder=\"{{data.config.placeholder}}\"\r\n           [id]=\"data._id\"\r\n           [(ngModel)]=\"data.props.currentValue\"\r\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\r\n           [formControlName]=\"data._id\"\r\n           (blur)=\"onBlur()\"\r\n    >\r\n  </div>\r\n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\r\n</div>\r\n"
+module.exports = "<div [formGroup]=\"form\">\r\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\r\n    <img [src]=\"data.imageURL\" />\r\n  </div>\r\n  <div class=\"input-field\">\r\n    <input tabindex=\"0\"\r\n           type=\"{{data.config.type}}\"\r\n           placeholder=\"{{data.config.placeholder}}\"\r\n           [id]=\"data._id\"\r\n           [(ngModel)]=\"data.props.currentValue\"\r\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\r\n           [formControlName]=\"data._id\"\r\n           (blur)=\"onBlur()\"\r\n           (keypress)=\"keyPressed($event)\"\r\n    >\r\n  </div>\r\n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\r\n</div>\r\n"
 
 /***/ },
 
