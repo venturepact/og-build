@@ -717,7 +717,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
   #new-header .navbar-right-block {
       margin-top: 11px;
       padding-right: 0px;
-      padding-left: 25px;
+      padding-left: 12px;
       margin-bottom: -6px;
   }
 
@@ -725,7 +725,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
       border-left: 1px solid #dae2e6;
       color: #fb545b;
       font-size: 18px;
-      width: 12%;
+      width: 150px;
   }
 
   #new-header .navbar-right a.navbar-name {
@@ -754,14 +754,14 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
             position: relative;
             margin: 0px 0px;
             float: left;
-            width: 78%;
-            margin-right: 5px;
+            width: 100%;
         }
         .navbar-rightside button.btn.btn-default.dropdown-toggle {
               margin-top: 7px;
           }
           .navbar-rightside .name-dropdown-wrapper.btn-group{
               width:auto;
+              margin-right: 5px;
           }
           .navbar-rightside .name-dropdown-wrapper .dropdown-menu {
               top: 40px;
@@ -1143,6 +1143,7 @@ a:hover, a:focus{text-decoration: none; color: #8e989f;}
       nav .cookies-header{
           padding: 8px 10px;
       }
+
 
   }
 
@@ -2069,6 +2070,10 @@ a.text-red:hover , a.text-red:focus {
 /*.slide2-content{display: none;}*/
 /* End: for showing slide 2 in Signup Modal */
 
+#signUp .form-group .control-label.label-url{
+    font-size: 11px !important;
+}
+
 /* End: Modal SignUp (materialize) */
 
 /* Start: Modal Forms Materiliaze CSS */
@@ -2615,23 +2620,37 @@ a.text-red:hover , a.text-red:focus {
         }
 
         .my-profile .form-group.time-zone label.control-label {
-          top: -20px;
-          font-family: montserratregular;
-          font-size: 11px;
-          text-transform: uppercase;
-          color: #8e989f !important;
-          position: absolute;
+            top: -20px;
+            font-family: montserratregular;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #8e989f !important;
+            position: absolute;
         }
 
         .my-profile .time-zone select.form-control {
-          -webkit-appearance: menulist;
-          -moz-appearance: menulist;
-          margin-left: -3px;
+            /*-webkit-appearance: menulist;
+            -moz-appearance: menulist;
+            margin-left: -3px;*/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .my-profile .time-zone .select-caret {
+            background-image: url(../../assets/images/icon-arrow-down.png);
+            background-position: 100% 0%;
+            background-size: 7px 13px;
+            position: absolute;
+            z-index: 999999999 !important;
+            right: 0px;
+            padding: 10px;
+            background-repeat: no-repeat;
+            top: 10px;
         }
 
         .my-profile .time-zone .alert.alert-danger {
             top: -5px;
-        }
+        }        
 
         .my-profile .btn-white{
           background: #fff;
@@ -5938,13 +5957,13 @@ a.text-red:hover , a.text-red:focus {
 .sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
   top: -20px;
   font-family: montserratregular;
-  font-size: 11px;
+  font-size: 11px !important;
   text-transform: uppercase;
   color: #8e989f !important;
 }
 .sahil-material .form-group.label-floating.is-focused label.control-label {
   top: -20px;
-  font-size: 11px;
+  font-size: 11px !important;
   font-family: montserratregular;
   color: #8e989f !important;
 }
@@ -9106,6 +9125,7 @@ a.live-url.preview_copy {
                 margin-top: 30px;
                 margin-bottom: 60px;
                 margin-left: 0px;
+                padding-bottom: 0px;
             }
 
             #membership-details .tab-pane.my-profile {
@@ -9999,7 +10019,11 @@ a.live-url.preview_copy {
 
     .my-profile .form-group.favicon-upload label.control-label {
         font-size: 10px !important;
-    }   
+    }
+
+    #signUp .form-group .control-label.label-url{
+         font-size: 10px !important;
+    }
 
 }
 
@@ -10465,6 +10489,11 @@ a.live-url.preview_copy {
           float: right;
           margin: 0px 5px;
       }
+
+      .mobile-menu button:focus {
+            background: transparent !important;
+            color: #fff !important;
+        }
 
       .mobile-menu .btn-default:hover {
           color: #fff;
@@ -11500,3 +11529,16 @@ a.live-url.preview_copy {
 .icon-help.popover-wrapper:hover .popover-block {
     display: block;
 }
+
+.ripple-container {
+    display: none;
+}
+
+.toggle-dots-white{
+    display: none;
+}
+
+.toggle-dots-grey{
+    display: none;
+}
+

@@ -21,7 +21,7 @@
 	    {
 	    	// This is the URL you want to shorten
 	    	unset($curl);
-			$longUrl = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+			$longUrl = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/seo'.$_SERVER['REQUEST_URI'];
 			$apiKey = 'AIzaSyAyEiPl1ZWGqIjhCb4hPz34HgwLS_G9zZk';
 			$postData = array('longUrl' => $longUrl, 'key' => $apiKey);
 			$jsonData = json_encode($postData);
@@ -33,8 +33,8 @@
 			curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-type:application/json'));
 			curl_setopt($curl, CURLOPT_POST, 1);
 			curl_setopt($curl, CURLOPT_POSTFIELDS, $jsonData);
-			$response = curl_exec($curl);
-			$json = json_decode($response,true);
+			$responseData = curl_exec($curl);
+			$json = json_decode($responseData,true);
 			$shortUrl = isset($json['id']) ? $json['id'] : $longUrl;
 			//close connection
 			curl_close($curl);
