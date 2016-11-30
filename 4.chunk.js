@@ -7,7 +7,7 @@ webpackJsonp([4,12],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__ = __webpack_require__(894);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(20);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalculatorComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -3969,7 +3969,7 @@ var SelectBox = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_analytic_service__ = __webpack_require__(787);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_services_JSONBuilder_service__ = __webpack_require__(786);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__builder_services_UrlShortner_service__ = __webpack_require__(797);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
@@ -4661,7 +4661,7 @@ module.exports = "<div [formGroup]=\"form\">\n  <div class=\"question-pic\" *ngI
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__builder_services_JSONBuilder_service__ = __webpack_require__(786);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__builder_models_model__ = __webpack_require__(789);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_index__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_analytic_service__ = __webpack_require__(787);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Template; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -5640,7 +5640,7 @@ var TemplateModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_templateHttp_service__ = __webpack_require__(795);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_templateRenderer_service__ = __webpack_require__(796);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__services_recommendation_service__ = __webpack_require__(788);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_index__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_index__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return TemplateDev; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
