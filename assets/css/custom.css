@@ -2189,6 +2189,7 @@ a.text-red:hover , a.text-red:focus {
 
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.99) !important;
+  z-index: 1020;
 }
 
 /* End: Modal Forms Materiliaze CSS */
