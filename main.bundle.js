@@ -60927,7 +60927,7 @@ var AuthGuard = (function () {
         if (this._cookieService.readCookie('storage') != null && storage.user.role === "ADMIN") {
             return true;
         }
-        if (this._cookieService.readCookie('storage') != null && storage.companyList.includes(sub_domain)) {
+        if (this._cookieService.readCookie('storage') != null && storage.companyList.indexOf(sub_domain) >= 0) {
             return true;
         }
         this.router.navigate(['/login']);
