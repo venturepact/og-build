@@ -5183,7 +5183,7 @@ var SubscriptionComponent = (function () {
         jQuery('#cancelMembership span').text('Please wait...').attr('disabled', true);
         var cancelMembership = this._membershipService.cancelMembership()
             .subscribe(function (success) {
-            jQuery('#cancelMembership span').text('Request Sent');
+            jQuery('#cancelMembership span').text('Your request to cancel membership has been sent');
             jQuery('#cancelMembership').addClass('btn-disable');
             window.toastNotification('Your Request to Cancel the membership have been received. You will be updated via email');
         }, function (error) {
