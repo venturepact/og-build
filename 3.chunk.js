@@ -2278,6 +2278,7 @@ var CalcEmail = (function () {
         this.subject = 'Your Video Production Estimate';
         this.message = "\n      <p>Hello!</p>\n      <p> Thank you for using our video production cost calculator. Just so you know, your estimate came to approximately $40,000 (and $30,000 if you go with a slightly lower production quality). </p>\n      <p> If you have any further questions, feel free email us :) </p>\n      <p> Thank You</p>";
         this.sendEmail = false;
+        this.notifyMe = false;
         var self = this;
         for (var prop in data) {
             self[prop] = data[prop] || self[prop];
