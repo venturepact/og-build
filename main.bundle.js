@@ -1785,7 +1785,7 @@ $exports.store = store;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Identifiers; });
 /* unused harmony export assetUrl */
@@ -2303,7 +2303,7 @@ var anObject       = __webpack_require__(4)
   , toPrimitive    = __webpack_require__(72)
   , dP             = Object.defineProperty;
 
-exports.f = __webpack_require__(19) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -2317,6 +2317,25 @@ exports.f = __webpack_require__(19) ? Object.defineProperty : function definePro
 
 /***/ },
 /* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+var environment = {
+    production: true,
+    API: 'http://api.rely.co/api/v1',
+    APP_DOMAIN: 'http://app.rely.co',
+    APP_EXTENSION: 'rely.co',
+    PARENT_APP_DOMAIN: 'app.rely.co',
+    INTERCOM_ID: "om2goh5g",
+    PROTOCOL: 'http://',
+    FB_API: '574602582728913',
+    FILE_PICKER_API: 'A3ygIw4hISSCdApqW4SAwz'
+};
+
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2825,32 +2844,13 @@ var ProviderMeta = (function () {
 //# sourceMappingURL=compile_metadata.js.map
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
 module.exports = !__webpack_require__(7)(function(){
   return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 });
-
-/***/ },
-/* 20 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-var environment = {
-    production: true,
-    API: 'http://api.rely.co/api/v1',
-    APP_DOMAIN: 'http://app.rely.co',
-    APP_EXTENSION: 'rely.co',
-    PARENT_APP_DOMAIN: 'app.rely.co',
-    INTERCOM_ID: "om2goh5g",
-    PROTOCOL: 'http://',
-    FB_API: '574602582728913',
-    FILE_PICKER_API: 'A3ygIw4hISSCdApqW4SAwz'
-};
-
 
 /***/ },
 /* 21 */
@@ -5494,7 +5494,7 @@ module.exports = function(it){
 
 var dP         = __webpack_require__(17)
   , createDesc = __webpack_require__(71);
-module.exports = __webpack_require__(19) ? function(object, key, value){
+module.exports = __webpack_require__(20) ? function(object, key, value){
   return dP.f(object, key, createDesc(1, value));
 } : function(object, key, value){
   object[key] = value;
@@ -5635,7 +5635,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw__ = __webpack_require__(755);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BaseService; });
 
 
@@ -6270,7 +6270,7 @@ var pIE            = __webpack_require__(153)
   , IE8_DOM_DEFINE = __webpack_require__(360)
   , gOPD           = Object.getOwnPropertyDescriptor;
 
-exports.f = __webpack_require__(19) ? gOPD : function getOwnPropertyDescriptor(O, P){
+exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
   O = toIObject(O);
   P = toPrimitive(P, true);
   if(IE8_DOM_DEFINE)try {
@@ -14354,7 +14354,7 @@ var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* Opaqu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_template_parser_template_ast__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_parser_template_parser__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_offline_compiler__ = __webpack_require__(444);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_runtime_compiler__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_url_resolver__ = __webpack_require__(93);
@@ -15494,7 +15494,7 @@ var SelectorContext = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expression_parser_parser__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_i18n_html_parser__ = __webpack_require__(262);
@@ -21078,7 +21078,7 @@ function isAsciiHexDigit(code) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
@@ -22238,7 +22238,7 @@ var I18nError = (function (_super) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assertions__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_resolver__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(12);
@@ -23095,7 +23095,7 @@ function getHtmlTagDefinition(tagName) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(12);
@@ -23949,7 +23949,7 @@ var ResourceLoader = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shadow_css__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_resolver__ = __webpack_require__(93);
@@ -29697,7 +29697,7 @@ module.exports = {
 'use strict';
 var global      = __webpack_require__(14)
   , dP          = __webpack_require__(17)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , SPECIES     = __webpack_require__(11)('species');
 
 module.exports = function(KEY){
@@ -30240,7 +30240,7 @@ exports.subscribeToResult = subscribeToResult;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__base_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__subdomain_service__ = __webpack_require__(117);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return UserService; });
@@ -31841,7 +31841,7 @@ function _getStylesArray(obj) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parse_util__ = __webpack_require__(30);
@@ -34270,7 +34270,7 @@ var _TsEmitterVisitor = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(6);
 /* harmony export (immutable) */ exports["a"] = convertValueToOutputAst;
@@ -34322,7 +34322,7 @@ var _ValueOutputAstTransformer = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(12);
@@ -34828,7 +34828,7 @@ function _addQueryToTokenMap(map, query) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_compiler__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_parser__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directive_normalizer__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directive_wrapper_compiler__ = __webpack_require__(121);
@@ -36219,7 +36219,7 @@ function normalizeNgContentSelect(selectAttr) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directive_wrapper_compiler__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
@@ -36777,7 +36777,7 @@ function addQueryToTokenMap(map, query) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
@@ -43876,7 +43876,7 @@ var RouterPreloader = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -44087,7 +44087,7 @@ function isLoggedin() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validators_email_validator__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__user__ = __webpack_require__(531);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -44301,7 +44301,7 @@ var LoginComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LogoutComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44352,6 +44352,9 @@ var LogoutComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_index__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NotFoundComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44363,18 +44366,60 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var NotFoundComponent = (function () {
-    function NotFoundComponent() {
+    function NotFoundComponent(_cookieService, _router) {
+        this._cookieService = _cookieService;
+        this._router = _router;
+        this.isLoggedin = false;
     }
+    ;
+    NotFoundComponent.prototype.ngOnInit = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var storage = this._cookieService.readCookie('storage');
+        if (storage) {
+            this.isLoggedin = true;
+        }
+    };
+    NotFoundComponent.prototype.login = function () {
+        this._router.navigate(['/login']);
+    };
+    NotFoundComponent.prototype.pricing = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/pricing.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.features = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/features.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.whyCalculators = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/why_calculators.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.examples = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/examples.html';
+        jQuery(location).attr('href', protocol + url);
+    };
     NotFoundComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-not-found',
             template: __webpack_require__(738),
             styles: [__webpack_require__(723)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_index__["c" /* CookieService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], NotFoundComponent);
     return NotFoundComponent;
+    var _a, _b;
 }());
 
 
@@ -44984,7 +45029,7 @@ var LazyAssistantComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SiteComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -45044,7 +45089,7 @@ var SiteComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return VerifyEmailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -45286,7 +45331,7 @@ var dP          = __webpack_require__(17).f
   , $iterDefine = __webpack_require__(225)
   , step        = __webpack_require__(366)
   , setSpecies  = __webpack_require__(231)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , fastKey     = __webpack_require__(61).fastKey
   , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
@@ -45454,7 +45499,7 @@ module.exports = __webpack_require__(14).document && document.documentElement;
 /* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(19) && !__webpack_require__(7)(function(){
+module.exports = !__webpack_require__(20) && !__webpack_require__(7)(function(){
   return Object.defineProperty(__webpack_require__(358)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 });
 
@@ -45608,7 +45653,7 @@ var dP       = __webpack_require__(17)
   , anObject = __webpack_require__(4)
   , getKeys  = __webpack_require__(84);
 
-module.exports = __webpack_require__(19) ? Object.defineProperties : function defineProperties(O, Properties){
+module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
   anObject(O);
   var keys   = getKeys(Properties)
     , length = keys.length
@@ -45819,7 +45864,7 @@ module.exports = __webpack_require__(218)('Map', function(get){
 /***/ function(module, exports, __webpack_require__) {
 
 // 21.2.5.3 get RegExp.prototype.flags()
-if(__webpack_require__(19) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
+if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
   configurable: true,
   get: __webpack_require__(221)
 });
@@ -45973,7 +46018,7 @@ module.exports = __webpack_require__(218)('Set', function(get){
 // ECMAScript 6 symbols shim
 var global         = __webpack_require__(14)
   , has            = __webpack_require__(22)
-  , DESCRIPTORS    = __webpack_require__(19)
+  , DESCRIPTORS    = __webpack_require__(20)
   , $export        = __webpack_require__(1)
   , redefine       = __webpack_require__(23)
   , META           = __webpack_require__(61).KEY
@@ -47021,7 +47066,7 @@ webpackAsyncContext.id = 400;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(521);
 
 
@@ -47300,7 +47345,7 @@ var BillingAddress = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__base_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MembershipService; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -47818,7 +47863,7 @@ var AdminGuard = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CookieService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -51206,7 +51251,7 @@ function getXmlTagDefinition(tagName) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_compiler__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_parser__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(6);
@@ -53368,7 +53413,7 @@ var ViewBinderVisitor = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
@@ -60855,7 +60900,7 @@ var SubdomainGuard = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validators_email_validator__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return InvitedLoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -61041,7 +61086,7 @@ var Traffic = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_currentPlan__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PaymentModalComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -61935,7 +61980,7 @@ var Email = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__User__ = __webpack_require__(555);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_validators_email_validator__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SignupDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -62159,7 +62204,7 @@ var SignupDetailComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_models_company__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ToolbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -63764,7 +63809,7 @@ var isExtensible = Object.isExtensible || function(){
 };
 
 // 19.2.4.2 name
-NAME in FProto || __webpack_require__(19) && dP(FProto, NAME, {
+NAME in FProto || __webpack_require__(20) && dP(FProto, NAME, {
   configurable: true,
   get: function(){
     try {
@@ -64118,7 +64163,7 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
       && (BROKEN_COF ? fails(function(){ proto.valueOf.call(that); }) : cof(that) != NUMBER)
         ? inheritIfRequired(new Base(toNumber(it)), that, $Number) : toNumber(it);
   };
-  for(var keys = __webpack_require__(19) ? gOPN(Base) : (
+  for(var keys = __webpack_require__(20) ? gOPN(Base) : (
     // ES3:
     'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
     // ES6 (in case, if modules with ES6 Number statics required before):
@@ -64396,7 +64441,7 @@ $export($export.S, 'Object', {create: __webpack_require__(83)});
 
 var $export = __webpack_require__(1);
 // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(369)});
+$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(369)});
 
 /***/ },
 /* 654 */
@@ -64404,7 +64449,7 @@ $export($export.S + $export.F * !__webpack_require__(19), 'Object', {definePrope
 
 var $export = __webpack_require__(1);
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperty: __webpack_require__(17).f});
+$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
 /* 655 */
@@ -64909,7 +64954,7 @@ var global            = __webpack_require__(14)
   // "new" creates a new object, old webkit buggy here
   , CORRECT_NEW       = new $RegExp(re1) !== re1;
 
-if(__webpack_require__(19) && (!CORRECT_NEW || __webpack_require__(7)(function(){
+if(__webpack_require__(20) && (!CORRECT_NEW || __webpack_require__(7)(function(){
   re2[__webpack_require__(11)('match')] = false;
   // RegExp constructor can alter flags and IsRegExp works correct with @@match
   return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
@@ -64948,7 +64993,7 @@ __webpack_require__(231)('RegExp');
 __webpack_require__(380);
 var anObject    = __webpack_require__(4)
   , $flags      = __webpack_require__(221)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , TO_STRING   = 'toString'
   , $toString   = /./[TO_STRING];
 
@@ -65826,7 +65871,7 @@ module.exports = "<div  id=\"login\" class=\"login\">\r\n    <div class=\"login-
 /* 738 */
 /***/ function(module, exports) {
 
-module.exports = "<div>\r\n    <nav class=\"navbar custom-navbar navbar-default navbar-fixed-top\">\r\n        <div class=\"container-fluid\">\r\n            <!-- Brand and toggle get grouped for better mobile display -->\r\n            <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/outgrow-logo.png\" /></a>\r\n            </div>\r\n\r\n            <!-- Collect the nav links, forms, and other content for toggling -->\r\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n                <ul class=\"nav navbar-nav navbar-right\">\r\n                    <li><a href=\"javascript:void(0);\">Why Calculators ?</a></li>\r\n                    <li><a href=\"javascript:void(0);\">Features</a></li>\r\n                    <li><a href=\"javascript:void(0);\">Pricing</a></li>\r\n                    <li><a href=\"javascript:void(0);\">Use Cases</a></li>\r\n                    <li><a href=\"javascript:void(0);\">Start Trial</a></li>\r\n                    <li><a href=\"javascript:void(0);\" class=\"link-login\">Login</a></li>\r\n                </ul>\r\n            </div><!-- /.navbar-collapse -->\r\n        </div><!-- /.container-fluid -->\r\n    </nav>\r\n    <!-- Homepage header end-->\r\n\t<!-- Homepage section 1 start-->\r\n    <section class=\"section section-1\">\r\n        <div class=\"container-fluid\">\r\n            <div class=\"col-xs-12 col-sm-6 section-1-left\">\r\n                <div class=\"section1-left-cell\">\r\n                    <h3 class=\"mk-animate-element fade-in heading-404\">\r\n                        404\r\n                    </h3>\r\n                    <h4 class=\"mk-animate-element fade-in heading2-404\">\r\n                        Looks like your calc is not published yet, please<br> login and publish your calc.\r\n                    </h4>\r\n                    <div class=\"form-group mk-animate-element fade-in hide\">\r\n                        <input type=\"text\" placeholder=\"Email Address\" />\r\n                    </div>\r\n                    <div class=\"col-xs-12 col-sm-8 np\">\r\n                        <button class=\"btn-buildcal mk-animate-element fade-in login-404\">Login</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\t\t\t<div class=\"col-xs-12 col-sm-6 np rs-hide\">\r\n\t\t\t\t<div class=\"sec1-box-left img-404\">\r\n\t\t\t\t\t<div class=\"sec1-box1 mk-animate-element fade-in\">\r\n\t\t\t\t\t\t<img src=\"assets/images/404.png\" />\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n            <div class=\"col-xs-12 col-sm-12 text-center footer-404\">\r\n                <i class=\"material-icons\">copyright</i>\r\n                <span>Copyrights</span>\r\n                <img src=\"assets/images/footer-logo-dark.png\" />\r\n            </div>\r\n        </div>\r\n    </section>\r\n</div>"
+module.exports = "<div>\r\n    <nav class=\"navbar custom-navbar navbar-default navbar-fixed-top\">\r\n        <div class=\"container-fluid\">\r\n            <!-- Brand and toggle get grouped for better mobile display -->\r\n            <div class=\"navbar-header\">\r\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\r\n                <span class=\"sr-only\">Toggle navigation</span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n                <span class=\"icon-bar\"></span>\r\n            </button>\r\n            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/outgrow-logo.png\" /></a>\r\n            </div>\r\n\r\n            <!-- Collect the nav links, forms, and other content for toggling -->\r\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n                <ul class=\"nav navbar-nav navbar-right\">\r\n                    <li><a href=\"javascript:void(0);\" (click)=\"whyCalculators()\">Why Calculators ?</a></li>\r\n                    <li><a href=\"javascript:void(0);\" (click)=\"features()\">Featuress</a></li>\r\n                    <li><a href=\"javascript:void(0);\" (click)=\"pricing()\">Pricing</a></li>\r\n                    <li><a href=\"javascript:void(0);\" (click)=\"examples()\">Examples</a></li>\r\n                    <li>\r\n                        <a *ngIf=\"!isLoggedin\" href=\"javascript:void(0);\" class=\"link-login\" (click)=\"login()\">Login</a>\r\n                    </li>\r\n                </ul>\r\n            </div>\r\n            <!-- /.navbar-collapse -->\r\n        </div><!-- /.container-fluid -->\r\n    </nav>\r\n    <!-- Homepage header end-->\r\n\t<!-- Homepage section 1 start-->\r\n    <section class=\"section section-1\">\r\n        <div class=\"container-fluid\">\r\n            <div class=\"col-xs-12 col-sm-6 section-1-left\">\r\n                <div class=\"section1-left-cell\">\r\n                    <h3 class=\"mk-animate-element fade-in heading-404\">\r\n                        404\r\n                    </h3>\r\n                    <h4 class=\"mk-animate-element fade-in heading2-404\">\r\n                        Looks like your calc is not published yet, please<br> login and publish your calc.\r\n                    </h4>\r\n                    <div class=\"form-group mk-animate-element fade-in hide\">\r\n                        <input type=\"text\" placeholder=\"Email Address\" />\r\n                    </div>\r\n                    <div class=\"col-xs-12 col-sm-8 np\">\r\n                        <button class=\"btn-buildcal mk-animate-element fade-in login-404\" (click)=\"login()\">Login</button>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n\t\t\t<div class=\"col-xs-12 col-sm-6 np rs-hide\">\r\n\t\t\t\t<div class=\"sec1-box-left img-404\">\r\n\t\t\t\t\t<div class=\"sec1-box1 mk-animate-element fade-in\">\r\n\t\t\t\t\t\t<img src=\"assets/images/404.png\" />\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n            <div class=\"col-xs-12 col-sm-12 text-center footer-404\">\r\n                <i class=\"material-icons\">copyright</i>\r\n                <span>Copyrights</span>\r\n                <img src=\"assets/images/footer-logo-dark.png\" />\r\n            </div>\r\n        </div>\r\n    </section>\r\n</div>"
 
 /***/ },
 /* 739 */
@@ -65892,7 +65937,7 @@ module.exports = "<div id=\"signUp\" class=\"signUp\">\r\n\t<div class=\"signUp-
 /* 749 */
 /***/ function(module, exports) {
 
-module.exports = "<header id=\"new-header\" class=\"\" *ngIf=\"page != 'builder'\">\r\n    <nav class=\"navbar navbar-default navbar-fixed-top main-logo company-nav\" [class.company-nav]=\"!loggedIn.isLoggedIn\" id=\"nav-cookies-div\">\r\n        <div *ngIf=\"!isEmailVerified\" class=\"cookies-header\">\r\n\t\t\t<div class=\"col-md-12 np\">\r\n\t\t\t\t<i class=\"material-icons\">settings</i>\r\n                    <span>\r\n                        Your email ID is not verified yet. Please click on the verification link sent to your email or\r\n                        &nbsp;<a href=\"javascript:void();\" (click)=\"resendEmail();callGA();\">click here</a> to receive a new verification link.\r\n                    </span>\r\n\t\t\t\t<button type=\"button\" class=\"close btn-close pull-right\" (click)=\"close()\">\r\n                    <i class=\"material-icons\">clear</i>\r\n                </button>\r\n\t\t\t</div>\r\n        </div>\r\n        <div class=\"container-fluid nav-padding\">\r\n            <div class=\"navbar-header\">\r\n                <a *ngIf=\"!isSubDomainUrl || loggedIn.isLoggedIn\" [routerLink]=\"['/dashboard']\" class=\"navbar-brand navbar-logopadding\">\r\n                    <img src=\"assets/images/outgrow-logo.png\" />\r\n                </a>\r\n                <a href=\"#\" *ngIf=\"isSubDomainUrl && !loggedIn.isLoggedIn\" class=\"navbar-brand navbar-logopadding\">\r\n                    <div class=\"company_name_avatar-circle\">\r\n                        {{companyInitial}}\r\n                    </div>\r\n                    <div class=\"company_name_span ellipsis\">{{companyName}}</div>\r\n                </a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\" id=\"navbar\">\r\n                <div class=\"navbar-left col-md-7 np\">\r\n                    <ul *ngIf=\"loggedIn.isLoggedIn\">\r\n                        <li>\r\n                            <a href=\"\" class=\"hvr-underline-from-left\"\r\n                                [routerLinkActive]=\"['active']\"\r\n                                [routerLink]=\"['/dashboard']\"\r\n                                >\r\n                                <i class=\"material-icons\">home</i> &nbsp;Dashboard\r\n                            </a>\r\n                        </li>\r\n                        <li>\r\n                            <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\r\n                                <i class=\"material-icons\">equalizer</i> &nbsp;Analytics\r\n                            </a>\r\n                        </li>\r\n\r\n                        <!-- <li>\r\n                            <a href=\"\" class=\"hvr-underline-from-left\">\r\n                                <i class=\"material-icons\">lightbulb_outline</i> &nbsp;How do i\r\n                            </a>\r\n                        </li> -->\r\n                    </ul>\r\n                </div>\r\n                <div class=\"navbar-right\">\r\n                    <div class=\"col-xs-12 navbar-right-block\">\r\n                        <!-- <a href=\"\" class=\"navbar-name\">\r\n                                <i class=\"material-icons\">account_box</i>\r\n                                <span class=\"ellipsis\"> &nbsp;Pratham</span>\r\n                            </a> -->\r\n                        <!-- Start: header name-dropdown -->\r\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"!loggedIn.isLoggedIn && !isSubDomainUrl\">\r\n                            <a [routerLink]=\"['/login']\" class=\"\" >\r\n                              <button type=\"button\" class=\"btn btn-default dropdown-toggle\">\r\n                                  <i class=\"material-icons\">account_box</i>\r\n                                  <span class=\"ellipsis name-title\"> &nbsp;Login</span>\r\n                              </button>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"loggedIn.isLoggedIn\">\r\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                                <i class=\"material-icons\">account_box</i>\r\n                                <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\r\n                            </button>\r\n                            <ul class=\"dropdown-menu\">\r\n                                <div class=\"company-list\">\r\n                                    <div class=\"company-list-inner\"  [class.slimscroll] = \"mycompanyLength> 3\">\r\n                                        <li class=\"active\" *ngFor=\"let company of myCompanies\">\r\n                                            <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\r\n                                                <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\r\n                                                <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\r\n                                            </a>\r\n                                        </li>\r\n                                    </div>\r\n                                    <hr class=\"name-dropdown-border\">\r\n                                </div>\r\n                                <div class=\"name-list\">\r\n                                    <!-- <li>\r\n                                        <a href=\"#\" class=\"hvr-sweep-to-right\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\r\n                                            <span class=\"name-list-title\">My Profile</span>\r\n                                        </a>\r\n                                    </li> -->\r\n                                    <li>\r\n                                        <a *ngIf=\"!is_subcripion_cancelled\"  class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                                            <span class=\"name-list-title\">Settings</span>\r\n                                        </a>\r\n                                    </li>\r\n                                    <li>\r\n                                        <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                                            <span class=\"name-list-title\">Logout</span>\r\n                                        </a>\r\n                                    </li>\r\n                                </div>\r\n                            </ul>\r\n                        </div>\r\n                        <!-- End: header name-dropdown -->\r\n                        <!-- Start: Help dropdown -->\r\n                         <!--<div class=\"btn-group help-dropdown-wrapper\">\r\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                                <i class=\"material-icons\">help_outline</i>\r\n                            </button>\r\n                        </div> -->\r\n                        <!-- End: Help dropdown -->\r\n                        <!-- Start: help icon -->\r\n                            <!--<span *ngIf=\"page != 'dashboard' && page != 'analytics' && page != 'settings' && page != 'templates'\"\r\n                                  class=\"icon-help popover-wrapper\" data-toggle=\"modal\" data-target=\"#video-modal\">\r\n                              <i class=\"material-icons\">help_outline</i>\r\n                              <div class=\"popover-block\">Help</div>\r\n                            </span>-->\r\n                        <!-- End: help icon -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </nav>\r\n</header>\r\n\r\n<div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"page == 'builder'\">\r\n    <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n        <i class=\"material-icons\">account_box</i>\r\n        <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\r\n    </button>\r\n    <ul class=\"dropdown-menu builder-dropdown-menu \">\r\n        <div class=\"company-list\">\r\n            <div class=\"company-list-inner\" [class.slimscroll] = \"mycompanyLength> 3\">\r\n                <li class=\"active\" *ngFor=\"let company of myCompanies\">\r\n\r\n                    <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\r\n                        <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\r\n                        <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\r\n                    </a>\r\n                </li>\r\n            </div>\r\n            <hr class=\"name-dropdown-border\">\r\n        </div>\r\n        <div class=\"name-list\">\r\n            <!-- <li>\r\n                <a href=\"#\" class=\"hvr-sweep-to-right\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\r\n                    <span class=\"name-list-title\">My Profile</span>\r\n                </a>\r\n            </li> -->\r\n            <li>\r\n                <a class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                    <span class=\"name-list-title\">Settings</span>\r\n                </a>\r\n            </li>\r\n            <li>\r\n                <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                    <span class=\"name-list-title\">Logout</span>\r\n                </a>\r\n            </li>\r\n        </div>\r\n    </ul>\r\n</div>\r\n<!-- Start: help icon -->\r\n\t<span *ngIf=\"page == 'builder'\" class=\"icon-help popover-wrapper builder-help-icon\" (click)=\"videoModal()\">\r\n\t\t<i class=\"material-icons\">help_outline</i>\r\n\t\t<div class=\"popover-block\">Help</div>\r\n\t</span>\r\n<!-- End: help icon -->\r\n\r\n<!-- Start: Responsive header -->\r\n<header id=\"responsive-header\" class=\"\" *ngIf=\"page != 'builder' && loggedIn.isLoggedIn\">\r\n    <nav class=\"navbar navbar-default navbar-fixed-top white-logo\">\r\n      <div class=\"container-fluid nav-padding\">\r\n          <div class=\"col-xs-2 np\"></div>\r\n          <div class=\"navbar-header col-xs-8 np\">\r\n              <!-- <a href=\"#\" class=\"navbar-brand\">\r\n                  <img src=\"assets/images/headerLogo-white.png\" class=\"\" />\r\n              </a> -->\r\n              <h4 class=\"col-xs-12 np ellipsis title\">{{respTitle}}</h4>\r\n          </div>\r\n          <div class=\"mobile-menu col-xs-2 np\">\r\n              <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                  <i class=\"material-icons\">menu</i>\r\n              </button>\r\n              <ul class=\"dropdown-menu\">\r\n                  <div class=\"user-name user-outr\" *ngIf=\"loggedIn.isLoggedIn\">\r\n                      <li>\r\n                          <!-- <a href=\"javascript:void(0);\"><img src=\"assets/images/user1.png\"> </a> -->\r\n                          <span>{{name}}</span>\r\n                      </li>\r\n                      <hr class=\"name-dropdown-border\">\r\n                  </div>\r\n                  <div class=\"name-list header-links\">\r\n                      <li>\r\n                          <a [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" (click)=\"header('Dashboard')\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">home</i></span>\r\n                              <span class=\"name-list-title\">Dashboard</span>\r\n                          </a>\r\n                      </li>\r\n                      <li>\r\n                          <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\r\n                          <!-- <a class=\"hvr-underline-from-left\" [routerLinkActive]=\"['active']\"> -->\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">equalizer</i></span>\r\n                              <span class=\"name-list-title\">Analytics</span>\r\n                          </a>\r\n                      </li>\r\n                      <!-- <li>\r\n                          <a href=\"#\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">lightbulb_outline</i></span>\r\n                              <span class=\"name-list-title\">How Do I</span>\r\n                          </a>\r\n                      </li> -->\r\n                      <hr class=\"name-dropdown-border\">\r\n                  </div>\r\n                  <div class=\"company-list\">\r\n                      <li *ngFor=\"let company of myCompanies\" [class.active]=\"company.sub_domain == co\">\r\n                          <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\">\r\n                              <span class=\"company-selected\"><i class=\"material-icons\" *ngIf=\"company.sub_domain == co\">done</i></span>\r\n                              <span class=\"company-list-title\">{{company.name}}</span>\r\n                          </a>\r\n                      </li>\r\n                  </div>\r\n                  <div class=\"name-list setting-logout-links\">\r\n                      <li>\r\n                          <a [routerLink]=\"['/settings']\" (click)=\"header('Settings')\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                              <span class=\"name-list-title\">Settings</span>\r\n                          </a>\r\n                      </li>\r\n                      <li>\r\n                          <a (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                              <span class=\"name-list-title\">Logout</span>\r\n                          </a>\r\n                      </li>\r\n                      <li class=\"builder-help-icon\">\r\n                        <!-- Start: help icon -->\r\n                            <a href=\"javascript:void(0)\">\r\n                                <span class=\"icon-help\" data-toggle=\"modal\" data-target=\"#video-modal\">\r\n                                    <i class=\"material-icons\">help_outline</i> Help\r\n                                </span>\r\n                            </a>\r\n                        <!-- End: help icon -->\r\n                     </li>\r\n                  </div>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n    </nav>\r\n</header>\r\n<!-- End: Responsive header -->\r\n\r\n<og-payment-modal></og-payment-modal>\r\n<og-premium-modal></og-premium-modal>\r\n\r\n"
+module.exports = "<header id=\"new-header\" class=\"\" *ngIf=\"page != 'builder'\">\r\n    <nav class=\"navbar navbar-default navbar-fixed-top main-logo company-nav\" [class.company-nav]=\"!loggedIn.isLoggedIn\" id=\"nav-cookies-div\">\r\n        <div *ngIf=\"!isEmailVerified\" class=\"cookies-header\">\r\n\t\t\t<div class=\"col-md-12 np\">\r\n\t\t\t\t<i class=\"material-icons\">settings</i>\r\n                    <span>\r\n                        Your email ID is not verified yet. Please click on the verification link sent to your email or\r\n                        &nbsp;<a href=\"javascript:void();\" (click)=\"resendEmail();callGA();\">click here</a> to receive a new verification link.\r\n                    </span>\r\n\t\t\t\t<button type=\"button\" class=\"close btn-close pull-right\" (click)=\"close()\">\r\n                    <i class=\"material-icons\">clear</i>\r\n                </button>\r\n\t\t\t</div>\r\n        </div>\r\n        <div class=\"container-fluid nav-padding\">\r\n            <div class=\"navbar-header\">\r\n                <a *ngIf=\"!isSubDomainUrl || loggedIn.isLoggedIn\" [routerLink]=\"['/dashboard']\" class=\"navbar-brand navbar-logopadding\">\r\n                    <img src=\"assets/images/outgrow-logo.png\" />\r\n                </a>\r\n                <a href=\"#\" *ngIf=\"isSubDomainUrl && !loggedIn.isLoggedIn\" class=\"navbar-brand navbar-logopadding\">\r\n                    <div class=\"company_name_avatar-circle\">\r\n                        {{companyInitial}}\r\n                    </div>\r\n                    <div class=\"company_name_span ellipsis\">{{companyName}}</div>\r\n                </a>\r\n            </div>\r\n            <div class=\"navbar-collapse collapse\" id=\"navbar\">\r\n                <div class=\"navbar-left col-md-7 np\">\r\n                    <ul *ngIf=\"loggedIn.isLoggedIn\">\r\n                        <li>\r\n                            <a href=\"\" class=\"hvr-underline-from-left\"\r\n                                [routerLinkActive]=\"['active']\"\r\n                                [routerLink]=\"['/dashboard']\"\r\n                                >\r\n                                <i class=\"material-icons\">home</i> &nbsp;Dashboard\r\n                            </a>\r\n                        </li>\r\n                        <li>\r\n                            <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\r\n                                <i class=\"material-icons\">equalizer</i> &nbsp;Analytics\r\n                            </a>\r\n                        </li>\r\n\r\n                        <!-- <li>\r\n                            <a href=\"\" class=\"hvr-underline-from-left\">\r\n                                <i class=\"material-icons\">lightbulb_outline</i> &nbsp;How do i\r\n                            </a>\r\n                        </li> -->\r\n                    </ul>\r\n                </div>\r\n                <div class=\"navbar-right\">\r\n                    <div class=\"col-xs-12 navbar-right-block\">\r\n                        <!-- <a href=\"\" class=\"navbar-name\">\r\n                                <i class=\"material-icons\">account_box</i>\r\n                                <span class=\"ellipsis\"> &nbsp;Pratham</span>\r\n                            </a> -->\r\n                        <!-- Start: header name-dropdown -->\r\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"!loggedIn.isLoggedIn && !isSubDomainUrl\">\r\n                            <a [routerLink]=\"['/login']\" class=\"\" >\r\n                              <button type=\"button\" class=\"btn btn-default dropdown-toggle\">\r\n                                  <i class=\"material-icons\">account_box</i>\r\n                                  <span class=\"ellipsis name-title\"> &nbsp;Login</span>\r\n                              </button>\r\n                            </a>\r\n                        </div>\r\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"loggedIn.isLoggedIn\">\r\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                                <i class=\"material-icons\">account_box</i>\r\n                                <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\r\n                            </button>\r\n                            <ul class=\"dropdown-menu\">\r\n                                <div class=\"company-list\">\r\n                                    <div class=\"company-list-inner\"  [class.slimscroll] = \"mycompanyLength> 3\">\r\n                                        <li class=\"active\" *ngFor=\"let company of myCompanies\">\r\n                                            <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\r\n                                                <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\r\n                                                <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\r\n                                            </a>\r\n                                        </li>\r\n                                    </div>\r\n                                    <hr class=\"name-dropdown-border\">\r\n                                </div>\r\n                                <div class=\"name-list\">\r\n                                    <!-- <li>\r\n                                        <a href=\"#\" class=\"hvr-sweep-to-right\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\r\n                                            <span class=\"name-list-title\">My Profile</span>\r\n                                        </a>\r\n                                    </li> -->\r\n                                    <li>\r\n                                        <a *ngIf=\"!is_subcripion_cancelled\"  class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                                            <span class=\"name-list-title\">Settings</span>\r\n                                        </a>\r\n                                    </li>\r\n                                    <li>\r\n                                        <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                                            <span class=\"name-list-title\">Logout</span>\r\n                                        </a>\r\n                                    </li>\r\n                                </div>\r\n                            </ul>\r\n                        </div>\r\n                        <!-- End: header name-dropdown -->\r\n                        <!-- Start: Help dropdown -->\r\n                         <!--<div class=\"btn-group help-dropdown-wrapper\">\r\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                                <i class=\"material-icons\">help_outline</i>\r\n                            </button>\r\n                        </div> -->\r\n                        <!-- End: Help dropdown -->\r\n                        <!-- Start: help icon -->\r\n                            <!--<span *ngIf=\"page != 'dashboard' && page != 'analytics' && page != 'settings' && page != 'templates'\"\r\n                                  class=\"icon-help popover-wrapper\" data-toggle=\"modal\" data-target=\"#video-modal\">\r\n                              <i class=\"material-icons\">help_outline</i>\r\n                              <div class=\"popover-block\">Help</div>\r\n                            </span>-->\r\n                        <!-- End: help icon -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </nav>\r\n</header>\r\n\r\n<div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"page == 'builder'\">\r\n    <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n        <i class=\"material-icons\">account_box</i>\r\n        <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\r\n    </button>\r\n    <ul class=\"dropdown-menu builder-dropdown-menu \">\r\n        <div class=\"company-list\">\r\n            <div class=\"company-list-inner\" [class.slimscroll] = \"mycompanyLength> 3\">\r\n                <li class=\"active\" *ngFor=\"let company of myCompanies\">\r\n\r\n                    <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings/membership\" class=\"hvr-sweep-to-right\">\r\n                        <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\r\n                        <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\r\n                    </a>\r\n                </li>\r\n            </div>\r\n            <hr class=\"name-dropdown-border\">\r\n        </div>\r\n        <div class=\"name-list\">\r\n            <!-- <li>\r\n                <a href=\"#\" class=\"hvr-sweep-to-right\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\r\n                    <span class=\"name-list-title\">My Profile</span>\r\n                </a>\r\n            </li> -->\r\n            <li>\r\n                <a class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                    <span class=\"name-list-title\">Settings</span>\r\n                </a>\r\n            </li>\r\n            <li>\r\n                <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                    <span class=\"name-list-title\">Logout</span>\r\n                </a>\r\n            </li>\r\n        </div>\r\n    </ul>\r\n</div>\r\n<!-- Start: help icon -->\r\n\t<span *ngIf=\"page == 'builder'\" class=\"icon-help popover-wrapper builder-help-icon\" (click)=\"videoModal()\">\r\n\t\t<i class=\"material-icons\">help_outline</i>\r\n\t\t<div class=\"popover-block\">Help</div>\r\n\t</span>\r\n<!-- End: help icon -->\r\n\r\n<!-- Start: Responsive header -->\r\n<header id=\"responsive-header\" class=\"\" *ngIf=\"page != 'builder' && loggedIn.isLoggedIn\">\r\n    <nav class=\"navbar navbar-default navbar-fixed-top white-logo\">\r\n      <div class=\"container-fluid nav-padding\">\r\n          <div class=\"col-xs-2 np\"></div>\r\n          <div class=\"navbar-header col-xs-8 np\">\r\n              <!-- <a href=\"#\" class=\"navbar-brand\">\r\n                  <img src=\"assets/images/headerLogo-white.png\" class=\"\" />\r\n              </a> -->\r\n              <h4 class=\"col-xs-12 np ellipsis title\">{{respTitle}}</h4>\r\n          </div>\r\n          <div class=\"mobile-menu col-xs-2 np\">\r\n              <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                  <i class=\"material-icons\">menu</i>\r\n              </button>\r\n              <ul class=\"dropdown-menu\">\r\n                  <div class=\"user-name user-outr\" *ngIf=\"loggedIn.isLoggedIn\">\r\n                      <li>\r\n                          <!-- <a href=\"javascript:void(0);\"><img src=\"assets/images/user1.png\"> </a> -->\r\n                          <span>{{name}}</span>\r\n                      </li>\r\n                      <hr class=\"name-dropdown-border\">\r\n                  </div>\r\n                  <div class=\"name-list header-links\">\r\n                      <li>\r\n                          <a [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" (click)=\"header('Dashboard')\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">home</i></span>\r\n                              <span class=\"name-list-title\">Dashboard</span>\r\n                          </a>\r\n                      </li>\r\n                      <li>\r\n                          <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\r\n                          <!-- <a class=\"hvr-underline-from-left\" [routerLinkActive]=\"['active']\"> -->\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">equalizer</i></span>\r\n                              <span class=\"name-list-title\">Analytics</span>\r\n                          </a>\r\n                      </li>\r\n                      <!-- <li>\r\n                          <a href=\"#\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">lightbulb_outline</i></span>\r\n                              <span class=\"name-list-title\">How Do I</span>\r\n                          </a>\r\n                      </li> -->\r\n                      <hr class=\"name-dropdown-border\">\r\n                  </div>\r\n                  <div class=\"company-list\">\r\n                      <li *ngFor=\"let company of myCompanies\" [class.active]=\"company.sub_domain == co\">\r\n                          <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\">\r\n                              <span class=\"company-selected\"><i class=\"material-icons\" *ngIf=\"company.sub_domain == co\">done</i></span>\r\n                              <span class=\"company-list-title\">{{company.name}}</span>\r\n                          </a>\r\n                      </li>\r\n                  </div>\r\n                  <div class=\"name-list setting-logout-links\">\r\n                      <li>\r\n                          <a [routerLink]=\"['/settings']\" (click)=\"header('Settings')\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\r\n                              <span class=\"name-list-title\">Settings</span>\r\n                          </a>\r\n                      </li>\r\n                      <li>\r\n                          <a (click)=\"onLogout()\" href=\"javascript:void(0)\">\r\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\r\n                              <span class=\"name-list-title\">Logout</span>\r\n                          </a>\r\n                      </li>\r\n                      <li class=\"builder-help-icon\">\r\n                        <!-- Start: help icon -->\r\n                            <a href=\"javascript:void(0)\">\r\n                                <span class=\"icon-help\" data-toggle=\"modal\" data-target=\"#video-modal\">\r\n                                    <i class=\"material-icons\">help_outline</i> Help\r\n                                </span>\r\n                            </a>\r\n                        <!-- End: help icon -->\r\n                     </li>\r\n                  </div>\r\n              </ul>\r\n          </div>\r\n      </div>\r\n    </nav>\r\n</header>\r\n<!-- End: Responsive header -->\r\n\r\n<og-payment-modal></og-payment-modal>\r\n<og-premium-modal></og-premium-modal>\r\n\r\n"
 
 /***/ },
 /* 750 */
