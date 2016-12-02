@@ -529,22 +529,22 @@ module.exports = function(it){
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_service__ = __webpack_require__(247);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__settings_communication_service__ = __webpack_require__(539);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__feature_access_service__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cookie_service__ = __webpack_require__(412);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cookie_service__ = __webpack_require__(411);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__plan_service__ = __webpack_require__(408);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__script_service__ = __webpack_require__(410);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__script_service__ = __webpack_require__(409);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "l", function() { return __WEBPACK_IMPORTED_MODULE_0__base_service__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "e", function() { return __WEBPACK_IMPORTED_MODULE_1__company_service__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__logged_in_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__company_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "f", function() { return __WEBPACK_IMPORTED_MODULE_2__logged_in_service__["a"]; });
 /* unused harmony namespace reexport */
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__subdomain_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "g", function() { return __WEBPACK_IMPORTED_MODULE_5__user_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "h", function() { return __WEBPACK_IMPORTED_MODULE_6__membership_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "i", function() { return __WEBPACK_IMPORTED_MODULE_7__dashboard_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "j", function() { return __WEBPACK_IMPORTED_MODULE_8__settings_communication_service__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "f", function() { return __WEBPACK_IMPORTED_MODULE_9__feature_access_service__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_10__cookie_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "e", function() { return __WEBPACK_IMPORTED_MODULE_9__feature_access_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_10__cookie_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "k", function() { return __WEBPACK_IMPORTED_MODULE_11__plan_service__["a"]; });
-/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_12__script_service__["a"]; });
+/* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_12__script_service__["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "i", function() { return __WEBPACK_IMPORTED_MODULE_7__dashboard_service__["a"]; });
 
 
@@ -1785,7 +1785,7 @@ $exports.store = store;
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_import_core__ = __webpack_require__(15);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Identifiers; });
 /* unused harmony export assetUrl */
@@ -2303,7 +2303,7 @@ var anObject       = __webpack_require__(4)
   , toPrimitive    = __webpack_require__(72)
   , dP             = Object.defineProperty;
 
-exports.f = __webpack_require__(19) ? Object.defineProperty : function defineProperty(O, P, Attributes){
+exports.f = __webpack_require__(20) ? Object.defineProperty : function defineProperty(O, P, Attributes){
   anObject(O);
   P = toPrimitive(P, true);
   anObject(Attributes);
@@ -2317,6 +2317,25 @@ exports.f = __webpack_require__(19) ? Object.defineProperty : function definePro
 
 /***/ },
 /* 18 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+var environment = {
+    production: true,
+    API: 'http://api.rely.co/api/v1',
+    APP_DOMAIN: 'http://app.rely.co',
+    APP_EXTENSION: 'rely.co',
+    PARENT_APP_DOMAIN: 'app.rely.co',
+    INTERCOM_ID: "om2goh5g",
+    PROTOCOL: 'http://',
+    FB_API: '574602582728913',
+    FILE_PICKER_API: 'A3ygIw4hISSCdApqW4SAwz'
+};
+
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2825,32 +2844,13 @@ var ProviderMeta = (function () {
 //# sourceMappingURL=compile_metadata.js.map
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 // Thank's IE8 for his funny defineProperty
 module.exports = !__webpack_require__(7)(function(){
   return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 });
-
-/***/ },
-/* 20 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-var environment = {
-    production: true,
-    API: 'http://api.rely.co/api/v1',
-    APP_DOMAIN: 'http://app.rely.co',
-    APP_EXTENSION: 'rely.co',
-    PARENT_APP_DOMAIN: 'app.rely.co',
-    INTERCOM_ID: "om2goh5g",
-    PROTOCOL: 'http://',
-    FB_API: '574602582728913',
-    FILE_PICKER_API: 'A3ygIw4hISSCdApqW4SAwz'
-};
-
 
 /***/ },
 /* 21 */
@@ -5494,7 +5494,7 @@ module.exports = function(it){
 
 var dP         = __webpack_require__(17)
   , createDesc = __webpack_require__(71);
-module.exports = __webpack_require__(19) ? function(object, key, value){
+module.exports = __webpack_require__(20) ? function(object, key, value){
   return dP.f(object, key, createDesc(1, value));
 } : function(object, key, value){
   object[key] = value;
@@ -5635,7 +5635,7 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw__ = __webpack_require__(755);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_observable_throw__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BaseService; });
 
 
@@ -6270,7 +6270,7 @@ var pIE            = __webpack_require__(153)
   , IE8_DOM_DEFINE = __webpack_require__(360)
   , gOPD           = Object.getOwnPropertyDescriptor;
 
-exports.f = __webpack_require__(19) ? gOPD : function getOwnPropertyDescriptor(O, P){
+exports.f = __webpack_require__(20) ? gOPD : function getOwnPropertyDescriptor(O, P){
   O = toIObject(O);
   P = toPrimitive(P, true);
   if(IE8_DOM_DEFINE)try {
@@ -13646,7 +13646,7 @@ exports.MergeMapSubscriber = MergeMapSubscriber;
 /* 114 */
 /***/ function(module, exports) {
 
-module.exports = "/* loader animation start */\n.elem{\n    height: 15px;\n    display: block;\n    transition-property: transform;\n    transition-duration: 1s;\n}\n.elem-rotate {\n    animation-name: rotate; \n    animation-duration: 2s; \n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    color: #fb545b;\n}\n.navbar .btn.btn-basic.btn-menu.btn-menu.green-bg{\n    background: rgb(26, 188, 156);\n    border: 1px solid rgb(26, 188, 156);\n}\n.btn-menu .elem i.green-color {\n    color: #fff;\n}\n.btn-menu .elem.elem-rotate i{color: #fb545b;}\n@keyframes rotate {\n    from {transform: rotate(0deg);}\n    to {transform: rotate(360deg);}\n}\n/* loader animation end */\n.label {\n  border-radius: 1px;\n}\n.label,\n.label.label-default {\n  background-color: #9e9e9e;\n}\n.label.label-inverse {\n  background-color: #3f51b5;\n}\n.label.label-primary {\n  background-color: #009688;\n}\n.label.label-success {\n  background-color: #4caf50;\n}\n.label.label-info {\n  background-color: #03a9f4;\n}\n.label.label-warning {\n  background-color: #ff5722;\n}\n.label.label-danger {\n  background-color: #f44336;\n}\n.form-control,\n.form-group .form-control {\n  border: 0;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);\n  -webkit-background-size: 0 2px, 100% 1px;\n          background-size: 0 2px, 100% 1px;\n  background-repeat: no-repeat;\n  background-position: center bottom, center -webkit-calc(100% - 1px);\n  background-position: center bottom, center calc(100% - 1px);\n  background-color: rgba(0, 0, 0, 0);\n  -webkit-transition: background 0s ease-out;\n       -o-transition: background 0s ease-out;\n          transition: background 0s ease-out;\n  float: none;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  border-radius: 0;\n}\n.form-group .form-control.material-textarea {\n  min-height: 5em;\n}\n.form-control::-moz-placeholder,\n.form-group .form-control::-moz-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control:-ms-input-placeholder,\n.form-group .form-control:-ms-input-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control::-webkit-input-placeholder,\n.form-group .form-control::-webkit-input-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control[readonly],\n.form-group .form-control[readonly],\n.form-control[disabled],\n.form-group .form-control[disabled],\nfieldset[disabled] .form-control,\nfieldset[disabled] .form-group .form-control {\n  background-color: rgba(0, 0, 0, 0);\n}\n.form-control[disabled],\n.form-group .form-control[disabled],\nfieldset[disabled] .form-control,\nfieldset[disabled] .form-group .form-control {\n  background-image: none;\n  border-bottom: 1px dotted #D2D2D2;\n}\n.form-group {\n  position: relative;\n}\n.form-group.label-static label.control-label,\n.form-group.label-placeholder label.control-label,\n.form-group.label-floating label.control-label {\n  position: absolute;\n  pointer-events: none;\n  -webkit-transition: 0.3s ease all;\n       -o-transition: 0.3s ease all;\n          transition: 0.3s ease all;\n}\n.form-group.label-floating label.control-label {\n  will-change: left, top, contents;\n}\n.form-group.label-placeholder:not(.is-empty) label.control-label {\n  display: none;\n}\n.form-group .help-block {\n  position: absolute;\n  display: none;\n}\n.form-group.is-focused .form-control {\n  outline: none;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);\n  -webkit-background-size: 100% 2px, 100% 1px;\n          background-size: 100% 2px, 100% 1px;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  -webkit-transition-duration: 0.3s;\n       -o-transition-duration: 0.3s;\n          transition-duration: 0.3s;\n}\n.form-group.is-focused .form-control .material-input:after {\n  background-color: #009688;\n}\n.form-group.is-focused label,\n.form-group.is-focused label.control-label {\n  color: #009688;\n}\n.form-group.is-focused.label-placeholder label,\n.form-group.is-focused.label-placeholder label.control-label {\n  color: #BDBDBD;\n}\n.form-group.is-focused .help-block {\n  display: block;\n}\n.form-group.has-warning .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-warning.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5722), to(#ff5722)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#ff5722, #ff5722), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#ff5722, #ff5722), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-warning label.control-label,\n.form-group.has-warning .help-block {\n  color: #ff5722;\n}\n.form-group.has-error .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-error.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#f44336), to(#f44336)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#f44336, #f44336), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#f44336, #f44336), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-error label.control-label,\n.form-group.has-error .help-block {\n  color: #f44336;\n}\n.form-group.has-success .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-success.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#4caf50), to(#4caf50)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#4caf50, #4caf50), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#4caf50, #4caf50), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-success label.control-label,\n.form-group.has-success .help-block {\n  color: #4caf50;\n}\n.form-group.has-info .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-info.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#03a9f4)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#03a9f4, #03a9f4), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#03a9f4, #03a9f4), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-info label.control-label,\n.form-group.has-info .help-block {\n  color: #03a9f4;\n}\n.form-group textarea {\n  resize: none;\n}\n.form-group textarea ~ .form-control-highlight {\n  margin-top: -11px;\n}\n.form-group select {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.form-group select ~ .material-input:after {\n  display: none;\n}\n.form-control {\n  margin-bottom: 7px;\n}\n.form-control::-moz-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control:-ms-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control::-webkit-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.checkbox label,\n.radio label,\nlabel {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\nlabel.control-label {\n  font-size: 12px;\n  line-height: 1.07142857;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.help-block {\n  margin-top: 0;\n  font-size: 12px;\n}\n.form-group {\n  padding-bottom: 7px;\n  margin: 28px 0 0 0;\n}\n.form-group .form-control {\n  margin-bottom: 7px;\n}\n.form-group .form-control::-moz-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .form-control:-ms-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .form-control::-webkit-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .checkbox label,\n.form-group .radio label,\n.form-group label {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group label.control-label {\n  font-size: 12px;\n  line-height: 1.07142857;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group .help-block {\n  margin-top: 0;\n  font-size: 12px;\n}\n.form-group.label-floating label.control-label,\n.form-group.label-placeholder label.control-label {\n  top: -7px;\n  font-size: 16px;\n  line-height: 1.42857143;\n}\n.form-group.label-static label.control-label,\n.form-group.label-floating.is-focused label.control-label,\n.form-group.label-floating:not(.is-empty) label.control-label {\n  top: -30px;\n  left: 0;\n  font-size: 12px;\n  line-height: 1.07142857;\n}\n.form-group.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -30px;\n  left: 0;\n  font-size: 12px;\n  line-height: 1.07142857;\n}\n.form-group.form-group-sm {\n  padding-bottom: 3px;\n  margin: 21px 0 0 0;\n}\n.form-group.form-group-sm .form-control {\n  margin-bottom: 3px;\n}\n.form-group.form-group-sm .form-control::-moz-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .form-control:-ms-input-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .form-control::-webkit-input-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .checkbox label,\n.form-group.form-group-sm .radio label,\n.form-group.form-group-sm label {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm label.control-label {\n  font-size: 9px;\n  line-height: 1.125;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group.form-group-sm .help-block {\n  margin-top: 0;\n  font-size: 9px;\n}\n.form-group.form-group-sm.label-floating label.control-label,\n.form-group.form-group-sm.label-placeholder label.control-label {\n  top: -11px;\n  font-size: 11px;\n  line-height: 1.5;\n}\n.form-group.form-group-sm.label-static label.control-label,\n.form-group.form-group-sm.label-floating.is-focused label.control-label,\n.form-group.form-group-sm.label-floating:not(.is-empty) label.control-label {\n  top: -25px;\n  left: 0;\n  font-size: 9px;\n  line-height: 1.125;\n}\n.form-group.form-group-sm.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -25px;\n  left: 0;\n  font-size: 9px;\n  line-height: 1.125;\n}\n.form-group.form-group-lg {\n  padding-bottom: 9px;\n  margin: 30px 0 0 0;\n}\n.form-group.form-group-lg .form-control {\n  margin-bottom: 9px;\n}\n.form-group.form-group-lg .form-control::-moz-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .form-control:-ms-input-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .form-control::-webkit-input-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .checkbox label,\n.form-group.form-group-lg .radio label,\n.form-group.form-group-lg label {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg label.control-label {\n  font-size: 14px;\n  line-height: 0.99999998;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group.form-group-lg .help-block {\n  margin-top: 0;\n  font-size: 14px;\n}\n.form-group.form-group-lg.label-floating label.control-label,\n.form-group.form-group-lg.label-placeholder label.control-label {\n  top: -5px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.form-group.form-group-lg.label-static label.control-label,\n.form-group.form-group-lg.label-floating.is-focused label.control-label,\n.form-group.form-group-lg.label-floating:not(.is-empty) label.control-label {\n  top: -32px;\n  left: 0;\n  font-size: 14px;\n  line-height: 0.99999998;\n}\n.form-group.form-group-lg.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -32px;\n  left: 0;\n  font-size: 14px;\n  line-height: 0.99999998;\n}\n\n\n"
+module.exports = "/* loader animation start */\n.elem{\n    height: 15px;\n    display: block;\n    transition-property: transform;\n    transition-duration: 1s;\n}\n.elem-rotate {\n    animation-name: rotate; \n    animation-duration: 2s; \n    animation-iteration-count: infinite;\n    animation-timing-function: linear;\n    color: #fb545b;\n}\n.navbar .btn.btn-basic.btn-menu.btn-menu.green-bg{\n    background: rgb(26, 188, 156);\n    border: 1px solid rgb(26, 188, 156);\n}\n.btn-menu .elem i.green-color {\n    color: #fff;\n}\n.btn-menu .elem.elem-rotate i{color: #fb545b;}\n@keyframes rotate {\n    from {transform: rotate(0deg);}\n    to {transform: rotate(360deg);}\n}\n/* loader animation end */\n.label {\n  border-radius: 1px;\n}\n.label,\n.label.label-default {\n  background-color: #9e9e9e;\n}\n.label.label-inverse {\n  background-color: #3f51b5;\n}\n.label.label-primary {\n  background-color: #009688;\n}\n.label.label-success {\n  background-color: #4caf50;\n}\n.label.label-info {\n  background-color: #03a9f4;\n}\n.label.label-warning {\n  background-color: #ff5722;\n}\n.label.label-danger {\n  background-color: #f44336;\n}\n.form-control,\n.form-group .form-control {\n  border: 0;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);\n  -webkit-background-size: 0 2px, 100% 1px;\n          background-size: 0 2px, 100% 1px;\n  background-repeat: no-repeat;\n  background-position: center bottom, center -webkit-calc(100% - 1px);\n  background-position: center bottom, center calc(100% - 1px);\n  background-color: rgba(0, 0, 0, 0);\n  -webkit-transition: background 0s ease-out;\n       -o-transition: background 0s ease-out;\n          transition: background 0s ease-out;\n  float: none;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  border-radius: 0;\n}\n.form-group .form-control.material-textarea {\n  min-height: 5em;\n}\n.form-control::-moz-placeholder,\n.form-group .form-control::-moz-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control:-ms-input-placeholder,\n.form-group .form-control:-ms-input-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control::-webkit-input-placeholder,\n.form-group .form-control::-webkit-input-placeholder {\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control[readonly],\n.form-group .form-control[readonly],\n.form-control[disabled],\n.form-group .form-control[disabled],\nfieldset[disabled] .form-control,\nfieldset[disabled] .form-group .form-control {\n  background-color: rgba(0, 0, 0, 0);\n}\n.form-control[disabled],\n.form-group .form-control[disabled],\nfieldset[disabled] .form-control,\nfieldset[disabled] .form-group .form-control {\n  background-image: none;\n  border-bottom: 1px dotted #D2D2D2;\n}\n.form-group {\n  position: relative;\n}\n.form-group.label-static label.control-label,\n.form-group.label-placeholder label.control-label,\n.form-group.label-floating label.control-label {\n  position: absolute;\n  pointer-events: none;\n  -webkit-transition: 0.3s ease all;\n       -o-transition: 0.3s ease all;\n          transition: 0.3s ease all;\n}\n.form-group.label-floating label.control-label {\n  will-change: left, top, contents;\n}\n.form-group.label-placeholder:not(.is-empty) label.control-label {\n  display: none;\n}\n.form-group .help-block {\n  position: absolute;\n  display: none;\n}\n.form-group.is-focused .form-control {\n  outline: none;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#009688, #009688), linear-gradient(#D2D2D2, #D2D2D2);\n  -webkit-background-size: 100% 2px, 100% 1px;\n          background-size: 100% 2px, 100% 1px;\n  -webkit-box-shadow: none;\n          box-shadow: none;\n  -webkit-transition-duration: 0.3s;\n       -o-transition-duration: 0.3s;\n          transition-duration: 0.3s;\n}\n.form-group.is-focused .form-control .material-input:after {\n  background-color: #009688;\n}\n.form-group.is-focused label,\n.form-group.is-focused label.control-label {\n  color: #009688;\n}\n.form-group.is-focused.label-placeholder label,\n.form-group.is-focused.label-placeholder label.control-label {\n  color: #BDBDBD;\n}\n.form-group.is-focused .help-block {\n  display: block;\n}\n.form-group.has-warning .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-warning.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5722), to(#ff5722)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#ff5722, #ff5722), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#ff5722, #ff5722), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#ff5722, #ff5722), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-warning label.control-label,\n.form-group.has-warning .help-block {\n  color: #ff5722;\n}\n.form-group.has-error .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-error.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#f44336), to(#f44336)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#f44336, #f44336), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#f44336, #f44336), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-error label.control-label,\n.form-group.has-error .help-block {\n  color: #f44336;\n}\n.form-group.has-success .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-success.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#4caf50), to(#4caf50)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#4caf50, #4caf50), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#4caf50, #4caf50), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#4caf50, #4caf50), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-success label.control-label,\n.form-group.has-success .help-block {\n  color: #4caf50;\n}\n.form-group.has-info .form-control {\n  -webkit-box-shadow: none;\n          box-shadow: none;\n}\n.form-group.has-info.is-focused .form-control {\n  background-image: -webkit-gradient(linear, left top, left bottom, from(#03a9f4), to(#03a9f4)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n  background-image: -webkit-linear-gradient(#03a9f4, #03a9f4), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: -o-linear-gradient(#03a9f4, #03a9f4), -o-linear-gradient(#D2D2D2, #D2D2D2);\n  background-image: linear-gradient(#03a9f4, #03a9f4), linear-gradient(#D2D2D2, #D2D2D2);\n}\n.form-group.has-info label.control-label,\n.form-group.has-info .help-block {\n  color: #03a9f4;\n}\n.form-group textarea {\n  resize: none;\n}\n.form-group textarea ~ .form-control-highlight {\n  margin-top: -11px;\n}\n.form-group select {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n}\n.form-group select ~ .material-input:after {\n  display: none;\n}\n.form-control {\n  margin-bottom: 7px;\n}\n.form-control::-moz-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control:-ms-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-control::-webkit-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.checkbox label,\n.radio label,\nlabel {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\nlabel.control-label {\n  font-size: 12px;\n  line-height: 1.07142857;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.help-block {\n  margin-top: 0;\n  font-size: 12px;\n}\n.form-group {\n  padding-bottom: 7px;\n  margin: 28px 0 0 0;\n}\n.form-group .form-control {\n  margin-bottom: 7px;\n}\n.form-group .form-control::-moz-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .form-control:-ms-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .form-control::-webkit-input-placeholder {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group .checkbox label,\n.form-group .radio label,\n.form-group label {\n  font-size: 16px;\n  line-height: 1.42857143;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group label.control-label {\n  font-size: 12px;\n  line-height: 1.07142857;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group .help-block {\n  margin-top: 0;\n  font-size: 12px;\n}\n.form-group.label-floating label.control-label,\n.form-group.label-placeholder label.control-label {\n  top: -7px;\n  font-size: 16px;\n  line-height: 1.42857143;\n}\n.form-group.label-static label.control-label,\n.form-group.label-floating.is-focused label.control-label,\n.form-group.label-floating:not(.is-empty) label.control-label {\n  top: -30px;\n  left: 0;\n  font-size: 12px;\n  line-height: 1.07142857;\n}\n.form-group.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -30px;\n  left: 0;\n  font-size: 12px;\n  line-height: 1.07142857;\n}\n.form-group.form-group-sm {\n  padding-bottom: 3px;\n  margin: 21px 0 0 0;\n}\n.form-group.form-group-sm .form-control {\n  margin-bottom: 3px;\n}\n.form-group.form-group-sm .form-control::-moz-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .form-control:-ms-input-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .form-control::-webkit-input-placeholder {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm .checkbox label,\n.form-group.form-group-sm .radio label,\n.form-group.form-group-sm label {\n  font-size: 11px;\n  line-height: 1.5;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-sm label.control-label {\n  font-size: 9px;\n  line-height: 1.125;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group.form-group-sm .help-block {\n  margin-top: 0;\n  font-size: 9px;\n}\n.form-group.form-group-sm.label-floating label.control-label,\n.form-group.form-group-sm.label-placeholder label.control-label {\n  top: -11px;\n  font-size: 11px;\n  line-height: 1.5;\n}\n.form-group.form-group-sm.label-static label.control-label,\n.form-group.form-group-sm.label-floating.is-focused label.control-label,\n.form-group.form-group-sm.label-floating:not(.is-empty) label.control-label {\n  top: -25px;\n  left: 0;\n  font-size: 9px;\n  line-height: 1.125;\n}\n.form-group.form-group-sm.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -25px;\n  left: 0;\n  font-size: 9px;\n  line-height: 1.125;\n}\n.form-group.form-group-lg {\n  padding-bottom: 9px;\n  margin: 30px 0 0 0;\n}\n.form-group.form-group-lg .form-control {\n  margin-bottom: 9px;\n}\n.form-group.form-group-lg .form-control::-moz-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .form-control:-ms-input-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .form-control::-webkit-input-placeholder {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg .checkbox label,\n.form-group.form-group-lg .radio label,\n.form-group.form-group-lg label {\n  font-size: 18px;\n  line-height: 1.3333333;\n  color: #BDBDBD;\n  font-weight: 400;\n}\n.form-group.form-group-lg label.control-label {\n  font-size: 14px;\n  line-height: 0.99999998;\n  color: #BDBDBD;\n  font-weight: 400;\n  margin: 16px 0 0 0;\n}\n.form-group.form-group-lg .help-block {\n  margin-top: 0;\n  font-size: 14px;\n}\n.form-group.form-group-lg.label-floating label.control-label,\n.form-group.form-group-lg.label-placeholder label.control-label {\n  top: -5px;\n  font-size: 18px;\n  line-height: 1.3333333;\n}\n.form-group.form-group-lg.label-static label.control-label,\n.form-group.form-group-lg.label-floating.is-focused label.control-label,\n.form-group.form-group-lg.label-floating:not(.is-empty) label.control-label {\n  top: -32px;\n  left: 0;\n  font-size: 14px;\n  line-height: 0.99999998;\n}\n.form-group.form-group-lg.label-floating input.form-control:-webkit-autofill ~ label.control-label label.control-label {\n  top: -32px;\n  left: 0;\n  font-size: 14px;\n  line-height: 0.99999998;\n}\n\n\n/* custom material css start (sahil) */\n    .sahil-material .form-control {\n        height: 38px;\n        padding: 7px 0;\n        font-size: 14px;\n        line-height: 1.42857143;\n        font-family: montserratregular;\n        color: #62696d;\n    }\n    .sahil-material .form-group label.control-label {\n        font-size: 14px;\n        line-height: 1.07142857;\n        color: #8e989f;\n        font-weight: 400;\n        margin: 16px 0 0 0;\n        font-family: montserratregular;\n    }\n    .sahil-material .form-group label.control-label.seo-static-label{\n        text-transform: uppercase !important;\n        font-size: 10px !important;\n        color: #8e989f !important;\n    }\n    .sahil-material .form-group.label-floating label.control-label,\n    .sahil-material .form-group.label-placeholder label.control-label {\n        top: -7px;\n        font-size: 14px;\n        line-height: 18px;\n        color: #8e989f;\n    }\n    .sahil-material .form-group.label-floating:not(.is-empty) label.control-label {\n        top: -20px;\n        font-family: montserratregular;\n        font-size: 11px;\n        text-transform: uppercase;\n        color: #8e989f !important;\n    }\n    .sahil-material .form-group.label-floating.is-focused label.control-label {\n        top: -20px;\n        font-size: 11px;\n        font-family: montserratregular;\n        color: #8e989f !important;\n    }\n    .sahil-material .form-group.is-focused label,\n    .sahil-material .form-group.is-focused label.control-label {\n        font-size: 11px;\n        font-family: montserratregular;\n        color: #8e989f !important;\n        text-transform: uppercase;\n    }\n    .sahil-material .form-control,\n    .sahil-material .form-group .form-control {\n        border: 0 !important;\n        background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n        background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#d7dbdd, #D2D2D2);\n        background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#d7dbdd, #d7dbdd);\n        background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd);\n\n    }\n    \n    .sahil-material .form-group.is-focused .form-control {\n        outline: none;\n        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));\n        background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);\n        background-image: -o-linear-gradient(#fb545b, #fb545b), -o-linear-gradient(#D2D2D2, #D2D2D2);\n        background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);\n        -webkit-background-size: 100% 2px, 100% 1px;\n                background-size: 100% 2px, 100% 1px;\n        -webkit-box-shadow: none;\n                box-shadow: none;\n        -webkit-transition-duration: 0.3s;\n            -o-transition-duration: 0.3s;\n                transition-duration: 0.3s;\n    }\n\n/* custom material css end (sahil) */\n\n\n"
 
 /***/ },
 /* 115 */
@@ -14354,7 +14354,7 @@ var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* Opaqu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_template_parser_template_ast__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_parser_template_parser__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_offline_compiler__ = __webpack_require__(444);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_runtime_compiler__ = __webpack_require__(274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__src_url_resolver__ = __webpack_require__(93);
@@ -15494,7 +15494,7 @@ var SelectorContext = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__expression_parser_parser__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_i18n_html_parser__ = __webpack_require__(262);
@@ -21078,7 +21078,7 @@ function isAsciiHexDigit(code) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
@@ -22238,7 +22238,7 @@ var I18nError = (function (_super) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__assertions__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_resolver__ = __webpack_require__(165);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__identifiers__ = __webpack_require__(12);
@@ -23095,7 +23095,7 @@ function getHtmlTagDefinition(tagName) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(12);
@@ -23949,7 +23949,7 @@ var ResourceLoader = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_output_ast__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shadow_css__ = __webpack_require__(450);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_resolver__ = __webpack_require__(93);
@@ -29697,7 +29697,7 @@ module.exports = {
 'use strict';
 var global      = __webpack_require__(14)
   , dP          = __webpack_require__(17)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , SPECIES     = __webpack_require__(11)('species');
 
 module.exports = function(KEY){
@@ -30240,7 +30240,7 @@ exports.subscribeToResult = subscribeToResult;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__base_service__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__subdomain_service__ = __webpack_require__(117);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return UserService; });
@@ -31841,7 +31841,7 @@ function _getStylesArray(obj) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parse_util__ = __webpack_require__(30);
@@ -34270,7 +34270,7 @@ var _TsEmitterVisitor = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__output_ast__ = __webpack_require__(6);
 /* harmony export (immutable) */ exports["a"] = convertValueToOutputAst;
@@ -34322,7 +34322,7 @@ var _ValueOutputAstTransformer = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__identifiers__ = __webpack_require__(12);
@@ -34828,7 +34828,7 @@ function _addQueryToTokenMap(map, query) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_compiler__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_parser__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directive_normalizer__ = __webpack_require__(164);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directive_wrapper_compiler__ = __webpack_require__(121);
@@ -36219,7 +36219,7 @@ function normalizeNgContentSelect(selectAttr) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directive_wrapper_compiler__ = __webpack_require__(121);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
@@ -36777,7 +36777,7 @@ function addQueryToTokenMap(map, query) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_expression_converter__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_lang__ = __webpack_require__(2);
@@ -43876,7 +43876,7 @@ var RouterPreloader = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(67);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -43936,9 +43936,6 @@ var AppComponent = (function () {
             .catch(function (error) {
             //any error
         });
-        if (window.location.href.indexOf('/preview') >= 0) {
-            window.Intercom('update', { hide_default_launcher: true });
-        }
         // Google remarketing tag
         // let urla = window.location.href;
         // if(urla.indexOf("outgrow.co") >= 0) {
@@ -44006,6 +44003,9 @@ var AppComponent = (function () {
         LeadDyno.autoWatch();
         //webengage
         //webengage.init('~15ba1d98c');
+        if (window.location.href.indexOf('/preview') >= 0) {
+            window.Intercom('update', { hide_default_launcher: true });
+        }
     };
     AppComponent.prototype.redirectToDashboard = function () {
         var _this = this;
@@ -44049,7 +44049,7 @@ var AppComponent = (function () {
             selector: 'sd-app',
             template: __webpack_require__(735),
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* FeatureAuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Title */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Title */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* Script */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* FeatureAuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Title */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* Title */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* Script */]) === 'function' && _f) || Object])
     ], AppComponent);
     return AppComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -44087,7 +44087,7 @@ function isLoggedin() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validators_email_validator__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__user__ = __webpack_require__(531);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -44286,7 +44286,7 @@ var LoginComponent = (function () {
             template: __webpack_require__(737),
             styles: [__webpack_require__(722), __webpack_require__(115), __webpack_require__(114)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["e" /* CompanyService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["c" /* CookieService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["h" /* MembershipService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["h" /* MembershipService */]) === 'function' && _h) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["f" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["d" /* CompanyService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* CookieService */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["h" /* MembershipService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["h" /* MembershipService */]) === 'function' && _h) || Object])
     ], LoginComponent);
     return LoginComponent;
     var _a, _b, _c, _d, _e, _f, _g, _h;
@@ -44301,7 +44301,7 @@ var LoginComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LogoutComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44339,7 +44339,7 @@ var LogoutComponent = (function () {
             selector: 'og-logout',
             template: ''
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["g" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _d) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["g" /* UserService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["f" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _d) || Object])
     ], LogoutComponent);
     return LogoutComponent;
     var _a, _b, _c, _d;
@@ -44352,6 +44352,9 @@ var LogoutComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_index__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NotFoundComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44363,18 +44366,60 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
+
 var NotFoundComponent = (function () {
-    function NotFoundComponent() {
+    function NotFoundComponent(_cookieService, _router) {
+        this._cookieService = _cookieService;
+        this._router = _router;
+        this.isLoggedin = false;
     }
+    ;
+    NotFoundComponent.prototype.ngOnInit = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var storage = this._cookieService.readCookie('storage');
+        if (storage) {
+            this.isLoggedin = true;
+        }
+    };
+    NotFoundComponent.prototype.login = function () {
+        this._router.navigate(['/login']);
+    };
+    NotFoundComponent.prototype.pricing = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/pricing.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.features = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/features.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.whyCalculators = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/why_calculators.html';
+        jQuery(location).attr('href', protocol + url);
+    };
+    NotFoundComponent.prototype.examples = function () {
+        this.link = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].APP_EXTENSION;
+        var protocol = __WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].PROTOCOL;
+        var url = this.link + '/examples.html';
+        jQuery(location).attr('href', protocol + url);
+    };
     NotFoundComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-not-found',
             template: __webpack_require__(738),
             styles: [__webpack_require__(723)]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* CookieService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object])
     ], NotFoundComponent);
     return NotFoundComponent;
+    var _a, _b;
 }());
 
 
@@ -44472,7 +44517,7 @@ var ForgetPasswordComponent = (function () {
         this._userService.forgetPassword(this.captchaCode, this.forgetPasswordForm.value)
             .subscribe(function (response) {
             if (response.active === false) {
-                _this.errorMsg = 'User Account has been not approved yet!';
+                _this.errorMsg = 'User Account has not been approved yet!';
                 _this.forgetPasswordError = _this.errorMsg;
             }
             else {
@@ -44511,7 +44556,7 @@ var ForgetPasswordComponent = (function () {
             template: __webpack_require__(741),
             styles: [__webpack_require__(724), __webpack_require__(115), __webpack_require__(114)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* Script */]) === 'function' && _g) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* Script */]) === 'function' && _g) || Object])
     ], ForgetPasswordComponent);
     return ForgetPasswordComponent;
     var _a, _b, _c, _d, _e, _f, _g;
@@ -44645,8 +44690,8 @@ var SetPasswordComponent = (function () {
                         'companyList': response.companyList
                     };
                     _this._cookieService.createCookie('storage', JSON.stringify(storage), 3);
+                    _this._cookieService.createCookie('filepicker_token_json', JSON.stringify(response.companyAccess), 3);
                     _this._loggedInSerivce.login();
-                    // localStorage.setItem('storage',JSON.stringify(storage));
                     if (_this.tokenUrl === 'forgetPassword') {
                         //this._router.navigateByUrl('dashboard');
                         var link = window.location.pathname;
@@ -44676,7 +44721,7 @@ var SetPasswordComponent = (function () {
             template: __webpack_require__(742),
             styles: [__webpack_require__(726), __webpack_require__(725)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === 'function' && _e) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__angular_router__["a" /* Router */]) === 'function' && _e) || Object])
     ], SetPasswordComponent);
     return SetPasswordComponent;
     var _a, _b, _c, _d, _e;
@@ -44762,7 +44807,7 @@ var UserApprovalComponent = (function () {
             selector: 'user-approval',
             template: __webpack_require__(743)
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _d) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _d) || Object])
     ], UserApprovalComponent);
     return UserApprovalComponent;
     var _a, _b, _c, _d;
@@ -44905,7 +44950,7 @@ var VerifyUserComponent = (function () {
             template: __webpack_require__(744),
             styles: [__webpack_require__(727)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* CompanyService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* CompanyService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */]) === 'function' && _f) || Object])
     ], VerifyUserComponent);
     return VerifyUserComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -44984,7 +45029,7 @@ var LazyAssistantComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SiteComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -45028,7 +45073,7 @@ var SiteComponent = (function () {
             template: "\n    <sd-toolbar></sd-toolbar>\n    <router-outlet></router-outlet>\n  ",
             styles: [__webpack_require__(733)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _f) || Object])
     ], SiteComponent);
     return SiteComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -45044,7 +45089,7 @@ var SiteComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return VerifyEmailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -45136,7 +45181,7 @@ var VerifyEmailComponent = (function () {
             template: __webpack_require__(750),
             styles: [__webpack_require__(734)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["e" /* CompanyService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["c" /* CookieService */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["f" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["d" /* CompanyService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */]) === 'function' && _f) || Object])
     ], VerifyEmailComponent);
     return VerifyEmailComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -45286,7 +45331,7 @@ var dP          = __webpack_require__(17).f
   , $iterDefine = __webpack_require__(225)
   , step        = __webpack_require__(366)
   , setSpecies  = __webpack_require__(231)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , fastKey     = __webpack_require__(61).fastKey
   , SIZE        = DESCRIPTORS ? '_s' : 'size';
 
@@ -45454,7 +45499,7 @@ module.exports = __webpack_require__(14).document && document.documentElement;
 /* 360 */
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = !__webpack_require__(19) && !__webpack_require__(7)(function(){
+module.exports = !__webpack_require__(20) && !__webpack_require__(7)(function(){
   return Object.defineProperty(__webpack_require__(358)('div'), 'a', {get: function(){ return 7; }}).a != 7;
 });
 
@@ -45608,7 +45653,7 @@ var dP       = __webpack_require__(17)
   , anObject = __webpack_require__(4)
   , getKeys  = __webpack_require__(84);
 
-module.exports = __webpack_require__(19) ? Object.defineProperties : function defineProperties(O, Properties){
+module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
   anObject(O);
   var keys   = getKeys(Properties)
     , length = keys.length
@@ -45819,7 +45864,7 @@ module.exports = __webpack_require__(218)('Map', function(get){
 /***/ function(module, exports, __webpack_require__) {
 
 // 21.2.5.3 get RegExp.prototype.flags()
-if(__webpack_require__(19) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
+if(__webpack_require__(20) && /./g.flags != 'g')__webpack_require__(17).f(RegExp.prototype, 'flags', {
   configurable: true,
   get: __webpack_require__(221)
 });
@@ -45973,7 +46018,7 @@ module.exports = __webpack_require__(218)('Set', function(get){
 // ECMAScript 6 symbols shim
 var global         = __webpack_require__(14)
   , has            = __webpack_require__(22)
-  , DESCRIPTORS    = __webpack_require__(19)
+  , DESCRIPTORS    = __webpack_require__(20)
   , $export        = __webpack_require__(1)
   , redefine       = __webpack_require__(23)
   , META           = __webpack_require__(61).KEY
@@ -47021,7 +47066,7 @@ webpackAsyncContext.id = 400;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(491);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(18);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app___ = __webpack_require__(521);
 
 
@@ -47081,7 +47126,7 @@ var PipesModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__models_leads__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_traffic__ = __webpack_require__(533);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userCompany__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__userCompany__ = __webpack_require__(410);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Company; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return AdminCompany; });
 
@@ -47300,7 +47345,7 @@ var BillingAddress = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__base_service__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MembershipService; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -47578,6 +47623,86 @@ var PlanService = (function (_super) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__script_store__ = __webpack_require__(538);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Script; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var Script = (function () {
+    function Script() {
+        var _this = this;
+        this.scripts = {};
+        __WEBPACK_IMPORTED_MODULE_1__script_store__["a" /* ScriptStore */].forEach(function (script) {
+            _this.scripts[script.name] = {
+                loaded: false,
+                src: script.src
+            };
+        });
+    }
+    Script.prototype.load = function () {
+        var _this = this;
+        var scripts = [];
+        for (var _i = 0; _i < arguments.length; _i++) {
+            scripts[_i - 0] = arguments[_i];
+        }
+        var promises = [];
+        scripts.forEach(function (script) { return promises.push(_this.loadScript(script)); });
+        return Promise.all(promises);
+    };
+    Script.prototype.loadScript = function (name) {
+        var _this = this;
+        return new Promise(function (resolve, reject) {
+            //resolve if already loaded
+            if (_this.scripts[name].loaded) {
+                resolve({ script: name, loaded: true, status: 'Already Loaded' });
+            }
+            else {
+                //load script
+                var script_1 = document.createElement('script');
+                script_1.type = 'text/javascript';
+                script_1.src = _this.scripts[name].src;
+                if (script_1.readyState) {
+                    script_1.onreadystatechange = function () {
+                        if (script_1.readyState === "loaded" || script_1.readyState === "complete") {
+                            script_1.onreadystatechange = null;
+                            _this.scripts[name].loaded = true;
+                            resolve({ script: name, loaded: true, status: 'Loaded' });
+                        }
+                    };
+                }
+                else {
+                    script_1.onload = function () {
+                        _this.scripts[name].loaded = true;
+                        resolve({ script: name, loaded: true, status: 'Loaded' });
+                    };
+                }
+                script_1.onerror = function (error) { return resolve({ script: name, loaded: false, status: 'Loaded' }); };
+                document.getElementsByTagName('head')[0].appendChild(script_1);
+            }
+        });
+    };
+    Script = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [])
+    ], Script);
+    return Script;
+}());
+
+
+/***/ },
+/* 410 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return UsersCompany; });
 /* unused harmony export Deleted */
 /* unused harmony export Invite */
@@ -47690,135 +47815,12 @@ var Invite = (function () {
 
 
 /***/ },
-/* 410 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__script_store__ = __webpack_require__(538);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Script; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var Script = (function () {
-    function Script() {
-        var _this = this;
-        this.scripts = {};
-        __WEBPACK_IMPORTED_MODULE_1__script_store__["a" /* ScriptStore */].forEach(function (script) {
-            _this.scripts[script.name] = {
-                loaded: false,
-                src: script.src
-            };
-        });
-    }
-    Script.prototype.load = function () {
-        var _this = this;
-        var scripts = [];
-        for (var _i = 0; _i < arguments.length; _i++) {
-            scripts[_i - 0] = arguments[_i];
-        }
-        var promises = [];
-        scripts.forEach(function (script) { return promises.push(_this.loadScript(script)); });
-        return Promise.all(promises);
-    };
-    Script.prototype.loadScript = function (name) {
-        var _this = this;
-        return new Promise(function (resolve, reject) {
-            //resolve if already loaded
-            if (_this.scripts[name].loaded) {
-                resolve({ script: name, loaded: true, status: 'Already Loaded' });
-            }
-            else {
-                //load script
-                var script_1 = document.createElement('script');
-                script_1.type = 'text/javascript';
-                script_1.src = _this.scripts[name].src;
-                if (script_1.readyState) {
-                    script_1.onreadystatechange = function () {
-                        if (script_1.readyState === "loaded" || script_1.readyState === "complete") {
-                            script_1.onreadystatechange = null;
-                            _this.scripts[name].loaded = true;
-                            resolve({ script: name, loaded: true, status: 'Loaded' });
-                        }
-                    };
-                }
-                else {
-                    script_1.onload = function () {
-                        _this.scripts[name].loaded = true;
-                        resolve({ script: name, loaded: true, status: 'Loaded' });
-                    };
-                }
-                script_1.onerror = function (error) { return resolve({ script: name, loaded: false, status: 'Loaded' }); };
-                document.getElementsByTagName('head')[0].appendChild(script_1);
-            }
-        });
-    };
-    Script = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [])
-    ], Script);
-    return Script;
-}());
-
-
-/***/ },
 /* 411 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AdminGuard; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var AdminGuard = (function () {
-    function AdminGuard(router, _cookieService) {
-        this.router = router;
-        this._cookieService = _cookieService;
-    }
-    AdminGuard.prototype.canActivate = function () {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        if (this._cookieService.readCookie('storage') !== null && storage.user.role == "ADMIN") {
-            return true;
-        }
-        this.router.navigate(['/login']);
-        return false;
-    };
-    AdminGuard = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */]) === 'function' && _b) || Object])
-    ], AdminGuard);
-    return AdminGuard;
-    var _a, _b;
-}());
-
-
-/***/ },
-/* 412 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CookieService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -47864,6 +47866,49 @@ var CookieService = (function () {
         __metadata('design:paramtypes', [])
     ], CookieService);
     return CookieService;
+}());
+
+
+/***/ },
+/* 412 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AdminGuard; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var AdminGuard = (function () {
+    function AdminGuard(router, _cookieService) {
+        this.router = router;
+        this._cookieService = _cookieService;
+    }
+    AdminGuard.prototype.canActivate = function () {
+        var storage = JSON.parse(this._cookieService.readCookie('storage'));
+        if (this._cookieService.readCookie('storage') !== null && storage.user.role == "ADMIN") {
+            return true;
+        }
+        this.router.navigate(['/login']);
+        return false;
+    };
+    AdminGuard = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */]) === 'function' && _b) || Object])
+    ], AdminGuard);
+    return AdminGuard;
+    var _a, _b;
 }());
 
 
@@ -51206,7 +51251,7 @@ function getXmlTagDefinition(tagName) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__animation_animation_compiler__ = __webpack_require__(255);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_parser__ = __webpack_require__(256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__identifiers__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__output_output_ast__ = __webpack_require__(6);
@@ -53368,7 +53413,7 @@ var ViewBinderVisitor = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_identifier_util__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
@@ -60309,7 +60354,7 @@ var CALCULATOR_ROUTES = [
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__site_index__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_authentication_auth_guard__ = __webpack_require__(523);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_authentication_admin_guard__ = __webpack_require__(411);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_authentication_admin_guard__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_authentication_subdomain_guard__ = __webpack_require__(528);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_authentication_analytics_guard__ = __webpack_require__(522);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_feature_access_service__ = __webpack_require__(75);
@@ -60479,7 +60524,7 @@ var CoreModule = (function () {
     CoreModule.forRoot = function () {
         return {
             ngModule: CoreModule,
-            providers: [__WEBPACK_IMPORTED_MODULE_1__shared_services_index__["g" /* UserService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* LoggedInService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["j" /* SettingsCommunicationService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["h" /* MembershipService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["e" /* CompanyService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* CookieService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["d" /* Script */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["a" /* SubDomainService */], __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */]]
+            providers: [__WEBPACK_IMPORTED_MODULE_1__shared_services_index__["g" /* UserService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["f" /* LoggedInService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["j" /* SettingsCommunicationService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["h" /* MembershipService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["d" /* CompanyService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* CookieService */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* Script */], __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["a" /* SubDomainService */], __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */]]
         };
     };
     CoreModule = __decorate([
@@ -60587,7 +60632,7 @@ var AuthGuard = (function () {
     };
     AuthGuard = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */]) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */]) === 'function' && _c) || Object])
     ], AuthGuard);
     return AuthGuard;
     var _a, _b, _c;
@@ -60696,7 +60741,7 @@ var FreemiumGuard = (function () {
     };
     FreemiumGuard = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */]) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */]) === 'function' && _c) || Object])
     ], FreemiumGuard);
     return FreemiumGuard;
     var _a, _b, _c;
@@ -60795,7 +60840,7 @@ var SetupNewPasswordGuard = (function () {
     };
     SetupNewPasswordGuard = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _c) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* SubDomainService */]) === 'function' && _c) || Object])
     ], SetupNewPasswordGuard);
     return SetupNewPasswordGuard;
     var _a, _b, _c;
@@ -60855,7 +60900,7 @@ var SubdomainGuard = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validators_email_validator__ = __webpack_require__(87);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return InvitedLoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -60958,7 +61003,7 @@ var InvitedLoginComponent = (function () {
             template: __webpack_require__(736),
             styles: [__webpack_require__(721), __webpack_require__(719), __webpack_require__(720)]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["c" /* CookieService */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["f" /* LoggedInService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["a" /* SubDomainService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_index__["b" /* CookieService */]) === 'function' && _f) || Object])
     ], InvitedLoginComponent);
     return InvitedLoginComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -61041,7 +61086,7 @@ var Traffic = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_currentPlan__ = __webpack_require__(406);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PaymentModalComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -61164,7 +61209,6 @@ var PaymentModalComponent = (function () {
             self.cardType = '';
             self.cardValid = false;
             if (_this.subsStatus === 'cancelled') {
-                console.log('cancelled');
                 _this.activateNow();
             }
             else {
@@ -61182,8 +61226,7 @@ var PaymentModalComponent = (function () {
                 _this.errorMessage = '';
                 window.toastNotification('Payment successfully added');
                 self._cookieService.createCookie('cardStatus', self.card_status, 3);
-                jQuery('#activateModal').modal({ backdrop: 'static', keyboard: false });
-                jQuery('#activateModal').modal('show');
+                window.location.reload();
             }
             jQuery('#btnSetupCard').html('Submit').attr('disabled', false);
             jQuery('#cc-modal-payment input').val('');
@@ -61237,7 +61280,7 @@ var PaymentModalComponent = (function () {
             selector: 'og-payment-modal',
             template: __webpack_require__(739),
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["h" /* MembershipService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["h" /* MembershipService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["d" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["d" /* Script */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* CookieService */]) === 'function' && _d) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["h" /* MembershipService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["h" /* MembershipService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* Script */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* CookieService */]) === 'function' && _d) || Object])
     ], PaymentModalComponent);
     return PaymentModalComponent;
     var _a, _b, _c, _d;
@@ -61328,7 +61371,7 @@ var PremiumModalComponent = (function () {
             selector: 'og-premium-modal',
             template: __webpack_require__(740),
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_index__["c" /* CookieService */]) === 'function' && _a) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_index__["b" /* CookieService */]) === 'function' && _a) || Object])
     ], PremiumModalComponent);
     return PremiumModalComponent;
     var _a;
@@ -61580,7 +61623,7 @@ var CompanyNavbarComponent = (function () {
             template: __webpack_require__(745),
             styles: [__webpack_require__(728)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* LoggedInService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* CookieService */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["f" /* LoggedInService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* CookieService */]) === 'function' && _b) || Object])
     ], CompanyNavbarComponent);
     return CompanyNavbarComponent;
     var _a, _b;
@@ -61659,7 +61702,7 @@ var SiteNavbarComponent = (function () {
             template: __webpack_require__(746),
             styles: [__webpack_require__(729)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* LoggedInService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["c" /* CookieService */]) === 'function' && _b) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["f" /* LoggedInService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_index__["b" /* CookieService */]) === 'function' && _b) || Object])
     ], SiteNavbarComponent);
     return SiteNavbarComponent;
     var _a, _b;
@@ -61881,7 +61924,7 @@ var SignupComponent = (function () {
             template: __webpack_require__(747),
             styles: [__webpack_require__(730), __webpack_require__(115), __webpack_require__(114)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */]) === 'function' && _f) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */]) === 'function' && _f) || Object])
     ], SignupComponent);
     return SignupComponent;
     var _a, _b, _c, _d, _e, _f;
@@ -61937,7 +61980,7 @@ var Email = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__User__ = __webpack_require__(555);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_validators_email_validator__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SignupDetailComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -62144,7 +62187,7 @@ var SignupDetailComponent = (function () {
             template: __webpack_require__(748),
             styles: [__webpack_require__(731), __webpack_require__(115), __webpack_require__(114)],
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _g) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_forms__["f" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["k" /* Renderer */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_core__["j" /* ElementRef */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__angular_router__["a" /* Router */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _g) || Object])
     ], SignupDetailComponent);
     return SignupDetailComponent;
     var _a, _b, _c, _d, _e, _f, _g;
@@ -62161,7 +62204,7 @@ var SignupDetailComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_models_company__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(18);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ToolbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -62308,7 +62351,7 @@ var ToolbarComponent = (function () {
             this.cardStatus = status.cardStatus;
             this.subsStatus = status.subsStatus;
         }
-        if (this.isAdminCreated && (this.cardStatus === 'no_card' || this.subsStatus === 'cancelled' || this.subsStatus === 'future')) {
+        if (this.isAdminCreated && this.subsStatus === 'cancelled') {
             jQuery('#new-setup-payment').modal({ backdrop: 'static', keyboard: false });
             jQuery('#new-setup-payment').modal('show');
         }
@@ -62422,7 +62465,7 @@ var ToolbarComponent = (function () {
                 __webpack_require__(732)
             ]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* LoggedInService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* CompanyService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* CookieService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _g) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _g) || Object])
     ], ToolbarComponent);
     return ToolbarComponent;
     var _a, _b, _c, _d, _e, _f, _g;
@@ -63766,7 +63809,7 @@ var isExtensible = Object.isExtensible || function(){
 };
 
 // 19.2.4.2 name
-NAME in FProto || __webpack_require__(19) && dP(FProto, NAME, {
+NAME in FProto || __webpack_require__(20) && dP(FProto, NAME, {
   configurable: true,
   get: function(){
     try {
@@ -64120,7 +64163,7 @@ if(!$Number(' 0o1') || !$Number('0b1') || $Number('+0x1')){
       && (BROKEN_COF ? fails(function(){ proto.valueOf.call(that); }) : cof(that) != NUMBER)
         ? inheritIfRequired(new Base(toNumber(it)), that, $Number) : toNumber(it);
   };
-  for(var keys = __webpack_require__(19) ? gOPN(Base) : (
+  for(var keys = __webpack_require__(20) ? gOPN(Base) : (
     // ES3:
     'MAX_VALUE,MIN_VALUE,NaN,NEGATIVE_INFINITY,POSITIVE_INFINITY,' +
     // ES6 (in case, if modules with ES6 Number statics required before):
@@ -64398,7 +64441,7 @@ $export($export.S, 'Object', {create: __webpack_require__(83)});
 
 var $export = __webpack_require__(1);
 // 19.1.2.3 / 15.2.3.7 Object.defineProperties(O, Properties)
-$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperties: __webpack_require__(369)});
+$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperties: __webpack_require__(369)});
 
 /***/ },
 /* 654 */
@@ -64406,7 +64449,7 @@ $export($export.S + $export.F * !__webpack_require__(19), 'Object', {definePrope
 
 var $export = __webpack_require__(1);
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-$export($export.S + $export.F * !__webpack_require__(19), 'Object', {defineProperty: __webpack_require__(17).f});
+$export($export.S + $export.F * !__webpack_require__(20), 'Object', {defineProperty: __webpack_require__(17).f});
 
 /***/ },
 /* 655 */
@@ -64911,7 +64954,7 @@ var global            = __webpack_require__(14)
   // "new" creates a new object, old webkit buggy here
   , CORRECT_NEW       = new $RegExp(re1) !== re1;
 
-if(__webpack_require__(19) && (!CORRECT_NEW || __webpack_require__(7)(function(){
+if(__webpack_require__(20) && (!CORRECT_NEW || __webpack_require__(7)(function(){
   re2[__webpack_require__(11)('match')] = false;
   // RegExp constructor can alter flags and IsRegExp works correct with @@match
   return $RegExp(re1) != re1 || $RegExp(re2) == re2 || $RegExp(re1, 'i') != '/a/i';
@@ -64950,7 +64993,7 @@ __webpack_require__(231)('RegExp');
 __webpack_require__(380);
 var anObject    = __webpack_require__(4)
   , $flags      = __webpack_require__(221)
-  , DESCRIPTORS = __webpack_require__(19)
+  , DESCRIPTORS = __webpack_require__(20)
   , TO_STRING   = 'toString'
   , $toString   = /./[TO_STRING];
 
@@ -65828,7 +65871,7 @@ module.exports = "<div  id=\"login\" class=\"login\">\n    <div class=\"login-di
 /* 738 */
 /***/ function(module, exports) {
 
-module.exports = "<div>\n    <nav class=\"navbar custom-navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/outgrow-logo.png\" /></a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li><a href=\"javascript:void(0);\">Why Calculators ?</a></li>\n                    <li><a href=\"javascript:void(0);\">Features</a></li>\n                    <li><a href=\"javascript:void(0);\">Pricing</a></li>\n                    <li><a href=\"javascript:void(0);\">Use Cases</a></li>\n                    <li><a href=\"javascript:void(0);\">Start Trial</a></li>\n                    <li><a href=\"javascript:void(0);\" class=\"link-login\">Login</a></li>\n                </ul>\n            </div><!-- /.navbar-collapse -->\n        </div><!-- /.container-fluid -->\n    </nav>\n    <!-- Homepage header end-->\n\t<!-- Homepage section 1 start-->\n    <section class=\"section section-1\">\n        <div class=\"container-fluid\">\n            <div class=\"col-xs-12 col-sm-6 section-1-left\">\n                <div class=\"section1-left-cell\">\n                    <h3 class=\"mk-animate-element fade-in heading-404\">\n                        404\n                    </h3>\n                    <h4 class=\"mk-animate-element fade-in heading2-404\">\n                        Looks like your calc is not published yet, please<br> login and publish your calc.\n                    </h4>\n                    <div class=\"form-group mk-animate-element fade-in hide\">\n                        <input type=\"text\" placeholder=\"Email Address\" />\n                    </div>\n                    <div class=\"col-xs-12 col-sm-8 np\">\n                        <button class=\"btn-buildcal mk-animate-element fade-in login-404\">Login</button>\n                    </div>\n                </div>\n            </div>\n\t\t\t<div class=\"col-xs-12 col-sm-6 np rs-hide\">\n\t\t\t\t<div class=\"sec1-box-left img-404\">\n\t\t\t\t\t<div class=\"sec1-box1 mk-animate-element fade-in\">\n\t\t\t\t\t\t<img src=\"assets/images/404.png\" />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n            <div class=\"col-xs-12 col-sm-12 text-center footer-404\">\n                <i class=\"material-icons\">copyright</i>\n                <span>Copyrights</span>\n                <img src=\"assets/images/footer-logo-dark.png\" />\n            </div>\n        </div>\n    </section>\n</div>"
+module.exports = "<div>\n    <nav class=\"navbar custom-navbar navbar-default navbar-fixed-top\">\n        <div class=\"container-fluid\">\n            <!-- Brand and toggle get grouped for better mobile display -->\n            <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/outgrow-logo.png\" /></a>\n            </div>\n\n            <!-- Collect the nav links, forms, and other content for toggling -->\n            <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n                <ul class=\"nav navbar-nav navbar-right\">\n                    <li><a href=\"javascript:void(0);\" (click)=\"whyCalculators()\">Why Calculators ?</a></li>\n                    <li><a href=\"javascript:void(0);\" (click)=\"features()\">Featuress</a></li>\n                    <li><a href=\"javascript:void(0);\" (click)=\"pricing()\">Pricing</a></li>\n                    <li><a href=\"javascript:void(0);\" (click)=\"examples()\">Examples</a></li>\n                    <li>\n                        <a *ngIf=\"!isLoggedin\" href=\"javascript:void(0);\" class=\"link-login\" (click)=\"login()\">Login</a>\n                    </li>\n                </ul>\n            </div>\n            <!-- /.navbar-collapse -->\n        </div><!-- /.container-fluid -->\n    </nav>\n    <!-- Homepage header end-->\n\t<!-- Homepage section 1 start-->\n    <section class=\"section section-1\">\n        <div class=\"container-fluid\">\n            <div class=\"col-xs-12 col-sm-6 section-1-left\">\n                <div class=\"section1-left-cell\">\n                    <h3 class=\"mk-animate-element fade-in heading-404\">\n                        404\n                    </h3>\n                    <h4 class=\"mk-animate-element fade-in heading2-404\">\n                        Looks like your calc is not published yet, please<br> login and publish your calc.\n                    </h4>\n                    <div class=\"form-group mk-animate-element fade-in hide\">\n                        <input type=\"text\" placeholder=\"Email Address\" />\n                    </div>\n                    <div class=\"col-xs-12 col-sm-8 np\">\n                        <button class=\"btn-buildcal mk-animate-element fade-in login-404\" (click)=\"login()\">Login</button>\n                    </div>\n                </div>\n            </div>\n\t\t\t<div class=\"col-xs-12 col-sm-6 np rs-hide\">\n\t\t\t\t<div class=\"sec1-box-left img-404\">\n\t\t\t\t\t<div class=\"sec1-box1 mk-animate-element fade-in\">\n\t\t\t\t\t\t<img src=\"assets/images/404.png\" />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n            <div class=\"col-xs-12 col-sm-12 text-center footer-404\">\n                <i class=\"material-icons\">copyright</i>\n                <span>Copyrights</span>\n                <img src=\"assets/images/footer-logo-dark.png\" />\n            </div>\n        </div>\n    </section>\n</div>"
 
 /***/ },
 /* 739 */
@@ -65894,7 +65937,7 @@ module.exports = "<div id=\"signUp\" class=\"signUp\">\n\t<div class=\"signUp-di
 /* 749 */
 /***/ function(module, exports) {
 
-module.exports = "<header id=\"new-header\" class=\"\" *ngIf=\"page != 'builder'\">\n    <nav class=\"navbar navbar-default navbar-fixed-top main-logo company-nav\" [class.company-nav]=\"!loggedIn.isLoggedIn\" id=\"nav-cookies-div\">\n        <div *ngIf=\"!isEmailVerified\" class=\"cookies-header\">\n\t\t\t<div class=\"col-md-12 np\">\n\t\t\t\t<i class=\"material-icons\">settings</i>\n                    <span>\n                        Your email ID is not verified yet. Please click on the verification link sent to your email or\n                        &nbsp;<a href=\"javascript:void();\" (click)=\"resendEmail();callGA();\">click here</a> to receive a new verification link.\n                    </span>\n\t\t\t\t<button type=\"button\" class=\"close btn-close pull-right\" (click)=\"close()\">\n                    <i class=\"material-icons\">clear</i>\n                </button>\n\t\t\t</div>\n        </div>\n        <div class=\"container-fluid nav-padding\">\n            <div class=\"navbar-header\">\n                <a *ngIf=\"!isSubDomainUrl || loggedIn.isLoggedIn\" [routerLink]=\"['/dashboard']\" class=\"navbar-brand navbar-logopadding\">\n                    <img src=\"assets/images/outgrow-logo.png\" />\n                </a>\n                <a href=\"#\" *ngIf=\"isSubDomainUrl && !loggedIn.isLoggedIn\" class=\"navbar-brand navbar-logopadding\">\n                    <div class=\"company_name_avatar-circle\">\n                        {{companyInitial}}\n                    </div>\n                    <div class=\"company_name_span ellipsis\">{{companyName}}</div>\n                </a>\n            </div>\n            <div class=\"navbar-collapse collapse\" id=\"navbar\">\n                <div class=\"navbar-left col-md-7 np\">\n                    <ul *ngIf=\"loggedIn.isLoggedIn\">\n                        <li>\n                            <a href=\"\" class=\"hvr-underline-from-left\"\n                                [routerLinkActive]=\"['active']\"\n                                [routerLink]=\"['/dashboard']\"\n                                >\n                                <i class=\"material-icons\">home</i> &nbsp;Dashboard\n                            </a>\n                        </li>\n                        <li>\n                            <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\n                                <i class=\"material-icons\">equalizer</i> &nbsp;Analytics\n                            </a>\n                        </li>\n\n                        <!-- <li>\n                            <a href=\"\" class=\"hvr-underline-from-left\">\n                                <i class=\"material-icons\">lightbulb_outline</i> &nbsp;How do i\n                            </a>\n                        </li> -->\n                    </ul>\n                </div>\n                <div class=\"navbar-right\">\n                    <div class=\"col-xs-12 navbar-right-block\">\n                        <!-- <a href=\"\" class=\"navbar-name\">\n                                <i class=\"material-icons\">account_box</i>\n                                <span class=\"ellipsis\"> &nbsp;Pratham</span>\n                            </a> -->\n                        <!-- Start: header name-dropdown -->\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"!loggedIn.isLoggedIn && !isSubDomainUrl\">\n                            <a [routerLink]=\"['/login']\" class=\"\" >\n                              <button type=\"button\" class=\"btn btn-default dropdown-toggle\">\n                                  <i class=\"material-icons\">account_box</i>\n                                  <span class=\"ellipsis name-title\"> &nbsp;Login</span>\n                              </button>\n                            </a>\n                        </div>\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"loggedIn.isLoggedIn\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                <i class=\"material-icons\">account_box</i>\n                                <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\n                            </button>\n                            <ul class=\"dropdown-menu\">\n                                <div class=\"company-list\">\n                                    <div class=\"company-list-inner\"  [class.slimscroll] = \"mycompanyLength> 3\">\n                                        <li class=\"active\" *ngFor=\"let company of myCompanies\">\n                                            <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\n                                                <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\n                                                <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\n                                            </a>\n                                        </li>\n                                    </div>\n                                    <hr class=\"name-dropdown-border\">\n                                </div>\n                                <div class=\"name-list\">\n                                    <!-- <li>\n                                        <a href=\"#\" class=\"hvr-sweep-to-right\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\n                                            <span class=\"name-list-title\">My Profile</span>\n                                        </a>\n                                    </li> -->\n                                    <li>\n                                        <a *ngIf=\"!is_subcripion_cancelled\"  class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                                            <span class=\"name-list-title\">Settings</span>\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                                            <span class=\"name-list-title\">Logout</span>\n                                        </a>\n                                    </li>\n                                </div>\n                            </ul>\n                        </div>\n                        <!-- End: header name-dropdown -->\n                        <!-- Start: Help dropdown -->\n                         <!--<div class=\"btn-group help-dropdown-wrapper\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                <i class=\"material-icons\">help_outline</i>\n                            </button>\n                        </div> -->\n                        <!-- End: Help dropdown -->\n                        <!-- Start: help icon -->\n                            <!--<span *ngIf=\"page != 'dashboard' && page != 'analytics' && page != 'settings' && page != 'templates'\"\n                                  class=\"icon-help popover-wrapper\" data-toggle=\"modal\" data-target=\"#video-modal\">\n                              <i class=\"material-icons\">help_outline</i>\n                              <div class=\"popover-block\">Help</div>\n                            </span>-->\n                        <!-- End: help icon -->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n</header>\n\n<div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"page == 'builder'\">\n    <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n        <i class=\"material-icons\">account_box</i>\n        <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\n    </button>\n    <ul class=\"dropdown-menu builder-dropdown-menu \">\n        <div class=\"company-list\">\n            <div class=\"company-list-inner\" [class.slimscroll] = \"mycompanyLength> 3\">\n                <li class=\"active\" *ngFor=\"let company of myCompanies\">\n\n                    <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\n                        <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\n                        <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\n                    </a>\n                </li>\n            </div>\n            <hr class=\"name-dropdown-border\">\n        </div>\n        <div class=\"name-list\">\n            <!-- <li>\n                <a href=\"#\" class=\"hvr-sweep-to-right\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\n                    <span class=\"name-list-title\">My Profile</span>\n                </a>\n            </li> -->\n            <li>\n                <a class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                    <span class=\"name-list-title\">Settings</span>\n                </a>\n            </li>\n            <li>\n                <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                    <span class=\"name-list-title\">Logout</span>\n                </a>\n            </li>\n        </div>\n    </ul>\n</div>\n<!-- Start: help icon -->\n\t<span *ngIf=\"page == 'builder'\" class=\"icon-help popover-wrapper builder-help-icon\" (click)=\"videoModal()\">\n\t\t<i class=\"material-icons\">help_outline</i>\n\t\t<div class=\"popover-block\">Help</div>\n\t</span>\n<!-- End: help icon -->\n\n<!-- Start: Responsive header -->\n<header id=\"responsive-header\" class=\"\" *ngIf=\"page != 'builder' && loggedIn.isLoggedIn\">\n    <nav class=\"navbar navbar-default navbar-fixed-top white-logo\">\n      <div class=\"container-fluid nav-padding\">\n          <div class=\"col-xs-2 np\"></div>\n          <div class=\"navbar-header col-xs-8 np\">\n              <!-- <a href=\"#\" class=\"navbar-brand\">\n                  <img src=\"assets/images/headerLogo-white.png\" class=\"\" />\n              </a> -->\n              <h4 class=\"col-xs-12 np ellipsis title\">{{respTitle}}</h4>\n          </div>\n          <div class=\"mobile-menu col-xs-2 np\">\n              <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <i class=\"material-icons\">menu</i>\n              </button>\n              <ul class=\"dropdown-menu\">\n                  <div class=\"user-name user-outr\" *ngIf=\"loggedIn.isLoggedIn\">\n                      <li>\n                          <!-- <a href=\"javascript:void(0);\"><img src=\"assets/images/user1.png\"> </a> -->\n                          <span>{{name}}</span>\n                      </li>\n                      <hr class=\"name-dropdown-border\">\n                  </div>\n                  <div class=\"name-list header-links\">\n                      <li>\n                          <a [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" (click)=\"header('Dashboard')\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">home</i></span>\n                              <span class=\"name-list-title\">Dashboard</span>\n                          </a>\n                      </li>\n                      <li>\n                          <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\n                          <!-- <a class=\"hvr-underline-from-left\" [routerLinkActive]=\"['active']\"> -->\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">equalizer</i></span>\n                              <span class=\"name-list-title\">Analytics</span>\n                          </a>\n                      </li>\n                      <!-- <li>\n                          <a href=\"#\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">lightbulb_outline</i></span>\n                              <span class=\"name-list-title\">How Do I</span>\n                          </a>\n                      </li> -->\n                      <hr class=\"name-dropdown-border\">\n                  </div>\n                  <div class=\"company-list\">\n                      <li *ngFor=\"let company of myCompanies\" [class.active]=\"company.sub_domain == co\">\n                          <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\">\n                              <span class=\"company-selected\"><i class=\"material-icons\" *ngIf=\"company.sub_domain == co\">done</i></span>\n                              <span class=\"company-list-title\">{{company.name}}</span>\n                          </a>\n                      </li>\n                  </div>\n                  <div class=\"name-list setting-logout-links\">\n                      <li>\n                          <a [routerLink]=\"['/settings']\" (click)=\"header('Settings')\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                              <span class=\"name-list-title\">Settings</span>\n                          </a>\n                      </li>\n                      <li>\n                          <a (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                              <span class=\"name-list-title\">Logout</span>\n                          </a>\n                      </li>\n                      <li class=\"builder-help-icon\">\n                        <!-- Start: help icon -->\n                            <a href=\"javascript:void(0)\">\n                                <span class=\"icon-help\" data-toggle=\"modal\" data-target=\"#video-modal\">\n                                    <i class=\"material-icons\">help_outline</i> Help\n                                </span>\n                            </a>\n                        <!-- End: help icon -->\n                     </li>\n                  </div>\n              </ul>\n          </div>\n      </div>\n    </nav>\n</header>\n<!-- End: Responsive header -->\n\n<og-payment-modal></og-payment-modal>\n<og-premium-modal></og-premium-modal>\n\n"
+module.exports = "<header id=\"new-header\" class=\"\" *ngIf=\"page != 'builder'\">\n    <nav class=\"navbar navbar-default navbar-fixed-top main-logo company-nav\" [class.company-nav]=\"!loggedIn.isLoggedIn\" id=\"nav-cookies-div\">\n        <div *ngIf=\"!isEmailVerified\" class=\"cookies-header\">\n\t\t\t<div class=\"col-md-12 np\">\n\t\t\t\t<i class=\"material-icons\">settings</i>\n                    <span>\n                        Your email ID is not verified yet. Please click on the verification link sent to your email or\n                        &nbsp;<a href=\"javascript:void();\" (click)=\"resendEmail();callGA();\">click here</a> to receive a new verification link.\n                    </span>\n\t\t\t\t<button type=\"button\" class=\"close btn-close pull-right\" (click)=\"close()\">\n                    <i class=\"material-icons\">clear</i>\n                </button>\n\t\t\t</div>\n        </div>\n        <div class=\"container-fluid nav-padding\">\n            <div class=\"navbar-header\">\n                <a *ngIf=\"!isSubDomainUrl || loggedIn.isLoggedIn\" [routerLink]=\"['/dashboard']\" class=\"navbar-brand navbar-logopadding\">\n                    <img src=\"assets/images/outgrow-logo.png\" />\n                </a>\n                <a href=\"#\" *ngIf=\"isSubDomainUrl && !loggedIn.isLoggedIn\" class=\"navbar-brand navbar-logopadding\">\n                    <div class=\"company_name_avatar-circle\">\n                        {{companyInitial}}\n                    </div>\n                    <div class=\"company_name_span ellipsis\">{{companyName}}</div>\n                </a>\n            </div>\n            <div class=\"navbar-collapse collapse\" id=\"navbar\">\n                <div class=\"navbar-left col-md-7 np\">\n                    <ul *ngIf=\"loggedIn.isLoggedIn\">\n                        <li>\n                            <a href=\"\" class=\"hvr-underline-from-left\"\n                                [routerLinkActive]=\"['active']\"\n                                [routerLink]=\"['/dashboard']\"\n                                >\n                                <i class=\"material-icons\">home</i> &nbsp;Dashboard\n                            </a>\n                        </li>\n                        <li>\n                            <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\n                                <i class=\"material-icons\">equalizer</i> &nbsp;Analytics\n                            </a>\n                        </li>\n\n                        <!-- <li>\n                            <a href=\"\" class=\"hvr-underline-from-left\">\n                                <i class=\"material-icons\">lightbulb_outline</i> &nbsp;How do i\n                            </a>\n                        </li> -->\n                    </ul>\n                </div>\n                <div class=\"navbar-right\">\n                    <div class=\"col-xs-12 navbar-right-block\">\n                        <!-- <a href=\"\" class=\"navbar-name\">\n                                <i class=\"material-icons\">account_box</i>\n                                <span class=\"ellipsis\"> &nbsp;Pratham</span>\n                            </a> -->\n                        <!-- Start: header name-dropdown -->\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"!loggedIn.isLoggedIn && !isSubDomainUrl\">\n                            <a [routerLink]=\"['/login']\" class=\"\" >\n                              <button type=\"button\" class=\"btn btn-default dropdown-toggle\">\n                                  <i class=\"material-icons\">account_box</i>\n                                  <span class=\"ellipsis name-title\"> &nbsp;Login</span>\n                              </button>\n                            </a>\n                        </div>\n                        <div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"loggedIn.isLoggedIn\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                <i class=\"material-icons\">account_box</i>\n                                <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\n                            </button>\n                            <ul class=\"dropdown-menu\">\n                                <div class=\"company-list\">\n                                    <div class=\"company-list-inner\"  [class.slimscroll] = \"mycompanyLength> 3\">\n                                        <li class=\"active\" *ngFor=\"let company of myCompanies\">\n                                            <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\" class=\"hvr-sweep-to-right\">\n                                                <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\n                                                <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\n                                            </a>\n                                        </li>\n                                    </div>\n                                    <hr class=\"name-dropdown-border\">\n                                </div>\n                                <div class=\"name-list\">\n                                    <!-- <li>\n                                        <a href=\"#\" class=\"hvr-sweep-to-right\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\n                                            <span class=\"name-list-title\">My Profile</span>\n                                        </a>\n                                    </li> -->\n                                    <li>\n                                        <a *ngIf=\"!is_subcripion_cancelled\"  class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                                            <span class=\"name-list-title\">Settings</span>\n                                        </a>\n                                    </li>\n                                    <li>\n                                        <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                                            <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                                            <span class=\"name-list-title\">Logout</span>\n                                        </a>\n                                    </li>\n                                </div>\n                            </ul>\n                        </div>\n                        <!-- End: header name-dropdown -->\n                        <!-- Start: Help dropdown -->\n                         <!--<div class=\"btn-group help-dropdown-wrapper\">\n                            <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                                <i class=\"material-icons\">help_outline</i>\n                            </button>\n                        </div> -->\n                        <!-- End: Help dropdown -->\n                        <!-- Start: help icon -->\n                            <!--<span *ngIf=\"page != 'dashboard' && page != 'analytics' && page != 'settings' && page != 'templates'\"\n                                  class=\"icon-help popover-wrapper\" data-toggle=\"modal\" data-target=\"#video-modal\">\n                              <i class=\"material-icons\">help_outline</i>\n                              <div class=\"popover-block\">Help</div>\n                            </span>-->\n                        <!-- End: help icon -->\n                    </div>\n                </div>\n            </div>\n        </div>\n    </nav>\n</header>\n\n<div class=\"btn-group name-dropdown-wrapper name-dd-minh\" *ngIf=\"page == 'builder'\">\n    <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n        <i class=\"material-icons\">account_box</i>\n        <span class=\"ellipsis name-title\"> &nbsp;{{name}}</span>\n    </button>\n    <ul class=\"dropdown-menu builder-dropdown-menu \">\n        <div class=\"company-list\">\n            <div class=\"company-list-inner\" [class.slimscroll] = \"mycompanyLength> 3\">\n                <li class=\"active\" *ngFor=\"let company of myCompanies\">\n\n                    <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings/membership\" class=\"hvr-sweep-to-right\">\n                        <span class=\"company-list-title ellipsis\">{{ company.name}}</span>\n                        <span class=\"company-selected\" *ngIf=\"company.sub_domain == co\"><i class=\"material-icons\">done</i></span>\n                    </a>\n                </li>\n            </div>\n            <hr class=\"name-dropdown-border\">\n        </div>\n        <div class=\"name-list\">\n            <!-- <li>\n                <a href=\"#\" class=\"hvr-sweep-to-right\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">person</i></span>\n                    <span class=\"name-list-title\">My Profile</span>\n                </a>\n            </li> -->\n            <li>\n                <a class=\"hvr-sweep-to-right\" [routerLink]=\"['/settings']\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                    <span class=\"name-list-title\">Settings</span>\n                </a>\n            </li>\n            <li>\n                <a class=\"hvr-sweep-to-right\" (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                    <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                    <span class=\"name-list-title\">Logout</span>\n                </a>\n            </li>\n        </div>\n    </ul>\n</div>\n<!-- Start: help icon -->\n\t<span *ngIf=\"page == 'builder'\" class=\"icon-help popover-wrapper builder-help-icon\" (click)=\"videoModal()\">\n\t\t<i class=\"material-icons\">help_outline</i>\n\t\t<div class=\"popover-block\">Help</div>\n\t</span>\n<!-- End: help icon -->\n\n<!-- Start: Responsive header -->\n<header id=\"responsive-header\" class=\"\" *ngIf=\"page != 'builder' && loggedIn.isLoggedIn\">\n    <nav class=\"navbar navbar-default navbar-fixed-top white-logo\">\n      <div class=\"container-fluid nav-padding\">\n          <div class=\"col-xs-2 np\"></div>\n          <div class=\"navbar-header col-xs-8 np\">\n              <!-- <a href=\"#\" class=\"navbar-brand\">\n                  <img src=\"assets/images/headerLogo-white.png\" class=\"\" />\n              </a> -->\n              <h4 class=\"col-xs-12 np ellipsis title\">{{respTitle}}</h4>\n          </div>\n          <div class=\"mobile-menu col-xs-2 np\">\n              <button type=\"button\" class=\"btn btn-default dropdown-toggle\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                  <i class=\"material-icons\">menu</i>\n              </button>\n              <ul class=\"dropdown-menu\">\n                  <div class=\"user-name user-outr\" *ngIf=\"loggedIn.isLoggedIn\">\n                      <li>\n                          <!-- <a href=\"javascript:void(0);\"><img src=\"assets/images/user1.png\"> </a> -->\n                          <span>{{name}}</span>\n                      </li>\n                      <hr class=\"name-dropdown-border\">\n                  </div>\n                  <div class=\"name-list header-links\">\n                      <li>\n                          <a [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" (click)=\"header('Dashboard')\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">home</i></span>\n                              <span class=\"name-list-title\">Dashboard</span>\n                          </a>\n                      </li>\n                      <li>\n                          <a href=\"javascript:void();\" [routerLink]=\"['/analytics']\" class=\"hvr-underline-from-left\" (click) = \"analyticsClick($event)\" [routerLinkActive]=\"['active']\">\n                          <!-- <a class=\"hvr-underline-from-left\" [routerLinkActive]=\"['active']\"> -->\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">equalizer</i></span>\n                              <span class=\"name-list-title\">Analytics</span>\n                          </a>\n                      </li>\n                      <!-- <li>\n                          <a href=\"#\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">lightbulb_outline</i></span>\n                              <span class=\"name-list-title\">How Do I</span>\n                          </a>\n                      </li> -->\n                      <hr class=\"name-dropdown-border\">\n                  </div>\n                  <div class=\"company-list\">\n                      <li *ngFor=\"let company of myCompanies\" [class.active]=\"company.sub_domain == co\">\n                          <a href=\"//{{company.sub_domain}}{{subDomainExt}}/settings\">\n                              <span class=\"company-selected\"><i class=\"material-icons\" *ngIf=\"company.sub_domain == co\">done</i></span>\n                              <span class=\"company-list-title\">{{company.name}}</span>\n                          </a>\n                      </li>\n                  </div>\n                  <div class=\"name-list setting-logout-links\">\n                      <li>\n                          <a [routerLink]=\"['/settings']\" (click)=\"header('Settings')\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">settings</i></span>\n                              <span class=\"name-list-title\">Settings</span>\n                          </a>\n                      </li>\n                      <li>\n                          <a (click)=\"onLogout()\" href=\"javascript:void(0)\">\n                              <span class=\"name-list-icon\"><i class=\"material-icons\">power_settings_new</i></span>\n                              <span class=\"name-list-title\">Logout</span>\n                          </a>\n                      </li>\n                      <li class=\"builder-help-icon\">\n                        <!-- Start: help icon -->\n                            <a href=\"javascript:void(0)\">\n                                <span class=\"icon-help\" data-toggle=\"modal\" data-target=\"#video-modal\">\n                                    <i class=\"material-icons\">help_outline</i> Help\n                                </span>\n                            </a>\n                        <!-- End: help icon -->\n                     </li>\n                  </div>\n              </ul>\n          </div>\n      </div>\n    </nav>\n</header>\n<!-- End: Responsive header -->\n\n<og-payment-modal></og-payment-modal>\n<og-premium-modal></og-premium-modal>\n\n"
 
 /***/ },
 /* 750 */

@@ -1,5 +1,3 @@
-// Intercom
-(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/r841gnag';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 
 //Hotjar Tracking Code for https:outgrow.co
 (function(h,o,t,j,a,r){
@@ -25,7 +23,7 @@ var fbImgPixel = document.createElement('img');
 fbImgPixel.setAttribute('height', 1);
 fbImgPixel.setAttribute('width', 1);
 fbImgPixel.setAttribute('style', 'display:none');
-fbImgPixel.setAttribute('src', 'https://www.facebook.com/tr?id=346348449035607&ev=PageView&noscript=1');
+fbImgPixel.setAttribute('src', 'https://www.facebook.com/tr?id=1616934098622761&ev=PageView&noscript=1');
 fbNoScript.appendChild(fbImgPixel);
 document.getElementsByTagName('body')[0].append(fbNoScript);
 
@@ -58,7 +56,7 @@ else { //For .co
 		'kissmetrics':"0a75a54b2fbeb2fefd728e55b0dc6bff06580cb8",
 		'mixpanel':"4e92645e14d7116f935f2e594d52fcd5",
 		'leaddyno':"41c6592b3fbd4a29945c14f3e766a12a1d796246",
-		'pixel': "346348449035607",
+		'pixel': "1616934098622761",
 		'webengage':"~15ba1d98c",
 		'introbar': "58200c9b25e70"
 	};
