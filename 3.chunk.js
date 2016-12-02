@@ -3973,17 +3973,17 @@ var Slider = (function () {
             this.data.props.currentValue = this.data.props.defaultValue;
             this.value = this.data.props.currentValue;
             if (this.data.props.postfix)
-                this.data.props.currentLabel = this.data.props.currentValue + ' ' + this.data.props.unit;
+                this.data.props.currentLabel = this.data.props.currentValue + this.data.props.unit;
             else
-                this.data.props.currentLabel = this.data.props.unit + ' ' + this.data.props.currentValue;
+                this.data.props.currentLabel = this.data.props.unit + this.data.props.currentValue;
         }
         else {
             this.data.props.currentValue = this.data.props.minVal;
             this.value = this.data.props.currentValue;
             if (this.data.props.postfix)
-                this.data.props.currentLabel = this.data.props.currentValue + ' ' + this.data.props.unit;
+                this.data.props.currentLabel = this.data.props.currentValue + this.data.props.unit;
             else
-                this.data.props.currentLabel = this.data.props.unit + ' ' + this.data.props.currentValue;
+                this.data.props.currentLabel = this.data.props.unit + this.data.props.currentValue;
         }
     };
     Slider.prototype.ngAfterViewInit = function () {
@@ -3999,17 +3999,17 @@ var Slider = (function () {
             onFinish: function (data) {
                 that.data.props.currentValue = data.from;
                 if (that.data.props.postfix)
-                    that.data.props.currentLabel = data.from + ' ' + that.data.props.unit;
+                    that.data.props.currentLabel = data.from + that.data.props.unit;
                 else
-                    that.data.props.currentLabel = that.data.props.unit + ' ' + data.from;
+                    that.data.props.currentLabel = that.data.props.unit + data.from;
                 that.change();
             },
             onUpdate: function (data) {
                 that.data.props.currentValue = data.from;
                 if (that.data.props.postfix)
-                    that.data.props.currentLabel = data.from + ' ' + that.data.props.unit;
+                    that.data.props.currentLabel = data.from + that.data.props.unit;
                 else
-                    that.data.props.currentLabel = that.data.props.unit + ' ' + data.from;
+                    that.data.props.currentLabel = that.data.props.unit + data.from;
             }
         };
         if (this.data.props.postfix) {
