@@ -8239,3 +8239,51 @@ div#cc-modal-payment {
 
 .usage-section{margin-top:10px}.white-block{background:#fff;padding:20px;width:calc(100%/2 - 10px); min-height: 75px;}.white-block:first-child{float:left;margin-right:10px}.white-block:last-child{float:left;margin-left:10px}.leads-usage{font-size:12px;color:#62696d;font-family:montserratregular;text-transform:uppercase}.leads-usage-span{font-family:montserratbold}.progress.progress-new{border:none!important;height:4px;background-color:#bec5c9;border-radius:0;box-shadow:none;margin-bottom:5px;margin-top:5px;float:left;width:100%}.progress-new .progress-bar{background-color:#fb545b;box-shadow:none}.current-plan-span{font-size:12px}.addon-section .table-responsive .table>tbody>tr>td{padding:20px 30px;color:#62696d;font-size:12px;border-top:none;font-family:montserratregular}.addon-section .table-responsive .table tbody{background:#fff}.addon-section .btn-red-outline{color:#fb545b;background-color:#fff;border-color:#ffb5b8;border-radius:0;font-size:12px;padding:5px 15px;margin:0;transition:all .3s ease 0s;font-family:montserratregular;text-transform:none;float:left}.addon-section{margin-top:20px}.addon-section .addon-span{padding-top:25px!important}.membership-details-sec .table-responsive .table>tbody>tr:nth-child(2)>td{padding:0 30px 20px}.membership-details-sec .table-responsive .table>tbody>tr:first-child>td{padding:20px 30px 18px}
 
+
+
+/* css for ie-broser */
+
+    .ie-browser-header {
+        background: #61696c;
+        color: #fff;
+        float: left;
+        width: 100%;
+        padding: 10px 40px;
+        font-family: montserratlight;
+        font-size: 12px;
+        box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2);
+        position: absolute;
+        z-index: 9;
+    }
+
+    .ie-browser-header i {
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 16px;
+        margin-top: -3px;
+    }
+
+    .ie-browser-header .btn-close {
+        opacity: .8;
+        line-height: 15px;
+        text-shadow: none;
+    }
+
+    .ie-browser-header .btn-close i {
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0px;
+        font-size: 16px;
+        margin-top: -3px;
+    }
+
+    .ie-browser-header a {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+/* css for ie browser */
+
