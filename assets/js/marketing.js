@@ -18,15 +18,6 @@ n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-var fbNoScript = document.createElement('noscript');
-var fbImgPixel = document.createElement('img');
-fbImgPixel.setAttribute('height', 1);
-fbImgPixel.setAttribute('width', 1);
-fbImgPixel.setAttribute('style', 'display:none');
-fbImgPixel.setAttribute('src', 'https://www.facebook.com/tr?id=1616934098622761&ev=PageView&noscript=1');
-fbNoScript.appendChild(fbImgPixel);
-document.getElementsByTagName('body')[0].append(fbNoScript);
-
 // Webengage
 // var webengage; !function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="feedback survey notification".split(z),c="options render clear abort".split(z),p="Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i<l.length;i++)o(r,[l[i]]);for(i=0;i<a.length;i++){for(r[a[i]]={},s=0;s<c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s<p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i<u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");
 
@@ -43,6 +34,7 @@ document.getElementsByTagName('body')[0].append(lead);
 
 urla = window.location.href;
 if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
+	console.log('Got in if');
 	var trackerProp = {
 		'ga':"UA-82638968-1",
 		'kissmetrics':"41ec14671b03954fde573bdbeb2ec11956b53ce7",
@@ -51,6 +43,7 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 }
 
 else { //For .co
+	console.log('Got in else');
 	var trackerProp = {
 		'ga':"UA-85018378-1",
 		'kissmetrics':"0a75a54b2fbeb2fefd728e55b0dc6bff06580cb8",
@@ -60,6 +53,14 @@ else { //For .co
 		'webengage':"~15ba1d98c",
 		'introbar': "58200c9b25e70"
 	};
+	var fbNoScript = document.createElement('noscript');
+	var fbImgPixel = document.createElement('img');
+	fbImgPixel.setAttribute('height', 1);
+	fbImgPixel.setAttribute('width', 1);
+	fbImgPixel.setAttribute('style', 'display:none');
+	fbImgPixel.setAttribute('src', 'https://www.facebook.com/tr?id=1616934098622761&ev=PageView&noscript=1');
+	fbNoScript.appendChild(fbImgPixel);
+	document.getElementsByTagName('body')[0].append(fbNoScript);
 
 	fbq('init', trackerProp.pixel);
 	fbq('track', 'PageView');
