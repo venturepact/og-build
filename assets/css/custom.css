@@ -513,7 +513,7 @@ a:hover {
     padding-bottom: 10px!important;
     margin: 0!important;
     height: 60px;
-    z-index: 1020;
+    z-index: 9;
 }
 #new-header.active {
     box-shadow: 0 0 10px rgba(0, 0, 0, .4);
@@ -1573,7 +1573,7 @@ a.text-red:hover {
 }
 .modal-backdrop {
     background: rgba(0, 0, 0, .99)!important;
-    z-index: 1020
+    z-index: 1019
 }
 #main-profile {
     height: 100%;
@@ -1612,7 +1612,7 @@ a.text-red:hover {
     bottom: 0;
     height: 100vh;
     width: 255px;
-    z-index: 9;
+    z-index: 1;
     padding-top: 15px;
     box-shadow: 0 0 9px 1px rgba(0, 0, 0, .1);
     border-right: 1px solid #d7dbdd
@@ -3192,7 +3192,7 @@ button#btnBilling {
 }
 .billing-white-top h3.plan-title {
     color: #00c853;
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     margin-top: 10px
 }
@@ -6802,6 +6802,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         top: 30%!important
     }
     .billing-grey-top h3.plan-price {
+        margin: 20px 0 15px
+    }
+    .billing-white-top h3.plan-price {
         margin: 20px 0 15px
     }
 }
