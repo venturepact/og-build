@@ -3217,3 +3217,41 @@ company-home {
 a.text-red{
     cursor: pointer;
 }
+.alert.alert-danger {
+    background: 0 0!important;
+    border: none;
+    position: relative;
+    top: -12px;
+    left: 0;
+    padding: 0;
+    color: #fb545b!important;
+    font-size: 11px;
+    margin: 0;
+    float: left;
+    width: 100%;
+    text-align: left
+}
+.alert.alert-danger p {
+    position: absolute;
+    width: 100%
+}
+.alert.alert-dange p span.mat-icon {
+    float: left;
+    width: auto
+}
+.alert.alert-danger p span.mat-icon i.material-icons {
+    float: left;
+    font-size: 12px!important;
+    margin-right: 5px;
+    margin-top: 1px;
+    color: #fb545b!important
+}
+.alert.alert-danger.custom-alert {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0;
+    background: #feddde!important
+}
+.alert.alert-danger.custom-alert p {
+    position: relative
+}
