@@ -349,6 +349,15 @@ body {
     border: 1px solid #ddd;
     margin-top: -1px
 }
+.tabs-wrapper .tab-pane {
+    background: 0 0;
+    padding: 0;
+    border: none;
+    margin-top: -1px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
 #header .logo,
 #header .menu,
 .navbar {
@@ -1573,7 +1582,7 @@ a.text-red:hover {
 }
 .modal-backdrop {
     background: rgba(0, 0, 0, .99)!important;
-    z-index: 1019
+    z-index: 998
 }
 #main-profile {
     height: 100%;
