@@ -152,6 +152,13 @@
   <script>
   // Fixes undefined module function in SystemJS bundle
   function module() {}
+  function zapierOpenDialog(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    var button = e.target;
+    window.open(button.getAttribute('data-popup-href'), 'zapierModalWindow', 'toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=980,height=700');
+    return false;
+  }
 </script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">google.charts.load('upcoming', {'packages':['geochart','corechart']});</script>
@@ -165,6 +172,6 @@
   </div>
   <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js" charset="utf-8" async defer></script>
   <!-- fixes new  -->
-<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.daf8a5d554f0187228d6.bundle.js"></script><script type="text/javascript" src="main.df88ef4d5407841e075c.bundle.js"></script></body>
+<script type="text/javascript" src="inline.js"></script><script type="text/javascript" src="styles.daf8a5d554f0187228d6.bundle.js"></script><script type="text/javascript" src="main.010bb99f86dfc0791deb.bundle.js"></script></body>
 
 </html>
