@@ -620,7 +620,7 @@ a:hover {
     margin-right: 10px
 }
 .navbar-rightside .name-dropdown-wrapper .dropdown-menu {
-    top: 40px;
+    top: 33px;
     position: absolute
 }
 .name-dropdown-wrapper button.btn.btn-default.dropdown-toggle {
@@ -659,7 +659,7 @@ a:hover {
 .name-dropdown-wrapper .dropdown-menu {
     padding: 10px 0;
     z-index: 1;
-    top: 15px;
+    top: 9px;
     left: -78px;
     max-width: 180px;
     font-size: 12px;
@@ -675,14 +675,14 @@ a:hover {
 }
 .name-dropdown-wrapper .dropdown-menu:before {
     position: absolute;
-    top: -12px;
-    left: 80px;
+    top: -9px;
+    left: 76px;
     display: inline-block;
-    border-right: 8px solid transparent;
+    border-right: 12px solid transparent;
     border-bottom: 12px solid #62696d;
-    border-left: 8px solid transparent;
+    border-left: 12px solid transparent;
     border-bottom-color: #62696d;
-    content: ''
+    content: '';
 }
 .name-dropdown-wrapper .dropdown-menu>.name-list {
     float: left;
@@ -1573,7 +1573,7 @@ a.text-red:hover {
 }
 .modal-backdrop {
     background: rgba(0, 0, 0, .99)!important;
-    z-index: 1019
+    z-index: 998
 }
 #main-profile {
     height: 100%;
@@ -1667,7 +1667,7 @@ a.text-red:hover {
 .wrapper-content {
     float: left;
     width: 100%;
-    padding: 35px 30px 30px 255px;
+    padding: 35px 0px 30px 255px;
     background: #f6f8f9;
     min-height: 100vh;
     height: 100%

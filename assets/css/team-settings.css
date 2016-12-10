@@ -110,7 +110,8 @@
         border: none;
         margin-top: -1px;
         float: left;
-        width: 100%
+        width: 100%;
+        margin-bottom: 30px;
     }
     .tabs-wrapper .tab-content {
         float: left;
@@ -1078,7 +1079,7 @@
     }
     #membership-details .tab-content.tab-sub-content {
         float: left;
-        width: 82.4%;
+        width: calc(100% - 217px);
         margin-left: 217px;
         padding: 0 40px
     }
@@ -4329,9 +4330,6 @@
         }
     }
     @media screen and (min-width: 1024px) and (max-width: 1024px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 74%
-        }
         .companies-box .icon-block a {
             padding: 0;
             width: 100%
@@ -4350,33 +4348,12 @@
             width: 100%
         }
     }
-    @media screen and (min-width: 1280px) and (max-width: 1280px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 80.91%
-        }
-    }
-    @media screen and (min-width: 1440px) and (max-width: 1440px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 83.6%
-        }
-    }
     @media screen and (min-width: 1536px) and (max-width: 1536px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 84.88%
-        }
         .wrapper-content {
             width: 100%
         }
     }
-    @media screen and (min-width: 1600px) and (max-width: 1600px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 85.5%
-        }
-    }
     @media screen and (min-width: 1680px) and (max-width: 1680px) {
-        #membership-details .tab-content.tab-sub-content {
-            width: 86.4%
-        }
         .billing-table {
             margin-left: 0
         }
@@ -4384,9 +4361,6 @@
     @media (min-width: 1920px) {
         .wrapper-content {
             width: 100%
-        }
-        #membership-details .tab-content.tab-sub-content {
-            width: 88.3%
         }
         #cc-modal .modal-content.modal-content-cvv {
             top: 30%!important
