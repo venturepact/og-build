@@ -524,6 +524,7 @@ module.exports = function(it){
 
 
 
+// export * from './zapier.service'
 
 
 /***/ },
@@ -61854,6 +61855,10 @@ var PremiumModalComponent = (function () {
             this._cookieService.createCookie('storage', JSON.stringify(storage), 3);
         }
     };
+    PremiumModalComponent.prototype.closePremModal = function () {
+        this.callGA('UPGRADE');
+        jQuery('#premiumModal').modal('hide');
+    };
     PremiumModalComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Z" /* Component */])({
             selector: 'og-premium-modal',
@@ -66394,7 +66399,7 @@ module.exports = "<!-- Start: Modal cc-modal-payment -->\r\n<div id=\"cc-modal-p
 /* 741 */
 /***/ function(module, exports) {
 
-module.exports = "<div id=\"premiumModal\" class=\"modal fade two-side\" tabindex=\"-1\" role=\"dialog\">\r\n  <div class=\"modal-dialog model-full\">\r\n    <div class=\"modal-content modal-bg\">\r\n      <div class=\"modal-body og-message\">\r\n        <button type=\"button\" (click)=\"callGA('LATER')\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <i class=\"material-icons\">close</i>\r\n        </button>\r\n        <div class=\"col-md-12 np\">\r\n          <div class=\"modal-left\">\r\n            <div class=\"text-center table-center\">\r\n              <!-- <p class=\"font-italic text-grey\">or login with</p> -->\r\n              <img class=\"modal-logo\" src=\"assets/images/black_g.png\" alt=\"Logo\"><br/>\r\n              <span class=\"premium-label\">PREMIUM</span>\r\n              <p>You tried to use a premium paid feature and you will need to upgrade to use it. </p>\r\n              <a href=\"javascript:void(0);\" [routerLink] = \"['/settings/membership']\" onclick=\"callGA('UPGRADE')\" class=\"btn btn-red\" id=\"btnUpgradeNow\" type=\"submit\">Upgrade Now</a>\r\n              <br/><a href=\"\" (click)=\"callGA('LATER')\" data-dismiss=\"modal\">Maybe Later</a>\r\n            </div>\r\n          </div>\r\n          <div class=\"modal-right\">\r\n            <div class=\"table-center\">\r\n              <img class=\"\" src=\"assets/images/login-screen1.jpg\" alt=\"img\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"modal-footer col-md-12 np hide\">\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+module.exports = "<div id=\"premiumModal\" class=\"modal fade two-side\" tabindex=\"-1\" role=\"dialog\">\r\n  <div class=\"modal-dialog model-full\">\r\n    <div class=\"modal-content modal-bg\">\r\n      <div class=\"modal-body og-message\">\r\n        <button type=\"button\" (click)=\"callGA('LATER')\" class=\"close btn-close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <i class=\"material-icons\">close</i>\r\n        </button>\r\n        <div class=\"col-md-12 np\">\r\n          <div class=\"modal-left\">\r\n            <div class=\"text-center table-center\">\r\n              <!-- <p class=\"font-italic text-grey\">or login with</p> -->\r\n              <img class=\"modal-logo\" src=\"assets/images/black_g.png\" alt=\"Logo\"><br/>\r\n              <span class=\"premium-label\">PREMIUM</span>\r\n              <p>You tried to use a premium paid feature and you will need to upgrade to use it. </p>\r\n              <a href=\"javascript:void(0);\" [routerLink] = \"['/settings/membership']\" (click)=\"closePremModal()\" class=\"btn btn-red\" id=\"btnUpgradeNow\" type=\"submit\">Upgrade Now</a>\r\n              <br/><a href=\"\" (click)=\"callGA('LATER')\" data-dismiss=\"modal\">Maybe Later</a>\r\n            </div>\r\n          </div>\r\n          <div class=\"modal-right\">\r\n            <div class=\"table-center\">\r\n              <img class=\"\" src=\"assets/images/login-screen1.jpg\" alt=\"img\">\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"modal-footer col-md-12 np hide\">\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ },
 /* 742 */
