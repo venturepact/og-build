@@ -61602,8 +61602,8 @@ var ScriptStore = [
     { name: 'tinyColor', src: 'https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.1/tinycolor.js' },
     { name: 'bootBox', src: '../../../assets/js/bootbox.js' },
     { name: 'marketing', src: '../../../assets/js/marketing.js' },
-    { name: 'zapierIntegration1', src: 'https://zapier.com/zapbook/embed/widget.js?services=outgrow&container=true&limit=10&html_id=foo' },
-    { name: 'zapierIntegration', src: 'https://zapier.com/zapbook/embed/widget.js?guided_zaps=14284,14285,14375,14280,14282,14277,14281,14279,14278&html_id=foo' }
+    { name: 'zapierIntegration', src: 'https://zapier.com/zapbook/embed/widget.js?services=outgrow&container=true&limit=10&html_id=zapier' },
+    { name: 'zapierIntegration1', src: 'https://zapier.com/zapbook/embed/widget.js?guided_zaps=14284,14285,14375,14280,14282,14277,14281,14279,14278&html_id=zapier' }
 ];
 
 
@@ -62585,6 +62585,7 @@ var ToolbarComponent = (function () {
         if (!this.isAnalyticsAvailable) {
             event.preventDefault();
             jQuery('#premiumModal').modal('show');
+            jQuery('.modal-backdrop').insertAfter('#premiumModal');
             jQuery('#analyticsRef').attr('active', false);
         }
         else {

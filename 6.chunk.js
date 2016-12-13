@@ -92,6 +92,7 @@ var DashboardComponent = (function () {
             storage = JSON.parse(storage);
             if (storage.showUpgradeModal)
                 jQuery('#premiumModal').modal('show');
+            jQuery('.modal-backdrop').insertAfter('#premiumModal');
             this.username = storage.user.name;
             if (this.subDomainService.subDomain.sub_domain === storage.company.sub_domain)
                 this.company_id = storage.company._id;
@@ -325,6 +326,7 @@ var DashboardComponent = (function () {
         }
         else
             jQuery('#premiumModal').modal('show');
+        jQuery('.modal-backdrop').insertAfter('#premiumModal');
     };
     DashboardComponent.prototype.openOldCalc = function (app, tabName) {
         localStorage.setItem('project', app._id);
@@ -354,6 +356,7 @@ var DashboardComponent = (function () {
         }, function (error) {
             if (error.error.code === 'E_USER_LIMIT_EXCEEDED') {
                 jQuery('#premiumModal').modal('show');
+                jQuery('.modal-backdrop').insertAfter('#premiumModal');
                 setTimeout(function () {
                     jQuery('.dashboard-toast').fadeOut().animate({ bottom: -60 }, 800, function () { });
                 }, 200);
@@ -492,6 +495,7 @@ var DashboardComponent = (function () {
         // console.log("<<<<<<<<<<<",this.currentCompanyUsers.length,"************************",this._featureAuthService.features.users);
         if (this.currentCompanyUsers.length < this._featureAuthService.features.users) {
             jQuery('#add-new-user').modal('show');
+            jQuery('.modal-backdrop').insertAfter('#premiumModal');
             jQuery('#premiumModal').attr('active', false);
             this.callGA('ADDUSER');
         }

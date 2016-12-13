@@ -678,9 +678,9 @@ a:hover {
     top: -9px;
     left: 76px;
     display: inline-block;
-    border-right: 12px solid transparent;
+    border-right: 10px solid transparent;
     border-bottom: 12px solid #62696d;
-    border-left: 12px solid transparent;
+    border-left: 10px solid transparent;
     border-bottom-color: #62696d;
     content: '';
 }
@@ -1571,10 +1571,10 @@ a.text-red:hover {
     margin: 23px 0 0;
     clear: both
 }
-.modal-backdrop {
+/* .modal-backdrop {
     background: rgba(0, 0, 0, .99)!important;
     z-index: 998
-}
+} */
 #main-profile {
     height: 100%;
     width: 100%;

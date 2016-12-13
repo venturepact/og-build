@@ -249,7 +249,7 @@ module.exports = "<div class=\"col-md-12 col-sm-12 col-xs-12 np\" id=\"companyLi
 /***/ 1095:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"col-xs-12 col-sm-10 col-sm-offset-1 api-keyoutr\">\n    <h3>Copy or regenerate your API KEY for the respective companies</h3>\n    <div class=\"api-key-table\">\n        <div class=\"api-key-table-top\">\n            <div class=\"col-xs-12 col-sm-4 pl0\">\n                <p>Company and URL</p>\n            </div>\n            <div class=\"col-xs-12 col-sm-5 pl0\">\n                <p>API Key</p>\n            </div>\n            <div class=\"col-xs-12 col-sm-3 pl0\">\n                <p class=\"action-last\">Actions</p>\n            </div>\n        </div>\n        <div class=\"api-key-tablelist\" *ngFor=\"let company of companies; let i = index\">\n            <div class=\"col-md-12 col-sm-12 col-xs-12 text-center\" *ngIf = \"!company?.name\"><i class=\"material-icons loader-plan\">autorenew</i></div>\n            <div class=\"col-xs-12 col-sm-4 np\">\n                <div class=\"api-tablelist-left\">\n                    <span [class.red]=\"(i+1)%2 == 0\">{{company?.name[0] | uppercase}}</span>\n                </div>\n                <div class=\"api-tablelist-right\">\n                    <p class=\"ellipsis\">{{company?.name}}</p>\n                    <label class=\"ellipsis\">{{company?.name}}.outgrow.co</label>\n                </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-5 np\"> \n                <div class=\"col-md-12 col-sm-12 col-xs-12 text-center\" *ngIf = \"!company.api\"><i class=\"material-icons loader-plan\">autorenew</i></div>\n                <div class=\"api-key-generate\" id=\"input-api-{{i}}\">\n                    {{company?.api}}\n                </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-3 np\">\n                <div class=\"api-key-actions\">\n                    <a href=\"javascript:void(0);\" (click)=\"copyApi(i)\"><i class=\"material-icons\">content_copy</i> Copy</a>\n                    <a href=\"javascript:void(0);\" id=\"regenerate-api-{{i}}\" (click)=\"generateApiKey(company?._id,i)\" *ngIf=\"company?.api != NULL\"><i class=\"material-icons\">replay</i> Regenerate</a>\n                    <a href=\"javascript:void(0);\" (click)=\"generateApiKey(company?._id,i)\" *ngIf=\"company?.api == NULL\" ><i class=\"material-icons\">replay</i> Generate</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
+module.exports = "<div class=\"col-xs-12 col-sm-10 col-sm-offset-1 api-keyoutr\">\n    <h3>Copy or regenerate your API KEY for the respective companies</h3>\n    <div class=\"api-key-table\">\n        <div class=\"api-key-table-top\">\n            <div class=\"col-xs-12 col-sm-4 pl0\">\n                <p>Company and URL</p>\n            </div>\n            <div class=\"col-xs-12 col-sm-5 pl0\">\n                <p>API Key</p>\n            </div>\n            <div class=\"col-xs-12 col-sm-3 pl0\">\n                <p class=\"action-last\">Actions</p>\n            </div>\n        </div>\n        <div class=\"col-md-12 col-sm-12 col-xs-12 text-center\" *ngIf = \"loader\"><i class=\"material-icons loader-plan\">autorenew</i></div>\n        <div class=\"api-key-tablelist\" *ngFor=\"let company of companies; let i = index\">\n            <div class=\"col-xs-12 col-sm-4 np\">\n                <div class=\"api-tablelist-left\">\n                    <span [class.red]=\"(i+1)%2 == 0\">{{company?.name[0] | uppercase}}</span>\n                </div>\n                <div class=\"api-tablelist-right\">\n                    <p class=\"ellipsis\">{{company?.name}}</p>\n                    <label class=\"ellipsis\">{{company?.name}}.outgrow.co</label>\n                </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-5 np\"> \n                <div class=\"col-md-12 col-sm-12 col-xs-12 text-center\" *ngIf = \"!company.api\"><i class=\"material-icons loader-plan\">autorenew</i></div>\n                <div class=\"api-key-generate\" id=\"input-api-{{i}}\">\n                    {{company?.api}}\n                </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-3 np\">\n                <div class=\"api-key-actions\">\n                    <a href=\"javascript:void(0);\" (click)=\"copyApi(i)\"><i class=\"material-icons\">content_copy</i> Copy</a>\n                    <a href=\"javascript:void(0);\" id=\"regenerate-api-{{i}}\" (click)=\"generateApiKey(company?._id,i)\" *ngIf=\"company?.api != NULL\"><i class=\"material-icons\">replay</i> Regenerate</a>\n                    <a href=\"javascript:void(0);\" (click)=\"generateApiKey(company?._id,i)\" *ngIf=\"company?.api == NULL\" ><i class=\"material-icons\">replay</i> Generate</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
 
@@ -6949,11 +6949,13 @@ var APIIntegrationComponent = (function () {
         this.companies = [];
         this.clickedCompany = new __WEBPACK_IMPORTED_MODULE_3__shared_models_company__["a" /* Company */]({});
         this.apiKey = '';
+        this.loader = true;
     }
     APIIntegrationComponent.prototype.ngOnInit = function () {
         this.getMyCompanies();
     };
     APIIntegrationComponent.prototype.getMyCompanies = function () {
+        var _this = this;
         var self = this;
         var getCompany = self._companyService.getCompanies()
             .subscribe(function (success) {
@@ -6968,6 +6970,7 @@ var APIIntegrationComponent = (function () {
                     if (company.api == null)
                         self.generateApiKey(company._id, index, 'Generated');
                 }
+                _this.loader = false;
             });
             self.settingsCommunicationService.updateCompanyList(self.myCompaniesList);
             // self.myCompaniesListUpdated.emit(self.myCompaniesList);
