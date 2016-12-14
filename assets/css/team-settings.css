@@ -2,7 +2,7 @@
     .wrapper-content.cancelled-setting #membership-details .membership-details-inner-tabs {
         left: 0
     }
-    .tabs-wrapper .nav-tabs.nav-justified {
+    /*.tabs-wrapper .nav-tabs.nav-justified {
         border: 1px solid #ccc;
         border-radius: 5px;
         background: #fff;
@@ -116,7 +116,7 @@
     .tabs-wrapper .tab-content {
         float: left;
         width: 100%
-    }
+    }*/
     .btn-update {
         float: left
     }
@@ -920,10 +920,13 @@
         margin: 0;
         float: right
     }
-    .membership-details-header,
-    .payment-details-header {
+    .membership-details-header{
         margin-bottom: 0;
         margin-top: 20px;
+    }
+    .payment-details-header {
+        margin-bottom: 0;
+        margin-top: 0px;
     }
     .membership-top-wrapper-sec1-right ul li {
         list-style: none;
@@ -1025,7 +1028,7 @@
         text-transform: uppercase;
         float: left
     }
-    #membership-details .membership-details-inner-tabs {
+    /*#membership-details .membership-details-inner-tabs {
         position: fixed;
         left: 255px;
         top: 60px;
@@ -1088,7 +1091,7 @@
     }
     #membership-details .membership-details-tabs-resp {
         display: none
-    }
+    }*/
     .apply-coupon,
     .billing-white .apply-coupon {
         display: block;
@@ -1208,8 +1211,8 @@
         font-size: 12px
     }
     .billing-details {
-        margin-bottom: 25px;
-        padding-bottom: 10px
+        margin-bottom: 15px;
+        padding-bottom: 0px
     }
     .billing-details-header {
         margin-bottom: 5px
@@ -1644,7 +1647,7 @@
     }
     .billing-grey-top {
         padding: 25px!important;
-        border-bottom: 1px solid #e6e7e8;
+        border-bottom: 1px solid #777;
         /*background: #62696d*/
         background: rgba(98, 105, 109, 0.8);
         /*min-height: 365px;*/
@@ -1925,7 +1928,7 @@
             display: none
         }
         .billing-grey-top {
-            border-bottom: 1px solid #777
+            border-bottom: 1px solid #959c9f;
         }
         .billing-grey-top.business-box-xshadow {
             box-shadow: none
@@ -3884,6 +3887,14 @@
             float: left;
             margin-top: 8px
         }
+        .invited-users-card .active-users-box .img-block-red {
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            padding-top: 3px;
+            float: left;
+            margin-top: 8px
+        }
         .active-users-box h4.name {
             text-align: left;
             margin-top: 0;
@@ -4249,10 +4260,10 @@
             width: 88%
         }
         .tabs-wrapper #my-account .nav-tabs.nav-justified>li:nth-child(1)>a {
-            padding: 10px 65px
+            padding: 10px 70px
         }
         .tabs-wrapper #my-account .nav-tabs.nav-justified>li:nth-child(2)>a {
-            padding: 10px 40px
+            padding: 10px 45px
         }
         .tabs-wrapper #membership-details .nav-tabs.nav-justified>li:nth-child(3)>a {
             padding: 10px 53px
@@ -4273,9 +4284,9 @@
             width: 100%;
             padding-right: 0
         }
-        .companies-card .companies-box .companies-box-wrapper {
+        /*.companies-card .companies-box .companies-box-wrapper {
             margin-top: 0
-        }
+        }*/
         .companies-box-wrapper.add-join-companies-box-wrapper.join-company-mt {
             margin-top: 17px
         }
@@ -4284,6 +4295,10 @@
         }
         .companies-box span.req-sent {
             margin-top: 5px
+        }
+        .companies-box h5.name{
+            padding-left: 0px;
+            padding-right: 0px;
         }
         #membership-details .nav-tabs.nav-justified>li:nth-child(1)>a,
         #membership-details .nav-tabs.nav-justified>li:nth-child(2)>a,
@@ -4565,7 +4580,7 @@
     }
     .invoice-due {
         background-color: #ffc000!important;
-        margin-left: 5px;
+        margin-right: 5px;
         border-radius: 20px
     }
     .invoice-not-paid,
@@ -5180,9 +5195,9 @@
         width:100%;
     }
 
-    .addon-section .table-responsive{
+    /*.addon-section .table-responsive{
         border: none;
-    }
+    }*/
 
     .addon-section .addon-span {
         padding-top:25px!important;
@@ -5200,4 +5215,6 @@
         font-family:montserratbold;
     }
 
+
+.payment-history-content table{ background: #fff;}
 /* end: settings page css from custom.css */
