@@ -1935,6 +1935,7 @@ var Item = (function () {
         this.imageURL = 'https://cdn.filestackcontent.com/ueNrjSMReChnz2Ohiqwg';
         this.props = {
             title: '',
+            followUpText: '',
             postTitle: '',
             currentValue: '',
             currentLabel: '',
@@ -4885,7 +4886,7 @@ var DefaultJSON = (function () {
         else if (template == 'inline-temp' && (localStorage.getItem('temp_type') == 'Numerical'))
             return this.getITjson();
         else if (template == 'inline-temp' && (localStorage.getItem('temp_type') == 'Recommendation'))
-            return this.getONPSRecommendedjson();
+            return this.getITRecommendedjson();
         else
             return this.getSCjson();
     };
@@ -5311,6 +5312,126 @@ var DefaultJSON = (function () {
         item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Learn More', 'textfield help', '', 't1-result-cta');
         item2.setVisibility(true);
         item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The prices suggested are rough estimates and are not guaranteed.", '', '', 'bottom-section');
+        section3.addItems(item1, item2, item3);
+        var section4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Share Links', 'left-section');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('share_links');
+        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_redo');
+        section4.addItems(item1, item2);
+        var section5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Summary', 'right-section');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_summary');
+        section5.addItems(item1);
+        var section6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Powered By');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('poweredby', 'This is powered by', 'poweredby help');
+        section6.addItems(item1);
+        resultPage.addSections(section1, section2, section3, section4, section5, section6);
+        //--- Result Section -- End
+        return app;
+    };
+    //Inline Temp Recommendation
+    DefaultJSON.prototype.getITRecommendedjson = function () {
+        var app = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["c" /* App */](); //create new app
+        app.setThemeColor('cp1');
+        //create pages
+        var landingPage = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["d" /* Page */]('Landing', 'https://cdn.filestackcontent.com/Cvj2tN3S7ikTu981vJVp');
+        var questionPage = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["d" /* Page */]('Questionnaire');
+        var resultPage = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["d" /* Page */]('Result', 'https://cdn.filestackcontent.com/Cvj2tN3S7ikTu981vJVp');
+        //add All pages in app
+        app.addPages(landingPage, questionPage, resultPage);
+        // LANDING Page starts //
+        // section 1 of LANDING page
+        var section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Logo Heading', 't1-landing-top');
+        var item0 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('logo', 'https://cdn.filestackcontent.com/RIPfc1fwR4H51kqKtSRg', 'textfield help', '', 't1-logo');
+        section1.addItems(item0);
+        // section 2 of LANDING page
+        var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "Where to build your Startup?", 'textfield help', '', 'main-heading');
+        var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "See which emerging tech hub you should head to!", 'textfield help', '', 'sub-heading');
+        item2.setVisibility(true);
+        var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Let’s Find Out', 'textfield help', '', 't1-landing-leadform');
+        item3.setVisibility(false);
+        var item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Let’s Find Out', 'textfield help', '', 't1-button');
+        item4.setVisibility(true);
+        section2.addItems(item1, item2, item3, item4);
+        // section 3 of LANDING page
+        var section3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Footer', 'landing-footer-outer');
+        //item1 = new Item('footer_links', 'This is the footer link', 'somehelp random');
+        //item1.addLinksToFooter([{ label: 'Privacy Policy', value: 'http://venturepact.com' }]);
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('poweredby', 'This is powered by', 'poweredby help');
+        section3.addItems(item1);
+        landingPage.addSections(section1, section2, section3);
+        // Questionnaire page starts //
+        // SUB Section1(Questions) of Question Page
+        section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Questions', '', 'Here We Go..');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'How would you categorize your startup?', '', '');
+        item1.addFieldToCheckbox([{ label: 'Super High Tech', icon: '', value: '' },
+            { label: 'B2B Software', icon: '', value: '' }, { label: 'Hardware', icon: '', value: '' },
+            { label: 'Consumer Software', icon: '', value: '' }, { label: 'Services', icon: '', value: '' }]);
+        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Which industry are you in?', '');
+        item2.addFieldToCheckbox([{ label: 'Finance', icon: '', value: '' },
+            { label: 'Healthcare', icon: '', value: '' }, { label: 'Real Estate', icon: '', value: '' },
+            { label: 'Hospitality', icon: '', value: '' }, { label: 'Retail', icon: '', value: '' },
+            { label: 'Industry Agnostic', icon: '', value: '' }]);
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'When are you looking to raise funds for your startup?', '');
+        item3.addFieldToCheckbox([{ label: 'Immediately', icon: '', value: '' },
+            { label: 'Maybe in the Future', icon: '', value: '' }, { label: 'Not at All', icon: '', value: '' }]);
+        item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'How many developers will you need to hire in the next one year?', '', '');
+        item4.addFieldToCheckbox([{ label: 'None', icon: '', value: '' },
+            { label: '1-3', icon: '', value: '' }, { label: '3-10', icon: '', value: '' },
+            { label: '10-50', icon: '', value: '' }]);
+        var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Do you have a family?', '', '');
+        item5.addFieldToCheckbox([{ label: 'I am Single', icon: '', value: '' },
+            { label: 'I am Married', icon: '', value: '' }, { label: 'I am a Father/Mother', icon: '', value: '' }]);
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Do you have a strong weather preference?', '');
+        item6.addFieldToCheckbox([{ label: 'Not Really', icon: '', value: '' }, { label: 'I Need Warmth', icon: '', value: '' }]);
+        section1.addItems(item1, item2, item3, item4, item5, item6);
+        questionPage.addSections(section1);
+        // leadform section
+        var leadSection = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('LeadFormQ', '', 'Where should we send you our analysis?');
+        leadSection.setVisibility(true);
+        leadSection.setVisibilityOfShowDesc(false);
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform_question', 'Next', '', '', '');
+        item1.setVisibility(true);
+        leadSection.addItems(item1);
+        questionPage.addSections(leadSection);
+        //--- Result page sections --- START
+        section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Header', 'top-head');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_header', "<p>Here\u2019s where we think you should head to! </p>");
+        section1.addItems(item1);
+        // Result Section 2 -- START
+        section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
+        //R1
+        // let Formulaindex = app.addformula('San Francisco (Sample)', 'San_Francisco', 'https://cdn.filepicker.io/api/file/SAMeWjCDRNSZJbm0UN0s',
+        //   `You need to head to the good old tech hub and be amidst the giants. You get to be in the middle of all the fundraising action and 
+        //     will never run out of a competitive, yet constant supply of awesome trained tech talent.`, 'Here’s where we think you should head to!',
+        //   'Explore SF Tech Scene', environment.PROTOCOL + environment.APP_EXTENSION, 'true');
+        //R2
+        // Formulaindex = app.addformula('New York', 'New_York', 'https://cdn.filepicker.io/api/file/6qe0IlIkQim0cnKCNvNF',
+        //     `The Big Apple is where you need to be! NY is a favorite among young people looking to accelerate their careers. Your company will never be out of energy!`,
+        //     'Here’s where we think you should head to!',
+        //     'Explore NY Tech Scene', environment.PROTOCOL + environment.APP_EXTENSION);
+        //R3
+        // Formulaindex = app.addformula('Miami (Sample)', 'Miami', 'https://cdn.filepicker.io/api/file/4evsUm39SPOKd2cXI2F2',
+        //   `If the Tech scene can be defined by potential, the best description of Miami’s market is “resurgent”. Today, Miami is a favorite amongst folks who want to grow
+        //          fast but do not want to compromise on their sunny outdoors.`, 'Here’s where we think you should head to!',
+        //   'Explore Miami’s Coolest Startups', environment.PROTOCOL + environment.APP_EXTENSION, 'true');
+        //R4
+        // Formulaindex = app.addformula('Seattle', 'Seattle', 'https://cdn.filepicker.io/api/file/zTaJooqWTou0i7bNFg1f',
+        //     `Think Seattle, you automatically think rain, great coffee and Tech titans Microsoft and Amazon. Because of Tech, Seattle is the fastest growing of the country’s 50
+        //      most populous cities.`, 'Here’s where we think you should head to!',
+        //     'Check Out Seattle’s Coolest Coworking Spaces', environment.PROTOCOL + environment.APP_EXTENSION);
+        //R5
+        // Formulaindex = app.addformula('Chicago', 'Chicago', 'https://cdn.filepicker.io/api/file/8mrLqb9TiKlBg6RmxeSa',
+        //     `One of the country’s major core real estate markets, Chicago ranks second in growth of tech jobs among the country’s most populous cities (19.3 percent), slightly behind
+        //      Silicon Valley, but ahead of Seattle. Need we say more?`, 'Here’s where we think you should head to!',
+        //     'Plan a Visit To Chicago Today', environment.PROTOCOL + environment.APP_EXTENSION);
+        //Result Section 2 -- End
+        section3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('LeadForm', 'left-section');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Learn More', '', '', 'cta-outer');
+        item1.setVisibility(false);
+        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Learn More', 'textfield help', '', 't1-result-cta');
+        item2.setVisibility(true);
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The numbers suggested are rough estimates for informational purposes only. Any reliance placed on the content of the website is to be made at your own risk.", '', '', 'bottom-section');
+        item3.setVisibility(false);
         section3.addItems(item1, item2, item3);
         var section4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Share Links', 'left-section');
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('share_links');

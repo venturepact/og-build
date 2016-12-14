@@ -2120,6 +2120,7 @@ var Item = (function () {
         this.imageURL = 'https://cdn.filestackcontent.com/ueNrjSMReChnz2Ohiqwg';
         this.props = {
             title: '',
+            followUpText: '',
             postTitle: '',
             currentValue: '',
             currentLabel: '',
