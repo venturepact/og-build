@@ -632,7 +632,8 @@ a:hover {
     float: left;
     width: 100%;
     border: none;
-    background: 0 0
+    background: 0 0;
+    box-shadow: none;
 }
 .name-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {
     font-size: 18px;
@@ -2429,6 +2430,13 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     color: #fb545b!important;
     border-color: #fdb6b9!important
 }
+.btn-hover:focus {
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    background: #fdb6b9!important;
+    color: #fb545b!important;
+    border-color: #fdb6b9!important
+}
 .live-head {
     font-size: 24px;
     font-weight: 400;
@@ -2559,7 +2567,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         color: #fff;
         margin-right: 24px;
         margin-top: 8px;
-        margin-bottom: 6px
+        margin-bottom: 6px;
+        margin-left: 30px;
+        /*white-space: normal;*/
+        word-wrap: break-word;
+        width: 175px;
+        text-align: right;
     }
     .mobile-menu .user-outr li a {
         margin-right: 30px
