@@ -2529,6 +2529,8 @@ var CalcEmail = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ITEMS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RECOMMENDED_ITEMS; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return INLINE_RECOMMENDED_ITEMS; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return INLINE_ITEMS; });
 var ITEMS = {
     textfield: 'Text Input',
     //selectbox: 'Drop Down',
@@ -2541,6 +2543,13 @@ var RECOMMENDED_ITEMS = {
     checkbox: 'Multi Select',
     //selectbox: 'Drop Down',
     textfield: 'Text Input',
+};
+var INLINE_RECOMMENDED_ITEMS = {
+    selectbox: 'Drop Down'
+};
+var INLINE_ITEMS = {
+    textfield: 'Text Input',
+    selectbox: 'Drop Down'
 };
 
 

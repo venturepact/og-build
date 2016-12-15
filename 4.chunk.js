@@ -2605,6 +2605,8 @@ var CalcEmail = (function () {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ITEMS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RECOMMENDED_ITEMS; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return INLINE_RECOMMENDED_ITEMS; });
+/* harmony export (binding) */ __webpack_require__.d(exports, "d", function() { return INLINE_ITEMS; });
 var ITEMS = {
     textfield: 'Text Input',
     //selectbox: 'Drop Down',
@@ -2617,6 +2619,13 @@ var RECOMMENDED_ITEMS = {
     checkbox: 'Multi Select',
     //selectbox: 'Drop Down',
     textfield: 'Text Input',
+};
+var INLINE_RECOMMENDED_ITEMS = {
+    selectbox: 'Drop Down'
+};
+var INLINE_ITEMS = {
+    textfield: 'Text Input',
+    selectbox: 'Drop Down'
 };
 
 
@@ -5244,7 +5253,7 @@ var THEMING_FONTS = [
     { fontURL: 'assets/fonts/templateFonts/fonts_varient/clear_sans.css', fontFamily: 'Clear Sans' },
     { fontURL: 'assets/fonts/templateFonts/fonts_varient/CooperHewitt.css', fontFamily: 'Cooper Hewitt' },
     { fontURL: 'assets/fonts/templateFonts/fonts_varient/Courier_Prime_Sans.css', fontFamily: 'Courier Prime Sans' },
-    { fontURL: 'assets/fonts/templateFonts/fonts_varient/lato.css', fontFamily: 'latoregular' },
+    { fontURL: 'assets/fonts/templateFonts/fonts_varient/lato.css', fontFamily: 'Lato' },
 ];
 // %fontFamily% 
 
