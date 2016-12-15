@@ -41,10 +41,10 @@
 
 			//link to image
 	  	if(isset($response['data']['seoImage']) && !empty($response['data']['seoImage'])){
-			    $delayFactor = mt_rand(2500,5000);
-	        $imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
+	  	    $imageLink = $response['data']['seoImage'].$shortUrl;
 	    }else{
-          $imageLink = $response['data']['seoImage'].$shortUrl;
+          $delayFactor = mt_rand(2500,5000);
+          $imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
 	    }
 
 	?>

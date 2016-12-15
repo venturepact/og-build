@@ -1014,7 +1014,7 @@ var DefaultJSON = (function () {
         item1.setVisibility(false);
         item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Schedule a Consultation Today', 'textfield help');
         item2.setVisibility(true);
-        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The numbers suggested are rough estimates for informational purposes only. Any reliance placed on the content of the website is to be made at your own risk.", '', '', 'bottom-section');
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The prices suggested are rough estimates and are not guaranteed.", '', '', 'bottom-section');
         section3.addItems(item1, item2, item3);
         var section4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Share Links', 'left-section');
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('share_links');
@@ -1129,7 +1129,7 @@ var DefaultJSON = (function () {
         item1.setVisibility(false);
         item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Learn More', 'textfield help', '', 't1-result-cta');
         item2.setVisibility(true);
-        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The numbers suggested are rough estimates for informational purposes only. Any reliance placed on the content of the website is to be made at your own risk.", '', '', 'bottom-section');
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The prices suggested are rough estimates and are not guaranteed.", '', '', 'bottom-section');
         item3.setVisibility(false);
         section3.addItems(item1, item2, item3);
         var section4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Share Links', 'left-section');
@@ -1447,7 +1447,7 @@ var DefaultJSON = (function () {
         item1.setVisibility(false);
         item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('click_button', 'Learn More', 'textfield help', '', 't1-result-cta');
         item2.setVisibility(true);
-        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The numbers suggested are rough estimates for informational purposes only. Any reliance placed on the content of the website is to be made at your own risk.", '', '', 'bottom-section');
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_disclaimer', "The prices suggested are rough estimates and are not guaranteed.", '', '', 'bottom-section');
         item3.setVisibility(false);
         section3.addItems(item1, item2, item3);
         var section4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Share Links', 'left-section');
