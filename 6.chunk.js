@@ -1680,9 +1680,14 @@ var FormulaService = (function () {
         allVariables.push(' ');
         for (i = 0; i < this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion().length; i++)
             allVariables.push('{Q' + (i + 1) + '}');
-        allVariables.push('   ');
-        for (i = 0; i < this.jsonBuilderHelper.getJSONBuilt().formula.length; i++)
-            allVariables.push('{R' + (i + 1) + '}');
+        if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Numerical') {
+            allVariables.push('   ');
+            for (i = 0; i < this.jsonBuilderHelper.getJSONBuilt().formula.length; i++)
+                allVariables.push('{R' + (i + 1) + '}');
+        }
+        // else{
+        //   allVariables.push('{Outcome}');
+        // }
         return allVariables;
     };
     FormulaService.prototype.allValidVariablesWysiywigList = function () {
@@ -1706,9 +1711,14 @@ var FormulaService = (function () {
                 title = title.substr(0, 35) + "...";
             allVariables.push('  Q' + (i + 1) + ': ' + title);
         }
-        allVariables.push('Result:');
-        for (i = 0; i < this.jsonBuilderHelper.getJSONBuilt().formula.length; i++)
-            allVariables.push('  Result ' + (i + 1));
+        if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Numerical') {
+            allVariables.push('Result:');
+            for (i = 0; i < this.jsonBuilderHelper.getJSONBuilt().formula.length; i++)
+                allVariables.push('  Result ' + (i + 1));
+        }
+        //  else {
+        //   allVariables.push(' Outcome ');
+        // }
         return allVariables;
     };
     //	wysiwig List --End
@@ -3671,7 +3681,7 @@ var PoweredByComponent = (function () {
     PoweredByComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'poweredby',
-            template: "\n\t\t<div class=\" text-right\" *ngIf=\"data.visible == true\" >\n\t\t\t<div class=\" powered-by\">\n\t\t\t\t<span>Powered by </span>\n\t\t\t\t<a href=\"{{url}}\" target=\"_blank\">\n\t\t\t\t\t\t<img src=\"https://cdn.filestackcontent.com/m142kAuTza2GnZIltjtR\" alt=\"Powered By\">\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t",
+            template: "\n\t\t<div class=\" text-right\" *ngIf=\"data.visible == true\" >\n\t\t\t<div class=\" powered-by\">\n\t\t\t\t<span>Powered by </span>\n\t\t\t\t<a href=\"{{url}}\" target=\"_blank\">\n\t\t\t\t\t\t<img src=\"assets/images/builder/powered-by-logo.png\" alt=\"Powered By\">\n\t\t\t\t</a>\n\t\t\t</div>\n\t\t</div>\n\t",
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["M" /* ViewEncapsulation */].None
         }), 
         __metadata('design:paramtypes', [])
