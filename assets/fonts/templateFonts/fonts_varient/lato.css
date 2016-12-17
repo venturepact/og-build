@@ -1,16 +1,5 @@
 ﻿@font-face {
-    font-family: 'latoblack';
-    src: url('fonts/lato-black-webfont.eot');
-    src: url('fonts/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lato-black-webfont.woff2') format('woff2'),
-         url('fonts/lato-black-webfont.woff') format('woff'),
-         url('fonts/lato-black-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-@font-face {
-    font-family: 'latobold';
+    font-family: 'Lato-bold';
     src: url(' fonts/lato-bold-webfont.eot');
     src: url(' fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
          url(' fonts/lato-bold-webfont.woff2') format('woff2'),
@@ -21,7 +10,18 @@
 
 }
 @font-face {
-    font-family: 'latoregular';
+    font-family: 'Lato';
+    src: url('fonts/lato-regular-webfont.eot');
+    src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('fonts/lato-regular-webfont.woff') format('woff'),
+         url('fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Lato-Light';
     src: url('fonts/lato-regular-webfont.eot');
     src: url('fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/lato-regular-webfont.woff2') format('woff2'),
