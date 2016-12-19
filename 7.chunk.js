@@ -765,6 +765,7 @@ var UserDetailsComponent = (function () {
             // Slide right
             jQuery('.user-detail-outer').toggle('slide', { direction: 'right' }, 700);
             _this.cdr.detectChanges();
+            event.stopPropagation();
         });
         this.intializeDatatable();
     };

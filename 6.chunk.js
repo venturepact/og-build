@@ -2953,8 +2953,8 @@ var App = (function () {
         this.theme = {};
         this.cta = {
             shareType: 'cta',
-            shareButtonName: 'Share Now',
-            shareTitle: 'My Outgrow Calculator'
+            shareButtonName: '',
+            shareTitle: ''
         };
         this.customColor = {};
         this.template = '';
