@@ -887,7 +887,7 @@ var UserDetailsComponent = (function () {
                 "dataSrc": function (response) {
                     self.avgAnswered = Math.round(response.avgAnswers);
                     self.avgResult = response.avgResult;
-                    self.avgLengthTime = (response.avgTimeOnPage > 60) ? (response.avgTimeOnPage / 60).toFixed(2) + ' m' : response.avgTimeOnPage + ' s';
+                    self.avgLengthTime = (Number(response.avgTimeOnPage) > 60) ? Number(response.avgTimeOnPage / 60).toFixed(2) + ' m' : Number(response.avgTimeOnPage).toFixed(2) + ' s';
                     self.loader = 1;
                     self.avgAnalyticsData(response.data);
                     return response.data;
