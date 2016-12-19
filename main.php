@@ -38,15 +38,9 @@
 			$shortUrl = isset($json['id']) ? $json['id'] : $longUrl;
 			//close connection
 			curl_close($curl);
-
-			//link to image
-	  	if(isset($response['data']['seoImage']) && !empty($response['data']['seoImage'])){
-	  	    $imageLink = $response['data']['seoImage'];
-	    }else{
-          $delayFactor = mt_rand(2500,5000);
-          $imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
-	    }
-
+			//link to capture url screen shot
+			$delayFactor = mt_rand(2500,5000);
+	    $imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
 	?>
 		<title>
 			<?php echo $response['data']['title']; ?>
