@@ -1331,7 +1331,7 @@ var DefaultJSON = (function () {
         var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'It is going to be a', 'Default Help Text', ' type  ', '', 0, 0, 'setting.');
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '', value: '' },
             { label: 'Outdoor', icon: '', value: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'You can we find our brand assets at', 'Please add the help text', ' http://www.example.com  ');
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'You can we find our brand assets at', 'Please add the help text', ' example.com  ');
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         //--- Result page sections --- START
@@ -1416,27 +1416,28 @@ var DefaultJSON = (function () {
         // Questionnaire page starts //
         // SUB Section1(Questions) of Question Page
         section1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Questions', '', 'Here We Go..');
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'How would you categorize your startup?', '', '');
-        item1.addFieldToCheckbox([{ label: 'Super High Tech', icon: '', value: '' },
-            { label: 'B2B Software', icon: '', value: '' }, { label: 'Hardware', icon: '', value: '' },
-            { label: 'Consumer Software', icon: '', value: '' }, { label: 'Services', icon: '', value: '' }]);
-        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Which industry are you in?', '');
-        item2.addFieldToCheckbox([{ label: 'Finance', icon: '', value: '' },
-            { label: 'Healthcare', icon: '', value: '' }, { label: 'Real Estate', icon: '', value: '' },
-            { label: 'Hospitality', icon: '', value: '' }, { label: 'Retail', icon: '', value: '' },
-            { label: 'Industry Agnostic', icon: '', value: '' }]);
-        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'When are you looking to raise funds for your startup?', '');
-        item3.addFieldToCheckbox([{ label: 'Immediately', icon: '', value: '' },
-            { label: 'Maybe in the Future', icon: '', value: '' }, { label: 'Not at All', icon: '', value: '' }]);
-        item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'How many developers will you need to hire in the next one year?', '', '');
-        item4.addFieldToCheckbox([{ label: 'None', icon: '', value: '' },
-            { label: '1-3', icon: '', value: '' }, { label: '3-10', icon: '', value: '' },
-            { label: '10-50', icon: '', value: '' }]);
-        var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Do you have a family?', '', '');
-        item5.addFieldToCheckbox([{ label: 'I am Single', icon: '', value: '' },
-            { label: 'I am Married', icon: '', value: '' }, { label: 'I am a Father/Mother', icon: '', value: '' }]);
-        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'Do you have a strong weather preference?', '');
-        item6.addFieldToCheckbox([{ label: 'Not Really', icon: '', value: '' }, { label: 'I Need Warmth', icon: '', value: '' }]);
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'I need', 'Default Help Text', ' 3', '', 0, 0, 'actors in my video.');
+        item1.addFieldToCheckbox([{ label: '1-2', icon: '', value: '' },
+            { label: '2-5', icon: '', value: '' }, { label: '5-10', icon: '', value: '' },
+            { label: '10-50', icon: '', value: '' }, { label: '>50', icon: '', value: '' }]);
+        item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'I want to shoot at', 'Default Help Text', ' 2  ', '', 0, 0, 'locations.');
+        item2.addFieldToCheckbox([{ label: '1', icon: '', value: '' },
+            { label: '2', icon: '', value: '' }, { label: '3', icon: '', value: '' },
+            { label: '4', icon: '', value: '' }, { label: '>5', icon: '', value: '' }]);
+        item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'This video will get published on', 'Default Help Text', 'Media', '', 0, 0, '.');
+        item3.addFieldToCheckbox([{ label: 'Youtube', icon: '', value: '' },
+            { label: 'Television', icon: '', value: '' }, { label: 'Facebook', icon: '', value: '' },
+            { label: 'Cinema', icon: '', value: '' }, { label: 'Mobile App', icon: '', value: '' }]);
+        item4 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'I expect the length of the video to be', 'Default Help Text', ' < 1 minute ', '', 0, 0, '.');
+        item4.addFieldToCheckbox([{ label: '< 1 minute', icon: '', value: '' },
+            { label: '1-2 minutes', icon: '', value: '' }, { label: '2-5 minutes', icon: '', value: '' },
+            { label: '5-10 minutes', icon: '', value: '' }, { label: '> 10 minutes', icon: '', value: '' }]);
+        var item5 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('selectbox', 'It is going to be a', 'Default Help Text', ' type  ', '', 0, 0, 'setting.');
+        item5.addFieldToCheckbox([{ label: 'Indoor', icon: '', value: '' },
+            { label: 'Outdoor', icon: '', value: '' }]);
+        var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'You can we find our brand assets at', 'Please add the help text', ' example.com  ');
+        section1.addItems(item1, item2, item3, item4, item5, item6);
+        questionPage.addSections(section1);
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         // leadform section
