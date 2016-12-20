@@ -2125,8 +2125,8 @@ a.text-red:hover {
     color: #bdbdbd;
     opacity: 1;
     position: absolute;
-    top: 11px;
-    right: 14px;
+    top: 4px;
+    right: 3px;
     font-family: "Material Icons";
     content: "close";
     font-size: 23px;
@@ -5415,7 +5415,7 @@ a.text-red:hover {
     color: #bdbdbd;
     opacity: 1;
     position: absolute;
-    top: 11px;
+    top: 14px;
     right: 14px;
     font-family: "Material Icons";
     content: "close";
@@ -5587,7 +5587,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .bootbox-body .bootbox-body-right {
     float: left;
     width: 88%;
-    color: #626983;
+    color: #626983 !important;
     font-size: 14px;
     font-family: montserratlight;
     padding: 5px 0 10px
@@ -7764,7 +7764,8 @@ a.text-red{
     }
     
     .wrapper-content.cancelled-setting {
-        padding-left: 40px
+        padding-left: 40px;
+        padding-right: 0px;
     }
 
     .plan-cancelled {
@@ -7777,3 +7778,74 @@ a.text-red{
     }
 
 /* end: setting page css for inner tabs */
+
+/* social links */
+    .btn-fb {
+        color: #fff;
+        display: inline-block;
+        background: #4267b2;
+        border: 1px solid #4267b2;
+        cursor: pointer;
+        transition: all .3s ease 0s!important;
+        margin: 40px 0;
+        font-size: 14px;
+    }
+    .btn-fb:hover,.btn-fb:focus {
+        background: #365899;
+        border: 1px solid #365899;
+        color: #fff; 
+    }
+    .btn-twitter {
+        color: #fff; 
+        display: inline-block;
+        background: #00CDFF;
+        border: 1px solid #00CDFF;
+        cursor: pointer;
+        transition: all .3s ease 0s!important;
+        margin: 40px 0;
+        font-size: 14px;
+    }
+    .btn-twitter:hover, .btn-twitter:focus {
+        background: #02bfed; 
+        border: 1px solid #02bfed;
+        color: #fff; 
+    }
+    .btn-in {
+        color: #fff;
+        display: inline-block;
+        background: #007BB6;
+        border: 1px solid #007BB6;
+        cursor: pointer;
+        transition: all .3s ease 0s!important;
+        margin: 40px 0;
+        font-size: 14px;
+    }
+    .btn-in:hover, .btn-in:focus {
+        background: #04699a;
+        border: 1px solid #04699a;
+        color: #fff; 
+    }
+    .twitter-follow-button {
+        margin: 40px 0;
+        cursor: pointer;
+        float: none;
+        display: inline-block;
+    }
+    .fb-like{
+        margin:40px 0;
+        cursor: pointer;
+        float: none;
+    }
+    .btn-fb-like{
+        margin: 40px 0;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    /*.t1-result-small-section .btn-fb-like,.t1-result-small-section .twitter-follow-button{
+        margin:40px 0px !important;
+    }
+    .t1-result-small-section .btn-fb,.t1-result-small-section .btn-twitter,.t1-result-leadform .btn-in{
+        margin:40px 0px !important;
+    }*/
+/* social links */
