@@ -303,7 +303,7 @@ var TemplatesModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(801);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(802);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(800);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(803);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__app_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__page_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__section_model__["a"]; });
@@ -669,7 +669,7 @@ var Section = (function () {
 
 /***/ },
 
-/***/ 805:
+/***/ 803:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1343,7 +1343,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 't4-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avatar!</p>", '', 't4-default-result-outer');
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);

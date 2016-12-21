@@ -13,7 +13,7 @@ webpackJsonp([6,12],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_feature_access_service__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_models_company__ = __webpack_require__(407);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_models_user__ = __webpack_require__(888);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__analytics_services_calculator_analytics_service__ = __webpack_require__(805);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__environments_environment__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__shared_services_marketing_service__ = __webpack_require__(115);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DashboardComponent; });
@@ -62,6 +62,7 @@ var DashboardComponent = (function () {
         this.currentCompany = '';
         this.currentCompanyInit = '';
         this.currentCompanyUsers = [];
+        this.companyUsersCount = 0;
         this.moreCompanyUsers = [];
         this.sub_domain = '';
         //variable used to clear validation msgs on modal hide
@@ -329,12 +330,12 @@ var DashboardComponent = (function () {
         // if (localStorage.getItem('temp_type') === 'Recommendation') {
         //   localStorage.setItem('temp_name', 'one-page-card');
         //   //this._router.navigate(['/builder']);
-        //   window.location.href = environment.PROTOCOL + this.subDomainService.subDomain.sub_domain + 
+        //   window.location.href = environment.PROTOCOL + this.subDomainService.subDomain.sub_domain +
         // '.' + environment.APP_EXTENSION + '/builder/';
-        // } 
+        // }
         // else {
         this._router.navigate(['/templates']);
-        // }    
+        // }
     };
     DashboardComponent.prototype.openOldCalc = function (app, tabName) {
         localStorage.setItem('project', app._id);
@@ -449,12 +450,14 @@ var DashboardComponent = (function () {
         });
     };
     DashboardComponent.prototype.getSelectedCompanyUsers = function () {
+        var _this = this;
         var self = this;
         var count = 0;
         this.companyService.getCompanyUsers(self.currentCompany.id)
             .subscribe(function (success) {
             self.currentCompanyUsers = [];
             success.forEach(function (user) {
+                _this.companyUsersCount = success.length;
                 if (user) {
                     if (user.user_company.active) {
                         if (count < 4) {
@@ -500,8 +503,7 @@ var DashboardComponent = (function () {
         });
     };
     DashboardComponent.prototype.userCheckLimit = function () {
-        // console.log("<<<<<<<<<<<",this.currentCompanyUsers.length,"************************",this._featureAuthService.features.users);
-        if (this.currentCompanyUsers.length < this._featureAuthService.features.users) {
+        if (this.companyUsersCount < this._featureAuthService.features.users) {
             jQuery('#add-new-user').modal('show');
             jQuery('#premiumModal').attr('active', false);
             this.callGA('ADDUSER');
@@ -675,7 +677,7 @@ module.exports = "<sd-toolbar [page]=\"'dashboard'\"></sd-toolbar>\r\n<div class
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(1022);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_membership_service__ = __webpack_require__(410);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__analytics_services_calculator_analytics_service__ = __webpack_require__(804);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__analytics_services_calculator_analytics_service__ = __webpack_require__(805);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(792);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_services_dashboard_service__ = __webpack_require__(250);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__(8);
@@ -1723,7 +1725,7 @@ var FormulaService = (function () {
             allVariables.push('Lead Details:');
             for (var field in leadformItem.fields) {
                 var fieldNow = leadformItem.fields[field];
-                var title = (fieldNow.type == 'firstName' ? 'Name' : (fieldNow.type == 'tel' ? 'Phone Number' : (fieldNow.type == 'lastName' ? fieldNow.placeholder : fieldNow.type)));
+                var title = (fieldNow.type == 'firstName' ? 'Name' : (fieldNow.type == 'tel' ? 'Phone Number' : (fieldNow.type == 'email' ? 'Email' : fieldNow.placeholder)));
                 if (title.length > 35)
                     title = title.substr(0, 35) + "...";
                 allVariables.push(title + ' : ' + leadformItem.fields[field].value);
@@ -2018,7 +2020,7 @@ var FormulaService = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__page_model__ = __webpack_require__(801);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__section_model__ = __webpack_require__(802);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__item_model__ = __webpack_require__(800);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(805);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__calc_email_model__ = __webpack_require__(803);
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_0__app_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "d", function() { return __WEBPACK_IMPORTED_MODULE_1__page_model__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_2__section_model__["a"]; });
@@ -2805,7 +2807,33 @@ var Section = (function () {
 
 /***/ },
 
-/***/ 804:
+/***/ 803:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalcEmail; });
+var CalcEmail = (function () {
+    function CalcEmail(data) {
+        this._id = '';
+        this.app = '';
+        this.type = 'Finish';
+        this.email = 'team@videoagency.com';
+        this.subject = 'Your Video Production Estimate';
+        this.message = '';
+        this.sendEmail = false;
+        this.notifyMe = false;
+        var self = this;
+        for (var prop in data) {
+            self[prop] = data[prop] || self[prop];
+        }
+    }
+    return CalcEmail;
+}());
+
+
+/***/ },
+
+/***/ 805:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2864,32 +2892,6 @@ var CalculatorAnalytics = (function (_super) {
     return CalculatorAnalytics;
     var _a;
 }(__WEBPACK_IMPORTED_MODULE_2__shared_services_base_service__["a" /* BaseService */]));
-
-
-/***/ },
-
-/***/ 805:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CalcEmail; });
-var CalcEmail = (function () {
-    function CalcEmail(data) {
-        this._id = '';
-        this.app = '';
-        this.type = 'Finish';
-        this.email = 'team@videoagency.com';
-        this.subject = 'Your Video Production Estimate';
-        this.message = '';
-        this.sendEmail = false;
-        this.notifyMe = false;
-        var self = this;
-        for (var prop in data) {
-            self[prop] = data[prop] || self[prop];
-        }
-    }
-    return CalcEmail;
-}());
 
 
 /***/ },
@@ -5330,14 +5332,14 @@ module.exports = "<a *ngIf=\"jsonBuilderHelper.getJSONBuilt().cta.shareType=='Fa
 /***/ 841:
 /***/ function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" *ngIf=\"data.visible\" novalidate>\r\n  <div class=\"container-temp text-center\">\r\n    <div class=\"lead-heading-temp1\" *ngIf=\"page && page.type ==='Result'\">\r\n      {{page.sections[2].title}}\r\n    </div>\r\n    <div>\r\n      <div class=\"input-section\">\r\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\r\n          \r\n            <input tabindex=\"0\" placeholder=\"{{field.placeholder}}\" type=\"{{field.type}}\" (blur)=\"onTouched(i)\" [formControlName]=\"i\"\r\n              [(ngModel)]=\"field.value\">\r\n            <div *ngIf=\"formGroup().controls[i].touched\">\r\n                      <span\r\n                        *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\r\n                        {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='lastName'?field.placeholder:field.type)))}} is required.\r\n                      </span>\r\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\r\n                        Not a valid Email!\r\n                      </span>\r\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\r\n                        Not a valid Phone Number!\r\n                      </span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"container-temp text-center\">\r\n    <button class=\"btn prime-action\" *ngIf=\"page.type !=='Result'\">\r\n      {{data.props.title}}\r\n    </button>\r\n    <a class=\"btn prime-action\" *ngIf=\"page.type ==='Result'\"\r\n      [attr.href]=\"jsonBuilderHelper.getJSONBuilt().navigate_Url\"\r\n      target=\"_blank\"\r\n      [class.hide] =\"leadsaved\"\r\n      (click)=\"preventdefault($event)\">\r\n       {{data.props.title}}\r\n    </a>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" *ngIf=\"data.visible\" novalidate>\r\n  <div class=\"container-temp text-center\">\r\n    <div class=\"lead-heading-temp1\" *ngIf=\"page && page.type ==='Result'\">\r\n      {{page.sections[2].title}}\r\n    </div>\r\n    <div>\r\n      <div class=\"input-section\">\r\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\r\n\r\n            <input tabindex=\"0\" placeholder=\"{{field.placeholder}}\" type=\"{{field.type}}\" (blur)=\"onTouched(i)\" [formControlName]=\"i\"\r\n              [(ngModel)]=\"field.value\">\r\n            <div *ngIf=\"formGroup().controls[i].touched\">\r\n                      <span\r\n                        *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\r\n                        {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='email'?'Email':field.placeholder)))}} is required.\r\n                      </span>\r\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\r\n                        Not a valid Email!\r\n                      </span>\r\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\r\n                        Not a valid Phone Number!\r\n                      </span>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"container-temp text-center\">\r\n    <button class=\"btn prime-action\" *ngIf=\"page.type !=='Result'\">\r\n      {{data.props.title}}\r\n    </button>\r\n    <a class=\"btn prime-action\" *ngIf=\"page.type ==='Result'\"\r\n      [attr.href]=\"jsonBuilderHelper.getJSONBuilt().navigate_Url\"\r\n      target=\"_blank\"\r\n      [class.hide] =\"leadsaved\"\r\n      (click)=\"preventdefault($event)\">\r\n       {{data.props.title}}\r\n    </a>\r\n  </div>\r\n</form>\r\n"
 
 /***/ },
 
 /***/ 842:
 /***/ function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" novalidate>\r\n  <div class=\"container-temp text-center\">\r\n    <div class=\" text-center question-section\">\r\n      <div class=\"input-section\">\r\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\r\n          <div class=\"section-head\"> <div class=\"pull-left\">{{field.name}} </div> </div>\r\n            <div class=\"input-validation\">\r\n              <input tabindex=\"0\"\r\n                    placeholder=\"{{field.placeholder}}\"\r\n                    type=\"{{field.type}}\"\r\n                    (blur) = \"onTouched(i)\"\r\n                    [formControlName]=\"i\"\r\n                    [(ngModel)]=\"field.value\"\r\n              >\r\n              <div *ngIf=\"formGroup().controls[i].touched\">\r\n                        <span\r\n                          *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\r\n                          {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='lastName'?field.placeholder:field.type)))}} is required.\r\n                        </span>\r\n                <span\r\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\r\n                          Not a valid Email!\r\n                        </span>\r\n                <span\r\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\r\n                          Not a valid Phone Number!\r\n                        </span>\r\n              </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"w100 text-center\">\r\n    <button class=\"btn prime-action sliding-next og-lead-ques\"\r\n    >\r\n      <!--[themeColor]=\"['background']\"-->\r\n      {{data.props.title}}\r\n    </button>\r\n  </div>\r\n</form>\r\n"
+module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" novalidate>\r\n  <div class=\"container-temp text-center\">\r\n    <div class=\" text-center question-section\">\r\n      <div class=\"input-section\">\r\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\r\n          <div class=\"section-head\"> <div class=\"pull-left\">{{field.name}} </div> </div>\r\n            <div class=\"input-validation\">\r\n              <input tabindex=\"0\"\r\n                    placeholder=\"{{field.placeholder}}\"\r\n                    type=\"{{field.type}}\"\r\n                    (blur) = \"onTouched(i)\"\r\n                    [formControlName]=\"i\"\r\n                    [(ngModel)]=\"field.value\"\r\n              >\r\n              <div *ngIf=\"formGroup().controls[i].touched\">\r\n                        <span\r\n                          *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\r\n                          {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='email'?'Email':field.placeholder)))}} is required.\r\n                        </span>\r\n                <span\r\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\r\n                          Not a valid Email!\r\n                        </span>\r\n                <span\r\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\r\n                          Not a valid Phone Number!\r\n                        </span>\r\n              </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <div class=\"w100 text-center\">\r\n    <button class=\"btn prime-action sliding-next og-lead-ques\"\r\n    >\r\n      <!--[themeColor]=\"['background']\"-->\r\n      {{data.props.title}}\r\n    </button>\r\n  </div>\r\n</form>\r\n"
 
 /***/ },
 
