@@ -62,6 +62,7 @@ var DashboardComponent = (function () {
         this.currentCompany = '';
         this.currentCompanyInit = '';
         this.currentCompanyUsers = [];
+        this.companyUsersCount = 0;
         this.moreCompanyUsers = [];
         this.sub_domain = '';
         //variable used to clear validation msgs on modal hide
@@ -329,12 +330,12 @@ var DashboardComponent = (function () {
         // if (localStorage.getItem('temp_type') === 'Recommendation') {
         //   localStorage.setItem('temp_name', 'one-page-card');
         //   //this._router.navigate(['/builder']);
-        //   window.location.href = environment.PROTOCOL + this.subDomainService.subDomain.sub_domain + 
+        //   window.location.href = environment.PROTOCOL + this.subDomainService.subDomain.sub_domain +
         // '.' + environment.APP_EXTENSION + '/builder/';
-        // } 
+        // }
         // else {
         this._router.navigate(['/templates']);
-        // }    
+        // }
     };
     DashboardComponent.prototype.openOldCalc = function (app, tabName) {
         localStorage.setItem('project', app._id);
@@ -449,12 +450,14 @@ var DashboardComponent = (function () {
         });
     };
     DashboardComponent.prototype.getSelectedCompanyUsers = function () {
+        var _this = this;
         var self = this;
         var count = 0;
         this.companyService.getCompanyUsers(self.currentCompany.id)
             .subscribe(function (success) {
             self.currentCompanyUsers = [];
             success.forEach(function (user) {
+                _this.companyUsersCount = success.length;
                 if (user) {
                     if (user.user_company.active) {
                         if (count < 4) {
@@ -500,8 +503,7 @@ var DashboardComponent = (function () {
         });
     };
     DashboardComponent.prototype.userCheckLimit = function () {
-        // console.log("<<<<<<<<<<<",this.currentCompanyUsers.length,"************************",this._featureAuthService.features.users);
-        if (this.currentCompanyUsers.length < this._featureAuthService.features.users) {
+        if (this.companyUsersCount < this._featureAuthService.features.users) {
             jQuery('#add-new-user').modal('show');
             jQuery('#premiumModal').attr('active', false);
             this.callGA('ADDUSER');
@@ -1723,7 +1725,7 @@ var FormulaService = (function () {
             allVariables.push('Lead Details:');
             for (var field in leadformItem.fields) {
                 var fieldNow = leadformItem.fields[field];
-                var title = (fieldNow.type == 'firstName' ? 'Name' : (fieldNow.type == 'tel' ? 'Phone Number' : (fieldNow.type == 'lastName' ? fieldNow.placeholder : fieldNow.type)));
+                var title = (fieldNow.type == 'firstName' ? 'Name' : (fieldNow.type == 'tel' ? 'Phone Number' : (fieldNow.type == 'email' ? 'Email' : fieldNow.placeholder)));
                 if (title.length > 35)
                     title = title.substr(0, 35) + "...";
                 allVariables.push(title + ' : ' + leadformItem.fields[field].value);
@@ -4269,7 +4271,7 @@ var RadioButton = (function () {
         this.data.props.currentValue = radioItem.value;
         var self = this;
         jQuery('.prev').addClass('a-disable');
-        setTimeout(function () {
+        this.jsonBuilderHelper.radio_settimout = setTimeout(function () {
             self.controlOutput.emit(true);
             jQuery('.prev').removeClass('a-disable');
         }, 2000);
@@ -5330,14 +5332,14 @@ module.exports = "<a *ngIf=\"jsonBuilderHelper.getJSONBuilt().cta.shareType=='Fa
 /***/ 841:
 /***/ function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" *ngIf=\"data.visible\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\"lead-heading-temp1\" *ngIf=\"page && page.type ==='Result'\">\n      {{page.sections[2].title}}\n    </div>\n    <div>\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n          \n            <input tabindex=\"0\" placeholder=\"{{field.placeholder}}\" type=\"{{field.type}}\" (blur)=\"onTouched(i)\" [formControlName]=\"i\"\n              [(ngModel)]=\"field.value\">\n            <div *ngIf=\"formGroup().controls[i].touched\">\n                      <span\n                        *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                        {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='lastName'?field.placeholder:field.type)))}} is required.\n                      </span>\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                        Not a valid Email!\n                      </span>\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                        Not a valid Phone Number!\n                      </span>\n            </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"container-temp text-center\">\n    <button class=\"btn prime-action\" *ngIf=\"page.type !=='Result'\">\n      {{data.props.title}}\n    </button>\n    <a class=\"btn prime-action\" *ngIf=\"page.type ==='Result'\"\n      [attr.href]=\"jsonBuilderHelper.getJSONBuilt().navigate_Url\"\n      target=\"_blank\"\n      [class.hide] =\"leadsaved\"\n      (click)=\"preventdefault($event)\">\n       {{data.props.title}}\n    </a>\n  </div>\n</form>\n"
+module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" *ngIf=\"data.visible\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\"lead-heading-temp1\" *ngIf=\"page && page.type ==='Result'\">\n      {{page.sections[2].title}}\n    </div>\n    <div>\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n\n            <input tabindex=\"0\" placeholder=\"{{field.placeholder}}\" type=\"{{field.type}}\" (blur)=\"onTouched(i)\" [formControlName]=\"i\"\n              [(ngModel)]=\"field.value\">\n            <div *ngIf=\"formGroup().controls[i].touched\">\n                      <span\n                        *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                        {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='email'?'Email':field.placeholder)))}} is required.\n                      </span>\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                        Not a valid Email!\n                      </span>\n              <span *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                        Not a valid Phone Number!\n                      </span>\n            </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"container-temp text-center\">\n    <button class=\"btn prime-action\" *ngIf=\"page.type !=='Result'\">\n      {{data.props.title}}\n    </button>\n    <a class=\"btn prime-action\" *ngIf=\"page.type ==='Result'\"\n      [attr.href]=\"jsonBuilderHelper.getJSONBuilt().navigate_Url\"\n      target=\"_blank\"\n      [class.hide] =\"leadsaved\"\n      (click)=\"preventdefault($event)\">\n       {{data.props.title}}\n    </a>\n  </div>\n</form>\n"
 
 /***/ },
 
 /***/ 842:
 /***/ function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\" text-center question-section\">\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n          <div class=\"section-head\"> <div class=\"pull-left\">{{field.name}} </div> </div>\n            <div class=\"input-validation\">\n              <input tabindex=\"0\"\n                    placeholder=\"{{field.placeholder}}\"\n                    type=\"{{field.type}}\"\n                    (blur) = \"onTouched(i)\"\n                    [formControlName]=\"i\"\n                    [(ngModel)]=\"field.value\"\n              >\n              <div *ngIf=\"formGroup().controls[i].touched\">\n                        <span\n                          *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                          {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='lastName'?field.placeholder:field.type)))}} is required.\n                        </span>\n                <span\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                          Not a valid Email!\n                        </span>\n                <span\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                          Not a valid Phone Number!\n                        </span>\n              </div>\n            </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"w100 text-center\">\n    <button class=\"btn prime-action sliding-next og-lead-ques\"\n    >\n      <!--[themeColor]=\"['background']\"-->\n      {{data.props.title}}\n    </button>\n  </div>\n</form>\n"
+module.exports = "<form (ngSubmit)=\"onSubmit(formGroup())\" [formGroup]=\"formGroup()\" novalidate>\n  <div class=\"container-temp text-center\">\n    <div class=\" text-center question-section\">\n      <div class=\"input-section\">\n        <div *ngFor=\"let field of data.fields, let i=index\" class=\"input-outer\" [class.w100]=\"data.fields.length==1\">\n          <div class=\"section-head\"> <div class=\"pull-left\">{{field.name}} </div> </div>\n            <div class=\"input-validation\">\n              <input tabindex=\"0\"\n                    placeholder=\"{{field.placeholder}}\"\n                    type=\"{{field.type}}\"\n                    (blur) = \"onTouched(i)\"\n                    [formControlName]=\"i\"\n                    [(ngModel)]=\"field.value\"\n              >\n              <div *ngIf=\"formGroup().controls[i].touched\">\n                        <span\n                          *ngIf=\"formGroup().controls[i].errors && formGroup().controls[i].errors['required']\">\n                          {{(field.type=='firstName'?'Name':(field.type=='tel'?'Phone Number':(field.type=='email'?'Email':field.placeholder)))}} is required.\n                        </span>\n                <span\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['EmailError']\">\n                          Not a valid Email!\n                        </span>\n                <span\n                  *ngIf=\"formGroup().controls[i].errors && !formGroup().controls[i].errors['required'] && formGroup().controls[i].errors['PhoneNumberError']\">\n                          Not a valid Phone Number!\n                        </span>\n              </div>\n            </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"w100 text-center\">\n    <button class=\"btn prime-action sliding-next og-lead-ques\"\n    >\n      <!--[themeColor]=\"['background']\"-->\n      {{data.props.title}}\n    </button>\n  </div>\n</form>\n"
 
 /***/ },
 

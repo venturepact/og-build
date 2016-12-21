@@ -1343,7 +1343,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 't4-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avatar!</p>", '', 't4-default-result-outer');
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1438,8 +1438,6 @@ var DefaultJSON = (function () {
         item5.addFieldToCheckbox([{ label: 'Indoor', icon: '', value: '' },
             { label: 'Outdoor', icon: '', value: '' }]);
         var item6 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('textfield', 'You can we find our brand assets at', 'Please add the help text', ' example.com  ');
-        section1.addItems(item1, item2, item3, item4, item5, item6);
-        questionPage.addSections(section1);
         section1.addItems(item1, item2, item3, item4, item5, item6);
         questionPage.addSections(section1);
         // leadform section

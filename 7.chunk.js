@@ -589,73 +589,97 @@ var TrafficDetailsComponent = (function () {
     };
     TrafficDetailsComponent.prototype.getStats = function () {
         //geo location data
-        this.subs.push(this.getTrafficStats());
+        this.subs.push(this.getGeoStats());
+        //device data
+        this.subs.push(this.getDeviceStats());
+        //social data
+        this.subs.push(this.getSocialStats());
+        //browser data
+        this.subs.push(this.getBrowserStats());
     };
-    TrafficDetailsComponent.prototype.getTrafficStats = function () {
+    TrafficDetailsComponent.prototype.getGeoStats = function () {
         var _this = this;
-        this.geoLoader = this.deviceLoader = this.socialLoader = this.browserLoader = 'loading';
-        this.postData.type = 'traffic';
+        this.geoLoader = 'loading';
+        this.postData.type = 'country';
         return this._calcAnalytics.getTrafficStats(this.postData)
             .subscribe(function (response) {
-            _this.handleGeoStats(response['country']);
-            _this.handleDeviceStats(response['deviceCategory']);
-            _this.handleSocialStats(response['socialNetwork']);
-            _this.handleBrowserStats(response['browser']);
+            if (!response.length || (response.length == 1 && response[0][0] == '(not set)')) {
+                _this.geoLoader = 'Available Soon !';
+            }
+            else {
+                response = response.map(function (val) { return [val[0], Number(val[2])]; });
+                response.unshift(['Country', 'Page Views']);
+                _this.drawRegionsMap(response);
+                _this.geoLoader = 'done';
+            }
         }, function (error) {
-            _this.geoLoader = _this.deviceLoader = _this.socialLoader = _this.browserLoader = 'Something Went Wrong !';
+            _this.geoLoader = 'Something Went Wrong !';
         });
     };
-    TrafficDetailsComponent.prototype.handleGeoStats = function (response) {
-        if (!response.length || (response.length == 1 && response[0][0] == '(not set)')) {
-            this.geoLoader = 'Available Soon !';
-        }
-        else {
-            response = response.map(function (val) { return [val[0], Number(val[2])]; });
-            response.unshift(['Country', 'Page Views']);
-            this.drawRegionsMap(response);
-            this.geoLoader = 'done';
-        }
+    TrafficDetailsComponent.prototype.getDeviceStats = function () {
+        var _this = this;
+        this.deviceLoader = 'loading';
+        this.postData.type = 'deviceCategory';
+        return this._calcAnalytics.getTrafficStats(this.postData)
+            .subscribe(function (response) {
+            if (response.length) {
+                response = response.map(function (val) {
+                    if (val[0] == '(not set)')
+                        val[0] = 'Unknown device';
+                    return response = [val[0], Number(val[2])];
+                });
+                response.unshift(['Devices', 'Page Views']);
+                _this.drawPieChart(response, 'piechart');
+                _this.deviceLoader = 'done';
+            }
+            else {
+                _this.deviceLoader = 'Available Soon !';
+            }
+        }, function (error) {
+            _this.deviceLoader = 'Something Went Wrong !';
+        });
     };
-    TrafficDetailsComponent.prototype.handleDeviceStats = function (response) {
-        if (response.length) {
-            response = response.map(function (val) {
-                if (val[0] == '(not set)')
-                    val[0] = 'Unknown device';
-                return response = [val[0], Number(val[2])];
-            });
-            response.unshift(['Devices', 'Page Views']);
-            this.drawPieChart(response, 'piechart');
-            this.deviceLoader = 'done';
-        }
-        else {
-            this.deviceLoader = 'Available Soon !';
-        }
+    TrafficDetailsComponent.prototype.getSocialStats = function () {
+        var _this = this;
+        this.socialLoader = 'loading';
+        this.postData.type = 'socialNetwork';
+        return this._calcAnalytics.getTrafficStats(this.postData)
+            .subscribe(function (response) {
+            if (response.length) {
+                response = response.map(function (val) {
+                    if (val[0] == '(not set)')
+                        val[0] = 'Direct Access';
+                    return response = [val[0], Number(val[2])];
+                });
+                response.unshift(['Social', 'Page Views']);
+                _this.drawPieChart(response, 'piechart1');
+                _this.socialLoader = 'done';
+            }
+            else {
+                _this.socialLoader = 'Available Soon !';
+            }
+        }, function (error) {
+            _this.socialLoader = 'Something Went Wrong !';
+        });
     };
-    TrafficDetailsComponent.prototype.handleSocialStats = function (response) {
-        if (response.length) {
-            response = response.map(function (val) {
-                if (val[0] == '(not set)')
-                    val[0] = 'Direct Access';
-                return response = [val[0], Number(val[2])];
-            });
-            response.unshift(['Social', 'Page Views']);
-            this.drawPieChart(response, 'piechart1');
-            this.socialLoader = 'done';
-        }
-        else {
-            this.socialLoader = 'Available Soon !';
-        }
-    };
-    TrafficDetailsComponent.prototype.handleBrowserStats = function (response) {
-        if (response.length) {
-            response = response.map(function (val) { return [val[0], Number(val[2])]; });
-            response.unshift(['Browser', 'Page Views']);
-            this.drawPieChart(response, 'piechart2');
-            this.browserLoader = 'done';
-        }
-        else {
-            this.browserLoader = 'Available Soon !';
-        }
+    TrafficDetailsComponent.prototype.getBrowserStats = function () {
+        var _this = this;
+        this.browserLoader = 'loading';
+        this.postData.type = 'browser';
+        return this._calcAnalytics.getTrafficStats(this.postData)
+            .subscribe(function (response) {
+            if (response.length) {
+                response = response.map(function (val) { return [val[0], Number(val[2])]; });
+                response.unshift(['Browser', 'Page Views']);
+                _this.drawPieChart(response, 'piechart2');
+                _this.browserLoader = 'done';
+            }
+            else {
+                _this.browserLoader = 'Available Soon !';
+            }
+        }, function (error) {
+            _this.browserLoader = 'Something Went Wrong !';
+        });
     };
     TrafficDetailsComponent.prototype.drawRegionsMap = function (graphData) {
         var data = google.visualization.arrayToDataTable(graphData);
@@ -763,9 +787,11 @@ var UserDetailsComponent = (function () {
         jQuery(document).on('click', '.vd', function (event) {
             self.visitorKey = jQuery(event.target).data('key');
             // Slide right
-            jQuery('.user-detail-outer').toggle('slide', { direction: 'right' }, 700);
-            _this.cdr.detectChanges();
             event.stopPropagation();
+            setTimeout(function () {
+                _this.cdr.detectChanges();
+                jQuery('.user-detail-outer').fadeIn();
+            }, 100);
         });
         this.intializeDatatable();
     };
@@ -1062,7 +1088,7 @@ module.exports = "<div class=\"tab-pane\" id=\"traffic\">\n  <og-date-range-pick
 /***/ 915:
 /***/ function(module, exports) {
 
-module.exports = "<div [class.hide]=\"loader==0\" class=\"tab-pane \" id=\"person\">\n    <div class=\"details-heading \">Lifetime Statistics</div>\n    <og-date-range-picker (date)=\"onDateSelect($event)\"></og-date-range-picker>\n  <div class=\"col-md-12 col-sm-12 col-xs-12 details-mt20\">\n    <!--<div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n            <h4><i class=\"material-icons\">people</i> 5</h4>\n            <h6>Avg. Referrals Made</h6>\n        </div>-->\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">person_add</i>{{(avgAnswered)?avgAnswered:'--'}}</h4>\n      <h6>Avg. Questions Answered</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4 id=\"reco-tool\"><i class=\"material-icons\">timeline</i>{{(avgResult)?avgResult:'--'}}\n        <div class=\"range-checktip\">{{(avgResult)?avgResult:'--'}}</div>\n      </h4>\n      <h6>{{(calc.templateType=='Numerical')?'Avg. Result':'Most Outcome Obtained'}}</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">public</i>{{(mostViewedOn)?mostViewedOn:'--'}}</h4>\n      <h6>Most Viewed On</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">schedule</i>{{(avgLengthTime)?avgLengthTime:'--'}}</h4>\n      <h6>Avg, Length of Visit</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">near_me</i>{{(mostViewedVia)?mostViewedVia:'--'}}</h4>\n      <h6>Most Visited Via</h6>\n    </div>\n  </div>\n  <div class=\"details-table-outer\" [class.recomtable]=\"calc.templateType=='Recommendation'\">\n    <div class=\"table-responsive\" *ngIf=\"!limit_alert\">\n      <table id=\"myTable\" class=\"display table\" cellspacing=\"0\" width=\"100%\"></table>\n    </div>\n    <div *ngIf=\"limit_alert\" class=\"analytics-bottom-popup user-margin\">\n      <i class=\"material-icons\">warning</i>\n      You have exceeded the Leads limit for your Plan <br>\n      <a href=\"\" [routerLink]=\"['/settings/membership']\">Click here</a> to buy an Addon to unlock the leads for your account.\n    </div>\n    <div *ngIf=\"limit_alert\" class=\"analytics-overlay\"></div>\n  </div>\n\n</div>\n<og-user-details-popup [visitorKey]=\"visitorKey\"></og-user-details-popup>\n<div class=\"loader\" *ngIf=\"loader==0\"></div>"
+module.exports = "<div [class.hide]=\"loader==0\" class=\"tab-pane \" id=\"person\">\n    <div class=\"details-heading \">Lifetime Statistics</div>\n    <og-date-range-picker (date)=\"onDateSelect($event)\"></og-date-range-picker>\n  <div class=\"col-md-12 col-sm-12 col-xs-12 details-mt20\">\n    <!--<div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n            <h4><i class=\"material-icons\">people</i> 5</h4>\n            <h6>Avg. Referrals Made</h6>\n        </div>-->\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">person_add</i>{{(avgAnswered)?avgAnswered:'--'}}</h4>\n      <h6>Avg. Questions Answered</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4 id=\"reco-tool\"><i class=\"material-icons\">timeline</i>{{(avgResult)?avgResult:'--'}}\n        <div class=\"range-checktip\">{{(avgResult)?avgResult:'--'}}</div>\n      </h4>\n      <h6>{{(calc.templateType=='Numerical')?'Avg. Result':'Most Outcome Obtained'}}</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">public</i>{{(mostViewedOn)?mostViewedOn:'--'}}</h4>\n      <h6>Most Viewed On</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">schedule</i>{{(avgLengthTime)?avgLengthTime:'--'}}</h4>\n      <h6>Avg, Length of Visit</h6>\n    </div>\n    <div class=\"col-md-2 col-sm-12 col-xs-12 details-box-outer\">\n      <h4><i class=\"material-icons\">near_me</i>{{(mostViewedVia)?mostViewedVia:'--'}}</h4>\n      <h6>Most Visited Via</h6>\n    </div>\n  </div>\n  <div class=\"details-table-outer\" [class.recomtable]=\"calc.templateType=='Recommendation'\">\n    <div class=\"table-responsive\" *ngIf=\"!limit_alert\">\n      <table id=\"myTable\" class=\"display table\" cellspacing=\"0\" width=\"100%\"></table>\n    </div>\n    <div *ngIf=\"limit_alert\" class=\"analytics-bottom-popup user-margin\">\n      <i class=\"material-icons\">warning</i>\n      You have exceeded the Leads limit for your Plan <br>\n      <a href=\"\" [routerLink]=\"['/settings/membership']\">Click here</a> to buy an Addon to unlock the leads for your account.\n    </div>\n    <div *ngIf=\"limit_alert\" class=\"analytics-overlay\"></div>\n  </div>\n\n</div>\n<og-user-details-popup *ngIf=\"visitorKey\" [visitorKey]=\"visitorKey\"></og-user-details-popup>\n<div class=\"loader\" *ngIf=\"loader==0\"></div>\n"
 
 /***/ },
 
