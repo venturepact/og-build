@@ -201,8 +201,9 @@ var CalculatorAnalytics = (function (_super) {
             .map(this.extractData)
             .catch(this.handleError);
     };
-    CalculatorAnalytics.prototype.getLeads = function (appId) {
-        return this._http.post(this._url + '/analytic/get_leads', appId, this.post_options())
+    //getleads
+    CalculatorAnalytics.prototype.getAvgOfLeads = function (data) {
+        return this._http.post(this._url + '/analytic/get_leads_avg', data, this.post_options())
             .map(this.extractData)
             .catch(this.handleError);
     };
@@ -804,13 +805,6 @@ var UserDetailsComponent = (function () {
     UserDetailsComponent.prototype.ngOnInit = function () {
         this.checkLeadsLimit();
     };
-    // initializeViewDetails() {
-    //   jQuery('.vd').unbind().bind('click', (event: any) => {
-    //     this.visitorKey = jQuery(event.target).data('key');
-    //     // Slide right
-    //     jQuery('.user-detail-outer').toggle('slide', { direction: 'right' }, 700);
-    //   });
-    // }
     UserDetailsComponent.prototype.ngOnChanges = function () {
         if (this.calc) {
             if (this.calc.liveApp)
@@ -819,72 +813,15 @@ var UserDetailsComponent = (function () {
                 this.calc_id = this.calc.parentApp;
             this.intializeDatatable();
             this.loader = 0;
+            this.reInitAvgVariable();
         }
     };
-    // getLeadData(id: any) {
-    //   /* get leads of user on page */
-    //   return this._calculatorAnalytics.getLeads({ id: id, date: this.postData })
-    //     .subscribe(
-    //     (response: any) => {
-    //       this.dataSet = response.data;
-    //       //this.limit_alert = response.limit_cross;
-    //       this.avgAnswered = Math.round(response.avgAnswers);
-    //       this.avgResult = response.avgResult;
-    //       /* -- */
-    //       this.dataSet = this.dataSet.map(data => {
-    //         this.subs.push(this.getAnalyticData(data));
-    //         data.shift();
-    //         return data;
-    //       });
-    //       this.intializeDatatable();
-    //     },
-    //     (error: any) => {
-    //       console.log(error);
-    //     }
-    //     );
-    // }
-    // getAnalyticData(lead: any[]) {
-    //   this.postData.type = 'leadStats';
-    //   this.postData.calc_id = lead[0];
-    //   return this._calculatorAnalytics.getTrafficStats(this.postData)
-    //     .subscribe(
-    //     (response: any[]) => {
-    //       if (response.length) {
-    //         lead[4] = (response[0][4] > 60) ? (response[0][4] / 60).toFixed(2) + ' m' : response[0][4] + ' s';
-    //         lead[3] = response[0][3];
-    //         lead[5] = (response[0][2] == '(not set)' ? 'direct' : response[0][2]);
-    //         //avg time
-    //         this.totalTime += Number(response[0][4]);
-    //         let avgTime: number = this.totalTime / this.dataSet.length;
-    //         this.avgLengthTime = (avgTime > 60) ? (avgTime / 60).toFixed(2) + ' m' : avgTime.toFixed(2) + ' s';
-    //         //other stats
-    //         this.viewedOnStats[response[0][3]] += 1;
-    //         this.viewedViaStats[response[0][2] == '(not set)' ? 'direct' : response[0][2]] += 1;
-    //         this.mostViewedVia = Object.keys(this.viewedViaStats).reduce((a: any, b: any) => this.viewedViaStats[a] > this.viewedViaStats[b] ? a : b);
-    //         this.mostViewedOn = Object.keys(this.viewedOnStats).reduce((a: any, b: any) => this.viewedOnStats[a] > this.viewedOnStats[b] ? a : b);
-    //         //reinit data table
-    //         //this.intializeDatatable();
-    //         // this.geoLoader = 'done';
-    //       } else {
-    //         lead[3] = lead[4] = lead[5] = 'Not Available';
-    //         // this.geoLoader = 'No Data Available !';
-    //       }
-    //     },
-    //     (error: any) => {
-    //       // this.geoLoader = 'Something Went Wrong !';
-    //     }
-    //     );
-    // }
-    UserDetailsComponent.prototype.avgAnalyticsData = function (data) {
+    UserDetailsComponent.prototype.calulateAnalyticsData = function (data) {
         var _this = this;
+        console.log('data', data);
         if (data.length) {
             data.map(function (response) {
-                _this.totalTime = 0;
-                if (response[4] != '--' || response[5] != '--' || response[6] != '--' || response[7] != '--') {
-                    //avg time
-                    // this.totalTime += Number(response[9]);
-                    // let avgTime: number = this.totalTime / data.length;
-                    //this.avgLengthTime = (avgTime > 60) ? (avgTime / 60).toFixed(2) + ' m' : avgTime.toFixed(2) + ' s';
+                if (response[5] != '--' || response[7] != '--') {
                     _this.viewedOnStats[response[5]] += 1;
                     _this.viewedViaStats[response[7] == '(not set)' ? 'direct' : response[7]] += 1;
                     _this.mostViewedVia = Object.keys(_this.viewedViaStats).reduce(function (a, b) { return _this.viewedViaStats[a] > _this.viewedViaStats[b] ? a : b; });
@@ -898,8 +835,14 @@ var UserDetailsComponent = (function () {
             this.avgLengthTime = '--';
         }
     };
+    UserDetailsComponent.prototype.reInitAvgVariable = function () {
+        this.mostViewedVia = '--';
+        this.mostViewedOn = '--';
+        this.avgLengthTime = '--';
+        this.avgAnswered = '--';
+        this.avgResult = '--';
+    };
     UserDetailsComponent.prototype.intializeDatatable = function () {
-        console.log('test init');
         var self = this;
         this.dataTableRef = jQuery('#myTable').DataTable({
             "processing": true,
@@ -912,11 +855,8 @@ var UserDetailsComponent = (function () {
                 "type": "POST",
                 "data": { id: self.calc_id, start_date: this.postData.start_date, end_date: this.postData.end_date },
                 "dataSrc": function (response) {
-                    self.avgAnswered = Math.round(response.avgAnswers);
-                    self.avgResult = response.avgResult;
-                    self.avgLengthTime = (Number(response.avgTimeOnPage) > 60) ? Number(response.avgTimeOnPage / 60).toFixed(2) + ' m' : Number(response.avgTimeOnPage).toFixed(2) + ' s';
+                    self.subs.push(self.avgAnalyticsData());
                     self.loader = 1;
-                    self.avgAnalyticsData(response.data);
                     return response.data;
                 }
             },
@@ -939,15 +879,22 @@ var UserDetailsComponent = (function () {
                 { title: 'Visited On' },
                 { title: 'Length of Visit' },
                 { title: 'Visited Via' },
-                { title: 'View Details' },
-                { title: 'Time' }
+                { title: 'View Details' }
             ]
         });
-        // this.dataTableRef.clear();
-        // //this.dataTableRef.rows.add(this.dataSet);
-        // this.dataTableRef.draw();
         this.dataTableRef.column(4).visible(false);
-        this.dataTableRef.column(9).visible(false);
+    };
+    UserDetailsComponent.prototype.avgAnalyticsData = function () {
+        var self = this;
+        return this._calculatorAnalytics.getAvgOfLeads({ id: this.calc_id, start_date: this.postData.start_date, end_date: this.postData.end_date })
+            .subscribe(function (response) {
+            self.avgAnswered = Math.round(response.avgAnswers);
+            self.avgResult = response.avgResult;
+            self.avgLengthTime = (Number(response.avgTimeOnPage) > 60) ? Number(response.avgTimeOnPage / 60).toFixed(2) + ' m' : Number(response.avgTimeOnPage).toFixed(2) + ' s';
+            self.calulateAnalyticsData(response.data);
+        }, function (error) {
+            console.log('Something Went Wrong in Avg leads!');
+        });
     };
     UserDetailsComponent.prototype.onDateSelect = function (date) {
         this.postData.start_date = new Date(date.start_date).toISOString().substr(0, 10);
