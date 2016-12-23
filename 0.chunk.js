@@ -17123,7 +17123,6 @@ var ConfigIntegrationsComponent = (function () {
         };
         this._integrationService.authorization(data, 'marketo')
             .subscribe(function (response) {
-            console.log('###########', response.error.code);
             if (response.error) {
                 _this.error = true;
                 _this.errorMessage = response.error_description;
