@@ -473,8 +473,10 @@ var JSONBuilder = (function () {
                                 items.push(item);
                             }
                             if (item.type === 'click_button') {
-                                item.visible = true;
-                                items.push(item);
+                                if ((this.isEmpty(this.getJSONBuilt().cta) || this.getJSONBuilt().cta.shareType == 'cta') || page.type != 'Result') {
+                                    item.visible = true;
+                                    items.push(item);
+                                }
                             }
                         }
                     }
@@ -525,8 +527,10 @@ var JSONBuilder = (function () {
                                 items.push(item);
                             }
                             if (item.type === 'click_button') {
-                                item.visible = true;
-                                items.push(item);
+                                if ((this.isEmpty(this.getJSONBuilt().cta) || this.getJSONBuilt().cta.shareType == 'cta') || page.type != 'Result') {
+                                    item.visible = true;
+                                    items.push(item);
+                                }
                             }
                         }
                     }
@@ -873,6 +877,16 @@ var JSONBuilder = (function () {
             clearTimeout(timeout);
             timeout = setTimeout(later, wait);
         };
+    };
+    JSONBuilder.prototype.isEmpty = function (obj) {
+        if (obj == null || obj.length === 0 || typeof obj !== "object")
+            return true;
+        if (obj.length > 0)
+            return false;
+        for (var key in obj)
+            if (key != '_id' && obj[key] != "")
+                return false;
+        return true;
     };
     JSONBuilder = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
