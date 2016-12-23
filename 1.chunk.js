@@ -7624,16 +7624,18 @@ var MembershipComponent = (function () {
                     }
                     ga('markettingteam.send', 'event', 'Settings', 'Submit', 'SettingsPlanChanged');
                     _kmq.push(['record', 'Settings Plan Changed', kmqData]);
-                    var url = window.location.href;
-                    if (url.toLowerCase().indexOf("outgrow.co") >= 0) {
-                        var leadDynoData = {
+                    /*let url = window.location.href;
+                    if(url.toLowerCase().indexOf("outgrow.co") >= 0) {
+                        let leadDynoData = {
                             purchase_code: 'Tinker',
                             purchase_amount: 0
                         };
-                        if (success.invoice) {
+                        if(success.invoice) {
+                            leadDynoData.purchase_code = success.invoice.id;
+                            leadDynoData.purchase_amount = Math.round(success.invoice.sub_total/100);
                         }
                         LeadDyno.recordPurchase(success.customer.email, leadDynoData);
-                    }
+                    }*/
                     /*=====================*/
                     window.toastNotification('Payment successfully done and plan is changed.');
                     _this.isChangePlan = false;

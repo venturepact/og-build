@@ -7580,17 +7580,22 @@ var BuilderComponent = (function () {
         else {
             //create new app on load
             var project = localStorage.getItem('project');
-            var template = localStorage.getItem('temp_name');
+            var template_1 = localStorage.getItem('temp_name');
             var temp_type = localStorage.getItem('temp_type');
             if (project === 'New') {
-                var json = this._defaultJson.getJSON(template);
+                var json = this._defaultJson.getJSON(template_1);
                 var company_id = localStorage.getItem('company');
                 json.setCompany(company_id);
-                json.setTemplateName(template);
+                json.setTemplateName(template_1);
                 json.setTemplateType(temp_type);
                 json.setNavigateUrl(this.getNavUrl());
                 this._builderService.createApp(json)
                     .subscribe(function (response) {
+                    /*= Fb Pixel =*/
+                    fbq('trackCustom', 'Calculator Built', {
+                        template: template_1
+                    });
+                    /*====*/
                     var app = new __WEBPACK_IMPORTED_MODULE_5__models_model__["c" /* App */]().deserialize(response);
                     _this.activeSince = moment(response.createdAt).fromNow().replace('ago', '').trim();
                     localStorage.setItem('project', app._id);
@@ -7699,10 +7704,10 @@ var BuilderComponent = (function () {
     BuilderComponent.prototype.emailForNewApp = function (app) {
         var storage = JSON.parse(this._cookieService.readCookie('storage'));
         if (app.templateType == 'Numerical') {
-            var emailMessage = "<p>Hi {name},\n                    Thank you for completing our " + app.name + " calculator. \n                    We wanted to send you a summary of your results.\n                     Your result was {R1} and you can find more information below.</p>\n                     <p>Feel free to reply to this email directly with any questions.</p>\n                     <p>All the best!</p>\n                     <p>" + storage.company.name + " Team</p><p>Summary:</p><p>R1 title: {R1}</p>\n                     <p>R2 title: {R2}</p><p>.</p><p>Q1 title: {Q1}</p><p>Q2 title: {Q2}</p>";
+            var emailMessage = "<p>Hi {name},\n                    Thank you for completing our " + app.name + " calculator.\n                    We wanted to send you a summary of your results.\n                     Your result was {R1} and you can find more information below.</p>\n                     <p>Feel free to reply to this email directly with any questions.</p>\n                     <p>All the best!</p>\n                     <p>" + storage.company.name + " Team</p><p>Summary:</p><p>R1 title: {R1}</p>\n                     <p>R2 title: {R2}</p><p>.</p><p>Q1 title: {Q1}</p><p>Q2 title: {Q2}</p>";
         }
         else {
-            var emailMessage = "<p>Hi {name} ,\n                          </p><p>Thank you for completing our " + app.name + " calculator. \n                          We wanted to send you a summary of your results. \n                          Your result was {Outcome}</p><p>and you can find more information below.</p>\n                          <p>Feel free to reply to this email directly with any questions.</p>\n                          <p>All the best!</p><p>" + storage.company.name + "</p><p>Team</p>\n                          <p>Summary:<br>Outcome: {Outcome}<br><br><br>Q1 title: {Q1}<br>Q2 title: {Q2}</p>";
+            var emailMessage = "<p>Hi {name} ,\n                          </p><p>Thank you for completing our " + app.name + " calculator.\n                          We wanted to send you a summary of your results.\n                          Your result was {Outcome}</p><p>and you can find more information below.</p>\n                          <p>Feel free to reply to this email directly with any questions.</p>\n                          <p>All the best!</p><p>" + storage.company.name + "</p><p>Team</p>\n                          <p>Summary:<br>Outcome: {Outcome}<br><br><br>Q1 title: {Q1}<br>Q2 title: {Q2}</p>";
         }
         var calcModel = new __WEBPACK_IMPORTED_MODULE_0__models_calc_email_model__["a" /* CalcEmail */]({ app: app._id, type: 'Finish', email: storage.user.emails[0].email, subject: app.name, message: emailMessage });
         this._builderService.saveCalcEmail(calcModel)
@@ -8163,7 +8168,8 @@ var BuilderComponent = (function () {
                     bootbox.dialog({
                         message: "\n                           <div class=\"text-center live-modal\">\n                                <span class=\"icon-play-next\"><i class=\"material-icons\">queue_play_next</i></span>\n                                <div class=\"live-head\">" + _this.bootboxText + "</div>\n                                <img class=\"img-style hide\" src=\"assets/images/goLivePopup.png\"/>\n                                <div class=\"\">\n                                    <div class=\"live-subhead link-style\">\n                                        <span>\n                                            To preview, open this link in another browser.\n                                        </span>\n                                        <a class=\"live-url preview_copy\">Copy Link</a>\n                                    </div>\n                                    <div class=\"live-subhead selected-link\">\n                                        <span class=\"hide\">Your public calculator can be viewed here:</span>\n                                        <div class=\"live-url url-style\">" + _this.srcUrl + "</div>\n                                    </div>\n                                    <!--<img src=\"assets/images/gocopyPopup.png\"/>-->\n                                </div>\n                                <div class=\"table-responsive hide\">\n                                    <table class=\"table\">\n                                        <thead>\n                                            <tr>\n                                                <th>\n                                                    <div class=\"live-subhead link-style\">\n                                                        <span>\n                                                            To preview, open this link in another browser.\n                                                        </span>\n                                                        <a class=\"live-url preview_copy\">Copy Link</a>\n                                                    </div>\n                                                </th>\n                                            </tr>\n                                        </thead>\n                                        <tbody>\n                                            <tr>\n                                                <td>\n                                                    <div class=\"live-subhead\">\n                                                        <span class=\"hide\">Your public calculator can be viewed here:</span>\n                                                        <div class=\"live-url url-style\">" + _this.srcUrl + "</div>\n                                                    </div>\n                                                </td>\n                                            </tr>\n                                        </tbody>\n                                    </table>\n                                </div>\n                            </div>\n                            "
                     });
-                    /*==== Intercom ====*/
+                    /*==== Marketing Scripts ====*/
+                    fbq('trackCustom', 'Calculator Published');
                     if (_this.interComData) {
                         _this.interComData.calculators_published++;
                         localStorage.setItem('icd', JSON.stringify(_this.interComData));
