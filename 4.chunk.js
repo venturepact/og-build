@@ -1,12 +1,12 @@
 webpackJsonp([4,12],{
 
-/***/ 1029:
+/***/ 1030:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__ = __webpack_require__(913);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_script_service__ = __webpack_require__(115);
@@ -138,8 +138,8 @@ var CalculatorComponent = (function () {
     CalculatorComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-calc',
-            template: __webpack_require__(1162),
-            styles: [__webpack_require__(937)],
+            template: __webpack_require__(1163),
+            styles: [__webpack_require__(938)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_index__["b" /* CookieService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__shared_services_script_service__["a" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__shared_services_script_service__["a" /* Script */]) === 'function' && _e) || Object])
     ], CalculatorComponent);
@@ -150,13 +150,13 @@ var CalculatorComponent = (function () {
 
 /***/ },
 
-/***/ 1030:
+/***/ 1031:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__ = __webpack_require__(913);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return SeoComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -203,7 +203,7 @@ var SeoComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-seo-calc',
             template: "<Temp *ngIf=\"tempName\" [JSON_Template]=\"JSON_Template\"></Temp>",
-            styles: [__webpack_require__(937)],
+            styles: [__webpack_require__(938)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], SeoComponent);
@@ -214,7 +214,7 @@ var SeoComponent = (function () {
 
 /***/ },
 
-/***/ 1162:
+/***/ 1163:
 /***/ function(module, exports) {
 
 module.exports = "<!--<div *ngIf=\"!tempName\" class=\"loader-live\"></div>-->\r\n\r\n<Temp *ngIf=\"tempName\" [JSON_Template]=\"JSON_Template\"></Temp>\r\n\r\n<div *ngIf=\"pageStatus==='Not-Found'\">\r\n  <nav class=\"navbar custom-navbar navbar-default navbar-fixed-top\">\r\n    <div class=\"container-fluid\">\r\n      <!-- Brand and toggle get grouped for better mobile display -->\r\n      <div class=\"navbar-header\">\r\n        <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\r\n          <span class=\"sr-only\">Toggle navigation</span>\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n          <span class=\"icon-bar\"></span>\r\n        </button>\r\n        <a class=\"navbar-brand\" href=\"index.html\"><img src=\"assets/images/outgrow-logo.png\" /></a>\r\n      </div>\r\n\r\n      <!-- Collect the nav links, forms, and other content for toggling -->\r\n      <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n        <ul class=\"nav navbar-nav navbar-right\">\r\n          <li><a href=\"javascript:void(0);\" (click)=\"whyCalculators()\">Why Calculators ?</a></li>\r\n          <li><a href=\"javascript:void(0);\" (click)=\"features()\">Featuress</a></li>\r\n          <li><a href=\"javascript:void(0);\" (click)=\"pricing()\">Pricing</a></li>\r\n          <li><a href=\"javascript:void(0);\" (click)=\"examples()\">Examples</a></li>\r\n          <li>\r\n            <a *ngIf=\"!isLoggedin\" href=\"javascript:void(0);\" class=\"link-login\" (click)=\"login()\">Login</a>\r\n            <a *ngIf=\"isLoggedin\" href=\"javascript:void(0);\" class=\"link-login\" (click)=\"dashboard()\">Dashboard</a>\r\n          </li>\r\n        </ul>\r\n      </div><!-- /.navbar-collapse -->\r\n    </div><!-- /.container-fluid -->\r\n  </nav>\r\n  <!-- Homepage header end-->\r\n  <!-- Homepage section 1 start-->\r\n  <section class=\"section section-1\">\r\n    <div class=\"container-fluid\">\r\n      <div class=\"col-xs-12 col-sm-6 section-1-left\">\r\n        <div class=\"section1-left-cell\">\r\n          <h3 class=\"mk-animate-element fade-in heading-404\">\r\n            404\r\n          </h3>\r\n          <h4 class=\"mk-animate-element fade-in heading2-404\">\r\n            Looks like your calc is not published yet, please<br> login and publish your calc.\r\n          </h4>\r\n          <div class=\"form-group mk-animate-element fade-in hide\">\r\n            <input type=\"text\" placeholder=\"Email Address\" />\r\n          </div>\r\n          <div class=\"col-xs-12 col-sm-8 np\">\r\n            <a *ngIf=\"!isLoggedin\" href=\"javascript:void(0);\" class=\"btn-buildcal mk-animate-element fade-in login-404\" (click)=\"login()\">Login</a>\r\n            <a *ngIf=\"isLoggedin\" href=\"javascript:void(0);\" class=\"btn-buildcal mk-animate-element fade-in login-404\" (click)=\"dashboard()\">Dashboard</a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-6 np rs-hide\">\r\n        <div class=\"sec1-box-left img-404\">\r\n          <div class=\"sec1-box1 mk-animate-element fade-in\">\r\n            <img src=\"assets/images/404.png\" />\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-xs-12 col-sm-12 text-center footer-404\">\r\n        <i class=\"material-icons\">copyright</i>\r\n        <span>Copyrights</span>\r\n        <img src=\"assets/images/footer-logo-dark.png\" />\r\n      </div>\r\n    </div>\r\n  </section>\r\n</div>\r\n\r\n<div *ngIf=\"pageStatus==='Private'\">\r\n  Calculator is no longer available for Public Use.\r\n</div>\r\n"
@@ -226,14 +226,14 @@ module.exports = "<!--<div *ngIf=\"!tempName\" class=\"loader-live\"></div>-->\r
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calculator_component__ = __webpack_require__(1029);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calculator_component__ = __webpack_require__(1030);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_logged_in_service__ = __webpack_require__(252);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_calculator_service__ = __webpack_require__(912);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_calculator_service__ = __webpack_require__(913);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__templateAll_template_module__ = __webpack_require__(864);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__builder_services_builder_service__ = __webpack_require__(794);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seo_component__ = __webpack_require__(1030);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seo_component__ = __webpack_require__(1031);
 /* harmony export (binding) */ __webpack_require__.d(exports, "CalculatorModule", function() { return CalculatorModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -6875,7 +6875,7 @@ module.exports = "<div class=\"temp2-bg\"\r\n     *ngIf=\"!devMode\"\r\n     [st
 
 /***/ },
 
-/***/ 912:
+/***/ 913:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6934,7 +6934,7 @@ var CalculatorService = (function (_super) {
 
 /***/ },
 
-/***/ 937:
+/***/ 938:
 /***/ function(module, exports) {
 
 module.exports = "/*################### 404  css start ###################*/\r\nbody.main-profile{ overflow: hidden;}\r\n.navbar-brand{\r\n  padding: 0px;\r\n  margin-left: 10px !important;\r\n  margin-top: 5px;\r\n}\r\n.custom-navbar.navbar-default{\r\n  background:#fff;\r\n  border:none;\r\n  padding: 10px;\r\n  padding-right: 25px;\r\n  margin: 0px;\r\n}\r\n.custom-navbar.navbar-default .navbar-nav > li{\r\n  margin-right: 20px;\r\n}\r\n.custom-navbar.navbar-default .navbar-nav > li > a{\r\n  font-size: 14px;\r\n  color: #62696d;\r\n  text-transform: uppercase;\r\n}\r\n.custom-navbar.navbar-default .navbar-nav > li > a:hover{\r\n  color: #fb5f66;\r\n}\r\n.custom-navbar.navbar-default .navbar-nav > li > a.active{\r\n  color: #fb5f66;\r\n}\r\n.custom-navbar.navbar-default .navbar-nav > li > a.line-through{\r\n  text-decoration: line-through;\r\n}\r\n.custom-navbar .btn-login{\r\n  background: #fb5f66;\r\n  color: #fff !important;\r\n  text-transform: none !important;\r\n  padding: 3px 30px;\r\n  margin-top: 10px;\r\n  border: 2px solid #fb5f66;\r\n}\r\n.custom-navbar .btn-login:hover{\r\n  border: 2px solid #fb5f66;\r\n  background: none;\r\n  color: #fb5f66 !important;\r\n}\r\n.custom-navbar .link-login{\r\n  color: #fb6c73 !important;\r\n  /*padding: 3px 30px;\r\n  margin-top: 10px;\r\n  border: 2px solid #fff;*/\r\n  font-family:montserratbold;\r\n}\r\n.custom-navbar .link-login:hover{\r\n  /*border: 2px solid #fb5f66;*/\r\n  background: none;\r\n  color: #fb5f66 !important;\r\n  opacity:0.5;\r\n}\r\n.nav-boxshadow{\r\n  box-shadow:0 2px 9px 1px rgba(0,0,0,0.2);\r\n}\r\n.section{\r\n  float: left;\r\n  width: 100%;\r\n  margin-top: 30px;\r\n  margin-bottom: 30px;\r\n}\r\n.section-1{\r\n  float: left;\r\n  width: 100%;\r\n  background: #fff;\r\n  padding-top: 52px;\r\n  padding-bottom: 30px;\r\n  margin-bottom: 0;\r\n}\r\n.section-1 .container-fluid{\r\n  padding: 0px;\r\n}\r\n.section-1-left{\r\n  padding-left: 55px;\r\n  display: table;\r\n}\r\n.section1-left-cell{\r\n  display: table-cell;\r\n  height: 83vh;\r\n  vertical-align: middle;\r\n}\r\n.section-1-left h3{\r\n  float: left;\r\n  width: 100%;\r\n  font-size: 36px;\r\n  font-family:montserratbold;\r\n  color: #fb6c73;\r\n  text-transform: uppercase;\r\n  margin-bottom: 30px;\r\n  margin-top: 0px;\r\n}\r\n.section-1-left h4{\r\n  float: left;\r\n  width: 100%;\r\n  font-size: 24px;\r\n  font-family:montserratlight;\r\n  color: #62696d;\r\n  margin-bottom: 30px;\r\n}\r\n.section-1-left input{\r\n  padding: 10px;\r\n  width: 70%;\r\n}\r\n.section-1-left .btn-buildcal{\r\n  background: #62696d;\r\n  border: none;\r\n  color: #fff;\r\n  float: left;\r\n  font-size: 18px;\r\n  text-transform: uppercase;\r\n  padding: 15px 25px;\r\n  margin-top: 20px;\r\n}\r\n.section-1-left .btn-buildcal i{\r\n  display: inline-block;\r\n  float:left;\r\n  margin-right: 10px;\r\n}\r\n.section-1-left .btn-bottominfo{\r\n  float: left;\r\n  width: 282px;\r\n  text-align: center;\r\n  margin-top: 10px;\r\n}\r\n.section-1-left .btn-bottominfo span{\r\n  float: none;\r\n  width: 100%;\r\n  color: #fb6c73;\r\n  font-size: 12px;\r\n  font-family: montserratbold;\r\n  text-align: left;\r\n}\r\n.section-1-left .btn-bottominfo label{\r\n  float: none;\r\n  width: 100%;\r\n  color: #62696d;\r\n  font-size: 12px;\r\n  font-family: montserratlight;\r\n}\r\n\r\n.section-1-left h3.heading-404{\r\n  float: left;\r\n  width: 100%;\r\n  font-size: 72px;\r\n  font-family: montserratsemibold;\r\n  color: #fb6c73;\r\n  text-transform: uppercase;\r\n  margin-bottom:0px;\r\n  margin-top: 0px;\r\n}\r\n.section-1-left h4.heading2-404 {\r\n  float: left;\r\n  width: 100%;\r\n  font-size: 18px;\r\n  font-family: montserratlight;\r\n  color: #62696d;\r\n  margin-bottom: 30px;\r\n  line-height: 25px;\r\n}\r\n.section-1 .btn-buildcal.login-404{\r\n  background: #62696d;\r\n  border: none;\r\n  color: #fff;\r\n  float: left;\r\n  font-size: 16px;\r\n  text-transform: uppercase;\r\n  border:2px solid #62696d;\r\n  padding: 15px 25px;\r\n  margin-top: 20px;\r\n  -webkit-transition: .5s ease-in-out;\r\n  transition: .5s ease-in-out;\r\n}\r\n.section-1 .btn-buildcal.login-404:hover{\r\n  background:none;\r\n  border:2px solid #62696d;\r\n  color:#62696d;\r\n}\r\n.sec1-box-left.img-404{\r\n  margin-top: 18%;\r\n}\r\n.footer-404{\r\n  position: fixed;\r\n  bottom: 15px;\r\n}\r\n.footer-404 i{\r\n  font-size: 14px;\r\n  color: #62696d;\r\n  position: relative;\r\n  top: 2px;\r\n  right: 4px;\r\n}\r\n.footer-404 span{\r\n  font-family: \"montserratlight\";\r\n  font-size: 14px;\r\n  color: #62696d;\r\n}\r\n.footer-404 img{\r\n  position: relative;\r\n  top: -3px;\r\n  right: -5px;\r\n}\r\n\r\n\r\n/*################### 404  css end ###################*/\r\n"

@@ -30573,6 +30573,13 @@ var IntegrationService = (function (_super) {
             .map(this.extractData)
             .catch(this.handleError);
     };
+    IntegrationService.prototype.getConfiguration = function () {
+        var company = localStorage.getItem('company');
+        var url = this._url + '/integration/getIntegrations/' + company;
+        return this._http.get(url, this.get_options)
+            .map(this.extractData)
+            .catch(this.handleError);
+    };
     IntegrationService = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__index__["b" /* CookieService */]) === 'function' && _b) || Object])
