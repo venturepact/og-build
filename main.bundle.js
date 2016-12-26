@@ -30504,8 +30504,7 @@ var IntegrationService = (function (_super) {
             .catch(this.handleError);
     };
     IntegrationService.prototype.authorization = function (data, type) {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        var company = storage.company._id;
+        var company = localStorage.getItem('company');
         var url = this._url + '/integration/auth/' + type + '/' + company;
         return this._http.post(url, data, this.options)
             .map(this.extractData)
@@ -30524,8 +30523,7 @@ var IntegrationService = (function (_super) {
             .catch(this.handleError);
     };
     IntegrationService.prototype.getAllConfiguration = function () {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        var company = storage.company._id;
+        var company = localStorage.getItem('company');
         var url = this._url + '/integration/getIntegrations/' + company;
         return this._http.get(url, this.get_options)
             .map(this.extractData)
@@ -30537,16 +30535,14 @@ var IntegrationService = (function (_super) {
             .catch(this.handleError);
     };
     IntegrationService.prototype.testSaveLead = function (data, type) {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        var company = storage.company._id;
+        var company = localStorage.getItem('company');
         var url = this._url + '/integration/test/' + type + '/' + company;
         return this._http.post(url, data, this.post_options())
             .map(this.extractData)
             .catch(this.handleError);
     };
     IntegrationService.prototype.getCompanySyncLeads = function () {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        var company = storage.company._id;
+        var company = localStorage.getItem('company');
         var url = this._url + '/integration/sync/count/company/' + company;
         return this._http.get(url, this.get_options)
             .map(this.extractData)
@@ -30559,8 +30555,7 @@ var IntegrationService = (function (_super) {
             .catch(this.handleError);
     };
     IntegrationService.prototype.syncLeads = function (type) {
-        var storage = JSON.parse(this._cookieService.readCookie('storage'));
-        var company = storage.company._id;
+        var company = localStorage.getItem('company');
         var url = this._url + '/integration/sync/log/company/' + type + '/' + company;
         return this._http.get(url, this.get_options)
             .map(this.extractData)
