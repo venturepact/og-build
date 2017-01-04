@@ -4288,7 +4288,7 @@ var RadioButton = (function () {
         this.jsonBuilderHelper.radio_settimout = setTimeout(function () {
             self.controlOutput.emit(true);
             jQuery('.prev').removeClass('a-disable');
-        }, 2000);
+        }, 1000);
         if (this.jsonBuilderHelper.getJSONBuilt().status == 'LIVE') {
             /* if key is undefined then push in array */
             if (this._analyticService.getVisitorKey() == '')
