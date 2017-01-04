@@ -13874,16 +13874,9 @@ var SubDomainService = (function (_super) {
         this.subDomain.exists = false;
         var url = window.location.hostname;
         this.subDomain.is_sub_domain_url = this.checkSubDomain(url);
-        // if (this.subDomain.is_sub_domain_url) {
-        //   this.subDomain.sub_domain = url.split('.')[0];
-        //   _companyService.isSubDomainExist(this.subDomain.sub_domain)
-        //     .subscribe(
-        //       (result: any) => {
-        //         localStorage.setItem('company', result._id);
-        //       },
-        //       (err) => {}
-        //     );
-        // }
+        if (this.subDomain.is_sub_domain_url) {
+            this.subDomain.sub_domain = url.split('.')[0];
+        }
     }
     SubDomainService.prototype.subDomainExists = function () {
         var _this = this;
