@@ -105,7 +105,7 @@ ul {
 .font_semibold {
     font-family: montserratsemibold
 }
-
+/*
 .elem {
     height: 15px;
     display: block;
@@ -120,7 +120,7 @@ ul {
     animation-timing-function: linear;
     color: #fb545b
 }
-
+*/
 .navbar .btn.btn-basic.btn-menu.btn-menu.green-bg {
     background: #1abc9c;
     border: 1px solid #1abc9c
@@ -602,7 +602,7 @@ a:hover {
     color: #8e989f;
     float: left
 }
-
+/*
 .name-dropdown-wrapper.btn-group {
     position: relative;
     margin: 0;
@@ -953,7 +953,7 @@ a:hover {
 .builder-help-icon {
     top: 8px
 }
-
+*/
 @media screen and (min-width: 768px) and (max-width: 768px) {
     #new-header .navbar-right {
         border-left: 1px solid #dae2e6;
@@ -2350,7 +2350,7 @@ a.text-red:hover {
         left: -315px
     }
 }
-
+/*
 .editor-modal .modal-dialog {
     margin: 80px auto
 }
@@ -2616,7 +2616,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     border-color: #8e989f;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out
-}
+}*/
 
 .float-changes-updated {
     background: #62696d;
@@ -2643,7 +2643,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     color: #bec5c9;
     margin-top: 12px
 }
-
+/*
 .toast {
     position: fixed;
     display: none;
@@ -2699,7 +2699,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     font-size: 16px;
     padding: 8px 0 0;
     width: auto
-}
+}*/
 
 .first-login a.text-red-link,
 .first-signUp a.text-red-link {
@@ -2707,7 +2707,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     font-size: 11px;
     text-decoration: underline!important
 }
-
+/*
 .btn-menu i.material-icons {
     color: #bec5c9;
     font-size: 13px;
@@ -2782,7 +2782,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .pt-30 {
     padding-top: 30px
 }
-
+*/
 @media (max-width: 767px) {
     #lgScrSideNavbar,
     .dash-circle,
@@ -3953,7 +3953,7 @@ a:hover {
     color: #8e989f;
     float: left
 }
-
+/*
 .name-dropdown-wrapper.btn-group {
     position: relative;
     margin: 0;
@@ -4321,7 +4321,7 @@ i.support_icon {
     color: #fb5f66;
     opacity: 1;
 }
-
+*/
 @media screen and (min-width: 768px) and (max-width: 768px) {
     #new-header .navbar-right {
         border-left: 1px solid #dae2e6;
@@ -6831,12 +6831,7 @@ company-home {
     }
 }
 
-@media (min-width: 768px) {
-    .editor-modal .modal-dialog {
-        width: 500px;
-        margin: 80px auto!important
-    }
-}
+
 
 :focus {
     outline: 0
@@ -8513,7 +8508,7 @@ a.reactivate {
 
 
 /* social links */
-
+/*
 .help-options .dropdown-menu {
     font-size: 12px;
     background: #62696d;
@@ -8576,7 +8571,7 @@ a.reactivate {
     margin-left: -6px;
     cursor: pointer;
 }
-
+*/
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 2s;
