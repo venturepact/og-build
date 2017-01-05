@@ -120,7 +120,7 @@ ul {
     animation-timing-function: linear;
     color: #fb545b
 }
-*/
+
 .navbar .btn.btn-basic.btn-menu.btn-menu.green-bg {
     background: #1abc9c;
     border: 1px solid #1abc9c
@@ -342,7 +342,7 @@ a:hover {
 .text-grey {
     color: #8e989f
 }
-
+*/
 .dis-block {
     display: block
 }
@@ -476,7 +476,7 @@ a:hover {
     text-decoration: none;
     color: #8e989f
 }
-
+/*
 #new-header {
     float: left;
     width: 100%;
@@ -602,7 +602,7 @@ a:hover {
     color: #8e989f;
     float: left
 }
-/*
+
 .name-dropdown-wrapper.btn-group {
     position: relative;
     margin: 0;
@@ -2210,7 +2210,7 @@ a.text-red:hover {
     font-family: montserratlight;
     float: left
 }
-
+/*
 .model-full {
     width: 100%;
     margin: 0
@@ -2290,7 +2290,7 @@ a.text-red:hover {
 
 #premiumModal.modal {
     padding-right: 0!important
-}
+}*/
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .two-side .modal-left {
@@ -3827,7 +3827,7 @@ a:hover {
     text-decoration: none;
     color: #8e989f
 }
-
+/*
 #new-header {
     float: left;
     width: 100%;
@@ -3952,7 +3952,7 @@ a:hover {
     font-size: 13px;
     color: #8e989f;
     float: left
-}
+}*/
 /*
 .name-dropdown-wrapper.btn-group {
     position: relative;
@@ -4793,24 +4793,7 @@ hr {
     box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, .3)
 }
 
-.editor-modal .live-url {
-    font-size: 11px;
-    font-family: montserratlight;
-    color: #fb545b;
-    display: inline-flex;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    cursor: pointer;
-}
 
-.editor-modal .live-subhead .url-style {
-    color: #a9a9a9;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: none;
-    background: #ceebff;
-    padding: 0 5px
-}
 
 .toggle-switch label input[type=checkbox]:checked+.lever:after {
     content: "";
