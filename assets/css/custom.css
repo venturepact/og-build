@@ -2953,10 +2953,10 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         margin: 0;
         padding-bottom: 0
     }
-    .settings-cookies #new-header.cookies-parent {
+    /*.settings-cookies #new-header.cookies-parent {
         height: 50px;
         margin-bottom: 0
-    }
+    }*/
     .white-logo .navbar-brand img {
         height: 53px;
         margin: -20px auto 0
@@ -3006,14 +3006,14 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         top: 8px;
         left: -8px
     }
-    header#new-header.cookies-parent {
+    /*header#new-header.cookies-parent {
         margin-bottom: 0;
         height: 50px
     }
     .settings-cookies #smScrSideNavbar.left-sidebar,
     .settings-cookies .membership-details-inner-tabs {
         top: 50px!important
-    }
+    }*/
     #smScrWrapperContent {
         display: none
     }
@@ -6411,7 +6411,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         padding-right: 0
     }
 }
-
+/*
 .cookies-header {
     background: #f87b80;
     color: #fff;
@@ -6476,7 +6476,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .settings-cookies .analytics-left-side {
     top: 0!important
-}
+}*/
 
 .loading:after {
     content: ' .';
