@@ -5,7 +5,6 @@
     src: url(MaterialIcons-Regular.eot);
     src: local('Material Icons'), local('materialIcons-Regular'), url(../assets/fonts/materialIcons-Regular.woff2) format('woff2'), url(../fonts/materialIcons-Regular.woff) format('woff'), url(../fonts/materialIcons-Regular.ttf) format('truetype')
 }
-
 .material-icons {
     font-family: 'Material Icons';
     font-weight: 400;
@@ -164,9 +163,8 @@ a.live-url.preview_copy {
     display: inline-flex;
     margin-bottom: 0;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: pointer
 }
-
 .editor-modal .live-subhead .url-style {
     color: #a9a9a9;
     cursor: pointer;
@@ -175,6 +173,23 @@ a.live-url.preview_copy {
     background: #ceebff;
     padding: 0 5px
 }
+.live-head {
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 26px 34px;
+}
+
+.live-subhead {
+    font-size: 18px;
+}
+
+.live-url {
+    font-size: 14px;
+    font-family: "montserratlight";
+    margin-bottom: 30px;
+    color: #fb545b;
+}
+
 .icon-play-next i.material-icons {
     font-size: 38px;
     color: #fb6066 !important;
