@@ -978,7 +978,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "CALCULATE THE RISK OF YOU GETTING A HEART DISEASE", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>CALCULATE THE RISK OF YOU GETTING A HEART DISEASE</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "Heart problems are at an all time high. See if your lifestyle makes you susceptible.", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(false);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'GET STARTED', 'textfield help');
@@ -1046,6 +1046,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "<p>By age of 30</p>\n        <p>It is not common to get a heart disease so early on in life. You'll be safe!</p>", '', '');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1053,6 +1054,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R2}</p>', "<p>By the age of 40</p>\n                        <p>You're at a higher risk, but don't worry - no need to panic.</p>\n                        ", '', '');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1060,6 +1062,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R3}</p>', "<p>By the age of 50</p>\n                        <p>The risks get higher, but a good diet will keep you safe.</p>\n                        ", '', '');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1067,6 +1070,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R4}</p>', "<p>By the age of 65</p>\n                        <p>Things get serious now. Ensure you're living healthy.</p>", '', '');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1117,7 +1121,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "Where to build your Startup?", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>Where to build your Startup?</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "See which emerging tech hub you should head to!", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(true);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Let’s Find Out', 'textfield help', '', 't1-landing-leadform');
@@ -1251,7 +1255,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "How much should you pay for a video campaign?", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>How much should you pay for a video campaign?</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "Video campaigns can be expensive and many agencies will take you for a ride. See how much you should actually be paying!", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(false);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Get Started', 'textfield help', '', 't1-landing-leadform');
@@ -1303,6 +1307,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "<p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 't3-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1310,6 +1315,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', ' <p>{R2}</p>', "\n                        <p>For Regular TV quality</p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't3-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1317,6 +1323,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R3}</p>', "\n                        <p>For Budget quality</p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't3-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1372,7 +1379,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "How much should you pay for a video campaign?", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>How much should you pay for a video campaign?</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "Video campaigns can be expensive and many agencies will take you for a ride. See how much you should actually be paying!", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(false);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Get Started', 'textfield help', '', 't1-landing-leadform');
@@ -1430,6 +1437,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avatar!</p>", '', 't4-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1437,6 +1445,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R2}</p>', "\n                        <p>For Regular TV quality</p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't4-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1444,6 +1453,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R3}</p>', "\n                        <p>For Budget quality</p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't4-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1498,7 +1508,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "Where to build your Startup?", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>Where to build your Startup?</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "See which emerging tech hub you should head to!", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(true);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Let’s Find Out', 'textfield help', '', 't1-landing-leadform');
@@ -1631,7 +1641,7 @@ var DefaultJSON = (function () {
         section1.addItems(item0);
         // section 2 of LANDING page
         var section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Content Area', 'landing-page-mid');
-        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "How much should you pay for a video campaign?", 'textfield help', '', 'main-heading th-bold-new');
+        var item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('header', "<strong>How much should you pay for a video campaign?</strong>", 'textfield help', '', 'main-heading th-bold-new');
         var item2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('sub_header', "Video campaigns can be expensive and many agencies will take you for a ride. See how much you should actually be paying!", 'textfield help', '', 'sub-heading ts-bold-new');
         item2.setVisibility(false);
         var item3 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('leadform', 'Estimate Costs', 'textfield help', '', 't1-landing-leadform');
@@ -1683,6 +1693,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R1}</p>', "\n                       <p>For top notch HDTV quality</p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 'temp2-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         var Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1690,6 +1701,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R2}</p>', "\n                        <p>For Regular TV quality</p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 'temp2-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
@@ -1697,6 +1709,7 @@ var DefaultJSON = (function () {
         item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p>{R3}</p>', "\n                        <p>For Budget quality</p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 'temp2-default-result-outer');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
+        item1.options.push(item1.options[0]);
         Formulaindex = app.addformula();
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
