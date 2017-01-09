@@ -1228,7 +1228,8 @@ var FormulaService = (function () {
             }
             finalAnswer = lower + ' to ' + upper;
         }
-        finalAnswer = finalAnswer.toString().replace(/Infinity/g, '&infin;');
+        if (finalAnswer)
+            finalAnswer = finalAnswer.toString().replace(/Infinity/g, '&infin;');
         return finalAnswer;
     };
     FormulaService.prototype.replaceRs = function (formula) {
@@ -1616,6 +1617,9 @@ var TemplateRendererService = (function () {
         for (var formula in this._jsonBuilderHelper.getJSONBuilt().formula) {
             this.staticControls.Result.Result.items[formula].props.minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min');
             this.staticControls.Result.Result.items[formula].props.maxVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max');
+            this.staticControls.Result.Result.items[formula].options[0].attr.class = this.staticControls.Result.Result.items[formula].props.minVal;
+            this.staticControls.Result.Result.items[formula].options[this.staticControls.Result.Result.items[formula].options.length - 1].attr.style
+                = this.staticControls.Result.Result.items[formula].props.maxVal;
         }
     };
     TemplateRendererService.prototype.formulaVal = function (formula, type) {
