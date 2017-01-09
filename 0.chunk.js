@@ -13207,25 +13207,25 @@ var ConfigIntegrationsComponent = (function () {
                 window.toastNotification('Leads will synced to connected ' + type + 'for this calculator');
             }
             else {
-                _this.isSyncEnableMarketo = true;
-                _this.isSyncEnableSF = true;
                 _this.syncError = true;
                 if (type === 'marketo') {
+                    _this.isSyncEnableMarketo = true;
                     jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsMarketo + ')');
                 }
                 if (type === 'salesforce') {
+                    _this.isSyncEnableSF = true;
                     jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsSF + ')');
                 }
                 jQuery('#syncError-modal').modal('show');
             }
         }, function (error) {
-            _this.isSyncEnableMarketo = true;
-            _this.isSyncEnableSF = true;
             _this.syncError = true;
             if (type === 'marketo') {
+                _this.isSyncEnableMarketo = true;
                 jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsMarketo + ')');
             }
             if (type === 'salesforce') {
+                _this.isSyncEnableSF = true;
                 jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsSF + ')');
             }
             jQuery('#syncError-modal').modal('show');
