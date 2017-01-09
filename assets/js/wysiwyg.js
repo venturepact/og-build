@@ -4042,10 +4042,10 @@
         }
     }), a.extend(a.FE.DEFAULTS, {
         toolbarBottom: !1,
-        toolbarButtons: ["bold", "italic", "underline"],
-        toolbarButtonsXS: ["bold", "italic", "underline"],
-        toolbarButtonsSM: ["bold", "italic", "underline"],
-        toolbarButtonsMD: ["bold", "italic", "underline"],
+        toolbarButtons: ["bold", "italic", "underline","insertLink"],
+        toolbarButtonsXS: ["bold", "italic", "underline","insertLink"],
+        toolbarButtonsSM: ["bold", "italic", "underline","insertLink"],
+        toolbarButtonsMD: ["bold", "italic", "underline","insertLink"],
         // toolbarButtons: ["fullscreen", "bold", "italic", "underline", "strikeThrough", "subscript", "superscript", "fontFamily", "fontSize", "|", "color", "emoticons", "inlineStyle", "paragraphStyle", "|", "paragraphFormat", "align", "formatOL", "formatUL", "outdent", "indent", "quote", "insertHR", "-", "insertLink", "insertImage", "insertVideo", "insertFile", "insertTable", "undo", "redo", "clearFormatting", "selectAll", "html", "applyFormat", "removeFormat"],
         // toolbarButtonsXS: ["bold", "italic", "fontFamily", "fontSize", "|", "undo", "redo"],
         // toolbarButtonsSM: ["bold", "italic", "underline", "|", "fontFamily", "fontSize", "insertLink", "insertImage", "table", "|", "undo", "redo"],
