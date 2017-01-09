@@ -13209,7 +13209,7 @@ var ConfigIntegrationsComponent = (function () {
                 if (type === 'marketo') {
                     jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsMarketo + ')');
                 }
-                else {
+                if (type === 'salesforce') {
                     jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsSF + ')');
                 }
                 jQuery('#syncError-modal').modal('show');
@@ -13221,7 +13221,7 @@ var ConfigIntegrationsComponent = (function () {
             if (type === 'marketo') {
                 jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsMarketo + ')');
             }
-            else {
+            if (type === 'salesforce') {
                 jQuery('#sync-leads').html('Sync (' + _this.pendingLeadsSF + ')');
             }
             jQuery('#syncError-modal').modal('show');
