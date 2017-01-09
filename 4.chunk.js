@@ -5938,7 +5938,7 @@ var THEMING_PALLETES = [
         fontFamily: 'Montserrat',
         fontURL: 'assets/fonts/templateFonts/fonts_varient/montserrat.css',
         tint: 0.45,
-        tintRGB: 'rgba(42,40,38,0.45)',
+        tintRGB: 'rgba(42,40,38,0.20)',
         tintColor: '#2A2826',
         pallete: [
             {
