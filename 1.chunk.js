@@ -1580,56 +1580,51 @@ var FormulaService = (function () {
         }
         if (finalAnswer == undefined)
             finalAnswer = '{R' + (parseFloat(formulaIndex) + 1) + '}';
-        if (finalAnswer == 'Infinity') {
-            finalAnswer = '&infin;';
-        }
-        else {
-            var quesNowObject = this.jsonBuilderHelper.getJSONBuilt().formula[formulaIndex];
-            var lower, upper;
-            if (quesNowObject.range.status) {
-                var lowerVal = parseFloat(quesNowObject.range.lower.value);
-                var upperVal = parseFloat(quesNowObject.range.higher.value);
-                if (isNaN(lowerVal))
-                    lowerVal = 0;
-                if (isNaN(upperVal))
-                    upperVal = 0;
-                if (isNaN(parseFloat(finalAnswer))) {
-                    finalAnswer = 0;
-                }
-                else {
-                    if (quesNowObject.range.higher.type == 'Number' && quesNowObject.range.lower.type == 'Number') {
-                        lower = (parseFloat(finalAnswer) - lowerVal);
-                        upper = (parseFloat(finalAnswer) + upperVal);
-                        lower = this.addCommas(lower.toFixed(Number(quesNowObject.decimal)));
-                        upper = this.addCommas(upper.toFixed(Number(quesNowObject.decimal)));
-                        finalAnswer = lower + ' to ' + upper;
-                    }
-                    else if (quesNowObject.range.higher.type == 'Percentage' && quesNowObject.range.lower.type == 'Percentage') {
-                        lower = (parseFloat(finalAnswer) - (lowerVal / 100) * (parseFloat(finalAnswer)));
-                        upper = (parseFloat(finalAnswer) + (upperVal / 100) * (parseFloat(finalAnswer)));
-                        if (isNaN(upperVal))
-                            upper = parseFloat(finalAnswer);
-                        if (isNaN(lowerVal))
-                            lower = parseFloat(finalAnswer);
-                        lower = this.addCommas(lower.toFixed(Number(quesNowObject.decimal)));
-                        upper = this.addCommas(upper.toFixed(Number(quesNowObject.decimal)));
-                        finalAnswer = lower + ' to ' + upper;
-                    }
-                }
+        var quesNowObject = this.jsonBuilderHelper.getJSONBuilt().formula[formulaIndex];
+        var lower, upper;
+        if (quesNowObject.range.status) {
+            var lowerVal = parseFloat(quesNowObject.range.lower.value);
+            var upperVal = parseFloat(quesNowObject.range.higher.value);
+            if (isNaN(lowerVal))
+                lowerVal = 0;
+            if (isNaN(upperVal))
+                upperVal = 0;
+            if (isNaN(parseFloat(finalAnswer))) {
+                finalAnswer = 0;
             }
             else {
-                if (isNaN(parseFloat(finalAnswer)) || finalAnswer == undefined) {
-                    finalAnswer = 0;
+                if (quesNowObject.range.higher.type == 'Number' && quesNowObject.range.lower.type == 'Number') {
+                    lower = (parseFloat(finalAnswer) - lowerVal);
+                    upper = (parseFloat(finalAnswer) + upperVal);
+                    lower = this.addCommas(lower.toFixed(Number(quesNowObject.decimal)));
+                    upper = this.addCommas(upper.toFixed(Number(quesNowObject.decimal)));
+                    finalAnswer = lower + ' to ' + upper;
                 }
-                else {
-                    finalAnswer = Number(finalAnswer);
-                    finalAnswer = this.addCommas(finalAnswer.toFixed(Number(quesNowObject.decimal)));
-                    if (quesNowObject.units.postfix) {
-                        finalAnswer = finalAnswer + quesNowObject.units.postValue;
-                    }
-                    if (quesNowObject.units.prefix) {
-                        finalAnswer = quesNowObject.units.preValue + finalAnswer;
-                    }
+                else if (quesNowObject.range.higher.type == 'Percentage' && quesNowObject.range.lower.type == 'Percentage') {
+                    lower = (parseFloat(finalAnswer) - (lowerVal / 100) * (parseFloat(finalAnswer)));
+                    upper = (parseFloat(finalAnswer) + (upperVal / 100) * (parseFloat(finalAnswer)));
+                    if (isNaN(upperVal))
+                        upper = parseFloat(finalAnswer);
+                    if (isNaN(lowerVal))
+                        lower = parseFloat(finalAnswer);
+                    lower = this.addCommas(lower.toFixed(Number(quesNowObject.decimal)));
+                    upper = this.addCommas(upper.toFixed(Number(quesNowObject.decimal)));
+                    finalAnswer = lower + ' to ' + upper;
+                }
+            }
+        }
+        else {
+            if (isNaN(parseFloat(finalAnswer)) || finalAnswer == undefined) {
+                finalAnswer = 0;
+            }
+            else {
+                finalAnswer = Number(finalAnswer);
+                finalAnswer = this.addCommas(finalAnswer.toFixed(Number(quesNowObject.decimal)));
+                if (quesNowObject.units.postfix) {
+                    finalAnswer = finalAnswer + quesNowObject.units.postValue;
+                }
+                if (quesNowObject.units.prefix) {
+                    finalAnswer = quesNowObject.units.preValue + finalAnswer;
                 }
             }
         }
@@ -1658,6 +1653,7 @@ var FormulaService = (function () {
             }
             finalAnswer = lower + ' to ' + upper;
         }
+        finalAnswer = finalAnswer.toString().replace(/Infinity/g, '&infin;');
         return finalAnswer;
     };
     FormulaService.prototype.replaceRs = function (formula) {
@@ -5406,6 +5402,7 @@ var TextField = (function () {
     TextField.prototype.ngOnInit = function () {
         this.data.props.currentValue = this.data.props.defaultValue;
         this.data.props.currentlabel = this.data.props.defaultValue;
+        this.inputField = this.data.props.defaultValue;
     };
     Object.defineProperty(TextField.prototype, "isValid", {
         get: function () {
@@ -5441,6 +5438,14 @@ var TextField = (function () {
         enumerable: true,
         configurable: true
     });
+    TextField.prototype.keyUp = function () {
+        if (this.data.config.type == 'number') {
+            if (!(this.form.controls[this.data._id].touched && !this.isValid))
+                this.data.props.currentValue = this.inputField;
+        }
+        else
+            this.data.props.currentValue = this.inputField;
+    };
     TextField.prototype.keyPressed = function (e) {
         var code = e.keyCode || e.which;
         if (code == 13) {
@@ -5589,7 +5594,7 @@ module.exports = "<div [formGroup]=\"form.controls[data._id]\">\n\t<div class=\"
 /***/ 855:
 /***/ function(module, exports) {
 
-module.exports = "<div [formGroup]=\"form\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\"/>\n  </div>\n  \n  <div class=\"input-field\">\n    <label class=\"pre-icon\" *ngIf=\"data.config.type === 'number' && data.config.attr.style!=''\">{{data.config.attr.style}}</label>\n    <input tabindex=\"0\"\n           type=\"{{data.config.type}}\"\n           placeholder=\"{{data.config.placeholder}}\"\n           [id]=\"data._id\"\n           [(ngModel)]=\"data.props.currentValue\"\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\n           [formControlName]=\"data._id\"\n           (blur)=\"onBlur()\"\n           (keypress)=\"keyPressed($event)\"\n    >\n    <label class=\"post-icon\" *ngIf=\"data.config.type === 'number' && data.config.attr.width!=''\">{{data.config.attr.width}}</label>\n  </div>\n  \n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\n</div>\n"
+module.exports = "<div [formGroup]=\"form\">\n  <div class=\"question-pic\" *ngIf=\"data.imageVisible && jsonBuilderHelper.getJSONBuilt().template == 'one-page-card'\">\n    <img [src]=\"data.imageURL\"/>\n  </div>\n\n  <div class=\"input-field\">\n    <label class=\"pre-icon\" *ngIf=\"data.config.type === 'number' && data.config.attr.style!=''\">{{data.config.attr.style}}</label>\n    <input tabindex=\"0\"\n           type=\"{{data.config.type}}\"\n           placeholder=\"{{data.config.placeholder}}\"\n           [id]=\"data._id\"\n           [(ngModel)]=\"inputField\"\n           (change)=\"data.props.currentLabel=data.props.currentValue\"\n           [formControlName]=\"data._id\"\n           (blur)=\"onBlur()\"\n           (keypress)=\"keyPressed($event)\"\n           (keyup)=\"keyUp()\"\n    >\n    <label class=\"post-icon\" *ngIf=\"data.config.type === 'number' && data.config.attr.width!=''\">{{data.config.attr.width}}</label>\n  </div>\n\n  <div class=\"errorMessage\" *ngIf=\"form.controls[data._id].touched && !isValid\">{{ValidationMessage}}</div>\n</div>\n"
 
 /***/ },
 
