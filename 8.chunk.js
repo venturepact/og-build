@@ -1,6 +1,6 @@
 webpackJsonp([8,12],{
 
-/***/ 1039:
+/***/ 1040:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -253,7 +253,7 @@ module.exports = "<sd-toolbar [page]=\"'templates'\"></sd-toolbar>\n<div class=\
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_component__ = __webpack_require__(1039);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__templates_component__ = __webpack_require__(1040);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__templates_services_DefaultJSON_service__ = __webpack_require__(859);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__toolbar_toolbar_module__ = __webpack_require__(410);
 /* harmony export (binding) */ __webpack_require__.d(exports, "TemplatesModule", function() { return TemplatesModule; });

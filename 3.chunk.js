@@ -660,11 +660,11 @@ var JSONBuilder = (function () {
             if (contentAreaSection) {
                 if (type == 'main-heading') {
                     var mainHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'header'; });
-                    return mainHeading[0].props.title;
+                    return jQuery('<textarea/>').html(mainHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
                 else if (type == 'sub-heading') {
                     var subHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'sub_header'; });
-                    return subHeading[0].props.title;
+                    return jQuery('<textarea/>').html(subHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
             }
         }

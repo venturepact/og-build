@@ -1,6 +1,6 @@
 webpackJsonp([4,12],{
 
-/***/ 1040:
+/***/ 1041:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -145,7 +145,7 @@ var CalculatorComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-calc',
             template: __webpack_require__(1179),
-            styles: [__webpack_require__(947)],
+            styles: [__webpack_require__(948)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_calculator_service__["a" /* CalculatorService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__services_calculator_service__["a" /* CalculatorService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_index__["a" /* SubDomainService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_index__["b" /* CookieService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_6__shared_services_script_service__["a" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_6__shared_services_script_service__["a" /* Script */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["b" /* Title */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_platform_browser__["b" /* Title */]) === 'function' && _f) || Object])
     ], CalculatorComponent);
@@ -156,7 +156,7 @@ var CalculatorComponent = (function () {
 
 /***/ },
 
-/***/ 1041:
+/***/ 1042:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -209,7 +209,7 @@ var SeoComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'og-seo-calc',
             template: "<Temp *ngIf=\"tempName\" [JSON_Template]=\"JSON_Template\"></Temp>",
-            styles: [__webpack_require__(947)],
+            styles: [__webpack_require__(948)],
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_calculator_service__["a" /* CalculatorService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _b) || Object])
     ], SeoComponent);
@@ -232,14 +232,14 @@ module.exports = "<!--<div *ngIf=\"!tempName\" class=\"loader-live\"></div>-->\n
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calculator_component__ = __webpack_require__(1040);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__calculator_component__ = __webpack_require__(1041);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_logged_in_service__ = __webpack_require__(252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_calculator_service__ = __webpack_require__(920);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__templateAll_template_module__ = __webpack_require__(869);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__builder_services_builder_service__ = __webpack_require__(798);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seo_component__ = __webpack_require__(1041);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__seo_component__ = __webpack_require__(1042);
 /* harmony export (binding) */ __webpack_require__.d(exports, "CalculatorModule", function() { return CalculatorModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -904,11 +904,11 @@ var JSONBuilder = (function () {
             if (contentAreaSection) {
                 if (type == 'main-heading') {
                     var mainHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'header'; });
-                    return mainHeading[0].props.title;
+                    return jQuery('<textarea/>').html(mainHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
                 else if (type == 'sub-heading') {
                     var subHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'sub_header'; });
-                    return subHeading[0].props.title;
+                    return jQuery('<textarea/>').html(subHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
             }
         }
@@ -7493,7 +7493,7 @@ var CalculatorService = (function (_super) {
 
 /***/ },
 
-/***/ 947:
+/***/ 948:
 /***/ function(module, exports) {
 
 module.exports = "/*################### 404  css start ###################*/\n@font-face {\n    font-family: 'Material Icons';\n    font-style: normal;\n    font-weight: 400;\n    src: url(../../../../../assets/fonts/MaterialIcons-Regular.eot);\n    src: local('Material Icons'), \n    local('materialIcons-Regular'), \n    url(../../../../../assets/fonts/materialIcons-Regular.woff2) format('woff2'), \n    url(../../../../../assets/fonts/materialIcons-Regular.woff) format('woff'), \n    url(../../../../../assets/fonts/materialIcons-Regular.ttf) format('truetype')\n}\n\n.material-icons {\n font-family: 'Material Icons';\n font-weight: normal;\n font-style: normal;\n font-size: 24px;  /* Preferred icon size */\n display: inline-block;\n line-height: 1;\n text-transform: none;\n letter-spacing: normal;\n word-wrap: normal;\n white-space: nowrap;\n direction: ltr;\n\n /* Support for all WebKit browsers. */\n -webkit-font-smoothing: antialiased;\n /* Support for Safari and Chrome. */\n text-rendering: optimizeLegibility;\n\n /* Support for Firefox. */\n -moz-osx-font-smoothing: grayscale;\n\n /* Support for IE. */\n font-feature-settings: 'liga';\n}\n\n@font-face {\n    font-family: montserratregular;\n   font-style: normal;\n   font-weight: 400;\n   src: url(../../../../../assets/fonts/montserrat-regular-webfont.eot) format(\"embedded-opentype\"), \n   url(../../../../../assets/fonts/montserrat-regular-webfont.woff2) format(\"woff2\"),\n   url(../../../../../assets/fonts/montserrat-regular-webfont.woff) format(\"woff\"), \n   url(../../../../../assets/fonts/montserrat-regular-webfont.ttf) format(\"truetype\")\n}\n\n@font-face {\n    font-family: montserratbold;\n    font-style: normal;\n    font-weight: 400;\n    src: url(../../../../../assets/fonts/montserrat-bold-webfont.eot) format(\"embedded-opentype\"), \n    url(../../../../../assets/fonts/montserrat-bold-webfont.woff2) format(\"woff2\"), \n    url(../../../../../assets/fonts/montserrat-bold-webfont.woff) format(\"woff\"), \n    url(../../../../../assets/fonts/montserrat-bold-webfont.ttf) format(\"truetype\")\n}\n\n@font-face {\n    font-family: montserratsemibold;\n    font-style: normal;\n    font-weight: 400;\n    src: url(../../../../../assets/fonts/montserrat-semibold-webfont.eot?#iefix) format(\"embedded-opentype\"), \n    url(../../../../../assets/fonts/montserrat-semibold-webfont.woff2) format(\"woff2\"), \n    url(../../../../../assets/fonts/montserrat-semibold-webfont.woff) format(\"woff\"), \n    url(../../../../../assets/fonts/montserrat-semibold-webfont.ttf) format(\"truetype\")\n}\n\n@font-face {\n    font-family: montserratlight;\n    font-style: normal;\n    font-weight: 400;\n    src: url(../../../../../assets/fonts/montserrat-light-webfont.eot) format(\"embedded-opentype\"), \n    url(../../../../../assets/fonts/montserrat-light-webfont.woff2) format(\"woff2\"), \n    url(../../../../../assets./fonts/montserrat-light-webfont.woff) format(\"woff\"), \n    url(../../../../../assets/fonts/montserrat-light-webfont.ttf) format(\"truetype\")\n}\n\n@font-face {\n    font-family: montserrathairline;\n    font-style: normal;\n    font-weight: 400;\n    src: url(../../../../../assets/fonts/montserrat-hairline-webfont.eot?#iefix) format(\"embedded-opentype\"), url(../../../../../assets/fonts/montserrat-hairline-webfont.woff2) format(\"woff2\"), url(../../../../../assets/fonts/montserrat-hairline-webfont.woff) format(\"woff\"), url(../../../../../assets/fonts/montserrat-hairline-webfont.ttf) format(\"truetype\")\n}\n\n@font-face {\n    font-family: montserratultra_light;\n    src: url(../../../../../assets/fonts/montserrat-ultralight-webfont.woff2) format('woff2'), url(../../../../../assets/fonts/montserrat-ultralight-webfont.woff) format('woff'), url(../../../../../assets/fonts/montserrat-ultralight-webfont.ttf) format('truetype');\n    font-weight: 400;\n    font-style: normal\n}\n\n.font_newlight {\n    font-family: montserratlight!important\n}\n\n.font_newhairline {\n    font-family: montserrathairline\n}\n\n.font_newregular {\n    font-family: montserratregular\n}\n\n.font_newbold {\n    font-family: montserratbold\n}\n\n.font_semibold {\n    font-family: montserratsemibold\n}\nbody.main-profile{ overflow: hidden;}\n.navbar-brand{\n  padding: 0px;\n  margin-left: 10px !important;\n  margin-top: 5px;\n}\n.custom-navbar.navbar-default{\n  background:#fff;\n  border:none;\n  padding: 10px;\n  padding-right: 25px;\n  margin: 0px;\n}\n.custom-navbar.navbar-default .navbar-nav > li{\n  margin-right: 20px;\n}\n.custom-navbar.navbar-default .navbar-nav > li > a{\n  font-size: 14px;\n  color: #62696d;\n  text-transform: uppercase;\n}\n.custom-navbar.navbar-default .navbar-nav > li > a:hover{\n  color: #fb5f66;\n}\n.custom-navbar.navbar-default .navbar-nav > li > a.active{\n  color: #fb5f66;\n}\n.custom-navbar.navbar-default .navbar-nav > li > a.line-through{\n  text-decoration: line-through;\n}\n.custom-navbar .btn-login{\n  background: #fb5f66;\n  color: #fff !important;\n  text-transform: none !important;\n  padding: 3px 30px;\n  margin-top: 10px;\n  border: 2px solid #fb5f66;\n}\n.custom-navbar .btn-login:hover{\n  border: 2px solid #fb5f66;\n  background: none;\n  color: #fb5f66 !important;\n}\n.custom-navbar .link-login{\n  color: #fb6c73 !important;\n  /*padding: 3px 30px;\n  margin-top: 10px;\n  border: 2px solid #fff;*/\n  font-family:montserratbold;\n}\n.custom-navbar .link-login:hover{\n  /*border: 2px solid #fb5f66;*/\n  background: none;\n  color: #fb5f66 !important;\n  opacity:0.5;\n}\n.nav-boxshadow{\n  box-shadow:0 2px 9px 1px rgba(0,0,0,0.2);\n}\n.section{\n  float: left;\n  width: 100%;\n  margin-top: 30px;\n  margin-bottom: 30px;\n}\n.section-1{\n  float: left;\n  width: 100%;\n  background: #fff;\n  padding-top: 52px;\n  padding-bottom: 30px;\n  margin-bottom: 0;\n}\n.section-1 .container-fluid{\n  padding: 0px;\n}\n.section-1-left{\n  padding-left: 55px;\n  display: table;\n}\n.section1-left-cell{\n  display: table-cell;\n  height: 83vh;\n  vertical-align: middle;\n}\n.section-1-left h3{\n  float: left;\n  width: 100%;\n  font-size: 36px;\n  font-family:montserratbold;\n  color: #fb6c73;\n  text-transform: uppercase;\n  margin-bottom: 30px;\n  margin-top: 0px;\n}\n.section-1-left h4{\n  float: left;\n  width: 100%;\n  font-size: 24px;\n  font-family:montserratlight;\n  color: #62696d;\n  margin-bottom: 30px;\n}\n.section-1-left input{\n  padding: 10px;\n  width: 70%;\n}\n.section-1-left .btn-buildcal{\n  background: #62696d;\n  border: none;\n  color: #fff;\n  float: left;\n  font-size: 18px;\n  text-transform: uppercase;\n  padding: 15px 25px;\n  margin-top: 20px;\n}\n.section-1-left .btn-buildcal i{\n  display: inline-block;\n  float:left;\n  margin-right: 10px;\n}\n.section-1-left .btn-bottominfo{\n  float: left;\n  width: 282px;\n  text-align: center;\n  margin-top: 10px;\n}\n.section-1-left .btn-bottominfo span{\n  float: none;\n  width: 100%;\n  color: #fb6c73;\n  font-size: 12px;\n  font-family: montserratbold;\n  text-align: left;\n}\n.section-1-left .btn-bottominfo label{\n  float: none;\n  width: 100%;\n  color: #62696d;\n  font-size: 12px;\n  font-family: montserratlight;\n}\n\n.section-1-left h3.heading-404{\n  float: left;\n  width: 100%;\n  font-size: 72px;\n  font-family: montserratsemibold;\n  color: #fb6c73;\n  text-transform: uppercase;\n  margin-bottom:0px;\n  margin-top: 0px;\n}\n.section-1-left h4.heading2-404 {\n  float: left;\n  width: 100%;\n  font-size: 18px;\n  font-family: montserratlight;\n  color: #62696d;\n  margin-bottom: 30px;\n  line-height: 25px;\n}\n.section-1 .btn-buildcal.login-404{\n  background: #62696d;\n  border: none;\n  color: #fff;\n  float: left;\n  font-size: 16px;\n  text-transform: uppercase;\n  border:2px solid #62696d;\n  padding: 15px 25px;\n  margin-top: 20px;\n  -webkit-transition: .5s ease-in-out;\n  transition: .5s ease-in-out;\n}\n.section-1 .btn-buildcal.login-404:hover{\n  background:none;\n  border:2px solid #62696d;\n  color:#62696d;\n}\n.sec1-box-left.img-404{\n  margin-top: 18%;\n}\n.footer-404{\n  position: fixed;\n  bottom: 15px;\n}\n.footer-404 i{\n  font-size: 14px;\n  color: #62696d;\n  position: relative;\n  top: 2px;\n  right: 4px;\n}\n.footer-404 span{\n  font-family: \"montserratlight\";\n  font-size: 14px;\n  color: #62696d;\n}\n.footer-404 img{\n  position: relative;\n  top: -3px;\n  right: -5px;\n}\n\n\n/*################### 404  css end ###################*/\n"

@@ -1,6 +1,6 @@
 webpackJsonp([6,12],{
 
-/***/ 1036:
+/***/ 1037:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -690,7 +690,7 @@ module.exports = "<sd-toolbar [page]=\"'dashboard'\"></sd-toolbar>\n<div class=\
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_modules_shared_module__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(1036);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(1037);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_membership_service__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__analytics_services_calculator_analytics_service__ = __webpack_require__(811);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__builder_services_builder_service__ = __webpack_require__(798);
@@ -1354,11 +1354,11 @@ var JSONBuilder = (function () {
             if (contentAreaSection) {
                 if (type == 'main-heading') {
                     var mainHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'header'; });
-                    return mainHeading[0].props.title;
+                    return jQuery('<textarea/>').html(mainHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
                 else if (type == 'sub-heading') {
                     var subHeading = contentAreaSection[0].items.filter(function (item) { return item.type == 'sub_header'; });
-                    return subHeading[0].props.title;
+                    return jQuery('<textarea/>').html(subHeading[0].props.title.replace(/<(?:.|\n)*?>/gm, '')).text();
                 }
             }
         }

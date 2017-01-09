@@ -1,6 +1,6 @@
 webpackJsonp([7,12],{
 
-/***/ 1035:
+/***/ 1036:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -125,7 +125,7 @@ module.exports = "<sd-toolbar [page]=\"'analytics'\"></sd-toolbar>\n<div class=\
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__analytics_component__ = __webpack_require__(1035);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__analytics_component__ = __webpack_require__(1036);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_modules_shared_module__ = __webpack_require__(74);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_modules_utilities_module__ = __webpack_require__(900);
