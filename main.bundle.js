@@ -7471,7 +7471,7 @@ var FeatureAuthService = (function (_super) {
         if (subscription_status === 'active' || subscription_status === 'in_trial') {
             var sub_domain = this._subDomainService.subDomain.sub_domain;
             var getUrl = this._url + '/planfeature/access/' + sub_domain;
-            this._http.get(getUrl, this.options)
+            this._http.post(getUrl, {}, this.post_options())
                 .map(this.extractData)
                 .catch(this.handleError)
                 .subscribe(function (result) {
