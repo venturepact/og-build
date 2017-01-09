@@ -658,7 +658,7 @@ var JSONBuilder = (function () {
                                 items.push(item);
                             }
                             if (item.type === 'click_button') {
-                                if ((this.isEmpty(this.getJSONBuilt().cta) || this.getJSONBuilt().cta.shareType == 'cta') || page.type != 'Result') {
+                                if (page.type != 'Result') {
                                     item.visible = true;
                                     items.push(item);
                                 }
@@ -712,7 +712,7 @@ var JSONBuilder = (function () {
                                 items.push(item);
                             }
                             if (item.type === 'click_button') {
-                                if ((this.isEmpty(this.getJSONBuilt().cta) || this.getJSONBuilt().cta.shareType == 'cta') || page.type != 'Result') {
+                                if (page.type != 'Result') {
                                     item.visible = true;
                                     items.push(item);
                                 }
