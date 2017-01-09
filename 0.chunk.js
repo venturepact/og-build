@@ -13178,8 +13178,12 @@ var ConfigIntegrationsComponent = (function () {
             if (_this.pendingLeadsMarketo >= '1') {
                 _this.isSyncEnableMarketo = true;
             }
-            if (_this.pendingLeadsSF >= '1') {
+            else if (_this.pendingLeadsSF >= '1') {
                 _this.isSyncEnableSF = true;
+            }
+            else {
+                _this.isSyncEnableMarketo = false;
+                _this.isSyncEnableSF = false;
             }
         }, function (error) {
             console.log(error);
