@@ -387,6 +387,10 @@ var JSONBuilder = (function () {
         this.selectedSection.items[index].type = newControl;
         if (newControl == 'slider')
             this.selectedSection.items[index].config.validations.required.status = false;
+        if (newControl == 'radio_button' || newControl == 'checkbox') {
+            this.selectedSection.items[index].props.currentValue = '';
+            this.selectedSection.items[index].props.currentLabel = '';
+        }
         this.tvs.updateFormGroup(this.selectedSection);
     };
     JSONBuilder.prototype.deleteControl = function () {
@@ -4469,8 +4473,8 @@ var ResultOutput = (function () {
     };
     ResultOutput.prototype.ngDoCheck = function () {
         //this.data.isIconPresent &&a
-        if ((this.devMode && this.dataCheck != JSON.stringify(this.data)) || this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/\D/g, '')) {
-            this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/\D/g, '');
+        if ((this.devMode && this.dataCheck != JSON.stringify(this.data)) || this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "")) {
+            this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "");
             if (this.devMode)
                 this.dataCheck = JSON.stringify(this.data);
             var flag = 0;

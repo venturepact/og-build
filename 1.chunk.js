@@ -812,6 +812,10 @@ var JSONBuilder = (function () {
         this.selectedSection.items[index].type = newControl;
         if (newControl == 'slider')
             this.selectedSection.items[index].config.validations.required.status = false;
+        if (newControl == 'radio_button' || newControl == 'checkbox') {
+            this.selectedSection.items[index].props.currentValue = '';
+            this.selectedSection.items[index].props.currentLabel = '';
+        }
         this.tvs.updateFormGroup(this.selectedSection);
     };
     JSONBuilder.prototype.deleteControl = function () {
@@ -4602,8 +4606,8 @@ var ResultOutput = (function () {
     };
     ResultOutput.prototype.ngDoCheck = function () {
         //this.data.isIconPresent &&a
-        if ((this.devMode && this.dataCheck != JSON.stringify(this.data)) || this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/\D/g, '')) {
-            this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/\D/g, '');
+        if ((this.devMode && this.dataCheck != JSON.stringify(this.data)) || this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "")) {
+            this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "");
             if (this.devMode)
                 this.dataCheck = JSON.stringify(this.data);
             var flag = 0;
@@ -8972,6 +8976,7 @@ var TeamSettingComponent = (function () {
         this.loading = false;
         this.leaveC = '';
         this.leaveAppCnt = '';
+        this.toggleToInvited = false;
     }
     TeamSettingComponent.prototype.backClicked = function () {
         this._location.back();
@@ -9051,29 +9056,45 @@ var TeamSettingComponent = (function () {
     };
     TeamSettingComponent.prototype.getSelectedCompanyUsers = function () {
         var _this = this;
-        var self = this;
-        self.isAdmin = false;
+        this.isAdmin = false;
         this.loading = true;
+        // setTimeout(function() {
+        var self = this;
         var getCompanyUsers = this._companyService.getCompanyUsers(self.currentCompany.id)
-            .subscribe(function (success) {
+            .subscribe(function (users) {
             self.hasRequest = false;
             self.currentCompanyUsers = [];
             self.adminCount = 0;
-            success.forEach(function (user) {
-                if (user.username !== self.logedInUserName)
-                    self.currentCompanyUsers.push(new __WEBPACK_IMPORTED_MODULE_8__shared_models_user__["a" /* User */](user));
+            var userLength = users.length;
+            console.log("users length", userLength, users);
+            for (var i = 0; i < userLength; i++) {
+                if (users[i].username !== self.logedInUserName)
+                    self.currentCompanyUsers.push(new __WEBPACK_IMPORTED_MODULE_8__shared_models_user__["a" /* User */](users[i]));
                 else {
-                    self.currentCompanyUsers.unshift(new __WEBPACK_IMPORTED_MODULE_8__shared_models_user__["a" /* User */](user));
-                    if (user.user_company.role === 'ADMIN')
+                    self.currentCompanyUsers.unshift(new __WEBPACK_IMPORTED_MODULE_8__shared_models_user__["a" /* User */](users[i]));
+                    if (users[i].user_company.role === 'ADMIN')
                         self.isAdmin = true;
                 }
-                if (self.adminCount < 1 && user.user_company.role === 'ADMIN' && user.username !== self.logedInUserName && user.user_company.active) {
+                if (self.adminCount < 1 && users[i].user_company.role === 'ADMIN' && users[i].username !== self.logedInUserName && users[i].user_company.active) {
                     self.adminCount++;
                 }
-                if (user.user_company.status === 'REQUESTED')
+                if (users[i].user_company.status === 'REQUESTED')
                     self.hasRequest = true;
-            });
+            }
             _this.loading = false;
+            if (_this.toggleToInvited) {
+                setTimeout(function () {
+                    jQuery('#invuser').addClass('active');
+                    jQuery('#invited-users').addClass('active');
+                    jQuery('#active-users').removeClass('active');
+                    jQuery('#actuser').removeClass('active');
+                    jQuery('#accreq').removeClass('active');
+                    jQuery('.access-requests').removeClass('active');
+                }, 0);
+            }
+            //});
+            _this.loading = false;
+            console.log('currentCompanyUserscurrentCompanyUsers', self.currentCompanyUsers);
         }, function (error) {
             getCompanyUsers.unsubscribe();
         });
@@ -9082,6 +9103,7 @@ var TeamSettingComponent = (function () {
         this.selectedFilter = filter;
     };
     TeamSettingComponent.prototype.userCheckLimit = function () {
+        console.log(this.currentCompanyUsers.length, 'of', this._featureAuthService.features.users);
         if (this.currentCompanyUsers.length < this._featureAuthService.features.users) {
             jQuery('#add-new-user').modal('show');
             jQuery('.modal-backdrop').insertAfter('#premiumModal');
@@ -9138,15 +9160,16 @@ var TeamSettingComponent = (function () {
                 window.toastNotification(self.Message);
                 jQuery('#btnInvite').attr('disabled', true);
                 jQuery('#add-new-user').modal('hide');
+                self.toggleToInvited = true;
                 self.getSelectedCompanyUsers();
-                setTimeout(function () {
-                    jQuery('#invuser').addClass('active');
-                    jQuery('#invited-users').addClass('active');
-                    jQuery('#active-users').removeClass('active');
-                    jQuery('#actuser').removeClass('active');
-                    jQuery('#accreq').removeClass('active');
-                    jQuery('.access-requests').removeClass('active');
-                }, 4000);
+                // setTimeout(function(){
+                //   jQuery('#invuser').addClass('active');
+                //   jQuery('#invited-users').addClass('active');
+                //   jQuery('#active-users').removeClass('active');
+                //   jQuery('#actuser').removeClass('active');
+                //   jQuery('#accreq').removeClass('active');
+                //   jQuery('.access-requests').removeClass('active');
+                // },4000);
             }, function (error) {
                 var error_code = error.error.code;
                 jQuery('#success-addUser').removeClass('hide');
