@@ -1647,6 +1647,21 @@ var TemplateRendererService = (function () {
                 else
                     possibleMaxVal = parseInt(currentQuesObject.props.maxVal);
             }
+            else if (currentQuesObject.type == 'checkbox') {
+                possibleMaxVal = 0;
+                for (var t = 0; t < currentQuesObject.options.length; t++) {
+                    /*min max conditions */
+                    if (type == 'min') {
+                        if (parseInt(currentQuesObject.options[t].value) <= possibleMinVal) {
+                            possibleMinVal = currentQuesObject.options[t].value;
+                        }
+                        ;
+                    }
+                    else {
+                        possibleMaxVal += parseInt(currentQuesObject.options[t].value);
+                    }
+                }
+            }
             else {
                 for (var t = 0; t < currentQuesObject.options.length; t++) {
                     /*min max conditions */
