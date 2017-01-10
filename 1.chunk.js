@@ -812,7 +812,7 @@ var JSONBuilder = (function () {
         this.selectedSection.items[index].type = newControl;
         if (newControl == 'slider')
             this.selectedSection.items[index].config.validations.required.status = false;
-        if (newControl == 'radio_button' || newControl == 'checkbox') {
+        if (newControl == 'radio_button' || newControl == 'checkbox' || newControl == 'textfield') {
             this.selectedSection.items[index].props.currentValue = '';
             this.selectedSection.items[index].props.currentLabel = '';
         }
