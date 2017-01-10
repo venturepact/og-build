@@ -106,7 +106,7 @@ var global    = __webpack_require__(15)
   , core      = __webpack_require__(14)
   , hide      = __webpack_require__(53)
   , redefine  = __webpack_require__(23)
-  , ctx       = __webpack_require__(84)
+  , ctx       = __webpack_require__(83)
   , PROTOTYPE = 'prototype';
 
 var $export = function(type, name, source){
@@ -528,7 +528,7 @@ module.exports = function(it){
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__membership_service__ = __webpack_require__(412);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dashboard_service__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__settings_communication_service__ = __webpack_require__(439);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__feature_access_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__feature_access_service__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__cookie_service__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__plan_service__ = __webpack_require__(413);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__script_service__ = __webpack_require__(117);
@@ -3539,7 +3539,7 @@ function escapeRegExp(s) {
 /***/ function(module, exports, __webpack_require__) {
 
 // 7.1.15 ToLength
-var toInteger = __webpack_require__(87)
+var toInteger = __webpack_require__(86)
   , min       = Math.min;
 module.exports = function(it){
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
@@ -5515,7 +5515,7 @@ function wrapIntoObservable(value) {
 // 4 -> Array#every
 // 5 -> Array#find
 // 6 -> Array#findIndex
-var ctx      = __webpack_require__(84)
+var ctx      = __webpack_require__(83)
   , IObject  = __webpack_require__(108)
   , toObject = __webpack_require__(35)
   , toLength = __webpack_require__(28)
@@ -7370,148 +7370,6 @@ var SharedModule = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(77);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(76);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__subdomain_service__ = __webpack_require__(119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_service__ = __webpack_require__(56);
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FeatureAuthService; });
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-var FeatureAuthService = (function (_super) {
-    __extends(FeatureAuthService, _super);
-    function FeatureAuthService(_http, _subDomainService) {
-        _super.call(this);
-        this._http = _http;
-        this._subDomainService = _subDomainService;
-        this.features = {
-            users: 0,
-            templates: 0,
-            visits: 0,
-            leads: 0,
-            calculators: 0,
-            analytics: false,
-            cta: false,
-            integrations: false,
-            embedding: false,
-            custom_branding: false,
-            real_time_results: true,
-            lead_generation: false,
-            calc_in_limit: false,
-            custom_font: false,
-            background_tints: false,
-            custom_colors: false,
-        };
-    }
-    FeatureAuthService.prototype.getfeatureAccess = function (featureName) {
-        var _this = this;
-        var companyAccess = JSON.parse(this.readCookie('filepicker_token_json'));
-        var subscription_status = '';
-        companyAccess.forEach(function (e) {
-            if (e.key === _this._subDomainService.subDomain.sub_domain) {
-                subscription_status = e.value;
-            }
-        });
-        if (subscription_status === 'active' || subscription_status === 'in_trial') {
-            var company = localStorage.getItem('company');
-            var getUrl = this._url + '/planfeature/check/' + company + '/' + featureName;
-            return this._http.get(getUrl, this.options)
-                .map(this.boolData)
-                .catch(this.handleError);
-        }
-        else {
-            return false;
-        }
-    };
-    FeatureAuthService.prototype.checkCalcLimit = function () {
-        var company = localStorage.getItem('company');
-        var getUrl = this._url + '/plan/check/calc/' + company;
-        return this._http.get(getUrl, this.options)
-            .map(this.boolData)
-            .catch(this.handleError);
-    };
-    FeatureAuthService.prototype.getAllFeatureAccess = function () {
-        var _this = this;
-        var companyAccess = JSON.parse(this.readCookie('filepicker_token_json'));
-        var subscription_status = '';
-        if (!companyAccess)
-            window.location.href = window.location.origin + '/logout';
-        else
-            companyAccess.forEach(function (e) {
-                if (e.key === _this._subDomainService.subDomain.sub_domain) {
-                    subscription_status = e.value;
-                }
-            });
-        var company = JSON.parse(this.readCookie('storage')).company;
-        company.integration = company.integration ? company.integration : false;
-        if (subscription_status === 'active' || subscription_status === 'in_trial') {
-            var sub_domain = this._subDomainService.subDomain.sub_domain;
-            var getUrl = this._url + '/planfeature/access/' + sub_domain;
-            this._http.post(getUrl, {}, this.post_options())
-                .map(this.extractData)
-                .catch(this.handleError)
-                .subscribe(function (result) {
-                _this.features.users = result.users;
-                _this.features.templates = result.templates;
-                if (company.current_limit.calculators === undefined || company.current_limit.calculators === null)
-                    _this.features.calculators = result.calculators;
-                else
-                    _this.features.calculators = company.current_limit.calculators;
-                _this.features.visits = result.visits;
-                _this.features.leads = result.leads;
-                _this.features.analytics = result.analytics;
-                _this.features.embedding = result.embedding;
-                _this.features.cta = result.cta;
-                _this.features.integrations = result.integrations || company.integration;
-                _this.features.custom_branding = result.og_branding;
-                _this.features.real_time_results = true;
-                _this.features.lead_generation = result.lead_generation_viewing;
-                _this.features.calc_in_limit = result.calc_in_limit;
-                _this.features.custom_font = result.custom_styling;
-                _this.features.background_tints = result.custom_styling;
-                _this.features.custom_colors = result.custom_styling;
-                //console.log(result, 'resultttttt');
-            });
-        }
-    };
-    FeatureAuthService = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__subdomain_service__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__subdomain_service__["a" /* SubDomainService */]) === 'function' && _b) || Object])
-    ], FeatureAuthService);
-    return FeatureAuthService;
-    var _a, _b;
-}(__WEBPACK_IMPORTED_MODULE_6__base_service__["a" /* BaseService */]));
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
 "use strict";
 var Observable_1 = __webpack_require__(9);
 var catch_1 = __webpack_require__(242);
@@ -7520,7 +7378,7 @@ Observable_1.Observable.prototype._catch = catch_1._catch;
 //# sourceMappingURL=catch.js.map
 
 /***/ },
-/* 77 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7531,7 +7389,7 @@ Observable_1.Observable.prototype.map = map_1.map;
 //# sourceMappingURL=map.js.map
 
 /***/ },
-/* 78 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7636,7 +7494,7 @@ var DefaultRenderTypes = (function () {
 //# sourceMappingURL=config.js.map
 
 /***/ },
-/* 79 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8019,7 +7877,7 @@ function lastOnStack(stack, element) {
 //# sourceMappingURL=parser.js.map
 
 /***/ },
-/* 80 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8313,11 +8171,11 @@ function makePropDecorator(name, props, parentClass) {
 //# sourceMappingURL=decorators.js.map
 
 /***/ },
-/* 81 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
@@ -8434,7 +8292,7 @@ var EventEmitter = (function (_super) {
 //# sourceMappingURL=async.js.map
 
 /***/ },
-/* 82 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8510,7 +8368,7 @@ var EventManagerPlugin = (function () {
 //# sourceMappingURL=event_manager.js.map
 
 /***/ },
-/* 83 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -8962,7 +8820,7 @@ function advanceActivatedRoute(route) {
 //# sourceMappingURL=router_state.js.map
 
 /***/ },
-/* 84 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 // optional / simple context binding
@@ -8987,7 +8845,7 @@ module.exports = function(fn, that, length){
 };
 
 /***/ },
-/* 85 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
@@ -9034,7 +8892,7 @@ module.exports = Object.create || function create(O, Properties){
 
 
 /***/ },
-/* 86 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
@@ -9046,7 +8904,7 @@ module.exports = Object.keys || function keys(O){
 };
 
 /***/ },
-/* 87 */
+/* 86 */
 /***/ function(module, exports) {
 
 // 7.1.4 ToInteger
@@ -9057,7 +8915,7 @@ module.exports = function(it){
 };
 
 /***/ },
-/* 88 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -9221,6 +9079,148 @@ var AnonymousSubject = (function (_super) {
 }(Subject));
 exports.AnonymousSubject = AnonymousSubject;
 //# sourceMappingURL=Subject.js.map
+
+/***/ },
+/* 88 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__subdomain_service__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__base_service__ = __webpack_require__(56);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FeatureAuthService; });
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var FeatureAuthService = (function (_super) {
+    __extends(FeatureAuthService, _super);
+    function FeatureAuthService(_http, _subDomainService) {
+        _super.call(this);
+        this._http = _http;
+        this._subDomainService = _subDomainService;
+        this.features = {
+            users: 0,
+            templates: 0,
+            visits: 0,
+            leads: 0,
+            calculators: 0,
+            analytics: false,
+            cta: false,
+            integrations: false,
+            embedding: false,
+            custom_branding: false,
+            real_time_results: true,
+            lead_generation: false,
+            calc_in_limit: false,
+            custom_font: false,
+            background_tints: false,
+            custom_colors: false,
+        };
+    }
+    FeatureAuthService.prototype.getfeatureAccess = function (featureName) {
+        var _this = this;
+        var companyAccess = JSON.parse(this.readCookie('filepicker_token_json'));
+        var subscription_status = '';
+        companyAccess.forEach(function (e) {
+            if (e.key === _this._subDomainService.subDomain.sub_domain) {
+                subscription_status = e.value;
+            }
+        });
+        if (subscription_status === 'active' || subscription_status === 'in_trial') {
+            var company = localStorage.getItem('company');
+            var getUrl = this._url + '/planfeature/check/' + company + '/' + featureName;
+            return this._http.get(getUrl, this.options)
+                .map(this.boolData)
+                .catch(this.handleError);
+        }
+        else {
+            return false;
+        }
+    };
+    FeatureAuthService.prototype.checkCalcLimit = function () {
+        var company = localStorage.getItem('company');
+        var getUrl = this._url + '/plan/check/calc/' + company;
+        return this._http.get(getUrl, this.options)
+            .map(this.boolData)
+            .catch(this.handleError);
+    };
+    FeatureAuthService.prototype.getAllFeatureAccess = function () {
+        var _this = this;
+        var companyAccess = JSON.parse(this.readCookie('filepicker_token_json'));
+        var subscription_status = '';
+        if (!companyAccess)
+            window.location.href = window.location.origin + '/logout';
+        else
+            companyAccess.forEach(function (e) {
+                if (e.key === _this._subDomainService.subDomain.sub_domain) {
+                    subscription_status = e.value;
+                }
+            });
+        var company = JSON.parse(this.readCookie('storage')).company;
+        company.integration = company.integration ? company.integration : false;
+        if (subscription_status === 'active' || subscription_status === 'in_trial') {
+            var sub_domain = this._subDomainService.subDomain.sub_domain;
+            var getUrl = this._url + '/planfeature/access/' + sub_domain;
+            this._http.post(getUrl, {}, this.post_options())
+                .map(this.extractData)
+                .catch(this.handleError)
+                .subscribe(function (result) {
+                _this.features.users = result.users;
+                _this.features.templates = result.templates;
+                if (company.current_limit.calculators === undefined || company.current_limit.calculators === null)
+                    _this.features.calculators = result.calculators;
+                else
+                    _this.features.calculators = company.current_limit.calculators;
+                _this.features.visits = result.visits;
+                _this.features.leads = result.leads;
+                _this.features.analytics = result.analytics;
+                _this.features.embedding = result.embedding;
+                _this.features.cta = result.cta;
+                _this.features.integrations = result.integrations || company.integration;
+                _this.features.custom_branding = result.og_branding;
+                _this.features.real_time_results = true;
+                _this.features.lead_generation = result.lead_generation_viewing;
+                _this.features.calc_in_limit = result.calc_in_limit;
+                _this.features.custom_font = result.custom_styling;
+                _this.features.background_tints = result.custom_styling;
+                _this.features.custom_colors = result.custom_styling;
+                //console.log(result, 'resultttttt');
+            });
+        }
+    };
+    FeatureAuthService = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Injectable */])(), 
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__subdomain_service__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__subdomain_service__["a" /* SubDomainService */]) === 'function' && _b) || Object])
+    ], FeatureAuthService);
+    return FeatureAuthService;
+    var _a, _b;
+}(__WEBPACK_IMPORTED_MODULE_6__base_service__["a" /* BaseService */]));
+
 
 /***/ },
 /* 89 */
@@ -11399,7 +11399,7 @@ var AbstractFormGroupDirective = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__model__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__validators__ = __webpack_require__(40);
@@ -11743,7 +11743,7 @@ var RadioControlValueAccessor = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_collection__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(48);
@@ -12401,7 +12401,7 @@ var XSRFStrategy = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from__ = __webpack_require__(240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_observable_from__);
@@ -12426,7 +12426,7 @@ var XSRFStrategy = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__recognize__ = __webpack_require__(604);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__router_config_loader__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__router_outlet_map__ = __webpack_require__(151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__router_state__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__shared__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__url_tree__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__utils_collection__ = __webpack_require__(50);
@@ -13387,7 +13387,7 @@ exports.f = Object.getOwnPropertyNames || function getOwnPropertyNames(O){
 /* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(87)
+var toInteger = __webpack_require__(86)
   , max       = Math.max
   , min       = Math.min;
 module.exports = function(index, length){
@@ -14519,7 +14519,7 @@ var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* Opaqu
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_template_parser_template_ast__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_template_parser_template_parser__ = __webpack_require__(127);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_compile_metadata__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_offline_compiler__ = __webpack_require__(532);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__src_runtime_compiler__ = __webpack_require__(294);
@@ -14643,7 +14643,7 @@ var APP_BASE_HREF = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* Opaqu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compiler_util_binding_util__ = __webpack_require__(278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__compiler_util_expression_converter__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compiler_util_render_util__ = __webpack_require__(279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__expression_parser_parser__ = __webpack_require__(93);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identifiers__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ml_parser_interpolation_config__ = __webpack_require__(38);
@@ -15264,7 +15264,7 @@ function unescape(code) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__html_tags__ = __webpack_require__(174);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__interpolation_config__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parser__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__parser__ = __webpack_require__(78);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return HtmlParser; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_3__parser__["a"]; });
 /* unused harmony reexport TreeError */
@@ -16367,7 +16367,7 @@ function _isEmptyTextNode(node) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__schema_element_schema_registry__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_element__ = __webpack_require__(299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__compile_view__ = __webpack_require__(301);
@@ -16807,7 +16807,7 @@ var Injector = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return Inject; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return Optional; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Injectable; });
@@ -18490,7 +18490,7 @@ function iterateListLike(obj, fn) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__ = __webpack_require__(241);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_observable_fromPromise__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_shared__ = __webpack_require__(60);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__private_import_core__ = __webpack_require__(332);
 /* unused harmony export VALID */
 /* unused harmony export INVALID */
@@ -20312,7 +20312,7 @@ module.exports = function(KEY, length, exec){
 /* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
-var ctx         = __webpack_require__(84)
+var ctx         = __webpack_require__(83)
   , call        = __webpack_require__(368)
   , isArrayIter = __webpack_require__(366)
   , anObject    = __webpack_require__(4)
@@ -20571,11 +20571,11 @@ exports.MergeAllSubscriber = MergeAllSubscriber;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__base_service__ = __webpack_require__(56);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CompanyService; });
@@ -21328,7 +21328,7 @@ function isAsciiHexDigit(code) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__compile_metadata__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__facade_collection__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__facade_lang__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ml_parser_ast__ = __webpack_require__(58);
@@ -26287,7 +26287,7 @@ function _createDependency(token /** TODO #9100 */, optional /** TODO #9100 */, 
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__ = __webpack_require__(87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Subject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Subject__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_Observable__);
@@ -27437,7 +27437,7 @@ var NgControlStatusGroup = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__model__ = __webpack_require__(146);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__validators__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__abstract_form_group_directive__ = __webpack_require__(98);
@@ -27752,7 +27752,7 @@ var NumberValueAccessor = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__control_value_accessor__ = __webpack_require__(39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ng_control__ = __webpack_require__(67);
@@ -27906,7 +27906,7 @@ var FormControlDirective = (function (_super) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_async__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validators__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__abstract_form_group_directive__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__control_container__ = __webpack_require__(48);
@@ -28708,7 +28708,7 @@ var ELEMENT_PROBE_PROVIDERS_PROD_MODE = [{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_driver__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_tokens__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__events_event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__events_event_manager__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_styles_host__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__util__ = __webpack_require__(348);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomRootRenderer; });
@@ -29260,7 +29260,7 @@ function sanitizeSrcset(srcset) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router__ = __webpack_require__(105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_state__ = __webpack_require__(82);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RouterLink; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return RouterLinkWithHref; });
 /**
@@ -29904,7 +29904,7 @@ module.exports = {
   set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
     function(test, buggy, set){
       try {
-        set = __webpack_require__(84)(Function.call, __webpack_require__(63).f(Object.prototype, '__proto__').set, 2);
+        set = __webpack_require__(83)(Function.call, __webpack_require__(63).f(Object.prototype, '__proto__').set, 2);
         set(test, []);
         buggy = !(test instanceof Array);
       } catch(e){ buggy = true; }
@@ -30461,11 +30461,11 @@ exports.subscribeToResult = subscribeToResult;
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__index__ = __webpack_require__(5);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return IntegrationService; });
@@ -30562,13 +30562,14 @@ var IntegrationService = (function (_super) {
     IntegrationService.prototype.syncLeads = function (type) {
         var company = localStorage.getItem('company');
         var url = this._url + '/integration/sync/log/company/' + type + '/' + company;
-        return this._http.get(url, this.get_options)
+        return this._http.post(url, this.get_options)
             .map(this.extractData)
             .catch(this.handleError);
     };
     IntegrationService.prototype.syncCalcLeads = function (type, appId) {
+        var data = {};
         var url = this._url + '/integration/sync/log/calc/' + type + '/' + appId;
-        return this._http.get(url, this.get_options)
+        return this._http.post(url, data, this.options)
             .map(this.extractData)
             .catch(this.handleError);
     };
@@ -30615,11 +30616,11 @@ var IntegrationService = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__environments_environment__ = __webpack_require__(12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__base_service__ = __webpack_require__(56);
@@ -34344,7 +34345,7 @@ function sanitizedValue(view, boundProp, renderValue, securityContextExpression)
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ml_parser_ast__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__digest__ = __webpack_require__(171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__i18n_ast__ = __webpack_require__(281);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__i18n_parser__ = __webpack_require__(525);
@@ -34870,7 +34871,7 @@ var IcuPlaceholder = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ml_parser_interpolation_config__ = __webpack_require__(38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__ml_parser_parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__extractor_merger__ = __webpack_require__(280);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__message_bundle__ = __webpack_require__(284);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__serializers_xliff__ = __webpack_require__(286);
@@ -35688,7 +35689,7 @@ var _Visitor = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__parser__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__parser__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__xml_tags__ = __webpack_require__(531);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return XmlParser; });
 /* unused harmony reexport ParseTreeResult */
@@ -36623,7 +36624,7 @@ function _addQueryToTokenMap(map, query) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__animation_animation_compiler__ = __webpack_require__(275);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__animation_animation_parser__ = __webpack_require__(276);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__compile_metadata__ = __webpack_require__(19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__directive_normalizer__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__directive_wrapper_compiler__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__facade_lang__ = __webpack_require__(2);
@@ -43611,7 +43612,7 @@ var ResourceLoaderImpl = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__dom_dom_renderer__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dom_dom_tokens__ = __webpack_require__(150);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dom_events_dom_events__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dom_events_event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__dom_events_event_manager__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__dom_events_hammer_gestures__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__dom_events_key_events__ = __webpack_require__(347);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__dom_shared_styles_host__ = __webpack_require__(216);
@@ -44355,7 +44356,7 @@ var Title = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dom_adapter__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__event_manager__ = __webpack_require__(81);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DomEventsPlugin; });
 /**
  * @license
@@ -44409,7 +44410,7 @@ var DomEventsPlugin = (function (_super) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__facade_collection__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facade_lang__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom_adapter__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__event_manager__ = __webpack_require__(81);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return KeyEventsPlugin; });
 /**
  * @license
@@ -45260,7 +45261,7 @@ var RouterOutlet = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_config_loader__ = __webpack_require__(106);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_outlet_map__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__router_preloader__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__router_state__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__url_tree__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__utils_collection__ = __webpack_require__(50);
 /* unused harmony export ROUTER_CONFIGURATION */
@@ -45797,9 +45798,9 @@ module.exports = function(it){
 "use strict";
 'use strict';
 var dP          = __webpack_require__(18).f
-  , create      = __webpack_require__(85)
+  , create      = __webpack_require__(84)
   , redefineAll = __webpack_require__(232)
-  , ctx         = __webpack_require__(84)
+  , ctx         = __webpack_require__(83)
   , anInstance  = __webpack_require__(220)
   , defined     = __webpack_require__(52)
   , forOf       = __webpack_require__(153)
@@ -46025,7 +46026,7 @@ module.exports = function(iterator, fn, value, entries){
 
 "use strict";
 'use strict';
-var create         = __webpack_require__(85)
+var create         = __webpack_require__(84)
   , descriptor     = __webpack_require__(71)
   , setToStringTag = __webpack_require__(156)
   , IteratorPrototype = {};
@@ -46088,7 +46089,7 @@ module.exports = Math.log1p || function log1p(x){
 "use strict";
 'use strict';
 // 19.1.2.1 Object.assign(target, source, ...)
-var getKeys  = __webpack_require__(86)
+var getKeys  = __webpack_require__(85)
   , gOPS     = __webpack_require__(154)
   , pIE      = __webpack_require__(155)
   , toObject = __webpack_require__(35)
@@ -46126,7 +46127,7 @@ module.exports = !$assign || __webpack_require__(8)(function(){
 
 var dP       = __webpack_require__(18)
   , anObject = __webpack_require__(4)
-  , getKeys  = __webpack_require__(86);
+  , getKeys  = __webpack_require__(85);
 
 module.exports = __webpack_require__(20) ? Object.defineProperties : function defineProperties(O, Properties){
   anObject(O);
@@ -46216,7 +46217,7 @@ module.exports = $parseInt(ws + '08') !== 8 || $parseInt(ws + '0x16') !== 22 ? f
 /* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
-var toInteger = __webpack_require__(87)
+var toInteger = __webpack_require__(86)
   , defined   = __webpack_require__(52);
 // true  -> String#at
 // false -> String#codePointAt
@@ -46240,7 +46241,7 @@ module.exports = function(TO_STRING){
 
 "use strict";
 'use strict';
-var toInteger = __webpack_require__(87)
+var toInteger = __webpack_require__(86)
   , defined   = __webpack_require__(52);
 
 module.exports = function repeat(count){
@@ -46511,11 +46512,11 @@ var global         = __webpack_require__(15)
   , toIObject      = __webpack_require__(34)
   , toPrimitive    = __webpack_require__(72)
   , createDesc     = __webpack_require__(71)
-  , _create        = __webpack_require__(85)
+  , _create        = __webpack_require__(84)
   , gOPNExt        = __webpack_require__(375)
   , $GOPD          = __webpack_require__(63)
   , $DP            = __webpack_require__(18)
-  , $keys          = __webpack_require__(86)
+  , $keys          = __webpack_require__(85)
   , gOPD           = $GOPD.f
   , dP             = $DP.f
   , gOPN           = gOPNExt.f
@@ -46763,7 +46764,7 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
-var Subject_1 = __webpack_require__(88);
+var Subject_1 = __webpack_require__(87);
 var ObjectUnsubscribedError_1 = __webpack_require__(401);
 /**
  * @class BehaviorSubject<T>
@@ -47837,9 +47838,9 @@ var BillingAddress = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__base_service__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(12);
@@ -47970,7 +47971,7 @@ var MembershipService = (function (_super) {
         else
             company = id;
         var getPlanUrl = this._url + '/subscriptions/' + company;
-        return this._http.get(getPlanUrl, this.options)
+        return this._http.post(getPlanUrl, {}, this.post_options())
             .map(this.extractData)
             .catch(this.handleError);
     };
@@ -48079,11 +48080,11 @@ var MembershipService = (function (_super) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(76);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__(90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(76);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__ = __webpack_require__(75);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_catch__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__base_service__ = __webpack_require__(56);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PlanService; });
@@ -48329,7 +48330,7 @@ var AdminGuard = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__site_components_signup_index__ = __webpack_require__(416);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_login_login_component__ = __webpack_require__(256);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__shared_logout_logout_component__ = __webpack_require__(257);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_feature_access_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__shared_services_feature_access_service__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__site_home_home_component__ = __webpack_require__(260);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__site_templates_pipes_pipes_module__ = __webpack_require__(408);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__site_site_module__ = __webpack_require__(459);
@@ -48426,7 +48427,7 @@ var CALCULATOR_ROUTES = [
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_authentication_admin_guard__ = __webpack_require__(415);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_authentication_subdomain_guard__ = __webpack_require__(428);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_authentication_analytics_guard__ = __webpack_require__(422);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_feature_access_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_services_feature_access_service__ = __webpack_require__(88);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shared_authentication_home_route_guard__ = __webpack_require__(426);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__shared_authentication_company_profile_route_guard__ = __webpack_require__(424);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared_notfound_notfound_component__ = __webpack_require__(258);
@@ -48572,7 +48573,7 @@ var AUTH_PROVIDERS = [__WEBPACK_IMPORTED_MODULE_1__shared_authentication_auth_gu
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__shared_services_index__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_modules_shared_module__ = __webpack_require__(74);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__ = __webpack_require__(88);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CoreModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -48634,7 +48635,7 @@ var CoreModule = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_feature_access_service__ = __webpack_require__(75);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_feature_access_service__ = __webpack_require__(88);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AnalyticsGuard; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -50309,9 +50310,8 @@ var SignupDetailComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_services_index__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__ = __webpack_require__(75);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_models_company__ = __webpack_require__(409);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__environments_environment__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_models_company__ = __webpack_require__(409);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__environments_environment__ = __webpack_require__(12);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ToolbarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -50329,7 +50329,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 var ToolbarComponent = (function () {
-    function ToolbarComponent(_subDomainService, loggedInService, _userService, _companyService, _featureAuthService, _cookieService, router) {
+    function ToolbarComponent(_subDomainService, loggedInService, _userService, _companyService, _featureAuthService, _cookieService, router, _script) {
         var _this = this;
         this._subDomainService = _subDomainService;
         this.loggedInService = loggedInService;
@@ -50338,6 +50338,7 @@ var ToolbarComponent = (function () {
         this._featureAuthService = _featureAuthService;
         this._cookieService = _cookieService;
         this.router = router;
+        this._script = _script;
         this.loggedIn = { isLoggedIn: false };
         this.isSubDomainUrl = false;
         // hasAccess: Boolean = true;
@@ -50411,7 +50412,7 @@ var ToolbarComponent = (function () {
         this.currentUrl = '';
         if (this.loggedIn.isLoggedIn)
             this.getCompanies();
-        this.subDomainExt = '.' + __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].APP_EXTENSION;
+        this.subDomainExt = '.' + __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].APP_EXTENSION;
         //this.loggedIn = this.loggedInService.loggedIn;
         var sub_domain = this._subDomainService.subDomain.sub_domain;
         var companyAccess = JSON.parse(this._cookieService.readCookie('filepicker_token_json'));
@@ -50485,6 +50486,13 @@ var ToolbarComponent = (function () {
     };
     ToolbarComponent.prototype.ngAfterViewInit = function () {
         this.showNotification();
+        this._script.load('slimScroll')
+            .then(function (data) {
+            jQuery('.slimscroll').slimscroll();
+        })
+            .catch(function (error) {
+            //console.log('Script not loaded', error);
+        });
     };
     ToolbarComponent.prototype.showNotification = function () {
         if (this.isEmailVerified === false) {
@@ -50501,7 +50509,7 @@ var ToolbarComponent = (function () {
             if (data) {
                 data.forEach(function (company) {
                     if (company.user_company.status !== 'LEFT' && company.user_company.status !== 'DELETED' && company.user_company.status !== 'REQUESTED' && company.user_company.active) {
-                        self.myCompanies.push(new __WEBPACK_IMPORTED_MODULE_4__shared_models_company__["a" /* Company */](company));
+                        self.myCompanies.push(new __WEBPACK_IMPORTED_MODULE_3__shared_models_company__["a" /* Company */](company));
                     }
                 });
             }
@@ -50546,7 +50554,7 @@ var ToolbarComponent = (function () {
             _this.loggedInService.logout();
             // this.router.navigate(['/']);
             localStorage.clear();
-            window.location.href = __WEBPACK_IMPORTED_MODULE_5__environments_environment__["a" /* environment */].APP_DOMAIN;
+            window.location.href = __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].APP_DOMAIN;
         });
     };
     ToolbarComponent.prototype.close = function () {
@@ -50591,14 +50599,15 @@ var ToolbarComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Y" /* Component */])({
             selector: 'sd-toolbar',
             template: __webpack_require__(499),
+            // encapsulation: ViewEncapsulation.None,
             styles: [
                 __webpack_require__(481)
             ]
         }), 
-        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_feature_access_service__["a" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _g) || Object])
+        __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["a" /* SubDomainService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["f" /* LoggedInService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["g" /* UserService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["d" /* CompanyService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* FeatureAuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["e" /* FeatureAuthService */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["b" /* CookieService */]) === 'function' && _f) || Object, (typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _g) || Object, (typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* Script */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_index__["c" /* Script */]) === 'function' && _h) || Object])
     ], ToolbarComponent);
     return ToolbarComponent;
-    var _a, _b, _c, _d, _e, _f, _g;
+    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 
@@ -51164,7 +51173,7 @@ module.exports = "@font-face {\r\n    font-family: 'Material Icons';\r\n    font
 /* 481 */
 /***/ function(module, exports) {
 
-module.exports = "@font-face {\r\n    font-family: montserratregular;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-regular-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-regular-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-regular-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-regular-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratbold;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-bold-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-bold-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-bold-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-bold-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratsemibold;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-semibold-webfont.eot?#iefix) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-semibold-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-semibold-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-semibold-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratlight;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-light-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-light-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-light-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-light-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: 'Material Icons';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(MaterialIcons-Regular.eot);\r\n    src: local('Material Icons'), local('materialIcons-Regular'), url(../assets/fonts/materialIcons-Regular.woff2) format('woff2'), url(../fonts/materialIcons-Regular.woff) format('woff'), url(../fonts/materialIcons-Regular.ttf) format('truetype')\r\n}\r\n\r\n.material-icons {\r\n    font-family: 'Material Icons';\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 24px;\r\n    display: inline-block;\r\n    line-height: 1;\r\n    text-transform: none;\r\n    letter-spacing: normal;\r\n    word-wrap: normal;\r\n    white-space: nowrap;\r\n    direction: ltr;\r\n    -webkit-font-smoothing: antialiased;\r\n    text-rendering: optimizeLegibility;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    font-feature-settings: 'liga'\r\n}\r\n\r\n.ellipsis {\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n}\r\n\r\na:focus,\r\na:hover {\r\n    text-decoration: none;\r\n    color: #8e989f\r\n}\r\n\r\nbody {\r\n    font-family: montserratregular;\r\n}\r\n\r\n\r\n/* Sweep To Right */\r\n\r\n.hvr-sweep-to-right {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    -webkit-transition-property: color;\r\n    transition-property: color;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n}\r\n\r\n.hvr-sweep-to-right:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    -webkit-transform: scaleX(0);\r\n    transform: scaleX(0);\r\n    -webkit-transform-origin: 0 50%;\r\n    transform-origin: 0 50%;\r\n    -webkit-transition-property: transform;\r\n    transition-property: transform;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-sweep-to-right:hover,\r\n.hvr-sweep-to-right:focus,\r\n.hvr-sweep-to-right:active {\r\n    color: white;\r\n}\r\n\r\n.hvr-sweep-to-right:hover:before,\r\n.hvr-sweep-to-right:focus:before,\r\n.hvr-sweep-to-right:active:before {\r\n    -webkit-transform: scaleX(1);\r\n    transform: scaleX(1);\r\n}\r\n\r\n\r\n/* Underline From Left */\r\n\r\n.hvr-underline-from-left {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    overflow: hidden;\r\n}\r\n\r\n.hvr-underline-from-left:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    left: 0;\r\n    right: 100%;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    height: 4px;\r\n    -webkit-transition-property: right;\r\n    transition-property: right;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-underline-from-left:hover:before,\r\n.hvr-underline-from-left:focus:before,\r\n.hvr-underline-from-left:active:before {\r\n    right: 0;\r\n}\r\n\r\n\r\n/* Sweep To Left */\r\n\r\n.hvr-sweep-to-left {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    -webkit-transition-property: color;\r\n    transition-property: color;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n}\r\n\r\n.hvr-sweep-to-left:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    -webkit-transform: scaleX(0);\r\n    transform: scaleX(0);\r\n    -webkit-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\r\n    -webkit-transition-property: transform;\r\n    transition-property: transform;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-sweep-to-left:hover,\r\n.hvr-sweep-to-left:focus,\r\n.hvr-sweep-to-left:active {\r\n    color: white;\r\n}\r\n\r\n.hvr-sweep-to-left:hover:before,\r\n.hvr-sweep-to-left:focus:before,\r\n.hvr-sweep-to-left:active:before {\r\n    -webkit-transform: scaleX(1);\r\n    transform: scaleX(1);\r\n}\r\n\r\n\r\n/* header css */\r\n\r\n.name-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: left;\r\n    width: 119px;\r\n}\r\n\r\n.navbar-rightside button.btn.btn-default.dropdown-toggle {\r\n    margin-top: 7px\r\n}\r\n\r\n.navbar-rightside .name-dropdown-wrapper.btn-group {\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.navbar-rightside .name-dropdown-wrapper .dropdown-menu {\r\n    top: 33px;\r\n    position: absolute\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 0;\r\n    font-size: 13px;\r\n    text-transform: none;\r\n    color: #8e989f;\r\n    font-family: montserratlight;\r\n    float: left;\r\n    width: 100%;\r\n    border: none;\r\n    background: 0 0;\r\n    box-shadow: none;\r\n    margin-top: 8px;\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #fb545b;\r\n    float: left\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title {\r\n    float: left;\r\n    width: 82%;\r\n    min-width: 60px;\r\n    text-align: left;\r\n    text-transform: capitalize;\r\n    transition: all .3s ease 0s\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 9px;\r\n    left: -78px;\r\n    max-width: 180px;\r\n    font-size: 12px;\r\n    background: #62696d;\r\n    position: relative;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.name-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -9px;\r\n    left: 76px;\r\n    display: inline-block;\r\n    border-right: 10px solid transparent;\r\n    border-bottom: 12px solid #62696d;\r\n    border-left: 10px solid transparent;\r\n    border-bottom-color: #62696d;\r\n    content: '';\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list {\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a:focus i.material-icons,\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a span.name-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a i.material-icons {\r\n    font-size: 12px;\r\n    color: #fff;\r\n    padding: 5px 0 0\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a span.name-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.navbar .name-dropdown-wrapper .dropdown-menu .name-list li>a:hover,\r\n.navbar.navbar-default .name-dropdown-wrapper .dropdown-menu .name-list li>a:hover {\r\n    background: #71787b;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .name-list li>a:focus,\r\n.navbar.navbar-default .name-dropdown-wrapper .dropdown-menu .name-list li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>li>a.hvr-sweep-to-right::before {\r\n    background: #fa8f93!important\r\n}\r\n\r\n.navbar .dropdown-menu .company-list .active>a,\r\n.navbar .dropdown-menu .company-list li>a:focus,\r\n.navbar .dropdown-menu .company-list li>a:hover,\r\n.navbar.navbar-default .dropdown-menu .company-list .active>a,\r\n.navbar.navbar-default .dropdown-menu .company-list li>a:focus,\r\n.navbar.navbar-default .dropdown-menu .company-list li>a:hover {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.name-dropdown-border {\r\n    float: left;\r\n    width: 87%;\r\n    margin: 5px 12px;\r\n    border-top: 1px solid #7a8185!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list {\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list .slimscroll {\r\n    float: left;\r\n    width: 100%!important;\r\n    height: 110px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .slimScrollDiv {\r\n    height: 110px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li {\r\n    line-height: 24px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li span.company-list-title {\r\n    float: left;\r\n    width: 90%;\r\n    padding-right: 5px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li span.company-selected {\r\n    float: right\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li a span.company-selected i.material-icons,\r\n.name-dropdown-wrapper .dropdown-menu .company-list li.active a span.company-selected i.material-icons {\r\n    font-size: 12px;\r\n    position: relative;\r\n    top: 2px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu div>li>a.hvr-sweep-to-right::before {\r\n    background: #71787b\r\n}\r\n\r\n.name-dd-minh {\r\n    height: 37px\r\n}\r\n\r\n.help-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: right;\r\n    width: 20%\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 15px 12px 12px;\r\n    font-size: 12px;\r\n    text-transform: none;\r\n    color: #62696d;\r\n    font-family: montserratlight;\r\n    border: none\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: absolute;\r\n    top: -1px;\r\n    right: 3px\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 33px;\r\n    right: -13px;\r\n    min-width: 140px;\r\n    font-size: 12px;\r\n    background: #f87b80;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.help-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    right: 17px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #f87b80;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #f87b80;\r\n    content: ''\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover {\r\n    color: #fff;\r\n    background: 0 0\r\n}\r\n\r\n.navbar .help-dropdown-wrapper .dropdown-menu li>a:hover,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:hover {\r\n    background: #f9888d;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .help-dropdown-wrapper li>a:focus,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus i.material-icons,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 3px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    font-size: 13px!important;\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    padding: 0\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.icon-help {\r\n    z-index: 9;\r\n    position: relative;\r\n    cursor: pointer\r\n}\r\n\r\n.icon-help i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    transition: all .3s ease\r\n}\r\n\r\n.icon-help i.material-icons:focus .icon-help i.material-icons:active,\r\n.icon-help i.material-icons:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.builder-help-icon {\r\n    top: 8px\r\n}\r\n\r\n#new-header .navbar-left ul,\r\n#new-header .navbar-left ul li,\r\n.billing-grey-bottom ul.billing-list li,\r\n.billing-white-bottom ul.billing-list li,\r\n.left-sidebar ul li,\r\nli,\r\nul {\r\n    list-style: none\r\n}\r\n\r\n#new-header {\r\n    float: left;\r\n    width: 100%;\r\n    height: 60px;\r\n    transition: all .5s linear\r\n}\r\n\r\n#new-header .navbar-header {\r\n    width: 255px\r\n}\r\n\r\n#new-header .navbar-default {\r\n    background: #fff!important;\r\n    border-bottom: 1px solid #dae2e6;\r\n    padding-bottom: 10px!important;\r\n    margin: 0!important;\r\n    height: 60px;\r\n    z-index: 999;\r\n}\r\n\r\n#new-header.active {\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    min-height: 72px;\r\n    z-index: 99;\r\n    position: relative\r\n}\r\n\r\n#new-header .navbar-fixed-top .nav-padding {\r\n    padding-left: 0;\r\n    padding-right: 35px\r\n}\r\n\r\n#new-header .navbar-logopadding {\r\n    padding-right: 35px;\r\n    margin-left: 0!important;\r\n    padding-top: 0;\r\n    height: 60px;\r\n    position: relative;\r\n    top: -2px\r\n}\r\n\r\n#new-header .navbar-right a.navbar-logout,\r\n#new-header .navbar-right a.navbar-name {\r\n    font-family: montserratregular;\r\n    padding-top: 2px;\r\n    font-weight: 400;\r\n    cursor: pointer\r\n}\r\n\r\n#new-header .navbar-left {\r\n    margin-top: 10px;\r\n    border-left: 1px solid #dae2e6;\r\n    padding-left: 0px;\r\n}\r\n\r\n#new-header .navbar-left ul {\r\n    margin-top: 8px;\r\n    padding-left: 25px\r\n}\r\n\r\n#new-header .navbar-left ul li {\r\n    display: inline-block;\r\n    margin-right: 35px;\r\n    margin-top: 0\r\n}\r\n\r\n#new-header .navbar-left ul li a {\r\n    font-size: 12px;\r\n    color: #8e989f;\r\n    text-transform: uppercase;\r\n    transition: all .1s ease 0s!important;\r\n    overflow: visible\r\n}\r\n\r\n#new-header .navbar-left ul li a i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: relative;\r\n    top: 3px\r\n}\r\n\r\n#new-header .navbar-left ul li a.hvr-underline-from-left::before {\r\n    background: #fb5f66;\r\n    height: 3px;\r\n    position: absolute;\r\n    top: 39px\r\n}\r\n\r\n#new-header .navbar-left ul li a.active.hvr-underline-from-left::before {\r\n    background: #fb5f66;\r\n    right: 0;\r\n    height: 3px;\r\n    position: absolute;\r\n    top: 39px\r\n}\r\n\r\n#new-header .navbar-right {\r\n    float: right;\r\n    color: #fb545b;\r\n    font-size: 18px;\r\n    width: 150px\r\n}\r\n\r\n#new-header .navbar-right-block {\r\n    margin-top: 11px;\r\n    padding-right: 0;\r\n    padding-left: 12px;\r\n    margin-bottom: -6px;\r\n    border-left: 1px solid #dae2e6;\r\n}\r\n\r\n#new-header .navbar-right a.navbar-name {\r\n    font-size: 13px;\r\n    color: #8e989f;\r\n    float: left;\r\n    padding-right: 15px\r\n}\r\n\r\n#new-header .navbar-right a.navbar-logout {\r\n    font-size: 13px;\r\n    color: #8e989f;\r\n    float: left\r\n}\r\n\r\n@media screen and (min-width: 768px) and (max-width: 768px) {\r\n    #new-header .navbar-right {\r\n        color: #fb545b;\r\n        font-size: 18px;\r\n        width: 20%\r\n    }\r\n    nav .cookies-header {\r\n        padding: 8px 10px\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 1024px) and (max-width: 1024px) {\r\n    #new-header .navbar-right {\r\n        width: 16%\r\n    }\r\n}\r\n\r\n\r\n#new-header .company-nav {\r\n    display: block!important\r\n}\r\n\r\n#new-header .navbar-default.company-nav {\r\n    background: #fff!important;\r\n    border-bottom: 1px solid #dae2e6;\r\n    padding-top: 0!important\r\n}\r\n\r\n#new-header .company-nav .navbar-header {\r\n    width: 100%!important\r\n}\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 15px;\r\n    padding-top: 22px;\r\n    height: 105px;\r\n    width: 100%;\r\n    padding-right: 15px!important\r\n}\r\n\r\n#new-header .company-nav.navbar-fixed-top .nav-padding {\r\n    padding-left: 0;\r\n    padding-right: 0\r\n}\r\n\r\n#new-header.cookies-parent {\r\n    height: 58px;\r\n    margin-bottom: 40px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-logopadding {\r\n    padding-top: 5px;\r\n    height: 72px;\r\n    margin-top: -2px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-default {\r\n    height: 98px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-left {\r\n    margin-top: 14px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-right {\r\n    margin-top: 5px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-right-block {\r\n    margin-top: 10px\r\n}\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 30px;\r\n    padding-top: 22px;\r\n    height: 125px\r\n}\r\n\r\n#new-header .company-nav {\r\n    height: 125px!important\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .settings-cookies #new-header.cookies-parent {\r\n        height: 50px;\r\n        margin-bottom: 0\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n    #new-header.cookies-parent {\r\n        height: 58px;\r\n        margin-bottom: 40px\r\n    }\r\n    #new-header.cookies-parent .navbar-logopadding {\r\n        padding-top: 5px;\r\n        height: 72px;\r\n        margin-top: -2px\r\n    }\r\n    #new-header.cookies-parent .navbar-default {\r\n        height: 98px\r\n    }\r\n    #new-header.cookies-parent .navbar-left {\r\n        margin-top: 14px\r\n    }\r\n}\r\n\r\n@media (max-width: 992px) {\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 30px;\r\n        padding-top: 22px;\r\n        height: 125px\r\n    }\r\n    #new-header .company-nav {\r\n        height: 125px!important\r\n    }\r\n}\r\n\r\n\r\n/* Start: Responsiveness */\r\n\r\n.mobile-menu {\r\n    display: none;\r\n}\r\n\r\n.white-logo {\r\n    display: none !important;\r\n}\r\n\r\n.company-list,\r\n.name-list {\r\n    width: 100%;\r\n    float: left;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    #new-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0px;\r\n    }\r\n    .full-menu,\r\n    .dash-circle,\r\n    .dash-prog-outer h2 {\r\n        display: none;\r\n    }\r\n    .main-logo {\r\n        display: none !important;\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 9px;\r\n        position: relative;\r\n    }\r\n    #new-header .navbar-default {\r\n        background: #fb5f66 !important;\r\n        border: none;\r\n    }\r\n    #new-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 15px;\r\n    }\r\n    #new-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 18px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 10px;\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: none;\r\n        float: right;\r\n        margin: 0px 10px;\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: none;\r\n    }\r\n    .mobile-dash {\r\n        padding: 0px;\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0px;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px;\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 10px 0px;\r\n        border-top: 1px solid #72787c!important;\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0px;\r\n        display: block;\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 24px;\r\n        /* margin: 10px 19px; */\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px;\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px;\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151;\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0px;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 30px;\r\n        font-family: montserratregular;\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff;\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left;\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right;\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff;\r\n    }\r\n    .white-logo {\r\n        display: block !important;\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px;\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center;\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center;\r\n    }\r\n    #new-header .navbar-header {\r\n        float: left;\r\n        margin-left: 0px;\r\n        margin-right: 0px !important;\r\n    }\r\n    #new-header .navbar-logopadding {\r\n        padding-right: 0px;\r\n        padding-top: 0px;\r\n    }\r\n    #new-header .navbar-default {\r\n        height: 56px;\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin-top: -20px;\r\n        margin: 0 auto;\r\n        margin-top: -20px;\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none;\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a .company-title {\r\n        font-size: 16px;\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu > li > a .company-site {\r\n        width: 91%;\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu >li > a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a.add-new-company {\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a i.material-icons {\r\n        font-size: 24px;\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        left: 42px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px;\r\n    }\r\n    /* start: new css 19sep2016 */\r\n    .header-links li {\r\n        font-size: 14px !important;\r\n        text-transform: uppercase;\r\n        font-family: montserratregular;\r\n    }\r\n    .header-links i.material-icons {\r\n        opacity: 0.5;\r\n        font-size: 18px;\r\n    }\r\n    .setting-logout-links li a i.material-icons {\r\n        font-size: 14px;\r\n        margin-top: 5px;\r\n    }\r\n    /* end: new css 19sep2016 */\r\n    .hvr-underline-from-left:hover:before,\r\n    .hvr-underline-from-left:focus:before,\r\n    .hvr-underline-from-left:active:before {\r\n        background: none;\r\n    }\r\n    .hvr-underline-from-left:before {\r\n        background: none;\r\n    }\r\n    #new-header .company-nav {\r\n        display: block !important;\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0px !important;\r\n    }\r\n    .company-nav .navbar-header {\r\n        width: 100% !important;\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px !important;\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px;\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px;\r\n    }\r\n}\r\n\r\n\r\n/* End: Responsiveness */\r\n\r\n.builder-dropdown-menu {\r\n    top: 46px;\r\n}\r\n\r\n\r\n/*.company_name_avatar-circle {\r\n    float: left;\r\n    width: 60px;\r\n    height: 60px;\r\n    border-radius: 50px;\r\n    background: #eceff0;\r\n    color: #444f54;\r\n    text-align: center;\r\n    font-family: montserratregular;\r\n    font-size: 24px;\r\n    padding-top: 23px;\r\n    margin-right: 20px;\r\n    text-transform: uppercase;\r\n  }\r\n\r\n  .company_name_span{\r\n    float: left;\r\n    margin-top: 20px;\r\n    font-size: 38px;\r\n  }*/\r\n\r\n@media (max-width: 767px) {\r\n    #setting-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0px;\r\n        padding-left: 0px;\r\n    }\r\n    .full-menu,\r\n    .dash-circle,\r\n    .dash-prog-outer h2 {\r\n        display: none;\r\n    }\r\n    .main-logo {\r\n        display: none !important;\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 7px;\r\n        position: relative;\r\n    }\r\n    #setting-header .navbar-default {\r\n        background: #BEC5C9 !important;\r\n        border: none;\r\n        margin-top: 0px;\r\n    }\r\n    #setting-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 13px;\r\n    }\r\n    #setting-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 16px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 7px;\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: none;\r\n        float: right;\r\n        margin: 0px 5px;\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: none;\r\n    }\r\n    .mobile-dash {\r\n        padding: 0px;\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0px;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px;\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 5px 0px;\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0px;\r\n        display: block;\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 30px;\r\n        /* margin: 10px 19px; */\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px;\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px;\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151;\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0px;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 30px;\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff;\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left;\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right;\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff;\r\n        text-transform: capitalize;\r\n    }\r\n    .white-logo {\r\n        display: block !important;\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px;\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center;\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center;\r\n    }\r\n    #setting-header .navbar-header {\r\n        float: left;\r\n        margin-left: -5px;\r\n        margin-right: 0px !important;\r\n    }\r\n    #setting-header .navbar-logopadding {\r\n        padding-right: 0px;\r\n        padding-top: 0px;\r\n    }\r\n    #setting-header .navbar-default {\r\n        height: 50px;\r\n        margin: 0px;\r\n        padding-bottom: 0px;\r\n        z-index: 9999 !important;\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin-top: -20px;\r\n        margin: 0 auto;\r\n        margin-top: -20px;\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none;\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a .company-title {\r\n        font-size: 16px;\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu > li > a .company-site {\r\n        width: 91%;\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu >li > a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a.add-new-company {\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a i.material-icons {\r\n        font-size: 24px;\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        left: 42px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 480px) and (max-width: 480px) {\r\n    .mobile-menu .dropdown-menu {\r\n        left: -158px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 640px) and (max-width: 640px) {\r\n    .mobile-menu .dropdown-menu {\r\n        left: -130px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width:1024px) and (max-width: 1280px) {\r\n    .name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title {\r\n        width: 76%;\r\n    }\r\n}\r\n\r\n.cookies-header {\r\n    background: #f87b80;\r\n    color: #fff;\r\n    float: left;\r\n    width: 100%;\r\n    padding: 8px 15px;\r\n    font-family: montserratlight;\r\n    font-size: 12px;\r\n    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2)\r\n}\r\n\r\n.cookies-header i {\r\n    color: #fff;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin-right: 9px;\r\n    font-size: 16px;\r\n    margin-top: -3px\r\n}\r\n\r\n.cookies-header .btn-close {\r\n    opacity: .8;\r\n    line-height: 15px\r\n}\r\n\r\n.cookies-header a {\r\n    color: #fff;\r\n    text-decoration: underline\r\n}\r\n\r\n#new-header.cookies-parent {\r\n    height: 58px;\r\n    margin-bottom: 40px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-logopadding {\r\n    padding-top: 5px;\r\n    height: 72px;\r\n    margin-top: -2px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-default {\r\n    height: 98px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-left {\r\n    margin-top: 14px\r\n}\r\n\r\n.settings-cookies #membership-details .membership-details-inner-tabs,\r\n.settings-cookies .left-sidebar {\r\n    top: 98px\r\n}\r\n\r\n.settings-cookies .analytics-left-side {\r\n    top: 0!important\r\n}\r\n\r\n.settings-cookies #new-header.cookies-parent {\r\n    height: 50px;\r\n    margin-bottom: 0\r\n}\r\n\r\nheader#new-header.cookies-parent {\r\n    margin-bottom: 40;\r\n    height: 50px\r\n}\r\n\r\n.settings-cookies #smScrSideNavbar.left-sidebar,\r\n.settings-cookies .membership-details-inner-tabs {\r\n    top: 50px!important\r\n}\r\n\r\n.help-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: right;\r\n    width: 20%\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 15px 12px 12px;\r\n    font-size: 12px;\r\n    text-transform: none;\r\n    color: #62696d;\r\n    font-family: montserratlight;\r\n    border: none\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: absolute;\r\n    top: -1px;\r\n    right: 3px\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 33px;\r\n    right: -13px;\r\n    min-width: 140px;\r\n    font-size: 12px;\r\n    background: #f87b80;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.help-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    right: 17px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #f87b80;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #f87b80;\r\n    content: ''\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover {\r\n    color: #fff;\r\n    background: 0 0\r\n}\r\n\r\n.navbar .help-dropdown-wrapper .dropdown-menu li>a:hover,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:hover {\r\n    background: #f9888d;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .help-dropdown-wrapper li>a:focus,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus i.material-icons,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 3px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    font-size: 13px!important;\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    padding: 0\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.icon-help {\r\n    z-index: 9;\r\n    position: relative;\r\n    cursor: pointer\r\n}\r\n\r\n.icon-help i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    transition: all .3s ease\r\n}\r\n\r\n.icon-help i.material-icons:focus .icon-help i.material-icons:active,\r\n.icon-help i.material-icons:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.builder-help-icon {\r\n    top: 8px\r\n}\r\n\r\n.support_outer {\r\n    color: #999;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    height: 37px;\r\n    cursor: pointer;\r\n    padding-top: 7px;\r\n}\r\n\r\ni.support_icon {\r\n    font-size: 17px;\r\n    color: #8e989f;\r\n    opacity: 0.5;\r\n}\r\n\r\n.support_outer:hover i.support_icon {\r\n    color: #fb5f66;\r\n    opacity: 1;\r\n}\r\n\r\n.help-options .dropdown-menu {\r\n    font-size: 12px;\r\n    background: #62696d;\r\n    top: 35px;\r\n    left: -105px;\r\n    min-width: 130px;\r\n}\r\n\r\n.help-options .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    left: 105px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #62696d;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #62696d;\r\n    content: '';\r\n}\r\n\r\n.help-options .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important;\r\n}\r\n\r\n.help-options .dropdown-menu>li>a:hover {\r\n    background: #71787b;\r\n    color: #fff;\r\n}\r\n\r\n.help-options .dropdown-menu >li>a.hvr-sweep-to-right::before {\r\n    background: #71787b;\r\n}\r\n\r\n.help-options .dropdown-icons {\r\n    font-size: 12px;\r\n    color: #fff;\r\n    padding: 5px 0 0;\r\n    float: left;\r\n    margin-right: 10px;\r\n}\r\n\r\n.help-options .dropdown-text {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px;\r\n}\r\n\r\n.help-options .dropdown-link {\r\n    font-size: 16px;\r\n    color: #8e989f;\r\n    opacity: 0.5;\r\n    margin-top: 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.animated {\r\n    -webkit-animation-duration: 1s;\r\n    animation-duration: 2s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slow {\r\n    -webkit-animation-duration: 1.5s;\r\n    animation-duration: 3s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slower {\r\n    -webkit-animation-duration: 2s;\r\n    animation-duration: 2s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slowest {\r\n    -webkit-animation-duration: 3s;\r\n    animation-duration: 3s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.bounceIn {\r\n    -webkit-animation-name: bounceIn;\r\n    animation-name: bounceIn;\r\n}\r\n\r\n\r\n/***********\r\n* bounceIn *\r\n************/\r\n\r\n@-webkit-keyframes bounceIn {\r\n    0% {\r\n        opacity: 0;\r\n        -webkit-transform: scale(.3);\r\n    }\r\n    50% {\r\n        opacity: 1;\r\n        -webkit-transform: scale(1.05);\r\n    }\r\n    70% {\r\n        -webkit-transform: scale(.9);\r\n    }\r\n    100% {\r\n        -webkit-transform: scale(1);\r\n    }\r\n}\r\n\r\n@keyframes bounceIn {\r\n    0% {\r\n        opacity: 0;\r\n        transform: scale(.3);\r\n    }\r\n    50% {\r\n        opacity: 1;\r\n        transform: scale(1.05);\r\n    }\r\n    70% {\r\n        transform: scale(.9);\r\n    }\r\n    100% {\r\n        transform: scale(1);\r\n    }\r\n}\r\n\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 30px;\r\n    padding-top: 22px;\r\n    height: 125px\r\n}\r\n\r\n#new-header .company-nav {\r\n    height: 125px!important\r\n}\r\n\r\n.company-nav .navbar-header {\r\n    width: 50%!important\r\n}\r\n\r\n.company_name_avatar-circle {\r\n    float: left;\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50px;\r\n    background: #eceff0;\r\n    color: #61686e;\r\n    text-align: center;\r\n    font-family: montserratregular;\r\n    font-size: 28px;\r\n    padding-top: 30px;\r\n    margin-right: 30px;\r\n    text-transform: uppercase\r\n}\r\n\r\n.company_name_span {\r\n    float: left;\r\n    margin-top: 25px;\r\n    font-size: 26px;\r\n    color: #61686e;\r\n    font-family: montserratlight;\r\n    line-height: 30px\r\n}\r\n\r\n.company-home {\r\n    background: #f6f8f9;\r\n    height: 100vh;\r\n    float: left;\r\n    width: 100%;\r\n    padding-top: 100px!important;\r\n    margin-top: 0!important\r\n}\r\n@media (max-width: 767px) {\r\n     /*header#new-header.cookies-parent {\r\n        margin-bottom: 0;\r\n        height: 50px\r\n    }\r\n    .settings-cookies #smScrSideNavbar.left-sidebar,\r\n    .settings-cookies .membership-details-inner-tabs {\r\n        top: 50px!important\r\n    }*/\r\n    #smScrWrapperContent {\r\n        display: none\r\n    }\r\n    #new-header .company-nav {\r\n        display: block!important\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0!important\r\n    }\r\n    #new-header .company-nav .navbar-header {\r\n        width: 100%!important\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px!important\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px\r\n    }\r\n    #new-header {\r\n        height: 50px\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    #lgScrSideNavbar,\r\n    .dash-circle,\r\n    .dash-prog-outer h2,\r\n    .full-menu {\r\n        display: none\r\n    }\r\n    #responsive-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0;\r\n        padding-left: 0\r\n    }\r\n    .main-logo {\r\n        display: none!important\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 7px;\r\n        position: relative\r\n    }\r\n    #responsive-header .navbar-default {\r\n        background: #fb5f66!important;\r\n        border: none;\r\n        margin-top: 0\r\n    }\r\n    #responsive-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 13px\r\n    }\r\n    #responsive-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 16px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 7px\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: 0 0;\r\n        float: right;\r\n        margin: 0 5px\r\n    }\r\n    .mobile-menu button:focus {\r\n        background: 0 0!important;\r\n        color: #fff!important\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: 0 0\r\n    }\r\n    .mobile-dash {\r\n        padding: 0\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 5px 0\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0;\r\n        display: block;\r\n        text-transform: capitalize\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 24px;\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n        margin-left: 30px;\r\n        /*white-space: normal;*/\r\n        word-wrap: break-word;\r\n        width: 175px;\r\n        text-align: right;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 20px\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff\r\n    }\r\n    .white-logo {\r\n        display: block!important\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center\r\n    }\r\n    #responsive-header .navbar-header {\r\n        float: left;\r\n        margin-left: -5px;\r\n        margin-right: 0!important\r\n    }\r\n    #responsive-header .navbar-logopadding {\r\n        padding-right: 0;\r\n        padding-top: 0\r\n    }\r\n    #responsive-header .navbar-default {\r\n        height: 50px;\r\n        margin: 0;\r\n        padding-bottom: 0\r\n    }\r\n    .settings-cookies #new-header.cookies-parent {\r\n        height: 50px;\r\n        margin-bottom: 0\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin: -20px auto 0\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a .company-title {\r\n        font-size: 16px\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu>li>a .company-site {\r\n        width: 91%;\r\n        font-size: 14px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a.add-new-company {\r\n        font-size: 14px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n        font-size: 24px\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px\r\n    }\r\n    header#new-header.cookies-parent {\r\n        margin-bottom: 0;\r\n        height: 50px\r\n    }\r\n    .settings-cookies #smScrSideNavbar.left-sidebar,\r\n    .settings-cookies .membership-details-inner-tabs {\r\n        top: 50px!important\r\n    }\r\n    #smScrWrapperContent {\r\n        display: none\r\n    }\r\n    #new-header .company-nav {\r\n        display: block!important\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0!important\r\n    }\r\n    #new-header .company-nav .navbar-header {\r\n        width: 100%!important\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px!important\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px\r\n    }\r\n    #new-header {\r\n        height: 50px !important;\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n    #new-header.cookies-parent{\r\n        margin-bottom: 0;\r\n    }\r\n}"
+module.exports = "@font-face {\r\n    font-family: montserratregular;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-regular-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-regular-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-regular-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-regular-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratbold;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-bold-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-bold-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-bold-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-bold-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratsemibold;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-semibold-webfont.eot?#iefix) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-semibold-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-semibold-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-semibold-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: montserratlight;\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../assets/fonts/montserrat-light-webfont.eot) format(\"embedded-opentype\"), url(../assets/fonts/montserrat-light-webfont.woff2) format(\"woff2\"), url(../assets/fonts/montserrat-light-webfont.woff) format(\"woff\"), url(../assets/fonts/montserrat-light-webfont.ttf) format(\"truetype\")\r\n}\r\n\r\n@font-face {\r\n    font-family: 'Material Icons';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(MaterialIcons-Regular.eot);\r\n    src: local('Material Icons'), local('materialIcons-Regular'), url(../assets/fonts/materialIcons-Regular.woff2) format('woff2'), url(../fonts/materialIcons-Regular.woff) format('woff'), url(../fonts/materialIcons-Regular.ttf) format('truetype')\r\n}\r\n\r\n.material-icons {\r\n    font-family: 'Material Icons';\r\n    font-weight: 400;\r\n    font-style: normal;\r\n    font-size: 24px;\r\n    display: inline-block;\r\n    line-height: 1;\r\n    text-transform: none;\r\n    letter-spacing: normal;\r\n    word-wrap: normal;\r\n    white-space: nowrap;\r\n    direction: ltr;\r\n    -webkit-font-smoothing: antialiased;\r\n    text-rendering: optimizeLegibility;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    font-feature-settings: 'liga'\r\n}\r\n\r\n.ellipsis {\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    white-space: nowrap;\r\n}\r\n\r\na:focus,\r\na:hover {\r\n    text-decoration: none;\r\n    color: #8e989f\r\n}\r\n\r\nbody {\r\n    font-family: montserratregular;\r\n}\r\n\r\n\r\n/* Sweep To Right */\r\n\r\n.hvr-sweep-to-right {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    -webkit-transition-property: color;\r\n    transition-property: color;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n}\r\n\r\n.hvr-sweep-to-right:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    -webkit-transform: scaleX(0);\r\n    transform: scaleX(0);\r\n    -webkit-transform-origin: 0 50%;\r\n    transform-origin: 0 50%;\r\n    -webkit-transition-property: transform;\r\n    transition-property: transform;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-sweep-to-right:hover,\r\n.hvr-sweep-to-right:focus,\r\n.hvr-sweep-to-right:active {\r\n    color: white;\r\n}\r\n\r\n.hvr-sweep-to-right:hover:before,\r\n.hvr-sweep-to-right:focus:before,\r\n.hvr-sweep-to-right:active:before {\r\n    -webkit-transform: scaleX(1);\r\n    transform: scaleX(1);\r\n}\r\n\r\n\r\n/* Underline From Left */\r\n\r\n.hvr-underline-from-left {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    overflow: hidden;\r\n}\r\n\r\n.hvr-underline-from-left:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    left: 0;\r\n    right: 100%;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    height: 4px;\r\n    -webkit-transition-property: right;\r\n    transition-property: right;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-underline-from-left:hover:before,\r\n.hvr-underline-from-left:focus:before,\r\n.hvr-underline-from-left:active:before {\r\n    right: 0;\r\n}\r\n\r\n\r\n/* Sweep To Left */\r\n\r\n.hvr-sweep-to-left {\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    -webkit-transform: translateZ(0);\r\n    transform: translateZ(0);\r\n    box-shadow: 0 0 1px rgba(0, 0, 0, 0);\r\n    -webkit-backface-visibility: hidden;\r\n    backface-visibility: hidden;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    position: relative;\r\n    -webkit-transition-property: color;\r\n    transition-property: color;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n}\r\n\r\n.hvr-sweep-to-left:before {\r\n    content: \"\";\r\n    position: absolute;\r\n    z-index: -1;\r\n    top: 0;\r\n    left: 0;\r\n    right: 0;\r\n    bottom: 0;\r\n    background: #2098d1;\r\n    -webkit-transform: scaleX(0);\r\n    transform: scaleX(0);\r\n    -webkit-transform-origin: 100% 50%;\r\n    transform-origin: 100% 50%;\r\n    -webkit-transition-property: transform;\r\n    transition-property: transform;\r\n    -webkit-transition-duration: 0.3s;\r\n    transition-duration: 0.3s;\r\n    -webkit-transition-timing-function: ease-out;\r\n    transition-timing-function: ease-out;\r\n}\r\n\r\n.hvr-sweep-to-left:hover,\r\n.hvr-sweep-to-left:focus,\r\n.hvr-sweep-to-left:active {\r\n    color: white;\r\n}\r\n\r\n.hvr-sweep-to-left:hover:before,\r\n.hvr-sweep-to-left:focus:before,\r\n.hvr-sweep-to-left:active:before {\r\n    -webkit-transform: scaleX(1);\r\n    transform: scaleX(1);\r\n}\r\n\r\n\r\n/* header css */\r\n\r\n.name-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: left;\r\n    width: 119px;\r\n}\r\n\r\n.navbar-rightside button.btn.btn-default.dropdown-toggle {\r\n    margin-top: 7px\r\n}\r\n\r\n.navbar-rightside .name-dropdown-wrapper.btn-group {\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.navbar-rightside .name-dropdown-wrapper .dropdown-menu {\r\n    top: 33px;\r\n    position: absolute\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 0;\r\n    font-size: 13px;\r\n    text-transform: none;\r\n    color: #8e989f;\r\n    font-family: montserratlight;\r\n    float: left;\r\n    width: 100%;\r\n    border: none;\r\n    background: 0 0;\r\n    box-shadow: none;\r\n    margin-top: 8px;\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #fb545b;\r\n    float: left\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title {\r\n    float: left;\r\n    width: 82%;\r\n    min-width: 60px;\r\n    text-align: left;\r\n    text-transform: capitalize;\r\n    transition: all .3s ease 0s\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.name-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 9px;\r\n    left: -78px;\r\n    max-width: 180px;\r\n    font-size: 12px;\r\n    background: #62696d;\r\n    position: relative;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.name-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -9px;\r\n    left: 76px;\r\n    display: inline-block;\r\n    border-right: 10px solid transparent;\r\n    border-bottom: 12px solid #62696d;\r\n    border-left: 10px solid transparent;\r\n    border-bottom-color: #62696d;\r\n    content: '';\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list {\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a:focus i.material-icons,\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a span.name-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a i.material-icons {\r\n    font-size: 12px;\r\n    color: #fff;\r\n    padding: 5px 0 0\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>.name-list li>a span.name-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.navbar .name-dropdown-wrapper .dropdown-menu .name-list li>a:hover,\r\n.navbar.navbar-default .name-dropdown-wrapper .dropdown-menu .name-list li>a:hover {\r\n    background: #71787b;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .name-list li>a:focus,\r\n.navbar.navbar-default .name-dropdown-wrapper .dropdown-menu .name-list li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu>li>a.hvr-sweep-to-right::before {\r\n    background: #fa8f93!important\r\n}\r\n\r\n.navbar .dropdown-menu .company-list .active>a,\r\n.navbar .dropdown-menu .company-list li>a:focus,\r\n.navbar .dropdown-menu .company-list li>a:hover,\r\n.navbar.navbar-default .dropdown-menu .company-list .active>a,\r\n.navbar.navbar-default .dropdown-menu .company-list li>a:focus,\r\n.navbar.navbar-default .dropdown-menu .company-list li>a:hover {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.name-dropdown-border {\r\n    float: left;\r\n    width: 87%;\r\n    margin: 5px 12px;\r\n    border-top: 1px solid #7a8185!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list {\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n#new-header .navbar-right .name-dropdown-wrapper .dropdown-menu .company-list .slimScrollDiv {\r\n    height: 110px !important;\r\n}\r\n\r\n#new-header .name-dropdown-wrapper .dropdown-menu .company-list .slimscroll {\r\n    float: left;\r\n    width: 100%!important;\r\n    height: 110px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li {\r\n    line-height: 24px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li span.company-list-title {\r\n    float: left;\r\n    width: 90%;\r\n    padding-right: 5px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li span.company-selected {\r\n    float: right\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu .company-list li a span.company-selected i.material-icons,\r\n.name-dropdown-wrapper .dropdown-menu .company-list li.active a span.company-selected i.material-icons {\r\n    font-size: 12px;\r\n    position: relative;\r\n    top: 2px\r\n}\r\n\r\n.name-dropdown-wrapper .dropdown-menu div>li>a.hvr-sweep-to-right::before {\r\n    background: #71787b\r\n}\r\n\r\n.name-dd-minh {\r\n    height: 37px\r\n}\r\n\r\n.help-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: right;\r\n    width: 20%\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 15px 12px 12px;\r\n    font-size: 12px;\r\n    text-transform: none;\r\n    color: #62696d;\r\n    font-family: montserratlight;\r\n    border: none\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: absolute;\r\n    top: -1px;\r\n    right: 3px\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 33px;\r\n    right: -13px;\r\n    min-width: 140px;\r\n    font-size: 12px;\r\n    background: #f87b80;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.help-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    right: 17px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #f87b80;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #f87b80;\r\n    content: ''\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover {\r\n    color: #fff;\r\n    background: 0 0\r\n}\r\n\r\n.navbar .help-dropdown-wrapper .dropdown-menu li>a:hover,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:hover {\r\n    background: #f9888d;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .help-dropdown-wrapper li>a:focus,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus i.material-icons,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 3px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    font-size: 13px!important;\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    padding: 0\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.icon-help {\r\n    z-index: 9;\r\n    position: relative;\r\n    cursor: pointer\r\n}\r\n\r\n.icon-help i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    transition: all .3s ease\r\n}\r\n\r\n.icon-help i.material-icons:focus .icon-help i.material-icons:active,\r\n.icon-help i.material-icons:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.builder-help-icon {\r\n    top: 8px\r\n}\r\n\r\n#new-header .navbar-left ul,\r\n#new-header .navbar-left ul li,\r\n.billing-grey-bottom ul.billing-list li,\r\n.billing-white-bottom ul.billing-list li,\r\n.left-sidebar ul li,\r\nli,\r\nul {\r\n    list-style: none\r\n}\r\n\r\n#new-header {\r\n    float: left;\r\n    width: 100%;\r\n    height: 60px;\r\n    transition: all .5s linear\r\n}\r\n\r\n#new-header .navbar-header {\r\n    width: 255px\r\n}\r\n\r\n#new-header .navbar-default {\r\n    background: #fff!important;\r\n    border-bottom: 1px solid #dae2e6;\r\n    padding-bottom: 10px!important;\r\n    margin: 0!important;\r\n    height: 60px;\r\n    z-index: 999;\r\n}\r\n\r\n#new-header.active {\r\n    box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, .4);\r\n    min-height: 72px;\r\n    z-index: 99;\r\n    position: relative\r\n}\r\n\r\n#new-header .navbar-fixed-top .nav-padding {\r\n    padding-left: 0;\r\n    padding-right: 35px\r\n}\r\n\r\n#new-header .navbar-logopadding {\r\n    padding-right: 35px;\r\n    margin-left: 0!important;\r\n    padding-top: 0;\r\n    height: 60px;\r\n    position: relative;\r\n    top: -2px\r\n}\r\n\r\n#new-header .navbar-right a.navbar-logout,\r\n#new-header .navbar-right a.navbar-name {\r\n    font-family: montserratregular;\r\n    padding-top: 2px;\r\n    font-weight: 400;\r\n    cursor: pointer\r\n}\r\n\r\n#new-header .navbar-left {\r\n    margin-top: 10px;\r\n    border-left: 1px solid #dae2e6;\r\n    padding-left: 0px;\r\n}\r\n\r\n#new-header .navbar-left ul {\r\n    margin-top: 8px;\r\n    padding-left: 25px\r\n}\r\n\r\n#new-header .navbar-left ul li {\r\n    display: inline-block;\r\n    margin-right: 35px;\r\n    margin-top: 0\r\n}\r\n\r\n#new-header .navbar-left ul li a {\r\n    font-size: 12px;\r\n    color: #8e989f;\r\n    text-transform: uppercase;\r\n    transition: all .1s ease 0s!important;\r\n    overflow: visible\r\n}\r\n\r\n#new-header .navbar-left ul li a i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: relative;\r\n    top: 3px\r\n}\r\n\r\n#new-header .navbar-left ul li a.hvr-underline-from-left::before {\r\n    background: #fb5f66;\r\n    height: 3px;\r\n    position: absolute;\r\n    top: 39px\r\n}\r\n\r\n#new-header .navbar-left ul li a.active.hvr-underline-from-left::before {\r\n    background: #fb5f66;\r\n    right: 0;\r\n    height: 3px;\r\n    position: absolute;\r\n    top: 39px\r\n}\r\n\r\n#new-header .navbar-right {\r\n    float: right;\r\n    color: #fb545b;\r\n    font-size: 18px;\r\n    width: 150px\r\n}\r\n\r\n#new-header .navbar-right-block {\r\n    margin-top: 11px;\r\n    padding-right: 0;\r\n    padding-left: 12px;\r\n    margin-bottom: -6px;\r\n    border-left: 1px solid #dae2e6;\r\n}\r\n\r\n#new-header .navbar-right a.navbar-name {\r\n    font-size: 13px;\r\n    color: #8e989f;\r\n    float: left;\r\n    padding-right: 15px\r\n}\r\n\r\n#new-header .navbar-right a.navbar-logout {\r\n    font-size: 13px;\r\n    color: #8e989f;\r\n    float: left\r\n}\r\n\r\n@media screen and (min-width: 768px) and (max-width: 768px) {\r\n    #new-header .navbar-right {\r\n        color: #fb545b;\r\n        font-size: 18px;\r\n        width: 20%\r\n    }\r\n    nav .cookies-header {\r\n        padding: 8px 10px\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 1024px) and (max-width: 1024px) {\r\n    #new-header .navbar-right {\r\n        width: 16%\r\n    }\r\n}\r\n\r\n\r\n#new-header .company-nav {\r\n    display: block!important\r\n}\r\n\r\n#new-header .navbar-default.company-nav {\r\n    background: #fff!important;\r\n    border-bottom: 1px solid #dae2e6;\r\n    padding-top: 0!important\r\n}\r\n\r\n#new-header .company-nav .navbar-header {\r\n    width: 100%!important\r\n}\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 15px;\r\n    padding-top: 22px;\r\n    height: 105px;\r\n    width: 100%;\r\n    padding-right: 15px!important\r\n}\r\n\r\n#new-header .company-nav.navbar-fixed-top .nav-padding {\r\n    padding-left: 0;\r\n    padding-right: 0\r\n}\r\n\r\n#new-header.cookies-parent {\r\n    height: 58px;\r\n    margin-bottom: 40px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-logopadding {\r\n    padding-top: 5px;\r\n    height: 72px;\r\n    margin-top: -2px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-default {\r\n    height: 98px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-left {\r\n    margin-top: 14px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-right {\r\n    margin-top: 5px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-right-block {\r\n    margin-top: 10px\r\n}\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 30px;\r\n    padding-top: 22px;\r\n    height: 125px\r\n}\r\n\r\n#new-header .company-nav {\r\n    height: 125px!important\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    .settings-cookies #new-header.cookies-parent {\r\n        height: 50px;\r\n        margin-bottom: 0\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n    #new-header.cookies-parent {\r\n        height: 58px;\r\n        margin-bottom: 40px\r\n    }\r\n    #new-header.cookies-parent .navbar-logopadding {\r\n        padding-top: 5px;\r\n        height: 72px;\r\n        margin-top: -2px\r\n    }\r\n    #new-header.cookies-parent .navbar-default {\r\n        height: 98px\r\n    }\r\n    #new-header.cookies-parent .navbar-left {\r\n        margin-top: 14px\r\n    }\r\n}\r\n\r\n@media (max-width: 992px) {\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 30px;\r\n        padding-top: 22px;\r\n        height: 125px\r\n    }\r\n    #new-header .company-nav {\r\n        height: 125px!important\r\n    }\r\n}\r\n\r\n\r\n/* Start: Responsiveness */\r\n\r\n.mobile-menu {\r\n    display: none;\r\n}\r\n\r\n.white-logo {\r\n    display: none !important;\r\n}\r\n\r\n.company-list,\r\n.name-list {\r\n    width: 100%;\r\n    float: left;\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    #new-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0px;\r\n    }\r\n    .full-menu,\r\n    .dash-circle,\r\n    .dash-prog-outer h2 {\r\n        display: none;\r\n    }\r\n    .main-logo {\r\n        display: none !important;\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 9px;\r\n        position: relative;\r\n    }\r\n    #new-header .navbar-default {\r\n        background: #fb5f66 !important;\r\n        border: none;\r\n    }\r\n    #new-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 15px;\r\n    }\r\n    #new-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 18px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 10px;\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: none;\r\n        float: right;\r\n        margin: 0px 10px;\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: none;\r\n    }\r\n    .mobile-dash {\r\n        padding: 0px;\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0px;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px;\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 10px 0px;\r\n        border-top: 1px solid #72787c!important;\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0px;\r\n        display: block;\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 24px;\r\n        /* margin: 10px 19px; */\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px;\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px;\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151;\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0px;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 30px;\r\n        font-family: montserratregular;\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff;\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left;\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right;\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff;\r\n    }\r\n    .white-logo {\r\n        display: block !important;\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px;\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center;\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center;\r\n    }\r\n    #new-header .navbar-header {\r\n        float: left;\r\n        margin-left: 0px;\r\n        margin-right: 0px !important;\r\n    }\r\n    #new-header .navbar-logopadding {\r\n        padding-right: 0px;\r\n        padding-top: 0px;\r\n    }\r\n    #new-header .navbar-default {\r\n        height: 56px;\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin-top: -20px;\r\n        margin: 0 auto;\r\n        margin-top: -20px;\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none;\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a .company-title {\r\n        font-size: 16px;\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu > li > a .company-site {\r\n        width: 91%;\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu >li > a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a.add-new-company {\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a i.material-icons {\r\n        font-size: 24px;\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        left: 42px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px;\r\n    }\r\n    /* start: new css 19sep2016 */\r\n    .header-links li {\r\n        font-size: 14px !important;\r\n        text-transform: uppercase;\r\n        font-family: montserratregular;\r\n    }\r\n    .header-links i.material-icons {\r\n        opacity: 0.5;\r\n        font-size: 18px;\r\n    }\r\n    .setting-logout-links li a i.material-icons {\r\n        font-size: 14px;\r\n        margin-top: 5px;\r\n    }\r\n    /* end: new css 19sep2016 */\r\n    .hvr-underline-from-left:hover:before,\r\n    .hvr-underline-from-left:focus:before,\r\n    .hvr-underline-from-left:active:before {\r\n        background: none;\r\n    }\r\n    .hvr-underline-from-left:before {\r\n        background: none;\r\n    }\r\n    #new-header .company-nav {\r\n        display: block !important;\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0px !important;\r\n    }\r\n    .company-nav .navbar-header {\r\n        width: 100% !important;\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px !important;\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px;\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px;\r\n    }\r\n}\r\n\r\n\r\n/* End: Responsiveness */\r\n\r\n.builder-dropdown-menu {\r\n    top: 46px;\r\n}\r\n\r\n\r\n/*.company_name_avatar-circle {\r\n    float: left;\r\n    width: 60px;\r\n    height: 60px;\r\n    border-radius: 50px;\r\n    background: #eceff0;\r\n    color: #444f54;\r\n    text-align: center;\r\n    font-family: montserratregular;\r\n    font-size: 24px;\r\n    padding-top: 23px;\r\n    margin-right: 20px;\r\n    text-transform: uppercase;\r\n  }\r\n\r\n  .company_name_span{\r\n    float: left;\r\n    margin-top: 20px;\r\n    font-size: 38px;\r\n  }*/\r\n\r\n@media (max-width: 767px) {\r\n    #setting-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0px;\r\n        padding-left: 0px;\r\n    }\r\n    .full-menu,\r\n    .dash-circle,\r\n    .dash-prog-outer h2 {\r\n        display: none;\r\n    }\r\n    .main-logo {\r\n        display: none !important;\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 7px;\r\n        position: relative;\r\n    }\r\n    #setting-header .navbar-default {\r\n        background: #BEC5C9 !important;\r\n        border: none;\r\n        margin-top: 0px;\r\n    }\r\n    #setting-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 13px;\r\n    }\r\n    #setting-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 16px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 7px;\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: none;\r\n        float: right;\r\n        margin: 0px 5px;\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: none;\r\n    }\r\n    .mobile-dash {\r\n        padding: 0px;\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0px;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px;\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 5px 0px;\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0px;\r\n        display: block;\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 30px;\r\n        /* margin: 10px 19px; */\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px;\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px;\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151;\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0px;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 30px;\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff;\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left;\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right;\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff;\r\n        text-transform: capitalize;\r\n    }\r\n    .white-logo {\r\n        display: block !important;\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px;\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center;\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center;\r\n    }\r\n    #setting-header .navbar-header {\r\n        float: left;\r\n        margin-left: -5px;\r\n        margin-right: 0px !important;\r\n    }\r\n    #setting-header .navbar-logopadding {\r\n        padding-right: 0px;\r\n        padding-top: 0px;\r\n    }\r\n    #setting-header .navbar-default {\r\n        height: 50px;\r\n        margin: 0px;\r\n        padding-bottom: 0px;\r\n        z-index: 9999 !important;\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin-top: -20px;\r\n        margin: 0 auto;\r\n        margin-top: -20px;\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none;\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a .company-title {\r\n        font-size: 16px;\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu > li > a .company-site {\r\n        width: 91%;\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu >li > a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a.add-new-company {\r\n        font-size: 14px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a i.material-icons {\r\n        font-size: 24px;\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        left: 42px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px;\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 480px) and (max-width: 480px) {\r\n    .mobile-menu .dropdown-menu {\r\n        left: -158px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width: 640px) and (max-width: 640px) {\r\n    .mobile-menu .dropdown-menu {\r\n        left: -130px;\r\n    }\r\n}\r\n\r\n@media screen and (min-width:1024px) and (max-width: 1280px) {\r\n    .name-dropdown-wrapper button.btn.btn-default.dropdown-toggle span.name-title {\r\n        width: 76%;\r\n    }\r\n}\r\n\r\n.cookies-header {\r\n    background: #f87b80;\r\n    color: #fff;\r\n    float: left;\r\n    width: 100%;\r\n    padding: 8px 15px;\r\n    font-family: montserratlight;\r\n    font-size: 12px;\r\n    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2)\r\n}\r\n\r\n.cookies-header i {\r\n    color: #fff;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    margin-right: 9px;\r\n    font-size: 16px;\r\n    margin-top: -3px\r\n}\r\n\r\n.cookies-header .btn-close {\r\n    opacity: .8;\r\n    line-height: 15px\r\n}\r\n\r\n.cookies-header a {\r\n    color: #fff;\r\n    text-decoration: underline\r\n}\r\n\r\n#new-header.cookies-parent {\r\n    height: 58px;\r\n    margin-bottom: 40px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-logopadding {\r\n    padding-top: 5px;\r\n    height: 72px;\r\n    margin-top: -2px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-default {\r\n    height: 98px\r\n}\r\n\r\n#new-header.cookies-parent .navbar-left {\r\n    margin-top: 14px\r\n}\r\n\r\n.settings-cookies #membership-details .membership-details-inner-tabs,\r\n.settings-cookies .left-sidebar {\r\n    top: 98px\r\n}\r\n\r\n.settings-cookies .analytics-left-side {\r\n    top: 0!important\r\n}\r\n\r\n.settings-cookies #new-header.cookies-parent {\r\n    height: 50px;\r\n    margin-bottom: 0\r\n}\r\n\r\nheader#new-header.cookies-parent {\r\n    margin-bottom: 40;\r\n    height: 50px\r\n}\r\n\r\n.settings-cookies #smScrSideNavbar.left-sidebar,\r\n.settings-cookies .membership-details-inner-tabs {\r\n    top: 50px!important\r\n}\r\n\r\n.help-dropdown-wrapper.btn-group {\r\n    position: relative;\r\n    margin: 0;\r\n    float: right;\r\n    width: 20%\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n    padding: 15px 12px 12px;\r\n    font-size: 12px;\r\n    text-transform: none;\r\n    color: #62696d;\r\n    font-family: montserratlight;\r\n    border: none\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    position: absolute;\r\n    top: -1px;\r\n    right: 3px\r\n}\r\n\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,\r\n.help-dropdown-wrapper button.btn.btn-default.dropdown-toggle:hover {\r\n    background: 0 0!important;\r\n    box-shadow: none!important;\r\n    border: 0!important\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu {\r\n    padding: 10px 0;\r\n    z-index: 1;\r\n    top: 33px;\r\n    right: -13px;\r\n    min-width: 140px;\r\n    font-size: 12px;\r\n    background: #f87b80;\r\n    border-radius: 4px!important;\r\n    border: none;\r\n    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);\r\n    display: none\r\n}\r\n\r\n.help-dropdown-wrapper:hover .dropdown-menu {\r\n    display: block\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    right: 17px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #f87b80;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #f87b80;\r\n    content: ''\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover {\r\n    color: #fff;\r\n    background: 0 0\r\n}\r\n\r\n.navbar .help-dropdown-wrapper .dropdown-menu li>a:hover,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:hover {\r\n    background: #f9888d;\r\n    color: #fff\r\n}\r\n\r\n.navbar .dropdown-menu .help-dropdown-wrapper li>a:focus,\r\n.navbar.navbar-default .help-dropdown-wrapper .dropdown-menu li>a:focus {\r\n    color: #fff;\r\n    background-color: transparent\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a:focus i.material-icons,\r\n.help-dropdown-wrapper .dropdown-menu>li>a:hover i.material-icons {\r\n    color: #fff\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 3px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    font-size: 13px!important;\r\n    float: left;\r\n    width: 100%\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-icon {\r\n    float: left;\r\n    width: auto;\r\n    margin-right: 10px\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n    font-size: 18px;\r\n    color: #fff;\r\n    padding: 0\r\n}\r\n\r\n.help-dropdown-wrapper .dropdown-menu>li>a span.help-list-title {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px\r\n}\r\n\r\n.icon-help {\r\n    z-index: 9;\r\n    position: relative;\r\n    cursor: pointer\r\n}\r\n\r\n.icon-help i.material-icons {\r\n    font-size: 18px;\r\n    color: #bec5c9;\r\n    transition: all .3s ease\r\n}\r\n\r\n.icon-help i.material-icons:focus .icon-help i.material-icons:active,\r\n.icon-help i.material-icons:hover {\r\n    color: #fb545b\r\n}\r\n\r\n.builder-help-icon {\r\n    top: 8px\r\n}\r\n\r\n.support_outer {\r\n    color: #999;\r\n    display: inline-block;\r\n    vertical-align: middle;\r\n    height: 37px;\r\n    cursor: pointer;\r\n    padding-top: 7px;\r\n}\r\n\r\ni.support_icon {\r\n    font-size: 17px;\r\n    color: #8e989f;\r\n    opacity: 0.5;\r\n}\r\n\r\n.support_outer:hover i.support_icon {\r\n    color: #fb5f66;\r\n    opacity: 1;\r\n}\r\n\r\n.help-options .dropdown-menu {\r\n    font-size: 12px;\r\n    background: #62696d;\r\n    top: 35px;\r\n    left: -105px;\r\n    min-width: 130px;\r\n}\r\n\r\n.help-options .dropdown-menu:before {\r\n    position: absolute;\r\n    top: -12px;\r\n    left: 105px;\r\n    display: inline-block;\r\n    border-right: 8px solid transparent;\r\n    border-bottom: 12px solid #62696d;\r\n    border-left: 8px solid transparent;\r\n    border-bottom-color: #62696d;\r\n    content: '';\r\n}\r\n\r\n.help-options .dropdown-menu>li>a {\r\n    color: #fff;\r\n    padding: 5px 13px!important;\r\n    text-transform: capitalize;\r\n    font-family: montserratregular;\r\n    float: left;\r\n    width: 100%;\r\n    font-size: 12px!important;\r\n}\r\n\r\n.help-options .dropdown-menu>li>a:hover {\r\n    background: #71787b;\r\n    color: #fff;\r\n}\r\n\r\n.help-options .dropdown-menu >li>a.hvr-sweep-to-right::before {\r\n    background: #71787b;\r\n}\r\n\r\n.help-options .dropdown-icons {\r\n    font-size: 12px;\r\n    color: #fff;\r\n    padding: 5px 0 0;\r\n    float: left;\r\n    margin-right: 10px;\r\n}\r\n\r\n.help-options .dropdown-text {\r\n    float: left;\r\n    font-size: 12px;\r\n    color: #fff;\r\n    line-height: 22px;\r\n}\r\n\r\n.help-options .dropdown-link {\r\n    font-size: 16px;\r\n    color: #8e989f;\r\n    opacity: 0.5;\r\n    margin-top: 9px;\r\n    cursor: pointer;\r\n}\r\n\r\n.animated {\r\n    -webkit-animation-duration: 1s;\r\n    animation-duration: 2s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slow {\r\n    -webkit-animation-duration: 1.5s;\r\n    animation-duration: 3s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slower {\r\n    -webkit-animation-duration: 2s;\r\n    animation-duration: 2s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.slowest {\r\n    -webkit-animation-duration: 3s;\r\n    animation-duration: 3s;\r\n    -webkit-animation-fill-mode: both;\r\n    animation-fill-mode: both;\r\n}\r\n\r\n.bounceIn {\r\n    -webkit-animation-name: bounceIn;\r\n    animation-name: bounceIn;\r\n}\r\n\r\n\r\n/***********\r\n* bounceIn *\r\n************/\r\n\r\n@-webkit-keyframes bounceIn {\r\n    0% {\r\n        opacity: 0;\r\n        -webkit-transform: scale(.3);\r\n    }\r\n    50% {\r\n        opacity: 1;\r\n        -webkit-transform: scale(1.05);\r\n    }\r\n    70% {\r\n        -webkit-transform: scale(.9);\r\n    }\r\n    100% {\r\n        -webkit-transform: scale(1);\r\n    }\r\n}\r\n\r\n@keyframes bounceIn {\r\n    0% {\r\n        opacity: 0;\r\n        transform: scale(.3);\r\n    }\r\n    50% {\r\n        opacity: 1;\r\n        transform: scale(1.05);\r\n    }\r\n    70% {\r\n        transform: scale(.9);\r\n    }\r\n    100% {\r\n        transform: scale(1);\r\n    }\r\n}\r\n\r\n\r\n#new-header .company-nav .navbar-logopadding {\r\n    padding-left: 30px;\r\n    padding-top: 22px;\r\n    height: 125px\r\n}\r\n\r\n#new-header .company-nav {\r\n    height: 125px!important\r\n}\r\n\r\n.company-nav .navbar-header {\r\n    width: 50%!important\r\n}\r\n\r\n.company_name_avatar-circle {\r\n    float: left;\r\n    width: 80px;\r\n    height: 80px;\r\n    border-radius: 50px;\r\n    background: #eceff0;\r\n    color: #61686e;\r\n    text-align: center;\r\n    font-family: montserratregular;\r\n    font-size: 28px;\r\n    padding-top: 30px;\r\n    margin-right: 30px;\r\n    text-transform: uppercase\r\n}\r\n\r\n.company_name_span {\r\n    float: left;\r\n    margin-top: 25px;\r\n    font-size: 26px;\r\n    color: #61686e;\r\n    font-family: montserratlight;\r\n    line-height: 30px\r\n}\r\n\r\n.company-home {\r\n    background: #f6f8f9;\r\n    height: 100vh;\r\n    float: left;\r\n    width: 100%;\r\n    padding-top: 100px!important;\r\n    margin-top: 0!important\r\n}\r\n@media (max-width: 767px) {\r\n     /*header#new-header.cookies-parent {\r\n        margin-bottom: 0;\r\n        height: 50px\r\n    }\r\n    .settings-cookies #smScrSideNavbar.left-sidebar,\r\n    .settings-cookies .membership-details-inner-tabs {\r\n        top: 50px!important\r\n    }*/\r\n    #smScrWrapperContent {\r\n        display: none\r\n    }\r\n    #new-header .company-nav {\r\n        display: block!important\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0!important\r\n    }\r\n    #new-header .company-nav .navbar-header {\r\n        width: 100%!important\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px!important\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px\r\n    }\r\n    #new-header {\r\n        height: 50px\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n}\r\n\r\n@media (max-width: 767px) {\r\n    #lgScrSideNavbar,\r\n    .dash-circle,\r\n    .dash-prog-outer h2,\r\n    .full-menu {\r\n        display: none\r\n    }\r\n    #responsive-header .navbar-fixed-top .nav-padding {\r\n        padding-right: 0;\r\n        padding-left: 0\r\n    }\r\n    .main-logo {\r\n        display: none!important\r\n    }\r\n    .mobile-menu {\r\n        display: block;\r\n        float: right;\r\n        margin-top: 7px;\r\n        position: relative\r\n    }\r\n    #responsive-header .navbar-default {\r\n        background: #fb5f66!important;\r\n        border: none;\r\n        margin-top: 0\r\n    }\r\n    #responsive-header .navbar-default .mat-icon i.material-icons {\r\n        font-size: 24px;\r\n        color: #fff;\r\n        padding: 13px\r\n    }\r\n    #responsive-header .navbar-header h4.title {\r\n        color: #fff;\r\n        font-size: 16px;\r\n        text-align: center;\r\n        text-transform: uppercase;\r\n        padding-top: 7px\r\n    }\r\n    .mobile-menu button {\r\n        border: none;\r\n        box-shadow: none;\r\n        color: #fff;\r\n        background: 0 0;\r\n        float: right;\r\n        margin: 0 5px\r\n    }\r\n    .mobile-menu button:focus {\r\n        background: 0 0!important;\r\n        color: #fff!important\r\n    }\r\n    .mobile-menu .btn-default:hover {\r\n        color: #fff;\r\n        background: 0 0\r\n    }\r\n    .mobile-dash {\r\n        padding: 0\r\n    }\r\n    .mobile-menu .dropdown-menu {\r\n        background: #62696d;\r\n        top: -11px;\r\n        border-radius: 0;\r\n        left: -176px;\r\n        width: 235px;\r\n        font-family: montserratlight;\r\n        padding-bottom: 55px\r\n    }\r\n    .mobile-menu .name-dropdown-border {\r\n        width: 100%;\r\n        margin: 5px 0\r\n    }\r\n    .mobile-menu .user-outr {\r\n        float: left;\r\n        width: 100%;\r\n        padding: 0;\r\n        margin: 0;\r\n        display: block;\r\n        text-transform: capitalize\r\n    }\r\n    .mobile-menu .user-outr li {\r\n        float: right;\r\n        font-size: 24px;\r\n        font-family: montserratlight;\r\n        color: #fff;\r\n        margin-right: 24px;\r\n        margin-top: 8px;\r\n        margin-bottom: 6px;\r\n        margin-left: 30px;\r\n        /*white-space: normal;*/\r\n        word-wrap: break-word;\r\n        width: 175px;\r\n        text-align: right;\r\n    }\r\n    .mobile-menu .user-outr li a {\r\n        margin-right: 30px\r\n    }\r\n    .user-outr li a {\r\n        float: left;\r\n        width: auto;\r\n        border: 2px solid #dae2e6;\r\n        border-radius: 50%;\r\n        margin-left: 5px;\r\n        margin-bottom: 5px\r\n    }\r\n    .user-outr li a:hover {\r\n        border: 2px solid #f56151\r\n    }\r\n    .mobile-menu .company-list li,\r\n    .mobile-menu .name-list li {\r\n        margin: 10px 0;\r\n        text-align: right;\r\n        font-size: 16px;\r\n        width: 100%;\r\n        float: left;\r\n        padding-right: 20px\r\n    }\r\n    .mobile-menu .company-list li a,\r\n    .mobile-menu .name-list li a {\r\n        float: right;\r\n        color: #fff\r\n    }\r\n    .mobile-menu .company-list li a i {\r\n        margin-right: 20px;\r\n        float: left\r\n    }\r\n    .mobile-menu .name-list li a i {\r\n        margin-left: 20px;\r\n        float: right\r\n    }\r\n    .mobile-menu .company-list-title {\r\n        float: left;\r\n        color: #fff\r\n    }\r\n    .white-logo {\r\n        display: block!important\r\n    }\r\n    .dash-prog-outer {\r\n        float: left;\r\n        width: 100%;\r\n        margin-top: 10px;\r\n        margin-bottom: 10px\r\n    }\r\n    .dash-prog-outer h5 {\r\n        font-size: 24px;\r\n        text-align: center;\r\n        width: 100%;\r\n        margin-bottom: 1px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper {\r\n        min-height: 35px;\r\n        width: 100%;\r\n        text-align: center\r\n    }\r\n    .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {\r\n        margin: 0 auto;\r\n        float: none;\r\n        text-align: center\r\n    }\r\n    #responsive-header .navbar-header {\r\n        float: left;\r\n        margin-left: -5px;\r\n        margin-right: 0!important\r\n    }\r\n    #responsive-header .navbar-logopadding {\r\n        padding-right: 0;\r\n        padding-top: 0\r\n    }\r\n    #responsive-header .navbar-default {\r\n        height: 50px;\r\n        margin: 0;\r\n        padding-bottom: 0\r\n    }\r\n    .settings-cookies #new-header.cookies-parent {\r\n        height: 50px;\r\n        margin-bottom: 0\r\n    }\r\n    .white-logo .navbar-brand img {\r\n        height: 53px;\r\n        margin: -20px auto 0\r\n    }\r\n    .white-logo .navbar-brand {\r\n        float: none\r\n    }\r\n    .user-outr li a.add-user {\r\n        width: 45px;\r\n        height: 45px;\r\n        padding-top: 9px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {\r\n        top: -30px;\r\n        left: 17px;\r\n        font-size: 34px;\r\n        position: relative;\r\n        color: #f87b80\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a .company-title {\r\n        font-size: 16px\r\n    }\r\n    .company-dropdown-wrapper .dropdown-menu>li>a .company-site {\r\n        width: 91%;\r\n        font-size: 14px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a .company-block-inner {\r\n        width: 35px;\r\n        height: 35px;\r\n        padding-top: 8px;\r\n        font-size: 14px;\r\n        top: 13px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a.add-new-company {\r\n        font-size: 14px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu>li>a i.material-icons {\r\n        font-size: 24px\r\n    }\r\n    .company-block-content {\r\n        margin-left: 50px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {\r\n        right: 34px\r\n    }\r\n    .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {\r\n        top: 8px;\r\n        left: -8px\r\n    }\r\n    header#new-header.cookies-parent {\r\n        margin-bottom: 0;\r\n        height: 50px\r\n    }\r\n    .settings-cookies #smScrSideNavbar.left-sidebar,\r\n    .settings-cookies .membership-details-inner-tabs {\r\n        top: 50px!important\r\n    }\r\n    #smScrWrapperContent {\r\n        display: none\r\n    }\r\n    #new-header .company-nav {\r\n        display: block!important\r\n    }\r\n    #new-header .navbar-default.company-nav {\r\n        background: #fff!important;\r\n        border-bottom: 1px solid #dae2e6;\r\n        padding-top: 0!important\r\n    }\r\n    #new-header .company-nav .navbar-header {\r\n        width: 100%!important\r\n    }\r\n    #new-header .company-nav .navbar-logopadding {\r\n        padding-left: 15px;\r\n        padding-top: 22px;\r\n        height: 105px;\r\n        width: 100%;\r\n        padding-right: 15px!important\r\n    }\r\n    .company_name_avatar-circle {\r\n        margin-right: 15px\r\n    }\r\n    .company_name_span {\r\n        width: 57%;\r\n        line-height: 30px\r\n    }\r\n    #new-header {\r\n        height: 50px !important;\r\n    }\r\n    #new-header .company-nav.navbar-fixed-top .nav-padding {\r\n        padding-left: 0;\r\n        padding-right: 0\r\n    }\r\n    #new-header.cookies-parent{\r\n        margin-bottom: 0;\r\n    }\r\n}"
 
 /***/ },
 /* 482 */
@@ -51176,7 +51185,7 @@ module.exports = " #salesforce-error .modal-body {\r\n    padding: 40px 15px;\r\
 /* 483 */
 /***/ function(module, exports) {
 
-module.exports = "/* Preloader */\r\n.preloader {\r\n\tposition: fixed;\r\n\ttop:0;\r\n\tleft:0;\r\n\tright:0;\r\n\tbottom:0;\r\n\tbackground-color:#fff; /* change if the mask should be a color other than white */\r\n\tz-index:9999; /* makes sure it stays on top */\r\n}\r\n\r\n.status {\r\n\twidth:200px;\r\n\theight:200px;\r\n\tposition:absolute;\r\n\tleft:50%; /* centers the loading animation horizontally on the screen */\r\n\ttop:50%; /* centers the loading animation vertically on the screen */\r\n\tbackground-image:url(\"assets/images/logoAnim.gif\"); /* path to your loading animation */\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center;\r\n\tmargin:-100px 0 0 -100px; /* is width and height divided by two */\r\n}"
+module.exports = "/* Preloader */\r\n.preloader {\r\n\tposition: fixed;\r\n\ttop:0;\r\n\tleft:0;\r\n\tright:0;\r\n\tbottom:0;\r\n\tbackground-color:#fff; /* change if the mask should be a color other than white */\r\n\tz-index:9999; /* makes sure it stays on top */\r\n}\r\n\r\n.status {\r\n\twidth:200px;\r\n\theight:200px;\r\n\tposition:absolute;\r\n\tleft:50%; /* centers the loading animation horizontally on the screen */\r\n\ttop:50%; /* centers the loading animation vertically on the screen */\r\n\tbackground-image:url(\"assets/images/logoAnim.gif\"); /* path to your loading animation */\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center;\r\n\tmargin:-100px 0 0 -100px; /* is width and height divided by two */\r\n}\r\n#new-header .navbar-right .name-dropdown-wrapper .dropdown-menu .company-list .slimScrollDiv {height: 110px !important;}"
 
 /***/ },
 /* 484 */
@@ -53280,7 +53289,7 @@ var StylesCollection = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config__ = __webpack_require__(77);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directive_normalizer__ = __webpack_require__(168);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directive_resolver__ = __webpack_require__(169);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__directive_wrapper_compiler__ = __webpack_require__(123);
@@ -57958,7 +57967,7 @@ var ChangeDetectorRef = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__reflection_reflection_capabilities__ = __webpack_require__(326);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__reflection_reflector_reader__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__render_api__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__util_decorators__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__util_lang__ = __webpack_require__(200);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return __core_private__; });
 /**
@@ -59779,7 +59788,7 @@ function _findLastRenderNode(node) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__di_opaque_token__ = __webpack_require__(190);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_decorators__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return ANALYZE_FOR_ENTRY_COMPONENTS; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Attribute; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "e", function() { return Query; });
@@ -59961,7 +59970,7 @@ var ViewChild = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util_decorato
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__change_detection_constants__ = __webpack_require__(132);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__util_decorators__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return Directive; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "g", function() { return Component; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return Pipe; });
@@ -60064,7 +60073,7 @@ var HostListener = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__util_decor
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(79);
 /* harmony export (binding) */ __webpack_require__.d(exports, "c", function() { return CUSTOM_ELEMENTS_SCHEMA; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "b", function() { return NO_ERRORS_SCHEMA; });
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NgModule; });
@@ -60228,7 +60237,7 @@ function endTimeRange(range) {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__util_decorators__ = __webpack_require__(79);
 /* unused harmony reexport Class */
 /**
  * @license
@@ -61572,7 +61581,7 @@ var By = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__event_manager__ = __webpack_require__(81);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HammerGesturesPluginCommon; });
 /**
  * @license
@@ -61936,7 +61945,7 @@ var EventListener = win['EventListener'];
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dom_debug_by__ = __webpack_require__(589);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dom_debug_ng_probe__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dom_dom_tokens__ = __webpack_require__(150);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_event_manager__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__dom_events_event_manager__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__dom_events_hammer_gestures__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__security_dom_sanitization_service__ = __webpack_require__(351);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(595);
@@ -62885,7 +62894,7 @@ function validateNode(route) {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__ = __webpack_require__(393);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_BehaviorSubject__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__router_state__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_tree__ = __webpack_require__(219);
 /* harmony export (immutable) */ exports["a"] = createRouterState;
 /**
@@ -63250,7 +63259,7 @@ function compare(path, params, segment) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__router_module__ = __webpack_require__(354);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__router_outlet_map__ = __webpack_require__(151);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router_preloader__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router_state__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__shared__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__url_tree__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__private_export__ = __webpack_require__(603);
@@ -63335,7 +63344,7 @@ var __router_private__ = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__ = __webpack_require__(73);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router_state__ = __webpack_require__(83);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__router_state__ = __webpack_require__(82);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__url_tree__ = __webpack_require__(68);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils_collection__ = __webpack_require__(50);
@@ -64052,7 +64061,7 @@ module.exports = function(hint){
 /***/ function(module, exports, __webpack_require__) {
 
 // all enumerable object keys, includes symbols
-var getKeys = __webpack_require__(86)
+var getKeys = __webpack_require__(85)
   , gOPS    = __webpack_require__(154)
   , pIE     = __webpack_require__(155);
 module.exports = function(it){
@@ -64092,7 +64101,7 @@ module.exports = function(fn, args, that){
 /* 629 */
 /***/ function(module, exports, __webpack_require__) {
 
-var getKeys   = __webpack_require__(86)
+var getKeys   = __webpack_require__(85)
   , toIObject = __webpack_require__(34);
 module.exports = function(object, el){
   var O      = toIObject(object)
@@ -64258,7 +64267,7 @@ $export($export.P + $export.F * !STRICT, 'Array', {
 
 "use strict";
 'use strict';
-var ctx            = __webpack_require__(84)
+var ctx            = __webpack_require__(83)
   , $export        = __webpack_require__(1)
   , toObject       = __webpack_require__(35)
   , call           = __webpack_require__(368)
@@ -64352,7 +64361,7 @@ $export($export.P + $export.F * (__webpack_require__(108) != Object || !__webpac
 'use strict';
 var $export       = __webpack_require__(1)
   , toIObject     = __webpack_require__(34)
-  , toInteger     = __webpack_require__(87)
+  , toInteger     = __webpack_require__(86)
   , toLength      = __webpack_require__(28)
   , $native       = [].lastIndexOf
   , NEGATIVE_ZERO = !!$native && 1 / [1].lastIndexOf(1, -0) < 0;
@@ -64978,7 +64987,7 @@ var global            = __webpack_require__(15)
   , Base              = $Number
   , proto             = $Number.prototype
   // Opera ~12 has broken Object#toString
-  , BROKEN_COF        = cof(__webpack_require__(85)(proto)) == NUMBER
+  , BROKEN_COF        = cof(__webpack_require__(84)(proto)) == NUMBER
   , TRIM              = 'trim' in String.prototype;
 
 // 7.1.3 ToNumber(argument)
@@ -65135,7 +65144,7 @@ $export($export.S + $export.F * (Number.parseInt != $parseInt), 'Number', {parse
 "use strict";
 'use strict';
 var $export      = __webpack_require__(1)
-  , toInteger    = __webpack_require__(87)
+  , toInteger    = __webpack_require__(86)
   , aNumberValue = __webpack_require__(356)
   , repeat       = __webpack_require__(380)
   , $toFixed     = 1..toFixed
@@ -65286,7 +65295,7 @@ $export($export.S + $export.F, 'Object', {assign: __webpack_require__(373)});
 
 var $export = __webpack_require__(1)
 // 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', {create: __webpack_require__(85)});
+$export($export.S, 'Object', {create: __webpack_require__(84)});
 
 /***/ },
 /* 692 */
@@ -65408,7 +65417,7 @@ $export($export.S, 'Object', {is: __webpack_require__(631)});
 
 // 19.1.2.14 Object.keys(O)
 var toObject = __webpack_require__(35)
-  , $keys    = __webpack_require__(86);
+  , $keys    = __webpack_require__(85);
 
 __webpack_require__(42)('keys', function(){
   return function keys(it){
@@ -65497,7 +65506,7 @@ $export($export.S + $export.F * !__webpack_require__(8)(function(){
 
 // 26.1.2 Reflect.construct(target, argumentsList [, newTarget])
 var $export    = __webpack_require__(1)
-  , create     = __webpack_require__(85)
+  , create     = __webpack_require__(84)
   , aFunction  = __webpack_require__(69)
   , anObject   = __webpack_require__(4)
   , isObject   = __webpack_require__(10)
