@@ -1278,6 +1278,8 @@ var JSONBuilder = (function () {
             defaultClasses = 't3-default-result-outer tr-bold-new';
         var itemNew = new __WEBPACK_IMPORTED_MODULE_1__models_model__["b" /* Item */]('result_output', item.props.title, item.props.helpText, '', defaultClasses);
         itemNew.setVisibility(true);
+        itemNew.props.minVal = item.props.minVal;
+        itemNew.props.maxVal = item.props.maxVal;
         itemNew.options = item.options;
         itemNew.config = item.config;
         section.addItems(itemNew);
