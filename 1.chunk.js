@@ -1946,7 +1946,7 @@ var RecommendationService = (function () {
     };
     RecommendationService.prototype.getAvailableOptions = function () {
         var optionArray = [];
-        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name, value: formula.value }); });
+        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name.replace(/<(?:.|\n)*?>/gm, ''), value: formula.value }); });
         return optionArray;
     };
     RecommendationService.prototype.updateformulaObject = function () {
