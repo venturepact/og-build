@@ -319,4 +319,16 @@ a.live-url.preview_copy {
         width: 500px;
         margin: 80px auto !important
     }
+    
+}
+@media (min-width: 320px) and (max-width: 767px) {
+    .editor-modal .modal-dialog{
+        margin-left: 20px;
+    }
+    .bootbox-body .bootbox-body-right{
+        width: 80%;
+    }
+    .one-line-bootbox .bootbox-body-left{
+        height: 122px;
+    }
 }
