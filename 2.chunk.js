@@ -5889,7 +5889,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        var Formulaindex = app.addformula('New Outcome', 'New_Outcome', 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', "Outcome description will come here", 'Page title will come here', 'Button Text', __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].PROTOCOL + __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].APP_EXTENSION, 'true');
+        var Formulaindex = app.addformula('<p><strong>New Outcome</strong></p>', 'New_Outcome', 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', "Outcome description will come here", 'Page title will come here', 'Button Text', __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].PROTOCOL + __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].APP_EXTENSION, 'true');
         // let Formulaindex = app.addformula('San Francisco (Sample)', 'San_Francisco', 'https://cdn.filepicker.io/api/file/SAMeWjCDRNSZJbm0UN0s',
         //   `You need to head to the good old tech hub and be amidst the giants. You get to be in the middle of all the fundraising action and
         //     will never run out of a competitive, yet constant supply of awesome trained tech talent.`, 'Here’s where we think you should head to!',
@@ -6275,7 +6275,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        var Formulaindex = app.addformula('New Outcome', 'New_Outcome', 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', "Outcome description will come here", 'Page title will come here', 'Button Text', __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].PROTOCOL + __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].APP_EXTENSION, 'true');
+        var Formulaindex = app.addformula('<p><strong>New Outcome</strong></p>', 'New_Outcome', 'https://cdn.filepicker.io/api/file/lHqm5ge9RdySNwOzKmGA', "Outcome description will come here", 'Page title will come here', 'Button Text', __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].PROTOCOL + __WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment */].APP_EXTENSION, 'true');
         // let Formulaindex = app.addformula('San Francisco (Sample)', 'San_Francisco', 'https://cdn.filepicker.io/api/file/SAMeWjCDRNSZJbm0UN0s',
         //   `You need to head to the good old tech hub and be amidst the giants. You get to be in the middle of all the fundraising action and
         //     will never run out of a competitive, yet constant supply of awesome trained tech talent.`, 'Here’s where we think you should head to!',
