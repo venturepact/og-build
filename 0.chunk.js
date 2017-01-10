@@ -3466,7 +3466,7 @@ var Checkbox = (function () {
     Checkbox.prototype.onChange = function (event, index) {
         var _this = this;
         this.data.props.currentLabel = '';
-        this.data.props.currentValue = '';
+        this.data.props.currentValue = 0;
         this.data.props.scale = true;
         /* recom condition */
         if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Recommendation')
