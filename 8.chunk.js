@@ -1304,7 +1304,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "<p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 't3-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "<p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 't3-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1312,7 +1312,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R2
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', ' <p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't3-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', ' <p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't3-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1320,7 +1320,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R3
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't3-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't3-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1434,7 +1434,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "\n                       <p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avatar!</p>", '', 't4-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "\n                       <p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avatar!</p>", '', 't4-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1442,7 +1442,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R2
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't4-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 't4-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1450,7 +1450,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R3
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't4-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 't4-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1690,7 +1690,7 @@ var DefaultJSON = (function () {
         // Result Section 2 -- START
         section2 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["a" /* Section */]('Result', 'left-section');
         //R1
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "\n                       <p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 'temp2-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R1}</strong></p>', "\n                       <p><strong>For top notch HDTV quality</strong></p>\n                       <p>Using the same camera and crew that shot Gravity and Avtar!</p>", '', 'temp2-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1698,7 +1698,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R2
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 'temp2-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R2}</strong></p>', "\n                        <p><strong>For Regular TV quality</strong></p>\n                        <p>You will be able to publish on TV but not on iMAX</p>", '', 'temp2-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);
@@ -1706,7 +1706,7 @@ var DefaultJSON = (function () {
         item1.setFormulaIndex(Formulaindex.toString());
         section2.addItems(item1);
         //R3
-        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 'temp2-default-result-outer');
+        item1 = new __WEBPACK_IMPORTED_MODULE_1__builder_models_model__["b" /* Item */]('result_output', '<p><strong>{R3}</strong></p>', "\n                        <p><strong>For Budget quality</strong></p>\n                        <p>Not for TV but good enough for youtube and facebook.</p>", '', 'temp2-default-result-outer tr-bold-new');
         item1.options[0].label = item1.props.title;
         item1.options[0].icon = item1.props.helpText;
         item1.options.push(item1.options[0]);

@@ -958,13 +958,13 @@ var JSONBuilder = (function () {
     JSONBuilder.prototype.addResultSection = function (section) {
         var defaultClasses = '';
         if (this.getJSONBuilt().template == 'inline-temp')
-            defaultClasses = 't4-default-result-outer';
+            defaultClasses = 't4-default-result-outer tr-bold-new';
         else if (this.getJSONBuilt().template == 'sound-cloud')
-            defaultClasses = 'temp2-default-result-outer';
+            defaultClasses = 'temp2-default-result-outer tr-bold-new';
         else if (this.getJSONBuilt().template == 'one-page-card')
-            defaultClasses = 't3-default-result-outer';
+            defaultClasses = 't3-default-result-outer tr-bold-new';
         //<p>{R` + (this.getJSONBuilt().formula.length) + `}</p>
-        var itemNew = new __WEBPACK_IMPORTED_MODULE_1__models_model__["b" /* Item */]('result_output', "\n            <p>{R" + (this.getJSONBuilt().formula.length) + "}</p>", "<p>By the age of 65</p>\n            <p>Things get serious now. Ensure you're living healthy.</p>", '', defaultClasses);
+        var itemNew = new __WEBPACK_IMPORTED_MODULE_1__models_model__["b" /* Item */]('result_output', "\n            <p><strong>{R" + (this.getJSONBuilt().formula.length) + "}</strong></p>", "<p><strong>By the age of 65</strong></p>\n            <p>Things get serious now. Ensure you're living healthy.</p>", '', defaultClasses);
         //itemNew.setFormulaIndex(formulaIndex.toString());
         if (itemNew.options[0]) {
             itemNew.options[0].label = '<p>{R' + (this.getJSONBuilt().formula.length) + '}</p>';
@@ -978,11 +978,11 @@ var JSONBuilder = (function () {
     JSONBuilder.prototype.duplicateResultItem = function (section, item) {
         var defaultClasses = '';
         if (this.getJSONBuilt().template == 'inline-temp')
-            defaultClasses = 't4-default-result-outer';
+            defaultClasses = 't4-default-result-outer tr-bold-new';
         else if (this.getJSONBuilt().template == 'sound-cloud')
-            defaultClasses = 'temp2-default-result-outer';
+            defaultClasses = 'temp2-default-result-outer tr-bold-new';
         else if (this.getJSONBuilt().template == 'one-page-card')
-            defaultClasses = 't3-default-result-outer';
+            defaultClasses = 't3-default-result-outer tr-bold-new';
         var itemNew = new __WEBPACK_IMPORTED_MODULE_1__models_model__["b" /* Item */]('result_output', item.props.title, item.props.helpText, '', defaultClasses);
         itemNew.setVisibility(true);
         itemNew.options = item.options;
