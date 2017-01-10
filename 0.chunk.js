@@ -17450,8 +17450,8 @@ var EditorSectionLeadform = (function () {
         jQuery('[ng-reflect-ng-switch= sound-cloud]').addClass('template2');
         var data = [];
         data = this._JSONBuilder.hideOtherLeadForm($event.target.value, $event.target.selectedIndex);
-        if ($event.target.value == 'Result' && this._JSONBuilder.getJSONBuilt().templateType == 'Recommendation')
-            this._JSONBuilder.setSelectedModel('Outcome_Settings');
+        // if ($event.target.value == 'Result' && this._JSONBuilder.getJSONBuilt().templateType == 'Recommendation')
+        //   this._JSONBuilder.setSelectedModel('Outcome_Settings');
         if ($event.target.value == 'Questionnaire') {
             this._JSONBuilder.setSelectedModel('Section');
             this._JSONBuilder.setSelectedSection(data[0]);
