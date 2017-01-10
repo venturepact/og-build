@@ -929,7 +929,7 @@ var UserDetailsComponent = (function () {
             self.avgAnswered = Math.round(response.avgAnswers);
             self.avgResult = response.avgResult;
             var min = Math.floor(Number(response.avgTimeOnPage) / 60);
-            var seconds = (Number(response.avgTimeOnPage) % 60).toFixed(2);
+            var seconds = Math.round(Number(response.avgTimeOnPage) % 60);
             self.avgLengthTime = min ? (min + '.' + seconds + ' m') : seconds + ' s';
             self.socialEgagement = response.CtaEngagementLength;
             self.calulateAnalyticsData(response.data);
