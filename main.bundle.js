@@ -66319,7 +66319,7 @@ module.exports = " #salesforce-error .modal-body {\r\n    padding: 40px 15px;\r\
 /* 738 */
 /***/ function(module, exports) {
 
-module.exports = "/* Preloader */\r\n.preloader {\r\n\tposition: fixed;\r\n\ttop:0;\r\n\tleft:0;\r\n\tright:0;\r\n\tbottom:0;\r\n\tbackground-color:#fff; /* change if the mask should be a color other than white */\r\n\tz-index:9999; /* makes sure it stays on top */\r\n}\r\n\r\n.status {\r\n\twidth:200px;\r\n\theight:200px;\r\n\tposition:absolute;\r\n\tleft:50%; /* centers the loading animation horizontally on the screen */\r\n\ttop:50%; /* centers the loading animation vertically on the screen */\r\n\tbackground-image:url(\"assets/images/logoAnim.gif\"); /* path to your loading animation */\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center;\r\n\tmargin:-100px 0 0 -100px; /* is width and height divided by two */\r\n}"
+module.exports = "/* Preloader */\r\n.preloader {\r\n\tposition: fixed;\r\n\ttop:0;\r\n\tleft:0;\r\n\tright:0;\r\n\tbottom:0;\r\n\tbackground-color:#fff; /* change if the mask should be a color other than white */\r\n\tz-index:9999; /* makes sure it stays on top */\r\n}\r\n\r\n.status {\r\n\twidth:200px;\r\n\theight:200px;\r\n\tposition:absolute;\r\n\tleft:50%; /* centers the loading animation horizontally on the screen */\r\n\ttop:50%; /* centers the loading animation vertically on the screen */\r\n\tbackground-image:url(\"assets/images/logoAnim.gif\"); /* path to your loading animation */\r\n\tbackground-repeat:no-repeat;\r\n\tbackground-position:center;\r\n\tmargin:-100px 0 0 -100px; /* is width and height divided by two */\r\n}\r\n#new-header .navbar-right .name-dropdown-wrapper .dropdown-menu .company-list .slimScrollDiv {height: 110px !important;}"
 
 /***/ },
 /* 739 */
