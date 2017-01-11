@@ -10131,7 +10131,7 @@ var ConditionalResultService = (function () {
     ConditionalResultService.prototype.addNewCondition = function (control) {
         var item = new __WEBPACK_IMPORTED_MODULE_2__models_item_model__["a" /* Item */]();
         var option = item.getOption();
-        option.label = '{R' + Number(this.templateRenderer.getStaticControls().Result.Result.items.indexOf(control) + 1) + '}';
+        option.label = '<p><strong>{R' + Number(this.templateRenderer.getStaticControls().Result.Result.items.indexOf(control) + 1) + '}</strong></p>';
         option.icon = control.props.helpText;
         option.attr.class = control.options[control.options.length - 1].attr.style;
         option.attr.style = control.props.maxVal;
@@ -10898,7 +10898,7 @@ var UserDetailsPopupComponent = (function () {
     UserDetailsPopupComponent.prototype.getStatsInfo = function () {
         var _this = this;
         /* get leads of user on page */
-        this._calculatorAnalytics.getStats({ key: this.visitorKey, answered: true })
+        this._calculatorAnalytics.getStats({ key: this.visitorKey })
             .subscribe(function (response) {
             /** intialize data table */
             _this.statsResult = response;
@@ -15369,12 +15369,12 @@ var ConditionalResultComponent = (function () {
     ConditionalResultComponent.prototype.initSlider = function () {
         var that = this;
         this.sliderJson = {
-            min: this.control.props.minVal,
-            max: this.control.props.maxVal,
+            min: Number(this.control.props.minVal).toFixed(2),
+            max: Number(this.control.props.maxVal).toFixed(2),
             step: 1,
             grid: true,
-            from: this.option.attr.class,
-            to: this.option.attr.style,
+            from: Number(this.option.attr.class).toFixed(2),
+            to: Number(this.option.attr.style).toFixed(2),
             prettify_enabled: true,
             type: 'double',
             //from_fixed: true,
@@ -15419,8 +15419,8 @@ var ConditionalResultComponent = (function () {
         var slider = jQuery('#' + 'slider' + this.control._id + option).data("ionRangeSlider");
         if (slider) {
             slider.update({
-                from: this.control.options[option].attr.class,
-                to: this.control.options[option].attr.style
+                from: Number(this.control.options[option].attr.class).toFixed(2),
+                to: Number(this.control.options[option].attr.style).toFixed(2)
             });
         }
     };
@@ -18808,6 +18808,8 @@ var FormulaPopComponent = (function () {
             this.possibleMinVal = this.possibleMaxVal;
             this.possibleMaxVal = temp;
         }
+        this.possibleMaxVal = parseFloat(Number(this.possibleMaxVal).toFixed(2));
+        this.possibleMinVal = parseFloat(Number(this.possibleMinVal).toFixed(2));
         this.jsonBuilderHelper.getSelectedControl().props.minVal = this.possibleMinVal;
         this.jsonBuilderHelper.getSelectedControl().props.maxVal = this.possibleMaxVal;
         if (this.jsonBuilderHelper.getJSONBuilt().formula[this.formulaIndex].result.toString().trim() == '') {
@@ -18817,6 +18819,7 @@ var FormulaPopComponent = (function () {
             }
             else if (this.jsonBuilderHelper.getSelectedControl().options.length == 2) {
                 var half = (isNaN(this.possibleMinVal) || isNaN(this.possibleMaxVal)) ? 0 : (this.possibleMinVal + this.possibleMaxVal) / 2;
+                half = Number(parseFloat(half.toFixed(2)));
                 this.jsonBuilderHelper.getSelectedControl().options[0].attr.class = !isNaN(this.possibleMinVal) ? this.possibleMinVal : 0;
                 this.jsonBuilderHelper.getSelectedControl().options[0].attr.style = !isNaN(half) ? half : 0;
                 this.jsonBuilderHelper.getSelectedControl().options[1].attr.class = !isNaN(half) ? half : 0;

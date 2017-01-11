@@ -1023,7 +1023,7 @@ var UserDetailsPopupComponent = (function () {
     UserDetailsPopupComponent.prototype.getStatsInfo = function () {
         var _this = this;
         /* get leads of user on page */
-        this._calculatorAnalytics.getStats({ key: this.visitorKey, answered: true })
+        this._calculatorAnalytics.getStats({ key: this.visitorKey })
             .subscribe(function (response) {
             /** intialize data table */
             _this.statsResult = response;
