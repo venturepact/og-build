@@ -2360,42 +2360,44 @@ var TemplateRendererService = (function () {
             var index = Number(match.substring(1));
             var currentQuesObject = _this._jsonBuilderHelper.getTemplateQuestionare()[index - 1];
             /* evaluate min value * */
-            if (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number')) {
-                /*min max conditions */
-                if (type == 'min')
-                    possibleMinVal = parseFloat(currentQuesObject.props.minVal);
-                else
-                    possibleMaxVal = parseFloat(currentQuesObject.props.maxVal);
-            }
-            else if (currentQuesObject.type == 'checkbox') {
-                possibleMaxVal = 0;
-                for (var t = 0; t < currentQuesObject.options.length; t++) {
+            if (currentQuesObject) {
+                if (currentQuesObject && (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number'))) {
                     /*min max conditions */
-                    if (type == 'min') {
-                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
-                            possibleMinVal = currentQuesObject.options[t].value;
+                    if (type == 'min')
+                        possibleMinVal = parseFloat(currentQuesObject.props.minVal);
+                    else
+                        possibleMaxVal = parseFloat(currentQuesObject.props.maxVal);
+                }
+                else if (currentQuesObject.type == 'checkbox') {
+                    possibleMaxVal = 0;
+                    for (var t = 0; t < currentQuesObject.options.length; t++) {
+                        /*min max conditions */
+                        if (type == 'min') {
+                            if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
+                                possibleMinVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
-                    }
-                    else {
-                        possibleMaxVal += parseFloat(currentQuesObject.options[t].value);
+                        else {
+                            possibleMaxVal += parseFloat(currentQuesObject.options[t].value);
+                        }
                     }
                 }
-            }
-            else {
-                for (var t = 0; t < currentQuesObject.options.length; t++) {
-                    /*min max conditions */
-                    if (type == 'min') {
-                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
-                            possibleMinVal = currentQuesObject.options[t].value;
+                else {
+                    for (var t = 0; t < currentQuesObject.options.length; t++) {
+                        /*min max conditions */
+                        if (type == 'min') {
+                            if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
+                                possibleMinVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
-                    }
-                    else {
-                        if (parseFloat(currentQuesObject.options[t].value) >= possibleMaxVal) {
-                            possibleMaxVal = currentQuesObject.options[t].value;
+                        else {
+                            if (parseFloat(currentQuesObject.options[t].value) >= possibleMaxVal) {
+                                possibleMaxVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
                     }
                 }
             }

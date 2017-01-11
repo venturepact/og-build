@@ -2067,42 +2067,44 @@ var TemplateRendererService = (function () {
             var index = Number(match.substring(1));
             var currentQuesObject = _this._jsonBuilderHelper.getTemplateQuestionare()[index - 1];
             /* evaluate min value * */
-            if (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number')) {
-                /*min max conditions */
-                if (type == 'min')
-                    possibleMinVal = parseFloat(currentQuesObject.props.minVal);
-                else
-                    possibleMaxVal = parseFloat(currentQuesObject.props.maxVal);
-            }
-            else if (currentQuesObject.type == 'checkbox') {
-                possibleMaxVal = 0;
-                for (var t = 0; t < currentQuesObject.options.length; t++) {
+            if (currentQuesObject) {
+                if (currentQuesObject && (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number'))) {
                     /*min max conditions */
-                    if (type == 'min') {
-                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
-                            possibleMinVal = currentQuesObject.options[t].value;
+                    if (type == 'min')
+                        possibleMinVal = parseFloat(currentQuesObject.props.minVal);
+                    else
+                        possibleMaxVal = parseFloat(currentQuesObject.props.maxVal);
+                }
+                else if (currentQuesObject.type == 'checkbox') {
+                    possibleMaxVal = 0;
+                    for (var t = 0; t < currentQuesObject.options.length; t++) {
+                        /*min max conditions */
+                        if (type == 'min') {
+                            if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
+                                possibleMinVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
-                    }
-                    else {
-                        possibleMaxVal += parseFloat(currentQuesObject.options[t].value);
+                        else {
+                            possibleMaxVal += parseFloat(currentQuesObject.options[t].value);
+                        }
                     }
                 }
-            }
-            else {
-                for (var t = 0; t < currentQuesObject.options.length; t++) {
-                    /*min max conditions */
-                    if (type == 'min') {
-                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
-                            possibleMinVal = currentQuesObject.options[t].value;
+                else {
+                    for (var t = 0; t < currentQuesObject.options.length; t++) {
+                        /*min max conditions */
+                        if (type == 'min') {
+                            if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
+                                possibleMinVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
-                    }
-                    else {
-                        if (parseFloat(currentQuesObject.options[t].value) >= possibleMaxVal) {
-                            possibleMaxVal = currentQuesObject.options[t].value;
+                        else {
+                            if (parseFloat(currentQuesObject.options[t].value) >= possibleMaxVal) {
+                                possibleMaxVal = currentQuesObject.options[t].value;
+                            }
+                            ;
                         }
-                        ;
                     }
                 }
             }
@@ -6340,9 +6342,9 @@ var SubscriptionComponent = (function () {
                 }
                 window.Intercom('update', { 'subscription_status': user_status });
             }
-            if (window.location.href.indexOf('outgrow.co') >= 0) {
-                fbq('track', 'Purchase', { value: _this.kmqTotalAmount.toString(), currency: 'USD' });
-            }
+            /*if(window.location.href.indexOf('outgrow.co') >= 0) {
+                fbq('track', 'Purchase', {value: this.kmqTotalAmount.toString(), currency: 'USD'});
+            }*/
             ga('markettingteam.send', 'event', 'Settings', 'Submit', 'SettingsPlanChanged');
             _kmq.push(['record', 'Settings Plan Changed', kmqData]);
             /*let url = window.location.href;
@@ -8552,9 +8554,9 @@ var MembershipComponent = (function () {
                         'Amount Due': _this.kmqAmountDue,
                         'Plan': success.invoice.line_items[0].description
                     };
-                    if (window.location.href.indexOf('outgrow.co') >= 0) {
-                        fbq('track', 'Purchase', { value: _this.kmqTotalAmount.toString(), currency: 'USD' });
-                    }
+                    /*if(window.location.href.indexOf('outgrow.co') >= 0) {
+                        fbq('track', 'Purchase', {value: this.kmqTotalAmount.toString(), currency: 'USD'});
+                    }*/
                     ga('markettingteam.send', 'event', 'Settings', 'Submit', 'SettingsPlanChanged');
                     _kmq.push(['record', 'Settings Plan Changed', kmqData]);
                     var url = window.location.href;
@@ -8593,9 +8595,9 @@ var MembershipComponent = (function () {
             }
             _this.errorMessage = '';
             /*---- Tracking code goes here ----*/
-            if (window.location.href.indexOf('outgrow.co') >= 0) {
+            /*if(window.location.href.indexOf('outgrow.co') >= 0) {
                 fbq('track', 'AddPaymentInfo');
-            }
+            }*/
             ga('markettingteam.send', 'event', 'Settings', 'Submit', 'Settings Add Payment Method');
             _kmq.push(['record', 'Settings Payment Method Added']);
             /*---------------------------------*/
