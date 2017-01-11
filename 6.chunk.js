@@ -2239,7 +2239,7 @@ var RecommendationService = (function () {
     };
     RecommendationService.prototype.getAvailableOptions = function () {
         var optionArray = [];
-        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name.replace(/<(?:.|\n)*?>/gm, ''), value: formula.value }); });
+        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name.replace(/<(?:.|\n)*?>|&nbsp;/gm, '').trim(), value: formula.value }); });
         return optionArray;
     };
     RecommendationService.prototype.updateformulaObject = function () {
@@ -2339,12 +2339,20 @@ var TemplateRendererService = (function () {
     };
     /** update MIN and MAX of result-output */
     TemplateRendererService.prototype.computeMinMax = function () {
-        for (var formula in this._jsonBuilderHelper.getJSONBuilt().formula) {
-            this.staticControls.Result.Result.items[formula].props.minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min');
-            this.staticControls.Result.Result.items[formula].props.maxVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max');
-            this.staticControls.Result.Result.items[formula].options[0].attr.class = this.staticControls.Result.Result.items[formula].props.minVal;
-            this.staticControls.Result.Result.items[formula].options[this.staticControls.Result.Result.items[formula].options.length - 1].attr.style
-                = this.staticControls.Result.Result.items[formula].props.maxVal;
+        if (this._jsonBuilderHelper.getJSONBuilt().templateType != 'Recommendation') {
+            for (var formula in this._jsonBuilderHelper.getJSONBuilt().formula) {
+                var formulaNow = this._jsonBuilderHelper.getJSONBuilt().formula[formula];
+                var minVal = 0, maxVal = 0;
+                if (this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min'))
+                    minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min').toFixed(formulaNow.decimal);
+                if (this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max'))
+                    minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max').toFixed(formulaNow.decimal);
+                this.staticControls.Result.Result.items[formula].props.minVal = minVal;
+                this.staticControls.Result.Result.items[formula].props.maxVal = maxVal;
+                this.staticControls.Result.Result.items[formula].options[0].attr.class = this.staticControls.Result.Result.items[formula].props.minVal;
+                this.staticControls.Result.Result.items[formula].options[this.staticControls.Result.Result.items[formula].options.length - 1].attr.style
+                    = this.staticControls.Result.Result.items[formula].props.maxVal;
+            }
         }
     };
     TemplateRendererService.prototype.formulaVal = function (formula, type) {
