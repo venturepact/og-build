@@ -1108,7 +1108,7 @@ var FormulaService = (function () {
                 var currentQuesObject = this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[currentQuesNumber - 1];
                 //for marking as mandatory
                 if (currentQuesObject && (currentQuesObject.type == 'switchbox' || currentQuesObject.type == 'radio_button' ||
-                    currentQuesObject.type == 'selectbox' || currentQuesObject.type == 'checkbox' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number'))) {
+                    currentQuesObject.type == 'checkbox' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number'))) {
                     if (!currentQuesObject.config.validations.required.status)
                         currentQuesObject.config.validations.required.status = true;
                     var isAnyDefaultSelected = false;
@@ -4620,23 +4620,45 @@ var ResultOutput = (function () {
     };
     ResultOutput.prototype.ngDoCheck = function () {
         //this.data.isIconPresent &&a
-        if ((this.devMode && this.dataCheck != JSON.stringify(this.data)) || this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "")) {
-            this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "");
-            if (this.devMode)
-                this.dataCheck = JSON.stringify(this.data);
-            var flag = 0;
-            for (var _i = 0, _a = this.data.options; _i < _a.length; _i++) {
-                var option = _a[_i];
-                if (Number(option.attr.class) <= this.formulaVal && this.formulaVal <= Number(option.attr.style)) {
-                    this.conditionalTitle = option.label;
-                    this.conditionalDesc = option.icon;
-                    flag = 1;
+        if (this.data.config.showHelp) {
+            if (this.devMode) {
+                if (this.dataCheck != JSON.stringify(this.data)) {
+                    var flag = 0;
+                    try {
+                        for (var optionIndex in JSON.parse(this.dataCheck).options) {
+                            if (JSON.stringify(JSON.parse(this.dataCheck).options[optionIndex]) != JSON.stringify(this.data.options[optionIndex])) {
+                                flag = 1;
+                                this.conditionalTitle = this.data.options[optionIndex].label;
+                                this.conditionalDesc = this.data.options[optionIndex].icon;
+                            }
+                        }
+                        if (flag == 0) {
+                            this.conditionalTitle = this.data.options[0].label;
+                            this.conditionalDesc = this.data.options[0].icon;
+                        }
+                    }
+                    catch (e) { }
+                    this.dataCheck = JSON.stringify(this.data);
                 }
             }
-            if (flag == 0) {
-                //The Default Condition
-                this.conditionalTitle = this.data.config.attr.class;
-                this.conditionalDesc = this.data.config.attr.style;
+            else {
+                if (this.formulaVal != this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "")) {
+                    this.formulaVal = this.jsonBuilderHelper.getJSONBuilt().formula[this.staticControls.Result.Result.items.indexOf(this.data)].value.toString().replace(/[^0-9.]/g, "");
+                    var flag = 0;
+                    for (var _i = 0, _a = this.data.options; _i < _a.length; _i++) {
+                        var option = _a[_i];
+                        if (Number(option.attr.class) <= this.formulaVal && this.formulaVal <= Number(option.attr.style)) {
+                            this.conditionalTitle = option.label;
+                            this.conditionalDesc = option.icon;
+                            flag = 1;
+                        }
+                    }
+                    if (flag == 0) {
+                        //The Default Condition
+                        this.conditionalTitle = this.data.config.attr.class;
+                        this.conditionalDesc = this.data.config.attr.style;
+                    }
+                }
             }
         }
     };
@@ -18076,8 +18098,8 @@ var EditorSelectBox = (function () {
             if (this.jsonBuilderHelper.getTemplateQuestionareWithEmittedLeadFormQuestion()[quesIndex] == this.jsonBuilderHelper.getSelectedControl())
                 this.isQuestionInResults = this.formulaService.isQuestionInResults(quesIndex);
         }
-        if (this.isQuestionInResults)
-            this.control.config.validations.required.status = true;
+        // if(this.isQuestionInResults)
+        //   this.control.config.validations.required.status=true;
         jQuery(".choice").addClass("select-empty");
         jQuery(".choice").change(function () {
             if (jQuery(this).val() == "default" || jQuery(this).val() == null) {
