@@ -2239,7 +2239,7 @@ var RecommendationService = (function () {
     };
     RecommendationService.prototype.getAvailableOptions = function () {
         var optionArray = [];
-        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name.replace(/<(?:.|\n)*?>/gm, ''), value: formula.value }); });
+        this._jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) { optionArray.push({ name: formula.name.replace(/<(?:.|\n)*?>|&nbsp;/gm, '').trim(), value: formula.value }); });
         return optionArray;
     };
     RecommendationService.prototype.updateformulaObject = function () {
@@ -2351,11 +2351,11 @@ var TemplateRendererService = (function () {
     };
     TemplateRendererService.prototype.formulaVal = function (formula, type) {
         var _this = this;
-        var possibleMinVal = Number.MAX_VALUE;
-        var possibleMaxVal = Number.MIN_VALUE;
         /* for minvalues */
         var rawFormula = this.formulaService.replaceRs(formula.result);
         var questionStringMin = rawFormula.replace(/(Q[\d]+)/g, function (match) {
+            var possibleMinVal = Number.MAX_VALUE;
+            var possibleMaxVal = Number.MIN_VALUE;
             /* index of question */
             var index = Number(match.substring(1));
             var currentQuesObject = _this._jsonBuilderHelper.getTemplateQuestionare()[index - 1];
@@ -2363,22 +2363,22 @@ var TemplateRendererService = (function () {
             if (currentQuesObject.type == 'slider' || (currentQuesObject.type == 'textfield' && currentQuesObject.config.type == 'number')) {
                 /*min max conditions */
                 if (type == 'min')
-                    possibleMinVal = parseInt(currentQuesObject.props.minVal);
+                    possibleMinVal = parseFloat(currentQuesObject.props.minVal);
                 else
-                    possibleMaxVal = parseInt(currentQuesObject.props.maxVal);
+                    possibleMaxVal = parseFloat(currentQuesObject.props.maxVal);
             }
             else if (currentQuesObject.type == 'checkbox') {
                 possibleMaxVal = 0;
                 for (var t = 0; t < currentQuesObject.options.length; t++) {
                     /*min max conditions */
                     if (type == 'min') {
-                        if (parseInt(currentQuesObject.options[t].value) <= possibleMinVal) {
+                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
                             possibleMinVal = currentQuesObject.options[t].value;
                         }
                         ;
                     }
                     else {
-                        possibleMaxVal += parseInt(currentQuesObject.options[t].value);
+                        possibleMaxVal += parseFloat(currentQuesObject.options[t].value);
                     }
                 }
             }
@@ -2386,13 +2386,13 @@ var TemplateRendererService = (function () {
                 for (var t = 0; t < currentQuesObject.options.length; t++) {
                     /*min max conditions */
                     if (type == 'min') {
-                        if (parseInt(currentQuesObject.options[t].value) <= possibleMinVal) {
+                        if (parseFloat(currentQuesObject.options[t].value) <= possibleMinVal) {
                             possibleMinVal = currentQuesObject.options[t].value;
                         }
                         ;
                     }
                     else {
-                        if (parseInt(currentQuesObject.options[t].value) >= possibleMaxVal) {
+                        if (parseFloat(currentQuesObject.options[t].value) >= possibleMaxVal) {
                             possibleMaxVal = currentQuesObject.options[t].value;
                         }
                         ;
@@ -2402,7 +2402,9 @@ var TemplateRendererService = (function () {
             return ((type == 'min') ? possibleMinVal : possibleMaxVal);
         });
         try {
-            return math.eval(questionStringMin);
+            var val = math.eval(questionStringMin);
+            val = val.toFixed(formula.decimal);
+            return val;
         }
         catch (e) {
             return undefined;
