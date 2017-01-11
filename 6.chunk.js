@@ -1103,7 +1103,7 @@ var JSONBuilder = (function () {
         var index = jQuery.inArray(this.selectedControl, this.selectedSection.items);
         //replace oldControl with newControl at index
         this.selectedSection.items[index].type = newControl;
-        if (newControl == 'slider')
+        if (newControl == 'slider' || newControl == 'selectbox')
             this.selectedSection.items[index].config.validations.required.status = false;
         if (newControl == 'radio_button' || newControl == 'checkbox' || newControl == 'textfield') {
             this.selectedSection.items[index].props.currentValue = '';
@@ -4263,20 +4263,39 @@ var CtaShares = (function () {
     };
     CtaShares.prototype.updateResultLink = function (shareType) {
         var _this = this;
-        if (shareType == 'facebook') {
-            this.ctaEngagment('Facebook Share');
-            this.description = this.formulaService.textParser(this.data.options[0].icon);
-            this.title = this.formulaService.textParser(this.data.options[0].label);
+        if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Numerical') {
+            if (shareType == 'facebook') {
+                this.ctaEngagment('Facebook Share');
+                this.description = this.formulaService.textParser(this.data.options[0].icon);
+                this.title = this.formulaService.textParser(this.data.options[0].label);
+            }
+            else if (shareType == 'twitter') {
+                this.ctaEngagment('Tweet');
+                this.description = this.formulaService.textParser(this.data.options[1].icon);
+                this.title = this.formulaService.textParser(this.data.options[1].label);
+            }
+            else if (shareType == 'linkedin') {
+                this.ctaEngagment('Linkedin Share');
+                this.description = this.formulaService.textParser(this.data.options[2].icon);
+                this.title = this.formulaService.textParser(this.data.options[2].label);
+            }
         }
-        else if (shareType == 'twitter') {
-            this.ctaEngagment('Tweet');
-            this.description = this.formulaService.textParser(this.data.options[1].icon);
-            this.title = this.formulaService.textParser(this.data.options[1].label);
-        }
-        else if (shareType == 'linkedin') {
-            this.ctaEngagment('Linkedin Share');
-            this.description = this.formulaService.textParser(this.data.options[2].icon);
-            this.title = this.formulaService.textParser(this.data.options[2].label);
+        else if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Recommendation') {
+            if (shareType == 'facebook') {
+                this.ctaEngagment('Facebook Share');
+                this.description = this.formulaService.textParser(this.shareLinks.share.facebook.title);
+                this.title = this.formulaService.textParser(this.shareLinks.share.facebook.description);
+            }
+            else if (shareType == 'twitter') {
+                this.ctaEngagment('Tweet');
+                this.description = this.formulaService.textParser(this.shareLinks.share.twitter.title);
+                this.title = this.formulaService.textParser(this.shareLinks.share.twitter.description);
+            }
+            else if (shareType == 'linkedin') {
+                this.ctaEngagment('Linkedin Share');
+                this.description = this.formulaService.textParser(this.shareLinks.share.linkedin.title);
+                this.title = this.formulaService.textParser(this.shareLinks.share.linkedin.description);
+            }
         }
         this.resultLink = __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].APP_EXTENSION + '/' + this.jsonBuilderHelper.getJSONBuilt().url;
         var fbImgUrl = __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].PROTOCOL + this.subDomainService.subDomain.sub_domain + '.' + __WEBPACK_IMPORTED_MODULE_4__environments_environment__["a" /* environment */].APP_EXTENSION + '/seo/' + this.jsonBuilderHelper.getJSONBuilt().url;
@@ -5094,6 +5113,8 @@ var SelectBox = (function () {
         //code
     }
     SelectBox.prototype.ngOnInit = function () {
+        if (this.data.config.validations.required.status)
+            this.data.config.validations.required.status = false;
         var counter = 0;
         for (var _i = 0, _a = this.data.options; _i < _a.length; _i++) {
             var option = _a[_i];
