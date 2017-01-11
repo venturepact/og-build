@@ -4281,6 +4281,7 @@ var CtaShares = (function () {
             }
         }
         else if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Recommendation') {
+            this.shareLinks = this._outcomeService.getSharelinks();
             if (shareType == 'facebook') {
                 this.ctaEngagment('Facebook Share');
                 this.description = this.formulaService.textParser(this.shareLinks.share.facebook.title);
