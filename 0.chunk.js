@@ -17150,7 +17150,7 @@ var EditorRecommended = (function () {
             getOption.hashIndex = this.control.options.length;
             this.control.options.push(getOption);
             this.jsonBuilderHelper.updateFormGroup();
-            jQuery('#' + this.control._id)[0].selectize.addOption({ value: getOption.value, text: getOption.label });
+            jQuery('#' + this.control._id)[0].selectize.addOption({ value: getOption.hashIndex, text: getOption.label });
             jQuery('#' + this.control._id)[0].selectize.refreshOptions(false);
         }
         else if (this.control.type == 'radio_button' || this.control.type == 'checkbox') {
@@ -17184,6 +17184,7 @@ var EditorRecommended = (function () {
     };
     EditorRecommended.prototype.delete_Option_From_Items = function (options, index) {
         if (this.control.type == 'selectbox') {
+            console.log('>>>>Hash>>>>', options[index].hashIndex);
             jQuery('#' + this.control._id)[0].selectize.removeOption(options[index].hashIndex);
             jQuery('#' + this.control._id)[0].selectize.refreshOptions();
             for (var option in options) {
