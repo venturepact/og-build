@@ -12163,6 +12163,8 @@ var ComponentManagerComponent = (function () {
         // this.leadSection = this.getLeadSection(page);
         //toggleleadform
         this.leadSection.visible = !this.leadSection.visible;
+        console.log('>>>>>>>', this.leadSection.items[0]);
+        console.log('>>>>>>>', this.leadSection.items);
         if (this.leadSection.items[0])
             this.leadSection.items[0].visible = !this.leadSection.items[0].visible;
         if (this.leadSection.visible && this.leadSection.items[0].visible) {
