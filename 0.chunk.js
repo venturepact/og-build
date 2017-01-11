@@ -1697,12 +1697,14 @@ var TemplateRendererService = (function () {
     };
     /** update MIN and MAX of result-output */
     TemplateRendererService.prototype.computeMinMax = function () {
-        for (var formula in this._jsonBuilderHelper.getJSONBuilt().formula) {
-            this.staticControls.Result.Result.items[formula].props.minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min');
-            this.staticControls.Result.Result.items[formula].props.maxVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max');
-            this.staticControls.Result.Result.items[formula].options[0].attr.class = this.staticControls.Result.Result.items[formula].props.minVal;
-            this.staticControls.Result.Result.items[formula].options[this.staticControls.Result.Result.items[formula].options.length - 1].attr.style
-                = this.staticControls.Result.Result.items[formula].props.maxVal;
+        if (this._jsonBuilderHelper.getJSONBuilt().templateType != 'Recommendation') {
+            for (var formula in this._jsonBuilderHelper.getJSONBuilt().formula) {
+                this.staticControls.Result.Result.items[formula].props.minVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'min');
+                this.staticControls.Result.Result.items[formula].props.maxVal = this.formulaVal(this._jsonBuilderHelper.getJSONBuilt().formula[formula], 'max');
+                this.staticControls.Result.Result.items[formula].options[0].attr.class = this.staticControls.Result.Result.items[formula].props.minVal;
+                this.staticControls.Result.Result.items[formula].options[this.staticControls.Result.Result.items[formula].options.length - 1].attr.style
+                    = this.staticControls.Result.Result.items[formula].props.maxVal;
+            }
         }
     };
     TemplateRendererService.prototype.formulaVal = function (formula, type) {
