@@ -8832,36 +8832,41 @@ var BuilderComponent = (function () {
         if (this.jsonBuilderHelper.getJSONBuilt().description == 'Default Meta Description')
             this.jsonBuilderHelper.getJSONBuilt().description = this.jsonBuilderHelper.getLandingPageHeading('sub-heading');
         //updating CTA SHARES Default Text for Numerical.
-        var resultPage = this.jsonBuilderHelper.getJSONBuilt().pages.filter(function (page) { return page.type == 'Result'; });
-        if (resultPage) {
-            var leadformSection = resultPage[0].sections.filter(function (section) { return section.type == 'LeadForm'; });
-            if (leadformSection) {
-                var ctaShares = leadformSection[0].items.filter(function (item) { return item.type == 'cta_shares'; });
-                if (ctaShares) {
-                    console.log('>>>>Checking>>>>', ctaShares);
-                    ctaShares[0].options.map(function (option) {
-                        if (jQuery('<textarea/>').html(option.label.replace(/<(?:.|\n)*?>/gm, '')).text().trim() == 'Outgrow')
-                            option.label = _this.jsonBuilderHelper.getLandingPageHeading('main-heading');
-                        if (jQuery('<textarea/>').html(option.icon.replace(/<(?:.|\n)*?>/gm, '')).text().trim() == 'Default Meta Description')
-                            option.icon = _this.jsonBuilderHelper.getLandingPageHeading('sub-heading');
-                    });
+        if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Numerical') {
+            var resultPage = this.jsonBuilderHelper.getJSONBuilt().pages.filter(function (page) { return page.type == 'Result'; });
+            if (resultPage) {
+                var leadformSection = resultPage[0].sections.filter(function (section) { return section.type == 'LeadForm'; });
+                if (leadformSection) {
+                    console.log('>>>>leadformSection>>>>', leadformSection.length);
+                    var ctaShares = leadformSection[0].items.filter(function (item) { return item.type == 'cta_shares'; });
+                    if (ctaShares.length) {
+                        console.log('>>>>Checking>>>>', ctaShares);
+                        ctaShares[0].options.map(function (option) {
+                            if (jQuery('<textarea/>').html(option.label.replace(/<(?:.|\n)*?>/gm, '')).text().trim() == 'Outgrow')
+                                option.label = _this.jsonBuilderHelper.getLandingPageHeading('main-heading');
+                            if (jQuery('<textarea/>').html(option.icon.replace(/<(?:.|\n)*?>/gm, '')).text().trim() == 'Default Meta Description')
+                                option.icon = _this.jsonBuilderHelper.getLandingPageHeading('sub-heading');
+                        });
+                    }
                 }
             }
         }
-        //updating CTA SHARES Default Text for Recom.
-        this.jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) {
-            if (formula) {
-                var links = formula.links.filter(function (link) { return link.type == 'share'; });
-                if (links) {
-                    links.map(function (link) {
-                        if (link.title == 'Outgrow' || link.title == '')
-                            link.title = _this.jsonBuilderHelper.getLandingPageHeading('main-heading');
-                        if (link.description == 'Default Meta Description' || link.description == '')
-                            link.description = _this.jsonBuilderHelper.getLandingPageHeading('sub-heading');
-                    });
+        if (this.jsonBuilderHelper.getJSONBuilt().templateType == 'Recommendation') {
+            //updating CTA SHARES Default Text for Recom.
+            this.jsonBuilderHelper.getJSONBuilt().formula.map(function (formula) {
+                if (formula) {
+                    var links = formula.links.filter(function (link) { return link.type == 'share'; });
+                    if (links) {
+                        links.map(function (link) {
+                            if (link.title == 'Outgrow' || link.title == '')
+                                link.title = _this.jsonBuilderHelper.getLandingPageHeading('main-heading');
+                            if (link.description == 'Default Meta Description' || link.description == '')
+                                link.description = _this.jsonBuilderHelper.getLandingPageHeading('sub-heading');
+                        });
+                    }
                 }
-            }
-        });
+            });
+        }
     };
     BuilderComponent.prototype.Publish = function ($event) {
         var _this = this;
