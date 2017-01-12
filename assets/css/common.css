@@ -5,6 +5,7 @@
     src: url(MaterialIcons-Regular.eot);
     src: local('Material Icons'), local('materialIcons-Regular'), url(../assets/fonts/materialIcons-Regular.woff2) format('woff2'), url(../fonts/materialIcons-Regular.woff) format('woff'), url(../fonts/materialIcons-Regular.ttf) format('truetype')
 }
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: 400;
@@ -21,15 +22,18 @@
     -moz-osx-font-smoothing: grayscale;
     font-feature-settings: 'liga'
 }
+
 .editor-modal .modal-dialog {
     margin: 80px auto
 }
+
 .editor-modal .modal-header {
     padding: 11px 15px;
     background: #fb6066;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px
 }
+
 .editor-modal .modal-title {
     margin: 0;
     line-height: 1.42857143;
@@ -37,6 +41,7 @@
     text-transform: uppercase;
     color: #fff
 }
+
 .editor-modal button.close {
     color: #bdbdbd;
     opacity: 1;
@@ -49,14 +54,17 @@
     text-shadow: none;
     transition: all .3s ease 0s !important
 }
+
 .editor-modal .modal-footer {
     padding: 15px;
     border-top: none
 }
+
 .editor-modal .modal-body {
     font-size: 13px;
     color: #62696d
 }
+
 .editor-modal .btn.btn-basic {
     color: #fff;
     background: #fb545b;
@@ -65,31 +73,37 @@
     border: 1px solid #fb545b;
     transition: all .5s ease
 }
+
 .editor-modal .btn.btn-basic:hover {
     background: #fff;
     color: #fb545b;
     border-color: #fb545b
 }
+
 .editor-modal .btn.btn-basic:first-child {
     color: #8e989f;
     border-color: #8e989f;
     background: #fff
 }
+
 .editor-modal .btn.btn-basic:first-child:hover {
     background: #8e989f;
     color: #fff;
     border: none
 }
+
 .editor-modal .btn.btn-basic:only-child {
     color: #fff;
     background: #fb545b;
     border-color: #fb545b
 }
+
 .editor-modal .btn.btn-basic:only-child:hover {
     background: #fff;
     color: #fb545b;
     border: 1px solid #fb545b
 }
+
 .editor-modal .live-subhead i.material-icons {
     font-size: 38px;
     color: #fb6066;
@@ -97,6 +111,7 @@
     text-align: center;
     display: block
 }
+
 .editor-modal .live-url {
     font-size: 11px;
     font-family: montserratlight;
@@ -106,6 +121,7 @@
     text-transform: uppercase;
     cursor: pointer
 }
+
 .editor-modal .live-subhead .url-style {
     color: #a9a9a9;
     cursor: pointer;
@@ -114,6 +130,7 @@
     background: #ceebff;
     padding: 0 5px
 }
+
 .editor-modal .live-subhead {
     font-size: 16px;
     margin: 0 auto;
@@ -124,23 +141,28 @@
     padding: 7px 10px 12px;
     text-align: left
 }
+
 .editor-modal .live-subhead.link-style {
     background: #f9f9f9;
     border: 1px solid #bec6c9;
     padding: 7px 12px;
     text-align: left
 }
+
 .editor-modal span {
     font-family: montserratlight;
     display: inline-block;
     font-size: 14px;
     color: #4d5052
 }
+
 a.live-url.preview_copy {
     float: right;
     margin-top: 5px
 }
-.editor-modal .modal .form-group .form-control, .editor-modal.modal .form-control {
+
+.editor-modal .modal .form-group .form-control,
+.editor-modal.modal .form-control {
     width: 100%;
     float: left;
     height: 27px;
@@ -151,11 +173,18 @@ a.live-url.preview_copy {
     font-family: montserratlight;
     padding: 0 10px
 }
-.editor-modal .form-control[disabled], .editor-modal .form-control[readonly], .editor-modal .form-group .form-control[disabled], .editor-modal .form-group .form-control[readonly], fieldset[disabled] .editor-modal .form-control, fieldset[disabled] .editor-modal .form-group .form-control {
+
+.editor-modal .form-control[disabled],
+.editor-modal .form-control[readonly],
+.editor-modal .form-group .form-control[disabled],
+.editor-modal .form-group .form-control[readonly],
+fieldset[disabled] .editor-modal .form-control,
+fieldset[disabled] .editor-modal .form-group .form-control {
     background-color: #f8f8f8;
     border: 1px solid rgba(97, 104, 110, .3);
     padding: 0 10px
 }
+
 .editor-modal .live-url {
     font-size: 11px;
     font-family: montserratlight;
@@ -165,6 +194,7 @@ a.live-url.preview_copy {
     text-transform: uppercase;
     cursor: pointer
 }
+
 .editor-modal .live-subhead .url-style {
     color: #a9a9a9;
     cursor: pointer;
@@ -173,10 +203,11 @@ a.live-url.preview_copy {
     background: #ceebff;
     padding: 0 5px
 }
+
 .live-head {
     font-size: 24px;
     font-weight: normal;
-    margin: 20px 26px 34px;
+    margin: 5px 0 35px;
 }
 
 .live-subhead {
@@ -195,29 +226,37 @@ a.live-url.preview_copy {
     color: #fb6066 !important;
     margin-top: 10px
 }
+
 .live-modal {
-    padding: 0 20px 50px
+    padding: 0 20px 45px
 }
-.live-modal td, .live-modal th {
+
+.live-modal td,
+.live-modal th {
     padding: 0 !important;
     border-bottom: 0 !important
 }
+
 .live-modal th {
     width: 100%;
     font-weight: 100
 }
+
 .selected-link {
     white-space: nowrap;
     overflow: auto;
     overflow: hidden
 }
+
 .bootbox .modal-content {
     float: left;
     width: 100%
 }
+
 .bootbox .modal-body {
     border-radius: 5px
 }
+
 .bootbox-body-left {
     float: left;
     width: 37px;
@@ -227,16 +266,19 @@ a.live-url.preview_copy {
     display: table;
     margin: -15px 20px -15px -15px
 }
+
 .bootbox-body .bootbox-body-left .mat-icon {
     display: table-cell;
     vertical-align: middle;
     float: none
 }
+
 .bootbox-body .bootbox-body-left .mat-icon i.material-icons {
     padding-left: 6px;
     color: #fff;
     font-size: 24px
 }
+
 .bootbox-body .bootbox-body-right {
     float: left;
     width: 88%;
@@ -245,23 +287,29 @@ a.live-url.preview_copy {
     font-family: montserratlight;
     padding: 5px 0 10px
 }
-.btn.btn-cancel, .btn.btn-ok {
+
+.btn.btn-cancel,
+.btn.btn-ok {
     background: 0 0;
     font-size: 12px;
     font-family: montserratregular
 }
+
 .one-line-bootbox .bootbox-body-left {
     height: 102px
 }
+
 .bootbox-config .bootbox-body-left {
     height: 142px
 }
+
 .btn.btn-ok {
     border: 2px solid #fb545b;
     border-radius: 0;
     color: #fb545b !important;
     padding: 3px 42px
 }
+
 .btn.btn-cancel {
     border: 2px solid #8e989f;
     border-radius: 0;
@@ -269,6 +317,7 @@ a.live-url.preview_copy {
     padding: 3px 30px;
     margin-right: 5px
 }
+
 .btn.btn-cancel.btn-cancel-hover:hover {
     background: #8e989f;
     color: #fff !important;
@@ -276,6 +325,7 @@ a.live-url.preview_copy {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out
 }
+
 .btn-hover:hover {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -283,6 +333,7 @@ a.live-url.preview_copy {
     color: #fb545b !important;
     border-color: #fdb6b9 !important
 }
+
 .btn-hover:focus {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
@@ -290,12 +341,14 @@ a.live-url.preview_copy {
     color: #fb545b !important;
     border-color: #fdb6b9 !important
 }
+
 .btn-grey-hover:hover {
     background: #bdc5c8 !important;
     color: #fff !important;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out
 }
+
 .alert-success {
     color: #fff;
     background-color: #00c853;
@@ -307,6 +360,7 @@ a.live-url.preview_copy {
     margin-bottom: 0;
     float: left
 }
+
 .alert-success i.material-icons {
     font-size: 16px !important;
     color: #fff;
@@ -314,9 +368,40 @@ a.live-url.preview_copy {
     top: 3px;
     margin-left: 5px
 }
+
+.outcome-style p {
+    margin-bottom: 0px;
+}
+
+.outcome-style strong {
+    font-weight: normal;
+}
+.outcome-style em {
+    font-style: normal;
+}
+.head p, .formula-item p{
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+.card-layout strong {
+    font-weight: normal;
+}
 @media (min-width:768px) {
     .editor-modal .modal-dialog {
         width: 500px;
         margin: 80px auto !important
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .editor-modal .modal-dialog {
+        margin-left: 20px;
+    }
+    .bootbox-body .bootbox-body-right {
+        width: 80%;
+    }
+    .one-line-bootbox .bootbox-body-left {
+        height: 122px;
     }
 }

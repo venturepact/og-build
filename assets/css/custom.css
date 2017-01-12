@@ -1625,12 +1625,15 @@ a.text-red:hover {
 #signUp .form-group .control-label.label-url {
     font-size: 11px!important
 }
+<<<<<<< HEAD
+=======
 
 .modal i.material-icons {
     font-size: 18px;
     color: #fff
 }
 
+>>>>>>> migration
 .modal button.close.btn-close {
     position: absolute;
     right: 15px;
@@ -4127,8 +4130,8 @@ a:hover {
     height: 110px!important
 }
 
-.name-dropdown-wrapper .dropdown-menu .slimScrollDiv {
-    height: 110px!important
+.name-dropdown-wrapper .dropdown-menu .company-list .slimScrollDiv {
+    height: 110px !important;
 }
 
 .name-dropdown-wrapper .dropdown-menu .company-list li>a {
@@ -5412,6 +5415,13 @@ a.text-red:hover {
     font-family: montserratlight;
     float: left
 }
+<<<<<<< HEAD
+/*.modal i.material-icons {
+    font-size: 18px;
+    color: #fff
+}*/
+.modal button.close.btn-close {
+=======
 
 #leaveConfirmation .modal-content,
 #userAccountDeleteConfirmation .modal-content {
@@ -5431,6 +5441,7 @@ a.text-red:hover {
 #leaveConfirmation.modal button.close.btn-close,
 #userAccountDeleteConfirmation.modal button.close.btn-close {
     text-shadow: none;
+>>>>>>> migration
     position: absolute;
     right: 15px;
     top: 12px;
@@ -5530,8 +5541,220 @@ a.text-red:hover {
     right: 15px;
     top: 12px
 }
+#main-profile {
+    height: 100%;
+    width: 100%;
+    float: left;
+    background: #f6f8f9;
+    font-family: montserratregular
+}
+#main-profile .full-header,
+.left-sidebar {
+    background: #fff;
+    position: fixed;
+    float: left
+}
+.wrapper {
+    width: 100%;
+    float: left
+}
+#main-profile .full-header {
+    height: 104px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .13);
+    width: 100%;
+    z-index: 99
+}
+.header-padding {
+    padding: 0 30px
+}
+#main-profile .logo {
+    float: left;
+    font-size: 32px;
+    line-height: 104px
+}
+.left-sidebar {
+    left: 0;
+    top: 60px;
+    bottom: 0;
+    height: 100vh;
+    width: 255px;
+    z-index: 1;
+    padding-top: 15px;
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, .1);
+    border-right: 1px solid #d7dbdd
+}
+.left-sidebar ul {
+    padding: 0;
+    margin: 0
+}
+.left-sidebar ul li a {
+    font-size: 12px;
+    color: #8e989f;
+    line-height: 14px;
+    float: left;
+    padding: 20px 15px;
+    width: 100%
+}
+.left-sidebar ul li a h6 {
+    font-size: 12px;
+    color: #62696d;
+    font-family: montserratregular;
+    text-transform: uppercase;
+    margin: 0 0 6px
+}
+.left-sidebar ul li a .left-sidebar-icon i.material-icons {
+    color: #bec5c9;
+    margin-top: -2px
+}
+.left-sidebar ul li a .left-sidebar-icon {
+    float: left;
+    width: auto
+}
+.left-sidebar ul li a .left-sidebar-icon.noti-icon i.material-icons {
+    font-size: 22px
+}
+.left-sidebar ul li a .left-sidebar-title {
+    float: left;
+    width: 81%;
+    margin-left: 17px
+}
+.left-sidebar ul li.active a .left-sidebar-icon i.material-icons,
+.left-sidebar ul li.active a .left-sidebar-title h6,
+.left-sidebar ul li:hover a .left-sidebar-icon i.material-icons,
+.left-sidebar ul li:hover a .left-sidebar-title h6 {
+    color: #fb545b;
+    transition: all .3s ease 0s!important
+}
+.left-sidebar .tabs-left,
+.tabs-wrapper .tab-sub-content {
+    float: left;
+    width: 100%
+}
+.wrapper-content {
+    float: left;
+    width: 100%;
+    padding: 35px 0px 30px 255px;
+    background: #f6f8f9;
+    min-height: 100vh;
+    height: 100%
+}
+.wrapper-content.cancelled-setting {
+    padding-left: 30px
+}
+.popover-wrapper .popover-block {
+    position: relative;
+    top: 18px;
+    left: -35px;
+    min-width: 100px;
+    padding: 8px;
+    font-size: 12px;
+    background: #62696d;
+    border-radius: 4px!important;
+    border: none;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);
+    display: none;
+    z-index: 9
+}
+.popover-wrapper:hover .popover-block {
+    display: block
+}
+.popover-wrapper .popover-block:before {
+    position: absolute;
+    top: -8px;
+    right: 42px;
+    display: inline-block;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #62696d;
+    border-left: 6px solid transparent;
+    border-bottom-color: #62696d;
+    content: ''
+}
+.sahil-material .form-control {
+    height: 38px;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: montserratregular;
+    color: #62696d
+}
+.sahil-material .form-group label.control-label {
+    font-size: 14px;
+    line-height: 1.07142857;
+    color: #8e989f;
+    font-weight: 400;
+    margin: 16px 0 0;
+    font-family: montserratregular
+}
+.sahil-material .form-group label.control-label.seo-static-label {
+    text-transform: uppercase!important;
+    font-size: 10px!important;
+    color: #8e989f!important
+}
+.sahil-material .form-group.label-floating label.control-label,
+.sahil-material .form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 14px;
+    line-height: 18px
+}
+.sahil-material .form-group.label-floating.is-focused label.control-label,
+.sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
+    top: -20px;
+    font-size: 11px!important;
+    color: #8e989f!important;
+    font-family: montserratregular
+}
+.sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
+    text-transform: uppercase
+}
+.sahil-material .form-group.is-focused label,
+.sahil-material .form-group.is-focused label.control-label {
+    font-size: 10px!important;
+    font-family: montserratregular;
+    color: #8e989f!important;
+    text-transform: uppercase
+}
+.sahil-material .form-control,
+.sahil-material .form-group .form-control {
+    border: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#009688), to(#009688)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#009688, #009688), -webkit-linear-gradient(#d7dbdd, #D2D2D2);
+    background-image: -o-linear-gradient(#009688, #009688), -o-linear-gradient(#d7dbdd, #d7dbdd);
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd)
+}
+.sahil-material .form-group.is-focused .form-control {
+    outline: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#fb545b, #fb545b), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
+    -webkit-background-size: 100% 2px, 100% 1px;
+    background-size: 100% 2px, 100% 1px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s
+}
+#MessageModal .modal-content {
+    border-radius: 8px;
+    float: left;
+    width: 100%
+}
+#MessageModal .modal-header {
+    padding: 10px 17px;
+    border-bottom: none;
+    background: #fb6066;
+    border-radius: 7px 7px 0 0
+}
+#MessageModal.modal button.close.btn-close {
+    right: 15px;
+    top: 12px
+}
+#MessageModal.modal button.close.btn-help {
+=======
 
 #indexModal.modal button.close.btn-help {
+>>>>>>> 008c5da06418a7e37668a4fc03cfd2210c8da347
     right: 40px;
     top: 11px
 }
