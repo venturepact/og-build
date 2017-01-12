@@ -1,13 +1,13 @@
-webpackJsonp([9,12],{
+webpackJsonp([9,13],{
 
-/***/ 787:
+/***/ 805:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_modules_shared_module__ = __webpack_require__(74);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__shared_modules_shared_module__ = __webpack_require__(78);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(416);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index__ = __webpack_require__(428);
 /* harmony export (binding) */ __webpack_require__.d(exports, "SignUpModule", function() { return SignUpModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -32,11 +32,11 @@ var SignUpModule = (function () {
     function SignUpModule() {
     }
     SignUpModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["u" /* NgModule */])({
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["v" /* NgModule */])({
             declarations: [__WEBPACK_IMPORTED_MODULE_3__index__["a" /* SignupDetailComponent */]],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__shared_modules_shared_module__["a" /* SharedModule */],
-                __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forChild(SIGNUP_ROUTES)
+                __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */].forChild(SIGNUP_ROUTES)
             ],
             exports: [],
             providers: []
@@ -45,9 +45,9 @@ var SignUpModule = (function () {
     ], SignUpModule);
     return SignUpModule;
 }());
-
+//# sourceMappingURL=/Applications/XAMPP/xamppfiles/htdocs/projects/Outgrow/migration/Outgrow-frontend/src/signup.module.js.map
 
 /***/ }
 
 });
-//# sourceMappingURL=9.map
+//# sourceMappingURL=9.bundle.map
