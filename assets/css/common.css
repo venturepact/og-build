@@ -405,3 +405,5 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         height: 122px;
     }
 }
+
+:focus {outline: none !important; box-shadow: none;}
