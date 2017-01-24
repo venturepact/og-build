@@ -383,7 +383,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     margin-bottom: 0px;
     display: inline-block;
 }
-
+.head strong, .formula-item strong{
+    font-weight: normal;
+}
 .card-layout strong {
     font-weight: normal;
 }
@@ -405,3 +407,5 @@ fieldset[disabled] .editor-modal .form-group .form-control {
         height: 122px;
     }
 }
+
+:focus {outline: none !important; box-shadow: none;}
