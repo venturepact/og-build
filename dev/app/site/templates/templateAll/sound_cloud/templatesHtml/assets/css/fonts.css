@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    }
+
+.mregular-font {
+    font-family: montserratregular;
+}
+
+@font-face {
+    font-family: 'material_iconsregular';
+    src: url('../fonts/materialicons-regular-webfont.woff2') format('woff2'),
+         url('../fonts/materialicons-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); 
+  src: local('Material Icons'),
+       local('materialIcons-Regular'),
+       url(../fonts/materialIcons-Regular.woff2) format('woff2'),
+       url(../fonts/materialIcons-Regular.woff) format('woff'),
+       url(../fonts/materialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+@font-face {
+    font-family: "montserratlight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-light-webfont.eot") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oxygenregular';
+    src: url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.eot');
+    src: url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.woff2') format('woff2'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.woff') format('woff'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.ttf') format('truetype'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-regular-webfont.svg#oxygenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'oxygenbold';
+    src: url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.eot');
+    src: url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.woff2') format('woff2'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.woff') format('woff'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.ttf') format('truetype'),
+         url('./app/site/templates/templateAll/sound_cloud/templatesHtml/assets/fonts/oxygen-bold-webfont.svg#oxygenbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

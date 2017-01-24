@@ -1,0 +1,61 @@
+<div class="col-md-6 col-lg-6">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Team Details</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class=" col-md-12 col-lg-12 ">
+							<table class="table table-user-information">
+								<thead>
+									<tr>
+										<th>
+											Name
+										</th>
+										<th>
+											Role
+										</th>
+										<th>
+											Status
+										</th>
+										<th>
+											Active
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr *ngFor="let t of team">
+										<td>
+											<a [routerLink] = "['/admin/user/',t._id]">{{t.name}}</a>
+										</td>
+										<td>
+											{{t.user_company.role}}
+										</td>
+										<td>
+											{{t.user_company.status}}
+										</td>
+										<td>
+											{{t.user_company.active}}
+										</td>
+									</tr>
+									<tr>
+										<td>
+										</td>
+										<td>
+										</td>
+										<td>
+										</td>
+										<td>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

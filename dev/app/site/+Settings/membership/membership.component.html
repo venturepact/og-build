@@ -1,0 +1,123 @@
+<div class="tab-pane" id="membership-details">
+	<div class="col-md-12 col-sm-12 col-xs-12 np">
+		<!-- Start: Nav tabs -->
+		<div class="col-md-3 col-sm-3 col-xs-12 np membership-details-inner-tabs">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+	            <li role="presentation" class="active">
+				    <a href="#subscription" aria-controls="" role="tab" data-toggle="tab">Subscription <i class="material-icons">keyboard_arrow_right</i></a>
+			     </li>
+			    <li role="presentation">
+				    <a href="#invoice" aria-controls="" role="tab" data-toggle="tab">Invoices <i class="material-icons">keyboard_arrow_right</i></a>
+			    </li>
+			    <li role="presentation">
+				    <a href="#settings" aria-controls="" role="tab" data-toggle="tab">Billing Details <i class="material-icons">keyboard_arrow_right</i></a>
+			    </li>
+            </ul>
+		</div>
+        <!-- End: Nav tabs -->
+
+		<div class="tab-content tab-sub-content col-md-9 col-sm-9 col-xs-12 np">
+            <!-- Start: Nav tabs (responsive) -->
+            <div class="col-md-12 col-sm-12 col-xs-12 membership-details-tabs-resp">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#subscription" aria-controls="" role="tab" data-toggle="tab">Subscription</a>
+                     </li>
+                    <li role="presentation">
+                        <a href="#invoice" aria-controls="" role="tab" data-toggle="tab">Invoices</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#settings" aria-controls="" role="tab" data-toggle="tab">Billing Details</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End: Nav tabs (responsive) -->
+			<div role="tabpanel" class="tab-pane my-profile active" id="subscription">
+				<og-subscription [payment_status] = "card_status" [userRole] = "userRole" (isChangePlan)="isChangePlan = $event" (changeToPlan)="changeToPlan = $event"></og-subscription>
+			</div>
+			<div role="tabpanel" class="tab-pane my-profile" id="invoice">
+				<og-invoice></og-invoice>
+			</div>
+			<div role="tabpanel" class="tab-pane my-profile" id="settings">
+				<og-payment [cardType] = "cardType" [userRole] = "userRole" (CardDetailChanged)="CardDetail = $event" [CardDetail]="CardDetail" [BillingDetails.card_status]="card_status"></og-payment>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Start: Modal CC -->
+<div id="cc-modal" class="modal fade cc-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+      <!-- Modal content-->
+    <form class="form-wrapper" [formGroup]="setupPaymentForm" id="setupPaymentForm" (ngSubmit)="setupPayment()">
+      <div class="modal-content modal-content-credit">
+        <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+            Close <i class="material-icons">close</i>
+        </button>
+        <div class="modal-body">
+          <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <div class="col-md-12 col-sm-12 np">
+              <div class="col-md-6 col-sm-6 col-xs-6 np modal-header">
+                Payment Setup
+              </div>
+              <img id="cardType" src="assets/images/payment-icons/icon-{{cardType}}.png" alt="{{cardType}}" class="pull-right" *ngIf="cardType"/>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 np">
+              <div class="col-md-12 col-sm-12 col-xs-12 np credit-sec">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber1" id="cardNumber1" name = "cardNumber1" #num1 (keyup)="onChangeCardNumber(num1)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber2" id="cardNumber2" name = "cardNumber2" [readonly]="!setupPaymentForm.controls.cardNumber1.valid" #num2 (keyup)="onChangeCardNumber(num2)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber3" id="cardNumber3" name = "cardNumber3" [readonly]="!setupPaymentForm.controls.cardNumber2.valid" #num3 (keyup)="onChangeCardNumber(num3)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number cc-number-last" placeholder="XXXX" formControlName="cardNumber4" id="cardNumber4" name = "cardNumber4" [readonly]="!setupPaymentForm.controls.cardNumber3.valid" #num4 (keyup)="onChangeCardNumber(num4)">
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 np validity-sec">
+                <div class="col-md-5 col-sm-5 col-xs-5 np"></div>
+                <div class="col-md-7 col-sm-7 col-xs-7 np">
+                  <span class="val-text">Validity</span>
+                  <div class="pull-right">
+                    <input type="text" pattern="[0-9]*" placeholder="MM" maxlength="2" class="cc-exp" id="cardMonth" name="cardMonth" formControlName="cardMonth" #mm (keyup)="onChangeCardNumber(mm)">
+                    <span class="separator">/</span>
+                    <input type="text" pattern="[0-9]*" placeholder="YYYY" maxlength="4" class="cc-exp cc-exp-last" id="cardYear" name="cardYear" formControlName="cardYear" #yyyy (keyup)="onChangeCardNumber(yyyy)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 np name-sec">
+                <input type="text" placeholder="YOUR NAME" class="cc-name col-md-9 col-sm-9 col-xs-12 np" id="nameOnCard" name="nameOnCard" formControlName="nameOnCard">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-content modal-content-cvv">
+          <div class="modal-body">
+              <div class="col-md-12 col-sm-12 col-xs-12 np">
+                  <div class="col-md-12 col-sm-12 np">
+                      <span class="grey-bg"></span>
+                  </div>
+                  <div class="col-md-12 col-sm-12 np">
+                      <input type="password" size="3" maxlength="3" class="cvv-number" placeholder="XXX" name="cvv" id="cvv" formControlName="cvv" #cvv (keyup)="onChangeCardNumber(cvv)">
+                      <span class="cvv-text">CVV</span>
+                  </div>
+              </div>
+          </div>
+          <button id="btnSetupCard" [disabled]="!setupPaymentForm.valid" type="submit" class="btn btn-red-outline btn-hover">
+            <span *ngIf='!isChangePlan'>Submit</span>
+            <span *ngIf='isChangePlan'>Make Payment</span>
+          </button>
+          <div *ngIf="error" class="alert alert-danger custom-danger">
+            <p>
+              <span class="mat-icon">
+                  <i class="material-icons">report_problem</i>
+              </span>
+              {{errorMessage}}
+            </p>
+        	</div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- End: Modal CC -->
+<div class="float-changes-updated hide" id="setupPaymentMessage">
+	<div class="col-md-12 np">
+		<span class="icon-done"><i class="material-icons">done</i></span>
+		<span id="setupMessage"></span>
+	</div>
+</div>

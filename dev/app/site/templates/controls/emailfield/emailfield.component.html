@@ -1,0 +1,28 @@
+<div class="question-components" >
+		<div class="" [formGroup]="form">
+			<div class="section-head" >
+          <span class="pull-left">
+              {{data.props.title}}
+              <div class="help-outer">
+                  <i class="material-icons" *ngIf="data.config.showHelp">help_outline</i>
+                  <div class="help-text" *ngIf="data.config.showHelp">{{data.props.helpText}}</div>
+              </div>
+          </span> 
+      </div>
+			<div class="input-field">
+				<input tabindex="0"
+                    type="email" 
+                    [id]="data._id"
+                    [formControlName]="data._id"
+                    [(ngModel)]="data.props.currentValue"
+                    placeholder="{{data.config.placeholder}}"
+                    [(ngModel)]="data.props.currentValue"
+                    [formControlName]="data._id"
+                    (blur)="onBlur()"
+                >
+			</div>
+      <span *ngIf="form.controls[data._id].touched">
+		  	<div class="errorMessage" *ngIf="!isValid">{{data.config.validations.required.message}}</div>
+      </span>
+		</div>
+	</div>

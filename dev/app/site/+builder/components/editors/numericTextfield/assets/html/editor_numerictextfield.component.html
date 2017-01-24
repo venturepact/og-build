@@ -1,0 +1,55 @@
+<!-- Common Component -->
+<div class="type-details">
+    <common-editor>
+    </common-editor>
+</div>
+<!-- Common Component-->
+<div class="type-details">
+    <span class="form-label" [class.no-margin]="control.config.showHelp === false">Help Text:</span>
+    <div class="switch">
+        <label>
+            <input type="checkbox" name="properties-checkbox" class="show-check" [checked]="control.config.showHelp" (change)="onChangeDescription(control);callGA('HELPTEXT',control)" data-size="mini" data-on-color="blue">
+            <span class="lever"></span>
+        </label>
+    </div>
+    <!--//on/off-->
+    <div class="col-xs-12 no-padding text-group div-check" *ngIf="control.config.showHelp">
+        <textarea class="form-text question-textarea" [(ngModel)]="control.props.helpText"></textarea>
+    </div>
+</div>
+<div class="type-details">
+    <div class="col-xs-12 no-padding text-group horz-group">
+        <span class="col-md-4 no-padding form-label">Placeholder:</span>
+        <div class="col-md-7 col-xs-7 no-padding horz-control">
+            <input type="text" class="form-text" [(ngModel)]="control.config.placeholder">
+        </div>
+    </div>
+    <div class="col-xs-12 no-padding text-group horz-group ">
+        <span class="col-md-4 no-padding form-label">Min Value:</span>
+        <div class="col-md-4 col-xs-4 no-padding horz-control">
+            <input type="text" class="form-text" [(ngModel)]="control.props.minVal">
+        </div>
+    </div>
+    <div class="col-xs-12 no-padding text-group horz-group ">
+        <span class="col-md-4 no-padding form-label">Max Value:</span>
+        <div class="col-md-4 col-xs-4 no-padding horz-control">
+            <input type="text" class="form-text" [(ngModel)]="control.props.maxVal">
+        </div>
+    </div>
+</div>
+<div class="type-details no-border">
+    <label class="check">
+        <input type="checkbox" value="Value1" name="checkbox1" id="check1" [checked]="control.config.validations.required.status" (change)="onChange(control);callGA('MANDATE',control)">
+        <label for="check1"> </label>
+        Mark as Mandatory
+    </label>
+    <!--<span *ngIf="control.config.validations.required.status">
+                        <div class="col-xs-12 no-padding text-group  horz-group">
+                            <span class=" col-md-4 no-padding form-label">Message:</span>
+
+                            <div class="col-md-7 no-padding horz-control">
+                                <input type="text" class="form-text" [(ngModel)] = "control.config.validations.required.message">
+                            </div>
+                        </div>
+                    </span>-->
+</div>

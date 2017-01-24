@@ -1,0 +1,38 @@
+<div class="config-template-tabs new-email-outr">
+    <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+        <div class="col-xs-12 np integration-top">
+            <h3>Sharing Settings</h3>
+        </div>
+        <div class="col-xs-12 np share-groupbox">
+            <label>URL:</label>
+            <div class="col-xs-12 np my-emailform">
+                <div class="form-group label-floating">
+                    <input class="form-control" id="inputName" type="text" [(ngModel)]="srcUrl" readonly="readonly">
+                </div>
+                <a href="javascript:void(0);" (click)="copyButton();callGA('COPYLINK')">Copy Link</a>
+            </div>
+        </div>
+        <div class="col-xs-12 np share-groupsocial">
+            <label>Share on social platforms:</label>
+            <div class="col-xs-12 np">
+
+                <div id="fb-root"></div>
+                <!--<div class="fb-share-button" [attr.data-href]="srcUrl" data-layout="button_count"> </div>-->
+                <a title="Facebook" (click)="facebookShare();callGA('FBSHARE')" class="fbcol"><img src="assets/images/fb-icon_white.png" /></a>
+                <a target="_blank" (click)="callGA('LISHARE')" [href]="linkedInSrcUrl" title=" LinkedIn " class="incol"><img src="assets/images/li-icon_white.png " /></a>
+                <a class="twitter-share-button " (click)="callGA('TSHARE')" target="_blank" [href]="twitterSrcUrl" class="twcol"><img src="assets/images/tw-icon_white.png " /></a>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-sm-2 general-helppanel ">
+        <div class="col-xs-12 np text-center ">
+            <label class="g-helpicon ">
+                    <i class="material-icons ">lightbulb_outline</i>
+                </label>
+        </div>
+        <h5>Go ahead..share!</h5>
+        <p>Over 40% of traffic to calculators should be coming from social networks!</p>
+    </div>
+</div>

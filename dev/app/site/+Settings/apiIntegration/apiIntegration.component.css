@@ -1,0 +1,186 @@
+.api-keyoutr{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.api-keyoutr h3{
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #62696d;
+    margin-top: 0px;
+    font-family: montserratregular;
+}
+.api-key-table{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.api-key-table-top{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #dae2e6;
+}
+.api-key-table-top .pl0{
+    padding-left: 0px;
+}
+.api-key-table-top p{
+    font-size:14px;
+    color:#bec5c9;
+    font-family: montserratregular;
+}
+.api-key-tablelist{
+    float: left;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #dae2e6;
+}
+.api-tablelist-left{
+    float: left;
+    width: 70px;
+}
+.api-tablelist-left span{
+    width: 60px;
+    height: 60px;
+    background: #269fd8;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.api-tablelist-left span.red{
+    background: #f87b80 !important;
+}
+.api-tablelist-right{
+    float: left;
+    width: 72%;
+    margin-top: 12px;
+    padding-left: 10px;
+}
+.api-tablelist-right p{
+    float: left;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #62696d;
+    font-family: montserratregular;
+}
+.api-tablelist-right label{
+    float: left;
+    width: 90%;
+    font-size: 11px;
+    color: #62696d;
+    font-family: montserratregular;
+}
+.api-key-generate{
+    width: 90%;
+    font-size: 12px;
+    color: #62696d;
+    font-family: montserratregular;
+    vertical-align: middle;
+    word-wrap: break-word;
+    float: left;
+    margin-top: 20px;
+}
+.api-key-actions{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    padding-left: 30px;
+}
+.api-key-actions a{
+    float: left;
+    font-size: 13px;
+    color: #62696d;
+    font-family: montserratregular;
+    opacity: 0.6;
+    margin-right: 25px;
+}
+.api-key-actions a:hover{
+    color:#fb545b;
+    opacity: 1;
+}
+.api-key-actions a:nth-child(2){
+    /*float: right;*/
+    text-align: left;
+    margin-right: 0px;
+}
+.api-key-actions a i{
+    font-size: 18px;
+    position: relative;
+    top: 4px;
+    opacity: 0.6;
+} 
+
+.action-last {
+    padding-left: 30px;
+}
+
+
+/* responsive css sahil */
+
+@media (min-width: 320px) and (max-width:768px) {
+
+    .api-key-table-top{
+        display: none;
+    }
+    .api-tablelist-left span{
+        width: 45px;
+        height: 45px;
+    }
+    .api-tablelist-right{
+        margin-top: 0px;
+    }
+    .api-key-generate{
+        margin-left: 80px;
+        width: 80%;
+        margin-top: 0px;
+    }
+    .api-key-actions{
+        margin-left: 50px;
+        width: 80%;
+        margin-top: 5px;
+    }
+    .api-key-actions a{
+        margin-right: 15px;
+    }
+    .api-key-actions a:nth-child(2){
+        float: left;
+        margin-left: 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

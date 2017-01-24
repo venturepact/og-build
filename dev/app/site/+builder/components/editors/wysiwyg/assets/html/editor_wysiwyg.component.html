@@ -1,0 +1,17 @@
+<div>
+    <!--<span class="form-label">Result Description:</span>-->
+    <!--<select class="hide form-control small-select" (change)="variableSelected($event.target.value)" >
+        <option *ngFor="let variable of formulaService.allValidVariables()" >{{variable}}</option>
+    </select>-->
+    <textarea 
+        class="wysiwyg{{control._id}}"  
+        [(ngModel)]="control.props.title"
+        *ngIf="jsonBuilderHelper.getJSONBuilt().templateType =='Numerical'"
+    ></textarea>
+     
+     <textarea 
+        class="wysiwyg{{control._id}}"  
+        [(ngModel)]="control.html"
+        *ngIf="jsonBuilderHelper.getJSONBuilt().templateType =='Recommendation'"
+    ></textarea>
+</div>

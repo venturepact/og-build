@@ -1,0 +1,14 @@
+<div [formGroup]="form">
+	<div class="input-field">
+		<input tabindex="0"
+			type="{{data.config.type}}" 
+			placeholder="{{data.config.placeholder}}"
+			[id]="data._id"
+			[(ngModel)]="data.props.currentValue"
+			(change)="data.props.currentLabel=data.props.currentValue"
+			[formControlName]="data._id"
+			(blur)="onBlur()"
+		>
+	</div>
+	<div class="errorMessage" *ngIf="form.controls[data._id].touched && !isValid">{{ValidationMessage}}</div>
+</div>

@@ -1,0 +1,169 @@
+<div class="preloader" *ngIf="loader==0">
+    <div class="status">&nbsp;</div>
+</div>
+<!-- Choose temp top Section -->
+<div class="col-md-12 col-sm-12 col-xs-12 choosetem-topsec">
+    <h3>Select from one of our beautiful & optimized templates.</h3>
+    <p>
+        All of our templates have been optimized for lead conversion, SEO and are build using the latest design standards.
+    </p>
+</div>
+<!-- Choose temp top Section End-->
+<!-- Choose temp boxes start (sahil) -->
+<div class="col-xs-12 np choosetemp-boxes-outr" *ngIf="templates.length">
+    <div>
+        <div class="col-xs-12 col-sm-6 col-md-6" *ngFor="let template of getAvailableTemplates();let s = index">
+            <div class="choosetemp-box2" [class.temp2]="s%2==1" [class.temp1]="s%2==0">
+                <figure class="choosetemp-box-figure2 col-sm-12 col-xs-12 np">
+                    <div class="choosetemp-top1">
+                        <div class="hs_container hs_container_1920">
+                            <!-- <div class="hs_area hs_area1" data-toggle="modal" data-target="#temp-preview" (click)="onPreview(template.selector)">
+                                <img *ngFor="let image of template.previewImages; let i = index" [src]="image" [class.hs_visible]="i==0" alt="" />
+                            </div>  -->
+                            <div class="hs_area hs_area1" (click)="selectTemplate(template.selector, $event)">
+                                <img *ngFor="let image of template.previewImages; let i = index" [src]="image" [class.hs_visible]="i==0" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+                <ul class="choosetemp-social col-sm-1 col-xs-12 hide">
+                    <li>
+                        <a href="javascript:void(0);" class="hvr-float-shadow">
+                            <i class="material-icons">share</i> 4500
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="hvr-float-shadow">
+                            <i class="material-icons">favorite</i> 2520
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="hvr-float-shadow">
+                            <i class="material-icons">people</i> 3550
+                        </a>
+                    </li>
+                </ul>
+                <div class="choosetemp-actions">
+                    <div class="col-md-12 col-sm-12 col-xs-12 np">
+                        <h3 class="col-md-9 col-sm-9 col-xs-9 np ct-w100">{{template.name}}</h3>
+                        <div class="col-md-3 col-sm-3 col-xs-3 np ct-w100">
+                            <button type="" class="btn btn-red-outline btn-hover" (click)="selectTemplate(template.selector, $event)">Use Template</button>
+                        </div>
+                        <p>
+                            {{template.description}}
+                        </p>
+                    </div>
+                    <button type="" class="btn btn-red-outline btn-hover hide" data-toggle="modal" data-target="#temp-preview" (click)="onPreview(template.selector)">Preview</button>
+                    <label class="choosetemp-label" *ngIf="template.isPremium">PREMIUM</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12" *ngFor="let template of getNotAvailableTemplates();let s = index">
+        <div class="choosetemp-box2" [class.temp2]="s%2==1" [class.temp1]="s%2==0">
+            <!-- <figure class="choosetemp-box-figure2 col-sm-12 col-xs-12 np">
+                <div class="choosetemp-top1">
+                    <div class="hs_container">
+                        <div class="hs_area hs_area1" data-toggle="modal" data-target="#temp-preview" (click)="onPreview(template.selector)">
+                            <img *ngFor="let image of template.previewImages; let i = index" [src]="image" [class.hs_visible]="i==0" alt="" />
+                        </div>
+                         <div class="hs_area hs_area1">  
+                            <div class="not-available">          
+                                <i class="material-icons">lock</i>
+                                <img  [src]="template.previewImages[0]" class="test" [class.hs_visible]="true" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </figure> -->
+
+            <div class="col-xs-12 col-sm-12 np" >
+                <div class="choose-temp-soon">
+                    <img [src]="template.previewImages[0]" class="hs_visible">
+                    <div class="choose-temp-soon-hover">
+                        <i class="material-icons">lock</i>
+                    </div>
+                </div>
+            </div>
+            <ul class="choosetemp-social col-sm-1 col-xs-12 hide">
+                <li>
+                    <a href="javascript:void(0);" class="hvr-float-shadow">
+                        <i class="material-icons">share</i> 4500
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="hvr-float-shadow">
+                        <i class="material-icons">favorite</i> 2520
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="hvr-float-shadow">
+                        <i class="material-icons">people</i> 3550
+                    </a>
+                </li>
+            </ul>
+            <div class="choosetemp-actions">
+                <div class="col-md-12 col-sm-12 col-xs-12 np">
+                    <!--<h3 class="col-md-12 col-sm-12 col-xs-12 np">{{template.name}}</h3>-->
+                   <!-- <div class="col-md-3 col-sm-3 col-xs-3 np">
+                        <button type="" *ngIf="template.available" class="btn btn-red-outline btn-hover" (click)="selectTemplate(template.selector, $event)">Use Template</button>
+                    </div>-->
+                    <!--<p>
+                        {{template.description}}
+                    </p>-->
+                </div>
+                <button type="" class="btn btn-red-outline btn-hover hide" data-toggle="modal" data-target="#temp-preview" (click)="onPreview(template.selector)">Preview</button>
+                <label class="choosetemp-label" *ngIf="template.isPremium">PREMIUM</label>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--  Choose temp boxes end (sahil) -->
+
+<!-- Start: Modal Template Preview -->
+<div id="temp-preview" class="modal fade temp-preview" tabindex="-1" role="dialog">
+    <div class="temp-preview-dialog modal-anim">
+        <!-- Modal content-->
+        <div class="temp-preview-content modal-bg">
+            <!-- <div class="temp-preview-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<i class="material-icons">close</i></button>
+       			 <h4 class="modal-title">Login</h4>
+			</div> -->
+            <div class="temp-preview-body">
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close" (click)="appJson=undefined">
+					<i class="material-icons">close</i>
+				</button>
+                <div class="col-md-12 col-sm-12 col-xs-12 np">
+                    <div class="col-md-12 col-sm-12 col-xs-12 responsive-menu">
+                        <button type="" class="btn btn-red-outline btn-hover btn-preview hide" data-toggle="modal" data-target="#temp-preview">Preview</button>
+                        <button type="" class="btn btn-red-outline btn-hover" (click)="selectTemplate(tempname,$event)">Use Template</button>
+                    </div>
+
+                    <!-- <div class="col-md-12 col-sm-12 col-xs-12 np">
+				   		<iframe src="http://app.outgrow.us/design/backup/preview-template-1"></iframe>
+				    </div> -->
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 np" *ngIf="tempname==='one-page-slider'">
+                        <img src="assets/images/temp1.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 np" *ngIf="tempname==='sound-cloud'">
+                        <img src="assets/images/temp2.jpg" class="img-responsive">
+                    </div>
+
+                    <!-- <div class="col-md-12 col-sm-12 col-xs-12">
+				   		<og-preview *ngIf="appJson" [json]="appJson"></og-preview>
+				    </div> -->
+                </div>
+            </div>
+            <!-- <div class="modal-footer">
+
+			</div> -->
+        </div>
+    </div>
+</div>
+<!-- End: Modal Template Preview -->

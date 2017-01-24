@@ -1,0 +1,184 @@
+:host {
+  display: block;
+  padding: 0 16px;
+}
+
+input {
+  width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0 0 8px;
+}
+
+#btnAdduser{
+margin-bottom: 10px;
+}
+.all-users-container{
+  top:100px;
+  position: relative;
+  margin-left: 255px;
+}
+
+/* Start: Add New User Modal */
+  #add-user .modal-content {
+      border-radius: 8px;
+  }
+
+  #add-user .modal-header {
+      padding: 10px 17px;
+      border-bottom: none;
+      background: #fb6066;
+      border-radius: 7px 7px 0px 0px;
+  }
+
+
+  #add-user.modal button.close.btn-close {
+      text-shadow: none;
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      z-index: 9;
+      opacity: 1;
+      transition: all 0.3s ease 0s !important;
+  }
+
+  #add-user.modal button.close.btn-help {
+      text-shadow: none;
+      position: absolute;
+      right: 40px;
+      top: 11px;
+      z-index: 9;
+      opacity: 1;
+      transition: all 0.3s ease 0s !important;
+  }
+
+  #add-user.modal i.material-icons {
+      font-size: 16px;
+      color: #fff;
+  }
+
+  #add-user.modal button.close.btn-help i.material-icons {
+      font-size: 14px;
+      color: #fff;
+  }
+
+  #add-user .modal-title {
+      text-transform: uppercase;
+      color: #fff;
+  }
+
+  #add-user .modal-body {
+      padding: 15px 25px 30px;
+  }
+
+  #add-user .btn-red-outline {
+      color: #fb545b;
+      background-color: #fff;
+      border-color: #ffb5b8;
+      border-radius: 0;
+      font-size: 11px;
+      padding: 7px 20px;
+      margin: 10px 0px;
+      transition: all 0.3s ease 0s;
+      font-family: montserratregular;
+      text-transform: uppercase;
+      float : right ;
+  }
+
+  .modal .btn-red-outline.hvr-sweep-to-right::before {
+      background: #ffb5b8 none repeat scroll 0 0;
+      color: #fff !important;
+  }
+
+  .modal .btn-red-outline.hvr-sweep-to-right:hover{
+        color: #fff !important;
+  }
+
+  .modal .btn-red-outline.hvr-sweep-to-right:focus, 
+  .modal .btn-red-outline.hvr-sweep-to-right:active {
+      color: #fff !important;
+      background: #ffb5b8 none repeat scroll 0 0 !important;
+  }
+
+  /* Radio with icons */
+
+      .radio-inline {
+          font-size: 11px !important;
+          font-weight: normal !important;
+          padding-left: 0px;
+          font-family: montserratlight;
+          color: #666666 !important;
+      }
+
+      .radio-inline input[type="radio"] {
+          left: -9999px;
+          position: absolute;
+      }
+
+      .form-group.form-group-radio .radio-inline+.radio-inline{
+          margin-left: 15px;
+      }
+
+      .radio-inline label {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          top: 0px;
+          border: 1px solid #fb545b;
+          border-radius: 50%;
+          margin: 0 auto;
+          margin-right: 7px;
+          cursor: pointer;
+      }
+
+      .form-group.form-group-radio {
+          margin: 10px 0px;
+          float: left;
+          width: 100%;
+      }
+
+      .form-group-radio label {
+          float: left;
+      }
+
+      .radio-inline input[type="radio"]:checked + label {
+          background: #fb545b;
+      }
+
+      .radio-inline input[type="radio"]:checked + label::after {
+          font-family: "Material Icons";
+          content: "\e5ca";
+      }
+
+      .radio-inline label::after {
+          display: inline-block;
+          position: relative;
+          width: 14px;
+          height: 14px;
+          left: 1px;
+          top: -5px;
+          font-size: 10px;
+          color: #fff;
+      }
+
+  /* Radio with icons */
+
+  #add-user .modal-footer {
+      padding: 15px 25px;
+      text-align: right;
+      border-top: none;
+  }
+
+/* End: Add New User Modal */
+
+
+.dataTables_length{
+  display: inherit;
+}
+
+.dataTables_filter{
+  display: inherit;
+}

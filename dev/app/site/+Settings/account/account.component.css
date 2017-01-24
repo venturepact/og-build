@@ -1,0 +1,355 @@
+
+/* custom material css start (sahil) */
+.sahil-material .form-control {
+    height: 38px;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: montserratregular;
+    color: #62696d;
+}
+.sahil-material .form-group label.control-label {
+    font-size: 14px;
+    line-height: 1.07142857;
+    color: #8e989f;
+    font-weight: 400;
+    margin: 16px 0 0 0;
+    font-family: montserratregular;
+}
+.sahil-material .form-group label.control-label.seo-static-label{
+    text-transform: uppercase !important;
+    font-size: 11px; 
+    color: #8e989f !important;
+}
+.sahil-material .form-group.label-floating label.control-label, 
+.sahil-material .form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #8e989f;
+}
+.sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
+    top: -20px; 
+    font-family: montserratregular;
+    font-size: 11px; 
+    font-family: montserratregular;
+    color: #8e989f !important;
+}
+.sahil-material .form-group.label-floating.is-focused label.control-label {
+    top: -20px; 
+    font-size: 10px; 
+    font-family: montserratregular;
+    color: #8e989f !important;
+}
+.sahil-material .form-group.is-focused label,
+.sahil-material .form-group.is-focused label.control-label {
+    font-size: 11px; 
+    font-family: montserratregular;
+    color: #8e989f !important;
+    text-transform: uppercase;
+}
+.sahil-material .form-control,
+.sahil-material .form-group .form-control {
+    border: 0 !important;
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd);
+}
+.sahil-material .form-group.is-focused .form-control {
+    outline: none;
+    background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+
+/* custom material css end (sahil) */
+
+/* Start: Responsiveness */
+
+  .mobile-menu {
+      display: none;
+  }
+
+  .white-logo {
+      display: none !important;
+  }
+
+  .company-list,
+  .name-list {
+      width: 100%;
+      float: left;
+  }
+
+  @media (max-width: 767px) {
+      #userProfile-header .navbar-fixed-top .nav-padding {
+          padding-right: 0px;
+          padding-left: 0px;
+      }
+
+      .full-menu,
+      .dash-circle,
+      .dash-prog-outer h2 {
+          display: none;
+      }
+
+      .main-logo {
+          display: none !important;
+      }
+
+      .mobile-menu {
+          display: block;
+          float: right;
+          margin-top: 7px;
+          position: relative;
+      }
+
+      #userProfile-header .navbar-default {
+          background: #fb5f66 !important;
+          border: none;
+          margin-top: 0px;
+      }
+
+      #userProfile-header .navbar-default .mat-icon i.material-icons {
+          font-size: 24px;
+          color: #fff;
+          padding: 13px;
+      }
+
+      #userProfile-header .navbar-header h4.title {
+          color: #fff;
+          font-size: 16px;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 7px;
+      }
+
+      .mobile-menu button {
+          border: none;
+          box-shadow: none;
+          color: #fff;
+          background: none;
+          float: right;
+          margin: 0px 5px;
+      }
+
+      .mobile-menu .btn-default:hover {
+          color: #fff;
+          background: none;
+      }
+
+      .mobile-dash {
+          padding: 0px;
+      }
+
+      .mobile-menu .dropdown-menu {
+          background: #62696d;
+          top: -11px;
+          border-radius: 0px;
+          left: -176px;
+          width: 235px;
+          font-family: montserratlight;
+          padding-bottom: 55px;
+      }
+
+      .mobile-menu .name-dropdown-border {
+          width: 100%;
+          margin: 5px 0px;
+      }
+
+      .mobile-menu .user-outr {
+          float: left;
+          width: 100%;
+          padding: 0;
+          margin: 0px;
+          display: block;
+      }
+
+      .mobile-menu .user-outr li {
+          float: right;
+          font-size: 24px;
+          font-family: montserratlight;
+          color: #fff;
+          margin-right: 24px;
+          /* margin: 10px 19px; */
+          margin-top: 8px;
+          margin-bottom: 6px;
+      }
+
+      .mobile-menu .user-outr li a {
+          margin-right: 30px;
+      }
+      
+      .user-outr li a {
+          float: left;
+          width: auto;
+          border: 2px solid #dae2e6;
+          border-radius: 50%;
+          margin-left: 5px;
+          margin-bottom: 5px;
+      }
+
+      .user-outr li a:hover {
+          border: 2px solid #f56151;
+      }
+
+      .mobile-menu .company-list li,
+      .mobile-menu .name-list li {
+          margin: 10px 0px;
+          text-align: right;
+          font-size: 16px;
+          width: 100%;
+          float: left;
+          padding-right: 20px;
+      }
+
+      .mobile-menu .company-list li a,
+      .mobile-menu .name-list li a {
+          float: right;
+          color: #fff;
+      }
+
+      .mobile-menu .company-list li a i {
+          margin-right: 20px;
+          float: left;
+      }
+
+      .mobile-menu .name-list li a i {
+          margin-left: 20px;
+          float: right;
+      }
+
+      .mobile-menu .company-list-title {
+          float: left;
+          color: #fff;
+      }
+
+      .white-logo {
+          display: block !important;
+      }
+
+      .dash-prog-outer {
+          float: left;
+          width: 100%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+
+      .dash-prog-outer h5 {
+          font-size: 24px;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 1px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper {
+          min-height: 35px;
+          width: 100%;
+          text-align: center;
+      }
+
+      .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {
+          margin: 0 auto;
+          float: none;
+          text-align: center;
+      }
+
+      #userProfile-header .navbar-header {
+          float: left;
+          margin-left: -5px;
+          margin-right: 0px !important;
+      }
+
+      #userProfile-header .navbar-logopadding {
+          padding-right: 0px;
+          padding-top: 0px;
+      }
+
+      #userProfile-header .navbar-default {
+          height: 50px;
+          margin: 0px;
+          padding-bottom: 0px;
+      }
+
+      .white-logo .navbar-brand img {
+          height: 53px;
+          margin-top: -20px;
+          margin: 0 auto;
+          margin-top: -20px;
+      }
+
+      .white-logo .navbar-brand {
+          float: none;
+      }
+
+      .user-outr li a.add-user {
+          width: 45px;
+          height: 45px;
+          padding-top: 9px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-toggle i {
+          top: -30px;
+          left: 17px;
+          font-size: 34px;
+          position: relative;
+          color: #f87b80;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a .company-title {
+          font-size: 16px;
+      }
+
+      .company-dropdown-wrapper .dropdown-menu > li > a .company-site {
+          width: 91%;
+          font-size: 14px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu >li > a .company-block-inner {
+          width: 35px;
+          height: 35px;
+          padding-top: 8px;
+          font-size: 14px;
+          top: 13px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a.add-new-company {
+          font-size: 14px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu > li > a i.material-icons {
+          font-size: 24px;
+      }
+
+      .company-block-content {
+          margin-left: 50px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {
+          left: 42px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu::before {
+          right: 34px;
+      }
+
+      .dash-prog-outer .company-dropdown-wrapper .dropdown-menu {
+          top: 8px;
+          left: -8px;
+      }
+
+  }
+
+  @media (max-width: 1900px) {
+      .sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
+          font-size: 10px !important;
+      }
+
+      .sahil-material .form-group.label-floating.is-focused label.control-label {
+          font-size: 10px !important;
+      }
+
+      .my-profile .form-group.time-zone label.control-label {
+          font-size: 10px !important;
+      }
+  }
+
+/* End: Responsiveness */
