@@ -1,0 +1,278 @@
+<div class="panel-body panel-scroll scrollbar">
+	<div class="ed-sidebar {{page.type}}" *ngFor="let page of templateJson.pages, let i=index" (mousedown)="jsonBuilderHelper.setSelectedPage(page)"
+		(click)="selectModel($event,'Page','.page_',i)">
+		<span class="link section-head" [ngClass]="{
+                    'hide': page.type!='Landing',
+					'active': jsonBuilderHelper.getSelectedPage() === page && jsonBuilderHelper.getSelectedModel() === 'Page'
+                }">
+            <a href="javascript:void(0)">
+                {{(page.type=='Landing'?'WELCOME SCREEN':page.type)}}
+            </a>
+            
+            <!-- <div class="dropdown-menu-parent">
+               <a 
+                    href="javascript:void(0);" 
+                    class="sublist-action" 
+                >
+                    <i class="material-icons">more_vert</i>
+                </a>
+                    <ul class="dropdown-menu action"
+                    [ngClass]="{
+                    'hide': page.type!='Landing'
+                }">
+                        <li>
+                            <a (click) = "visibilityEye(page)" ><i class="material-icons add-options-i" *ngIf="!page.visible">visibility</i> 
+                            <i class="material-icons add-options-i" *ngIf="page.visible">visibility_off</i> 
+								<span *ngIf="!page.visible">Show</span>
+								<span *ngIf="page.visible">Hide</span>
+							</a>
+                        </li>
+                    </ul>
+                    
+            </div> -->
+            <span class="have-lead hide">with Lead generation</span>
+        </span>
+
+        <span class="link section-head" [ngClass]="{
+                    'hide': page.type!='Result' || jsonBuilderHelper.getJSONBuilt().templateType=='Recommendation',
+					'active': jsonBuilderHelper.getSelectedPage() === page && jsonBuilderHelper.getSelectedModel() === 'Page' 
+                }">
+            <a href="javascript:void(0)">
+                Result
+            </a>
+            <span class="have-lead hide">with Lead generation</span>
+        </span>
+		<!--landing page start-->
+		<div *ngIf="page.type=='Landing'">
+			<div *ngFor="let section of getVisibleSections(page)" class="ed-sidebar-sub " (mouseup)="jsonBuilderHelper.setSelectedSection(section)"
+				(mousedown)="jsonBuilderHelper.setSelectedPage(page)" (click)="selectModel($event,'Section','.page_',0)" [ngClass]="{
+                    'hide': section.type != 'Content Area' || (section.type === 'Content Area' && !getLeadFormVisibility(section))
+                }">
+				<a href="javascript:void(0);" [ngClass]="{
+                        'sub-head': true,
+                        'disable':!page.visible,
+						'active':jsonBuilderHelper.getSelectedSection() === section && jsonBuilderHelper.getSelectedModel() === 'Section'
+                    }" style="
+    width: calc(100% - 28px);
+    margin: 0px 17px;
+">
+					<!--<i class="font-11" *ngIf="!section.title?.length">Section {{s+1}} </i>Lead Generation-->
+					<span><i class="material-icons lead-icon">person_add</i> Lead Generation</span>
+				</a>
+				<!-- section type -->
+			</div>
+		</div>
+		<!--landing page end-->
+		<div *ngIf="page.type=='Questionnaire'">
+			<div *ngFor="let section of getVisibleSections(page),let s=index"
+				class="ed-sidebar-sub " 
+				(mousedown)="jsonBuilderHelper.setSelectedSection(section)"
+				(click)="selectModel($event,'Section','.sec_',s)" 
+				[ngClass]="{
+						'hide': section.items.length == 0 || !section.visible
+					}" id="{{section._id}}">
+				<span class="sub-head" [ngClass] = "{
+						'active':jsonBuilderHelper.getSelectedSection() === section && jsonBuilderHelper.getSelectedModel() === 'Section',
+						'bh': section.type==='LeadFormQ'
+					}">
+                        <a 
+                            href="javascript:void(0);"
+                            (click)="selectModel($event,'Section','.sec_',s)"
+                        >
+                <span class="section-subhead"  *ngIf="section.type!=='LeadFormQ'"> SECTION {{s+1}}</span>
+				<i class="font-11" *ngIf="!section.title?.length && section.type!=='LeadFormQ'">Section {{s+1}} </i>
+				<span *ngIf="section.type!=='LeadFormQ'"> {{section.title}}</span>
+				<span *ngIf="section.type==='LeadFormQ'"><i class="material-icons lead-icon">person_add</i> Lead Generation</span>
+				</a>
+				<div class="dropdown-menu-parent">
+					<a href="javascript:void(0);" class="sublist-action" [ngClass]="{
+                                'hide': page.sections.length < 3 || section.type === 'LeadFormQ'
+                            }">
+						<i class="material-icons">more_vert</i>
+					</a>
+					<ul class="dropdown-menu action">
+						<li>
+							<a href="#" (click)="OnDeleteSection();callGA('DELETESECTION')"> <i class="material-icons add-options-i">clear</i>Delete</a>
+						</li>
+					</ul>
+				</div>
+				</span>
+				<!-- section type -->
+				<ul [class.sortable1]="section.type != 'LeadFormQ'" [attr.data-section]="section._id" [attr.data-sec]="s+1">
+					<li *ngFor="let control of section.items,let i=index"
+						[attr.data-order]="control._id" 
+						[attr.data-odr]="control.order" 
+						(mousedown)="selectControl(control)"
+						(click)="selectModel($event,'Control','.sec_'+s+'_q_',i)" class="{{control._id}}" 
+						[ngClass]="
+                            {
+                                'hide':control.type === 'leadform_question',
+								'active': jsonBuilderHelper.getSelectedControl() === control && jsonBuilderHelper.getSelectedModel() === 'Control'
+
+                            }">
+						<a href="javascript:void(0);" class="head">
+							<span *ngIf="control.type !== 'leadform_question'">
+								<span class="head-number">{{s+1}}.{{i+1}}</span>
+								<span>{{control.props.title}}</span>
+							</span>
+							<span *ngIf="control.type === 'leadform_question'"> Lead Generation</span>
+						</a>
+						<div class="dropdown-menu-parent">
+							<a href="javascript:void(0);" class="sublist-action" [ngClass]="{
+                                    'hide': control.type === 'leadform_question'
+                                     }">
+								<i class="material-icons">more_vert</i>
+							</a>
+							<ul class="dropdown-menu action">
+								<li>
+									<a href="#" (click)="addControl('duplicate');callGA('DUPLICATEQUESTION')"> <i class="material-icons add-options-i">filter_none</i>Duplicate</a>
+								</li>
+								<li>
+									<a 
+									href="#" 
+									(click)="OnDeleteControl(s);callGA('DELETEQUESTION')"
+									[ngClass] = "{ 
+										'hide':page.sections.length < 3 && section.items.length ===1
+									}"
+									> <i class="material-icons add-options-i">clear</i>Delete</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<ul class="add-parent option">
+				<li>
+					<a href="javascript:void();" (click)="addDropdown()"><i class="material-icons">add</i> Add</a>
+					<ul class="add-dropdown-menu">
+						<li><a href="#" (click)="addNewQuestion();callGA('ADDQUESTION')"><i class="material-icons">add</i> Question</a></li>
+						<li><a href="#" (click)="addNewSection();callGA('ADDSECTION')"><i class="material-icons">add</i> Section</a></li>
+						<li  *ngIf="jsonBuilderHelper.getJSONBuilt().template!=='sound-cloud'"><a href="#"  (click)="addLead(page)"><i class="material-icons" *ngIf="!leadSection.visible">add</i><i class="material-icons" *ngIf="leadSection.visible">remove</i>  Lead Generation</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div *ngIf="page.type=='Result'">
+			<!--settings -->
+			<div *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Recommendation'">
+				 <div  class="ed-sidebar-sub "
+					(click)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page);"
+					(mouseup)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page)"
+					(mousedown)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page)"
+				 >
+					<span class="sub-head" 
+						[ngClass] = "{
+										'active':(jsonBuilderHelper.getSelectedModel()=='Outcome_Settings' 
+											&&  jsonBuilderHelper.getSelectedPage().type == 'Result'
+											&& jsonBuilderHelper.getJSONBuilt().templateType == 'Recommendation')	
+									}">
+								<a 
+									href="javascript:void(0);" 
+									(click)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page);"
+									(mouseup)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page)"
+									(mousedown)="selectModel($event,'Outcome_Settings');jsonBuilderHelper.setSelectedPage(page);"
+								>
+									Outcomes
+								</a>
+					</span>   
+				</div>
+			</div>
+			<!-- settings -->
+
+            <!--lead gen -->
+            <div 
+                *ngFor="let section of getVisibleSections(page),let s=index"
+                class="ed-sidebar-sub "
+                (mouseup)="jsonBuilderHelper.setSelectedSection(section)"
+                (mousedown)="jsonBuilderHelper.setSelectedPage(page)"
+                (click)="selectModel($event,'Section','.page_',2)"
+                [ngClass]="{
+                    'hide':  section.type !== 'LeadForm' || !getLeadFormVisibility(section)
+                }"
+            >
+            <span class="sub-head" 
+				[ngClass] = "{
+								'active':(jsonBuilderHelper.getSelectedSection() === section && jsonBuilderHelper.getSelectedModel() === 'Section' )||
+								 (jsonBuilderHelper.getSelectedModel()==='Control' && jsonBuilderHelper.getSelectedControl().type==='leadform'),
+								 'bh': section.type==='LeadFormQ'
+							}"
+							style="width: calc(100% - 28px);margin: 0px 17px;">
+                        <a 
+                            href="javascript:void(0);" 
+                        >
+                            <span><i class="material-icons lead-icon">person_add</i> Lead Generation</span>
+                        </a>
+                </span>    
+            </div>
+            <!--lead gen-->
+
+			<!--<div *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Numerical'">
+				<div *ngFor="let control of resultSection.items,let i=index"
+					class="result-sub ed-sidebar-sub "
+					(mousedown)="selectControl(control)">
+					<span class="sub-head" 
+					[ngClass] = "{
+								'active':jsonBuilderHelper.getSelectedControl() === control && jsonBuilderHelper.getSelectedModel() === 'Page'
+							}"
+					>
+                        <a 
+                            href="javascript:void(0);"
+                        >
+                            <input [(ngModel)]="jsonBuilderHelper.getJSONBuilt().formula[i].name" type="textbox" class="edit-name-sitemap hide" />
+                            <span class="section-subhead">Result #{{i+1}}
+                                <span *ngIf="jsonBuilderHelper.getJSONBuilt().formula[i].name!==''" style="font-size: large;line-height: 1px;">:</span>
+                                {{jsonBuilderHelper.getJSONBuilt().formula[i].name}}
+					        </span>
+					    </a>
+                        <div class="dropdown-menu-parent">
+                            <a href="javascript:void(0);" class="sublist-action">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu action">
+                                <li [class.hide]="resultSection.items.length==1 || i==0">
+                                    <a href="#" (click)="deleteResult(i,control)"> <i class="material-icons add-options-i">clear</i>Delete</a>
+                                </li>
+                                <li class="edit_name_link_sitemap">
+                                    <a href="#"> <i class="material-icons add-options-i ">edit</i>Rename</a>
+                                </li>
+                            </ul>
+                        </div>
+					</span>
+				</div>
+			</div>-->
+			<div *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Recommendation'">
+				<div *ngFor="let formulaResult of jsonBuilderHelper.getJSONBuilt().formula;let i= index" class="result-sub ed-sidebar-sub">
+					<span class="sub-head" [ngClass] = "{
+						'active': (jsonBuilderHelper.getSelectedFormula() === formulaResult &&  jsonBuilderHelper.getSelectedPage().type === 'Result' && jsonBuilderHelper.getSelectedModel() === 'Page' )
+					}">
+                            <a 
+                                (mousedown)="jsonBuilderHelper.setSelectedFormula(formulaResult)"
+                            >
+                            <input [(ngModel)]="formulaResult.value" type="textbox" class="edit-name-sitemap hide" />
+                            <span class="section-subhead"><span class="" >Outcome {{i+1}} </span><span *ngIf="formulaResult.value!==''" style="font-size: large;line-height: 1px;"></span> <span class="outcome-style">{{formulaResult.name}}</span>
+					</span>
+					</a>
+					<div class="dropdown-menu-parent">
+                            <a href="javascript:void(0);" class="sublist-action">
+                                <i class="material-icons">more_vert</i>
+                            </a>
+                            <ul class="dropdown-menu action">
+                            	<li>
+                                    <a href="#" (click)="duplicateOutcome(formulaResult,i)"> <i class="material-icons add-options-i">edit</i>Duplicate</a>
+                                </li>
+                                <li [class.hide]="jsonBuilderHelper.getJSONBuilt().formula.length == 1">
+                                    <a href="#" (click)="deleteOutcome(i)"> <i class="material-icons add-options-i">clear</i>Delete</a>
+                                </li>                                
+                            </ul>
+                        </div>
+					</span>
+				</div>
+			</div>
+			<div class="add-parent">
+				<!--<a href="javascript:void();" (click)="addResult(page)" *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Numerical'"><i class="material-icons">add</i> Add Result</a>-->
+				<a href="javascript:void();" (click)="addOutcome()" *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Recommendation'"><i class="material-icons">add</i> Add Outcome</a>				
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -1,0 +1,19 @@
+<div class="type-details">
+    <span>{{control.type}}:</span>
+    
+    <div class="desc-switch">
+        <input type="checkbox" name="properties-checkbox" checked data-size="mini" [(ngModel)] = "control.config.showControl">
+    </div>
+    <div class="landing-inputfile">
+        <div class="col-xs-12 no-padding">
+            <div class="input-group">
+                <input type="text" class="file-input" placeholder="No file" readonly [(ngModel)] = "control.props.currentValue">
+                <label class="input-group-btn">
+                    <span class="btn btn-default btn-flat btn-basic2 btn-upload">
+                    Upload <input type="file" style="display: none;">
+                </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

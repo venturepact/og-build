@@ -1,0 +1,13 @@
+<div *ngIf="loading">
+</div>
+<div *ngIf="!loading" class="single-user-container">
+    <og-account-details [companies] = "companies"></og-account-details>
+   <!--<og-other-details [id] = "id"></og-other-details>
+    <hr>
+    <og-calculators [id] = "id"></og-calculators>
+    <hr>
+    <og-team-details [id] = "id"></og-team-details>
+    <hr>-->
+    <og-membership-details [companies] = "companies"></og-membership-details>
+</div>
+

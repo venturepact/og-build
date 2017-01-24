@@ -1,0 +1,78 @@
+<!-- Common Component -->
+		<div class="type-details"><common-editor
+			[control]="control"
+		>
+		</common-editor></div>
+	<!-- Common Component-->
+		 <div class="type-details">
+            <span class="form-label" [class.no-margin]="control.config.showHelp === false">Help Text:</span>
+            <div class="switch">
+                 <label>
+                <input type="checkbox" name="properties-checkbox"
+                class="show-check"
+                [checked]="control.config.showHelp"
+                (change)="onChangeDescription();"
+                 data-size="mini" data-on-color="blue">
+                  <span class="lever"></span>
+                 </label>
+            </div>
+<!--//on/off-->
+				<div class="col-xs-12 no-padding text-group div-check"
+				*ngIf="control.config.showHelp"
+				>
+					<textarea class="form-text question-textarea" [(ngModel)] = "control.props.helpText"></textarea>
+				</div>
+			</div>
+
+        
+		<div class="type-details" [style.visibility]="(loader)?'hidden':'visible'">
+            <span class="form-label">Options:</span>
+            <div  *ngFor="let option of control.options ; let i = index">
+                <div class="col-md-12 no-padding">
+                    <span class="no-padding option-label">
+                        <span class="">{{i+1}}.</span>
+                    </span>
+                    <div class="col-md-9 col-xs-9 no-padding">
+                        <input type="text" class="form-text" placeholder="Label" [(ngModel)]="option.label" (keyup)="onOptionLabelChange(option)">
+                    </div>
+                    <div class="btn-group icon-options" style=" margin-left: 10px;" *ngIf="control.options.length !== 1" >
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="material-icons">more_vert</i>
+                                </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="javascript:void(0);"(click)="delete_Option_From_Items(control.options,i);"><i class="material-icons">clear</i> Delete</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12 no-padding">
+                    <div class="selectize-holder"></div>
+                    <select class="selectizer" id="selectizer_{{i}}" placeholder="Map to an outcome" multiple>
+                        <option tabindex="0" 
+                            *ngFor="let option of options; let i = index" 
+                            [value]="option.value"
+                        >
+                            {{option.name}}
+                        </option>
+                    </select>
+                    <!-- More button -->
+                
+                </div> 
+            
+            </div>
+            <div class="col-xs-12 no-padding text-group">
+                <span class="no-padding form-label"></span>
+                <div class="col-md-10 col-xs-10 no-padding">
+                    <a href="javascript:void(0);" (click)="add_Option_In_Dropdown();" class="default">Add Option</a>
+                </div>
+	        </div>
+        </div>
+		 <div class="type-details">
+            <label class="check">
+                <input type="checkbox" value="Value1 " name="checkbox1" id="check1"
+				[checked]="control.config.validations.required.status"
+                (change)="onChange(control);callGA('MANDATE',control)"
+				>
+                <label for="check1"> </label>
+                Mark as Mandatory
+            </label>
+        </div>

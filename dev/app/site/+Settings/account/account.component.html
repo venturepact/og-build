@@ -1,0 +1,75 @@
+<div class="tab-pane" id="my-account">
+    
+    <div class="col-md-12 col-sm-12 col-xs-12 np">
+        <div class="col-md-2 col-sm-1 col-xs-2 np"></div>
+        <div class="col-md-8 col-sm-10 col-xs-12 np">
+            <!-- Nav tabs -->
+            <div class="col-md-3 col-sm-3 col-xs-12 np my-account-inner-tabs hide">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#my-profile" aria-controls="myProfile" role="tab" data-toggle="tab" class="">My Profile <i class="material-icons">keyboard_arrow_right</i></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#change-password" aria-controls="changePassword" role="tab" data-toggle="tab" class="">Change Password <i class="material-icons">keyboard_arrow_right</i></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#companies" aria-controls="companies" role="tab" data-toggle="tab" class="">Companies <i class="material-icons">keyboard_arrow_right</i></a>
+                    </li>
+
+<!--                     <li role="presentation">
+                        <a href="#integration" aria-controls="integration" role="tab" data-toggle="tab" class="">Api Integration <i class="material-icons">keyboard_arrow_right</i></a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- End: Nav tabs -->
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#my-profile" aria-controls="myProfile" role="tab" data-toggle="tab" class="">My Profile</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#change-password" aria-controls="changePassword" role="tab" data-toggle="tab" class="">Change Password</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#companies" aria-controls="companies" role="tab" data-toggle="tab" class="">Companies</a>
+                    </li>
+
+                    <!-- <li role="presentation">
+                        <a href="#integration" aria-controls="integration" role="tab" data-toggle="tab" class="">Api Integration</a>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- End: Nav tabs -->
+
+            <!-- Start: tabs sub content -->
+            <div class="tab-content tab-sub-content col-md-9 col-sm-9 col-xs-12 np">
+                <!-- Start: tab my-profile -->
+                <div role="tabpanel" class="tab-pane sahil-material active my-profile" id="my-profile">
+                    <!-- Start: materialize form -->
+                    <og-basic-details></og-basic-details>
+                    <!-- End: materialize form -->
+                </div>
+                <!-- End: tab my-profile -->
+                <!-- Start: tab companies -->
+                <div role="tabpanel" class="tab-pane companies sahil-material" id="companies">
+                    <og-user-companies [myCompaniesList]="myCompanies"></og-user-companies>
+                </div>
+                <!-- End: tab companies -->
+                <!-- Start: tab change-password -->
+                <div role="tabpanel" class="tab-pane change-password sahil-material" id="change-password">
+                    <!-- Start: materialize form -->
+                    <og-change-password></og-change-password>
+                    <!-- End: materialize form -->
+                </div>
+                <!-- End: tab change-password -->
+
+                <!-- Start: tab Api Integration -->
+                <!-- <div role="tabpanel" class="tab-pane change-password sahil-material" id="integration">
+                    <og-api-integration></og-api-integration>
+                </div> -->
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-1 col-xs-2 np"></div>
+    </div>
+</div>

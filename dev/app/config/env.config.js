@@ -1,0 +1,4 @@
+"use strict";
+exports.Config = JSON.parse('{"API":"http://localhost:3000/api/v1","APP_DOMAIN":"http://app.outgrow.local","APP_EXTENSION":"outgrow.local","PROTOCOL":"http://","PARENT_APP_DOMAIN":"app.outgrow.local"}');
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9jb25maWcvZW52LmNvbmZpZy50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBU2EsY0FBTSxHQUFZLElBQUksQ0FBQyxLQUFLLENBQUMsbUJBQW1CLENBQUMsQ0FBQyIsImZpbGUiOiJhcHAvY29uZmlnL2Vudi5jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgaW50ZXJmYWNlIElDb25maWcge1xyXG4gIEFQSTogc3RyaW5nO1xyXG4gIEFQUF9ET01BSU46IHN0cmluZztcclxuICBBUFBfRVhURU5TSU9OOiBzdHJpbmc7XHJcbiAgUEFSRU5UX0FQUF9ET01BSU46IHN0cmluZztcclxuICBJTlRFUkNPTV9JRDogc3RyaW5nO1xyXG4gIFBST1RPQ09MOiBzdHJpbmc7XHJcbn1cclxuXHJcbmV4cG9ydCBjb25zdCBDb25maWc6IElDb25maWcgPSBKU09OLnBhcnNlKCc8JT0gRU5WX0NPTkZJRyAlPicpO1xyXG4iXX0=

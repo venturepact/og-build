@@ -1,0 +1,60 @@
+<div id="login" class="modal fade hide" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-xlg">
+			<!-- Modal content-->
+			<div class="modal-content modal-bg">
+				<div class="modal-body">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="col-md-12 np">
+						<div class="col-md-6 np modal-left">
+							<div class="text-center">		
+								<!-- <p class="font-italic text-grey">or login with</p> -->
+								<img class="modal-logo" src="assets/images/outgrow-logo.png" alt="Logo">
+							</div>
+							<div class="col-md-12 np sahil-material">
+                                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    
+                                    <div class="form-group label-floating">
+                                        <label for="inputEmail" class="control-label">Email</label>
+                                        <input id="inputEmail" type="email"  class="form-control is-empty" formControlName="email" required>
+                                    </div>
+                                    <div *ngIf="loginForm.controls.email.touched  && !loginForm.controls.email.valid" class="alert alert-danger">
+                                            <p *ngIf="loginForm.controls.email.errors.required">Email is required.</p>
+                                            <p *ngIf="loginForm.controls.email.errors.minlength">Min 3 character is reuired.</p>
+                                            <p *ngIf="loginForm.controls.email.errors.checkmail">Invalid Email.</p>
+                                    </div>
+                                    <div class="label-floating form-group">
+                                        <label for="inputPassword" class="control-label">Password</label>
+                                        <input id="inputPassword" type="password"  class="form-control is-empty" required formControlName="password">
+                                        <a href="" class="forgot-btn" data-toggle="modal" data-target="#forgot-password" data-dismiss="modal">Forgot Password ?</a>
+                                    </div>
+                                    <div *ngIf="loginForm.controls.password.touched  && !loginForm.controls.password.valid" class="alert alert-danger">
+                                            <p *ngIf="loginForm.controls.password.errors.required">password is required.</p>
+                                            <p *ngIf="loginForm.controls.password.errors.checkmail">Invalid Email.</p>
+                                    </div>
+                                    <div *ngIf="ErrorMessageIsVisible" class="alert alert-danger">
+                                            <p>{{ErrorMessage}}</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" [disabled]="!loginForm.valid" class="btn btn-red next-step btn-login" id='loginSubmit'>Login</button>
+                                        <p class="dont-acc-signup">Don't have an account ? 
+                                            <a href="javascript:void(0)" class="text-red" (click)="signUp()"> Sign Up now</a>
+                                        </p>
+                                    </div>
+                                </form>
+							</div>
+						</div>
+						<div class="col-md-6 np modal-right">
+							<div class="col-md-12 np">
+								<img class="img-margin img-width" src="assets/images/login-screen1.jpg" alt="img">
+							</div>
+						</div>
+					</div>			
+				</div>
+				<!-- <div class="modal-footer">
+					
+				</div> -->
+			</div>
+		</div>
+</div>
+

@@ -1,0 +1,301 @@
+<div class="col-md-10">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0 toppad">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">
+							<div class="col-sm-8 ">
+								<h4>Account Details</h4>
+							</div>
+							<div class="col-sm-2">
+								<h4>Edit:</h4>
+							</div>
+							<div class="col-sm-2">
+								<label class="switch">
+									<input type="checkbox" [(ngModel)]="edit_mode" />
+									<div class="slider round"></div>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12 col-lg-12" *ngIf="loading">
+								<center><img src="assets/images/logoAnim.gif" alt="loading..." id="imgLoad"></center>
+							</div>
+							<div class=" col-md-12 col-lg-12 " *ngIf="!loading">
+								<table class="table table-user-information" [hidden]="edit_mode">
+									<tbody>
+										<tr>
+											<td>Name:</td>
+											<td *ngIf="!edit_mode">
+												{{model.name}}
+											</td>
+
+										</tr>
+										<tr>
+											<td>User Name:</td>
+											<td *ngIf="!edit_mode">
+												{{model.username}}
+											</td>
+
+										</tr>
+										<tr>
+											<td>email:</td>
+											<td>
+												{{emailUpdate}}
+												<div *ngIf = "email_verify" class="tooltip">
+													<i class="material-icons">done</i>				
+													<span class="tooltiptext">Email is verified</span>
+												</div>
+												<div  *ngIf = "!email_verify" class="tooltip">
+													<i class="material-icons">report_problem</i>													
+													<span class="tooltiptext">Email is not verified</span>
+												</div>
+												<div *ngIf = "!email_verify">
+													<button (click)="verifyEmail()">verify</button>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Phone:</td>
+											<td>
+												{{model.phone}}
+											</td>
+										</tr>
+										<tr>
+											<td>location:</td>
+											<td *ngIf="!edit_mode">
+												{{model.location}}
+											</td>
+
+										</tr>
+										<tr>
+											<td>Companies</td>
+											<td>
+												<span *ngFor="let company of companies"><a [routerLink] = "['/admin/company',company._id]">{{company.name}}</a>, </span>
+											</td>
+										</tr>
+										<tr>
+											<td>Last Location:</td>
+											<td>NA</td>
+										</tr>
+										<tr>
+											<td>Last Login:</td>
+											<td>{{model.last_login}}</td>
+										</tr>
+										<tr>
+											<td>Active:</td>
+											<td *ngIf="!edit_mode">{{model.active}}</td>
+										</tr>
+										<tr>
+											<td>Timezone</td>
+											<td *ngIf="!edit_mode">{{model.timezone}}</td>
+										</tr>
+										<tr>
+											<td>Set Password Link</td>
+											<td *ngIf="!edit_mode">{{set_pwd_link}}</td>
+											<td><button (click) = "generatePwdLink()">Generate</button></td>
+										</tr>
+										<tr *ngIf="edit_mode">
+											<td>
+												<button (click)="updateUser()" id='saveBasicDetails'>Update </button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+								<form [formGroup]="updateFormdetail" (ngSubmit)="updateUser()" [hidden]="!edit_mode">
+									<div class="row">
+										<div class="col-sm-4">
+											Name:
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control" type="text" [(ngModel)]="updateModel.name" formControlName="name" name="name" />
+											<div *ngIf="updateFormdetail.controls.name.touched  && !updateFormdetail.controls.name.valid || isSubmit && !updateFormdetail.controls.name.valid"
+												class="alert alert-danger">
+												<p *ngIf="updateFormdetail.controls.name.errors.required">
+													<span class="mat-icon">
+														<i class="material-icons">report_problem</i>
+													</span> name is required.
+												</p>
+											</div>
+										</div>
+
+									</div>
+									<div class="row">
+										<div class="col-sm-4">
+											Phone
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control" formControlName="phone" type="text" [(ngModel)]="updateModel.phone" formControlName="phone" name="phone"
+											/>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-4">
+											Location
+										</div>
+										<div class="col-sm-8">
+											<input class="form-control" type="text" [(ngModel)]="updateModel.location" id="location" ngControl="location" (blur)="chkLocation()"
+												formControlName="location" name="location" />
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-4">
+											Active:
+										</div>
+										<div class="col-sm-8">
+											<label class="switch">
+												<input type="checkbox" [(ngModel)]="updateModel.active" formControlName="active" name="active">
+												<div class="slider round"></div>
+											</label>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-4">
+											Time Zone:
+										</div>
+										<div class="col-sm-8">
+											<select class="form-control" [(ngModel)]="updateModel.timezone" id="timezone" name="timezone">
+												<option value="">Select a Timezone</option>
+												<option *ngFor="let t of timezones" [value]="t">{{t}}</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-sm-4">
+											Password
+										</div>
+										<div class="col-sm-8">
+											<a data-toggle="modal" data-target="#change-pwd" class="btn">change password</a>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-sm-4">
+											Email
+										</div>
+										<div class="col-sm-8">
+											<a data-toggle="modal" data-target="#change-email" class="btn">change email</a>
+										</div>
+									</div>
+									<div class="row" *ngIf="errorMsg != '' ">
+										<div class="col-sm-12">
+											<span class="mat-icon">
+											<i class="material-icons">report_problem</i>
+										</span> {{errorMsg}}
+										</div>
+									</div>
+									<button type="submit" id="saveBasicDetails" class="btn btn-blue btn-red btn-signUp">Update</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Start: Change Email Modal -->
+<div id="change-email" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+				<h5 class="modal-title">Change Email Address</h5>
+			</div>
+			<div class="modal-body">
+				<form (ngSubmit)="updateEmail()" [formGroup]="emailForm">
+					<div class="label-floating">
+						<label class="control-label" for="email">New Email Address:</label>
+						<input type="email" class="form-control" required [(ngModel)]="emailUpdate" ngControl="email" name="email" formControlName="email"
+						/>
+					</div>
+					<div *ngIf="emailForm.controls.email.touched  && !emailForm.controls.email.valid && !emailForm.controls.email.valid" class="alert alert-danger">
+						<p *ngIf="emailForm.controls.email.errors.required">
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span> email is required.
+						</p>
+						<p *ngIf="emailForm.controls.email.errors.minlength">
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span> minimum 4 charecter is required.
+						</p>
+						<p *ngIf="emailForm.controls.email.errors.checkmail">
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span> invalid email
+						</p>
+					</div>
+					<div *ngIf="message != ''" class="alert alert-danger">
+						<p>
+							<span class="mat-icon">
+                                <i class="material-icons">report_problem</i>
+                            </span> {{message}}
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-red-outline btn-add-user btn-hover" id='updateEmail' (click)='updateEmail()'>Change Email</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: Change Email Modal -->
+
+
+<!-- Start: Change Password Modal -->
+<div id="change-pwd" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+				<h5 class="modal-title">Change Password</h5>
+			</div>
+			<div class="modal-body">
+				<form (ngSubmit)="updatePwd()" [formGroup]="pwdForm">
+					<div class="label-floating">
+						<label class="control-label" for="pwd">New Password:</label>
+						<input type="email" class="form-control" required [(ngModel)]="pwdUpdate" ngControl="pwd" name="pwd" formControlName="pwd"
+						/>
+					</div>
+					<div *ngIf="pwdForm.controls.pwd.touched  && !pwdForm.controls.pwd.valid && !pwdForm.controls.pwd.valid" class="alert alert-danger">
+						<p *ngIf="pwdForm.controls.pwd.errors.required">
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span> password is required.
+						</p>
+						<p *ngIf="pwdForm.controls.pwd.errors.minlength">
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span> minimum 8 charecter is reqiuired.
+						</p>
+					</div>
+					<div *ngIf="pwd_message != ''" class="alert alert-danger">
+						<p>
+							{{pwd_message}}
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-red-outline btn-add-user btn-hover" id='updatePwd' (click)='updatePwd()'>Change Password</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: Change Password Modal -->

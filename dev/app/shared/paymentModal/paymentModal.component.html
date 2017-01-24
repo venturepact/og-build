@@ -1,0 +1,140 @@
+<!-- Start: Modal cc-modal-payment -->
+<div id="cc-modal-payment" class="modal fade cc-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <form class="form-wrapper" [formGroup]="setupPaymentForm" id="setupPaymentForm" (ngSubmit)="setupPayment()">
+      <div class="modal-content modal-content-credit">
+        <div class="modal-body">
+          <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <div class="col-md-12 col-sm-12 np">
+              <div class="col-md-6 col-sm-6 col-xs-6 np modal-header">
+                Payment Setup
+              </div>
+              <img id="cardType" src="assets/images/payment-icons/icon-{{cardType}}.png" alt="{{cardType}}" class="pull-right" *ngIf="cardType"/>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12 np">
+              <div class="col-md-12 col-sm-12 col-xs-12 np credit-sec">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber1" id="cardNumber1" name = "cardNumber1" #num1 (keyup)="onChangeCardNumber(num1)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber2" id="cardNumber2" name = "cardNumber2" [readonly]="!setupPaymentForm.controls.cardNumber1.valid" #num2 (keyup)="onChangeCardNumber(num2)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number" placeholder="XXXX" formControlName="cardNumber3" id="cardNumber3" name = "cardNumber3" [readonly]="!setupPaymentForm.controls.cardNumber2.valid" #num3 (keyup)="onChangeCardNumber(num3)">
+                <input type="text" pattern="[0-9]*" size="4" maxlength="4" class="cc-number cc-number-last" placeholder="XXXX" formControlName="cardNumber4" id="cardNumber4" name = "cardNumber4" [readonly]="!setupPaymentForm.controls.cardNumber3.valid" #num4 (keyup)="onChangeCardNumber(num4)">
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 np validity-sec">
+                <div class="col-md-5 col-sm-5 col-xs-5 np"></div>
+                <div class="col-md-7 col-sm-7 col-xs-7 np">
+                  <span class="val-text">Validity</span>
+                  <div class="pull-right">
+                    <input type="text" pattern="[0-9]*" placeholder="MM" maxlength="2" class="cc-exp" id="cardMonth" name="cardMonth" formControlName="cardMonth" #mm (keyup)="onChangeCardNumber(mm)">
+                    <span class="separator">/</span>
+                    <input type="text" pattern="[0-9]*" placeholder="YYYY" maxlength="4" class="cc-exp cc-exp-last" id="cardYear" name="cardYear" formControlName="cardYear" #yyyy (keyup)="onChangeCardNumber(yyyy)">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12 np name-sec">
+                <input type="text" placeholder="YOUR NAME" class="cc-name col-md-9 col-sm-9 col-xs-12 np" id="nameOnCard" name="nameOnCard" formControlName="nameOnCard">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-content modal-content-cvv">
+        <div class="modal-body">
+          <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <div class="col-md-12 col-sm-12 np">
+              <span class="grey-bg"></span>
+            </div>
+            <div class="col-md-12 col-sm-12 np">
+              <input type="password" size="3" maxlength="3" class="cvv-number" placeholder="XXX" name="cvv" id="cvv" formControlName="cvv" #cvv (keyup)="onChangeCardNumber(cvv)">
+              <span class="cvv-text">CVV</span>
+            </div>
+          </div>
+        </div>
+        <button id="btnSetupCard" [disabled]="!setupPaymentForm.valid" type="submit" class="btn btn-red-outline btn-hover">
+          <span *ngIf="subsStatus != 'cancelled'">Submit</span>
+          <span *ngIf="subsStatus == 'cancelled'">Make Payment</span>
+        </button>
+        <div *ngIf="error" class="alert alert-danger custom-danger">
+          <p>
+              <span class="mat-icon">
+                  <i class="material-icons">report_problem</i>
+              </span>
+            {{errorMessage}}
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- <div class="cc-modal-backdrop"></div> -->
+<!-- End: Modal cc-modal-payment -->
+
+<!-- Start: Modal new-setup-payment -->
+<div id="new-setup-payment" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content modal-bg">
+      <div class="modal-header">
+        <!-- <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons">close</i>
+        </button> -->
+        <h5 class="modal-title">Welcome to Outgrow</h5>
+      </div>
+         
+      <div class="modal-body col-md-12 np text-center">
+      <div *ngIf="errorcard" class="alert alert-danger custom-alert">
+            {{errorMessage}}
+      </div>
+        <!-- <center><img src="assets/images/logoAnim.gif" alt="loading..." id="imgLoad" *ngIf = "loading"></center> -->
+          <h4 class="wc-name" >Hey {{username}} </h4>
+          <img src="assets/images/og-symbol.png">
+          <p class="">
+            <!-- Your outstanding payment left is {{"$"+payment_left}}<br/> -->
+            <span *ngIf="subsStatus != 'cancelled'">
+              We're excited to have you on board! To get started, please set up payment below. Your outstanding payment is {{"$"+payment_left}}.<br/>If you have any questions, please reach out to {{"questions@"+ogExt}}.<br/>Looking forward to working with you!<br/>
+            </span>
+            <span *ngIf="subsStatus == 'cancelled'">
+              Thanks for checking in! Seems like payment has not gone through - this can happen when the card is not setup, when the card expires or when a payment is blocked.<br/>
+              Your outstanding payment is {{"$"+payment_left}}. <br/>
+              If you have any questions, please reach out to questions@outgrow.co.
+            </span>
+          </p>
+          <img src="assets/images/icon-hand-pay.png">
+          <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <button id="cc-modal-payment" type="submit" *ngIf="cardStatus != 'no_card' " (click)="setup()" class="btn btn-red-outline btn-hover">Update Card</button>
+            <button id="cc-modal-payment" type="submit" *ngIf="cardStatus != 'no_card'" (click)="activateNow()" class="btn btn-red-outline btn-hover btnActivateNow">Make Payment</button>
+            <button id="cc-modal-payment" *ngIf="cardStatus == 'no_card'" type="submit" (click)="setup()" class="btn btn-red-outline btn-hover">Make Payment</button>
+          </div>
+      </div>
+      <!-- <div class="modal-footer col-md-12 np">
+
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- <div class="new-setup-payment-backdrop"></div> -->
+
+
+<!-- Start: Modal Activate -->
+<div id="activateModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content modal-bg">
+      <div class="modal-header">
+        <!-- <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons">close</i>
+        </button> -->
+        <h5 class="modal-title">Welcome to Outgrow</h5>
+      </div>
+      <div class="modal-body col-md-12 np text-center">
+        <!-- <center><img src="assets/images/logoAnim.gif" alt="loading..." id="imgLoad" *ngIf = "loading"></center> -->
+          <h4 class="wc-name" >Hey {{username}} </h4>
+          <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <button id="btnActivateNow" type="button" (click)="activateNow()" class="btn btn-red-outline btn-hover btnActivateNow">Make Payment</button>
+          </div>
+      </div>
+      <!-- <div class="modal-footer col-md-12 np">
+
+      </div> -->
+    </div>
+  </div>
+</div>
+<!-- <div class="new-setup-payment-backdrop"></div> -->
+<!-- End: Modal Activate -->

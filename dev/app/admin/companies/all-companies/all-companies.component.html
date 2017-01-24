@@ -1,0 +1,59 @@
+<div id="table" class="all-companies-container">
+	<div id="table-datatable_wrapper" class="dataTables_wrapper no-footer">
+		<div class="dataTables_length" id="table-dataTables_length">
+			<label>Show 
+                <select name="table-dataTables_length" aria-controls="all-companies-datatable" (change) = "limitChange($event)" class="">
+                    <option value="{{limit}}" *ngFor = "let limit of limits">{{limit}}</option>
+                </select>
+                entries
+            </label>
+		</div>
+		<div id="table-datatable_filter" class="dataTables_filter">
+			<label>
+                    Search:<input type="search" class="" placeholder="" [(ngModel)] = "search" aria-controls="table" (keyup) = "searchData()">
+            </label>
+		</div>
+		<div *ngIf="loading">
+			<center><img src="assets/images/logoAnim.gif" alt="loading..." id="imgLoad"></center>
+		</div>
+		<table *ngIf="!loading" class="dataTable">
+			<thead>
+				<tr>
+					<th>
+						Name
+					</th>
+					<th>
+						Sub Domain
+					</th>
+					<th>
+						Edit
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let company of data">
+					<td>
+						{{company.name}}
+					</td>
+					<td>
+						{{company.sub_domain}}
+					</td>
+					<td>
+						<a [routerLink] = "['/admin/company',company._id]"><i class="ui-tooltip fa fa-pencil" style="font-size: 22px;" data-original-title="Edit"></i></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="dataTables_info" id="table-datatable_info" role="status" aria-live="polite"></div>
+		<div class="dataTables_paginate paging_simple_numbers" id="all-companies-datatable_paginate">
+			<a class="paginate_button previous " aria-controls="all-companies-datatable" data-dt-idx="0" tabindex="0" (click)="previous()"
+				id="all-companies-datatable_previous">Previous</a>
+			<span><a class="paginate_button" [ngClass] = "1==current_page?'current':''" aria-controls="all-companies-datatable" (click) = "paging(1)"  tabindex="0">1</a></span>
+			<span *ngIf="current_page >= 5">...</span>
+			<span><a class="paginate_button" [ngClass] = "num==current_page?'current':''" aria-controls="all-companies-datatable" (click) = "paging(num)"  tabindex="0" *ngFor = "let num of arrayOf(total_pages)">{{num}}</a></span>
+			<span *ngIf="current_page <= total_pages - 5">...</span>
+			<span><a class="paginate_button" *ngIf="total_pages!=1 && total_pages!=0" [ngClass] = "total_pages==current_page?'current':''" aria-controls="all-companies-datatable" (click) = "paging(total_pages)"  tabindex="0">{{total_pages}}</a></span>
+			<a class="paginate_button next" aria-controls="all-companies-datatable" tabindex="0" (click)="next()" id="all-companies-datatable_next">Next</a>
+		</div>
+	</div>
+</div>

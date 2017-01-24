@@ -1,0 +1,41 @@
+<div class="panel-body">
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='settings')}" class="circle"></span>
+        <a (click)="onSelect('settings')" id="config-settings" href="#b-setting" data-toggle="tab" class="section-head gen-setting"><i class="material-icons">settings_applications</i> General & SEO Settings
+            <!--<label class="ed-sidebar-subhead ellipsis">Basic Settings</label>-->
+        </a>
+    </div>
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='email')}" class="circle">&nbsp;</span>
+        <a (click)="onSelect('email')" href="#email-setting" data-toggle="tab" class="section-head gen-setting"><i class="material-icons">email</i> 
+        Confirmation Email
+            <!--<label class="ed-sidebar-subhead ellipsis">That Will Be Sent To The User</label>-->
+        </a>
+    </div>
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='integrations')}" class="circle"></span>
+        <a (click)="integrationClick($event);onSelect('integrations')" [attr.href]="isIntegerationAvailable?'#integration-setting':'#b-setting'"
+            data-toggle="tab" class="section-head gen-setting"><i class="material-icons">dialpad</i> Integrations <span class="comming-soon-tag"> Coming Soon</span>
+            <!--<label class="ed-sidebar-subhead ellipsis">Send data to 500+ web apps</label>-->
+        </a>
+    </div>
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='share-your-calculator')}" class="circle"></span>
+        <a (click)="onSelect('share-your-calculator')" id="config-share-your-calculator" href="#cal-setting" data-toggle="tab" class="section-head gen-setting"><i class="material-icons">share</i> Sharing
+            <!--<label class="ed-sidebar-subhead ellipsis">Generate A URL And Share It</label>-->
+        </a>
+    </div>
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='launch-popup')}" class="circle"></span>
+        <a (click)="onSelect('launch-popup')" href="#popup-setting" data-toggle="tab" class="section-head gen-setting"><i class="material-icons">launch</i> Launch in a popup
+            <!--<label class="ed-sidebar-subhead ellipsis">Open It In A Web Page</label>-->
+        </a>
+    </div>
+    <div class="ed-sidebar editor-tab">
+        <span [ngClass]="{active: (selected=='embedded-code')}" class="circle"></span>
+        <a (click)="embeddingClick($event);onSelect('embedded-code')" [attr.href]="isEmbeddCodeAvailable?'#code-setting':'#b-setting'"
+            data-toggle="tab" class="section-head gen-setting"><i class="material-icons">desktop_mac</i> Embed on a Webpage
+            <!--<label class="ed-sidebar-subhead ellipsis">Generate It In Your Domain</label>-->
+        </a>
+    </div>
+</div>

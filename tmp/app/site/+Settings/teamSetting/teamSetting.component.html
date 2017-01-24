@@ -1,0 +1,846 @@
+<!-- Start: team-settings (1) -->
+<div class="tab-pane" id="team-settings">
+	<div class="col-md-12 col-sm-12 col-xs-12 np">
+		<div class="col-md-2 col-sm-1 col-xs-2 np"></div>
+		<!-- Nav tabs -->
+        <div class="col-md-3 col-sm-3 col-xs-12 np team-settings-inner-tabs hide">
+          	<ul class="nav nav-tabs nav-justified" role="tablist">
+              	<li role="presentation" class="active">
+              		<a href="#active-users" aria-controls="" role="tab" data-toggle="tab">Active Users <i class="material-icons">keyboard_arrow_right</i></a>
+              	</li>
+              	<li role="presentation">
+              		<a href="#invited-users" aria-controls="" role="tab" data-toggle="tab">Invited Users <i class="material-icons">keyboard_arrow_right</i></a>
+              	</li>
+              	<li role="presentation" *ngIf="isAdmin" class="hide">
+                  	<a href="#access-requests" aria-controls="" role="tab" data-toggle="tab">Access Requests <i class="material-icons">keyboard_arrow_right</i></a>
+              	</li>
+  			</ul>
+        </div>
+		<!-- Start: tabs sub content -->
+		<div class="col-md-8 col-sm-10 col-xs-12 np">
+	        <div class="col-md-12 col-sm-12 col-xs-12 np">
+				<!-- Start: team-settings-wrapper -->
+				<div class="col-md-12 col-sm-12 col-xs-12 team-settings-wrapper hide">
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<h5 class="">{{currentCompany.name}}</h5>
+						<!-- <span class="company-dropdown-title-active ellipsis">{{currentCompany.sub_domain}}{{subdomainExtension}}</span> -->
+						<div class="btn-group company-dropdown-wrapper">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		            			<span class="company-dropdown-title-active ellipsis">{{currentCompany.sub_domain}}{{subdomainExtension}}</span>
+								<i class="material-icons">keyboard_arrow_down</i>
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="javascript:void(0);" class="hvr-sweep-to-right add-new-company" data-toggle="modal" data-target="#add-new-company" (click)="callGA('ADDCOMPANY')">
+										<i class="material-icons">playlist_add</i>
+										&nbsp;Add New Company
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="hvr-sweep-to-right add-new-company" data-toggle="modal" data-target="#join-company" (click)="callGA('JOINCOMPANY')">
+										<i class="material-icons">playlist_add</i>
+										&nbsp;Join Company
+									</a>
+								</li>
+								<div class="company-dropdown-main">
+									<div class="company-dropdown-list slimscroll">
+										<li *ngFor="let company of myCompaniesList">
+											<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="selectCompany(company)" *ngIf="company.user_company.active">
+												<div class="company-block">
+													<span class="company-block-inner">{{company.name[0]}}</span>
+												</div>
+												<div class="company-block-content">
+													<span class="company-title ellipsis">{{company.name}}</span>
+													<span class="company-site ellipsis">
+														{{company.sub_domain}}{{subdomainExtension}}
+													</span>
+												</div>
+											</a>
+											<!-- <a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="waitForApprove()" *ngIf="!company.user_company.active">
+												<div class="company-block">
+													<span class="company-block-inner">{{company.name[0]}}</span>
+												</div>
+												<div class="company-block-content">
+													<span class="company-title ellipsis">{{company.name}}</span>
+													<span class="company-site ellipsis">
+														{{company.sub_domain}}{{subdomainExtension}}
+													</span>
+													<span class="company-site ellipsis">
+														(Awaiting approval)
+													</span>
+												</div>
+											</a> -->
+										</li>
+									</div>
+								</div>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<p>
+							You are one of the Primary Owners of this company. You can transfer ownership. You can also manage your team settings.
+						</p>
+						<p>
+							Due to restrictions of your plan, you can only add upto 25 members in your team. <a href="javascript:void(0);" class="upgrade-plan" (click)="membDetails();callGA('UPGRADEPLAN')">Upgrade your plan</a> to remove the restriction.
+						</p>
+					</div>
+				</div>
+				<!-- End: team-settings-wrapper -->
+				<!-- Start: Nav tabs -->
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<ul class="nav nav-tabs nav-justified" role="tablist">
+						<li role="presentation" class="active" id="actuser">
+							<a href="#active-users" class="hvr-sweep-to-right" aria-controls="myProfile" role="tab" data-toggle="tab">Active Users</a>
+						</li>
+						<li role="presentation" id="invuser">
+							<a href="#invited-users" class="hvr-sweep-to-right" aria-controls="companies" role="tab" data-toggle="tab">Invited Users</a>
+						</li>
+						<li role="presentation" id="accreq" *ngIf="isAdmin" class="hide">
+							<a href="#access-requests" class="hvr-sweep-to-right" aria-controls="changePassword" role="tab" data-toggle="tab">Access Requests</a>
+						</li>
+					</ul>
+				</div>
+				<!-- End: Nav tabs -->
+			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12 text-center" *ngIf="loading"><i class="material-icons loader-plan">autorenew</i></div>
+			<div class="tab-content tab-sub-content" *ngIf="!loading">
+				<!-- Start: tab active-users -->
+				<div role="tabpanel" class="tab-pane active-users active" id="active-users">
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<!-- Start: Filter section -->
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="btn-group filter-dropdown-wrapper filter-dd-minh">
+								<span class="filter-title">Filter:</span>
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									&nbsp;{{selectedFilter}}
+									<i class="material-icons">filter_list</i>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="selectFilter('All Users')">
+											<span class="filter-list-icon"><i class="material-icons">sort</i></span>
+											<span class="filter-list-title">All Users</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="selectFilter('Admin')">
+											<span class="filter-list-icon"><i class="material-icons">star</i></span>
+											<span class="filter-list-title">Admin</span>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="selectFilter('Manager')">
+											<span class="filter-list-icon"><i class="material-icons">account_circle</i></span>
+											<span class="filter-list-title">Manager</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- End: Filter section -->
+						<!-- Start: active users cards section -->
+						<div class="col-md-12 col-sm-12 col-xs-12 np">
+							<span *ngFor="let user of currentCompanyUsers">
+								<div class="col-md-4 col-sm-6 col-xs-12 active-users-card" *ngIf="user.user_company.active && selectedFilter == 'All Users'">
+									<div class="active-users-box">
+										<div class="img-block-wrapper">
+											<div class="img-block-blue">{{user.name[0]}}</div>
+										</div>
+										<div class="text-block">
+											<h4 class="name ellipsis">{{user.name}}
+												<span *ngIf="user.username == logedInUserName">(You)</span>
+											</h4>
+											<span class="site ellipsis">{{user.emails[0].email}}</span>
+											<h6 class="designation ellipsis">{{user.user_company.role}}</h6>
+											<span class="joined-date ellipsis">
+												Joined On: {{user.createdAt.split('T')[0]}}
+											</span>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="isAdmin && user.username == logedInUserName && adminCount">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeManager(user);callGA('MAKEMANAGER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Manager</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="isAdmin && user.username != logedInUserName">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="deleteUser(user);callGA('DELETEUSER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Delete User
+														</span>
+													</a>
+												</li>
+												<!-- <li *ngIf="user.username == logedInUserName && adminCount">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li> -->
+												<li  *ngIf="user.user_company.role == 'ADMIN'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeManager(user);callGA('MAKEMANAGER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Manager</span>
+													</a>
+												</li>
+												<!-- <li *ngIf="user.username == logedInUserName && user.user_company.role == 'ADMIN' && adminCount">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeManager(user);callGA('MAKEMANAGER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Manager</span>
+													</a>
+												</li> -->
+												<li *ngIf="user.user_company.role == 'MANAGER'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeAdmin(user);callGA('MAKEADMIN')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Admin</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="!isAdmin && user.username == logedInUserName">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 active-users-card" *ngIf="user.user_company.active && selectedFilter == 'Admin' && user.user_company.role == 'ADMIN'">
+									<div class="active-users-box">
+										<div class="img-block-wrapper">
+											<div class="img-block-blue">{{user.name[0]}}</div>
+										</div>
+										<div class="text-block">
+											<h4 class="name ellipsis">{{user.name}}
+												<span *ngIf="user.username == logedInUserName">(You)</span>
+											</h4>
+											<span class="site ellipsis">{{user.emails[0].email}}</span>
+											<h6 class="designation ellipsis">{{user.user_company.role}}</h6>
+											<span class="joined-date ellipsis">
+												Joined On: {{user.createdAt.split('T')[0]}}
+											</span>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="isAdmin">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li *ngIf="user.username != logedInUserName">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="deleteUser(user);callGA('DELETEUSER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Delete User
+														</span>
+													</a>
+												</li>
+												<li *ngIf="user.username == logedInUserName">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+												<li *ngIf="user.user_company.role == 'ADMIN'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeManager(currentCompany);callGA('MAKEMANAGER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Manager</span>
+													</a>
+												</li>
+												<li *ngIf="user.user_company.role == 'MANAGER'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeAdmin(user);callGA('MAKEADMIN')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Admin</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="!isAdmin && user.username == logedInUserName">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 col-xs-12 active-users-card" *ngIf="user.user_company.active && selectedFilter == 'Manager' && user.user_company.role == 'MANAGER'">
+									<div class="active-users-box">
+										<div class="img-block-wrapper">
+											<div class="img-block-blue">{{user.name[0]}}</div>
+										</div>
+										<div class="text-block">
+											<h4 class="name ellipsis">{{user.name}}
+												<span *ngIf="user.username == logedInUserName">(You)</span>
+											</h4>
+											<span class="site ellipsis">{{user.emails[0].email}}</span>
+											<h6 class="designation ellipsis">{{user.user_company.role}}</h6>
+											<span class="joined-date ellipsis">
+												Joined On: {{user.createdAt.split('T')[0]}}
+											</span>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="isAdmin">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li *ngIf="user.username != logedInUserName">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="deleteUser(user);callGA('DELETEUSER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Delete User
+														</span>
+													</a>
+												</li>
+												<li *ngIf="user.username == logedInUserName">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+												<li *ngIf="user.user_company.role == 'ADMIN'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeManager(currentCompany);callGA('MAKEMANAGER')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Manager</span>
+													</a>
+												</li>
+												<li *ngIf="user.user_company.role == 'MANAGER'">
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="makeAdmin(user);callGA('MAKEADMIN')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">star</i></span>
+														<span class="active-users-dd-list-title">Make Admin</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="btn-group active-users-dropdown-wrapper" *ngIf="!isAdmin && user.username == logedInUserName">
+											<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												<i class="material-icons">keyboard_arrow_down</i>
+											</button>
+											<ul class="dropdown-menu">
+												<li>
+													<a href="javascript:void(0);" class="hvr-sweep-to-right" (click)="leaveCompany(currentCompany);callGA('LEAVECOMPANY')">
+														<span class="active-users-dd-list-icon"><i class="material-icons">delete</i></span>
+														<span class="active-users-dd-list-title">
+															Leave Company
+														</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</span>
+							<div class="col-md-4 col-sm-6 col-xs-12 active-users-card add-new-user" *ngIf="isAdmin">
+								<a href="javascript:void(0);" data-toggle="modal" data-target="#add-new-user" (click)="callGA('ADDUSERCLICK')">
+									<div class="active-users-box">
+										<div class="img-block-wrapper">
+											<div class="add-new-user">
+												<span>+</span>
+											</div>
+										</div>
+										<div class="text-block">
+											<h5 class="name">Add New User</h5>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<!-- End: active users cards section -->
+					</div>
+				</div>
+				<!-- End: tab active-users -->
+				<!-- Start: tab invited-users -->
+				<div role="tabpanel" class="tab-pane invited-users" id="invited-users">
+					<!-- Start: invited users cards section -->
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<span *ngFor="let user of currentCompanyUsers">
+							<div class="col-md-4 col-sm-4 col-xs-12 invited-users-card" *ngIf="!user.user_company.active && user.user_company.status == 'INVITED'">
+								<div class="active-users-box">
+									<div class="img-block-wrapper">
+										<div class="img-block-blue">{{user.name[0]}}</div>
+									</div>
+									<div class="text-block">
+										<h4 class="name ellipsis">{{user.name}}</h4>
+										<span class="site ellipsis">{{user.emails[0].email}}</span>
+										<h6 class="designation ellipsis">{{user.user_company.role}}</h6>
+										<span class="joined-date ellipsis">Invited On: {{user.user_company.invite.requested_at.split('T')[0]}}</span>
+									</div>
+								</div>
+							</div>
+						</span>
+						<div class="col-md-4 col-sm-6 col-xs-12 active-users-card add-new-user" *ngIf="isAdmin" (click)="callGA('ADDUSERCLICK')">
+							<a href="javascript:void(0);" data-toggle="modal" data-target="#add-new-user">
+								<div class="active-users-box">
+									<div class="img-block-wrapper">
+										<div class="add-new-user">
+											<span>+</span>
+										</div>
+									</div>
+									<div class="text-block">
+										<h5 class="name">Add New User</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- End: invited users cards section -->
+				</div>
+				<!-- End: tab invited-users -->
+				<!-- Start: tab access-requests -->
+				<div role="tabpanel" class="tab-pane access-requests hide" id="access-requests">
+					<!-- Start: access-requests cards section -->
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<span *ngFor="let user of currentCompanyUsers">
+							<div class="col-md-4 col-sm-6 col-xs-12 access-requests-card" *ngIf="!user.user_company.active && user.user_company.status == 'REQUESTED' && hasRequest">
+								<div class="active-users-box">
+									<div class="img-block-wrapper">
+										<div class="img-block-blue">{{user.name[0]}}</div>
+									</div>
+									<div class="text-block">
+										<h4 class="name ellipsis">{{user.name}}</h4>
+										<span class="site ellipsis">{{user.emails[0].email}}</span>
+										<!-- <div class="icon-block">
+											<div style="display:inline-block;">
+												<div class="ar-onoffswitch" (click)="accessRequestPopup(user)">
+													<input type="checkbox" name="ar-onoffswitch" class="ar-onoffswitch-checkbox user{{user.id}}" id="user{{user.id}}">
+													<label class="ar-onoffswitch-label" attr.for="user{{user.id}}">
+														<span class="ar-onoffswitch-inner"></span>
+														<span class="ar-onoffswitch-switch"></span>
+													</label>
+												</div>
+											</div>
+										</div> -->
+
+										<div class="icon-block">
+											<span (click)="accessRequestPopup(user)">
+												<span class="icon-green hide">
+													<i class="material-icons">check_circle</i>
+													<span class="leave">Approve</span>
+												</span>
+												<div style="display:inline-block;">
+													<div class="onoffswitch">
+														<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox user{{user.id}}" id="user{{user.id}}">
+														<label class="onoffswitch-label" attr.for="user{{user.id}}">
+															<span class="onoffswitch-inner"></span>
+															<span class="onoffswitch-switch"></span>
+														</label>
+													</div>
+												</div>
+											</span>
+										</div>
+
+										<span class="joined-date ellipsis">Requested:
+											{{user.user_company.invite.requested_at.split('T')[0]}}
+										</span>
+									</div>
+								</div>
+							</div>
+						</span>
+					</div>
+					<!-- Start: if no request -->
+					<div class="col-md-12 col-sm-12 col-xs-12 np text-center" *ngIf="!hasRequest">
+						<span class="no-req-icon"><i class="material-icons">fingerprint</i></span>
+						<h4 class="no-req-text">No requests</h4>
+					</div>
+					<!-- End: if no request -->
+					<!-- End: access-requests cards section -->
+				</div>
+				<!-- End: tab access-requests -->
+			</div>
+		</div>
+		<!-- End: tabs sub content -->
+		<div class="col-md-2 col-sm-1 col-xs-2 np"></div>
+	</div>
+</div>
+<!-- End: team-settings (1)-->
+<div id="add-new-user" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close"  (click)="closeAddUser()">
+					<i class="material-icons">close</i>
+				</button>
+				<h5 class="modal-title">Add New User</h5>
+			</div>
+			<form [formGroup]="inviteUserForm" (ngSubmit)="inviteUser()">
+				<div class="modal-body">
+					<div class="alert alert-danger custom-alert hide" id="success-addUser">
+						<p>
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span>
+							<span>{{Message}}</span>
+						</p>
+						<span (click)="upgradeNavigation()" id="upgradeLink"></span>			
+					</div>
+					<div class="sahil-material">
+						<div class="form-group label-floating">
+							<label class="control-label" for="inputName"> Name</label>
+							<input class="form-control" id="inputName" type="text"  formControlName="userName" name="userName">
+						</div>
+						<div *ngIf="inviteUserForm.controls.userName.touched && !inviteUserForm.controls.userName.valid" class="alert alert-danger">
+							<p *ngIf="inviteUserForm.controls.userName.errors.required">
+								<span class="mat-icon">
+		                            <i class="material-icons">report_problem</i>
+		                        </span>
+								Name is required.
+							</p>
+							<p *ngIf="inviteUserForm.controls.userName.errors.minlength">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Min 3 character is required.
+							</p>
+							<p *ngIf="inviteUserForm.controls.userName.errors.pattern">
+								<span class="mat-icon">
+									<i class="material-icons">report_problem</i>
+								</span>
+								Invalid Name
+							</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="inputEmail"> Email Address</label>
+							<input class="form-control" id="inputEmail" type="email" formControlName="userEmail" name="userEmail" (focus)="hideError()">
+						</div>
+						<div *ngIf="inviteUserForm.controls.userEmail.touched && !inviteUserForm.controls.userEmail.valid" class="alert alert-danger">
+							<p *ngIf="inviteUserForm.controls.userEmail.errors.required">
+								<span class="mat-icon">
+		                            <i class="material-icons">report_problem</i>
+		                        </span>
+								Email is required.
+							</p>
+							<p *ngIf="inviteUserForm.controls.userEmail.errors.checkmail">
+								<span class="mat-icon">
+		                            <i class="material-icons">report_problem</i>
+		                        </span>
+								Invalid Email.
+							</p>
+						</div>
+						<div class="form-group form-group-radio">
+							<label class="radio-inline">
+								<input type="radio" value="ADMIN" id="radioAdmin" formControlName="userRole" name="userRole">
+								<label for="radioAdmin"> </label> Admin {{userRole}}
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="MANAGER" id="radioManager" formControlName="userRole" name="userRole">
+								<label for="radioManager"> </label> Manager
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="submit" [disabled]="!inviteUserForm.valid" class="btn btn-red-outline btn-add-user btn-hover" id="btnInvite">Add New User</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="add-new-company" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i>
+				</button>
+				<h5 class="modal-title">Create a New Company</h5>
+			</div>
+			<div class="modal-body">
+				<div class="sahil-material">
+					<form [formGroup]="createCompanyForm" (ngSubmit)="createCompany()">
+						<div class="form-group label-floating">
+							<label class="control-label" for="companyname"> New Company Name</label>
+							<input class="form-control" id="companyname" type="text" name="companyname" formControlName="companyname" (focus)="hideError()">
+						</div>
+						<div *ngIf="createCompanyForm.controls.companyname.touched && !createCompanyForm.controls.companyname.valid" class="alert alert-danger">
+							<p *ngIf="createCompanyForm.controls.companyname.errors.required">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Company Name is required.
+							</p>
+							<p *ngIf="createCompanyForm.controls.companyname.errors.minlength">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Min 3 character is required.
+							</p>
+						</div>
+						<div class="form-group label-floating">
+							<label class="control-label" for="domain"> Company Url</label>
+							<input class="form-control" id="domain" type="text" name="domain" formControlName="domain" (focus)="hideError()">
+							<label class="in-active">{{subdomainExtension}}</label>
+						</div>
+						<div *ngIf="createCompanyForm.controls.domain.touched && !createCompanyForm.controls.domain.valid" class="alert alert-danger">
+							<p *ngIf="createCompanyForm.controls.domain.errors.required">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Company Name is required.
+							</p>
+							<p *ngIf="createCompanyForm.controls.domain.errors.minlength">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Min 3 character is required.</p>
+							<p *ngIf="createCompanyForm.controls.domain.errors.pattern">
+								<span class="mat-icon">
+								  	<i class="material-icons">report_problem</i>
+								</span>
+								Invalid Url
+							</p>
+						</div>
+						<button type="submit" id="btnCreateCompany" class="btn btn-red-outline btn-add-user btn-hover" [disabled]="!createCompanyForm.valid">Add New Company</button>
+					</form>
+					<div class="alert alert-danger hide" id="success-addCompany">
+						{{Message}}
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<!-- <button type="" class="btn btn-red-outline btn-hover">Join Company</button> -->
+				Your company will be created immediately. As soon as the company is created, you can start adding users to collaborate.
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Start: Modal Join Company -->
+<div id="join-companyX" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i>
+				</button>
+				<h5 class="modal-title">Join Company</h5>
+			</div>
+			<div class="modal-body col-md-12 np slimscroll">
+				<div class="sahil-material">
+					<div class="col-md-12 np">
+						<div class="alert alert-danger hide" id="success-joinCompany" *ngIf="joinCompanyForm.controls.searchCompany.valid">
+							{{Message}}
+						</div>
+						<form [formGroup]="joinCompanyForm" (ngSubmit)="searchCompany()">
+							<div class="form-group label-floating">
+								<label class="control-label" for="searchCompany"> Search</label>
+								<input class="form-control" id="searchCompany" type="text" name="searchCompany" formControlName="searchCompany" (focus)="hideError()">
+								<span class="icon-search" (click)="searchCompany()"><i class="material-icons">search</i></span>
+							</div>
+							<div *ngIf="joinCompanyForm.controls.searchCompany.touched && !joinCompanyForm.controls.searchCompany.valid" class="alert alert-danger">
+								<p *ngIf="joinCompanyForm.controls.searchCompany.errors.required">Company Name is required to search.</p>
+								<p *ngIf="joinCompanyForm.controls.searchCompany.errors.minlength">Min 3 character is required.</p>
+							</div>
+						</form>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 np companies-card-wrapper">
+						<span *ngIf="searchedCompanyList.length > 0">
+							<span *ngFor="let company of searchedCompanyList">
+								<div class="col-md-6 col-sm-4 col-xs-12 np companies-card" (click)="joinCompany(company)">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="companies-box">
+											<div class="img-block-wrapper">
+												<div class="img-block-blue">{{company.name[0]}}</div>
+											</div>
+											<div class="text-block">
+												<h4 class="name ellipsis">{{company.name}}</h4>
+												<span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+											</div>
+											<div class="companies-box-hover" id='joined{{company.id}}'>
+												<i class="material-icons">check_circle</i> &nbsp;<span id='join{{company.id}}'>Join</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</span>
+						</span>
+						<span *ngIf="joinedCompanyList.length > 0">
+							<span *ngFor="let company of joinedCompanyList">
+								<div class="col-md-6 col-sm-4 col-xs-12 np companies-card">
+									<div class="col-md-12 col-sm-12 col-xs-12">
+										<div class="companies-box">
+											<div class="img-block-wrapper">
+												<div class="img-block-blue">{{company.name[0]}}</div>
+											</div>
+											<div class="text-block">
+												<h4 class="name ellipsis">{{company.name}}</h4>
+												<span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+											</div>
+											<div class="companies-box-request">
+												Request Sent
+											</div>
+										</div>
+									</div>
+								</div>
+							</span>
+						</span>
+                        <span *ngIf="invitedCompanyList.length > 0">
+                            <span *ngFor="let company of invitedCompanyList">
+                                <div class="col-md-6 col-sm-4 col-xs-12 np companies-card">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="companies-box">
+                                            <div class="img-block-wrapper">
+                                                <div class="img-block-blue">{{company.name[0]}}</div>
+                                            </div>
+                                            <div class="text-block">
+                                                <h4 class="name ellipsis">{{company.name}}</h4>
+                                                <span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+                                            </div>
+                                            <div class="companies-box-request">
+                                                check email for your approval
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+					</div>
+					<!-- End: companies cards section -->
+				</div>
+			</div>
+			<div class="modal-footer">
+				Once the admin of the company accepts your request, you will be added to the company on Outgrow.
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: Modal Join Company -->
+<div id="leaveConfirmation" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i>
+				</button>
+				<button type="button" class="close btn-help">
+					<i class="material-icons">help_outline</i>
+				</button>
+				<h5 class="modal-title">Confirmation</h5>
+			</div>
+			<div class="modal-body col-md-12 np og-message">
+                <p>Are you sure you wish to leave this company?</p>
+                <p>This is the only company you belong to. If you leave this company, your account will be deleted.</p>
+				<button class="btn btn-red-outline btn-hover" id="confirmNo" data-dismiss="modal">
+					No
+				</button>
+				<button class="btn btn-red-outline btn-hover" id="confirmYes" (click)="deleteMe()">
+					Yes
+				</button>
+
+			</div>
+			<div class="modal-footer col-md-12 np hide">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Start: Modal Accept Access Request -->
+<div id="accept-access-req" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i>
+				</button>
+				<button type="button" class="close btn-help">
+					<i class="material-icons">help_outline</i>
+				</button>
+				<h5 class="modal-title">Accept Access Request</h5>
+			</div>
+			<div class="modal-body col-md-12 col-sm-12 col-xs-12 np">
+				<div class="sahil-material">
+					<div class="col-md-12 col-sm-12 col-xs-12 np">
+						<div class="col-md-12 col-sm-12 col-xs-12 np">
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 np">
+								<label class="control-label col-md-3 np label-filled" for="">Name</label>
+								<span class="coloumn col-md-1 np">:</span>
+								<span class="form-control col-md-8 np input-filled ellipsis">{{accessRequestUserName}}</span>
+							</div>
+							<div class="form-group col-md-6 col-sm-6 col-xs-12 np">
+								<label class="control-label col-md-3 np label-filled" for="">Company</label>
+								<span class="coloumn col-md-1 np">:</span>
+								<span class="form-control ellipsis col-md-8 np input-filled">{{currentCompany.name}}</span>
+							</div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 np email-access">
+							<div class="form-group col-md-12 col-sm-12 col-xs-12 np">
+								<label class="control-label col-md-3 np label-filled" for="">Email</label>
+								<span class="coloumn col-md-1 np">:</span>
+								<span class="form-control col-md-8 np input-filled">{{accessRequestUserEmail}}</span>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer col-md-12 col-sm-12 col-xs-12 np">
+				<div class="col-md-5 col-sm-5 col-xs-5 np"></div>
+				<form [formGroup]="acceptRequestForm" (ngSubmit)="acceptRequest()">
+					<div class="col-md-7 col-sm-7 col-xs-7 np">
+						<div class="form-group form-group-radio">
+							<label class="radio-inline">
+								<input type="radio" value="ADMIN" id="aar-radioAdmin" formControlName="userRole" name="userRole">
+								<label for="aar-radioAdmin"> </label> Admin
+							</label>
+							<label class="radio-inline">
+								<input type="radio" value="MANAGER" id="aar-radioManager" formControlName="userRole" name="userRole">
+								<label for="aar-radioManager"> </label> Manager
+							</label>
+						</div>
+						<button type="submit" id="btnAccetpRequest" class="btn btn-red-outline btn-hover" [disabled] = "!acceptRequestForm.valid">Approve Request</button>
+						<div class="alert alert-danger hide" id="success-acceptUser">
+							{{Message}}
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End: Modal Accept Access Request -->
+<div class="float-changes-updated hide">
+	<div class="col-md-12 np">
+		<span class="icon-done"><i class="material-icons">done</i></span>
+		<span id="floatMessage">{{ Message }} </span>
+	</div>
+</div>

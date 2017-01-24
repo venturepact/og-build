@@ -1,0 +1,188 @@
+<div class="temp2-bg"
+    *ngIf="!devMode" 
+    [style.backgroundColor]="_templateRenderer.getBackground('color') | safeStyle" 
+    [style.backgroundImage]="_templateRenderer.getBackground('img') | safeStyle">
+    <div class="bg-overlay"></div>
+</div>
+<div *ngFor="let page of getLandingPage(), let pageIndex=index"
+    (mousedown)="selectpage(page)" (click)="selectModel($event,'Page')"
+    class="main-bg {{page.defaultClass}} {{'page_'+pageIndex}} w100"
+    [class.hide]="pageIndex && !devMode"
+    [style.backgroundColor]="_templateRenderer.getBackground('color') | safeStyle" 
+    [style.backgroundImage]="_templateRenderer.getBackground('img') | safeStyle"
+    >
+    <section *ngFor="let section of getVisibleSections(page),let secIndex=index" (mousedown)="selectSection(section)" class="{{section.defaultClass}}"
+            [ngClass]="{
+                        'hide': section.items.length == 0 
+                    }">
+        <div *ngFor="let control of section.items,let i=index" [attr.data-order]="i+1" (mousedown)="selectControl(control)">
+            <control [page] ="page" [data]="control"
+                (mousedown)="selectpage(page)"
+                (mouseup)="selectControl(section)"
+                (click)="selectModel($event,'Section')"
+                (controlOutput)="onLeadFormSubmit($event,'page_'+(pageIndex+1),'page_'+(pageIndex))" 
+                *ngIf="control.visible && control.type == 'leadform'">
+             </control>
+              <control  [data]="control" 
+                     [devMode]="devMode"  
+                      (controlOutput)="onLeadFormSubmit($event,'page_'+(pageIndex+1),'page_'+(pageIndex))" 
+                      *ngIf="control.visible && control.type !== 'leadform'" >
+             </control>
+        </div>
+    </section>
+</div>
+<div [style.backgroundColor]="_templateRenderer.getBackground('color') | safeStyle" 
+    [style.backgroundImage]="_templateRenderer.getBackground('img') | safeStyle" 
+   [class.divider-2]="devMode" 
+
+>
+    <div class="page-logo" [class.hide]="getLandingPage().length && !devMode">
+        <control [data]="staticControls.Landing.logo"  *ngIf="staticControls!={}"></control>
+    </div>
+    <div *ngFor="let page of getVisiblePages(), let pageIndex=index" (mousedown)="selectpage(page)" (click)="selectModel($event,'Page')"
+        class="{{page.defaultClass}} {{'page_'+(pageIndex+1)}} w100 mobile-result-sticky" [class.hide]="getLandingPage().length && !devMode"  
+        >
+        <section *ngFor="let section of getVisibleSections(page),let secIndex=index" (mousedown)="selectSection(section)" class="{{section.defaultClass}}"
+            [ngClass]="{
+                        'hide': section.items.length == 0 ,
+                        'sroll-result': section.type=='Result' 
+                    }">
+            <div *ngIf="page.type=='Questionnaire'" (click)="selectModel($event,'Section')">
+                <div class="questions {{'sec_'+secIndex}}">
+                    <div class=" question-section-outer">
+                        <div class="w100">
+                            <div class="question-head">{{section.title}}</div>
+                            <div class="question-subhead" *ngIf="section.showDesc">{{section.description}}
+                            </div>
+                            <form (ngSubmit)="onSubmit(tvs.getFormGroups()[section._id])" 
+                            [formGroup]="tvs.getFormGroups()[section._id]"  *ngIf = "section.type !=='LeadFormQ'" novalidate>
+                                <div class="question-section">
+                                    <div *ngFor="let control of section.items,let i=index" [attr.data-order]="i+1" (mousedown)="selectControl(control)" class="sec_{{secIndex}}_q_{{i}}"
+                                        (click)="selectModel($event,'Control')">
+                                        <div class="question-number" *ngIf="section.type !== 'LeadFormQ'">{{i+1}}</div>
+                                        
+                                        <div class="question-components" >
+                                            <div class="section-head">
+                                                <span class="pull-left">
+                                                        {{control.props.title}}<span *ngIf="control.config.validations.required.status" class="requiredAsteric">*</span>
+                                                <div class="help-outer">
+                                                    <i class="material-icons" *ngIf="control.config.showHelp">help_outline</i>
+                                                    <div class="help-text" *ngIf="control.config.showHelp">{{control.props.helpText}}</div>
+                                                </div>
+                                                </span>
+                                            </div>
+                                            <control [data]="control" [form]="tvs.getFormGroups()[section._id]"></control>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w100 text-center">
+                                    <button class="btn prime-action sliding-next" [disabled]="!tvs.getFormGroups()[section._id].valid" (click)="onSubmit(tvs.getFormGroups()[section._id]);
+                                                    (secIndex+1)!=getVisibleSections(page).length?
+                                                    onButtonClick($event,'sec_'+(secIndex+1)):
+                                                    onButtonClick($event,'page_'+(pageIndex+1))
+                                                " [class.hide]="buttonShowHide" >
+                                                <!--[themeColor]="['background']"-->
+                                        {{section.buttonTitle}}
+                                    </button>
+                                </div>
+                            </form>
+                            <form (ngSubmit)="onSubmit(tvs.getFormGroups()[section._id])" 
+                            [formGroup]="tvs.getFormGroups()[section._id]"  *ngIf = "section.type === 'LeadFormQ'" novalidate>
+                                <div class="question-section">
+                                    <div *ngFor="let control of section.items,let i=index" [attr.data-order]="i+1" (mousedown)="selectControl(section)" class="sec_{{secIndex}}_q_{{i}}"
+                                        (click)="selectModel($event,'Section')">
+                                        <div class="question-number" *ngIf="section.type !== 'LeadFormQ'">{{i+1}}</div>
+                                        <!--[themeColor]="['colorClass']"-->
+                                        <control [data]="control" [form]="tvs.getFormGroups()[section._id]"></control>
+                                    </div>
+                                </div>
+                                <div class="w100 text-center">
+                                    <button class="btn prime-action sliding-next" [disabled]="!tvs.getFormGroups()[section._id].valid" (click)="onSubmit(tvs.getFormGroups()[section._id]);
+                                                    (secIndex+1)!=getVisibleSections(page).length?
+                                                    onButtonClick($event,'sec_'+(secIndex+1)):
+                                                    onButtonClick($event,'page_'+(pageIndex+1))
+                                                " [class.hide]="buttonShowHide" >
+                                                <!--[themeColor]="['background']"-->
+                                        {{section.buttonTitle}}
+                                            </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="temp2-scrollbar"  *ngIf="page.type=='Result'">
+                <a class="mobile-result-linkAdd" (click)="mobilestickyAdd()" href="javascript:void(0);"><i class="material-icons">keyboard_backspace</i> Back</a>
+               <control 
+                        [data]="staticControls.Result.result_header" 
+                        class="{{staticControls.Result.result_header.defaultClass}}"  
+                        *ngIf="staticControls.Result.result_header.visible"
+                    ></control>
+                    <div *ngIf="staticControls.Result.Result">
+                        <div class="result-mid result-comm" [class.result-scroller]="staticControls.Result.Result.items.length>3">                    
+                            <div 
+                                *ngFor="let control of staticControls.Result.Result.items,let i=index" [attr.data-order]="i+1" class="{{control.defaultClass}} "
+                                [hidden]="!control.visible" 
+                                (mousedown)="selectpage(page); selectControl(control);"
+                                (mouseup)="selectModel($event,'Page')"
+                                [ngClass]="{
+                                    'result-temp2-default-section':true,
+                                    'result-full-section':(i==0),
+                                    'result-half-section':(i>0)
+                                }"
+                            >
+                                <control [data]="control"  *ngIf="control.visible"></control>
+                                
+                            </div>
+                        </div>
+                         <div class="leadform-outer">
+                            <control 
+                                [data]="staticControls.Result.leadform" 
+                                [page] = "page"
+                                class="{{staticControls.Result.leadform.defaultClass}}" 
+                                (controlOutput)="onResultLeadFormSubmit($event)"  
+                                *ngIf="staticControls.Result.leadform.visible"
+                                (mousedown)="selectpage(page)"
+                                (mouseup)="selectControl(staticControls.Result.leadform)"
+                                (click)="selectModel($event,'Control')"
+                            ></control>
+                   
+                            <control 
+                                [data]="staticControls.Result.click_button" 
+                                class="{{staticControls.Result.click_button.defaultClass}}" 
+                                (controlOutput)="onResultLeadFormSubmit($event)"  
+                                *ngIf="staticControls.Result.click_button.visible"
+                                (click) = "scrollToTopProperties()"
+                            ></control>
+                        </div>
+                     </div>
+
+                    <control 
+                        [data]="staticControls.Result.result_disclaimer" 
+                        class="{{staticControls.Result.result_disclaimer.defaultClass}}"
+                        *ngIf="staticControls.Result.result_disclaimer.visible"
+                        (click) = "scrollToTopProperties()"
+                    ></control>
+                    <div class="share-set">
+                        <control 
+                            [data]="staticControls.Result.share_links" 
+                            class="{{staticControls.Result.share_links.defaultClass}}" 
+                            *ngIf="staticControls.Result.share_links.visible"
+                        ></control>
+                        <!--<control 
+                            [data]="staticControls.Result.result_redo" 
+                            class="{{staticControls.Result.result_redo.defaultClass}}" 
+                            *ngIf="staticControls.Result.result_redo.visible"
+                        ></control>-->
+                    </div>
+                    <a class="mobile-result-link" (click)="mobilestickyRemove()" href="javascript:void(0);">Tap here for details</a>
+                    <!--<control 
+                        [data]="staticControls.Result.result_summary" 
+                        class="{{staticControls.Result.result_summary.defaultClass}}" 
+                        (controlOutput)="onResultLeadFormSubmit($event)"  
+                        *ngIf="staticControls.Result.result_summary.visible"
+                    ></control>-->
+        </div>
+    </div>
+</div>

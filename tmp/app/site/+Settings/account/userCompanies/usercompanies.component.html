@@ -1,0 +1,505 @@
+<div class="col-md-12 col-sm-12 col-xs-12 np" id="companyLists">
+	<span *ngFor="let company of myCompaniesList">
+		<div class="col-md-4 col-sm-4 col-xs-12 companies-card" *ngIf="company.user_company.status == 'APPROVED' || (company.user_company.status == 'INVITED' && company.user_company.active)">
+			<div class="companies-box">
+				<div class="img-block-wrapper" (click)="showDetails(company)">
+					<div class="img-block-blue">{{company.name[0]}}</div>
+				</div>
+				<div class="text-block">
+					<h4 class="name ellipsis">{{company.name}}</h4>
+					<span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+					<div class="icon-block col-md-12 col-sm-12 col-xs-12">
+						<div class="col-md-12 col-sm-12 col-xs-12 np">
+							<a href="javascript:void(0);" class="col-md-6 col-sm-4 col-xs-3" data-toggle="modal" data-target="#change-company-name" *ngIf="company.user_company.role == 'ADMIN'" (click)="popupUpdateCompany(company);callGA('EDITCOMPANY')">
+								<span class="icon-grey">
+									<i class="material-icons">mode_edit</i>
+									<!--<span class="edit">Edit</span>-->
+									<div class="comany-tooltip">
+										<p class="ellipsis">Edit Company</p>
+									</div>
+								</span>
+							</a>
+							<a href="javascript:void(0);" class="col-md-6 col-sm-4 col-xs-3" data-toggle="modal" data-target="#leave-company" (click)="leaveCompany(company);callGA('LEAVECOMPANY')">
+								<span class="icon-grey">
+									<i class="material-icons">highlight_off</i>
+									<!--<span class="leave">Leave Company</span>-->
+									<div class="comany-tooltip">
+										<p class="ellipsis">Leave Company</p>
+									</div>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12 companies-card" *ngIf="company.user_company.status == 'REQUESTED'">
+			<div class="companies-box">
+				<div class="img-block-wrapper">
+					<div class="img-block-blue">{{company.name[0]}}</div>
+				</div>
+				<div class="text-block">
+					<h4 class="name ellipsis">{{company.name}}</h4>
+					<span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+					<span class="req-sent ellipsis">Request Sent</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-4 col-xs-12 companies-card" *ngIf="company.user_company.status == 'INVITED' && !company.user_company.active">
+			<div class="companies-box">
+				<div class="img-block-wrapper">
+					<div class="img-block-blue">{{company.name[0]}}</div>
+				</div>
+				<div class="text-block">
+					<h4 class="name ellipsis">{{company.name}}</h4>
+					<span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+					<div class="icon-block">
+						<span (click)="acceptInvite(company)">
+							<span class="icon-green hide">
+								<i class="material-icons">check_circle</i>
+								<span class="leave">Accept</span>
+							</span>
+							<div style="display:inline-block;">
+								<div class="onoffswitch">
+									<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox comp{{company.id}}" id="comp{{company.id}}">
+									<label class="onoffswitch-label" attr.for="comp{{company.id}}">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</span>
+	<div class="col-md-4 col-sm-4 col-xs-12 companies-card" *ngIf="!is_admin_created">
+		<div class="col-md-12 col-sm-12 col-xs-12 companies-box">
+			<div class="col-md-12 col-sm-12 col-xs-6 np text-center">
+				<a href="" class="companies-box-wrapper add-join-companies-box-wrapper" data-toggle="modal" data-target="#add-new-company" (click)="callGA('ADDCOMPANY')">
+					<div class="img-block-wrapper">
+						<div class="add-company">
+							<span>+</span>
+						</div>
+					</div>
+					<div class="text-block">
+						<h5 class="name">Add Company</h5>
+					</div>
+				</a>
+			</div>
+			<div class="col-md-6 col-sm-12 col-xs-6 np text-center hide">
+				<a href="" class="companies-box-wrapper add-join-companies-box-wrapper join-company-mt" data-toggle="modal" data-target="#join-company" (click)="callGA('JOINCOMPANY')">
+					<div class="img-block-wrapper">
+						<div class="join-company">
+							<span><i class="material-icons">bubble_chart</i></span>
+						</div>
+					</div>
+					<div class="text-block">
+						<h5 class="name">Join Company</h5>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 np hide" id="companyDetails">
+	<a href="javascript:void(0);" (click)="backToList()"><i class="material-icons">keyboard_arrow_left</i>Back to company Lists</a>
+	<div class="companyDetail-inner">
+		<a  href="javascript:void(0);" class="col-md-6 col-sm-4 col-xs-3" data-toggle="modal" data-target="#change-company-name" class="pull-right" *ngIf="clickedCompany.user_company.role == 'ADMIN'" (click)="popupUpdateCompany(clickedCompany);callGA('EDITCOMPANY')"><i class="material-icons">edit</i></a>
+		<div class="details">
+			<table class="table-company-detail">
+				<tbody>
+					<tr>
+						<td>Company Name</td>
+						<td>{{clickedCompany.name}}</td>
+					</tr>
+					<tr>
+						<td>Company URL</td>
+						<td>{{clickedCompany.sub_domain}}{{subdomainExtension}}</td>
+					</tr>
+					<!-- <tr>
+						<td>Agency</td>
+						<td>{{clickedCompany.agency?'true':'false'}}</td>
+					</tr>
+					<tr>
+						<td>Leads per Month</td>
+						<td>{{clickedCompany.leads.total?clickedCompany.leads.total:'0'}}</td>
+					</tr>
+					<tr>
+						<td>Monthly Traffic</td>
+						<td>{{clickedCompany.traffic.frequency?clickedCompany.traffic.frequency:'0'}}</td>
+					</tr> -->
+					<tr>
+						<td>Your Api key</td>
+						<td>
+							<input type="text" disabled="true" id="input-api" size="35" value="{{clickedCompany.api}}"/>
+							<i *ngIf="clickedCompany.api" class="material-icons pull-right" (click)="copyApi()">content_copy</i>
+							<a *ngIf="!clickedCompany.api" class="btn btn-white btn-update btn-hover" href="javascript:void(0)" (click)="generateApiKey(clickedCompany.id)">generate</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<div id="change-company-name" class="modal fade" tabindex="-1" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content modal-bg">
+			<div class="modal-header">
+				<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i>
+				</button>
+				<h5 class="modal-title">Change Company Name</h5>
+			</div>
+			<div class="modal-body">
+				<div class="sahil-material">
+					<div class="alert alert-danger custom-alert hide" id="success-updateCompany">
+						<p>
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span>
+						{{Message}}
+						</p>
+					</div>
+					<div class="col-md-12 np filled-sec">
+						<div class="form-group col-md-12 np">
+							<label class="control-label col-md-2 np label-filled" for="">Current Name</label>
+							<span class="coloumn col-md-1 np">:</span>
+							<span class="form-control col-md-8 np input-filled">
+								{{updateCompany.name}}
+							</span>
+						</div>
+						<div class="form-group col-md-12 np" style="margin-top: 12px;">
+							<label class="control-label col-md-2 np label-filled" for="">Current Url</label>
+							<span class="coloumn col-md-1 np">:</span>
+							<span class="form-control col-md-8 np input-filled">
+								{{updateCompany.sub_domain}}{{subdomainExtension}}
+							</span>
+						</div>
+					</div>
+					<form [formGroup] = "updateCompanyForm" (ngSubmit)="updateThisCompany()" id="updateComp">
+						<div class="form-group label-floating" id="updCompanynameDiv" [class.is-empty]="!EditCompany.name">
+							<label class="control-label" for="companyname"> New Company Name</label>
+							<input class="form-control" id="updCompanyname" type="text" name="companyname" formControlName="companyname" (focus)="hideError()" [(ngModel)]="EditCompany.name">
+						</div>
+						<div *ngIf="updateCompanyForm.controls.companyname.touched  && !updateCompanyForm.controls.companyname.valid" class="alert alert-danger">
+							<p *ngIf="updateCompanyForm.controls.companyname.errors.required">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Company Name is required.
+							</p>
+							<p *ngIf="updateCompanyForm.controls.companyname.errors.minlength">
+								<span class="mat-icon">
+                                    <i class="material-icons">report_problem</i>
+                                </span>
+								Please input at least 3 characters.
+							</p>
+						</div>
+						<div class="form-group label-floating" id="updDomainDiv" [class.is-empty]="!EditCompany.sub_domain">
+							<label class="control-label" for="domain"> New Url</label>
+							<input class="form-control" id="updDomain" type="text" name="domain" formControlName="domain" (focus)="hideError()" [(ngModel)]="EditCompany.sub_domain">
+							<label class="in-active">{{subdomainExtension}}</label>
+						</div>
+						<div *ngIf="updateCompanyForm.controls.domain.touched && !updateCompanyForm.controls.domain.valid" class="alert alert-danger">
+							<p *ngIf="updateCompanyForm.controls.domain.errors.required">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Domain is required.
+							</p>
+							<p *ngIf="updateCompanyForm.controls.domain.errors.minlength">
+								<span class="mat-icon">
+                                    <i class="material-icons">report_problem</i>
+                                </span>
+								Please input at least 3 characters.
+							</p>
+							<p *ngIf="updateCompanyForm.controls.domain.errors.pattern">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Invalid Url
+							</p>
+						</div>
+						<!-- <div class="form-group toggle-switch">
+							<label>
+								Are you an agency ? &nbsp;&nbsp;
+								<input type="checkbox" class="show-check" formControlName="companyType" id="updCompanyType" name="companyType" [(ngModel)]="EditCompany.agency">
+								<span class="lever"></span>
+							</label>
+						</div>
+						<div class="form-group label-floating monthly-traffic" id="updTrafficDiv">
+							<label class="control-label" for="traffic">Monthly traffic</label>
+							<input class="form-control" id="updTraffic" type="text" formControlName="traffic" name="traffic" [(ngModel)]="EditCompany.traffic.frequency">
+						</div>
+						<div *ngIf="updateCompanyForm.controls.traffic.touched  && !updateCompanyForm.controls.traffic.valid" class="col-md-12 alert alert-danger">
+							<p *ngIf="updateCompanyForm.controls.traffic.errors.maxlength">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Max 8 digits are allowed.
+							</p>
+							<p *ngIf="updateCompanyForm.controls.traffic.errors.pattern">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Traffic should be a valid number
+							</p>
+						</div>
+						<div class="form-group label-floating contact-num" id="updLeadsDiv">
+							<label class="control-label " for="leads">Avg Leads generated every month</label>
+							<input class="form-control" id="updLeads" name="leads" type="tel" formControlName="leads" [(ngModel)]="EditCompany.leads.total">
+						</div>
+						<div *ngIf="updateCompanyForm.controls.leads.touched  && !updateCompanyForm.controls.leads.valid" class="col-md-12 alert alert-danger">
+							<p *ngIf="updateCompanyForm.controls.leads.errors.maxlength">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Max 8 digits are allowed.
+							</p>
+							<p *ngIf="updateCompanyForm.controls.leads.errors.pattern">
+								<span class="mat-icon">
+	                                <i class="material-icons">report_problem</i>
+	                            </span>
+								Leads should be a valid number
+							</p>
+						</div> -->
+						<button type="submit" id="btnUpdateCompany" class="btn btn-red-outline btn-add-user btn-hover pull-right" [disabled]="!updateCompanyForm.valid">Update</button>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer hide">
+				Your company will be created immediately. As soon as the company is created, you can start adding users to collaborate.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="add-new-company" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content modal-bg">
+            <div class="modal-header">
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+                <h5 class="modal-title">Create a New Company</h5>
+            </div>
+            <div class="modal-body">
+                <div class="sahil-material">
+					<div class="alert alert-danger custom-alert hide" id="success-addCompany">
+                        {{Message}}
+                    </div>
+                    <form [formGroup]="createCompanyForm" (ngSubmit)="createCompany()">
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="companyname"> New Company Name</label>
+                            <input class="form-control" id="companyname" type="text" name="companyname" formControlName="companyname" (focus)="hideError()">
+                        </div>
+                        <div *ngIf="createCompanyForm.controls.companyname.touched && !createCompanyForm.controls.companyname.valid" class="alert alert-danger">
+                            <p *ngIf="createCompanyForm.controls.companyname.errors.required">
+                            	<span class="mat-icon">
+			                        <i class="material-icons">report_problem</i>
+			                    </span>
+                            	Company Name is required.
+                            </p>
+                            <p *ngIf="createCompanyForm.controls.companyname.errors.minlength">
+                            	<span class="mat-icon">
+			                        <i class="material-icons">report_problem</i>
+			                    </span>
+                            	Please input at least 3 characters.
+                            </p>
+                        </div>
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="domain"> Company Url</label>
+                            <input class="form-control" id="domain" type="text" name="domain" formControlName="domain" (focus)="hideError()">
+                            <label class="in-active">{{subdomainExtension}}</label>
+                        </div>
+                        <div *ngIf="createCompanyForm.controls.domain.touched && !createCompanyForm.controls.domain.valid" class="alert alert-danger">
+                            <p *ngIf="createCompanyForm.controls.domain.errors.required">
+                            	<span class="mat-icon">
+			                        <i class="material-icons">report_problem</i>
+			                    </span>
+                            	Company url is required.
+                        	</p>
+                            <p *ngIf="createCompanyForm.controls.domain.errors.minlength">
+                            	<span class="mat-icon">
+			                        <i class="material-icons">report_problem</i>
+			                    </span>
+                            	Please input at least 4 characters.
+                        	</p>
+                            <p *ngIf="createCompanyForm.controls.domain.errors.pattern">
+                            	<span class="mat-icon">
+			                        <i class="material-icons">report_problem</i>
+			                    </span>
+                                Invalid Url
+                            </p>
+                        </div>
+                        <button type="submit" id="btnCreateCompany" class="btn btn-red-outline btn-add-user btn-hover" [disabled]="!createCompanyForm.valid">Add New Company</button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- <button type="" class="btn btn-red-outline btn-hover">Join Company</button> -->
+                Your company will be created immediately. As soon as the company is created, you can start adding users to collaborate.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start: Modal Join Company -->
+<div id="join-company" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content modal-bg">
+            <div class="modal-header">
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+                <h5 class="modal-title">Join Company</h5>
+            </div>
+            <div class="modal-body col-md-12 np slimscroll">
+                <div class="sahil-material">
+					<div class="alert alert-danger custom-alert hide" id="success-joinCompany" *ngIf="joinCompanyForm.controls.searchCompany.valid">
+						<p>
+							<span class="mat-icon">
+								<i class="material-icons">report_problem</i>
+							</span>
+							No Companies Found
+						</p>
+					</div>
+                    <div class="col-md-12 np">
+                        <form [formGroup]="joinCompanyForm" (ngSubmit)="searchCompany()">
+                            <div class="form-group label-floating">
+                                <label class="control-label" for="searchCompany"> Search</label>
+                                <input class="form-control" id="searchCompany" type="text" name="searchCompany" formControlName="searchCompany" (focus)="hideError()">
+                                <span class="icon-search" (click)="searchCompany()"><i class="material-icons">search</i></span>
+                            </div>
+                            <div *ngIf="error" class="alert alert-danger" id="searchError">
+                                <p *ngIf="joinCompanyForm.value.searchCompany.length < 3">
+                                	<span class="mat-icon">
+                                		<i class="material-icons">report_problem</i>
+                                	</span>
+                                	Please enter at least 3 characters to search.
+                            	</p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 np companies-card-wrapper">
+                        <span *ngIf="searchedCompanyList.length > 0">
+                            <span *ngFor="let company of searchedCompanyList">
+                                <div class="col-md-6 col-sm-4 col-xs-6 np companies-card" (click)="joinCompany(company)">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="companies-box">
+                                            <div class="img-block-wrapper">
+                                                <div class="img-block-blue">{{company.name[0]}}</div>
+                                            </div>
+                                            <div class="text-block">
+                                                <h4 class="name ellipsis">{{company.name}}</h4>
+                                                <span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+                                            </div>
+                                            <div class="companies-box-hover" id='joined{{company.id}}'>
+                                                <i class="material-icons">check_circle</i> &nbsp;<span id='join{{company.id}}'>Join</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+                        <span *ngIf="joinedCompanyList.length > 0">
+                            <span *ngFor="let company of joinedCompanyList">
+                                <div class="col-md-6 col-sm-4 col-xs-6 np companies-card">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="companies-box">
+                                            <div class="img-block-wrapper">
+                                                <div class="img-block-blue">{{company.name[0]}}</div>
+                                            </div>
+                                            <div class="text-block">
+                                                <h4 class="name ellipsis">{{company.name}}</h4>
+                                                <span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+                                            </div>
+                                            <div class="companies-box-request">
+                                                Request Sent
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+                        <span *ngIf="invitedCompanyList.length > 0">
+                            <span *ngFor="let company of invitedCompanyList">
+                                <div class="col-md-6 col-sm-4 col-xs-6 np companies-card">
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="companies-box">
+                                            <div class="img-block-wrapper">
+                                                <div class="img-block-blue">{{company.name[0]}}</div>
+                                            </div>
+                                            <div class="text-block">
+                                                <h4 class="name ellipsis">{{company.name}}</h4>
+                                                <span class="site ellipsis">{{company.sub_domain}}{{subdomainExtension}}</span>
+                                            </div>
+                                            <div class="companies-box-request">
+                                                check email for your approval
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                        </span>
+                    </div>
+                    <!-- End: companies cards section -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                Once the admin of the company accepts your request, you will be added to the company on Outgrow.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End: Modal Join Company -->
+
+<!-- <div class="float-changes-updated hide" id="floatUCMessage">
+	<div class="col-md-12 np">
+		<span class="icon-done"><i class="material-icons">done</i></span>
+		<span id="floatMessage">{{ Message }} </span>
+	</div>
+</div> -->
+
+<!-- <div class="float-changes-updated hide" id="ucFloatMessage">
+	<div class="col-md-12 np">
+		<span class="icon-done"><i class="material-icons">done</i></span>
+		<span id="floatMessageUC">{{ Message }} </span>
+	</div>
+</div> -->
+
+<div class="toast" id="ucFloatMessage"><i class="material-icons toast-ic">check</i>
+	<span id="floatMessageUC">{{ Message }} </span>
+	<button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button>
+</div>
+
+<div id="leaveConfirmation" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content modal-bg">
+            <div class="modal-header">
+                <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">close</i>
+                </button>
+                <button type="button" class="close btn-help">
+                    <i class="material-icons">help_outline</i>
+                </button>
+                <h5 class="modal-title">Confirmation</h5>
+            </div>
+            <div class="modal-body col-md-12 np og-message">
+                <p>Are you sure you wish to leave this company?</p>
+                <p>This is the only company you belong to. If you leave this company, your account will be deleted.</p>
+                <button class="btn btn-red-outline btn-hover" id="confirmNo" data-dismiss="modal">
+                    No
+                </button>
+                <button class="btn btn-red-outline btn-hover" id="confirmYes">
+                    Yes
+                </button>
+
+            </div>
+            <div class="modal-footer col-md-12 np hide">
+            </div>
+        </div>
+    </div>
+</div>

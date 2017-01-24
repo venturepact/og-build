@@ -1,0 +1,73 @@
+<div class="preloader" *ngIf="loader==0">
+  <div class="status">&nbsp;</div>
+</div>
+<!-- Dashboard 3 boxes start (sahil) -->
+<div class="row" [class.company-home-row]="loggedIn.isLoggedIn">
+    <div class="col-md-12 col-sm-12 col-xs-12 dash-boxes-outr company-home" *ngIf="loader && apps.length">
+        <div *ngFor="let app of apps">
+            <div class="col-md-4 col-sm-4 col-xs-12 mobile-dash">
+                <div class="dash-box">
+                    <figure class="dash-box-figure2">
+                        <div class="dash-top2"
+                        *ngIf="app.pages[0].bgImage"
+                        [style.backgroundImage]="'url(' + app.pages[0].bgImage + ')' | safeStyle">
+                        </div>
+                        <div class="dash-top2" *ngIf="!app.pages[0].bgImage">
+                        </div>
+                    </figure>
+                    <div class="dash-top2-text">
+                        <div class="dash-top2-textinner">
+                            <div class="btn-group company-dropdown-wrapper">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="company-dropdown-title-active ellipsis">Published On: {{app.createdAt}} </span>
+                                    <!--<i class="material-icons">keyboard_arrow_down</i>-->
+                                </button>
+                            </div>
+                            <h3>{{app.name}}</h3>
+                            <a [href]="app.url" class="dash-box-send" target="_blank">
+                                <i class="material-icons">send</i>
+                            </a>
+                            <!--<div class="circluar-progress-outr">
+                                <div class="c100 p15 circluar-progress">
+                                    <span>15%</span>
+                                    <div class="steps">
+                                        Step 1 of 5
+                                        <br>Completed
+                                    </div>
+                                    <div class="slice">
+                                        <div class="bar"></div>
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                    <!--<div class="dash-box-new dash-box-bottom">
+                        <ul>
+                            <li>
+                                <i class="material-icons">public</i>
+                                <label class="text">Calc Status</label>
+                                <div class="dummy-switch" [class.red]="app.mode=='PUBLIC'">
+                                    <p>{{app.mode}}</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 dash-boxes-outr company-home"  *ngIf="loader && !apps.length">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="no-calc">
+                <div class="no-calc-inner">
+                    <div class="no-calc-inner-block">
+                        <img src="assets/images/icon-nocalc.png">
+                        <span>Currently, <br/>there are no live <br/>calculators</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Dashboard 3 boxes end (sahil) -->

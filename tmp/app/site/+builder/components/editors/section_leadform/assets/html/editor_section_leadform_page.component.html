@@ -1,0 +1,93 @@
+<div class="type-details" >
+    <div class="form-label"> Location:</div>
+        <select 
+                class="select-default" 
+                (change)="onChange($event)" 
+                data-width="fit"
+                class="form-control"
+				>
+                <option  value="Landing" [selected] = "_JSONBuilder.getSelectedPage().type ==='Landing'">Welcome screen</option>
+                <!--<option  value="Questionnaire" [selected] = "_JSONBuilder.getSelectedPage().type ==='Questionnaire' && _JSONBuilder.getSelectedPage().sections[0].type === 'LeadFormQ'">Before Questions</option>-->
+                <option  *ngIf="_JSONBuilder.getJSONBuilt().template !=='sound-cloud'" value="Questionnaire" [selected] = "_JSONBuilder.getSelectedPage().type ==='Questionnaire' && _JSONBuilder.getSelectedPage().sections[0].type !== 'LeadFormQ'">After Questions</option>
+                <option  value="Result" [selected] = "_JSONBuilder.getSelectedPage().type ==='Result'">Results Page</option>
+            </select>
+</div>
+<div class="type-details" *ngIf="leadSection && _JSONBuilder.getSelectedPage().type ==='Result'">
+	<div>
+		<span class="form-label">HEADING:</span>
+		<textarea class="wysiwyg question-textarea" [(ngModel)]="leadSection.title" ></textarea>
+	</div>
+</div>
+<div class="type-details" >
+      <div class="form-label" [class.no-margin] = "editorControl.leadform.visible === false">Fields:</div>
+        <div class="switch hide">
+            <label>
+                <input id="lead_gen_control" type="checkbox" class="" (change)="toggleLeadform($event);callGA('LEADGENTOGGLE')" [checked]="editorControl.leadform.visible">
+                <span class="lever"></span>
+            </label>
+        </div>
+    <div class="div-check" *ngIf="editorControl.leadform.visible">
+        <div class="lead-gen" *ngFor="let field of editorControl.leadform.fields ; let i = index">
+            <selectize [field]="field" [index] = "i"></selectize>
+            <!-- More button -->
+        <div class="btn-group icon-options">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="material-icons" style="margin-top: 12px;">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0);" *ngIf = "!field.validations.required.status" (click)="toggleRequired(field);callGA('SETMANDATE')">
+                    <i class="material-icons">done_all</i> Set as Mandatory</a></li>
+                <li><a href="javascript:void(0);" *ngIf = "field.validations.required.status" (click)="toggleRequired(field);callGA('UNSETMANDATE')">
+                    <i class="material-icons">not_interested</i> Unset</a></li>
+                <li><a href="javascript:void(0);" class="form-leadform-icon"
+                     (click)="delete_Field_From_LeadForm(i);callGA('DeleteLeadGenField')">
+                     <i class="material-icons">clear</i> Delete</a></li>
+
+            </ul>
+        </div></div>
+        <div class="col-md-11 col-xs-11 no-padding pull-right" [class.hide]="editorControl.leadform.fields.length>=4">
+            <a  href="javascript:void(0);" (click)="add_Field_In_LeadForm();callGA('ADDLEADFIELD')"
+            class="default add_field_button">Add a field
+            </a>
+        </div>
+
+    </div>
+    </div>
+     <div class="type-details" >
+        <div *ngIf="editorControl.leadform.visible || editorControl.click_button.visible">
+            <span class="form-label">Button Text:</span>
+            <input
+                type="text"
+                class="detail-text"
+                *ngIf="editorControl.leadform.visible"
+                [(ngModel)]="editorControl.leadform.props.title"
+            />
+            <input
+                type="text"
+                class="detail-text"
+                *ngIf="editorControl.click_button.visible"
+                [(ngModel)]="editorControl.click_button.props.title"
+            />
+        </div>
+    </div>
+    <!--<div class="type-details" >
+            <span class="form-label">Button:</span>
+            <input
+                type="text"
+                class="detail-text"
+                [(ngModel)]="editorControl.leadform_question.props.title"
+            />
+    </div>-->
+    <!--<div class="type-details" >
+        <span class="form-label no-margin">Show LeadForm in the last: </span>
+        <div class="switch">
+            <label>
+            <input type="checkbox" name="multi-checkbox2"
+            class="show-check"
+            [checked] = "Sectionindex"
+            (change) = "changeOrderOfLeadForm();callGA('SHOWLAST')"
+            data-size="mini" data-on-color="blue">
+            <span class="lever"></span>
+            </label>
+        </div>
+    </div>-->

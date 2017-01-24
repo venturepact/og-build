@@ -1,0 +1,30 @@
+<div class="subdomain-container">
+	<div class="col-md-2 col-sm-2 col-xs-12"></div>
+	<div class="col-md-8 col-sm-8 col-xs-12 np">
+		<div class="np">
+            <ul class="nav nav-tabs nav-justified" style="padding:0px;" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#reserved" aria-controls="myProfile" role="tab" data-toggle="tab" class="hvr-sweep-to-right" (click)="hideError()">
+                    	Reserved Sub Domain
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#premium" aria-controls="myProfile" role="tab" data-toggle="tab" class="hvr-sweep-to-right" (click)="hideError()">
+                    	Premium Sub Domain
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End: Nav tabs -->
+        <!-- Start: tabs sub content -->
+        <div class="tab-content tab-sub-content tab-sub-content-2">
+			<div class="tab-pane sahil-material my-profile active" id="reserved">
+				<domain [category] = "'RESERVED'"></domain>
+			</div>
+			<div class="tab-pane sahil-material my-profile" id="premium">
+				<domain [category] = "'PREMIUM'"></domain>
+			</div>
+        </div>
+	</div>
+	<div class="col-md-2 col-sm-2 col-xs-12"></div>
+</div>

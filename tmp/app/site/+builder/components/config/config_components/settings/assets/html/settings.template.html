@@ -1,0 +1,150 @@
+<div class="config-template-tabs new-email-outr">
+    <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+        <!-- Nav tabs -->
+        <!-- 
+        <div class="col-xs-12 text-center">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#gen-settings" aria-controls="myProfile" role="tab" data-toggle="tab">General Settings</a>
+                </li>
+                <li role="presentation">
+                    <a href="#seo-settings" aria-controls="companies" role="tab" data-toggle="tab">SEO Settings</a>
+                </li>
+            </ul>
+        </div> -->
+        <div class="tab-content tab-sub-content">
+            <div role="tabpanel" class="tab-pane my-emailform active" id="gen-settings">
+                <h3>General & SEO Settings</h3>
+                <div class="col-md-12 np">
+
+                    <div class="form-group label-floating" [class.is-empty]="jsonBuilderHelper.getJSONBuilt().name==''" [class.is-focused]="isFocused==='name'">
+                        <label class="control-label" for="inputName">Calculator Name</label>
+                        <input class="form-control" type="text" (focusout)="onCalcNameChanged()" [(ngModel)]="jsonBuilderHelper.getJSONBuilt().name"
+                            [class.is-empty]="jsonBuilderHelper.getJSONBuilt().name==''" (focus)="isFocused ='name'">
+                        <p *ngIf="isempty" class="editor-alert-danger"><i class="material-icons">report_problem</i> Calculator Name can't be empty</p>
+                    </div>
+
+                    <div  class="form-group label-floating form-url-outr is-focused" 
+                        [class.is-empty]="jsonBuilderHelper.getJSONBuilt().url==''" 
+                        [class.is-focused]="isFocused==='url'">
+                        <div class="test">
+                            <label class="config-input-label" for="inputName">Calculator Url</label>
+                                <div class="form-url-inner">
+                                    <ul>
+                                        <li><span class="config-label-url">{{srcUrl}}</span></li>
+                                        <li> <input type="text" placeholder="URL" class="form-control config-input-url ellipsis" type="text" (keyup)="onCalcUrlChanged($event)" [ngModel]="name"
+                                        [class.is-empty]="jsonBuilderHelper.getJSONBuilt().url==''" (focus)="isFocused ='url'" (blur)="isFocused ='urll'" /></li>
+                                        <!--<input class="form-control" type="text" (keyup)="onCalcUrlChanged()" [(ngModel)]="jsonBuilderHelper.getJSONBuilt().url"
+                                        [class.is-empty]="jsonBuilderHelper.getJSONBuilt().url==''" (focus)="isFocused ='url'">-->
+                                    </ul>     
+                                </div>
+                                <span class="copy-link-outer">
+                                    <a href="javascript:void(0);" (click)="copyButton();callGA('COPYLINK')">Copy Link</a>
+                                </span>
+                            </div>
+                            <p *ngIf="!unique" class="editor-alert-danger editor-urlTaken"><i class="material-icons">report_problem</i> This calculator Url is already taken</p>
+                            <p  class="editor-alert-danger editor-calcUrl" *ngIf="!jsonBuilderHelper.getJSONBuilt().url">Calculator Url can't be empty
+                                <button type="button" class="close btn-close" (click)="closeIt()">
+                                    <i class="material-icons">close</i>
+                                </button>
+                            </p>
+                    </div>
+                    <div class="form-group label-floating label-seo" [class.is-empty]="jsonBuilderHelper.getJSONBuilt().title==''" [class.is-focused]="isFocused === 'browser'">
+                        <label class="control-label" for="inputName">SEO Title (Heading in search results)</label>
+                        <input class="form-control" type="text" [(ngModel)]="jsonBuilderHelper.getJSONBuilt().title" (blur)="saveAppSettings();" (keyup)="updateTitleLength($event.target.value);" [class.is-empty]="jsonBuilderHelper.getJSONBuilt().name==''"
+                           maxlength="55" (focus)="isFocused ='browser'"><span class="grey-pill">{{titleLength}}</span>
+                    </div>
+                    <div class="form-group label-static meta-label" [class.is-focused]="isFocused ==='description'">
+                        <label for="si5i" class="control-label seo-static-label">Meta Description <span class="mobile-hide">(Description in search results)</span></label>
+                        <textarea type="email" (keyup)="updateMetaDescLen($event.target.value)" class="form-control material-textarea" placeholder="Type the description here" (blur)="saveAppSettings()"
+                            maxlength="160" [(ngModel)]="jsonBuilderHelper.getJSONBuilt().description" (focus)="isFocused ='description'"></textarea>
+                            <span class="grey-pill">{{metaDescLength}}</span>
+ 
+                    </div>
+
+                     <div class="form-group label-floating label-seo" [class.is-empty]="jsonBuilderHelper.getJSONBuilt().ga==''" [class.is-focused]="isFocused === 'ga'">
+                        <label class="control-label" for="ga">Google Analytics (Tracking ID : UA-8XXXXXX8-X)</label>
+                        <input class="form-control" id="ga" type="text" [(ngModel)]="jsonBuilderHelper.getJSONBuilt().ga" [class.is-empty]="jsonBuilderHelper.getJSONBuilt().ga==''"
+                           maxlength="55" (focus)="isFocused ='ga'">
+                    </div>
+
+                    <div class="form-group hide">
+                        <input type="file" id="inputFile4">
+                        <div class="input-group">
+                            <label class="g-upload-label">Image</label>
+                            <input type="text" readonly="" class="form-control upload-placeholder" placeholder="No icon uploaded">
+                            <span class="input-group-btn input-group-sm">
+                                <button type="button" class="g-upload-btn">
+                                    upload
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group browser-label">
+                        <!--<input type="file" id="inputFile4">-->
+                        <div class="input-group">
+                            <label class="g-upload-label">Browser Favicon</label>
+                            <input type="text" readonly="" class="form-control upload-placeholder" (blur)="saveAppSettings()" placeholder="No icon uploaded"
+                                [(ngModel)]="jsonBuilderHelper.getJSONBuilt().favicon" style="color: #bfc4c7;font-style: italic;">
+                            <span class="input-group-btn input-group-sm">
+                                    <button type="button" class="g-upload-btn" (click)="upload('favicon');callGA('UPLOADFAV')">
+                                        upload
+                                    </button>
+                                </span>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 np g-setting-outr">
+                        <!--<label class="g-setting-label">Mode</label>-->
+                        <div class="col-xs-12 np">
+                            <span class="form-label">Publish Status:</span>
+                        </div>
+                        <div class="col-xs-12 np">
+                            <div class="switch">
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" (change)="onModeChange(jsonBuilderHelper.getJSONBuilt().mode);callGA('CALCSTATUSTOGGLE')"
+                                        [checked]="jsonBuilderHelper.getJSONBuilt().mode=='PUBLIC'">
+                                    <label class="onoffswitch-label" for="myonoffswitch">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="col-xs-12 np">
+                            <span class="form-label">Show Outgrow logo:</span>
+                            <div class="switch">
+                                <label>
+                                        <input type="checkbox" class="show-check" (change)="saveAppSettings()"  [(ngModel)]="jsonBuilderHelper.getJSONBuilt().poweredby" >
+                                        <span class="lever"></span>
+                                    </label>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane my-emailform" id="seo-settings">
+                <div class="col-xs-12 np seo-setting-outr g-setting-outr">
+                    <!--<div class="col-xs-12 np">
+                        <span class="form-label">Seo Index Settings:</span>
+                        <div class="switch">
+                            <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                        </div>
+                    </div>-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2 general-helppanel">
+        <div class="col-xs-12 np text-center">
+            <label class="g-helpicon">
+                    <i class="material-icons">lightbulb_outline</i>
+                </label>
+        </div>
+        <h5>SEO Tips</h5>
+        <p>Make sure that your target keywords are present in the SEO title and the meta description.</p>
+    </div>
+</div>

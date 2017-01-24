@@ -1,0 +1,31 @@
+<section class="wrapper">
+	<div class="col-md-12 col-sm-12 col-xs-12 np">
+		<og-sideNavbar *ngIf="sideNavbar == 'settings' "></og-sideNavbar>
+		<div class="wrapper-content" id="lgScrWrapperContent">
+			<div class="wrapper-content-inner">
+				<div class="tab-content tabs-wrapper">
+					<!--<og-team-setting
+						(myCompaniesListUpdated) = "CompaniesList = $event" [myCompanies] = "CompaniesList">
+					</og-team-setting>-->
+					<router-outlet></router-outlet>
+					<!--<og-membership></og-membership>-->
+					<!--<og-noti-setting class="hide"></og-noti-setting>
+					<og-account [myCompanies] = "CompaniesList" (myCompaniesListUpdated) = "CompaniesList = $event"></og-account>-->
+				</div>
+			</div>
+		</div>
+		<div class="wrapper-content" id="smScrWrapperContent">
+			<div class="wrapper-content-inner">
+				<div class="tab-content tabs-wrapper">
+					<!--<og-team-setting
+						(myCompaniesListUpdated) = "CompaniesList = $event" [myCompanies] = "CompaniesList">
+					</og-team-setting>-->
+					<router-outlet></router-outlet>
+					<!--<og-membership></og-membership>-->
+					<!--<og-noti-setting class="hide"></og-noti-setting>
+					<og-account [myCompanies] = "CompaniesList" (myCompaniesListUpdated) = "CompaniesList = $event"></og-account>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

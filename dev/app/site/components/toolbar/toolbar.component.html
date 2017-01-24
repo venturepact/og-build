@@ -1,0 +1,235 @@
+<header id="new-header" class="" *ngIf="page != 'builder'">
+    <nav class="navbar navbar-default navbar-fixed-top main-logo company-nav" [class.company-nav]="!loggedIn.isLoggedIn" id="nav-cookies-div">
+        <div *ngIf="!isEmailVerified" class="cookies-header">
+			<div class="col-md-12 np">
+				<i class="material-icons">settings</i>
+                    <span>
+                        Your email ID is not verified yet. Please click on the verification link sent to your email or
+                        &nbsp;<a href="javascript:void();" (click)="resendEmail();callGA();">click here</a> to receive a new verification link.
+                    </span>
+				<button type="button" class="close btn-close pull-right" (click)="close()">
+                    <i class="material-icons">clear</i>
+                </button>
+			</div>
+        </div>
+        <div  class="container-fluid nav-padding">
+            <div class="navbar-header">
+                <a *ngIf="!isSubDomainUrl || loggedIn.isLoggedIn" [routerLink]="['/dashboard']" class="navbar-brand navbar-logopadding">
+                    <img src="assets/images/outgrow-logo.png" />
+                </a>
+                <a href="#" *ngIf="isSubDomainUrl && !loggedIn.isLoggedIn" class="navbar-brand navbar-logopadding">
+                    <div class="company_name_avatar-circle">
+                        {{companyInitial}}
+                    </div>
+                    <div class="company_name_span ellipsis">{{companyName}}</div>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <div *ngIf="!is_subcripion_cancelled" class="navbar-left col-md-7 np">
+                    <ul *ngIf="loggedIn.isLoggedIn">
+                        <li>
+                            <a href="" class="hvr-underline-from-left"
+                                [routerLinkActive]="['active']"
+                                [routerLink]="['/dashboard']"
+                                >
+                                <i class="material-icons">home</i> &nbsp;Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void();" [routerLink]="['/analytics']" class="hvr-underline-from-left" (click) = "analyticsClick($event)" [routerLinkActive]="['active']">
+                                <i class="material-icons">equalizer</i> &nbsp;Analytics
+                            </a>
+                        </li>
+
+                        <!-- <li>
+                            <a href="" class="hvr-underline-from-left">
+                                <i class="material-icons">lightbulb_outline</i> &nbsp;How do i
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="navbar-right">
+                    <div class="col-xs-12 navbar-right-block">
+                        <!-- <a href="" class="navbar-name">
+                                <i class="material-icons">account_box</i>
+                                <span class="ellipsis"> &nbsp;Pratham</span>
+                            </a> -->
+                        <!-- Start: header name-dropdown -->
+                        <div class="btn-group name-dropdown-wrapper name-dd-minh" *ngIf="!loggedIn.isLoggedIn && !isSubDomainUrl">
+                            <a [routerLink]="['/login']" class="" >
+                              <button type="button" class="btn btn-default dropdown-toggle">
+                                  <i class="material-icons">account_box</i>
+                                  <span class="ellipsis name-title"> &nbsp;Login</span>
+                              </button>
+                            </a>
+                        </div>
+                        <div class="btn-group name-dropdown-wrapper name-dd-minh" *ngIf="loggedIn.isLoggedIn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">account_box</i>
+                                <span class="ellipsis name-title"> &nbsp;{{name}}</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <div class="company-list">
+                                    <div class="company-list-inner"  [class.slimscroll] = "mycompanyLength> 3">
+                                        <li class="active" *ngFor="let company of myCompanies">
+                                            <a href="//{{company.sub_domain}}{{subDomainExt}}/settings" class="hvr-sweep-to-right">
+                                                <span class="company-list-title ellipsis">{{ company.name}}</span>
+                                                <span class="company-selected" *ngIf="company.sub_domain == co"><i class="material-icons">done</i></span>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <hr class="name-dropdown-border">
+                                </div>
+                                <div class="name-list">
+                                    <!-- <li>
+                                        <a href="#" class="hvr-sweep-to-right">
+                                            <span class="name-list-icon"><i class="material-icons">person</i></span>
+                                            <span class="name-list-title">My Profile</span>
+                                        </a>
+                                    </li> -->
+                                    <li>
+                                        <a *ngIf="!is_subcripion_cancelled" class="hvr-sweep-to-right" [routerLink]="['/settings']">
+                                            <span class="name-list-icon"><i class="material-icons">settings</i></span>
+                                            <span class="name-list-title">Settings</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="hvr-sweep-to-right" (click)="onLogout()" href="javascript:void(0)">
+                                            <span class="name-list-icon"><i class="material-icons">power_settings_new</i></span>
+                                            <span class="name-list-title">Logout</span>
+                                        </a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- End: header name-dropdown -->
+                        <!-- Start: Help dropdown -->
+                        <!-- <div class="btn-group help-dropdown-wrapper">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="material-icons">help_outline</i>
+                            </button>
+                        </div> -->
+                        <!-- End: Help dropdown -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="btn-group name-dropdown-wrapper name-dd-minh" *ngIf="page == 'builder'">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="material-icons">account_box</i>
+        <span class="ellipsis name-title"> &nbsp;{{name}}</span>
+    </button>
+    <ul class="dropdown-menu builder-dropdown-menu ">
+        <div class="company-list">
+            <div class="company-list-inner" [class.slimscroll] = "mycompanyLength> 3">
+                <li class="active" *ngFor="let company of myCompanies">
+
+                    <a href="//{{company.sub_domain}}{{subDomainExt}}/settings" class="hvr-sweep-to-right">
+                        <span class="company-list-title ellipsis">{{ company.name}}</span>
+                        <span class="company-selected" *ngIf="company.sub_domain == co"><i class="material-icons">done</i></span>
+                    </a>
+                </li>
+            </div>
+            <hr class="name-dropdown-border">
+        </div>
+        <div class="name-list">
+            <!-- <li>
+                <a href="#" class="hvr-sweep-to-right">
+                    <span class="name-list-icon"><i class="material-icons">person</i></span>
+                    <span class="name-list-title">My Profile</span>
+                </a>
+            </li> -->
+            <li>
+                <a class="hvr-sweep-to-right" [routerLink]="['/settings']">
+                    <span class="name-list-icon"><i class="material-icons">settings</i></span>
+                    <span class="name-list-title">Settings</span>
+                </a>
+            </li>
+            <li>
+                <a class="hvr-sweep-to-right" (click)="onLogout()" href="javascript:void(0)">
+                    <span class="name-list-icon"><i class="material-icons">power_settings_new</i></span>
+                    <span class="name-list-title">Logout</span>
+                </a>
+            </li>
+        </div>
+    </ul>
+</div>
+
+<!-- Start: Responsive header -->
+<header id="responsive-header" class="" *ngIf="page != 'builder' && loggedIn.isLoggedIn">
+    <nav class="navbar navbar-default navbar-fixed-top white-logo">
+      <div class="container-fluid nav-padding">
+          <div class="col-xs-2 np"></div>
+          <div class="navbar-header col-xs-8 np">
+              <!-- <a href="#" class="navbar-brand">
+                  <img src="assets/images/headerLogo-white.png" class="" />
+              </a> -->
+              <h4 class="col-xs-12 np ellipsis title">{{respTitle}}</h4>
+          </div>
+          <div class="mobile-menu col-xs-2 np">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons">menu</i>
+              </button>
+              <ul class="dropdown-menu">
+                  <div class="user-name user-outr" *ngIf="loggedIn.isLoggedIn">
+                      <li>
+                          <!-- <a href="javascript:void(0);"><img src="assets/images/user1.png"> </a> -->
+                          <span>{{name}}</span>
+                      </li>
+                      <hr class="name-dropdown-border">
+                  </div>
+                  <div class="name-list header-links">
+                      <li>
+                          <a [routerLink]="['/dashboard']" [routerLinkActive]="['active']" (click)="header('Dashboard')">
+                              <span class="name-list-icon"><i class="material-icons">home</i></span>
+                              <span class="name-list-title">Dashboard</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="javascript:void();" [routerLink]="['/analytics']" class="hvr-underline-from-left" (click) = "analyticsClick($event)" [routerLinkActive]="['active']">
+                          <!-- <a class="hvr-underline-from-left" [routerLinkActive]="['active']"> -->
+                              <span class="name-list-icon"><i class="material-icons">equalizer</i></span>
+                              <span class="name-list-title">Analytics</span>
+                          </a>
+                      </li>
+                      <!-- <li>
+                          <a href="#">
+                              <span class="name-list-icon"><i class="material-icons">lightbulb_outline</i></span>
+                              <span class="name-list-title">How Do I</span>
+                          </a>
+                      </li> -->
+                      <hr class="name-dropdown-border">
+                  </div>
+                  <div class="company-list">
+                      <li *ngFor="let company of myCompanies" [class.active]="company.sub_domain == co">
+                          <a href="//{{company.sub_domain}}{{subDomainExt}}/settings">
+                              <span class="company-selected"><i class="material-icons" *ngIf="company.sub_domain == co">done</i></span>
+                              <span class="company-list-title">{{company.name}}</span>
+                          </a>
+                      </li>
+                  </div>
+                  <div class="name-list setting-logout-links">
+                      <li>
+                          <a [routerLink]="['/settings']" (click)="header('Settings')">
+                              <span class="name-list-icon"><i class="material-icons">settings</i></span>
+                              <span class="name-list-title">Settings</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a (click)="onLogout()" href="javascript:void(0)">
+                              <span class="name-list-icon"><i class="material-icons">power_settings_new</i></span>
+                              <span class="name-list-title">Logout</span>
+                          </a>
+                      </li>
+                  </div>
+              </ul>
+          </div>
+      </div>
+    </nav>
+</header>
+<!-- End: Responsive header -->
+
+<og-payment-modal></og-payment-modal>

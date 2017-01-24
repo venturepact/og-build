@@ -1,0 +1,75 @@
+<router-outlet></router-outlet>
+
+<div *ngIf="!tempName" class="loader-live"></div>
+
+<Temp *ngIf="tempName" [JSON_Template]="JSON_Template"></Temp>
+
+<div *ngIf="pageStatus==='Not-Found'">
+    <nav class="navbar custom-navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="assets/images/outgrow-logo.png" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="javascript:void(0);" (click)="whyCalculators()">Why Calculators ?</a></li>
+                    <li><a href="javascript:void(0);" (click)="features()">Featuress</a></li>
+                    <li><a href="javascript:void(0);" (click)="pricing()">Pricing</a></li>
+                    <li><a href="javascript:void(0);" (click)="examples()">Examples</a></li>
+                     <li>
+                        <a *ngIf="!isLoggedin" href="javascript:void(0);" class="link-login" (click)="login()">Login</a>
+                        <a *ngIf="isLoggedin" href="javascript:void(0);" class="link-login" (click)="dashboard()">Dashboard</a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Homepage header end-->
+	<!-- Homepage section 1 start-->
+    <section class="section section-1">
+        <div class="container-fluid">
+            <div class="col-xs-12 col-sm-6 section-1-left">
+                <div class="section1-left-cell">
+                    <h3 class="mk-animate-element fade-in heading-404">
+                        404
+                    </h3>
+                    <h4 class="mk-animate-element fade-in heading2-404">
+                        Looks like your calc is not published yet, please<br> login and publish your calc.
+                    </h4>
+                    <div class="form-group mk-animate-element fade-in hide">
+                        <input type="text" placeholder="Email Address" />
+                    </div>
+                    <div class="col-xs-12 col-sm-8 np">
+                          <a *ngIf="!isLoggedin" href="javascript:void(0);" class="btn-buildcal mk-animate-element fade-in login-404" (click)="login()">Login</a>
+                          <a *ngIf="isLoggedin" href="javascript:void(0);" class="btn-buildcal mk-animate-element fade-in login-404" (click)="dashboard()">Dashboard</a>
+                     </div>
+                </div>
+            </div>
+			<div class="col-xs-12 col-sm-6 np rs-hide">
+				<div class="sec1-box-left img-404">
+					<div class="sec1-box1 mk-animate-element fade-in">
+						<img src="assets/images/404.png" />
+					</div>
+				</div>
+			</div>
+            <div class="col-xs-12 col-sm-12 text-center footer-404">
+                <i class="material-icons">copyright</i>
+                <span>Copyrights</span>
+                <img src="assets/images/footer-logo-dark.png" />
+            </div>
+        </div>
+    </section>
+</div>
+
+<div *ngIf="pageStatus==='Private'">
+    Calculator is no longer available for Public Use.
+</div>

@@ -1,0 +1,30 @@
+<div id="premiumModal" class="modal fade two-side" tabindex="-1" role="dialog">
+  <div class="modal-dialog model-full">
+    <div class="modal-content modal-bg">
+      <div class="modal-body og-message">
+        <button type="button" (click)="callGA('LATER')" class="close btn-close" data-dismiss="modal" aria-label="Close">
+          <i class="material-icons">close</i>
+        </button>
+        <div class="col-md-12 np">
+          <div class="modal-left">
+            <div class="text-center table-center">
+              <!-- <p class="font-italic text-grey">or login with</p> -->
+              <img class="modal-logo" src="assets/images/black_g.png" alt="Logo"><br/>
+              <span class="premium-label">PREMIUM</span>
+              <p>You tried to use a premium paid feature and you will need to upgrade to use it. </p>
+              <a href="javascript:void(0);" onclick="callGA('UPGRADE')" class="btn btn-red" id="btnUpgradeNow" type="submit">Upgrade Now</a>
+              <br/><a href="" (click)="callGA('LATER')" data-dismiss="modal">Maybe Later</a>
+            </div>
+          </div>
+          <div class="modal-right">
+            <div class="table-center">
+              <img class="" src="assets/images/login-screen1.jpg" alt="img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer col-md-12 np hide">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1123 @@
+/******* Formula Popup css start *******/
+.np{
+    padding: 0px;
+}
+.modal-xlg {
+    width: 1140px;
+}
+#formula-modal .modal-content{
+  border-radius: 0px;
+  /*border: 1px solid #e9eef0;*/
+  float: left;
+  width: 100%;
+}
+#formula-modal .modal-body {
+    position: relative;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+#formula-modal .modal-body .btn-close{
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    right: -40px;
+    top: -20px;
+}
+#formula-modal .modal-body .btn-close i{
+    font-size: 36px;
+}
+.formula-left{
+    padding: 25px;
+}
+.formula-left-heading{
+    color: #62696d;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: normal;
+    width: auto;
+    display: inline-block;
+}
+.formula-helptext{
+    position: relative;
+    top: -25px;
+    font-size: 11px;
+}
+.formula-left-subheading{
+    color: #62696d;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    line-height: normal;
+    width: auto;
+    display: inline-block;
+}
+.formula-heading-editing{
+    color: #b7bec2;
+    font-size: 14px !important;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.formula-output{
+    padding: 20px;
+    border: 1px solid #dae2e6;
+    min-height: 190px;
+    margin-bottom: 25px;
+}
+.formula-output ul{
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.formula-output ul li{
+    float: left;
+}
+.formula-output ul li.for-output-box{
+    border-radius: 50px;
+    border: 2px solid #fb545b;
+    padding: 0px 8px;
+    color: #62696d;
+    font-size: 14px;
+    width: 70px;
+    text-align: center;
+    height: 28px;
+    line-height: 23px;
+    position: relative;
+}
+.formula-output ul li.for-output-box:hover{
+    background: #fb545b;
+    color: #fff;
+}
+.for-output-box:hover .for-output-boxdetail{
+    display: block;
+}
+
+#formula .formula-item:hover .for-output-boxdetail{
+    display: block;
+}
+.for-output-boxdetail{
+    display: none;
+    position: absolute;
+    top: 32px;
+    min-height: 150px;
+    width: 302px;
+    padding: 15px;
+    background: #62696d;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+
+}
+.for-output-boxdetail .boxdetail-uptip{
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #62696d;
+    position: absolute;
+    top: -9px;
+    left: 16px;
+}
+.for-output-boxdetail h6
+{
+    font-size: 10px;
+    text-align: left;
+    color: #bec5c9;
+    margin: 0;
+    text-transform: uppercase;
+}
+.for-output-boxdetail .input-detail{
+    float: left;
+    width: 100%;
+    margin-top: 13px;
+}
+.for-output-boxdetail .input-detail p{
+    float: left;
+    width: 68%;
+    font-size: 11px;
+    text-align: left;
+    line-height: 13px;
+    color: #fff;
+}
+.for-output-boxdetail .input-detail input {
+    border: 1px solid #dae2e6;
+    background: #fff;
+    padding: 5px;
+    width: 63px;
+    color: #62696d;
+    height: 25px;
+    font-family: 'montserratlight';
+    font-size: 12px;
+}
+.for-output-boxdetail .input-detail2{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #7a8185;
+}
+.for-output-boxdetail .input-detail2 p{
+    float: left;
+    width: 48%;
+    font-size: 11px;
+    text-align: left;
+    line-height: 13px;
+    color: #bec5c9;
+}
+.for-output-boxdetail .input-detail2 label{
+    float: left;
+    width: 50%;
+    font-size: 11px;
+    margin-bottom: 2px;
+    text-align: center;
+    line-height: 13px;
+    color: #fff;
+}
+.for-output-boxdetail .input-detail2 span:nth-child(1){
+    width: auto;
+    font-size: 14px;
+    line-height: 13px;
+    margin-right: 3px;
+    margin-left: 5px;
+}
+.for-output-boxdetail .input-detail2 span:nth-child(2){
+    width: auto;
+    font-size: 14px;
+    line-height: 13px;
+    margin-right: 3px;
+}
+.for-output-boxdetail .input-detail2 span:nth-child(3){
+    width: auto;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.formula-output ul li.for-output-sign{
+    color: #8e989f;
+    font-size: 24px;
+    line-height: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.formula-output ul li.for-output-value{
+    color: #62696d;
+    font-size: 18px;
+    line-height: 30px;
+}
+.formula-resulttable{
+    float: left;
+    margin-top: 10px;
+}
+.formula-resulttable label{
+    float: left;
+    width: 75%;
+    color: #62696d;
+    font-size: 13px;
+}
+
+.formula-resulttable a{
+    float: right;
+    width: auto;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #fb545b;
+    line-height: 20px;
+}
+.formula-resulttable a i{
+    font-size: 10px;
+    color: #fb545b;
+    
+}
+.formula-tabledata{
+    margin-top: 10px;
+    border-top: 1px solid #dae2e6;
+    border-bottom: 1px solid #dae2e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.formula-tabledata table{
+    border: none;
+}
+.formula-tabledata table tr th{
+    width:120px;
+    font-size: 12px;
+    color: #62696d;
+    padding-bottom: 10px;
+    min-width:150px;
+}
+.formula-tabledata table tr td{
+    text-align: left;
+    font-size: 11px;
+    font-family: "montserratregular";
+    line-height: 13px;
+    min-width: 150px;
+    width: 120px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+.for-horzscroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: rgba(0,0,0,0.4) !important;   
+}
+.for-horzscroll .mCSB_horizontal.mCSB_inside > .mCSB_container{
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+.for-horzscroll .mCSB_scrollTools.mCSB_scrollTools_horizontal{
+    bottom: -5px;
+}
+.formula-tabledata-result{
+    padding-top: 10px;
+    text-align: right;
+}
+.formula-tabledata-result span{
+    color: #62696d;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.formula-tabledata-result span:nth-child(2){
+    color: #62696d;
+    font-size: 12px;
+    text-transform: none;
+    font-family: "montserratbold";
+}
+.formula-right{
+    background: #F6F7F9;
+    padding: 25px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    border-left:1px solid #dae2e6; 
+}
+.formula-right-heading{
+    color: #62696d;
+    display: inline-block;
+    float: none;
+    font-family: "montserratregular";
+    font-size: 17px;
+    font-weight: normal;
+    line-height: normal;
+    margin-bottom: 20px;
+    margin-top: 0;
+    width: 94%;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+.formula-question-outr{
+    padding-left: 0px;
+    padding-right:0px;
+}
+.formula-questions{
+    display: block;
+    padding-right: 25px;
+        height: 400px;
+    overflow-y: scroll;
+}
+.formula-question-outr .slimScrollBar{
+    right: 5px !important;
+}
+.formula-question-box{
+    background: #fff;
+    border: 2px solid #dae2e6;
+    border-radius: 50px;
+    font-family: "montserratlight";
+    color: #62696d;
+    font-size: 12px;
+    padding: 5px 15px;
+    margin-bottom: 12px;
+}
+.disable{
+    background: #f6f8f9;
+}
+.formula-right-new{
+    background: #fafafa;
+    padding: 25px;
+    border-left:1px solid #dae2e6; 
+    min-height: 500px;
+}
+.show-range-new{
+     padding: 0px;
+     margin-bottom: 10px;
+}
+.show-range-new label{
+    width: 40% !important;
+    margin-top: 6px !important;
+    font-size: 11px !important;
+    color: #62696d !important;
+    text-transform: none !important;
+}
+#formula-modal .modal-footer{
+    float: left;
+    width: 100%;
+    background: #fb545b;
+    border: none;
+    text-align: left;
+    padding: 0px;
+}
+.formula-footer-right{
+    float: right;
+}
+.formula-footer-right a{
+    color: #fff;
+    display: inline-block;
+    float: right;
+    font-size: 14px;
+    padding: 25px 30px;
+    text-transform: uppercase;
+    background: #eb3e45;
+    border-left: 1px solid #fff; 
+}
+.formula-footer-left{
+    float: left;
+    padding: 15px;
+    width: 70%;
+}
+.formula-footer-left label{
+    font-size: 11px;
+    color: #fff;
+    float: left;
+    line-height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+.formula-footer-left ul{
+    float: left;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+.formula-footer-left ul li{
+    font-size: 28px;
+    color: #fff;
+    display: inline;
+    margin-right: 10px;
+
+}
+.formula-footer-unit{ 
+    float: left;
+    width: 100%;
+    padding-bottom: 9px;
+    padding-left: 0px;
+}
+.formula-footer-unit label{
+    font-size: 10px;
+    color: #8e989f;
+    margin-top: 0px;
+    float: left;
+    margin-right: 7px;
+    float: left;
+    width:80%;
+    text-transform: uppercase;
+}
+.formula-footer-unit a{
+    color: #fb545b;
+    font-size: 11px;
+}
+.formula-footer-decimal{ 
+    float: left;
+    width: 100%;
+    padding-bottom: 9px;
+    padding-left: 0px;
+    margin-top: 25px;
+}
+.formula-footer-decimal label{
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #8e989f;
+    margin-top: 0px;
+    float: left;
+    margin-right: 7px;
+    float: left;
+    width: 100%;
+}
+.formula-footer-decimalinput{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.formula-footer-decimalinput select{
+    border: 0;
+    background: #f6f8f9;
+    border: 1px solid #dae2e6;
+    font-size: 11px;
+    padding: 4px 7px;
+    color: #62696d;
+    float: left;
+    border-radius: 5px;
+}
+/*.formula-new-units{ background: #FAFAFA; padding: 10px; border: 1px solid #dae2e6;}*/
+.formula-footer-range{ 
+    float: left;
+    width: 100%;
+    padding-bottom: 9px;
+    margin-top: 25px;
+}
+.formula-footer-range label{
+    font-size: 10px;
+    text-transform: uppercase;
+    color:#8e989f;
+    margin-top: 0px;
+    float: left;
+    margin-right: 7px;
+    float: left;
+    width: 70%;
+}
+.formula-footer-range-slider{
+    float: right;
+    width: 16%;
+}
+.formula-footer-range-slider .switch{
+    margin-top: -2px;
+}
+.formula-footer-range-slider .switch label input[type=checkbox]:checked+.lever:after{
+ content: "";
+}
+
+
+.formula-footer-unitinput{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+}
+.formula-footer-unitinput select{
+    border: 0;
+    background: #dae2e6;
+    font-size: 11px;
+    padding: 5px 7px;
+    color: #62696d;
+    float: left;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.formula-footer-unitinput span{
+    border: 0;
+    background: #f6f8f9;
+    border: 1px solid #dae2e6;
+    border-right:0px;
+    font-size: 10px;
+    padding: 5px 15px;
+    padding-left: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #62696d;
+    float: left;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.formula-footer-unitinput input{
+    float: left;
+    width: 70%;
+    border: none;
+    padding: 4px;
+    font-size: 11px;
+    padding-left: 10px;
+    line-height: 16px;
+    margin-bottom: 0px;
+    background: #fff;
+    border: 1px solid #dae2e6;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formula-footer-rangetext{
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+}
+.formula-footer-rangetext h3{
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    color: #8e989f;
+    font-style: italic;
+}
+.formula-footer-rangeinput{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+.formula-footer-rangeinput input{
+    float: left;
+    width: 40%;
+    border: none;
+    font-size: 11px;
+    padding: 4px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    line-height: 16px;
+    background: #fff;
+    border: 1px solid #dae2e6;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.formula-footer-rangeinput span{
+    border: 0;
+    background: #f6f8f9;
+    border: 1px solid #dae2e6;
+    border-left:0px;
+    font-size: 10px;
+    padding: 5px 10px;
+    padding-left: 10px;
+    line-height: 14px;
+    font-family: montserratbold !important;
+    text-transform: uppercase;
+    color: #62696d;
+    float: left;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.formula-footer-rangeinput select{
+    border: 0;
+    background: #f6f8f9;
+    border: 1px solid #dae2e6;
+    border-left: none;
+    font-size: 11px;
+    padding: 4px 7px;
+    color: #62696d;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.rangeinput-show {
+    position: absolute;
+    top: -80px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 2px rgba(0,0,0,0.5);
+    padding: 20px 15px 15px;
+    width: 255px;
+    display: none;
+    z-index: 99;
+    left: -30px;
+}
+.rangeinput-show .range-tip .range-checktip:before {
+    top: -10px;
+}
+.rangeinput-show-left{
+    float: left;
+    width: 40%;
+}
+.rangeinput-show-left label{
+    color: #62696d;
+    width: 100%;
+}
+.rangeinput-show-left input{
+    width: 100%;
+    border: 1px solid #dae2e6;
+    border-radius: 0;
+    margin-top: 5px;
+}
+.rangeinput-show-mid{
+    float: left;
+    width: 18%;
+    text-align: center;
+}
+.rangeinput-show-mid label{
+    color: #62696d;
+    text-transform: none;
+    opacity: 0.5;
+    float: none;
+    margin-top: 28px;
+    margin-right: 0px;
+}
+.rangeinput-show-right{
+    float: left;
+    width: 40%;
+}
+.rangeinput-show-right label{
+    float: left;
+    width: 100%;
+    color: #62696d;
+}
+.rangeinput-show-right input{
+    width: 100%;
+    float: left;
+    border: 1px solid #dae2e6;
+    border-radius: 0;
+    margin-top: 5px;
+}
+.asterik-popover{
+    margin: 1px 7px;
+    vertical-align: middle;
+    position: absolute;
+    margin: 0px;
+    cursor: default;
+    top: 7px;
+    right: 6px;
+}
+.asterik-popover:hover i{ color: #f87b80;}
+.asterik-popover:hover .asterik-popover-inner{
+    visibility: visible;
+    z-index: 999;
+}
+.asterik-popover i{
+    color: #fb545b !important;
+    font-size: 13px !important;
+    line-height: 15px; 
+    cursor: pointer;
+}
+.asterik-popover-inner{
+    float: right;
+    background-color: #61696C;
+    color: #fff;
+    padding: 5px;
+    max-width: 150px;
+    font-size: 11px;
+    position: absolute;
+    top: 20px;
+    border-radius: 0px;
+    visibility: hidden;
+    box-shadow: 0 3px 7px 0px #919191;
+    text-align: center;
+    left: -124px;
+    line-height: 1.42857143;
+}
+/*.asterik-popover-inner::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 10px;
+    height: 10px;
+    border-top: 6px solid #61696C;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}*/
+
+
+
+/******* Formula Popup css End(materialize)  *******/
+/******* Formula Popup NEW css start(materialize)  *******/
+.formula-wrapper{
+    position: relative;
+    width: 100%;
+    display: block;
+    float: left;
+    margin-top: 16px;
+}
+#formula-modal-new .modal-content{
+  border-radius: 0px;
+  /*border: 1px solid #e9eef0;*/
+  float: left;
+  width: 100%;
+}
+#formula-modal-new .modal-body {
+    position: relative;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+#formula-modal-new .modal-body .btn-close{
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    right: -40px;
+    top: -20px;
+}
+#formula-modal-new .modal-body .btn-close i{
+    font-size: 36px;
+}
+#formula-modal-new .modal-footer{
+    float: left;
+    width: 100%;
+    background: #fb545b;
+    border: none;
+    text-align: left;
+    padding: 0px;
+}
+.formula-question-outr .slimScrollDiv{
+    overflow: inherit !important;
+}
+
+/******* Formula Popup NEW css End(materialize)  *******/
+
+/******* Configure css start  *******/
+
+.config-template-tabs{
+    display: block;
+}
+
+/* Start: TAB: GENERAL SETTINGS (1) */
+
+.config-template-tabs .nav-tabs.nav-justified{
+    width: 70%;
+    display: inline-block;
+    border: 1px solid #d7dbdd;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.config-template-tabs .nav-justified > li.active > a{
+    background: #f6f8f9 !important;
+}
+.config-template-tabs .nav-justified > li > a{
+    color: #8e989f;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none !important;
+    border-right: 1px solid #ccc !important;
+    border-radius: 0;
+    background: none;
+}
+.config-template-tabs .nav-justified > li:nth-child(1) > a{
+    color: #8e989f;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none !important;
+    border-right: 1px solid #d7dbdd !important;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.config-template-tabs .nav-justified > li:nth-child(2) > a{
+    color: #8e989f;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none !important;
+    border-left: 1px solid #d7dbdd !important;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.tab-pane .my-profile {
+    margin-top: 35px;
+    float: left;
+    width: 100%;
+}
+.my-profile .form-control {
+    height: 38px;
+    padding: 7px 0;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: montserratregular;
+    color: #666666;
+}
+.my-profile .form-group label.control-label {
+    font-size: 14px;
+    line-height: 1.07142857;
+    color: #8e989f;
+    font-weight: 400;
+    margin: 16px 0 0 0;
+    font-family: montserratregular;
+}
+.my-profile .form-group label.control-label.seo-static-label{
+    text-transform: uppercase !important;
+    font-size: 10px !important; 
+    color: #fb545b !important;
+}
+.my-profile .form-group.label-floating label.control-label, 
+.my-profile .form-group.label-placeholder label.control-label {
+    top: -7px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.my-profile .form-group.label-floating:not(.is-empty) label.control-label {
+    top: -20px; 
+    font-family: montserratregular;
+    font-size: 10px !important; 
+    text-transform: uppercase;
+    color: #fb545b !important;
+}
+.my-profile .form-group.label-floating.is-focused label.control-label {
+    top: -20px; 
+    font-size: 10px !important; 
+    font-family: montserratregular;
+    color: #fb545b !important;
+}
+.my-profile .form-group.is-focused label,
+.my-profile .form-group.is-focused label.control-label {
+    font-size: 10px !important; 
+    font-family: montserratregular;
+    color: #fb545b !important;
+    text-transform: uppercase;
+}
+.my-profile .form-control,
+.my-profile .form-group .form-control {
+    border: 0;
+    background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd);
+}
+.my-profile .form-group.is-focused .form-control {
+    outline: none;
+    background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
+    background-size: 100% 2px, 100% 1px;
+    box-shadow: none;
+    transition-duration: 0.3s;
+}
+.my-profile .form-group {
+    padding-bottom: 7px;
+    margin: 12px 0 0 0;
+    clear: both;
+}
+.my-profile .form-group.time-zone label.control-label {
+    top: -20px;
+    font-family: montserratregular;
+    font-size: 10px !important;
+    text-transform: uppercase;
+    color: #fb545b !important;
+    position: absolute;
+}
+.my-profile .time-zone select.form-control {
+    -webkit-appearance: menulist;
+    margin-left: -3px;
+}
+.my-profile .btn-white{
+    background: #fff !important;
+    border-radius: 0px !important;
+    border: 1px solid #ffb5b8 !important;
+    font-size: 11px !important;
+    color: #fb545b !important;
+    font-family: montserratregular !important;
+    padding: 6px 30px !important;
+    margin: 0 !important;
+    margin-top: 35px !important;
+}
+
+.my-profile .form-group input[type=file] {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  cursor: pointer;
+}
+.upload-placeholder::-webkit-input-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.upload-placeholder:-moz-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.upload-placeholder::-moz-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.upload-placeholder:-ms-input-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+/* End: GENERAL SETTINGS (Materiliaze CSS) */
+
+/* Start: SEO SETTINGS (Materiliaze CSS) */
+.seo-setting-outr{
+    float: left;
+}
+.seo-setting-outr .form-label{
+    font-size: 13px;
+    text-transform: none;
+    margin: 0;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 40px;
+    width: auto;
+}
+.seo-setting-outr .switch{
+    float: left;
+    margin-bottom: 15px;
+}
+.material-textarea::-webkit-input-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.material-textarea:-moz-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.material-textarea::-moz-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+.material-textarea:-ms-input-placeholder
+{
+  color: #bec5c9 !important;
+  font-size: 13px !important;
+  font-style: italic;
+}
+
+/* End: SEO SETTINGS (Materiliaze CSS) */
+
+.disable-formula{
+    opacity: 0.3;
+    cursor: no-drop;
+    z-index: -1;
+
+}
+/*  Formula pop up (Materiliaze CSS) */
+#rangeBox a {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    z-index: 999;
+}
+#rangeBox a i {
+    color: #ccc;
+    font-size: 16px;
+}
+.rangeinput-show .range-tip i.material-icons {
+    top: -1px;
+    position: relative;
+}
+.formula-footer-range .range-tip {
+    margin: 1px 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0px;
+    cursor: default;
+}
+.formula-footer-range .range-tip i {
+    color: #8e989f;
+    font-size: 13px;
+    line-height: 17px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.formula-footer-range .range-tip:hover i {
+    color: #f87b80;
+}
+.range-tip:hover > .range-checktip {
+    visibility: visible;
+    z-index: 999;
+}
+.formula-footer-range .range-checktip {
+    float: left;
+    background-color: #61696C;
+    color: #fff;
+    padding: 5px;
+    width: 180px;
+    font-size: 11px;
+    position: absolute;
+    top: 23px;
+    border-radius: 0px;
+    visibility: hidden;
+    box-shadow: 0 3px 7px 0px #919191;
+    text-align: center;
+    left: -82px;
+    line-height: 1.42857143;
+    text-transform: none;
+}
+.formula-footer-range .range-checktip:before {
+    content: '';
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    margin-left: -8px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 6px solid #61696C;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+/* */
+.formula-footer-unit .range-tip {
+    margin: 1px 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin: 0px;
+    cursor: default;
+}
+.formula-footer-unit .range-tip i {
+    color: #8e989f;
+    font-size: 13px;
+    line-height: 17px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.formula-footer-unit .range-tip:hover i {
+    color: #f87b80;
+}
+.range-tip:hover > .range-checktip {
+    visibility: visible;
+    z-index: 999;
+}
+.formula-footer-unit .range-checktip {
+    float: left;
+    background-color: #61696C;
+    color: #fff;
+    padding: 5px;
+    width: 180px;
+    font-size: 11px;
+    position: absolute;
+    top: 23px;
+    border-radius: 0px;
+    visibility: hidden;
+    box-shadow: 0 3px 7px 0px #919191;
+    text-align: center;
+    left: -82px;
+    line-height: 1.42857143;
+    text-transform: none;
+}
+.formula-footer-unit .range-checktip:before {
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    margin-left: -8px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 6px solid #61696C;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+

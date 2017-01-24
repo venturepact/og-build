@@ -1,0 +1,136 @@
+<!--<div class="type-details hide">
+    <span class="form-label no-margin" *ngIf="jsonBuilderHelper.getSelectedControl().type ==='radio_button'">Allow User to Multi Select</span>
+    <span class="form-label no-margin" *ngIf="jsonBuilderHelper.getSelectedControl().type ==='checkbox'">Allow User to Single Select</span>
+    <div class="switch">
+        <label>
+            <input type="checkbox" name="multi-checkbox" class="show-check" 
+                [checked]="jsonBuilderHelper.getSelectedControl().type ==='radio_button'"
+                (change)="onChangeControl()" data-size="mini" data-on-color="blue">
+            <span class="lever"></span>
+        </label>
+    </div>
+</div>-->
+<!-- Common Component -->
+<div class="type-details">
+    <common-editor [control]="control"></common-editor>
+</div>
+<!-- Common Component-->
+<div class="type-details">
+    <span class="form-label" [class.no-margin]="control.config.showHelp === false">Help Text:</span>
+    <div class="switch">
+        <label>
+            <input type="checkbox" name="properties-checkbox" class="show-check" [checked]="control.config.showHelp" (change)="onChangeDescription(control);callGA('HELPTEXT',control)" data-size="mini" data-on-color="blue">
+            <span class="lever"></span>
+        </label>
+    </div>
+    <div class="col-xs-12 no-padding text-group div-check" *ngIf="control.config.showHelp">
+        <textarea class="form-text question-textarea" [(ngModel)]="control.props.helpText"></textarea>
+    </div>
+</div>
+<div class="type-details horz-group">
+    <span class="form-label">Icons:</span>
+    <label class="rd-icon ic">
+        <input type="radio" name="bh" id="icon4" value="" (click)="ShowIcon();callGA('TOGGLEICONON')" [checked] = "control.isIconPresent">
+        <label for="icon4"><i class="material-icons">landscape</i> </label>
+    </label>
+    <label class="rd-icon ic test">
+        <input type="radio" name="bh" id="icon5" value="" (click)="HideIcon();callGA('TOGGLEICONOFF')" [checked] = "!control.isIconPresent">
+        <label for="icon5"><i class="material-icons">landscape</i> </label>
+    </label>
+</div>
+<div class="type-details">
+    <span class="form-label">Options:</span>
+    <div class="col-xs-12 no-padding text-group" *ngFor="let option of control.options ; let i = index">
+        <span class="no-padding option-label">
+            <div class="help-tip">
+                <span class="default-label" *ngIf="option.defualtselected">D</span>
+                <div class="help-checktip">Default Option</div>
+            </div> 
+        <span class="" *ngIf="!option.defualtselected">{{i+1}}</span>
+        </span>
+        <!--icons-->
+        <div class="col-md-10 col-xs-10 no-padding" style="   margin-right: 14px;">
+            <div class="btn-group option-icons optionicon{{i}}" *ngIf="showIcon" >
+                <button type="button" class="btn btn-default dropdown-toggle" 
+                        (click) = "OpenPreviousIcon(i)"
+                         aria-haspopup="true" aria-expanded="false">
+                    <span class="selected-icon">
+                        <i class="material-icons" *ngIf="option.icon">{{option.icon}}</i>
+                        <i class="material-icons" *ngIf="!option.icon">landscape</i>
+                    </span>
+                    <div class="choose iconopen{{i}}">
+                        <a href="javascript:void(0);" class="default choose-icon" (click) = "OpenChangeIcon(i)">
+                            <span class="arrow-down">
+                                <i class="material-icons">keyboard_arrow_down</i>
+                            </span>
+                        </a>
+                    </div> 
+                </button>
+                <div class="material-icon-dropdown">
+                    <a href="javascript:void(0);" class="close" (click) = "CloseChangeIcon(i)"><i class="material-icons" >close</i></a>
+                    <div class="selected-icon">
+                        <span *ngIf="!option.previousIcons.length" class="no-icon">No Previous Icon</span>
+                        <label class="rd-icon ic" *ngFor="let icon of option.previousIcons; let s of index">
+                            <input type="radio" name="p{{i+1}}" id="iconp{{s}}+{{i+1}}" value="{{icon}}" (click)="changeIcon(option,$event)">
+                            <label attr.for="iconp{{s}}+{{i+1}}"><i class="material-icons">{{icon}}</i> </label>
+                        </label>
+                    </div>
+                    <div class="icon-op">
+                    <label class="rd-icon ic" *ngFor="let icon of iconArray; let s of index">
+                        <input type="radio" name="{{i+1}}" id="icon{{s}}+{{i+1}}" value="{{icon}}" (click)="changeIcon(option,$event)">
+                        <label attr.for="icon{{s}}+{{i+1}}"><i class="material-icons">{{icon}}</i> </label>
+                    </label></div>
+                </div>
+                <!-- <ul class="dropdown-menu" id="icon-list{{i}}">
+                    <li>
+                        <label class="rd-icon ic" *ngFor="let icon of option.previousIcons; let s of index">
+                            <input type="radio" name="p{{i+1}}" id="iconp{{s}}+{{i+1}}" value="{{icon}}" (click)="changeIcon(option,$event)">
+                            <label attr.for="iconp{{s}}+{{i+1}}"><i class="material-icons">{{icon}}</i> </label>
+                        </label>
+                        <span *ngIf="!option.previousIcons.length">No Previous Icon</span>
+                    </li>
+                </ul> -->
+            </div>
+            <div class="col-md-11 col-xs-12 " [class.no-padding]="!showIcon" [class.col-md-9]="showIcon">
+            <input type="text" class="form-text" placeholder="Label" [(ngModel)]="option.label">
+        </div>
+        </div>
+        
+        <div class="col-md-11 col-xs-11 no-padding">
+            <label class="check-value" [class.help-tip-absent]="i!=0">VALUE
+                <div class="help-tip" *ngIf="i==0 && jsonBuilderHelper.getJSONBuilt().templateType=='Numerical'">
+                    <i class="material-icons">info_outline</i>
+                    <div class="help-checktip" *ngIf="jsonBuilderHelper.getJSONBuilt().templateType=='Numerical'">
+                        Each option has a numeric 'value' that describes its impact to the end result. In a calculator calculating the total cost of a fruit basket, the 'value' will be the cost of a fruit item.
+                    </div>
+                </div>
+            </label>
+            <input type="inputType" class="form-text value-text" placeholder="Value" [(ngModel)]="option.value" (keydown)="onKeyDown(i, $event)">
+        </div>
+        <!-- More button -->
+        <div class="btn-group icon-options">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="material-icons" style="margin-top: 10px;">more_vert</i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="javascript:void(0);" *ngIf="!option.defualtselected" (click)="seAsDefault(control.options,option);callGA('SETDEFAULT')"><i class="material-icons">done_all</i> Set as Default</a></li>
+                <li><a href="javascript:void(0);" *ngIf="option.defualtselected" (click)="UnSet(option);callGA('UNSETDEFAULT')"><i class="material-icons">not_interested</i> Unset</a></li>
+                <li><a href="javascript:void(0);" (click)="delete_Option_From_Items(control.options,i);callGA('DELETEOPTION')"><i class="material-icons">clear</i> Delete</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 no-padding text-group">
+        <span class="no-padding form-label"></span>
+        <div class="col-md-10 col-xs-10 no-padding">
+            <a href="javascript:void(0);" (click)="add_Option_In_Dropdown();callGA('ADDOPTION')" class="default">Add Option</a>
+        </div>
+    </div>
+</div>
+<div class="type-details">
+    <label class="check">
+        <input type="checkbox" value="Value1 " name="checkbox1" id="check1" [checked]="control.config.validations.required.status" (change)="onChange(control);callGA('MANDATE',control)">
+        <label for="check1"> </label>
+        Mark as Mandatory
+    </label>
+</div>

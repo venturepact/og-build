@@ -1,0 +1,190 @@
+<div *ngIf="loading">
+	<center><img src="assets/images/logoAnim.gif" alt="loading..." id="imgLoad"></center>
+</div>
+<div *ngIf="!loading">
+	<div class="panel-group">
+
+		<div class="col-sm-2">
+			Users :
+		</div>
+
+		<div class="col-sm-5" *ngIf="isUserInfinity">
+			<input type="text" disabled value="Unlimited">
+		</div>
+		<div class="col-sm-5" *ngIf="!isUserInfinity">
+			<input type="text" [(ngModel)]="users_s">
+		</div>
+
+		<div class="checkbox col-sm-5">
+			<label><input type="checkbox" [(ngModel)]= "isUserInfinity">Unlimited</label>
+		</div>
+		<div class="col-sm-2">
+			Calculators
+		</div>
+
+		<div class="col-sm-5" *ngIf="isCalcInfinity">
+			<input type="text" value="Unlimited" disabled>
+		</div>
+		<div class="col-sm-5" *ngIf="!isCalcInfinity">
+			<input type="text" [(ngModel)]="calculator_s">
+		</div>
+
+		<div class="checkbox col-sm-5">
+			<label><input type="checkbox" [(ngModel)]= "isCalcInfinity">Unlimited</label>
+		</div>
+		<div class="col-sm-2">
+			Templates
+		</div>
+		<div class="col-sm-5" *ngIf="isTemplateInfinity">
+			<input type="text" disabled value="Unlimited">
+		</div>
+		<div class="col-sm-5" *ngIf="!isTemplateInfinity">
+			<input type="text" [disabled]="isTemplateInfinity" [(ngModel)]="templates_s">
+		</div>
+
+		<div class="checkbox col-sm-5">
+			<label><input type="checkbox" [(ngModel)]= "isTemplateInfinity">Unlimited</label>
+		</div>
+		<div class="col-sm-2">
+			Visits
+		</div>
+		<div class="col-sm-5" *ngIf="isVisitsInfinity">
+			<input type="text" disabled value="Unlimited">
+		</div>
+		<div class="col-sm-5" *ngIf="!isVisitsInfinity">
+			<input type="text" [disabled]="isVisitsInfinity" [(ngModel)]="visits_s">
+		</div>
+
+		<div class="checkbox col-sm-5">
+			<label><input type="checkbox" [(ngModel)]= "isVisitsInfinity">Unlimited</label>
+		</div>
+		<div class="col-sm-2">
+			Leads
+		</div>
+		<div class="col-sm-5" *ngIf="isLeadsInfinity">
+			<input type="text" disabled value="Unlimited">
+		</div>
+		<div class="col-sm-5" *ngIf="!isLeadsInfinity">
+			<input type="text" [disabled]="isLeadsInfinity" [(ngModel)]="leads_s">
+		</div>
+
+		<div class="checkbox col-sm-5">
+			<label><input type="checkbox" [(ngModel)]= "isLeadsInfinity">Unlimited</label>
+		</div>
+	</div>
+	<h4 *ngIf="coupons.length!=0">Coupons</h4>
+	<div *ngIf="coupons.length!=0" class="panel-group" >
+		<div  class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion_coupon" href="#panel_coupon{{plan._id}}">
+				        Coupons</a>
+				</h4>
+			</div>
+			<div id="panel_coupon{{plan._id}}" class="panel-collapse collapse">
+				<div class="panel-body">
+					<div class="row padder" *ngFor="let coupon of coupons">
+						<div class="col-sm-2">
+							{{coupon.name}}
+						</div>
+						<div class="col-sm-5">
+							<label>Name:
+			      				<input type="text" class="input_text" [(ngModel)]="coupon.coupon_name">
+			      			</label>
+						</div>
+						<div class="col-sm-5">
+							<label>Value:
+			      				<input type="text" class="input_text" [(ngModel)]="coupon.coupon_value">
+			      			</label>
+						</div>
+						<div class="col-sm-2">
+						</div>
+						<div class="col-sm-5 ">
+							<div class="">
+								<label for="sel">Type:</label>
+								<select class="control" id="sel" [(ngModel)]="coupon.coupon_type">
+							    <option value="PERCENTAGE">percentage</option>
+							    <option value="FLAT">flat</option>
+							  </select>
+							</div>
+						</div>
+						<div class="col-sm-5 ">
+							<label>Active: 
+			      				<input type="checkbox" class="np" [(ngModel)] ="coupon.coupon_active" >
+			      			</label>
+						</div>
+						<hr>
+						<br>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<h4>Functional Features</h4>
+	<div class="panel-group" [attr.id]="'accord' + plan.name">
+		<span *ngFor="let feature of features">
+			<div class="panel panel-default np" >
+				<div class="panel-heading list">
+					<h4 class="panel-title">
+						<input  type="checkbox" [(ngModel)] = "feature.active" class="no-left" name="feature">
+						<a class="no-left" data-toggle="collapse" [attr.data-parent]="'#accord'+ plan.name " [attr.href]="'#'+ plan.name + feature.feature._id">
+							{{feature.feature.name | uppercase}}
+						</a>
+					</h4>
+				</div>
+				<div [attr.id]=" plan.name + feature.feature._id " class="panel-collapse collapse">
+					<div class="panel-body">
+						<div class="form-group">
+							<label for="comment_text">Text:</label>
+							<textarea class="form-control" rows="5" id="comment_text"  [(ngModel)] = "feature.feature.name"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="comment_desc">Description:</label>
+							<textarea class="form-control" rows="5" id="comment_desc"  [(ngModel)] = "feature.feature.description">
+							</textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+		</span>
+	</div>
+	<div class="col-sm-12">
+		<button [attr.id]="'btnSubmit' + plan.name" class="primary" (click)="updatePlan()">Submit</button>
+		<span [attr.id]="'msg'+ plan.name">
+		</span>
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="{{plan}}addModal" role="dialog">
+	<div class="modal-dialog">
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Add Non Functional Feature</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+					<label for="comment_text">ID:</label>
+					<textarea class="form-control" rows="1"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="comment_text">NAME:</label>
+					<textarea class="form-control" rows="1"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="comment_text">Description:</label>
+					<textarea class="form-control" rows="5"></textarea>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default">Add</button>
+			</div>
+		</div>
+	</div>
+</div>

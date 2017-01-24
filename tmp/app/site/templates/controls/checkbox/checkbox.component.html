@@ -1,0 +1,35 @@
+<div class="check-comp" [formGroup]="form.controls[data._id]">
+    <div [class.checkbox-outer-base]="!data.isIconPresent" 
+        [class.checkbox-outer]="data.isIconPresent" [class.active]="checkbox_item.selected"
+        *ngFor="let checkbox_item of data.options, let i = index" tabindex="0">
+        <label onclick="" class="control control--checkbox">
+            {{checkbox_item.label}}
+            <input type="checkbox"
+                [id]="data._id"
+                (change)="onChange($event,i)"
+                id="{{data._id}}{{i}}"
+                [checked]="checkbox_item.selected"
+                [formControlName]="i"
+                value="{{checkbox_item.value}}"
+            >
+            <div class="control__indicator check-set">
+                <i
+                    class="material-icons"
+                    *ngIf="checkbox_item.icon != ''"
+                >
+                    {{checkbox_item.icon}}
+                </i>
+                <i
+                    class="material-icons"
+                    *ngIf="checkbox_item.icon == '' && data.isIconPresent"
+                >
+                    landscape
+                </i>
+            </div>
+        </label>
+    </div>
+
+    <div class="errorMessage" *ngIf="(form.controls[data._id].touched || touched) && !isValid">
+        {{data.config.validations.required.message}}
+    </div>
+</div>

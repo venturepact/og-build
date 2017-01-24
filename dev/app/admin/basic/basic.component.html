@@ -1,0 +1,41 @@
+<div class="active basic-container" id="overview">
+    <div class="col-md-12 col-sm-12 col-xs-12 overview-outr">
+        <div class="col-md-6 col-sm-12 col-xs-12 ">
+            <div class="graph-val"><span class="red"></span> Calc Created </div>
+            <div class="graph-val"><span class="blue"></span> Users Created </div>
+            <div class="graph-val"><span class="green"></span> Company Created </div>
+        </div>
+        <og-date-range-picker *ngIf="scriploaded" (date)="onDateSelect($event)"></og-date-range-picker>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 user-detail-outr ">
+        <div id="area-example" style="height: 300px;"></div>
+        <div class="light-loader-outer-new" *ngIf="graphLoader">
+            <div class="loader" *ngIf="graphLoader"></div>
+            <p *ngIf="graphLoader"></p>
+            <a class="icon-link" *ngIf="graphLoader"><i class="material-icons">refresh</i></a>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 analytics-mt20 traffic-outr">
+         <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer"  (mouseenter) ="mouseEnter('a','#fb545b')" (mouseleave) ="mouseLeave('a')">
+            <h6><i class="material-icons red-icon">class</i>Calculaters Created</h6>
+            <h4>{{app_count}}</h4>
+            <div class="pull-left">
+                <div id="chart-container1"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer" (mouseenter) ="mouseEnter('b','#269fd8')"      (mouseleave) ="mouseLeave('b')">
+            <h6><i class="material-icons blue-icon">people</i>Users Created</h6>
+            <h4>{{user_count}}</h4>
+            <div class="pull-left">
+                <div id="chart-container"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer" (mouseenter) ="mouseEnter('c', ' #2eb82e')"   (mouseleave) ="mouseLeave('c')">
+            <h6><i class="material-icons green-icon">trending_up</i>Company Created</h6>
+            <h4>{{company_count}}</h4>
+            <div class="pull-left">
+                <div id="chart-container2"></div>
+            </div>
+        </div>
+    </div>
+</div>

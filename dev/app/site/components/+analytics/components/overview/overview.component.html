@@ -1,0 +1,54 @@
+<div class="tab-pane active " id="overview">
+    <div class="col-md-12 col-sm-12 col-xs-12 overview-outr">
+        <div class="col-md-6 col-sm-12 col-xs-12 ">
+            <div class="graph-val"><span class="red"></span> Unique Views </div>
+            <div class="graph-val"><span class="blue"></span> Page Views </div>
+        </div>
+        <og-date-range-picker (date)="onDateSelect($event)"></og-date-range-picker>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 user-detail-outr ">
+        <div id="area-example" style="height: 300px;"></div>
+        <div class="light-loader-outer-new" *ngIf="graphLoader !== 'done'">
+            <div class="loader" *ngIf="graphLoader === 'loading'"></div>
+            <p *ngIf="graphLoader !== 'loading'">{{graphLoader}}</p>
+            <a class="icon-link" *ngIf="graphLoader !== 'loading'"><i class="material-icons">refresh</i></a>
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-12 col-xs-12 analytics-mt20 traffic-outr">
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+            <h6><i class="material-icons">people</i> Unique/Total Visitors</h6>
+            <h4>{{(!stats)?'--':stats.uniqueVisitors}}/{{(!stats)?'--':stats.visitors}}</h4>
+            <div class="pull-left">
+                <div id="chart-container"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+            <h6><i class="material-icons">person_add</i> Conversions</h6>
+            <h4>{{(!stats)?'--':stats.conversions}}</h4>
+            <div class="pull-left">
+                <div id="chart-container1"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+            <h6><i class="material-icons">trending_up</i> Conversion Rate</h6>
+            <h4>{{(!stats)?'--':stats.conversionRate}}%</h4>
+            <div class="pull-left">
+                <div id="chart-container2"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+            <h6><i class="material-icons">query_builder</i> Avg Length of Visit</h6>
+            <h4>{{(!stats)?'--':stats.timeOnPage}}</h4>
+            <div class="pull-left">
+                <div id="chart-container3"></div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+            <h6><i class="material-icons">record_voice_over</i> Avg. Responses</h6>
+            <h4>{{(!stats)?'--':stats.avgResponse}}</h4>
+            <div class="pull-left">
+                <div id="chart-container4"></div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="type-details">
+         <common-editor
+            [control]="control"
+         >
+        </common-editor>
+    <div class="col-xs-12 no-padding text-group ">
+        <span class=" col-md-4 col-xs-4 no-padding form-label">	Help Text :</span>
+        <div class="col-md-8 col-xs-8">
+            <input type="text" class="form-text"  [(ngModel)] = "control.props.helpText">
+        </div>
+    </div>
+    <div class="col-xs-12 no-padding text-group ">
+        <span class="col-md-4 col-xs-4 no-padding form-label">Show Description :</span>
+        <div class="col-md-8 col-xs-8">
+            <input type="text" class="form-text" [(ngModel)]="control.config.showHelp">
+        </div>
+    </div>
+</div>
+<div class="type-details">
+            <label class="check">
+                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                <label for="check1"> </label>
+                Mark as Mandatory
+            </label>
+</div>
