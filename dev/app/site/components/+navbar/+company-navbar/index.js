@@ -1,7 +1,0 @@
-"use strict";
-function __export(m) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-__export(require('./company-navbar.component'));
-
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9zaXRlL2NvbXBvbmVudHMvK25hdmJhci8rY29tcGFueS1uYXZiYXIvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7OztBQUdBLGlCQUFjLDRCQUE0QixDQUFDLEVBQUEiLCJmaWxlIjoiYXBwL3NpdGUvY29tcG9uZW50cy8rbmF2YmFyLytjb21wYW55LW5hdmJhci9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBUaGlzIGJhcnJlbCBmaWxlIHByb3ZpZGVzIHRoZSBleHBvcnQgZm9yIHRoZSBzaGFyZWQgTmF2YmFyQ29tcG9uZW50LlxyXG4gKi9cclxuZXhwb3J0ICogZnJvbSAnLi9jb21wYW55LW5hdmJhci5jb21wb25lbnQnO1xyXG4iXX0=
