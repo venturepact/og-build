@@ -40,7 +40,7 @@ document.getElementsByTagName('body')[0].append(lead);
 
 urla = window.location.href;
 if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
-	console.log('Got in if');
+	//console.log('Got in if');
 	var trackerProp = {
 		'ga':"UA-82638968-1",
 		'kissmetrics':"41ec14671b03954fde573bdbeb2ec11956b53ce7",
@@ -49,7 +49,7 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 }
 
 else { //For .co
-	console.log('Got in else');
+	//console.log('Got in else');
 	var trackerProp = {
 		'ga':"UA-85018378-1",
 		'kissmetrics':"0a75a54b2fbeb2fefd728e55b0dc6bff06580cb8",
