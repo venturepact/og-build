@@ -44,8 +44,10 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 	var trackerProp = {
 		'ga':"UA-82638968-1",
 		'kissmetrics':"41ec14671b03954fde573bdbeb2ec11956b53ce7",
-		'mixpanel':"b8eb7ea3ffaf8755389d0ddd034c0db4"
+		'mixpanel':"b8eb7ea3ffaf8755389d0ddd034c0db4",
+		'pixel': "1616934098622761",
 	};
+	fbq('init', trackerProp.pixel);
 }
 
 else { //For .co
@@ -55,7 +57,6 @@ else { //For .co
 		'kissmetrics':"0a75a54b2fbeb2fefd728e55b0dc6bff06580cb8",
 		'mixpanel':"4e92645e14d7116f935f2e594d52fcd5",
 		'leaddyno':"41c6592b3fbd4a29945c14f3e766a12a1d796246",
-		'pixel': "1616934098622761",
 		'webengage':"~15ba1d98c",
 		'introbar': "58200c9b25e70"
 	};
