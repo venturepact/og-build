@@ -102,20 +102,20 @@ body{font-family:montserratregular}.toast{font-family:montserratregular;position
       let seconds = 0;
       $(window).blur(function () {
         interval = setInterval(function () {
-          console.log(seconds);
+          //console.log(seconds);
           seconds++;
         }, 1000);
-        console.log('blurred');
+        //console.log('blurred');
       });
 
       $(window).focus(function () {
         if (interval) {
           clearInterval(interval);
         }
-        if(seconds >= 5*60){
+        if(seconds >= 120*60){
           window.location.reload(true);
         }
-        console.log('focussssss', seconds);
+        //console.log('focussssss', seconds);
         seconds = 0;
       });
 
