@@ -9,7 +9,8 @@
   <meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
-  <meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
+  <meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic."
+  />
   <meta property="og:image" content="https://cdn.filestackcontent.com/sPhaDxuBSFKRZiXXLWzm" />
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow">
@@ -49,28 +50,30 @@ body{font-family:montserratregular}.toast{font-family:montserratregular;position
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
   <![endif]-->
-  
+
   <script>
     // Intercom
-    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/r841gnag';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    (function () { var w = window; var ic = w.Intercom; if (typeof ic === "function") { ic('reattach_activator'); ic('update', intercomSettings); } else { var d = document; var i = function () { i.c(arguments) }; i.q = []; i.c = function (args) { i.q.push(args) }; w.Intercom = i; function l() { var s = d.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://widget.intercom.io/widget/r841gnag'; var x = d.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); } if (w.attachEvent) { w.attachEvent('onload', l); } else { w.addEventListener('load', l, false); } } })();
 
 
-    var gap = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0)?"UA-82638968-1":"UA-85018378-1";
-    var gad = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0)?"UA-92581866-1":"UA-82253758-1";
+    var gap = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0) ? "UA-82638968-1" : "UA-85018378-1";
+    var gad = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0) ? "UA-92581866-1" : "UA-82253758-1";
 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', gap, 'auto', 'markettingteam');
     ga('create', gad, 'auto', 'devteam');
     ga('markettingteam.send', 'pageview');
   </script>
-  <script type="text/javascript">
+<script type="text/javascript">
     $(window).scroll(function (event) {
       var y = $(window).scrollTop();
-      if (y >= 72) {  $('#new-header').addClass('shadow'); }
+      if (y >= 72) { $('#new-header').addClass('shadow'); }
       else { $('#new-header').removeClass('shadow'); }
     });
 
@@ -94,23 +97,44 @@ body{font-family:montserratregular}.toast{font-family:montserratregular;position
     });
 
     $(document).ready(function () {
+      //-----reload if user is inactive for two hours
+      let interval = null;
+      let seconds = 0;
+      $(window).blur(function () {
+        interval = setInterval(function () {
+          console.log(seconds);
+          seconds++;
+        }, 1000);
+        console.log('blurred');
+      });
 
-      $('#btnUpgradeNow').click(function(){
+      $(window).focus(function () {
+        if (interval) {
+          clearInterval(interval);
+        }
+        if(seconds >= 5*60){
+          window.location.reload(true);
+        }
+        console.log('focussssss', seconds);
+        seconds = 0;
+      });
+
+      $('#btnUpgradeNow').click(function () {
         $('#btnUpgradeNow').addClass('loading');
         $('#btnUpgradeNow').html('Please wait');
-        setTimeout(function() {
+        setTimeout(function () {
           window.location.href = "/settings/membership";
         }, 1000);
       });
 
-      window.toastNotification = function(message) {
+      window.toastNotification = function (message) {
         $(".toast span").text(message);
         $(".toast").show();
         $('.toast').animate({
           bottom: '+90px',
           easing: 'linear'
         }, 1500);
-        $('.toast').css("bottom","0px");
+        $('.toast').css("bottom", "0px");
         $('.toast').delay(1000).fadeOut(500);
       }
 
@@ -122,30 +146,30 @@ body{font-family:montserratregular}.toast{font-family:montserratregular;position
 
     });
 
-    $(document).on('click', '.toast-btn', function() {
-      $('.toast').css("bottom","0px");
+    $(document).on('click', '.toast-btn', function () {
+      $('.toast').css("bottom", "0px");
       $('.toast').hide();
     });
 
-    $('.dates').each(function() {
+    $('.dates').each(function () {
       $(this).html('date');
     });
   </script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js" async defer></script>
-  <script async src="//platform.twitter.com/widgets.js" charset="utf-8" async defer></script>
-  <div id="dynamicScripts">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js" async defer></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8" async defer></script>
+<div id="dynamicScripts">
 
-  </div>
-  <script type="text/javascript">
+</div>
+<script type="text/javascript">
     var block = 0;
-    window.loadGoogleCharts = function() {
-     if(block == 0) {
-       google.charts.load('upcoming', {'packages':['geochart','corechart']});
-       block = 1;
-     }
+    window.loadGoogleCharts = function () {
+      if (block == 0) {
+        google.charts.load('upcoming', { 'packages': ['geochart', 'corechart'] });
+        block = 1;
+      }
     }
   </script>
-  <!-- fixes new  -->
+<!-- fixes new  -->
 <script type="text/javascript" src="inline.a0bd2c4ecbda38c7ce11.bundle.js"></script><script type="text/javascript" src="vendor.7b2e43638cd8bdfead95.bundle.js"></script><script type="text/javascript" src="main.ea9ecb3d03fe10029f65.bundle.js"></script></body>
 
 </html>
