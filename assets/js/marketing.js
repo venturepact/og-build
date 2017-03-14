@@ -40,7 +40,7 @@ document.getElementsByTagName('body')[0].append(lead);
 
 urla = window.location.href;
 if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
-	console.log('Got in if');
+	//console.log('Got in if');
 	var trackerProp = {
 		'ga':"UA-82638968-1",
 		'kissmetrics':"41ec14671b03954fde573bdbeb2ec11956b53ce7",
@@ -49,14 +49,14 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 }
 
 else { //For .co
-	console.log('Got in else');
+	//console.log('Got in else');
 	var trackerProp = {
 		'ga':"UA-85018378-1",
 		'kissmetrics':"0a75a54b2fbeb2fefd728e55b0dc6bff06580cb8",
 		'mixpanel':"4e92645e14d7116f935f2e594d52fcd5",
 		'leaddyno':"41c6592b3fbd4a29945c14f3e766a12a1d796246",
-		'pixel': "1616934098622761",
 		'webengage':"~15ba1d98c",
+		'pixel': "1616934098622761",
 		'introbar': "58200c9b25e70"
 	};
 	var fbNoScript = document.createElement('noscript');

@@ -65,14 +65,14 @@
 	    {
 	?>
 		<title>Outgrow</title>
-		<meta name="description" content="How much does culture influence creative thinking?">
-		<meta property="og:title" content="When Great Minds Don’t Think Alike" />
-		<meta property="og:description" content="How much does culture influence creative thinking?" />
-		<meta property="og:image" content="http://cdn.filestackcontent.com/hkYZHltiSiqv7tsv4UA2"/>
+		<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
+		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
+		<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
+		<meta property="og:image" content="https://cdn.filestackcontent.com/sPhaDxuBSFKRZiXXLWzm"/>
 		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="When Great Minds Don’t Think Alike">
-		<meta name="twitter:description" content="How much does culture influence creative thinking?">
-		<meta name="twitter:image" content="http://cdn.filestackcontent.com/hkYZHltiSiqv7tsv4UA2">
+		<meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow">
+		<meta name="twitter:description" content="Easily create interactive experiences that increase conversion and bring traffic.">
+		<meta name="twitter:image" content="https://cdn.filestackcontent.com/sPhaDxuBSFKRZiXXLWzm">
 	<?php
 	    }
 	?>
