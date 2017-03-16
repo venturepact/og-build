@@ -4,7 +4,8 @@ document.getElementsByTagName('body')[0].append(lead);
 
 console.log("LeadDyno not yet loaded", typeof LeadDyno);
 
-initLeadDyno();
+// if ('outgrow.co' !== window.location.host || 'outgrow.us' !== window.location.host || 'rely.co' !== window.location.host )
+	initLeadDyno();
 
 function initLeadDyno() {
 	if ('undefined' === typeof LeadDyno) {
