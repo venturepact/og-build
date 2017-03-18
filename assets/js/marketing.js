@@ -31,12 +31,8 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
 
 var opti = document.createElement('script');
-opti.setAttribute('src', 'https://static.leaddyno.com/js');
+opti.setAttribute('src', 'https://cdn.optimizely.com/js/7042601109.js');
 document.getElementsByTagName('body')[0].append(opti);
-
-var lead = document.createElement('script');
-lead.setAttribute('src', 'https://cdn.optimizely.com/js/7042601109.js');
-document.getElementsByTagName('body')[0].append(lead);
 
 urla = window.location.href;
 if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
