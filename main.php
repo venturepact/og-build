@@ -21,7 +21,8 @@
 	    {
 	    	// This is the URL you want to shorten
 	    	unset($curl);
-			$longUrl = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/seo'.$_SERVER['REQUEST_URI'];
+			$name = explode("?", $_SERVER['REQUEST_URI']);
+			$longUrl = $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST'].'/seo'.$name[0];
 			$apiKey = 'AIzaSyAyEiPl1ZWGqIjhCb4hPz34HgwLS_G9zZk';
 			$postData = array('longUrl' => $longUrl, 'key' => $apiKey);
 			$jsonData = json_encode($postData);
