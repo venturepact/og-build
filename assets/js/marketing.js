@@ -1,3 +1,11 @@
+if (window.location.host === "app.rely.co") {
+	!function(e,l,v,i,o,n){e[i]||(e[i]={}),e[i].account_id=n;var g,h;g=l.createElement(v),g.type="text/javascript",g.async=1,g.src=o+n,h=l.getElementsByTagName(v)[0],h.parentNode.insertBefore(g,h)}(window,document,"script","_elev","https://cdn.elev.io/sdk/bootloader/v4/elevio-bootloader.js?cid=","58cfba6c892fc");
+}
+/*
+ * For passing user information, please see
+ * https://elev.io/api
+ */
+
 _linkedin_data_partner_id = "35384";
 (function(){var s = document.getElementsByTagName("script")[0];
 var b = document.createElement("script");
@@ -31,12 +39,8 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
 
 var opti = document.createElement('script');
-opti.setAttribute('src', 'https://static.leaddyno.com/js');
+opti.setAttribute('src', 'https://cdn.optimizely.com/js/7042601109.js');
 document.getElementsByTagName('body')[0].append(opti);
-
-var lead = document.createElement('script');
-lead.setAttribute('src', 'https://cdn.optimizely.com/js/7042601109.js');
-document.getElementsByTagName('body')[0].append(lead);
 
 urla = window.location.href;
 if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
