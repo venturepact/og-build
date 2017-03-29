@@ -23,8 +23,7 @@
   <link id="modalcss" rel="stylesheet">
   <script src="//code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous"></script>
   <style type="text/css">
-    body{font-family:montserratregular}.toast{font-family:montserratregular;position:fixed;display:none;bottom:-100px;background:#fff;color:#62696d;left:60px;z-index:10005;width:344px;border:1px solid #ccc;box-shadow:0 0 7px 2px rgba(0,0,0,.2)}.toast i,.toast span{float:none;display:inline-block;vertical-align:middle}.toast i{margin-top:0;margin-right:10px;width:40px;background:#fb545b;color:#fff;font-size:24px;padding-left:8px;padding-top:15px;padding-bottom:15px}.toast .btn,.toast-btn i{background:0 0;color:#bec5c9}.toast span{width:74%;padding-top:0;padding-bottom:0;line-height:15px;font-size:13px}.toast .btn{float:right;padding:0;font-size:12px}.toast-btn i{font-size:16px !important;padding:8px 0 0;width:auto}
-    @media (max-width:767px){.toast{left:10px;width:298px}.toast span{width:54%}}
+  body{font-family:'montserratregular'}.toast{font-family:montserratregular;position:fixed;display:none;bottom:-100px;background:#fff;color:#62696d;left:60px;z-index:10005;width:344px;border:1px solid #ccc;box-shadow:0 0 7px 2px rgba(0,0,0,.2)}.toast i,.toast span{float:none;display:inline-block;vertical-align:middle}.toast i{margin-top:0;margin-right:10px;width:40px;background:#fb545b;color:#fff;font-size:24px;padding-left:8px;padding-top:15px;padding-bottom:15px}.toast .btn,.toast-btn i{background:0 0;color:#bec5c9}.toast span{width:74%;padding-top:0;padding-bottom:0;line-height:15px;font-size:13px}.toast .btn{float:right;padding:0;font-size:12px}.toast-btn i{font-size:16px !important;padding:8px 0 0;width:auto}@media (max-width:767px){.toast{left:10px;width:298px}.toast span{width:54%}}
   </style>
 <link href="styles.bundle.css" rel="stylesheet"/></head>
 
@@ -51,6 +50,25 @@
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
   <![endif]-->
+  
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.outgrow.co"]);
+  _paq.push(["setDomains", ["*.outgrow.co"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.outgrow.co/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '7']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
 
 
 
