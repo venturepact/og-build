@@ -1,3 +1,64 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../../../../assets/fonts/MaterialIcons-Regular.eot);
+    src: local('Material Icons'), 
+    local('materialIcons-Regular'), 
+    url(../../../../../assets/fonts/materialIcons-Regular.woff2) format('woff2'), 
+    url(../../../../../assets/fonts/materialIcons-Regular.woff) format('woff'), 
+    url(../../../../../assets/fonts/materialIcons-Regular.ttf) format('truetype')
+}
+
+.material-icons {
+ font-family: 'Material Icons';
+ font-weight: normal;
+ font-style: normal;
+ display: inline-block;
+ line-height: 1;
+ text-transform: none;
+ letter-spacing: normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ direction: ltr;
+
+ /* Support for all WebKit browsers. */
+ -webkit-font-smoothing: antialiased;
+ /* Support for Safari and Chrome. */
+ text-rendering: optimizeLegibility;
+
+ /* Support for Firefox. */
+ -moz-osx-font-smoothing: grayscale;
+
+ /* Support for IE. */
+ font-feature-settings: 'liga';
+}
+
+@font-face {
+    font-family: 'montserratregular';
+   font-style: normal;
+   font-weight: 400;
+   src: url(../../../../../assets/fonts/montserrat-regular-webfont.eot) format("embedded-opentype"), 
+   url(../../../../../assets/fonts/montserrat-regular-webfont.woff2) format("woff2"),
+   url(../../../../../assets/fonts/montserrat-regular-webfont.woff) format("woff"), 
+   url(../../../../../assets/fonts/montserrat-regular-webfont.ttf) format("truetype")
+}
+@font-face {
+    font-family: 'montserratlight';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../../../../assets/fonts/montserrat-light-webfont.eot) format("embedded-opentype"), 
+    url(../../../../../assets/fonts/montserrat-light-webfont.woff2) format("woff2"), 
+    url(../../../../../assets./fonts/montserrat-light-webfont.woff) format("woff"), 
+    url(../../../../../assets/fonts/montserrat-light-webfont.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: 'montserratultra_light';
+    src: url(../../../../../assets/fonts/montserrat-ultralight-webfont.woff2) format('woff2'), url(../../../../../assets/fonts/montserrat-ultralight-webfont.woff) format('woff'), url(../../../../../assets/fonts/montserrat-ultralight-webfont.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
 /* loader animation start */
 .elem{
     height: 15px;
@@ -464,7 +525,7 @@ label.control-label {
         padding: 7px 0;
         font-size: 14px;
         line-height: 1.42857143;
-        font-family: montserratregular;
+        font-family: 'montserratregular';
         color: #62696d;
     }
     .sahil-material .form-group label.control-label {
