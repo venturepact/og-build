@@ -3,10 +3,10 @@
     font-style: normal;
     font-weight: 400;
     src: url(../../../../../assets/fonts/MaterialIcons-Regular.eot);
-    src: local('Material Icons'), 
-    local('materialIcons-Regular'), 
-    url(../../../../../assets/fonts/materialIcons-Regular.woff2) format('woff2'), 
-    url(../../../../../assets/fonts/materialIcons-Regular.woff) format('woff'), 
+  src: local('Material Icons'),
+  local('materialIcons-Regular'),
+  url(../../../../../assets/fonts/materialIcons-Regular.woff2) format('woff2'),
+  url(../../../../../assets/fonts/materialIcons-Regular.woff) format('woff'),
     url(../../../../../assets/fonts/materialIcons-Regular.ttf) format('truetype')
 }
 
@@ -38,18 +38,18 @@
     font-family: 'montserratregular';
    font-style: normal;
    font-weight: 400;
-   src: url(../../../../../assets/fonts/montserrat-regular-webfont.eot) format("embedded-opentype"), 
+  src: url(../../../../../assets/fonts/montserrat-regular-webfont.eot) format("embedded-opentype"),
    url(../../../../../assets/fonts/montserrat-regular-webfont.woff2) format("woff2"),
-   url(../../../../../assets/fonts/montserrat-regular-webfont.woff) format("woff"), 
+  url(../../../../../assets/fonts/montserrat-regular-webfont.woff) format("woff"),
    url(../../../../../assets/fonts/montserrat-regular-webfont.ttf) format("truetype")
 }
 @font-face {
     font-family: 'montserratlight';
     font-style: normal;
     font-weight: 400;
-    src: url(../../../../../assets/fonts/montserrat-light-webfont.eot) format("embedded-opentype"), 
-    url(../../../../../assets/fonts/montserrat-light-webfont.woff2) format("woff2"), 
-    url(../../../../../assets./fonts/montserrat-light-webfont.woff) format("woff"), 
+  src: url(../../../../../assets/fonts/montserrat-light-webfont.eot) format("embedded-opentype"),
+  url(../../../../../assets/fonts/montserrat-light-webfont.woff2) format("woff2"),
+  url(../../../../../assets./fonts/montserrat-light-webfont.woff) format("woff"),
     url(../../../../../assets/fonts/montserrat-light-webfont.ttf) format("truetype")
 }
 
@@ -67,8 +67,8 @@
     transition-duration: 1s;
 }
 .elem-rotate {
-    animation-name: rotate; 
-    animation-duration: 2s; 
+  animation-name: rotate;
+  animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     color: #fb545b;
@@ -577,8 +577,8 @@ label.control-label {
         background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd);
 
     }
-    
-    .sahil-material .form-group.is-focused .form-control {
+
+.sahil-material .form-group.is-focused .form-control {
         outline: none;
         background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
         background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
