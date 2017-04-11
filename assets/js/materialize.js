@@ -1012,8 +1012,8 @@ if (jQuery) {
       $(this).trigger('closeModal');
     }
   };
-
-  $.fn.modal = function(methodOrOptions) {
+  
+  $.fn.modal2 = function(methodOrOptions) {
     if ( methods[methodOrOptions] ) {
       return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof methodOrOptions === 'object' || ! methodOrOptions ) {
