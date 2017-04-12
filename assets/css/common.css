@@ -1,3 +1,6 @@
+* {
+   margin: 0 ; padding:0 ;
+}
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -409,3 +412,88 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 :focus {outline: none !important; box-shadow: none;}
+
+
+/*intro css*/
+.intro-overlay {
+  position: fixed;
+  z-index: 9999;
+  background: -moz-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -webkit-gradient(radial,center center,0px,center center,100%,color-stop(0%,rgba(0,0,0,0.4)),color-stop(100%,rgba(0,0,0,0.9)));
+  background: -webkit-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -o-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: -ms-radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  background: radial-gradient(center,ellipse cover,rgba(0,0,0,0.4) 0,rgba(0,0,0,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66000000',endColorstr='#e6000000',GradientType=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+      -ms-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer;}
+.left-button-outer{ position: absolute;top: 58.5%;width: 450px;left: 20px;}
+.left-button-outer img{ float: left; margin-left: 10px;}
+.left-button-outer .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t2{ position: absolute;top: 54.5%;width: 450px;left: 20px;}
+.left-button-outer-t2 img{ float: left; margin-left: 10px;}
+.left-button-outer-t2 .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t2 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t3{ position: absolute;top: 62.5%;width: 450px;left: 20px;}
+.left-button-outer-t3 img{ float: left; margin-left: 10px;}
+.left-button-outer-t3 .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t3 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+.add-btn{padding: 12px;color: #23a0d6;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
+.add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
+.right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
+.icon-box{ float: right; width:40px;}
+.icon-box li{padding: 8px 10px;color: #23a0d6;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
+.icon-box li i{ font-size: 15px; color:#bec5c9;}
+.icon-box li.active i{ font-size: 15px; color:#5c6165;}
+.right-button-outer img { float: right; margin-right: 10px;}
+.text-box{ float: right; width:45%; }
+.text-box li{padding: 8px 10px;color: #23a0d6;width:100%;; text-align:left;display: block;  float: left; position: relative; }
+.text-box li i { font-size: 20px; color:#23a0d6; float: left; margin-right: 10px;}
+.top-outer{ position: absolute;right: 130px;width: 150px;height: 80px; top: 19px;}
+.red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
+.top-outer img{ margin-left: 48px;}
+.top-outer .top-text{ float: left; color: #23a0d6; width:100%; text-align: center;}
+
+
+
+@media (min-width: 1420px) and (max-width: 1440px)  {
+
+.right-button-outer { right: 21%;}
+.left-button-outer {top: 59%;}
+.left-button-outer-t2 {top: 55.5%;}
+.left-button-outer-t3 { top: 63.8%;}
+
+}
+
+@media (min-width: 1660px) and (max-width: 1680px)  {
+
+.right-button-outer { right: 18%;}
+.left-button-outer {top: 59%;}
+
+}
+
+@media (max-width: 1366px) {
+
+.right-button-outer { right: 22%;}
+.left-button-outer {top: 85%;}
+.left-button-outer-t2 {top: 80%;}
+.left-button-outer-t3 { top: 91.5%;}
+
+}
+
+@media (max-width: 1280px) {
+    
+.right-button-outer { right: 23.7%;}
+.left-button-outer {top: 79%;}
+.left-button-outer-t2 {top: 75%;}
+.left-button-outer-t3 { top: 86%;}
+
+}
