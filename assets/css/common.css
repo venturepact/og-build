@@ -432,7 +432,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
           transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer; font-size: 13px;}
 .left-button-outer{ position: absolute;top: 58.5%;width: 450px;left: 20px;}
 .left-button-outer img{ float: left; margin-left: 10px;}
-.left-button-outer .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer .intro-text-left{ float: left; color: #fff;  padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 
 .left-button-outer-t2{ position: absolute;top: 54.5%;width: 450px;left: 20px;}
@@ -449,7 +449,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
 .icon-box{ float: right; width:40px;}
 .icon-box li{padding: 8px 10px;color: #fff;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
-.icon-box li i{ font-size: 15px; color:#bec5c9;}
+.icon-box li i{ font-size: 15px; color:#1483b7;}
 .icon-box li.active i{ font-size: 15px; color:#5c6165;}
 .right-button-outer img { float: right; margin-right: 10px;}
 .text-box{ float: right; width:50%; }
@@ -459,6 +459,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
 .top-outer img{ margin-left: 48px;}
 .top-outer .top-text{ float: left; color: #fff; width:100%; text-align: center;}
+
+.top-outer-help{ position: absolute;right: 18px;width: 150px;height: 80px; top: 19px; color :#fff; text-align: right;}
+.top-outer-help img{ margin-right: 12px;}
+.top-outer-help i{background: #fff;font-size: 25px; border-radius: 20px; color:#5c6165;}
+.top-outer-help .text{position: absolute;top: 85px; right:30px;}
 
 
 
