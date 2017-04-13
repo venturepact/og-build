@@ -60,7 +60,8 @@
 
 .editor-modal .modal-footer {
     padding: 15px;
-    border-top: none
+    border-top: none;
+    padding-top: 0px;
 }
 
 .editor-modal .modal-body {
@@ -259,21 +260,18 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .bootbox .modal-body {
     border-radius: 5px
 }
-
+.bootbox-body{
+    display: flex;
+}
 .bootbox-body-left {
     float: left;
     width: 37px;
     background: #fb545b;
-    border-radius: 5px 0 0 5px;
-    height: 132px;
-    display: table;
-    margin: -15px 20px -15px -15px
-}
-
-.bootbox-body .bootbox-body-left .mat-icon {
-    display: table-cell;
-    vertical-align: middle;
-    float: none
+    border-radius: 5px 0 0 5px;    
+    display: inline-flex;
+    margin: -15px 20px -57px -15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bootbox-body .bootbox-body-left .mat-icon i.material-icons {
