@@ -431,7 +431,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
      -moz-transition: all 0.3s ease-out;
       -ms-transition: all 0.3s ease-out;
        -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer;}
+          transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer; font-size: 13px;}
 .left-button-outer{ position: absolute;top: 58.5%;width: 450px;left: 20px;}
 .left-button-outer img{ float: left; margin-left: 10px;}
 .left-button-outer .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
@@ -455,7 +455,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .icon-box li.active i{ font-size: 15px; color:#5c6165;}
 .right-button-outer img { float: right; margin-right: 10px;}
 .text-box{ float: right; width:50%; }
-.text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:left;display: block;  float: left; position: relative; }
+.text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:right;display: block;  float: left; position: relative; }
 .text-box li i { font-size: 20px; color:#fff; float: left; margin-right: 10px;}
 .top-outer{ position: absolute;right: 130px;width: 150px;height: 80px; top: 19px;}
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
