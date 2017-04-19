@@ -128,7 +128,6 @@
 .editor-modal .live-subhead .url-style {
     color: #a9a9a9;
     cursor: pointer;
-    font-size: 14px;
     text-transform: none;
     background: #ceebff;
     padding: 0 5px
@@ -141,7 +140,7 @@
     background: #fff;
     border: 1px solid #bec6c9;
     border-top: 0;
-    padding: 7px 10px 12px;
+    padding: 8px 10px;
     text-align: left
 }
 
@@ -154,12 +153,13 @@
 .editor-modal span {
     display: inline-block;
     font-size: 13px;
-    color: #4d5052
+    color: #4d5052;
+    vertical-align: text-bottom;
 }
 
 a.live-url.preview_copy {
     float: right;
-    margin-top: 3px
+    margin-top: 2px
 }
 
 .editor-modal .modal .form-group .form-control,
