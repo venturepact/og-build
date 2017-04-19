@@ -117,8 +117,7 @@
 }
 
 .editor-modal .live-url {
-    font-size: 11px;
-    font-family: montserratlight;
+    font-size: 13px;
     color: #fb545b;
     display: inline-flex;
     margin-bottom: 0;
@@ -150,19 +149,17 @@
     background: #f9f9f9;
     border: 1px solid #bec6c9;
     padding: 7px 12px;
-    text-align: left
 }
 
 .editor-modal span {
-    font-family: montserratlight;
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
     color: #4d5052
 }
 
 a.live-url.preview_copy {
     float: right;
-    margin-top: 5px
+    margin-top: 3px
 }
 
 .editor-modal .modal .form-group .form-control,
@@ -188,26 +185,6 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     border: 1px solid rgba(97, 104, 110, .3);
     padding: 0 10px
 }
-
-.editor-modal .live-url {
-    font-size: 11px;
-    font-family: montserratlight;
-    color: #fb545b;
-    display: inline-flex;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    cursor: pointer
-}
-
-.editor-modal .live-subhead .url-style {
-    color: #a9a9a9;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: none;
-    background: #ceebff;
-    padding: 0 5px
-}
-
 .live-head {
     font-size: 24px;
     font-weight: normal;
