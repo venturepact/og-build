@@ -454,6 +454,13 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 }
 
+@media (min-width:1420px) and (max-width:1440px) and (orientation:landscape) {
+    .left-button-outer {top: 70%;}
+    .left-button-outer-t2 { top: 66%;}
+    .left-button-outer-t3 {top: 75%;}
+
+}
+
 @media (min-width: 1660px) and (max-width: 1680px)  {
 
 .right-button-outer { right: 18%;}
