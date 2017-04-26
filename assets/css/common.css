@@ -60,7 +60,8 @@
 
 .editor-modal .modal-footer {
     padding: 15px;
-    border-top: none
+    border-top: none;
+    padding-top: 0px;
 }
 
 .editor-modal .modal-body {
@@ -116,8 +117,7 @@
 }
 
 .editor-modal .live-url {
-    font-size: 11px;
-    font-family: montserratlight;
+    font-size: 13px;
     color: #fb545b;
     display: inline-flex;
     margin-bottom: 0;
@@ -128,7 +128,6 @@
 .editor-modal .live-subhead .url-style {
     color: #a9a9a9;
     cursor: pointer;
-    font-size: 14px;
     text-transform: none;
     background: #ceebff;
     padding: 0 5px
@@ -141,7 +140,7 @@
     background: #fff;
     border: 1px solid #bec6c9;
     border-top: 0;
-    padding: 7px 10px 12px;
+    padding: 8px 10px;
     text-align: left
 }
 
@@ -149,19 +148,18 @@
     background: #f9f9f9;
     border: 1px solid #bec6c9;
     padding: 7px 12px;
-    text-align: left
 }
 
 .editor-modal span {
-    font-family: montserratlight;
     display: inline-block;
-    font-size: 14px;
-    color: #4d5052
+    font-size: 13px;
+    color: #4d5052;
+    vertical-align: text-bottom;
 }
 
 a.live-url.preview_copy {
     float: right;
-    margin-top: 5px
+    margin-top: 2px
 }
 
 .editor-modal .modal .form-group .form-control,
@@ -187,26 +185,6 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     border: 1px solid rgba(97, 104, 110, .3);
     padding: 0 10px
 }
-
-.editor-modal .live-url {
-    font-size: 11px;
-    font-family: montserratlight;
-    color: #fb545b;
-    display: inline-flex;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    cursor: pointer
-}
-
-.editor-modal .live-subhead .url-style {
-    color: #a9a9a9;
-    cursor: pointer;
-    font-size: 14px;
-    text-transform: none;
-    background: #ceebff;
-    padding: 0 5px
-}
-
 .live-head {
     font-size: 24px;
     font-weight: normal;
@@ -231,7 +209,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .live-modal {
-    padding: 0 20px 45px
+    padding: 0 20px 45px; width: 100%;
+
 }
 
 .live-modal td,
@@ -259,21 +238,18 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .bootbox .modal-body {
     border-radius: 5px
 }
-
+.bootbox-body{
+    display: flex;
+}
 .bootbox-body-left {
     float: left;
     width: 37px;
     background: #fb545b;
-    border-radius: 5px 0 0 5px;
-    height: 132px;
-    display: table;
-    margin: -15px 20px -15px -15px
-}
-
-.bootbox-body .bootbox-body-left .mat-icon {
-    display: table-cell;
-    vertical-align: middle;
-    float: none
+    border-radius: 5px 0 0 5px;    
+    display: inline-flex;
+    margin: -15px 20px -57px -15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bootbox-body .bootbox-body-left .mat-icon i.material-icons {
@@ -431,36 +407,41 @@ fieldset[disabled] .editor-modal .form-group .form-control {
      -moz-transition: all 0.3s ease-out;
       -ms-transition: all 0.3s ease-out;
        -o-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer;}
+          transition: all 0.3s ease-out;top:0; bottom:0; left:0; right:0; cursor: pointer; font-size: 13px;}
 .left-button-outer{ position: absolute;top: 58.5%;width: 450px;left: 20px;}
 .left-button-outer img{ float: left; margin-left: 10px;}
-.left-button-outer .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer .intro-text-left{ float: left; color: #fff;  padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 
 .left-button-outer-t2{ position: absolute;top: 54.5%;width: 450px;left: 20px;}
 .left-button-outer-t2 img{ float: left; margin-left: 10px;}
-.left-button-outer-t2 .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t2 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer-t2 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 
 .left-button-outer-t3{ position: absolute;top: 62.5%;width: 450px;left: 20px;}
 .left-button-outer-t3 img{ float: left; margin-left: 10px;}
-.left-button-outer-t3 .intro-text-left{ float: left; color: #23a0d6; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t3 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer-t3 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
-.add-btn{padding: 12px;color: #23a0d6;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
+.add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
 .add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
 .right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
 .icon-box{ float: right; width:40px;}
-.icon-box li{padding: 8px 10px;color: #23a0d6;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
-.icon-box li i{ font-size: 15px; color:#bec5c9;}
+.icon-box li{padding: 8px 10px;color: #fff;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
+.icon-box li i{ font-size: 15px; color:#1483b7;}
 .icon-box li.active i{ font-size: 15px; color:#5c6165;}
 .right-button-outer img { float: right; margin-right: 10px;}
-.text-box{ float: right; width:45%; }
-.text-box li{padding: 8px 10px;color: #23a0d6;width:100%;; text-align:left;display: block;  float: left; position: relative; }
-.text-box li i { font-size: 20px; color:#23a0d6; float: left; margin-right: 10px;}
+.text-box{ float: right; width:50%; }
+.text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:right;display: block;  float: left; position: relative; }
+.text-box li i { font-size: 20px; color:#fff; float: left; margin-right: 10px;}
 .top-outer{ position: absolute;right: 130px;width: 150px;height: 80px; top: 19px;}
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
 .top-outer img{ margin-left: 48px;}
-.top-outer .top-text{ float: left; color: #23a0d6; width:100%; text-align: center;}
+.top-outer .top-text{ float: left; color: #fff; width:100%; text-align: center;}
+
+.top-outer-help{ position: absolute;right: 18px;width: 150px;height: 80px; top: 19px; color :#fff; text-align: right;}
+.top-outer-help img{ margin-right: 12px;}
+.top-outer-help i{background: #fff;font-size: 25px; border-radius: 20px; color:#5c6165;}
+.top-outer-help .text{position: absolute;top: 85px; right:30px;}
 
 
 
@@ -470,6 +451,13 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 59%;}
 .left-button-outer-t2 {top: 55.5%;}
 .left-button-outer-t3 { top: 63.8%;}
+
+}
+
+@media (min-width:1420px) and (max-width:1440px) and (orientation:landscape) {
+    .left-button-outer {top: 70%;}
+    .left-button-outer-t2 { top: 66%;}
+    .left-button-outer-t3 {top: 75%;}
 
 }
 
