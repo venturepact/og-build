@@ -485,3 +485,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 { top: 86%;}
 
 }
+
+@media (min-width: 320px) and (max-width: 1023px) {
+
+.intro-overlay{ display: none !important;}
+
+}
