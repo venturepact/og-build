@@ -461,6 +461,15 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 }
 
+@media (min-width: 1442px) and (max-width: 1600px)  {
+
+.right-button-outer { right: 20.5%;}
+.left-button-outer {top: 71%;}
+.left-button-outer-t2 {top: 55.5%;}
+.left-button-outer-t3 { top: 63.8%;}
+
+}
+
 @media (min-width: 1660px) and (max-width: 1680px)  {
 
 .right-button-outer { right: 18%;}
@@ -469,6 +478,14 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 @media (max-width: 1366px) {
+
+.right-button-outer { right: 22%;}
+.left-button-outer {top: 85%;}
+.left-button-outer-t2 {top: 80%;}
+.left-button-outer-t3 { top: 91.5%;}
+
+}
+@media (min-width: 1367px) and (max-width: 1419px){
 
 .right-button-outer { right: 22%;}
 .left-button-outer {top: 85%;}
