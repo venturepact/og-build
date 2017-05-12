@@ -455,35 +455,16 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 @media (min-width:1420px) and (max-width:1440px) and (orientation:landscape) {
-    .left-button-outer {top: 77.5%;}
-    .left-button-outer-t2 { top: 82%;}
-    .left-button-outer-t3 {top: 85%;}
+    .left-button-outer {top: 70%;}
+    .left-button-outer-t2 { top: 66%;}
+    .left-button-outer-t3 {top: 75%;}
 
 }
 
-@media (min-width: 1441px) and (max-width: 1600px)  {
-
-.right-button-outer { right: 20.5%;}
-.left-button-outer {top: 72%;}
-.left-button-outer-t2 {top: 76.5%;}
-.left-button-outer-t3 { top: 82.8%;}
-
-}
-
-@media (min-width: 1601px) and (max-width: 1680px)  {
+@media (min-width: 1660px) and (max-width: 1680px)  {
 
 .right-button-outer { right: 18%;}
 .left-button-outer {top: 59%;}
-.left-button-outer-t2 {position: absolute;top: 61%; width: 450px; left: 20px;}
-.left-button-outer-t3 {position: absolute;top: 74.5%; width: 450px; left: 20px;}
-
-}
-@media (min-width: 1681px) and (max-width: 1920px)  {
-
-.right-button-outer { right: 15.7%;}
-.left-button-outer {top: 59%;}
-.left-button-outer-t2 {position: absolute;top: 61%; width: 450px; left: 20px;}
-.left-button-outer-t3 {position: absolute;top: 63.5%; width: 450px; left: 20px;}
 
 }
 
@@ -493,14 +474,6 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 85%;}
 .left-button-outer-t2 {top: 80%;}
 .left-button-outer-t3 { top: 91.5%;}
-
-}
-@media (min-width: 1367px) and (max-width: 1419px){
-
-.right-button-outer { right: 22%;}
-.left-button-outer {top: 73%;}
-.left-button-outer-t2 {top: 79%;}
-.left-button-outer-t3 { top: 84.5%;}
 
 }
 
