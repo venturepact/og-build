@@ -71,7 +71,7 @@
 	?>
 		<title>Outgrow</title>
 		<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
-		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
+		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow <?php echo $url; ?>" />
 		<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
 		<meta property="og:image" content="https://cdn.filestackcontent.com/sPhaDxuBSFKRZiXXLWzm"/>
 		<meta name="twitter:card" content="summary">
