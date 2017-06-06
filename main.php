@@ -5,7 +5,7 @@
 		$host = explode('.',$_SERVER['HTTP_HOST']);
 		array_shift($host);
 		$apiUrl = 'api.'.implode('.',$host);
-		if (strpos($apiUrl, 'outgrow.co') !== false) !== false) {
+		if (strpos($apiUrl, 'outgrow') !== false) {
 			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		} else {
 			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
