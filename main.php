@@ -5,7 +5,7 @@
 		$host = explode('.',$_SERVER['HTTP_HOST']);
 		array_shift($host);
 		$apiUrl = 'api.'.implode('.',$host);
-		if (strpos($apiUrl, 'outgrow') !== false || strpos($apiUrl, 'rely') !== false || strpos($apiUrl, 'venturepact') !== false) {
+		if (strpos($apiUrl, 'outgrow.co') !== false) !== false) {
 			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		} else {
 			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
@@ -71,7 +71,7 @@
 	?>
 		<title>Outgrow</title>
 		<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
-		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow <?php echo $url; ?>" />
+		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
 		<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
 		<meta property="og:image" content="https://cdn.filestackcontent.com/sPhaDxuBSFKRZiXXLWzm"/>
 		<meta name="twitter:card" content="summary">
