@@ -5,12 +5,11 @@
 		$host = explode('.',$_SERVER['HTTP_HOST']);
 		array_shift($host);
 		$apiUrl = 'api.'.implode('.',$host);
-		if (strpos($apiUrl, 'outgrow') !== false || strpos($apiUrl, 'rely') !== false || strpos($apiUrl, 'venturepact') !== false) {
-			$apiUrl = $apiUrl;
+		if (strpos($apiUrl, 'outgrow') !== false) {
+			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		} else {
-			$apiUrl = 'api.outgrow.co';
+			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		}
-		$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
 	        CURLOPT_RETURNTRANSFER => 1,
