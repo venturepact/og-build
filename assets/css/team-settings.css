@@ -911,7 +911,8 @@
         transition: all .3s ease 0s;
         font-family: montserratregular;
         text-transform: uppercase;
-        float: left
+        float: left;
+        white-space:normal;
     }
     /*#membership-details .membership-details-inner-tabs {
         position: fixed;
