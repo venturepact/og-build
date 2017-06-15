@@ -5,7 +5,11 @@
 		$host = explode('.',$_SERVER['HTTP_HOST']);
 		array_shift($host);
 		$apiUrl = 'api.'.implode('.',$host);
-		$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+		if (strpos($apiUrl, 'outgrow') !== false) {
+			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+		} else {
+			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+		}
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
 	        CURLOPT_RETURNTRANSFER => 1,
