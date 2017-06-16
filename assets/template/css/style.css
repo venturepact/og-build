@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+/*Main Section Style */
+
+.main-bg {
+    background: url("../images/temp-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+	display:table;
+}
+
+
+/*header section*/
+
+header {
+    padding: 10px;
+}
+
+header .logo {
+    float: left;
+    padding: 15px 10px;
+}
+
+header .logo span {
+    color: #fff;
+    font-size: 18px;
+    margin-left: 15px;
+    font-family: montserratregular;
+}
+
+
+/*header section end*/
+
+
+/*Content section */
+
+.landing-page {
+    width: 100vw;
+	display: table-cell;
+    vertical-align: middle;
+    height: 72vh;
+	text-align:center;
+}
+
+.landing-page .main-head {
+    font-family: montserratregular;
+    font-size: 48px;
+    color: #fff;
+    word-wrap: break-word;
+}
+
+.landing-page .sub-head {
+    font-family: montserratregular;
+    font-size: 24px;
+    color: #a7aaae;
+    word-wrap: break-word;
+}
+
+.landing-page .description {
+    font-family: montserratregular;
+    font-size: 14px;
+    color: #a7aaae;
+    margin-top: 40px;
+    word-wrap: break-word;
+    padding: 0 20%;
+}
+
+.prime-action {
+    font-family: montserratregular;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px 4%;
+    background: #00aea5;
+    border-radius: 0 !important;
+}
+
+.btn.prime-action.focus,
+.btn.prime-action:focus,
+.btn.prime-action:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*Content section end*/
+
+
+/*section Footer*/
+
+.section-footer {
+    float: left;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.section-footer .footer-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.section-footer .footer-nav li {
+    float: left;
+    display: inline;
+}
+
+.section-footer .footer-nav li a {
+    color: #9c9fa4;
+    font-family: montserratregular;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.section-footer .footer-nav li a:hover {
+    color: #fff;
+}
+
+.section-footer .footer-nav li span {
+    color: #9c9fa4;
+    font-family: montserratregular;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.section-footer .powered-by {
+    float: left;
+    text-align: right;
+    width: 100%;
+}
+
+.section-footer .powered-by span {
+    color: #9c9fa4;
+    font-size: 14px;
+    margin-right: 5px;
+    font-family: montserratregular;
+}
+
+
+/*Main Section Style */
+
+
