@@ -540,3 +540,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .intro-overlay{ display: none !important;}
 
 }
+
+
+.template-outer-main .selectize-control.single .selectize-input input {
+    visibility:visible !important; width:100% !important;
+}
