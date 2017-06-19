@@ -83,9 +83,12 @@
     }, i[r].l = 1 * new Date(); a = s.createElement(o),
       m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
+    var parser = document.createElement('a');
+    parser.href = window.location.href;
     ga('create', gap, 'auto', 'markettingteam');
-    ga('create', gad, 'auto', 'devteam');
+    ga('create', gad, 'auto', 'devteam', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('devteam.linker:autoLink', [parser.hostname] );
     ga('markettingteam.send', 'pageview');
   </script>
  
