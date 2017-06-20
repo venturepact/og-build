@@ -911,7 +911,8 @@
         transition: all .3s ease 0s;
         font-family: montserratregular;
         text-transform: uppercase;
-        float: left
+        float: left;
+        white-space:normal;
     }
     /*#membership-details .membership-details-inner-tabs {
         position: fixed;
@@ -1694,7 +1695,7 @@
         text-transform: capitalize
     }
     .starter-box {
-        z-index: 9;
+        z-index: 1;
         position: relative;
         /*box-shadow: 0 0 19px rgba(60, 60, 60, .29);*/
         box-shadow: 0px 0px 12px rgba(60,60,60,0.2);
@@ -1739,11 +1740,11 @@
         border-color: #fb545b #fb545b #fb545b transparent
     }
     .enterprise-box {
-        z-index: 0;
+        z-index: 1;
         position: relative
     }
     .selected-plan {
-        z-index: 99!important
+        z-index:  1 !important
     }
     .cancel-member {
         color: #fb545b;

@@ -286,15 +286,15 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     border: 2px solid #fb545b;
     border-radius: 0;
     color: #fb545b !important;
-    padding: 3px 42px
+    padding: 3px 28px
 }
 
 .btn.btn-cancel {
     border: 2px solid #8e989f;
     border-radius: 0;
     color: #8e989f !important;
-    padding: 3px 30px;
-    margin-right: 5px
+    padding: 3px 28px;
+    margin-right: 0px
 }
 
 .btn.btn-cancel.btn-cancel-hover:hover {
@@ -370,7 +370,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 @media (min-width:768px) {
     .editor-modal .modal-dialog {
-        width: 500px;
+        width: 520px;
         margin: 80px auto !important
     }
 }
@@ -422,6 +422,16 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 img{ float: left; margin-left: 10px;}
 .left-button-outer-t3 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer-t3 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t4{ position: absolute;top: 85.5%;width: 450px;left: 20px;}
+.left-button-outer-t4 img{ float: left; margin-left: 10px;}
+.left-button-outer-t4 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t4 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t5{ position: absolute;top: 85.5%;width: 450px;left: 20px;}
+.left-button-outer-t5 img{ float: left; margin-left: 10px;}
+.left-button-outer-t5 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t5 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 .add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
 .add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
 .right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
@@ -451,6 +461,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 59%;}
 .left-button-outer-t2 {top: 55.5%;}
 .left-button-outer-t3 { top: 63.8%;}
+.left-button-outer-t4 {top: 56.5%;}
+.left-button-outer-t5 {top: 59.5%;}
 
 }
 
@@ -458,6 +470,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     .left-button-outer {top: 77.5%;}
     .left-button-outer-t2 { top: 82%;}
     .left-button-outer-t3 {top: 85%;}
+    .left-button-outer-t4 {top: 66.5%;}
+    .left-button-outer-t5 {top: 70.5%;}
 
 }
 
@@ -467,6 +481,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 72%;}
 .left-button-outer-t2 {top: 76.5%;}
 .left-button-outer-t3 { top: 82.8%;}
+.left-button-outer-t4 {top: 56.5%;}
 
 }
 
@@ -474,8 +489,10 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .right-button-outer { right: 18%;}
 .left-button-outer {top: 59%;}
-.left-button-outer-t2 {position: absolute;top: 61%; width: 450px; left: 20px;}
-.left-button-outer-t3 {position: absolute;top: 74.5%; width: 450px; left: 20px;}
+.left-button-outer-t2 {top: 61%; }
+.left-button-outer-t3 {top: 74.5%; }
+.left-button-outer-t4 {top: 56.5%;}
+.left-button-outer-t5 {top: 58.5%;}
 
 }
 @media (min-width: 1681px) and (max-width: 1920px)  {
@@ -484,6 +501,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 59%;}
 .left-button-outer-t2 {position: absolute;top: 61%; width: 450px; left: 20px;}
 .left-button-outer-t3 {position: absolute;top: 63.5%; width: 450px; left: 20px;}
+.left-button-outer-t4{ position: absolute;top: 55.5%;width: 450px;left: 20px;}
+.left-button-outer-t5 {top: 57.5%;}
 
 }
 
@@ -493,6 +512,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 85%;}
 .left-button-outer-t2 {top: 80%;}
 .left-button-outer-t3 { top: 91.5%;}
+.left-button-outer-t5 {top: 85.5%;}
 
 }
 @media (min-width: 1367px) and (max-width: 1419px){
@@ -510,6 +530,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 79%;}
 .left-button-outer-t2 {top: 75%;}
 .left-button-outer-t3 { top: 86%;}
+.left-button-outer-t4 {top: 57.5%;}
+.left-button-outer-t5 { top: 79.5%;}
 
 }
 
@@ -517,4 +539,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .intro-overlay{ display: none !important;}
 
+}
+
+
+.template-outer-main .selectize-control.single .selectize-input input {
+    visibility:visible !important; width:100% !important;
 }
