@@ -70,7 +70,7 @@ else { //For .co
 	fbq('init', trackerProp.pixel);
 	fbq('track', 'PageView');
 	fbq('track', 'ViewContent');
-	_intro_bar.account_id = trackerProp.introbar;
+	//_intro_bar.account_id = trackerProp.introbar;
 	qp('init', trackerProp.quora);
 	qp('track', 'ViewContent');
 }
