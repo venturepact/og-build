@@ -38,8 +38,7 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 }
 
 if (
-	urla.toLowerCase().indexOf("outgrow.co") >= 0 ||
-	urla.toLowerCase().indexOf("rely.co") >= 0
+	urla.toLowerCase().indexOf("outgrow.co") >= 0
 ) { //For .co
 	//console.log('Got in else');
 	var trackerProp = {
