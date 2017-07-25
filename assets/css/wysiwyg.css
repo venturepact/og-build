@@ -264,7 +264,6 @@ iframe.fr-iframe {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   text-align: left;
   border: 0px;
-  border-top: 5px solid #222222;
 }
 .fr-toolbar::after {
   clear: both;
@@ -400,7 +399,6 @@ iframe.fr-iframe {
   -ms-user-select: none;
   float: left;
   padding: 0;
-  width: 38px;
   height: 37px;
 }
 .fr-toolbar .fr-command.fr-btn i,
@@ -979,6 +977,9 @@ iframe.fr-iframe {
 }
 .fr-box {
   position: relative;
+}
+.fr-box a{
+  display:none !important;
 }
 /**
  * Postion sticky hacks.
