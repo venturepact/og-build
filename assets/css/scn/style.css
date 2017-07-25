@@ -3744,3 +3744,11 @@ input {
         transform: translateY(10px);
     }
 }
+
+/*css for live calc*/
+
+.selectize-dropdown-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+}
