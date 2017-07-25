@@ -5,6 +5,9 @@
     #graph-container {
         min-width: 200px !important;
     }
+    .t1-question .question-components .selectize-control.single .selectize-input .item {
+        max-width: 190px;
+    }
 }
 @media (min-width: 0px) and (max-width: 767px) {
     html {
@@ -148,6 +151,7 @@
     }
     .t1-result-leadform {
         text-align: center;
+        padding:0 10px;
     }
     .t1-ques-component.leadform-inline .lf-skip-btn {
         font-size: 14px;
