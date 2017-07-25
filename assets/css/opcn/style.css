@@ -72,7 +72,8 @@ li {
     max-width: 100%;
     position: relative;
     display: table;
-    background: no-repeat center center;
+    /*background: url(../images/main-bg.jpg) no-repeat center center;*/
+    
     background-size: cover;
 }
 .t1-landing-inner {
@@ -315,7 +316,8 @@ li {
     max-width: 100%;
     position: relative;
     display: table;
-    background: no-repeat center center;
+    /*background: url(../images/main-bg.jpg) no-repeat center center;*/
+    
     background-size: cover;
 }
 .isIframe {
@@ -941,6 +943,47 @@ li {
     float: left;
     width: 100%;
 }
+/* start: xs radio images */
+/*.img1{
+    background: url("../images/q1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img2{
+    background: url("../images/q2.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img3{
+    background: url("../images/q3.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img4{
+    background: url("../images/q4.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img5{
+    background: url("../images/q5.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img6{
+    background: url("../images/q6.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img7{
+    background: url("../images/q7.jpg") no-repeat;
+    background-size: cover;
+}
+
+.img8{
+    background: url("../images/q8.jpg") no-repeat;
+    background-size: cover;
+}*/
+/* end: xs radio images */
 /* end: xs-img-wrapper */
 
 .redo-outer-recom .redo-link .resulthidden {
@@ -952,7 +995,8 @@ li {
     max-width: 100%;
     display: table;
     position: relative;
-    background: no-repeat center center;
+    /*background: url(../images/main-bg.jpg) no-repeat center center;*/
+    
     background-size: cover;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 5px;
@@ -2934,6 +2978,9 @@ img.twitter-follow-button {
         border: 2px solid #d9dad3;
     }
 }
+.likes-parent {
+    margin-bottom: 20px;
+}
 .fb-like {
     margin: 40px 0;
     margin-right: 10px;
@@ -3773,9 +3820,15 @@ _:-webkit-full-screen,
     height: 28px !important;
     margin: 40px 0px;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     position: relative !important;
     top: 35px;
+}
+#like {
+    display: inline;
+}
+#follow {
+    display: inline;
 }
 .t3-default-result-outer.tr-bold-new {
     float: none;

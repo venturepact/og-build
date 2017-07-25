@@ -665,7 +665,7 @@
         display: block !important;
     }
     .fb-like:only-child {
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
     .twitter-follow-button {
         float: none;
@@ -2076,6 +2076,9 @@
     }
     .leadform-outer .fb-like:only-child {
         margin-bottom: 15px;
+    }
+    .fb-like {
+        margin-bottom: 0px;
     }
     .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-bot-sec p {
         text-align: center;
