@@ -1650,6 +1650,9 @@ visuals .rec-image-outer img {
 .t1-result-leadform .t1-result-cta .prime-action:hover {
     /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
 }
+.t1-result-leadform .t1-result-cta .prime-action p{
+    margin:0px;
+}
 .t1-result-leadform .redirect-heading {
     color: #594542;
     font-size: 16px;
@@ -3162,7 +3165,6 @@ visuals .rec-image-outer img {
 .recom-section .btn-twitter,
 .recom-section .btn-in {
     margin: 20px 5px;
-    margin-bottom: 0px;
 }
 .recom-section .btn-in {
     margin-bottom: 20px;

@@ -1009,6 +1009,15 @@
         font-size: 12px;
     }
 }
+
+@media (min-width: 150px) and (max-width: 319px) {
+.landing-page-mid leadform .input-section .input-outer span {
+        font-size: 11px;
+        top: 38px;
+    }
+}
+
+
 @media (min-width: 480px) and (max-width: 767px) {
     .t1-result-leadform {
         width: 100%;

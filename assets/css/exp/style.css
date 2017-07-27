@@ -2026,7 +2026,7 @@ visuals .rec-image-outer img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
 }
 /*.recom-section .share-heading{
     margin-bottom: 0px;
@@ -2126,9 +2126,11 @@ visuals .rec-image-outer img {
     }
     .twitter-follow-button {
         box-shadow: none;
+        margin-top: 0px;
     }
     .fb-like {
         box-shadow: none;
+        margin-top: 0px;
     }
     .btn-fb-like {
         box-shadow: none;

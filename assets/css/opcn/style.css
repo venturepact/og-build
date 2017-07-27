@@ -1950,7 +1950,8 @@ visuals .t1-result-inner-left #og-table-excel {
 .t1-result-leadform .prime-action:hover {
     color: #fff;
 }
-.t1-result-leadform .prime-action {} .t1-result-leadform .t1-result-cta .prime-action {
+.t1-result-leadform .prime-action {} 
+.t1-result-leadform .t1-result-cta .prime-action {
     border: none;
     color: #fff;
     font-size: 14px;
@@ -1966,6 +1967,9 @@ visuals .t1-result-inner-left #og-table-excel {
 }
 .t1-result-leadform .t1-result-cta .prime-action:hover {
     color: #fff;
+}
+.t1-result-leadform .t1-result-cta .prime-action p{
+    margin:0px;
 }
 .t1-leadform-btn {
     border: none;
@@ -4167,6 +4171,7 @@ _:-webkit-full-screen,
 .t1-result-leadform .input-outer .input-field .prefix ~ label,
 .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label {
     padding-top: 5px;
+    font-weight: normal;
 }
 .one-page-card-new .t1-ques-inner .input-field input:focus:not([readonly]) {
     border-bottom: none !important;
