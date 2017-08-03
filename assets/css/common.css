@@ -188,7 +188,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .live-head {
     font-size: 24px;
     font-weight: normal;
-    margin: 5px 0 35px;
+    margin: 5px 0 25px;
+    font-family: montserratlight;
 }
 
 .live-subhead {
@@ -209,7 +210,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .live-modal {
-    padding: 0 20px 45px; width: 100%;
+    padding: 0 20px 15px; width: 100%;
 
 }
 
@@ -544,4 +545,38 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .template-outer-main .selectize-control.single .selectize-input input {
     visibility:visible !important; width:100% !important;
+}
+
+.promo-tip {
+    background: #fbfbbd;
+    padding: 7px 20px 20px;
+    text-align: left;
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.promo-tip span {
+    font-size: 12px;
+    color: #475353;
+    font-family: montserratlight;
+    line-height: 20px;
+}
+.promo-tip span i.material-icons {
+    color: #4a8fb7;
+    position: relative;
+    top: 8px;
+    font-size: 22px;
+}
+.promo-tip span b {
+    font-family: montserratregular;
+    font-weight: normal;
+}
+.promo-tip a.text-red {
+    text-transform: uppercase;
+    padding-top: 7px;
+    display: block;
+    color: #f65f68;
+}
+.live-modal iframe {
+    height: 28px;
 }
