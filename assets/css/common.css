@@ -210,7 +210,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .live-modal {
-    padding: 0 20px 15px; width: 100%;
+    padding: 0 20px 10px 20px;; width: 100%; position: relative;
 
 }
 
@@ -549,17 +549,23 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .promo-tip {
     background: #fbfbbd;
-    padding: 7px 20px 20px;
+    padding: 0x 20px 0 0;
     text-align: left;
     float: left;
     width: 100%;
     margin-top: 20px;
+    margin-bottom: 25px;
 }
+
+.promo-tip .red-bar{background: #fb6066; float: left; width: 15px; margin-right: 15px; min-height: 85px; padding-top:7%; }
+.promo-tip .red-bar span{ color: #fff; -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg); font-size: 11px; padding-top: 3px;}
 .promo-tip span {
     font-size: 12px;
     color: #475353;
     font-family: montserratlight;
-    line-height: 20px;
+    line-height: 20px; float: left; width:85%; padding-top:10px; 
 }
 .promo-tip span i.material-icons {
     color: #4a8fb7;
@@ -576,7 +582,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     padding-top: 7px;
     display: block;
     color: #f65f68;
+    font-family: montserratregular; font-size: 12px;
 }
 .live-modal iframe {
-    height: 28px;
+    height: 28px; float: left; margin-top: 25px;
 }
+.live-modal .footer-border{border: 1px solid #dfe3e4; position: absolute; bottom: 56px; left: -15px;  right: -15px;}
