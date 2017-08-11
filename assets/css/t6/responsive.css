@@ -39,7 +39,7 @@
     .landing-footer-outer .powered-by img { max-width: 21px; display: inline; vertical-align: middle; }
     .powered-by .poweredby-text{font-size: 13px !important; margin-left: 3px;}
     .t1-question-mid { margin: 0 auto; width: 100%; text-align: center; }
-
+    .t1-ques-head .help-text{font-size: 14px}
 
     .t1-slider-question { padding: 20px; width: 100%; }
     .t1-question-resultheading { font-size: 16px; margin-bottom: 0px; }
@@ -252,7 +252,7 @@
  
     .template-six .t1-question .filled-in[type="checkbox"]:not(:checked) + label.leadform-checkbox::after, .template-six .t1-question .filled-in[type="checkbox"]:checked + label.leadform-checkbox::after {    margin: 12px 15px !important;}
  
-    .t1-ques-component .input-section .input-outer span{top: 53px; line-height: 10px; font-size: 11px;}
+    .t1-ques-component .input-section .input-outer span{top: 57px;  font-size: 11px;}
     .t1-ques-component .input-section .input-outer{margin-bottom: 23px;}
     .t1-slider-question.slide-1 .lf-skip-btn{ margin-top: 0px; font-size: 14px;}
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ margin-bottom: 15px; font-size: 14px;}
@@ -899,9 +899,14 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 12px !important}
 }
 @media (min-width:0px) and (max-width:640px) {
+    .t1-slider-nav a i {    font-size: 24px;}
+    .custom-pager {    bottom: 40px;    left: 20px;    right: auto !important;    transform: translateX(0px);}
+.radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {    max-width: 150px;}
+    .t1-slider-nav a.next {    right: -10px;}
+    .t1-ques-component .input-section .input-outer span{top:48px !important;}
     .bGImage{height: auto; padding-top: 25%}
-        .result-branding .stickyfooter.lightSticky {    bottom: 15px;    right: 0px;    width: 100%;}
-        .landing-footer-outer .lightSticky {    bottom: 5px;    right: 0px;    width: 100%;}
+        .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
+        .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px}
@@ -910,7 +915,7 @@
     .w100.text-center .submit-checkbox-img , button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
     .graded-msgbox span{font-size: 12px;}
     .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
-    .t1-slider-nav{bottom: 30px;}
+    .t1-slider-nav{bottom: 30px; right: 15px}
     .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px}
     .graded-tick .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
     .graded-cross .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
@@ -950,4 +955,9 @@
     .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 3px; }
 
 
+}
+@media (max-width:359px){
+.radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {
+    max-width: 280px !important;
+}
 }
