@@ -1955,7 +1955,7 @@ label.control.graded-cross:after {
 }
 .range-slider .irs-single {
     border-radius: 14px;
-    padding: 1px 12px;
+    /*padding: 1px 12px;*/
     font-size: 12px;
 }
 .range-slider .irs-line {
@@ -1975,6 +1975,25 @@ label.control.graded-cross:after {
 .range-slider .irs-max {
     font-size: 12px;
 }
+.range-slider.char-count-slider .irs-single{font-size: 10px !important;top: -10px;}
+.range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{font-size: 10px !important;top: -10px !important;}
+.range-slider .irs-min, .irs-max{   
+     max-width: 75px;
+     float: left;
+     word-wrap: break-word;
+     white-space: normal;
+     z-index: 9;
+     padding: 1px 10px !important;
+}
+.range-slider .irs-single {
+    border-radius: 8px !important;
+    padding: 1px 10px !important;
+    max-width: 75px;
+    float: left;
+    word-wrap: break-word;
+    white-space: normal;
+    z-index: 9;
+    }
 /* Range Slider End */
 /* Result Section */
 

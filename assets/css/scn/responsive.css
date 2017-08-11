@@ -598,9 +598,9 @@
         margin-top: 15px !important;
     }
     .range-slider .irs-slider {
-        top: 24px;
-        width: 23px;
-        height: 23px;
+        top: 22px;
+        width: 25px;
+        height: 25px;
         z-index: 99 !important;
     }
     .result-branding .stickyfooter {
@@ -612,6 +612,16 @@
     .down-arrow-outer {
         display: block;
     }
+    .range-slider .irs-single {
+         border-radius: 5px !important;
+         padding: 1px 4px !important;
+         max-width: 65px !important;
+     }
+     .range-slider .irs-min, .range-slider .irs-max{
+         border-radius: 5px !important;
+         padding: 1px 4px !important;
+         max-width: 65px !important; 
+     }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
     .landing-page-mid .main-heading h1 {

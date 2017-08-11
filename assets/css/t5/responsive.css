@@ -648,6 +648,9 @@ Developer: Bhawna */
         padding: 10px 20px !important;
         font-size: 12px;
     }
+    .range-slider{padding-right: 15px;}
+    .range-slider .irs-single{max-width: 65px;padding: 1px 4px !important;border-radius: 5px !important;}
+   .range-slider .irs-min, .range-slider .irs-max{max-width: 65px;padding: 1px 4px !important;border-radius: 5px !important;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     .landing-page-header a img {

@@ -671,6 +671,16 @@
         padding: 7px 16px !important;
         font-size: 13px !important;
     }
+    .range-slider .irs-single {
+        border-radius: 5px !important;
+        padding: 1px 4px !important;
+        max-width: 65px !important;
+    }
+    .range-slider .irs-min, .range-slider .irs-max{
+        border-radius: 5px !important;
+        padding: 1px 4px !important;
+        max-width: 65px !important; 
+    }
 }
 @media (min-width: 150px) and (max-width: 500px) {
     .landing-page-mid .container-temp {
