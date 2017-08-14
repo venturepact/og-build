@@ -796,6 +796,14 @@
         min-height: 62px !important;
         max-height: 64px !important;
     }
+    .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {
+        font-size: 12px !important;
+        top: -10px !important;
+    }
+    .range-slider.char-count-slider .irs-single {
+        font-size: 12px !important;
+        top: -10px;
+    }
 }
 @media (min-width: 1920px) and (max-width: 1920px) {
     .page_2 .share-link ul li a {

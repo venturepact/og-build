@@ -70,10 +70,10 @@
     .page_2 .share-link {
         margin-top: 0px !important;
     }
-    .main-bg header .logo img {
+    /*.main-bg header .logo img {
         max-width: 130px !important;
         max-height: 45px !important;
-    }
+    }*/
     .powered-by span {
         float: none;
         margin-right: 4px;
@@ -143,9 +143,9 @@
         bottom: 0;
         padding: 20px;
     }
-    .landing-page-header .logo img {
+    /*.landing-page-header .logo img {
         max-width: 110px !important;
-    }
+    }*/
     .selectize-dropdown [data-selectable] {
         padding: 10px;
     }
@@ -399,14 +399,14 @@
     .result-full-section .input-section .input-outer span {
         margin-left: 0 !important;
     }
-    .main-bg header .logo {
+    /*.main-bg header .logo {
         padding: 28px !important;
         padding-top: 20px !important;
     }
     .main-bg header .logo img {
         max-width: 130px !important;
         max-height: 45px !important;
-    }
+    }*/
     .landing-page-mid {
         width: 100%;
         overflow: hidden;
@@ -612,16 +612,32 @@
     .down-arrow-outer {
         display: block;
     }
-    .range-slider .irs-single {
-         border-radius: 5px !important;
-         padding: 1px 4px !important;
-         max-width: 65px !important;
-     }
-     .range-slider .irs-min, .range-slider .irs-max{
-         border-radius: 5px !important;
-         padding: 1px 4px !important;
-         max-width: 65px !important; 
-     }
+    .range-slider.char-count-slider .irs-single {
+        padding: 1px 4px !important;
+        max-width: 65px !important;
+    }
+    .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{
+        padding: 1px 4px !important;
+        max-width: 65px !important; 
+    }
+    .range-slider .irs-slider {
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        z-index: 99 !important;
+    }
+    .questionnaire .logo a img.vert {
+        max-width: 45px;
+        max-height: 50px;
+    }
+    .questionnaire .logo a img.horz {
+        max-width: 100px;
+        max-height: 30px;
+    }
+    .main-bg header .logo {
+        padding: 28px!important;
+        padding-top: 20px!important;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
     .landing-page-mid .main-heading h1 {
@@ -646,10 +662,10 @@
         font-size: 16px;
         line-height: 22px;
     }
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-width: 180px;
         max-height: 60px;
-    }
+    }*/
 }
 @media (max-width: 1023px) {
     .page_2 .mid-width p {
@@ -665,7 +681,7 @@
         font-size: 42px;
         line-height: 46px;
     }
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-width: 170px;
         max-height: 70px;
     }
@@ -680,14 +696,14 @@
     .res-header .logo a img {
         max-width: 150px;
         max-height: 70px;
-    }
+    }*/
     .page_0 .input-outer i {
         top: 18px;
         font-size: 18px;
     }
 }
 @media (min-width: 1680px) {
-    .main-bg header .logo img {
+    /*.main-bg header .logo img {
         max-height: 70px !important;
         max-width: 180px !important;
     }
@@ -696,7 +712,7 @@
     }
     .page-logo img {
         max-height: 70px !important;
-    }
+    }*/
     .landing-page-mid {
         padding: 7% 8%;
     }
@@ -757,14 +773,22 @@
     .overlay-outer {
         min-height: 100vh;
     }
+    .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {
+        font-size: 12px !important;
+        top: -10px !important;
+    }
+    .range-slider.char-count-slider .irs-single {
+        font-size: 12px !important;
+        top: -10px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .main-bg {
         min-height: 500px;
     }
-    .main-bg header .logo img {
+    /*.main-bg header .logo img {
         max-width: 130px !important;
-    }
+    }*/
     .landing-page-mid .main-heading,
     .landing-page-mid .main-heading h1 {
         font-size: 40px;
@@ -779,9 +803,9 @@
         font-size: 13px;
         margin-top: 16px;
     }
-    .landing-page-header .logo img {
+    /*.landing-page-header .logo img {
         max-width: 110px !important;
-    }
+    }*/
     .questions .question-head {
         font-size: 16px;
         line-height: 22px;
@@ -851,5 +875,14 @@
     }
     .sound-cloud-new .page_2 [type="checkbox"] + label.leadform-checkbox {
         margin-top: 20px;
+    }
+    /*logo styling*/
+    .questionnaire .logo a img.vert {
+        max-width: 50px;
+        max-height: 55px;
+    }
+    .questionnaire .logo a img.horz {
+        max-width: 120px;
+        max-height: 35px;
     }
 }
