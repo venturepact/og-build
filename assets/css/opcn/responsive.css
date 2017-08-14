@@ -1339,6 +1339,18 @@
         max-width: 65px;
         padding: 1px 4px !important;
     }
+
+    .structure-right-align .control.control--checkbox span{ padding-right:28px;}
+    .structure-right-align .submit-checkbox-img{ right: 16px;}
+    .one-page-card-new .structure-right-align .t1-result-main [type="checkbox"].filled-in:not(:checked) + label:after{ right:3px; left: initial;}
+    .one-page-card-new .structure-right-align .t1-result-main  [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{ right:3px; left: initial;}
+    .structure-right-align .landing-page-mid { margin-right: 30px !important; }
+    .structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 100% !important;}
+    .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 0px; }
+    .structure-right-align .t1-slider-nav a.prev { right: 25%; bottom: -60px !important; top: inherit;  }
+    .structure-right-align .t1-slider-nav a.next { left: 25%; bottom: -60px; top: inherit;  }
+    .structure-right-align .t1-slider-nav a.go { left: 25%; bottom: 20px; top: inherit; }
+
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -1675,7 +1687,10 @@
         max-width: 450px;
     }
 }
-@media (min-width: 640px) and (max-width: 767px) {} @media (min-width: 640px) and (max-width: 767px) and (orientation: portrait) {} @media (min-width: 640px) and (max-width: 767px) and (orientation: landscape) {} @media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 767px) {}
+ @media (min-width: 640px) and (max-width: 767px) and (orientation: portrait) {}
+  @media (min-width: 640px) and (max-width: 767px) and (orientation: landscape) {}
+ @media (min-width: 768px) and (max-width: 1024px) {
     .recom-section .t1-social-links {
         margin: 0px !important
     }
@@ -2314,6 +2329,11 @@
     .one-page-card-new .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
         margin: 13px !important;
     }
+
+    .structure-right-align .landing-page-mid [type="checkbox"].filled-in:checked + label.leadform-checkbox:before { right: 10px; }
+    .structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 100% !important;}
+    .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 3px; }
+
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

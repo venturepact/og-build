@@ -3596,9 +3596,9 @@ input[type=number] {
     left: 16px;
     bottom: 10px
 }
-.selectize-control.single .selectize-input input {
+/*.selectize-control.single .selectize-input input {
     visibility: hidden;
-}
+}*/
 .selectize-dropdown-content {
     max-height: 18vh;
 }
@@ -5452,7 +5452,6 @@ visuals.visual-outr span.graph-title {
     height: auto;
     font-size: 16px;
     margin-left: 0;
-    visibility: hidden;
 }
 .t1-landing .t1-landing-inner .selectize-input .item {
     font-size: 16px;
@@ -5506,7 +5505,6 @@ visuals.visual-outr span.graph-title {
     height: auto;
     font-size: 16px;
     margin-left: 0;
-    visibility: hidden;
 }
 .t1-result-main .selectize-input .item {
     font-size: 16px;
@@ -5514,7 +5512,7 @@ visuals.visual-outr span.graph-title {
     float: left;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 18px;
+    max-height: 18px; width: 100%;
 }
 .t1-result-main .t1-result-top.recommendation-outer .selectize-input {
     padding: 3px 35px 6px 0px;
@@ -5847,3 +5845,66 @@ span.abhi {
 .pic-selector span.t6 {
     display: none !important;
 }
+
+
+
+/*font based structure css*/
+.structure-right-align .t1-landing{ direction: rtl;}
+.structure-right-align .landing-page-header { right: 60px; left: initial;}
+.structure-right-align .landing-page-mid{ margin-right: 60px; text-align: right;}
+.structure-right-align .landing-page-mid button{ float: right; margin-right:0;}
+.structure-right-align .stickyfooter{ text-align: left;}
+.structure-right-align .t1-ques-head{ text-align: right; direction:rtl;}
+.structure-right-align .t1-landing-inner .input-field{ direction: rtl; width:100%;}
+.structure-right-align .t1-question .selectize-control {text-align: right}
+.structure-right-align .selectize-control.single .selectize-input:after {left: 15px; right: initial;}
+.structure-right-align .selectize-input {padding: 18px 15px 18px 35px;}
+.structure-right-align .selectize-dropdown .option{text-align: right;}
+.structure-right-align .errorMessage{text-align: right;}
+.structure-right-align .control.control--checkbox span{ float: right;}
+.structure-right-align [type="checkbox"].filled-in:not(:checked) + label:after{ right: 0; left: initial;}
+.structure-right-align [type="checkbox"].filled-in:checked + label:after{ right: 0; left: initial;}
+.structure-right-align [type="checkbox"].filled-in:checked + label:before{ right: 28px; left: initial; }
+.structure-right-align .submit-checkbox-img{ float: right; left: initial; right: -7px;}
+.structure-right-align .landing-page-mid .input-field label{ text-align: right; padding-right: 35px;}
+.structure-right-align .landing-page-mid [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{ right: 12px; left:initial}
+.structure-right-align .t1-landing .t1-landing-inner .selectize-input .item{ float: right;}
+.structure-right-align .t1-landing-leadform .input-outer i{ left: initial !important;}
+.structure-right-align .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ padding-right: 35px; text-align: right;}
+.structure-right-align .landing-page-mid leadform .input-section .input-outer{ margin-left: 10px; margin-right: 0;}
+.structure-right-align .landing-page-mid leadform .input-section .input-outer span{text-align: right;}
+.structure-right-align .landing-page-mid leadform .input-section {margin-right: -6px;}
+.one-page-card-new .structure-right-align .landing-page-mid leadform  [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, .one-page-card-new .structure-right-align .landing-page-mid leadform  [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{ margin:0 0 0 8px !important;}
+.structure-right-align .control__indicator.check-set{ right: 17px !important; left:initial !important;}
+.structure-right-align .pic-selector label.control .text-overlay span{ right:2px;}
+.structure-right-align .done-icon { right: initial; left: 12px;}
+.structure-right-align .control.control--radio span{ float: right;}
+.one-page-card-new .structure-right-align [type="radio"]:not(:checked) + label, .one-page-card-new .structure-right-align [type="radio"]:checked + label{ padding-right: 56px; padding-left:10px;}
+.one-page-card-new .structure-right-align  [type="radio"] + label:before, .one-page-card-new .structure-right-align [type="radio"] + label:after{ right:0; left: initial;}
+.structure-right-align .control--radio .control__indicator.icon-set{ left: initial; right: 16px;}
+.structure-right-align .t1-question .question-components .leaded-form-c .section-head .pull-left{ float: none !important;}
+.structure-right-align .t1-ques-component .input-section .input-outer .section-head{text-align: right;}
+.structure-right-align .t1-question .leaded-form-c .input-outer input{ padding-right: 35px; padding-left: 10px;}
+.structure-right-align .t1-ques-component .input-outer input{text-align: right;}
+.structure-right-align .t1-question .question-components .input-outer i{ right:10px; left: initial;}
+.structure-right-align .t1-ques-component .input-section .input-outer span{text-align: right;}
+.one-page-card-new .structure-right-align .t1-question [type="checkbox"] + label.leadform-checkbox{padding: 0 52px 0 10px !important; text-align: right;}
+.one-page-card-new .structure-right-align .t1-slider-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{ right: 18px; left: initial;}
+.structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 96.5% !important;}
+.structure-right-align .w100.text-center .submit-checkbox-img{ float: right;}
+.structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{ margin-top: -17px; padding-bottom: 24px;}
+.template-section .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{ margin-top: -16px; padding-bottom: 24px;}
+.structure-right-align .t1-slider-nav a.next{ right:initial; left:-100px;}
+.structure-right-align .t1-slider-nav a.prev {left:initial; right:-100px;}
+.structure-right-align .t1-slider-nav a.next i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
+.structure-right-align .t1-slider-nav a.next i.done{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg);  -o-transform: rotate(0deg); transform: rotate(0deg);}
+.structure-right-align .t1-slider-nav a.prev i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
+.structure-right-align .t1-slider-pagination{ direction: rtl !important;}
+
+/*leadeform dropdown Placeholder setting css*/
+.one-page-card-new .page_0.t1-landing .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
+.one-page-card-new .page_0.t1-landing .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
+.t1-question .leaded-form-c .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
+.t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
+.t1-result-leadform .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
+.t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
