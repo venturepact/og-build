@@ -2289,8 +2289,32 @@ visuals .t1-result-inner-left #og-table-excel {
     white-space: normal;
     z-index: 9;
 }
-.range-slider.char-count-slider .irs-single{font-size: 10px !important;top: -10px;}
-.range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{font-size: 10px !important;top: -10px !important;}
+.range-slider.char-count-slider .irs-single{
+    font-size: 10px !important;
+    top: -10px;
+}
+.range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{
+    font-size: 10px !important;
+    top: -10px !important;
+}
+.range-slider.char-count-slider .irs-single {
+    padding: 1px 4px !important;
+    border-radius: 3px !important;
+    max-width: 75px;
+    float: left;
+    word-wrap: break-word;
+    white-space: normal;
+    z-index: 9;
+}
+.range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {
+    max-width: 75px;
+    float: left;
+    word-wrap: break-word;
+    white-space: normal;
+    z-index: 9;
+    padding: 1px 4px !important;
+    border-radius: 3px !important;
+}
 .range-slider .irs-min, .range-slider .irs-max{
      max-width: 75px;
      float: left;
@@ -5830,6 +5854,7 @@ input {
         transform: scale(1.0);
     }
 }
+.Result .lightSticky{ display: none;}
 span.abhi {
     display: none;
 }
