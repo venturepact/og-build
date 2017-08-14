@@ -205,7 +205,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .icon-play-next i.material-icons {
     font-size: 38px;
-    color: #fb6066 !important;
+    color: #2ebf27 !important;
     margin-top: 10px
 }
 
@@ -433,6 +433,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t5 img{ float: left; margin-left: 10px;}
 .left-button-outer-t5 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer-t5 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t6{ position: absolute;top: 83%;width: 450px;left: 20px;}
+.left-button-outer-t6 img{ float: left; margin-left: 10px;}
+.left-button-outer-t6 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t6 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
 .add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
 .add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
 .right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
@@ -464,6 +470,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 { top: 63.8%;}
 .left-button-outer-t4 {top: 56.5%;}
 .left-button-outer-t5 {top: 59.5%;}
+.left-button-outer-t6{top: 57.8%;}
 
 }
 
@@ -473,6 +480,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     .left-button-outer-t3 {top: 85%;}
     .left-button-outer-t4 {top: 66.5%;}
     .left-button-outer-t5 {top: 70.5%;}
+    .left-button-outer-t6{top: 85.8%;}
 
 }
 
@@ -483,6 +491,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t2 {top: 76.5%;}
 .left-button-outer-t3 { top: 82.8%;}
 .left-button-outer-t4 {top: 56.5%;}
+.left-button-outer-t6{top: 57.8%;}
 
 }
 
@@ -494,6 +503,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 {top: 74.5%; }
 .left-button-outer-t4 {top: 56.5%;}
 .left-button-outer-t5 {top: 58.5%;}
+.left-button-outer-t6 {top: 57.2%;}
 
 }
 @media (min-width: 1681px) and (max-width: 1920px)  {
@@ -504,6 +514,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 {position: absolute;top: 63.5%; width: 450px; left: 20px;}
 .left-button-outer-t4{ position: absolute;top: 55.5%;width: 450px;left: 20px;}
 .left-button-outer-t5 {top: 57.5%;}
+.left-button-outer-t6 {top: 56.5%;}
 
 }
 
@@ -515,6 +526,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 { top: 91.5%;}
 .left-button-outer-t5 {top: 85.5%;}
 
+
 }
 @media (min-width: 1367px) and (max-width: 1419px){
 
@@ -522,7 +534,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer {top: 73%;}
 .left-button-outer-t2 {top: 79%;}
 .left-button-outer-t3 { top: 84.5%;}
-
+.left-button-outer-t6 {top: 71.5%;}
 }
 
 @media (max-width: 1280px) {
@@ -533,6 +545,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 { top: 86%;}
 .left-button-outer-t4 {top: 57.5%;}
 .left-button-outer-t5 { top: 79.5%;}
+.left-button-outer-t6 { top: 78%;}
+
+}
+
+@media (max-width: 1024px) {
+.left-button-outer-t6 {top: 71.5%;}
 
 }
 
@@ -557,7 +575,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     margin-bottom: 25px;
 }
 
-.promo-tip .red-bar{background: #fb6066; float: left; width: 15px; margin-right: 15px; min-height: 85px; padding-top: 5.2%;  padding-left: 2px; }
+.promo-tip .red-bar{float: left; width: 50px; margin-right: 15px; min-height: 85px; padding-top: 4.5%;  padding-left: 14px; }
+.promo-tip .red-bar i{ font-size: 40px;}
 .promo-tip .red-bar span{ color: #fff; font-size: 11px; padding-top: 3px; text-align: center; line-height: 12px;}
 .promo-tip span {
     font-size: 12px;
