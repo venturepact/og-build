@@ -32,6 +32,45 @@
        url(../../fonts/materialIcons-Regular.woff) format('woff'),
        url(../../fonts/materialIcons-Regular.ttf) format('truetype');
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: montserratregular;
+   font-style: normal;
+   font-weight: 400;
+   src: url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.eot) format("embedded-opentype"), 
+   url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.woff2) format("woff2"),
+   url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.woff) format("woff"), 
+   url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.ttf) format("truetype")
+}
+
+@font-face {
+    font-family: montserratbold;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.eot) format("embedded-opentype"), 
+    url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.woff2) format("woff2"), 
+    url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.woff) format("woff"), 
+    url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.ttf) format("truetype")
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/MaterialIcons-Regular.eot);
+  src: local('Material Icons'),
+       local('materialIcons-Regular'),
+       url(../../fonts/materialIcons-Regular.woff2) format('woff2'),
+       url(../../fonts/materialIcons-Regular.woff) format('woff'),
+       url(../../fonts/materialIcons-Regular.ttf) format('truetype');
+}
+.template-six [type=checkbox]:checked, .template-six [type=checkbox]:not(:checked), .template-six [type=radio]:checked, .template-six [type=radio]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
 .material-icons {  font-family: 'Material Icons';  font-weight: normal;  font-style: normal;  display: inline-block;  line-height: 1;  text-transform: none;  letter-spacing: normal;  word-wrap: normal;  white-space: nowrap;  direction: ltr;  -webkit-font-smoothing: antialiased;  text-rendering: optimizeLegibility;  -moz-osx-font-smoothing: grayscale;  font-feature-settings: 'liga';}
 body {    margin: 0;    padding: 0;    font-size: 14px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;   color: #666e78;    overflow-x: hidden; }
 a, input, textarea, button:focus{outline: none;}
@@ -54,7 +93,7 @@ ul,li{ list-style: none;}
 .main-heading h1{max-width: 65%;  margin: 10px auto !important; }
 .sub-heading h2{max-width: 65%;  margin: 0px auto 0px !important}
 .main-heading ,  .main-heading h1{    font-size:42px;    margin-bottom: 20px;    line-height: 1.1;    text-transform: uppercase;}
-.main-heading p{    font-size: 42px;    line-height: 36px;}
+.main-heading p{    font-size: 42px;    line-height: 1.1;}
 .sub-heading{    font-size: 20px;    margin-bottom: 25px;    line-height: normal;    width: 100%;}
 h2.sub-heading p {    margin-bottom: 0 !important;}
 .sub-heading h2{    font-size: 18px;    margin-bottom: 25px;    line-height: normal;    width: 100%;    margin-top: 0px;}
@@ -859,31 +898,6 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
 .range-slider.char-count-slider .irs-single{font-size: 10px !important;top: -10px;}
 .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{font-size: 10px !important;top: -10px !important;}
 .range-slider .slider-buttom-outer .submit-checkbox-img{ top: 20px; position: relative}
-.range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{
-    max-width: 75px;
-    float: left;
-    word-wrap: break-word;
-    white-space: normal;
-    z-index: 9;
-    padding: 1px 4px !important;
-    border-radius: 3px !important;
-}
-.range-slider.char-count-slider .irs-single {
-    padding: 1px 4px !important;
-
-    }
-.range-slider .slider-buttom-outer{float: left; width: 100%; position: relative; min-height: 62px;}
-.range-slider .slider-buttom-outer .submit-checkbox-img{ top: 20px; position: relative}
-.range-slider .irs-min, .range-slider .irs-max{
-
-    max-width: 75px;
-    float: left;
-    word-wrap: break-word;
-    white-space: normal;
-    z-index: 9;
-    border-radius: 3px !important;        
-}
-.range-slider.char-count-slider .irs-single{font-size: 10px !important;top: -10px;}
 .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{
     max-width: 75px;
     float: left;
@@ -2673,7 +2687,7 @@ visuals.visual-outr span.graph-title {
 
 /*leadgen selectize css  */
 
-.t1-landing .t1-landing-inner .selectize-control{ float: left; width:100%;}
+.t1-landing .t1-landing-inner .selectize-control{ float: left; width:100%; margin-bottom: 15px;} 
 
 .t1-landing .t1-landing-inner .selectize-dropdown.single { background: none;box-shadow: none;width: 100% !important; float: left; text-align: left; font-size: 16px !important;  }
 .t1-landing .t1-landing-inner .selectize-control.single .selectize-input input{ height: auto; font-size: 16px; margin-left: 0; visibility: hidden;}
@@ -3178,4 +3192,6 @@ button.button_textfield.submit-textbox-btn {
 .checkbox-outer-base label.control{z-index: 10;}
 .landing-page-mid .container-temp .input-section{margin-top: 20px;}
 /* .t1-question .ripple-dark.checkbox-outer-base.active [type="checkbox"] + label.control::before{display: none} */
-input[type=checkbox], input[type=radio]{position: absolute; left: -99999px; opacity: 0;}
+.t1-slider-nav.slidr3 {    right: 60px;}
+.t1-slider-nav.slidr3 a.prev{left:0px}
+.selectize-input > input{visibility: visible !important; width:100%  !important}

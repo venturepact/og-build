@@ -315,7 +315,7 @@
     /*experian css*/
     /*logo*/
     
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-width: 130px;
         max-height: 60px;
     }
@@ -326,7 +326,7 @@
     .res-header a img {
         max-width: 140px;
         max-height: 40px;
-    }
+    }*/
     .landing-page-header .logo {
         width: 100%;
         float: left;
@@ -687,12 +687,12 @@
     }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-height: 40px;
     }
     .ques-header a img {
         max-height: 36px !important;
-    }
+    }*/
     .t1-landing-inner {
         padding: 0 20px;
         padding-top: 60px;
@@ -869,14 +869,14 @@
     }
 }
 @media (min-width: 0px) and (max-width: 440px) and (orientation: landscape) {} @media (min-width: 0px) and (max-width: 420px) and (orientation: portrait) {} @media (min-width: 768px) and (max-width: 1023px) {
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-width: 150px;
         max-height: 60px;
     }
     .ques-header .logo a img {
         max-height: 40px !important;
         max-width: 140px !important;
-    }
+    }*/
     .mid-width {
         font-size: 16px;
     }
@@ -1201,9 +1201,9 @@
         top: 5px;
         padding-bottom: 100%;
     }
-    .landing-page-header a img {
+    /*.landing-page-header a img {
         max-height: 70px;
-    }
+    }*/
     .result-branding .powered-by span {
         margin-top: 6px;
     }
