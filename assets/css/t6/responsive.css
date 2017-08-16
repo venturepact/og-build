@@ -907,7 +907,7 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 12px !important}
 }
 @media (min-width:0px) and (max-width:640px) {
-
+        .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: absolute !important;    padding: 6px 10px;    font-size: 12px;}
     .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 0}
     .t1-ques-component input{padding: 10px 15px; min-height: 42px; margin-bottom: 15px;}
     .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{margin-top: 0px}
@@ -948,6 +948,7 @@
     .t1-slider { padding-bottom: 0px;  margin-top: 0px;}
     .selectize-input .item {    font-size: 14px;}
     .template-six .landing-page-mid .input-field label{margin-top: 0px;}
+    /* .landing-page-mid leadform .input-section .input-outer{min-height: 80px;} */
     .template-six .landing-page-mid .input-field label{font-size: 14px !important; padding-top: 3px !important;}
     .input-outer i {    position: absolute;      top: 20px;    font-size: 16px;}
     .selectize-control.single .selectize-input {    max-height: 42px;    padding: 12px 35px 12px 10px;}
@@ -956,8 +957,10 @@
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
     .ripple-dark.checkbox-outer {    padding: 0 20px;    min-height: 150px;}
     .t1-question .ripple-dark label.control {    width: 100px;    height: 100px;}
-    .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
-    .main-heading h1 , .sub-heading h2{max-width:100% !important} 
+    /* .control.control--checkbox span {    line-height: 18px;    padding-top: 110px;    font-size: 13px;    margin: 0;} */
+     /* .landing-page-mid leadform .input-section .input-outer span { top:72px } */
+      .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
+      .main-heading h1 , .sub-heading h2{max-width:100% !important} 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
 }
 
