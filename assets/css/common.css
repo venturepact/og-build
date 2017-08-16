@@ -616,8 +616,19 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 /*.hello-bar-outer{ float: left; width:100%; min-height: 30px; color: #fff; background: #f65f68; padding: 5px;}*/
 .hello-bar-outer{ background: #f87b80; color: #fff; float: left; width: 100%; padding: 8px 15px; font-family: montserratlight; font-size: 12px; box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2); height: 34px;}
 .hello-bar-outer a{background: #FFFFFF; color: #e97252; text-decoration: none; font-size: 9px;  padding: 3px 4px; text-transform: uppercase;  border-radius: 3px; margin-left: 8px;}
+.hello-bar-outer span{display: inline-flex;}
 .builder-parent { top:90px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
 .no-analytics-overlay.builder-parent{ top:70px;} 
 .builder-parent1 .tab-pane { padding-top:30px;}
+.builder-parent1 .config-template-tabs{ padding-top:50px;}
+.builder-parent1 .email-tabs{ top:127px;}
+.builder-parent1 .new-email-outr.my-emailsetting{ padding-top:0px;}
+.builder-parent1 .email-parent{ padding-top:50px;}
+.builder-parent1 .embedd-parent{ padding-top:50px;}
+.builder-parent1 .launch-popup-parent{ padding-top:50px;}
+.builder-parent1 .share-calculator-parent{ padding-top:50px;}
+.builder-parent1 .new-js-outr{ padding-top: 50px;}
+.builder-parent1 .prom-checklist{padding-top:50px !important;}
+.builder-parent1 .no-analytics-overlay{top:71px;}
