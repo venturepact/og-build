@@ -130,13 +130,13 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-question-resultheading{    width: 100%;    text-align: center;    font-size: 20px;    margin-bottom: 0px;}
 .t1-question-liveresult{    width: 100%;    text-align: center;    font-size: 30px;    margin-bottom: 0px;}
 .t1-question-slider{    margin: 0 auto;    width: 70%;  }
-.t1-slider{      float: left;    width: 100%;    margin-top: 25px;}
+.t1-slider{      float: left;    width: 100%;    margin-top: 0px;}
 .t1-slider-nav a{    position: relative;    width: 40px;    height: 40px;      text-align: center;    display: table-cell;    vertical-align: middle;    cursor: pointer; border-radius: 4px; outline: none;}
 .a-disable , .lead-done-button{    pointer-events: none;    opacity:0.3;}
 .t1-slider-nav a i{    font-size: 26px;    }
-.t1-slider-nav {    position: absolute;    bottom: 0px;    right:30px;}
- .t1-slider-nav a.prev{    left: -20px;}
-.t1-slider-nav a.next{    right: -20px;} 
+.t1-slider-nav {    position: absolute;    bottom: 0px;    right:auto !important; left: 50%; transform: translateX(-50%);}
+ /* .t1-slider-nav a.prev{    left: -20px;}
+.t1-slider-nav a.next{    right: -20px;}  */
 .t1-slider-nav a.go{    right: -165px;}
 .t1-slider-pagination{    position: absolute;display: none;    float: left;    width: 100%;    top: 0px;    height: 5px;}
 .t1-slider-pagination a{    display: inline-block;    height: 10px;    position: relative;    top: -10px;    width: auto;    padding-left: 10px;    padding-right: 10px;    border-radius: 0;    margin-left: 0;    margin-right: 0;    border: none;    cursor: default;}
@@ -1182,11 +1182,12 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
 .t1-slider-question.slide-1 .lf-skip-btn{
     background: none;
     border: none;
-    float: right;
+    float: none;
     text-transform: uppercase;
     color: #ccc;
     font-size: 16px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 .t1-slider-question.slide-1 .lf-skip-btn:hover{
     color: #888;
@@ -1792,7 +1793,7 @@ float: left; background: #f6f8f9; font-weight: normal !important;font-family: in
 
 #build .stickyfooter { position: absolute; }
 .stickyfooter { position: absolute;    right: 0px;    bottom: 13px;  background: #fff; padding: 7px 20px; display: inline-block; text-align: right; z-index: 999; }
-.lightSticky {    position: absolute;    left: 0px; right: auto;    bottom: 8px;}
+.lightSticky {    position: absolute;    right: 0px; left: auto;    bottom: 8px;}
 .create-link { float: left; width: auto; border: 2px solid #DA4146; color: #DA4146; padding: 8px 10px; border-radius: 5px; text-transform: uppercase; font-size: 10px; font-family: 'montserratbold'; line-height: initial; -webkit-transition: border-color 0.3s, background-color 0.3s; transition: border-color 0.3s, background-color 0.3s; -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);     white-space: nowrap;}
 .create-link:hover, .create-link:focus, .create-link:focus { text-decoration: none; text-decoration: none;     border-color: #DA4146;    background-color: #DA4146;}
 .col1 { flex: 1 1 0; }
@@ -3122,6 +3123,7 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
     margin-top: 8px;
      -webkit-animation: submitMove 300ms; 
     animation: submitMove 300ms;
+    text-transform: uppercase;
 }
 .question-components .dropdown-set {
     position: relative;
@@ -3151,14 +3153,14 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
 
 .result-branding .stickyfooter.lightSticky {
     bottom: 25px;
-    left: 10px;
-    right: auto;
+    right: 10px;
+    left: auto;
 }
 .custom-pager {
     position: absolute;
-    bottom: 15px;
+    bottom: 12px;
     left: 50%;
-    font-size: 14px;
+    font-size: 16px;
     transform: translateX(-50%);
 }
 span.current::after {
@@ -3190,15 +3192,16 @@ button.button_textfield.submit-textbox-btn {
 .checkbox-outer-base label.control{z-index: 10;}
 .landing-page-mid .container-temp .input-section{margin-top: 20px;}
 /* .t1-question .ripple-dark.checkbox-outer-base.active [type="checkbox"] + label.control::before{display: none} */
-.t1-slider-nav.slidr3 {    right: 60px;}
+
 .t1-slider-nav.slidr3 a.prev{left:0px}
 .selectize-input > input{visibility: visible !important; width:100%  !important}
-.t1-slider-nav.slidr4{right: 20px;}
+.t1-slider-nav.slidr4 , .t1-slider-nav.slidr2 , .t1-slider-nav.lead-done-button{  margin-left: 50px;}
+.t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: -50px;}
 .t1-slider-nav.slidr4 a.next{right: 0;}
 .no-bgImage .landing-page-mid > .bGImage {
     display: none !important;
 }
-.radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon::after , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.radio-icon::after {
+.radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon::after , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio::after , .checkbox-outer.ripple-dark.active label.control.control--checkbox::after  ,  .pic-selector.ripple-dark.active label.control.control--checkbox::after {
     border: 2px solid transparent ;
     content: "";
     left: 0;
@@ -3214,3 +3217,13 @@ button.button_textfield.submit-textbox-btn {
 .checkbox-outer-base button.submit-checkbox-img.ripple-light {
     position: absolute !important;
 }
+.radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-cross::after 
+, .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-cross::after 
+, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-cross::after  
+,  .pic-selector.ripple-dark.active label.control.control--checkbox.graded-cross::after
+,  .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-tick::after 
+, .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-tick::after 
+, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-tick::after  
+,  .pic-selector.ripple-dark.active label.control.control--checkbox.graded-tick::after{display: none !important}
+
+.liveresult-outr{position: absolute; right: 0; top: 0; padding: 15px;}
