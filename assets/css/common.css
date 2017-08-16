@@ -461,6 +461,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .top-outer-help .text{position: absolute;top: 85px; right:30px;}
 
 
+.intro-overlay.builder-parent .top-outer{top: 49px;}
+.intro-overlay.builder-parent .top-outer-help{top: 49px;}
+.intro-overlay.builder-parent .right-button-outer{top: 90px;}
 
 @media (min-width: 1420px) and (max-width: 1440px)  {
 
@@ -521,7 +524,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 @media (max-width: 1366px) {
 
 .right-button-outer { right: 22%;}
-.left-button-outer {top: 85%;}
+.left-button-outer {top: 88%;}
 .left-button-outer-t2 {top: 80%;}
 .left-button-outer-t3 { top: 91.5%;}
 .left-button-outer-t5 {top: 85.5%;}
@@ -610,7 +613,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .like-button-outer .small-sec:nth-child(2){ width: 15%; float: left; text-align: right;}
 
 
-.hello-bar-outer{ float: left; width:100%; min-height: 30px; color: #fff; background: #f65f68; padding: 5px;}
+/*.hello-bar-outer{ float: left; width:100%; min-height: 30px; color: #fff; background: #f65f68; padding: 5px;}*/
+.hello-bar-outer{ background: #f87b80; color: #fff; float: left; width: 100%; padding: 8px 15px; font-family: montserratlight; font-size: 12px; box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2); height: 34px;}
+.hello-bar-outer a{background: #FFFFFF; color: #e97252; text-decoration: none; font-size: 9px;  padding: 3px 4px; text-transform: uppercase;  border-radius: 3px; margin-left: 8px;}
 .builder-parent { top:90px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
+.no-analytics-overlay.builder-parent{ top:70px;} 
+.builder-parent1 .tab-pane { padding-top:30px;}
