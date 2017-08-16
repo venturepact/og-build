@@ -1012,13 +1012,16 @@
         font-size: 12px;
     }
     .logo-resizing.v-padding {
-        padding-top: 80px !important;
+        padding-top: 90px !important;
       }
-      .logo-resizing.h-padding {
+    .logo-resizing.h-padding {
         padding-top: 80px !important;
-       }
-       .t1-question .logo-resizing.h-padding {
+    }
+    .t1-question .logo-resizing.h-padding {
         padding-top: 76px !important;
+    }
+    .t1-question .logo-resizing.v-padding {
+        padding-top: 80px !important;
     }
 }
 
@@ -1685,13 +1688,16 @@
         font-size: 12px;
     }
     .logo-resizing.v-padding {
-        padding-top: 95px !important;
+        padding-top: 110px !important;
     }
     .logo-resizing.h-padding {
         padding-top: 105px !important;
     }
     .t1-question .logo-resizing.h-padding {
         padding-top: 95px !important;
+    }
+    .t1-question .logo-resizing.v-padding {
+        padding-top: 100px !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {

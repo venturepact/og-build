@@ -274,13 +274,13 @@
         padding-top: 80px !important;
     }
     .logo-resizing.v-padding {
-		padding-top: 80px !important;
+		padding-top: 85px !important;
 	}
- .t1-question .logo-resizing.h-padding {
+    .t1-question .logo-resizing.h-padding {
         padding-top: 70px !important;
     }
     .t1-question .logo-resizing.v-padding {
-        padding-top: 70px !important;
+        padding-top: 75px !important;
     }
 }
 @media (min-width:480px) and (max-width:767px) {
@@ -501,14 +501,12 @@
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{ width: 95%; padding-bottom: 10px; padding-top: 5px;margin: 0 auto;}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table thead tr th{ padding:12px !important; }
     .t1-landing .t1-landing-inner .selectize-input .item{ font-size: 14px !important;}
-
      .logo-resizing.h-padding {
         padding-top: 80px !important;
     }
     .logo-resizing.v-padding {
-		padding-top: 80px !important;
+		padding-top: 85px !important;
 	}
-
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait) {
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
@@ -639,7 +637,7 @@
     .recom-section .leadform-outer .container-temp .prime-action{ width: 96%;}
     .t1-landing-leadform select { margin-bottom: 15px;}
     .t1-result-leadform select { padding: 9px !important;}
-
+    /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
 }
 
 @media (min-width:1367px) and (max-width:1920px){
@@ -655,11 +653,15 @@
 
 }
 
+
+
+
 @media (min-width:880px) and (max-width:900px) and (orientation:landscape) {
     .main-heading ,  .main-heading h1{ font-size: 42px; line-height: 48px;}
     .main-heading p{ font-size: 42px; line-height: 48px;}
 }
 @media (min-width:641px) and (max-width:1024px) {
+    .img-graded-box i{font-size: 16px;}
      .t1-question .ripple-dark label.control{width:120px;height: 120px; padding: 0 !important;}
      .graded-tick .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
        .graded-cross .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
@@ -769,6 +771,7 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 12px !important}
 }
 @media (min-width:0px) and (max-width:640px) {
+    .img-graded-box i{font-size: 14px}
     .t1-slider-nav.slidr4 , .t1-slider-nav.slidr2 , .t1-slider-nav.lead-done-button{  margin-left: 0px; left: auto !important; right: 0px !important;}
     .t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: 0px; right: auto !important; left: 0px !important;} 
     .checkbox-outer button.submit-checkbox-img.ripple-light, .submit-checkbox-outr button.submit-checkbox.ripple-light {    padding: 6px 10px;    font-size: 12px;    line-height: 1.5;}   

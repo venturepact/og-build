@@ -2974,31 +2974,33 @@ input {    -webkit-transform: translate3d(0,0,0);}
 .graded-cross .img-graded-box  {
     width: 32px;
     height: 32px;
-    display: block;
+    display: table;
     position: absolute;
     border-radius: 50%;
     background: #ff3b3b;
-    padding: 8px 0;
+    padding: 4px 0;
     top: 115px;
     right: 10px;
     color: #fff;
+    text-align: center;
     box-shadow: 0px 1px 8px rgba(0,0,0,0.8);
 }
 .graded-tick .img-graded-box {
     width: 32px;
     height: 32px;
-    display: block;
+    display: table;
     position: absolute;
     border-radius: 50%;
     background: #00a651;
-    padding: 8px 0;
+    padding: 4px 0;
     top: 115px;
     right: 10px;
+    text-align: center;
      color: #fff;
     box-shadow: 0px 1px 8px rgba(0,0,0,0.8);
 }
 .graded-cross .img-graded-box .img-graded-tick , .graded-tick .img-graded-box .img-graded-cross{display: none}
-.graded-tick .img-graded-box .img-graded-tick , .graded-cross .img-graded-box .img-graded-cross{display: block}
+.graded-tick .img-graded-box .img-graded-tick , .graded-cross .img-graded-box .img-graded-cross{display: table-cell}
 .ripple-dark .mid-outer span {
     float: left;
     width: 100%;
@@ -3083,11 +3085,11 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
     .radio-outer-base .graded-tick .img-graded-box  ,    .checkbox-outer-base .graded-tick .img-graded-box {
      width: 25px;
     height: 25px;
-    display: block;
+    display: table;
     position: absolute;
     border-radius: 50%;
     background: #00a651;
-    padding: 5px 0;
+    padding: 3px 0;
     top: 17px;
     left: 15px;
     box-shadow: none;
@@ -3097,11 +3099,11 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
    .radio-outer-base .graded-cross .img-graded-box  , .checkbox-outer-base .graded-cross .img-graded-box {
     width: 25px;
     height: 25px;
-    display: block;
+    display: table;
     position: absolute;
     border-radius: 50%;
     background: #ff3b3b;
-    padding: 5px 0;
+    padding: 3px 0;
     top: 17px;
     left: 15px;
     box-shadow: none;
@@ -3201,7 +3203,7 @@ button.button_textfield.submit-textbox-btn {
 .no-bgImage .landing-page-mid > .bGImage {
     display: none !important;
 }
-.radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon::after , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio::after , .checkbox-outer.ripple-dark.active label.control.control--checkbox::after  ,  .pic-selector.ripple-dark.active label.control.control--checkbox::after {
+/* .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon::after , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio::after , .checkbox-outer.ripple-dark.active label.control.control--checkbox::after  ,  .pic-selector.ripple-dark.active label.control.control--checkbox::after {
     border: 2px solid transparent ;
     content: "";
     left: 0;
@@ -3213,7 +3215,7 @@ button.button_textfield.submit-textbox-btn {
     z-index: 0;
     background-color: transparent !important;
     transition: 0.5s;
-}
+} */
 .checkbox-outer-base button.submit-checkbox-img.ripple-light {
     position: absolute !important;
 }
@@ -3227,3 +3229,11 @@ button.button_textfield.submit-textbox-btn {
 ,  .pic-selector.ripple-dark.active label.control.control--checkbox.graded-tick::after{display: none !important}
 
 .liveresult-outr{position: absolute; right: 0; top: 0; padding: 15px;}
+
+
+.t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control.graded-cross::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control.graded-tick::before{opacity:0}
+.t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control.graded-cross::before , .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control.graded-tick::before{opacity:0}
+.img-graded-box i {
+    font-size: 20px;
+    height: 100%; vertical-align: middle;
+}
