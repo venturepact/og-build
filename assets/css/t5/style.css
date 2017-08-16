@@ -1927,10 +1927,9 @@ label.control.graded-cross:after {
     box-shadow: none;
 }
 .t1-question .question-components .selectize-control.single .selectize-input input {
-    width: 0px !important;
+    width: 100% !important;
     padding: 0px !important;
     margin: 0px !important;
-    visibility: hidden;
 }
 .t1-question .question-components .selectize-control.single .selectize-input .item {
     width: auto !important;
@@ -3172,7 +3171,7 @@ visuals .rec-image-outer img {
     font-size: 16px;
     margin-left: 0;
     padding-left: 0 !important;
-    visibility: hidden;
+    width:100% !important;
 }
 .t1-landing .landing-inner .selectize-input .item {
     font-size: 14px;
@@ -3223,7 +3222,6 @@ visuals .rec-image-outer img {
     height: auto;
     font-size: 16px;
     margin-left: 0;
-    visibility: hidden;
 }
 .t1-result-main .selectize-input .item {
     font-size: 15px;

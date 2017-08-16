@@ -1,5 +1,5 @@
 @media (min-width:0px) and (max-width:767px) {
-        .t1-ques-head{font-size: 24px; line-height: 1.2}
+        .t1-ques-head{font-size: 30px; line-height: 1.2}
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .t1-ques-head .help-text{font-size: 14px;}
@@ -10,7 +10,7 @@
     .main-heading ,  .main-heading h1{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
     .main-heading p{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
     .t1-result{    min-height: 100vh;    height:auto;    }
-    .sub-heading , .sub-heading h2{ font-size: 14px; margin-bottom: 20px; line-height: 20px; }
+    .sub-heading , .sub-heading h2{ font-size: 16px; margin-bottom: 20px; line-height: 20px; }
     .t1-logo { width: 130px; float: none; margin: 0 auto; }
     .landing-page-header { width: 130px; float: none; margin: 0 auto; position: relative !important; top: inherit !important; left: inherit !important; }
     .landing-page-header { width: 100%; float: none; text-align: center; left: inherit; }
@@ -327,7 +327,7 @@
 @media (min-width:0px) and (max-width:767px) and (orientation:portrait) {
   
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
-    .landing-page-mid leadform .input-section .input-outer { margin-bottom: 10px; min-height: 40px; }
+    .landing-page-mid leadform .input-section .input-outer { margin-bottom: 10px; min-height: auto; }
     /* .landing-page-mid button { font-size: 13px !important; padding: 10px 30px !important; } */
     .redo-outer-recom{ float: left; width:100%; position: relative; right: auto; bottom:auto;}
     .redo-outer-recom .redo-link{ float: left; width:100%; position: relative; right:auto; text-align: center; margin-top:0px; margin-bottom: 0; }
@@ -335,7 +335,7 @@
     .redo-outer{ float: left; width:100%; position: relative; right: auto; bottom:auto;}
     .redo-outer .redo-link{ float: left; width:100%; position: relative; right:auto; text-align: center; margin-top:15px; margin-right: 0px; }
     .redo-outer .redo-link li a{ float: none;}    
-     .sub-heading , .sub-heading h2{font-size: 18px; margin-bottom: 20px; line-height: 24px;}
+     .sub-heading , .sub-heading h2{font-size: 16px; margin-bottom: 20px; line-height: 24px;}
        .redo-outer .redo-link{margin-top: 0px !important }
       .redo-outer .redo-link ul{margin-bottom: 0px !important }
 }
@@ -343,8 +343,8 @@
 /*   
     .main-heading ,  .main-heading h1{ margin-bottom: 2.5%; line-height: 43px; font-size: 36px; width:80%; } */
     /* .main-heading p{ margin-bottom: 2.5%; line-height: 43px; font-size: 36px; width:80%; } */
-    .sub-heading{ font-size: 14px; margin-bottom: 3%; line-height: normal; width:100%; }
-    .sub-heading h2{ font-size: 14px; margin-bottom: 3%; line-height: normal; width:80%; }
+    .sub-heading{ font-size: 16px; margin-bottom: 3%; line-height: normal; width:100%; }
+    .sub-heading h2{ font-size: 16px; margin-bottom: 3%; line-height: normal; width:80%; }
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) { width: 100%; margin-left: 3px; }
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input { width: 100%; }
     /*.landing-page-mid leadform .input-section .input-outer input { padding: 7px 5px; width: 100%; font-size: 11px; }
@@ -373,7 +373,7 @@
 }
 @media (min-width:0px) and (max-width:319px) {
 
-    .sub-heading , .sub-heading h2{ font-size: 11px; margin-bottom: 3%; line-height: normal; }
+    .sub-heading , .sub-heading h2{ font-size: 12px; margin-bottom: 3%; line-height: normal; }
     /*.landing-page-mid leadform .input-section .input-outer input { padding: 7px 20px; width: 100%; font-size: 11px; }*/
     /* .input-outer i { top: 8px; font-size: 13px; left:5px; } */
      /* .landing-page-mid button {font-size: 6px;padding: 7px 20px ;} */
@@ -405,7 +405,7 @@
 }
 
 @media (min-width:768px) and (max-width:1024px) {
-        .t1-ques-head{font-size: 28px; line-height: 1.2}
+        .t1-ques-head{font-size: 36px; line-height: 42px}
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .recom-section .disc-set{margin-top: 0px !important}
@@ -507,7 +507,7 @@
     .t3-default-result-outer.t1-result-small-section .small-top-sec p{ text-align: left; padding-right: 0px;}
     .t1-result-small-section .small-top-sec p:nth-child(1){ text-align: left; padding-right: 0px; font-size: 22px !important;}
     .t1-result-small-section .small-bot-sec p{text-align: left; padding-right: 0px; font-size: 14px !important;}
-    .landing-page-header{ left: 50px;}    
+  
     .sahil #graph-container{ width: 648px; max-width: 100%; }
     .gradded-graph-flex .sahil #graph-container{ width: 100%; max-width: 100%; }
     #graph-container{ width: 100%; max-width: 100%; }
@@ -644,6 +644,7 @@
 }
 
 @media (min-width:1680px) and (max-width:1920px) {
+    .t1-slider-nav a i{    font-size: 32px;    }
     .ripple-dark {padding: 0 25px;}
     .submit-textbox input{max-width: 90%;}
     .main-heading ,  .main-heading h1{ font-size: 52px; line-height: 60px; margin-bottom: 20px; }
@@ -769,10 +770,10 @@
     .recom-section .t1-result-leadform .input-section{        padding: 0px;    }
     .t1-question-slider{ width: 80%;}
   .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{font-size: 14px;}
-    .t1-ques-head .help-text{ font-size: 14px;  opacity: 0.6;  line-height: 18px;  margin-top: 4px;}
+    /* .t1-ques-head .help-text{ font-size: 14px;  opacity: 0.6;  line-height: 18px;  margin-top: 4px;} */
     .t1-landing{ min-height: 500px; }
 
-    .landing-page-header {        left: 40px;    }
+    /* .landing-page-header {        left: 40px;    } */
     .t1-landing .t1-landing-inner {        padding-bottom: 100px;        padding-top: 100px;    }
     .t1-question .t1-landing-inner {        min-height: 500px;    }
     /* .landing-page-mid button, .landing-page-mid leadform button.prime-action {        padding: 11px 40px;        font-size: 13px;        margin-bottom: 0px;    } */
@@ -782,9 +783,9 @@
     .t1-slider-question{ padding-top: 20px !important; border-radius: 5px; padding: 25px;}
 
     .control.control--radio span{ margin-top: 9px; margin-bottom: 9px; font-size: 13px; line-height: 18px;}
-    .template-six [type=radio]:not(:checked)+label:after, .template-six [type=radio]:not(:checked)+label:before{ margin: 12px; width: 16px; height: 16px;}
+    /* .template-six [type=radio]:not(:checked)+label:after, .template-six [type=radio]:not(:checked)+label:before{ margin: 12px; width: 16px; height: 16px;}
     .template-six [type="radio"]:checked + label:after, .template-six [type="radio"].with-gap:checked + label:before, .template-six [type="radio"].with-gap:checked + label:after{ margin: 12px; width: 16px; height: 16px;}
-    .template-six [type=radio]:checked+label, .template-six [type=radio]:not(:checked)+label{ padding-left: 40px;}
+    .template-six [type=radio]:checked+label, .template-six [type=radio]:not(:checked)+label{ padding-left: 40px;} */
     .control{ font-size: 15px;}
     .pic-selector label.control .text-overlay span{ font-size: 13px; line-height: 16px; font-size: 13px; }
     .recom-section .leadform-outer h1{ font-size: 18px; margin-top: 5px;}
@@ -802,7 +803,7 @@
     .question-components input{ font-size: 13px; padding: 10px 2%;}
     /*.logo a img { max-width: 130px !important;}*/
     .main-heading ,  .main-heading h1, .main-heading p{ font-size: 40px !important; line-height: 46px; margin-bottom: 16px;}
-    .sub-heading{ font-size: 15px !important; margin-bottom: 16px; line-height: 20px;}
+    .sub-heading{ font-size: 18px !important; margin-bottom: 16px; line-height: 20px;}
     .landing-page-mid leadform .input-section .input-outer input, .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ font-size: 14px !important;  }
    
     /*.template-six [type=checkbox].filled-in:not(:checked)+label:after{width: 16px; height: 16px; margin: 12px;}
@@ -906,11 +907,12 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 12px !important}
 }
 @media (min-width:0px) and (max-width:640px) {
-      .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 0}
-    .t1-ques-component input{padding: 10px 15px; min-height: 42px;}
+
+    .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 0}
+    .t1-ques-component input{padding: 10px 15px; min-height: 42px; margin-bottom: 15px;}
     .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{margin-top: 0px}
-    .t1-slider-nav.slidr3 {    left: 0;    right: auto !important;}
-    .slidr3.t1-slider-nav a.prev {    left: 0;    padding: 0 !important;}
+    .t1-slider-nav.slidr3 ,  .t1-slider-nav.slidr5 {    left: 0;    right: auto !important;}
+    .slidr3.t1-slider-nav a.prev , .t1-slider-nav.slidr5  a.prev{    left: 0;    padding: 0 !important;}
     .t1-slider-nav a i {    font-size: 24px;}
     .custom-pager {    bottom: 40px;    }
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {    max-width: 150px;}
@@ -923,15 +925,16 @@
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px}
     .checkbox-outer-base span.t6.pull-text-right {    padding-left: 80px !important;}
-        button.submit-checkbox-img.ripple-light , .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
-    .w100.text-center .submit-checkbox-img , button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
+        /* button.submit-checkbox-img.ripple-light , .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        } */
+        .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
+     button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
     .graded-msgbox span{font-size: 12px;}
     .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
     .t1-slider-nav{bottom: 30px; right: 15px}
     .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px}
     .graded-tick .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
     .graded-cross .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
-    .t1-ques-head{font-size: 20px; line-height: 1.2}
+    .t1-ques-head{font-size: 26px; line-height: 1.2}
     /* .control.control--radio span , .control.control--checkbox span{font-size: 14px !important; padding-top: 110px} */
     /* .radio-outer.ripple-dark ,   .checkbox-outer.ripple-dark{min-height: 150px} */
     .template-six .t1-question [type="checkbox"] + label.leadform-checkbox{font-size: 14px;}
@@ -945,7 +948,6 @@
     .t1-slider { padding-bottom: 0px;  margin-top: 0px;}
     .selectize-input .item {    font-size: 14px;}
     .template-six .landing-page-mid .input-field label{margin-top: 0px;}
-    /* .landing-page-mid leadform .input-section .input-outer{min-height: 80px;} */
     .template-six .landing-page-mid .input-field label{font-size: 14px !important; padding-top: 3px !important;}
     .input-outer i {    position: absolute;      top: 20px;    font-size: 16px;}
     .selectize-control.single .selectize-input {    max-height: 42px;    padding: 12px 35px 12px 10px;}
@@ -954,10 +956,8 @@
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
     .ripple-dark.checkbox-outer {    padding: 0 20px;    min-height: 150px;}
     .t1-question .ripple-dark label.control {    width: 100px;    height: 100px;}
-    /* .control.control--checkbox span {    line-height: 18px;    padding-top: 110px;    font-size: 13px;    margin: 0;} */
-     /* .landing-page-mid leadform .input-section .input-outer span { top:72px } */
-      .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
-      .main-heading h1 , .sub-heading h2{max-width:100% !important} 
+    .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
+    .main-heading h1 , .sub-heading h2{max-width:100% !important} 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
 }
 

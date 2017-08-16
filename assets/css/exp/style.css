@@ -3726,7 +3726,6 @@ visuals.visual-outr span.graph-title {
     font-size: 16px;
     margin-left: 0;
     padding-left: 0 !important;
-    visibility: hidden;
 }
 .t1-landing .t1-landing-inner .selectize-input .item {
     font-size: 14px;
@@ -4253,3 +4252,6 @@ input::-webkit-contacts-auto-fill-button {
 span.abhi {
     display: none;
 }
+
+.t1-landing .t1-landing-inner .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;  font-size:14px!important; }
+.t1-landing .t1-landing-inner .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }

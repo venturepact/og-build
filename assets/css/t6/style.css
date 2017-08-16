@@ -70,8 +70,7 @@
     position: absolute;
     left: -9999px;
     opacity: 0;
-}
-.material-icons {  font-family: 'Material Icons';  font-weight: normal;  font-style: normal;  display: inline-block;  line-height: 1;  text-transform: none;  letter-spacing: normal;  word-wrap: normal;  white-space: nowrap;  direction: ltr;  -webkit-font-smoothing: antialiased;  text-rendering: optimizeLegibility;  -moz-osx-font-smoothing: grayscale;  font-feature-settings: 'liga';}
+}.material-icons {  font-family: 'Material Icons';  font-weight: normal;  font-style: normal;  display: inline-block;  line-height: 1;  text-transform: none;  letter-spacing: normal;  word-wrap: normal;  white-space: nowrap;  direction: ltr;  -webkit-font-smoothing: antialiased;  text-rendering: optimizeLegibility;  -moz-osx-font-smoothing: grayscale;  font-feature-settings: 'liga';}
 body {    margin: 0;    padding: 0;    font-size: 14px; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;   color: #666e78;    overflow-x: hidden; }
 a, input, textarea, button:focus{outline: none;}
 ul,li{ list-style: none;}
@@ -133,7 +132,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-slider{      float: left;    width: 100%;    margin-top: 25px;}
 .t1-slider-nav a{    position: relative;    width: 40px;    height: 40px;      text-align: center;    display: table-cell;    vertical-align: middle;    cursor: pointer; border-radius: 4px; outline: none;}
 .a-disable , .lead-done-button{    pointer-events: none;    opacity:0.3;}
-.t1-slider-nav a i{    font-size: 32px;    }
+.t1-slider-nav a i{    font-size: 26px;    }
 .t1-slider-nav {    position: absolute;    bottom: 0px;    right:30px;}
  .t1-slider-nav a.prev{    left: -20px;}
 .t1-slider-nav a.next{    right: -20px;} 
@@ -157,7 +156,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-slider-section{    float: left;    width: 100%;}
 .t1-ques-inner{    float: left;    width: 100%;    text-align: left;}
 .t1-ques-inner h1, .t1-ques-inner h2, .t1-ques-inner h3{    margin-top: 0px;    }
-.t1-ques-head{      color: #fff;    font-size: 36px;  line-height: 46px;  margin-bottom: 50px;    text-align: center;}
+.t1-ques-head{      color: #fff;    font-size: 40px;  line-height: 46px;  margin-bottom: 50px;    text-align: center;}
 .t1-ques-head div{    display: inline;    float: none;}
 .t1-ques-head div p:last-child{    display: inline;}
 .t1-ques-component{    float: left;    width: 100%;}
@@ -171,7 +170,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-ques-component .pic-selector input{    border: none;    opacity: 0;    display: none;}
 .t1-ques-component .section-head div{    font-size: 16px; display: inline-table;}
 .t1-ques-component .input-outer input {    background-color:rgba(0,0,0,0.05);    border:1px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:16px;    margin:0 0 15px 0;  transition: 0.5s;  padding:15px 20px;  min-height: 50px;   box-shadow:none;  padding-left: 45px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
-.t1-ques-head .requiredAsteric{    color: #f00;}
+.t1-ques-head .requiredAsteric{    color: #f00; font-size: 16px;}
 .requiredAsteric{ display: inline-block; line-height: 1;    color: #f00; margin: 0 !important;}
 .template-six .question-section.leaded-form-c input:focus:not([readonly]) {box-shadow: none !important; transition: 0.5s; border-bottom-width: 1px !important }
 /* start : radio btns with picture question */
@@ -928,7 +927,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
 
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    min-height: 56px;
+    /* min-height: 56px; */
 
 }
 .t1-question .question-components .check-comp label input{
@@ -1031,7 +1030,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     font-size: 18px;
     float: none;
     width: auto;
-    padding: 20px 30px;
+    padding: 15px 30px;
     /* box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2); */
     border: none;
     cursor: pointer;
@@ -1619,7 +1618,7 @@ float: left; background: #f6f8f9; font-weight: normal !important;font-family: in
 .pull-text-right{
     padding-left: 130px;
 }
-.w100.text-center .submit-checkbox-img{
+/* .w100.text-center .submit-checkbox-img{
     border: none;
     color: #fff;
     font-size: 18px;
@@ -1636,10 +1635,9 @@ float: left; background: #f6f8f9; font-weight: normal !important;font-family: in
     width: auto;
     margin-left: 15px;
     border-radius: 3px;
-    /*box-shadow: 3px 3px 0px 1px #CBB146;*/
-    -webkit-animation: submitMove 300ms; /* Safari 4.0 - 8.0 */
+    -webkit-animation: submitMove 300ms; 
     animation: submitMove 300ms;
-}
+} */
 .submit-textbox{
     border: 1px solid #d9dad3;
     width: 100%;
@@ -1662,7 +1660,7 @@ float: left; background: #f6f8f9; font-weight: normal !important;font-family: in
 .submit-fullwidth{
     width: 100% !important;
 }
-.t1-question .submit-textbox-btn{
+/* .t1-question .submit-textbox-btn{
     border: none;
     color: #fff;
     font-size: 14px;
@@ -1679,7 +1677,7 @@ float: left; background: #f6f8f9; font-weight: normal !important;font-family: in
     margin-right: 15px;
     height: 40px !important;
     border-radius: 3px;
-}
+} */
 .editor-page-divider .submit-textbox-btn{
     border: none;
     color: #fff;
@@ -1891,7 +1889,7 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {
 
 /*new css sandeep*/
 .t1-landing-inner .input-field { position: relative; float: left; width: 100%; display: table}
-.t1-question .question-components .check-comp label {    margin-bottom: 0;    min-height: 56px;      padding:0px;}
+.t1-question .question-components .check-comp label {    margin-bottom: 0;      padding:0px;}
 
 
 .pic-selector.control__indicator .graded-cross .done-icon , .pic-selector.control__indicator .graded-tick .done-icon , .control__indicator .done-icon.hide {display: none !important;}
@@ -2542,7 +2540,7 @@ visuals.visual-outr span.graph-title {
     background-size: 6px 6px;
     background-repeat: no-repeat;
     -webkit-appearance: none;
-}
+}npm 
 .t1-landing-leadform select option{font-size: 16px; padding: 10px; }
 
 .t1-question .leaded-form-c select{ float: left; width:100%; padding: 15px 12px; background: none; border: 1px solid #d9dad3; margin-bottom:0px; font-size: 16px; }
@@ -3032,7 +3030,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
     height: 220px;
     display: none;
     background-position: center bottom;
-    background-size: 100%;
+    background-size: contain;
     margin-bottom: 30px;
 }
  .landing-page-mid > .bGImage{display: block !important} 
@@ -3049,7 +3047,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
     white-space: normal;
     word-break: break-word;
     margin: 15px 0;
-    display: block;
+    display: block !important;
 }
 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input.valid{border:1px solid #00a651 !important;}
 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input.invalid{border-color:#ff3b3b !important;}
@@ -3078,7 +3076,7 @@ button.btn.prime-action.back-action.ripple-light {
     display: flex;
     justify-content: center;
 } */
-button.submit-checkbox-img.ripple-light{ padding: 15px 30px;
+button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{ padding: 15px 30px;
     font-size: 18px;}
     .radio-outer-base .graded-tick .img-graded-box  ,    .checkbox-outer-base .graded-tick .img-graded-box {
      width: 25px;
@@ -3114,13 +3112,15 @@ button.submit-checkbox-img.ripple-light{ padding: 15px 30px;
 .checkbox-outer-base span.t6.pull-text-right {
     padding-left: 110px !important;
 }
-button.submit-checkbox-img.ripple-light {
+button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{
     padding: 10px 20px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 3px;
-    position: absolute;
+    /* position: absolute; */
     margin-top: 8px;
+     -webkit-animation: submitMove 300ms; 
+    animation: submitMove 300ms;
 }
 .question-components .dropdown-set {
     position: relative;
@@ -3195,3 +3195,8 @@ button.button_textfield.submit-textbox-btn {
 .t1-slider-nav.slidr3 {    right: 60px;}
 .t1-slider-nav.slidr3 a.prev{left:0px}
 .selectize-input > input{visibility: visible !important; width:100%  !important}
+.t1-slider-nav.slidr4{right: 20px;}
+.t1-slider-nav.slidr4 a.next{right: 0;}
+.no-bgImage .landing-page-mid > .bGImage {
+    display: none !important;
+}
