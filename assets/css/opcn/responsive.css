@@ -1350,7 +1350,12 @@
     .structure-right-align .t1-slider-nav a.prev { right: 25%; bottom: -60px !important; top: inherit;  }
     .structure-right-align .t1-slider-nav a.next { left: 25%; bottom: -60px; top: inherit;  }
     .structure-right-align .t1-slider-nav a.go { left: 25%; bottom: 20px; top: inherit; }
-
+    .logo-resizing.v-padding {
+        padding-top: 80px;
+    }
+    .logo-resizing.h-padding {
+        padding-top: 80px;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2333,7 +2338,12 @@
     .structure-right-align .landing-page-mid [type="checkbox"].filled-in:checked + label.leadform-checkbox:before { right: 10px; }
     .structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 100% !important;}
     .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 3px; }
-
+    .logo-resizing.v-padding {
+        padding-top: 95px !important;
+    }
+    .logo-resizing.h-padding {
+        padding-top: 95px !important;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2928,9 +2938,9 @@
     }
 }
 @media (min-width: 0px) and (max-width: 1023px) {
-    .ques-header .logo a img {
+    /*.ques-header .logo a img {
         display: none;
-    }
+    }*/
 }
 /* vertical media query */
 /*@media (min-height:500px) and (max-height:600px){

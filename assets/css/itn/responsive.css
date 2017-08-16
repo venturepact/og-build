@@ -16,6 +16,7 @@
         font-size: 32px;
         margin-bottom: 20px;
         line-height: 32px;
+        margin-top: 0px;
     }
     .main-heading p {
         /*font-size: 8.4vmin; */
@@ -118,7 +119,7 @@
     }
     .landing-page-mid {
         margin: 0 auto;
-        margin-top: 30px;
+        /*margin-top: 30px;*/
         text-align: center;
         width: 75%;
     }
@@ -1010,6 +1011,15 @@
         padding: 10px 20px !important;
         font-size: 12px;
     }
+    .logo-resizing.v-padding {
+        padding-top: 80px !important;
+      }
+      .logo-resizing.h-padding {
+        padding-top: 80px !important;
+       }
+       .t1-question .logo-resizing.h-padding {
+        padding-top: 76px !important;
+    }
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1673,6 +1683,15 @@
     .table-outer table thead tr th {
         padding: 10px 20px !important;
         font-size: 12px;
+    }
+    .logo-resizing.v-padding {
+        padding-top: 95px !important;
+    }
+    .logo-resizing.h-padding {
+        padding-top: 105px !important;
+    }
+    .t1-question .logo-resizing.h-padding {
+        padding-top: 95px !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {

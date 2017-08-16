@@ -312,6 +312,18 @@
     .table-outer table thead tr th{padding: 10px 20px !important;font-size: 12px;}
     .range-slider.char-count-slider .irs-single{max-width: 65px;padding: 1px 4px !important;}
     .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{max-width: 65px;padding: 1px 4px !important;}
+    .logo-resizing.h-padding {
+        padding-top: 80px !important;
+    }
+    .logo-resizing.v-padding {
+        padding-top: 80px !important;
+    }
+    .t1-question .logo-resizing.h-padding {
+        padding-top: 70px !important;
+    }
+    .t1-question .logo-resizing.v-padding {
+        padding-top: 70px !important;
+    }
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -563,6 +575,12 @@
     .template-six [type="checkbox"] + label.leadform-checkbox{ font-size: 13px;}
     .template-six .t1-question [type="checkbox"] + label.leadform-checkbox {min-height: 48px; line-height: 48px; padding: 0 10px 0 36px !important; color: #666e78!important;        margin-bottom: 0px !important; font-weight: normal;}
     .template-six .t1-question [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, .template-six .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{ margin:13px !important; } */
+    .logo-resizing.h-padding {
+        padding-top: 80px !important;
+    }
+    .logo-resizing.v-padding {
+        padding-top: 80px !important;
+    }
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait) {
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
