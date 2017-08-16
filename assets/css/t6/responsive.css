@@ -699,7 +699,7 @@
     .selectize-input .item{ font-size: 18px;}
     .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header{ font-size: 18px;}
     .control.control--radio span{ font-size: 18px;}
-    .t1-question .submit-textbox-btn{ font-size: 16px !important; padding: 12px 25px; height: 44px !important;}
+    /* .t1-question .submit-textbox-btn{ font-size: 16px !important; padding: 12px 25px; height: 44px !important;} */
     .control.control--checkbox span{ font-size: 18px; margin-top: 18px;}
 
     .template-six [type="checkbox"].filled-in:not(:checked) + label:after{ margin: 20px !important;}
@@ -867,7 +867,7 @@
     .graded-msgbox{ padding: 7px 12px;}
     .graded-msgbox p{ font-size: 13px;}
     .graded-msgbox p span{ font-size: 13px;}
-    .template-six [type="radio"].with-gap:disabled:checked + label.graded-cross:after{        position: absolute;        left: 7px;        content: ' ';        height: 19px;        width: 2px !important;        background-color: #FB545B !important;        border-color: #fb545b !important;        margin-top: 19px;        border-radius: 0;        border-width: 0px !important;    }
+    /* .template-six [type="radio"].with-gap:disabled:checked + label.graded-cross:after{        position: absolute;        left: 7px;        content: ' ';        height: 19px;        width: 2px !important;        background-color: #FB545B !important;        border-color: #fb545b !important;        margin-top: 19px;        border-radius: 0;        border-width: 0px !important;    }
     .template-six [type="radio"]:disabled:not(:checked) + label.graded-cross:before{ margin-top: 10px;}
     .template-six [type="radio"]:not(:checked) + label.graded-cross:after{ margin-top: 10px;}
     .template-six [type="radio"].with-gap:checked + label.graded-cross:before{ margin-top: 10px;}
@@ -877,12 +877,12 @@
     .template-six .t1-landing .t1-landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{width: 18px; height: 18px; margin: 12px;}
     .template-six .t1-question [type=checkbox].filled-in:not(:checked)+label:after{width: 16px; height: 16px; margin: 12px;}
     .template-six .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{width: 16px; height: 16px; margin: 12px;}
-    .template-six [type="radio"]:disabled:not(:checked) + label.graded-tick:before, .template-six [type="radio"]:not(:checked) + label.graded-tick:after{        margin-top: 10px;        margin-left: 16px;    }
+    .template-six [type="radio"]:disabled:not(:checked) + label.graded-tick:before, .template-six [type="radio"]:not(:checked) + label.graded-tick:after{        margin-top: 10px;        margin-left: 16px;    } */
     .gradedquiz-main .gradded-graph-flex{ display: block;}
-    .template-six [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-tick:after{ margin-left: 17px; margin-top: 10px;}
+    /* .template-six [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-tick:after{ margin-left: 17px; margin-top: 10px;} */
     .gradded-graph-flex #graph-container{ height: 320px !important;}
     .gradded-graph-flex .highcharts-container{ width: 100% !important; height: 320px !important;}
-    .template-six [type="radio"]:checked + label.graded-tick:after, .template-six [type="radio"].with-gap:checked + label.graded-tick:before, .template-six [type="radio"].with-gap:checked + label.graded-tick:after{ margin-left: 16px; margin-top: 10px;}
+    /* .template-six [type="radio"]:checked + label.graded-tick:after, .template-six [type="radio"].with-gap:checked + label.graded-tick:before, .template-six [type="radio"].with-gap:checked + label.graded-tick:after{ margin-left: 16px; margin-top: 10px;} */
     .graded-ques-right{ width: 75%;}
     .template-six [type="checkbox"].filled-in:checked + label:after{ margin: 10px;}
     /* .template-six [type="checkbox"].filled-in:checked + label:before{ left: 10px; top: 11px;} */
