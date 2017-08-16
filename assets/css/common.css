@@ -129,7 +129,7 @@
     color: #a9a9a9;
     cursor: pointer;
     text-transform: none;
-    background: #ceebff;
+    /*background: #ceebff;*/
     padding: 0 5px
 }
 
@@ -138,7 +138,7 @@
     margin: 0 auto;
     display: block;
     background: #fff;
-    border: 1px solid #bec6c9;
+    border: 1px solid #ededed;
     border-top: 0;
     padding: 8px 10px;
     text-align: left
@@ -146,20 +146,47 @@
 
 .editor-modal .live-subhead.link-style {
     background: #f9f9f9;
-    border: 1px solid #bec6c9;
-    padding: 7px 12px;
+    border: 1px solid #ededed;
+    padding: 0;
+    width: 100%;
+    float: left;
 }
-
+.cpy-txt {
+    padding: 11px 15px;
+    display: flex;
+    vertical-align: middle;
+    align-items: left;
+    justify-content: left;
+}
+.cpy-btn {
+    text-align: right;
+    border-left: 1px solid #ededed;
+    padding: 12px 15px;
+    font-size: 11px;
+    color: #62696d;
+    cursor: pointer;
+}
 .editor-modal span {
     display: inline-block;
     font-size: 13px;
     color: #4d5052;
     vertical-align: text-bottom;
 }
+.editor-modal span.share-head{
+    font-size: 12px;
+    color: #62696d;
+    text-transform: uppercase;
+}
 
-a.live-url.preview_copy {
-    float: right;
-    margin-top: 2px
+.preview_copy a.live-url {
+    /*float: right;
+    margin-top: 2px*/
+    color: #62696d;
+    font-size: 11px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }
 
 .editor-modal .modal .form-group .form-control,
@@ -186,10 +213,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     padding: 0 10px
 }
 .live-head {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: normal;
     margin: 5px 0 25px;
     font-family: montserratlight;
+    color: #2ebf27;
 }
 
 .live-subhead {
@@ -570,22 +598,28 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .promo-tip {
     background: #fbfbbd;
-    padding: 0x 20px 0 0;
+    padding: 20px 13px;
     text-align: left;
     float: left;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.promo-tip .red-bar{float: left; width: 50px; margin-right: 15px; min-height: 85px; padding-top: 4.5%;  padding-left: 14px; }
-.promo-tip .red-bar i{ font-size: 40px;}
+.promo-tip .red-bar{
+    float: left;
+    width: auto;
+    margin-right: 5px;
+}
+.promo-tip .red-bar i{ font-size: 40px;color: #f25959;}
 .promo-tip .red-bar span{ color: #fff; font-size: 11px; padding-top: 3px; text-align: center; line-height: 12px;}
 .promo-tip span {
-    font-size: 12px;
-    color: #475353;
+    font-size: 13px;
+    color: #62696d;
     font-family: montserratlight;
-    line-height: 20px; float: left; width:85%; padding-top:10px; 
+    line-height: 20px;
+    float: left;
+    width: 85%;
 }
 .promo-tip span i.material-icons {
     color: #4a8fb7;
@@ -601,8 +635,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     text-transform: uppercase;
     padding-top: 7px;
     display: block;
-    color: #f65f68;
-    font-family: montserratregular; font-size: 12px;
+    color: #fb6066;
+    font-family: montserratregular;
+    font-size: 12px;
 }
 .live-modal iframe {
     height: 28px; float: left; margin-top: 25px;
@@ -615,12 +650,22 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 /*.hello-bar-outer{ float: left; width:100%; min-height: 30px; color: #fff; background: #f65f68; padding: 5px;}*/
 .hello-bar-outer{ background: #f87b80; color: #fff; float: left; width: 100%; padding: 8px 15px; font-family: montserratlight; font-size: 12px; box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2); height: 34px;}
-.hello-bar-outer a{background: #FFFFFF; color: #e97252; text-decoration: none; font-size: 9px;  padding: 3px 4px; text-transform: uppercase;  border-radius: 3px; margin-left: 8px;}
+.hello-bar-outer a{    background: #4a8fb7; color: #fff; text-decoration: none;font-size: 9px;padding: 3px 4px;text-transform: uppercase;border-radius: 3px;margin-left: 8px;}
 .hello-bar-outer span{display: inline-flex;}
 .builder-parent { top:90px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
 .no-analytics-overlay.builder-parent{ top:70px;} 
+a.btn-done {
+    color: #fff !important;
+    background-color: #f25959;
+    border-radius: 5px;
+    float: right;
+    padding: 12px 30px;
+    font-size: 13px;
+    font-family: montserratregular;
+    cursor: pointer;
+}
 .builder-parent1 .tab-pane { padding-top:30px;}
 .builder-parent1 .config-template-tabs{ padding-top:50px;}
 .builder-parent1 .email-tabs{ top:127px;}
@@ -632,3 +677,6 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .builder-parent1 .new-js-outr{ padding-top: 50px;}
 .builder-parent1 .prom-checklist{padding-top:50px !important;}
 .builder-parent1 .no-analytics-overlay{top:71px;}
+.builder-parent .prop-arrow{ bottom:30px;}
+.builder-parent .general-helppanel{top:90px;}
+.builder-parent1 .general-helppanel{top:90px;}
