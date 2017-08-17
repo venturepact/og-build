@@ -572,7 +572,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     
 .right-button-outer { right: 23.7%;}
 .left-button-outer {top: 79%;}
-.left-button-outer-t2 {top: 75%;}
+.left-button-outer-t2 {top: `%;}
 .left-button-outer-t3 { top: 86%;}
 .left-button-outer-t4 {top: 57.5%;}
 .left-button-outer-t5 { top: 79.5%;}
@@ -681,3 +681,174 @@ a.btn-done {
 .builder-parent .prop-arrow{ bottom:30px;}
 .builder-parent .general-helppanel{top:90px;}
 .builder-parent1 .general-helppanel{top:90px;}
+
+/*new upgrade popup*/
+#upgrade-new .modal-dialog {
+    width: 740px;
+}
+#upgrade-new .modal-content {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: #4a8fb7;
+    border-radius: 8px;
+}
+#upgrade-new button.close {
+    color: #dbdada;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-family: "Material Icons";
+    content: "close";
+    font-size: 26px;
+    text-shadow: none;
+    transition: all .3s ease 0s !important;
+    z-index: 9;
+}
+#upgrade-new .modal-header {
+    width: 100%;
+    float: left;
+    border: none;
+}
+#upgrade-new .modal-body {
+    width: 100%;
+    float: left;
+    padding: 0;
+    border-radius: 8px;
+}
+#upgrade-new .link-style {
+    background: #f9f9f9;
+    border: 1px solid #ededed;
+    padding: 0;
+    width: 100%;
+    float: left;
+}
+#upgrade-new span.share-head {
+    font-size: 12px;
+    color: #62696d;
+    text-transform: uppercase;
+}
+#upgrade-new .preview_copy a.live-url{
+    color: #62696d;
+    font-size: 11px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#upgrade-new .left-sec{
+    background: #fff;
+    border-radius: 8px 0 0 8px;
+    padding: 25px;
+}
+#upgrade-new .right-sec{
+    background: #4a8fb7;
+    padding: 27px 20px;
+    color: #fff;
+    border-radius: 0px 8px 8px 0px;
+}
+#upgrade-new .right-sec-inner {
+    padding: 0px 0 40px;
+}
+#upgrade-new .icon-block {
+    background: #fff;
+    border: 1px solid #98bad0;
+    border-radius: 50px;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: inset 2px 5px 5px rgba(0,0,0,.14);
+}
+#upgrade-new .icon-block i{
+    color: #8a928c;
+    font-size: 52px;
+    position: relative;
+    top: 18px;
+    left: 0;
+}
+#upgrade-new .offer-text {
+    font-size: 13px;
+    text-align: center;
+    font-family: montserratlight;
+    padding-bottom: 40px;
+}
+#upgrade-new .dis-text {
+    font-size: 22px;
+    font-family: montserratregular;
+    text-align: center;
+    padding-bottom: 25px;
+}
+#upgrade-new .dis-text span {
+    font-size: 18px;
+    font-family: montserratlight;
+    text-align: center;
+}
+#upgrade-new  .btn-outer {
+    width: 100%;
+    float: left;
+    padding: 30px;
+    padding-bottom: 0;
+    padding-top: 50px;
+}
+#upgrade-new  a.btn-up {
+    font-size: 13px;
+    color: #fb6066;
+    width: 100%;
+    background: #fff;
+    float: left;
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#upgrade-new  .live-modal{
+    padding: 0;
+}
+#upgrade-new .live-subhead.selected-link {
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+    background: #fff;
+    border: 1px solid #ededed;
+    border-top: 0;
+    padding: 8px 10px;
+    text-align: left;
+}
+#upgrade-new .live-url{
+    color: #a9a9a9;
+    cursor: pointer;
+    text-transform: none;
+    padding: 0 5px;
+    margin-bottom: 0;
+}
+#upgrade-new .icon-play-next i.material-icons{
+    margin-top: 0px;
+}
+#upgrade-new span.icon-play-next {
+    width: 100%;
+    float: left;
+}
+#upgrade-new .icon-block img{
+    position: relative;
+    top: 25px;
+}
+a.btn-done:hover {
+    transition: .5s ease-in-out;
+    background: #fdb6b9!important;
+    color: #fb545b!important;
+    border-color: #fdb6b9!important;
+}
+#upgrade-new a.btn-up:hover {
+    transition: .5s ease-in-out;
+    background: #f65f68;
+    color: #fff;
+}
+.cpy-btn.preview_copy:hover {
+    transition: .5s ease-in-out;
+    background: #ededed;
+}
