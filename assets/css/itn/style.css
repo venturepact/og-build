@@ -3973,16 +3973,15 @@ input[type=number] {
     width: 100%;
 }
 .t1-result-main .selectize-control.single .selectize-input {
-    border: none !important;
-    border-bottom: 2px solid #434343 !important;
-    background: none;
-    box-shadow: none;
-    width: 100% !important;
-    float: left;
-    ;
-    display: inline-flex;
-    text-align: left;
-    font-size: 16px !important;
+    border:none !important; 
+    border-bottom: 2px solid rgba(40,50,58,.4) !important; 
+    background: none; 
+    box-shadow: none; 
+    width: 100% !important; 
+    float: left;; 
+    display: inline-flex; 
+    text-align: left; 
+    font-size: 16px !important; 
     min-height: 35px;
 }
 .t1-result-main .selectize-input {
