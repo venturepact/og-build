@@ -181,7 +181,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .pic-selector label.control .check-set.control__indicator{    background: none !important;    position: initial;    border: none;    height: inherit;    width: inherit;    left: 0 !important;    top: 0;}
 .pic-selector label.control .control__indicator{    background: none !important;    position: initial;    border: none;    height: inherit;    width: inherit;    left: 0 !important;    top: 0;}
 .pic-selector input[type="radio"]:checked + .control__indicator::after {    font-family: "Material Icons";    content: "check_circle";    position: absolute;    font-size: 40px;    font-weight: normal;    top:1px;    right: 35px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;}
-.ripple-dark.pic-selector.active label.control {  transform: scale(1.1)}
+/* .ripple-dark.pic-selector.active label.control {  transform: scale(1.1)} */
 .pic-selector input[type="radio"]:checked + .control__indicator::before {    font-family: "Material Icons";    content: "\f269";    position: absolute;    font-size: 36px;    font-weight: normal;    top:1px;    right: 25px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;    opacity: 0;}
 .pic-selector input[type="checkbox"]:checked + .control__indicator::after {    font-family: "Material Icons";    content: "check_circle";    position: absolute;    font-size: 40px;    font-weight: normal;    top:1px;    right: 45px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;}
 .pic-selector input[type="checkbox"]:checked + .control__indicator::before {    font-family: "Material Icons";    content: "\f269";    position: absolute;    font-size: 36px;    font-weight: normal;   top:1px;    right: 40px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;    opacity: 0;}
@@ -209,37 +209,10 @@ visuals .t1-result-inner-left-table h1{margin: 0px;}
 visuals .t1-result-inner-left-table h1 img{box-shadow: none !important;}
 visuals .t1-result-inner-left-img h1{margin: 0px;}
 visuals .t1-result-inner-left-img h1 img{box-shadow: none !important;}
-visuals .t1-result-inner-left-video iframe{
-    /*min-width: 80%;*/
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    height: 100%;
-    bottom: 0px;
-
-}
-visuals .left-outer-hidden {
-    overflow: hidden;
-    display: block;
-    margin: 0px;
-    width: 100%;
-    /*height: 300px;*/
-}
-visuals .left-sec{
-    display: table;
-    width: 100%;
-    text-align: center;
-    min-height: 285px;
-    position: relative;
-    border: 1px solid #d9dad3;
-}
-visuals .rec-image-outer img {
-    /*max-width: 100%;*/
-    max-width: 640px;
-    width: inherit;
-}
+visuals .t1-result-inner-left-video iframe{    position: absolute;    left: 0px;    top: 0px;    right: 0px;    width: 100%;    height: 100%;    bottom: 0px;}
+visuals .left-outer-hidden {    overflow: hidden;    display: block;    margin: 0px;    width: 100%;    /*height: 300px;*/}
+visuals .left-sec{    display: table;    width: 100%;    text-align: center;    min-height: 285px;    position: relative;    border: 1px solid #d9dad3;}
+visuals .rec-image-outer img {    /*max-width: 100%;*/    max-width: 640px;    width: inherit;}
 .t1-result-mainoutr visuals .t1-result-inner{
     width: 58%;
     float: right;
@@ -2926,7 +2899,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
 .control__indicator.icon-set div  ,.control__indicator.check-set div {    float: left;    width: 100%;    line-height: 0;}
 
 .question-section.leaded-form-c{max-width: 520px; margin: 0 auto}
-.ripple-dark.checkbox-outer.active   label.control, .ripple-dark.pic-selector.active  label.control, .ripple-dark.radio-outer.radio-icon-custom.active label.control{transform:scale(1.16); transition: 0.5s}
+/* .ripple-dark.checkbox-outer.active   label.control, .ripple-dark.pic-selector.active  label.control, .ripple-dark.radio-outer.radio-icon-custom.active label.control{transform:scale(1.16); transition: 0.5s} */
 .ripple-dark.checkbox-outer:hover   label.control, .ripple-dark.pic-selector:hover  label.control, .ripple-dark.radio-outer.radio-icon-custom:hover label.control{transform:scale(1.1); transition: 0.5s}
 .ripple-dark.checkbox-outer  label.control,  .ripple-dark.radio-outer.radio-icon-custom   label.control, .ripple-dark.pic-selector  label.control{transition: 0.5s}
 .container-temp .input-section {    max-width: 690px;    margin: 0 auto;}
@@ -2954,7 +2927,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
 }
   .range-slider .irs-grid-text{font-size: 12px;}
    .range-slider  .irs-bar-edge , .range-slider .irs-bar{top:34px}
-   .radio-outer.radio-icon-custom.ripple-dark ,   .ripple-dark.checkbox-outer { max-width: 200px}
+   .radio-outer.radio-icon-custom.ripple-dark ,   .ripple-dark.checkbox-outer {width: 200px !important}
    .w100.text-center .submit-checkbox-img{float: none; display: inline-block}
 
 
@@ -3006,7 +2979,6 @@ input {    -webkit-transform: translate3d(0,0,0);}
     width: 100%;
     font-size: 16px;
     margin: 10px 0;
-    
     white-space: normal;
     word-wrap: break-word;
 }
@@ -3015,13 +2987,6 @@ input {    -webkit-transform: translate3d(0,0,0);}
     width: 100%;
 }
 .radio-outer-base .mid-outer > span  , .checkbox-outer-base  > span {    display: none;}
-.ripple-dark .mid-outer span {
-    float: left;
-    width: 100%;
-    font-size: 16px;
-
-    margin: 10px 0;
-}
 .radio-outer-base .t6 , .checkbox-outer-base .t6{
     display: block !important;
 }
@@ -3039,8 +3004,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
 }
  .landing-page-mid > .bGImage{display: block !important} 
 .ripple-dark.pic-selector {
-    max-width: 200px;
-    /* min-height: 200px; */
+    width: 200px !important;
 }
 .ripple-dark.checkbox-outer > span  , .pic-selector .abhi{
   
@@ -3050,7 +3014,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
     font-size: 16px;
     white-space: normal;
     word-break: break-word;
-    margin: 15px 0;
+    margin: 10px 0;
     display: block !important;
 }
 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input.valid{border:1px solid #00a651 !important;}
@@ -3216,9 +3180,7 @@ button.button_textfield.submit-textbox-btn {
     background-color: transparent !important;
     transition: 0.5s;
 } */
-.checkbox-outer-base button.submit-checkbox-img.ripple-light {
-    position: absolute !important;
-}
+.checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: absolute !important;}
 .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-cross::after 
 , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-cross::after 
 , .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-cross::after  
@@ -3227,14 +3189,8 @@ button.button_textfield.submit-textbox-btn {
 , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-tick::after 
 , .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-tick::after  
 ,  .pic-selector.ripple-dark.active label.control.control--checkbox.graded-tick::after{display: none !important}
-
 .liveresult-outr{position: absolute; right: 0; top: 0; padding: 15px; max-width: 230px;}
-
-
 .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control.graded-cross::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control.graded-tick::before{opacity:0}
 .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control.graded-cross::before , .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control.graded-tick::before{opacity:0}
-.img-graded-box i {
-    font-size: 20px;
-    height: 100%; vertical-align: middle;
-}
+.img-graded-box i {    font-size: 20px;    height: 100%; vertical-align: middle;}
 .pic-selector .done-icon{display: none}

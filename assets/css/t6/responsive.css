@@ -1,7 +1,7 @@
 @media (min-width:0px) and (max-width:767px) {
-        .liveresult-outr{position: relative; padding: 15px 0; text-align: center;max-width: 100%;}
-        .t1-question-liveresult{text-align: center;}
-        .t1-ques-head{font-size: 30px; line-height: 1.2}
+    .liveresult-outr{position: relative; padding: 15px 0; text-align: center;max-width: 100%;}
+    .t1-question-liveresult{text-align: center;}
+    .t1-ques-head{font-size: 30px; line-height: 1.2}
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .t1-ques-head .help-text{font-size: 14px;}
@@ -37,11 +37,7 @@
     .powered-by .poweredby-text{font-size: 13px !important; margin-left: 3px;}
     .t1-question-mid { margin: 0 auto; width: 100%; text-align: center; }
     .t1-ques-head .help-text{font-size: 14px}
-
     .t1-slider-question { padding: 20px; width: 100%; }
-
-
-
     .t1-slider-pagination { top: 0px; }
     .t1-ques-component .input-outer input{        -webkit-transition:none;        transition:none;    }
     .xs-img-hover{        -webkit-transition:none;        transition:none;    }
@@ -102,7 +98,6 @@
     .recom-section .outer-main { display: block; }
     .recom-section .leadform-outer { display: block; padding-right: 30px; padding-top: 0px; padding: 0 15px; }
     .recom-section .container-temp { text-align: center !important; width: 98%; }
-    /*.recom-section .left-outer { height: auto !important; padding: 0px; }*/
     .recom-section .leadform-outer h1 { margin-top: 15px; font-size: 24px; margin-bottom: 0; }
     .recommendation-outer .t1-result-inner { padding: 0px !important; width: 100%; overflow: hidden; }
     .recom-section .leadform-outer .prime-action { width: 100%; margin-left: 0; white-space: normal; }
@@ -176,10 +171,10 @@
 
         .lightSticky {            bottom: 8px;            text-align: center;        }
         .stickyfooter{ text-align: center;}
-        .col{            width: auto;            float: none;            text-align: center;            justify-content: center;            align-self: center;        }
-         .twitter-follow-button {height: 28px !important; top: 10px;}
-         .recom-section .twitter-follow-button{height: 28px !important; top: 0px !important;}
-         .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-top-sec p{             width: 100%;         }
+    .col{            width: auto;            float: none;            text-align: center;            justify-content: center;            align-self: center;        }
+    .twitter-follow-button {height: 28px !important; top: 10px;}
+    .recom-section .twitter-follow-button{height: 28px !important; top: 0px !important;}
+    .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-top-sec p{             width: 100%;         }
     .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-bot-sec p{text-align: center; padding-right: 0px; font-size: 16px !important;}
     .t3-default-result-outer.t1-result-small-section .small-bot-sec p{ width:100%; text-align: center; padding-right: 0px;}
     .t3-default-result-outer.t1-result-small-section .small-top-sec p{ text-align: center; padding-right: 0px;}
@@ -666,7 +661,7 @@
        .graded-cross .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
     /* .control.control--radio span , .control.control--checkbox span{padding-top: 130px; font-size: 13px} */
     .radio-outer.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
-    .ripple-dark.checkbox-outer > span, .pic-selector .abhi ,.ripple-dark .mid-outer span{font-size: 14px;}
+    .ripple-dark.checkbox-outer > span, .pic-selector .abhi ,.ripple-dark .mid-outer span{font-size: 14px; }
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question{border-width: 15px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 60px !important}
     .checkbox-outer button.submit-checkbox-img.ripple-light , .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 12px;    font-size: 13px;}
@@ -767,14 +762,14 @@
         .t1-landing-leadform .input-outer .input-field .selectize-control{margin-top: 0px !important}
         .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){padding: 0px !important}
         .landing-page-mid leadform .input-section .input-outer span{left:0px;}
-        .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 12px !important}
+        .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
 }
 @media (min-width:0px) and (max-width:640px) {
     .t1-ques-head{margin-bottom: 25px;}
     .t1-question-resultheading{font-size: 14px;}
     .img-graded-box i{font-size: 14px}
-    .t1-slider-nav.slidr4 , .t1-slider-nav.slidr2 , .t1-slider-nav.lead-done-button{  margin-left: 0px; left: auto !important; right: 0px !important;}
-    .t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: 0px; right: auto !important; left: 0px !important;} 
+    .t1-slider-nav.slidr4 , .t1-slider-nav.slidr2 , .t1-slider-nav.lead-done-button{  margin-left: 0px; left: auto !important; right: 15px !important;}
+    .t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: 0px; right: auto !important; left: 15px !important;} 
     .checkbox-outer button.submit-checkbox-img.ripple-light, .submit-checkbox-outr button.submit-checkbox.ripple-light {    padding: 6px 10px;    font-size: 12px;    line-height: 1.5;}   
 
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: absolute !important;    padding: 6px 10px;    font-size: 12px;}
@@ -784,7 +779,7 @@
    
     .t1-slider-nav a i {    font-size: 24px;}
     .custom-pager {    bottom: 40px;    }
-    .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {    max-width: 150px;}
+    .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 150px !important;}
     /* .t1-slider-nav a.next {    right: -10px;} */
     .t1-ques-component .input-section .input-outer span{top:48px !important;}
     .bGImage{height: auto; padding-top: 25%}
@@ -799,7 +794,7 @@
     .graded-msgbox span{font-size: 12px;}
     .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
     .t1-slider-nav{bottom: 30px; right: 15px; transform: translateX(0) !important}
-    .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px}
+    .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px;  margin: 0px 0px 15px 0}
     .graded-tick .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
     .graded-cross .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 75px;     }
     .t1-ques-head{font-size: 26px; line-height: 1.2}
@@ -816,7 +811,7 @@
     .template-six .landing-page-mid .input-field label{margin-top: 0px;}
     .template-six .landing-page-mid .input-field label{font-size: 14px !important; padding-top: 3px !important;}
     .input-outer i {    position: absolute;      top: 20px;    font-size: 16px;}
-    .selectize-control.single .selectize-input {    max-height: 42px;    padding: 12px 35px 12px 10px;}
+    .selectize-control.single .selectize-input {    min-height: 42px;    padding: 12px 35px 12px 10px;}
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question {    background-image: none !important;    border: 10px solid rgba(255,255,255,0.1);}
     .t1-question-slider{width:100%;}
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
@@ -835,5 +830,5 @@
 
 }
 @media (max-width:359px){
-.radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {    max-width: 280px !important;}
+.radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 280px !important;}
 }
