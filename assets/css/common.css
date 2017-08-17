@@ -274,7 +274,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     float: left;
     width: 37px;
     background: #fb545b;
-    border-radius: 5px 0 0 5px;    
+    border-radius: 5px 0 0 5px;
     display: inline-flex;
     margin: -15px 20px -57px -15px;
     justify-content: center;
@@ -569,7 +569,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 @media (max-width: 1280px) {
-    
+
 .right-button-outer { right: 23.7%;}
 .left-button-outer {top: 79%;}
 .left-button-outer-t2 {top: `%;}
@@ -656,7 +656,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .builder-parent { top:90px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
-.no-analytics-overlay.builder-parent{ top:70px;} 
+.no-analytics-overlay.builder-parent{ top:70px;}
 a.btn-done {
     color: #fff !important;
     background-color: #f25959;
@@ -683,17 +683,17 @@ a.btn-done {
 .builder-parent1 .general-helppanel{top:90px;}
 
 /*new upgrade popup*/
-#upgrade-new .modal-dialog {
+#publish-upgrade .modal-dialog {
     width: 740px;
 }
-#upgrade-new .modal-content {
+#publish-upgrade .modal-content {
     width: 100%;
     height: 100%;
     float: left;
     background: #4a8fb7;
     border-radius: 8px;
 }
-#upgrade-new button.close {
+#publish-upgrade button.close {
     color: #dbdada;
     opacity: 1;
     position: absolute;
@@ -706,30 +706,30 @@ a.btn-done {
     transition: all .3s ease 0s !important;
     z-index: 9;
 }
-#upgrade-new .modal-header {
+#publish-upgrade .modal-header {
     width: 100%;
     float: left;
     border: none;
 }
-#upgrade-new .modal-body {
+#publish-upgrade .modal-body {
     width: 100%;
     float: left;
     padding: 0;
     border-radius: 8px;
 }
-#upgrade-new .link-style {
+#publish-upgrade .link-style {
     background: #f9f9f9;
     border: 1px solid #ededed;
     padding: 0;
     width: 100%;
     float: left;
 }
-#upgrade-new span.share-head {
+#publish-upgrade span.share-head {
     font-size: 12px;
     color: #62696d;
     text-transform: uppercase;
 }
-#upgrade-new .preview_copy a.live-url{
+#publish-upgrade .preview_copy a.live-url{
     color: #62696d;
     font-size: 11px;
     display: flex;
@@ -740,21 +740,21 @@ a.btn-done {
     text-transform: uppercase;
     cursor: pointer;
 }
-#upgrade-new .left-sec{
+#publish-upgrade .left-sec{
     background: #fff;
     border-radius: 8px 0 0 8px;
     padding: 25px;
 }
-#upgrade-new .right-sec{
+#publish-upgrade .right-sec{
     background: #4a8fb7;
     padding: 27px 20px;
     color: #fff;
     border-radius: 0px 8px 8px 0px;
 }
-#upgrade-new .right-sec-inner {
+#publish-upgrade .right-sec-inner {
     padding: 0px 0 40px;
 }
-#upgrade-new .icon-block {
+#publish-upgrade .icon-block {
     background: #fff;
     border: 1px solid #98bad0;
     border-radius: 50px;
@@ -764,38 +764,38 @@ a.btn-done {
     margin: 0 auto;
     box-shadow: inset 2px 5px 5px rgba(0,0,0,.14);
 }
-#upgrade-new .icon-block i{
+#publish-upgrade .icon-block i{
     color: #8a928c;
     font-size: 52px;
     position: relative;
     top: 18px;
     left: 0;
 }
-#upgrade-new .offer-text {
+#publish-upgrade .offer-text {
     font-size: 13px;
     text-align: center;
     font-family: montserratlight;
     padding-bottom: 40px;
 }
-#upgrade-new .dis-text {
+#publish-upgrade .dis-text {
     font-size: 22px;
     font-family: montserratregular;
     text-align: center;
     padding-bottom: 25px;
 }
-#upgrade-new .dis-text span {
+#publish-upgrade .dis-text span {
     font-size: 18px;
     font-family: montserratlight;
     text-align: center;
 }
-#upgrade-new  .btn-outer {
+#publish-upgrade  .btn-outer {
     width: 100%;
     float: left;
     padding: 30px;
     padding-bottom: 0;
     padding-top: 50px;
 }
-#upgrade-new  a.btn-up {
+#publish-upgrade  a.btn-up {
     font-size: 13px;
     color: #fb6066;
     width: 100%;
@@ -806,10 +806,10 @@ a.btn-done {
     text-transform: uppercase;
     text-align: center;
 }
-#upgrade-new  .live-modal{
+#publish-upgrade  .live-modal{
     padding: 0;
 }
-#upgrade-new .live-subhead.selected-link {
+#publish-upgrade .live-subhead.selected-link {
     font-size: 16px;
     margin: 0 auto;
     display: block;
@@ -819,21 +819,21 @@ a.btn-done {
     padding: 8px 10px;
     text-align: left;
 }
-#upgrade-new .live-url{
+#publish-upgrade .live-url{
     color: #a9a9a9;
     cursor: pointer;
     text-transform: none;
     padding: 0 5px;
     margin-bottom: 0;
 }
-#upgrade-new .icon-play-next i.material-icons{
+#publish-upgrade .icon-play-next i.material-icons{
     margin-top: 0px;
 }
-#upgrade-new span.icon-play-next {
+#publish-upgrade span.icon-play-next {
     width: 100%;
     float: left;
 }
-#upgrade-new .icon-block img{
+#publish-upgrade .icon-block img{
     position: relative;
     top: 25px;
 }
@@ -843,7 +843,7 @@ a.btn-done:hover {
     color: #fb545b!important;
     border-color: #fdb6b9!important;
 }
-#upgrade-new a.btn-up:hover {
+#publish-upgrade a.btn-up:hover {
     transition: .5s ease-in-out;
     background: #f65f68;
     color: #fff;
@@ -852,3 +852,4 @@ a.btn-done:hover {
     transition: .5s ease-in-out;
     background: #ededed;
 }
+.time-outer-w{ width: 130px; display: inline-block;}
