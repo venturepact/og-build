@@ -161,7 +161,7 @@
 .cpy-btn {
     text-align: right;
     border-left: 1px solid #ededed;
-    padding: 12px 15px;
+    padding: 0;
     font-size: 11px;
     color: #62696d;
     cursor: pointer;
@@ -187,6 +187,7 @@
     vertical-align: middle;
     align-items: center;
     justify-content: center;
+    padding: 12px 15px;
 }
 
 .editor-modal .modal .form-group .form-control,
@@ -739,17 +740,22 @@ a.btn-done {
     margin-bottom: 0;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 12px 15px;
 }
 #publish-upgrade .left-sec{
     background: #fff;
     border-radius: 8px 0 0 8px;
     padding: 25px;
+    width: 72%;
+    float: left;
 }
 #publish-upgrade .right-sec{
     background: #4a8fb7;
-    padding: 27px 20px;
+    padding: 25px 20px;
     color: #fff;
     border-radius: 0px 8px 8px 0px;
+    width: 28%;
+    float: left;
 }
 #publish-upgrade .right-sec-inner {
     padding: 0px 0 40px;
@@ -778,25 +784,29 @@ a.btn-done {
     padding-bottom: 40px;
 }
 #publish-upgrade .dis-text {
-    font-size: 22px;
-    font-family: montserratregular;
     text-align: center;
     padding-bottom: 25px;
+    width: 100%;
+    float: left;
 }
 #publish-upgrade .dis-text span {
-    font-size: 18px;
+    font-size: 16px;
     font-family: montserratlight;
     text-align: center;
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+    margin-bottom: 20px;
 }
 #publish-upgrade  .btn-outer {
     width: 100%;
     float: left;
-    padding: 30px;
-    padding-bottom: 0;
-    padding-top: 50px;
+    /*padding: 30px;*/
+    /*padding-bottom: 0;*/
+    padding-top: 20px;
 }
 #publish-upgrade  a.btn-up {
-    font-size: 13px;
+    font-size: 12px;
     color: #fb6066;
     width: 100%;
     background: #fff;
@@ -838,6 +848,13 @@ a.btn-done {
     position: relative;
     top: 25px;
 }
+#publish-upgrade .dis-text h1 {
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    float: left;
+}
 a.btn-done:hover {
     transition: .5s ease-in-out;
     background: #fdb6b9!important;
@@ -849,9 +866,10 @@ a.btn-done:hover {
     background: #f65f68;
     color: #fff;
 }
-.cpy-btn.preview_copy:hover {
+.cpy-btn.preview_copy a.live-url:hover {
     transition: .5s ease-in-out;
     background: #ededed;
+    color: #f25959 !important;
 }
 .time-outer-w{ width: 130px; display: inline-block;}
 
