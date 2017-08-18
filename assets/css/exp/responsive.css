@@ -1302,16 +1302,22 @@
         margin-left: 0 !important;
     }
     .experian [type="checkbox"].filled-in:checked + label:before {
-        top: 7px !important;
+        top: 18px !important;
         left: 0px !important;
-        width: 10px !important;
-        height: 15px !important;
+        width: 8px !important;
+        height: 12px !important;
     }
     .experian [type="checkbox"].filled-in:not(:checked) + label:after {
         height: 18px !important;
         width: 18px !important;
         margin: 16px !important;
         margin-left: 0 !important;
+    }
+    .landing-page-mid leadform .input-field [type="checkbox"].filled-in:checked + label:before{
+        top: 7px !important;
+        left: 0px !important;
+        width: 10px !important;
+        height: 15px !important;
     }
     .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{
         max-height: 38px;
