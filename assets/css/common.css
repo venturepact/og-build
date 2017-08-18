@@ -463,9 +463,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t5 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
 .left-button-outer-t5 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 
-.left-button-outer-t6{ position: absolute;top: 83%;width: 450px;left: 20px;}
+.left-button-outer-t6{ position: absolute;top: 92%;width: 450px;left: 20px;}
 .left-button-outer-t6 img{ float: left; margin-left: 10px;}
-.left-button-outer-t6 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:20px;}
+.left-button-outer-t6 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:5px;}
 .left-button-outer-t6 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
 
 .add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
@@ -479,7 +479,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .text-box{ float: right; width:50%; }
 .text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:right;display: block;  float: left; position: relative; }
 .text-box li i { font-size: 20px; color:#fff; float: left; margin-right: 10px;}
-.top-outer{ position: absolute;right: 130px;width: 150px;height: 80px; top: 19px;}
+.top-outer{ position: absolute;right: 131px;width: 150px;height: 80px; top: 19px;}
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
 .top-outer img{ margin-left: 48px;}
 .top-outer .top-text{ float: left; color: #fff; width:100%; text-align: center;}
@@ -490,9 +490,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .top-outer-help .text{position: absolute;top: 85px; right:30px;}
 
 
-.intro-overlay.builder-parent .top-outer{top: 49px;}
-.intro-overlay.builder-parent .top-outer-help{top: 49px;}
-.intro-overlay.builder-parent .right-button-outer{top: 90px;}
+.intro-overlay.builder-parent .top-outer{top: 52px; right:131px;}
+.intro-overlay.builder-parent .top-outer-help{top: 52px;}
+.intro-overlay.builder-parent .right-button-outer{top: 94px;}
+.intro-overlay.builder-parent .left-button-outer-t4 { top: 82.5%;}
+.intro-overlay.builder-parent .left-button-outer-t5 { top: 92%;}
+.intro-overlay.builder-parent .left-button-outer-t6 { top: 92%;}
 
 @media (min-width: 1420px) and (max-width: 1440px)  {
 
@@ -502,7 +505,8 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 { top: 63.8%;}
 .left-button-outer-t4 {top: 56.5%;}
 .left-button-outer-t5 {top: 59.5%;}
-.left-button-outer-t6{top: 57.8%;}
+.left-button-outer-t6{top: 80%;}
+.intro-overlay.builder-parent .left-button-outer {top: 61%;}
 
 }
 
@@ -513,6 +517,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     .left-button-outer-t4 {top: 66.5%;}
     .left-button-outer-t5 {top: 70.5%;}
     .left-button-outer-t6{top: 85.8%;}
+    .intro-overlay.builder-parent .left-button-outer {top: 82.5%;}
+    .intro-overlay.builder-parent .left-button-outer-t2 {top: 88%;}
+    .intro-overlay.builder-parent .left-button-outer-t3 {top: 90%;}
+    .intro-overlay.builder-parent .left-button-outer-t4 {top: 87%;}
+    .intro-overlay.builder-parent .left-button-outer-t6 {top: 83%;}
 
 }
 
@@ -536,7 +545,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t4 {top: 56.5%;}
 .left-button-outer-t5 {top: 58.5%;}
 .left-button-outer-t6 {top: 57.2%;}
-
+.intro-overlay.builder-parent .left-button-outer {top: 60.5%;}
+.intro-overlay.builder-parent .left-button-outer-t2 {top: 64%;}
+.intro-overlay.builder-parent .left-button-outer-t3 {top: 67%;}
+.intro-overlay.builder-parent .left-button-outer-t4 {top: 56.5%;}
+.intro-overlay.builder-parent .left-button-outer-t6 {top: 80%;}
 }
 @media (min-width: 1681px) and (max-width: 1920px)  {
 
@@ -546,7 +559,11 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t3 {position: absolute;top: 63.5%; width: 450px; left: 20px;}
 .left-button-outer-t4{ position: absolute;top: 55.5%;width: 450px;left: 20px;}
 .left-button-outer-t5 {top: 57.5%;}
-.left-button-outer-t6 {top: 56.5%;}
+.left-button-outer-t6 {top: 78%;}
+.intro-overlay.builder-parent .left-button-outer-t2 {top: 63%;}
+.intro-overlay.builder-parent .left-button-outer-t3 {top: 66%;}
+.intro-overlay.builder-parent .left-button-outer-t4{ top: 56%;}
+.intro-overlay.builder-parent .left-button-outer-t6 { top: 81%;}
 
 }
 
@@ -557,6 +574,9 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t2 {top: 80%;}
 .left-button-outer-t3 { top: 91.5%;}
 .left-button-outer-t5 {top: 85.5%;}
+.intro-overlay.builder-parent .left-button-outer {top: 88%;}
+.intro-overlay.builder-parent .left-button-outer-t2 {top: 92%;}
+.intro-overlay.builder-parent .left-button-outer-t3 {top: 92%;}
 
 
 }
@@ -573,16 +593,23 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .right-button-outer { right: 23.7%;}
 .left-button-outer {top: 79%;}
-.left-button-outer-t2 {top: `%;}
+.left-button-outer-t2 {top: 75%;}
 .left-button-outer-t3 { top: 86%;}
 .left-button-outer-t4 {top: 57.5%;}
 .left-button-outer-t5 { top: 79.5%;}
-.left-button-outer-t6 { top: 78%;}
+.intro-overlay.builder-parent .left-button-outer {top: 82%;}
+.intro-overlay.builder-parent .left-button-outer-t2 {top: 87%;}
+.intro-overlay.builder-parent .left-button-outer-t3 {top: 90%;}
+.intro-overlay.builder-parent .left-button-outer-t4 {top: 77.5%;}
 
 }
 
 @media (max-width: 1024px) {
-.left-button-outer-t6 {top: 71.5%;}
+.right-button-outer { right: 29.3%;}
+.intro-overlay.builder-parent .left-button-outer {top: 75.5%;}
+.intro-overlay.builder-parent .left-button-outer-t2 {top: 80%;}
+.intro-overlay.builder-parent .left-button-outer-t3 {top: 83.5%;}
+.intro-overlay.builder-parent .left-button-outer-t4 {top: 72%;}
 
 }
 
