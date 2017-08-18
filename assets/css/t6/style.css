@@ -1157,13 +1157,13 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     border: none;
     float: none;
     text-transform: uppercase;
-    color: #ccc;
+  opacity: 0.7;
     font-size: 16px;
     margin-top: 10px;
     margin-left: 10px;
 }
 .t1-slider-question.slide-1 .lf-skip-btn:hover{
-    color: #888;
+  opacity: 1;
 }
 .landing-page-mid leadform button.prime-action.lf-skip-btn{
     float: none;
