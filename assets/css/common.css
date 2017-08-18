@@ -696,15 +696,15 @@ a.btn-done {
     cursor: pointer;
 }
 .builder-parent1 .tab-pane { padding-top:30px;}
-.builder-parent1 .config-template-tabs.setting-parent{ padding-top:50px;}
+.builder-parent1 .config-template-tabs.setting-parent{ padding-top:65px;}
 .builder-parent1 .email-tabs{ top:127px;}
-.builder-parent1 .new-email-outr.my-emailsetting{ padding-top:50px;}
-.builder-parent1 .email-parent{ padding-top:50px;}
-.builder-parent1 .embedd-parent{ padding-top:50px;}
-.builder-parent1 .launch-popup-parent{ padding-top:50px;}
-.builder-parent1 .share-calculator-parent{ padding-top:50px;}
-.builder-parent1 .new-js-outr{ padding-top: 50px;}
-.builder-parent1 .prom-checklist{padding-top:50px !important;}
+.builder-parent1 .new-email-outr.my-emailsetting{ padding-top:65px;}
+.builder-parent1 .email-parent{ padding-top:65px;}
+.builder-parent1 .embedd-parent{ padding-top:65px;}
+.builder-parent1 .launch-popup-parent{ padding-top:65px;}
+.builder-parent1 .share-calculator-parent{ padding-top:65px;}
+.builder-parent1 .new-js-outr{ padding-top: 65px;}
+.builder-parent1 .prom-checklist{padding-top:65px !important;}
 .builder-parent1 .no-analytics-overlay{top:71px;}
 .builder-parent .prop-arrow{ bottom:30px;}
 .builder-parent .general-helppanel{top:90px;}
@@ -778,11 +778,12 @@ a.btn-done {
 }
 #publish-upgrade .right-sec{
     background: #4a8fb7;
-    padding: 25px 20px;
+    padding-top: 25px;
     color: #fff;
     border-radius: 0px 8px 8px 0px;
     width: 28%;
     float: left;
+    position: relative;
 }
 #publish-upgrade .right-sec-inner {
     padding: 0px 0 40px;
@@ -828,9 +829,10 @@ a.btn-done {
 #publish-upgrade  .btn-outer {
     width: 100%;
     float: left;
-    /*padding: 30px;*/
-    /*padding-bottom: 0;*/
-    padding-top: 20px;
+    padding: 20px;
+    padding-bottom: 0;
+    z-index: 99;
+    position: relative;
 }
 #publish-upgrade  a.btn-up {
     font-size: 12px;
@@ -881,6 +883,7 @@ a.btn-done {
     margin-bottom: 20px;
     width: 100%;
     float: left;
+    padding: 0 20px;
 }
 a.btn-done:hover {
     transition: .5s ease-in-out;
@@ -897,6 +900,61 @@ a.btn-done:hover {
     transition: .5s ease-in-out;
     background: #ededed;
     color: #f25959 !important;
+}
+#publish-upgrade .p-code {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-family: montserratregular;
+    background: #b7d9ed;
+    position: absolute;
+    bottom: -28px;
+    z-index: 0;
+    padding-bottom: 75px;
+    border-radius: 0 0 8px 0;
+}
+#publish-upgrade .top-border {
+    background-image: url(https://cdn.filestackcontent.com/KftYffjRr2HCyP9qmUKo);
+    background-repeat: repeat-x;
+    height: 5px;
+    width: 100%;
+    float: left;
+    margin-bottom: 8px;
+}
+#publish-upgrade .p-text {
+    float: left;
+    padding: 5px 10px 10px 10px;
+    color: #3e4347;
+    font-size: 13px;
+    text-align: left;
+}
+#publish-upgrade .p-code .p-text i {
+    float: left;
+    color: #4a8fb7;
+    margin-right: 5px;
+}
+#publish-upgrade .code-outer {
+    float: left;
+    color: #3e4347;
+    font-size: 13px;
+    text-align: left;
+    width: 80%;
+    font-weight: 700;
+}
+#publish-upgrade .code-outer span {
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    opacity: .5;
+    font-family: montserratlight;
+}
+#publish-upgrade .code-outer span span {
+    color: #000;
+    opacity: 1!important;
+    float: none;
 }
 .time-outer-w{ width: 130px; display: inline-block;}
 
