@@ -1993,7 +1993,8 @@ visuals .rec-image-outer img {
     background: none !important;
 }
 .t1-question .question-components .selectize-control.single .selectize-input input {
-    width: 100% !important;
+    width: 0px !important;
+    min-width: initial !important;
     padding: 0px !important;
     margin: 0px !important;
 }
@@ -4243,3 +4244,4 @@ input[type=number] {
 }
 .common-result-main .common-leadform-top.t1-result-leadform{ margin: 0px;}
 .Result .lightSticky{ display: none;}
+.t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{ width: 100% !important;}
