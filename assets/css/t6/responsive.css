@@ -500,6 +500,7 @@
     .logo-resizing.v-padding {
 		padding-top: 85px !important;
 	}
+    .common-result .t1-logo { margin-top: 10px !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait) {
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
@@ -762,6 +763,9 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
 }
 @media (min-width:0px) and (max-width:640px) {
+    
+    .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
+
     .t1-ques-head{margin-bottom: 25px;}
     .t1-question-resultheading{font-size: 14px;}
     .img-graded-box i{font-size: 14px}

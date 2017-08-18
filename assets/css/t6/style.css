@@ -2553,7 +2553,7 @@ visuals.visual-outr span.graph-title {
     transition: .2s; */
 }
 
-.t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
+.t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18.5px}
 /**************/
 
 .template-six .leaded-form-c [type="checkbox"] + label  {
@@ -2631,7 +2631,7 @@ visuals.visual-outr span.graph-title {
 .img-graded-box{ display: none;}
 
 .template-six .pic-selector [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-tick:after{ display: none !important}
-.template-six .pic-selector [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-cross:before{ display: none !important}
+/* .template-six .pic-selector [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-cross:before{ display: none !important} */
 .template-six .pic-selector [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-cross:after{ display: none !important}
 
 /*leadgen selectize css  */
