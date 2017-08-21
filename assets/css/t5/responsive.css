@@ -486,11 +486,12 @@ Developer: Bhawna */
     /******/
     
     .t1-result-main {
-        height: auto;
-        display: block
+        height: auto; 
+        display: table-cell;  
+        padding-top: 30px;
     }
     .t1-result {
-        display: block;
+        display: table;
         float: left
     }
     /*******/
@@ -651,6 +652,8 @@ Developer: Bhawna */
     .range-slider{padding-right: 15px;}
     .range-slider .irs-single{max-width: 65px;padding: 1px 4px !important;border-radius: 5px !important;}
    .range-slider .irs-min, .range-slider .irs-max{max-width: 65px;padding: 1px 4px !important;border-radius: 5px !important;}
+   .mt10{margin-top: 10px !important;}
+   .res-header .landing-page-header{    float: none; position: relative !important; text-align: center; width: 100%; left: inherit !important; top: -15px !important;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
