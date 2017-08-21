@@ -2344,6 +2344,10 @@
     .logo-resizing.h-padding {
         padding-top: 95px !important;
     }
+    .common-result img.vert {
+        position: absolute;
+        top: -12px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
