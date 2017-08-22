@@ -1476,8 +1476,10 @@ if (jQuery) {
           index = 0;
         }
         if ($tab_width !== 0 && $tabs_width !== 0) {
-          $indicator.css({"right": calcRightPos($active) });
-          $indicator.css({"left": calcLeftPos($active) });
+          if($active && $active.position()) {
+            $indicator.css({"right": calcRightPos($active) });
+            $indicator.css({"left": calcLeftPos($active) });
+          }
         }
       });
 
