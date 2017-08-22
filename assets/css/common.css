@@ -720,6 +720,7 @@ a.btn-done {
     float: left;
     background: #4a8fb7;
     border-radius: 8px;
+    border: 0px !important;
 }
 #publish-upgrade button.close {
     color: #dbdada;
@@ -744,6 +745,7 @@ a.btn-done {
     float: left;
     padding: 0;
     border-radius: 8px;
+    display: flex;
 }
 #publish-upgrade .link-style {
     background: #f9f9f9;
@@ -829,8 +831,7 @@ a.btn-done {
 #publish-upgrade  .btn-outer {
     width: 100%;
     float: left;
-    padding:5px  20px 0;
-    padding-bottom: 0;
+    padding:26px  20px 20px;
     z-index: 99;
     position: relative;
 }
