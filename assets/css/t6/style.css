@@ -3014,3 +3014,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .question-components button.button_textfield.submit-textbox-btn{margin-top: 20px !important}
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 .gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
+
+.question-components .dropdown-set .selectize-input input[type=text] {
+    display: none!important;
+}
+.question-components .dropdown-set  .selectize-control.single .selectize-input.input-active, .question-components .dropdown-set  .selectize-input{background-color:rgba(0,0,0,0.05)  }
