@@ -2982,7 +2982,8 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .rd-icon  .help-text , .option  .help-text , .icon-outer .help-text{color: #fff !important}
 .t1-slider-nav a.next.ripple-light i {    transform: rotate(180deg);}
 .radio-outer.pic-selector .done-icon {    display: none;}
-.Result .lightSticky{ display: none;}
+.Result .lightSticky { display: none;}
+.Result .stickyfooter { display: none;}
 .ripple-dark.checkbox-outer-base::after  , .ripple-dark.radio-outer-base::after {position: absolute; left:0; right: 0; top: 0;bottom: 0;content: "";     border: 1px solid #000; border-bottom: 0px; opacity: 0.1}
 .ripple-dark.checkbox-outer-base , .ripple-dark.radio-outer-base{position: relative;}
 .ripple-dark.checkbox-outer-base:last-child::after , .ripple-dark.radio-outer-base:last-child::after{border-bottom: 1px solid #000;}
