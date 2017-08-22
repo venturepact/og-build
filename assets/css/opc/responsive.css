@@ -819,6 +819,10 @@
     .t1-landing .t1-landing-inner .selectize-control.single .selectize-input {
         width: 100% !important;
     }
+    .range-slider.char-count-slider .irs-max, .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-single{
+        max-width: 65px;
+        padding: 1px 4px!important;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .landing-footer-outer .powered-by span,
@@ -1807,6 +1811,14 @@
     }
     .t1-landing .t1-landing-inner .selectize-control.single .selectize-input {
         min-height: 58px;
+    }
+    .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {
+        font-size: 12px !important;
+        top: -10px !important;
+    }
+    .range-slider.char-count-slider .irs-single {
+        font-size: 12px !important;
+        top: -10px;
     }
 }
 @media (min-width: 1367px) and (max-width: 1920px) {

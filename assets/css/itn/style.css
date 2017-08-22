@@ -93,7 +93,7 @@ a:focus {
 .t1-logo a {
     float: left;
 }
-.t1-logo a img {
+/*.t1-logo a img {
     max-width: 180px;
     max-height: 70px;
 }
@@ -106,7 +106,7 @@ a:focus {
 }
 .res-header a img {
     max-width: 150px;
-}
+}*/
 .ques-header .landing-page-header {
     top: 30px;
 }
@@ -120,7 +120,7 @@ a:focus {
     font-size: 48px;
     margin-bottom: 15px;
     line-height: 55px;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 .sub-heading,
 .sub-heading h2 {
@@ -1994,9 +1994,9 @@ visuals .rec-image-outer img {
 }
 .t1-question .question-components .selectize-control.single .selectize-input input {
     width: 0px !important;
+    min-width: initial !important;
     padding: 0px !important;
     margin: 0px !important;
-    visibility: hidden;
 }
 .t1-question .question-components .selectize-control.single .selectize-input .item {
     /*width: 150px !important;*/
@@ -3011,7 +3011,7 @@ visuals .rec-image-outer img {
     margin: 0 auto;
     width: 110px;
     display: block;
-    margin-top: 32px;
+    margin-top: 40px;
     opacity: 0.5;
 }
 .t1-ques-component.leadform-inline .lf-skip-btn:hover {
@@ -3864,7 +3864,6 @@ input[type=number] {
     height: auto;
     font-size: 16px;
     margin-left: 0;
-    visibility: hidden;
 }
 .t1-landing .t1-landing-inner .selectize-input .item {
     font-size: 18px;
@@ -3955,7 +3954,6 @@ input[type=number] {
     font-size: 16px;
     margin-left: 0;
     border-radius: 0;
-    visibility: hidden;
 }
 .t1-result-main .selectize-input .item {
     font-size: 16px;
@@ -3973,19 +3971,18 @@ input[type=number] {
 }
 .t1-result-main .selectize-control {
     float: left;
-    width: 100%;
+    width: 98%;
 }
 .t1-result-main .selectize-control.single .selectize-input {
-    border: none !important;
-    border-bottom: 2px solid #434343 !important;
-    background: none;
-    box-shadow: none;
-    width: 100% !important;
-    float: left;
-    ;
-    display: inline-flex;
-    text-align: left;
-    font-size: 16px !important;
+    border:none !important; 
+    border-bottom: 2px solid rgba(85,85,85,.4) !important; 
+    background: none; 
+    box-shadow: none; 
+    width: 100% !important; 
+    float: left;; 
+    display: inline-flex; 
+    text-align: left; 
+    font-size: 16px !important; 
     min-height: 35px;
 }
 .t1-result-main .selectize-input {
@@ -4242,3 +4239,10 @@ input[type=number] {
      border-radius: 4px;
      background-color: rgba(0, 0, 0, 0.2);padding-right:10px; margin-right:10px;
   } 
+    span.abhi {
+    display: none;
+}
+.common-result-main .common-leadform-top.t1-result-leadform{ margin: 0px;}
+.Result .lightSticky { display: none;}
+.Result .stickyfooter { display: none;}
+.t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{ width: 100% !important;}

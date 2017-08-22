@@ -671,6 +671,16 @@
         padding: 7px 16px !important;
         font-size: 13px !important;
     }
+    .range-slider .irs-single {
+        border-radius: 5px !important;
+        padding: 1px 4px !important;
+        max-width: 65px !important;
+    }
+    .range-slider .irs-min, .range-slider .irs-max{
+        border-radius: 5px !important;
+        padding: 1px 4px !important;
+        max-width: 65px !important; 
+    }
 }
 @media (min-width: 150px) and (max-width: 500px) {
     .landing-page-mid .container-temp {
@@ -785,6 +795,14 @@
     .page_0 .landing-page-mid .selectize-control.single .selectize-input {
         min-height: 62px !important;
         max-height: 64px !important;
+    }
+    .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {
+        font-size: 12px !important;
+        top: -10px !important;
+    }
+    .range-slider.char-count-slider .irs-single {
+        font-size: 12px !important;
+        top: -10px;
     }
 }
 @media (min-width: 1920px) and (max-width: 1920px) {

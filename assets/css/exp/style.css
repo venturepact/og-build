@@ -77,7 +77,7 @@ a:focus {
 .t1-logo a {
     float: left;
 }
-.logo a img {
+/*.logo a img {
     max-height: 60px;
     max-width: 140px;
 }
@@ -88,7 +88,7 @@ a:focus {
 .res-header .logo a img {
     max-height: 50px;
     max-width: 140px;
-}
+}*/
 .t1-landing-leadform .t1-leadform-field input {
     float: left;
     width: 88%;
@@ -2795,6 +2795,7 @@ input[type=number] {
     padding-left: 52px;
     cursor: pointer;
     display: block;
+    z-index: 0;
     /*height: 58px;*/
     
     line-height: 23px;
@@ -3726,7 +3727,6 @@ visuals.visual-outr span.graph-title {
     font-size: 16px;
     margin-left: 0;
     padding-left: 0 !important;
-    visibility: hidden;
 }
 .t1-landing .t1-landing-inner .selectize-input .item {
     font-size: 14px;
@@ -4250,3 +4250,9 @@ input::-webkit-contacts-auto-fill-button {
         transform: scale(1.0);
     }
 }
+span.abhi {
+    display: none;
+}
+
+.t1-landing .t1-landing-inner .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;  font-size:14px!important; }
+.t1-landing .t1-landing-inner .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
