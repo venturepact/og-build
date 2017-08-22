@@ -2694,7 +2694,7 @@
         top: 48px;
     }
     .landing-page-mid leadform .input-section .input-outer {
-        width: 47.5% !important;
+        width: 47.5% !important; min-height: 54px;
     }
     .landing-page-mid leadform button.prime-action {
         margin-top: 9px;
@@ -2777,7 +2777,7 @@
         font-size: 20px;
     }
     .one-page-card-new .landing-page-mid .input-field label {
-        top: 12px;
+        top: 12px; font-size: 20px;
     }
     .input-field label:not(.label-icon).active {
         font-size: 1.3rem !important;
