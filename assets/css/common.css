@@ -829,7 +829,7 @@ a.btn-done {
 #publish-upgrade  .btn-outer {
     width: 100%;
     float: left;
-    padding: 20px;
+    padding:5px  20px 0;
     padding-bottom: 0;
     z-index: 99;
     position: relative;
@@ -963,3 +963,11 @@ a.btn-done:hover {
 }
 
 
+p.promo-code {
+    float: left;
+    width: 100%;
+    margin: 8px 0 0;
+    text-align: center;
+    font-size: 11px;
+}
+p.promo-code span{text-transform: uppercase; margin-right: 5px;}
