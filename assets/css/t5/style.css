@@ -2678,9 +2678,9 @@
         background-color: transparent;
         border-color: rgba(0, 0, 0, 0.26);
     }
-    .template-five [type="radio"]:disabled + label {
+    /* .template-five [type="radio"]:disabled + label {
         color: rgba(0, 0, 0, 0.26);
-    }
+    } */
     .template-five [type="radio"]:disabled:not(:checked) + label:before {
         border-color: rgba(0, 0, 0, 0.26);
     }
@@ -3725,9 +3725,9 @@
     .graded-tabs .tab-content {
         padding: 0
     }
-    .graded-tabs .redirect-heading {
+    /*.graded-tabs .redirect-heading {
         font-family: "PT_serif";
-    }
+    }*/
     .t1-question button.prime-action {
         margin-top: 0 !important;
     }
