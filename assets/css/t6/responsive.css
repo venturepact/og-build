@@ -358,7 +358,7 @@
     .recom-footer-outer{min-height: auto !important; padding: 10px 0}
      .recom-footer-outer   .redo-outer-recom{position: relative}
     .t1-result-small-section { margin-top: 20px; margin-left: 0px; width: 50%; padding-left: 30px; padding-right: 30px;}
-    .t1-question-slider { width: 100%; }
+    
     .gradedquiz-main .recommendation-outer.t1-result-top {    width: 100% !important; margin-left: 0px !important}
     .recom-section .leadform-outer h1{ margin-top: 15px;}
     .t1-result-full-section { margin-top: 0px; }
@@ -660,7 +660,7 @@
      .t1-question .ripple-dark label.control{width:120px;height: 120px; padding: 0 !important;}
      .graded-tick .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
        .graded-cross .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
-
+       .t1-question-slider { width: 90%; }
     .radio-outer.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
     .ripple-dark.checkbox-outer > span, .pic-selector .abhi ,.ripple-dark .mid-outer span{font-size: 14px; }
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question{border-width: 15px;}
@@ -680,7 +680,7 @@
     .recom-section .container-temp{        text-align: left !important;        width: 100%;        margin-left: 0;        padding: 0px;    }
     .recom-section .lead-heading-temp1{        text-align: left;        font-size: 13px;    }
     .recom-section .t1-result-leadform .input-section{        padding: 0px;    }
-    .t1-question-slider{ width: 80%;}
+    
   .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{font-size: 14px;}
     .t1-landing{ min-height: 500px; }
     .t1-landing .t1-landing-inner {        padding-bottom: 100px;        padding-top: 100px;    }
@@ -765,7 +765,7 @@
 @media (min-width:0px) and (max-width:640px) {
     
     .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
-
+    .input-icon-outer  .selectize-input {    max-height: 42px;}
     .t1-ques-head{margin-bottom: 25px;}
     .t1-question-resultheading{font-size: 14px;}
     .img-graded-box i{font-size: 14px}
@@ -835,7 +835,7 @@
     .main-heading, .main-heading h1, .main-heading p {    font-size: 18px;    line-height: 1.2;}
     .landing-page-mid leadform button.prime-action, .landing-page-mid button , button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .w100.text-center .submit-checkbox-img{    font-size: 12px;    padding: 8px 16px;}
     .t1-ques-head {    font-size: 18px;    line-height: 1.2;}
-    .result-branding .powered-by , .powered-by.lightPowered {    transform: scale(0.6);}
+    /*.result-branding .powered-by , .powered-by.lightPowered {    transform: scale(0.6);}*/
     .t1-ques-head .help-text {    font-size: 13px;}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: relative !important;}
     .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 12px 0 !important;}

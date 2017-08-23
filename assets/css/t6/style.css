@@ -186,7 +186,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .pic-selector input[type="checkbox"]:checked + .control__indicator::after {    font-family: "Material Icons";    content: "check_circle";    position: absolute;    font-size: 40px;    font-weight: normal;    top:1px;    right: 45px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;}
 .pic-selector input[type="checkbox"]:checked + .control__indicator::before {    font-family: "Material Icons";    content: "\f269";    position: absolute;    font-size: 36px;    font-weight: normal;   top:1px;    right: 40px;    text-rendering: optimizeLegibility;    transform: initial;    border: none;    background: none;    opacity: 0;}
 .resulthidden{    display: none !important;}
-.t1-result{    width: 100%;    height: 100vh;    max-width: 100%;    display: table;    position: relative;    /*background: url(../images/main-bg.jpg) no-repeat center center;*/    background-size: cover;    background-color: #fff;    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 5px;}
+.t1-result{    width: 100%;    height: 100vh;    max-width: 100%;    display: table;    position: relative;    /*background: url(../images/main-bg.jpg) no-repeat center center;*/    background-size: cover;    background-color: #fff;   }
 .t1-result-main{    display: table-cell;    vertical-align: middle;    height: 100%;        padding: 60px 0px;    padding-top: 90px;}
 .t1-result .t1-overlay{    background: rgba(0,0,0,0.3);} 
 .t1-result-top{    float: left;    width: 100%;    margin-left: 0px;    margin-bottom: 0px;    margin-top: 30px;}
@@ -3015,6 +3015,13 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 .gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
 
-.question-components .dropdown-set .selectize-input input[type="text"] , .input-icon-outer .selectize-input input[type="text"] {  display: none !important}
+
 .question-components .dropdown-set  .selectize-control.single .selectize-input.input-active, .question-components .dropdown-set  .selectize-input{background-color:rgba(0,0,0,0.05)  }
 .input-icon-outer  .selectize-control.single .selectize-input.input-active, .input-icon-outer .selectize-input{background-color:rgba(0,0,0,0.05)  }
+
+.question-components .dropdown-set .selectize-input input[type="text"]  {  display: none !important}
+.t1-result-leadform .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
+.t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
+.gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
+.input-icon-outer .selectize-input input[type="text"]{visibility: hidden}
+.input-icon-outer  .selectize-input {    max-height: 55px;}
