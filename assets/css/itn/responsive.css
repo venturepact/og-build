@@ -1192,6 +1192,9 @@
     .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox::before {
         margin-left: 0px
     }
+    .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox::after {
+        margin-left: 0px
+    }
     /*.landing-page-header a img{
         max-width: 80%;
         max-height: 45px;

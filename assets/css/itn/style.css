@@ -2001,7 +2001,7 @@ visuals .rec-image-outer img {
 .t1-question .question-components .selectize-control.single .selectize-input .item {
     /*width: 150px !important;*/
     
-    width: auto !important;
+    width: 100% !important;
     padding-right: 6px;
     /*overflow: hidden;
     text-overflow: ellipsis;
@@ -2025,6 +2025,11 @@ visuals .rec-image-outer img {
 .t1-question .question-components .selectize-control.single .selectize-dropdown.single {
     width: 93% !important;
     top: 36px !important;
+    min-width: 110px;
+}
+.t1-question .question-components .leaded-form-c .selectize-control.single .selectize-dropdown.single {
+    width: 93% !important;
+    top: 21px !important;
     min-width: 110px;
 }
 .t1-question .question-components .selectize-control.single .selectize-dropdown.single .option {
@@ -3893,8 +3898,7 @@ input[type=number] {
     top: 3px;
 }
 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-input {
-    min-width: 150px;
-    margin-bottom: 18px;
+    min-width: 200px; max-width: 200px !important; margin-bottom: 18px;
 }
 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single .option {
     float: left;

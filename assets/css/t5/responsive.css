@@ -1039,3 +1039,6 @@ Developer: Bhawna */
     .numeral-result .table-outer table{max-width: 200px}
 
 }
+@media (min-width: 641px) and (max-width: 995px) {
+    .gradedquiz-main .common-result .landing-page-header{ position: absolute !important; top: 20px !important; }
+}
