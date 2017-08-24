@@ -765,7 +765,7 @@
 @media (min-width:0px) and (max-width:640px) {
     
     .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
-
+    .input-icon-outer  .selectize-input {    max-height: 42px;}
     .t1-ques-head{margin-bottom: 25px;}
     .t1-question-resultheading{font-size: 14px;}
     .img-graded-box i{font-size: 14px}
@@ -835,7 +835,7 @@
     .main-heading, .main-heading h1, .main-heading p {    font-size: 18px;    line-height: 1.2;}
     .landing-page-mid leadform button.prime-action, .landing-page-mid button , button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .w100.text-center .submit-checkbox-img{    font-size: 12px;    padding: 8px 16px;}
     .t1-ques-head {    font-size: 18px;    line-height: 1.2;}
-    .result-branding .powered-by , .powered-by.lightPowered {    transform: scale(0.6);}
+    /*.result-branding .powered-by , .powered-by.lightPowered {    transform: scale(0.6);}*/
     .t1-ques-head .help-text {    font-size: 13px;}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: relative !important;}
     .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 12px 0 !important;}
