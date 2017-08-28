@@ -2084,10 +2084,8 @@
     .t1-landing-leadform select.leadform-select {
         padding-bottom: 10px;
     }
-    .t1-landing .t1-landing-inner .selectize-control.single .selectize-input {
-        min-height: 51px;
-        max-height: 51px;
-    }
+    .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{ min-height: 47px; max-height: 47px;}   
+    .t1-landing .t1-landing-inner .selectize-control.single .selectize-input input{ font-size: 20px; width:100%  !important;}
 }
 @media (min-width: 1367px) and (max-width: 1920px) {
     .btn-fb {

@@ -2024,6 +2024,11 @@ visuals .rec-image-outer img {
 }
 .t1-question .question-components .selectize-control.single .selectize-dropdown.single {
     width: 93% !important;
+    top: 36px !important;
+    min-width: 110px;
+}
+.t1-question .question-components .leaded-form-c .selectize-control.single .selectize-dropdown.single {
+    width: 93% !important;
     top: 21px !important;
     min-width: 110px;
 }
