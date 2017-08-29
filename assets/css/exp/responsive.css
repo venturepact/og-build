@@ -680,6 +680,58 @@
     .no-logo .t1-landing-inner{
         padding-bottom:65px;
     }
+    @-webkit-keyframes graphanimationIn {
+       from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        } 
+    }
+    @keyframes graphanimationIn {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @-webkit-keyframes graphanimationOut {
+        from {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform:  translate3d(0, -100%, 0);
+        }
+    }
+    @keyframes graphanimationOut {
+        from {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform:  translate3d(0, -100%, 0);
+        }
+    }
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
