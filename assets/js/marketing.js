@@ -18,7 +18,8 @@ s.parentNode.insertBefore(b, s);})();
 var googleremarketing = document.createElement('script');
 googleremarketing.setAttribute('src', 'http://www.googleadservices.com/pagead/conversion_async.js');
 googleremarketing.setAttribute('charset', 'utf-8');
-document.getElementsByTagName('body')[0].append(googleremarketing);
+if (window.location.hostname.indexOf('outgrow.co') !== -1)
+	document.getElementsByTagName('body')[0].append(googleremarketing);
 
 
 // Webengage
