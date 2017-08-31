@@ -110,7 +110,7 @@
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) { width: 100%; }
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input { width: 100%; }
     .page_2.t1-result { display: table; }
-    .page_2 .t1-result-main { display: table-cell; padding: 30px 0px; float: left;height: 100% !important;padding-bottom: 45px;}
+    .page_2 .t1-result-main { display: table-cell; padding: 30px 0px; /*float: left;*/height: 100% !important;padding-bottom: 45px;}
     .t1-result-main {padding: 30px 0px; box-shadow: none;}
     .t1-ques-head .help-outer { top: 6px; }
     .recom-section .btn-fb {margin-bottom: 10px; }
@@ -216,7 +216,7 @@
     .template-six .t1-question .filled-in[type="checkbox"]:not(:checked) + label::after {    margin: 14px 18px !important;}
     .template-six .t1-question .filled-in[type="checkbox"]:not(:checked) + label.leadform-checkbox::after, .template-six .t1-question .filled-in[type="checkbox"]:checked + label.leadform-checkbox::after {    margin: 12px 15px !important;}
     .t1-ques-component .input-section .input-outer span{top: 57px;  font-size: 11px;}
-    .t1-ques-component .input-section .input-outer{margin-bottom: 23px;}
+    .t1-ques-component .input-section .input-outer{margin-bottom: 27px;}
     .t1-slider-question.slide-1 .lf-skip-btn{ margin-top: 0px; font-size: 14px;}
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ margin-bottom: 15px; font-size: 14px;}
     .page_1 .prime-action{ margin-bottom: 0px;}
