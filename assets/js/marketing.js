@@ -16,7 +16,7 @@ s.parentNode.insertBefore(b, s);})();
 })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
 
 var googleremarketing = document.createElement('script');
-googleremarketing.setAttribute('src', 'http://www.googleadservices.com/pagead/conversion_async.js');
+googleremarketing.setAttribute('src', '//www.googleadservices.com/pagead/conversion_async.js');
 googleremarketing.setAttribute('charset', 'utf-8');
 if (window.location.hostname.indexOf('outgrow.co') !== -1)
 	document.getElementsByTagName('body')[0].append(googleremarketing);

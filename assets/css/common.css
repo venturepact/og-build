@@ -610,6 +610,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .intro-overlay.builder-parent .left-button-outer-t2 {top: 80%;}
 .intro-overlay.builder-parent .left-button-outer-t3 {top: 83.5%;}
 .intro-overlay.builder-parent .left-button-outer-t4 {top: 72%;}
+.hello-bar-demo span{width:80.5% !important; }
 
 }
 
@@ -1016,3 +1017,24 @@ p.promo-code span{text-transform: uppercase; margin-right: 5px;}
 }
 
 /*fix analytics issue*/
+
+/*demo builder topbar*/
+
+.hello-bar-demo{ background: #f87b80; color: #fff; float: left; width: 100%; padding: 8px 20px; font-family: montserratlight; font-size: 16px; box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2); height: 53px; position: relative; z-index: 99;}
+.hello-bar-demo a.st-btn{ float: right; font-family: montserratregular;   background: #747f83; color: #fff; text-decoration: none;font-size: 11px;padding: 8px 15px;text-transform: uppercase;border-radius: 3px;margin-left: 8px; display: inline-flex; line-height: 20px;transition: all 0.5s ease;}
+.hello-bar-demo a.st-btn:hover{    background: #838f93; color: #fff; text-decoration: none;} 
+.hello-bar-demo a.st-btn i{ font-size: 20px; display: inline;}
+.hello-bar-demo span{display: inline-block; width:83.5%; text-align: center; line-height: 35px;}
+.hello-bar-demo span b{ font-weight: normal; font-family: montserratregular }
+.hello-bar-demo .back-text-p .back-link{ float: left; opacity: 0.6; transition: all 0.5s ease; height: 25px; width:26px; margin-top: 6px;}
+.hello-bar-demo .back-text-p .back-link:hover{opacity: 1;}
+.hello-bar-demo .back-text-p{ transition: all 0.5s ease;}
+.hello-bar-demo .back-text{ font-size: 13px; color:#fff; display: none; }
+.hello-bar-demo .back-text-p:hover .back-text{display: block; position: absolute; top: 9px; left: 30px; }
+
+.builder-parent-demo { top:113px !important;}
+.builder-parent-demo.editor-template-tabs{ margin-top: 30px !important;}
+.template-section.builder-parent-demo{ top:150px !important;}
+.builder-parent-demo .prop-arrow{ bottom:53px;}
+.builder-parent-demo .email-tabs{ top:150px;}
+.builder-parent-demo .general-helppanel{top:112px;}
