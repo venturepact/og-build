@@ -165,7 +165,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-ques-component input.t1-input{    float: left;    color: #666e78;    font-size: 16px;    border: 1px solid #d9dad3;    width: 95%;    padding: 15px;}
 .t1-ques-component .input-section .input-outer{    margin-bottom: 20px;    position: relative;}
 .t1-ques-component .input-section .input-outer .section-head{    font-size: 20px;    margin-bottom: 5px;  line-height: 1;  width: 100%;    float: left;    word-break: break-word;    text-align: left;}
-.t1-ques-component .input-section .input-outer span {    float: left;    width: 100%;    position: absolute; top:57px;   /*bottom:-17px;*/    left: 0px;    text-align: left;    padding-left: 2px;    color: #f44336;    font-size: 12px;}
+.t1-ques-component .input-section .input-outer span {    float: left;    width: 100%;  white-space: normal;word-break: break-word;  position: absolute; top:57px;   /*bottom:-17px;*/    left: 0px;    text-align: left;    padding-left: 2px;    color: #f44336;    font-size: 12px;}
 .t1-ques-component .prime-action{    font-size: 16px;    width: auto;    padding: 16px 50px;    border: none;    cursor: pointer;    text-transform: uppercase;    border-radius: 0px;    display: none;    white-space: inherit;}
 .t1-ques-component .prime-action:hover{    display: none;}
 .t1-ques-component .pic-selector input{    border: none;    opacity: 0;    display: none;}
@@ -836,7 +836,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     clear: both;
 }
 
-.control__indicator.check-set{left:16px!important; top: 18px;}
+.control__indicator.check-set{left:16px!important; top: 18px; float: left;}
 .control { display: block; position: relative; padding-left: 30px; cursor: pointer; font-size: 16px; font-weight: 500;}
 .control--checkbox{padding:20px 55px; padding-top: 0px; padding-bottom: 0px;}
 /* .question-components input{background-color:rgba(255, 255, 255, 0.2);border:1px solid rgba(255, 255, 255, 0.2);;border-radius:3px;outline:none;width:100%;font-size:16px;margin:0 0 15px 0;padding:16px 2%;box-shadow:none;transition:all 0.3s;-moz-box-sizing:border-box;
@@ -991,14 +991,17 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
 }
 .landing-page-mid leadform .input-section .input-outer span {
     float: left;
-    width: 100%;
+    width: auto;
     position: absolute;
     top: 60px;
     left:15px;
+    right:15px;
     text-align: left;
     color: #f44336;
     font-size: 12px;
-    line-height: 1.1
+    line-height: 1.1;
+    white-space: normal;
+    word-break: break-word;
 }
 .landing-page-mid button {
     font-size: 18px;
@@ -2965,7 +2968,7 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
     text-align: center;
 }
 .radio-icon-custom span.t6 , .checkbox-outer span.t6 {    display: none;}
-.checkbox-outer-base span.t6.pull-text-right {    padding-left: 110px !important;}
+.checkbox-outer-base span.t6.pull-text-right {    padding-left:0px !important;width: auto;}
 button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{    padding: 10px 20px;    font-size: 14px;    border: 1px solid transparent;    border-radius: 3px;    /* position: absolute; */    margin-top: 8px;     -webkit-animation: submitMove 300ms;     animation: submitMove 300ms;    text-transform: uppercase;}
 .question-components .dropdown-set {    position: relative;    max-width: 570px;    margin: 0 auto;}
 .question-components input{max-width: 570px; text-align: left; display: inline-block; float: none; padding-left: 15px;}
@@ -2996,7 +2999,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: -50px;}
 .t1-slider-nav.slidr4 a.next{right: 0;}
 .no-bgImage .landing-page-mid > .bGImage {    display: none !important;}
-.checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: absolute !important;}
+.checkbox-outer-base button.submit-checkbox-img.ripple-light {   float: left; margin-right: 10px;}
 .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-cross::after 
 , .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-cross::after 
 , .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-cross::after  
