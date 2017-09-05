@@ -1561,14 +1561,18 @@ visuals .rec-image-outer img {
 .t1-result-main {
     display: block;
 }
-.mid-width {
-    font-size: 20px;
+.mid-width{
+    font-size: 16px;
     float: left;
-    width: 70%;
+    width: 60%;
+    min-height: 32px;
+    display: table;
 }
-.t1-result-topheading p {
+.t1-result-topheading p{
     margin-bottom: 0px;
     padding-left: 14px;
+    display: table-cell;
+    vertical-align: middle;
 }
 .disclaimer-icon-outer {
     width: auto;
