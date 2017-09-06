@@ -1,4 +1,6 @@
 @media (min-width:0px) and (max-width:767px) {
+    .postfixset {        top: -21px;    }
+    .t1-slider-question .input-field label {width: 50px;padding: 14px 5px ;}
     .liveresult-outr{position: relative; padding: 15px 0 0; text-align: center;max-width: 100%;}
     .t1-question-liveresult{text-align: center;}
     .t1-ques-head{font-size: 30px; line-height: 1.2}
@@ -763,7 +765,8 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
 }
 @media (min-width:0px) and (max-width:640px) {
-    
+    .postfixset {        top: -17px;    }
+    .t1-slider-question .input-field label {width: 45px;padding: 10px ;}
     .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
     .input-icon-outer  .selectize-input {    max-height: 42px;}
     .t1-ques-head{margin-bottom: 25px;}

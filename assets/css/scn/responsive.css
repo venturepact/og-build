@@ -280,12 +280,12 @@
     .has-background .page_1 {
         width: 96%;
         margin-left: 2%;
-        margin-bottom: 0px;
+        margin-bottom: 0px; float: left !important;
     }
     .has-background .page_2 {
         width: 96%;
         margin-left: 2%;
-        margin-bottom: 4%;
+        margin-bottom: 4%;float: left !important;
     }
     .has-background .questions {
         padding: 15px 20px 15px 20px;
