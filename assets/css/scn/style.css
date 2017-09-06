@@ -58,7 +58,7 @@ body {
     position: relative;
     vertical-align: middle;
     float: left;
-    overflow: auto;
+    /* overflow: auto; */
     -webkit-overflow-scrolling: touch;
 }
 .tag_delete {
@@ -2321,6 +2321,7 @@ a:focus {
 .has-background {
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 .has-background-tint {
     width: 100%;
