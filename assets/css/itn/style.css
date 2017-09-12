@@ -294,6 +294,12 @@ a:focus {
 .isIframe {
     height: 100% !important;
 }
+
+@-moz-document url-prefix() {
+    .isIframe {
+        height: 0 !important;
+    }
+}
 .isIframe .inline-tablecell {
     height: 100% !important;
 }

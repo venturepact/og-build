@@ -2152,7 +2152,7 @@ visuals.visual-outr span.graph-title {
 }
 .graded-msgbox-outr{
     position: fixed;
-    top: 10%;
+    top: 8%;
     z-index: 999;
     float: left;
    max-width:700px;
@@ -2960,7 +2960,7 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
     border-radius: 50%;
     background: #ff3b3b;
     padding: 3px 0;
-    top: 17px;
+    top: 17px !important;
     left: 15px;
     box-shadow: none;
     right: auto;

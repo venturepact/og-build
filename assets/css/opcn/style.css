@@ -309,6 +309,12 @@ li {
 .isIframe {
     height: 100% !important;
 }
+
+@-moz-document url-prefix() {
+    .isIframe {
+        height: 0 !important;
+    }
+}
 /*.isIframe .t1-landing-inner{
     height: 100% !important;
 }*/
@@ -5909,3 +5915,5 @@ span.abhi {
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
 .t1-result-leadform .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
+
+
