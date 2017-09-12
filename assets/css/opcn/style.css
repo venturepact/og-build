@@ -309,6 +309,8 @@ li {
 .isIframe {
     height: 100% !important;
 }
+
+
 /*.isIframe .t1-landing-inner{
     height: 100% !important;
 }*/
@@ -1707,6 +1709,7 @@ visuals .t1-result-inner-left #og-table-excel {
 .small-bot-sec p a {
     color: inherit;
     text-decoration: underline;
+    word-break: break-word;
 }
 .t1-result-small-section .small-top-sec p:nth-child(1) a {
     color: inherit;
@@ -5620,6 +5623,10 @@ input {
     .one-page-card-new .t1-question .selectize-dropdown.single {
         border-width: 2px !important;
     }
+
+     .isIframe {
+        height: 0 !important;
+    }
 }
 /******************/
 
@@ -5909,3 +5916,5 @@ span.abhi {
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
 .t1-result-leadform .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
+
+
