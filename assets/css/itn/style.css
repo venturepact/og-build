@@ -295,11 +295,7 @@ a:focus {
     height: 100% !important;
 }
 
-@-moz-document url-prefix() {
-    .isIframe {
-        height: 0 !important;
-    }
-}
+
 .isIframe .inline-tablecell {
     height: 100% !important;
 }
@@ -3531,6 +3527,9 @@ input[type=number] {
 @-moz-document url-prefix() {
     #build .t1-result + .result-branding.logo_intmp {
         bottom: 35px;
+    }
+      .isIframe {
+        height: 0 !important;
     }
 }
 .left-outer-hidden {
