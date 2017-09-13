@@ -77,6 +77,8 @@ a:focus {
     position: relative;
     display: table;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
 }
 .t1-landing-inner {
     display: table-cell;

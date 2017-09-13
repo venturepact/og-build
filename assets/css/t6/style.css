@@ -3034,10 +3034,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
 .input-icon-outer .selectize-input input[type="text"]{visibility: hidden}
 .input-icon-outer  .selectize-input {    max-height: 55px;}
-.question-components .postfixset+button.button_textfield.submit-textbox-btn {
-    margin-top: 0!important;
-    position: absolute;
-    left: 50%;
-    margin-left: -50px;
-    top: 80px;
+.postfixset{
+    position: relative;
+    top: -23px;
 }
