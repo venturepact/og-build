@@ -1388,6 +1388,9 @@ visuals .rec-image-outer img {
     position: relative;
     display: table;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    
 }
 .t1-landing-inner {
     display: table-cell;
@@ -4293,6 +4296,7 @@ span.abhi {
 
 .graphanimationIn {
   animation-name: graphanimationIn;
+  display: block;
 }
 @-webkit-keyframes graphanimationOut {
   from {

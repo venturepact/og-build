@@ -75,6 +75,8 @@ li {
     /*background: url(../images/main-bg.jpg) no-repeat center center;*/
     
     background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
 }
 .t1-landing-inner {
     display: table-cell;
@@ -305,6 +307,8 @@ li {
     /*background: url(../images/main-bg.jpg) no-repeat center center;*/
     
     background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
 }
 .isIframe {
     height: 100% !important;
@@ -3340,6 +3344,7 @@ input[type=number] {
     margin-left: 0px;
     border-radius: 5px;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
     
     -webkit-animation: submitMove 300ms;
     animation: submitMove 300ms;
@@ -3469,6 +3474,7 @@ input[type=number] {
     margin-right: 15px;
     height: 40px !important;
     border-radius: 5px;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
 }
 .editor-page-divider .submit-textbox-btn {
     border: none;
@@ -3487,6 +3493,7 @@ input[type=number] {
     margin-right: 15px;
     height: 40px !important;
     border-radius: 5px;
+    box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
 }
 .submit-textbox-btnresp {
     display: none;

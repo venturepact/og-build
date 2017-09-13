@@ -702,7 +702,7 @@
     .recom-section .disc-set{text-align: left!important; width: 80%; font-size: 12px; margin-top: 8px;}
     .redo-outer-recom{ float: right; width: 20%; position: relative; right: auto;}
     .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header{ font-size: 13px; padding: 10px 15px;}
-    .question-components input{ font-size: 13px; padding: 10px 2%;}
+    /*.question-components input{ font-size: 13px; padding: 10px 2%;}*/
     .main-heading ,  .main-heading h1, .main-heading p{ font-size: 40px !important; line-height: 46px; margin-bottom: 16px;}
     .sub-heading{ font-size: 18px !important; margin-bottom: 16px; line-height: 20px;}
     .landing-page-mid leadform .input-section .input-outer input, .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ font-size: 14px !important;  }
@@ -753,6 +753,10 @@
 }
 
 @media (max-width:479px){
+    .t1-question .ripple-dark label.control {
+        width: 120px!important;
+        height: 120px!important;
+    }
     .graded-tick .img-graded-box {top: 95px !important;     }
     .graded-cross .img-graded-box {  top: 95px !important;     }
         .landing-page-mid leadform .input-section .input-outer{padding: 0px}
@@ -767,8 +771,13 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
 }
 @media (min-width:0px) and (max-width:640px) {
+    .errorMessage.cust-err {
+        position: relative;
+        top: 70px;
+    }
     .graded-msgbox-outr{top:12%}
     .postfixset {        top: -17px;    }
+    .t1-slider-question .input-field label~input{width: 70% !important}
     .t1-slider-question .input-field label {width: 40px;padding: 10px ;}
     .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
     .input-icon-outer  .selectize-input {    max-height: 42px;}
@@ -821,7 +830,7 @@
     .t1-question-slider{width:100%;}
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
     .ripple-dark.checkbox-outer {    padding: 0 20px;    min-height: 150px;}
-    .t1-question .ripple-dark label.control {    width: 100px;    height: 100px;}
+    .t1-question .ripple-dark label.control {    width: 130px;    height: 130px;}
     .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
     .main-heading h1 , .sub-heading h2{max-width:100% !important} 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
