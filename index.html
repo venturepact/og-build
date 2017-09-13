@@ -30,4 +30,14 @@
         google.charts.load('upcoming', { 'packages': ['geochart', 'corechart', 'bar'] });
         block = 1;
       }
+    }
+    window.toastNotification = function (message) {
+      $(".toast span").text(message);
+      $(".toast").show();
+      $('.toast').animate({
+        bottom: '+90px',
+        easing: 'linear'
+      }, 1500);
+      $('.toast').css("bottom", "0px");
+      $('.toast').delay(1000).fadeOut(500);
     }</script><!-- fixes new  --><script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body></html>
