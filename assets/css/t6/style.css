@@ -3014,13 +3014,15 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .pic-selector .done-icon{display: none}
 .question-components input{margin-bottom: 0px;}
 .question-components button.button_textfield.submit-textbox-btn{margin-top: 20px !important; }
-.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: absolute; left:50%; margin-left: -50px;top:80px }
+.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: absolute; left:50%; margin-left: -50px;top:100px }
 
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 
 .errorMessage.cust-err {
     position: relative;
-    top: 50px;
+    top: 10px;
+    margin: 0px;
+    padding-top:0px;
 }
 .gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
 
@@ -3036,5 +3038,5 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .input-icon-outer  .selectize-input {    max-height: 55px;}
 .postfixset{
     position: relative;
-    top: -23px;
+    /*top: -23px;*/
 }

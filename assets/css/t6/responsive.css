@@ -1,5 +1,5 @@
 @media (min-width:0px) and (max-width:767px) {
-    .postfixset {        top: -21px;    }
+    /*.postfixset {        top: -21px;    }*/
     .t1-slider-question .input-field label {width: 50px;padding: 14px 5px ;}
     .liveresult-outr{position: relative; padding: 15px 0 0; text-align: center;max-width: 100%;}
     .t1-question-liveresult{text-align: center;}
@@ -771,12 +771,13 @@
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
 }
 @media (min-width:0px) and (max-width:640px) {
-    .errorMessage.cust-err {
+    /*.errorMessage.cust-err {
         position: relative;
         top: 70px;
-    }
+    }*/
+    .question-components .postfixset + button.button_textfield.submit-textbox-btn{ top: 85px;}
     .graded-msgbox-outr{top:12%}
-    .postfixset {        top: -17px;    }
+    /*.postfixset {        top: -17px;    }*/
     .t1-slider-question .input-field label~input{width: 70% !important}
     .t1-slider-question .input-field label {width: 40px;padding: 10px ;}
     .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before , .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before{margin: 18px}
