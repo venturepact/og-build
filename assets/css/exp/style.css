@@ -1567,7 +1567,7 @@ visuals .rec-image-outer img {
 .mid-width{
     font-size: 16px;
     float: left;
-    width: 60%;
+    width: 50%;
     min-height: 32px;
     display: table;
 }
@@ -3767,6 +3767,7 @@ visuals.visual-outr span.graph-title {
     border: 1px solid #61696c;
     padding: 8px;
     right: -10px;
+    top: 25px;
     font-size: 14px;
     position: absolute;
     color: #fff;
@@ -3778,7 +3779,7 @@ visuals.visual-outr span.graph-title {
 .graph-icon .help-text:before {
     position: absolute;
     top: -9px;
-    left: 25px;
+    right: 25px;
     display: inline-block;
     border-right: 8px solid transparent;
     border-bottom: 10px solid #62696d;
@@ -3847,11 +3848,12 @@ visuals.visual-outr span.graph-title {
     border-bottom: none;
 }
 .charts-label {
-    width: auto;
+    width: 120px;
     text-align: left;
     font-size: 13px;
     float: right;
-    line-height: 33px;
+    text-align: right;
+    line-height: 16px;
     margin-left: 3px;
 }
 .vis-outer {
