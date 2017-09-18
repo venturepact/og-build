@@ -857,5 +857,9 @@
     .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 12px 0 !important;}
     .t1-question .question-components .leaded-form-c .section-head .pull-left {    max-width: 93%;}
     .t1-ques-component .section-head div {    font-size: 12px;}
+    .t1-slider-question .input-field label~input {
+        width: 58% !important;
+    }
+
 
 }

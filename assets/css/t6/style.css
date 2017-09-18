@@ -3014,7 +3014,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .pic-selector .done-icon{display: none}
 .question-components input{margin-bottom: 0px;}
 .question-components button.button_textfield.submit-textbox-btn{margin-top: 20px !important; }
-.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: absolute; left:50%; margin-left: -50px;top:100px }
+.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: relative; float:left; animation:none;left:calc(50% + 47px); margin-left: -94px;top:100px }
 
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 
