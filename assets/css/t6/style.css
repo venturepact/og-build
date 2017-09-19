@@ -1435,13 +1435,18 @@ input[type=number] {
 .input-field input[type=number] { 
    flex: 1;-webkit-flex: 1; 
 }
-.t1-slider-question .input-field label {margin-bottom: 0px;width:65px; padding: 16px 5px; font-size:16px; border:1px solid #d9dad3; display:inline-flex; float: none;    justify-content: center;border-top:0px; border-bottom: 0px; text-align: center; margin-right: -2px; margin-left: -2px; 
+
+.t1-slider-question .input-field label {margin-bottom: 0px;width:65px; padding: 16px 5px; font-size:16px; border:1px solid #d9dad3; display:inline-block; float: none;    border-top:0px; border-bottom: 0px; text-align: center; margin-right: -2px; margin-left: -2px; 
     background: #f6f8f9; font-weight: normal !important;font-family: inherit; overflow: hidden;text-overflow: ellipsis;  }
 .t1-slider-question .input-field label ~ input { width:75% !important; float: none; display: inline-block}
 
 
 
-
+.postfixset {
+    position: relative;
+    top: -23px;
+    /* min-height: 54px; */
+}
 
 .elem {
     height: 13px;
@@ -2951,7 +2956,7 @@ button.btn.prime-action.sliding-next.og-lead-ques.ripple-light {    display: non
 .graded-image-tick.hide {    display: none !important;}
 button.btn.prime-action.back-action.ripple-light {    display: inline-block;    margin: 0;    padding: 15px 30px;    font-size: 18px;    position: relative;    top: 0;    line-height: 1;   opacity: 0.7;    align-items: center;    margin-right:15px;    display: none;}
 button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{ padding: 15px 30px;    font-size: 18px;}
-.radio-outer-base .graded-tick .img-graded-box  ,    .checkbox-outer-base .graded-tick .img-graded-box {     width: 25px;    height: 25px;    display: table;    position: absolute;    border-radius: 50%;    background: #00a651;    padding: 3px 0;    top: 17px;    left: 15px;    box-shadow: none;    right: auto;    text-align: center;}  
+.radio-outer-base .graded-tick .img-graded-box  ,    .checkbox-outer-base .graded-tick .img-graded-box {     width: 25px;    height: 25px;    display: table;    position: absolute;    border-radius: 50%;    background: #00a651;    padding: 3px 0;    top: 17px !important;    left: 15px;    box-shadow: none;    right: auto;    text-align: center;}  
 .radio-outer-base .graded-cross .img-graded-box  , .checkbox-outer-base .graded-cross .img-graded-box {
     width: 25px;
     height: 25px;
@@ -3014,16 +3019,11 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .pic-selector .done-icon{display: none}
 .question-components input{margin-bottom: 0px;}
 .question-components button.button_textfield.submit-textbox-btn{margin-top: 20px !important; }
-.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: relative; float:left; animation:none;left:calc(50% + 47px); margin-left: -94px;top:100px }
+.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: relative; float:left; animation:none;left:calc(50% + 47px); margin-left: -94px;top:100px; margin-bottom: 60px }
 
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 
-.errorMessage.cust-err {
-    position: relative;
-    top: 10px;
-    margin: 0px;
-    padding-top:0px;
-}
+
 .gradedquiz-main.common-result-gq .landing-page-header{left: 15px !important;} /* fot t6 logo is different align*/
 
 
@@ -3040,3 +3040,12 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     position: relative;
     /*top: -23px;*/
 }
+.errorMessage.cust-err {
+    position: relative;
+    top: 68px;
+    margin: 0;
+    padding-top: 0;
+    font-size: 12px !important;
+    position: absolute;
+}
+.t1-ques-component{position: relative}
