@@ -1012,7 +1012,7 @@ if (jQuery) {
       $(this).trigger('closeModal');
     }
   };
-  
+
   $.fn.modal2 = function(methodOrOptions) {
     if ( methods[methodOrOptions] ) {
       return methods[ methodOrOptions ].apply( this, Array.prototype.slice.call( arguments, 1 ));
