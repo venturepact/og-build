@@ -3019,7 +3019,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .pic-selector .done-icon{display: none}
 .question-components input{margin-bottom: 0px;}
 .question-components button.button_textfield.submit-textbox-btn{margin-top: 20px !important; }
-.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: relative; float:left; animation:none;left:calc(50% + 47px); margin-left: -94px;top:100px; margin-bottom: 60px }
+.question-components .postfixset + button.button_textfield.submit-textbox-btn{margin-top: 0px !important; position: absolute; float:left; animation:none;left:50%; margin-left: 0; transform:translateX(-50%);top:100px; }
 
 .question-components .errorMessage{text-align: center;margin-top: 10px;}
 
@@ -3049,3 +3049,10 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     position: absolute;
 }
 .t1-ques-component{position: relative}
+.custom-block {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 770px;
+    position: relative;
+}
+.custom-block .input-field{padding-bottom: 80px;}
