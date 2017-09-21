@@ -42,18 +42,13 @@ if (urla.toLowerCase().indexOf("outgrow.co") < 0) { //For .us and local
 	};
 }
 
-"https://cdn.logrocket.com/LogRocket.min.js"
-
 var logrocket = document.createElement('script');
 logrocket.setAttribute('src', "https://cdn.logrocket.com/LogRocket.min.js");
 logrocket.onload = function () {
 	window.LogRocket && window.LogRocket.init('rijgz0/outgrow');
 };
 
-if (
-	urla.toLowerCase().indexOf("outgrow.co") >= 0
-) { //For .co
-	//console.log('Got in else');
+if ( urla.toLowerCase().indexOf("outgrow.co") >= 0 ) {
 
 	document.getElementsByTagName('body')[0].append(logrocket);
 	var trackerProp = {
@@ -93,3 +88,5 @@ if (
 	}
 	qp('track', 'ViewContent');
 }
+
+document.getElementsByTagName('body')[0].append(logrocket);
