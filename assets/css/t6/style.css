@@ -3056,3 +3056,25 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     position: relative;
 }
 .custom-block .input-field{padding-bottom: 80px;}
+
+
+/* other field */
+
+/*.question-components .othersfield{
+    position: relative;
+    z-index: 9;
+    float: left;
+    width: 85%;
+    margin-left: 60px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}*/
+
+.question-components .radio-outer-base .mid-outer .othersfield{  position: relative;  z-index: 9;  float: left;  width: 85%;  margin-left: 60px;  font-size: 14px; margin-top: 5px; margin-bottom: 15px;}
+.question-components .radio-icon-custom .mid-outer .othersfield{ position: relative;  z-index: 9;  float: left;  width: 100%; margin-left: 0px; font-size: 14px; margin-top: 5px; margin-bottom: 0;  text-align: center;}
+.question-components .checkbox-outer-base .othersfield{ position: relative; z-index: 9; float: left; width: 85%; margin-left: 60px; font-size: 14px; margin-top: 5px; margin-bottom: 15px;}
+.question-components .checkbox-outer .othersfield{ position: relative; z-index: 9; float: left; width: 100%; margin-left: 0px;font-size: 14px; margin-top: 5px; margin-bottom: 0; text-align: center;}
+
+
+/* other field */
