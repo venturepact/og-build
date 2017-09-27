@@ -239,7 +239,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .live-modal {
-    padding: 0 20px 10px 20px;; width: 100%; position: relative;
+    padding: 0 10px 10px 10px;; width: 100%; position: relative;
 
 }
 
@@ -682,7 +682,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .hello-bar-outer a{    background: #f34055; color: #fff; text-decoration: none;font-size: 9px;padding: 3px 4px;text-transform: uppercase;border-radius: 3px;margin-left: 8px;}
 .hello-bar-outer a:hover{    background: #f34055; color: #fff; text-decoration: none;}
 .hello-bar-outer span{display: inline-flex;}
-.builder-parent { top:90px !important;}
+.builder-parent { top:94px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
 .no-analytics-overlay.builder-parent{ top:70px;}
@@ -691,10 +691,12 @@ a.btn-done {
     background-color: #f25959;
     border-radius: 5px;
     float: right;
-    padding: 12px 30px;
+    padding: 10px 30px;
     font-size: 13px;
     font-family: montserratregular;
     cursor: pointer;
+    text-transform: uppercase;
+    
 }
 .builder-parent1 .tab-pane { padding-top:30px;}
 .builder-parent1 .config-template-tabs.setting-parent{ padding-top:65px;}
@@ -1038,3 +1040,20 @@ p.promo-code span{text-transform: uppercase; margin-right: 5px;}
 .builder-parent-demo .prop-arrow{ bottom:53px;}
 .builder-parent-demo .email-tabs{ top:150px;}
 .builder-parent-demo .general-helppanel{top:112px;}
+
+
+
+.live-modal a.text-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #62696d;
+    opacity: 0.7;
+    margin-right: 17px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s ease 0s!important
+}
+.live-modal a.text-cancel:hover {
+    opacity: 1 !important;
+}

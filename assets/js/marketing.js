@@ -94,7 +94,3 @@ if (urla.toLowerCase().indexOf("outgrow.co") >= 0) {
 	}
 	qp('track', 'ViewContent');
 }
-
-else {
-	document.getElementsByTagName('body')[0].append(logrocket);
-}
