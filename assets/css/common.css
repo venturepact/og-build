@@ -49,8 +49,8 @@
     color: #d7dbdd;
     opacity: 1;
     position: absolute;
-    top: 23px;
-    right: 18px;
+    top: 20px;
+    right: 13px;
     font-family: "Material Icons";
     content: "close";
     text-shadow: none;
@@ -282,7 +282,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     background: #fb545b;
     border-radius: 5px 0 0 5px;
     display: inline-flex;
-    margin: -15px 20px -57px -15px;
+    margin: -15px 20px -59px -15px;
     justify-content: center;
     align-items: center;
 }
@@ -302,12 +302,15 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     padding: 5px 0 10px
 }
 
-.btn.btn-cancel,
+/* .btn.btn-cancel,
 .btn.btn-ok {
-    background: 0 0;
-    font-size: 12px;
-    font-family: montserratregular
-}
+    border: 2px solid #fb545b;
+    border-radius: 4px;
+    color: #fff !important;
+    padding: 4px 28px;
+    background: #fb6066;
+    margin-left: 7px !important;
+} */
 
 .one-line-bootbox .bootbox-body-left {
     height: 102px
@@ -319,38 +322,41 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .btn.btn-ok {
     border: 2px solid #fb545b;
-    border-radius: 0;
-    color: #fb545b !important;
-    padding: 3px 28px
+    border-radius: 4px;
+    color: #fff !important;
+    padding: 5px 20px;
+    background: #fb6066;
+    margin-left: 7px !important;
+    font-size: 11px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
 }
 
 .btn.btn-cancel {
-    border: 2px solid #8e989f;
-    border-radius: 0;
-    color: #8e989f !important;
-    padding: 3px 28px;
-    margin-right: 0px
+    border: 2px solid #b0b4b6;
+    border-radius: 4px;
+    color: #fff!important;
+    padding: 5px 25px;
+    margin-right: 0px;
+    background: #b0b4b6 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .btn.btn-cancel.btn-cancel-hover:hover {
-    background: #8e989f;
-    color: #fff !important;
-    border-color: #8e989f;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out
+    opacity: 0.7;
 }
 
 .btn-hover:hover {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     background: #fdb6b9 !important;
     color: #fb545b !important;
     border-color: #fdb6b9 !important
 }
 
 .btn-hover:focus {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     background: #fdb6b9 !important;
     color: #fb545b !important;
     border-color: #fdb6b9 !important
