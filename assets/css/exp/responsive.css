@@ -1131,6 +1131,9 @@
     .t1-result-disclaimer {
         margin-top: 27px;
     }
+    .question-outer:last-child .selectize-dropdown-content {
+        max-height: 48px;
+    }
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {
