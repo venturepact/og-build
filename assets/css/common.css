@@ -700,10 +700,10 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 a.btn-done {
     color: #fff !important;
     background-color: #f25959;
-    border-radius: 5px;
+    border-radius: 4px;
     float: right;
     padding: 10px 30px;
-    font-size: 13px;
+    font-size: 12px;
     font-family: montserratregular;
     cursor: pointer;
     text-transform: uppercase;
@@ -737,17 +737,22 @@ a.btn-done {
     border: 0px !important;
 }
 #publish-upgrade button.close {
-    color: #dbdada;
-    opacity: 1;
+    color: #fff;
+    opacity: 0.7;
     position: absolute;
-    top: 0px;
-    right: 10px;
+    top: 13px;
+    right: 13px;
     font-family: "Material Icons";
     content: "close";
-    font-size: 26px;
     text-shadow: none;
     transition: all .3s ease 0s !important;
     z-index: 9;
+}
+#publish-upgrade button.close i.material-icons {
+    font-size: 22px;
+}
+#publish-upgrade button.close:hover {
+    opacity: 1;
 }
 #publish-upgrade .modal-header {
     width: 100%;
@@ -787,7 +792,7 @@ a.btn-done {
 }
 #publish-upgrade .left-sec{
     background: #fff;
-    border-radius: 8px 0 0 8px;
+    border-radius: 5px 0 0 5px;
     padding: 25px;
     width: 72%;
     float: left;
@@ -856,7 +861,7 @@ a.btn-done {
     background: #fff;
     float: left;
     padding: 12px 15px;
-    border-radius: 5px;
+    border-radius: 4px;
     text-transform: uppercase;
     text-align: center;
     cursor:pointer;
