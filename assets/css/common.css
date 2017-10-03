@@ -49,14 +49,15 @@
     color: #d7dbdd;
     opacity: 1;
     position: absolute;
-    top: 20px;
-    right: 13px;
+    top: 10px;
+    right: 10px;
     font-family: "Material Icons";
     content: "close";
     text-shadow: none;
     transition: all .3s ease 0s !important;
     cursor: pointer;
     z-index: 9;
+    margin-top: 0px !important;
 }
 .editor-modal button.close:hover {
     color: #62696d;
@@ -288,14 +289,14 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .bootbox-body .bootbox-body-left .mat-icon i.material-icons {
-    padding-left: 6px;
+    padding-left: 0px;
     color: #fff;
     font-size: 24px
 }
 
 .bootbox-body .bootbox-body-right {
     float: left;
-    width: 88%;
+    width: 85%;
     color: #626983;
     font-size: 14px;
     font-family: montserratlight;
