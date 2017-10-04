@@ -84,7 +84,7 @@ li {
     height: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, .4);
+    /*box-shadow: 0 2px 9px 2px rgba(0, 0, 0, .4);*/
 }
 .t1-overlay {
     background: rgba(0, 0, 0, 0.3);
@@ -997,7 +997,7 @@ li {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);*/
     padding: 60px 0px;
     padding-top: 90px;
 }
@@ -4206,11 +4206,11 @@ _:-webkit-full-screen,
     -moz-transition: inherit duration timing-function delay;
     transition: inherit duration timing-function delay;
 }
-.t1-result-leadform .input-outer .input-field .prefix ~ label,
+/*.t1-result-leadform .input-outer .input-field .prefix ~ label,
 .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label {
-    padding-top: 5px;
+    padding-top: 0px;
     font-weight: normal;
-}
+}*/
 .one-page-card-new .t1-ques-inner .input-field input:focus:not([readonly]) {
     border-bottom: none !important;
     box-shadow: none !important;
