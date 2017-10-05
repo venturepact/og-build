@@ -39,7 +39,7 @@
             "<h4 class='modal-title'></h4>" +
             "</div>",
         footer: "<div class='modal-footer'></div>",
-        closeButton: "<button type='button' class='bootbox-close-button close' data-dismiss='modal' aria-hidden='true'>&times;</button>",
+        closeButton: "<button type='button' class='bootbox-close-button close' data-dismiss='modal' aria-hidden='true'><i class='material-icons'>close</i></button>",
         form: "<form class='bootbox-form'></form>",
         inputs: {
             text: "<input class='bootbox-input bootbox-input-text form-control' autocomplete=off type=text />",

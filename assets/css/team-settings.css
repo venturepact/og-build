@@ -699,7 +699,7 @@
         background-color: #fff;
         border-color: #ffb5b8;
         border-radius: 0;
-        font-size: 11px;
+        font-size: 12px;
         padding: 7px 20px;
         margin: 10px 0;
         transition: all .3s ease 0s;
@@ -1761,7 +1761,8 @@
         border: 1px solid #dae2e6;
         padding: 6px 8px;
         color: #62696d;
-        transition: all .5s ease
+        transition: all .5s ease;
+        float: right;
     }
     .cancel-member span:hover {
         background: #fdb6b9;
@@ -2934,7 +2935,7 @@
         border-bottom: none;
         background: #61686e
     }
-    #add-new-user.modal button.close.btn-close {
+    #change-company-name .modal-header {
         text-shadow: none;
         position: absolute;
         right: 15px;
@@ -3257,7 +3258,7 @@
         background-color: #fff;
         border-color: #ffb5b8;
         border-radius: 0;
-        font-size: 11px;
+        font-size: 12px;
         padding: 7px 30px;
         margin: 10px 0;
         transition: all .3s ease 0s;
@@ -5014,8 +5015,8 @@
     }
 
     .current-plan-span {
-        font-size:12px;
-        font-family:montserratbold;
+        font-size: 11px;
+        font-family: montserratlight;
     }
 
     .addon-section .table-responsive .table>tbody>tr>td {

@@ -46,16 +46,22 @@
 }
 
 .editor-modal button.close {
-    color: #bdbdbd !important;
+    color: #d7dbdd;
     opacity: 1;
     position: absolute;
     top: 10px;
     right: 10px;
     font-family: "Material Icons";
     content: "close";
-    font-size: 23px;
     text-shadow: none;
-    transition: all .3s ease 0s !important
+    transition: all .3s ease 0s !important;
+    cursor: pointer;
+    z-index: 9;
+    margin-top: 0px !important;
+}
+.editor-modal button.close:hover {
+    color: #62696d;
+    opacity: .7;
 }
 
 .editor-modal .modal-footer {
@@ -239,7 +245,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 }
 
 .live-modal {
-    padding: 0 20px 10px 20px;; width: 100%; position: relative;
+    padding: 0 10px 10px 10px;; width: 100%; position: relative;
 
 }
 
@@ -277,32 +283,35 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     background: #fb545b;
     border-radius: 5px 0 0 5px;
     display: inline-flex;
-    margin: -15px 20px -57px -15px;
+    margin: -15px 20px -59px -15px;
     justify-content: center;
     align-items: center;
 }
 
 .bootbox-body .bootbox-body-left .mat-icon i.material-icons {
-    padding-left: 6px;
+    padding-left: 0px;
     color: #fff;
     font-size: 24px
 }
 
 .bootbox-body .bootbox-body-right {
     float: left;
-    width: 88%;
+    width: 85%;
     color: #626983;
     font-size: 14px;
     font-family: montserratlight;
     padding: 5px 0 10px
 }
 
-.btn.btn-cancel,
+/* .btn.btn-cancel,
 .btn.btn-ok {
-    background: 0 0;
-    font-size: 12px;
-    font-family: montserratregular
-}
+    border: 2px solid #fb545b;
+    border-radius: 4px;
+    color: #fff !important;
+    padding: 4px 28px;
+    background: #fb6066;
+    margin-left: 7px !important;
+} */
 
 .one-line-bootbox .bootbox-body-left {
     height: 102px
@@ -314,38 +323,41 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .btn.btn-ok {
     border: 2px solid #fb545b;
-    border-radius: 0;
-    color: #fb545b !important;
-    padding: 3px 28px
+    border-radius: 4px;
+    color: #fff !important;
+    padding: 5px 20px;
+    background: #fb6066;
+    margin-left: 7px !important;
+    font-size: 11px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    text-transform: uppercase;
 }
 
 .btn.btn-cancel {
-    border: 2px solid #8e989f;
-    border-radius: 0;
-    color: #8e989f !important;
-    padding: 3px 28px;
-    margin-right: 0px
+    border: 2px solid #b0b4b6;
+    border-radius: 4px;
+    color: #fff!important;
+    padding: 5px 25px;
+    margin-right: 0px;
+    background: #b0b4b6 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
 
 .btn.btn-cancel.btn-cancel-hover:hover {
-    background: #8e989f;
-    color: #fff !important;
-    border-color: #8e989f;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out
+    opacity: 0.7;
 }
 
 .btn-hover:hover {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     background: #fdb6b9 !important;
     color: #fb545b !important;
     border-color: #fdb6b9 !important
 }
 
 .btn-hover:focus {
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     background: #fdb6b9 !important;
     color: #fb545b !important;
     border-color: #fdb6b9 !important
@@ -632,7 +644,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
     float: left;
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .promo-tip .red-bar{
@@ -682,19 +694,21 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .hello-bar-outer a{    background: #f34055; color: #fff; text-decoration: none;font-size: 9px;padding: 3px 4px;text-transform: uppercase;border-radius: 3px;margin-left: 8px;}
 .hello-bar-outer a:hover{    background: #f34055; color: #fff; text-decoration: none;}
 .hello-bar-outer span{display: inline-flex;}
-.builder-parent { top:90px !important;}
+.builder-parent { top:94px !important;}
 .template-section.builder-parent{ top:127px !important;}
 .intro-overlay.builder-parent{ top:0 !important;}
 .no-analytics-overlay.builder-parent{ top:70px;}
 a.btn-done {
     color: #fff !important;
     background-color: #f25959;
-    border-radius: 5px;
+    border-radius: 4px;
     float: right;
-    padding: 12px 30px;
-    font-size: 13px;
+    padding: 10px 30px;
+    font-size: 12px;
     font-family: montserratregular;
     cursor: pointer;
+    text-transform: uppercase;
+    
 }
 .builder-parent1 .tab-pane { padding-top:30px;}
 .builder-parent1 .config-template-tabs.setting-parent{ padding-top:65px;}
@@ -724,17 +738,22 @@ a.btn-done {
     border: 0px !important;
 }
 #publish-upgrade button.close {
-    color: #dbdada;
-    opacity: 1;
+    color: #fff;
+    opacity: 0.7;
     position: absolute;
-    top: 0px;
-    right: 10px;
+    top: 13px;
+    right: 13px;
     font-family: "Material Icons";
     content: "close";
-    font-size: 26px;
     text-shadow: none;
     transition: all .3s ease 0s !important;
     z-index: 9;
+}
+#publish-upgrade button.close i.material-icons {
+    font-size: 22px;
+}
+#publish-upgrade button.close:hover {
+    opacity: 1;
 }
 #publish-upgrade .modal-header {
     width: 100%;
@@ -774,7 +793,7 @@ a.btn-done {
 }
 #publish-upgrade .left-sec{
     background: #fff;
-    border-radius: 8px 0 0 8px;
+    border-radius: 5px 0 0 5px;
     padding: 25px;
     width: 72%;
     float: left;
@@ -842,8 +861,8 @@ a.btn-done {
     width: 100%;
     background: #fff;
     float: left;
-    padding: 12px 15px;
-    border-radius: 5px;
+    padding: 10px 15px;
+    border-radius: 4px;
     text-transform: uppercase;
     text-align: center;
     cursor:pointer;
@@ -1038,3 +1057,20 @@ p.promo-code span{text-transform: uppercase; margin-right: 5px;}
 .builder-parent-demo .prop-arrow{ bottom:53px;}
 .builder-parent-demo .email-tabs{ top:150px;}
 .builder-parent-demo .general-helppanel{top:112px;}
+
+
+
+.live-modal a.text-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #62696d;
+    opacity: 0.7;
+    margin-right: 17px;
+    margin-top: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s ease 0s!important
+}
+.live-modal a.text-cancel:hover {
+    opacity: 1 !important;
+}
