@@ -1726,7 +1726,7 @@ input[type=number] {
 .selectize-dropdown-content::-webkit-scrollbar-thumb { border-radius: 4px; background-color: rgba(0, 0, 0, 0.2); }
 .select-icon { position: absolute; z-index: 9; font-size: 24px; left: 16px; bottom: 10px }
 .selectize-control.single .selectize-input input{ visibility: hidden;}
-.selectize-dropdown-content { max-height: 18vh; }
+.selectize-dropdown-content { max-height: 12vh; }
 .selectize-input::after { content: ' '; display: block; clear: left; content: ' '; display: block; position: absolute; top: 50%; right: 15px; margin-top: -3px; width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px;  }
 .selectize-input .item{
     font-size:16px;
