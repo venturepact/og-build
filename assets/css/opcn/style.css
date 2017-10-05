@@ -75,7 +75,7 @@ li {
     /*background: url(../images/main-bg.jpg) no-repeat center center;*/
     
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: top center;
 }
 .t1-landing-inner {
@@ -84,7 +84,7 @@ li {
     height: 100%;
     padding-top: 100px;
     padding-bottom: 100px;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, .4);
+    /*box-shadow: 0 2px 9px 2px rgba(0, 0, 0, .4);*/
 }
 .t1-overlay {
     background: rgba(0, 0, 0, 0.3);
@@ -307,7 +307,7 @@ li {
     /*background: url(../images/main-bg.jpg) no-repeat center center;*/
     
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: top center;
 }
 .isIframe {
@@ -997,7 +997,7 @@ li {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);*/
     padding: 60px 0px;
     padding-top: 90px;
 }
@@ -4206,11 +4206,11 @@ _:-webkit-full-screen,
     -moz-transition: inherit duration timing-function delay;
     transition: inherit duration timing-function delay;
 }
-.t1-result-leadform .input-outer .input-field .prefix ~ label,
+/*.t1-result-leadform .input-outer .input-field .prefix ~ label,
 .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label {
-    padding-top: 5px;
+    padding-top: 0px;
     font-weight: normal;
-}
+}*/
 .one-page-card-new .t1-ques-inner .input-field input:focus:not([readonly]) {
     border-bottom: none !important;
     box-shadow: none !important;
@@ -4293,7 +4293,7 @@ _:-webkit-full-screen,
     margin-bottom: 80px !important;
 }
 .t3-default-result-outer:not(.tr-capital) .small-bot-sec p:nth-child(1) {
-    text-transform: uppercase;
+    text-transform: none;
 }
 .left-outer-hidden {
     overflow: hidden;
@@ -4368,7 +4368,7 @@ _:-webkit-full-screen,
 }
 .template-section .page_0.t1-landing .input-outer i {
     top: 19px !important;
-    left: -6px;
+    left: 0px;
 }
 .template-section .t1-result-leadform .input-outer i {
     left: -2px
@@ -5928,3 +5928,7 @@ span.abhi {
 .t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
 
 
+/* other field add */
+.t1-question .question-components .othersfield{margin-left: 42px;  border: none;  padding-top: 0; width: 91%;}
+
+/* other field add */

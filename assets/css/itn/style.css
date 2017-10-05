@@ -80,13 +80,14 @@ a:focus {
     background-attachment: fixed;
     background-position: top center;
 }
+.editor-page-divider .t1-landing-inner{box-shadow:0 2px 9px 2px rgba(0,0,0,0.4)}
 .t1-landing-inner {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
     padding-top: 100px;
     padding-bottom: 75px;
-    box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);
+    /*box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4);*/
 }
 .t1-logo {
     width: 100%;
@@ -1529,10 +1530,10 @@ visuals .rec-image-outer img {
     margin-bottom: 25px;
     margin-top: 40px;
 }
-.t1-result-leadform .input-section {
+/*.t1-result-leadform .input-section {
     float: left;
     width: 100%;
-}
+}*/
 .t1-result-leadform-inner {
     float: left;
     width: 50%;

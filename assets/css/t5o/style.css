@@ -11,6 +11,7 @@ a, input, textarea, button:focus{outline: none;}
 a:hover,a:focus{
     text-decoration: none;
 }
+ul,li{ list-style: none;}
 html {
   overflow: auto;
   height: auto !important;
@@ -510,7 +511,7 @@ label.control.graded-cross:after { content: 'close'; display: block; width: 7px;
 
 /* Powered by Style */
     .powered-by img { width: 16px;    float: left; }
-    .page_1, .result-branding { position: relative; width: 100%; float: left; }
+    .page_1, .result-branding { position: static; width: 100%; float: left; }
     .powered-by .poweredby-text { text-transform: uppercase; font-size: 13px; margin-left: 2px; margin-top: 0px; font-family: "montserratregular"; letter-spacing: normal; line-height: 21px; }
     .powered-by a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
     #build .stickyfooter { position: absolute; }

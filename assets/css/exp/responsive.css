@@ -733,6 +733,7 @@
             transform:  translate3d(0, -100%, 0);
         }
     }
+    .charts-label{ width: auto;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -1130,6 +1131,9 @@
     }
     .t1-result-disclaimer {
         margin-top: 27px;
+    }
+    .question-outer:last-child .selectize-dropdown-content {
+        max-height: 48px;
     }
 }
 @media (min-width:768px) and (max-width:830px){
