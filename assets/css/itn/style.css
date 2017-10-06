@@ -1957,6 +1957,7 @@ visuals .rec-image-outer img {
 .t1-question .question-components input {
     display: inline;
     width: auto;
+    min-width: 225px;
     /*min-width: 190px;*/
     /*max-width: 280px;*/
     
@@ -4261,3 +4262,7 @@ input[type=number] {
 .selectize-control:focus , select:focus {
     outline: none !important;
 }
+
+
+.t1-question .question-components .selectize-control.single .selectize-input input{visibility: hidden;}
+.t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{visibility: visible;}
