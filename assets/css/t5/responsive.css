@@ -323,15 +323,15 @@ Developer: Bhawna */
     .pic-selector label.control .text-overlay span {
         font-size: 13px;
     }
-    .t1-result-disclaimer {
+    /* .t1-result-disclaimer {
         bottom: 0px;
         margin: 0 30px 20px;
         position: absolute;
         padding-right: 20px;
         width: 70%;
-    }
+    } */
     .check-comp .control__indicator i {
-        font-size: 16px;
+        font-size: 16px; 
     }
     .control-group.select {
         width: 100%
@@ -441,11 +441,11 @@ Developer: Bhawna */
 @media (max-width: 767px) {
     /*.t1-result-disclaimer{bottom: 0px; position: relative;}*/
     
-    .t1-result-disclaimer {
+    /* .t1-result-disclaimer {
         bottom: 20px;
         margin-bottom: 0;
         position: absolute;
-    }
+    } */
     .landing-right {
         left: 43%;
     }
@@ -792,14 +792,14 @@ Developer: Bhawna */
     .pic-selector {
         width: calc(100% / 2 - 1%) !important;
     }
-    .t1-result-disclaimer {
+    /* .t1-result-disclaimer {
         padding: 0px 30px 0px;
         width: 100%;
         margin: 0 0px 20px;
         position: relative;
         float: left;
         bottom: 30px;
-    }
+    } */
     .btn-lg {
         padding: 8px 10px;
     }

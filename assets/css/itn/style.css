@@ -4259,7 +4259,11 @@ input[type=number] {
 .Result .lightSticky { display: none;}
 .Result .stickyfooter { display: none;}
 .t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{ width: 100% !important;}
-.selectize-control:focus , select:focus {
+.selectize-control:focus  {
+    outline: none !important;
+}
+
+.select:focus {
     outline: none !important;
 }
 
