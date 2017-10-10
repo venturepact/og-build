@@ -1957,6 +1957,7 @@ visuals .rec-image-outer img {
 .t1-question .question-components input {
     display: inline;
     width: auto;
+    min-width: 225px;
     /*min-width: 190px;*/
     /*max-width: 280px;*/
     
@@ -4258,6 +4259,14 @@ input[type=number] {
 .Result .lightSticky { display: none;}
 .Result .stickyfooter { display: none;}
 .t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{ width: 100% !important;}
-.selectize-control:focus , select:focus {
+.selectize-control:focus  {
     outline: none !important;
 }
+
+.select:focus {
+    outline: none !important;
+}
+
+
+.t1-question .question-components .selectize-control.single .selectize-input input{visibility: hidden;}
+.t1-question .leadform-inline .question-components .selectize-control.single .selectize-input input{visibility: visible;}

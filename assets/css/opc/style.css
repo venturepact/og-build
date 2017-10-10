@@ -2619,8 +2619,8 @@ input[type=number] {
     position: relative;
     width: auto;
     float: left;
-    top: 10px;
-    left: 0px;
+    /*top: 10px;
+    left: 0px;*/
     line-height: normal;
     margin-right: 15px;
     border-radius: 5px;
@@ -2632,6 +2632,7 @@ input[type=number] {
     
     animation: submitMove 300ms;
     padding-top: 12px;
+    margin-top:8px; margin-bottom: 10px;
 }
 @-webkit-keyframes submitMove {
     0% {
@@ -2653,12 +2654,12 @@ input[type=number] {
 }
 .control--checkbox span.submit-checkbos-span {
     padding-top: 17px;
-    padding-bottom: 17px;
+    padding-bottom: 8px;
     display: inline-block;
 }
-.pull-text-right {
+/*.pull-text-right {
     padding-left: 130px;
-}
+}*/
 .w100.text-center .submit-checkbox-img {
     border: none;
     color: #fff;
