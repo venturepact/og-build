@@ -4375,7 +4375,7 @@ _:-webkit-full-screen,
 }
 .control.control--checkbox span {
     float: left;
-    line-height: 30px;
+    line-height: 25px;
     margin-top: 16px;
     margin-bottom: 14px;
     word-wrap: break-word;
@@ -5932,3 +5932,6 @@ span.abhi {
 .t1-question .question-components .othersfield{margin-left: 42px;  border: none;  padding-top: 0; width: 91%;}
 
 /* other field add */
+.t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
+    width: 0px !important;
+}
