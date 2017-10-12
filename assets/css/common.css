@@ -1074,23 +1074,3 @@ p.promo-code span{text-transform: uppercase; margin-right: 5px;}
 .live-modal a.text-cancel:hover {
     opacity: 1 !important;
 }
-
-
-
-/************* new web page design ***********/
-.new-webpage-design-wrapper {    max-width: 900px;    margin: 0 auto;}
-ul.custom-tab-part.nav.nav-tabs {    border: 0;    display: flex;    justify-content: center;    align-items: center;}
-ul.custom-tab-part.nav.nav-tabs > li{flex: 1; text-align: center;margin: 0}
-ul.custom-tab-part.nav.nav-tabs > li > a {    border: 1px solid #ccc;    margin: 0;    border-radius: 0;    color: #62696d;    text-transform: uppercase;    font-size: 11px;    background: #fff;    font-family: montserratlight;    padding: 10px; border-right: 0px;}
-ul.custom-tab-part.nav.nav-tabs > li:first-child > a {border-top-left-radius: 50px; border-bottom-left-radius: 50px}
-ul.custom-tab-part.nav.nav-tabs > li:last-child > a {border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-right:  1px solid #ccc; }
-ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
-.web-page-header {    float: left;    width: 100%;    padding: 6px;}
-.web-page-design {    float: left;     background: #fff; width: 100%;    border: 1px solid #ccc;    border-radius: 3px;}
-.tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;}
-.web-page-content {    float: left;    width: 100%;    padding: 20px;  }
-.web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
-.web-page-content .center-part {float: left; width:588px; max-width: 100%;}
-.strips {    float: left;    width: 100%;    background: #ebedef;    height: 20px;    margin-bottom: 10px;}
-.big-strip.strips{height: 100px}
-.large-strip.strips{height: 230px}
