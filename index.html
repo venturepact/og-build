@@ -14,7 +14,57 @@
     background: -webkit-linear-gradient(left, #fb545b 0%,#fb545b 12%,#ffffff 12%,#ffffff 12%,#ffffff 12%,#ffffff 100%);
     background: linear-gradient(to right, #fb545b 0%,#fb545b 12%,#ffffff 12%,#ffffff 12%,#ffffff 12%,#ffffff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb545b', endColorstr='#ffffff',GradientType=1 );
-  }</style><script type="text/javascript">let hosturl = window.location.hostname;
+  }
+  .error-msg-outer{
+    background: #fb545b;
+    color: #fff;
+    width: 46%;
+    float: left;
+    margin: 0 29%;
+    font-family: Arial;
+    font-size: 14px;
+    box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2);
+    min-height: 45px;
+    position: fixed;
+    top: 10px;
+    z-index: 9999;
+    padding: 15px;
+    display: block;
+}
+.error-close{
+    font-size: 14px !important;
+    margin-right: 5px;
+    align-items: center;
+    float: left;
+    vertical-align: middle;
+    margin-top: 1px;
+}
+.error-msg{
+    text-align: left;
+    vertical-align: middle;
+    width: auto;
+}
+.try-reload{
+    color: #fff;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+.try-reload:hover,.try-reload:focus{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-hide{
+  position: absolute;
+  right: 20px;
+  background: none;
+  border: none;
+}
+@media (max-width:1250px){
+  .btn-hide {
+      position: relative !important;
+      right: 0 !important;
+  }
+}</style><script type="text/javascript">let hosturl = window.location.hostname;
      let CNameUrl= window.location.href ;
      
      // return true for root domain     
@@ -30,7 +80,9 @@
     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
     data-locale="auto"
     data-zip-code="true">
-    </script> --><!--Appcues Code--><!--<script src="//fast.appcues.com/20052.js"></script>--><div id="serverError" class="hide"><img src="./assets/images/underconstruction-page_2.jpg" style="max-width:100%"></div><div class="toast"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="ticker"><i class="material-icons">notifications</i> <span></span> <button type="button" class="btn ticker-btn"><i class="material-icons">clear</i></button></div><div id="main-div"><!--/*<app-root>Loading...</app-root>*/--><sd-app><div class="loader"></div></sd-app></div><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script><!-- Bootstrap Material Design : jQuery --><script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script><!-- Analytics Tracking Snippets Ends --><script type="text/javascript" src="assets/js/clipboard.min.js"></script><script type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--[if IE]>
+    </script> --><!--Appcues Code--><!--<script src="//fast.appcues.com/20052.js"></script>--><script>function removeClass(){
+      document.getElementById('serverError').classList.add('hide');
+    }</script><div id="serverError" class="error-msg-outer hide"><div class="error-close">X</div><span class="error-msg">Oops. Looks like there's a problem with your connection.</span> <a class="try-reload" href=".">Try reloading</a> <button class="try-reload btn-hide" id="removeHide" onclick="removeClass()">Hide</button></div><div class="toast"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="ticker"><i class="material-icons">notifications</i> <span></span> <button type="button" class="btn ticker-btn"><i class="material-icons">clear</i></button></div><div id="main-div"><!--/*<app-root>Loading...</app-root>*/--><sd-app><div class="loader"></div></sd-app></div><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script><!-- Bootstrap Material Design : jQuery --><script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script><!-- Analytics Tracking Snippets Ends --><script type="text/javascript" src="assets/js/clipboard.min.js"></script><script type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--[if IE]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
@@ -172,6 +224,4 @@
     _paq.push(['setSiteId', siteId]);
     var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-    })();*/</script><!-- fixes new  --><script>if(!window.Upscope && !window.parent.Upscope) {
-    (function(w, u, d){if(typeof u!=="function"){var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Upscope=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://js.upscope.io/upscope.js';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(d.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})(window, window.Upscope, document); Upscope('init', { apiKey: "h8DTedLHKF2dpTq8fdANpvBG" }); 
-  }</script><script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body></html>
+    })();*/</script><!-- fixes new  --><script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="scripts.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body></html>
