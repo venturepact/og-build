@@ -1,7 +1,8 @@
 @media (min-width:641px) and (max-width:775px)  {
-    .fixed-width { width: 650px;}
+    .fixed-width { width: 90%;}
     .bottom-section{ float: left; width: 75% !important;}
-    .result-branding{ float: left; width: 25%;}
+    .result-branding{ float: right; width: 25%;}
+    .page_2 .result-full-section.temp2-default-result-outer .small-top-sec:first-child{ width: 50%;}
     }
     
     @media (max-width:640px) {
@@ -496,8 +497,8 @@
             margin-left: 2%; 
         }
         .page-logo.has-bg{
-            margin-left: 0;
-            padding-top: 25px; 
+            margin-left: 6px;
+            padding-top: 20px; 
         }
         .has-background .questions{
             margin-top: 10px;
@@ -540,7 +541,7 @@
         .landing-page-mid .input-section .input-outer:nth-last-child(2):nth-child(even){ width: 100% !important;}
         .page_0 .landing-page-mid .selectize-control.single .selectize-input{ max-height: 46px;}
         .template-seven [type="checkbox"] + label.leadform-checkbox{ white-space: inherit; line-height: 24px;}
-        .questions .question-head { font-size: 14px; margin-bottom: 2px; }
+        .questions .question-head { font-size: 16px; margin-bottom: 2px; }
         .questions .question-subhead { font-size: 15px; }
         .template-seven .page_2 [type="checkbox"] + label.leadform-checkbox{ margin-top: 15px !important; }
         .range-slider .irs-slider { top: 22px; width: 25px; height: 25px; z-index: 99 !important; }
@@ -586,11 +587,17 @@
     
         .fixed-width { width: 100%;}
         .page_1 { width: 90%;  margin-left: 5%;}
-        .page_2.hasbranding.result-fixed{ margin-left: 0; padding: 0;}
+        .page_2.hasbranding.result-fixed{ margin-left: 0; padding: 0; margin-top: 0 !important;}
         .question-components{padding-left:0;}
-        .section-part:nth-child(1){ width: 40%;}
-        .section-part{ width: 60%;}
-        .graph-outer{ padding-bottom: 30px;}
+        .section-part:nth-child(1){ width: 100%;}
+        .section-part{ width: 100%;}
+        .graph-outer-new{ padding-bottom: 30px;}
+        .page_2 .result-fixed1{ padding: 18px;}
+        .input-label{ width:100%;}
+        .page_2 .input-section input{ width:100%;}
+        .page_2 .input-section .input-outer span{ width: 100%; left: 0; bottom: 0; top: initial;}
+        .page_2 .selectize-control{ width: 100%; margin-right: 0; margin-bottom: 10px;}
+        .template-seven [type="checkbox"] + label.leadform-checkbox{ width: 100%;}
     }
     @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
         .landing-page-mid .main-heading h1{
@@ -756,7 +763,7 @@
         .radio-outer{ margin-bottom: 0px;}
         .template-seven [type="radio"]:not(:checked) + label:before, .template-seven [type="radio"]:not(:checked) + label:after{ margin: 4px 12px;}
         /*.questions .question-section-outer .input-field input{padding: 9px 15px;}*/
-        .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 22px; line-height: 26px;}
+        .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 16px; line-height: 22px;}
         .template-seven .page_2 [type="checkbox"] + label.leadform-checkbox{ margin-top: 20px;}
         /*logo styling*/
         .questionnaire .logo a img.vert {
