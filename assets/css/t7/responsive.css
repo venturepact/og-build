@@ -1,8 +1,13 @@
 @media (min-width:641px) and (max-width:775px)  {
-    .fixed-width { width: 90%;}
-    .bottom-section{ float: left; width: 75% !important;}
-    .result-branding{ float: right; width: 25%;}
+    .fixed-width { width: 90%; }
+    .bottom-section{ float: left; width: 68% !important;}
+    .result-branding{ float: right; width: 30%;}
     .page_2 .result-full-section.temp2-default-result-outer .small-top-sec:first-child{ width: 50%;}
+    .questions .question-section-outer .input-field input{ width: 100%;}
+    .page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p:first-child{ font-size: 15px;}
+    .questions .question-head{ font-size: 15px;}
+    .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:first-child{ font-size: 15px;}
+    .leadform-outer .prime-action{ margin-left: 0;}
     }
     
     @media (max-width:640px) {
@@ -585,7 +590,7 @@
             max-height: 35px;
         }
     
-        .fixed-width { width: 100%;}
+        .fixed-width { width: 100%; max-width: 100%; float: left; }
         .page_1 { width: 90%;  margin-left: 5%;}
         .page_2.hasbranding.result-fixed{ margin-left: 0; padding: 0; margin-top: 0 !important;}
         .question-components{padding-left:0;}
@@ -598,6 +603,7 @@
         .page_2 .input-section .input-outer span{ width: 100%; left: 0; bottom: 0; top: initial;}
         .page_2 .selectize-control{ width: 100%; margin-right: 0; margin-bottom: 10px;}
         .template-seven [type="checkbox"] + label.leadform-checkbox{ width: 100%;}
+        .leadform-outer .prime-action{ margin-left: 0;}
     }
     @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
         .landing-page-mid .main-heading h1{
