@@ -280,6 +280,9 @@
     .t1-question .logo-resizing.v-padding {
         padding-top: 75px !important;
     }
+    .opinion-label-outer{font-size: 12px;}
+    .opinon-scale-custom .radio-outer span.t6.hide{margin:0 !important;}
+    .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -503,6 +506,8 @@
 		padding-top: 85px !important;
 	}
     .common-result .t1-logo { margin-top: 10px !important;}
+    .opinon-scale-custom span.t6.hide{margin:0 !important;}
+    .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait) {
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
@@ -803,7 +808,7 @@
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
-    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px}
+    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px}
     .checkbox-outer-base span.t6.pull-text-right {    padding-left: 0px !important;}
     .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
@@ -858,9 +863,7 @@
     .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 12px 0 !important;}
     .t1-question .question-components .leaded-form-c .section-head .pull-left {    max-width: 93%;}
     .t1-ques-component .section-head div {    font-size: 12px;}
-    .t1-slider-question .input-field label~input {
-        width: 58% !important;
-    }
+    .t1-slider-question .input-field label~input {        width: 58% !important;    }
 
 
 }
