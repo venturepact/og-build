@@ -361,7 +361,7 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
   text-align: right;
 }
 .page_2 .input-section{ float:left;width:100%; padding:0; margin-top:0 !important}
-.page_2 .input-section input{background: #ffffff; border-radius: 0; padding: 10px;font-size: 12px; margin-bottom: 16px;  padding-left: 5px; border-left: none;border-right: none; border-top: none;    outline: none; width:68%; padding-bottom:3px;}
+.page_2 .input-section input{background: #ffffff; border-radius: 0; padding: 10px;font-size: 12px; margin-bottom: 0px;  padding-left: 5px; border-left: none;border-right: none; border-top: none;    outline: none; width:68%; padding-bottom:5px;}
 .bordered-btn{background-color: #f9f9f9;  color: #00afa5;padding: 10px 40px; border: 2px solid #00afa5;text-decoration: none !important; transition: background-color 0.5s ease; }
 .bordered-btn:hover{ background-color: #00afa5; color: #fff;}
 .page_2 .content-right{ float:left; width:30%; padding:0 10px; }
@@ -1536,8 +1536,8 @@ input:-webkit-autofill {
 .t1-question .selectize-control{ float: left; width:100%; text-align: left;}
 .t1-question  .selectize-dropdown { text-align: left;}
 .page_2 .selectize-control{ float: right; width:68%; margin-right: 8px;}
-.page_2 .selectize-control.single .selectize-input{ border:none ; border-bottom:2px solid rgba(40,50,58,0.4); background: none !important; box-shadow: none; width: 100% !important; float: none; display: inline-flex; text-align: left; font-size: 14px !important; max-height: 43px; }
-.page_2 .selectize-input {padding: 6px 35px 7px 5px;}
+.page_2 .selectize-control.single .selectize-input{ border:none ; border-bottom:2px solid rgba(40,50,58,0.4); background: none !important; box-shadow: none; width: 100% !important; float: none; display: inline-flex; text-align: left; font-size: 14px !important; max-height: 30px; }
+.page_2 .selectize-input {padding: 6px 35px 5px 5px;}
 .page_2 .selectize-input .item{ font-size:14px; margin-left: 1px; float: left; overflow: hidden;  text-overflow: ellipsis; max-height: 18px;}
 .page_2 .selectize-dropdown{ text-align: left !important}
 /*.landing-page-mid .input-section .input-outer.w100{ width: 97% !important;}*/
@@ -1924,7 +1924,7 @@ span.abhi {
     max-height: 45px;
 }
   /* .leadform-select .selectize-dropdown-content{max-height: 100px !important} */
-  .page_2.hasbranding .selectize-dropdown-content{max-height: 100px !important}
+  .page_2.hasbranding .selectize-dropdown-content{max-height: 100px !important; overflow: auto;}
 
   .selectize-dropdown{z-index: 10;}
   /******** new changes **************/
@@ -2337,3 +2337,6 @@ border: 1px solid #d0d0d0 !important;
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
 
 }
+
+.selectize-control.leadform-select .selectize-dropdown.single{ left:0 !important;}
+.selectize-control.leadform-select{ position: relative !important;}
