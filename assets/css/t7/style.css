@@ -1536,8 +1536,8 @@ input:-webkit-autofill {
 .t1-question .selectize-control{ float: left; width:100%; text-align: left;}
 .t1-question  .selectize-dropdown { text-align: left;}
 .page_2 .selectize-control{ float: right; width:68%; margin-right: 8px;}
-.page_2 .selectize-control.single .selectize-input{ border:none ; border-bottom:2px solid rgba(40,50,58,0.4); background: none !important; box-shadow: none; width: 100% !important; float: none; display: inline-flex; text-align: left; font-size: 14px !important; max-height: 30px; }
-.page_2 .selectize-input {padding: 6px 35px 5px 5px;}
+.page_2 .selectize-control.single .selectize-input{ border:none ; border-bottom:2px solid rgba(40,50,58,0.4); background: none !important; box-shadow: none; width: 100% !important; float: none; display: inline-flex; text-align: left; font-size: 14px !important; max-height: 34px; }
+.page_2 .selectize-input {padding: 6px 35px 1px 1px;}
 .page_2 .selectize-input .item{ font-size:14px; margin-left: 1px; float: left; overflow: hidden;  text-overflow: ellipsis; max-height: 18px;}
 .page_2 .selectize-dropdown{ text-align: left !important}
 /*.landing-page-mid .input-section .input-outer.w100{ width: 97% !important;}*/
@@ -2245,6 +2245,8 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
         padding-right: 2px;
 
     }
+
+    .page_2 .selectize-control.single .selectize-input:after{top:8px;}
 
     .small-bot-sec { border-bottom: 1px solid #eeeeef; padding-bottom: 18px; }
     .result-scrolling .small-bot-sec{ border-bottom: none; padding-bottom: 0; }
