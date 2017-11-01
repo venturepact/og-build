@@ -5954,3 +5954,14 @@ span.abhi {
 .opinion-label-outer{float: left;width: 100%;display: block;color: #666e78;font-size: 15px;}
 .opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 5px;padding-right: 10px;word-break: break-word;}
 .opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 5px;padding-left: 10px;word-break: break-word;}
+
+/* Poll css changes sahil */
+.t1-result{width: 100%; height: 100vh; max-width: 100%; display: table; position: relative; background-size: cover; box-shadow: 0 2px 9px 2px rgba(0,0,0,.4);}
+.t1-result-main{display: table-cell; vertical-align: middle; height: 100%; padding: 60px 0; padding-top: 90px;}
+.poll-main .radio-outer{ position: relative;}
+.poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
+.poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
+.poll-main.check-comp .radio-outer label{ padding-right: 58px;}
+.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
+.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
+.poll-main .radio-outer .poll-percentage{display: none;}
