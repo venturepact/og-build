@@ -2237,7 +2237,7 @@ visuals .t1-result-inner-left #og-table-excel {
 }
 .control--radio .control__indicator.icon-set {
     border: none!important;
-    top: 7px;
+    top: 4px;
     left: 16px;
     position: absolute;
 }
@@ -2369,7 +2369,7 @@ visuals .t1-result-inner-left #og-table-excel {
 
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    min-height: 58px;
+    min-height: 56px;
     color: #666e78 !important;
 }
 .t1-question .question-components .check-comp label input {
@@ -2882,7 +2882,6 @@ visuals .t1-result-inner-left #og-table-excel {
 .t1-result .gradedquiz-main .lf-submitted {
     padding: 15px 40px;
     margin: 15px 0;
-    margin-bottom: 0px;
     font-size: 16px;
     background: #ccc;
     display: inline-block;
@@ -3894,7 +3893,7 @@ _:-webkit-full-screen,
 }
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    min-height: 58px;
+    min-height: 56px;
     color: #666e78 !important;
 }
 .one-page-card-new input[type="checkbox"]:focus:not([readonly]) + label {
@@ -5930,38 +5929,6 @@ span.abhi {
 
 
 /* other field add */
-.t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
-.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
+.t1-question .question-components .othersfield{margin-left: 42px;  border: none;  padding-top: 0; width: 91%;}
 
 /* other field add */
-.t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
-    width: 0px !important;
-}
-
-/* rating css sahil */
-.custom-block.rating-custom .submit-textbox { border: none;}
-.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 5px;}
-.custom-block.rating-custom .rating-inner i{font-size: 30px;margin-right: 0px; cursor: pointer;}
-.custom-block.rating-custom .submit-textbox-btn{top:0px;}
-
-/* Opinion scale css sahil */
-.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;}
-.opinon-scale-custom .radio-outer { border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
-.opinon-scale-custom .radio-outer:last-child{ border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
-.opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
-.opinon-scale-custom label.control.control--radio { padding: 0 !important; min-height:48px;}
-.opinon-scale-custom span.t6 { width: 92%; text-align: center;}
-.opinion-label-outer{float: left;width: 100%;display: block;color: #666e78;font-size: 15px;}
-.opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 5px;padding-right: 10px;word-break: break-word;}
-.opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 5px;padding-left: 10px;word-break: break-word;}
-
-/* Poll css changes sahil */
-.t1-result{width: 100%; height: 100vh; max-width: 100%; display: table; position: relative; background-size: cover; box-shadow: 0 2px 9px 2px rgba(0,0,0,.4);}
-.t1-result-main{display: table-cell; vertical-align: middle; height: 100%; padding: 60px 0; padding-top: 90px;}
-.poll-main .radio-outer{ position: relative;}
-.poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
-.poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
-.poll-main.check-comp .radio-outer label{ padding-right: 58px;}
-.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
-.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
-.poll-main .radio-outer .poll-percentage{display: none;}
