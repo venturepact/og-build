@@ -23,12 +23,8 @@ Developer: Bhawna */
     .question-components .input-field {
         width: 80%;
     }
-    .t1-ques-head,
-    .question-number sup,
-    .t1-ques-component .input-section .input-outer .section-head {
-        font-size: 22px;
-        line-height: 36px;
-    }
+    .text-highlight .t1-ques-head, .text-highlight .question-number sup, .text-highlight .t1-ques-component .input-section .input-outer .section-head {      line-height: 36px;}
+    .t1-ques-head, .question-number sup, .t1-ques-component .input-section .input-outer .section-head {        font-size: 22px;        line-height: 30px;}
     .main-section .input-field label,
     .control,
     .template-five [type="checkbox"] + label,
@@ -53,13 +49,9 @@ Developer: Bhawna */
         font-size: 11px;
         top: 36px;
     }
-    .main-heading,
-    .main-heading h1 {
-        font-size: 5.3vmin;
-    }
-    .main-heading p {
-        line-height: 8.5vmin;
-    }
+    .main-heading ,  .main-heading h1 {        font-size: 5.3vmin;    }
+    .text-highlight .main-heading p {        line-height: 8.5vmin;    }
+    .main-heading p{line-height: 6.5vmin;}
     .landing-page-mid button {
         font-size: 2vmin;
     }
@@ -168,11 +160,8 @@ Developer: Bhawna */
     .ques-header {
         padding: 0 5%;
     }
-    .t1-ques-head,
-    .t1-ques-component .input-section .input-outer .section-head {
-        font-size: 18px;
-        line-height: 32px;
-    }
+    .t1-ques-head, .t1-ques-component .input-section .input-outer .section-head {        font-size: 18px;        line-height: 28px;    }
+    .text-highlight .t1-ques-head, .text-highlight .t1-ques-component .input-section .input-outer .section-head{line-height: 32px}
     .question-components input,
     .main-section .input-field label {
         border-bottom-width: 2px;
@@ -287,17 +276,16 @@ Developer: Bhawna */
         float: left;
         text-align: center;
     }
-    .main-heading,
-    .main-heading h1 {
-        font-size: 28px;
-        line-height: 40px
-    }
+    .main-heading , .main-heading h1{        font-size: 28px; line-height: 34px    }
+    .text-highlight .main-heading ,  .text-highlight .main-heading h1{  line-height: 40px    }
+  
+    .text-highlight .main-heading p {        line-height: 48px;    }
+    .main-heading p {   line-height: 36px;}
+
     leadform .input-section .input-outer:nth-last-child(2):nth-child(odd) {
         margin-bottom: 20px;
     }
-    .main-heading p {
-        line-height: 48px;
-    }
+   
     .main-section .input-field label {
         height: 27px;
     }
@@ -408,9 +396,8 @@ Developer: Bhawna */
     .main-heading h1 {
         font-size: 36px;
     }
-    .main-heading p {
-        line-height: 58px;
-    }
+    .text-highlight .main-heading p {        line-height: 58px;    }
+    .main-heading p {        line-height: 42px;    }
     .landing-page-mid button {
         padding: 10px 25px;
     }
@@ -759,15 +746,13 @@ Developer: Bhawna */
         /*padding-bottom: 70px;        */
         min-height: 100vh;
     }
-    .main-heading p {
-        padding: 0;
-        line-height: 42px;
-    }
-    .main-heading,
-    .main-heading h1 {
-        font-size: 24px;
-        line-height: 40px;
-    }
+    
+   
+    .text-highlight .main-heading p {        padding: 0;        line-height: 42px;    }
+    .main-heading p {        padding: 0;        line-height: 34px;    }
+       .main-heading , .main-heading h1{        font-size: 24px;        line-height: 34px;    }
+      .text-highlight  .main-heading ,  .text-highlight .main-heading h1{    line-height: 40px;    }
+
     .landing-img {
         width: 100%;
     }
@@ -872,11 +857,8 @@ Developer: Bhawna */
     .t1-result-inner-left-table .table-outer {
         max-width: 100%;
     }
-    .t1-ques-head,
-    .t1-ques-component .input-section .input-outer .section-head {
-        font-size: 16px;
-        line-height: 27px;
-    }
+    .t1-ques-head, .t1-ques-component .input-section .input-outer .section-head {        font-size: 16px;        line-height: 24px;    }
+    .text-highlight .t1-ques-head,   .text-highlight .t1-ques-component .input-section .input-outer .section-head{line-height: 27px}
     .lightSticky {
         position: absolute;
         right: 0px;
