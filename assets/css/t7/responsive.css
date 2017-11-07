@@ -24,7 +24,7 @@
         width: 90%;
         margin-left: 5%;
         margin-top: 0;
-        padding-top: 25px;
+        padding-top: 0px;
         margin-bottom: 0px;
     }
     .page_2{
@@ -272,7 +272,7 @@
     .temp2-bg{display:none;}
     .page_1 {
         width: 86%;
-        margin-left: 7%;
+        margin-left: 7%; padding-bottom: 10px;
     }
     .has-background .page_1{
         width: 96%;
@@ -620,9 +620,11 @@
      .landing-page-mid .input-section input{ margin-bottom: 0 !important;}
      .template-seven .outer-border{padding:0px !important;}
      .outer-border-bottom{padding-bottom:30px !important;}
-     .page_2 .selectize-control.single .selectize-input{ margin-bottom: 10px;}
+     .page_2 .selectize-control.single .selectize-input{ margin-bottom: 10px; padding-left:0;}
      .page_1 .input-field label { min-width: 16px; padding: 2px 5px 0px 5px;}
      visuals .t1-result-inner-left-table{ margin-bottom: 20px;}
+     .page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p{ margin-top: 5px;}
+     .page_2 .selectize-dropdown.single{ top:30px !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{
@@ -812,5 +814,10 @@
 
 @media (max-width:300px){
 .template-seven{width: 100%; max-width: 100%; overflow: hidden; float: left;}
-
+.landing-center-outer .input-label{ width:100%; margin-bottom: 0;}
+.landing-page-mid .input-section .input-outer input{ width: 100%;}
+.page_0 .landing-page-mid .selectize-control{ width:100%;}
+.landing-page-mid .input-section .input-outer { min-height: 60px !important;}
+.landing-page-mid .landing-center-outer .input-section .input-outer span { left: 0; top: 45px;}
+.landing-page-mid .landing-center-outer .prime-action{ margin-left: 7.5%;}
 }

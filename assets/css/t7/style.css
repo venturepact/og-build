@@ -592,7 +592,7 @@ border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px 
 }
 .page_2.result-fixed{
   position: relative ;
-  margin-top: 33px;
+  margin-top: 10px;
   float: left;
 }
 .page2 .page_2 .result-full-section .small-section h6 {
@@ -637,7 +637,7 @@ border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px 
   float: left;
   /*margin-left: 5%;*/
   position: relative;
-  padding-top: 35px;
+  padding-top: 10px;
   margin-bottom: 10px; 
 }
 /*.template-section .page_1{padding-left:24%; width:49%;}*/
@@ -687,9 +687,9 @@ border-radius: 25px!important;
   width: 100%;
   padding-top: 10px; position: relative;
 }
-.page_2 .result-temp2-default-section:last-child {
+/*.page_2 .result-temp2-default-section:last-child {
   padding-top: 0px;
-}
+}*/
 .page_2 .result-temp2-default-section.result-full-section .small-top-sec p:child(1){width: 100% !important; text-align: center !important; float: left !important; word-wrap: break-word;  }
 .page_2 .result-temp2-default-section.result-full-section .small-top-sec p:child(2){width: 100% !important; text-align: center !important; float: left !important; word-wrap: break-word;  }
 .page_2 .result-temp2-default-section.result-full-section .small-top-sec p:child(3){width: 100% !important; text-align: center !important; float: left !important; word-wrap: break-word;  }
@@ -1286,7 +1286,7 @@ input:-webkit-autofill {
   display: none;
 }
 .section-outer{
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   margin-top: 10px;
 }
 
@@ -1587,7 +1587,7 @@ input {
   -webkit-transform: translate3d(0,0,0);
 }
 
-.template-seven .page_2 [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{ border: 2px solid rgba(94,94,94,0.6) !important }
+.template-seven .page_2 [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{ border: 1px solid rgba(94,94,94,0.6)  }
 .template-section .page_0 .input-outer i { left: -3px !important;}
 
 /*****  28th june 2017 *******/
@@ -1994,9 +1994,9 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
   border: none !important;
   border-bottom: 1px solid #d9dad3 !important;
   border-radius: 5px;
-  padding: 10px 5px;
+  padding: 8px 5px;
   font-size: 14px;
-  margin-top: 5px; border-radius: 0 !important; outline: none; padding-bottom:8px; background: transparent !important;
+  margin-top: 5px; border-radius: 0 !important; outline: none; padding-bottom:5px; background: transparent !important;
 }
 
 
@@ -2013,7 +2013,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 /* image size */
 
 .template-section .page_2.result-fixed{position: relative;
-  margin-top: 35px !important;
+  margin-top: 10px !important;
   margin-top: 0;
    width:46%; float: left; margin-left: 3.8% !important;
 
@@ -2257,7 +2257,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 
 .section-part:nth-child(1){ float: left; width:32%; padding-top:6px; display: inline-block;}
 .section-part{ float: left; width:60%;}
-.section-head .section-part  .help-outer{margin-left: 0; top:4px;}
+.section-head .section-part  .help-outer{margin-left: -1px; top:5px;}
 .section-head .section-part + div{display: inline}
 .section-part:nth-child(2){ padding-left:10px;}
 .fixed-width{ width: 630px; margin: 0 auto;}
@@ -2476,9 +2476,12 @@ visuals .t1-result-inner-left-table{
 .section-part.left-sec div:nth-child(1) p{ display: inline;}
 
 
+.landing-page-mid .selectize-control.single .selectize-input:after{ top: 1px !important;}
+.small-bot-sec p{ margin-bottom: 0;}
+.page_1 .questions { margin-top: 10px !important;}
+.page_1 .questions.sec_1, .page_1 .questions.sec_2, .page_1 .questions.sec_3, .page_1 .questions.sec_4 { margin-top: 0px !important;}
 
-
-
+.template-seven .checkbox-outer-base [type="checkbox"].filled-in:not(:checked) + label:after{ border:1px solid !important}
 
 
 
