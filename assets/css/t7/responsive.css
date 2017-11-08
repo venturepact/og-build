@@ -829,3 +829,12 @@
 .landing-page-mid .landing-center-outer .prime-action{ margin-left: 7.5%;}
 .template-seven .table-outer{ max-width:170px !important; overflow-y: scroll;} 
 }
+@media (min-width: 200px) and (max-width: 319px) {
+.template-seven .table-outer {
+max-width: 180px !important;
+}
+.template-seven .table-outer table {
+max-width: 180px !important;
+}
+}
+
