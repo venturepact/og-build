@@ -592,7 +592,7 @@ border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px 
 }
 .page_2.result-fixed{
   position: relative ;
-  margin-top: 10px;
+  margin-top: 47px;
   float: left;
 }
 .page2 .page_2 .result-full-section .small-section h6 {
@@ -723,7 +723,7 @@ border-radius: 25px!important;
 .page_2 .result-full-section.temp2-default-result-outer .small-top-sec p{width: 100% !important; text-align: center !important; float: left !important; word-wrap: break-word; font-size: 26px;  }
 .page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p:nth-child(1){ color:rgb(94,94,94);  font-size: 14px !important ; font-style:inherit; width: 68%; }
 .page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p:nth-child(2){ margin-top: 3px; margin-bottom: 5px;}
-.page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p{ color:#999;  font-size: 11px !important ; margin: 0; margin-top: 13px; opacity: 0.6; }
+.page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p{ color:#999;  font-size: 11px !important ; margin: 0; margin-top: 13px; }
 .page_2 .temp2-default-result-outer.result-half-section .small-bot-sec {float: left; width: 70% !important;text-align: left;word-wrap: break-word;}
 .page_2 .temp2-default-result-outer.result-half-section .small-bot-sec p{ margin: 0; font-size: 12px; color:#999;}
 .page_2 .temp2-default-result-outer.result-half-section .small-top-sec {float: right; width: 30% !important;text-align: right;word-wrap: break-word;}
@@ -755,7 +755,7 @@ input[type=range]::-ms-thumb { border: none; height: 16px; width: 16px; border-r
 input[type=range]:focus::-ms-fill-lower { background: #888; }
 input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .range-slider .slider-min { width: 2%; float: left; padding-top: 8px; color: #ff6600; }
-.range-slider .well1 { width: 100%; float: left; margin-top: 4px; }
+.range-slider .well1 { width: 100%; float: left; margin-top: 4px; max-height: 45px; }
 .range-slider .slider-max { width: 2%; float: right; padding-top: 8px; color: #ff6600; }
 .tip { position: absolute; border: 1px solid black; padding: 4px; }
 .question-section .input-section .input-outer span { float: left; width: 100%; text-align: left; color: #f44336; font-size: 12px; z-index: 1; margin-top: -12px; margin-bottom: 8px; }
@@ -1143,9 +1143,9 @@ input[type=number] {
 
 
 .page_2 .redirect-heading {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: rgb(94,94,94);
   width: 100%;
   float: left;
@@ -2482,7 +2482,7 @@ visuals .t1-result-inner-left-table{
 .page_1 .questions.sec_1, .page_1 .questions.sec_2, .page_1 .questions.sec_3, .page_1 .questions.sec_4 { margin-top: 0px !important;}
 
 .template-seven .checkbox-outer-base [type="checkbox"].filled-in:not(:checked) + label:after{ border:1px solid !important}
-
+visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% !important;;}
 
 
 
