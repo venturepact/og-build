@@ -528,6 +528,10 @@ li {
 .t1-ques-head div p:last-child {
     display: inline;
 }
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-component {
     float: left;
     width: 100%;
@@ -3193,6 +3197,7 @@ input[type=number] {
     font-size: 16px!important;
     text-transform: inherit;
 }
+.t1-slider-question .input-field label:not(.label-icon).post-icon.active{color: #62696d !important; }
 .one-page-card-new .question-section.leaded-form-c input:focus:not([readonly]) {
     border-bottom: 1px solid #d9dad3 !important;
     box-shadow: none !important;

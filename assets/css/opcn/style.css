@@ -529,6 +529,10 @@ li {
 .t1-ques-head div p:last-child {
     display: inline;
 }
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-component {
     float: left;
     width: 100%;
@@ -2237,7 +2241,7 @@ visuals .t1-result-inner-left #og-table-excel {
 }
 .control--radio .control__indicator.icon-set {
     border: none!important;
-    top: 4px;
+    top: 7px;
     left: 16px;
     position: absolute;
 }
@@ -2369,7 +2373,7 @@ visuals .t1-result-inner-left #og-table-excel {
 
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    min-height: 56px;
+    min-height: 58px;
     color: #666e78 !important;
 }
 .t1-question .question-components .check-comp label input {
@@ -2882,6 +2886,7 @@ visuals .t1-result-inner-left #og-table-excel {
 .t1-result .gradedquiz-main .lf-submitted {
     padding: 15px 40px;
     margin: 15px 0;
+    margin-bottom: 0px;
     font-size: 16px;
     background: #ccc;
     display: inline-block;
@@ -3893,7 +3898,7 @@ _:-webkit-full-screen,
 }
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    min-height: 56px;
+    min-height: 58px;
     color: #666e78 !important;
 }
 .one-page-card-new input[type="checkbox"]:focus:not([readonly]) + label {
@@ -5929,6 +5934,7 @@ span.abhi {
 
 
 /* other field add */
-.t1-question .question-components .othersfield{margin-left: 42px;  border: none;  padding-top: 0; width: 91%;}
+.t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
+.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
 
 /* other field add */

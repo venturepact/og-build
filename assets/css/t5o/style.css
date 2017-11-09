@@ -473,6 +473,10 @@ input[type=number] { -moz-appearance: textfield; }
 .requiredAsteric { color: #f00; font-size: 18px; display: inline; }
 .t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px; }
 .t1-ques-head div p { display: inline; }
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-head .question-title { display: inline; }
 .section-sub { margin-bottom: 50px; display: flex; }
 .input-validation { display: inline-block !important; position: relative !important; width: calc(50% - 50px); float: left; margin-left: 50px; }

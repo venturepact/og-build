@@ -160,6 +160,10 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-ques-head{      color: #fff;    font-size: 40px;  line-height: 46px;  margin-bottom: 35px;    text-align: center;}
 .t1-ques-head div{    display: inline;    float: none;}
 .t1-ques-head div p:last-child{    display: inline;}
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-component{    float: left;    width: 100%;}
 .t1-ques-component .question-components custom_html{ text-align: center;}
 .t1-ques-component input.t1-input{    float: left;    color: #666e78;    font-size: 16px;    border: 1px solid #d9dad3;    width: 95%;    padding: 15px;}
