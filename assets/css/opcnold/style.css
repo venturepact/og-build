@@ -2295,7 +2295,7 @@ visuals .t1-result-inner-left #og-table-excel {
 .range-slider.char-count-slider .irs-single {
     padding: 1px 4px !important;
     border-radius: 3px !important;
-    max-width: 75px;
+    max-width: 135px;
     float: left;
     word-wrap: break-word;
     white-space: normal;
@@ -3198,6 +3198,7 @@ input[type=number] {
     text-transform: inherit;
 }
 .t1-slider-question .input-field label:not(.label-icon).post-icon.active{color: #62696d !important; }
+.t1-slider-question .input-field label.post-icon.active{color: #62696d !important; }
 .one-page-card-new .question-section.leaded-form-c input:focus:not([readonly]) {
     border-bottom: 1px solid #d9dad3 !important;
     box-shadow: none !important;
