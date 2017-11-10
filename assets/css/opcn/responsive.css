@@ -1359,6 +1359,39 @@
     .page_1 .common-result-space {
         padding-top: 30px !important;
     }
+    /*.opinon scale css*/
+    .custom-block.rating-custom .rating-inner i{font-size: 25px;}
+    .opinion-label-outer{font-size: 11px;}
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;}
+
+    /* common Header Footer responsive css sahil */
+    .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 10px;}
+    .common-header-main .common-header-inner { float: left;  width: 100%; }
+    .common-header-main .common-header-inner a { float: none; }
+    .common-header-main .common-header a:last-child{ float: none;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+
+    /* common Header Footer responsive css sahil */
+    .common-header-main{ padding: 10px;}
+    .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 5px; text-align: center;}
+    .common-header-main .common-header-inner { float: left;  width: 100%; }
+    .common-header-main .common-header-inner a { float: none; font-size: 12px; }
+    .common-header-main .common-header a:last-child{ float: none;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .common-footer-main .disc-set{ text-align: center; width: 100%;}
+    .common-footer-main .disc-set p{ top: 3px;  font-size: 12px; margin-bottom: 0;}
+    .common-footer-main .stickyfooter.lightSticky{float: none;  margin: 0 auto; width: 100%; }
+    .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
+    .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
+
+    
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2351,6 +2384,10 @@
         position: absolute;
         top: -12px;
     }
+     /*.opinon scale css*/
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;}
+    .opinion-label-outer{font-size: 13px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
