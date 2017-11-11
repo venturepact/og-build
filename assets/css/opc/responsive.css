@@ -823,6 +823,8 @@
         max-width: 65px;
         padding: 1px 4px!important;
     }
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     /*.submit-checkbox-img{position: absolute; top:0 ; left:20%;}*/
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -1465,6 +1467,7 @@
     .t1-landing .t1-landing-inner .selectize-control {
         width: 98%;
     }
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
