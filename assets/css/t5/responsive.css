@@ -358,7 +358,7 @@ Developer: Bhawna */
     .opinon-scale-custom .check-comp{border-spacing:1px 0;padding-bottom: 10px;}
     .opinion-label-outer{font-size: 13px;}
     .opinon-scale-custom span.t6 {font-size: 11px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 28px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 16px;margin-right: 3px;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     /*.landing-page-header a img {
@@ -648,9 +648,10 @@ Developer: Bhawna */
    .gradedquiz-main.common-result-gq .landing-page-header{ top: -10px !important;}
    .CustomHtml .t1-ques-component.action-outer button.prime-action{ margin-bottom: 0px;}
    .opinon-scale-custom .check-comp {border-spacing: 1px 0;padding-bottom:8px;}
-    .opinon-scale-custom span.t6{font-size: 11px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 25px;}
-    .opinion-label-outer{font-size: 11px;}
+   .opinon-scale-custom span.t6{font-size: 11px;}
+   .custom-block.rating-custom .rating-inner i{font-size: 25px;}
+   .opinion-label-outer{font-size: 11px;}
+   .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {

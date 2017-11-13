@@ -496,6 +496,10 @@ li {
 .t1-ques-head div p:last-child {
     display: inline;
 }
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-component {
     float: left;
     width: 100%;
@@ -1698,7 +1702,7 @@ li {
 .range-slider.char-count-slider .irs-single {
     padding: 1px 4px !important;
     border-radius: 3px !important;
-    max-width: 75px;
+    max-width: 135px;
     float: left;
     word-wrap: break-word;
     white-space: normal;

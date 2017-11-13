@@ -848,6 +848,10 @@
     .t1-ques-head .question-title {
         display: inline;
     }
+    .t1-ques-head div ul{display: inline;}
+    .t1-ques-head div ul li{display: inline;}
+    .t1-ques-head div span{display: inline;}
+    .t1-ques-head div label{display: inline;}
     .section-sub {
         margin-bottom: 50px;
         display: flex;
@@ -1958,7 +1962,7 @@
     }
     .range-slider.char-count-slider .irs-single {
         padding: 1px 4px !important;
-        max-width: 75px;
+        max-width: 135px;
         float: left;
         word-wrap: break-word;
         white-space: normal;
@@ -3772,10 +3776,11 @@
 
 /* rating css sahil */
 .custom-block.rating-custom .submit-textbox { border: none;}
-.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 5px;}
-.custom-block.rating-custom .rating-inner i{font-size: 30px;margin-right: 0px; cursor: pointer;}
-.custom-block.rating-custom .submit-textbox-btn{top:0px;}
+.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
+.custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
 .t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css */
 #build .opinon-scale-custom .check-comp{border-spacing: 8px 0;}

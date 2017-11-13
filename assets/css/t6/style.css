@@ -160,6 +160,10 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-ques-head{      color: #fff;    font-size: 40px;  line-height: 46px;  margin-bottom: 35px;    text-align: center;}
 .t1-ques-head div{    display: inline;    float: none;}
 .t1-ques-head div p:last-child{    display: inline;}
+.t1-ques-head div ul{display: inline;}
+.t1-ques-head div ul li{display: inline;}
+.t1-ques-head div span{display: inline;}
+.t1-ques-head div label{display: inline;}
 .t1-ques-component{    float: left;    width: 100%;}
 .t1-ques-component .question-components custom_html{ text-align: center;}
 .t1-ques-component input.t1-input{    float: left;    color: #666e78;    font-size: 16px;    border: 1px solid #d9dad3;    width: 95%;    padding: 15px;}
@@ -882,7 +886,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
 }
 .range-slider.char-count-slider .irs-single {
     padding: 1px 4px !important;
-    max-width: 75px;
+    max-width: 135px;
     float: left;
     word-wrap: break-word;
     white-space: normal;
@@ -981,7 +985,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     width: 100%;
     font-size: 16px;
     margin: 0px 0 20px 0;
-    transition: 0.5s;
+    /* transition: 0.5s; */
     padding: 15px 20px;
     min-height: 50px;
     box-shadow: none;
@@ -3082,9 +3086,11 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 
 /* rating css sahil */
 .custom-block.rating-custom .submit-textbox { border: none;}
-.custom-block.rating-custom .rating-inner{float: none; width: auto; margin-top: 5px;}
-.custom-block.rating-custom .rating-inner i{font-size: 30px;margin-right: 0px; cursor: pointer;}
-.custom-block.rating-custom .submit-textbox-btn{top:0px;}
+.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
+.custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
+.t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css */
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 8px 0;}
