@@ -164,6 +164,7 @@
     .fb_iframe_widget_fluid{
         display: inline-block !important;
     }
+    .custom-block.rating-custom .rating-inner i {font-size: 15px !important;margin-right: 3px !important;padding: 4px !important;}
 }
 @media (max-width: 375px) {
     .footer-nav {
@@ -641,7 +642,6 @@
         padding: 28px!important;
         padding-top: 20px!important;
     }
-    .custom-block.rating-custom .rating-inner i{font-size: 25px;}
     .opinion-label-outer{font-size: 11px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
@@ -679,6 +679,13 @@
     }
     .page_0 .input-outer i {
         top: 16px !important;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+   .custom-block.rating-custom .rating-inner i {
+        font-size: 18px !important;
+        margin-right: 5px !important;
+        padding: 4px !important;
     }
 }
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {

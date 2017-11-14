@@ -163,6 +163,8 @@
         display: inline-block !important;
     }
     .fixed-width { width: 700px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 5px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
 }
 @media (max-width:375px) {  
     .footer-nav {

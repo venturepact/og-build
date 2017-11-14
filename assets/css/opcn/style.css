@@ -5944,6 +5944,7 @@ span.abhi {
     width: 0px !important;
 }
 
+
 /* rating css sahil */
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
@@ -5973,12 +5974,12 @@ span.abhi {
 .common-header-main .common-header-inner{ float: right;}
 .common-footer-main{ float: left; width: 100%; min-height: 40px; padding: 10px 20px !important; margin-bottom: 0px !important; min-height: 70px; box-shadow: 0 3px 9px -1px rgba(0,0,0,0.4); position: relative; z-index: 9; }
 .common-footer-main .common-footer{ float: left; width: auto; min-height: auto; padding: 0px; position: relative; z-index: 9; box-shadow: none !important; margin-right: 10px; margin-bottom: 0 !important;}
-.common-footer-main .common-footer a{ float: left; width: auto; margin-right: 10px; line-height: 20px; -webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in;}
+.common-footer-main .common-footer a{ float: left; width: auto;font-size: 13px; margin-right: 10px; line-height: 20px; -webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in;}
 .common-footer-main .common-footer a:hover{ opacity: 1;}
 .common-footer-main .common-footer a:last-child{ float: left; width: auto; margin-right: 0px;}
-.common-footer-main .disc-set{ line-height: 30px; float: left; width: 70%; margin-bottom: 5px;}
+.common-footer-main .disc-set{ line-height: 30px; float: left; width: 70%; margin-bottom: 5px; font-size: 11px;}
 .common-footer-main .disc-set i.material-icons{ display: none;}
-.common-footer-main .disc-set p { line-height: 20px;  position: relative; top: 8px;}
+.common-footer-main .disc-set p { line-height: 20px;  position: relative; top: 8px; font-size: 11px;}
 .common-footer-main .stickyfooter.lightSticky{ position: relative !important;  width: auto;  float: right; bottom: 0;padding-right: 10px;}
 .common-footer-inner{ float: left; width: 100%;}
 .header-next-div{width: 100%; height: calc(100vh - 60px);  max-width: 100%; position: relative;  display: table; background-size: cover; background-position: top center;}
@@ -6041,11 +6042,11 @@ span.abhi {
 .template-section .template-container.mobile .common-header-main .common-header a{ float: none; font-size: 12px;}
 .template-section .template-container.mobile .common-header-main .common-header .common-header-inner{ float: left; width: 100%;}
 .template-section .template-container.mobile .editor-page-divider .t1-landing .no-footer-links{ height: auto;}
-.template-section .template-container.mobile .common-footer-main .disc-set{ text-align: center; width: 100%;}
-.template-section .template-container.mobile .common-footer-main .disc-set p{ top:0px; font-size: 12px;}
+.template-section .template-container.mobile .common-footer-main .disc-set{ text-align: center; width: 100%; font-size: 11px;}
+.template-section .template-container.mobile .common-footer-main .disc-set p{ top:0px; font-size: 11px;}
 .template-section .template-container.mobile .common-footer-main .stickyfooter.lightSticky{ float: none; margin: 0 auto;width: 100%;}
 .template-section .template-container.mobile .common-footer-main .common-footer { text-align: center;  margin: 0; width: 100%;}
-.template-section .template-container.mobile .common-footer-main .common-footer a{ float: none; font-size: 12px;}
+.template-section .template-container.mobile .common-footer-main .common-footer a{ float: none; font-size: 13px;}
 .template-section .template-container.mobile .header-next-div{ height: auto;}
 
 
@@ -6053,4 +6054,24 @@ span.abhi {
 
 .checkbox-outer.active .control__indicator.check-set {
     display: none;
+}
+
+/********** question video *********/
+
+.video-sec iframe.vid {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.video-sec {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    min-height: 200px;
+    position: relative;
+    padding-bottom: 46.5%;
 }

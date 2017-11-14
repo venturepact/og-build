@@ -2221,8 +2221,24 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
   /* rating css sahil */
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 5px;}
-.custom-block.rating-custom .rating-inner i{font-size: 30px;margin-right: 0px; cursor: pointer;}
+.custom-block.rating-custom .rating-inner i{font-size: 16px;margin-right: 5px;cursor: pointer;padding: 2px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;}
+.custom-block.rating-custom .rating-inner i.selected{border-radius: 50%;}
+
+
+/* Opinion scale css */
+.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 3px 0;}
+.opinon-scale-custom .radio-outer {width: auto;float: none;margin-bottom: 2px;margin-top: -3px;margin-left: -1px; padding: 0;box-shadow: none;outline: none;display: table-cell;}
+.opinon-scale-custom .radio-outer:last-child{width: auto;float: none;margin-bottom: 2px;margin-top: -3px; margin-left: -1px;padding: 0;box-shadow: none;outline: none;display: table-cell;}
+.opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
+.opinon-scale-custom .mid-outer  .control.control--radio{width:100%;text-align:center;margin:0 auto !important;padding: 0 !important;height: auto !important;min-height: 23px;border: none;}
+.opinon-scale-custom span.abhi {display: none !important;}
+.opinion-label-outer{float: left;width: 100%;display: block;font-size: 15px;}
+.opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 2px;padding-right: 10px;word-break: break-word;}
+.opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 2px;padding-left: 10px;word-break: break-word;}
+/*.opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}*/
+.opinon-scale-custom .mid-outer .control.control--radio {background: none;}
+.opinon-scale-custom span.t6 { width: 92%; text-align: center;}
 
 
 /*** new result ****/
@@ -2502,3 +2518,84 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
     .main-bg {  border: none; box-shadow: none;  margin-top: 0;}
 
 /*css only for live end*/
+
+
+/* common Header Footer css sahil */
+.common-header-main{ float: left; box-shadow: 0 -3px 9px -1px rgba(0,0,0,0.4); position: relative; z-index: 9; width: 100%; padding: 20px; min-height: 70px;}
+.common-header-main .common-header{ float: right; width: 80%; min-height: auto; padding: 0px; position: relative; z-index: 9; box-shadow: none !important; margin-right: 10px;}
+.common-header-main .landing-page-header{ top:15px;}
+.common-header-main .common-header a{ float: left; width: auto; margin-right: 10px; line-height: 30px;-webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in;}
+.common-header-main .common-header a:hover{ opacity: 1;}
+.common-header-main .common-header a:last-child{ float: left; width: auto; margin-right: 0px;}
+.common-header-main .common-header-inner{ float: right;}
+.common-footer-main{ float: left; width: 100%; min-height: 40px; padding: 10px 20px !important; margin-bottom: 0px !important; min-height: 70px; box-shadow: 0 3px 9px -1px rgba(0,0,0,0.4); position: relative; z-index: 9; }
+.common-footer-main .common-footer{ float: left; width: auto; min-height: auto; padding: 0px; position: relative; z-index: 9; box-shadow: none !important; margin-right: 10px; margin-bottom: 0 !important;}
+.common-footer-main .common-footer a{ float: left; width: auto; font-size: 13px; margin-right: 10px; line-height: 20px; -webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in;}
+.common-footer-main .common-footer a:hover{ opacity: 1;}
+.common-footer-main .common-footer a:last-child{ float: left; width: auto; margin-right: 0px;}
+.common-footer-main .disc-set{ line-height: 30px; float: left; width: 70%; margin-bottom: 5px; font-size: 11px;}
+.common-footer-main .disc-set i.material-icons{ display: none;}
+.common-footer-main .disc-set p { line-height: 20px;  position: relative; top: 8px; font-size: 11px;}
+.common-footer-main .stickyfooter.lightSticky{ position: relative !important;  width: auto;  float: right; bottom: 0; padding: 7px 20px; padding-right: 10px;}
+.common-footer-inner{ float: left; width: 100%;}
+.header-next-div{width: 100%; height: calc(100vh - 60px);  max-width: 100%; position: relative;  display: table; background-size: cover; background-position: top center;}
+.result-next-div{ width: 100%; display: table;}
+.result-next-div .t1-result-main{ padding: 30px 0 !important;}
+.editor-page-divider .t1-landing .common-footer-main{ margin-bottom: 0px !important; box-shadow: none;}
+/* .editor-page-divider .common-footer-main{ margin-bottom: 35px !important; } */
+.editor-page-divider .t1-result .common-footer-main{ margin-bottom: 0px !important;}
+.t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
+.t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0;}
+.t1-landing .header-next-div.no-header-links .t1-landing-inner{ padding-bottom: 50px;}
+.no-header-links.header-next-div .t1-question .t1-landing-inner{ padding-bottom: 50px;}
+/* .editor-page-divider .no-footer-links.no-header-links { box-shadow: 0 2px 9px 2px rgba(0,0,0,0.4);} */
+.editor-page-divider .t1-landing{ box-shadow: 0 2px 9px 2px rgba(0,0,0,0.4);}
+.editor-page-divider .t1-landing .no-footer-links{ display: table; width: 100%; box-shadow: none; height: calc(100% - 10%);}
+.t1-landing .no-footer-links{ display: table; width: 100%; box-shadow: none; height: calc(100% - 10%);}
+.editor-page-divider .t1-landing .no-footer-links .t1-landing-inner{ box-shadow: none;}
+.t1-landing .header-next-div.no-header-links{width: 100%; float: left; display: inherit;}
+.t1-landing .no-footer-links .t1-landing-inner{ padding-top:125px; padding-bottom:125px;}
+.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
+.t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
+.t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
+.t1-result .no-footer-links{width: 100%; display: table; height:93%; }
+.t1-result .no-footer-links .t1-result-main{ padding: 50px 0 0 0 !important;}
+.t1-landing .common-header-main { box-shadow: none;}
+.t1-result .common-header-main { box-shadow: none;}
+.t1-landing .header-next-div .t1-landing-inner.logo-resizing { box-shadow: none;}
+.editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
+.common-head-outr{ display: block;}
+.common-head-outr .header-next-div .right-section { display: block; height: 100%;}
+
+
+
+/* builder mobile of header footer  css */
+.template-section .template-container.mobile .common-header-main .common-header {float: left; width: 100%; min-height: auto; padding: 0; text-align: center; position: relative; z-index: 9; box-shadow: none !important; margin-right: 0; margin-top: 10px;}
+.template-section .template-container.mobile .common-header-main .common-header a{ float: none; font-size: 12px;}
+.template-section .template-container.mobile .common-header-main .common-header .common-header-inner{ float: left; width: 100%;}
+.template-section .template-container.mobile .editor-page-divider .t1-landing .no-footer-links{ height: auto;}
+.template-section .template-container.mobile .common-footer-main .disc-set{ text-align: center; width: 100%;  font-size: 11px;}
+.template-section .template-container.mobile .common-footer-main .disc-set p{ top:0px; font-size: 11px;}
+.template-section .template-container.mobile .common-footer-main .stickyfooter.lightSticky{ float: none; margin: 0 auto;width: 100%;}
+.template-section .template-container.mobile .common-footer-main .common-footer { text-align: center;  margin: 0; width: 100%;}
+.template-section .template-container.mobile .common-footer-main .common-footer a{ float: none; font-size: 13px;}
+/* .template-section .template-container.mobile .header-next-div{ height: auto;} */
+.template-section .template-container.mobile .common-header-main .landing-page-header { position: relative; margin: 0 auto; top: inherit; left: inherit;float: left; width: 100%; text-align: center;}
+.template-section .template-container.mobile .common-header-main .landing-page-header .logo { width: 100%; float: left; margin-bottom: 0px;}
+.template-section .template-container.mobile .inline-tablecell{ padding: 0px;}
+.template-section .template-container.mobile .t1-question form{ margin-bottom: 0px;}
+
+
+
+.lf-submitted{
+  padding: 6px 25px;
+  margin: 15px 0;
+  margin-top: 10px;
+  font-size: 12px;
+  background: #ccc;
+  display: inline-block;
+  color: rgba(0,0,0,0.25);
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: bold;
+}
