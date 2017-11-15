@@ -639,6 +639,44 @@
       .check-comp .checkbox-outer .control--checkbox{padding-top: 2px;}
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label { padding-left: 28px;}
       .dropdown-outer-main .selectize-control{ margin-bottom: 30px;}
+
+
+
+    /* common Header Footer responsive css sahil */
+    .common-header-main{ padding: 10px;}
+    .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 5px; text-align: center;}
+    .common-header-main .common-header-inner { float: left;  width: 100%; }
+    .common-header-main .common-header-inner a { float: none; font-size: 12px; }
+    .common-header-main .common-header a:last-child{ float: none;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .common-footer-main .disc-set{ text-align: center; width: 100%; margin-bottom: 0px;}
+    .common-footer-main .disc-set p{ top: 3px;  font-size: 12px; margin-bottom: 0;}
+    .common-footer-main .stickyfooter.lightSticky{float: none;  margin: 0 auto; width: 100%; }
+    .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
+    .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
+    .header-next-div .landing-page-mid{margin-top: 0px;}
+    .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
+    .common-header-main .landing-page-header{ width: 130px;  margin: 0 auto;  position: relative!important;  top: inherit!important; left: inherit!important; width: 100%;  float: none; text-align: center; left: inherit;}
+    .common-header-main .landing-page-header .logo {margin-bottom: 0;  width: 100% !important;  position: relative; text-align: center !important; padding: 0 !important;}
+    .header-next-div .inline-tablecell.logo-resizing { padding: 0; }
+    .header-next-div .inline-tablecell.logo-resizing form {margin-bottom: 0;}
+    .no-footer-links .no-header-links{ padding-top: 50px; padding-bottom: 50px;}
+    .t1-result .no-footer-links.no-header-links{ padding-top: 50px; padding-bottom: 50px;}
+    .template-seven .common-HF-padding{ padding: 0px !important;}
+
+
+    .common-footer-main .col_1_links{ width: 100%; margin-bottom: 10px;}
+    .common-footer-main .col_2_links{ width: 100%; margin-bottom: 10px;}
+    .common-footer-main .col_3_links{ width: 100%; margin-bottom: 10px;}
+    .common-footer-main .col_4_links{ width: 100%; margin-bottom: 10px;}
+
+    .page-width{ width: 100% !important;}
+    .questions.full-width{ width: 95%; padding-left: 18px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{
@@ -817,7 +855,7 @@
     }
     .page_2 .result-full-section.temp2-default-result-outer .small-top-sec:nth-child(1){ width:50%;}
     .page_2 .btn.prime-action{ margin-left: 0px;}
-    .fixed-width { width: 83%; }
+    .fixed-width { width: 81.5%; }
     .landing-page-mid .input-section input{ margin-bottom: 0 !important;}
     .page_0 .landing-page-mid .selectize-control.single .selectize-input{ max-height: 26px;}    
     .page_2 .selectize-control.single .selectize-input{max-height: auto !important; margin-bottom: 10px;}
