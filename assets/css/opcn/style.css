@@ -4843,8 +4843,9 @@ visuals.visual-outr span.graph-title {
 
 .gradedquiz-main visuals.visual-outr {
     float: left;
-    width: 50%;
+    width: 100%;
 }
+.poll-svgouter visuals.visual-outr{ float: none; width: auto;}
 .gradedquiz-main visuals .t1-result-inner-left-graph h1 img {
     max-width: 100%;
 }
@@ -5976,6 +5977,8 @@ span.abhi {
 .poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}
+
+
 
 /* builder mobile of Poll css */
 .template-section .template-container.mobile .no-footer-links.no-header-links {padding: 0;}
