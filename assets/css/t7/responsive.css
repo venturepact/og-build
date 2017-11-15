@@ -640,8 +640,6 @@
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label { padding-left: 28px;}
       .dropdown-outer-main .selectize-control{ margin-bottom: 30px;}
 
-
-
     /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px;}
     .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 5px; text-align: center;}
@@ -676,7 +674,7 @@
     .common-footer-main .col_4_links{ width: 100%; margin-bottom: 10px;}
 
     .page-width{ width: 100% !important;}
-    .questions.full-width{ width: 95%; padding-left: 18px;}
+    .questions.full-width{ width: 95%; padding-left: 18px; margin-top: 10px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{

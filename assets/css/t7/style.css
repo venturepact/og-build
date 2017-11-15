@@ -816,7 +816,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 temp { width: 100%; margin: 0 auto; display: block; }
 .divider-2 { margin-top: 30px !important;background-size: cover !important; background-repeat: no-repeat !important;    /*background-attachment: fixed !important;*/ background-position: center center !important; width: 100%; float: left; height: 100%; margin-bottom: 30px; position: relative; vertical-align: middle; }
 .page-logo { height: 100%;margin-bottom: -23px;}
-.page-logo.has-bg {margin-left: 0; padding-top:35px; position: relative; z-index: 9;}
+.page-logo.has-bg {margin-left: 0; padding-top:35px; position: relative; z-index: 9; margin-bottom: 0;}
 .template-section .page-logo.has-bg {margin-left: 0; padding-top:35px;}
 /*.page-logo img{max-width: 140px !important;max-height: 70px;}*/
 .result-comm {  }
@@ -2576,6 +2576,6 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
   font-weight: bold;
 }
 .page-width{ width: 45% !important;}
-.questions.full-width{ width: 100%;}
+.questions.full-width{ width: 100%; margin-top: 25px;}
 
 .main-outer-t7{ float: left; width: 100%;}
