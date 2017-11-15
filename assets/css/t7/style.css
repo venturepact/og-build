@@ -1914,7 +1914,7 @@ input {
 /*leadeform dropdown Placeholder setting css*/
 
 
-.landing-page-mid .input-section .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 84% !important; min-height: 22px !important;}
+.landing-page-mid .input-section .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 84% !important; min-height: 22px !important; pointer-events: none;}
 .landing-page-mid .input-section .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
 .t1-question .leaded-form-c .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
