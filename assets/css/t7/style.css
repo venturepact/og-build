@@ -2276,7 +2276,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 
 .section-part:nth-child(1){ float: left; width:32%; padding-top:6px; display: inline-block;}
 .section-part{ float: left; width:60%;}
-.section-head .section-part  .help-outer{margin-left: -1px; top:5px;}
+.section-head .section-part  .help-outer{margin-left: -1px; top:5px; position: relative;}
 .section-head .section-part + div{display: inline}
 .section-part:nth-child(2){ padding-left:10px;}
 .fixed-width{ width: 630px; margin: 0 auto;}

@@ -617,7 +617,7 @@
     .template-seven [type="checkbox"] + label.leadform-checkbox{ width: 70%; font-size: 12px !important; line-height: 20px !important;}
     .leadform-outer .prime-action{ margin-left: 0;}
     .questions .section-head .help-outer i{ margin-top: -1px;}
-    .section-head .help-text { width: 95px;  left: -70px; padding: 6px;}
+    .section-head .help-text { width: 95px;  left: -81px; padding: 6px;}
     .section-head .help-text:before{left:88%;}
     .main-bg {  border: none; box-shadow: none;  margin-top: 0;}
     .landing-page-mid .landing-center-outer{ width: 90%; float: none; margin: 0 auto;}
@@ -642,10 +642,10 @@
 
     /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px;}
-    .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 5px; text-align: center;}
-    .common-header-main .common-header-inner { float: left;  width: 100%; }
-    .common-header-main .common-header-inner a { float: none; font-size: 12px; }
-    .common-header-main .common-header a:last-child{ float: none;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0; margin-top: 5px; text-align: center;}
+    .common-header-main .common-header-inner { float: left !important;  width: 100%; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px; }
+    .common-header-main .common-header a:last-child{ float: none !important;}
     .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
     .poll-svgouter{ padding: 25px;}
     .t1-result .no-footer-links{ height: auto;}
@@ -675,6 +675,7 @@
 
     .page-width{ width: 100% !important;}
     .questions.full-width{ width: 95%; padding-left: 18px; margin-top: 10px;}
+    .t7-common-layout { padding: 0px; }
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{

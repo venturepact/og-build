@@ -5939,6 +5939,9 @@ span.abhi {
 /* other field add */
 .t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
+.otherfield-inputbtn{float: left; width: 100%; position: relative; }
+.otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: -10px; display: block !important; float: right;}
 
 /* other field add */
 .t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
@@ -6047,3 +6050,7 @@ span.abhi {
 }
 .page_0 .common-header-main .landing-page-header {top: 12px !important;}
 .common-header-main .landing-page-header {top: 5px !important;}
+
+/* temp mobile otherfield */
+.template-section .template-container.mobile .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
+.template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
