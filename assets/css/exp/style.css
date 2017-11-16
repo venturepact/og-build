@@ -2575,13 +2575,8 @@ input[type=number] {
     float: left;
     width: 100%;
 }
-.range-slider {
-    text-align: center;
-    width: calc(100% - 130px);
-    float: left;
-}
-.range-slider .well1 {
-    width: 100%;
+.range-slider1 .well1 { 
+    width: calc(100% - 130px );
     float: left;
 }
 .range-slider .irs-slider {
@@ -2654,9 +2649,9 @@ input[type=number] {
 .irs {
     height: 45px !important;
 }
-.slider-set .range-slider input.slider-input {
+.slider-set .range-slider1 input.slider-input{
     position: absolute !important;
-    top: -7px !important;
+    top: 0px !important;
     width: 115px !important;
     background: none !important;
     border-radius: 0px !important;
@@ -2664,8 +2659,9 @@ input[type=number] {
     margin-left: 17px !important;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 1px 11px !important;
+    padding: 1px 11px  !important;
     text-align: center;
+    min-height: 35px;
 }
 /*custom range slider css ends*/
 
@@ -3884,7 +3880,7 @@ svg.highcharts-root {
 }
 .slider-input-pre {
     position: absolute !important;
-    top: -7px !important;
+    top: 0px !important;
     font-size: 15px !important;
     margin-left: 17px !important;
     text-align: right;
@@ -3897,7 +3893,7 @@ svg.highcharts-root {
 }
 .slider-input-post {
     position: absolute !important;
-    top: -7px !important;
+    top: 0px !important;
     font-size: 15px !important;
     margin-left: 21px !important;
     text-align: center;
@@ -3912,12 +3908,12 @@ svg.highcharts-root {
 #build span.slider-input-post {
     left: 90%;
 }
-.slider-set .range-slider .slider-input-pre ~ input.slider-input {
+.slider-set .range-slider1 .slider-input-pre ~ input.slider-input{
     padding-right: 0 !important;
     padding-left: 32px !important;
 }
-.slider-set .range-slider input.slider-input.suffix-text {
-    padding-right: 35px !important;
+.slider-set .range-slider1 input.slider-input.suffix-text{
+    padding-right: 35px !important; 
     padding-left: 0 !important;
 }
 .seperator {

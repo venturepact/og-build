@@ -3837,10 +3837,11 @@
     top: 0;
 }
 .video-sec {
-    float: left;
+    float: none;
     width: 100%;
-    margin-bottom: 15px;
-    min-height: 200px;
+    max-width:720px;
+    margin:0 auto 35px !important;
+    height: 300px;
     position: relative;
-    padding-bottom: 46.5%;
+    display:block;
 }
