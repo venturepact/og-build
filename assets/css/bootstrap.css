@@ -3953,6 +3953,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   font-size: 0;
   white-space: nowrap;
+  z-index:11;
 }
 .input-group-btn > .btn {
   position: relative;
