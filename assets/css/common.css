@@ -1458,7 +1458,6 @@ input.disabled.custom-input {
     border-radius: 3px;
     min-height: 100%;
     padding-bottom: 0;
-    margin-bottom: 20px;
 }
 .email-info{
     font-size: 13px;
@@ -1499,8 +1498,9 @@ input.disabled.custom-input {
     border: 1px solid #ccc;
     border-top: 0;
     background: #fff;
-    margin-bottom: 20px;
     box-shadow: 0px -5px 8px -4px rgba(0, 0, 0, .1);
+    position:relative;
+    top:-2px;
 }
 .alert-msg-outer {
     display: flex;
@@ -1555,7 +1555,7 @@ input.disabled.custom-input {
     margin-bottom:30px;
 }
 h4.opinion-email-head {
-    padding-top: 0;
+    padding: 0;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -1597,8 +1597,14 @@ h4.opinion-email-head {
 }
 .opinion-email-section .emebed-code-part pre{
     padding: 20px !important;
+    margin-top: 20px;
 }
-
+.opinion-email-code{
+    width: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
 /*svg check animation*/
 @-webkit-keyframes checkmark {
     0% {
@@ -1707,4 +1713,7 @@ h4.opinion-email-head {
     }
 
 
+}
+.mt20 {
+    margin-top: 20px;
 }
