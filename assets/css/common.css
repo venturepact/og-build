@@ -1171,7 +1171,7 @@ span.webpage-info::before {        position: absolute;    top: 16px;    left: 50
 .launch-btn-box {    float: left;    width: 100%;    text-align: center;    position: relative;}
 button.launch-btn {    display: inline-block;    background: #1483b6;    border: 1px solid #1483b6;    color: #fff;    text-transform: uppercase;    font-family: montserratlight;    font-size: 14px;    min-height: 38px;    padding: 10px;    line-height: 1;    min-width: 133px;    border-radius: 3px;}
 .launch-btn-box p {    float: left;    width: 100%;    margin: 0;    font-size: 12px;    margin: 8px 0 0;    color: #62696d; font-family: montserratlight; }
-.custom-popover {    width: 400px;    position: absolute;       background: #fff; box-shadow: -10px 10px 20px rgba(0,0,0,0.1);   border: 1px solid #ccc;    padding: 20px;    left: 100%;    z-index: 100;      margin-left: 12px;    border-radius:5px;  }
+.custom-popover {    width: 400px;    position: absolute;       background: #fff; box-shadow: -10px 10px 20px rgba(0,0,0,0.1);   border: 1px solid #ccc;    padding: 20px;    left: 100%;    z-index: 1;      margin-left: 12px;    border-radius:5px;  }
 .popover-part {    display: flex;align-items: center; justify-content: center;   position: relative;    text-align: left;    margin-top: 15px;}
 .custom-popover h4{  float: left;    width: 100%;    margin: 0 0 15px 0;    font-size: 14px;    text-transform: uppercase;    font-family: montserratlight;    color: #333;}
 .custom-popover ul li > label {    font-size: 12px;    color: #62696d; font-family: montserratlight;      float: left;    width: calc(100% - 160px);}
