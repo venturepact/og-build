@@ -640,11 +640,11 @@
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label { padding-left: 28px;}
       .dropdown-outer-main .selectize-control{ margin-bottom: 30px;}
 
-    /* common Header Footer responsive css sahil */
+     /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px;}
-    .common-header-main .common-header{ width: 100% !important;  margin: 0; margin-top: 5px; text-align: center;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 5px; text-align: center;}
     .common-header-main .common-header-inner { float: left !important;  width: 100%; }
-    .common-header-main .common-header-inner a { float: none !important; font-size: 12px; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px!important; }
     .common-header-main .common-header a:last-child{ float: none !important;}
     .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
     .poll-svgouter{ padding: 25px;}
@@ -657,7 +657,7 @@
     .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
     .header-next-div .landing-page-mid{margin-top: 0px;}
     .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 5px;padding: 4px;}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     .common-header-main .landing-page-header{ width: 130px;  margin: 0 auto;  position: relative!important;  top: inherit!important; left: inherit!important; width: 100%;  float: none; text-align: center; left: inherit;}
     .common-header-main .landing-page-header .logo {margin-bottom: 0;  width: 100% !important;  position: relative; text-align: center !important; padding: 0 !important;}
@@ -672,10 +672,12 @@
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
-    .common-footer-main .col_1_links a{ text-align: center !important;}
-    .common-footer-main .col_2_links a{ text-align: center !important;}
-    .common-footer-main .col_3_links a{ text-align: center !important;}
-    .common-footer-main .col_4_links a{ text-align: center !important;}
+   .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
+    .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
 
     .page-width{ width: 100% !important;}
     .questions.full-width{ width: 95%; padding-left: 18px; margin-top: 10px;}

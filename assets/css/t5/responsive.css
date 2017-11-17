@@ -1021,31 +1021,35 @@ Developer: Bhawna */
     .stickyfooter{ padding: 10px 20px;}
 
     /* common Header Footer responsive css sahil */
-    .common-header-main{ padding: 10px;}
-    .common-header-main .common-header{ width: 100% !important;  margin: 0; margin-top: 5px; text-align: center;}
-    .common-header-main .common-header-inner { float: left !important;  width: 100%; }
-    .common-header-main .common-header-inner a { float: none; font-size: 12px; }
-    .common-header-main .common-header a:last-child{ float: none;}
+    .common-header-main{ padding: 10px !important;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
+    .common-header-main .common-header-inner { float: left !important;  width: 100%; text-align: center; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px !important; }
+    .common-header-main .common-header a:last-child{ float: none!important;}
     .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
     .poll-svgouter{ padding: 25px;}
     .t1-result .no-footer-links{ height: auto;}
     .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
     .common-footer-main .disc-set{ text-align: center !important; width: 100% !important;}
-    .common-footer-main .disc-set p{ top: 3px;  font-size: 12px; margin-bottom: 0;}
-    .common-footer-main .stickyfooter.lightSticky{float: none !important;  margin: 0 auto; width: 100% !important; }
+    .common-footer-main .disc-set p{ top: 3px !important;  font-size: 12px!important; margin-bottom: 0!important;}
+    .common-footer-main .stickyfooter.lightSticky{float: none!important;  margin: 0 auto; width: 100%!important; margin-bottom: 8px; }
     .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
     .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
     .header-next-div{ height: auto;}
     .header-next-div .landing-page-mid{margin-top: 0px;}
     .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     .common-footer-main .col_1_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
-    .common-footer-main .col_1_links a{ text-align: center !important;}
-    .common-footer-main .col_2_links a{ text-align: center !important;}
-    .common-footer-main .col_3_links a{ text-align: center !important;}
-    .common-footer-main .col_4_links a{ text-align: center !important;}
+  .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
+    .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
