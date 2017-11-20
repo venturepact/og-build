@@ -1441,7 +1441,7 @@ input[type=number] {
    flex: 1;-webkit-flex: 1; 
 }
 
-.t1-slider-question .input-field label {margin-bottom: 0px;width:65px; padding: 16px 5px; font-size:16px; border:1px solid #d9dad3; display:inline-block; float: none;    border-top:0px; border-bottom: 0px; text-align: center; margin-right: -2px; margin-left: -2px; 
+.t1-slider-question .input-field label {margin-bottom: 0px;width:65px; padding: 16px 5px; font-size:16px; border:1px solid #d9dad3; display:inline-block; float: none;    border-top:0px; border-bottom: 0px; text-align: center; margin-right: -3px; margin-left: -3px; 
     background: #f6f8f9; font-weight: normal !important;font-family: inherit; overflow: hidden;text-overflow: ellipsis;  }
 .t1-slider-question .input-field label ~ input { width:75% !important; float: none; display: inline-block}
 
@@ -1730,7 +1730,7 @@ input[type=number] {
 .selectize-dropdown-content::-webkit-scrollbar:horizontal { height: 6px; background-color: rgba(0, 0, 0, 0.2); }
 .selectize-dropdown-content::-webkit-scrollbar-thumb { border-radius: 4px; background-color: rgba(0, 0, 0, 0.2); }
 .select-icon { position: absolute; z-index: 9; font-size: 24px; left: 16px; bottom: 10px }
-.selectize-control.single .selectize-input input{ visibility: hidden;}
+.selectize-control.single .selectize-input input{ visibility: hidden; pointer-events: none; cursor: pointer}
 .selectize-dropdown-content { max-height: 12vh; }
 .selectize-input::after { content: ' '; display: block; clear: left; content: ' '; display: block; position: absolute; top: 50%; right: 15px; margin-top: -3px; width: 0; height: 0; border-style: solid; border-width: 5px 5px 0 5px;  }
 .selectize-input .item{
@@ -3060,8 +3060,9 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     max-width: 770px;
     position: relative;
 }
+/* 
 .custom-block .input-field{padding-bottom: 80px;}
-
+ */
 
 /* other field */
 
@@ -3124,7 +3125,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .common-footer-main .common-footer a{ float: left; width: auto; font-size: 13px; margin-right: 10px; line-height: 20px; -webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in;}
 .common-footer-main .common-footer a:hover{ opacity: 1;}
 .common-footer-main .common-footer a:last-child{ float: left; width: auto; margin-right: 0px;}
-.common-footer-main .disc-set{ line-height: 30px; float: left; width: 70%; margin-bottom: 5px; font-size: 11px;}
+.common-footer-main .disc-set{ line-height: normal; float: left; width: 70%; margin-bottom: 15px; font-size: 11px;}
 .common-footer-main .disc-set i.material-icons{ display: none;}
 .common-footer-main .disc-set p { line-height: 20px;  position: relative; top: 8px; font-size: 11px;}
 .common-footer-main .stickyfooter.lightSticky{ position: relative !important;  width: auto;  float: right; bottom: 0;padding-right: 10px;}
@@ -3181,8 +3182,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
-
-.page_0 .common-header-main .landing-page-header {top: 0;}
+.common-header-main .landing-page-header {top: 12px !important;}
 .common-header-main{box-shadow: none !important;}
 
 /********** question video *********/
@@ -3209,3 +3209,5 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .question-components .w100.text-center.lead-action-wrapper{float: left; width: 100%;}
 /* .ripple-dark:after {  display: none !important } */
 .ripple-dark.checkbox-outer::after , .radio-outer.ripple-dark.radio-icon-custom::after{display:none}
+.t1-slider-question .input-field label.pre-icon{border-top-left-radius: 3px; border-bottom-left-radius: 3px}
+.t1-slider-question .input-field label.post-icon{border-top-right-radius: 3px; border-bottom-right-radius: 3px}
