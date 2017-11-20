@@ -91,9 +91,9 @@ Developer: Bhawna */
     .t1-result-cta .prime-action {
         font-size: 17px;
     }
-    .main-section .input-field label {
+    /* .main-section .input-field label {
         height: 32px;
-    }
+    } */
     .t1-result-main .selectize-control.single .selectize-input {
         min-height: 34px;
         max-height: 34px;
@@ -358,7 +358,7 @@ Developer: Bhawna */
     .opinon-scale-custom .check-comp{border-spacing:1px 0;padding-bottom: 10px;}
     .opinion-label-outer{font-size: 13px;}
     .opinon-scale-custom span.t6 {font-size: 11px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 17px;margin-right: 2px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 1px;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     /*.landing-page-header a img {
@@ -650,7 +650,7 @@ Developer: Bhawna */
    .opinon-scale-custom .check-comp {border-spacing: 1px 0;padding-bottom:8px;}
    .opinon-scale-custom span.t6{font-size: 11px;}
    .opinion-label-outer{font-size: 11px;}
-   .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 4px;padding: 4px;}
+   .custom-block.rating-custom .rating-inner i{font-size: 17px;margin-right: 2px;padding: 4px;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1038,7 +1038,6 @@ Developer: Bhawna */
     .header-next-div{ height: auto;}
     .header-next-div .landing-page-mid{margin-top: 0px;}
     .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     .common-footer-main .col_1_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
