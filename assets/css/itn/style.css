@@ -4332,6 +4332,7 @@ input[type=number] {
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
 
-.common-header-main .landing-page-header {
-    top: 5px !important;
-}
+/*header logo css*/
+.common-header-main .landing-page-header {top: 12px !important;}
+.common-header-main .logo a img.vert {max-width: 50px !important;max-height: 50px !important;}
+.common-header-main .logo a img.horz {max-width: 150px !important;max-height: 45px !important;}
