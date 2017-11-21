@@ -73,11 +73,11 @@
 		<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
 		<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
 		<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
-		<meta property="og:image" content="https://cdn.filestackcontent.com/dIn85YuTWuak2ghxNu89"/>
+		<meta property="og:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq"/>
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow">
 		<meta name="twitter:description" content="Easily create interactive experiences that increase conversion and bring traffic.">
-		<meta name="twitter:image" content="https://cdn.filestackcontent.com/dIn85YuTWuak2ghxNu89">
+		<meta name="twitter:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq">
 	<?php
 	    }
 	?>
