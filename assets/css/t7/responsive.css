@@ -11,6 +11,7 @@
 .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:first-child{ font-size: 14px !important;}
 .leadform-outer .prime-action{ margin-left: 0;}
 .graph-outer-new{ padding:0; }
+.section-part:nth-child(1){ width:40%;}
 }
 
 
@@ -719,6 +720,7 @@
        
     }
     .page_2.hasbranding.result-fixed{ max-height: 100% !important; overflow-y: visible;}
+    .questionnaire .logo a img.horz{ width:110px !important;}
 }
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape) {
    /*.landing-page-mid .main-heading h1 ,  .landing-page-mid .main-heading h1 {

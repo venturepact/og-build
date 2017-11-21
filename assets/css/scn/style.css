@@ -2581,8 +2581,8 @@ input[type=number] {
     font-size: 14px;
     border: 1px solid #d9dad3;
     text-align: center;
-    margin-right: -1px;
-    margin-left: -1px;
+    margin-right: -2px;
+    margin-left: -2px;
     float: left;
     background: #f6f8f9;
     font-weight: normal !important;
@@ -2591,6 +2591,7 @@ input[type=number] {
     text-overflow: ellipsis;
     text-transform: uppercase;
     margin-bottom: 0;
+    z-index: 10;
 }
 .page_1 .input-field label ~ input {
     width: 65%;
