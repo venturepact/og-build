@@ -112,7 +112,7 @@
     .landing-page-mid .input-section .input-outer span {
         font-size: 9px !important;
         left:0 !important;
-        top:51px !important;
+        top:51px !important; width:100%;
     }
     .col {
         width: 100%;
@@ -619,8 +619,8 @@
     .template-seven [type="checkbox"] + label.leadform-checkbox{ width: 70%; font-size: 12px !important; line-height: 20px !important;}
     .leadform-outer .prime-action{ margin-left: 0;}
     .questions .section-head .help-outer i{ margin-top: -1px;}
-    .section-head .help-text { width: 95px;  left: -81px; padding: 6px;}
-    .section-head .help-text:before{left:88%;}
+    .section-head .help-text { max-width: 85px; padding: 6px; left: -9px;  min-width: 85px;}
+    .section-head .help-text:before{left:18px;}
     .main-bg {  border: none; box-shadow: none;  margin-top: 0;}
     .landing-page-mid .landing-center-outer{ width: 90%; float: none; margin: 0 auto;}
     .landing-page-mid .landing-center-outer .prime-action { position: relative; float: left; margin-left: 17%; bottom: 0px; border-radius: 0 !important; font-size: 1.1rem;   padding: 4px 20px;    min-width: auto; padding-top:8px;}
@@ -685,6 +685,7 @@
     .questions.full-width{ width: 95%; padding-left: 18px; margin-top: 10px;}
     .t7-common-layout { padding: 0px; }
     .page_0 .common-header-main .landing-page-header{top: 0 !important;}
+    .section-head .section-part  .help-outer{ width: 41px; display: inline-block;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{

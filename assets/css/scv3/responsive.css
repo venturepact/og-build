@@ -1,4 +1,5 @@
 @media (max-width:775px) {
+    .page_1 .disc-set, .page_2 .disc-set{white-space: normal;overflow: visible; text-overflow: inherit}
     .ques-sect:last-child .dropdown-set {        margin-bottom: 0;    }
     .redo-link {        position: absolute;        top: 2.5%;        right: 2.5%;    }
     .page_1 , .page_1 .result-fixed1{min-height: initial;}

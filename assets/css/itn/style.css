@@ -4331,6 +4331,7 @@ input[type=number] {
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
+.header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}
 
 /*header logo css*/
 .common-header-main .logo a img.vert {max-width: 50px !important;max-height: 50px !important;}

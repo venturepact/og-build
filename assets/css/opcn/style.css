@@ -68,7 +68,7 @@ li {
 }
 .t1-landing {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     max-width: 100%;
     position: relative;
     display: table;
@@ -97,7 +97,8 @@ li {
     top: 30px;
     left: 40px;
 }*/
-
+.logo{ float: left; width: 100%;}
+.logo a{ float: left; width: 100%;}
 .t1-logo {
     width: 180px;
     float: left;
@@ -6024,7 +6025,9 @@ span.abhi {
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
 .header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}
-
+.common-questioner .header-next-div.no-header-links + .common-footer-main {
+    margin-bottom: 35px !important;
+}
 
 .checkbox-outer.active .control__indicator.check-set {
     display: none;
