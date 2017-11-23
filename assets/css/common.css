@@ -1438,6 +1438,7 @@ input.disabled.custom-input {
     font-family: montserratlight;
     color:#62696d;
     padding: 15px 0;
+    padding-bottom: 0;
     margin:0 auto;
 }
 .opinion-email-head span{
@@ -1461,14 +1462,14 @@ input.disabled.custom-input {
     padding-bottom: 0;
 }
 .email-info{
-    font-size: 13px;
-    color: #62696d;
-    font-family: montserratlight;
-    opacity: 0.7;
+    font-family: montserratregular;
+    color: #8e989f !important;
+    text-transform: uppercase;
+    font-size: 10px;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-    margin-bottom: 10px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 .email-form {
     width: 100%;
@@ -1551,6 +1552,22 @@ input.disabled.custom-input {
     margin-bottom: 25px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+.opinion-email-subheading{
+    color: #8e989f;
+    font-family: montserratregular;
+    font-size: 13px;
+    display: block;
+    line-height: 22px;
+    margin-bottom: 15px;
+    margin: 0 auto;
+    padding-top: 3px;
+    padding-bottom: 15px;
+}
+.opinion-email-code .opinion-email-subheading{
+    font-size: 12px;
+    line-height: 12px;
+    padding-top: 5px;
 }
 .mb30{
     margin-bottom:30px;
