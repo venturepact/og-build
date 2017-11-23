@@ -68,7 +68,7 @@ li {
 }
 .t1-landing {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     max-width: 100%;
     position: relative;
     display: table;
@@ -312,7 +312,7 @@ li {
     background-position: top center;
 }
 .isIframe {
-    height: 100% !important;
+    height: auto !important;
 }
 
 

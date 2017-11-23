@@ -172,11 +172,15 @@ a:focus {
     left: 0;
 }
 .isIframe {
-    height: 100% !important;
+    height: auto !important;
 }
 .isIframe .inline-tablecell {
-    height: 100% !important;
+    height: auto !important;
 }
+.isIframe.header-next-div {
+    height: auto !important;
+}
+
 /*.t1-question-mid{
     width: 100%;
     float: left;

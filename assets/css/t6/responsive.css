@@ -261,19 +261,19 @@
     .gradedquiz-main .t1-result-inner-left-table span.table-title{ padding: 10px;}
     @-moz-document url-prefix() {
         .isIframe {
-            height: 100% !important;
+            height: auto !important;
         }
     }
     .table-outer table tbody tr td {padding: 10px 20px !important;font-size: 12px;}
     .table-outer table thead tr th{padding: 10px 20px !important;font-size: 12px;}
     .range-slider.char-count-slider .irs-single{max-width: 65px;padding: 1px 4px !important;}
     .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{max-width: 65px;padding: 1px 4px !important;}
-    .logo-resizing.h-padding {
+    /*.logo-resizing.h-padding {
         padding-top: 80px !important;
     }
     .logo-resizing.v-padding {
 		padding-top: 85px !important;
-	}
+	}*/
     .t1-question .logo-resizing.h-padding {
         padding-top: 70px !important;
     }
@@ -316,6 +316,7 @@
     .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
     .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
     .common-header-main .landing-page-header {top: 0 !important;}
+    .t1-result .no-footer-links.no-header-links .t1-result-main.result-space-top {    padding-top: 30px !important; padding-bottom: 30px !important;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }

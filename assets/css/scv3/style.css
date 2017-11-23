@@ -257,7 +257,7 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
 .bordered-btn{background-color: #f9f9f9;  color: #00afa5;padding: 10px 40px; border: 2px solid #00afa5;text-decoration: none !important; transition: background-color 0.5s ease; }
 .bordered-btn:hover{ background-color: #00afa5; color: #fff;}
 .page_2 .content-right{ float:left; width:30%; padding:0 10px; }
-.share-heading{  text-align: center;  font-size: 14px;  text-transform: uppercase;  color: rgb(94,94,94);  width: 100%;  float: left;  margin-top: 3px;  }
+.share-heading{  text-align: center;  font-size: 14px;  text-transform: uppercase;  color: rgb(94,94,94);  width: 100%;  float: left;  margin-top: 0px;  }
 /*Result Section Style */
 .section-head .help-text { font-size: 14px; text-align: left; color: #999999; width: 100%; margin-bottom: 0px !important; margin-top: 0px; }
 /*.section-head i:hover + .help-text{ display:block !important}
@@ -413,7 +413,7 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
   position: relative;
   padding-top: 25px;
   /* margin-bottom: 75px; */
-  min-height: 95vh;
+  min-height: 100vh;
 }
 .landing-page-mid{
   width: 100vw !important;
@@ -879,7 +879,7 @@ input[type=number] {
 .page_2 .input-section .input-outer {position: relative;float: left;width: 100% !important;min-height: 51px; margin-bottom: 10px; margin-left: 0;}
 .page_2 .input-section .input-outer i{position: absolute;left: 2px;top: 11px !important; font-size: 18px; color: #666; z-index: 9;}
 .page_2 .input-field { position: initial !important; float: left; width: 100%;}
-.page_2 .redirect-heading {  text-align: center;  font-size: 14px;  text-transform: uppercase;  color: rgb(94,94,94);  width: 100%;  float: left;  margin-top: 3px;}
+.page_2 .redirect-heading {  text-align: center;  font-size: 14px;  text-transform: uppercase;  color: rgb(94,94,94);  width: 100%;  float: left;  margin: 3px 0 10px;}
 .selectize-dropdown-content::-webkit-scrollbar-track { border-radius: 0; background-color: #f5f5f5; }
 .selectize-dropdown-content::-webkit-scrollbar { width: 6px; background-color: rgba(0, 0, 0, 0.2); }
 .selectize-dropdown-content::-webkit-scrollbar:horizontal { height: 6px; background-color: rgba(0, 0, 0, 0.2); }
@@ -964,11 +964,20 @@ input[type=number] {
 .likes-parent{
   display: flex;
   justify-content: center;
-  padding: 10px 0px;
+  padding: 5px 0px;
   /*align-items: center;*/
   flex-wrap:wrap;
 }
-
+.cta-share {
+  float: left;
+  width: 100%;
+  padding-bottom: 5px;
+}
+.like-cta-outer .cta-share .btn-lg {
+  font-size: 12px !important;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
 
 /*.check-comp .control__indicator.check-set { border-width: 2px; border-style: solid; }*/
 .check-comp .checkbox-outer .control__indicator.check-set { border: none; left: 12px; top: 2px; position: absolute;}
@@ -1740,7 +1749,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 .new-lead-common  .leadform-outer.result-scrolling.new-lead1  .lead-heading-temp1{font-size: 18px}
 .new-lead-common2 .leadform-outer.result-scrolling.new-lead1{display: none}
 .template-section .result-branding .lightSticky, #build .template-section .result-branding .stickyfooter, .template-section .result-branding .stickyfooter{bottom: 0}
-.result-fixed1.lead-not-in-result .result-scrolling{max-height: calc(100vh - 210px); margin-bottom: 20px;}
+.result-fixed1.lead-not-in-result .result-scrolling{max-height: calc(100vh - 260px); margin-bottom: 20px;}
 .result-fixed1.lead-not-in-result  .leadform-outer.result-scrolling.new-lead1{display: none}
 .result-fixed1.lead-not-in-result  .new-lead-common  .result-mid.result-comm::after{display: none}
 /* .result-fixed1.lead-not-in-result a.btn.prime-action.next-step.sliding-next{display: none} */
@@ -1884,5 +1893,8 @@ body.modal-open{padding-right: 0px !important}
 .template-section .template-container.mobile .common-footer-main .col_2_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_3_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_4_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
-
+.result-fixed1.lead-not-in-result .leadform-outer.result-scrolling {
+  margin: 0 !important;
+}
 .result-fixed1.no-box-shadow {  box-shadow: none;}
+/* .lead-not-in-result .new-lead-common  .result-mid.result-comm.result-scrolling{    max-height: calc(100vh - 250px);} */

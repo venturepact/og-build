@@ -1,3 +1,8 @@
+@media (min-width:0px) and (max-width:380px) {
+    .opinon-scale-custom span.t6{
+        font-size: 9px;
+    }
+}
 @media (min-width: 0px) and (max-width: 767px) {
     /*.t1-logo a.default-logo img {
         max-width: 100%;
@@ -1327,7 +1332,7 @@
     }
     @-moz-document url-prefix() {
         .isIframe {
-            height: 100% !important;
+            height: auto !important;
         }
     }
     .table-outer table tbody tr td {

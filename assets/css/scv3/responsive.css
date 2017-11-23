@@ -1,4 +1,11 @@
 @media (max-width:775px) {
+    .cta-share {padding-bottom: 0px;}
+    .like-cta-outer .cta-share .btn-lg {
+        font-size: 12px !important;
+        padding: 7px 10px;
+        border-radius: 3px;
+    }
+    .lead-not-in-result .new-lead-common  .result-mid.result-comm.result-scrolling{    max-height: auto;}
     .page_1 .disc-set, .page_2 .disc-set{white-space: normal;overflow: visible; text-overflow: inherit}
     .ques-sect:last-child .dropdown-set {        margin-bottom: 0;    }
     .redo-link {        position: absolute;        top: 2.5%;        right: 2.5%;    }
