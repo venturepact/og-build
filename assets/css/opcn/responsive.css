@@ -19,7 +19,7 @@
     .no-header-links.no-footer-links {        padding: 70px 0 !important;    }
     .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    }
    .no-logo .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    }
-   .page_2.t1-result.isIframe {        padding: 30px 0 !important;    }
+   /* .page_2.t1-result.isIframe {        padding: 30px 0 !important;    } */
    
     .recom-section .t1-social-links {
         margin: 0px !important
@@ -1422,6 +1422,7 @@
     .t1-landing .no-footer-links {  height: calc(100% - 17%) !important;}
     /*header logo styling*/
     .page_0 .common-header-main .landing-page-header {top: 3px !important;}
+    .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
