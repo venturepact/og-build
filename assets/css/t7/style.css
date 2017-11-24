@@ -656,6 +656,7 @@ border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px 
   position: absolute;
   width: 100%;
   bottom: 0;
+  left:0px;
 }
 .page_2 .right-section {
   display: none;
@@ -2198,7 +2199,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
     .template-section .template-container.mobile .t1-result-inner-left-table img{ width: 90%;}
     .template-section .template-container.mobile .landing-page-mid { height: initial;}
     .template-section .template-container.mobile .outer-border{ box-shadow: initial;  padding:0 0px;}
-    .template-section .template-container.mobile .outer-border-bottom{ box-shadow: initial; background: #fff; padding:0 0px; padding-bottom: 40px;}
+    .template-section .template-container.mobile .outer-border-bottom{ box-shadow: initial;  padding:0 0px; padding-bottom: 40px;}
     .template-section .template-container.mobile .landing-page-mid .landing-center-outer .prime-action {position: relative; right: initial; bottom: initial; border-radius: 0 !important; font-size: 13px; padding: 4px 20px; min-width: auto;}
     .template-section .template-container.mobile .landing-page-mid .landing-center-outer {width: 90%; float: none; margin: 0 auto;}  
 
@@ -2308,7 +2309,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
     .result-scrolling .small-bot-sec{ border-bottom: none; padding-bottom: 0; font-size: 12px; }
     .lead-heading-temp1{text-align: left; font-size: 14px; margin-top: 0px; border-top:1px solid #eeeeef; padding-top:12px; margin-bottom: 6px;}
     .graph-outer-new{ float: left; width:100%; background: none; position: relative; padding-top:0; padding-bottom:0;}
-    .footer-link-outer{ float: left; width:100%;}
+    .footer-link-outer{ float: left; width:100%; margin-bottom: 10px;}
     .bottom-section{ float: left; width: 70% !important; font-size: 10px; padding-right: 20px; line-height: 16px; opacity: 0.5; margin-top: 5px ; margin-bottom: 0;}
     .disc-in-ques .disc-set{ float: left; width: 50% !important;}
     .result-branding{ float: right; width: 26%;}
@@ -2399,7 +2400,7 @@ visuals .t1-result-inner-left-table{
 }
 .template-seven .outer-border{ float: left; width: 100%; padding: 0px 30px; border:1px solid #ccc; border-top:0; border-bottom: 0; box-shadow: 0 3px 10px 1px rgba(0,0,0,.2);}
 .cards-section.gallery-content-center .template-seven{width: 50%; background: transparent}
-.outer-border-bottom{background:#f8f8f9 !important; float: left; width: 100%; padding: 10px 30px; border:1px solid #ccc; border-top:0; border-bottom: 0; box-shadow: 0 3px 10px 1px rgba(0,0,0,.2); }
+.outer-border-bottom{ float: left; width: 100%; padding: 10px 30px 0 30px; border:1px solid #ccc; border-top:0; border-bottom: 0; box-shadow: 0 3px 10px 1px rgba(0,0,0,.2); }
 
 
 .pre-icon{padding-right:0 !important;}
