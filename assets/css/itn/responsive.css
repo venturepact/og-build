@@ -2496,3 +2496,8 @@
         text-align: left !important;
     }
 }
+
+@media (max-width:1024px){
+    .common-result header.landing-page-header {        position: relative !important;      top: -10px !important;          }
+
+}
