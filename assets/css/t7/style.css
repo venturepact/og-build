@@ -2590,4 +2590,6 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 .isIframe .landing-page-mid {
     height: 100% !important;
 }
+.header-next-div{ height: 100%!important; }
+@media screen and (-webkit-min-device-pixel-ratio:0) { /* Safari only override ::i-block-chrome,*/  .isIframe .landing-page-mid {height: 60vh !important;}}
 .leadform-outer.result-scrolling.new-lead1 .lead-heading-temp1{ border-top: 0 !important;}
