@@ -1048,8 +1048,9 @@ body {
   .input-field input[type=number] {width:65%; float: left; }
   .page_1 .input-field label {width:58px; padding: 10px 5px; font-size:14px; border:1px solid #d9dad3; text-align: center; margin-right: -1px; margin-left: -1px;
     float: left; background: #f6f8f9; font-weight: normal !important;font-family: inherit; overflow: hidden;text-overflow: ellipsis; text-transform: uppercase; margin-bottom: 0; }
-  .page_1 .input-field label ~ input { width:65%; float: left; border-radius:0 !important;}
-  
+  .page_1 .input-field label ~ input { width:65%; float: left; }
+  .input-field label.pre-icon{margin-right: -3px; z-index: 100}
+  .input-field label.post-icon{margin-left: -3px; z-index: 100}
   
   .input-field label:first-child{-webkit-border-top-left-radius: 5px;
     -webkit-border-bottom-left-radius: 5px;
