@@ -1118,7 +1118,8 @@ ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
 .web-page-content {    float: left;    width: 100%;    padding: 20px;  }
 .web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
 .web-page-content .center-part {float: left; width:calc(100% - 270px); max-width: 100%; padding: 18.5%; position: relative; height: 320px;}
-.web-page-content .center-part  iframe{position: absolute; top:0; bottom: 0; right: 0; left: 0; border:0px !important}
+.web-page-content .center-part  iframe{position: absolute; top:0; bottom: 0; right: 15px; left: 15px; width: calc(100% - 30px)!important; border:0px !important}
+.web-page-content .center-part.full-part iframe{left: 0; right: 0; width:100% !important}
 .strips {    float: left;    width: 100%;    background: #ebedef;    height: 20px;    margin-bottom: 10px;}
 .big-strip.strips {    height: 100px;    margin-bottom: 20px;}
 .large-strip.strips{height: 230px}
