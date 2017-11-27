@@ -109,6 +109,7 @@ Developer: Bhawna */
     }
 }
 @media (max-width: 1023px) {
+    .t1-landing.isIframe .landing-footer-outer{float: left; width: 100%; position: relative; min-height: 35px}
     .t1-result-inner-left-table span.table-title {
         font-size: 16px;
     }
