@@ -5,6 +5,7 @@
         padding: 7px 10px;
         border-radius: 3px;
     }
+    .overlay-outer{min-height: 100vh}
     .page_1{min-height: auto;}
     .lead-not-in-result .new-lead-common  .result-mid.result-comm.result-scrolling{    max-height: auto;}
     .page_1 .disc-set, .page_2 .disc-set{white-space: normal;overflow: visible; text-overflow: inherit}
@@ -288,7 +289,7 @@
     .page_1 .disc-in-ques{display: none}
     .page_2.hasbranding.result-fixed{display: grid}
     .page_2  .disc-in-ques{order:2; display: block;     padding: 0 10px !important;}
-    .page_2 .result-fixed1{background: transparent; box-shadow: none;         padding: 0 20px;}
+    .page_2 .result-fixed1{background: transparent; box-shadow: none;     margin-bottom: 30px;    padding: 0 20px;}
     .opinion-label-outer{font-size: 11px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){

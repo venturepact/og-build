@@ -2376,7 +2376,7 @@ visuals .t1-result-inner-left-table{
 
 .template-seven .highcharts-background{ fill: transparent;}
 .t1-result-inner-left-graph{ width: 100%; text-align: center;}
-.input-label{ float: left; width:27%; text-align: left; padding-top: 5px; font-size: 12px; color: #47505a ; font-weight: normal !important;}
+.input-label{ float: left; width:27%; text-align: left; padding-top: 5px; font-size: 12px; color: #47505a ; font-weight: normal !important; padding-left:0 !important;}
 .static-btn{ font-size: 13px !important; margin-left: 35%; float: left; padding: 8px 28px 8px 45px !important;}
 .static-btn span i{position: absolute; font-size: 18px; left: 23px; top:7px;}
 .radio-outer:nth-child(1){ margin-top: 4px;}
@@ -2545,7 +2545,7 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
 .common-head-outr{ display: block;}
 .common-head-outr .header-next-div .right-section { display: block; height: 100%;}
-.common-HF-padding{ padding: 0px !important;}
+.common-HF-padding{ padding: 0px !important;border: 0; box-shadow: none;}
 .t7-common-layout{ padding: 0 30px;}
 .t7-common-layout{ padding: 10px 30px;}
 
@@ -2596,3 +2596,4 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 
 .header-next-div{ height: 100%!important; }
 .isIframe.header-next-div .landing-page-mid{height: 100% !important; min-height: 340px !important;}
+.isIframe.header-next-div{ min-height: 340px !important;}

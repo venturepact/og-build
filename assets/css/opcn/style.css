@@ -5864,8 +5864,8 @@ input {
         transform: scale(1.0);
     }
 }
-.Result .lightSticky { display: none;}
-.Result .stickyfooter { display: none;}
+/* .Result .lightSticky { display: none;}
+.Result .stickyfooter { display: none;} */
 span.abhi {
     display: none;
 }
@@ -6063,3 +6063,15 @@ span.abhi {
 /* temp mobile otherfield */
 .template-section .template-container.mobile .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
 .template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
+
+.poll-result .result-branding{ position: relative; width: 100%; float: left;}
+.poll-result .result-branding .stickyfooter{position: relative !important;  bottom: -10px  !important; padding-right: 0  !important;}
+.poll-result .result-branding .lightSticky{position: relative !important;  bottom: -10px  !important; padding-right: 0  !important;}
+
+/* image poll css */
+.poll-main .pic-selector.radio-outer.active .poll-color-light{z-index: 1;}
+.poll-main .pic-selector.radio-outer.active .poll-color{z-index: 2; opacity: 0.8;}
+.poll-main .pic-selector.radio-outer.active .poll-percentage{ z-index: 2; text-align: left; left: 10px !important;}
+
+.poll-main .pic-selector.radio-outer .poll-color {z-index: 1;}
+.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 10px !important;}
