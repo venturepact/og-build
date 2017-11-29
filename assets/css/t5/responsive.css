@@ -109,7 +109,7 @@ Developer: Bhawna */
     }
 }
 @media (max-width: 1023px) {
-    .t1-landing.isIframe .landing-page-mid{min-height: 100vh;height: auto !important}
+    .t1-landing.isIframe .landing-page-mid{height: auto !important; min-height: 360px;}
     .t1-result-inner-left-table span.table-title {
         font-size: 16px;
     }
@@ -356,7 +356,7 @@ Developer: Bhawna */
     .result-branding {
         position: relative;
     }
-    .opinon-scale-custom .check-comp{border-spacing:1px 0;padding-bottom: 10px;}
+    .opinon-scale-custom .check-comp{border-spacing:1px 0;padding-bottom: 10px;margin:0 auto;}
     .opinion-label-outer{font-size: 13px;}
     .opinon-scale-custom span.t6 {font-size: 11px;}
     .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 1px;}

@@ -1063,7 +1063,7 @@
         z-index: 9;
         width: 100%;
         opacity: 0.7;
-        color: #363b3e;
+       
         float: left;
     }
     /*Help Tip Style End*/
@@ -3785,8 +3785,8 @@
 
 
 /* Opinion scale css */
-#build .opinon-scale-custom .check-comp{border-spacing: 9px 0;}
-.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;}
+#build .opinon-scale-custom .check-comp{border-spacing: 9px 0;margin:0 -5px;}
+.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
 .opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 4px !important;border:none;}
@@ -3852,5 +3852,6 @@
 /*common header logo*/
 .common-header-main .logo a img.vert {max-width: 50px !important;max-height: 50px !important;}
 .common-header-main .logo a img.horz {max-width: 150px !important;max-height: 45px !important;}
+.header-next-div.no-header-links  .t1-result-main.common-result-space{padding-top: 80px}
 
 /* .landing-inner.isIframe .landing-page-mid{ height: auto !important;} */

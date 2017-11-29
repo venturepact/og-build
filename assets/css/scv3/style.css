@@ -428,6 +428,7 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
   position: absolute;
   width: 100%;
   bottom: 0;
+  background: transparent !important;
 }
 .page_2 .right-section {
   display: none;
@@ -546,11 +547,11 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .redo-link span li { border-left: 1px dotted #6e6f71; height: 18px; margin-top: 8px; margin-left: 5px; margin-right: 5px; }
 .checkbox-outer.active .control { display: block; position: relative; cursor: pointer; font-size: 16px; font-weight: 500; color: #fff; border-radius: 25px; width:auto;margin-left: -11px; }
 .checkbox-outer.active .control i { color: #fff; }
-.landing-page-mid .input-section { width: 75%; margin: 5px auto 0 auto; }
+.landing-page-mid .input-section { width: 68%; margin: 5px auto 0 auto; }
 .landing-page-mid .input-section input { margin: 8px; color: #fefeff; font-size: 14px !important; padding-bottom: 5px !important; }
 .landing-page-mid .cta-outer { width: 100vw; display: table-cell; vertical-align: middle; height: 20vh; text-align: center; }
-.landing-page-mid .input-section .input-outer { float: left; width: calc(100% / 2 - 15px) !important; min-height: 70px; position: relative; margin-right: 15px; }
-.landing-page-mid .input-section .input-outer:nth-child(odd) { margin-right:14px;}
+.landing-page-mid .input-section .input-outer { float: left; width: 50% !important; min-height: 70px; position: relative; margin-right: 0px; padding: 0 15px }
+.landing-page-mid .input-section .input-outer:nth-child(odd) { margin-right:0px;}
 .landing-page-mid .input-section .input-outer:only-child {width:100%; margin:0;}
 .template-section .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) { width: 97% !important; }
 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) { width: 98% !important; }
