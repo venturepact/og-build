@@ -753,7 +753,7 @@
     .errorMessage{ font-size: 11px;}
     .t1-ques-component .input-section .input-outer .section-head{ margin-bottom: 0px; font-size: 14px;}
     .t1-ques-component .input-section .input-outer span{ font-size: 11px !important;}
-    .page_2 .leadform-outer click-button .text-center{ text-align: left !important;}
+    /* .page_2 .leadform-outer click-button .text-center{ text-align: left !important;} */
     .recom-section .input-outer{ margin-bottom: 25px;}
     .recom-section .share-heading{ text-align: left !important; font-size: 13px !important; margin-bottom: 0px;}
     .t1-result-leadform{ text-align: center !important; font-size: 13px !important; margin-bottom: 20px;}
@@ -818,6 +818,7 @@
 
         top: 55px;
     }
+    
     .question-components .postfixset + button.button_textfield.submit-textbox-btn{ top: 85px;}
     .graded-msgbox-outr{top:12%}
     .postfixset {        top: -17px;    }
