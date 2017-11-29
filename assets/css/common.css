@@ -730,16 +730,16 @@ button.btn-done {
     text-transform: uppercase;
     
 }
-.builder-parent1 .tab-pane { padding-top:30px;}
+/*.builder-parent1 .tab-pane { padding-top:30px;}*/
 .builder-parent1 .config-template-tabs.setting-parent{ padding-top:65px;}
 .builder-parent1 .email-tabs{ top:127px;}
-.builder-parent1 .new-email-outr.my-emailsetting{ padding-top:65px;}
-.builder-parent1 .email-parent{ padding-top:65px;}
-.builder-parent1 .embedd-parent{ padding-top:65px;}
+/*.builder-parent1 .new-email-outr.my-emailsetting{ padding-top:65px;}*/
+/*.builder-parent1 .email-parent{ padding-top:65px;}*/
+/*.builder-parent1 .embedd-parent{ padding-top:65px;}*/
 .builder-parent1 .launch-popup-parent{ padding-top:65px;}
 .builder-parent1 .share-calculator-parent{ padding-top:65px;}
 .builder-parent1 .new-js-outr{ padding-top: 65px;}
-.builder-parent1 .prom-checklist{padding-top:65px !important;}
+/*.builder-parent1 .prom-checklist{padding-top:65px !important;}*/
 .builder-parent1 .no-analytics-overlay{top:71px;}
 .builder-parent .prop-arrow{ bottom:0px;}
 .builder-parent .general-helppanel{top:90px;}
@@ -1117,7 +1117,7 @@ ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
 .tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;}
 .web-page-content {    float: left;    width: 100%;    padding: 20px;  }
 .web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
-.web-page-content .center-part {float: left; width:calc(100% - 270px); max-width: 100%; padding: 18.5%; position: relative; height: 320px;}
+.web-page-content .center-part {float: left; width:calc(100% - 270px); max-width: 100%; padding: 18.5%; position: relative; height: 520px;}
 .web-page-content .center-part  iframe{position: absolute; top:0; bottom: 0; right: 15px; left: 15px; width: calc(100% - 30px)!important; border:0px !important}
 .web-page-content .center-part.full-part iframe{left: 0; right: 0; width:100% !important}
 .strips {    float: left;    width: 100%;    background: #ebedef;    height: 20px;    margin-bottom: 10px;}
@@ -1125,7 +1125,7 @@ ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
 .large-strip.strips{height: 230px}
 .web-page-content .center-part figure{float: left; width: 100%}
 .web-page-content .center-part figure img {    max-width: 100%;    width: 100%;    height: 320px;    }
-.strips:last-child{margin: 0}
+.strips:last-child{margin: 0;  height: 10px;}
 ul.three-dots {    float: left;    margin: 0;    padding: 0;    display: flex;    height: 22px;    align-items: center;}
 ul.three-dots > li{width: 10px;float: left; height: 10px;margin-right: 7px; border-radius: 50%}
 ul.three-dots > li.red{background:#cb7128}
