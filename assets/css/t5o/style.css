@@ -1476,3 +1476,22 @@ ul.tabs li.tab-link a:focus{outline: none}
 #table-modal .gradedModalmd .table-outer table tbody tr {
     border-bottom: 2px solid #f5f5f5 !important;
 }
+
+/* rating css sahil */
+.custom-block.rating-custom .submit-textbox { border: none;}
+.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
+.custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
+.t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
+
+/* Opinion scale css */
+#build .opinon-scale-custom .check-comp{border-spacing: 8px 0;margin:0 -5px;}
+.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
+.opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
+.opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
+.opinon-scale-custom label.control.control--radio { padding: 4px !important;}
+.opinon-scale-custom span.t6 { width: 92%; text-align: center;}
+.opinion-label-outer{float: left;width: 100%;display: block;font-size: 15px;}
+.opinion-prefix{width: 50%;float: left;text-align: left;padding-right: 10px;word-break: break-word;}
+.opinion-postfix{width: 50%;float: right;text-align: right;padding-left: 10px;word-break: break-word;}

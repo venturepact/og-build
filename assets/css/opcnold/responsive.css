@@ -1,3 +1,8 @@
+@media (min-width:0px) and (max-width:380px) {
+    .opinon-scale-custom span.t6{
+        font-size: 9px;
+    }
+}
 @media (min-width: 0px) and (max-width: 767px) {
     /*.t1-logo a.default-logo img {
         max-width: 100%;
@@ -1359,6 +1364,12 @@
     .page_1 .common-result-space {
         padding-top: 30px !important;
     }
+    /*.opinon scale css*/
+    .opinion-label-outer{font-size: 11px;}
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;font-size: 15px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2351,6 +2362,11 @@
         position: absolute;
         top: -12px;
     }
+     /*.opinon scale css*/
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;}
+    .opinion-label-outer{font-size: 13px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2925,6 +2941,7 @@
     }
     /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
     .t1-result-leadform .input-outer span{ top: 40px;}
+    .opinon-scale-custom label.control.control--radio {min-height: 56px !important;}
 }
 @media (min-width: 1367px) and (max-width: 1920px) {
     .btn-fb {

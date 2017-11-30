@@ -164,6 +164,7 @@
     .fb_iframe_widget_fluid{
         display: inline-block !important;
     }
+    .custom-block.rating-custom .rating-inner i {font-size: 16px !important;margin-right: 2px !important;padding: 4px !important;}
 }
 @media (max-width: 375px) {
     .footer-nav {
@@ -641,6 +642,7 @@
         padding: 28px!important;
         padding-top: 20px!important;
     }
+    .opinion-label-outer{font-size: 11px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
     .landing-page-mid .main-heading h1 {
@@ -669,6 +671,7 @@
         max-width: 180px;
         max-height: 60px;
     }*/
+    .opinion-label-outer{font-size: 13px;}
 }
 @media (max-width: 1023px) {
     .page_2 .mid-width p {
@@ -676,6 +679,13 @@
     }
     .page_0 .input-outer i {
         top: 16px !important;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+   .custom-block.rating-custom .rating-inner i {
+        font-size: 23px !important;
+        margin-right: 5px !important;
+        padding: 4px !important;
     }
 }
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {

@@ -1,3 +1,8 @@
+@media (min-width:0px) and (max-width:380px) {
+    .opinon-scale-custom span.t6{
+        font-size: 9px;
+    }
+}
 @media (min-width: 0px) and (max-width: 767px) {
     /*.t1-logo a.default-logo img {
         max-width: 100%;
@@ -11,7 +16,13 @@
         max-width: 100%;
        max-height: 37px; 
     }*/
-    
+    .t1-landing .no-header-links.no-footer-links {        padding: 70px 0 !important;    }   
+    .t1-result .no-header-links.no-footer-links {        padding: 30px 0 !important;    }  
+
+    /* .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    } */
+   .no-logo .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    }
+   /* .page_2.t1-result.isIframe {        padding: 30px 0 !important;    } */
+   
     .recom-section .t1-social-links {
         margin: 0px !important
     }
@@ -126,6 +137,7 @@
         width: 85%;
         margin-left: 30px;
     }
+    .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{ max-width: 85%; width: 100%;}
     .landing-page-mid button {
         font-size: 13px;
         padding: 10px 40px;
@@ -1323,7 +1335,7 @@
     }
     @-moz-document url-prefix() {
         .isIframe {
-            height: 100% !important;
+            height: auto !important;
         }
     }
     .table-outer table tbody tr td {
@@ -1359,6 +1371,61 @@
     .page_1 .common-result-space {
         padding-top: 30px !important;
     }
+    /*.opinon scale css*/
+    .opinion-label-outer{font-size: 11px;}
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;}
+
+    /* common Header Footer responsive css sahil */
+    .common-header-main .common-header{ width: 100%;  margin: 0; margin-top: 10px;}
+    .common-header-main .common-header-inner { float: left;  width: 100%; }
+    .common-header-main .common-header-inner a { float: none; }
+    .common-header-main .common-header a:last-child{ float: none;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto !important;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
+
+    /* common Header Footer responsive css sahil */
+    .common-header-main{ padding: 10px !important;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
+    .common-header-main .common-header-inner { float: left !important;  width: 100%; text-align: center; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px !important; }
+    .common-header-main .common-header a:last-child{ float: none!important;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto !important;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .common-footer-main .disc-set{ text-align: center !important; width: 100% !important;}
+    .common-footer-main .disc-set p{ top: 3px !important;  font-size: 12px!important; margin-bottom: 0!important;}
+    .common-footer-main .stickyfooter.lightSticky{float: none!important;  margin: 0 auto; width: 100%!important; margin-bottom: 8px; }
+    .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
+    .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
+    /*.header-next-div{ height: auto;}*/
+    .header-next-div .landing-page-mid{margin-top: 0px;}
+    .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
+    .common-footer-main .col_1_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
+    .poll-main .radio-outer.active .poll-percentage{line-height: 60px; font-size:14px;}
+    .poll-main .radio-outer.active2 .poll-percentage{line-height: 60px; font-size:14px;}
+    .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
+    .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
+
+    /* temp mobile otherfield */
+    .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
+    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
+    .t1-landing .no-footer-links {  height: calc(100% - 17%) !important;}
+    /*header logo styling*/
+    .page_0 .common-header-main .landing-page-header {top: 3px !important;}
+    .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -1927,7 +1994,7 @@
     /*.recom-section .left-outer { height: auto !important; padding: 25px 0; }*/
     
     .recommendation-outer .t1-result-inner {
-        padding: 0px !important;
+        /* padding: 0px !important; */
         width: 100% !important;
         padding-bottom: 0px !important;
     }
@@ -2351,6 +2418,18 @@
         position: absolute;
         top: -12px;
     }
+     /*.opinon scale css*/
+    .opinon-scale-custom span.t6{margin-top: 10px;margin-bottom: 5px;}
+    .t1-question .question-components .opinon-scale-custom .check-comp label {min-height: 40px;height: 40px;}
+    .opinion-label-outer{font-size: 13px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;}
+    .poll-main .radio-outer.active .poll-percentage{line-height: 42px; font-size:14px;}
+    .poll-main .radio-outer.active2 .poll-percentage{line-height: 42px; font-size:14px;}
+
+    /* temp mobile otherfield */
+    .otherfield-inputbtn input.othersfield{width: 90% !important; float: left; margin-left: 35px !important;}
+    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 5px; display: block !important; float: left; margin-left: 40px; margin-bottom: 20px;}
+
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2384,7 +2463,7 @@
     /*.recom-section .left-outer { height: auto !important; padding: 0; }*/
     
     .recommendation-outer .t1-result-inner {
-        padding: 0px !important;
+        /* padding: 0px !important; */
         width: 100% !important;
         padding-bottom: 0px !important;
         margin: 0px !important
@@ -2926,7 +3005,8 @@
         padding: 9px !important;
     }
     /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
-    .t1-result-leadform .input-outer span{ top: 40px;}
+    .t1-result-leadform .input-outer span{ top: 40px !important;}
+    .opinon-scale-custom label.control.control--radio {min-height: 56px !important;}
 }
 @media (min-width: 1367px) and (max-width: 1920px) {
     .btn-fb {
@@ -3040,6 +3120,7 @@
         width: 60%;
         margin-left: 40px;
     }
+    .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{ max-width: 60%; width: 100%;}
     .landing-page-header {
         left: 40px;
     }
@@ -3271,9 +3352,9 @@
     .t1-ques-component .input-section .input-outer span {
         font-size: 11px !important;
     }
-    .page_2 .leadform-outer click-button .text-center {
+    /* .page_2 .leadform-outer click-button .text-center {
         text-align: left !important;
-    }
+    } */
     .recom-section .input-outer {
         margin-bottom: 25px;
     }

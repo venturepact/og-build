@@ -97,7 +97,8 @@ li {
     top: 30px;
     left: 40px;
 }*/
-
+.logo{ float: left; width: 100%;}
+.logo a{ float: left; width: 100%;}
 .t1-logo {
     width: 180px;
     float: left;
@@ -311,7 +312,7 @@ li {
     background-position: top center;
 }
 .isIframe {
-    height: 100% !important;
+    height: auto !important;
 }
 
 
@@ -2831,7 +2832,8 @@ visuals .t1-result-inner-left #og-table-excel {
     position: relative;
 }
 .powered-by img {
-    width: 16px;
+    width: auto;
+    height: 18px;
 }
 .result-branding .powered-by span {
     /*float: left;
@@ -3822,7 +3824,7 @@ input[type=number] {
         width: 30vw;
     }
     .t1-result-full-section {
-        width: 100vw !important;
+        width: 100% !important;
     }
     .t3-default-result-outer.t1-result-full-section .t1-result-small-container .small-bot-sec p {
         width: 60vw;
@@ -4843,8 +4845,9 @@ visuals.visual-outr span.graph-title {
 
 .gradedquiz-main visuals.visual-outr {
     float: left;
-    width: 50%;
+    width: 100%;
 }
+.poll-svgouter visuals.visual-outr{ float: none; width: auto;}
 .gradedquiz-main visuals .t1-result-inner-left-graph h1 img {
     max-width: 100%;
 }
@@ -4890,9 +4893,9 @@ visuals.visual-outr span.graph-title {
 .gradedquiz-main .t1-result-leadform .input-outer {
     width: 100% !important;
 }
-.gradedquiz-main form .prime-action {
+/*.gradedquiz-main form .prime-action {
     width: 100% !important;
-}
+}*/
 .gradedquiz-main .prime-action {
     width: auto !important;
     margin-top: 0px;
@@ -5929,7 +5932,7 @@ span.abhi {
 /*leadeform dropdown Placeholder setting css*/
 .one-page-card-new .page_0.t1-landing .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .one-page-card-new .page_0.t1-landing .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
-.t1-question .leaded-form-c .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
+.t1-question .leaded-form-c .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important; visibility: visible !important;}
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
 .t1-result-leadform .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .t1-result-leadform .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; box-shadow: initial!important;   }
@@ -5938,5 +5941,140 @@ span.abhi {
 /* other field add */
 .t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
+.otherfield-inputbtn{float: left; width: 100%; position: relative; }
+.otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: -10px; display: block !important; float: right;}
 
 /* other field add */
+.t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
+    width: 0px !important;
+}
+
+
+
+/* rating css sahil */
+.custom-block.rating-custom .submit-textbox { border: none;}
+.custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
+.custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
+
+/* Opinion scale css sahil */
+.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;}
+.opinon-scale-custom .radio-outer { border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
+.opinon-scale-custom .radio-outer:last-child{ border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
+.opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
+.opinon-scale-custom label.control.control--radio { padding: 0 !important;min-height: 48px;}
+.opinon-scale-custom span.t6 { width: 92%; text-align: center;}
+.opinion-label-outer{float: left;width: 100%;display: block;color: #666e78;font-size: 15px;}
+.opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 5px;padding-right: 10px;word-break: break-word;}
+.opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 5px;padding-left: 10px;word-break: break-word;}
+
+
+
+/* Poll css changes sahil */
+.t1-result{width: 100%; height: 100vh; max-width: 100%; display: table; position: relative; background-size: cover; box-shadow: 0 2px 9px 2px rgba(0,0,0,.4);}
+.t1-result-main{display: table-cell; vertical-align: middle; height: 100%; padding: 60px 0; padding-top: 90px;}
+.poll-main .radio-outer{ position: relative;}
+.poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
+.poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
+.poll-main.check-comp .radio-outer label{ padding-right: 75px;}
+.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
+.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
+.poll-main .radio-outer .poll-percentage{display: none;}
+
+
+
+/* builder mobile of Poll css */
+.template-section .template-container.mobile .no-footer-links.no-header-links {padding: 0;}
+.template-section .template-container.mobile .common-result-main { width: 90% !important;}
+.template-section .template-container.mobile .common-result-main .common-result-bot { padding: 0; padding-bottom: 0; width: 100%; display: block;}
+.template-section .template-container.mobile .poll-svgouter { padding: 0;}
+.template-section .template-container.mobile .poll-svgouter { padding: 0; display: block; float: left;}
+.template-section .template-container.mobile .poll-svinner { display: block; float: left; width: 100%;}
+.template-section .template-container.mobile .poll-left { width: 100%;  padding: 0;}
+.template-section .template-container.mobile .poll-right-text { width: 100%;  padding: 0;}
+.template-section .template-container.mobile .header-next-div .common-result-gq.gradedquiz-main .t1-result-top { margin: 0px !important;  margin-left: 0 !important; width: 100% !important;}
+.template-section .template-container.mobile .no-header-links.no-footer-links .common-result-gq.gradedquiz-main .t1-result-top { margin: 0px !important;  margin-left: 0 !important; width: 100% !important;}
+.template-section .template-container.mobile .no-footer-links .common-result-gq.gradedquiz-main .t1-result-top { margin: 0px !important;  margin-left: 0 !important; width: 100% !important;}
+.template-section .template-container.mobile .poll-result .poll-right-text .small-top-sec p { font-size: 16px; line-height: normal; text-align: center !important;}
+.template-section .template-container.mobile .poll-result .poll-right-text .small-top-sec p span { font-size: 16px !important; line-height: normal;}
+.template-section .template-container.mobile .poll-result .poll-right-text .small-bot-sec p { font-size: 16px; line-height: normal;}
+.template-section .template-container.mobile .poll-svinner .t1-result-full-section { text-align: center; margin-top: 20px; padding: 0 10px;}
+.template-section .template-container.mobile .poll-result .poll-right-text .cta-center .likes-parent img.twitter-follow-button { top: 0;}
+.template-section .template-container.mobile .common-header-main .common-header {float: left; width: 100%; min-height: auto; padding: 0; text-align: center; position: relative; z-index: 9; box-shadow: none !important; margin-right: 0; margin-top: 10px;}
+.template-section .template-container.mobile .common-header-main .common-header a{ float: none; font-size: 12px;}
+.template-section .template-container.mobile .common-header-main .common-header .common-header-inner{ float: left; width: 100%;}
+.template-section .template-container.mobile .editor-page-divider .t1-landing .no-footer-links{ height: auto;}
+.template-section .template-container.mobile .common-footer-main .disc-set{ text-align: center; width: 100%; font-size: 11px;}
+.template-section .template-container.mobile .common-footer-main .disc-set p{ top:0px; font-size: 11px;}
+.template-section .template-container.mobile .common-footer-main .stickyfooter.lightSticky{ float: none; margin: 0 auto;width: 100%;}
+.template-section .template-container.mobile .common-footer-main .common-footer { text-align: center;  margin: 0; width: 100%;}
+.template-section .template-container.mobile .common-footer-main .common-footer a{ float: none; font-size: 13px;}
+.template-section .template-container.mobile .header-next-div{ height: auto;}
+
+.template-section .template-container.mobile .common-footer-main .col_1_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
+.template-section .template-container.mobile .common-footer-main .col_2_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
+.template-section .template-container.mobile .common-footer-main .col_3_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
+.template-section .template-container.mobile .common-footer-main .col_4_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
+
+
+.t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
+.t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0; }
+.t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 580px;}
+.template-section .template-container.mobile .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 80%;}
+.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
+.t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
+.t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
+.editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
+.header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}
+.common-questioner .header-next-div.no-header-links + .common-footer-main {
+    margin-bottom: 35px !important;
+}
+
+.checkbox-outer.active .control__indicator.check-set {
+    display: none;
+}
+
+/********** question video *********/
+
+.video-sec iframe.vid {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.video-sec {
+    float: none;
+    width: 100%;
+    max-width:720px;
+    margin:0 auto 35px !important;
+    height: 300px;
+    position: relative;
+    display:block;
+}
+
+
+
+/*common header logo*/
+.common-header-main .logo a img.vert {max-width: 50px !important;max-height: 50px !important;}
+.common-header-main .logo a img.horz {max-width: 150px !important;max-height: 45px !important;}
+
+/* temp mobile otherfield */
+.template-section .template-container.mobile .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
+.template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
+
+.poll-result .result-branding{ position: relative; width: 100%; float: left;}
+.poll-result .result-branding .stickyfooter{position: relative !important;  bottom: -10px  !important; padding-right: 0  !important;}
+.poll-result .result-branding .lightSticky{position: relative !important;  bottom: -10px  !important; padding-right: 0  !important;}
+
+/* image poll css */
+.poll-main .pic-selector.radio-outer.active .poll-color-light{z-index: 1;}
+.poll-main .pic-selector.radio-outer.active .poll-color{z-index: 2; opacity: 0.8;}
+.poll-main .pic-selector.radio-outer.active .poll-percentage{ z-index: 2; text-align: left; left: 10px !important;}
+
+.poll-main .pic-selector.radio-outer .poll-color {z-index: 1;}
+.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 10px !important;}

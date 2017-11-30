@@ -261,25 +261,64 @@
     .gradedquiz-main .t1-result-inner-left-table span.table-title{ padding: 10px;}
     @-moz-document url-prefix() {
         .isIframe {
-            height: 100% !important;
+            height: auto !important;
         }
     }
     .table-outer table tbody tr td {padding: 10px 20px !important;font-size: 12px;}
     .table-outer table thead tr th{padding: 10px 20px !important;font-size: 12px;}
     .range-slider.char-count-slider .irs-single{max-width: 65px;padding: 1px 4px !important;}
     .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max{max-width: 65px;padding: 1px 4px !important;}
-    .logo-resizing.h-padding {
+    /*.logo-resizing.h-padding {
         padding-top: 80px !important;
     }
     .logo-resizing.v-padding {
 		padding-top: 85px !important;
-	}
+	}*/
     .t1-question .logo-resizing.h-padding {
         padding-top: 70px !important;
     }
     .t1-question .logo-resizing.v-padding {
         padding-top: 75px !important;
     }
+    .opinion-label-outer{font-size: 12px;}
+    .opinon-scale-custom .radio-outer span.t6.hide{margin:0 !important;}
+    .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 16px;margin-right: 3px;padding: 4px;}
+    
+    /* common Header Footer responsive css sahil */
+    .common-header-main{ padding: 10px !important;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
+    .common-header-main .common-header-inner { float: left !important;  width: 100%; text-align: center; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px !important; }
+    .common-header-main .common-header a:last-child{ float: none!important;}
+    /* .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;} */
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto !important;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .common-footer-main .disc-set{ text-align: center !important; width: 100% !important;}
+    .common-footer-main .disc-set p{ top: 3px !important;  font-size: 12px!important; margin-bottom: 0!important;}
+    .common-footer-main .stickyfooter.lightSticky{float: none!important;  margin: 0 auto; width: 100%!important; margin-bottom: 8px; }
+    .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
+    .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
+    .header-next-div{ height: auto;}
+    .header-next-div .landing-page-mid{margin-top: 0px;}
+    .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 15px;margin-right: 1px;padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
+    .common-footer-main .col_1_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+      .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
+    .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
+    .common-header-main .landing-page-header {top: 0 !important;}
+    .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
+
+    .t1-result .no-footer-links.no-header-links .t1-result-main.result-space-top {    padding-top: 0px !important; padding-bottom: 0px !important;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -402,7 +441,7 @@
     .recom-section .container-temp { text-align: center !important; width: 74%; margin-left: 13%; }
     .recom-section .t1-result-leadform .input-section { width: 100%; }
     /*.recom-section .left-outer { height: auto !important; padding: 25px 0; }*/
-    .recommendation-outer .t1-result-inner { padding: 0px !important; width: 100% !important; padding-bottom: 0px !important; }
+    .recommendation-outer .t1-result-inner {width: 100% !important; padding-bottom: 0px !important; }
     .t1-result-top.recommendation-outer { width: 70% !important; margin-left: 17%; }
     .recom-section .leadform-outer { float: left; padding: 0 5%; display: block; text-align: center; }
     .recom-section .outer-main { height: auto !important; display: block; }
@@ -503,6 +542,9 @@
 		padding-top: 85px !important;
 	}
     .common-result .t1-logo { margin-top: 10px !important;}
+    .opinon-scale-custom span.t6.hide{margin:0 !important;}
+    .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait) {
     .t1-landing-leadform .t1-leadform-field { width: 100%; margin-bottom: 10px; }
@@ -511,7 +553,7 @@
     .t1-result-main{padding-top: 70px;}
     .recom-section .w100 .container-temp { text-align: left !important; width: 60%; }
     .recom-section .w100 .leadform-outer .container-temp .prime-action { width: 100% !important; float: left !important; }
-    .recommendation-outer .t1-result-inner { padding: 0px !important; width: 100% !important; padding-bottom: 0px !important;  margin: 0px !important}
+    .recommendation-outer .t1-result-inner {  width: 100% !important; padding-bottom: 0px !important;  margin: 0px !important}
     .recom-section .leadform-outer { float: left; padding: 0 5%; }
     .recom-section .outer-main { height: auto !important; }
     .rec-image-outer { max-width: 90%; }
@@ -711,7 +753,7 @@
     .errorMessage{ font-size: 11px;}
     .t1-ques-component .input-section .input-outer .section-head{ margin-bottom: 0px; font-size: 14px;}
     .t1-ques-component .input-section .input-outer span{ font-size: 11px !important;}
-    .page_2 .leadform-outer click-button .text-center{ text-align: left !important;}
+    /* .page_2 .leadform-outer click-button .text-center{ text-align: left !important;} */
     .recom-section .input-outer{ margin-bottom: 25px;}
     .recom-section .share-heading{ text-align: left !important; font-size: 13px !important; margin-bottom: 0px;}
     .t1-result-leadform{ text-align: center !important; font-size: 13px !important; margin-bottom: 20px;}
@@ -776,6 +818,7 @@
 
         top: 55px;
     }
+    
     .question-components .postfixset + button.button_textfield.submit-textbox-btn{ top: 85px;}
     .graded-msgbox-outr{top:12%}
     .postfixset {        top: -17px;    }
@@ -803,7 +846,7 @@
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
-    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px}
+    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px}
     .checkbox-outer-base span.t6.pull-text-right {    padding-left: 0px !important;}
     .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
@@ -855,12 +898,10 @@
     /*.result-branding .powered-by , .powered-by.lightPowered {    transform: scale(0.6);}*/
     .t1-ques-head .help-text {    font-size: 13px;}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: relative !important;}
-    .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 12px 0 !important;}
+    .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 18px 0 10px !important;}
     .t1-question .question-components .leaded-form-c .section-head .pull-left {    max-width: 93%;}
     .t1-ques-component .section-head div {    font-size: 12px;}
-    .t1-slider-question .input-field label~input {
-        width: 58% !important;
-    }
+    .t1-slider-question .input-field label~input {        width: 58% !important;    }
 
 
 }

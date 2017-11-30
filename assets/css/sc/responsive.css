@@ -150,6 +150,7 @@
     .page_0 .landing-page-mid .input-outer.w100 {
         width: 94% !important;
     }
+    .custom-block.rating-custom .rating-inner i {font-size: 16px !important;margin-right: 2px !important;padding: 4px !important;}
 }
 @media (max-width: 375px) {
     header .logo {
@@ -733,6 +734,13 @@
     }
     .page-logo {
         display: none !important;
+    }
+}
+@media (min-width:768px) and (max-width:1024px){
+   .custom-block.rating-custom .rating-inner i {
+        font-size: 23px !important;
+        margin-right: 5px !important;
+        padding: 4px !important;
     }
 }
 @media (min-width: 150px) and (max-width: 320px) {
