@@ -5928,6 +5928,18 @@ span.abhi {
 .structure-right-align .t1-slider-nav a.prev i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
 .structure-right-align .t1-slider-pagination{ direction: rtl !important;}
 
+.structure-right-align .common-header-main .common-header.header-right{ text-align: left;}
+.structure-right-align .common-header-main .common-header{float: left;}
+.structure-right-align .common-footer-main .row_1{ float: right;}
+.structure-right-align .common-footer-main .row_1_links{ float: right;}
+.structure-right-align .common-footer-main .disc-set { float: right; text-align: right; margin-right: 25px;}
+.structure-right-align .stickyfooter{ text-align: left; direction: ltr;}
+.structure-right-align .column.footer-left{ direction: rtl; padding-right: 17px;}
+.structure-right-align .t1-question .question-components .input-outer i{ right:10px; left: initial !important;}
+.template-section .template-container.mobile .structure-right-align .landing-page-header { right: 4px; }
+
+
+
 /*leadeform dropdown Placeholder setting css*/
 .one-page-card-new .page_0.t1-landing .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .one-page-card-new .page_0.t1-landing .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
