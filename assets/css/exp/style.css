@@ -3653,7 +3653,8 @@ leadform .input-field select {
     align-items: center;
 }
 .powered-by img {
-    width: 17px;
+    width: auto;
+    height: 18px;
 }
 .powered-by .poweredby-text {
     text-transform: uppercase;
@@ -4409,3 +4410,6 @@ span.abhi {
 .editor-page-divider .no-footer-links.no-header-links{ display: table-cell !important;}
 .header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}*/
 .range-slider1.custom-slider1{z-index: 0;}
+#like {
+    line-height: 10px;
+}

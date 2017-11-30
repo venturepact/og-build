@@ -2908,7 +2908,8 @@ visuals .rec-image-outer img {
 /*.t1-question .powered-by {position: absolute;right: 15px;bottom:10px !important;}*/
 
 .powered-by img {
-    width: 16px;
+    width: auto;
+    height: 18px;
 }
 .powered-by .poweredby-text {
     text-transform: uppercase;
