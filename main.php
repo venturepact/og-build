@@ -17,6 +17,7 @@
 	        CURLOPT_URL => $url,
 	        CURLOPT_USERAGENT => 'Codular Sample cURL Request',
 	        CURLOPT_SSL_VERIFYPEER=>false,
+		CURLOPT_HTTPHEADER=>array('Origin: https://app.outgrow.co'),
 	    ));
 	    $resp = curl_exec($curl);
 	    //close connection
