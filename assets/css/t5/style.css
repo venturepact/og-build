@@ -3783,7 +3783,7 @@
 .t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
 .custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
-
+.custom-block.rating-custom .errorMessage{top:35px;}
 
 /* Opinion scale css */
 #build .opinon-scale-custom .check-comp{border-spacing: 9px 0;margin:0 -5px;}
@@ -3796,6 +3796,7 @@
 .opinion-prefix{width: 50%;float: left;text-align: left;padding-right: 10px;word-break: break-word;}
 .opinion-postfix{width: 50%;float: right;text-align: right;padding-left: 10px;word-break: break-word;}
 .template-section .template-container.mobile .common-result-main .rec-image-outer img{ max-width: 100%;}
+.opinon-scale-custom .errorMessage{top:35px;}
 
 
 /* builder mobile of header footer  css */

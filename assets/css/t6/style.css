@@ -3221,3 +3221,18 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 }
 .isIframe .header-next-div{height: auto !important}
 .common-result-main .t1-result-leadform .input-outer span{font-size: 10px !important; line-height: 1}
+/* tempalte six button */
+.custom-button{ display: none;}
+.submit-checkbox-img-custom{    
+    margin: 0;
+    right: auto;
+    z-index: 10;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-top: 30px;
+    -webkit-animation: submitMove .3s;
+    animation: submitMove .3s;
+    text-transform: uppercase;
+}

@@ -1058,6 +1058,8 @@ Developer: Bhawna */
     /*common header logo */
     .common-header-main .landing-page-header{position: relative;width:100%;float: left;top:0 !important;left:0;text-align:center;}
     .common-header-main .landing-page-header .logo {float: left;width: 100%;}
+    .custom-block.rating-custom .errorMessage{top:25px;}
+    .opinon-scale-custom .errorMessage{top:30px;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
