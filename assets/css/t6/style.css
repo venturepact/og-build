@@ -164,6 +164,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-ques-head div ul li{display: inline;}
 .t1-ques-head div span{display: inline;}
 .t1-ques-head div label{display: inline;}
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-component{    float: left;    width: 100%;}
 .t1-ques-component .question-components custom_html{ text-align: center;}
 .t1-ques-component input.t1-input{    float: left;    color: #666e78;    font-size: 16px;    border: 1px solid #d9dad3;    width: 95%;    padding: 15px;}
@@ -3137,7 +3138,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 /* .editor-page-divider .common-footer-main{ margin-bottom: 35px !important; } */
 .editor-page-divider .t1-result .common-footer-main{ margin-bottom: 0px !important; box-shadow: none;}
 .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
-.t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; }
+.t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static !important; box-shadow:  none; }
 .t1-landing .header-next-div.no-header-links .t1-landing-inner{ padding-bottom: 50px;}
 .no-header-links.header-next-div .t1-question .t1-landing-inner{ padding-bottom: 50px;}
 /* .editor-page-divider .no-footer-links.no-header-links { box-shadow: 0 2px 9px 2px rgba(0,0,0,0.4);} */
@@ -3183,11 +3184,11 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .t1-landing .no-footer-links.no-header-links{ height: 100%; padding: 0px; display: table; }
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
-.no-header-links.no-footer-links{padding: 0px !important} 
+.no-header-links.no-footer-links{display: table; width: 100%; height: calc(100vh - 60px);} 
 .t1-result .no-footer-links.no-header-links .t1-result-main.result-space-top {    padding-top: 90px !important; padding-bottom: 60px !important;}
 .t1-result.no-logo  .no-footer-links.no-header-links .t1-result-main.result-space-top {    padding-top: 30px !important;}
 .common-header-main{box-shadow: none !important;}
-
+.t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{ max-width: 100% !important;}
 /********** question video *********/
 
 .video-sec iframe.vid {
@@ -3220,3 +3221,5 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 }
 .isIframe .header-next-div{height: auto !important}
 .common-result-main .t1-result-leadform .input-outer span{font-size: 10px !important; line-height: 1}
+/* tempalte six button */
+.custom-button{ display: none;}
