@@ -2,40 +2,23 @@
 Developer: Bhawna */
 
 @media (min-width: 1680px) {
-    .range-slider .irs-single {
-        font-size: 16px;
-    }
+    .range-slider .irs-single {        font-size: 16px;    }
     .main-section .input-field label{height: 32px}
     .range-slider .irs-min,
     .range-slider .irs-max,
-    .t1-result-disclaimer {
-        font-size: 15px;
-    }
-    .section-sub {
-        margin-bottom: 40px;
-    }
-    .question-head {
-        font-size: 32px;
-        line-height: 36px;
-    }
-    .question-components .selectize-control {
-        width: 80%;
-    }
-    .question-components .input-field {
-        width: 80%;
-    }
+    .t1-result-disclaimer {        font-size: 15px;    }
+    .section-sub {        margin-bottom: 40px;    }
+    .question-head {        font-size: 32px;        line-height: 36px;    }
+    .question-components .selectize-control {        width: 80%;    }
+    .question-components .input-field {        width: 80%;    }
     .text-highlight .t1-ques-head, .text-highlight .question-number sup, .text-highlight .t1-ques-component .input-section .input-outer .section-head {      line-height: 36px;}
     .t1-ques-head, .question-number sup, .t1-ques-component .input-section .input-outer .section-head {        font-size: 22px;        line-height: 30px;}
     .main-section .input-field label,
     .control,
     .template-five [type="checkbox"] + label,
     .t1-result-leadform .input-outer input,
-    .t1-question .prime-action {
-        font-size: 16px;
-    }
-    .t1-result-leadform .input-outer i {
-        font-size: 19px;
-    }
+    .t1-question .prime-action {        font-size: 16px;    }
+    .t1-result-leadform .input-outer i {        font-size: 19px;    }
     /*.landing-page-header a img {
         max-height: 70px !important;
     }
@@ -43,37 +26,22 @@ Developer: Bhawna */
         max-height: 70px !important;
         max-width: 170px !important;
     }*/
-    .question-number {
-        margin-top: 8px;
-    }
-    leadform .input-section .input-outer span {
-        font-size: 11px;
-        top: 36px;
-    }
+    .question-number {        margin-top: 8px;    }
+    leadform .input-section .input-outer span {        font-size: 11px;        top: 36px;    }
     .main-heading ,  .main-heading h1 {        font-size: 5.3vmin;    }
     .text-highlight .main-heading p {        line-height: 8.5vmin;    }
     .main-heading p{line-height: 6.5vmin;}
-    .landing-page-mid button {
-        font-size: 2vmin;
-    }
-    .landing-img {
-        height: 62vmin;
-    }
-    .landing-right {
-        width: 475px;
-    }
+    .landing-page-mid button {        font-size: 2vmin;    }
+    .landing-img {        height: 62vmin;    }
+    .landing-right {        width: 475px;    }
     .sub-heading,
-    .sub-heading h2 {
-        font-size: 1.7vmin;
-    }
+    .sub-heading h2 {        font-size: 1.7vmin;    }
     .btn-fb,
     .btn-twitter,
     .btn-in {
         font-size: 13px;
     }
-    .t1-ques-component .input-outer input {
-        width: 80%;
-    }
+    .t1-ques-component .input-outer input {        width: 80%;    }
     .check-comp .control__indicator i {
         font-size: 20px;
     }
@@ -110,6 +78,7 @@ Developer: Bhawna */
     }
 }
 @media (max-width: 1023px) {
+    .structure-right-align .landing-page-mid{margin-right: 5% !important; margin-left:0 !important}
     .t1-landing.isIframe .landing-page-mid{height: auto !important; min-height: 460px;}
     .t1-result-inner-left-table span.table-title {
         font-size: 16px;
@@ -432,6 +401,9 @@ Developer: Bhawna */
     }
 }
 @media (max-width: 767px) {
+    .structure-right-align .action-outer{margin-right: 0}
+    .structure-right-align  .lead-action-wrapper{margin-right: 0}
+    .structure-right-align  .input-validation{margin-right: 0 !important}
     /*.t1-result-disclaimer{bottom: 0px; position: relative;}*/
     
     /* .t1-result-disclaimer {
@@ -675,17 +647,13 @@ Developer: Bhawna */
     }*/
 }
 @media (max-width: 640px) {
+    .structure-right-align  .page_0 logo{width: 100%}
+    .structure-right-align .common-header-main .landing-page-header {        right: 0 !important;        left: 0 !important;    }
+    .template-five .structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked {        right: 0;        left: 0;    }
+    .structure-right-align .landing-page-mid {        margin-right: 0;    }
     .t1-result .no-header-links.no-footer-links { padding: 30px 0 !important;    }
     .result-branding{position: static}
-    .disclaimer-outrr {
-
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    float: left;
-    width: 100%;
-}
+    .disclaimer-outrr {    position: relative;    left: 0;    right: 0;    bottom: 0;    float: left;    width: 100%;}
 .numeral-result .table-outer table{max-width: 480px}
     .t1-question , .t1-result-main{padding-bottom: 0px;}
     .landing-page-mid {           width: 100%;                padding: 0px 20px 70px;        display: block;                height: auto;              min-height: initial;                margin: 0;        }
@@ -1058,6 +1026,8 @@ Developer: Bhawna */
     /*common header logo */
     .common-header-main .landing-page-header{position: relative;width:100%;float: left;top:0 !important;left:0;text-align:center;}
     .common-header-main .landing-page-header .logo {float: left;width: 100%;}
+    .custom-block.rating-custom .errorMessage{top:25px;}
+    .opinon-scale-custom .errorMessage{top:30px;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
