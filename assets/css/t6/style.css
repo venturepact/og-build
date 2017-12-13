@@ -152,13 +152,18 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-question-slider .unslider-arrow.prev i{    margin-top: 10px;}
 .t1-question-slider .unslider-arrow.go{    left: auto;    right: -120px;    top: 45%;}
 .t1-question-slider .unslider-arrow.go i{    margin-top: 10px;}
-.question-pic {       width: 100%;    text-align: center;    overflow: hidden;    max-height: 300px;    position: relative;    z-index: 99;    border: 10px solid rgba(255,255,255,0.1);    max-width: 720px;    margin: 0 auto 30px;}
+.question-pic {       width: 100%;    text-align: center;    overflow: hidden;    max-height: 300px;    position: relative;    z-index: 99;    
+    /* border: 10px solid rgba(255,255,255,0.1);     */
+    border: none !important;
+    max-width: 720px;    margin: 0 auto 30px;
+}
 .question-pic img{    max-width: 100%;    max-height: 300px;    position: relative;    z-index: 9999;}
 .t1-slider-section{    float: left;    width: 100%;}
 .t1-ques-inner{    float: left;    width: 100%;    text-align: left;}
 .t1-ques-inner h1, .t1-ques-inner h2, .t1-ques-inner h3{    margin-top: 0px;    }
 .t1-ques-head{      color: #fff;    font-size: 40px;  line-height: 46px;  margin-bottom: 35px;    text-align: center;}
 .t1-ques-head div{    display: inline;    float: none;}
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p:last-child{    display: inline;}
 .t1-ques-head div ul{display: inline;}
 .t1-ques-head div ul li{display: inline;}
@@ -1958,6 +1963,7 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {
     -moz-filter: blur(25px);
     -o-filter: blur(25px);
     -ms-filter: blur(25px);
+    background:  none !important;
 }
 .left-sec.blurimgdefault .t1blur{
     opacity: 1;

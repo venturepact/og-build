@@ -462,7 +462,8 @@ li {
     max-height: 415px;
     position: relative;
     z-index: 99;
-    border: 1px solid #d9dad3;
+    /* border: 1px solid #d9dad3; */
+    border: none !important;
 }
 .question-pic img {
     max-width: 100%;
@@ -3166,6 +3167,7 @@ _:-webkit-full-screen,
     -moz-filter: blur(25px);
     -o-filter: blur(25px);
     -ms-filter: blur(25px);
+    background: none !important;
 }
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
