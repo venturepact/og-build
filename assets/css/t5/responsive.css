@@ -330,6 +330,7 @@ Developer: Bhawna */
     .opinion-label-outer{font-size: 13px;}
     .opinon-scale-custom span.t6 {font-size: 11px;}
     .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 1px;}
+    .opinon-scale-custom .errorMessage{top:26px;font-size: 11px;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     /*.landing-page-header a img {
@@ -621,12 +622,13 @@ Developer: Bhawna */
    .res-header .landing-page-header{    float: none; position: relative !important; text-align: center; width: 100%; left: inherit !important; top: 10px !important;}
    .gradedquiz-main.common-result-gq .landing-page-header{ top: -10px !important;}
    .CustomHtml .t1-ques-component.action-outer button.prime-action{ margin-bottom: 0px;}
-   .opinon-scale-custom .check-comp {border-spacing: 1px 0;padding-bottom:8px;}
+   .opinon-scale-custom .check-comp {border-spacing: 1px 0;padding-bottom:12px;}
    .opinon-scale-custom span.t6{font-size: 11px;}
    .opinion-label-outer{font-size: 11px;}
    .custom-block.rating-custom .rating-inner i{font-size: 17px;margin-right: 2px;padding: 4px;}
    .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
    .t1-result .no-footer-links.no-header-links .t1-result-main{padding: 50px 0 0 !important}
+   .opinon-scale-custom .errorMessage{top:27px;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1027,7 +1029,7 @@ Developer: Bhawna */
     .common-header-main .landing-page-header{position: relative;width:100%;float: left;top:0 !important;left:0;text-align:center;}
     .common-header-main .landing-page-header .logo {float: left;width: 100%;}
     .custom-block.rating-custom .errorMessage{top:25px;}
-    .opinon-scale-custom .errorMessage{top:30px;}
+    .opinon-scale-custom .errorMessage{top:27px;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}

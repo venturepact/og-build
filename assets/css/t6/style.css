@@ -1021,7 +1021,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     white-space: normal;
     word-break: break-word; border-radius: 3px;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 .landing-page-mid button:hover,.landing-page-mid button:focus{
     /* box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2); */
@@ -1738,7 +1738,7 @@ input[type=number] {
 .selectize-input .item{
     font-size:16px;
 }
-.selectize-dropdown .active {    background-color: rgba(0,0,0,0.05) !important;}
+/*.selectize-dropdown .active {    background-color: rgba(0,0,0,0.05) !important;}*/
 .selectize-dropdown{ -webkit-animation: anim .3s ease-in-out; animation: anim .3s ease-in-out; z-index: 9999;}
 @-webkit-keyframes anim {
   0% {
