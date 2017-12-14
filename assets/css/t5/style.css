@@ -2096,7 +2096,7 @@
         clear: both;
         display: block;
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-bottom: 15px;
     }
     .t1-result-cta .prime-action {
@@ -3901,7 +3901,7 @@
     .structure-right-align  .common-result-bot-left{float: right}
     .structure-right-align .lightSticky * {    direction: ltr;}
     .structure-right-align  .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{text-align: right}
-    .structure-right-align .redirect-heading{text-align: right}
+    .structure-right-align .redirect-heading{text-align: center}
     .structure-right-align  .t1-ques-component .input-section .input-outer .section-head{float: right; text-align: right}
     .structure-right-align .t1-question .leaded-form-c input{padding-right: 27px; padding-left:0}
     .structure-right-align  .t1-ques-component .input-section .input-outer span{text-align: right}
@@ -3918,7 +3918,7 @@
     .structure-right-align  .lead-action-wrapper{margin-right:calc(50% + 50px); margin-left: 0; float: right}
     .structure-right-align  .input-validation {    float: right;    margin-left: 0;    margin-right: 50px;}
     .structure-right-align  .landing-page-mid .input-outer.checkbox{margin-top: 0}
-
+    .structure-right-align  .textfield.checkbox-outer .control--checkbox { float: right; width: auto !important;}
 
 /* new multiselect css */
 .control-ver2 .pic-selector span.abhi {
@@ -3973,6 +3973,17 @@
     -webkit-animation-timing-function:ease-in-out;
     -webkit-animation-direction: alternate;
 }
+
+.structure-right-align .textfield.checkbox-outer-base label.control--checkbox {    float: right;}
+.no-footer-links .landing-right{height: calc(100% - 70px)}
+.no-footer-links.no-header-links .landing-right{height: 100%}
+.structure-right-align  .graded-msgbox{float: right; padding-right:25px;padding-left:0px }
+.structure-right-align  .graded-msgbox::before{right: 0; left: auto}
+.structure-right-align  label.control .img-graded-box i{margin-right: -8px !important; margin-left: 0px;}
+
+.template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
+.template-section .template-container.mobile .structure-right-align .common-result-main .common-result-bot-icons .crb-right .stickyfooter .col{float: none !important}
+
 
 tspan {
     direction: ltr !important;

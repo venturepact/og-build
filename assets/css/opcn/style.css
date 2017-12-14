@@ -5928,7 +5928,7 @@ span.abhi {
 .structure-right-align .t1-slider-nav a.next{ right:initial; left:-100px;}
 .structure-right-align .t1-slider-nav a.prev {left:initial; right:-100px;}
 .structure-right-align .t1-slider-nav a.next i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
-.structure-right-align .t1-slider-nav a.next i.done{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg);  -o-transform: rotate(0deg); transform: rotate(0deg);}
+.structure-right-align .t1-slider-nav a.next i.done , .structure-right-align .t1-slider-nav a.next i.done-icons{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg);  -o-transform: rotate(0deg); transform: rotate(0deg);}
 .structure-right-align .t1-slider-nav a.prev i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
 .structure-right-align .t1-slider-pagination{ direction: rtl !important;}
 
@@ -6021,7 +6021,7 @@ span.abhi {
 .template-section .template-container.mobile .common-footer-main .col_3_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_4_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 
-
+.structure-right-align .custom-block.rating-custom{text-align: right}
 .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0; display: initial !important }
 /* .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 580px;} */
@@ -6150,3 +6150,6 @@ span.abhi {
     -webkit-animation-timing-function:ease-in-out;
     -webkit-animation-direction: alternate;
 }
+.structure-right-align .custom-block.rating-custom{text-align: right}
+.template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
+.structure-right-align .poll-main .radio-outer.active2 .poll-percentage  , .structure-right-align .poll-main .radio-outer.active .poll-percentage{left:10px; right: auto}
