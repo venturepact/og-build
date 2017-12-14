@@ -489,8 +489,7 @@ li {
     max-height: 415px;
     position: relative;
     z-index: 99;
-    /* border: 1px solid #d9dad3; */
-    border: none !important;
+    border: 1px solid #d9dad3;
 }
 .question-pic img {
     max-width: 100%;
@@ -523,7 +522,6 @@ li {
     display: inline;
     float: none;
 }
-.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p {
     /*display: inline;
     float: none;*/
@@ -4282,7 +4280,6 @@ _:-webkit-full-screen,
     -moz-filter: blur(25px);
     -o-filter: blur(25px);
     -ms-filter: blur(25px);
-    background:  none !important;
 }
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
