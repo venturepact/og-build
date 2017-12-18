@@ -419,7 +419,7 @@ input[type=number] { -moz-appearance: textfield; }
 /*.res-header { position: relative; }*/
 .landing-page-mid { width: 42%; float: left; padding: 100px 0; display: table; margin-left: 17%; height: 100vh; z-index: 1; position: relative; }
 /*.isIframe .landing-page-mid,.isIframe.landing-inner{ height: 520px; min-height: 520px;}*/
-.isIframe .t1-result-main   { height: auto; }
+.isIframe .t1-result-main   { height: auto; min-height: auto !important }
 .landing-page-mid > div { display: table-cell; vertical-align: middle; }
 .sub-heading { font-size: 15px; margin-top: 20px; line-height: 23px; width: 70%; opacity: .9; }
 .sub-heading h2{ font-size: 15px; margin-top: 15px; line-height: 23px; width: 80%; opacity: .9; }
@@ -1496,3 +1496,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 .opinion-label-outer{float: left;width: 100%;display: block;font-size: 15px;}
 .opinion-prefix{width: 50%;float: left;text-align: left;padding-right: 10px;word-break: break-word;}
 .opinion-postfix{width: 50%;float: right;text-align: right;padding-left: 10px;word-break: break-word;}
+
+
+.isIframe .landing-page-mid{height:auto !important}
+.isIframe .t1-result-main {height:auto !important}

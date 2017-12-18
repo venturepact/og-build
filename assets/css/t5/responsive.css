@@ -651,7 +651,7 @@ Developer: Bhawna */
 @media (max-width: 640px) {
     .structure-right-align  .page_0 logo{width: 100%}
     .structure-right-align .common-header-main .landing-page-header {        right: 0 !important;        left: 0 !important;    }
-    .template-five .structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked {        right: 0;        left: 0;    }
+    .template-five.structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked {        right: 0;        left: 0;    }
     .structure-right-align .landing-page-mid {        margin-right: 0;    }
     .t1-result .no-header-links.no-footer-links { padding: 30px 0 !important;    }
     .result-branding{position: static}

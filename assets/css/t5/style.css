@@ -3905,12 +3905,12 @@
     .structure-right-align  .t1-ques-component .input-section .input-outer .section-head{float: right; text-align: right}
     .structure-right-align .t1-question .leaded-form-c input{padding-right: 27px; padding-left:0}
     .structure-right-align  .t1-ques-component .input-section .input-outer span{text-align: right}
-    .template-five .structure-right-align   [type="checkbox"] + label.leadform-checkbox{padding-right: 35px !important;padding-left:0px !important; text-align: right;}
-    .template-five  .structure-right-align  [type="checkbox"].filled-in + label.leadform-checkbox:before{right:0; left:auto; margin: 0 6px !important}
-    .template-five  .structure-right-align  [type="checkbox"].filled-in + label.leadform-checkbox:after{right:0; left:auto}
+    .template-five.structure-right-align   [type="checkbox"] + label.leadform-checkbox{padding-right: 35px !important;padding-left:0px !important; text-align: right;}
+    .template-five.structure-right-align  [type="checkbox"].filled-in + label.leadform-checkbox:before{right:0; left:auto; margin: 0 6px !important}
+    .template-five.structure-right-align  [type="checkbox"].filled-in + label.leadform-checkbox:after{right:0; left:auto}
     .structure-right-align  .t1-landing .landing-inner .selectize-input {    padding: 3px 3px 3px 35px;}
-    .template-five  .structure-right-align [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{right:10px; left:auto}
-    .template-five .structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked{right:-99999999999px; left: auto;}
+    .template-five.structure-right-align [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{right:10px; left:auto}
+    .template-five.structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked{right:-99999999999px; left: auto;}
     .structure-right-align   .selectize-control.single .selectize-input.input-active, .structure-right-align   .selectize-control.single .selectize-input.input-active input{float: right}
     .structure-right-align .slider-set * {    direction: ltr;}
     .structure-right-align  .t1-ques-component .input-outer input{float: right}
@@ -3919,7 +3919,9 @@
     .structure-right-align  .input-validation {    float: right;    margin-left: 0;    margin-right: 50px;}
     .structure-right-align  .landing-page-mid .input-outer.checkbox{margin-top: 0}
     .structure-right-align  .textfield.checkbox-outer .control--checkbox { float: right; width: auto !important;}
-
+    .structure-right-align .pic-selector label.control .img-graded-box i {
+        margin-right: 8px !important;
+    }
 /* new multiselect css */
 .control-ver2 .pic-selector span.abhi {
     display: block;

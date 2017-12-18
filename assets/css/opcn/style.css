@@ -400,11 +400,25 @@ li {
     top: 0px;
     height: 5px;
 }
-.t1-slider-pagination a {
+.editor-page-divider .t1-slider-pagination a{
     display: inline-block;
     height: 10px;
     position: relative;
-    top: -10px;
+    top: -13px;
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: none;
+    cursor: default;
+}
+.t1-slider-pagination a {
+    display: inline-block;
+    height: 8px;
+    position: relative;
+    top: -7px;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
