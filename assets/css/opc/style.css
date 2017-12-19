@@ -387,6 +387,28 @@ li {
 /*.t1-slider-pagination a.active{
     background: #fff;
 }*/
+.t1-slider-pagination a::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transition: 0.5s;
+    width:0;
+}
+.t1-slider-pagination a::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    right:0;
+    width:100%;
+}
+.t1-slider-pagination a.active::after {transition: 0.5s;right: 0; width:100%;  content: "";}
 
 .editor-page-divider {
     margin-bottom: 35px;
