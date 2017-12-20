@@ -2601,3 +2601,34 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 
 .common-footer-main{ box-shadow: none !important;}
 .common-header-main{ box-shadow: none !important;}
+
+
+/* middle align layout css */
+.editor-template-tabs template-seven.cp1 {
+  display: initial;
+  height: auto;
+  text-align: initial;
+}
+.editor-template-tabs .t7-center {
+  display: initial;
+  vertical-align: initial;
+}
+
+template-seven {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.t7-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+.border-top .small-bot-sec{
+  border: none;
+}
+.result-scrolling .border-top {
+  border-top: 1px solid #eeeeef;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
