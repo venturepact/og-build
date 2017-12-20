@@ -472,6 +472,7 @@ input[type=number] { -moz-appearance: textfield; }
 .back-action { background: none; }
 .requiredAsteric { color: #f00; font-size: 18px; display: inline; }
 .t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px; }
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p { display: inline; }
 .t1-ques-head div ul{display: inline;}
 .t1-ques-head div ul li{display: inline;}
