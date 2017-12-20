@@ -400,11 +400,11 @@ li {
     top: 0px;
     height: 5px;
 }
-.editor-page-divider .t1-slider-pagination a{
+.t1-slider-pagination a {
     display: inline-block;
     height: 10px;
     position: relative;
-    top: -13px;
+    top: -10px;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -414,42 +414,6 @@ li {
     border: none;
     cursor: default;
 }
-.t1-slider-pagination a {
-    display: inline-block;
-    height: 8px;
-    position: relative;
-    top: -7px;
-    width: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 0;
-    margin-left: 0;
-    margin-right: 0;
-    border: none;
-    cursor: default;
-}
-.t1-slider-pagination a::after {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    transition: 0.5s;
-    width:0;
-}
-.t1-slider-pagination a::before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    right:0;
-    width:100%;
-}
-.t1-slider-pagination a.active::after {transition: 0.5s;right: 0; width:100%;  content: "";}
 /*.t1-slider-pagination a.active{
     background: #fff;
 }*/
@@ -526,8 +490,7 @@ li {
     max-height: 415px;
     position: relative;
     z-index: 99;
-    /* border: 1px solid #d9dad3; */
-    border: none !important;
+    border: 1px solid #d9dad3;
 }
 .question-pic img {
     max-width: 100%;
@@ -560,7 +523,6 @@ li {
     display: inline;
     float: none;
 }
-.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p {
     /*display: inline;
     float: none;*/
@@ -4327,7 +4289,6 @@ _:-webkit-full-screen,
     -moz-filter: blur(25px);
     -o-filter: blur(25px);
     -ms-filter: blur(25px);
-    background:  none !important;
 }
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
@@ -5964,7 +5925,7 @@ span.abhi {
 .structure-right-align .t1-slider-nav a.next{ right:initial; left:-100px;}
 .structure-right-align .t1-slider-nav a.prev {left:initial; right:-100px;}
 .structure-right-align .t1-slider-nav a.next i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
-.structure-right-align .t1-slider-nav a.next i.done , .structure-right-align .t1-slider-nav a.next i.done-icons{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg);  -o-transform: rotate(0deg); transform: rotate(0deg);}
+.structure-right-align .t1-slider-nav a.next i.done{-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg);  -o-transform: rotate(0deg); transform: rotate(0deg);}
 .structure-right-align .t1-slider-nav a.prev i{-webkit-transform: rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg);  -o-transform: rotate(180deg); transform: rotate(180deg);}
 .structure-right-align .t1-slider-pagination{ direction: rtl !important;}
 
@@ -6057,7 +6018,7 @@ span.abhi {
 .template-section .template-container.mobile .common-footer-main .col_3_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_4_links{width: 100%; margin-bottom: 10px; text-align: center !important;}
 
-.structure-right-align .custom-block.rating-custom{text-align: right}
+
 .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0; display: initial !important }
 /* .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 580px;} */
@@ -6117,78 +6078,3 @@ span.abhi {
 
 .poll-main .pic-selector.radio-outer .poll-color {z-index: 1;}
 .poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 10px !important;}
-
-
-.Result.desc-in-page {
-    display:none
-}
-
-
-/* disclaimer text */
-.landing-footer-outer .desc-in-page{ float: left; width: 70%;}
-.landing-footer-outer .desc-in-page.Landing .disc-set{ float: left; width: 70%; margin-bottom: 0px;  font-size: 11px; text-align: left; padding-left: 20px; padding-bottom: 10px; line-height: 15px;}
-.landing-footer-outer .desc-in-page.Landing .disc-set i{display: none;}
-
-.result-branding .desc-in-page{ float: left;  width: 70%; position: absolute; bottom: 0px; left: 0px;}
-.result-branding .desc-in-page.Questionnaire .disc-set{ float: left; width: 70%; margin-bottom: 0px;  font-size: 11px; text-align: left; padding-left: 20px; padding-bottom: 10px; line-height: 15px;}
-.result-branding .desc-in-page.Questionnaire .disc-set i{display: none;}
-
-
-/* new multiselect css */
-.control-ver2 .pic-selector span.abhi {
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-}
-.control-ver2 .pic-selector .control.control--checkbox span{
-    display:none;
-}
-.control-ver2 .done-iconoutr{position: relative; float: left; left: 0;top: -10px;}
-.control-ver2 .done-icon {
-    position: absolute;
-    z-index: 9;
-    left: -10px;
-    bottom: 30px;
-    top: inherit;
-    right: inherit;
-    background: #fff;
-    padding-top: 5px;
-    padding-right: 5px;
-    float: left;
-    height: 26px;
-}
-.control-ver2 .submit-checkbox-outr {
-    float: left;
-    width: 97%;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    top: inherit;
-    z-index: 99;
-}
-.control-ver2 .pic-selector{
-    padding-right: 2.5%;
-    padding-bottom: 2%;
-    box-shadow: none !important;
-}
-.control-ver2 .pic-selector .control.control--radio span{display:none;}
-.control-ver2 .done-icon i { font-size: 24px !important;}
-.control-ver2 .done-icon.unchecked i { font-size: 24px !important; color: #d9dad3;}
-.control-ver2 .pic-selector.active .blink-border {
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  
-  @keyframes blinker {
-    from {}
-    50% {
-      border-color: #fff;
-    }
-    to {}
-  }
-
-.structure-right-align .custom-block.rating-custom{text-align: right}
-.template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
-.structure-right-align .poll-main .radio-outer.active2 .poll-percentage  , .structure-right-align .poll-main .radio-outer.active .poll-percentage{left:10px; right: auto}
-
