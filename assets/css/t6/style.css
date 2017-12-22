@@ -2049,7 +2049,7 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {
 .control.control--checkbox span{ float: left; line-height: 30px; margin-top: 16px; margin-bottom: 14px; word-wrap: break-word; white-space: normal; word-break: break-word; margin-top:0 !important; float:left; width:100%;padding-left: 0px !important;}
 .pic-selector .control.control--checkbox span{ float: left;  margin-top: 0; margin-bottom: 0;}
 
-.control.control--radio span{float: left; line-height: 30px; margin-top: 16px; margin-bottom: 14px; word-wrap: break-word; padding-top: 160px;  white-space: normal; word-break: break-word; margin-top:0 !important; float:left; width:100%;padding-left: 0px !important;}
+.control.control--radio span{float: left; line-height: 30px; margin-top: 16px; margin-bottom: 14px; word-wrap: break-word; padding-top: 160px;  white-space: normal; word-break: break-word; margin-top:0 !important; float:left; width:100%;padding-left: 0px !important; position: relative;}
 .pic-selector .control.control--radio span{ float: left;  margin-top: 0; margin-bottom: 0;}
 .highcharts-credits{
     display: none;
@@ -3256,8 +3256,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
 .poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
 .poll-main.check-comp .radio-outer label{ padding-right: 78px;}
-.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
-.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
+.poll-main .radio-outer.active .poll-percentage{width:auto;position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important;}
+.poll-main .radio-outer.active2 .poll-percentage{width:auto;position: absolute; right: 10px; line-height: 58px; font-size: 16px; display: block !important; color: #666e78 !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}
 
 .poll-main .ko-progress-circle {
@@ -4058,7 +4058,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .template-six .poll-main .radio-icon-custom{position: relative;}
 .poll-main.check-comp .radio-outer.active label:before{opacity:0.4 !important;}
 
-.poll-main .poll-color {opacity: 0.1;transition: width 2s;transition-property: width;transition-duration: 2s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 2s;}
+.poll-main .poll-color {opacity: 0.1;transition: width 2s;transition-property: width;transition-duration: 2s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 2s;z-index: -1;}
 
 /* disclaimer text */
 .landing-footer-outer .desc-in-page{ float: left; width: 70%;}
