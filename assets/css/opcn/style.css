@@ -5946,7 +5946,7 @@ span.abhi {
 .structure-right-align .control__indicator.check-set{ right: 17px !important; left:initial !important;}
 .structure-right-align .pic-selector label.control .text-overlay span{ right:2px;}
 .structure-right-align .done-icon { right: initial; left: 12px;}
-.structure-right-align .control.control--radio span{ float: right;}
+.structure-right-align .control.control--radio span{ float: right; position: relative;}
 .one-page-card-new .structure-right-align [type="radio"]:not(:checked) + label, .one-page-card-new .structure-right-align [type="radio"]:checked + label{ padding-right: 56px; padding-left:10px;}
 .one-page-card-new .structure-right-align  [type="radio"] + label:before, .one-page-card-new .structure-right-align [type="radio"] + label:after{ right:0; left: initial;}
 .structure-right-align .control--radio .control__indicator.icon-set{ left: initial; right: 16px;}
@@ -6196,3 +6196,4 @@ span.abhi {
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
 .one-page-card-new [type=radio]+label:after, .one-page-card-new [type=radio]+label:before{ z-index: 9;}
 .structure-right-align .editor-page-divider label.control.control--radio.blink-border { padding-right: 56px;}
+.structure-right-align label.control.control--radio { padding-right: 25px;}
