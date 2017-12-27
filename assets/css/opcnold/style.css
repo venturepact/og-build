@@ -417,28 +417,7 @@ li {
 /*.t1-slider-pagination a.active{
     background: #fff;
 }*/
-.t1-slider-pagination a::after {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    transition: 0.5s;
-    width:0;
-}
-.t1-slider-pagination a::before {
-    bottom: 0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    right:0;
-    width:100%;
-}
-.t1-slider-pagination a.active::after {transition: 0.5s;right: 0; width:100%;  content: "";}
+
 .editor-page-divider {
     margin-bottom: 35px;
 }
@@ -511,8 +490,7 @@ li {
     max-height: 415px;
     position: relative;
     z-index: 99;
-    /* border: 1px solid #d9dad3; */
-    border: none !important;
+    border: 1px solid #d9dad3;
 }
 .question-pic img {
     max-width: 100%;
@@ -545,7 +523,6 @@ li {
     display: inline;
     float: none;
 }
-.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p {
     /*display: inline;
     float: none;*/
@@ -4304,7 +4281,6 @@ _:-webkit-full-screen,
     -moz-filter: blur(25px);
     -o-filter: blur(25px);
     -ms-filter: blur(25px);
-    background:  none !important;
 }
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
@@ -5917,7 +5893,7 @@ span.abhi {
 .structure-right-align .control__indicator.check-set{ right: 17px !important; left:initial !important;}
 .structure-right-align .pic-selector label.control .text-overlay span{ right:2px;}
 .structure-right-align .done-icon { right: initial; left: 12px;}
-.structure-right-align .control.control--radio span{ float: right;position: relative;}
+.structure-right-align .control.control--radio span{ float: right;}
 .one-page-card-new .structure-right-align [type="radio"]:not(:checked) + label, .one-page-card-new .structure-right-align [type="radio"]:checked + label{ padding-right: 56px; padding-left:10px;}
 .one-page-card-new .structure-right-align  [type="radio"] + label:before, .one-page-card-new .structure-right-align [type="radio"] + label:after{ right:0; left: initial;}
 .structure-right-align .control--radio .control__indicator.icon-set{ left: initial; right: 16px;}

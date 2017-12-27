@@ -389,16 +389,14 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
     color: rgb(94,94,94);
 }*/
 .share-heading{
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   /*text-transform: uppercase;*/
   color: rgb(94,94,94);
   width: 100%;
   float: left;
    margin-top: 10px;  
-  border-top:1px solid #eee; 
-  padding-top: 10px;
-  margin-bottom: 10px;
+  border-top:1px solid #eee; padding-top: 10px;
 }
 /*Result Section Style */
 .section-head .help-text { font-size: 14px; text-align: left; color: #999999; width: 100%; margin-bottom: 0px !important; margin-top: 0px; }
@@ -690,6 +688,7 @@ border-radius: 25px!important;
   float: left;
   width: 100%;
   padding-top: 8px; position: relative;
+  text-align: left;
 }
 /*.page_2 .result-temp2-default-section:last-child {
   padding-top: 0px;
@@ -813,7 +812,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .landing-page-mid .main-heading p{ margin:0px; }
 .landing-page-mid .sub-heading h2{ font-size: 13px; line-height: 20px;float: left; width: 89%; text-align: left; margin-top: 2px; margin-bottom: 10px; opacity:0.5 }
 .landing-page-mid .sub-heading{ font-size: 13px; line-height: 20px;float: left; width: 80%; text-align: left; margin-top: 2px;  margin-bottom: 10px; opacity:0.5;word-break: break-word;}
-.bottom-section {  margin-bottom: 5px; border-bottom: 0 !important }
+.bottom-section {  margin-bottom: 5px; border-bottom: 0 !important; text-align: left; }
 .result-full-section .container-temp { width: 100%; margin: 0 auto; display: inline-block; }
 .page_2 .input-section .input-outer span {  width: 68%; text-align: left; color: #f44336; font-size: 9px; z-index: 1; margin-bottom: 1px;  position: absolute; left:30%;;top:26px; }
 temp { width: 100%; margin: 0 auto; display: block; }
@@ -938,7 +937,7 @@ a:hover, a:focus {
 }
 
 .like-cta-outer{ float: left; width:100%; text-align: center;}
-.like-cta-outer .btn-fb-like{ float: none; margin: 0px 0 5px 0 !important; text-decoration: none;}
+.like-cta-outer .btn-fb-like{ float: none; margin: 10px 0 5px 0 !important; text-decoration: none;}
 .like-cta-outer .fb-like{
   /*float: none; */
   /*margin: 10px 0 10px 0; */
@@ -1024,7 +1023,7 @@ a:hover, a:focus {
   /*border: 1px solid #007BB6;*/
   cursor: pointer;
   transition: all .3s ease 0s!important;
-  margin: 0px 0 10px 0;
+  margin: 10px 0 10px 0;
   font-size: 12px;text-decoration: none;
 }
 
@@ -1047,9 +1046,8 @@ a:hover, a:focus {
   /*margin: 10px 0;*/
   /*margin-top: 20px;*/
   cursor: pointer;
-  margin:0;
-  /*margin-bottom: 10px;
-  margin-top: 10px;*/
+  margin-bottom: 10px;
+  margin-top: 10px;
   /*float: none;*/
 }
 
@@ -1109,8 +1107,8 @@ input[type=number] {
 .like-cta-outer .twitter-follow-button{
   /*margin:0px 0 -5px 5px !important;*/
   margin-left: 5px;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 @-moz-document url-prefix() {
   .like-cta-outer .twitter-follow-button{
@@ -1149,7 +1147,7 @@ input[type=number] {
 
 
 .page_2 .redirect-heading {
-  text-align: center;
+  text-align: left;
   font-size: 14px;
   /*text-transform: uppercase;*/
   color: rgb(94,94,94);
@@ -2648,18 +2646,3 @@ template-seven {
 path.highcharts-plot-band {
     fill: transparent;
 }
-#vk_subscribe {
-    float: none!important;
-    width: auto!important;
-    display: inline-block!important;
-}
-#vk_subscribe iframe {
-    margin: 10px 5px 0!important;
-    max-width: 160px!important;
-    background: #5181b8;
-    height: 28px;
-    border-radius: 3px;
-    padding: 3px 0;
-    margin-top: 0px !important;
-}
-.like-cta-outer .btn-lg:nth-child(4){margin-top:0 !important;}
