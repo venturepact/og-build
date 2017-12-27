@@ -138,7 +138,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
  /* .t1-slider-nav a.prev{    left: -20px;}
 .t1-slider-nav a.next{    right: -20px;}  */
 .t1-slider-nav a.go{    right: -165px;}
-.t1-slider-pagination{    position: absolute;display: none;    float: left;    width: 100%;    top: 0px;    height: 5px;}
+.t1-slider-pagination{    position: absolute;display: none;    float: left;    width: 100%;    top: 0px;    height: 5px; z-index: 9;}
 .t1-slider-pagination a{    display: inline-block;    height: 10px;    position: relative;    top: -10px;    width: auto;    padding-left: 10px;    padding-right: 10px;    border-radius: 0;    margin-left: 0;    margin-right: 0;    border: none;    cursor: default;}
 .editor-page-divider {    margin-bottom: 35px;    float: left;    width: 100%;}
 .t1-slider-question-divider{    margin-bottom: 40px;}
