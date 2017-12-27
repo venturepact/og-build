@@ -428,6 +428,7 @@ padding-top: 100px;
 position: absolute;
 width: 100%;
 bottom: 0;
+left: 0px;
 background: transparent !important;
 }
 .page_2 .right-section {
@@ -1902,3 +1903,7 @@ margin: 0 !important;
 /* .lead-not-in-result .new-lead-common  .result-mid.result-comm.result-scrolling{    max-height: calc(100vh - 250px);} */
 .page_1 .input-field label.pre-icon{margin-right: -3px; z-index: 10;}
 .page_1 .input-field label.post-icon{margin-left: -3px;  z-index: 10;}
+
+.page_2.result-fixed.t2haslogo{ top: 85px;}
+.page_2.result-fixed.t2haslogo .result-scrolling{ max-height: calc(60vh - 155px);}
+.page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: calc(40vh - 105px);}
