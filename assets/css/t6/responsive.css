@@ -324,6 +324,13 @@
     .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
 
     .t1-result .no-footer-links.no-header-links .t1-result-main.result-space-top {    padding-top: 0px !important; padding-bottom: 0px !important;}
+    /*poll css*/
+    .poll-main .ko-progress-circle{width:120px; height:120px; left:43px;}
+    .poll-main .radio-icon-custom .ko-progress-circle {left: 40px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice{clip: rect(0px, 120px, 120px, 60px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill{width:120px; height:120px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill{clip: rect(0px, 60px, 120px, 0px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:110px; height:110px;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -680,6 +687,7 @@
     .t1-landing-leadform select { margin-bottom: 15px;}
     .t1-result-leadform select { padding: 9px !important;}
     /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
+    .control-ver2 .done-icon{top:-90px;}
 }
 
 @media (min-width:1367px) and (max-width:1920px){
@@ -717,6 +725,16 @@
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 60px !important}
     .checkbox-outer button.submit-checkbox-img.ripple-light , .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 12px;    font-size: 13px;}
      .control__indicator.check-set .done-icon i{font-size: 28px !important}
+     /*poll css*/
+    .poll-main .ko-progress-circle{width:130px; height:130px; left:35px;}
+    .poll-main .radio-icon-custom .ko-progress-circle {left: 35px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice{clip: rect(0px, 130px, 130px, 65px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill{width:130px; height:130px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill{clip: rect(0px, 65px, 130px, 0px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:120px; height:120px;}
+     /*checkbox icon polls*/
+    .control-ver2 .done-icon{top:45px;}
+    .control-ver2 .done-icon i {position: relative;top: -1.7px;}
 }
 @media (min-width:820px) and (max-width:1024px) {
 }
@@ -818,6 +836,8 @@
         .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){padding: 0px !important}
         .landing-page-mid leadform .input-section .input-outer span{left:0px;}
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
+        .control-ver2 .done-icon i {position: relative;top: -1.6px; left:0.5px;}
+        .control-ver2 .done-icon{top:35px;}
 }
 @media (min-width:0px) and (max-width:640px) {
     .errorMessage.cust-err {
@@ -896,6 +916,7 @@
 }
 @media (max-width:359px){
 .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 100% !important;}
+.poll-main .ko-progress-circle{left:80px;}
 }
 @media (max-width:319px){
     .main-heading, .main-heading h1, .main-heading p {    font-size: 18px;    line-height: 1.2;}
@@ -910,4 +931,13 @@
     .t1-slider-question .input-field label~input {        width: 58% !important;    }
 
 
+}
+@media (min-width:482px) and (max-width:642px) {
+    /*poll css*/
+    .poll-main .ko-progress-circle{width:130px; height:130px; left:35px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice{clip: rect(0px, 130px, 130px, 65px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill{width:130px; height:130px;}
+    .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill{clip: rect(0px, 65px, 130px, 0px);}
+    .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:120px; height:120px;}
+    .control-ver2 .done-icon{top:45px;}
 }

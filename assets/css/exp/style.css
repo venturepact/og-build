@@ -2171,7 +2171,8 @@ visuals .rec-image-outer img {
 .right-section {
     width: 40%;
     float: left;
-    display: flex;
+    display: block;
+    height:100%;
 }
 /*experian template component css starts*/
 /*checkbox css starts*/
@@ -2518,6 +2519,7 @@ input[type=number] {
     line-height: 22px;
     display: inline;
 }
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p {
     margin: 0px;
     display: block;
@@ -4411,3 +4413,20 @@ span.abhi {
 .editor-page-divider .no-footer-links.no-header-links{ display: table-cell !important;}
 .header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}*/
 .range-slider1.custom-slider1{z-index: 0;}
+
+.t1-question{ display: block;}
+.no-footer-links-section.no-header-links-section .inline-tablecell{ padding-bottom: 15px;}
+.inline-tablecell{ padding-bottom: 15px;}
+.no-footer-links-section.no-header-links-section .experian-outer{ }
+.no-footer-links-section.no-header-links-section .right-section{  min-height: 100vh;}
+.t1-question.no-footer-links-section { display: block;}
+.t1-question.no-footer-links-section.no-header-links-section { display: flex;}
+.t1-question.editor-page-divider .common-footer-main { margin-bottom: 0px !important;}
+#build .t1-result-inner{ min-height: 100vh !important;}
+.editor-page-divider .common-header-main{ position: relative !important;}
+.editor-page-divider .common-header-main + .header-next-div { margin-top: 0px;}
+.common-header-main + .header-next-div { margin-top: 70px;}
+.t1-landing .no-footer-links{ height: 100%; padding-top: 70px; min-height: 100vh;}
+.no-footer-links .experian-outer{margin-top: 70px;}
+.editor-page-divider .no-footer-links .experian-outer { margin-top: 0px; }
+.t1-landing .no-footer-links .t1-landing-inner{ padding-top: 75px !important; padding-bottom: 75px !important;}
