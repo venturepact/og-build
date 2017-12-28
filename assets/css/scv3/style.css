@@ -428,7 +428,6 @@ padding-top: 100px;
 position: absolute;
 width: 100%;
 bottom: 0;
-left: 0px;
 background: transparent !important;
 }
 .page_2 .right-section {
@@ -1819,7 +1818,7 @@ body.modal-open{padding-right: 0px !important}
 .page_2 .input-section .input-outer:last-child{margin-bottom: 0}
 
 /* common Header Footer css sahil */
-.common-header-main{ float: left; box-shadow: 0 -3px 9px -1px rgba(0,0,0,0.4); position: fixed !important; z-index: 99; width: 100%; padding: 20px; min-height: 70px;}
+.common-header-main{ float: left; box-shadow: 0 -3px 9px -1px rgba(0,0,0,0.4); position: relative; z-index: 9; width: 100%; padding: 20px; min-height: 70px;}
 .common-header-main .common-header{ float: right; width: 80%; min-height: auto; padding: 0px; position: relative; z-index: 9; box-shadow: none !important; margin-right: 10px;}
 .common-header-main .landing-page-header{ top: 15px;position: absolute;width: auto;left: 75px;}
 .common-header-main .landing-page-header .logo {position: relative;top: 0; padding: 0; left: 0; width: auto;}
@@ -1903,12 +1902,3 @@ margin: 0 !important;
 /* .lead-not-in-result .new-lead-common  .result-mid.result-comm.result-scrolling{    max-height: calc(100vh - 250px);} */
 .page_1 .input-field label.pre-icon{margin-right: -3px; z-index: 10;}
 .page_1 .input-field label.post-icon{margin-left: -3px;  z-index: 10;}
-
-.page_2.result-fixed.t2haslogo{ top: 85px;}
-.page_2.result-fixed.t2haslogo .result-scrolling{ max-height: calc(60vh - 155px);}
-.page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: calc(40vh - 105px);}
-.builder-parent .common-header-main{ position: relative !important;}
-.builder-parent .common-header-main + .header-next-div {padding-top: 0px;}
-.common-header-main + .header-next-div {padding-top: 70px;}
-.common-footer-linktext{ text-align: left;}
-

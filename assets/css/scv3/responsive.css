@@ -90,7 +90,7 @@
     .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
     .custom-block.rating-custom .rating-inner i{font-size: 16px !important;margin-right: 2px !important;padding: 4px !important;}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
-    .common-header-main .landing-page-header{ position: absolute; width: 100%; text-align: center; left: 0; top: 3px;}
+    .common-header-main .landing-page-header{ position: relative; width: 100%; text-align: center; left: 0; top: 3px;}
     .common-header-main .landing-page-header .logo{ padding: 0px !important;}
 
 
@@ -98,7 +98,6 @@
     .common-footer-main .col_2_links{ width: 100%; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100%; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100%; margin-bottom: 10px; text-align: center;}
-    .column-inner-div{ text-align: left;}
     
     
 }
@@ -404,13 +403,4 @@
     .common-header-main .landing-page-header{ left: 20px; top: 5px; width: auto;}
     .common-header-main .common-header{ width: 70%;  margin: 0; margin-top: 10px; margin-right: 10px; text-align: center;}
     .common-header-main .common-header-inner { float: right;  width: auto; }
-}
-
-@media (max-width:640px) {
-    .common-header-main .landing-page-header{ position: relative;}
-    .common-header-main .common-header{ width: 100% !important;}
-    .common-footer-main .row_1_links{ width: 100%; text-align: center;}
-    .common-footer-main .row_1_links a{  float: none!important;margin: 0 10px!important; font-size: 12px!important;}
-    .common-footer-main .disc-set { text-align: center !important; width: 100% !important;}
-    .common-footer-main .stickyfooter.lightSticky{ float: none !important;}
 }
