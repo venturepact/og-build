@@ -6113,11 +6113,17 @@ span.abhi {
 .poll-result .result-branding .lightSticky{position: relative !important;  bottom: -10px  !important; padding-right: 0  !important;}
 
 /* image poll css */
-.poll-main .pic-selector.radio-outer.active .poll-color-light{z-index: 1;}
-.poll-main .pic-selector.radio-outer.active .poll-color{z-index: 2; opacity: 0.8;}
+.poll-main .pic-selector.radio-outer.active .poll-color-light{z-index: 1; display: none;}
+.poll-main .pic-selector.radio-outer.active .mid-outer .poll-color-light{z-index: 1; display: block;}
+.poll-main .pic-selector.radio-outer .mid-outer .poll-color-light{z-index: 1; display: block;}
+.poll-main .pic-selector.radio-outer.active .poll-color{z-index: 2; opacity: 0.8;  display: none;}
+.poll-main .pic-selector.radio-outer.active .mid-outer .poll-color{z-index: 2; opacity: 0.8;  display: block;}
+.poll-main .pic-selector.radio-outer .mid-outer .poll-color{z-index: 2; opacity: 0.1;  display: block;}
+.poll-main .radio-outer-base .mid-outer .poll-color-light{display: none;}
 .poll-main .pic-selector.radio-outer.active .poll-percentage{ z-index: 2; text-align: left; left: 10px !important;}
+.poll-main .radio-outer .mid-outer .poll-color { display: none;}
 
-.poll-main .pic-selector.radio-outer .poll-color {z-index: 1;}
+.poll-main .pic-selector.radio-outer .poll-color {z-index: 1; display: none;}
 .poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 10px !important;}
 
 
@@ -6196,6 +6202,9 @@ span.abhi {
       border-color: #fff;
     }
     to {}
+  }
+  .control-ver2 .poll-main .pic-selector.active .blink-border{
+    animation-name: blinker-no;
   }
 
 .structure-right-align .custom-block.rating-custom{text-align: right}

@@ -2968,7 +2968,8 @@ input {    -webkit-transform: translate3d(0,0,0);}
 button.btn.prime-action.sliding-next.og-lead-ques.ripple-light {    display: none !important;}
 .graded-image-tick.hide {    display: none !important;}
 button.btn.prime-action.back-action.ripple-light {    display: inline-block;    margin: 0;    padding: 15px 30px;    font-size: 18px;    position: relative;    top: 0;    line-height: 1;   opacity: 0.7;    align-items: center;    margin-right:15px;    display: none;}
-button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{ padding: 15px 30px;    font-size: 18px;}
+.t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{ padding: 15px 30px;    font-size: 18px;}
+button.submit-checkbox-img.ripple-light{ padding: 15px 10px;    font-size: 18px;}
 .radio-outer-base .graded-tick .img-graded-box  ,    .checkbox-outer-base .graded-tick .img-graded-box {     width: 25px;    height: 25px;    display: table;    position: absolute;    border-radius: 50%;    background: #00a651;    padding: 3px 0;    top: 17px !important;    left: 15px;    box-shadow: none;    right: auto;    text-align: center;}  
 .radio-outer-base .graded-cross .img-graded-box  , .checkbox-outer-base .graded-cross .img-graded-box {
     width: 25px;
@@ -2986,7 +2987,8 @@ button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w1
 }
 .radio-icon-custom span.t6 , .checkbox-outer span.t6 {    display: none;}
 .checkbox-outer-base span.t6.pull-text-right {    padding-left:0px !important;width: auto;}
-button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{    padding: 10px 20px;    font-size: 14px;    border: 1px solid transparent;    border-radius: 3px;    /* position: absolute; */    margin-top: 8px;     -webkit-animation: submitMove 300ms;     animation: submitMove 300ms;    text-transform: uppercase;}
+.t1-question .submit-textbox-btn , .w100.text-center .submit-checkbox-img{    padding: 10px 20px;    font-size: 14px;    border: 1px solid transparent;    border-radius: 3px;    /* position: absolute; */    margin-top: 8px;     -webkit-animation: submitMove 300ms;     animation: submitMove 300ms;    text-transform: uppercase;}
+button.submit-checkbox-img.ripple-light{    padding: 10px;    font-size: 14px;    border: 1px solid transparent;    border-radius: 3px;    /* position: absolute; */    margin-top: 8px;     -webkit-animation: submitMove 300ms;     animation: submitMove 300ms;    text-transform: uppercase;}
 .question-components .dropdown-set {    position: relative;    max-width: 570px;    margin: 0 auto;}
 .question-components input{max-width: 570px; text-align: left; display: inline-block; float: none; padding-left: 15px;}
 .question-components .full-width .input-field {    text-align: center;}
@@ -4043,7 +4045,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .showPercentage{display: block !important;}
 .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {background-color: transparent !important;}
 .poll-svgouter visuals.visual-outr{float:none;}
-.template-six .poll-main .pic-selector .poll-color-light{display: none;}
+.template-six .poll-main .radio-outer.active .poll-color{display: block !important;}
+.template-six .poll-main .pic-selector .poll-color-light{display: none !important;}
 .template-six .poll-main .pic-selector.radio-outer .poll-color{display: none !important;}
 .template-six .poll-main .pic-selector.radio-outer.active .poll-color{display: none !important;}
 .template-six .poll-main .pic-selector.radio-outer.active .poll-percentage{display: none !important;}
@@ -4053,12 +4056,12 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .template-six .poll-main .radio-icon-custom.radio-outer.active .poll-color{display: none !important;}
 .template-six .poll-main .radio-icon-custom.radio-outer.active .poll-percentage{display: none !important;}
 .template-six .poll-main .radio-icon-custom.radio-outer .poll-percentage{display: none !important;}
-
 .template-six .radio-outer-base .ko-progress-circle{display: none !important;}
 .template-six .poll-main .radio-icon-custom{position: relative;}
 .poll-main.check-comp .radio-outer.active label:before{opacity:0.4 !important;}
-
 .poll-main .poll-color {opacity: 0.1;transition: width 2s;transition-property: width;transition-duration: 2s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 2s;z-index: -1;}
+.template-six .poll-main .radio-outer .mid-outer .poll-color{display: block;}
+.template-six .control-ver2 .radio-outer.ripple-dark, .checkbox-outer.ripple-dark{padding:0;}
 
 /* disclaimer text */
 .landing-footer-outer .desc-in-page{ float: left; width: 70%;}
@@ -4139,6 +4142,9 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     }
     to {}
   }
+  .control-ver2 .poll-main .pic-selector.active .blink-border{
+  animation-name: blinker-no;
+}
 
 /*poll builder css*/
 .template-section .template-container.mobile .poll-main .ko-progress-circle{width:130px; height:130px; left:35px;}

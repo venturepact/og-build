@@ -3967,6 +3967,8 @@
     box-shadow: none !important;
     float: none !important;
     display: inline-block !important;
+    overflow: visible;
+    word-wrap: break-word;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
 .control-ver2 .done-icon i { font-size: 24px !important;}
@@ -3984,6 +3986,9 @@
       border-color: #fff;
     }
     to {}
+  }
+  .control-ver2 .poll-main .pic-selector.active .blink-border{
+    animation-name: blinker-no;
   }
 
 .structure-right-align .textfield.checkbox-outer-base label.control--checkbox {    float: right;}

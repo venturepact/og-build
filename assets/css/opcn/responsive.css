@@ -1426,6 +1426,9 @@
     /*header logo styling*/
     .page_0 .common-header-main .landing-page-header {top: 3px !important;}
     .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
+    .control-ver2 .pic-selector{ width: 48% !important;     padding-right: 5%; }
+    /* .control-ver2 .pic-selector span.abhi{ font-size: 13px;} */
+    .control-ver2 .pic-selector label.control--radio { padding-right: 52px; }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2429,7 +2432,8 @@
     /* temp mobile otherfield */
     .otherfield-inputbtn input.othersfield{width: 90% !important; float: left; margin-left: 35px !important;}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 5px; display: block !important; float: left; margin-left: 40px; margin-bottom: 20px;}
-
+    .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
+    .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
