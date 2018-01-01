@@ -4109,6 +4109,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
   float: left;
   height: 25px;
   display: block !important;
+  cursor: pointer;
+  pointer-events: none;
 }
 .control-ver2 .submit-checkbox-outr {
   float: left;
