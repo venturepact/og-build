@@ -479,6 +479,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t6 img{ float: left; margin-left: 10px;}
 .left-button-outer-t6 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:5px;}
 .left-button-outer-t6 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t8{ position: absolute;top: 92%;width: 450px;left: 20px;}
+.left-button-outer-t8 img{ float: left; margin-left: 10px;}
+.left-button-outer-t8 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:5px;}
+.left-button-outer-t8 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
 .intro-overlay.builder-parent .left-button-outer-t7{top: 415px;}
 .left-button-outer-t7{ position: absolute;width: 450px;left: 20px; top:385px;}
 .left-button-outer-t7 img{ float: left; margin-left: 10px;}
@@ -740,7 +746,7 @@ button.btn-done {
 .builder-parent1 .share-calculator-parent{ padding-top:65px;}
 .builder-parent1 .new-js-outr{ padding-top: 65px;}
 /*.builder-parent1 .prom-checklist{padding-top:65px !important;}*/
-.builder-parent1 .no-analytics-overlay{top:71px;}
+.builder-parent1 .no-analytics-overlay{top:60px;}
 .builder-parent .prop-arrow{ bottom:0px;}
 .builder-parent .general-helppanel{top:90px;}
 .builder-parent1 .general-helppanel{top:90px;}
@@ -1427,20 +1433,18 @@ input.disabled.custom-input {
 
 /*opinion scale email*/
 .opinion-email-outer {
-    /*width: calc(100% - 220px);
-    float: left;*/
     padding-top: 20px;
-    padding: 25px;
+    padding: 30px;
     max-width: 990px;
     margin: 0 auto;
 }
 .opinion-email-head{
-    font-size: 16px;
-    font-family: montserratlight;
-    color:#62696d;
-    padding: 15px 0;
-    padding-bottom: 0;
-    margin:0 auto;
+    color: #62696d;
+    font-family: "montserratlight";
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 .opinion-email-head span{
     text-transform:uppercase;
@@ -1562,7 +1566,6 @@ input.disabled.custom-input {
     line-height: 22px;
     margin-bottom: 15px;
     margin: 0 auto;
-    padding-top: 3px;
     padding-bottom: 15px;
 }
 .opinion-email-code .opinion-email-subheading{
