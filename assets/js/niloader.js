@@ -1,4 +1,4 @@
-! function(a) {
+! function (a) {
     "use strict";
 
     function b(b, c, d) {
@@ -146,7 +146,7 @@
             function d(b, c) {
                 function d() {
                     P[g] ? B(P[g].iframe, g) : e()
-                }["scroll", "resize"].forEach(function(e) {
+                } ["scroll", "resize"].forEach(function (e) {
                     h(g, b + e + " listener for sendPageInfo"), c(a, e, d)
                 })
             }
@@ -195,9 +195,9 @@
                 a.parentIFrame ? a.parentIFrame["scrollTo" + (b ? "Offset" : "")](g.x, g.y) : j(W, "Unable to scroll to requested position, window.parentIFrame not found")
             }
             var f = b ? F(V.iframe) : {
-                    x: 0,
-                    y: 0
-                },
+                x: 0,
+                y: 0
+            },
                 g = d();
             h(W, "Reposition requested from iFrame (offset x:" + f.x + " y:" + f.y + ")"), a.top !== a.self ? e() : c()
         }
@@ -401,10 +401,10 @@
             Function.prototype.bind && (P[w].iframe.iFrameResizer = {
                 close: n.bind(null, P[w].iframe),
                 resize: u.bind(null, "Window resize", "resize", P[w].iframe),
-                moveToAnchor: function(a) {
+                moveToAnchor: function (a) {
                     u("Move to anchor", "moveToAnchor:" + a, P[w].iframe, w)
                 },
-                sendMessage: function(a) {
+                sendMessage: function (a) {
                     a = JSON.stringify(a), u("Send Message", "message:" + a, P[w].iframe, w)
                 }
             })
@@ -445,7 +445,7 @@
     }
 
     function x(a, b) {
-        null === Q && (Q = setTimeout(function() {
+        null === Q && (Q = setTimeout(function () {
             Q = null, a()
         }, b))
     }
@@ -508,11 +508,11 @@
     }
 
     function C() {
-        b(a, "message", l), b(a, "resize", function() {
+        b(a, "message", l), b(a, "resize", function () {
             z("resize")
-        }), b(document, "visibilitychange", A), b(document, "-webkit-visibilitychange", A), b(a, "focusin", function() {
+        }), b(document, "visibilitychange", A), b(document, "-webkit-visibilitychange", A), b(a, "focusin", function () {
             z("focus")
-        }), b(a, "focus", function() {
+        }), b(a, "focus", function () {
             z("focus")
         })
     }
@@ -527,7 +527,7 @@
         }
         var b;
         return d(), C(),
-            function(c, d) {
+            function (c, d) {
                 switch (b = [], typeof d) {
                     case "undefined":
                     case "string":
@@ -544,7 +544,7 @@
     }
 
     function E(a) {
-        a.fn ? a.fn.iFrameResize = function(a) {
+        a.fn ? a.fn.iFrameResize = function (a) {
             function b(b, c) {
                 w(c, a)
             }
@@ -592,13 +592,13 @@
             sizeWidth: !1,
             tolerance: 0,
             widthCalculationMethod: "scroll",
-            closedCallback: function() {},
-            initCallback: function() {},
-            messageCallback: function() {
+            closedCallback: function () { },
+            initCallback: function () { },
+            messageCallback: function () {
                 j("MessageCallback function not defined")
             },
-            resizedCallback: function() {},
-            scrollCallback: function() {
+            resizedCallback: function () { },
+            scrollCallback: function () {
                 return !0
             }
         };
@@ -625,14 +625,16 @@ function initIframe(iframe_id) {
         var og_js = document.createElement("script");
         og_e.parentElement.setAttribute("style", "width:100% !important;");
         if (iWidth < 786) {
-            /*var randNum = Number(Math.floor(Math.random() * (3000 - 2000) + 2000));
-            var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
+
+            var randNum = Number(Math.floor(Math.random() * (3000 - 2000) + 2000));
+            var imageUrl = "http://api.screenshotlayer.com/api/capture?access_key=0f0d6b2bad83c4e6a23de03080a3c29d&url=" + og_su + "&viewport=414x736&fullpage=1&delay=2";
+            // var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
             var og_image = document.createElement("img");
             og_image.setAttribute("id", "og_image_" + iframe_id);
             og_image.setAttribute("src", imageUrl);
             og_image.setAttribute("width", og_w);
             og_image.setAttribute("onclick", "onImgClick('" + iframe_id + "')");
-            og_e.appendChild(og_image);*/
+            og_e.appendChild(og_image);
             initMobileFrames(iframe_id);
             var og_bw = document.getElementById("og_body_wrapper");
             var og_iFrame = document.createElement("iframe");
@@ -645,8 +647,8 @@ function initIframe(iframe_id) {
             og_iFrame.setAttribute("onload", "initHeight('" + iframe_id + "')");
             og_bw.appendChild(og_iFrame)
         } else {
-			var og_mobile_content = document.getElementById("og_mobile_content");
-			og_mobile_content.setAttribute("style", "display:none;");
+            // var og_mobile_content = document.getElementById("og_mobile_content");
+            // og_mobile_content.setAttribute("style", "display:none;");
             var og_iFrame = document.createElement("iframe");
             og_iFrame.setAttribute("id", "og_iframe_" + iframe_id);
             og_iFrame.setAttribute("style", "border:none;");
@@ -681,19 +683,19 @@ function initHeight(iframe_id) {
 }
 
 function initMobileCode(iframe_id) {
-	var og_e = document.getElementById(iframe_id);
-	var heading = og_e.getAttribute('heading');
-	var subheading = og_e.getAttribute('subheading');
-	var bgimage = og_e.getAttribute('bgimage');
-	var bgImageVisible = og_e.getAttribute('bgImageVisible');
-	var lpVisible = og_e.getAttribute('lpVisible');
-	var bgColor = og_e.getAttribute('bgColor');
-	var componentColor = og_e.getAttribute('componentColor');
-	var textColor = og_e.getAttribute('textColor');
-	var logo = og_e.getAttribute('logo');
-	var tintRGB = og_e.getAttribute('tintRGB');
-	var mobileHTML = "<div id='og_mobile_content' style='float:left; width:100%; background-color:" + bgColor + "; background-image:url(\"" + bgimage + "\"); background-repeat:no-repeat;display:table; background-position:top center; background-size:cover; min-height:480px; text-align:center;'> <div class='overlay' style=' background: " + tintRGB + "; padding:40px 0; position:relative; height: 100%; display: table-cell; vertical-align: middle;'> <div class='logo-part' style='display:inline-block; position:absolute;z-index:99; top:20px;left:0; right:0'> <img src='" + logo + "' style='height:30px; display:inline-block'/> </div><div class='content'> <div style='float:none; display:inline-block;width:100%; max-width:480px;padding:30px 15px; text-align:center; box-sizing: border-box;'> <h1 style='float:left; width:100%; color:" + textColor + "; max-width:100%; font-size:22px; font-family:Arial, Helvetica, sans-serif; margin:0 0 15px 0;box-sizing: border-box;  line-height:28px;'>" + heading + "</h1><p style='float:left; width:100%; max-width:100%; color:" + textColor + ";font-size:14px; font-family:Arial, Helvetica, sans-serif; margin:0 0 15px 0;box-sizing: border-box; line-height:20px;'>" + subheading + "</p><button onclick='onImgClick(\"" + iframe_id + "\")' type='button' style='text-transform: uppercase; display: inline-block; height:auto; line-height: 1;padding: 10px 25px; border-radius:3px; cursor:pointer; font-size: 14px;text-align: center;box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2); background: " + componentColor + "; color:#fff; border: 1px solid " + componentColor + ";letter-spacing: 0.5px;'>Start</button></div><div class='build-out' style='position:absolute; left:0; right:0; bottom:20px;'> <div class='powered-by lightPowered' style='background: hsla(0,0%,100%,.9); height:20px; display:inline-block; border-radius: 4px; padding: 0 5px; box-shadow: 0 3px 5px 1px rgba(0,0,0,.2); padding-right: 1px;'> <span style='float: left; display:flex; align-items:center; color: #585858; height:100%; font-size: 10px; margin-right: 4px; font-family:Arial, Helvetica, sans-serif; margin-top: 0px;'> BUILT WITH </span> <a href='javascript:void(0);' style=' display: flex; align-items: center; text-decoration:none'> <img alt='Powered By' src='https://sahilverma.outgrow.co/assets/images/builder/og-logo-shadow.png' style=' width: 16px;max-width:100%'> <span class='poweredby-text' style=' text-transform: uppercase; font-size: 10px; margin-left: 2px; margin-top: 0; font-family:Arial, Helvetica, sans-serif; letter-spacing: normal; line-height: 21px; float: left; color: #585858; margin-right: 4px;'>Outgrow</span> </a> </div></div></div></div></div>";
-	og_e.insertAdjacentHTML('beforeend', mobileHTML);
+    var og_e = document.getElementById(iframe_id);
+    var heading = og_e.getAttribute('heading');
+    var subheading = og_e.getAttribute('subheading');
+    var bgimage = og_e.getAttribute('bgimage');
+    var bgImageVisible = og_e.getAttribute('bgImageVisible');
+    var lpVisible = og_e.getAttribute('lpVisible');
+    var bgColor = og_e.getAttribute('bgColor');
+    var componentColor = og_e.getAttribute('componentColor');
+    var textColor = og_e.getAttribute('textColor');
+    var logo = og_e.getAttribute('logo');
+    var tintRGB = og_e.getAttribute('tintRGB');
+    var mobileHTML = "<div id='og_mobile_content' style='float:left; width:100%; background-color:" + bgColor + "; background-image:url(\"" + bgimage + "\"); background-repeat:no-repeat;display:table; background-position:top center; background-size:cover; min-height:480px; text-align:center;'> <div class='overlay' style=' background: " + tintRGB + "; padding:40px 0; position:relative; height: 100%; display: table-cell; vertical-align: middle;'> <div class='logo-part' style='display:inline-block; position:absolute;z-index:99; top:20px;left:0; right:0'> <img src='" + logo + "' style='height:30px; display:inline-block'/> </div><div class='content'> <div style='float:none; display:inline-block;width:100%; max-width:480px;padding:30px 15px; text-align:center; box-sizing: border-box;'> <h1 style='float:left; width:100%; color:" + textColor + "; max-width:100%; font-size:22px; font-family:Arial, Helvetica, sans-serif; margin:0 0 15px 0;box-sizing: border-box;  line-height:28px;'>" + heading + "</h1><p style='float:left; width:100%; max-width:100%; color:" + textColor + ";font-size:14px; font-family:Arial, Helvetica, sans-serif; margin:0 0 15px 0;box-sizing: border-box; line-height:20px;'>" + subheading + "</p><button onclick='onImgClick(\"" + iframe_id + "\")' type='button' style='text-transform: uppercase; display: inline-block; height:auto; line-height: 1;padding: 10px 25px; border-radius:3px; cursor:pointer; font-size: 14px;text-align: center;box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2); background: " + componentColor + "; color:#fff; border: 1px solid " + componentColor + ";letter-spacing: 0.5px;'>Start</button></div><div class='build-out' style='position:absolute; left:0; right:0; bottom:20px;'> <div class='powered-by lightPowered' style='background: hsla(0,0%,100%,.9); height:20px; display:inline-block; border-radius: 4px; padding: 0 5px; box-shadow: 0 3px 5px 1px rgba(0,0,0,.2); padding-right: 1px;'> <span style='float: left; display:flex; align-items:center; color: #585858; height:100%; font-size: 10px; margin-right: 4px; font-family:Arial, Helvetica, sans-serif; margin-top: 0px;'> BUILT WITH </span> <a href='javascript:void(0);' style=' display: flex; align-items: center; text-decoration:none'> <img alt='Powered By' src='https://sahilverma.outgrow.co/assets/images/builder/og-logo-shadow.png' style=' width: 16px;max-width:100%'> <span class='poweredby-text' style=' text-transform: uppercase; font-size: 10px; margin-left: 2px; margin-top: 0; font-family:Arial, Helvetica, sans-serif; letter-spacing: normal; line-height: 21px; float: left; color: #585858; margin-right: 4px;'>Outgrow</span> </a> </div></div></div></div></div>";
+    og_e.insertAdjacentHTML('beforeend', mobileHTML);
 }
 
 function initMobileFrames(iframe_id) {
