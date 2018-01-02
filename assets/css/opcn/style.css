@@ -417,9 +417,9 @@ li {
 }
 .t1-slider-pagination a {
     display: inline-block;
-    height: 8px;
+    height: 12px;
     position: relative;
-    top: -7px;
+    top: -3px;
     width: auto;
     padding-left: 10px;
     padding-right: 10px;
@@ -451,6 +451,14 @@ li {
     width:100%;
 }
 .t1-slider-pagination a.active::after {transition: 0.5s;right: 0; width:100%;  content: "";}
+.t1-slider-pagination a p {
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    font-size: 9px;
+    right: 4px;
+    color: #fff;
+}
 /*.t1-slider-pagination a.active{
     background: #fff;
 }*/
@@ -6153,6 +6161,7 @@ span.abhi {
     width: 100%;
     font-size: 16px;
     line-height: 1.4;
+    margin-left: -5px;
 }
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;

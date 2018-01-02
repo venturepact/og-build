@@ -3927,13 +3927,14 @@
 .control-ver2 .pic-selector span.abhi {
     text-align: left;
     margin-top: 10px;
-    min-height: 40px;
+    /* min-height: 40px; */
     float: left;
     display: inline-block;
     max-width: 100%;
     width: 100%;
     font-size: 16px;
     line-height: 1.4;
+    margin-left: -5px;
 }
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;

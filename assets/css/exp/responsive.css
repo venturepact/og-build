@@ -775,6 +775,14 @@
         margin-bottom: 10px !important;
     }
     .table-outer{min-height:300px;}
+    .preview.experian.t1-result{
+        min-height: 100%;
+        top: 0px;
+    }
+    .experian.t1-result{
+        min-height:100%;
+        top: 0px;
+    }
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
