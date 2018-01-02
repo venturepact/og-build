@@ -1377,9 +1377,9 @@
     .pic-selector label.control {
         position: relative;
         cursor: pointer;
-        background-size: cover;
+        /*background-size: cover;*/
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center;
         border: 2px solid #d9dad3;
         -webkit-transition: all 100ms ease-in;
         -moz-transition: all 100ms ease-in;
