@@ -1,4 +1,4 @@
-! function(a) {
+! function (a) {
     "use strict";
 
     function b(b, c, d) {
@@ -146,7 +146,7 @@
             function d(b, c) {
                 function d() {
                     P[g] ? B(P[g].iframe, g) : e()
-                }["scroll", "resize"].forEach(function(e) {
+                } ["scroll", "resize"].forEach(function (e) {
                     h(g, b + e + " listener for sendPageInfo"), c(a, e, d)
                 })
             }
@@ -195,9 +195,9 @@
                 a.parentIFrame ? a.parentIFrame["scrollTo" + (b ? "Offset" : "")](g.x, g.y) : j(W, "Unable to scroll to requested position, window.parentIFrame not found")
             }
             var f = b ? F(V.iframe) : {
-                    x: 0,
-                    y: 0
-                },
+                x: 0,
+                y: 0
+            },
                 g = d();
             h(W, "Reposition requested from iFrame (offset x:" + f.x + " y:" + f.y + ")"), a.top !== a.self ? e() : c()
         }
@@ -401,10 +401,10 @@
             Function.prototype.bind && (P[w].iframe.iFrameResizer = {
                 close: n.bind(null, P[w].iframe),
                 resize: u.bind(null, "Window resize", "resize", P[w].iframe),
-                moveToAnchor: function(a) {
+                moveToAnchor: function (a) {
                     u("Move to anchor", "moveToAnchor:" + a, P[w].iframe, w)
                 },
-                sendMessage: function(a) {
+                sendMessage: function (a) {
                     a = JSON.stringify(a), u("Send Message", "message:" + a, P[w].iframe, w)
                 }
             })
@@ -445,7 +445,7 @@
     }
 
     function x(a, b) {
-        null === Q && (Q = setTimeout(function() {
+        null === Q && (Q = setTimeout(function () {
             Q = null, a()
         }, b))
     }
@@ -508,11 +508,11 @@
     }
 
     function C() {
-        b(a, "message", l), b(a, "resize", function() {
+        b(a, "message", l), b(a, "resize", function () {
             z("resize")
-        }), b(document, "visibilitychange", A), b(document, "-webkit-visibilitychange", A), b(a, "focusin", function() {
+        }), b(document, "visibilitychange", A), b(document, "-webkit-visibilitychange", A), b(a, "focusin", function () {
             z("focus")
-        }), b(a, "focus", function() {
+        }), b(a, "focus", function () {
             z("focus")
         })
     }
@@ -527,7 +527,7 @@
         }
         var b;
         return d(), C(),
-            function(c, d) {
+            function (c, d) {
                 switch (b = [], typeof d) {
                     case "undefined":
                     case "string":
@@ -544,7 +544,7 @@
     }
 
     function E(a) {
-        a.fn ? a.fn.iFrameResize = function(a) {
+        a.fn ? a.fn.iFrameResize = function (a) {
             function b(b, c) {
                 w(c, a)
             }
@@ -592,13 +592,13 @@
             sizeWidth: !1,
             tolerance: 0,
             widthCalculationMethod: "scroll",
-            closedCallback: function() {},
-            initCallback: function() {},
-            messageCallback: function() {
+            closedCallback: function () { },
+            initCallback: function () { },
+            messageCallback: function () {
                 j("MessageCallback function not defined")
             },
-            resizedCallback: function() {},
-            scrollCallback: function() {
+            resizedCallback: function () { },
+            scrollCallback: function () {
                 return !0
             }
         };
@@ -626,7 +626,8 @@ function initIframe(iframe_id) {
         og_e.parentElement.setAttribute("style", "width:100% !important;");
         if (iWidth < 786) {
             var randNum = Number(Math.floor(Math.random() * (3000 - 2000) + 2000));
-            var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
+            var imageUrl = "http://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" + og_su + "&viewport=414x736&fullpage=1&delay=3";
+            // var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
             var og_image = document.createElement("img");
             og_image.setAttribute("id", "og_image_" + iframe_id);
             og_image.setAttribute("src", imageUrl);

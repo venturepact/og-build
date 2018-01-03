@@ -1572,12 +1572,14 @@ visuals .rec-image-outer img {
 }
 .preview.experian.t1-result{
     min-height: calc(100% - 70px);
-    top: 70px;
+    /* top: 70px; */
 }
 .experian.t1-result{
     min-height: calc(100% - 70px);
-    top: 70px;
+    /* top: 70px; */
 }
+.t1-result.experian.yes-header-links{top: 70px;}
+.experian-outer.yes-header-links{ top: 70px; position: relative;}
 .t1-result-main {
     display: block;
 }
@@ -4434,7 +4436,9 @@ span.abhi {
 .editor-page-divider .common-header-main{ position: relative !important;}
 .editor-page-divider .common-header-main + .header-next-div { margin-top: 0px;}
 .common-header-main + .header-next-div { margin-top: 70px;}
+.common-header-main{ position: fixed !important;}
 .t1-landing .no-footer-links{ height: 100%; padding-top: 70px; min-height: 100vh;}
 .no-footer-links .experian-outer{margin-top: 70px;}
 .editor-page-divider .no-footer-links .experian-outer { margin-top: 0px; }
 .t1-landing .no-footer-links .t1-landing-inner{ padding-top: 75px !important; padding-bottom: 75px !important;}
+.header-next-div {width: 100%; height: calc(100vh - 60px);  max-width: 100%; position: relative; display: table;}
