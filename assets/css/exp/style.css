@@ -4438,7 +4438,9 @@ span.abhi {
 .common-header-main + .header-next-div { margin-top: 70px;}
 .common-header-main{ position: fixed !important;}
 .t1-landing .no-footer-links{ height: 100%; padding-top: 70px; min-height: 100vh;}
-.no-footer-links .experian-outer{margin-top: 70px;}
-.editor-page-divider .no-footer-links .experian-outer { margin-top: 0px; }
-.t1-landing .no-footer-links .t1-landing-inner{ padding-top: 75px !important; padding-bottom: 75px !important;}
+/* .no-footer-links .experian-outer{margin-top: 70px;} */
 .header-next-div {width: 100%; height: calc(100vh - 60px);  max-width: 100%; position: relative; display: table;}
+.editor-page-divider .no-footer-links .experian-outer { margin-top: 0px; top:0px; }
+.t1-landing .common-header-main + .no-footer-links{ padding-top: 0px;}
+.editor-page-divider .t1-question{ box-shadow: 0 2px 9px 2px rgba(0,0,0,0.4);}
+.t1-question{ box-shadow: none;}

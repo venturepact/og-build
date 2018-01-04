@@ -75,7 +75,7 @@ overflow: auto;
 .landing-page { width: 100vw; display: table-cell; vertical-align: middle; height: 95vh; text-align: center; }
 /*.landing-page-header .logo img { max-width: 170px; max-height: 60px; }*/
 /*.input-outer {    width: 100vw; display: table-cell; vertical-align: middle;text-align: center;  }*/
-.cta-outer { width: 100%; text-align: center; float: left; margin-top: 5px; }
+.cta-outer { width: 100%; text-align: center; float: left; margin-top: 5px; margin-bottom: 20px;}
 .main-head { font-size: 60px; color: #fff; word-wrap: break-word; }
 .sub-head { font-size: 24px; color: rgba(255, 255, 255, 0.5); word-wrap: break-word; }
 .description { font-size: 18px; color: rgba(255, 255, 255, 0.5); margin-top: 25px; word-wrap: break-word; padding: 0 20%; }
@@ -1712,6 +1712,7 @@ max-height: 40vh;
 .result-scrolling-part {
 float: left;
 width: 100%;
+margin-bottom: 30px;
 }
 .page_2  .disc-in-ques{float: left;width:100%; position: relative; margin-top:-5px;}
 .template-section .result-branding.logo_1.Result {
@@ -1905,10 +1906,57 @@ margin: 0 !important;
 .page_1 .input-field label.post-icon{margin-left: -3px;  z-index: 10;}
 
 .page_2.result-fixed.t2haslogo{ top: 85px;}
-.page_2.result-fixed.t2haslogo .result-scrolling{ max-height: calc(60vh - 105px);}
 .page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: calc(60vh - 105px);}
+.page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead3 {max-height: calc(60vh - 105px);}
 .builder-parent .common-header-main{ position: relative !important;}
 .builder-parent .common-header-main + .header-next-div {padding-top: 0px;}
 .common-header-main + .header-next-div {padding-top: 70px;}
 .common-footer-linktext{ text-align: left;}
+.editor-template-tabs .common-header-main {
+  position: relative !important;
+}
+.editor-template-tabs .header-next-div {
+  padding-top: 0;
+}
+.t2-scroller-outer .withresult-outrrr {
+  display: none;
+}
+.t2-scroller-outer .result-scrolling-part {
+  margin-bottom: 0;
+}
 
+.new-lead-common1.t2-scroller-outer .withresult-outrrr {
+  display: block;
+}
+.new-lead-common1.t2-scroller-outer .result-scrolling-part {
+  margin-bottom: 30px;
+}
+.page_2.result-fixed.t2haslogo .t2-scroller-outer.new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(60vh - 105px);}
+.page_2.result-fixed.t2haslogo .t2-scroller-outer.new-lead-common1 .result-mid.result-comm.result-scrolling.showResult{max-height: initial;}
+.page_2.result-fixed.t2haslogo .t2-scroller-outer.new-lead-common1 .new-lead-common2 .result-mid.result-comm.result-scrolling { max-height: calc(100vh - 190px);}
+
+
+.editor-template-tabs .page_2.hasbranding.result-fixed.t2haslogo {
+  max-height: calc(100vh - 70px);
+}
+.editor-template-tabs .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling {
+  max-height: calc(100vh - 70px) !important;
+}
+.editor-template-tabs .page_2.hasbranding.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {
+  max-height: calc(60vh - 105px);
+}
+
+
+.page_2.hasbranding.result-fixed.t2haslogo {
+  max-height: calc(93vh - 70px);
+}
+.page_2.hasbranding.result-fixed.t2haslogo .result-scrolling {
+  max-height: calc(60vh - 105px);
+}
+.page_2.hasbranding.result-fixed.t2haslogo .result-scrolling.new-lead1 {
+  max-height: calc(70vh - 105px);
+}
+.page_2.hasbranding.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {
+  max-height: calc(40vh - 105px);
+}
+.page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead3 {max-height: calc(40vh - 105px);}
