@@ -341,7 +341,7 @@ label.control.graded-tick , .t1-question .ripple-dark.pic-selector label.control
 .t1-slider-section{    float: left;    width: 100%;}
 .t1-ques-inner{    float: left;    width: 100%;    text-align: left;}
 .t1-ques-inner h1, .t1-ques-inner h2, .t1-ques-inner h3{    margin-top: 0px;    }
-.t1-ques-head div{    display: inline-block;    float: none;}
+.t1-ques-head div{    display: inline;    float: none;}
 .t1-ques-head div p:last-child{    display: inline;}
 .t1-ques-head div ul{display: inline;}
 .t1-ques-head div ul li{display: inline;}
@@ -1644,6 +1644,7 @@ path.highcharts-plot-band {
     .t1-slider-question .input-field label {     margin-bottom: -2px;  margin-right: -7px;}
     .t1-slider-question .input-field label.post-icon { margin-left: -6px;}
     .question-components input{ border-radius: 0 !important;}
+    .input-field input.postfixset{ border-radius: 3px !important;}
     .t1-ques-head div p:last-child{ display: inline-block;}
 }
 

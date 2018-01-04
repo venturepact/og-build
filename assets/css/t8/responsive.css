@@ -62,6 +62,8 @@
     @-moz-document url-prefix(){
         .t1-slider-question .input-field label ~ input { width: calc(100% - 125px) !important;}
     }
+    .isIframe .question-components input{ padding: 5px 15px 4px 15px !important; min-height: 39px;}
+    .isIframe .t1-slider-question .input-field label{ min-height: 39px !important;}
 }
 
 
