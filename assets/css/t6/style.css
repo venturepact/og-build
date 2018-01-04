@@ -3266,7 +3266,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
   /*margin: 20px auto;*/
   width: 150px;
   height: 150px;
-  background-color: transparent;
+  background-color: #e4e4e4;;
   border-radius: 50%;
   position: absolute;
   left: 21px;
@@ -3276,14 +3276,18 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     font-size: 14px;
     line-height: 16px;
     height: 60px;
-    width: 60px;
+    width: auto;
     margin: auto;
     padding: 10px;
-    color: #fff;
+    /*color: #fff;*/
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    color:#555;
+    background-color:transparent !important;
+    font-size: 24px;
+    font-weight: 700;
 }
 .poll-main .ko-progress-circle .ko-progress-circle__slice,
 .poll-main .ko-progress-circle .ko-progress-circle__fill {
@@ -4043,7 +4047,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     border:none !important;
 }
 .showPercentage{display: block !important;}
-.poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {background-color: transparent !important;}
+/*.poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {background-color: transparent !important;}*/
 .poll-svgouter visuals.visual-outr{float:none;}
 .template-six .poll-main .radio-outer.active .poll-color{display: block !important;}
 .template-six .poll-main .pic-selector .poll-color-light{display: none !important;}
@@ -4058,7 +4062,6 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .template-six .poll-main .radio-icon-custom.radio-outer .poll-percentage{display: none !important;}
 .template-six .radio-outer-base .ko-progress-circle{display: none !important;}
 .template-six .poll-main .radio-icon-custom{position: relative;}
-.poll-main.check-comp .radio-outer.active label:before{opacity:0.4 !important;}
 .poll-main .poll-color {opacity: 0.1;transition: width 2s;transition-property: width;transition-duration: 2s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 2s;z-index: -1;}
 .template-six .poll-main .radio-outer .mid-outer .poll-color{display: block;}
 /*.template-six .control-ver2 .radio-outer.ripple-dark, .checkbox-outer.ripple-dark{padding:0;}*/
@@ -4171,3 +4174,53 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .structure-right-align label.control.control--radio { padding-right: 25px;}
 .control-ver2 .submit-checkbox-outr.icon-submit{top: 78%;left: 5px;}
 .no-header-links.no-footer-links , .header-next-div.no-header-links { padding: 0px !important;display: table;width: 100%;height: calc(100vh - 60px);}
+
+
+
+.poll-main.check-comp .ripple-dark.checkbox-outer-base::after, 
+.poll-main.check-comp .ripple-dark.radio-outer-base::after, 
+.poll-main.check-comp .pic-selector label.control::before{background:transparent !important;}
+
+/*.template-six .poll-main.check-comp [type="radio"]:checked + label:after, 
+.template-six .poll-main.check-comp [type="radio"].with-gap:checked + label:before, 
+.template-six .poll-main.check-comp [type="radio"].with-gap:checked + label:after{background:#fff !important;}*/
+
+.template-six .poll-main.check-comp .radio-outer.ripple-dark label.control.control--radio.radio-icon::before, 
+.template-six .poll-main.check-comp .checkbox-outer.ripple-dark label.control.control--checkbox::before{background:#fff !important;}
+
+.active .ko-overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    opacity: 0.4;
+    margin: 5px;
+}
+.active2 .ko-overlay1 {
+    margin: 0;
+    position: absolute;
+    top: -2px;
+    bottom: 0;
+    background: #fff;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    opacity: 0.4;
+    width: 150px;
+    height: 150px;
+}
+.poll-main.check-comp .radio-outer.active label:before {
+    opacity: 0.2 !important;
+}
+.template-six .radio-outer-base .ko-overlay1 {
+    display: none;
+}
+/*scaling transition removed poll*/
+.poll-main .ripple-dark.checkbox-outer:hover label.control, 
+.poll-main .ripple-dark.pic-selector:hover label.control, 
+.poll-main .ripple-dark.radio-outer.radio-icon-custom:hover label.control{
+      transform: none;
+}
