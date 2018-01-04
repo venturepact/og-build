@@ -3264,8 +3264,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 
 .poll-main .ko-progress-circle {
   /*margin: 20px auto;*/
-  width: 150px;
-  height: 150px;
+  width: 154px;
+  height: 154px;
   background-color: #e4e4e4;;
   border-radius: 50%;
   position: absolute;
@@ -3291,8 +3291,8 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 }
 .poll-main .ko-progress-circle .ko-progress-circle__slice,
 .poll-main .ko-progress-circle .ko-progress-circle__fill {
-  width: 150px;
-  height: 150px;
+  width: 154px;
+  height: 154px;
   position: absolute;
   -webkit-backface-visibility: hidden;
   transition: transform 3s;
@@ -3310,18 +3310,18 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     display: none;
 }
 .poll-main .ko-progress-circle .ko-progress-circle__slice {
-  clip: rect(0px, 150px, 150px, 75px);
+  clip: rect(0px, 154px, 154px, 77px);
 }
 .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {
-  clip: rect(0px, 75px, 150px, 0px);
+  clip: rect(0px, 77px, 154px, 0px);
   /* background-color: #40454B; */
 }
 .poll-main .ko-progress-circle .ko-progress-circle__overlay {
-  width: 140px;
-  height: 140px;
+  width: 142px;
+  height: 142px;
   position: absolute;
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 6px;
+  margin-top: 6px;
   background-color: #E4EEF5;
   border-radius: 50%;
 }
@@ -4205,12 +4205,12 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
     top: -2px;
     bottom: 0;
     background: #fff;
-    left: 0;
+    left: -2px;
     right: 0;
     border-radius: 50%;
     opacity: 0.4;
-    width: 150px;
-    height: 150px;
+    width: 154px;
+    height: 154px;
 }
 .poll-main.check-comp .radio-outer.active label:before {
     opacity: 0.2 !important;

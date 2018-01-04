@@ -61,9 +61,13 @@
     .landing-page-mid button, button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .submit-checkbox-img-custom, .w100.text-center .submit-checkbox-img, .landing-page-mid leadform button.prime-action{font-size: 20px;}
     @-moz-document url-prefix(){
         .t1-slider-question .input-field label ~ input { width: calc(100% - 125px) !important;}
+        .isIframe .question-components input{ padding: 5px 15px 5px 15px !important; min-height: 41px;}
+        .isIframe .t1-slider-question .input-field label{ min-height: 41px !important;}
+
     }
     .isIframe .question-components input{ padding: 5px 15px 4px 15px !important; min-height: 39px;}
     .isIframe .t1-slider-question .input-field label{ min-height: 39px !important;}
+    .t1-slider-question .input-field label ~ input{ width: calc(100% - 175px) !important;}
 }
 
 
