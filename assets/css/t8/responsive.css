@@ -1,3 +1,8 @@
+
+@media (max-width: 1920px) and (min-width: 1680px){
+
+    .template-eight .common-result-main .common-result-bot .left-outer-hidden {    min-height: auto;}
+}
 @media(max-width:767px){
     .template-eight .common-footer-main .disc-set{text-align: center; float: left; width:100%}
     .common-footer-main .row_1_links {        float: left;        width: 100% !IMPORTANT;        TEXT-ALIGN: CENTER;    }
@@ -5,33 +10,20 @@
     .template-eight  .common-footer-main .stickyfooter.lightSticky{float: none;}
 }
 @media(max-width:640px){
+    .template-eight  .common-result .common-result-bot .recom-tabsection .t1-result-leadform .likes-parent{margin-bottom: 0;padding:0}
+    .template-eight  .poll-result .poll-right-text .small-bot-sec p{font-size: 17px !important}
+    .template-eight .poll-result .poll-right-text .common-result-bot-left .t1-result-cta .text-center .redirect-heading{font-size: 18px !important}
+    .template-eight  .common-result-bot-left{padding: 0 0px}
+    .template-eight   .gradedquiz-main .common-result-bot-left {    padding: 0 0px;}
     .eight-inner-wrapper.header-next-div{margin: 0}
+    .template-eight .recommendation-outer .common-result-main .t1-result-leadform .common-result-bot-icons{bottom: 0px !important}
     .template-eight .t1-landing .t1-landing-inner [type=checkbox]+label.leadform-checkbox {        margin-bottom: 0;    }
     .template-eight .common-result-main .t1-result-leadform .common-result-bot-icons {        bottom: 0;        right: 0;        min-height: 20px;        position: relative !important;    }
     .template-eight .t1-result .custom-btn-outer {        width: auto !important;        height: auto !important;    }
     .main-heading p , .main-heading, .main-heading h1 {        font-size: 32px;        line-height: 1.2;    }
     .t1-ques-head{font-size: 26px; line-height: 1.2}
-    .template-eight  .poll-result .poll-voter {
-        position: relative;
-        width: 100%;
-        float: left;
-        text-align: center;
-        margin-top: 0;
-        right: 0;
-        left: 0;
-        top: 0;
-        margin-bottom: 10px;
-    }
-    .template-eight  .poll-review-icon {
-        position: relative;
-        bottom: 0;
-        right: 0px;
-        opacity: 1;
-        line-height: 20px;
-        font-size: 13px;
-        float: left;
-        width: 100%;
-    }
+    .template-eight  .poll-result .poll-voter {        position: relative;        width: 100%;        float: left;        text-align: center;        margin-top: 0;        right: 0;        left: 0;        top: 0;        margin-bottom: 10px;    }    
+    .template-eight  .poll-review-icon {        position: relative;        bottom: 0;        right: 0px;        opacity: 1;        line-height: 20px;        font-size: 13px;        float: left;        width: 100%;    }
     .template-eight .poll-result .poll-right-text .small-top-sec p {        font-size: 20px!important;        line-height: 32px;    }
     .template-eight .poll-result .common-result-main .common-result-bot .poll-svgouter{padding: 0px !important}
     .template-eight .common-result-main .common-leadform-top.t1-result-leadform .input-outer{width:100% !important; padding: 0px !important; }
@@ -68,11 +60,16 @@
     .isIframe .question-components input{ padding: 5px 15px 4px 15px !important; min-height: 39px;}
     .isIframe .t1-slider-question .input-field label{ min-height: 39px !important;}
     .t1-slider-question .input-field label ~ input{ width: calc(100% - 175px) !important;}
+
+    .template-eight .common-result-main .t1-result-leadform .cta-center .twitter-follow-button {   top: 4px !important;}  
+    .template-eight .gradedquiz-main .common-result-main .t1-result-leadform .common-result-bot-icons{ bottom:0 !important;}
+    .template-eight .gradedquiz-main .common-result-main .t1-result-leadform .cta-center .twitter-follow-button{top:0 !important}  
+
 }
 
 
 @media (min-width:768px) and (max-width:1023px) {
     @-moz-document url-prefix(){
-        .postfixset{ top:-13px;}
+                .postfixset{ top:-13px;}
     }
 }

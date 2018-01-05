@@ -1579,7 +1579,7 @@ visuals .rec-image-outer img {
     /* top: 70px; */
 }
 .t1-result.experian.yes-header-links{top: 70px;}
-.experian-outer.yes-header-links{ top: 70px; position: relative;}
+.experian-outer.yes-header-links{ top: 0px; position: relative;}
 .t1-result-main {
     display: block;
 }
@@ -1784,7 +1784,7 @@ visuals .rec-image-outer img {
     width: 100%;
     padding: 16px 15px 0 30px;
     position: relative;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     z-index: 99;
 }
 #build .t1-result-inner {
