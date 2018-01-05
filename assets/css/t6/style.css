@@ -3256,7 +3256,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 /*poll css*/
 
 .poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
-.poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
+.poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 1s;  transition-property: width; transition-duration: 1s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 1s;}
 .poll-main.check-comp .radio-outer label{ padding-right: 78px;}
 .poll-main .radio-outer.active .poll-percentage{width:auto;position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{width:auto;position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important; color: #666e78 !important;}
@@ -3295,7 +3295,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
   height: 154px;
   position: absolute;
   -webkit-backface-visibility: hidden;
-  transition: transform 3s;
+  transition: transform 1.7s;
   border-radius: 50%;
 }
 .poll-main .ko-circle-text {
@@ -4062,7 +4062,7 @@ button.button_textfield.submit-textbox-btn {    display: block;    margin: 0 aut
 .template-six .poll-main .radio-icon-custom.radio-outer .poll-percentage{display: none !important;}
 .template-six .radio-outer-base .ko-progress-circle{display: none !important;}
 .template-six .poll-main .radio-icon-custom{position: relative;}
-.poll-main .poll-color {opacity: 0.1;transition: width 2s;transition-property: width;transition-duration: 2s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 2s;z-index: -1;}
+.poll-main .poll-color {opacity: 0.1;transition: width 1s;transition-property: width;transition-duration: 1s;transition-timing-function: initial;transition-delay: initial;-webkit-transition: width 1s;z-index: -1;}
 .template-six .poll-main .radio-outer .mid-outer .poll-color{display: block;}
 /*.template-six .control-ver2 .radio-outer.ripple-dark, .checkbox-outer.ripple-dark{padding:0;}*/
 

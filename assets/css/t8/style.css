@@ -1118,7 +1118,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .poll-main .ko-progress-circle {  width: 140px;  height: 140px;  background-color: rgba(0,0,0,0.1);  border-radius: 50%;  position: absolute;  left: 20px;  top: -5px;}
 .poll-main .correct-percentage {    font-size: 17px;    line-height: 16px;    height: 50px;    width: 50px;    margin: auto;    padding: 0px;      border-radius: 50%;    display: flex;    align-items: center;    justify-content: center;}
 .poll-main .ko-progress-circle .ko-progress-circle__slice,
-.poll-main .ko-progress-circle .ko-progress-circle__fill {  width: 140px;  height: 140px;  position: absolute;  -webkit-backface-visibility: hidden;  transition: transform 3s;  border-radius: 50%;}
+.poll-main .ko-progress-circle .ko-progress-circle__fill {  width: 140px;  height: 140px;  position: absolute;  -webkit-backface-visibility: hidden;  transition: transform 1.7s;  border-radius: 50%;}
 .poll-main .ko-circle-text {    position: absolute;    top: 50%;    width: 100%;    text-align: center;    left: 0;    right: 0;    transform: translateY(-50%);    z-index: 101;    display: none;}
 .poll-main .ko-progress-circle .ko-progress-circle__slice {  clip: rect(0px, 140px, 140px, 70px);}
 .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill {  clip: rect(0px, 70px, 140px, 0px);}
