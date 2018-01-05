@@ -31,7 +31,7 @@
     .template-eight .poll-result .poll-right-text {        width: 100%;        padding: 0!important;    }
     .template-eight .poll-result .poll-left {        width: 100%;        text-align: center;    }
     .template-eight .common-header-main .common-header.header-right .common-header-inner {   text-align: center;     display: inline-block;        float: left;        width: 100%;        margin-top: 0px;    }
-    .template-eight .common-header-main .landing-page-header {        left: 0px;        right: 0;        position: relative; width: 100%;    }
+    .template-eight .common-header-main .landing-page-header {        left: 0px;        right: 0;        position: relative !important; width: 100%;    }
     .t1-ques-head .help-text{font-size: 16px; line-height: 1.2}
     .template-eight .common-result-main .common-leadform-top.t1-result-leadform .input-outer input {        margin-bottom: 20px;    }
     .template-eight  .common-result-main visuals .t1-result-inner-left-video {        min-height: auto;    }
@@ -53,14 +53,10 @@
     .landing-page-mid button, button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .submit-checkbox-img-custom, .w100.text-center .submit-checkbox-img, .landing-page-mid leadform button.prime-action{font-size: 20px;}
     @-moz-document url-prefix(){
         .t1-slider-question .input-field label ~ input { width: calc(100% - 125px) !important;}
-        .isIframe .question-components input{ padding: 5px 15px 5px 15px !important; min-height: 41px;}
-        .isIframe .t1-slider-question .input-field label{ min-height: 41px !important;}
-
     }
     .isIframe .question-components input{ padding: 5px 15px 4px 15px !important; min-height: 39px;}
     .isIframe .t1-slider-question .input-field label{ min-height: 39px !important;}
     .t1-slider-question .input-field label ~ input{ width: calc(100% - 175px) !important;}
-
     .template-eight .common-result-main .t1-result-leadform .cta-center .twitter-follow-button {   top: 4px !important;}  
     .template-eight .gradedquiz-main .common-result-main .t1-result-leadform .common-result-bot-icons{ bottom:0 !important;}
     .template-eight .gradedquiz-main .common-result-main .t1-result-leadform .cta-center .twitter-follow-button{top:0 !important}  

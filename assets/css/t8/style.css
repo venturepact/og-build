@@ -95,7 +95,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-landing-leadform .input-section .input-outer span {    float: left;    width: 100%;    position: absolute;    top: 48px;    left: 0px;    text-align: left;    padding-left: 2px;    color: #f44336;    font-size: 12px;}
 .t1-button{    float: left;    width: 100%;    text-align: center;}
 .landing-page-header {  position: relative;  top: 0px;  left: 0;  z-index: 9;  right: 0;  text-align: center;  display: flex;  justify-content: center;}
-.template-eight .common-header-main .landing-page-header{left:0px; right:auto; position: absolute !important}
+.template-eight .common-header-main .landing-page-header{left:0px; right:auto; position: absolute !important; margin-top: 0px;}
 .landing-btn{    font-size: 16px;    width: auto;    padding:16px 30px;    border: none;    cursor: pointer;    text-transform: uppercase;}
 .eight-inner-wrapper.no-footer-links .stickyfooter.lightSticky{    bottom: -60px;  left: 0;  right: 0;   text-align: center;}
 .eight-inner-wrapper.no-footer-links {margin: 15px 0 80px 0}
@@ -1671,3 +1671,4 @@ path.highcharts-plot-band {
 
 
 path.highcharts-plot-band {    fill: transparent !important;}
+.template-eight  .common-result-bot-icons.result-brand .stickyfooter.lightSticky{bottom: 0px !important}

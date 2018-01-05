@@ -232,13 +232,13 @@
     .resulthidden {
         display: none !important;
     }
-    .t1-result-small-container,
+    /*.t1-result-small-container,
     .t1-result-leadform,
     .t1-result-full-container,
     .t1-result-leadform .input-section {
         float: left;
         width: 100%;
-    }
+    }*/
     .t1-result-small-section p {
         margin: 0px;
         word-break: break-word;
@@ -1203,13 +1203,13 @@
     .no-media .small-top-sec {
         width: 30%;
     }
-    .t1-result-topheading p {
+    /*.t1-result-topheading p {
         display: inline;
         font-size: 28px;
     }
     .t1-result-topheading p:first-letter {
         font-size: 48px;
-    }
+    }*/
     .question-components input {
         border-top: none;
         border-radius: 0;
@@ -2337,14 +2337,14 @@
     .recommendation-outer {
         /*position: relative;*/
     }
-    .recommendation-outer .mid-width {
+    /*.recommendation-outer .mid-width {
         font-size: 24px;
         width: 100%;
         display: block;
         float: left;
         padding: 0px 75px;
         margin-top: 20px;
-    }
+    }*/
     .recommendation-outer .mid-width span p {
         margin: 0;
     }
