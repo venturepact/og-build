@@ -1430,7 +1430,7 @@
     .control-ver2 .pic-selector{ width: 48% !important;     padding-right: 5%; }
     /* .control-ver2 .pic-selector span.abhi{ font-size: 13px;} */
     .control-ver2 .pic-selector label.control--radio { padding-right: 52px !important; }
-    .t1-question .question-components .check-comp label{background-size: 85px;}
+    .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 85px;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2436,6 +2436,7 @@
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 5px; display: block !important; float: left; margin-left: 40px; margin-bottom: 20px;}
     .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
     .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
+    .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 95px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

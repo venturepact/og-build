@@ -958,6 +958,10 @@ Developer: Bhawna */
         font-size: 12px;
     }
     .common-result .t1-logo { margin-top: 10px !important;}
+    /*default image size*/
+    .pic-selector label.control.defaultOptionImage {
+        background-size: 95px;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1033,6 +1037,10 @@ Developer: Bhawna */
     .custom-block.rating-custom .errorMessage{top:25px;}
     .opinon-scale-custom .errorMessage{top:27px;}
     .common-result-main .t1-result-leadform .common-result-bot-icons{padding-top: 20px;}
+    /*default image size*/
+    .pic-selector label.control.defaultOptionImage {
+        background-size: 85px;
+    }
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}

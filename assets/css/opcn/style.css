@@ -6226,3 +6226,9 @@ span.abhi {
 .one-page-card-new [type=radio]+label:after, .one-page-card-new [type=radio]+label:before{ z-index: 9;}
 .structure-right-align .editor-page-divider label.control.control--radio.blink-border { padding-right: 56px;}
 .structure-right-align label.control.control--radio { padding-right: 25px;}
+
+/*default image size*/
+.t1-question .question-components .check-comp label.defaultOptionImage {
+    background-size: 115px;
+    background-position: center center;
+}
