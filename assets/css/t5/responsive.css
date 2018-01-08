@@ -833,7 +833,7 @@ Developer: Bhawna */
     .isIframe.landing-inner,
     .isIframe .landing-page-mid {
         height: auto;
-        min-height: initial;
+        min-height: initial !important;
     }
     .t1-question button.back-action {
         margin-bottom: 25px;
