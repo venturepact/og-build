@@ -779,11 +779,20 @@
         min-height: 100%;
         top: 0px;
     }
+    .preview.experian.t1-result.yes-header-links{
+        min-height: 100%;
+        top: 70px;
+    }
+    .preview.experian.t1-result.yes-header-links.yes-footer-links{
+        min-height: 100%;
+        top: 0px;
+    }
     .experian.t1-result{
-        min-height:100%;
+        min-height:100% ;
         top: 0px;
     }
     .header-next-div{ display: inline-block;  height: 100%;}
+    #vk_subscribe iframe{ margin-top: 0 !important;}
     .common-header-main+.header-next-div{ margin-top: 90px;}
 }
 @media (min-width: 0px) and (max-width: 768px) {

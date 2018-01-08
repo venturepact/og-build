@@ -2138,6 +2138,27 @@ visuals .rec-image-outer img {
 .btn-in i {
     vertical-align: 0%;
 }
+
+img.vk-follow-btn {
+    margin-left: 9px;
+}
+#vk_subscribe {
+    float: none !important;
+    width: auto !important;
+    display: inline-block !important;
+}
+#vk_subscribe iframe {
+    margin: 10px 5px 0 !important;
+    float: none !important;
+    width: auto !important;
+    display: inline-block !important;
+    max-width: 160px !important;
+    background: #5181b8;
+    height: 28px;
+    border-radius: 3px;
+    padding: 3px 0;
+    box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
+}
 @-moz-document url-prefix() {
     img.twitter-follow-button {
         width: auto !important;
@@ -2169,6 +2190,10 @@ visuals .rec-image-outer img {
     .btn-in {
         box-shadow: none;
     }
+    #vk_subscribe iframe{
+       margin-top: 0 !important;
+       box-shadow: none;
+   }
 }
 /*result page css ends*/
 /*builder page css*/
@@ -4449,4 +4474,4 @@ span.abhi {
 .t1-question{ box-shadow: none;}
 .page_0 .t1-question{ background-color: transparent;}
 .page_1 .t1-question{ background-color: transparent;}
-.inline-tablecell{ background-color: #f7f7f7 !important;}
+.inline-tablecell,.experian-outer{ background-color: #f7f7f7 !important;}
