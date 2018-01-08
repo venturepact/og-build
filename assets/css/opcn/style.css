@@ -218,7 +218,7 @@ li {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 0px;
     white-space: inherit;
 }
@@ -2528,7 +2528,7 @@ visuals .t1-result-inner-left #og-table-excel {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 0px;
     white-space: normal;
     word-break: break-all;
@@ -2545,7 +2545,7 @@ visuals .t1-result-inner-left #og-table-excel {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border-radius: 3px;
     position: relative;
 }
@@ -2561,7 +2561,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 13px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 13px 25px;
     cursor: pointer;
     border-radius: 0px;
@@ -2582,7 +2582,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 13px;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 13px 25px;
     cursor: pointer;
     border-radius: 0px;
@@ -6231,4 +6231,5 @@ span.abhi {
 .t1-question .question-components .check-comp label.defaultOptionImage {
     background-size: 115px;
     background-position: center center;
+    z-index: 1;
 }

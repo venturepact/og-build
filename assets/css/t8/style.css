@@ -149,7 +149,10 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 
 .template-eight  .common-result-main .t1-result-leadform .cta-center .likes-parent img {    margin: 10px 2.5px 0px !important;}
 .template-eight  .common-result-main .t1-result-leadform .cta-center .cta-share a.btn-lg{  margin: 10px 2.5px 0px !important;}
-
+.poll-main .radio-outer.ripple-dark.radio-icon-custom  ,.poll-main .radio-outer.ripple-dark.radio-outer-base{    float: left !important;}
+.poll-main .radio-outer.ripple-dark.radio-icon-custom label.control  ,.poll-main .radio-outer.ripple-dark.radio-outer-base label.control{padding-right:40px;}
+.poll-main .radio-outer label .poll-color-light {    display: none;}
+.poll-main .radio-outer label .poll-color {    display: none;}
 
 
 
@@ -1106,8 +1109,8 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .no-header-links.no-footer-links .result-branding.t3-que-setion-brand {    position: static;}
 .Result.desc-in-page {    display:none}
 .t1-question .poll-main .ripple-dark.radio-outer-base [type="radio"] + label.control::before {    font-size: 10px !important;    padding: 2px!important;}
-.poll-main .poll-color-light{ position: absolute; width:calc(100% - 45px); top: auto !important; left: 45px !important; bottom: 0;height:4px;border-radius:50px; }
-.poll-main .poll-color{ position: absolute; width: 0px; top: auto !important; left: 45px !important; bottom: 0;  height:4px;border-radius:50px; transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
+.poll-main .poll-color-light{ position: absolute; width:100%; top: auto !important; left: 0px !important; bottom: 0;height:4px;border-radius:50px; }
+.poll-main .poll-color{ position: absolute; width: 0px; top: auto !important; left: 0px !important; bottom: 0;  height:4px;border-radius:50px; transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
 .poll-main.check-comp .radio-outer label{ padding-right: 78px;}
 .poll-main .radio-outer.active .poll-percentage{position: absolute; right: 0px !important; line-height: 58px; font-size: 14px !important; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 0px !important; line-height: 58px; font-size: 14px !important;; display: block !important;}
@@ -1653,9 +1656,7 @@ path.highcharts-plot-band {
     .t1-ques-head div p:last-child{ display: inline-block;}
 
 }
-.poll-result .common-redo .help-checktip {
-    display: none;
-}
+
 .template-section .t1-result.no-logo , .template-section .t1-landing.no-logo{padding-top: 50px;}
 .template-eight  .common-result-bot-left{padding: 0 30px}
 .template-eight .common-result-bot visuals.visual-outr   {margin-bottom: 0px !important}
@@ -1672,3 +1673,4 @@ path.highcharts-plot-band {
 
 path.highcharts-plot-band {    fill: transparent !important;}
 .template-eight  .common-result-bot-icons.result-brand .stickyfooter.lightSticky{bottom: 0px !important}
+.color-line-selection {    float: right;    width: calc(100% - 35px);    position: relative;}
