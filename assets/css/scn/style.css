@@ -3843,3 +3843,21 @@ span.abhi {
 .opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
 .opinon-scale-custom .mid-outer .control.control--radio {background: none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
+
+/* new scroll changes */
+.result-mid.result-comm.result-scrolling{
+    overflow-y: scroll;
+    height: auto;
+    max-height: calc(50vh - 130px);
+    padding-right: 10px;
+  }
+  .leadform-outer.result-scrolling{
+    overflow-y: scroll;
+    height: auto;
+    max-height: calc(52vh - 122px);
+    padding-right: 10px;
+    margin-bottom: 0px;
+  }
+  .result-branding .lightSticky, #build .result-branding .stickyfooter, .result-branding .stickyfooter{
+    bottom: 0 !important;
+  }
