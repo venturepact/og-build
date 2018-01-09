@@ -197,7 +197,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .t1-question-slider{    margin: 0 auto;    width: 100%; max-width:480px }
 .t1-question-mid{    margin: 0 auto;    width: 100%;    text-align: center; display: table-cell; vertical-align: middle}
 .template-section .t1-question-mid{display: block}
-.postfixset {    position: relative;    top: -13px;  margin-bottom: 100px !important}
+.postfixset {    position: relative;    top: -14px;  margin-bottom: 100px !important}
 .template-section .postfixset {    position: relative;    top: -14px;  margin-bottom: 100px !important}
 .question-components .postfixset + .custom-btn-outer1{margin-top: 0px !important; position: absolute; float:left; animation:none;left:50%; transform: translateX(-50%); margin-left: 0px;top:75px; margin-bottom: 0px; }
 .question-components .errorMessage{text-align: center;margin-top: 10px; float:none;display: block}
@@ -443,8 +443,8 @@ visuals .rec-image-outer img {       max-width: 640px;    width: inherit;}
 .page_1 form .prime-action {    margin-bottom: 40px;    margin-top: 0px;}
 .page_2 click-button .text-center {    text-align: center !important;}
 .w100{ width:100% !important;}
-.recommendation-outer .mid-width span {font-size: 28px;float: left; width: 100%; margin-bottom: 25px;}
-.recommendation-outer .mid-width span p {font-size: 28px;float: left; width: 100%; margin-bottom: 0px;}
+.recommendation-outer .mid-width span {font-size: 28px; margin-bottom: 25px;}
+.recommendation-outer .mid-width span p {font-size: 28px; margin-bottom: 0px;}
 .recommendation-outer .mid-width span p span{font-size: 28px; float: initial; width: auto; margin-bottom: 0px;}
 .recom-section .left-sec{ display: table; width: 100%; text-align: center; min-height: 320px;  position: relative; border: 1px solid #d9dad3;}
 .rec-image-outer1{        position: relative;    z-index: 999;    display: table-cell;    vertical-align: middle;    border: 1px solid #d9dad3;}
@@ -1112,14 +1112,14 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .poll-main .poll-color-light{ position: absolute; width:100%; top: auto !important; left: 0px !important; bottom: 0;height:4px;border-radius:50px; }
 .poll-main .poll-color{ position: absolute; width: 0px; top: auto !important; left: 0px !important; bottom: 0;  height:4px;border-radius:50px; transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
 .poll-main.check-comp .radio-outer label{ padding-right: 78px;}
-.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 0px !important; line-height: 58px; font-size: 14px !important; display: block !important;}
-.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 0px !important; line-height: 58px; font-size: 14px !important;; display: block !important;}
+.poll-main .radio-outer.active .poll-percentage{position: absolute; right: 0px !important; line-height: 24px; font-size: 14px !important; display: block !important;}
+.poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 0px !important; line-height: 24px; font-size: 14px !important;; display: block !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}
 .poll-main .radio-outer .poll-percentage{width: auto !important}
 /* #build .poll-main .ko-progress-circle {left:20px;} */
 .poll-main  .ko-progress-circle .ko-progress-circle__overlay{background: transparent}
 .poll-main .ko-progress-circle {  width: 140px;  height: 140px;  background-color: rgba(0,0,0,0.1);  border-radius: 50%;  position: absolute;  left: 20px;  top: -5px;}
-.poll-main .correct-percentage {    font-size: 17px;    line-height: 16px;    height: 50px;    width: 50px;    margin: auto;    padding: 0px;      border-radius: 50%;    display: flex;    align-items: center;    justify-content: center;}
+.poll-main .correct-percentage {    font-size: 15px;    line-height: 16px;    height: 55px;    width: 55px;    margin: auto;    padding: 0px;      border-radius: 50%;    display: flex;    align-items: center;    justify-content: center;}
 .poll-main .ko-progress-circle .ko-progress-circle__slice,
 .poll-main .ko-progress-circle .ko-progress-circle__fill {  width: 140px;  height: 140px;  position: absolute;  -webkit-backface-visibility: hidden;  transition: transform 1.7s;  border-radius: 50%;}
 .poll-main .ko-circle-text {    position: absolute;    top: 50%;    width: 100%;    text-align: center;    left: 0;    right: 0;    transform: translateY(-50%);    z-index: 101;    display: none;}
