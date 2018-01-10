@@ -1579,7 +1579,10 @@ visuals .rec-image-outer img {
     /* top: 70px; */
 }
 .t1-result.experian.yes-header-links{top: 70px;}
-.experian-outer.yes-header-links{ top: 0px; position: relative;}
+.experian-outer.yes-header-links{ top: 70px; position: relative;}
+.editor-page-divider .experian-outer.yes-header-links {
+    top: 0;
+}
 .header-next-div .experian-outer.yes-header-links {
     top: 0;
 }
