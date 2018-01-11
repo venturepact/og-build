@@ -722,7 +722,7 @@ a.btn-done {
     font-family: montserratregular;
     cursor: pointer;
     text-transform: uppercase;
-    
+
 }
 button.btn-done {
     color: #fff !important;
@@ -734,7 +734,7 @@ button.btn-done {
     font-family: montserratregular;
     cursor: pointer;
     text-transform: uppercase;
-    
+
 }
 /*.builder-parent1 .tab-pane { padding-top:30px;}*/
 .builder-parent1 .config-template-tabs.setting-parent{ padding-top:65px;}
@@ -1074,7 +1074,7 @@ p.promo-code span{text-transform: uppercase; margin-right: 5px;}
 
 .hello-bar-demo{ background: #174a68; color: #fff; float: left; width: 100%; padding: 8px 20px; font-family: montserratlight; font-size: 16px; box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, .2); height: 53px; position: relative; z-index: 99;}
 .hello-bar-demo a.st-btn{ float: right; font-family: montserratregular;   background: #f34055; color: #fff; text-decoration: none;font-size: 11px;padding: 8px 15px;text-transform: uppercase;border-radius: 3px;margin-left: 8px; display: inline-flex; line-height: 20px;transition: all 0.5s ease;}
-.hello-bar-demo a.st-btn:hover{    background: #f34055; color: #fff; text-decoration: none;} 
+.hello-bar-demo a.st-btn:hover{    background: #f34055; color: #fff; text-decoration: none;}
 .hello-bar-demo a.st-btn i{ font-size: 20px; display: inline;}
 .hello-bar-demo span{display: inline-block; width:83.5%; text-align: center; line-height: 35px;}
 .hello-bar-demo span b{ font-weight: normal; font-family: montserratregular }
@@ -1189,8 +1189,8 @@ button.launch-btn {    display: inline-block;    background: #1483b6;    border:
 .popup-mode label{float: left; width: 100%;   font-size: 12px; margin-bottom: 5px;   color: #62696d; font-family: montserratlight;  }
 .custom-popover ul li > span , .custom-popover ul li > div.buttonlink {    float: right;    width: 160px;}
 .custom-popover  .logo-branding-outer , .custom-popover  .logo-branding-outer .onoffswitch{margin: 0}
-.range-slider__range {    -webkit-appearance: none;    width: calc(100% - (50px)) !important;    height: 5px;    border-radius: 50px;    background: #dadcdd;    outline: none;    padding: 0;    margin: 0;    float: left;  } 
-.range-slider__range::-webkit-slider-thumb {    -webkit-appearance: none;            appearance: none;    width: 20px;    height: 20px;    border-radius: 50%;    background: #fff;    border:1px solid #dadcdd;    cursor: pointer;    -webkit-transition: background .15s ease-in-out;    transition: background .15s ease-in-out;  }  
+.range-slider__range {    -webkit-appearance: none;    width: calc(100% - (50px)) !important;    height: 5px;    border-radius: 50px;    background: #dadcdd;    outline: none;    padding: 0;    margin: 0;    float: left;  }
+.range-slider__range::-webkit-slider-thumb {    -webkit-appearance: none;            appearance: none;    width: 20px;    height: 20px;    border-radius: 50%;    background: #fff;    border:1px solid #dadcdd;    cursor: pointer;    -webkit-transition: background .15s ease-in-out;    transition: background .15s ease-in-out;  }
 .range-slider__range::-webkit-slider-thumb:hover {    background: #1483b6 !important;  }
 .range-slider__range:active::-webkit-slider-thumb {    background: #1483b6 !important;   }
 .range-slider__range::-moz-range-thumb {    width: 15px;    height: 15px;    border: 0;    border-radius: 50%;    background: #fff;    border:1px solid #dadcdd;    cursor: pointer;    -webkit-transition: background .15s ease-in-out;    transition: background .15s ease-in-out;  }
@@ -1240,7 +1240,7 @@ input.disabled.custom-input {
     margin: 0;
     padding: 0;
     /*background: #000;*/
-    overflow: hidden; 
+    overflow: hidden;
     height: 100%;
     width: 100%;
     position: fixed;
@@ -1540,9 +1540,9 @@ input.disabled.custom-input {
     padding-top: 13px !important;
     padding-bottom: 10px !important;
 }
-.email-form .form-control[disabled], 
-.email-form .form-group .form-control[disabled], 
-.email-form fieldset[disabled] .form-control, 
+.email-form .form-control[disabled],
+.email-form .form-group .form-control[disabled],
+.email-form fieldset[disabled] .form-control,
 .email-form fieldset[disabled] .form-group .form-control{
     border-bottom:none;
     background: #f5f5f5 !important;
@@ -1739,3 +1739,4 @@ h4.opinion-email-head {
 .mt20 {
     margin-top: 20px;
 }
+
