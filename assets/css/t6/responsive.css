@@ -4,6 +4,7 @@
 }
 }
 @media (min-width:0px) and (max-width:767px) {
+    .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
     .postfixset {        top: -21px;    }
     .t1-slider-question .input-field label {width: 50px;padding: 14px 5px ;}
     .liveresult-outr{position: relative; padding: 15px 0 0; text-align: center;max-width: 100%;}
@@ -32,7 +33,7 @@
     .landing-page-mid leadform .input-section .input-outer input, .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input , .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{ font-size: 14px !important;  }
     .t1-landing-top { position: absolute; top: 20px; left: 0; width: 100%; text-align: center; }
     .t1-ques-component .input-outer input{padding-left: 45px;}
-    .landing-page-mid button { margin-top: 15px; }
+    /* .landing-page-mid button { margin-top: 15px; } */
     .landing-page-mid leadform { width: 100%; }
     .landing-page-mid leadform .input-section .input-outer span { font-size: 10px; margin-bottom: 2px; }
     .landing-footer-outer { position: absolute; bottom: 1px; right: inherit; width: 100%; float: left; text-align: center; }

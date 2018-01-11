@@ -1693,7 +1693,9 @@ position: relative;
 right: 0;
 bottom: 0px;
 left:0;
-float: left;width:100%
+float: left;
+width:100%;
+margin-bottom: 10px;
 }
 
 
@@ -1981,3 +1983,7 @@ margin: 0 !important;
   height: 100% !important;
   /* min-height: auto !important; */
 }
+.page_2 .disc-in-ques{ margin-top: 5px !important;}
+.header-next-div .page_2.hasbranding.result-fixed.t2haslogo{max-height: calc(88vh - 70px);}
+.header-next-div .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling{max-height: calc(55vh - 105px);}
+.header-next-div .page_2.hasbranding.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2{max-height: calc(38vh - 105px);}
