@@ -493,7 +493,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
 .add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
-.right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
+.right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 52px; }
 .icon-box{ float: right; width:40px;}
 .icon-box li{padding: 8px 10px;color: #fff;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
 .icon-box li i{ font-size: 15px; color:#1483b7;}
@@ -502,7 +502,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .text-box{ float: right; width:50%; }
 .text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:right;display: block;  float: left; position: relative; }
 .text-box li i { font-size: 20px; color:#fff; float: left; margin-right: 10px;}
-.top-outer{ position: absolute;right: 131px;width: 150px;height: 80px; top: 19px;}
+.top-outer{ position: absolute;right: 133px;width: 150px;height: 80px; top: 14px;}
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
 .top-outer img{ margin-left: 48px;}
 .top-outer .top-text{ float: left; color: #fff; width:100%; text-align: center;}
@@ -550,7 +550,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 @media (min-width: 1441px) and (max-width: 1600px)  {
 
-.right-button-outer { right: 20.5%;}
+.right-button-outer { right: 19.5%;}
 .left-button-outer {top: 72%;}
 .left-button-outer-t2 {top: 76.5%;}
 .left-button-outer-t3 { top: 82.8%;}
@@ -1433,17 +1433,17 @@ input.disabled.custom-input {
 
 /*opinion scale email*/
 .opinion-email-outer {
-    padding-top: 20px;
-    padding: 30px;
+  
+    padding: 40px 30px;
     max-width: 990px;
     margin: 0 auto;
 }
 .opinion-email-head{
     color: #62696d;
     font-family: "montserratlight";
-    font-size: 20px;
+    font-size: 22px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     margin-top: 0px;
 }
 .opinion-email-head span{
@@ -1468,7 +1468,7 @@ input.disabled.custom-input {
 }
 .email-info{
     font-family: montserratregular;
-    color: #8e989f !important;
+    color: #aaa !important;
     text-transform: uppercase;
     font-size: 10px;
     width: 100%;
@@ -1566,7 +1566,7 @@ input.disabled.custom-input {
 }
 .opinion-email-subheading{
     color: #8e989f;
-    font-family: montserratregular;
+    font-family: montserratlight;
     font-size: 13px;
     display: block;
     line-height: 22px;
@@ -1585,7 +1585,8 @@ input.disabled.custom-input {
 h4.opinion-email-head {
     padding: 0;
     font-size: 14px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    color: #62696d;
 }
 .outer {
     /*width: calc(100% - 220px);
@@ -1746,3 +1747,9 @@ h4.opinion-email-head {
     margin-top: 20px;
 }
 
+
+.web-page-content .center-part.seo {float: left; max-width: 100%; padding: 0; position: relative; margin: 0 15px;  height: auto;}
+.web-page-content .left-part.seo, .web-page-content .right-part.seo{ width: 120px;}
+.web-page-content .left-part.seo .strips:last-child, .web-page-content .right-part.seo .strips:last-child{margin: 0; height: 24px;}
+
+.web-page-content .left-part.seo .strips, .web-page-content .right-part.seo .strips{ background:#f5f5f5; }
