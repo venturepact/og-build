@@ -2521,7 +2521,7 @@ visuals .t1-result-inner-left #og-table-excel {
     font-size: 12px;
 }
 .landing-page-mid button {
-    font-size: 16px;
+    font-size: 18px;
     float: left;
     width: auto;
     padding: 13px 50px;
@@ -2539,7 +2539,7 @@ visuals .t1-result-inner-left #og-table-excel {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .landing-page-mid leadform button.prime-action {
-    font-size: 16px;
+    font-size: 18px;
     width: auto;
     padding: 13px 50px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
@@ -5988,11 +5988,30 @@ span.abhi {
 
 
 /* other field add */
+.textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
+.textfield label.control.control--checkbox {
+    float: left;
+    width: 50px;
+    padding: 0 !important;
+    position: static;
+}
+.textfield label.control.control--radio {
+    float: left;
+    width: 50px;
+    padding: 0;
+  
+}
+.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
+.otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
+.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none;
+}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;}
+
 .t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
-.otherfield-inputbtn{float: left; width: 100%; position: relative; }
-.otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;}
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: -10px; display: block !important; float: right;}
+/* .otherfield-inputbtn{float: left; width: 100%; position: relative; } */
+/* .otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;} */
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;}
 
 /* other field add */
 .t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
@@ -6162,6 +6181,10 @@ span.abhi {
     font-size: 16px;
     line-height: 1.4;
     margin-left: -5px;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto !important;
 }
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;
@@ -6233,7 +6256,7 @@ span.abhi {
     background-position: center center;
     z-index: 1;
 }
-.t1-result:after {
+/* .t1-result:after {
     opacity: 0.6;
     content: "";
     position: absolute;
@@ -6241,4 +6264,4 @@ span.abhi {
     right: 0;
     top: 0;
     bottom: 0;
-}
+} */
