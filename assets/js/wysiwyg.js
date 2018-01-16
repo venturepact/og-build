@@ -1220,7 +1220,7 @@
 
         function p(a) {
             var b = a.innerHTML;
-            b.indexOf("\n") >= 0 && (a.innerHTML = b.replace(/\n/g, "<br>"))
+            b.indexOf("\n") >= 0 && (a.innerHTML = b.replace(/\n/g, ""))
         }
 
         function q(c, d, e, f) {
