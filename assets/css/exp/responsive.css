@@ -794,6 +794,7 @@
     .header-next-div{ display: inline-block;  height: 100%;}
     #vk_subscribe iframe{ margin-top: 0 !important;}
     .common-header-main+.header-next-div{ margin-top: 90px;}
+    .range-slider1.custom-slider1 ul{ display: none;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -1203,6 +1204,7 @@
     .t1-landing .no-footer-links.no-header-links{ padding:0 30px !important;}
     .t1-result.experian.hide.yes-header-links{ top: inherit;}
     .t1-result.experian.yes-header-links{ top: 70px;}
+    @-moz-document url-prefix() {#vk_subscribe iframe{margin-top:10px !important;}}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {

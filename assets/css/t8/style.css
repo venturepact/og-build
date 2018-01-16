@@ -849,6 +849,8 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {        visibility
     .t1-landing-leadform select { padding: 0px 9px;  padding-top: 0;}
     .one-page-card .page_2 select { padding: 0px 9px;}
     .t1-question .leaded-form-c select { padding: 5px 12px; border: 1px solid #d9dad3;   margin-left: 1px;}
+    .template-eight .common-leadform-top.t1-result-leadform.eight-inner-wrapper{height: auto !important}
+    .template-eight .common-leadform-top.t1-result-leadform.eight-inner-wrapper+.common-result-bot.eight-inner-wrapper{height: auto !important}
 
 }
 :focus {    outline: none;}
@@ -2092,3 +2094,6 @@ path.highcharts-plot-band {
 path.highcharts-plot-band {    fill: transparent !important;}
 .template-eight  .common-result-bot-icons.result-brand .stickyfooter.lightSticky{bottom: 0px !important}
 .color-line-selection {    float: right;    width: calc(100% - 35px);    position: relative;}
+.custom-btn-outer1 button.button_textfield.submit-textbox-btn {
+    display: inline-block;
+}

@@ -653,7 +653,8 @@ a:focus {
 .t1-ques-head .requiredAsteric {
     color: #f00;
 }
-.template3-outr .question-head {
+.template3-outr .question-head p {padding: 0px}
+.template3-outr .question-head , .template3-outr .question-head p {
     font-size: 26px;
     text-align: left;
     margin-bottom: 5px;

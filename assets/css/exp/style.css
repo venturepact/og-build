@@ -1570,14 +1570,12 @@ visuals .rec-image-outer img {
     right: 0;
     min-height: 100%;
 }
-.preview.experian.t1-result{
+/*.preview.experian.t1-result{
     min-height: calc(100% - 70px);
-    /* top: 70px; */
 }
 .experian.t1-result{
     min-height: calc(100% - 70px);
-    /* top: 70px; */
-}
+}*/
 .t1-result.experian.yes-header-links{top: 70px;}
 .experian-outer.yes-header-links{ top: 70px; position: relative;}
 .editor-page-divider .experian-outer.yes-header-links {
@@ -2170,7 +2168,7 @@ img.vk-follow-btn {
         display: inline-block;
     }
     iframe.twitter-follow-button {
-        min-width: 240px !important;
+        width: 156px !important;
         height: 28px !important;
         visibility: visible !important;
         position: relative !important;
@@ -2193,7 +2191,7 @@ img.vk-follow-btn {
         box-shadow: none;
     }
     #vk_subscribe iframe{
-       margin-top: 0 !important;
+       margin-top: 0px !important;
        box-shadow: none;
    }
 }
