@@ -3862,3 +3862,9 @@ span.abhi {
   .result-branding .lightSticky, #build .result-branding .stickyfooter, .result-branding .stickyfooter{
     bottom: 0 !important;
   }
+
+  /* textfield */
+.checkbox-outer-base.textfield label{ display: none !important;}
+.checkbox-outer.textfield label{ display: none !important;}
+.radio-outer-base.textfield label{ display: none !important;}
+.radio-outer.textfield label{ display: none !important;}

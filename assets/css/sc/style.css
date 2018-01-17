@@ -3401,3 +3401,9 @@ span.abhi {
 .opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
 .opinon-scale-custom .mid-outer .control.control--radio {background: none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
+
+/* textfield */
+.checkbox-outer-base.textfield label{ display: none !important;}
+.checkbox-outer.textfield label{ display: none !important;}
+.radio-outer-base.textfield label{ display: none !important;}
+.radio-outer.textfield label{ display: none !important;}

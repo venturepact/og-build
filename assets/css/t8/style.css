@@ -176,7 +176,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .checkbox-outer .done-iconoutr {  display: none;}
 .checkbox-outer button.submit-checkbox-img.ripple-light {display: none !important}
 .control { display: block; position: relative; padding-left: 30px; cursor: pointer; font-size: 17px; font-weight: 500;}
-.control-ver2 .pic-selector span.abhi {  text-align: center; margin-top: 15px; display: -webkit-box; max-width: 200px;    line-height: 1.4; word-wrap: break-word;  word-break: break-all; hyphens: auto !important;}
+.control-ver2 .pic-selector span.abhi {  text-align: center; margin-top: 15px; display: -webkit-box; max-width: 200px;    line-height: 1.4; word-wrap: break-word;   hyphens: auto !important;}
 .control-ver2 .pic-selector .control.control--checkbox span{  display:none;}
 .control-ver2 .done-iconoutr {  position: absolute;  left: 50%;cursor: pointer;pointer-events: none;  -webkit-transform: translateX(-50%);  transform: translateX(-50%);  margin-top: -20px;  z-index: 999;  height: auto;  text-align: center;  width: auto;}
 .control-ver2 .done-icon {  position: relative;  z-index: 9;  top: 0;  background: transparent;  padding-top: 0;margin-left: 25px;   padding-right: 0;  height: auto !important;  display: block !important;  width: auto !important;  display: inline-block !important;  border-radius: 3px;  padding: 3px 4px;  line-height: 0;  display: inline-block !important; cursor: pointer; pointer-events: none;}
@@ -974,14 +974,14 @@ span.current::after {    content: "/";    margin: 0 2px;}
 #graph-container{    max-width: 100%;}
 .highcharts-container {    text-align: center !important;}
 #graph-conatiner .highcharts-container{    height: 300px;}
-.question-components .radio-outer-base .mid-outer .othersfield{  position: relative;  z-index: 9;  float: left;  width: 85%;  margin-left: 60px;  font-size: 14px; margin-top: 5px; margin-bottom: 15px;}
+/* .question-components .radio-outer-base .mid-outer .othersfield{  position: relative;  z-index: 9;  float: left;  width: 85%;  margin-left: 60px;  font-size: 14px; margin-top: 5px; margin-bottom: 15px;}
 .question-components .radio-icon-custom .mid-outer .othersfield{ position: relative;  z-index: 9;  float: left;  width: 100%; margin-left: 0px; font-size: 14px; margin-top: 5px; margin-bottom: 0;  text-align: center;}
 .question-components .checkbox-outer-base .othersfield{ position: relative; z-index: 9; float: left; width: 85%; margin-left: 30px; font-size: 147x; margin-top: 5px; margin-bottom: 15px;}
 .question-components .checkbox-outer .othersfield{ position: relative; z-index: 9; float: left; width: 100%; margin-left: 0px;font-size: 17px; margin-top: 5px; margin-bottom: 0; text-align: left;}
 .question-components .radio-outer-base .mid-outer .othersfield{  position: relative;  z-index: 9;  float: left;  width: 85%;  margin-left: 60px;  font-size: 14px; margin-top: 5px; margin-bottom: 15px;}
-.question-components .radio-icon-custom .mid-outer .othersfield{ position: relative;  z-index: 9;  float: left;  width: 100%; margin-left: 0px; font-size: 14px; margin-top: 5px; margin-bottom: 0;  text-align: center;}
+.question-components .radio-icon-custom .mid-outer .othersfield{ position: relative;  z-index: 9;  float: left;  width: 100%; margin-left: 0px; font-size: 14px; margin-top: 5px; margin-bottom: 0;  text-align: center;} */
 /* .question-components .checkbox-outer-base .othersfield{ position: relative; z-index: 9; float: left; width: 85%; margin-left: 60px; font-size: 14px; margin-top: 5px; margin-bottom: 15px;} */
-.question-components .checkbox-outer .othersfield{ position: relative; z-index: 9; float: left; width: 100%; margin-left: 0px;font-size: 14px; margin-top: 5px; margin-bottom: 0; text-align: center;}
+/* .question-components .checkbox-outer .othersfield{ position: relative; z-index: 9; float: left; width: 100%; margin-left: 0px;font-size: 14px; margin-top: 5px; margin-bottom: 0; text-align: center;} */
 .img-size-box{ display: none;}
 .t1-landing .img-size-box{position: absolute; right: 3px;  top: 3px; z-index: 999; width: auto; padding: 4px 8px; background: rgba(0,0,0,0.6);color: #fff; display: block;}
 .t1-landing .img-size-box i{ float: left;  font-size: 12px; margin-top: 2px;}
@@ -2097,5 +2097,10 @@ path.highcharts-plot-band {    fill: transparent !important;}
 .custom-btn-outer1 button.button_textfield.submit-textbox-btn {
     display: inline-block;
 }
+
+.textfield.checkbox-outer .control--checkbox   ,
+.textfield.checkbox-outer-base .control--checkbox  ,
+.textfield.radio-outer .control--radio  {  display: none !important; }
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}
 
 .template-section .t1-slider-question .input-field.new-class1 label ~ input {  width: calc(100% - 58px) !important;  }

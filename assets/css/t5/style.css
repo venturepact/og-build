@@ -3761,18 +3761,22 @@
 
 /* other field */
 
-.textfield.radio-outer-base { float: left; width: 100% !important; }
+.textfield.radio-outer-base { float: left; width: 100% !important;}
 .textfield.radio-outer { float: left; width: 100% !important;}
 .textfield.radio-outer .radio-icon{ float: left; width: auto;}
-.textfield.radio-outer label.control--radio { float: left !important;}
-.textfield.radio-outer input { float: left; width: 100%; background: none; margin-top: 10px;}
-.textfield.checkbox-outer-base { float: left; width: 100% !important; }
-.textfield.checkbox-outer-base label.control--checkbox { float: left; }
-.textfield.checkbox-outer-base input { float: left; width: 100%; background: none; margin-top: 10px;}
-.textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox { float: left; width: auto !important;}
-.textfield.checkbox-outer input { float: left; width: 100%; background: none; margin-top: 10px;}
 
+.textfield.checkbox-outer-base { float: left; width: 100% !important;}
+.textfield.checkbox-outer { float: left; width: 100% !important;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; display: none; width: auto !important;}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
+    float: left;
+    width: 100%;
+    background: transparent;
+    /* border-bottom: 1px solid #464646 !important;
+    color:#333; */
+    margin-top: 10px;
+}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}
 /* other field */
 
 .common-result-main .common-result-bot-icons .crb-right .stickyfooter .col{display: inline-block}

@@ -1501,3 +1501,22 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .isIframe .landing-page-mid{height:auto !important}
 .isIframe .t1-result-main {height:auto !important}
+
+/* other field */
+
+.textfield.radio-outer-base { float: left; width: 100% !important;}
+.textfield.radio-outer { float: left; width: 100% !important;}
+.textfield.radio-outer .radio-icon{ float: left; width: auto;}
+
+.textfield.checkbox-outer-base { float: left; width: 100% !important;}
+.textfield.checkbox-outer { float: left; width: 100% !important;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; display: none; width: auto !important;}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
+    float: left;
+    width: 100%;
+    background: transparent;
+    /* border-bottom: 1px solid #464646 !important;
+    color:#333; */
+    margin-top: 10px;
+}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}

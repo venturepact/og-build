@@ -5988,7 +5988,7 @@ span.abhi {
 
 
 /* other field add */
-.textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
+/* .textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
 .textfield label.control.control--checkbox {
     float: left;
     width: 50px;
@@ -6003,15 +6003,11 @@ span.abhi {
 }
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
 .otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
-.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none;
-}
+.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none;}
 .otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;}
-
 .t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
-/* .otherfield-inputbtn{float: left; width: 100%; position: relative; } */
-/* .otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;} */
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;} */
 
 /* other field add */
 .t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
@@ -6266,3 +6262,23 @@ span.abhi {
     top: 0;
     bottom: 0;
 } */
+
+/* other field add */
+
+.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
+.otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
+.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none !important;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right; margin-right: 0px;}
+.template-section .template-container.mobile  .textfield label.control.control--checkbox{width: 55px}
+.template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
+.template-section .template-container.mobile .textfield .otherfield-inputbtn input.othersfield, .template-section .template-container.mobile .textfield input.othersfield{padding: 16px 0 !important}
+.textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
+.textfield.checkbox-outer .control--checkbox  .control__indicator.check-set ,
+.textfield.radio-icon-custom.radio-outer .control--radio .control__indicator.icon-set  {  display: none !important; }
+.textfield label.control.control--checkbox {float: left;width: 50px;padding: 0 !important;position: static;}
+.textfield label.control.control--radio {float: left;width: 50px;padding: 0;}
+.textfield.checkbox-outer label.control.control--checkbox::after , .textfield.checkbox-outer label.control.control--checkbox::before {display: none;}
+.textfield.checkbox-outer label.control.control--checkbox, .textfield.radio-icon-custom.radio-outer .control--radio{width: 20px;}
+.template-section .template-container.mobile  .textfield label.control.control--checkbox{width: 20px}
+.template-section .template-container.mobile .textfield .otherfield-inputbtn input.othersfield, .template-section .template-container.mobile .textfield input.othersfield{padding: 16px 0 !important}
+/* other field add */

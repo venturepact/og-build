@@ -2002,10 +2002,11 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
   width: 100%;
   border: none !important;
   border-bottom: 1px solid #d9dad3 !important;
-  border-radius: 5px;
-  padding: 8px 5px;
+  /* border-radius: 5px; */
+  padding: 5px 5px;
   font-size: 14px;
-  margin-top: 5px; border-radius: 0 !important; outline: none; padding-bottom:5px; background: transparent !important;
+  /* margin-top: 5px; */
+   border-radius: 0 !important; outline: none; background: transparent !important;
 }
 
 
@@ -2664,3 +2665,8 @@ path.highcharts-plot-band {
     margin-top: 0px !important;
 }
 .like-cta-outer .btn-lg:nth-child(4){margin-top:0 !important;}
+
+
+.checkbox-outer-base.textfield label,.radio-outer.textfield.radio-outer-base label,
+.radio-outer.textfield label, .checkbox-outer.textfield label, 
+.checkbox-outer.textfield.active label,.otherfield-inputbtn button{ display: none !important;}
