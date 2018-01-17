@@ -779,7 +779,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
 
 }
-.selectize-control.single .selectize-input, .selectize-dropdown.single {   background: none !important; width: 100% !important; float: left; text-align: left; font-size: 13px !important; min-height: 30px; color:#000 !important; background: #fff !important; border-radius: 0 !important;}
+.selectize-control.single .selectize-input, .selectize-dropdown.single {   background: none !important; width: 100% !important; float: left; text-align: left; font-size: 13px !important; min-height: 30px; color:#000 !important; background: #fff !important; border-radius: 0 !important; z-index: 99;}
 .selectize-control.single .selectize-input { background: transparent !important; border-radius: 0px;border:none; border-bottom:1px solid !important ; box-shadow:none !important; overflow: hidden; max-height: 30px; line-height: 28px; }
 .dropdown-outer-main .selectize-control{ margin-bottom: 50px; }
 .control-group { position: relative; }

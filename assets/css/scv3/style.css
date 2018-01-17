@@ -531,7 +531,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .selectize-dropdown .active { background-color: #ff6600; color: #ffffff; }
 .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header { padding: 15px; font-size: 13px; }
 .selectize-dropdown [data-selectable] { cursor: pointer; overflow: hidden; }
-.selectize-control.single .selectize-input, .selectize-dropdown.single { border-color: #d9dad3; background: #ffffff !important; }
+.selectize-control.single .selectize-input, .selectize-dropdown.single { border-color: #d9dad3; background: #ffffff !important; z-index: 99; }
 .selectize-control.single .selectize-input { background: #f7f7f7 !important; border-radius: 0px; }
 .dropdown-outer-main .selectize-control{ margin-bottom: 50px; }
 .control-group { position: relative; }

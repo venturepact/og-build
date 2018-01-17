@@ -2046,7 +2046,7 @@ path.highcharts-plot-band {
     width: 100% !important;
 }
 .check-comp.poll-main .ripple-dark.radio-outer-base{float: left !important}
-.template-eight .common-result-gq.gradedquiz-main.poll-result .poll-right-text .small-top-sec p span{font-size: 28px !important}
+.template-eight .common-result-gq.gradedquiz-main.poll-result .poll-right-text .small-top-sec p span{font-size: 28px !important; word-wrap: break-word;}
 .template-eight  .t1-result .selectize-input .item {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2097,3 +2097,5 @@ path.highcharts-plot-band {    fill: transparent !important;}
 .custom-btn-outer1 button.button_textfield.submit-textbox-btn {
     display: inline-block;
 }
+
+.template-section .t1-slider-question .input-field.new-class1 label ~ input {  width: calc(100% - 58px) !important;  }
