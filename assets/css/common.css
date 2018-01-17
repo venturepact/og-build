@@ -1120,8 +1120,12 @@ ul.custom-tab-part.nav.nav-tabs > li:first-child > a {border-top-left-radius: 50
 ul.custom-tab-part.nav.nav-tabs > li:last-child > a {border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-right:  1px solid #ccc; }
 ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
 .web-page-header {    float: left;    width: 100%;    padding: 6px;  border-bottom: 1px solid #ccc; }
-.web-page-design {    float: left;     background: #fff; width: 100%; margin-bottom: 30px;   border: 1px solid #ccc;    border-radius: 3px;}
-.tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;}
+.web-page-design {    float: left;     background: #fff; width: 100%; margin-bottom: 20px;   border: 1px solid #ccc;    border-radius: 3px;}
+.tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;
+    max-width: 825px !important;
+    margin: 30px auto !important;
+    float: none !important;
+}
 .web-page-content {    float: left;    width: 100%;    padding: 20px;  }
 .web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
 .web-page-content .center-part {float: left; width:calc(100% - 270px); max-width: 100%; padding: 18.5%; position: relative; height: 520px;}
