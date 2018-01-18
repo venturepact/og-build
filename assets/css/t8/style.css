@@ -94,7 +94,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-landing-leadform .input-section .input-outer span {    float: left;    width: 100%;    position: absolute;    top: 48px;    left: 0px;    text-align: left;    padding-left: 2px;    color: #f44336;    font-size: 12px;}
 .t1-button{    float: left;    width: 100%;    text-align: center;}
 .landing-page-header {  position: relative;  top: 0px;  left: 0;  z-index: 9;  right: 0;  text-align: center;  display: flex;  justify-content: center;}
-.template-eight .common-header-main .landing-page-header{left:0px; right:auto; position: absolute !important; margin-top: 0px;}
+.template-eight .common-header-main .landing-page-header{left:0px; right:auto; position: absolute !important; margin-top: 0px; display: flex !important;}
 .landing-btn{    font-size: 16px;    width: auto;    padding:16px 30px;    border: none;    cursor: pointer;    text-transform: uppercase;}
 .eight-inner-wrapper.no-footer-links .stickyfooter.lightSticky{    bottom: -60px;  left: 0;  right: 0;   text-align: center;}
 .eight-inner-wrapper.no-footer-links {margin: 0px 0 80px 0}
@@ -1440,8 +1440,8 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .poll-result .ko-progress-circle{ background: rgba(255,255,255,0.2) !important;  }
 .template-eight .poll-result .poll-right-text .common-result-bot-left .t1-result-cta .text-center a.prime-action {    float: none;  white-space:normal;  margin-bottom: 0;    padding: 8px 15px!important;    font-size: 17px!important;    margin-top: 0px;    border-radius: 5px!important;    text-transform: none;}
 .template-eight .common-result-main.eight-inner-wrapper {    background: transparent !important;      min-height: auto;  border: 0px !important;    box-shadow: none !important;    padding: 0 !important;}
-.template-eight  .common-leadform-top.t1-result-leadform.eight-inner-wrapper {     box-shadow: 0px 0px 10px rgba(0,0,0,0.25);border-radius:0px !important;   padding: 20px 30px !important;    min-height: auto !important;border-radius: 0px!important;     margin-bottom: 20px !important;}
-.template-eight .common-result-bot.eight-inner-wrapper {    padding: 20px 30px !important;    box-shadow: 0px 0px 10px rgba(0,0,0,0.25) !important;border-radius: 0px!important;    min-height: auto !important  }
+.template-eight  .common-leadform-top.t1-result-leadform.eight-inner-wrapper {     box-shadow: 0px 0px 10px rgba(0,0,0,0.25);border-radius:0px !important;   padding: 0px !important;    min-height: auto !important;border-radius: 0px!important;     margin-bottom: 20px !important;}
+.template-eight .common-result-bot.eight-inner-wrapper {    padding: 0px !important;    box-shadow: 0px 0px 10px rgba(0,0,0,0.25) !important;border-radius: 0px!important;    min-height: auto !important  }
 .template-eight  .common-leadform-top.t1-result-leadform.eight-inner-wrapper + .common-result-bot.eight-inner-wrapper {display: block !important;float: left !important; width:100%;border-radius: 0px!important;  min-height: auto !important}
 .template-eight  .common-result-main .rec-image-outer img {    max-width: 440px;    width: inherit;    max-height: 170px;    border-radius: 5px;}
 .template-eight  .common-result-main .common-result-bot .recom-section .leadform-outer h1{font-size: 28px}
@@ -2104,3 +2104,15 @@ path.highcharts-plot-band {    fill: transparent !important;}
 .otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}
 
 .template-section .t1-slider-question .input-field.new-class1 label ~ input {  width: calc(100% - 58px) !important;  }
+.eight-inner-wrapper.header-next-div {
+    margin: 0;
+}
+.eight-inner-wrapper1.header-next-div.no-header-links , .eight-inner-wrapper.header-next-div.no-header-links {
+    margin-top: 15px;
+}
+.overlay-outer-eight {
+    float: left;
+    width: 100%;
+    padding: 20px 30px !important;
+}
+.template-eight .header-next-div{height: auto;}
