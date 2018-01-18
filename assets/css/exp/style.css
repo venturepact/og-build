@@ -1592,7 +1592,8 @@ visuals .rec-image-outer img {
     float: left;
     width: 50%;
     min-height: 32px;
-    display: table;
+    display: flex;
+    align-items: center;
 }
 .t1-result-topheading p{
     margin-bottom: 0px;
@@ -4482,3 +4483,4 @@ span.abhi {
 .checkbox-outer.textfield label{ display: none !important;}
 .radio-outer-base.textfield label{ display: none !important;}
 .radio-outer.textfield label{ display: none !important;}
+.otherfield-inputbtn .button_textfield{ display: none;}

@@ -39,7 +39,7 @@
     .powered-by .poweredby-text {        font-size: 14px;    }
     /* .stickyfooter{        position: absolute !important;    } */
     .create-link{       padding: 5px 10px;     }
-    .page_2  #my-btn.btn.prime-action{margin-bottom: 0px !important}
+    .page_2  #my-btn.btn.prime-action{margin-bottom: 15px !important}
     .landing-page-mid .sub-heading{padding: 0 30px;}
     .landing-page-mid .input-section .input-outer span {        font-size: 9px !important;    }
     .col {        width: 100%;        float: left;        text-align: center;        -webkit-box-pack: center;        -ms-flex-pack: center;        justify-content: center;        -ms-flex-item-align: center;        -ms-grid-row-align: center;        align-self: center;    }
@@ -99,6 +99,8 @@
     .common-footer-main .col_3_links{ width: 100%; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100%; margin-bottom: 10px; text-align: center;}
     .column-inner-div{ text-align: left;}
+    .page_2 .result-fixed1{ padding-bottom:55px;}
+    .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling.new-lead1{ max-height: initial !important; overflow: visible !important;}
     
     
 }
@@ -228,7 +230,7 @@
         .page_2 .like-cta-outer .twitter-follow-button {            margin-top: 10px;        }
     }
     .input-field input{        width: 100%;    }
-    .likes-parent{        display: flex;        justify-content: center;        margin: 0 auto;         flex-direction: column;    }
+    .likes-parent{        display: flex;        justify-content: center;        margin: 0 auto;         flex-direction: column;   margin-bottom: 15px;  }
 
     .page_0 .input-outer i { left: 0px !important;}
     .section-control{        padding-left: 0px;    }
