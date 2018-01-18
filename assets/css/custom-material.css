@@ -234,10 +234,10 @@ fieldset[disabled] .form-group .form-control {
           box-shadow: none;
 }
 .form-group.has-error.is-focused .form-control {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f44336), to(#f44336)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-  background-image: -webkit-linear-gradient(#f44336, #f44336), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-  background-image: -o-linear-gradient(#f44336, #f44336), -o-linear-gradient(#D2D2D2, #D2D2D2);
-  background-image: linear-gradient(#f44336, #f44336), linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1483b7), to(#1483b7)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+    background-image: -webkit-linear-gradient(#1483b7, #1483b7), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: -o-linear-gradient(#1483b7, #1483b7), -o-linear-gradient(#D2D2D2, #D2D2D2);
+    background-image: linear-gradient(#1483b7, #1483b7), linear-gradient(#D2D2D2, #D2D2D2);
 }
 .form-group.has-error label.control-label,
 .form-group.has-error .help-block {
@@ -530,7 +530,7 @@ label.control-label {
     .sahil-material .form-group label.control-label {
         font-size: 14px;
         line-height: 1.07142857;
-        color: #8e989f;
+        color: #999;
         font-weight: 400;
         margin: 16px 0 0 0;
         font-family: montserratregular;
@@ -538,33 +538,33 @@ label.control-label {
     .sahil-material .form-group label.control-label.seo-static-label{
         text-transform: uppercase !important;
         font-size: 10px !important;
-        color: #8e989f !important;
+        color: #999 !important;
     }
     .sahil-material .form-group.label-floating label.control-label,
     .sahil-material .form-group.label-placeholder label.control-label {
         top: -7px;
         font-size: 14px;
         line-height: 18px;
-        color: #8e989f;
+        color: #999;
     }
     .sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
         top: -20px;
         font-family: montserratregular;
         font-size: 11px;
         text-transform: uppercase;
-        color: #8e989f !important;
+        color: #999 !important;
     }
     .sahil-material .form-group.label-floating.is-focused label.control-label {
         top: -20px;
         font-size: 11px;
-        font-family: montserratregular;
-        color: #8e989f !important;
+        font-family: 'montserratregular';
+        color: #1483b7 !important;
     }
     .sahil-material .form-group.is-focused label,
     .sahil-material .form-group.is-focused label.control-label {
         font-size: 11px;
-        font-family: montserratregular;
-        color: #8e989f !important;
+        font-family: 'montserratregular';
+        color: #1483b7 !important;
         text-transform: uppercase;
     }
     .sahil-material .form-control,
@@ -577,12 +577,12 @@ label.control-label {
 
     }
 
-.sahil-material .form-group.is-focused .form-control {
+    .sahil-material .form-group.is-focused .form-control {
         outline: none;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-        background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: -o-linear-gradient(#fb545b, #fb545b), -o-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#1483b7), to(#1483b7)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+        background-image: -webkit-linear-gradient(#1483b7, #1483b7), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -o-linear-gradient(#1483b7, #1483b7), -o-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: linear-gradient(#1483b7, #1483b7), linear-gradient(#D2D2D2, #D2D2D2);
         -webkit-background-size: 100% 2px, 100% 1px;
                 background-size: 100% 2px, 100% 1px;
         -webkit-box-shadow: none;

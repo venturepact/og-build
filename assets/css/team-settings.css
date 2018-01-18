@@ -3285,7 +3285,8 @@
         font-size: 10px!important;
         color: #666!important;
         font-family: montserratregular;
-        text-transform: uppercase
+        text-transform: uppercase;
+        font-weight: normal;
     }
     .modal#change-company-name .form-group:first-child {
         margin-top: 12px
@@ -5075,3 +5076,15 @@
 .payment-history-content table{ background: #fff;}
 /* end: settings page css from custom.css */
 
+
+@media (max-width: 1900px){
+    #signUp .form-group .control-label.label-url, 
+    .modal .form-group.label-floating.is-focused label.control-label, 
+    .modal .form-group.label-floating:not(.is-empty) label.control-label, 
+    .my-profile .form-group.favicon-upload label.control-label, 
+    .my-profile .form-group.time-zone label.control-label, 
+    .sahil-material .form-group.label-floating.is-focused label.control-label, 
+    .sahil-material .form-group.label-floating:not(.is-empty) label.control-label {
+        font-size: 10px!important;
+    }
+}
