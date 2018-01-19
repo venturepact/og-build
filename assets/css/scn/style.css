@@ -3811,14 +3811,14 @@ span.abhi {
 /* other field */
 
 .sound-cloud-new .othersfield {    
-  float: left;
-  width: 90%;
-  margin-left: 26px;
-  border: 1px solid #d9dad3 !important;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 14px;
-  margin-top: 5px;
+    float: left;
+    width: calc(100% - 42px);
+    margin-left: 0px;
+    border: 1px solid #d9dad3 !important;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 
