@@ -1984,7 +1984,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 12px;
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     cursor: pointer;
     border-radius: 0px;
     margin-bottom: 25px;
@@ -6253,32 +6253,20 @@ span.abhi {
     background-position: center center;
     z-index: 1;
 }
-/* .t1-result:after {
-    opacity: 0.6;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-} */
+
 
 /* other field add */
-
+.textfield label.control.control--checkbox , .textfield label.control.control--radio {float: left;width: auto !important;padding: 20px 50px 20px 0px;}
+.textfield .submit-checkbox-img {position: relative;top: -10px;left: 50px;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
 .otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
-.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none !important;}
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right; margin-right: 0px;}
-.template-section .template-container.mobile  .textfield label.control.control--checkbox{width: 55px}
-.template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
-.template-section .template-container.mobile .textfield .otherfield-inputbtn input.othersfield, .template-section .template-container.mobile .textfield input.othersfield{padding: 16px 0 !important}
-.textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
-.textfield.checkbox-outer .control--checkbox  .control__indicator.check-set ,
-.textfield.radio-icon-custom.radio-outer .control--radio .control__indicator.icon-set  {  display: none !important; }
-.textfield label.control.control--checkbox {float: left;width: 50px;padding: 0 !important;position: static;}
-.textfield label.control.control--radio {float: left;width: 50px;padding: 0;}
-.textfield.checkbox-outer label.control.control--checkbox::after , .textfield.checkbox-outer label.control.control--checkbox::before {display: none;}
-.textfield.checkbox-outer label.control.control--checkbox, .textfield.radio-icon-custom.radio-outer .control--radio{width: 20px;}
-.template-section .template-container.mobile  .textfield label.control.control--checkbox{width: 20px}
-.template-section .template-container.mobile .textfield .otherfield-inputbtn input.othersfield, .template-section .template-container.mobile .textfield input.othersfield{padding: 16px 0 !important}
+.otherfield-inputbtn input.othersfield , input.othersfield {width: auto !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none !important;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn {  margin-left: 0px;  position: relative;top: 10px;left: 0;float: left !important; }
+
+
+input.othersfield::-webkit-input-placeholder {opacity: 0.4}
+  input.othersfield::-moz-placeholder {opacity: 0.4}
+  input.othersfield:-ms-input-placeholder {opacity: 0.4}
+  input.othersfield:-moz-placeholder {opacity: 0.4}
+
 /* other field add */

@@ -1510,13 +1510,61 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; display: none; width: auto !important;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 10px;}
+.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
-    float: left;
-    width: 100%;
+    float: right;
+    width: calc(100% - 60px);
     background: transparent;
-    /* border-bottom: 1px solid #464646 !important;
-    color:#333; */
     margin-top: 10px;
 }
+.textfield.radio-outer-base .control--radio::after {
+    content: "\F111";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 11PX !important;
+    margin: 0px !important;
+    border: 0px !important;
+    transform: scale(0) translate(-50% , -50%) !important;
+    left: 50%;
+    top: 50%;
+ 
+}
+.template-five .textfield.radio-outer-base [type="radio"]:checked + .control--radio::after{  transform: scale(1) translate(-50% , -50%) !important; }
+.template-five .textfield.radio-outer-base [type="radio"]:checked + .control--radio::before {  border: 1px solid #fff !important;}
+.template-five  .textfield.checkbox-outer-base  [type="checkbox"]:checked + .control--checkbox:before {  border: 1px solid #fff !important;}
+.textfield.radio-outer-base .control--radio::before , .textfield.checkbox-outer-base .control--checkbox:before {
+    content: "";
+    border: 1px solid #333 !important;
+    margin: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    padding: 0 !important;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    border-radius: 50%;
+    transform: scale(1) translate(-50% , -50%) !important;
+}
+.template-five .textfield.checkbox-outer-base [type="checkbox"]:checked + .control--checkbox:after {  transform:rotate(27deg) scale(1) translate(-50% , -50%) !important; color: #fff}
+.textfield.checkbox-outer-base .control--checkbox:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin: 0px !important;
+    border-top: 1px solid transparent !important;
+    -webkit-transform: scale(0) translate(-50% , -50%) !important;
+    transform: rotate(27deg) scale(0) translate(-50% , -50%) !important;
+    left: 50%;
+    top: 50%;
+    border-right: 1px solid #fff !important;
+    border-left: 1px solid transparent !important;
+    border-bottom: 1px solid #fff !important;
+    width: 5px;
+    height: 10px;
+    margin-left: -2px !important;
+}
 .otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}
+.textfield .control--radio .control__indicator.icon-set > div, .textfield.checkbox-outer .control__indicator.check-set > div{margin: 0}
+
+/* other field */
