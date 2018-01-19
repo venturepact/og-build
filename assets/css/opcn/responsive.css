@@ -5,7 +5,7 @@
 }
 @media (min-width: 0px) and (max-width: 767px) {
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 50px 20px 0px;}
-    .textfield input.othersfield{padding: 20px 0  14px !important; font-size: 16px;line-height: 18px; width: 100px !important}
+    .textfield input.othersfield{padding: 20px 0  12px !important; font-size: 16px;line-height: 18px; width: 100px !important}
 
     .t1-landing .no-header-links.no-footer-links {        padding: 70px 0 !important;    }   
     .t1-result .no-header-links.no-footer-links {        padding: 30px 0 !important;    }  
@@ -3623,6 +3623,6 @@
 }
 @media (min-width:768px) and (max-width:1024px) {
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 40px 20px 0px;}
-    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 12px 0 !important}
+    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 14px 0 10px !important}
     .textfield .submit-checkbox-img {position: relative;top: -15px;left: 40px;}
     }

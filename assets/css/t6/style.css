@@ -113,7 +113,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .t1-landing-leadform .input-section .input-outer span {    float: left;    width: 100%;    position: absolute;    top: 48px;    left: 0px;    text-align: left;    padding-left: 2px;    color: #f44336;    font-size: 12px;}
 .t1-landing-leadform button.prime-action{    font-size: 16px;    width: auto;    padding: 13px 60px;       border: none;    cursor: pointer;    text-transform: uppercase;    border-radius: 0px;    white-space: inherit;}
 .t1-button{    float: left;    width: 100%;    text-align: center;}
-.t1-button button{    font-size: 16px;    width: auto;    padding: 13px 30px;        border: none;    cursor: pointer;    text-transform: uppercase;    border-radius: 0px;}
+.t1-button button{    font-size: 16px;    width: auto;    padding: 13px 30px;        border: none;    cursor: pointer;    /*text-transform: uppercase; */   border-radius: 0px;}
 .t1-button button:hover,.t1-button button:focus{  outline: none;}
 .landing-btn{    font-size: 16px;    width: auto;    padding:16px 30px;    border: none;    cursor: pointer;    text-transform: uppercase;}
 .t1-question .t1-overlay{    background: rgba(0,0,0,0.3)}
@@ -1022,7 +1022,7 @@ visuals .t1-result-inner-left #og-table-excel{    margin: 0 auto;    width: 42%;
     /* box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2); */
     border: none;
     cursor: pointer;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     border-radius: 0px;
     white-space: normal;
     word-break: break-word; border-radius: 3px;
