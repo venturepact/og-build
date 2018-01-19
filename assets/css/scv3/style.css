@@ -1961,10 +1961,10 @@ margin: 0 !important;
   max-height: calc(93vh - 70px);
 }
 .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling {
-  max-height: calc(60vh - 105px);
+  max-height: calc(60vh - 150px);
 }
 .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling.new-lead1 {
-  max-height: calc(70vh - 105px);
+  max-height: calc(70vh - 150px);
 }
 .page_2.hasbranding.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {
   max-height: calc(40vh - 105px);
@@ -1996,8 +1996,25 @@ margin: 0 !important;
 .header-next-div .page_2.hasbranding.result-fixed .leadform-outer.result-scrolling.new-lead2{max-height: calc(38vh - 105px);}
 
 /* textfield */
-.checkbox-outer-base.textfield label{ display: none !important;}
-.checkbox-outer.textfield label{ display: none !important;}
-.radio-outer-base.textfield label{ display: none !important;}
-.radio-outer.textfield label{ display: none !important;}
+.checkbox-outer-base.textfield label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+.checkbox-outer-base.textfield.active label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+
+.checkbox-outer.textfield label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px;}
+.checkbox-outer.textfield.active label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px; background: none;margin-left: -14px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 2px; margin-left: 2px;}
+.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 10px;}
+
+.radio-outer.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+/* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
+.radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
+
 .sound-cloud-new .othersfield + .button_textfield{ display: none;}
+input{ outline: none;}

@@ -2245,6 +2245,7 @@ img.vk-follow-btn {
 }
 .t1-question .question-components .checkbox-outer.ripple-dark.active label.control.control--checkbox span {
     padding-left: 20px;
+    color: #fff !important;
 }
 .ripple-dark.checkbox-outer.active .control--checkbox {
     border-radius: 15px;
@@ -4479,8 +4480,25 @@ span.abhi {
 .inline-tablecell,.experian-outer{ background-color: #f7f7f7 !important;}
 
 /* textfield */
-.checkbox-outer-base.textfield label{ display: none !important;}
-.checkbox-outer.textfield label{ display: none !important;}
-.radio-outer-base.textfield label{ display: none !important;}
-.radio-outer.textfield label{ display: none !important;}
+
+.experian .checkbox-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 30px !important;  margin-right: 0px; }
+.checkbox-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
+.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+.checkbox-outer.textfield.active label .control__indicator i{margin-top: 0px; margin-left: 0px;  color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px; left: 0px !important;}
+
+.checkbox-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.checkbox-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
+.experian .checkbox-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
+
+.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 30px !important;  margin-right: 0px; }
+.radio-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
+.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+.radio-outer.textfield.active label .control__indicator.icon-set i{margin-top: 0px; margin-left: 0px; color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px;}
+
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
+.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
+
+.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left;}
+
 .otherfield-inputbtn .button_textfield{ display: none;}

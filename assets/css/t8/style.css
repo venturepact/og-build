@@ -924,7 +924,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
 .t1-slider form > div{    position: static !important;}
 .t1-landing-leadform .input-outer .input-field .selectize-control {margin-top: 27px;}
 .ripple-dark.radio-outer-base .mid-outer .control.control--radio {    border: 0px !important;}
-.w100.text-center .submit-checkbox-img{float: none; display: inline-block}
+.w100.text-center .submit-checkbox-img{float: none; display: inline-block;text-transform: capitalize;}
 .landing-page-mid .container-temp.text-center {    float: left;    width: 100%;}
 .radio-outer-base .mid-outer > span  , .checkbox-outer-base  > span {    display: none;}
 .radio-outer-base .t6 , .checkbox-outer-base .t6{    display: block !important;}
@@ -1377,7 +1377,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .common-result-main .t1-result-topheading p{font-size: 28px;padding: 0 0 5px 0px; line-height:32px}
 
 .template-eight  .common-result-bot .t1-result-leadform .redirect-heading{font-size:18px;}
-.template-eight  .common-result-main .t1-result-cta .text-center .prime-action {  margin-bottom: 0px;  padding: 7px 18px !important;  font-size: 18px !important;  margin-top: 0;  border-radius: 3px !important;  float: none;  display: inline-block;  margin-right: 0;   text-transform: none; }
+.template-eight  .common-result-main .t1-result-cta .text-center .prime-action {  margin-bottom: 0px;  padding: 7px 18px !important;  font-size: 16px !important;  margin-top: 0;  border-radius: 3px !important;  float: none;  display: inline-block;  margin-right: 0;   text-transform: none; }
 .template-eight .gradedquiz-main.common-result-gq .landing-page-header { width:100%; position: relative !important;  top: 0px !important;  left: 0 !important;  right: 0 !important;  z-index: 9; margin-bottom:20px;  text-align: center;}
 .template-eight .common-result-main .t1-result-inner{background: transparent}
 .template-eight .common-result-gq visuals .t1-result-inner-left-img{min-height: 170px; max-height:170px}
@@ -1402,7 +1402,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 20px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-outer {  width: 50% !important;  padding: 0 10px;  min-height: auto;  margin: 0;  float: left;}
 .template-eight .t1-result-leadform .input-outer i , .template-eight  .gradedquiz-main .common-result .t1-result-leadform .input-outer i{left: 20px !important;top: 12px !important; font-size: 17px !important;}
-.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .prime-action {  float: left;  margin-bottom: 0px;    font-size: 18px;  padding: 8px 15px;  text-transform: none;  margin-top: 0px;}
+.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .prime-action {  float: left;  margin-bottom: 0px;    font-size: 16px;  padding: 8px 15px;  text-transform: none;  margin-top: 0px;}
 .template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-heading-temp1 {  font-size: 20px;  text-transform: capitalize;  text-align: center; margin-bottom: 15px;}
 .template-eight .common-result-main .t1-result-leadform .input-outer span{font-size: 12px !important; line-height: 1; top:42px !important}
 .template-eight .t1-result-main .t1-result-top .selectize-control.single .selectize-input{border: 2px solid #333;  border-radius: 3px !important;  min-height: 40px !important;font-size: 17px !important;  padding: 8px 35px 8px 10px;}

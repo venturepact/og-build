@@ -3403,8 +3403,25 @@ span.abhi {
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
 
 /* textfield */
-.checkbox-outer-base.textfield label{ display: none !important;}
-.checkbox-outer.textfield label{ display: none !important;}
-.radio-outer-base.textfield label{ display: none !important;}
-.radio-outer.textfield label{ display: none !important;}
+.checkbox-outer-base.textfield label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+.checkbox-outer-base.textfield.active label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+
+.checkbox-outer.textfield label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px;}
+.checkbox-outer.textfield.active label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px; background: none;margin-left: -14px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 2px; margin-left: 2px;}
+.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 10px;}
+
+.radio-outer.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+/* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
+.radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
+
 .sound-cloud-new .othersfield + .button_textfield{ display: none;}
+input{ outline: none;}

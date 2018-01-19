@@ -812,7 +812,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .landing-page-mid .main-heading { font-size: 20px; line-height: 24px; float: left; width: 100%; text-align: left; margin-bottom: 5px !important; margin-top: 0; }
 
 .landing-page-mid .main-heading p{ margin:0px; }
-.landing-page-mid .sub-heading h2{ font-size: 13px; line-height: 20px;float: left; width: 89%; text-align: left; margin-top: 2px; margin-bottom: 10px; opacity:0.5 }
+.landing-page-mid .sub-heading h2{ font-size: 13px; line-height: 20px;float: left; width: 89%; text-align: left; margin-top: 2px; margin-bottom: 10px; opacity:0.8 }
 .landing-page-mid .sub-heading{ font-size: 13px; line-height: 20px;float: left; width: 80%; text-align: left; margin-top: 2px;  margin-bottom: 10px; opacity:0.5;word-break: break-word;}
 .bottom-section {  margin-bottom: 5px; border-bottom: 0 !important; text-align: left; }
 .result-full-section .container-temp { width: 100%; margin: 0 auto; display: inline-block; }
@@ -1999,14 +1999,15 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 
 .template-seven .othersfield {    
   float: left;
-  width: 100%;
+  width: 82%;
   border: none !important;
   border-bottom: 1px solid #d9dad3 !important;
   /* border-radius: 5px; */
-  padding: 5px 5px;
-  font-size: 14px;
+  padding: 4px 5px;
+  font-size: 13px;
   /* margin-top: 5px; */
    border-radius: 0 !important; outline: none; background: transparent !important;
+   padding-left:2px;
 }
 
 
@@ -2666,7 +2667,7 @@ path.highcharts-plot-band {
 }
 .like-cta-outer .btn-lg:nth-child(4){margin-top:0 !important;}
 
-
-.checkbox-outer-base.textfield label,.radio-outer.textfield.radio-outer-base label,
-.radio-outer.textfield label, .checkbox-outer.textfield label, 
-.checkbox-outer.textfield.active label,.otherfield-inputbtn button{ display: none !important;}
+.check-comp .textfield.checkbox-outer .control--checkbox{ padding:0 !important; padding-left: 26px !important}
+.radio-outer.textfield.radio-outer-base label{ padding:0 !important; padding-left: 26px !important}
+.radio-outer.textfield .mid-outer label{ padding:0 !important; padding-left: 26px !important}
+.otherfield-inputbtn button{ display: none !important;}

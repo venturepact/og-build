@@ -734,6 +734,13 @@
         }
     }
     .charts-label{ width: auto;}
+    .t1-question .question-components input.othersfield{ width: calc(100% - 50px) !important;}
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .experian .radio-outer-base.textfield label { padding-right: 0px !important; margin-top: 0;}
+    .checkbox-outer.textfield.active label{ margin-top: 0px;}
+    .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
+    .experian .radio-outer.textfield label{ margin-top: 0px; padding-right: 0px !important;}
+    .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 11px;}
     .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 4px; padding: 4px;}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
@@ -1199,6 +1206,13 @@
     .question-outer:last-child .selectize-dropdown-content {
         max-height: 48px;
     }
+    .t1-question .question-components input.othersfield{ width: calc(100% - 50px) !important;}
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .experian .radio-outer-base.textfield label { padding-right: 0px !important;  margin-top: 0;}
+    .checkbox-outer.textfield.active label{ margin-top: 0px;}
+    .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
+    .experian .radio-outer.textfield label{ margin-top: 0px; padding-right: 0px !important;}
+    .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 13px;}
     .custom-block.rating-custom .rating-inner i{font-size: 23px;margin-right: 5px;cursor: pointer;padding: 3px;}
     .t1-landing .no-footer-links.no-header-links{ padding:0 30px !important;}
