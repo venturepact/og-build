@@ -1127,7 +1127,7 @@ ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
     float: none !important;
 }
 .web-page-content {    float: left;    width: 100%;    padding: 20px;  }
-.web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
+.web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 125px;    max-width: 100%;}
 .web-page-content .center-part {float: left; width:calc(100% - 250px); max-width: 100%; padding: 18.5%; position: relative; height: 520px;}
 .web-page-content .center-part  iframe{position: absolute; top:0; bottom: 0; right: 15px; left: 15px; width: calc(100% - 30px)!important; border:0px !important}
 .web-page-content .center-part.full-part iframe{left: 0; right: 0; width:100% !important}
@@ -1178,7 +1178,7 @@ input.custom-input {    float: left;    width: 100%;    height: 30px;    border-
     text-align: center;
 }
 .popover-part a.btn.btn-basic{font-family: montserratlight}
-span.webpage-info::after {    content: attr(data-content);    max-width: 150px;    position: absolute;    width: 150px;    background: #62696d;    left: 50%;    transform: translateX(-50%);    top: 25px;    padding: 8px 10px;    font-size: 10px;    color: #fff;    font-family: montserratlight;    border-radius: 3px;    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);    display: none;    z-index: 10; text-align: center;}
+span.webpage-info::after {    content: attr(data-content);    max-width: 150px;    position: absolute;    width: 150px;    background: #62696d;    left: 50%;    transform: translateX(-50%);    top: 25px;    padding: 8px 10px;    font-size: 10px;    color: #fff;    font-family: montserratlight;    border-radius: 3px;    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);    display: none;    z-index: 10; text-align: left;}
 span.webpage-info:hover::before , span.webpage-info:hover::after{display: block}
 span.webpage-info::before {        position: absolute;    top: 16px;    left: 50%;    transform: translateX(-50%);    display: inline-block;    border-right: 10px solid transparent;    border-bottom: 12px solid #62696d;    border-left: 10px solid transparent;    border-bottom-color: #62696d;    content: '';    display: none;    z-index: 10;}
 .launch-btn-box {    float: left;    width: 100%;    text-align: center;    position: relative;}
