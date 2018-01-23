@@ -446,7 +446,7 @@ h2.sub-heading p {
     left: 50%;
     transform: translateX(-50%);
 }
-
+.t1-slider-nav a{    position: relative;    width: 40px;    height: 40px;      text-align: center;    display: table-cell;    vertical-align: middle;    cursor: pointer; border-radius: 4px; outline: none;}
 /* .t1-slider-nav a.prev{    left: -20px;}
 .t1-slider-nav a.next{    right: -20px;}  */
 
@@ -8064,7 +8064,7 @@ button.button_textfield.submit-textbox-btn {
 .textfield button.button_textfield.submit-textbox-btn {
     display: block;
     float: left;
-    margin-top: 10px;
+    margin-top: 10px !important;
     margin-right: 0;
     cursor: pointer;
     position: relative;
@@ -8139,3 +8139,5 @@ button.button_textfield.submit-textbox-btn {
     display: flex;
     flex-wrap: wrap;
 }
+
+.t1-slider-nav a{    position: relative;    width: 40px;    height: 40px;      text-align: center;    display: table-cell;    vertical-align: middle;    cursor: pointer; border-radius: 4px; outline: none;}
