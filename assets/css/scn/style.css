@@ -1585,6 +1585,7 @@ temp .range {
     position: absolute;
     width: 100%;
     bottom: 0;
+    left: 0px;
 }
 .page_2 .right-section {
     display: none;
@@ -3810,14 +3811,14 @@ span.abhi {
 /* other field */
 
 .sound-cloud-new .othersfield {    
-  float: left;
-  width: 90%;
-  margin-left: 26px;
-  border: 1px solid #d9dad3 !important;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 14px;
-  margin-top: 5px;
+    float: left;
+    width: calc(100% - 42px);
+    margin-left: 0px;
+    border: 1px solid #d9dad3 !important;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-top: 0px;
 }
 
 
@@ -3861,3 +3862,28 @@ span.abhi {
   .result-branding .lightSticky, #build .result-branding .stickyfooter, .result-branding .stickyfooter{
     bottom: 0 !important;
   }
+
+/* textfield */
+.checkbox-outer-base.textfield label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+.checkbox-outer-base.textfield.active label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+
+.checkbox-outer.textfield label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px;}
+.checkbox-outer.textfield.active label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px; background: none;margin-left: -14px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 2px; margin-left: 2px;}
+.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 10px;}
+
+.radio-outer.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+/* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
+.radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
+
+.sound-cloud-new .othersfield + .button_textfield{ display: none;}
+.sound-cloud-new .otherfield-inputbtn .button_textfield{ display: none;}
+input{ outline: none;}
