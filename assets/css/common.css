@@ -479,6 +479,12 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .left-button-outer-t6 img{ float: left; margin-left: 10px;}
 .left-button-outer-t6 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:5px;}
 .left-button-outer-t6 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
+.left-button-outer-t8{ position: absolute;top: 92%;width: 450px;left: 20px;}
+.left-button-outer-t8 img{ float: left; margin-left: 10px;}
+.left-button-outer-t8 .intro-text-left{ float: left; color: #fff; margin-left: 10px; padding-top:10px; position: relative; padding-left:5px;}
+.left-button-outer-t8 .intro-text-left span{ font-size: 24px;position: absolute;top: 3px; left: 2px;}
+
 .intro-overlay.builder-parent .left-button-outer-t7{top: 415px;}
 .left-button-outer-t7{ position: absolute;width: 450px;left: 20px; top:385px;}
 .left-button-outer-t7 img{ float: left; margin-left: 10px;}
@@ -487,7 +493,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 .add-btn{padding: 12px;color: #1483b7;width:43.5%; text-align:center; font-size: 11px; background: #e9eef0;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative}
 .add-btn span { font-size: 20px; position: absolute;left: 34.9%;top: 5px;}
-.right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 60px; }
+.right-button-outer{ position: absolute;width: 451px;right: 15.5%; top: 52px; }
 .icon-box{ float: right; width:40px;}
 .icon-box li{padding: 8px 10px;color: #fff;width:40px; text-align:center; font-size: 11px; background: #fbfdfc;border: 1px solid #fff; text-transform: uppercase; font-family: montserratlight; float: left; position: relative; border-bottom: 1px solid #bec5c9;}
 .icon-box li i{ font-size: 15px; color:#1483b7;}
@@ -496,7 +502,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .text-box{ float: right; width:50%; }
 .text-box li{padding: 8px 10px;color: #fff;width:100%;; text-align:right;display: block;  float: left; position: relative; }
 .text-box li i { font-size: 20px; color:#fff; float: left; margin-right: 10px;}
-.top-outer{ position: absolute;right: 131px;width: 150px;height: 80px; top: 19px;}
+.top-outer{ position: absolute;right: 133px;width: 150px;height: 80px; top: 14px;}
 .red-button{border: none;background: #fb545b;color: #fff;text-transform :uppercase;border-radius: 0;width: auto;padding: 5px 11px;font-size: 11px;float: left; margin-left: 45px;}
 .top-outer img{ margin-left: 48px;}
 .top-outer .top-text{ float: left; color: #fff; width:100%; text-align: center;}
@@ -544,7 +550,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 
 @media (min-width: 1441px) and (max-width: 1600px)  {
 
-.right-button-outer { right: 20.5%;}
+.right-button-outer { right: 19.5%;}
 .left-button-outer {top: 72%;}
 .left-button-outer-t2 {top: 76.5%;}
 .left-button-outer-t3 { top: 82.8%;}
@@ -594,6 +600,7 @@ fieldset[disabled] .editor-modal .form-group .form-control {
 .intro-overlay.builder-parent .left-button-outer {top: 88%;}
 .intro-overlay.builder-parent .left-button-outer-t2 {top: 92%;}
 .intro-overlay.builder-parent .left-button-outer-t3 {top: 92%;}
+.new-webpage-design-wrapper {    max-width: 860px !important;}
 
 
 }
@@ -740,7 +747,7 @@ button.btn-done {
 .builder-parent1 .share-calculator-parent{ padding-top:65px;}
 .builder-parent1 .new-js-outr{ padding-top: 65px;}
 /*.builder-parent1 .prom-checklist{padding-top:65px !important;}*/
-.builder-parent1 .no-analytics-overlay{top:71px;}
+.builder-parent1 .no-analytics-overlay{top:60px;}
 .builder-parent .prop-arrow{ bottom:0px;}
 .builder-parent .general-helppanel{top:90px;}
 .builder-parent1 .general-helppanel{top:90px;}
@@ -1113,11 +1120,15 @@ ul.custom-tab-part.nav.nav-tabs > li:first-child > a {border-top-left-radius: 50
 ul.custom-tab-part.nav.nav-tabs > li:last-child > a {border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-right:  1px solid #ccc; }
 ul.custom-tab-part.nav.nav-tabs > li.active > a{background: #f6f8f9}
 .web-page-header {    float: left;    width: 100%;    padding: 6px;  border-bottom: 1px solid #ccc; }
-.web-page-design {    float: left;     background: #fff; width: 100%; margin-bottom: 30px;   border: 1px solid #ccc;    border-radius: 3px;}
-.tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;}
+.web-page-design {    float: left;     background: #fff; width: 100%; margin-bottom: 20px;   border: 1px solid #ccc;    border-radius: 3px;}
+.tab-content.tab-content-part {    float: left;    width: 100%;    margin-top: 30px;
+    max-width: 825px !important;
+    margin: 30px auto !important;
+    float: none !important;
+}
 .web-page-content {    float: left;    width: 100%;    padding: 20px;  }
-.web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 135px;    max-width: 100%;}
-.web-page-content .center-part {float: left; width:calc(100% - 270px); max-width: 100%; padding: 18.5%; position: relative; height: 520px;}
+.web-page-content .left-part ,.web-page-content .right-part {    float: left;    width: 125px;    max-width: 100%;}
+.web-page-content .center-part {float: left; width:calc(100% - 250px); max-width: 100%; padding: 18.5%; position: relative; height: 520px;}
 .web-page-content .center-part  iframe{position: absolute; top:0; bottom: 0; right: 15px; left: 15px; width: calc(100% - 30px)!important; border:0px !important}
 .web-page-content .center-part.full-part iframe{left: 0; right: 0; width:100% !important}
 .strips {    float: left;    width: 100%;    background: #ebedef;    height: 20px;    margin-bottom: 10px;}
@@ -1167,7 +1178,7 @@ input.custom-input {    float: left;    width: 100%;    height: 30px;    border-
     text-align: center;
 }
 .popover-part a.btn.btn-basic{font-family: montserratlight}
-span.webpage-info::after {    content: attr(data-content);    max-width: 150px;    position: absolute;    width: 150px;    background: #62696d;    left: 50%;    transform: translateX(-50%);    top: 25px;    padding: 8px 10px;    font-size: 10px;    color: #fff;    font-family: montserratlight;    border-radius: 3px;    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);    display: none;    z-index: 10; text-align: center;}
+span.webpage-info::after {    content: attr(data-content);    max-width: 150px;    position: absolute;    width: 150px;    background: #62696d;    left: 50%;    transform: translateX(-50%);    top: 25px;    padding: 8px 10px;    font-size: 10px;    color: #fff;    font-family: montserratlight;    border-radius: 3px;    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .24);    display: none;    z-index: 10; text-align: left;}
 span.webpage-info:hover::before , span.webpage-info:hover::after{display: block}
 span.webpage-info::before {        position: absolute;    top: 16px;    left: 50%;    transform: translateX(-50%);    display: inline-block;    border-right: 10px solid transparent;    border-bottom: 12px solid #62696d;    border-left: 10px solid transparent;    border-bottom-color: #62696d;    content: '';    display: none;    z-index: 10;}
 .launch-btn-box {    float: left;    width: 100%;    text-align: center;    position: relative;}
@@ -1427,20 +1438,18 @@ input.disabled.custom-input {
 
 /*opinion scale email*/
 .opinion-email-outer {
-    /*width: calc(100% - 220px);
-    float: left;*/
-    padding-top: 20px;
-    padding: 25px;
+  
+    padding: 40px 30px;
     max-width: 990px;
     margin: 0 auto;
 }
 .opinion-email-head{
-    font-size: 16px;
-    font-family: montserratlight;
-    color:#62696d;
-    padding: 15px 0;
-    padding-bottom: 0;
-    margin:0 auto;
+    color: #62696d;
+    font-family: "montserratlight";
+    font-size: 22px;
+    display: block;
+    margin-bottom: 3px;
+    margin-top: 0px;
 }
 .opinion-email-head span{
     text-transform:uppercase;
@@ -1464,7 +1473,7 @@ input.disabled.custom-input {
 }
 .email-info{
     font-family: montserratregular;
-    color: #8e989f !important;
+    color: #999 !important;
     text-transform: uppercase;
     font-size: 10px;
     width: 100%;
@@ -1508,7 +1517,9 @@ input.disabled.custom-input {
 .alert-msg-outer {
     display: flex;
     width: 100%;
-    padding: 25px 15%;
+    height: 100%;
+    padding: 18px 15%;
+    align-items: center;
 }
 .alert-msg-outer i.material-icons {
     font-size: 36px;
@@ -1516,7 +1527,7 @@ input.disabled.custom-input {
 }
 .alert-msg-outer span {
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 11px;
     color: #62696d;
     opacity: 0.7;
     font-family: montserratlight;
@@ -1525,6 +1536,10 @@ input.disabled.custom-input {
     font-family: montserratregular;
     margin-left: 0;
     font-weight: 600;
+}
+.alert-msg-outer span p{
+    margin-bottom: 3px;
+    font-size: 12px;
 }
 .email-form label {
     font-size: 13px;
@@ -1556,13 +1571,12 @@ input.disabled.custom-input {
 }
 .opinion-email-subheading{
     color: #8e989f;
-    font-family: montserratregular;
+    font-family: montserratlight;
     font-size: 13px;
     display: block;
     line-height: 22px;
     margin-bottom: 15px;
     margin: 0 auto;
-    padding-top: 3px;
     padding-bottom: 15px;
 }
 .opinion-email-code .opinion-email-subheading{
@@ -1577,6 +1591,7 @@ h4.opinion-email-head {
     padding: 0;
     font-size: 14px;
     text-transform: uppercase;
+    color: #62696d;
 }
 .outer {
     /*width: calc(100% - 220px);
@@ -1737,3 +1752,20 @@ h4.opinion-email-head {
     margin-top: 20px;
 }
 
+
+.web-page-content .center-part.seo {float: left; max-width: 100%; padding: 0; position: relative; margin: 0 15px;  height: auto;}
+.web-page-content .left-part.seo, .web-page-content .right-part.seo{ width: 110px;}
+.web-page-content .left-part.seo .strips:last-child, .web-page-content .right-part.seo .strips:last-child{margin: 0; height: 24px;}
+
+.web-page-content .left-part.seo .strips, .web-page-content .right-part.seo .strips{ background:#f5f5f5; }
+.seamless.logo-branding-outer .switch {
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.custom-popover ul li > label.label-convert {
+    width: calc(100% - 110px);
+}
+.custom-popover ul li > label.label-convert .switch {
+    margin-top: 2px;
+}
