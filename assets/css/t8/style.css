@@ -1581,10 +1581,13 @@ path.highcharts-plot-band {
 
 
 @-moz-document url-prefix(){
-   
+    .overlay-inner-ques {height: 480px}
     .question-components input{ border-radius: 0 !important;}
     .input-field input.postfixset{ border-radius: 3px !important;}
     .eight-inner-wrapper, .eight-inner-wrapper.header-next-div.no-header-links, .eight-inner-wrapper.no-header-links.no-footer-links{height: 480px}
+    /* .isIframe    .overlay-inner-ques , .isIframe   .eight-inner-wrapper, .isIframe  .eight-inner-wrapper.header-next-div.no-header-links, .isIframe  .eight-inner-wrapper.no-header-links.no-footer-links {
+        height: auto ;
+    } */
     .t1-ques-head div p:last-child{ display: inline-block;}
     .template-eight .common-leadform-top.t1-result-leadform.eight-inner-wrapper{height: auto !important}
     .template-eight .common-leadform-top.t1-result-leadform.eight-inner-wrapper+.common-result-bot.eight-inner-wrapper{height: auto !important}
