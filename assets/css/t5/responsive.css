@@ -1057,3 +1057,6 @@ Developer: Bhawna */
 @media (min-width: 641px) and (max-width: 995px) {
     .gradedquiz-main .common-result .landing-page-header{ position: absolute !important; top: 20px !important; }
 }
+@media (min-width: 0px) and (max-width: 375px){
+    .opinon-scale-custom label.control.control--radio{padding:4px 0px !important;}
+}

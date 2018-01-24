@@ -1431,7 +1431,11 @@
     .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
     .control-ver2 .pic-selector{ width: 48% !important;     padding-right: 5%; }
     /* .control-ver2 .pic-selector span.abhi{ font-size: 13px;} */
-    .control-ver2 .pic-selector label.control--radio { padding-right: 52px !important; }
+    .control-ver2 .pic-selector label.control--radio {
+        /* padding-right: 52px !important; */
+        /* width: 48%!important;
+        padding-right: 5%; */
+    }
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 85px;}
 
     .control-ver2 .pic-selector span.abhi{ font-size: 13px;}

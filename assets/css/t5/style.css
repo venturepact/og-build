@@ -444,6 +444,7 @@
         float: left;
         margin-top: 0;
         margin-bottom: 0;
+        position: absolute; left: 0; width: 100%; bottom: 0;
     }
     .page_2 {
         position: relative;
@@ -4091,3 +4092,4 @@ tspan {
 .textfield .control--radio .control__indicator.icon-set > div, .textfield.checkbox-outer .control__indicator.check-set > div{margin: 0}
 
 /* other field */
+.control-ver2 .pic-selector:focus {outline: none;}

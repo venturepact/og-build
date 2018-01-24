@@ -858,9 +858,12 @@
         .control-ver2 .done-icon{top:35px;}
 }
 @media (min-width:0px) and (max-width:640px) {
+    .t1-slider-question .input-field label{width: 40px}
+    .t1-slider-question .input-field label~input {width: calc(100% - 72px)!important;}
+    .t1-slider-question .input-field.new-class1 label~input , .input-field input.postfixset {width: calc(100% - 36px)!important;}
     .errorMessage.cust-err {top: 55px;}
     .t1-question .textfield.checkbox-outer-base .othersfield, .t1-question .textfield.radio-outer-base .othersfield{margin: 8px 0; width: calc(100% - 150px) !important; padding: 10px 5px;}
-    .textfield button.button_textfield.submit-textbox-btn {margin-top: 15px;padding: 6px 10px;height: auto;min-height: auto;font-size: 12px;}
+    .textfield button.button_textfield.submit-textbox-btn {margin-top: 15px !important;padding: 6px 10px;height: auto;min-height: auto;font-size: 12px;}
     .t1-question .textfield.checkbox-outer-base .othersfield{font-size: 14px}
     .t1-question .textfield.radio-outer-base .othersfield{font-size: 13px;  margin: 12px 0  8px !important}
     .question-components .postfixset + button.button_textfield.submit-textbox-btn{ top: 85px;}

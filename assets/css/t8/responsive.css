@@ -13,7 +13,7 @@
     .common-footer-main .row_1_links {
         float: left;
         width: 100% !IMPORTANT;
-        text-align: center
+        TEXT-ALIGN: CENTER;
     }
     .template-eight .common-footer-main .row_1_links a {
         float: none;
@@ -26,6 +26,21 @@
 }
 
 @media(max-width:640px) {
+    .landing-page-mid leadform .input-section .input-outer input {
+        margin-bottom: 23px
+    }
+    .landing-page-mid leadform .input-section .input-outer span {
+        font-size: 10px;
+    }
+    .t1-slider-question .input-field label {
+        width: 40px
+    }
+    .t1-slider-question .input-field label~input {
+        width: calc(100% - 72px)!important;
+    }
+    .t1-slider-question .input-field.new-class1 label~input, .input-field input.postfixset {
+        width: calc(100% - 36px)!important;
+    }
     .t1-question-resultheading {
         text-align: center
     }
@@ -39,6 +54,9 @@
         width: 100%;
         text-align: center;
         max-width: 100%;
+    }
+    .template-eight .common-result-main .t1-result-leadform .input-outer span {
+        padding-left: 0px
     }
     .template-eight .common-result .common-result-bot .recom-tabsection .t1-result-leadform .likes-parent {
         margin-bottom: 0;
@@ -166,7 +184,6 @@
     .template-eight .common-result-main .t1-result-small-section .small-bot-sec p, .template-eight .common-result-main .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-bot-sec p {
         font-size: 15px !important
     }
-    /* .template-eight .common-result-main .t1-result-topheading p {        font-size: 22px;        padding: 0;    } */
     .template-eight .common-result-main .t1-result-topheading p {
         font-size: 22px;
         padding: 0;
@@ -221,5 +238,76 @@
     }
     .range-slider1.custom-slider1 ul {
         display: none;
+    }
+}
+
+@media(max-width:319px) {
+    .sub-heading h2 {
+        font-size: 14px;
+    }
+    .template-eight [type="checkbox"]+label.leadform-checkbox {
+        padding-left: 25px;
+        font-size: 13px;
+    }
+    .overlay-inner-ques{padding: 30px 15px 50px}
+    .main-heading, .main-heading h1, .main-heading p {
+        font-size: 24px;
+    }
+    .landing-page-mid leadform .input-section .input-outer input {
+        font-size: 13px;
+        min-height: 34px;
+        padding-left: 30px;
+    }
+    .input-outer i {
+        font-size: 14px;
+    }
+    .selectize-input {
+        padding: 6px 35px 3px 10px
+    }
+    .selectize-input, .t1-landing .t1-landing-inner .selectize-control.single .selectize-input input, .selectize-input .item {
+        font-size: 13px
+    }
+    .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .radio-icon-custom .control.control--radio span, .control.control--checkbox span , .pic-selector .abhi, .control , .t1-question .ripple-dark.checkbox-outer-base label.control span, .t1-question .ripple-dark.radio-outer-base label.control span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .logo a img.horz {
+        max-height: 28px !important;
+    }
+    .template-eight .custom-btn-outer {
+        width: 70px;
+        height: 70px;
+        border-width: 5px;
+    }
+    .template-eight .common-result-main .t1-result-topheading p {
+        font-size: 20px;
+        padding: 0;
+        line-height: 22px;
+    }
+    .common-result-main .rec-image-outer{min-width: 100% !important}
+    .eight-inner-wrapper, .eight-inner-wrapper.header-next-div.no-header-links, .eight-inner-wrapper.no-header-links.no-footer-links{border-width: 6px }
+    .template-eight  .custom-btn-outer1{
+        width: 55px;
+        height: 55px;
+        border-width: 5px;
+    }
+    .t1-slider-question .input-field label, .question-components input {
+        font-size: 13px;
+        min-height: 35px
+    }
+    .t1-ques-head {
+        font-size: 22px;
+        line-height: 1.2;
+    }
+    .landing-page-mid button, button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .submit-checkbox-img-custom, .w100.text-center .submit-checkbox-img, .landing-page-mid leadform button.prime-action {
+        font-size: 15px;
+    }
+    .landing-page-mid leadform .input-section .input-outer span {
+        top: 36px;
     }
 }
