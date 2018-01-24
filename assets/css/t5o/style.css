@@ -317,7 +317,7 @@ body {
 .pic-selector label:hover .check-set span.img-overlay { height: 100%; width: 100%; bottom: 0; position: absolute; left: 0px; background: rgba(0, 0, 0, 0.5); transition: all .5s; }
 .pic-selector label:hover span.img-overlay { height: 100%; width: 100%; bottom: 0; position: absolute; left: 0px; background: rgba(0, 0, 0, 0.5); transition: all .5s; }
 .pic-selector .control.control--checkbox span{ float: left;  margin-top: 0; margin-bottom: 0;}
-.pic-selector .control.control--radio span{ float: left;  margin-top: 0; margin-bottom: 0;}
+.pic-selector .control.control--radio span{ float: left;  margin-top: 0; margin-bottom: 0;position: absolute; left: 0; width: 100%; bottom: 0;}
 
 .page_2{position: relative; }
 

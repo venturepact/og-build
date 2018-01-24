@@ -4427,6 +4427,7 @@ _:-webkit-full-screen,
     float: left;
     margin-top: 0;
     margin-bottom: 0;
+    position: absolute; left: 0; width: 100%; bottom: 0;
 }
 .highcharts-credits {
     display: none;

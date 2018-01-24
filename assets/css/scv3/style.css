@@ -1294,7 +1294,7 @@ animation-delay: -0.16s;
 .landing-page-mid .input-section .input-outer.w100{ width: 95% !important; margin-left: 17px;}
 .sound-cloud-new .page_2 [type="checkbox"] + label.leadform-checkbox{ margin-left: 4px; margin-top: 15px; font-size: 14px;}
 
-.selectize-dropdown.single {font-size: 14px !important;  }
+.selectize-dropdown.single {font-size: 14px !important;  z-index: 100}
 input {  -webkit-transform: translate3d(0,0,0);}
 .sound-cloud-new .page_2 [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{ border: 2px solid rgba(94,94,94,0.6) !important }
 .template-section .page_0 .input-outer i { left: -8px !important;}
