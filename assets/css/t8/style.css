@@ -1441,8 +1441,29 @@ span.current::after {    content: "/";    margin: 0 2px;}
  .eight-inner-wrapper1.no-header-links .common-result-main.eight-inner-wrapper{margin: 80px 0 0px!important}
  .template-eight  .common-result-main [type="checkbox"] + label.leadform-checkbox:before,  .template-eight  .common-result-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{ content: ''; position: absolute; top: 0px; left: 0px; width: 16px; height: 16px; z-index: 0; border-radius: 3px !important;   background-color:rgba(255,255,255,0.2); border:1px solid transparent; margin: 3px 0 !important; padding:  1px ;    display: flex;align-items: center;  justify-content: center;  font-size: 10px !important}
  .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{ display: none !important}
- .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {  top: 0;  width: 16px;  height: 16px; border:1px solid transparent;   background-color: transparent;  z-index: 0;  margin: 0px 0px;  border-radius: 3px;  top: 9px !important;  margin: 3px 0 !important;  font-size: 14px !important;  content: "done";  font-family: 'Material Icons'; line-height:1;}
+ .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {  top: 0;  width: 16px;  height: 16px; border:1px solid transparent;   background-color: transparent;  z-index: 0;  margin: 0px 0px;  border-radius: 3px;  top: 9px !important;  margin: 3px 0 !important;  font-size: 14px !important;  content: "done";  font-family: 'Material Icons'; line-height:1; transform: scale(1) !important;}
  .template-eight .common-result-main visuals .t1-result-inner-left-img{min-height: 170px}
+ .template-eight .common-result-main [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{margin: 0 !important}
+.template-eight .common-result-main input[type="checkbox"]:focus+label::after {
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+    z-index: 0;
+    margin: 0px 0px;
+    border-radius: 3px !important;
+    top: 9px !important;
+    margin: 3px 0 !important;
+    font-size: 14px !important;
+    content: "done";
+    font-family: 'Material Icons';
+    line-height: 1;
+    transform: scale(1) !important;
+    animation: none;
+    opacity: 1 !important;
+
+}
  .template-eight   .common-result-main .t1-result-leadform{min-height: 10px}
  .template-eight .common-result-bot .t1-result-leadform .share-heading{text-align: center;font-size: 18px}
  .common-result-bot-icons.result-brand {  float: left;  width: 100%;  margin-bottom: 20px;}
