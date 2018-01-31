@@ -630,7 +630,7 @@
 
 @media (min-width:1680px) and (max-width:1920px) {
     .t1-slider-nav a i{    font-size: 32px;    }
-    .ripple-dark {padding: 0 25px;}
+    .ripple-dark {padding: 0 20px;}
     .submit-textbox input{max-width: 90%;}
     .main-heading ,  .main-heading h1{ font-size: 52px; line-height: 60px; margin-bottom: 20px; }
     .main-heading p{ font-size: 60px; margin-bottom: 30px; }
@@ -691,7 +691,7 @@
     .t1-landing-leadform select { margin-bottom: 15px;}
     .t1-result-leadform select { padding: 9px !important;}
     /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
-    .control-ver2 .done-icon{top:-90px;}
+    /* .control-ver2 .done-icon{top:inherit;} */
 }
 
 @media (min-width:1367px) and (max-width:1920px){
@@ -751,7 +751,7 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:120px; height:120px;}
     .active2 .ko-overlay1{width:132px; height:132px;}
      /*checkbox icon polls*/
-    .control-ver2 .done-icon{top:45px;}
+    /* .control-ver2 .done-icon{top:45px;} */
     .control-ver2 .done-icon i {position: relative;}
 }
 @media (min-width:820px) and (max-width:1024px) {
@@ -855,7 +855,7 @@
         .landing-page-mid leadform .input-section .input-outer span{left:0px;}
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
         .control-ver2 .done-icon i {position: relative;}
-        .control-ver2 .done-icon{top:35px;}
+        /* .control-ver2 .done-icon{top:35px;} */
 }
 @media (min-width:0px) and (max-width:640px) {
     .t1-slider-question .input-field label{width: 40px}
@@ -961,6 +961,6 @@
     .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill{width:134px; height:134px;}
     .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill{clip: rect(0px, 67px, 134px, 0px);}
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:124px; height:124px;margin-left: 5px; margin-top: 5px;}
-    .control-ver2 .done-icon{top:45px;}
+    /* .control-ver2 .done-icon{top:45px;} */
     .active2 .ko-overlay1 {width: 134px;height: 134px; left: -4px;}
 }

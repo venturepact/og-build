@@ -6774,6 +6774,7 @@ button.button_textfield.submit-textbox-btn {
 
 .poll-main.check-comp .radio-outer label {
     padding-right: 78px;
+    z-index: 1;
 }
 
 .poll-main .radio-outer.active .poll-percentage {
@@ -7841,29 +7842,32 @@ button.button_textfield.submit-textbox-btn {
 
 .control-ver2 .done-iconoutr {
     position: relative;
-    float: left;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 70px;
+    float: none;
+    left: 47%;
+    top: -9px;
     z-index: 999;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateX(-50%);
 }
 
 .control-ver2 .done-icon {
-  position: absolute;
-  z-index: 9;
-  left: -10px;
-  bottom: 30px;
-  top: inherit;
-  right: inherit;
-  background: #fff;
-  padding-top: 0px;
-  padding-right: 0px;
-  float: left;
-  height: 17px;
-  display: block !important;
-  border-radius:3px;
-  cursor: pointer;
-  pointer-events: none;
+    position: absolute;
+    z-index: 9;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    right: inherit;
+    background: #fff;
+    padding-top: 0px;
+    padding-right: 0px;
+    float: none;
+    height: 17px;
+    display: inline-block !important;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .control-ver2 .submit-checkbox-outr {
@@ -7883,6 +7887,9 @@ button.button_textfield.submit-textbox-btn {
   display: inline-block !important;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
+.mid-outer {
+    display: inline-table;
+}
 .control-ver2 .done-icon i { font-size: 24px !important;width: 17px;line-height: 0.7; position: relative; left: -4px;}
 .control-ver2 .radio-outer .done-icon {border-radius: 50%;}
 .control-ver2 .done-icon.unchecked i { font-size: 24px !important; color: #d9dad3;}

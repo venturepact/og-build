@@ -4490,16 +4490,29 @@ span.abhi {
 .checkbox-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
 .experian .checkbox-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
 
-.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 30px !important;  margin-right: 0px; }
+.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 30px !important;  margin-right: 0px; }
 .radio-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
 .radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
 .radio-outer.textfield.active label .control__indicator.icon-set i{margin-top: 0px; margin-left: 0px; color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px;}
 
 .radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
 .radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
-.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
+.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 20px !important;  width: inherit !important;   margin-right: 0px;float: left; }
 
-.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left;}
+
+.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left; transition: unset;}
+
+.checkbox-outer-base.active input.othersfield { width: calc(100% - 20px) !important;}
+.checkbox-outer-base input.othersfield{ width: calc(100% - 20px) !important;}
+.checkbox-outer input.othersfield { width: calc(100% - 30px) !important;}
+.checkbox-outer.active input.othersfield { width: calc(100% - 50px) !important;}
+
+.radio-outer-base.active input.othersfield{width: calc(100% - 20px) !important;}
+.radio-outer-base input.othersfield {width: calc(100% - 20px) !important;}
+.radio-outer.active input.othersfield { width: calc(100% - 50px) !important;}
+.radio-outer input.othersfield { width: calc(100% - 30px) !important;}
+
+.radio-outer-base{ width: auto; float: left;}
 
 .otherfield-inputbtn .button_textfield{ display: none;}
 .radio-outer.ripple-dark label.radio-icon{line-height:19px;}

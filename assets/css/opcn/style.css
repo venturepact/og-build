@@ -6043,7 +6043,7 @@ span.abhi {
 .poll-main .radio-outer{ position: relative;}
 .poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
 .poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
-.poll-main.check-comp .radio-outer label{ padding-right: 75px;}
+.poll-main.check-comp .radio-outer label{ padding-right: 75px; z-index: 1;}
 .poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important; color: #666e78 !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}

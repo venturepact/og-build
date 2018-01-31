@@ -2396,10 +2396,10 @@ visuals .t1-result-inner-left-table{
 .page_2 .btn.prime-action:hover{opacity: 0.7; transition: 0.5s}
 
 .template-seven .checkbox-outer.active [type="checkbox"].filled-in:checked + label:after, .template-seven .checkbox-outer.active [type="checkbox"].filled-in:checked + label:before{ display: none;}
-.radio-outer.radio-outer-base.active .control{ background: none; font-size: 13px;}
+.radio-outer-base.active .control{ background: none; font-size: 13px;}
 .template-seven [type="radio"]:not(:checked) + label,
 .template-seven [type="radio"]:checked + label {line-height: 18px; padding-right:10px !important;}
-.template-seven .radio-outer.radio-outer-base [type="radio"]:checked + label{ padding-right:0 !important;}
+.template-seven .radio-outer-base [type="radio"]:checked + label{ padding-right:0 !important;}
  .template-seven {
 
   float: left;
@@ -2492,7 +2492,7 @@ visuals .t1-result-inner-left-table{
 .template-seven [type="checkbox"].filled-in:checked + label:after{ margin: 4px 3px;}
 .template-seven [type="radio"]:not(:checked) + label, .template-seven [type="radio"]:checked + label{ margin-left: 0 !important; line-height:20px; }
 .template-seven [type="radio"]:not(:checked) + label:before, .template-seven [type="radio"]:not(:checked) + label:after{ margin: 2px 0 !important;}
-.template-seven .radio-outer.radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer.radio-outer-base [type="radio"]:checked + label{padding-left: 26px; padding-top:1px;}
+.template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label{padding-left: 26px; padding-top:1px;}
 .template-seven [type="radio"]:checked + label:after, .template-seven [type="radio"].with-gap:checked + label:before, .template-seven [type="radio"].with-gap:checked + label:after{ margin: 2px 0px !important}
 .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label{padding-left: 26px;}
 .check-comp .checkbox-outer .control__indicator.check-set i{ font-size: 17px; margin-left: -8px;}
