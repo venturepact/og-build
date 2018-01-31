@@ -1510,13 +1510,13 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 10px;}
 .textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
     width: calc(100% - 60px);
     background: transparent;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 .textfield.radio-outer-base .control--radio::after {
     content: "\F111";

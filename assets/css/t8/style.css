@@ -1046,7 +1046,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .t1-question .poll-main .ripple-dark.radio-outer-base [type="radio"] + label.control::before {    font-size: 10px !important;    padding: 2px!important;}
 .poll-main .poll-color-light{ position: absolute; width:100%; top: auto !important; left: 0px !important; bottom: 0;height:4px;border-radius:50px; }
 .poll-main .poll-color{ position: absolute; width: 0px; top: auto !important; left: 0px !important; bottom: 0;  height:4px;border-radius:50px; transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
-.poll-main.check-comp .radio-outer label{ padding-right: 78px; z-index: 1;}
+.poll-main.check-comp .radio-outer label{ padding-right: 78px;}
 .poll-main .radio-outer.active .poll-percentage{position: absolute; right: 0px !important; line-height: 24px; font-size: 14px !important; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 0px !important; line-height: 24px; font-size: 14px !important;; display: block !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}
