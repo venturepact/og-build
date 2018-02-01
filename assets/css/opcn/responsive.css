@@ -4,20 +4,18 @@
     }
 }
 @media (min-width: 0px) and (max-width: 767px) {
-    .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 50px 20px 0px;}
-    .textfield input.othersfield{padding: 18px 0  12px !important; font-size: 16px;line-height: 18px;     width: 90px !important;}
-    .otherfield-inputbtn button.button_textfield.submit-textbox-btn {
-        margin-left: 0;
-        position: relative;
-        top: 10px;
-        left: 0;
-        float: left!important;
-        display: block !important;
-        font-size: 13px !important;
-        height: auto !important;
-        padding: 8px 15px !important;
+    /*.t1-logo a.default-logo img {
+        max-width: 100%;
+        max-height: 37px;
     }
-
+    .ques-header .logo a.default-logo img{
+       max-width: 100%;
+       max-height: 37px; 
+    }
+    .res-header .logo a.default-logo img{
+        max-width: 100%;
+       max-height: 37px; 
+    }*/
     .t1-landing .no-header-links.no-footer-links {        padding: 70px 0 !important;    }   
     .t1-result .no-header-links.no-footer-links {        padding: 30px 0 !important;    }  
 
@@ -142,7 +140,7 @@
     }
     .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{ max-width: 85%; width: 100%;}
     .landing-page-mid button {
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 40px;
     }
     .landing-page-mid leadform button.prime-action {
@@ -1419,29 +1417,20 @@
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
     .poll-main .radio-outer.active .poll-percentage{line-height: 60px; font-size:14px;}
     .poll-main .radio-outer.active2 .poll-percentage{line-height: 60px; font-size:14px;}
-    .poll-main .radio-outer-base.active .poll-percentage{line-height: 60px; font-size:14px;}
-    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 60px; font-size:14px;}
     .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
     .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
 
     /* temp mobile otherfield */
-    /* .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
-    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;} */
+    .otherfield-inputbtn input.othersfield{width: 80% !important; float: left; margin-left: 40px !important;}
+    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 0; display: block !important; float: left; margin-left: 50px; margin-bottom: 20px;}
     .t1-landing .no-footer-links {  height: calc(100% - 17%) !important;}
     /*header logo styling*/
     .page_0 .common-header-main .landing-page-header {top: 3px !important;}
     .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
     .control-ver2 .pic-selector{ width: 48% !important;     padding-right: 5%; }
     /* .control-ver2 .pic-selector span.abhi{ font-size: 13px;} */
-    .control-ver2 .pic-selector label.control--radio {
-        /* padding-right: 52px !important; */
-        /* width: 48%!important;
-        padding-right: 5%; */
-    }
+    .control-ver2 .pic-selector label.control--radio { padding-right: 52px !important; }
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 85px;}
-
-    .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
-    .range-slider1.custom-slider1 ul{ display: none;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -1605,7 +1594,7 @@
         padding: 10px 40px;
     }
     .landing-page-mid leadform button.prime-action {
-        font-size: 14px;
+        font-size: 13px;
         padding: 10px 40px;
     }
     .t1-landing-leadform .t1-leadform-field {
@@ -1878,7 +1867,7 @@
         top: 0px;
     }
     .text-overlay {
-        /* top: 5px; */
+        top: 5px;
         padding-bottom: 100%;
         height: auto;
         bottom: 0px;
@@ -2441,12 +2430,10 @@
     .custom-block.rating-custom .rating-inner i{font-size: 23px;}
     .poll-main .radio-outer.active .poll-percentage{line-height: 22px; font-size:14px;}
     .poll-main .radio-outer.active2 .poll-percentage{line-height: 22px; font-size:14px;}
-    .poll-main .radio-outer-base.active .poll-percentage{line-height: 22px; font-size:14px;}
-    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 22px; font-size:14px;}
 
     /* temp mobile otherfield */
-    /* .otherfield-inputbtn input.othersfield{width: 90% !important; float: left; margin-left: 35px !important;}
-    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 5px; display: block !important; float: left; margin-left: 40px; margin-bottom: 20px;} */
+    .otherfield-inputbtn input.othersfield{width: 90% !important; float: left; margin-left: 35px !important;}
+    .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position: relative; top: 5px; display: block !important; float: left; margin-left: 40px; margin-bottom: 20px;}
     .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
     .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 95px;}
@@ -2578,7 +2565,7 @@
         padding: 10px 40px;
     }
     .landing-page-mid leadform button.prime-action {
-        font-size: 16px;
+        font-size: 14px;
         padding: 10px 40px;
     }
     .landing-footer-outer {
@@ -2617,7 +2604,7 @@
         top: 0px;
     }
     .text-overlay {
-        /* top: 5px; */
+        top: 5px;
         padding-bottom: 100%;
         height: auto;
         bottom: 0px;
@@ -3154,7 +3141,7 @@
     .landing-page-mid button,
     .landing-page-mid leadform button.prime-action {
         padding: 11px 40px;
-        font-size: 16px;
+        font-size: 13px;
         margin-bottom: 0px;
     }
     .page_0 .t1-question,
@@ -3167,7 +3154,7 @@
         top: 40%;
     }
     .text-overlay {
-        /* top: 0px; */
+        top: 0px;
         padding-bottom: 105%;
         height: auto;
         bottom: 0px;
@@ -3425,9 +3412,6 @@
     .radio-outer .done-icon i {
         font-size: 26px !important;
     }
-    .radio-outer-base .done-icon i {
-        font-size: 26px !important;
-    }
     .recommendation-outer .mid-width span {
         font-size: 20px;
         margin-bottom: 15px;
@@ -3643,19 +3627,3 @@
         margin-top: 20px;
     }
 }
-@media (min-width:768px) and (max-width:1024px) {
-    .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 40px 20px 0px;}
-    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 14px 0 10px !important}
-    .textfield .submit-checkbox-img {position: relative;top: -15px;left: 40px;}
-    .otherfield-inputbtn button.button_textfield.submit-textbox-btn {
-        margin-left: 0;
-        position: relative;
-        top: 6px;
-        left: 0;
-        float: left!important;
-        display: block !important;
-        font-size: 11px !important;
-        height: auto !important;
-        padding: 8px 15px !important;
-    }
-    }

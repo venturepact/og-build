@@ -218,7 +218,7 @@ li {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     border-radius: 0px;
     white-space: inherit;
 }
@@ -234,7 +234,7 @@ li {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     border-radius: 0px;
 }
 .t1-button button:hover,
@@ -1475,7 +1475,7 @@ visuals .t1-result-inner-left #og-table-excel {
     font-size: 14px;
     margin-bottom: 0px;
 }
-/*.t1-result-small-section .small-bot-sec p {
+.t1-result-small-section .small-bot-sec p {
     font-size: 15px !important;
     float: left;
     width: 100%;
@@ -1486,7 +1486,7 @@ visuals .t1-result-inner-left #og-table-excel {
     margin-top: 0px;
     color: #363b3e;
     opacity: 0.8;
-}*/
+}
 .t1-result-sm-value {
     float: left;
     width: 100%;
@@ -1841,7 +1841,7 @@ visuals .t1-result-inner-left #og-table-excel {
     width: 100%;
     text-align: center;
 }
-/*.t1-result-leadform .lead-heading-temp1 {
+.t1-result-leadform .lead-heading-temp1 {
     font-size: 16px;
     float: left;
     width: 100%;
@@ -1853,7 +1853,7 @@ visuals .t1-result-inner-left #og-table-excel {
     padding-left: 0px;
     margin-top: 30px;
     text-transform: uppercase;
-}*/
+}
 .editor-page-divider .share-heading {
     /*color: #666e78;*/
     
@@ -1984,7 +1984,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 12px;
     text-align: center;
-    /*text-transform: uppercase;*/
+    text-transform: uppercase;
     cursor: pointer;
     border-radius: 0px;
     margin-bottom: 25px;
@@ -2167,9 +2167,6 @@ visuals .t1-result-inner-left #og-table-excel {
 .radio-outer.active {
     background: #f1f3f3;
 }
-.radio-outer-base.active {
-    background: #f1f3f3;
-}
 .control__indicator.check-set {
     left: 16px!important;
     top: 18px;
@@ -2259,12 +2256,6 @@ visuals .t1-result-inner-left #og-table-excel {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     box-shadow: 0 0 0 1px #f7f6f6;
-}
-.radio-outer-base{border:1px solid #d9dad3;border-bottom: 0;  width:100%; float:left;margin-bottom: 2px; margin-top: -3px; margin-left: -1px; padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline:none;}
-.radio-outer-base:last-child{border:1px solid #d9dad3 !important;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;box-shadow: 0 0 0 1px #f7f6f6;
 }
 .pic-selector.radio-outer:last-child {
     border: none !important;
@@ -2432,7 +2423,6 @@ visuals .t1-result-inner-left #og-table-excel {
     margin-bottom: 0;
     min-height: 58px;
     color: #666e78 !important;
-    z-index: 1;
 }
 .t1-question .question-components .check-comp label input {
     visibility: hidden;
@@ -2531,14 +2521,14 @@ visuals .t1-result-inner-left #og-table-excel {
     font-size: 12px;
 }
 .landing-page-mid button {
-    font-size: 18px;
+    font-size: 16px;
     float: left;
     width: auto;
     padding: 13px 50px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     border-radius: 0px;
     white-space: normal;
     word-break: break-all;
@@ -2549,13 +2539,13 @@ visuals .t1-result-inner-left #og-table-excel {
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
 }
 .landing-page-mid leadform button.prime-action {
-    font-size: 18px;
+    font-size: 16px;
     width: auto;
     padding: 13px 50px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     border-radius: 3px;
     position: relative;
 }
@@ -2571,7 +2561,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 13px;
     text-align: center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     padding: 13px 25px;
     cursor: pointer;
     border-radius: 0px;
@@ -2592,7 +2582,7 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #ffffff;
     font-size: 13px;
     text-align: center;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     padding: 13px 25px;
     cursor: pointer;
     border-radius: 0px;
@@ -3751,8 +3741,8 @@ input[type=number] {
     position: absolute;
     right: 0px;
     bottom: 13px;
-    left: inherit;
-    width: auto;
+    left: 0px;
+    width: 100%;
     background: #fff;
     padding: 7px 20px;
     display: inline-block;
@@ -3961,7 +3951,6 @@ _:-webkit-full-screen,
     margin-bottom: 0;
     min-height: 58px;
     color: #666e78 !important;
-    z-index: 1;
 }
 .one-page-card-new input[type="checkbox"]:focus:not([readonly]) + label {
     color: #666e78 !important;
@@ -3979,9 +3968,6 @@ _:-webkit-full-screen,
     font-size: 30px !important;
 }
 .radio-outer .done-icon i {
-    font-size: 36px !important;
-}
-.radio-outer-base .done-icon i {
     font-size: 36px !important;
 }
 .pic-selector.active span.img-overlay {
@@ -4412,7 +4398,7 @@ _:-webkit-full-screen,
     margin-top: 10px;
     /*margin-bottom: 20px;*/
     
-    /*text-transform: uppercase*/
+    text-transform: uppercase
 }
 .t1-result-leadform .input-field label:not(.label-icon).active {
     font-size: 1.1rem !important;
@@ -4473,7 +4459,6 @@ _:-webkit-full-screen,
     float: left;
     margin-top: 0;
     margin-bottom: 0;
-    position: absolute; left: 0; width: 100%; bottom: 0;
 }
 .highcharts-credits {
     display: none;
@@ -5681,12 +5666,6 @@ input {
     .template-section .radio-outer:last-child {
         border: 2px solid #d9dad3 !important;
     }
-    .template-section .radio-outer-base {
-        border: 2px solid #d9dad3;
-    }
-    .template-section .radio-outer-base:last-child {
-        border: 2px solid #d9dad3 !important;
-    }
     .template-section .checkbox-outer-base {
         border: 2px solid #d9dad3;
         margin-bottom: -1px;
@@ -6009,26 +5988,11 @@ span.abhi {
 
 
 /* other field add */
-/* .textfield label.control.control--checkbox button.submit-checkbox-img.ripple-light{position: absolute;right: 0px; left: auto;}
-.textfield label.control.control--checkbox {
-    float: left;
-    width: 50px;
-    padding: 0 !important;
-    position: static;
-}
-.textfield label.control.control--radio {
-    float: left;
-    width: 50px;
-    padding: 0;
-  
-}
-.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
-.otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
-.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 120px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none;}
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;}
 .t1-question .question-components .othersfield{margin-left: 42px;  padding-top: 0; width: 91%; border: none; box-shadow: none;}
 .t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: 10px; display: block !important; float: right;} */
+.otherfield-inputbtn{float: left; width: 100%; position: relative; }
+.otherfield-inputbtn input.othersfield {  width: 66% !important;  float: left;}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn { position: relative;  top: -10px; display: block !important; float: right;}
 
 /* other field add */
 .t1-question .leaded-form-c .input-outer .selectize-input.items div.item + input {
@@ -6048,8 +6012,6 @@ span.abhi {
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;}
 .opinon-scale-custom .radio-outer { border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
 .opinon-scale-custom .radio-outer:last-child{ border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
-.opinon-scale-custom .radio-outer-base { border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
-.opinon-scale-custom .radio-outer-base:last-child{ border: 1px solid #d9dad3; border-right: 0; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 0 !important;min-height: 48px;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
@@ -6063,13 +6025,16 @@ span.abhi {
 .t1-result{width: 100%; height: 100vh; max-width: 100%; display: table; position: relative; background-size: cover; box-shadow: 0 2px 9px 2px rgba(0,0,0,.4);}
 .t1-result-main{display: table-cell; vertical-align: middle; height: 100%; padding: 60px 0; padding-top: 90px;}
 .poll-main .radio-outer{ position: relative;}
-.poll-main .radio-outer-base{ position: relative;}
 .poll-main .poll-color-light{ position: absolute; width: 100%; top: 0; left: 0; bottom: 0; }
 .poll-main .poll-color{ position: absolute; width: 0px; top: 0; left: 0; bottom: 0;  transition: width 2s;  transition-property: width; transition-duration: 2s; transition-timing-function: initial; transition-delay: initial;-webkit-transition: width 2s;}
 .poll-main.check-comp .radio-outer label{ padding-right: 75px; z-index: 1;}
+.poll-main.check-comp .radio-outer-base label{ padding-right: 75px; z-index: 1;}
 .poll-main .radio-outer.active .poll-percentage{position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important;}
 .poll-main .radio-outer.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important; color: #666e78 !important;}
 .poll-main .radio-outer .poll-percentage{display: none;}
+.poll-main .radio-outer-base.active .poll-percentage{position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important;}
+.poll-main .radio-outer-base.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important; color: #666e78 !important;}
+.poll-main .radio-outer-base .poll-percentage{display: none;}
 
 
 
@@ -6111,7 +6076,7 @@ span.abhi {
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0; display: initial !important }
 /* .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 580px;} */
 .template-section .template-container.mobile .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width: 100%; max-width: 80%;}
-.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px; position: relative; z-index: 9;}
+.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%; display: table-cell}
@@ -6166,22 +6131,12 @@ span.abhi {
 .poll-main .pic-selector.radio-outer.active .poll-color{z-index: 2; opacity: 0.8;  display: none;}
 .poll-main .pic-selector.radio-outer.active .mid-outer .poll-color{z-index: 2; opacity: 0.8;  display: block;}
 .poll-main .pic-selector.radio-outer .mid-outer .poll-color{z-index: 2; opacity: 0.1;  display: block;}
-.poll-main .pic-selector.radio-outer-base.active .poll-color-light{z-index: 1; display: none;}
-.poll-main .pic-selector.radio-outer-base.active .mid-outer .poll-color-light{z-index: 1; display: block;}
-.poll-main .pic-selector.radio-outer-base .mid-outer .poll-color-light{z-index: 1; display: block;}
-.poll-main .pic-selector.radio-outer-base.active .poll-color{z-index: 2; opacity: 0.8;  display: none;}
-.poll-main .pic-selector.radio-outer-base.active .mid-outer .poll-color{z-index: 2; opacity: 0.8;  display: block;}
-.poll-main .pic-selector.radio-outer-base .mid-outer .poll-color{z-index: 2; opacity: 0.1;  display: block;}
 .poll-main .radio-outer-base .mid-outer .poll-color-light{display: none;}
-.poll-main .pic-selector.radio-outer.active .poll-percentage{ z-index: 2; text-align: left; left: 20px !important;}
-.poll-main .pic-selector.radio-outer-base.active .poll-percentage{ z-index: 2; text-align: left; left: 20px !important;}
+.poll-main .pic-selector.radio-outer.active .poll-percentage{ z-index: 2; text-align: left; left: 10px !important;}
 .poll-main .radio-outer .mid-outer .poll-color { display: none;}
-.poll-main .radio-outer-base .mid-outer .poll-color { display: none;}
 
 .poll-main .pic-selector.radio-outer .poll-color {z-index: 1; display: none;}
-.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 20px !important;}
-.poll-main .pic-selector.radio-outer-base .poll-color {z-index: 1; display: none;}
-.poll-main .pic-selector.radio-outer-base.active2 .poll-percentage {z-index: 2;text-align: left; left: 20px !important;}
+.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 10px !important;}
 
 
 .Result.desc-in-page {
@@ -6211,11 +6166,6 @@ span.abhi {
     font-size: 16px;
     line-height: 1.4;
     margin-left: -5px;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto !important;
 }
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;
@@ -6276,8 +6226,6 @@ span.abhi {
 .template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
 .structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
 .structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;}
-.structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
-.structure-right-align .poll-main .radio-outer-base.active .poll-percentage{ right: auto; line-height: 29px;}
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
 .one-page-card-new [type=radio]+label:after, .one-page-card-new [type=radio]+label:before{ z-index: 9;}
 .structure-right-align .editor-page-divider label.control.control--radio.blink-border { padding-right: 56px;}
@@ -6287,21 +6235,4 @@ span.abhi {
 .t1-question .question-components .check-comp label.defaultOptionImage {
     background-size: 115px;
     background-position: center center;
-    z-index: 1;
 }
-
-
-/* other field add */
-.textfield label.control.control--checkbox , .textfield label.control.control--radio {float: left;width: auto !important;padding: 20px 50px 20px 0px;}
-.textfield .submit-checkbox-img {position: relative;top: -10px;left: 50px;}
-.t1-question .question-components .othersfield:focus{border: none !important; box-shadow: none !important;}
-.otherfield-inputbtn{float: left; width: calc(100% - 50px); position: relative; }
-.otherfield-inputbtn input.othersfield , input.othersfield {width: calc(100% - 200px) !important;float: left;padding: 18px 0 !important;border: none; box-shadow: none !important;}
-.otherfield-inputbtn button.button_textfield.submit-textbox-btn {  margin-left: 0px;  position: relative;top: 10px;left: 0;float: left !important; }
-
-    input.othersfield::-webkit-input-placeholder {opacity: 0.4}
-  input.othersfield::-moz-placeholder {opacity: 0.4}
-  input.othersfield:-ms-input-placeholder {opacity: 0.4}
-  input.othersfield:-moz-placeholder {opacity: 0.4}
-
-/* other field add */

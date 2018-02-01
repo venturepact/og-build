@@ -249,7 +249,7 @@ a:focus {
     top: 0px;
     margin: 0 auto;
     display: inline-block;
-    z-index: 0;
+    z-index: 9;
 }
 .t1-slider-pagination a:last-child {
     margin-right: 10px;
@@ -1570,20 +1570,16 @@ visuals .rec-image-outer img {
     right: 0;
     min-height: 100%;
 }
-/*.preview.experian.t1-result{
+.preview.experian.t1-result{
     min-height: calc(100% - 70px);
+    /* top: 70px; */
 }
 .experian.t1-result{
     min-height: calc(100% - 70px);
-}*/
+    /* top: 70px; */
+}
 .t1-result.experian.yes-header-links{top: 70px;}
-.experian-outer.yes-header-links{ top: 70px; position: relative;}
-.editor-page-divider .experian-outer.yes-header-links {
-    top: 0;
-}
-.header-next-div .experian-outer.yes-header-links {
-    top: 0;
-}
+.experian-outer.yes-header-links{ top: 0px; position: relative;}
 .t1-result-main {
     display: block;
 }
@@ -1592,8 +1588,7 @@ visuals .rec-image-outer img {
     float: left;
     width: 50%;
     min-height: 32px;
-    display: flex;
-    align-items: center;
+    display: table;
 }
 .t1-result-topheading p{
     margin-bottom: 0px;
@@ -1788,6 +1783,7 @@ visuals .rec-image-outer img {
     float: left;
     width: 100%;
     padding: 16px 15px 0 30px;
+    position: relative;
     min-height: calc(100vh - 70px);
     z-index: 99;
 }
@@ -2139,27 +2135,6 @@ visuals .rec-image-outer img {
 .btn-in i {
     vertical-align: 0%;
 }
-
-img.vk-follow-btn {
-    margin-left: 9px;
-}
-#vk_subscribe {
-    float: none !important;
-    width: auto !important;
-    display: inline-block !important;
-}
-#vk_subscribe iframe {
-    margin: 10px 5px 0 !important;
-    float: none !important;
-    width: auto !important;
-    display: inline-block !important;
-    max-width: 160px !important;
-    background: #5181b8;
-    height: 28px;
-    border-radius: 3px;
-    padding: 3px 0;
-    box-shadow: 0 2px 6px 1px rgba(0,0,0,0.2);
-}
 @-moz-document url-prefix() {
     img.twitter-follow-button {
         width: auto !important;
@@ -2169,7 +2144,7 @@ img.vk-follow-btn {
         display: inline-block;
     }
     iframe.twitter-follow-button {
-        width: 156px !important;
+        min-width: 240px !important;
         height: 28px !important;
         visibility: visible !important;
         position: relative !important;
@@ -2191,10 +2166,6 @@ img.vk-follow-btn {
     .btn-in {
         box-shadow: none;
     }
-    #vk_subscribe iframe{
-       margin-top: 0px !important;
-       box-shadow: none;
-   }
 }
 /*result page css ends*/
 /*builder page css*/
@@ -2210,9 +2181,8 @@ img.vk-follow-btn {
 .right-section {
     width: 40%;
     float: left;
-    display: flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    display: block;
+    height:100%;
 }
 /*experian template component css starts*/
 /*checkbox css starts*/
@@ -2245,7 +2215,6 @@ img.vk-follow-btn {
 }
 .t1-question .question-components .checkbox-outer.ripple-dark.active label.control.control--checkbox span {
     padding-left: 20px;
-    color: #fff !important;
 }
 .ripple-dark.checkbox-outer.active .control--checkbox {
     border-radius: 15px;
@@ -2327,7 +2296,6 @@ img.vk-follow-btn {
 }
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
-    z-index: 1;
 }
 label.control.control--radio.lable-style.no-icon:focus {
     border: none;
@@ -2345,15 +2313,6 @@ label.control.control--radio.lable-style.no-icon:focus {
     float: left;
 }
 .radio-outer:last-child {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.radio-outer-base {
-    width: auto;
-    float: left;
-}
-.radio-outer-base:last-child {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -3115,19 +3074,7 @@ input[type=number] {
     top: 1px;
     left: 0px;
 }
-.check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set i {
-    position: absolute;
-    top: 1px;
-    left: 0px;
-}
 .radio-outer.ripple-dark.active label.radio-icon {
-    /*background: #406eb3;*/
-    /*color: #fff;*/
-    
-    border-radius: 15px;
-    margin-right: 10px;
-}
-.radio-outer-base.ripple-dark.active label.radio-icon {
     /*background: #406eb3;*/
     /*color: #fff;*/
     
@@ -3141,11 +3088,6 @@ input[type=number] {
     padding-left: 20px;
 }
 .check-comp .radio-outer.ripple-dark.active .control--radio .control__indicator.icon-set {
-    position: absolute;
-    top: 3px;
-    left: 15px;
-}
-.check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set {
     position: absolute;
     top: 3px;
     left: 15px;
@@ -4461,7 +4403,7 @@ span.abhi {
 
 
 /* common Header Footer css sahil */
-.common-head-outr.t1-question.editor-page-divider .common-footer-main { margin-bottom: 0px !important;}
+/*.common-head-outr.t1-question.editor-page-divider .common-footer-main { margin-bottom: 0px !important;}
 .common-header-main{ float: left; box-shadow: 0 -3px 9px -1px rgba(0,0,0,0.4); position: relative; z-index: 9; width: 100%; padding: 20px; min-height: 70px;}
 .common-header-main .common-header{ float: right; width: 80%; min-height: auto; padding: 0px; position: relative; z-index: 9; box-shadow: none !important; margin-right: 10px;}
 .common-head-outr{ display: block;}
@@ -4469,28 +4411,28 @@ span.abhi {
 .template-section .template-container.mobile .common-footer-main .col_1_links{ text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_2_links{ text-align: center !important;}
 .template-section .template-container.mobile .common-footer-main .col_3_links{ text-align: center !important;}
-.template-section .template-container.mobile .common-footer-main .col_4_links{ text-align: center !important;}
+.template-section .template-container.mobile .common-footer-main .col_4_links{ text-align: center !important;}*/
 
 
-/* .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
+/*.t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{width:100%;float:left;position: static; box-shadow:  none; padding: 0;}
 .t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
 .editor-page-divider .no-footer-links.no-header-links{ display: table-cell !important;}
-.header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;} */
+.header-next-div { width: 100%; height: calc(100vh - 60px); max-width: 100%; position: relative;  display: table;}*/
 .range-slider1.custom-slider1{z-index: 0;}
 
 .t1-question{ display: block;}
-/* .no-footer-links-section.no-header-links-section .inline-tablecell{ padding-bottom: 15px;} */
+.no-footer-links-section.no-header-links-section .inline-tablecell{ padding-bottom: 15px;}
 .inline-tablecell{ padding-bottom: 15px;}
-/* .no-footer-links-section.no-header-links-section .experian-outer{ }
-.no-footer-links-section.no-header-links-section .right-section{  min-height: 100vh;} */
+.no-footer-links-section.no-header-links-section .experian-outer{ }
+.no-footer-links-section.no-header-links-section .right-section{  min-height: 100vh;}
 .t1-question.no-footer-links-section { display: block;}
 .t1-question.no-footer-links-section.no-header-links-section { display: flex;}
 .t1-question.editor-page-divider .common-footer-main { margin-bottom: 0px !important;}
-/* #build .t1-result-inner{ min-height: 100vh !important;} */
+#build .t1-result-inner{ min-height: 100vh !important;}
 .editor-page-divider .common-header-main{ position: relative !important;}
 .editor-page-divider .common-header-main + .header-next-div { margin-top: 0px;}
 .common-header-main + .header-next-div { margin-top: 70px;}
@@ -4502,46 +4444,3 @@ span.abhi {
 .t1-landing .common-header-main + .no-footer-links{ padding-top: 0px;}
 .editor-page-divider .t1-question{ box-shadow: 0 2px 9px 2px rgba(0,0,0,0.4);}
 .t1-question{ box-shadow: none;}
-.page_0 .t1-question{ background-color: transparent;}
-.page_1 .t1-question{ background-color: transparent;}
-.inline-tablecell,.experian-outer{ background-color: #f7f7f7 !important;}
-
-/* textfield */
-
-.experian .checkbox-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 30px !important;  margin-right: 0px; }
-.checkbox-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
-.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
-.checkbox-outer.textfield.active label .control__indicator i{margin-top: 0px; margin-left: 0px;  color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px; left: 0px !important;}
-
-.checkbox-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
-.checkbox-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
-.experian .checkbox-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
-
-.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 30px !important;  margin-right: 0px; }
-.radio-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
-.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
-.radio-outer.textfield.active label .control__indicator.icon-set i{margin-top: 0px; margin-left: 0px; color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px;}
-
-.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
-.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
-.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 20px !important;  width: inherit !important;   margin-right: 0px;float: left; }
-
-
-.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left; transition: unset;}
-
-.checkbox-outer-base.active input.othersfield { width: calc(100% - 20px) !important;}
-.checkbox-outer-base input.othersfield{ width: calc(100% - 20px) !important;}
-.checkbox-outer input.othersfield { width: calc(100% - 30px) !important;}
-.checkbox-outer.active input.othersfield { width: calc(100% - 50px) !important;}
-
-.radio-outer-base.active input.othersfield{width: calc(100% - 20px) !important;}
-.radio-outer-base input.othersfield {width: calc(100% - 20px) !important;}
-.radio-outer.active input.othersfield { width: calc(100% - 50px) !important;}
-.radio-outer input.othersfield { width: calc(100% - 30px) !important;}
-
-.radio-outer-base{ width: auto; float: left;}
-
-.otherfield-inputbtn .button_textfield{ display: none;}
-.radio-outer.ripple-dark label.radio-icon{line-height:19px;}
-.radio-outer-base.ripple-dark label.radio-icon{line-height:19px;}
-.t1-button button > div{display:inline-block;float: left;}

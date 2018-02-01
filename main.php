@@ -51,8 +51,7 @@
 	  	    $imageLink = $response['data']['seoImage'];
 	    }else{
           $delayFactor = mt_rand(2500,5000);
-		  //$imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
-		  $imageLink = "http://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" .$shortUrl. "&viewport=1200x630&fullpage=1&delay=3";
+          $imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
 	    }
 
 	?>
