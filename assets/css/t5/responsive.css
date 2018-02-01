@@ -151,6 +151,11 @@ Developer: Bhawna */
     .checkbox-outer {
         margin-bottom: 10px;
     }
+    .radio-outer-base:not(.pic-selector),
+    .checkbox-outer-base,
+    .checkbox-outer {
+        margin-bottom: 10px;
+    }
     .control {
         font-size: 13px;
     }
@@ -180,6 +185,11 @@ Developer: Bhawna */
         padding-bottom: 10px;
     }
     .radio-outer,
+    .checkbox-outer-base,
+    .checkbox-outer {
+        margin-bottom: 5px;
+    }
+    .radio-outer-base,
     .checkbox-outer-base,
     .checkbox-outer {
         margin-bottom: 5px;

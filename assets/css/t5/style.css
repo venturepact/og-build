@@ -1007,7 +1007,17 @@
     .check-comp .checkbox-outer label.graded-tick i {
         color: #43c749 !important;
     }
+    .check-comp .radio-outer-base label.graded-tick i,
+    .check-comp .checkbox-outer-base label.graded-tick i,
+    .check-comp .checkbox-outer label.graded-tick i {
+        color: #43c749 !important;
+    }
     .check-comp .radio-outer label.graded-cross i,
+    .check-comp .checkbox-outer-base label.graded-cross i,
+    .check-comp .checkbox-outer label.graded-cross i {
+        color: red;
+    }
+    .check-comp .radio-outer-base label.graded-cross i,
     .check-comp .checkbox-outer-base label.graded-cross i,
     .check-comp .checkbox-outer label.graded-cross i {
         color: red;
@@ -1320,6 +1330,17 @@
         text-align: left;
     }
     .radio-outer:not(.pic-selector),
+    .checkbox-outer-base,
+    .checkbox-outer {
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 7px;
+        padding: 1px;
+        outline: none;
+        width: auto !important;
+        border-radius: 25px;
+    }
+    .radio-outer-base:not(.pic-selector),
     .checkbox-outer-base,
     .checkbox-outer {
         float: left;
@@ -3554,6 +3575,15 @@
         background-color: rgba(0, 0, 0, 0.05) !important;
         color: #333 !important
     }
+    .t1-question .check-comp .radio-outer-base.active label.graded-cross,
+    .t1-question .check-comp .checkbox-outer-base.active label.graded-cross,
+    .t1-question .check-comp .checkbox-outer.active label.graded-cross,
+    .t1-question .check-comp .radio-outer-base.active label.graded-tick,
+    .t1-question .check-comp .checkbox-outer-base.active label.graded-tick,
+    .t1-question .check-comp .checkbox-outer.active label.graded-tick {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+        color: #333 !important
+    }
     .ripple-dark.pic-selector .img-graded-box i {
         margin: 8px;
         width: 25px;
@@ -3777,6 +3807,7 @@
 #build .opinon-scale-custom .check-comp{border-spacing: 9px 0;margin:0 -5px;}
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
 .opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
+.opinon-scale-custom .radio-outer-base { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 4px !important;border:none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
@@ -3857,6 +3888,7 @@
     .structure-right-align .landing-right{float: left;right: 52%; left:auto}
     .structure-right-align .landing-page-mid button {    float: right;    margin-right: 0;    margin-left: 25px;}
     .structure-right-align .radio-outer:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
+    .structure-right-align .radio-outer-base:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
     .structure-right-align .control--radio .control__indicator.icon-set > div, .structure-right-align .check-comp .checkbox-outer .control__indicator.check-set > div {    float: right;    margin-right: -8px;    margin-left: 4px;    margin-top: 1px;    line-height: 1;}
     .structure-right-align  .t1-question button.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
     .structure-right-align .action-outer {    margin-right: 40px; margin-left: 0px;}
@@ -3881,6 +3913,7 @@
     .structure-right-align .common-result-main .t1-result-small-section .small-bot-sec {    float: left;}
     .structure-right-align .opinon-scale-custom .check-comp{float: right}
     .structure-right-align .opinon-scale-custom .radio-outer:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
+    .structure-right-align .opinon-scale-custom .radio-outer-base:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
     .structure-right-align .res-header .landing-page-header {    float: right; width: 100%}
     .structure-right-align  .opinion-postfix { float: right;    text-align: left;}
     .structure-right-align .opinion-prefix{ float: right;  padding-right:0; padding-left:10px;  text-align: right;}
@@ -4030,17 +4063,25 @@ tspan {
 
 .textfield.radio-outer-base { float: left; width: 100% !important;}
 .textfield.radio-outer { float: left; width: 100% !important;}
+.textfield.radio-outer-base { float: left; width: 100% !important;}
 .textfield.radio-outer .radio-icon{ float: left; width: auto;}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 10px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
 .textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
     width: calc(100% - 60px);
     background: transparent;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
+    float: right;
+    width: calc(100% - 60px);
+    background: transparent;
+    margin-top: 0px;
 }
 .textfield.radio-outer-base .control--radio::after {
     content: "\F111";

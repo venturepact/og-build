@@ -639,10 +639,12 @@
      .fixed-width.template-seven{ width: 100% !important;}
       .page_0 .landing-page-mid .selectize-control{ width:100% !important}
       .question-components .check-comp label{ line-height: 17px !important;}
-      .template-seven .radio-outer.radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer.radio-outer-base [type="radio"]:checked + label{padding-top: 2px !important;}
+      .template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label{padding-top: 2px !important;}
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label{padding-top: 3px !important;}
+      .template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label{padding-top: 3px !important;}
       .check-comp .checkbox-outer .control--checkbox{padding-top: 2px;}
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label { padding-left: 28px;}
+      .template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label { padding-left: 28px;}
       .dropdown-outer-main .selectize-control{ margin-bottom: 30px;}
 
      /* common Header Footer responsive css sahil */
@@ -854,6 +856,7 @@
     .template-seven [type="radio"] + label:before, .template-seven [type="radio"] + label:after{ width: 16px; height: 16px;}
     .template-seven [type="radio"]:not(:checked) + label, .template-seven [type="radio"]:checked + label{ line-height: 15px ;padding-left: 26px; padding-top: 3px !important;}
     .radio-outer{ margin-bottom: 0px;}
+    .radio-outer-base{ margin-bottom: 0px;}
     .template-seven [type="radio"]:not(:checked) + label:before, .template-seven [type="radio"]:not(:checked) + label:after{ margin: 4px 12px;}
     /*.questions .question-section-outer .input-field input{padding: 9px 15px;}*/
     .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 16px; line-height: 22px;}

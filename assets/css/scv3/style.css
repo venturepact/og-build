@@ -272,6 +272,8 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
 /*New Radio Style */
 .radio-outer { float: left; width: 100%; padding: 0px; border: none; font-size: 16px; font-weight: normal; line-height: 16px; border-bottom: 0; margin-bottom: 8px;  outline: none;}
 .radio-outer:last-child { border: 0; margin-bottom: 0px;}
+.radio-outer-base { float: left; width: 100%; padding: 0px; border: none; font-size: 16px; font-weight: normal; line-height: 16px; border-bottom: 0; margin-bottom: 8px;  outline: none;}
+.radio-outer-base:last-child { border: 0; margin-bottom: 0px;}
 .lable-style { padding: 0px 30px; }
 .control { display: block; position: relative; padding-left: 30px; margin-bottom: 15px; cursor: pointer; font-size: 16px; font-weight: 500; color: #ff6600; }
 .control input { position: absolute; z-index: 9; opacity: 0; width: auto; margin: 0; height: 0; }
@@ -659,9 +661,12 @@ align-items: center;
 .mobile-result-link { display: none !important; }
 .mobile-result-linkAdd { display: none; visibility: hidden; }
 .radio-outer.active .control { display: block; position: relative; cursor: pointer; font-size: 16px; font-weight: 500;  border-radius: 25px; color:#fff;     margin-left: -11px;}
+.radio-outer-base.active .control { display: block; position: relative; cursor: pointer; font-size: 16px; font-weight: 500;  border-radius: 25px; color:#fff;     margin-left: -11px;}
 
 .radio-outer.active .control i {color: #fff !important;}
+.radio-outer-base.active .control i {color: #fff !important;}
 .questions .question-components .radio-outer.active .control.no-icon, .questions .question-components .radio-outer .control.no-icon:hover { background: none;  border-radius: 0px; }
+.questions .question-components .radio-outer-base.active .control.no-icon, .questions .question-components .radio-outer-base .control.no-icon:hover { background: none;  border-radius: 0px; }
 .requiredAsteric { color: #f44336; display: none; }
 .errorMessage { float: left; width: 100%; text-align: left; padding-left: 2px; color: #f44336; font-size: 11px; }
 .landing-page-mid .input-section .input-outer input { float: left; margin: 10px 0px; font-size: 16px !important ;    padding-left: 30px;
@@ -1774,6 +1779,8 @@ margin-bottom: 20px
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;}
 .opinon-scale-custom .radio-outer {width: auto;float: none;margin-bottom: 2px;margin-top: -3px;margin-left: -1px; padding: 0;box-shadow: none;outline: none;display: table-cell;}
 .opinon-scale-custom .radio-outer:last-child{width: auto;float: none;margin-bottom: 2px;margin-top: -3px; margin-left: -1px;padding: 0;box-shadow: none;outline: none;display: table-cell;}
+.opinon-scale-custom .radio-outer-base {width: auto;float: none;margin-bottom: 2px;margin-top: -3px;margin-left: -1px; padding: 0;box-shadow: none;outline: none;display: table-cell;}
+.opinon-scale-custom .radio-outer-base:last-child{width: auto;float: none;margin-bottom: 2px;margin-top: -3px; margin-left: -1px;padding: 0;box-shadow: none;outline: none;display: table-cell;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom .mid-outer  .control.control--radio{width:100%;text-align:center;margin:0 auto !important;padding: 0 !important;height: auto !important;min-height: 30px;border: none;}
 .opinon-scale-custom span.abhi {display: none !important;}
@@ -1781,6 +1788,7 @@ margin-bottom: 20px
 .opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 5px;padding-right: 10px;word-break: break-word;}
 .opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 5px;padding-left: 10px;word-break: break-word;}
 .opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
+.opinon-scale-custom .radio-outer-base::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
 .opinon-scale-custom .mid-outer .control.control--radio {background: none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
 .page_2 .disc-set:hover + .help-checktip{visibility: visible}
@@ -2013,6 +2021,11 @@ margin: 0 !important;
 .radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
 .radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
 .radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer-base.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer-base.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer-base.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
 /* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
 .radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
 

@@ -402,6 +402,7 @@
     .sound-cloud-new [type="radio"] + label:before, .sound-cloud-new [type="radio"] + label:after{ width: 16px; height: 16px;}
     .sound-cloud-new [type="radio"]:not(:checked) + label, .sound-cloud-new [type="radio"]:checked + label{ line-height: 24px; min-height: 24px; padding-left: 35px;}
     .radio-outer{ margin-bottom: 4px;}
+    .radio-outer-base{ margin-bottom: 4px;}
     .sound-cloud-new [type="radio"]:not(:checked) + label:before, .sound-cloud-new [type="radio"]:not(:checked) + label:after{ margin: 4px 12px;}
     .questions .question-section-outer .input-field input{padding: 9px 15px;}
     .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 22px; line-height: 26px;}

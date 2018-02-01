@@ -1419,6 +1419,8 @@
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
     .poll-main .radio-outer.active .poll-percentage{line-height: 60px; font-size:14px;}
     .poll-main .radio-outer.active2 .poll-percentage{line-height: 60px; font-size:14px;}
+    .poll-main .radio-outer-base.active .poll-percentage{line-height: 60px; font-size:14px;}
+    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 60px; font-size:14px;}
     .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
     .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
 
@@ -2439,6 +2441,8 @@
     .custom-block.rating-custom .rating-inner i{font-size: 23px;}
     .poll-main .radio-outer.active .poll-percentage{line-height: 22px; font-size:14px;}
     .poll-main .radio-outer.active2 .poll-percentage{line-height: 22px; font-size:14px;}
+    .poll-main .radio-outer-base.active .poll-percentage{line-height: 22px; font-size:14px;}
+    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 22px; font-size:14px;}
 
     /* temp mobile otherfield */
     /* .otherfield-inputbtn input.othersfield{width: 90% !important; float: left; margin-left: 35px !important;}
@@ -3419,6 +3423,9 @@
         right: 8px;
     }
     .radio-outer .done-icon i {
+        font-size: 26px !important;
+    }
+    .radio-outer-base .done-icon i {
         font-size: 26px !important;
     }
     .recommendation-outer .mid-width span {

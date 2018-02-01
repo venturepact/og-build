@@ -1565,6 +1565,9 @@ li {
 .radio-outer.active {
     background: #f1f3f3;
 }
+.radio-outer-base.active {
+    background: #f1f3f3;
+}
 .control__indicator.check-set {
     left: 16px!important;
     top: 18px;
@@ -1647,6 +1650,25 @@ li {
     outline: none;
 }
 .radio-outer:last-child {
+    border: 1px solid #d9dad3 !important;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 1px #f7f6f6;
+}
+.radio-outer-base {
+    border: 1px solid #d9dad3;
+    border-bottom: 0;
+    width: 100%;
+    float: left;
+    margin-bottom: 2px;
+    margin-top: -3px;
+    margin-left: -1px;
+    padding: 1px;
+    box-shadow: 0 0 0 1px #f7f6f6;
+    outline: none;
+}
+.radio-outer-base:last-child {
     border: 1px solid #d9dad3 !important;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1778,6 +1800,7 @@ li {
     margin-bottom: 0;
     min-height: 56px;
     color: #666e78;
+    z-index: 1;
 }
 .t1-question .question-components .check-comp label input {
     visibility: hidden;
@@ -2842,6 +2865,12 @@ input[type=number] {
         border: 2px solid #d9dad3;
     }
     .template-section .radio-outer:last-child {
+        border: 2px solid #d9dad3 !important;
+    }
+    .template-section .radio-outer-base {
+        border: 2px solid #d9dad3;
+    }
+    .template-section .radio-outer-base:last-child {
         border: 2px solid #d9dad3 !important;
     }
     .template-section .checkbox-outer-base {

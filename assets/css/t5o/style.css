@@ -504,6 +504,8 @@ label.control.graded-tick:after { content: 'check'; display: block; width: 7px; 
 label.control.graded-cross:after { content: 'close'; display: block; width: 7px; height: 15px; border-width: 0 2px 2px 0; border-radius: 0; background: rgba(111, 24, 24, 0) !important; color: red; -webkit-transition: inherit; font-family: 'Material Icons'; position: absolute; top: -6px; right: 8px; font-size: 12px; }
 .check-comp .radio-outer label.graded-tick i, .check-comp .checkbox-outer-base label.graded-tick i, .check-comp .checkbox-outer label.graded-tick i { color: #43c749 !important; }
 .check-comp .radio-outer label.graded-cross i, .check-comp .checkbox-outer-base label.graded-cross i, .check-comp .checkbox-outer label.graded-cross i { color: red ; }
+.check-comp .radio-outer-base label.graded-tick i, .check-comp .checkbox-outer-base label.graded-tick i, .check-comp .checkbox-outer label.graded-tick i { color: #43c749 !important; }
+.check-comp .radio-outer-base label.graded-cross i, .check-comp .checkbox-outer-base label.graded-cross i, .check-comp .checkbox-outer label.graded-cross i { color: red ; }
 /*Help Tip Style*/
     #tooltip { background: #61696c; border: 1px solid #61696c; padding: 4px 10px; left: -170px; font-size: 13px; position: absolute; color: #fff; line-height: 18px; box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3); z-index: 9; text-align: left; border-radius: 2px; }
     .autoTooltip { vertical-align: sub; cursor: pointer; }
@@ -575,13 +577,16 @@ label.control.graded-cross:after { content: 'close'; display: block; width: 7px;
     .control input:checked ~ .control__indicator:after{display:block;}
     .text-overlay { background: -moz-linear-gradient(top, rgba(0, 15, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* FF3.6-15 */ background: -webkit-linear-gradient(top, rgba(0, 15, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */ background: linear-gradient(to bottom, rgba(0, 15, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000fff', endColorstr='#000000', GradientType=0); /* IE6-9 */ height: 70px; width: 100%; position: absolute; left: 0px; bottom: 0px; text-align: left; }
     .radio-outer:not(.pic-selector), .checkbox-outer-base, .checkbox-outer { float: left; margin-bottom: 10px; margin-right: 7px; padding: 1px; outline: none; width: auto !important; border-radius: 25px; }
+    .radio-outer-base:not(.pic-selector), .checkbox-outer-base, .checkbox-outer { float: left; margin-bottom: 10px; margin-right: 7px; padding: 1px; outline: none; width: auto !important; border-radius: 25px; }
     .control input, .check-comp input[type=checkbox], .check-comp input[type=radio] { display: none; }
     .check-comp label {     word-break: break-all; border: 1px solid #464646; border-radius: 25px; padding: 5px 22px; margin: 0; display: flex; }
     .check-comp .checkbox-outer .control input:checked ~ .control__indicator, .check-comp .control input:checked ~ .control__indicator.icon-set { color: #fff; }
     .check-comp .control__indicator i { font-size: 17px; }
     .control--radio .control__indicator.icon-set > div, .check-comp .checkbox-outer .control__indicator.check-set > div { float: left; margin-left: -8px; margin-right: 4px; margin-top: 1px; line-height: 1; }
     .check-comp .radio-outer.active label i, .check-comp .checkbox-outer-base.active label i, .check-comp .checkbox-outer.active label i { color: #fff; }
+    .check-comp .radio-outer-base.active label i, .check-comp .checkbox-outer-base.active label i, .check-comp .checkbox-outer.active label i { color: #fff; }
      .t1-question  .check-comp .radio-outer.active label, .t1-question  .check-comp .checkbox-outer-base.active label, .t1-question  .check-comp .checkbox-outer.active label { background-color: #1087ff  !important; color: #fff !important }
+     .t1-question  .check-comp .radio-outer-base.active label, .t1-question  .check-comp .checkbox-outer-base.active label, .t1-question  .check-comp .checkbox-outer.active label { background-color: #1087ff  !important; color: #fff !important }
     .pic-selector input { margin: 0; padding: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
     .pic-selector label.control { position: relative; cursor: pointer; background-size: cover; background-repeat: no-repeat; background-position: center top; border: 2px solid #d9dad3; -webkit-transition: all 100ms ease-in; -moz-transition: all 100ms ease-in; transition: all 100ms ease-in; overflow: hidden; cursor: pointer; padding: 0px; margin: 0; width: 100%; height: 0; padding-bottom: 100%; margin: 0; display: flex; border-radius: 0; }
     .pic-selector label.control .check-set.control__indicator { background: none !important; position: initial; border: none; height: inherit; width: inherit; left: 0 !important; top: 0; }
@@ -1335,6 +1340,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 }
 
 .t1-question  .check-comp .radio-outer.active label.graded-cross, .t1-question  .check-comp .checkbox-outer-base.active label.graded-cross, .t1-question  .check-comp .checkbox-outer.active label.graded-cross ,.t1-question  .check-comp .radio-outer.active label.graded-tick, .t1-question  .check-comp .checkbox-outer-base.active label.graded-tick, .t1-question  .check-comp .checkbox-outer.active label.graded-tick{background-color: rgba(16, 135, 255, 0.2) !important; color: #333 !important}
+.t1-question  .check-comp .radio-outer-base.active label.graded-cross, .t1-question  .check-comp .checkbox-outer-base.active label.graded-cross, .t1-question  .check-comp .checkbox-outer.active label.graded-cross ,.t1-question  .check-comp .radio-outer.active label.graded-tick, .t1-question  .check-comp .checkbox-outer-base.active label.graded-tick, .t1-question  .check-comp .checkbox-outer.active label.graded-tick{background-color: rgba(16, 135, 255, 0.2) !important; color: #333 !important}
 .ripple-dark.pic-selector .img-graded-box i {
     margin: 8px;
     width: 25px;
@@ -1491,6 +1497,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 #build .opinon-scale-custom .check-comp{border-spacing: 8px 0;margin:0 -5px;}
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
 .opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
+.opinon-scale-custom .radio-outer-base { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 4px !important;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
@@ -1510,13 +1517,19 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 10px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
 .textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
     width: calc(100% - 60px);
     background: transparent;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
+    float: right;
+    width: calc(100% - 60px);
+    background: transparent;
+    margin-top: 0px;
 }
 .textfield.radio-outer-base .control--radio::after {
     content: "\F111";
