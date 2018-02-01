@@ -1230,6 +1230,22 @@ temp .range {
     border: 0;
     margin-bottom: 0px;
 }
+.radio-outer-base {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    border-bottom: 0;
+    margin-bottom: 8px;
+    outline: none;
+}
+.radio-outer-base:last-child {
+    border: 0;
+    margin-bottom: 0px;
+}
 .lable-style {
     padding: 0px 30px;
 }
@@ -2374,10 +2390,31 @@ a:focus {
 .questions .question-components .radio-outer label:hover .check-set {
     color: #fff;
 }
+.questions .question-components .radio-outer-base label:hover {
+    margin-bottom: 0;
+    border-radius: 25px;
+    color: #fff;
+}
+.questions .question-components .radio-outer-base label.no-icon:hover {
+    margin-bottom: 0;
+    border-radius: 25px;
+    color: inherit;
+}
+.questions .question-components .radio-outer-base label:hover i {
+    color: #fff;
+}
+.questions .question-components .radio-outer-base label:hover .check-set {
+    color: #fff;
+}
 /*.cp1 .check-comp .radio-outer label:hover.control i { color: #fff; }*/
 
 .questions .question-components .radio-outer.active .control.no-icon,
 .questions .question-components .radio-outer .control.no-icon:hover {
+    background: none;
+    border-radius: 0px;
+}
+.questions .question-components .radio-outer-base.active .control.no-icon,
+.questions .question-components .radio-outer-base .control.no-icon:hover {
     background: none;
     border-radius: 0px;
 }
@@ -3401,3 +3438,33 @@ span.abhi {
 .opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;top: 90%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
 .opinon-scale-custom .mid-outer .control.control--radio {background: none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
+
+/* textfield */
+.checkbox-outer-base.textfield label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+.checkbox-outer-base.textfield.active label{ padding-right: 0px !important; margin-top: 6px; margin-right: 0px;}
+
+.checkbox-outer.textfield label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px;}
+.checkbox-outer.textfield.active label{ padding-right: 0px !important; margin-top: 7px; margin-right: 0px; background: none;margin-left: -14px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.checkbox-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 2px; margin-left: 2px;}
+.checkbox-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 10px;}
+
+.radio-outer.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer-base.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer-base.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer-base.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+/* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
+.radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
+
+.sound-cloud-new .othersfield + .button_textfield{ display: none;}
+.sound-cloud-new .otherfield-inputbtn .button_textfield{ display: none;}
+input{ outline: none;}

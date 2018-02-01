@@ -1049,3 +1049,10 @@ border-radius: 50%;*/
 }
 
 .template-seven .radio-outer.active [type="radio"]:checked + label:after, .template-seven .radio-outer.active [type="radio"].with-gap:checked + label:after{ background: #fff;}
+.template-seven .radio-outer-base.active [type="radio"]:checked + label:after,
+.template-seven .radio-outer-base.active [type="radio"].with-gap:checked + label:before,
+.template-seven .radio-outer-base.active [type="radio"].with-gap:checked + label:after {
+  border: 2px solid #fff;
+}
+
+.template-seven .radio-outer-base.active [type="radio"]:checked + label:after, .template-seven .radio-outer-base.active [type="radio"].with-gap:checked + label:after{ background: #fff;}

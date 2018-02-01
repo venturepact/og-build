@@ -991,3 +991,12 @@
 .sound-cloud-new .radio-outer.active [type="radio"].with-gap:checked + label:after {
     background: #fff;
 }
+.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after,
+.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before,
+.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #fff;
+}
+.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after,
+.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after {
+    background: #fff;
+}

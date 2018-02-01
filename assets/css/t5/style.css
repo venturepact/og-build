@@ -232,13 +232,13 @@
     .resulthidden {
         display: none !important;
     }
-    .t1-result-small-container,
+    /*.t1-result-small-container,
     .t1-result-leadform,
     .t1-result-full-container,
     .t1-result-leadform .input-section {
         float: left;
         width: 100%;
-    }
+    }*/
     .t1-result-small-section p {
         margin: 0px;
         word-break: break-word;
@@ -444,6 +444,7 @@
         float: left;
         margin-top: 0;
         margin-bottom: 0;
+        position: absolute; left: 0; width: 100%; bottom: 0;
     }
     .page_2 {
         position: relative;
@@ -1006,7 +1007,17 @@
     .check-comp .checkbox-outer label.graded-tick i {
         color: #43c749 !important;
     }
+    .check-comp .radio-outer-base label.graded-tick i,
+    .check-comp .checkbox-outer-base label.graded-tick i,
+    .check-comp .checkbox-outer label.graded-tick i {
+        color: #43c749 !important;
+    }
     .check-comp .radio-outer label.graded-cross i,
+    .check-comp .checkbox-outer-base label.graded-cross i,
+    .check-comp .checkbox-outer label.graded-cross i {
+        color: red;
+    }
+    .check-comp .radio-outer-base label.graded-cross i,
     .check-comp .checkbox-outer-base label.graded-cross i,
     .check-comp .checkbox-outer label.graded-cross i {
         color: red;
@@ -1203,13 +1214,13 @@
     .no-media .small-top-sec {
         width: 30%;
     }
-    .t1-result-topheading p {
+    /*.t1-result-topheading p {
         display: inline;
         font-size: 28px;
     }
     .t1-result-topheading p:first-letter {
         font-size: 48px;
-    }
+    }*/
     .question-components input {
         border-top: none;
         border-radius: 0;
@@ -1319,6 +1330,17 @@
         text-align: left;
     }
     .radio-outer:not(.pic-selector),
+    .checkbox-outer-base,
+    .checkbox-outer {
+        float: left;
+        margin-bottom: 10px;
+        margin-right: 7px;
+        padding: 1px;
+        outline: none;
+        width: auto !important;
+        border-radius: 25px;
+    }
+    .radio-outer-base:not(.pic-selector),
     .checkbox-outer-base,
     .checkbox-outer {
         float: left;
@@ -2042,11 +2064,11 @@
         width: 100%;
         height: 1px;
     }
-    .t1-result-leadform .lead-heading-temp1 {
+    /*.t1-result-leadform .lead-heading-temp1 {
         font-size: 16px;
         text-transform: uppercase;
         margin-bottom: 20px;
-    }
+    }*/
     .t4-default-result-outer p a,
     .t4-default-result-outer p a {
         color: inherit;
@@ -2084,7 +2106,7 @@
     }
     .share-heading {
         font-size: 16px;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         clear: both;
         display: block;
         width: 100%;
@@ -2093,7 +2115,7 @@
     }
     .redirect-heading {
         font-size: 16px;
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         clear: both;
         display: block;
         width: 100%;
@@ -2337,14 +2359,14 @@
     .recommendation-outer {
         /*position: relative;*/
     }
-    .recommendation-outer .mid-width {
+    /*.recommendation-outer .mid-width {
         font-size: 24px;
         width: 100%;
         display: block;
         float: left;
         padding: 0px 75px;
         margin-top: 20px;
-    }
+    }*/
     .recommendation-outer .mid-width span p {
         margin: 0;
     }
@@ -3267,9 +3289,9 @@
     input {
         -webkit-transform: translate3d(0, 0, 0);
     }
-    .t1-result-leadform .input-outer input {
+    /*.t1-result-leadform .input-outer input {
         font-size: 15px !important;
-    }
+    }*/
     .showLoader:after {
         content: ' .';
         animation: dots 1s steps(5, end) infinite;
@@ -3553,6 +3575,15 @@
         background-color: rgba(0, 0, 0, 0.05) !important;
         color: #333 !important
     }
+    .t1-question .check-comp .radio-outer-base.active label.graded-cross,
+    .t1-question .check-comp .checkbox-outer-base.active label.graded-cross,
+    .t1-question .check-comp .checkbox-outer.active label.graded-cross,
+    .t1-question .check-comp .radio-outer-base.active label.graded-tick,
+    .t1-question .check-comp .checkbox-outer-base.active label.graded-tick,
+    .t1-question .check-comp .checkbox-outer.active label.graded-tick {
+        background-color: rgba(0, 0, 0, 0.05) !important;
+        color: #333 !important
+    }
     .ripple-dark.pic-selector .img-graded-box i {
         margin: 8px;
         width: 25px;
@@ -3759,21 +3790,6 @@
 .CustomHtml .t1-ques-component.action-outer button.prime-action{float: none;}
 
 
-/* other field */
-
-.textfield.radio-outer-base { float: left; width: 100% !important; }
-.textfield.radio-outer { float: left; width: 100% !important;}
-.textfield.radio-outer .radio-icon{ float: left; width: auto;}
-.textfield.radio-outer label.control--radio { float: left !important;}
-.textfield.radio-outer input { float: left; width: 100%; background: none; margin-top: 10px;}
-.textfield.checkbox-outer-base { float: left; width: 100% !important; }
-.textfield.checkbox-outer-base label.control--checkbox { float: left; }
-.textfield.checkbox-outer-base input { float: left; width: 100%; background: none; margin-top: 10px;}
-.textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox { float: left; width: auto !important;}
-.textfield.checkbox-outer input { float: left; width: 100%; background: none; margin-top: 10px;}
-
-/* other field */
 
 .common-result-main .common-result-bot-icons .crb-right .stickyfooter .col{display: inline-block}
 
@@ -3791,6 +3807,7 @@
 #build .opinon-scale-custom .check-comp{border-spacing: 9px 0;margin:0 -5px;}
 .opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
 .opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
+.opinon-scale-custom .radio-outer-base { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 4px !important;border:none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
@@ -3871,6 +3888,7 @@
     .structure-right-align .landing-right{float: left;right: 52%; left:auto}
     .structure-right-align .landing-page-mid button {    float: right;    margin-right: 0;    margin-left: 25px;}
     .structure-right-align .radio-outer:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
+    .structure-right-align .radio-outer-base:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
     .structure-right-align .control--radio .control__indicator.icon-set > div, .structure-right-align .check-comp .checkbox-outer .control__indicator.check-set > div {    float: right;    margin-right: -8px;    margin-left: 4px;    margin-top: 1px;    line-height: 1;}
     .structure-right-align  .t1-question button.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
     .structure-right-align .action-outer {    margin-right: 40px; margin-left: 0px;}
@@ -3895,6 +3913,7 @@
     .structure-right-align .common-result-main .t1-result-small-section .small-bot-sec {    float: left;}
     .structure-right-align .opinon-scale-custom .check-comp{float: right}
     .structure-right-align .opinon-scale-custom .radio-outer:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
+    .structure-right-align .opinon-scale-custom .radio-outer-base:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
     .structure-right-align .res-header .landing-page-header {    float: right; width: 100%}
     .structure-right-align  .opinion-postfix { float: right;    text-align: left;}
     .structure-right-align .opinion-prefix{ float: right;  padding-right:0; padding-left:10px;  text-align: right;}
@@ -4039,3 +4058,79 @@ tspan {
     background-size: 115px;
     background-position: center;
 }
+
+/* other field */
+
+.textfield.radio-outer-base { float: left; width: 100% !important;}
+.textfield.radio-outer { float: left; width: 100% !important;}
+.textfield.radio-outer-base { float: left; width: 100% !important;}
+.textfield.radio-outer .radio-icon{ float: left; width: auto;}
+
+.textfield.checkbox-outer-base { float: left; width: 100% !important;}
+.textfield.checkbox-outer { float: left; width: 100% !important;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
+    float: right;
+    width: calc(100% - 60px);
+    background: transparent;
+    margin-top: 0px;
+}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
+    float: right;
+    width: calc(100% - 60px);
+    background: transparent;
+    margin-top: 0px;
+}
+.textfield.radio-outer-base .control--radio::after {
+    content: "\F111";
+    font-family: FontAwesome;
+    position: absolute;
+    font-size: 11PX !important;
+    margin: 0px !important;
+    border: 0px !important;
+    transform: scale(0) translate(-50% , -50%) !important;
+    left: 50%;
+    top: 50%;
+ 
+}
+.template-five .textfield.radio-outer-base [type="radio"]:checked + .control--radio::after{  transform: scale(1) translate(-50% , -50%) !important; }
+.template-five .textfield.radio-outer-base [type="radio"]:checked + .control--radio::before {  border: 1px solid #fff !important;}
+.template-five  .textfield.checkbox-outer-base  [type="checkbox"]:checked + .control--checkbox:before {  border: 1px solid #fff !important;}
+.textfield.radio-outer-base .control--radio::before , .textfield.checkbox-outer-base .control--checkbox:before {
+    content: "";
+    border: 1px solid #333 !important;
+    margin: 0 !important;
+    width: 18px !important;
+    height: 18px !important;
+    padding: 0 !important;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    border-radius: 50%;
+    transform: scale(1) translate(-50% , -50%) !important;
+}
+.template-five .textfield.checkbox-outer-base [type="checkbox"]:checked + .control--checkbox:after {  transform:rotate(27deg) scale(1) translate(-50% , -50%) !important; color: #fff}
+.textfield.checkbox-outer-base .control--checkbox:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin: 0px !important;
+    border-top: 1px solid transparent !important;
+    -webkit-transform: scale(0) translate(-50% , -50%) !important;
+    transform: rotate(27deg) scale(0) translate(-50% , -50%) !important;
+    left: 50%;
+    top: 50%;
+    border-right: 1px solid #fff !important;
+    border-left: 1px solid transparent !important;
+    border-bottom: 1px solid #fff !important;
+    width: 5px;
+    height: 10px;
+    margin-left: -2px !important;
+}
+.otherfield-inputbtn button.button_textfield.submit-textbox-btn{display: none}
+.textfield .control--radio .control__indicator.icon-set > div, .textfield.checkbox-outer .control__indicator.check-set > div{margin: 0}
+
+/* other field */
+.control-ver2 .pic-selector:focus {outline: none;}

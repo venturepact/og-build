@@ -151,6 +151,11 @@ Developer: Bhawna */
     .checkbox-outer {
         margin-bottom: 10px;
     }
+    .radio-outer-base:not(.pic-selector),
+    .checkbox-outer-base,
+    .checkbox-outer {
+        margin-bottom: 10px;
+    }
     .control {
         font-size: 13px;
     }
@@ -180,6 +185,11 @@ Developer: Bhawna */
         padding-bottom: 10px;
     }
     .radio-outer,
+    .checkbox-outer-base,
+    .checkbox-outer {
+        margin-bottom: 5px;
+    }
+    .radio-outer-base,
     .checkbox-outer-base,
     .checkbox-outer {
         margin-bottom: 5px;
@@ -629,6 +639,7 @@ Developer: Bhawna */
    .t1-result .no-footer-links.no-header-links{ padding: 30px 0!important;}
    .t1-result .no-footer-links.no-header-links .t1-result-main{padding: 50px 0 0 !important}
    .opinon-scale-custom .errorMessage{top:27px;}
+   .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -833,7 +844,7 @@ Developer: Bhawna */
     .isIframe.landing-inner,
     .isIframe .landing-page-mid {
         height: auto;
-        min-height: initial;
+        min-height: initial !important;
     }
     .t1-question button.back-action {
         margin-bottom: 25px;
@@ -856,6 +867,7 @@ Developer: Bhawna */
     .common-result .t1-logo { margin-top: 10px !important;}
     .common-result-main .t1-result-leadform .common-result-bot-icons .crb-left{padding-top:15px;}
     .template-five .t1-logo.res-header.common-result-outcome{ width: 100%; position: absolute; top: 20px;}
+    .range-slider1.custom-slider1 ul{ display: none;}
 }
 @media (max-width: 319px) {
     .t1-question .prime-action {
@@ -908,7 +920,7 @@ Developer: Bhawna */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     .text-overlay {
-        top: 5px;
+        /* top: 5px; */
         padding-bottom: 100%;
     }
     .recom-section .outer-main {
@@ -1054,4 +1066,7 @@ Developer: Bhawna */
 }
 @media (min-width: 641px) and (max-width: 995px) {
     .gradedquiz-main .common-result .landing-page-header{ position: absolute !important; top: 20px !important; }
+}
+@media (min-width: 0px) and (max-width: 375px){
+    .opinon-scale-custom label.control.control--radio{padding:4px 0px !important;}
 }
