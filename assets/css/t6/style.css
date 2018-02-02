@@ -5797,9 +5797,9 @@ button.submit-checkbox-img.ripple-light {
     text-align: center;
 }
 
-.checkbox-outer.active .abhi.hide {
+/* .checkbox-outer.active .abhi.hide {
     display: block !important;
-}
+} */
 
 .checkbox-outer button.submit-checkbox-img.ripple-light {
     top: 75%;
@@ -6535,6 +6535,13 @@ button.button_textfield.submit-textbox-btn {
 .t1-landing .no-footer-links .t1-landing-inner {
     padding-top: 125px;
     padding-bottom: 125px;
+}
+.t1-landing.no-logo .no-footer-links .t1-landing-inner {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+input.postfixset {
+    margin-bottom: 50px !important;
 }
 
 .t1-result .no-footer-links.no-header-links {
