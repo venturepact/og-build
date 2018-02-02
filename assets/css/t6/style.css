@@ -1869,6 +1869,9 @@ visuals .t1-result-inner-left #og-table-excel {
 .pic-selector.radio-outer:last-child {
     border: none !important;
 }
+.pic-selector.radio-outer-base:last-child {
+    border: none !important;
+}
 
 .lable-style {
     padding: 16px 30px;
@@ -5543,6 +5546,9 @@ input {
 .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {
     width: 200px !important
 }
+.radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer {
+    width: 200px !important
+}
 
 .w100.text-center .submit-checkbox-img {
     float: none;
@@ -5791,9 +5797,9 @@ button.submit-checkbox-img.ripple-light {
     text-align: center;
 }
 
-.checkbox-outer.active .abhi.hide {
+/* .checkbox-outer.active .abhi.hide {
     display: block !important;
-}
+} */
 
 .checkbox-outer button.submit-checkbox-img.ripple-light {
     top: 75%;
@@ -5808,6 +5814,24 @@ button.submit-checkbox-img.ripple-light {
 }
 
 .radio-outer.radio-icon-custom.ripple-dark label.control.control--radio.radio-icon::before, .checkbox-outer.ripple-dark label.control.control--checkbox::before {
+    position: absolute;
+    content: "";
+    display: block !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    opacity: 0.1;
+    border: 0px !important;
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-origin: 0px 0px;
+    transform: rotate(0deg)
+}
+.radio-outer-base.radio-icon-custom.ripple-dark label.control.control--radio.radio-icon::before, .checkbox-outer.ripple-dark label.control.control--checkbox::before {
     position: absolute;
     content: "";
     display: block !important;
@@ -5899,6 +5923,9 @@ span.current::after {
 .radio-outer.pic-selector .done-icon {
     display: none;
 }
+.radio-outer-base.pic-selector .done-icon {
+    display: none;
+}
 
 .Result .lightSticky {
     display: none;
@@ -5972,6 +5999,9 @@ button.button_textfield.submit-textbox-btn {
 }
 
 .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-cross::after, .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-cross::after, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-cross::after, .pic-selector.ripple-dark.active label.control.control--checkbox.graded-cross::after, .radio-outer.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-tick::after, .radio-outer.pic-selector.ripple-dark.active label.control.control--radio.graded-tick::after, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-tick::after, .pic-selector.ripple-dark.active label.control.control--checkbox.graded-tick::after {
+    display: none !important
+}
+.radio-outer-base.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-cross::after, .radio-outer-base.pic-selector.ripple-dark.active label.control.control--radio.graded-cross::after, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-cross::after, .pic-selector.ripple-dark.active label.control.control--checkbox.graded-cross::after, .radio-outer-base.radio-icon-custom.ripple-dark.active label.control.control--radio.radio-icon.graded-tick::after, .radio-outer-base.pic-selector.ripple-dark.active label.control.control--radio.graded-tick::after, .checkbox-outer.ripple-dark.active label.control.control--checkbox.graded-tick::after, .pic-selector.ripple-dark.active label.control.control--checkbox.graded-tick::after {
     display: none !important
 }
 
@@ -6165,6 +6195,29 @@ button.button_textfield.submit-textbox-btn {
     outline: none;
     display: table-cell;
 }
+.opinon-scale-custom .radio-outer-base {
+    width: auto;
+    float: none;
+    margin-bottom: 2px;
+    margin-top: -3px;
+    margin-left: -1px;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    display: table-cell;
+}
+
+.opinon-scale-custom .radio-outer-base:last-child {
+    width: auto;
+    float: none;
+    margin-bottom: 2px;
+    margin-top: -3px;
+    margin-left: -1px;
+    padding: 0;
+    box-shadow: none;
+    outline: none;
+    display: table-cell;
+}
 
 .opinon-scale-custom label::before, .opinon-scale-custom label::after {
     display: none;
@@ -6239,6 +6292,24 @@ button.button_textfield.submit-textbox-btn {
 }
 
 .opinon-scale-custom .radio-outer.active::after {
+    opacity: 1;
+}
+
+.opinon-scale-custom .radio-outer-base::after {
+    position: relative;
+    content: "";
+    width: 100%;
+    float: left;
+    left: 0;
+    right: 0;
+    height: 5px;
+    z-index: 1;
+    top: 90%;
+    opacity: 0.1;
+    transform: none;
+}
+
+.opinon-scale-custom .radio-outer-base.active::after {
     opacity: 1;
 }
 
@@ -6464,6 +6535,13 @@ button.button_textfield.submit-textbox-btn {
 .t1-landing .no-footer-links .t1-landing-inner {
     padding-top: 125px;
     padding-bottom: 125px;
+}
+.t1-landing.no-logo .no-footer-links .t1-landing-inner {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+input.postfixset {
+    margin-bottom: 50px !important;
 }
 
 .t1-result .no-footer-links.no-header-links {
@@ -6774,6 +6852,7 @@ button.button_textfield.submit-textbox-btn {
 
 .poll-main.check-comp .radio-outer label {
     padding-right: 78px;
+    z-index: 1;
 }
 
 .poll-main .radio-outer.active .poll-percentage {
@@ -6796,6 +6875,33 @@ button.button_textfield.submit-textbox-btn {
 }
 
 .poll-main .radio-outer .poll-percentage {
+    display: none;
+}
+.poll-main.check-comp .radio-outer-base label {
+    padding-right: 78px;
+    z-index: 1;
+}
+
+.poll-main .radio-outer-base.active .poll-percentage {
+    width: auto;
+    position: absolute;
+    right: 10px;
+    line-height: 28px;
+    font-size: 16px;
+    display: block !important;
+}
+
+.poll-main .radio-outer-base.active2 .poll-percentage {
+    width: auto;
+    position: absolute;
+    right: 10px;
+    line-height: 28px;
+    font-size: 16px;
+    display: block !important;
+    color: #666e78 !important;
+}
+
+.poll-main .radio-outer-base .poll-percentage {
     display: none;
 }
 
@@ -7710,6 +7816,9 @@ button.button_textfield.submit-textbox-btn {
 .template-six .poll-main .radio-outer.active .poll-color {
     display: block !important;
 }
+.template-six .poll-main .radio-outer-base.active .poll-color {
+    display: block !important;
+}
 
 .template-six .poll-main .pic-selector .poll-color-light {
     display: none !important;
@@ -7730,6 +7839,21 @@ button.button_textfield.submit-textbox-btn {
 .template-six .poll-main .pic-selector.radio-outer .poll-percentage {
     display: none !important;
 }
+.template-six .poll-main .pic-selector.radio-outer-base .poll-color {
+    display: none !important;
+}
+
+.template-six .poll-main .pic-selector.radio-outer-base.active .poll-color {
+    display: none !important;
+}
+
+.template-six .poll-main .pic-selector.radio-outer-base.active .poll-percentage {
+    display: none !important;
+}
+
+.template-six .poll-main .pic-selector.radio-outer-base .poll-percentage {
+    display: none !important;
+}
 
 .template-six .poll-main .radio-icon-custom .poll-color-light {
     display: none !important;
@@ -7748,6 +7872,21 @@ button.button_textfield.submit-textbox-btn {
 }
 
 .template-six .poll-main .radio-icon-custom.radio-outer .poll-percentage {
+    display: none !important;
+}
+.template-six .poll-main .radio-icon-custom.radio-outer-base .poll-color {
+    display: none !important;
+}
+
+.template-six .poll-main .radio-icon-custom.radio-outer-base.active .poll-color {
+    display: none !important;
+}
+
+.template-six .poll-main .radio-icon-custom.radio-outer-base.active .poll-percentage {
+    display: none !important;
+}
+
+.template-six .poll-main .radio-icon-custom.radio-outer-base .poll-percentage {
     display: none !important;
 }
 
@@ -7771,6 +7910,9 @@ button.button_textfield.submit-textbox-btn {
 }
 
 .template-six .poll-main .radio-outer .mid-outer .poll-color {
+    display: block;
+}
+.template-six .poll-main .radio-outer-base .mid-outer .poll-color {
     display: block;
 }
 
@@ -7841,29 +7983,32 @@ button.button_textfield.submit-textbox-btn {
 
 .control-ver2 .done-iconoutr {
     position: relative;
-    float: left;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 70px;
+    float: none;
+    left: 47%;
+    top: -9px;
     z-index: 999;
+    width: auto;
+    text-align: center;
+    margin: 0 auto;
+    transform: translateX(-50%);
 }
 
 .control-ver2 .done-icon {
-  position: absolute;
-  z-index: 9;
-  left: -10px;
-  bottom: 30px;
-  top: inherit;
-  right: inherit;
-  background: #fff;
-  padding-top: 0px;
-  padding-right: 0px;
-  float: left;
-  height: 17px;
-  display: block !important;
-  border-radius:3px;
-  cursor: pointer;
-  pointer-events: none;
+    position: absolute;
+    z-index: 9;
+    left: inherit;
+    bottom: inherit;
+    top: inherit;
+    right: inherit;
+    background: #fff;
+    padding-top: 0px;
+    padding-right: 0px;
+    float: none;
+    height: 17px;
+    display: inline-block !important;
+    border-radius: 3px;
+    cursor: pointer;
+    pointer-events: none;
 }
 
 .control-ver2 .submit-checkbox-outr {
@@ -7883,8 +8028,12 @@ button.button_textfield.submit-textbox-btn {
   display: inline-block !important;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
+.mid-outer {
+    display: inline-table;
+}
 .control-ver2 .done-icon i { font-size: 24px !important;width: 17px;line-height: 0.7; position: relative; left: -4px;}
 .control-ver2 .radio-outer .done-icon {border-radius: 50%;}
+.control-ver2 .radio-outer-base .done-icon {border-radius: 50%;}
 .control-ver2 .done-icon.unchecked i { font-size: 24px !important; color: #d9dad3;}
 .control-ver2 .pic-selector.active .blink-border {
     animation-name: blinker;
@@ -7952,6 +8101,16 @@ button.button_textfield.submit-textbox-btn {
     right: auto;
     line-height: 29px;
 }
+.structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {
+    left: inherit;
+    right: auto;
+    line-height: 29px;
+}
+
+.structure-right-align .poll-main .radio-outer-base.active .poll-percentage {
+    right: auto;
+    line-height: 29px;
+}
 
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
 
@@ -7990,6 +8149,9 @@ button.button_textfield.submit-textbox-btn {
 .template-six .poll-main.check-comp .radio-outer.ripple-dark label.control.control--radio.radio-icon::before, .template-six .poll-main.check-comp .checkbox-outer.ripple-dark label.control.control--checkbox::before {
     background: #fff !important;
 }
+.template-six .poll-main.check-comp .radio-outer-base.ripple-dark label.control.control--radio.radio-icon::before, .template-six .poll-main.check-comp .checkbox-outer.ripple-dark label.control.control--checkbox::before {
+    background: #fff !important;
+}
 
 .active .ko-overlay1 {
     position: absolute;
@@ -8020,6 +8182,9 @@ button.button_textfield.submit-textbox-btn {
 .poll-main.check-comp .radio-outer.active label:before {
     opacity: 0.2 !important;
 }
+.poll-main.check-comp .radio-outer-base.active label:before {
+    opacity: 0.2 !important;
+}
 
 .template-six .radio-outer-base .ko-overlay1 {
     display: none;
@@ -8029,6 +8194,9 @@ button.button_textfield.submit-textbox-btn {
 
 
 .poll-main .ripple-dark.checkbox-outer:hover label.control, .poll-main .ripple-dark.pic-selector:hover label.control, .poll-main .ripple-dark.radio-outer.radio-icon-custom:hover label.control {
+    transform: none;
+}
+.poll-main .ripple-dark.checkbox-outer:hover label.control, .poll-main .ripple-dark.pic-selector:hover label.control, .poll-main .ripple-dark.radio-outer-base.radio-icon-custom:hover label.control {
     transform: none;
 }
 
@@ -8083,6 +8251,24 @@ button.button_textfield.submit-textbox-btn {
 .radio-outer.textfield.radio-icon-custom {
     position: relative;
 }
+.radio-outer-base.textfield.radio-icon-custom button.button_textfield.submit-textbox-btn {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+    padding: 8px 10px;
+    font-size: 12px;
+    height: auto !important;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.radio-outer-base.textfield.radio-icon-custom {
+    position: relative;
+}
 
 .t1-question .textfield.radio-outer-base .othersfield {
     margin: 8px 0 !important;
@@ -8113,6 +8299,15 @@ button.button_textfield.submit-textbox-btn {
     height: auto;
     min-height: auto;
 }
+.checkbox-outer.textfield input.othersfield.extrafield, .radio-outer-base.textfield input.othersfield {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+    padding: 10px 15px;
+    /* line-height: 1; */
+    height: auto;
+    min-height: auto;
+}
 
 .textfield.checkbox-outer-base button.submit-checkbox-img.ripple-light {
     margin-left: 10px;
@@ -8124,6 +8319,9 @@ button.button_textfield.submit-textbox-btn {
 .poll-main .ripple-dark.checkbox-outer:hover label.control, 
 .poll-main .ripple-dark.pic-selector:hover label.control, 
 .poll-main .ripple-dark.radio-outer.radio-icon-custom:hover label.control{
+      transform: none;
+}
+.poll-main .ripple-dark.radio-outer-base.radio-icon-custom:hover label.control{
       transform: none;
 }
 .likes-parent {

@@ -1204,6 +1204,22 @@ temp .range {
     border: 0;
     margin-bottom: 0px;
 }
+.radio-outer-base {
+    float: left;
+    width: 100%;
+    padding: 0px;
+    border: none;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    border-bottom: 0;
+    margin-bottom: 8px;
+    outline: none;
+}
+.radio-outer-base:last-child {
+    border: 0;
+    margin-bottom: 0px;
+}
 .lable-style {
     padding: 0px 30px;
 }
@@ -1960,7 +1976,7 @@ input[type=range]:focus::-ms-fill-upper {
     bottom: 18px
 }
 .selectize-dropdown-content {
-    max-height: auto !important;
+    max-height: 200px !important;
 }
 .redo-link {
     position: absolute;
@@ -2288,8 +2304,26 @@ a:focus {
 .radio-outer.active .control i {
     color: #fff !important;
 }
+.radio-outer-base.active .control {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    color: #fff;
+    margin-left: -11px;
+}
+.radio-outer-base.active .control i {
+    color: #fff !important;
+}
 .questions .question-components .radio-outer.active .control.no-icon,
 .questions .question-components .radio-outer .control.no-icon:hover {
+    background: none;
+    border-radius: 0px;
+}
+.questions .question-components .radio-outer-base.active .control.no-icon,
+.questions .question-components .radio-outer-base .control.no-icon:hover {
     background: none;
     border-radius: 0px;
 }
@@ -3881,6 +3915,11 @@ span.abhi {
 .radio-outer.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
 .radio-outer.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
 .radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
+.radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
+.radio-outer-base.textfield.active label{padding-right: 4px !important;margin-top: 5px;width: 40px !important; margin-right: 10px; }
+.radio-outer-base.textfield.active label .control__indicator.icon-set { height: auto !important; min-height: auto !important; line-height: 17px; width: 22px;}
+.radio-outer-base.textfield.active label .control__indicator.icon-set i{ margin-top: 1px; margin-left: 1px;}
+.radio-outer-base.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
 /* .radio-outer.textfield.active .othersfield {width: calc(100% - 42px);}
 .radio-outer.textfield .othersfield {width: calc(100% - 26px);} */
 

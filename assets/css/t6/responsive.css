@@ -288,6 +288,7 @@
     }
     .opinion-label-outer{font-size: 12px;}
     .opinon-scale-custom .radio-outer span.t6.hide{margin:0 !important;}
+    .opinon-scale-custom .radio-outer-base span.t6.hide{margin:0 !important;}
     .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
     .custom-block.rating-custom .rating-inner i{font-size: 16px;margin-right: 3px;padding: 4px;}
     
@@ -335,6 +336,10 @@
     .active2 .ko-overlay1{width:124px; height:124px;}
     .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
     .range-slider1.custom-slider1 ul{ display: none;}
+    .t1-landing.no-logo .no-footer-links .t1-landing-inner {
+        padding-top: 20px !important;
+        padding-bottom: 40px !important;
+    }
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -630,7 +635,7 @@
 
 @media (min-width:1680px) and (max-width:1920px) {
     .t1-slider-nav a i{    font-size: 32px;    }
-    .ripple-dark {padding: 0 25px;}
+    .ripple-dark {padding: 0 20px;}
     .submit-textbox input{max-width: 90%;}
     .main-heading ,  .main-heading h1{ font-size: 52px; line-height: 60px; margin-bottom: 20px; }
     .main-heading p{ font-size: 60px; margin-bottom: 30px; }
@@ -691,7 +696,7 @@
     .t1-landing-leadform select { margin-bottom: 15px;}
     .t1-result-leadform select { padding: 9px !important;}
     /*visuals .t1-result-inner-left-video{padding-bottom: 30.5% }*/
-    .control-ver2 .done-icon{top:-90px;}
+    /* .control-ver2 .done-icon{top:inherit;} */
 }
 
 @media (min-width:1367px) and (max-width:1920px){
@@ -737,6 +742,7 @@
        .graded-cross .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
        .t1-question-slider { width: 90%; }
     .radio-outer.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
+    .radio-outer-base.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
     .ripple-dark.checkbox-outer > span, .pic-selector .abhi ,.ripple-dark .mid-outer span{font-size: 14px; }
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question{border-width: 15px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 60px !important}
@@ -751,8 +757,8 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:120px; height:120px;}
     .active2 .ko-overlay1{width:132px; height:132px;}
      /*checkbox icon polls*/
-    .control-ver2 .done-icon{top:45px;}
-    .control-ver2 .done-icon i {position: relative;top: -1.7px;}
+    /* .control-ver2 .done-icon{top:45px;} */
+    .control-ver2 .done-icon i {position: relative;}
 }
 @media (min-width:820px) and (max-width:1024px) {
 }
@@ -803,6 +809,7 @@
     .range-slider .slider-buttom-outer{ min-height: 42px;}
     .range-slider .slider-buttom-outer .submit-checkbox-img{ top: 10px;}
     .radio-outer .done-icon i{font-size: 26px !important;}
+    .radio-outer-base .done-icon i{font-size: 26px !important;}
     .recommendation-outer .mid-width span{ font-size: 20px; margin-bottom: 15px;}
     .t1-result-leadform .t1-result-cta .prime-action{ font-size: 11px; padding: 12px 18px;}
     .recom-section .left-sec{ min-height: 240px;}
@@ -842,6 +849,7 @@
         height: 120px!important;
     }
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 160px !important;}
+    .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 160px !important;}
     .graded-tick .img-graded-box {top: 95px !important;     }
     .graded-cross .img-graded-box {  top: 95px !important;     }
         .landing-page-mid leadform .input-section .input-outer{padding: 0px}
@@ -854,8 +862,8 @@
         .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){padding: 0px !important}
         .landing-page-mid leadform .input-section .input-outer span{left:0px;}
         .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 13px !important;}
-        .control-ver2 .done-icon i {position: relative;top: -1.6px; left:0.5px;}
-        .control-ver2 .done-icon{top:35px;}
+        .control-ver2 .done-icon i {position: relative;}
+        /* .control-ver2 .done-icon{top:35px;} */
 }
 @media (min-width:0px) and (max-width:640px) {
     .t1-slider-question .input-field label{width: 40px}
@@ -887,6 +895,7 @@
     .t1-slider-nav a i {    font-size: 24px;}
     .custom-pager {    bottom: 40px;    }
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
+    .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
     .t1-ques-component .input-section .input-outer span{top:48px !important;}
     .bGImage{height: auto; padding-top: 25%}
     .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
@@ -938,6 +947,7 @@
 }
 @media (max-width:359px){
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 100% !important;}
+    .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 100% !important;}
     .poll-main .ko-progress-circle{left:80px;}
 }
 @media (max-width:319px){
@@ -961,6 +971,6 @@
     .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill{width:134px; height:134px;}
     .poll-main .ko-progress-circle .ko-progress-circle__slice .ko-progress-circle__fill{clip: rect(0px, 67px, 134px, 0px);}
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:124px; height:124px;margin-left: 5px; margin-top: 5px;}
-    .control-ver2 .done-icon{top:45px;}
+    /* .control-ver2 .done-icon{top:45px;} */
     .active2 .ko-overlay1 {width: 134px;height: 134px; left: -4px;}
 }

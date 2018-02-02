@@ -2327,6 +2327,7 @@ img.vk-follow-btn {
 }
 .t1-question .question-components .check-comp label {
     margin-bottom: 0;
+    z-index: 1;
 }
 label.control.control--radio.lable-style.no-icon:focus {
     border: none;
@@ -2344,6 +2345,15 @@ label.control.control--radio.lable-style.no-icon:focus {
     float: left;
 }
 .radio-outer:last-child {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.radio-outer-base {
+    width: auto;
+    float: left;
+}
+.radio-outer-base:last-child {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -3105,7 +3115,19 @@ input[type=number] {
     top: 1px;
     left: 0px;
 }
+.check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set i {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+}
 .radio-outer.ripple-dark.active label.radio-icon {
+    /*background: #406eb3;*/
+    /*color: #fff;*/
+    
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.radio-outer-base.ripple-dark.active label.radio-icon {
     /*background: #406eb3;*/
     /*color: #fff;*/
     
@@ -3119,6 +3141,11 @@ input[type=number] {
     padding-left: 20px;
 }
 .check-comp .radio-outer.ripple-dark.active .control--radio .control__indicator.icon-set {
+    position: absolute;
+    top: 3px;
+    left: 15px;
+}
+.check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set {
     position: absolute;
     top: 3px;
     left: 15px;
@@ -4490,17 +4517,31 @@ span.abhi {
 .checkbox-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
 .experian .checkbox-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
 
-.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 30px !important;  margin-right: 0px; }
+.experian .radio-outer.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 30px !important;  margin-right: 0px; }
 .radio-outer.textfield.active label{padding-right: 4px !important; margin-top: 7px;  width: 50px !important;  margin-right: 0px; }
 .radio-outer.textfield label .control__indicator.icon-set i{ margin-top: 0px; margin-left: 0px;}
 .radio-outer.textfield.active label .control__indicator.icon-set i{margin-top: 0px; margin-left: 0px; color: #fff; border-radius: 15px; padding-left: 12px; padding-right: 13px; line-height: 23px;}
 
 .radio-outer-base.textfield label{padding-right: 0px !important;margin-top: 5px;width: 40px !important; margin-right: 0px;}
 .radio-outer-base.textfield.active label{padding-right: 0px !important;margin-top: 5px;width: 20px !important; margin-right: 0px; float: left;}
-.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  width: 20px !important;  margin-right: 0px;float: left; }
+.experian .radio-outer-base.textfield label{padding-right: 0px !important; margin-top: 7px;  min-width: 20px !important;  width: inherit !important;   margin-right: 0px;float: left; }
 
-.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left;}
+
+.t1-question .question-components input.othersfield { width: calc(100% - 50px); float: left; transition: unset;}
+
+.checkbox-outer-base.active input.othersfield { width: calc(100% - 20px) !important;}
+.checkbox-outer-base input.othersfield{ width: calc(100% - 20px) !important;}
+.checkbox-outer input.othersfield { width: calc(100% - 30px) !important;}
+.checkbox-outer.active input.othersfield { width: calc(100% - 50px) !important;}
+
+.radio-outer-base.active input.othersfield{width: calc(100% - 20px) !important;}
+.radio-outer-base input.othersfield {width: calc(100% - 20px) !important;}
+.radio-outer.active input.othersfield { width: calc(100% - 50px) !important;}
+.radio-outer input.othersfield { width: calc(100% - 30px) !important;}
+
+.radio-outer-base{ width: auto; float: left;}
 
 .otherfield-inputbtn .button_textfield{ display: none;}
 .radio-outer.ripple-dark label.radio-icon{line-height:19px;}
+.radio-outer-base.ripple-dark label.radio-icon{line-height:19px;}
 .t1-button button > div{display:inline-block;float: left;}
