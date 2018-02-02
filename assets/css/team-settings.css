@@ -58,10 +58,10 @@
         background-image: linear-gradient(#009688, #009688), linear-gradient(#d7dbdd, #d7dbdd)
     }
     .my-profile .form-group.is-focused .form-control {
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb5f66), to(#fb5f66)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-        background-image: -webkit-linear-gradient(#fb5f66, #fb5f66), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: -o-linear-gradient(#fb5f66, #fb5f66), -o-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: linear-gradient(#fb5f66, #fb5f66), linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+        background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -o-linear-gradient(#fb545b, #fb545b), -o-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
         -webkit-background-size: 100% 2px, 100% 1px;
         background-size: 100% 2px, 100% 1px;
         box-shadow: none;
@@ -105,9 +105,9 @@
     .my-profile .btn-white {
         background: #fff;
         border-radius: 0!important;
-        border: 1px solid #fb5f66;
+        border: 1px solid #ffb5b8;
         font-size: 11px!important;
-        color: #fb5f66;
+        color: #fb545b;
         font-family: montserratregular!important;
         padding: 6px 30px!important;
         margin: 35px 0 0!important
@@ -130,13 +130,13 @@
     .my-profile .btn-changeEmail {
         border: 1px solid #dae2e6;
         padding: 5px 10px;
-        color: #fb5f66;
+        color: #f56151;
         background: #fff;
         cursor: pointer;
     }
     .my-profile .btn-changeEmail:hover {
-        border: 1px solid #fb5f66;
-        background: #fb5f66;
+        border: 1px solid #f56151;
+        background: #f56151;
         color: #fff
     }
     .my-profile span.btn-favicon-outer {
@@ -151,12 +151,12 @@
     .my-profile .btn-favicon {
         border: 1px solid #dae2e6;
         padding: 5px 10px;
-        color: #fb5f66;
+        color: #f56151;
         background: #fff
     }
     .my-profile .btn-favicon:hover {
-        border: 1px solid #fb5f66;
-        background: #fb5f66;
+        border: 1px solid #f56151;
+        background: #f56151;
         color: #fff
     }
     .form-group input[type=file] {
@@ -224,7 +224,7 @@
         top: -20px;
         font-size: 10px!important;
         font-family: montserratregular;
-        color: #fb5f66!important
+        color: #fb545b!important
     }
     .change-password .form-group.label-floating:not(.is-empty) label.control-label {
         text-transform: uppercase
@@ -244,10 +244,10 @@
     }
     .change-password .form-group.is-focused .form-control {
         outline: 0;
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb5f66), to(#fb5f66)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
-        background-image: -webkit-linear-gradient(#fb5f66, #fb5f66), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: -o-linear-gradient(#fb5f66, #fb5f66), -o-linear-gradient(#D2D2D2, #D2D2D2);
-        background-image: linear-gradient(#fb5f66, #fb5f66), linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#fb545b), to(#fb545b)), -webkit-gradient(linear, left top, left bottom, from(#D2D2D2), to(#D2D2D2));
+        background-image: -webkit-linear-gradient(#fb545b, #fb545b), -webkit-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: -o-linear-gradient(#fb545b, #fb545b), -o-linear-gradient(#D2D2D2, #D2D2D2);
+        background-image: linear-gradient(#fb545b, #fb545b), linear-gradient(#D2D2D2, #D2D2D2);
         -webkit-background-size: 100% 2px, 100% 1px;
         background-size: 100% 2px, 100% 1px;
         -webkit-box-shadow: none;
@@ -267,9 +267,9 @@
     .change-password .btn-white {
         background: #fff!important;
         border-radius: 0!important;
-        border: 1px solid #fb5f66!important;
+        border: 1px solid #ffb5b8!important;
         font-size: 11px!important;
-        color: #fb5f66;
+        color: #fb545b;
         font-family: montserratregular!important;
         padding: 6px 30px!important;
         margin: 15px 0 0!important
@@ -340,13 +340,13 @@
     }
     .company-content-action a {
         font-size: 11px;
-        color: #fb5f66;
+        color: #fb545b;
         margin-right: 20px;
         float: left
     }
     .company-content-action a:focus,
     .company-content-action a:hover {
-        color: #fb5f66
+        color: #fa5282
     }
     .company-content-action a i.material-icons {
         font-size: 12px;
@@ -400,7 +400,7 @@
         text-align: center
     }
     .companies-box .img-block-red {
-        background: #fb5f66;
+        background: #f87b80;
         text-align: center
     }
     .companies-box h4.name,
@@ -487,7 +487,7 @@
         position: relative
     }
     .companies-box .icon-grey:hover {
-        color: #fb5f66
+        color: #fb545b
     }
     .companies-box .icon-grey i {
         font-size: 18px
@@ -530,7 +530,7 @@
         padding: 0
     }
     .companies-box .icon-red {
-        color: #fb5f66;
+        color: #fb545b;
         float: left;
         width: 100%
     }
@@ -625,13 +625,13 @@
     #my-account .my-account-inner-tabs .nav-tabs.nav-justified>li.active>a {
         background: #fff!important;
         cursor: pointer;
-        color: #fb5f66!important
+        color: #f56151!important
     }
     #my-account .my-account-inner-tabs .nav-tabs.nav-justified li.active a i {
         display: block
     }
     #my-account .my-account-inner-tabs .nav-tabs.nav-justified li a i {
-        color: #fb5f66;
+        color: #f56151;
         font-size: 14px;
         position: absolute;
         right: 17px;
@@ -656,7 +656,7 @@
     #change-email .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #change-email.modal button.close.btn-close {
@@ -695,9 +695,9 @@
         width: 100%
     }
     #change-email .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 12px;
         padding: 7px 20px;
@@ -795,7 +795,7 @@
     }
     .membership-top-wrapper .company-dropdown-wrapper i.material-icons:focus,
     .membership-top-wrapper .company-dropdown-wrapper i.material-icons:hover {
-        color: #fb5f66
+        color: #f87b80
     }
     .company-dropdown-wrapper .dropdown-menu .company-dropdown-list>li>a .company-site {
         opacity: .5
@@ -827,7 +827,7 @@
     }
     .membership-top-wrapper-sec1-right a:hover,
     .membership-top-wrapper-sec1-right a:hover .mat-icon i.material-icons {
-        color: #fb5f66
+        color: #fb545b
     }
     .membership-top-wrapper-sec1-right a:nth-child(3) {
         padding-right: 0
@@ -856,7 +856,7 @@
         margin-right: 10px
     }
     .membership-error-msg {
-        background: #fb5f66;
+        background: rgba(251, 84, 91, .8);
         font-size: 11px;
         color: #fff;
         padding: 6px 5px 3px;
@@ -901,9 +901,9 @@
         text-transform: none
     }
     .membership-details .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 6px 20px;
@@ -953,13 +953,13 @@
     #membership-details .membership-details-inner-tabs .nav-tabs.nav-justified>li.active>a {
         background: #fff!important;
         cursor: pointer;
-        color: #fb5f66!important
+        color: #f56151!important
     }
     #membership-details .membership-details-inner-tabs .nav-tabs.nav-justified li.active a i {
         display: block
     }
     #membership-details .membership-details-inner-tabs .nav-tabs.nav-justified li a i {
-        color: #fb5f66;
+        color: #f56151;
         font-size: 14px;
         position: absolute;
         right: 17px;
@@ -1049,9 +1049,9 @@
         text-transform: uppercase
     }
     .payment-method .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         padding: 6px 20px;
         margin: 10px 0 20px;
@@ -1193,7 +1193,7 @@
     #billing-detail .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #billing-detail.modal button.close.btn-close {
@@ -1239,9 +1239,9 @@
         width: 100%
     }
     #billing-detail .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 6px 40px;
@@ -1266,7 +1266,7 @@
     #billing-detail.modal .btn-red-outline.hvr-sweep-to-right:active,
     #billing-detail.modal .btn-red-outline.hvr-sweep-to-right:focus {
         color: #fff!important;
-        background: #fb5f66!important
+        background: #ffb5b8!important
     }
     #billing-detail .modal-footer {
         padding: 25px 20px 20px;
@@ -1564,7 +1564,7 @@
         opacity: .5
     }
     .billing-grey-top .border-center {
-        border-bottom: 2px solid #fb5f66;
+        border-bottom: 2px solid #fb545b;
         display: inline-block;
         width: 28px;
         position: relative;
@@ -1618,9 +1618,9 @@
         min-height: 130px;
     }
     .billing-grey-top .btn-white-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 6px 20px;
@@ -1631,8 +1631,8 @@
         float: none;
     }
     .billing-grey-top .btn-white-red-outline.hvr-sweep-to-right::before {
-        background: #fb5f66;
-        color: #fb5f66!important
+        background: #ffb5b8;
+        color: #fb545b!important
     }
     .billing-grey-top .btn-try-it {
         padding: 6px 35px
@@ -1713,7 +1713,7 @@
         font-size: 10px;
         padding: 3px 5px;
         color: #fff;
-        background-color: #fb5f66;
+        background-color: #fb545b;
         text-transform: uppercase;
         top: -5px;
         right: -7px
@@ -1725,7 +1725,7 @@
         position: absolute;
         display: block;
         border-style: solid;
-        border-color: #fb5f66 transparent transparent;
+        border-color: #fb545b transparent transparent;
         bottom: -7px
     }
     .business-box .ribbon:after {
@@ -1737,7 +1737,7 @@
         top: 0;
         border-width: 10px;
         border-style: solid;
-        border-color: #fb5f66 #fb5f66 #fb5f66 transparent
+        border-color: #fb545b #fb545b #fb545b transparent
     }
     .enterprise-box {
         z-index: 1;
@@ -1747,7 +1747,7 @@
         z-index:  1 !important
     }
     .cancel-member {
-        color: #fb5f66;
+        color: #fb545b;
         font-size: 11px;
         text-transform: uppercase;
         border-top: 1px solid #dae2e6;
@@ -1766,11 +1766,11 @@
     }
     .cancel-member span:hover {
         background: #fdb6b9;
-        color: #fb5f66;
+        color: #fb545b;
         border-color: #fdb6b9
     }
     .cancel-member:hover {
-        color: #fb5f66
+        color: #fa5282
     }
     .billing-plans-help {
         font-size: 10px;
@@ -1800,10 +1800,10 @@
         font-size: 14px
     }
     .billingpricing-text p a {
-        color: #fb5f66
+        color: #fb545b
     }
     .billingpricing-text p a:hover {
-        color: #fb5f66
+        color: #fa5282
     }
     @media (max-width: 767px) {
         #membership-details .tab-content.tab-sub-content {
@@ -1830,7 +1830,7 @@
     .companyName,
     .team-settings-wrapper h5 {
         float: left;
-        color: #fb5f66;
+        color: #f56151;
         font-size: 16px;
         font-family: montserratregular!important;
         margin-top: 0;
@@ -1867,7 +1867,7 @@
     .company-dropdown-wrapper:hover .btn.dropdown-toggle i,
     .team-settings-wrapper .company-dropdown-wrapper i.material-icons:focus,
     .team-settings-wrapper .company-dropdown-wrapper i.material-icons:hover {
-        color: #fb5f66
+        color: #f87b80
     }
     .company-dropdown-wrapper button.btn.btn-default.dropdown-toggle {
         padding: 0;
@@ -2003,12 +2003,12 @@
         text-align: justify
     }
     .team-settings-wrapper p a.upgrade-plan {
-        color: #fb5f66;
+        color: #fb545b;
         font-size: 12px;
         font-family: montserratbold
     }
     .team-settings-wrapper p a.upgrade-plan:hover {
-        color: #fb5f66
+        color: #fa5282
     }
     #dropdown-menu.company-dropdown-wrapper .form-group {
         padding-bottom: 0;
@@ -2060,7 +2060,7 @@
     }
     .filter-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {
         font-size: 16px;
-        color: #fb5f66;
+        color: #f87b80;
         position: relative;
         top: 4px
     }
@@ -2185,7 +2185,7 @@
         background: #269fd8
     }
     .active-users-box .img-block-red {
-        background: #fb5f66
+        background: #f87b80
     }
     .text-block {
         float: left;
@@ -2279,7 +2279,7 @@
         opacity: .5
     }
     .active-users-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons:hover {
-        color: #fb5f66;
+        color: #f87b80;
         opacity: .5
     }
     .active-users-dropdown-wrapper button.btn.btn-default.dropdown-toggle:focus,
@@ -2373,7 +2373,7 @@
         margin-right: 10px
     }
     .active-users-box .icon-red {
-        color: #fb5f66;
+        color: #fb545b;
         font-size: 24px
     }
     .tab-pane .access-requests,
@@ -2435,13 +2435,13 @@
     #team-settings .team-settings-inner-tabs .nav-tabs.nav-justified>li.active>a {
         background: #fff!important;
         cursor: pointer;
-        color: #fb5f66!important
+        color: #f56151!important
     }
     #team-settings .team-settings-inner-tabs .nav-tabs.nav-justified li.active a i {
         display: block
     }
     #team-settings .team-settings-inner-tabs .nav-tabs.nav-justified li a i {
-        color: #fb5f66;
+        color: #f56151;
         font-size: 14px;
         position: absolute;
         right: 17px;
@@ -2459,7 +2459,7 @@
         float: right
     }
     #add-new-user span#upgradeLink button {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
         border-radius: 0;
         font-size: 10px;
@@ -2473,7 +2473,7 @@
     }
     #add-new-user span#upgradeLink button:hover {
         background: #fdb6b9;
-        color: #fb5f66;
+        color: #fb545b;
         border-color: #fdb6b9
     }
     #add-new-user .alert.alert-danger p {
@@ -2493,7 +2493,7 @@
     #accept-access-req .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #accept-access-req.modal button.close.btn-close {
@@ -2530,9 +2530,9 @@
         padding: 15px 25px
     }
     #accept-access-req .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 7px 20px;
@@ -2542,7 +2542,7 @@
         text-transform: uppercase!important
     }
     #accept-access-req.modal .btn-red-outline.hvr-sweep-to-right::before {
-        background: #fb5f66;
+        background: #ffb5b8;
         color: #fff!important
     }
     #accept-access-req.modal .btn-red-outline.hvr-sweep-to-right:hover {
@@ -2551,7 +2551,7 @@
     #accept-access-req.modal .btn-red-outline.hvr-sweep-to-right:active,
     #accept-access-req.modal .btn-red-outline.hvr-sweep-to-right:focus {
         color: #fff!important;
-        background: #fb5f66!important
+        background: #ffb5b8!important
     }
     #accept-access-req.modal .form-group {
         padding-bottom: 7px;
@@ -2636,7 +2636,7 @@
     #join-companyUC .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #join-company.modal button.close.btn-close,
@@ -2683,9 +2683,9 @@
         width: 100%!important
     }
     #join-company .btn-red-outline {
-        color: #fb5f66!important;
+        color: #fb545b!important;
         background-color: #fff!important;
-        border-color: #fb5f66!important;
+        border-color: #ffb5b8!important;
         border-radius: 0!important;
         font-size: 11px!important;
         padding: 7px 40px;
@@ -2713,7 +2713,7 @@
     #join-company.modal span.icon-search i.material-icons,
     #join-companyUC.modal span.icon-search i.material-icons {
         font-size: 24px;
-        color: #fb5f66
+        color: #fb545b
     }
     #join-company .modal-footer,
     #join-companyUC .modal-footer {
@@ -2772,7 +2772,7 @@
     }
     #join-company .companies-box .img-block-red,
     #join-companyUC .companies-box .img-block-red {
-        background: #fb5f66;
+        background: #f87b80;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -2883,7 +2883,7 @@
         font-size: 20px
     }
     .setPassword .btn-red-outline.hvr-sweep-to-right::before {
-        background: #fb5f66;
+        background: #ffb5b8;
         color: #fff!important
     }
     .val-success-msg {
@@ -2902,7 +2902,7 @@
     }
     .val-error-msg {
         font-size: 12px;
-        color: #fb5f66;
+        color: #fb545b;
         margin-top: 20px
     }
     .val-error-msg span.icon-error {
@@ -2912,7 +2912,7 @@
     }
     .val-error-msg span.icon-error i.material-icons {
         font-size: 14px;
-        color: #fb5f66
+        color: #fb545b
     }
     .modal .val-success-msg {
         font-size: 12px;
@@ -2969,9 +2969,9 @@
         padding: 15px 25px 30px
     }
     #add-new-user .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 7px 20px;
@@ -3000,7 +3000,7 @@
         width: 14px;
         height: 14px;
         top: 0;
-        border: 1px solid #fb5f66;
+        border: 1px solid #fb545b;
         border-radius: 50%;
         margin: 0 7px 0 auto;
         cursor: pointer
@@ -3014,7 +3014,7 @@
         float: left
     }
     .radio-inline input[type=radio]:checked+label {
-        background: #fb5f66
+        background: #fb545b
     }
     .radio-inline input[type=radio]:checked+label::after {
         font-family: "Material Icons";
@@ -3045,7 +3045,7 @@
         top: -12px;
         left: 0;
         padding: 0;
-        color: #fb5f66!important;
+        color: #fb545b!important;
         font-size: 11px;
         margin: 0;
         float: left;
@@ -3065,7 +3065,7 @@
         font-size: 12px!important;
         margin-right: 5px;
         margin-top: 1px;
-        color: #fb5f66!important
+        color: #fb545b!important
     }
     .alert.alert-danger.custom-alert {
         padding: 10px;
@@ -3086,7 +3086,7 @@
     #add-new-companyUC .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #add-new-company.modal button.close.btn-close,
@@ -3135,9 +3135,9 @@
     }
     #add-new-company .btn-red-outline,
     #add-new-companyUC .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 7px 20px;
@@ -3182,7 +3182,7 @@
     #change-company-name .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #change-company-name.modal button.close.btn-close {
@@ -3254,9 +3254,9 @@
         width: 78%
     }
     #change-company-name .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 12px;
         padding: 7px 30px;
@@ -3376,7 +3376,7 @@
     #setup-payment .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #setup-payment.modal button.close.btn-close {
@@ -3423,9 +3423,9 @@
         width: 100%
     }
     #setup-payment .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         padding: 6px 40px;
         margin: 10px 18px 10px 0;
         float: right
@@ -3439,7 +3439,7 @@
     #setup-payment.modal .btn-red-outline.hvr-sweep-to-right:active,
     #setup-payment.modal .btn-red-outline.hvr-sweep-to-right:focus {
         color: #fff!important;
-        background: #fb5f66!important
+        background: #ffb5b8!important
     }
     #setup-payment .btn-grey-outline {
         color: #61696c;
@@ -3518,7 +3518,7 @@
     }
     #setup-payment.modal .modal-footer i.material-icons {
         font-size: 14px;
-        color: #fb5f66;
+        color: #fb545b;
         position: relative;
         top: 1px
     }
@@ -3546,9 +3546,9 @@
     .btn-white {
         background: #fff;
         border-radius: 0;
-        border: 1px solid #fb5f66;
+        border: 1px solid #ffb5b8;
         font-size: 11px;
-        color: #fb5f66;
+        color: #fb545b;
         font-family: montserratregular!important;
         padding: 6px 30px;
         margin: 35px 0 0!important;
@@ -3562,20 +3562,20 @@
         text-transform: uppercase
     }
     .btn-white.hvr-sweep-to-right::before {
-        background: #fb5f66;
+        background: #ffb5b8;
         color: #fff!important
     }
     .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         padding: 6px 30px;
         margin: 20px 0;
         font-family: montserratregular;
         float: right
     }
     .btn-red-outline.hvr-sweep-to-right::before {
-        background: #fb5f66;
+        background: #ffb5b8;
         color: #fff!important
     }
     .btn-grey-outline {
@@ -3620,7 +3620,7 @@
         }
         .team-settings-wrapper h5 {
             float: left;
-            color: #fb5f66;
+            color: #f56151;
             font-size: 24px;
             font-family: montserratregular!important;
             margin-top: 0;
@@ -3768,11 +3768,11 @@
         }
         .active-users-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons {
             font-size: 18px;
-            color: #fb5f66;
+            color: #f87b80;
             opacity: 1
         }
         .active-users-dropdown-wrapper button.btn.btn-default.dropdown-toggle i.material-icons:hover {
-            color: #fb5f66;
+            color: #f87b80;
             opacity: 1
         }
         .active-users-dropdown-wrapper .dropdown-menu {
@@ -4283,9 +4283,9 @@
         padding: 10px 0 0
     }
     .payment-history .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 7px 20px;
@@ -4296,7 +4296,7 @@
         float: right
     }
     .modal .btn-red-outline.hvr-sweep-to-right::before {
-        background: #fb5f66;
+        background: #ffb5b8;
         color: #fff!important
     }
     .modal .btn-red-outline.hvr-sweep-to-right:hover {
@@ -4305,12 +4305,12 @@
     .modal .btn-red-outline.hvr-sweep-to-right:active,
     .modal .btn-red-outline.hvr-sweep-to-right:focus {
         color: #fff!important;
-        background: #fb5f66!important
+        background: #ffb5b8!important
     }
     .payment-history .payment-history-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb545b;
         border-radius: 7px 7px 0 0
     }
     .payment-history .payment-history-header button.close.btn-close {
@@ -4359,7 +4359,7 @@
         border-bottom: 1px solid transparent
     }
     .payment-history .payment-history-footer i.material-icons {
-        color: #fb5f66
+        color: #fb545b
     }
     .payment-history .form-group.form-group-radio {
         float: left;
@@ -4459,7 +4459,7 @@
         background-color: #dea928!important
     }
     .invoice-not-paid {
-        background-color: #fb5f66!important
+        background-color: #fb545b!important
     }
     .credit-notes {
         text-align: center;
@@ -4467,7 +4467,7 @@
         padding: 2px 7px;
         border-radius: 10px;
         border: 1px solid;
-        color: #fb5f66!important;
+        color: #fb545b!important;
         font-family: montserratbold;
         position: relative;
         top: -2px;
@@ -4499,7 +4499,7 @@
         padding: 40px 40px 40px 30px
     }
     #forgot-password .modal-right {
-        background: #fb5f66;
+        background: #fb545b;
         float: left;
         width: 50%;
         height: 530px;
@@ -4583,7 +4583,7 @@
     }
     .first-login a.text-red-link,
     .first-signUp a.text-red-link {
-        color: #fb5f66!important;
+        color: #fb545b!important;
         font-size: 11px;
         text-decoration: underline!important
     }
@@ -4630,7 +4630,7 @@
     }
     .cc-modal .modal-content.modal-content-credit {
         background-image: url(../../assets/images/og-trans.png);
-        background-color: #fb5f66;
+        background-color: #fb545b;
         background-repeat: no-repeat;
         background-position: -60px -75px;
         padding: 20px 25px 25px;
@@ -4666,7 +4666,7 @@
         letter-spacing: 2px;
         min-width: 67px;
         text-align: center;
-        color: #fb5f66!important;
+        color: #fb545b!important;
         margin-right: 10px
     }
     .cc-modal input.cc-number.cc-number-last {
@@ -4708,7 +4708,7 @@
         padding: 8px 12px;
         border-radius: 3px;
         text-align: left;
-        color: #fb5f66!important;
+        color: #fb545b!important;
         width: 228px
     }
     .cc-modal.modal .separator {
@@ -4779,9 +4779,9 @@
         top: 3px
     }
     .cc-modal.modal .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 6px 30px;
@@ -4862,7 +4862,7 @@
     #new-setup-payment .modal-header {
         padding: 10px 17px;
         border-bottom: none;
-        background: #fb5f66;
+        background: #fb6066;
         border-radius: 7px 7px 0 0
     }
     #new-setup-payment.modal button.close.btn-close {
@@ -4902,7 +4902,7 @@
         width: 100%
     }
     #new-setup-payment.modal .modal-body h4.wc-name {
-        color: #fb5f66;
+        color: #fb545b;
         font-size: 18px;
         font-family: montserratregular;
         margin-top: 5px;
@@ -4917,9 +4917,9 @@
         margin-bottom: 30px
     }
     #new-setup-payment .btn-red-outline {
-        color: #fb5f66;
+        color: #fb545b;
         background-color: #fff;
-        border-color: #fb5f66;
+        border-color: #ffb5b8;
         border-radius: 0;
         font-size: 11px;
         padding: 7px 20px;
@@ -5011,7 +5011,7 @@
     }
 
     .progress-new .progress-bar {
-        background-color:#fb5f66;
+        background-color:#fb545b;
         box-shadow:none;
     }
 
@@ -5033,7 +5033,7 @@
     }
 
     .addon-section .btn-red-outline {
-        color:#fb5f66;
+        color:#fb545b;
         background-color:#fff;
         border-radius:0;
         font-size:12px;
@@ -5041,7 +5041,7 @@
         font-family:montserratregular;
         text-transform:none;
         float:left;
-        border-color:#fb5f66;
+        border-color:#ffb5b8;
         margin:0;
         padding:5px 15px;
     }
