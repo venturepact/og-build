@@ -22,7 +22,8 @@
     .t1-result .no-header-links.no-footer-links {        padding: 30px 0 !important;    }  
 
     /* .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    } */
-   .no-logo .isIframe.no-header-links.no-footer-links {        padding-top: 0px !important;    }
+    .no-logo .isIframe.no-header-links.no-footer-links {        padding-top: 0px !important;    }
+   /* .no-logo .isIframe.no-header-links.no-footer-links {        padding: 0px 0 !important;    } */
    /* .page_2.t1-result.isIframe {        padding: 30px 0 !important;    } */
    
     .recom-section .t1-social-links {
@@ -157,18 +158,9 @@
     
     .landing-page-mid leadform .input-section .input-outer span {
         font-size: 9px;
+        top: inherit;
         top: 45px;
         margin-bottom: 2px;
-    }
-    .landing-page-mid leadform .input-section .input-outer.dropdown span{
-        top: 36px;
-        left: 0px;
-        font-size: 9px;
-    }
-    .landing-page-mid leadform .input-section .input-outer.checkbox span{
-        top: 25px;
-        left: 7px;
-        font-size: 9px;
     }
     .landing-footer-outer {
         position: absolute;
@@ -1127,13 +1119,6 @@
         line-height: 10px;
         font-size: 11px;
     }
-    .t1-ques-component .input-section .input-outer.checkbox span {
-        top: 62px;
-    }
-    .common-result-main .t1-result-leadform .input-outer.checkbox span {
-        left: -8px;
-        top: 32px;
-    }
     .t1-ques-component .input-section .input-outer {
         margin-bottom: 27px;
     }
@@ -1881,16 +1866,6 @@
     .landing-page-mid leadform .input-section .input-outer span {
         font-size: 10px;
         top: 45px;
-    }
-    .landing-page-mid leadform .input-section .input-outer.dropdown span {
-        font-size: 10px;
-        top: 45px;
-        left: 0px;
-    }
-    .landing-page-mid leadform .input-section .input-outer.checkbox span {
-        font-size: 10px;
-        top: 45px;
-        left: 5px;
     }
     /*.pic-selector { width: 48% !important; margin-bottom: 1.5% !important; margin-right: 0.5% !important; margin-left: 0.7% !important; }*/
     

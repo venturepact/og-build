@@ -1457,7 +1457,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform{ float: left;  width: 100%;  padding: 20px 30px 0;  margin-top: 0;  background: transparent;  box-shadow: none;  position: relative;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot{display: block !important; float:left; width:100%;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:10px;}
-.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:-10px;}
+.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:0px;}
 .template-eight  .recommendation-outer  .common-result-main .t1-result-leadform{min-height: auto}
  .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-section{max-width:inherit} 
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 20px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
@@ -1694,5 +1694,3 @@ path.highcharts-plot-band {
     width: 100%;
 }
 .textfield input.othersfield{float: right; width: calc(100% - 32px)}
-
-p > span > a {color: inherit; }
