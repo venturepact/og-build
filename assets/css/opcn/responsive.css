@@ -157,9 +157,18 @@
     
     .landing-page-mid leadform .input-section .input-outer span {
         font-size: 9px;
-        top: inherit;
         top: 45px;
         margin-bottom: 2px;
+    }
+    .landing-page-mid leadform .input-section .input-outer.dropdown span{
+        top: 36px;
+        left: 0px;
+        font-size: 9px;
+    }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span{
+        top: 25px;
+        left: 7px;
+        font-size: 9px;
     }
     .landing-footer-outer {
         position: absolute;
@@ -1118,6 +1127,13 @@
         line-height: 10px;
         font-size: 11px;
     }
+    .t1-ques-component .input-section .input-outer.checkbox span {
+        top: 62px;
+    }
+    .common-result-main .t1-result-leadform .input-outer.checkbox span {
+        left: -8px;
+        top: 32px;
+    }
     .t1-ques-component .input-section .input-outer {
         margin-bottom: 27px;
     }
@@ -1419,10 +1435,10 @@
     .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
-    .poll-main .radio-outer.active .poll-percentage{line-height: 60px; font-size:14px;}
-    .poll-main .radio-outer.active2 .poll-percentage{line-height: 60px; font-size:14px;}
-    .poll-main .radio-outer-base.active .poll-percentage{line-height: 60px; font-size:14px;}
-    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 60px; font-size:14px;}
+    .poll-main .radio-outer.active .poll-percentage{line-height: 22px; font-size:14px;}
+    .poll-main .radio-outer.active2 .poll-percentage{line-height: 22px; font-size:14px;}
+    .poll-main .radio-outer-base.active .poll-percentage{line-height: 22px; font-size:14px;}
+    .poll-main .radio-outer-base.active2 .poll-percentage{line-height: 22px; font-size:14px;}
     .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
     .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
 
@@ -1865,6 +1881,16 @@
     .landing-page-mid leadform .input-section .input-outer span {
         font-size: 10px;
         top: 45px;
+    }
+    .landing-page-mid leadform .input-section .input-outer.dropdown span {
+        font-size: 10px;
+        top: 45px;
+        left: 0px;
+    }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span {
+        font-size: 10px;
+        top: 45px;
+        left: 5px;
     }
     /*.pic-selector { width: 48% !important; margin-bottom: 1.5% !important; margin-right: 0.5% !important; margin-left: 0.7% !important; }*/
     

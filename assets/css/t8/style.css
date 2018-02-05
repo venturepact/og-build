@@ -89,7 +89,7 @@ h2.sub-heading p {    margin-bottom: 0 !important;}
 .landing-page-mid button ,  button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn ,.submit-checkbox-img-custom ,.w100.text-center .submit-checkbox-img , .landing-page-mid leadform button.prime-action{    font-size: 24px;    float: none;    width: auto;    padding: 0px;      border: none;    cursor: pointer;  line-height:1;       white-space: normal;    word-break: break-word; border-radius: 50%; width:100%;height:100%;   display: inline-block;text-align: center; align-items: center;    margin-top: 0px;}
 .t1-button button:hover,.t1-button button:focus{  outline: none;}
 .checkbox-outer-base button.submit-checkbox-img.ripple-light {   float: left; margin-right: 10px; display:none !important}
-.t1-question .ripple-dark.checkbox-outer-base label.control , .t1-question .ripple-dark.radio-outer-base label.control {    width: 100% !important;  text-align: left;  height: auto !important; float: left; padding: 0 10px 0 30px;}
+.t1-question .ripple-dark.checkbox-outer-base label.control , .t1-question .ripple-dark.radio-outer-base label.control {    width: 100% !important;  text-align: left;  height: auto !important; float: left; padding: 0 40px 0 30px;}
 .t1-question .ripple-dark.checkbox-outer-base label.control  span , .t1-question .ripple-dark.radio-outer-base label.control  span{padding-left: 0px !important; margin: 10px 0px  !important; line-height: 24px}
 .template-eight [type="checkbox"] + label.leadform-checkbox:before, .template-eight [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after
 , .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before {   content: '';   position: absolute;   top: 0px;   left: 0px;   width: 16px;   height: 16px;   z-index: 0;     background-color:rgba(255,255,255,0.2);    border:1px solid transparent;   border-radius: 3px;   margin: 3px 0;   padding: 1px 0px 0px; display: flex;  align-items: center;  justify-content: center;}
@@ -1457,7 +1457,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform{ float: left;  width: 100%;  padding: 20px 30px 0;  margin-top: 0;  background: transparent;  box-shadow: none;  position: relative;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot{display: block !important; float:left; width:100%;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:10px;}
-.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:0px;}
+.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:-10px;}
 .template-eight  .recommendation-outer  .common-result-main .t1-result-leadform{min-height: auto}
  .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-section{max-width:inherit} 
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 20px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
@@ -1694,3 +1694,5 @@ path.highcharts-plot-band {
     width: 100%;
 }
 .textfield input.othersfield{float: right; width: calc(100% - 32px)}
+
+p > span > a {color: inherit; }
