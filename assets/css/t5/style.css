@@ -643,6 +643,7 @@
         line-height: 23px;
         width: 80%;
         opacity: .9;
+        float:left;
     }
     .sub-heading p {
         margin: 0;
@@ -4134,3 +4135,6 @@ tspan {
 
 /* other field */
 .control-ver2 .pic-selector:focus {outline: none;}
+.landing-page-mid .highlight-div{float:left;}
+
+p > span > a {color: inherit; }
