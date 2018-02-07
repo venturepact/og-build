@@ -3540,7 +3540,6 @@ input[type=number] {
     margin-right: 16px;
     padding-left: 0px;
     padding-right: 0px;
-    width: inherit;
     box-shadow: none !important;
     transition: none !important;
 }
@@ -6362,6 +6361,12 @@ p > span > a {color: inherit; }
     animation-name: bounceInRight;
     position: relative;
 }
+.t1-ques-component.textfield{
+    animation-duration: 1s;
+    -webkit-animation-name: bounceInRight;
+    animation-name: rightin;
+    position: relative;
+}
 .t1-ques-component .input-section .input-outer:nth-child(1){
     animation-duration: 0.8s;
     -webkit-animation-name: bounceInRight;
@@ -6513,7 +6518,6 @@ p > span > a {color: inherit; }
     }
   
     60% {
-      
       -webkit-transform: translate3d(-25px, 0, 0);
       transform: translate3d(-25px, 0, 0);
     }
@@ -6535,3 +6539,42 @@ p > span > a {color: inherit; }
     }
   }
   
+  
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    opacity: 1;
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
