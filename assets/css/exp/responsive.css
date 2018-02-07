@@ -436,6 +436,9 @@
     .t1-question button.prime-action {
         width: auto;
     }
+    .t1-question a.prime-action {
+        width: auto;
+    }
     .t1-ques-head {
         padding: 0;
         margin: 0;
@@ -673,6 +676,9 @@
         z-index: 0 !important;
     }
     .t1-question button.prime-action.btn[disabled] {
+        opacity: 0.45;
+    }
+    .t1-question a.prime-action.btn[disabled] {
         opacity: 0.45;
     }
     .down-arrow-outer {

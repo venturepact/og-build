@@ -1550,6 +1550,21 @@ visuals .rec-image-outer img {
     font-size: 18px;
     line-height: 21px;
 }
+.t1-question a.prime-action {
+    width: auto;
+    padding: 0 21px;
+    cursor: pointer;
+    margin: 0px 0 0 0;
+    white-space: inherit;
+    border-radius: 22px;
+    background: #fff;
+}
+.t1-question a.prime-action i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 21px;
+}
 #build .t1-result {
     width: 100%;
     max-width: 100%;

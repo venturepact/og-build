@@ -3762,6 +3762,11 @@
         margin-bottom: 15px;
         margin-right: 15px;
     }
+    .t1-question a.prime-action {
+        margin-top: 0 !important;
+        margin-bottom: 15px;
+        margin-right: 15px;
+    }
     .result-branding.logo_intmp.notInDevMode {
         position: static;
     }
@@ -3892,6 +3897,7 @@
     .structure-right-align .radio-outer-base:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
     .structure-right-align .control--radio .control__indicator.icon-set > div, .structure-right-align .check-comp .checkbox-outer .control__indicator.check-set > div {    float: right;    margin-right: -8px;    margin-left: 4px;    margin-top: 1px;    line-height: 1;}
     .structure-right-align  .t1-question button.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
+    .structure-right-align  .t1-question a.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
     .structure-right-align .action-outer {    margin-right: 40px; margin-left: 0px;}
     .structure-right-align  .question-number {    margin-left: 12px;    margin-right: 0;}
     .structure-right-align  .t1-ques-head{   margin-left: 50px;    margin-right: 0;}
