@@ -936,6 +936,9 @@
     .main-heading h1 , .sub-heading h2{max-width:100% !important} 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
     .control-ver2 .submit-checkbox-outr{ bottom: 0px;}
+    .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span , .t1-ques-component .input-section .input-outer.checkbox span{top:26px !important}
+    .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
 }
 
 @media (min-width:768px) and (max-width:1024px) {
