@@ -1726,7 +1726,7 @@
         margin-top: 0;
     }
     [type="checkbox"] + label.leadform-checkbox {
-        margin-top: 9px;
+        margin-top: 0px;
     }
     .t1-question .question-components [type="checkbox"] + label.leadform-checkbox {
         font-size: 18px;
@@ -1879,6 +1879,7 @@
         font-size: 12px !important;
         top: 34px!important;
     }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span {top: 26px !important;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     .table-outer {

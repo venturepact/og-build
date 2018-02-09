@@ -3773,9 +3773,9 @@ input[type=number] {
     transition: .2s;*/
     
     margin-top: 0px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 0px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
     top: 0px;
@@ -3798,7 +3798,7 @@ input[type=number] {
     border: 2px solid #594642;
     background-color: #594642;
     z-index: 0;
-    margin: 0px 10px;
+    margin: 0px 0px;
 }
 [type="checkbox"].filled-in + label.leadform-checkbox:before,
 [type="checkbox"].filled-in + label.leadform-checkbox:after {
@@ -3815,7 +3815,7 @@ input[type=number] {
     line-height: initial;
 }
 [type="checkbox"] + label.leadform-checkbox {
-    padding-left: 39px;
+    padding-left: 30px;
     height: initial;
     line-height: initial;
     position: relative !important;
@@ -3828,7 +3828,7 @@ input[type=number] {
     cursor: pointer;
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-top: 12px;
+    margin-top: 6px;
     font-size: 18px;
     font-weight: normal !important;
     line-height: 21px;
