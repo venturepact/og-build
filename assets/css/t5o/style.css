@@ -163,6 +163,7 @@ body {
     width: auto;
     display: inline;
 }
+.t1-ques-inner video { max-width: 100%;}
 .t1-ques-component .input-section .input-outer span {
     float: left;
     width: 100%;
@@ -448,7 +449,7 @@ input[type=number] { -moz-appearance: textfield; }
 .landing-right.no-bg{min-height: 0; padding:0; margin-top: 80px;position: relative; display: none;}
 .landing-img { height: 480px; position: relative; left: 0%; float: left; width: 100%; background-repeat: no-repeat; border: 15px solid #fff; background-position: center center;    background-size: cover; }
 .for-tint { height: 100%; float: left; width: 100%; }
-.question-head { font-size: 24px; display: inline; word-break: break-word; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 34px;  }
+.question-head { font-size: 24px; display: inline-block; word-break: break-word; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 34px;  }
 .question-subhead { margin-top: 5px; padding: 0 2px; letter-spacing: 0.02em; font-size: 14px; opacity: .6; }
 .section-count { margin: 0; padding: 0; font-size: 14px; margin-bottom: 10px; letter-spacing: 0.02em; opacity: .6; }
 .question-title { }
@@ -1461,11 +1462,6 @@ ul.tabs li.tab-link a:focus{outline: none}
 .graded-tabs .tab-content{padding: 0}
 .graded-tabs .redirect-heading {    font-family: "PT_serif";}
 .t1-question button.prime-action {
-    margin-top: 0 !important;
-    margin-bottom: 15px;
-    margin-right: 15px;
-}
-.t1-question a.prime-action {
     margin-top: 0 !important;
     margin-bottom: 15px;
     margin-right: 15px;

@@ -553,6 +553,7 @@ li {
     width: 100%;
     text-align: left;
 }
+.t1-ques-inner video { max-width: 100%;}
 .t1-ques-inner h1,
 .t1-ques-inner h2,
 .t1-ques-inner h3 {
@@ -2530,28 +2531,6 @@ visuals .t1-result-inner-left #og-table-excel {
     color: #f44336;
     font-size: 12px;
 }
-.landing-page-mid leadform .input-section .input-outer.checkbox span{
-    float: left;
-    width: 100%;
-    position: absolute;
-    top: 30px;
-    left: 7px;
-    text-align: left;
-    padding-left: 2px;
-    color: #f44336;
-    font-size: 12px;
-}
-.landing-page-mid leadform .input-section .input-outer.dropdown span{
-    float: left;
-    width: 100%;
-    position: absolute;
-    top: 36px;
-    left: 7px;
-    text-align: left;
-    padding-left: 2px;
-    color: #f44336;
-    font-size: 12px;
-}
 .landing-page-mid button {
     font-size: 18px;
     float: left;
@@ -3540,6 +3519,7 @@ input[type=number] {
     margin-right: 16px;
     padding-left: 0px;
     padding-right: 0px;
+    width: inherit;
     box-shadow: none !important;
     transition: none !important;
 }
@@ -6253,19 +6233,19 @@ span.abhi {
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;
 }
-.control-ver2 .done-iconoutr{position: relative; float: left; left: 4px; top: -7px;}
+.control-ver2 .done-iconoutr{position: relative; float: left; left: 0;top: -10px;}
 .control-ver2 .done-icon {
     position: absolute;
     z-index: 9;
     left: -10px;
-    bottom: 14px;
+    bottom: 30px;
     top: inherit;
     right: inherit;
     background: #fff;
-    padding-top: 0;
-    padding-right: 0;
+    padding-top: 5px;
+    padding-right: 5px;
     float: left;
-    height: 17px;
+    height: 26px;
     cursor: pointer;
     pointer-events: none;
 }
@@ -6286,7 +6266,7 @@ span.abhi {
     display: inline-block !important;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
-.control-ver2 .done-icon i { font-size: 24px !important; width: 16px; line-height: 0.7; position: relative; left: -4px;}
+.control-ver2 .done-icon i { font-size: 24px !important;}
 .control-ver2 .done-icon.unchecked i { font-size: 24px !important; color: #d9dad3;}
 .control-ver2 .pic-selector.active .blink-border {
     animation-name: blinker;
@@ -6338,243 +6318,3 @@ span.abhi {
   input.othersfield:-moz-placeholder {opacity: 0.4}
 
 /* other field add */
-
-p > span > a {color: inherit; }
-
-
-/* Css animation */
-.t1-slider-question{
-    animation-duration: 300ms;
-    animation-name: opacity-1;
-    position: relative;
-    overflow: hidden;
-}
-.t1-ques-head{
-    animation-duration: 700ms;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component{
-    animation-duration: 1s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component.textfield{
-    animation-duration: 1s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: rightin;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(1){
-    animation-duration: 0.8s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(2){
-    animation-duration: 0.9s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(3){
-    animation-duration: 1s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(4){
-    animation-duration: 1.2s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(5){
-    animation-duration: 1.4s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(6){
-    animation-duration: 1.6s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(7){
-    animation-duration: 1.8s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(8){
-    animation-duration: 2s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(9){
-    animation-duration: 2.2s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(10){
-    animation-duration: 2.4s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(11){
-    animation-duration: 2.6s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.t1-ques-component .input-section .input-outer:nth-child(12){
-    animation-duration: 2.8s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.common-result-main .common-leadform-top.t1-result-leadform .input-section{
-    animation-duration: 700ms;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.common-result-main .common-result-bot{
-    animation-duration: 500ms;
-    animation-name: opacity-1;
-    position: relative;
-    /* overflow: hidden; */
-}
-.common-result-main .t1-result-topheading{
-    animation-duration: 700ms;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-.common-result-main .t1-result-inner{
-    animation-duration: 1s;
-    -webkit-animation-name: bounceInRight;
-    animation-name: bounceInRight;
-    position: relative;
-}
-
-  
-@keyframes rightin {
-    0%  {
-        left: 70%;
-        opacity: 0;
-        
-    }
-    25% {
-        opacity: 0;
-        
-    }
-    50%  {
-        opacity: 0;
-        
-    }
-    75%  {
-        opacity: 0.5;
-        
-    }
-    100% {
-        left: 0%;
-        opacity: 1;
-        
-    }
-    
-}
-
-@keyframes opacity-1 {
-    from {
-        opacity: 0;
-    }
-  
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes bounceInRight {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(3000px, 0, 0);
-      transform: translate3d(3000px, 0, 0);
-    }
-  
-    60% {
-      -webkit-transform: translate3d(-25px, 0, 0);
-      transform: translate3d(-25px, 0, 0);
-    }
-  
-    75% {
-        opacity: 1;
-      -webkit-transform: translate3d(10px, 0, 0);
-      transform: translate3d(10px, 0, 0);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(-5px, 0, 0);
-      transform: translate3d(-5px, 0, 0);
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-  
-@-webkit-keyframes bounceInRight {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(3000px, 0, 0);
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    
-    -webkit-transform: translate3d(-25px, 0, 0);
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    opacity: 1;
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    -webkit-transform: translate3d(-5px, 0, 0);
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
