@@ -216,16 +216,16 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .control-ver2 .done-icon {  position: relative;  z-index: 9;  top: 0;  background: transparent;  padding-top: 0;margin-left: 25px;   padding-right: 0;  height: auto !important;  display: block !important;  width: auto !important;  display: inline-block !important;  border-radius: 3px;  padding: 3px 4px;  line-height: 0;  display: inline-block !important; cursor: pointer; pointer-events: none;}
 .control-ver2 .done-icon::after {  content: "";  border: 1px solid #000;  width: 16px;     height: 16px;  display: inline-block;  border-radius: 3px;}
 .control-ver2 .ripple-dark.pic-selector.active .submit-checkbox-outr {  display:none;}
-.control-ver2  .ripple-dark.pic-selector.active .done-icon::after {    content: "done";         font-feature-settings:"liga" 1; font-family: 'Material Icons'; line-height:1.3; }
+.control-ver2  .ripple-dark.pic-selector.active .done-icon::after {    content: "done";  font-family: 'Material Icons'; line-height:1.3; }
 .control-ver2 .pic-selector{  padding:0 15px;  padding-bottom: 2%;  box-shadow: none !important; }
 
  .control-ver2 .pic-selector .control.control--radio span{display:none;}
 .control-ver2 .done-icon i { display: none !important}
 .control-ver2 .pic-selector.radio-outer .done-icon::after{border-radius: 50%;font-size:10px;padding:2.2px; }
-.control-ver2 .ripple-dark.pic-selector.radio-outer.active .done-icon::after {  content: "lens";         font-feature-settings:"liga" 1;}
+.control-ver2 .ripple-dark.pic-selector.radio-outer.active .done-icon::after {  content: "lens";}
 .control-ver2 .pic-selector.radio-outer .done-icon{border-radius: 50%;     padding: 4px 4px;}
 .control-ver2 .pic-selector.radio-outer-base .done-icon::after{border-radius: 50%;font-size:10px;padding:2.2px; }
-.control-ver2 .ripple-dark.pic-selector.radio-outer-base.active .done-icon::after {  content: "lens";         font-feature-settings:"liga" 1;}
+.control-ver2 .ripple-dark.pic-selector.radio-outer-base.active .done-icon::after {  content: "lens";}
 .control-ver2 .pic-selector.radio-outer-base .done-icon{border-radius: 50%;     padding: 4px 4px;}
 .template-eight .t1-result .selectize-dropdown.single , .template-eight .leaded-form-c .selectize-dropdown.single {top:40px !important}
 
@@ -877,7 +877,6 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {        visibility
   font-family: 'Material Icons';
   line-height: 1;
   -webkit-backface-visibility: hidden;
-  font-feature-settings:"liga" 1;
           backface-visibility: hidden;
 }
 .t1-question .ripple-dark.radio-outer-base [type="radio"]:checked + label.control::before{
@@ -886,7 +885,6 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {        visibility
   line-height: 1;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-          font-feature-settings:"liga" 1;
 }
 
 .template-eight .landing-page-mid leadform .input-section .input-outer.w100{ width:100% !important;}
@@ -1460,7 +1458,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform{ float: left;  width: 100%;  padding: 20px 30px 0;  margin-top: 0;  background: transparent;  box-shadow: none;  position: relative;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot{display: block !important; float:left; width:100%;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:10px;}
-.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:-10px;}
+.template-eight .recommendation-outer  .common-result-main  .common-leadform-top.t1-result-leadform +  .common-result-bot  .common-result-bot-icons{bottom:0px;}
 .template-eight  .recommendation-outer  .common-result-main .t1-result-leadform{min-height: auto}
  .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-section{max-width:inherit} 
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 20px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
@@ -1482,7 +1480,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
  .eight-inner-wrapper1.no-header-links .common-result-main.eight-inner-wrapper{margin: 80px 0 0px!important}
  .template-eight  .common-result-main [type="checkbox"] + label.leadform-checkbox:before,  .template-eight  .common-result-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{ content: ''; position: absolute; top: 0px; left: 0px; width: 16px; height: 16px; z-index: 0; border-radius: 3px !important;   background-color:rgba(255,255,255,0.2); border:1px solid transparent; margin: 3px 0 !important; padding:  1px ;    display: flex;align-items: center;  justify-content: center;  font-size: 10px !important}
  .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{ display: none !important}
- .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {  top: 0;  width: 16px;  height: 16px; border:1px solid transparent;   background-color: transparent;  z-index: 0;  margin: 0px 0px;  border-radius: 3px;  top: 9px !important;  margin: 3px 0 !important;  font-size: 14px !important;  content: "done";        font-feature-settings:"liga" 1;  font-family: 'Material Icons'; line-height:1; transform: scale(1) !important;}
+ .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {  top: 0;  width: 16px;  height: 16px; border:1px solid transparent;   background-color: transparent;  z-index: 0;  margin: 0px 0px;  border-radius: 3px;  top: 9px !important;  margin: 3px 0 !important;  font-size: 14px !important;  content: "done";  font-family: 'Material Icons'; line-height:1; transform: scale(1) !important;}
  .template-eight .common-result-main visuals .t1-result-inner-left-img{min-height: 170px}
  .template-eight .common-result-main [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, .template-eight .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{margin: 0 !important}
 .template-eight .common-result-main input[type="checkbox"]:focus+label::after {
@@ -1503,7 +1501,6 @@ span.current::after {    content: "/";    margin: 0 2px;}
     transform: scale(1) !important;
     animation: none;
     opacity: 1 !important;
-    font-feature-settings:"liga" 1;
 
 }
  .template-eight   .common-result-main .t1-result-leadform{min-height: 10px}
@@ -1581,38 +1578,6 @@ span.current::after {    content: "/";    margin: 0 2px;}
     animation: pulse-animation1 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
     z-index: -1;
 }
-
-
-.custom-btn-outer1.butn-animation::before {
-    background: white;
-    animation-duration: 1.5s !important;
-    animation-name: fullscreen-animation !important;
-    z-index: 9;
-    overflow: inherit;
-}
-
-.custom-btn-outer.butn-animation::before {
-    background: white;
-    animation-duration: 1.5s !important;
-    animation-name: fullscreen-animation !important;
-    z-index: 9;
-    overflow: inherit;
-}
-.eight-inner-wrapper{ overflow: hidden;}
-
-@keyframes fullscreen-animation {
-    0% {
-        opacity: 0.5;
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: scale(40);
-        transform: scale(40)
-    }
-}
-
 @keyframes pulse-animation{
     0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
     50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
@@ -1722,7 +1687,6 @@ path.highcharts-plot-band {
     display: table;
     padding: 50px 15px;
     min-height: 480px;
-    overflow: hidden;
 }
 .eight-inner-wrapper.t1-landing-inner.logo-resizing {
     padding: 0;
@@ -1731,9 +1695,3 @@ path.highcharts-plot-band {
     width: 100%;
 }
 .textfield input.othersfield{float: right; width: calc(100% - 32px)}
-
-p > span > a {color: inherit; }
-
-.t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{
-    top: 20px;
-} 
