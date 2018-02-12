@@ -202,6 +202,7 @@
         width: auto;
         display: inline;
     }
+    .t1-ques-inner video { max-width: 100%;}
     .t1-ques-component .input-section .input-outer span {
         float: left;
         width: 100%;
@@ -717,7 +718,7 @@
     }
     .question-head {
         font-size: 24px;
-        display: inline;
+        display: inline-block;
         word-break: break-word;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
