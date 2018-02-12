@@ -1581,6 +1581,38 @@ span.current::after {    content: "/";    margin: 0 2px;}
     animation: pulse-animation1 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
     z-index: -1;
 }
+
+
+.custom-btn-outer1.butn-animation::before {
+    background: white;
+    animation-duration: 1.5s !important;
+    animation-name: fullscreen-animation !important;
+    z-index: 9;
+    overflow: inherit;
+}
+
+.custom-btn-outer.butn-animation::before {
+    background: white;
+    animation-duration: 1.5s !important;
+    animation-name: fullscreen-animation !important;
+    z-index: 9;
+    overflow: inherit;
+}
+.eight-inner-wrapper{ overflow: hidden;}
+
+@keyframes fullscreen-animation {
+    0% {
+        opacity: 0.5;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(40);
+        transform: scale(40)
+    }
+}
+
 @keyframes pulse-animation{
     0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
     50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
@@ -1690,6 +1722,7 @@ path.highcharts-plot-band {
     display: table;
     padding: 50px 15px;
     min-height: 480px;
+    overflow: hidden;
 }
 .eight-inner-wrapper.t1-landing-inner.logo-resizing {
     padding: 0;
