@@ -1979,6 +1979,20 @@ a:focus {
     margin-top: 30px;
     white-space: inherit;
 }
+.t1-question a.prime-action {
+    font-size: 18px;
+    width: auto;
+    padding: 12px 60px;
+    /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
+    
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 0px;
+    float: left;
+    margin-top: 30px;
+    white-space: inherit;
+}
 .t1-question button.primeaction-:hover,
 .t1-question button.primeaction:focus {
     /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
