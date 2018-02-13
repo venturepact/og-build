@@ -1602,7 +1602,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 
 @keyframes fullscreen-animation {
     0% {
-        opacity: 0.5;
+        opacity: 1;
         -webkit-transform: scale(1);
         transform: scale(1)
     }
