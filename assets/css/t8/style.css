@@ -1585,7 +1585,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 
 .custom-btn-outer1.butn-animation::before {
     background: white;
-    animation-duration: 1.5s !important;
+    animation-duration: 1s !important;
     animation-name: fullscreen-animation !important;
     z-index: 9;
     overflow: inherit;
@@ -1593,7 +1593,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 
 .custom-btn-outer.butn-animation::before {
     background: white;
-    animation-duration: 1.5s !important;
+    animation-duration: 1s !important;
     animation-name: fullscreen-animation !important;
     z-index: 9;
     overflow: inherit;
