@@ -5308,7 +5308,7 @@ visuals.visual-outr span.graph-title {
     transform-origin: 100% 100%;
 }
 .one-page-card-new [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
-    top: 0;
+    top: 2px;
     width: 20px;
     height: 20px;
     border: 2px solid #3a5771;
@@ -6579,3 +6579,15 @@ p > span > a {color: inherit; }
     transform: translate3d(0, 0, 0);
   }
 }
+
+.one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox { padding-left: 35px; top: 3px; height: auto; position: relative!important;  width: 100%; text-align: left; line-height: normal;
+padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin-bottom: 0; font-weight: 400;float: left;overflow: hidden; width: 98%; text-overflow: ellipsis; max-height: 25px; line-height: 25px; white-space: nowrap;}
+.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after, .one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after { margin: 0 5px!important;border-radius: 0;}
+.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:before {top: 2px;left: 5px;width: 8px;height: 14px;border-top: 2px solid transparent;border-left: 2px solid transparent; border-right: 2px solid #fff;border-bottom: 2px solid #fff; -webkit-transform: rotate(37deg);transform: rotate(37deg);-webkit-transform-origin: 100% 100%;transform-origin: 100% 100%;margin: 0!important;}
+
+.one-page-card-new .question-section [type="checkbox"].tabbed:focus + label:after{
+    box-shadow: 0px 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.common-result-main [type="checkbox"] + label.leadform-checkbox{top:1px;}
+.one-page-card-new .common-result-main [type="checkbox"].tabbed:focus + label:after{box-shadow: -2px 0 0 8px rgba(0, 0, 0, 0.1);top: 3px;}

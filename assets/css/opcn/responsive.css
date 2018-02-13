@@ -1288,7 +1288,7 @@
     .one-page-card-new [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
         height: 16px;
         width: 16px;
-        top: 2px;
+        top: 3px;
     }
     .one-page-card-new [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
         width: 7px;
@@ -1308,7 +1308,7 @@
         left: 4px;
     }
     .one-page-card-new .t1-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
-        left: 12px;
+        left: 11px;
     }
     .t1-result-main .t1-result-top.recommendation-outer .selectize-input {
         padding-left: 5px;
@@ -1460,6 +1460,11 @@
 
     .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
     .range-slider1.custom-slider1 ul{ display: none;}
+    .one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:before {
+        left: 5px;
+        width: 7px;
+        height: 12px;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
