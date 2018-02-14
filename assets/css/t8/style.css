@@ -1742,3 +1742,7 @@ p > span > a {color: inherit; }
 .template-eight .common-result-main .table-outer table tbody tr {    border-bottom: 1px solid rgba(0,0,0,0.1) !important}
 .template-eight .common-result-main .table-outer table thead th td{color: #fff }
 .template-eight .common-result-main .table-outer table thead th {background: #555 !important; color: #fff !important}
+
+
+.custom-btn-outer .submit-checkbox-img{display: table !important}
+.custom-btn-outer .submit-checkbox-img span{display: table-cell; height: 100%; vertical-align: middle}
