@@ -6924,7 +6924,7 @@ input.postfixset {
     font-size: 14px;
     line-height: 16px;
     height: 60px;
-    width: auto;
+    width: 60px;
     margin: auto;
     padding: 10px;
     /*color: #fff;*/
@@ -6932,12 +6932,23 @@ input.postfixset {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #555;
+    color: #fff;
     background-color: transparent !important;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
+    position: relative
 }
-
+.poll-main .correct-percentage::before {
+    content:"";
+    position: absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index:-1;
+  }
 .poll-main .ko-progress-circle .ko-progress-circle__slice, .poll-main .ko-progress-circle .ko-progress-circle__fill {
     width: 154px;
     height: 154px;
@@ -8580,3 +8591,4 @@ p > span > a {color: inherit; }
     top: 3px;
     left: 3px !important;
 }
+
