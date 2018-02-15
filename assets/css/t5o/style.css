@@ -1599,3 +1599,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 .textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.5}
 .textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.5}
 .textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.5}
+.template-five .textfield input[type="text"]::-webkit-input-placeholder { opacity: 0.5}
+.template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.5}
+.template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.5}
+.template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.5}
