@@ -1531,9 +1531,10 @@ ul.tabs li.tab-link a:focus{outline: none}
     background: transparent;
     margin-top: 0px;
     border: 1px solid #464646;
-    padding: 3px 22px;
+    padding: 5px 22px;
     border-radius: 50px;
     padding-left: 40px;
+    min-height: 35px;
 }
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
     float: right;

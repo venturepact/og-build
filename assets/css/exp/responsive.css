@@ -1248,6 +1248,8 @@
     .ripple-dark.radio-outer {margin-bottom: 5px;}
     .ripple-dark.radio-outer-base {margin-bottom: 5px;}
     .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
+    .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
+    .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {

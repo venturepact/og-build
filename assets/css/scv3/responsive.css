@@ -102,8 +102,9 @@
     .page_2 .result-fixed1{ padding: bottom 0px;}
     .page_2.hasbranding.result-fixed.t2haslogo .result-scrolling.new-lead1{ max-height: initial !important; overflow: visible !important;}
     .page_2.hasbranding.result-fixed .new-lead-common1 .result-scrolling.new-lead1{ max-height: initial !important; overflow: visible !important; position: relative}
-     .result-mid.result-comm.result-scrolling{display: none}		 
+     /* .result-mid.result-comm.result-scrolling{display: none}		  */
      .new-lead-common1 .result-mid.result-comm.result-scrolling{display: none; margin-bottom:0px }
+     .lead-not-in-result  .new-lead-common1 .result-mid.result-comm.result-scrolling{display: block; }
      .new-lead-common1 .extra-icons {
          float: left;
          width: 100%;

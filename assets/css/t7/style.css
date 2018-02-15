@@ -1379,7 +1379,7 @@ input:-webkit-autofill {
   transform-origin: 100% 100%;
 }
 .template-seven [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
-  top: 0;
+  top: 1.5px;
   width: 16px;
   height: 16px;
   border: 2px solid #3a5771;
@@ -1455,7 +1455,7 @@ input:-webkit-autofill {
 
 }
 .template-seven [type="checkbox"].filled-in:checked + label.leadform-checkbox:before  {
-  top: 1px;
+  top: 2px;
   left: 8px;
   width: 7px;
   height: 13px;
@@ -2684,3 +2684,27 @@ path.highcharts-plot-band {
 .otherfield-inputbtn button{ display: none !important;}
 
 p > span > a {color: inherit; }
+
+.template-seven [type="checkbox"].tabbed:focus + label:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: -7px -8px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 !important;
+}
+.template-seven [type="checkbox"].filled-in:not(:checked) + label:after {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  top:1.5px;
+  z-index: 0; 
+  margin: 6px 18px;
+   /*-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;*/
+}
+.template-seven .page_2 [type="checkbox"].filled-in:not(:checked) + label:after{
+  left:-4px !important;
+}

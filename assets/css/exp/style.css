@@ -2909,9 +2909,11 @@ input[type=number] {
     -webkit-transform: scale(1);
     transform: scale(1);
     border: 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+    box-shadow: -2px 3px 0 6px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1);
+    width: 15px;
+    height: 15px;
 }
 .experian [type="checkbox"]:checked:disabled + label:before {
     border-right: 2px solid rgba(0, 0, 0, 0.26);
@@ -2985,8 +2987,8 @@ input[type=number] {
 }
 .experian [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
     border-radius: 2px;
-    background-color: #26a69a;
-    border-color: #26a69a;
+    background-color: transparent;
+    border-color: transparent;
 }
 .experian [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
     background-color: transparent;

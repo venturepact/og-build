@@ -1746,3 +1746,37 @@ p > span > a {color: inherit; }
 
 .custom-btn-outer .submit-checkbox-img{display: table !important}
 .custom-btn-outer .submit-checkbox-img span{display: table-cell; height: 100%; vertical-align: middle}
+
+/******** lead ************/
+.template-section .lead-popup  .lead-popup-outer {left:-76px}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 9999;overflow: auto;width: 100%;}
+.lead-popup  .lead-popup-outer {max-width: 600px; padding:0 15px;margin: 0 auto;position: relative;top: 50%; transform: translateY(-50%); width: 100%}
+.lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block;border:12px solid transparent; width:100%;}
+.lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
+.check-marks svg{height: 60px;}
+.template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important}
+.check-marks{float: left; text-align:center;width: 100%;margin-bottom: 20px}
+.path {stroke-dasharray: 1000;stroke-dashoffset: 0;}
+.path.circle {-webkit-animation: dash 0.9s ease-in-out;animation: dash 0.9s ease-in-out;}
+.path.line {stroke-dashoffset: 1000;-webkit-animation: dash 0.9s 0.35s ease-in-out forwards;animation: dash 0.9s 0.35s ease-in-out forwards;}
+.path.check {stroke-dashoffset: -100;-webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;animation: dash-check 0.9s 0.35s ease-in-out forwards;}
+ 
+  @-webkit-keyframes dash {
+    0% {stroke-dashoffset: 1000;}
+    100% {stroke-dashoffset: 0;}
+  }
+  @keyframes dash {
+    0% {stroke-dashoffset: 1000;}
+    100% {stroke-dashoffset: 0;}
+  }
+  @-webkit-keyframes dash-check {
+    0% {stroke-dashoffset: -100;}
+    100% {stroke-dashoffset: 900;}
+  }
+  @keyframes dash-check {
+    0% {stroke-dashoffset: -100;}
+    100% {stroke-dashoffset: 900;}
+  }
+
+  .template-section .template-container.mobile .lead-popup .lead-popup-outer{max-width: 375px; padding: 0 15px; left:-55px}
+  .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px}
