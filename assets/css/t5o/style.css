@@ -1523,7 +1523,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; position: absolute;border:0px; width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; position: absolute;border:0px; width: 50px !important; padding: 58px 15px; margin-top: 0px;}
 .textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{ display: none;   border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
@@ -1535,6 +1535,7 @@ ul.tabs li.tab-link a:focus{outline: none}
     border-radius: 50px;
     padding-left: 40px;
     min-height: 35px;
+    margin-bottom: 0px !important
 }
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
     float: right;
@@ -1593,3 +1594,8 @@ ul.tabs li.tab-link a:focus{outline: none}
 .textfield .control--radio .control__indicator.icon-set > div, .textfield.checkbox-outer .control__indicator.check-set > div{margin: 0}
 
 /* other field */
+
+.textfield.active input[type="text"]::-webkit-input-placeholder {color: #fff; opacity: 0.5}
+.textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.5}
+.textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.5}
+.textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.5}
