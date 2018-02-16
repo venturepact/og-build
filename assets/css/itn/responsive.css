@@ -621,13 +621,6 @@
         font-size: 14px;
         padding: 10px 40px;
     }
-    .t1-question a.prime-action {
-        float: none;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        font-size: 14px;
-        padding: 10px 40px;
-    }
     .t1-ques-component {
         width: auto;
         margin-bottom: 10px;
@@ -1598,11 +1591,6 @@
         font-size: 16px;
         padding: 10px 45px;
     }
-    .t1-question a.prime-action {
-        float: left;
-        font-size: 16px;
-        padding: 10px 45px;
-    }
     .t1-ques-component.leadform-inline .lf-skip-btn {
         font-size: 16px;
         position: relative;
@@ -1726,7 +1714,7 @@
         margin-top: 0;
     }
     [type="checkbox"] + label.leadform-checkbox {
-        margin-top: 0px;
+        margin-top: 9px;
     }
     .t1-question .question-components [type="checkbox"] + label.leadform-checkbox {
         font-size: 18px;
@@ -1879,7 +1867,6 @@
         font-size: 12px !important;
         top: 34px!important;
     }
-    .landing-page-mid leadform .input-section .input-outer.checkbox span {top: 26px !important;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     .table-outer {
@@ -2285,10 +2272,6 @@
         font-size: 16px !important;
     }
     .t1-question button.prime-action {
-        font-size: 13px;
-        padding: 9px 30px;
-    }
-    .t1-question a.prime-action {
         font-size: 13px;
         padding: 9px 30px;
     }

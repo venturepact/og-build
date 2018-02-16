@@ -2235,20 +2235,6 @@ visuals .rec-image-outer img {
     margin-top: 30px;
     white-space: inherit;
 }
-.t1-question a.prime-action {
-    font-size: 16px;
-    width: auto;
-    padding: 12px 50px;
-    /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
-    
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 0px;
-    float: left;
-    margin-top: 30px;
-    white-space: inherit;
-}
 .t1-question button.primeaction-:hover,
 .t1-question button.primeaction:focus {
     /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
@@ -2564,7 +2550,6 @@ visuals .rec-image-outer img {
     width: 100%;
     height: 100vh;
     padding: 100px 0vh;
-    overflow: hidden;
 }
 /*selectbox style Control*/
 
@@ -3774,9 +3759,9 @@ input[type=number] {
     transition: .2s;*/
     
     margin-top: 0px;
-    margin-left: 0px;
+    margin-left: 10px;
     margin-bottom: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
 }
 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
     top: 0px;
@@ -3799,7 +3784,7 @@ input[type=number] {
     border: 2px solid #594642;
     background-color: #594642;
     z-index: 0;
-    margin: 0px 0px;
+    margin: 0px 10px;
 }
 [type="checkbox"].filled-in + label.leadform-checkbox:before,
 [type="checkbox"].filled-in + label.leadform-checkbox:after {
@@ -3816,7 +3801,7 @@ input[type=number] {
     line-height: initial;
 }
 [type="checkbox"] + label.leadform-checkbox {
-    padding-left: 30px;
+    padding-left: 39px;
     height: initial;
     line-height: initial;
     position: relative !important;
@@ -3829,7 +3814,7 @@ input[type=number] {
     cursor: pointer;
     margin-bottom: 0;
     padding-bottom: 0;
-    margin-top: 6px;
+    margin-top: 12px;
     font-size: 18px;
     font-weight: normal !important;
     line-height: 21px;
@@ -4395,70 +4380,3 @@ input[type=number] {
 .t1-question .result-branding.logo_intmp{ position: relative !important;}
 
 button:focus{outline: none !important}
-
-p > span > a {color: inherit; }
-
-/* Css animation */
-
-
-.template3-outr {
-    animation-duration: 500ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-.t1-question form {
-    animation-duration: 700ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-.common-result-main .t1-result-leadform{
-    animation-duration: 500ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    position: relative;
-}
-.common-result-main .t1-result-topheading{
-    animation-duration: 500ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    position: relative;
-}
-.common-result-main .t1-result-inner{
-    animation-duration: 700ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    position: relative;
-} 
-
-@keyframes slideInUp {
-    from {
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-  
-.t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    border: 0;
-    border-radius: 50%;
-    box-shadow: 8px 10px 0 10px rgba(0,0,0,.1);
-    background-color: rgba(0,0,0,.1);
-}
-.t1-landing .t1-landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{
-    border-radius: 0;
-}
-.common-result-main [type="checkbox"]:focus + label.leadform-checkbox:after {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    border: 0;
-    border-radius: 0;
-    box-shadow: 1px 3px 0 3px rgba(0,0,0,.1);
-    background-color: rgba(0,0,0,.1);
-}
