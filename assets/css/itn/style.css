@@ -4443,3 +4443,22 @@ p > span > a {color: inherit; }
     }
   }
   
+.t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 8px 10px 0 10px rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1);
+}
+.t1-landing .t1-landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{
+    border-radius: 0;
+}
+.common-result-main [type="checkbox"]:focus + label.leadform-checkbox:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    border: 0;
+    border-radius: 0;
+    box-shadow: 1px 3px 0 3px rgba(0,0,0,.1);
+    background-color: rgba(0,0,0,.1);
+}
