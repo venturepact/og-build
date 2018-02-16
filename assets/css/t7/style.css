@@ -404,14 +404,14 @@ temp .range { font-size: 18px; position: relative; top: 41px; right: -1px; }
 .section-head .help-text { font-size: 14px; text-align: left; color: #999999; width: 100%; margin-bottom: 0px !important; margin-top: 0px; }
 
 
-.section-head i:hover + .help-text{ display:block !important}*/
+/*.section-head i:hover + .help-text{ display:block !important}*/
 
 
 .section-head .help-outer { width: 40px; position: relative; display: inline-block; top: 4px; padding-left: 5px; }
 .help-outer{ position: relative !important; margin-left: 5px;}
-.section-head .help-text { display: none; min-width: 110px; max-width: 130px; background: #fff; border: 1px solid #3b395e; padding: 8px; left: -5px; font-size: 11px; position: absolute;  line-height: 15px;  -webkit-border-radius: 8px;
+.section-head .help-text { display: none; min-width: 110px; max-width: 130px; background: #fff; border: 1px solid #3b395e; padding: 8px; left: -3px; font-size: 11px; position: absolute;  line-height: 15px;  -webkit-border-radius: 8px;
 -moz-border-radius: 8px;
-border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3); word-break: break-word; }
+border-radius: 8px;  text-align: left; z-index: 9999; box-shadow: 0 2px 5px 1px rgba(0,0,0,0.3); word-break: break-word;top:22px; }
 .section-head .help-text:before{content: '';
     position: absolute;
     top: -11px;
@@ -1379,7 +1379,7 @@ input:-webkit-autofill {
   transform-origin: 100% 100%;
 }
 .template-seven [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
-  top: 0;
+  top: 1.5px;
   width: 16px;
   height: 16px;
   border: 2px solid #3a5771;
@@ -1455,7 +1455,7 @@ input:-webkit-autofill {
 
 }
 .template-seven [type="checkbox"].filled-in:checked + label.leadform-checkbox:before  {
-  top: 1px;
+  top: 2px;
   left: 8px;
   width: 7px;
   height: 13px;
@@ -2291,7 +2291,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 
 .section-part:nth-child(1){ float: left; width:39%; padding-top:6px; display: inline-block;}
 .section-part{ float: left; width:58%;}
-.section-head .section-part  .help-outer{ top:4px; margin-left: 0; position: relative;}
+.section-head .section-part .help-outer{ top:4px; margin-left: 0; position: relative;padding-left:0px;}
 .section-head .section-part + div{display: inline}
 .section-part:nth-child(2){ padding-left:5px;}
 .fixed-width{ width: 630px; margin: 0 auto;}
@@ -2682,3 +2682,29 @@ path.highcharts-plot-band {
 .radio-outer.textfield .mid-outer label{ padding:0 !important; padding-left: 26px !important}
 .radio-outer-base.textfield .mid-outer label{ padding:0 !important; padding-left: 26px !important}
 .otherfield-inputbtn button{ display: none !important;}
+
+p > span > a {color: inherit; }
+
+.template-seven [type="checkbox"].tabbed:focus + label:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: -7px -8px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0 !important;
+}
+.template-seven [type="checkbox"].filled-in:not(:checked) + label:after {
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  top:1.5px;
+  z-index: 0; 
+  margin: 6px 18px;
+   /*-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;*/
+}
+.template-seven .page_2 [type="checkbox"].filled-in:not(:checked) + label:after{
+  left:-4px !important;
+}
