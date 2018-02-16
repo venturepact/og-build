@@ -2535,7 +2535,7 @@ visuals .t1-result-inner-left #og-table-excel {
     float: left;
     width: 100%;
     position: absolute;
-    top: 30px;
+    top: 36px;
     left: 0px;
     text-align: left;
     padding-left: 2px;
@@ -5581,9 +5581,9 @@ visuals.visual-outr span.graph-title {
 .t1-landing .selectize-input {
     padding: 3px 35px 3px 10px;
 }
-.t1-landing .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) .selectize-input {
+/* .t1-landing .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) .selectize-input {
     padding: 10px 35px 10px 15px;
-}
+} */
 .t1-question .selectize-control {
     float: left;
     width: 100%;
@@ -6591,3 +6591,4 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 .common-result-main [type="checkbox"] + label.leadform-checkbox{top:1px;}
 .one-page-card-new .common-result-main [type="checkbox"].tabbed:focus + label:after{box-shadow: -2px 0 0 8px rgba(0, 0, 0, 0.1);top: 3px;}
+.common-result-main .t1-result-leadform .input-outer.checkbox span{top: 30px}
