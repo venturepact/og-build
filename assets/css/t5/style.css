@@ -749,6 +749,7 @@
     .main-heading,
     .main-heading h1 {
         font-size: 36px;
+        word-break: break-word;
     }
     .main-section form {
         width: 94%;
@@ -756,7 +757,7 @@
         margin-top: 35px;
     }
     .text-highlight .main-heading , .text-highlight .main-heading h1 , .text-highlight .main-heading p{line-height: 56px;}
-    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 46px; }
+    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 46px;  word-break: break-word;}
     .t1-question {
         overflow: hidden;
         min-height: 100vh;
@@ -846,6 +847,7 @@
         line-height: 28px;
         flex: 1 1 0;
         margin-right: 50px;
+        word-break: break-word;
     }
     .t1-ques-head div p {
         display: inline;

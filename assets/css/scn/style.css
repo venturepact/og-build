@@ -2106,7 +2106,8 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin-bottom: 0px !important;
-    margin-top: 0px
+    margin-top: 0px;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading {
     font-size: 56px;
@@ -2115,7 +2116,8 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin-bottom: 10px !important;
-    margin-top: 0px
+    margin-top: 0px;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading p {
     margin: 0px;

@@ -810,8 +810,8 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .landing-page-mid .input-section .input-outer span { float: left; width: 70%; position: absolute; top: 24px; left:27% ; font-size: 9px; }
 /*.landing-page-mid .container-temp { width: 100%; margin: 0 auto; display: inline-block; min-height: 100px; }*/
 .container-temp { width: 98%; margin: 0 auto; display: inline-block; }
-.landing-page-mid .main-heading h1{ font-size: 20px; line-height: 24px; float: none;; width: 100%; text-align: left; margin-bottom: 0px !important; margin-top: 0px ; display: table-cell;}
-.landing-page-mid .main-heading { font-size: 20px; line-height: 24px; float: left; width: 100%; text-align: left; margin-bottom: 5px !important; margin-top: 0; }
+.landing-page-mid .main-heading h1{ font-size: 20px; line-height: 24px; float: none;; width: 100%; text-align: left; margin-bottom: 0px !important; margin-top: 0px ; display: table-cell; word-break: break-word;}
+.landing-page-mid .main-heading { font-size: 20px; line-height: 24px; float: left; width: 100%; text-align: left; margin-bottom: 5px !important; margin-top: 0;word-break: break-word; }
 
 .landing-page-mid .main-heading p{ margin:0px; }
 .landing-page-mid .sub-heading h2{ font-size: 13px; line-height: 20px;float: left; width: 89%; text-align: left; margin-top: 2px; margin-bottom: 10px; opacity:0.8 }

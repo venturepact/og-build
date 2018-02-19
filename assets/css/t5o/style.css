@@ -457,7 +457,7 @@ input[type=number] { -moz-appearance: textfield; }
 #build .ques-main { flex-direction: column;}
 .main-heading , .main-heading  h1{ font-size: 36px; }
 .main-section form { width: 94%; margin: 0 3%; margin-top: 45px; }
-.main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 56px; }
+.main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 56px;word-break: break-word; }
 .t1-question { overflow: hidden; min-height: 100vh; padding: 30px 0px; padding-bottom: 50px; width: 100%; box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4); position: relative; background: #f8f8f8; }
 .t1-question.isIframe { min-height: 0; }
 .t1-ques-component { flex: 1 1 0; }
@@ -473,8 +473,8 @@ input[type=number] { -moz-appearance: textfield; }
 .t1-result-leadform .prime-action { padding: 12px 40px; }
 .back-action { background: none; }
 .requiredAsteric { color: #f00; font-size: 18px; display: inline; }
-.t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px; }
-.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
+.t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px;   word-break: break-word;}
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;  word-break: break-word;}
 .t1-ques-head div p { display: inline; }
 .t1-ques-head div ul{display: inline;}
 .t1-ques-head div ul li{display: inline;}

@@ -149,6 +149,7 @@ li {
     font-size: 56px;
     margin-bottom: 15px;
     line-height: 60px;
+    word-break: break-word;
 }
 .main-heading p {
     font-size: 56px;
@@ -565,6 +566,7 @@ li {
     color: #363b3e;
     font-size: 24px;
     margin-bottom: 25px;
+    word-break: break-word;
 }
 .t1-ques-head div {
     display: inline;
@@ -6592,3 +6594,86 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .common-result-main [type="checkbox"] + label.leadform-checkbox{top:1px;}
 .one-page-card-new .common-result-main [type="checkbox"].tabbed:focus + label:after{box-shadow: -2px 0 0 8px rgba(0, 0, 0, 0.1);top: 3px;}
 .common-result-main .t1-result-leadform .input-outer.checkbox span{top: 30px}
+
+
+/******** lead ************/
+.template-section .common-result-main .t1-result-leadform{position: static}
+.template-section .lead-popup{position: absolute;}
+.lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    float: left;
+    width: 100%;
+    text-transform: none;
+    margin-bottom: 35px;
+    padding-left: 0px;
+    text-align: left;
+    font-size: 30px;
+    color: #2fc10e;
+    line-height: 1;
+    text-align: center;
+}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 20px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-outer i {position: absolute;left: 10px !important;top: 19px;color: rgba(40,50,58,.4) !important;font-size: 20px;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 20px;display: inline-table;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-outer{margin: 0 0 20px 0 ; padding: 0px }
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{background-color: transparent;border: 1px solid #d9dad3 !important;border-radius: 0;outline: none;width: 100%;font-size: 16px;margin: 0 0 15px 0;padding: 16px 2%;transition: all .3s;box-sizing: border-box;color: #666e78;margin-bottom: 0;box-shadow: none;padding-left: 35px;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input:invalid{border-color: #df2323 !important;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.valid{border-color: #2fc10e !important;}
+.one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"] + label.leadform-checkbox{padding-top: 2px; position: relative !important}
+.one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left:0; top:5px;}
+.one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:not(:checked) + label:after,
+.one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before,
+.one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"].filled-in:checked + label.leadform-checkbox::after
+{margin: 0}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{border:0px !important}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding: 18px 35px 18px 15px; border:1px solid #d9dad3 !important}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 9999;overflow: auto;width: 100%;}
+.lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative;top: 50%; transform: translateY(-50%); width: 100%}
+.lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
+.lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
+.check-marks svg{height: 60px;}
+.template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important}
+.check-marks{float: left; text-align:center;width: 100%;margin-bottom: 20px}
+.path {stroke-dasharray: 1000;stroke-dashoffset: 0;}
+.path.circle {-webkit-animation: dash 0.9s ease-in-out;animation: dash 0.9s ease-in-out;}
+.path.line {stroke-dashoffset: 1000;-webkit-animation: dash 0.9s 0.35s ease-in-out forwards;animation: dash 0.9s 0.35s ease-in-out forwards;}
+.path.check {stroke-dashoffset: -100;-webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;animation: dash-check 0.9s 0.35s ease-in-out forwards;}
+.common-result-main .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"].filled-in:not(:checked) + label:after{top:2px}
+  @-webkit-keyframes dash {
+    0% {stroke-dashoffset: 1000;}
+    100% {stroke-dashoffset: 0;}
+  }
+  @keyframes dash {
+    0% {stroke-dashoffset: 1000;}
+    100% {stroke-dashoffset: 0;}
+  }
+  @-webkit-keyframes dash-check {
+    0% {stroke-dashoffset: -100;}
+    100% {stroke-dashoffset: 900;}
+  }
+  @keyframes dash-check {
+    0% {stroke-dashoffset: -100;}
+    100% {stroke-dashoffset: 900;}
+  }
+  .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-section{margin-left: 0px; margin-right: 0}
+  .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+  .template-section .template-container.mobile .t1-result .no-footer-links.no-header-links{position: static;}
+  .template-section .template-container.mobile .check-marks{margin-bottom: 15px;}
+  .template-section .template-container.mobile .check-marks svg {height: 45px;}
+  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-heading-temp1{font-size: 20px;}
+
+  .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+  .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
+  /* .template-section .template-container.mobile  .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;} */
+
+  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
+  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i {left: 10px !important;top: 10px;font-size: 16px;}
+  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{font-size: 13px;padding: 7px  10px 7px  35px; min-height: 35px;}
+  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{margin-bottom: 25px}
+  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {padding: 7px 35px 7px 10px;border: 1px solid #d9dad3 !important;min-height: 35px;}
+  .one-page-card-new   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {padding-top: 2px;position: relative !important;font-size: 13px;min-height: auto !important;line-height: 17px;padding-left: 30px;}
+  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}

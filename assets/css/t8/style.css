@@ -76,7 +76,7 @@ ul, li {
 .eight-inner-wrapper.no-header-links.no-footer-links{margin: 20px 0 70px}
 .main-heading h1{max-width: 380px;  margin: 0px auto 10px !important; }
 .main-heading h1 p{margin-bottom: 0px}
-.main-heading ,  .main-heading h1{    font-size:44px;    margin-bottom: 20px;    line-height: 48px;    text-transform: none;}
+.main-heading ,  .main-heading h1{    font-size:44px;    margin-bottom: 20px;    line-height: 48px;    text-transform: none; word-break: break-word;}
 .main-heading p{    font-size: 44px;    line-height: 48px;}
 .sub-heading h2{max-width: 460px;  margin: 0px auto 18px !important; font-size: 18px; }
 .sub-heading{    font-size: 18px;    margin-bottom: 18px;    line-height: normal;    width: 100%;}
@@ -238,7 +238,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .question-components .postfixset + .custom-btn-outer1{margin-top: 0px !important; position: absolute; float:left; animation:none;left:50%; transform: translateX(-50%); margin-left: 0px;top:75px; margin-bottom: 0px; }
 .question-components .errorMessage{text-align: center;margin-top: 10px; float:left;display: block}
 .errorMessage.cust-err {  position: relative;  top: 50px;  margin: 0;  padding-top: 0;  font-size: 12px !important;  position: absolute;}
-.t1-ques-head{      color: #fff;    font-size:36px;  line-height: 42px;  margin-bottom: 25px;    text-align: center;}
+.t1-ques-head{      color: #fff;    font-size:36px;  line-height: 42px;  margin-bottom: 25px;    text-align: center;  word-break: break-word;}
 .template-eight .range-slider1.custom-slider1 input[type=range]::-webkit-slider-runnable-track{height: 4px; min-height: 4px; background: rgba(0,0,0,0.1) !important;border-radius: 0px !important }
 .template-eight .range-slider1.custom-slider1  input[type=range]::-moz-range-track {height: 4px; min-height: 4px; background: rgba(0,0,0,0.1) !important; border-radius: 0px !important}
 .template-eight .range-slider1.custom-slider1  input[type=range]::-ms-track {height: 4px; min-height: 4px;  background: rgba(0,0,0,0.1) !important; border-radius: 0px !important}
