@@ -3568,7 +3568,7 @@ input[type=number] {
         width: 30vw;
     }
     .t1-result-full-section {
-        width: 100vw !important;
+        width: 100% !important;
     }
     .t3-default-result-outer.t1-result-full-section .t1-result-small-container .small-bot-sec p {
         width: 60vw;
@@ -7976,6 +7976,10 @@ input.postfixset {
     width: 100%;
     font-size: 16px;
     line-height: 1.4;
+    margin-left: -5px;
+    word-wrap: break-word;
+    /* word-break: break-all; */
+    hyphens: auto !important;
 }
 
 .control-ver2 .pic-selector .control.control--checkbox span {
