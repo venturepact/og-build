@@ -4020,7 +4020,35 @@
     animation-duration: 0.3s;
     animation-iteration-count: 3;
   }
-  
+  .control-ver2 .radio-outer-base.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.control-ver2 .radio-outer.radio-icon-custom.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+.control-ver2 .checkbox-outer-base.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.control-ver2 .checkbox-outer.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.selectize-control .selectize-input.dropdown-active{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+ 
+
   @keyframes blinker {
     from {}
     50% {
@@ -4214,3 +4242,97 @@ p > span > a {color: inherit; }
 .template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.5}
 .template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.5}
 .template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.5}
+
+
+ /******** lead ************/
+ .template-section .common-result-main .t1-result-leadform{position: static}
+ .template-section .lead-popup{position: absolute;}
+ .lead-popup  .lead-popup-outer .lead-popup-main .input-validation{width: 100%; margin-left: 0}
+ .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title {
+     margin-top: 0;
+     padding-top: 0;
+     border-top: 0;
+     float: left;
+     width: 100%;
+     text-transform: none;
+     margin-bottom: 35px;
+     padding-left: 0px;
+     text-align: left;
+     font-size: 30px;
+     color: #2fc10e;
+     line-height: 1;
+     text-align: center;
+     word-break: break-word;
+ }
+ .lead-popup  .lead-popup-outer .lead-popup-main  .lead-action-wrapper{margin: 0}
+ 
+ .template-five .t1-result .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before, .template-five .t1-result .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
+     top: 0px !important;
+     left: 0px !important;
+     margin: 0 !important;
+ }
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input.valid {
+     border-color:  #17a717 !important;
+ }
+ 
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input.invalid {
+     border-color: #e82d2e !important;
+ }
+ .common-result-main  .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top:0px !important}
+ .lead-popup  .lead-popup-outer .lead-popup-main .question-section.leaded-form-c{max-width: 100%}
+ .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
+     top: 1px !important;
+     left: 1px !important;
+ }
+ .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 20px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
+ 
+ .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 20px;display: inline-table;}
+ 
+ .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 9999;overflow: auto;width: 100%;}
+ .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative;top: 50%; transform: translateY(-50%); width: 100%}
+ .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;  box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
+ .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
+ .check-marks svg{height: 60px;}
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  .input-outer.checkbox .leadform-checkbox{position: relative !important; min-height: auto; padding-bottom:2px}
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input{width: 100%}
+ .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer{padding: 0 10px;}
+ .check-marks{float: left; text-align:center;width: 100%;margin-bottom: 20px}
+ .path {stroke-dasharray: 1000;stroke-dashoffset: 0;}
+ .path.circle {-webkit-animation: dash 0.9s ease-in-out;animation: dash 0.9s ease-in-out;}
+ .path.line {stroke-dashoffset: 1000;-webkit-animation: dash 0.9s 0.35s ease-in-out forwards;animation: dash 0.9s 0.35s ease-in-out forwards;}
+ .path.check {stroke-dashoffset: -100;-webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;animation: dash-check 0.9s 0.35s ease-in-out forwards;}
+ .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"].filled-in:not(:checked) + label:after{top:2px}
+   @-webkit-keyframes dash {
+     0% {stroke-dashoffset: 1000;}
+     100% {stroke-dashoffset: 0;}
+   }
+   @keyframes dash {
+     0% {stroke-dashoffset: 1000;}
+     100% {stroke-dashoffset: 0;}
+   }
+   @-webkit-keyframes dash-check {
+     0% {stroke-dashoffset: -100;}
+     100% {stroke-dashoffset: 900;}
+   }
+   @keyframes dash-check {
+     0% {stroke-dashoffset: -100;}
+     100% {stroke-dashoffset: 900;}
+   }
+   
+   .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-section{margin-left: 0px; margin-right: 0}
+   .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+   .template-section .template-container.mobile .t1-result .no-footer-links.no-header-links{position: static;}
+   .template-section .template-container.mobile .check-marks{margin-bottom: 15px;}
+   .template-section .template-container.mobile .check-marks svg {height: 45px;}
+   .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-heading-temp1{font-size: 20px;}
+   .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+   .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+   .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
+   .template-section .template-container.mobile .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:27px;left: 0px;}
+   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
+   .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{margin-bottom: 25px;font-size: 20px;}
+   .template-section .template-container.mobile .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{border:0px !important; padding: 0 !important}
+   .template-eight .common-result-main .common-leadform-top.t1-result-leadform{position: static}
+   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item + input{display: none !important}

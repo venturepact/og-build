@@ -5345,13 +5345,13 @@ visuals.visual-outr span.graph-title {
     text-align: left;
     line-height: initial;
     padding-bottom: 8px;
-    opacity: 1;
+    opacity: 0.7;
     padding-top: 0px !important;
     cursor: pointer;
     margin-bottom: 0px;
     font-weight: normal;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 98%;
     text-overflow: ellipsis;
     max-height: 25px;
@@ -6297,7 +6297,36 @@ span.abhi {
     animation-duration: 0.3s;
     animation-iteration-count: 3;
   }
-  
+
+  .control-ver2 .radio-outer-base.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.control-ver2 .radio-outer.radio-icon-custom.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+.control-ver2 .checkbox-outer-base.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.control-ver2 .checkbox-outer.active .blink-border {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.selectize-control .selectize-input.dropdown-active{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+ 
+
   @keyframes blinker {
     from {}
     50% {
@@ -6342,7 +6371,6 @@ span.abhi {
   input.othersfield:-moz-placeholder {opacity: 0.4}
 
 /* other field add */
-
 p > span > a {color: inherit; }
 
 
@@ -6595,7 +6623,8 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .common-result-main [type="checkbox"] + label.leadform-checkbox{top:1px;}
 .one-page-card-new .common-result-main [type="checkbox"].tabbed:focus + label:after{box-shadow: -2px 0 0 8px rgba(0, 0, 0, 0.1);top: 3px;}
 .common-result-main .t1-result-leadform .input-outer.checkbox span{top: 30px}
-
+.t1-result-leadform .input-outer input{padding-bottom: 5px !important}
+.one-page-card-new .t1-result-main .t1-result-top.recommendation-outer .selectize-input{padding:  6px 35px 7px 7px}
 
 /******** lead ************/
 .template-section .common-result-main .t1-result-leadform{position: static}
@@ -6679,3 +6708,9 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {padding: 7px 35px 7px 10px;border: 1px solid #d9dad3 !important;min-height: 35px;}
   .one-page-card-new   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {padding-top: 2px;position: relative !important;font-size: 13px;min-height: auto !important;line-height: 17px;padding-left: 30px;}
   .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+.control-ver3 .poll-main .pic-selector.radio-outer .poll-percentage,
+.control-ver3  .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.control-ver3 .poll-main .pic-selector.radio-outer.active2 .poll-percentage,
+.control-ver1 .poll-main .pic-selector.radio-outer .poll-percentage,
+.control-ver1  .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.control-ver1 .poll-main .pic-selector.radio-outer.active2 .poll-percentage{ z-index: 2; text-align: left; left: 0px !important; bottom: auto; top:0; padding: 10px;}
