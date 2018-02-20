@@ -424,7 +424,7 @@ input[type=number] { -moz-appearance: textfield; }
 .isIframe .t1-result-main   { height: auto; min-height: auto !important }
 .landing-page-mid > div { display: table-cell; vertical-align: middle; }
 .sub-heading { font-size: 15px; margin-top: 20px; line-height: 23px; width: 70%; opacity: .9; }
-.sub-heading h2{ font-size: 15px; margin-top: 15px; line-height: 23px; width: 80%; opacity: .9; }
+.sub-heading h2{ font-size: 15px; margin-top: 15px; line-height: 23px; width: 80%; opacity: .9; word-break: break-word;}
 .sub-heading p{ margin:0; }
 .input-field { display: flex; }
 .landing-img { display: block; }

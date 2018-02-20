@@ -156,7 +156,8 @@ ul, li {
 
 .sub-heading h2 {
     max-width: 65%;
-    margin: 0px auto 25px !important
+    margin: 0px auto 25px !important;
+    word-break: break-word;
 }
 
 .main-heading, .main-heading h1 {
@@ -180,6 +181,7 @@ ul, li {
 
 h2.sub-heading p {
     margin-bottom: 0 !important;
+    word-break: break-word;
 }
 
 
@@ -187,6 +189,7 @@ h2.sub-heading p {
     font-size: 18px;
     margin-bottom: 25px;
     line-height: normal;
+    word-break: break-word;
 
 }
 .t1-result-sm-value{
@@ -8618,6 +8621,7 @@ p > span > a {color: inherit; }
     color: #2fc10e;
     line-height: 1;
     text-align: center;
+    word-break: break-word;
 }
 .lead-popup  .lead-popup-outer .lead-popup-main .question-section.leaded-form-c{width: 100%}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 20px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}

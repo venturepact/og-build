@@ -78,9 +78,9 @@ ul, li {
 .main-heading h1 p{margin-bottom: 0px}
 .main-heading ,  .main-heading h1{    font-size:44px;    margin-bottom: 20px;    line-height: 48px;    text-transform: none; word-break: break-word;}
 .main-heading p{    font-size: 44px;    line-height: 48px;}
-.sub-heading h2{max-width: 460px;  margin: 0px auto 18px !important; font-size: 18px; }
+.sub-heading h2{max-width: 460px;  margin: 0px auto 18px !important; font-size: 18px;word-break: break-word; }
 .sub-heading{    font-size: 18px;    margin-bottom: 18px;    line-height: normal;    width: 100%;}
-h2.sub-heading p {    margin-bottom: 0 !important;}
+h2.sub-heading p {    margin-bottom: 0 !important; word-break: break-word;}
 .custom-btn-outer {cursor:pointer; width: 110px;display: inline-block;border: 8px solid rgba(0,0,0,0); background:rgba(0,0,0,0.1);position:relative;border-radius: 50%;height: 110px; z-index:100;}
 .custom-btn-outer1 {cursor:pointer;width: 70px;display: inline-block;border: 8px solid rgba(0,0,0,0); background:rgba(0,0,0,0.1);position:relative; border-radius: 50%;height: 70px;  z-index:100;margin-top: 20px; margin-bottom: 10px}
 .ripple-dark.pic-selector + .custom-btn-outer1{display: block; margin: 20px auto 10px}
