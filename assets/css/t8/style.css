@@ -162,7 +162,7 @@ h2.sub-heading p {    margin-bottom: 0 !important; word-break: break-word;}
 .question-pic {       width: 100%;    text-align: center;    overflow: hidden;    max-height: 150px;    position: relative;    z-index: 99;  border-radius:5px;overflow:hidden;     max-width: 350px;    margin: 0 auto 20px;}
 .question-pic img{    max-width: 100%;    max-height: 150px;  border-radius:5px;  position: relative;    z-index: 9999;}
 .template-eight .leaded-form-c [type="checkbox"] + label  {  padding-left: 30px;  height: initial;  line-height: initial;}
-.template-eight [type="checkbox"] + label.leadform-checkbox {  padding-left: 30px;  top:0px;  font-size: 17px;  height: initial;  line-height: initial;  position: relative !important;  width: 100%;  text-align: left;  line-height: initial;  padding-bottom: 15px;  opacity: 1;   padding-top: 0px !important;   cursor: pointer;   margin-bottom: 0px;    font-weight: normal;     float: left;        width:100% ;     text-overflow: ellipsis;     height: auto ;line-height: 22px;        }
+.template-eight [type="checkbox"] + label.leadform-checkbox {  padding-left: 30px;  top:0px;  font-size: 17px;  height: initial;  line-height: initial;  position: relative !important;  width: 100%;  text-align: left;  line-height: initial;  padding-bottom: 0px;  opacity: 1;   padding-top: 0px !important;   cursor: pointer;   margin-bottom: 0px;    font-weight: normal;     float: left;        width:100% ;     text-overflow: ellipsis;     height: auto ;line-height: 22px;        }
 .custom-block {    width: 100%;    margin: 0 auto;    max-width: 360px;    position: relative;}
 .question-components input {  max-width: 100%;  text-align: left;  display: inline-block;  float:left;  padding: 5px 15px 4px 15px;  border-radius: 3px;  border: 2px solid #333;  background: rgba(255,255,255,0.1);  font-size: 17px;  min-height: 40px; transition:border-color 0.5s}
 .question-components input:focus , .template-eight  .common-result .t1-result-leadform .input-outer input:focus{ transition:border-color 0.5s}
@@ -280,10 +280,10 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;margin:0 auto;}
 .custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
-.landing-page-mid leadform .input-section .input-outer {       margin-bottom: 10px;    position: relative;   }
-.landing-page-mid leadform .input-section .input-outer input { min-height:40px;   float: left;    width: 100%;  font-size: 17px; padding: 5px; border-radius: 3px; margin-bottom: 20px;   background: rgba(255,255,255,0.2);    padding-left: 35px;  border:2px solid transparent}
+.landing-page-mid leadform .input-section .input-outer {       margin-bottom: 25px;    position: relative;   }
+.landing-page-mid leadform .input-section .input-outer input { min-height:40px;   float: left;    width: 100%;  font-size: 17px; padding: 5px; border-radius: 3px; margin-bottom: 0px;   background: rgba(255,255,255,0.2);    padding-left: 35px;  border:2px solid transparent}
 .landing-page-mid leadform .input-section .input-outer span {    float: left;  width: auto;   white-space: normal;    word-break: break-word;  right: 0px; position: absolute;    top: 42px;    left:0px;    text-align: left;    color: #f44336;    font-size: 12px;    line-height: 1}
-.landing-page-mid leadform .input-section .input-outer {    width: 100% !important; float: left;   margin: 0 0 0px 0;    padding: 0 0px;}
+.landing-page-mid leadform .input-section .input-outer {    width: 100% !important; float: left;   margin: 0 0 25px 0;    padding: 0 0px;}
 .input-field{float: left; width:100%; display: block}
 .input-outer i{position: absolute;left: 10px;top: 12px; font-size: 16px;}
 .template-section .page_0.t1-landing .input-outer i {left: 10px; top:12px !important}
@@ -968,7 +968,7 @@ input {    -webkit-transform: translate3d(0,0,0);}
 
 .control.control--checkbox span span  , .control.control--radio span span {    padding: 0 !important;}
 .control__indicator.icon-set div  ,.control__indicator.check-set div {    float: left;    width: 100%;    line-height: 0;}
-.landing-page-mid leadform .input-section .input-outer {    width: 100% !important; float: left;   margin: 0 0 0px 0;    padding: 0 0px;}
+.landing-page-mid leadform .input-section .input-outer {    width: 100% !important; float: left;   margin: 0 0 25px 0;    padding: 0 0px;}
 .input-field{float: left; width:100%; display: block}
 .template-eight .landing-page-mid .input-field label {    top: 0 !important; margin-top:40px;     float: none;    width: 100%;    font-size: 16px !important;    text-align: left;    display: table-header-group;}
 .t1-slider form > div{    position: static !important;}
@@ -1736,7 +1736,7 @@ path.highcharts-plot-band {
 p > span > a {color: inherit; }
 
 .t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{
-    top: 20px;
+    top: 25px;
 } 
 .template-eight .common-result-main .table-outer table tbody tr{    background: #fff !important;}
 .template-eight .common-result-main .table-outer table tbody tr td.correct_graded{    background: #f2f2f2 !important;}
