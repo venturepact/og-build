@@ -1423,12 +1423,14 @@ visuals .rec-image-outer img {
     margin-bottom: 20px;
     line-height: 34px;
     margin-top: 0;
+    word-break: break-word;
 }
 .sub-heading h2 {
     font-size: 15px;
     margin-bottom: 20px;
     line-height: 24px;
     width: 85%;
+    word-break: break-word;
 }
 .sub-heading {
     font-size: 15px;
@@ -1545,6 +1547,21 @@ visuals .rec-image-outer img {
     background: #fff;
 }
 .t1-question button.prime-action i {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 21px;
+}
+.t1-question a.prime-action {
+    width: auto;
+    padding: 0 21px;
+    cursor: pointer;
+    margin: 0px 0 0 0;
+    white-space: inherit;
+    border-radius: 22px;
+    background: #fff;
+}
+.t1-question a.prime-action i {
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
@@ -2564,6 +2581,7 @@ input[type=number] {
     margin-right: 0px;
     margin-left: 10px;
     color: #444444 !important;
+    word-break: break-word;
 }
 .t1-ques-head div {
     font-size: 15px;
@@ -2894,9 +2912,11 @@ input[type=number] {
     -webkit-transform: scale(1);
     transform: scale(1);
     border: 0;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 !important;
+    box-shadow: -2px 3px 0 6px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1);
+    width: 15px;
+    height: 15px;
 }
 .experian [type="checkbox"]:checked:disabled + label:before {
     border-right: 2px solid rgba(0, 0, 0, 0.26);
@@ -2970,8 +2990,8 @@ input[type=number] {
 }
 .experian [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
     border-radius: 2px;
-    background-color: #26a69a;
-    border-color: #26a69a;
+    background-color: transparent;
+    border-color: transparent;
 }
 .experian [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
     background-color: transparent;
@@ -4545,3 +4565,5 @@ span.abhi {
 .radio-outer.ripple-dark label.radio-icon{line-height:19px;}
 .radio-outer-base.ripple-dark label.radio-icon{line-height:19px;}
 .t1-button button > div{display:inline-block;float: left;}
+
+p > span > a {color: inherit; }
