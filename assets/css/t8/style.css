@@ -278,7 +278,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: 100%; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;margin:0 auto;}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 .landing-page-mid leadform .input-section .input-outer {       margin-bottom: 25px;    position: relative;   }
 .landing-page-mid leadform .input-section .input-outer input { min-height:40px;   float: left;    width: 100%;  font-size: 17px; padding: 5px; border-radius: 3px; margin-bottom: 0px;   background: rgba(255,255,255,0.2);    padding-left: 35px;  border:2px solid transparent}
@@ -1835,5 +1835,6 @@ p > span > a {color: inherit; }
     float: left;
     width: 100%;
     margin: 0;
+    word-break: break-word;
 }
 .loginBtn{width: auto !important}

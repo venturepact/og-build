@@ -1997,6 +1997,7 @@ visuals .rec-image-outer img {
     text-align: left;
     margin-top: 32px;
     font-size: 13px;
+    word-break: break-word;
 }
 .result_first {
     width: 100%;
@@ -2626,6 +2627,7 @@ input[type=number] {
     margin-top: 3px;
     opacity: 0.6;
     color: #444444;
+    word-break: break-word;
 }
 .t1-question form {
     float: left;
@@ -4443,7 +4445,7 @@ span.abhi {
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 7px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 7px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
  /*Opinion scale css*/
@@ -4567,3 +4569,89 @@ span.abhi {
 .t1-button button > div{display:inline-block;float: left;}
 
 p > span > a {color: inherit; }
+
+
+
+.radio-outer-base.active .control{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .radio-outer.active .control{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .experian .checkbox-outer-base.active [type="checkbox"].filled-in:checked + label:after{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .experian .checkbox-outer.active .control{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .selectize-control .selectize-input.dropdown-active{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .experian .textfield.checkbox-outer.active .control {
+    border: none !important;
+  }
+  .experian .textfield.checkbox-outer.active [type="checkbox"].filled-in:checked + label:after {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  
+  .opinon-scale-custom .radio-outer.active::after{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .t1-question .question-components .input-field.blink-animation input{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  .custom-block.rating-custom .rating-inner i.selected{
+    animation-name: blinker-color;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+  
+.experian [type="radio"]:checked + label:after, .experian [type="radio"].with-gap:checked + label:before, .experian [type="radio"].with-gap:checked + label:after{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.radio-outer.ripple-dark.active label.radio-icon{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+.radio-outer.textfield.active label .control__indicator.icon-set i{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
+.radio-outer.active.textfield .control.blink-border {
+    border: none !important;
+}
+  
+  @keyframes blinker {
+    from {}
+    50% {
+      border-color: #fff;
+    }
+    to {}
+  }
+  @keyframes blinker-color {
+    from {}
+    50% {
+      opacity: 1;
+    }
+    to {}
+  }

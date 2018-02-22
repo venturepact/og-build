@@ -6077,7 +6077,7 @@ span.abhi {
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css sahil */
@@ -6338,7 +6338,7 @@ span.abhi {
     animation-iteration-count: 3;
   }
   .custom-block.rating-custom .rating-inner i.selected{
-    animation-name: blinker;
+    animation-name: blinker-color;
     animation-duration: 0.3s;
     animation-iteration-count: 3;
   }
@@ -6349,6 +6349,14 @@ span.abhi {
     from {}
     50% {
       border-color: #fff;
+    }
+    to {}
+  }
+
+  @keyframes blinker-color {
+    from {}
+    50% {
+      opacity: 1;
     }
     to {}
   }
@@ -6754,3 +6762,33 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .one-page-card-new .common-result-space.t1-result-main .selectize-input{padding-bottom:4px}
 
 .t1-result-top.common-result.recommendation-outer  .input-outer span {left: 0px; padding: 0 !important}
+
+.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.valid + span.cust-icon-rest::after {
+    content: 'done';
+    font-family: "Material Icons";
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga' 1;
+    font-size: 24px;
+    color: #2fc10e !important;
+    line-height: 1;
+}
+.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.invalid + span.cust-icon-rest::after {
+    content: 'clear';
+    font-family: "Material Icons";
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga' 1;
+    font-size: 24px;
+    color: #df2323 !important;
+    line-height: 1;
+}
+.common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 60px !important;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
