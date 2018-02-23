@@ -317,6 +317,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     float: left;
+    word-break: break-word;
 }
 .section-control {
     width: 100%;
@@ -2098,6 +2099,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 98%;
     margin: 0 auto;
     display: inline-block;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading h1 {
     font-size: 56px;

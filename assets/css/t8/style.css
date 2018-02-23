@@ -1513,7 +1513,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .common-result-bot-icons.result-brand  .crb-left{float:left; width:100%}
 .common-result-bot-icons.result-brand  .crb-right{float:left; width:100%}
 .common-result-bot-icons.result-brand  .stickyfooter.lightSticky , #build .common-result-bot-icons.result-brand  .stickyfooter.lightSticky{float: left; width:100%; text-align: center;position: relative}
-.common-result-bot-icons.result-brand .t1-result-disclaimer {  float: left;  width: 100%;  font-size: 13px;  margin-top: 0;  margin-left: 0;  padding: 10px 0;}
+.common-result-bot-icons.result-brand .t1-result-disclaimer {  float: left;  width: 100%;  font-size: 13px;  margin-top: 0;  margin-left: 0;  padding: 10px 0; word-break: break-word;}
 .result-branding .desc-in-page.Questionnaire .disc-set i{display: none;}
 .template-eight  .poll-result .common-result-main .common-result-bot {    min-height: auto;    border-radius: 0;    background: transparent;    display: table-cell;    height: 100%;    position: relative;    float: none;    width: 100%;    box-shadow: none;}
 .template-eight  .poll-result .common-result-main .common-result-bot .poll-svgouter{display: block; float: none; padding: 0px; margin: 0 auto;max-width: 440px; width:100%}

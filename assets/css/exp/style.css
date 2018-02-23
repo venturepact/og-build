@@ -1617,6 +1617,7 @@ visuals .rec-image-outer img {
     padding-left: 14px;
     display: table-cell;
     vertical-align: middle;
+    word-break: break-word;
 }
 .disclaimer-icon-outer {
     width: auto;
@@ -1986,6 +1987,7 @@ visuals .rec-image-outer img {
     border-radius: 3px;
     float: none;
     transition: all 0.5s ease;
+    word-break: break-word;
 }
 .t1-result-leadform .t1-result-cta .prime-action p {
     margin: 0px;
