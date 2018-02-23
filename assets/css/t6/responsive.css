@@ -926,7 +926,7 @@
     .structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 100% !important;}
     .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 0px; }
     .t1-landing{border-width:10px;}
-    .landing-page-mid leadform .input-section .input-outer span{top:52px;}
+    .landing-page-mid leadform .input-section .input-outer span{top:46px;}
     .t1-ques-component .input-outer input {       font-size: 14px;    margin: 0 0 10px 0;    transition: 0.5s;    padding: 10px 10px 10px 45px;    min-height: 42px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control  span, .t1-question .ripple-dark.radio-outer-base label.control  span{ font-size: 14px;font-weight: normal}
     .t1-slider { padding-bottom: 0px;  margin-top: 0px;}
@@ -934,7 +934,7 @@
     .template-six .landing-page-mid .input-field label{margin-top: 0px;}
     .template-six .landing-page-mid .input-field label{font-size: 14px !important; padding-top: 3px !important;}
     .input-outer i {    position: absolute;      top: 20px;    font-size: 16px;}
-    .selectize-control.single .selectize-input {    min-height: 42px;    padding: 12px 35px 12px 10px;}
+    .selectize-control.single .selectize-input {    min-height: 42px;    padding: 10px 35px 10px 10px;}
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question {    background-image: none !important;    border: 10px solid rgba(255,255,255,0.1);}
     .t1-question-slider{width:100%;}
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
@@ -942,8 +942,15 @@
     .t1-question .ripple-dark label.control {    width: 130px;    height: 130px;}
     .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
     .main-heading h1 , .sub-heading h2{max-width:100% !important} 
-    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{margin-bottom: 25px}
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 0px 0 0px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
     .control-ver2 .submit-checkbox-outr{ bottom: 0px;}
+    .landing-page-mid leadform .input-section .input-outer i {
+        top: 13px;
+    }
+    .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span , .t1-ques-component .input-section .input-outer.checkbox span{top:33px !important}
+    .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -981,4 +988,34 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:124px; height:124px;margin-left: 5px; margin-top: 5px;}
     /* .control-ver2 .done-icon{top:45px;} */
     .active2 .ko-overlay1 {width: 134px;height: 134px; left: -4px;}
+}
+
+
+@media (max-width:640px){
+    .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
+    .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;}
+    .check-marks{margin-bottom: 15px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i {left: 10px !important;top: 10px !important;font-size: 16px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{font-size: 13px;padding: 7px  60px 7px  35px !important; margin:0px ;min-height: 35px;}
+    .check-marks svg {height: 45px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {
+        padding: 7px 35px 7px 10px;
+        border: 1px solid #d9dad3 !important;
+        min-height: 35px;
+    }
+    
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{margin-bottom: 25px}
+    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {
+        padding-top: 2px;
+        position: relative !important;
+        font-size: 13px;
+        min-height: auto !important;
+        line-height: 17px;
+        padding-left: 30px;
+    }
+    .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:38px}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
 }

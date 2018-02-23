@@ -336,6 +336,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     float: left;
+    word-break: break-word;
 }
 .questions .section-head span {
     float: left;
@@ -2189,6 +2190,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 98%;
     margin: 0 auto;
     display: inline-block;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading {
     font-size: 8vmin;
@@ -2197,6 +2199,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin-bottom: 10px !important;
+    word-break: break-word;
 }
 .landing-page-mid .sub-heading {
     font-size: 2vmin;
@@ -2206,6 +2209,7 @@ input[type=range]:focus::-ms-fill-upper {
     float: left;
     width: 100%;
     text-align: center;
+    word-break: break-word;
 }
 .bottom-section {
     margin-bottom: 20px;
@@ -3422,7 +3426,7 @@ span.abhi {
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css */

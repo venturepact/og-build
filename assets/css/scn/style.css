@@ -317,6 +317,7 @@ body {
     margin-bottom: 10px;
     width: 100%;
     float: left;
+    word-break: break-word;
 }
 .section-control {
     width: 100%;
@@ -2098,6 +2099,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 98%;
     margin: 0 auto;
     display: inline-block;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading h1 {
     font-size: 56px;
@@ -2106,7 +2108,8 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin-bottom: 0px !important;
-    margin-top: 0px
+    margin-top: 0px;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading {
     font-size: 56px;
@@ -2115,7 +2118,8 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin-bottom: 10px !important;
-    margin-top: 0px
+    margin-top: 0px;
+    word-break: break-word;
 }
 .landing-page-mid .main-heading p {
     margin: 0px;
@@ -2127,6 +2131,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 100%;
     text-align: center;
     margin: auto 0;
+    word-break: break-word;
 }
 .landing-page-mid .sub-heading {
     font-size: 20px;
@@ -2135,6 +2140,7 @@ input[type=range]:focus::-ms-fill-upper {
     width: 90%;
     text-align: center;
     margin: auto 5%;
+    word-break: break-word;
 }
 .bottom-section {
     margin-bottom: 20px;
@@ -3761,7 +3767,7 @@ input {
 }
 .no-logo .landing-page-mid {
     padding-top: 20px;
-    padding-bottom: 40px
+    padding-bottom: 50px
 }
 /*down arrow animation*/
 
@@ -3862,7 +3868,7 @@ span.abhi {
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css */
