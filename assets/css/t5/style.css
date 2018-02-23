@@ -644,8 +644,6 @@
         line-height: 23px;
         width: 80%;
         opacity: .9;
-        float:left;
-        word-break: break-word;
     }
     .sub-heading p {
         margin: 0;
@@ -750,7 +748,6 @@
     .main-heading,
     .main-heading h1 {
         font-size: 36px;
-        word-break: break-word;
     }
     .main-section form {
         width: 94%;
@@ -758,7 +755,7 @@
         margin-top: 35px;
     }
     .text-highlight .main-heading , .text-highlight .main-heading h1 , .text-highlight .main-heading p{line-height: 56px;}
-    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 46px;  word-break: break-word;}
+    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 46px; }
     .t1-question {
         overflow: hidden;
         min-height: 100vh;
@@ -809,7 +806,6 @@
         float: left;
         white-space: inherit;
         border-radius: 55px;
-        clear: both;
     }
     .landing-page-mid .t1-landing-leadform button {
         max-width: 100%;
@@ -848,7 +844,6 @@
         line-height: 28px;
         flex: 1 1 0;
         margin-right: 50px;
-        word-break: break-word;
     }
     .t1-ques-head div p {
         display: inline;
@@ -1923,11 +1918,11 @@
         font-size: 16px;
         box-shadow: none;
     }
-    /*.t1-question .question-components .selectize-control.single .selectize-input input {
+    .t1-question .question-components .selectize-control.single .selectize-input input {
         width: 100% !important;
         padding: 0px !important;
         margin: 0px !important;
-    }*/
+    }
     .t1-question .question-components .selectize-control.single .selectize-input .item {
         width: auto !important;
         padding-right: 6px;
@@ -2642,11 +2637,8 @@
         transform: scale(1);
         border: 0;
         border-radius: 50%;
-        box-shadow:0px 0px 3px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: rgba(0, 0, 0, 0.1);
-        border-radius: 0;
-        width:18px;
-        height:18px;
     }
     .template-five [type="checkbox"]:checked:disabled + label:before {
         border-right: 2px solid rgba(0, 0, 0, 0.26);
@@ -2968,7 +2960,7 @@
     .template-five [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
         content: '';
         position: absolute;
-        top: 3px;
+        top: 0;
         left: 0;
         width: 18px;
         height: 18px;
@@ -2988,7 +2980,7 @@
         content: '';
         position: absolute;
         top: 3px;
-        left: -4px !important;
+        left: 0;
         width: 18px;
         height: 18px;
         z-index: 0;
@@ -3014,7 +3006,7 @@
         /*-webkit-transform: rotateZ(37deg);    transform: rotateZ(37deg);    -webkit-transform-origin: 100% 100%;    transform-origin: 100% 100%;*/
     }
     .template-five [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
-        top: 4px;
+        top: 0;
         width: 18px;
         height: 18px;
         border: 2px solid #3a5771;
@@ -3069,7 +3061,7 @@
         padding-top: 0px !important;
         cursor: pointer;
         margin-bottom: 5px;
-        line-height: 25px;
+        line-height: 18px;
         float: left;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -3090,7 +3082,7 @@
         /*-webkit-transform: rotate(37deg);    transform: rotate(37deg);    -webkit-transform-origin: 100% 100%;    transform-origin: 100% 100%;*/
     }
     .template-five [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
-        top: 4px;
+        top: 1px;
         left: 6px;
         width: 8px;
         height: 14px;
@@ -3118,7 +3110,6 @@
     }
     .template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
         top: 3px;
-        left:5px !important;
     }
     .template-five .landing-page-mid leadform .input-section .input-outer.w100 {
         width: 100% !important;
@@ -3266,12 +3257,9 @@
     }
     .template-five .t1-result [type="checkbox"] + label.leadform-checkbox:before,
     .template-five .t1-result [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
-        top: 0px !important;
-        left: 0px;
-        margin: 0px !important;
+        top: 0 !important;
+        left: -2px;
     }
-    .template-five .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top:0px !important}
-    .template-five  .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 1px; top:2px}
     .t1-result leadform .input-outer {
         min-height: 34px;
     }
@@ -3774,11 +3762,6 @@
         margin-bottom: 15px;
         margin-right: 15px;
     }
-    .t1-question a.prime-action {
-        margin-top: 0 !important;
-        margin-bottom: 15px;
-        margin-right: 15px;
-    }
     .result-branding.logo_intmp.notInDevMode {
         position: static;
     }
@@ -3817,7 +3800,7 @@
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
 .t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 4px;cursor: pointer;padding: 5px;border-radius: 50%;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 4px;cursor: pointer;padding: 5px;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 .custom-block.rating-custom .errorMessage{top:35px;}
 
@@ -3909,7 +3892,6 @@
     .structure-right-align .radio-outer-base:not(.pic-selector), .structure-right-align .checkbox-outer-base, .structure-right-align .checkbox-outer {    float: right;    margin-left: 7px;    margin-right: 0;}
     .structure-right-align .control--radio .control__indicator.icon-set > div, .structure-right-align .check-comp .checkbox-outer .control__indicator.check-set > div {    float: right;    margin-right: -8px;    margin-left: 4px;    margin-top: 1px;    line-height: 1;}
     .structure-right-align  .t1-question button.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
-    .structure-right-align  .t1-question a.prime-action{  float: right; margin-right: 0 !important; margin-left: 15px !important}
     .structure-right-align .action-outer {    margin-right: 40px; margin-left: 0px;}
     .structure-right-align  .question-number {    margin-left: 12px;    margin-right: 0;}
     .structure-right-align  .t1-ques-head{   margin-left: 50px;    margin-right: 0;}
@@ -3965,7 +3947,7 @@
 .control-ver2 .pic-selector span.abhi {
     text-align: left;
     margin-top: 10px;
-    min-height: auto;
+    /* min-height: 40px; */
     float: left;
     display: inline-block;
     max-width: 100%;
@@ -3973,9 +3955,6 @@
     font-size: 16px;
     line-height: 1.4;
     margin-left: -5px;
-    word-wrap: break-word;
-    /* word-break: break-all; */
-    hyphens: auto !important;
 }
 .control-ver2 .pic-selector .control.control--checkbox span{
     display:none;
@@ -4024,50 +4003,6 @@
     animation-iteration-count: 3;
   }
   
-  .control-ver2 .radio-outer-base.active .blink-border {
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .control-ver2 .radio-outer.radio-icon-custom.active .blink-border {
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  
-  .control-ver2 .checkbox-outer-base.active .blink-border {
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .control-ver2 .checkbox-outer.active .blink-border {
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .selectize-control .selectize-input.dropdown-active{
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .t1-landing-inner .input-field.blink-animation{
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .opinon-scale-custom .radio-outer.active{
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-  .custom-block.rating-custom .rating-inner i.selected{
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
-  }
-
-
-  
   @keyframes blinker {
     from {}
     50% {
@@ -4075,20 +4010,6 @@
     }
     to {}
   }
-  @keyframes blinker-color {
-    from {}
-    50% {
-      opacity: 1;
-    }
-    to {}
-  }
-  /* @keyframes blinker-bg {
-    from {}
-    50% {
-      background: #fff;
-    }
-    to {}
-  } */
   .control-ver2 .poll-main .pic-selector.active .blink-border{
     animation-name: blinker-no;
   }
@@ -4148,24 +4069,21 @@ tspan {
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; border:0px; position: absolute;  width: 50px !important; padding: 8px 15px; margin-top: 0px;}
-/* .textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;} */
-.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{ display: none;   border-radius: 50px;height: 30px;width: 50px !important; position: relative}
-.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"],.textfield.radio-outer-base input[type="text"] {
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
+.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
-    width: 100%;
+    width: calc(100% - 60px);
     background: transparent;
     margin-top: 0px;
-    border: 1px solid #464646;
-    padding: 5px 22px;
-    border-radius: 50px;
-    padding-left: 40px;
-    min-height: 35px;
-    margin-bottom: 0 !important;
 }
-
-
-.textfield.radio-outer-base  input[type="text"] , .textfield.checkbox-outer-base  input[type="text"]{    padding-left: 22px;}
+.textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
+    float: right;
+    width: calc(100% - 60px);
+    background: transparent;
+    margin-top: 0px;
+}
 .textfield.radio-outer-base .control--radio::after {
     content: "\F111";
     font-family: FontAwesome;
@@ -4217,166 +4135,3 @@ tspan {
 
 /* other field */
 .control-ver2 .pic-selector:focus {outline: none;}
-.landing-page-mid .highlight-div{float:left;}
-
-p > span > a {color: inherit; }
-
-
-
-/* Css animation */
-
-.main-section .section-header{
-    animation-duration: 500ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-.main-section form{
-    animation-duration: 700ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-.t1-lead-component, .t1-ques-component{
-    animation-duration: 700ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-}
-.common-result-main .t1-result-topheading{
-    animation-duration: 500ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    position: relative;
-}
-.common-result-main .t1-result-inner{
-    animation-duration: 700ms;
-    -webkit-animation-name: slideInUp;
-    animation-name: slideInUp;
-    position: relative;
-} 
-
-@keyframes slideInUp {
-    from {
-      -webkit-transform: translate3d(0, 100%, 0);
-      transform: translate3d(0, 100%, 0);
-      visibility: visible;
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  }
-.common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top:3px !important;  }
-
-.textfield.active input[type="text"]::-webkit-input-placeholder {color: #fff; opacity: 0.5}
-.textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.5}
-.textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.5}
-.textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.5}
-.template-five .textfield input[type="text"]::-webkit-input-placeholder { opacity: 0.5}
-.template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.5}
-.template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.5}
-.template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.5}
-
-
- /******** lead ************/
- .template-section .common-leadform-top.t1-result-leadform.eight-inner-wrapper.leadAsPopup{position: static}
- .template-section .lead-popup{position: absolute;}
- .lead-popup  .lead-popup-outer .lead-popup-main .input-validation{width: 100%; margin-left: 0}
- .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title {
-     margin-top: 0;
-     padding-top: 0;
-     border-top: 0;
-     float: left;
-     width: 100%;
-     text-transform: none;
-     margin-bottom: 35px;
-     padding-left: 0px;
-     text-align: left;
-     font-size: 30px;
-     color: #2fc10e;
-     line-height: 1;
-     text-align: center;
-     word-break: break-word;
- }
- .lead-popup  .lead-popup-outer .lead-popup-main  .lead-action-wrapper{margin: 15px 0 0 0}
- 
- .template-five .t1-result .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before, .template-five .t1-result .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
-     top: 0px !important;
-     left: 0px !important;
-     margin: 0 !important;
- }
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input.valid {
-     border-color:  #17a717 !important;
- }
- 
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input.invalid {
-     border-color: #e82d2e !important;
- }
- .common-result-main  .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top:0px !important}
- .lead-popup  .lead-popup-outer .lead-popup-main .question-section.leaded-form-c{max-width: 100%}
- .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
-     top: 1px !important;
-     left: 1px !important;
- }
- .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 20px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
- 
- .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 20px;display: inline-table;}
- 
- .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 9999;overflow: auto;width: 100%;}
- .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative;top: 50%; transform: translateY(-50%); width: 100%}
- .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;  box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
- .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
- .check-marks svg{height: 60px;}
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  .input-outer.checkbox .leadform-checkbox{position: relative !important; min-height: auto; padding-bottom:2px}
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input{width: 100%}
- .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer{padding: 0 10px;}
- .check-marks{float: left; text-align:center;width: 100%;margin-bottom: 20px}
- .path {stroke-dasharray: 1000;stroke-dashoffset: 0;}
- .path.circle {-webkit-animation: dash 0.9s ease-in-out;animation: dash 0.9s ease-in-out;}
- .path.line {stroke-dashoffset: 1000;-webkit-animation: dash 0.9s 0.35s ease-in-out forwards;animation: dash 0.9s 0.35s ease-in-out forwards;}
- .path.check {stroke-dashoffset: -100;-webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;animation: dash-check 0.9s 0.35s ease-in-out forwards;}
- .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"].filled-in:not(:checked) + label:after{top:2px}
-   @-webkit-keyframes dash {
-     0% {stroke-dashoffset: 1000;}
-     100% {stroke-dashoffset: 0;}
-   }
-   @keyframes dash {
-     0% {stroke-dashoffset: 1000;}
-     100% {stroke-dashoffset: 0;}
-   }
-   @-webkit-keyframes dash-check {
-     0% {stroke-dashoffset: -100;}
-     100% {stroke-dashoffset: 900;}
-   }
-   @keyframes dash-check {
-     0% {stroke-dashoffset: -100;}
-     100% {stroke-dashoffset: 900;}
-   }
-   
-   .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-section{margin-left: 0px; margin-right: 0}
-   .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
-   .template-section .template-container.mobile .t1-result .no-footer-links.no-header-links{position: static;}
-   .template-section .template-container.mobile .check-marks{margin-bottom: 15px;}
-   .template-section .template-container.mobile .check-marks svg {height: 45px;}
-   .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-heading-temp1{font-size: 20px;}
-   .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
-
-   .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
-   .template-section .template-container.mobile .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:27px;left: 0px;}
-   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
-   .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{margin-bottom: 25px;font-size: 20px;}
-   .template-section .template-container.mobile .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{border:0px !important; padding: 0 !important}
-   .template-eight .common-result-main .common-leadform-top.t1-result-leadform{position: static}
-   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item + input{display: none !important}
-   
-   .t1-result{ overflow: hidden;}
-
-
-   .landing-page-mid .input-outer.checkbox{margin-top: 0}
-   .landing-page-mid .input-outer.checkbox   .input-field [type="checkbox"] + label.leadform-checkbox {
-    top: 0 !important;
-    margin: 0 !important;
-    min-height: auto !important;
-    line-height: 24px;
-} 
