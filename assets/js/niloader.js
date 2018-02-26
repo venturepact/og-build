@@ -721,12 +721,13 @@ function initMobileFrames(iframe_id) {
     og_button.setAttribute("id", "og_iframe_button_" + iframe_id);
     og_button.setAttribute("class", "og-iframe-button hide");
     og_button.setAttribute("onclick", "onImgClick('" + iframe_id + "')");
-    og_button.setAttribute("style", "position: fixed;right: 3%;top: 3%;color: black;text-decoration: none;z-index:9999; height:30px; width:30px;");
+    og_button.setAttribute("style", "position: fixed;right: 3%;top: 3%;color: black;text-decoration: none;z-index:99999; height:50px; width:50px;");
     var button_node = document.createTextNode("");
     og_button.appendChild(button_node);
     og_b.appendChild(og_button);
     var og_close = document.createElement("img");
     og_close.setAttribute("src", "https://cdn.filestackcontent.com/HuaIq7oFQwWyS5Fjni9e");
+    og_close.setAttribute("style", "padding-left:15px;");
     og_button.appendChild(og_close)
 }
 
