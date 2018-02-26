@@ -6291,6 +6291,7 @@ span.abhi {
     box-shadow: none !important;
     float: none !important;
     display: inline-block !important;
+    word-break: break-word;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
 .control-ver2 .done-icon i { font-size: 24px !important; width: 16px; line-height: 0.7; position: relative; left: -4px;}
@@ -6688,8 +6689,8 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:60px}
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:36px}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{background-color: transparent;border: 1px solid #d9dad3 !important;border-radius: 0;outline: none;width: 100%;font-size: 16px;margin: 0 0 0px 0;padding: 16px 10px 16px 35px !important;transition: all .3s;box-sizing: border-box;color: #666e78;margin-bottom: 0;box-shadow: none;padding-left: 35px;}
-.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input:invalid{border-color: #df2323 !important;}
-.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.valid{border-color: #2fc10e !important;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty{border-color: #df2323 !important;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid{border-color: #2fc10e !important;}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"] + label.leadform-checkbox{padding-top: 2px; position: relative !important}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left:0; top:5px;}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:not(:checked) + label:after,
@@ -6698,8 +6699,8 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 {margin: 0}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{border:0px !important; padding: 0 !important}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding: 18px 35px 18px 15px; border:1px solid #d9dad3 !important}
-.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99999999;overflow: auto;width: 100%;}
-.lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative;top: 50%; transform: translateY(-50%); width: 100%}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99999999;overflow: auto;width: 100%; display: flex; align-items: center}
+.lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative; width: 100%}
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
 .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
 .check-marks svg{height: 60px;}
@@ -6763,7 +6764,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 .t1-result-top.common-result.recommendation-outer  .input-outer span {left: 0px; padding: 0 !important}
 
-.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.valid + span.cust-icon-rest::after {
+.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid + span.cust-icon-rest::after {
     content: 'done';
     font-family: "Material Icons";
     text-rendering: optimizeLegibility;
@@ -6772,7 +6773,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     color: #2fc10e !important;
     line-height: 1;
 }
-.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.invalid + span.cust-icon-rest::after {
+.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty + span.cust-icon-rest::after {
     content: 'clear';
     font-family: "Material Icons";
     text-rendering: optimizeLegibility;

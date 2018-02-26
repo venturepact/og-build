@@ -651,6 +651,7 @@ a:focus {
     float: left;
     margin-top: 10px;
     opacity: 0.3;
+    word-wrap: break-word;
 }
 .temp3-questions {
     display: inline;
@@ -1847,6 +1848,7 @@ a:focus {
     min-height: 62px;
     color: #594542;
     z-index: 1;
+    word-break: break-word;
 }
 .t1-ques-head .help-outer {
     width: 23px;
