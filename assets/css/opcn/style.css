@@ -6318,3 +6318,10 @@ span.abhi {
   input.othersfield:-moz-placeholder {opacity: 0.4}
 
 /* other field add */
+
+.control-ver3 .poll-main .pic-selector.radio-outer .poll-percentage,
+.control-ver3  .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.control-ver3 .poll-main .pic-selector.radio-outer.active2 .poll-percentage,
+.control-ver1 .poll-main .pic-selector.radio-outer .poll-percentage,
+.control-ver1  .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.control-ver1 .poll-main .pic-selector.radio-outer.active2 .poll-percentage{ z-index: 2; text-align: left; left: 0px !important; bottom: auto; top:0; padding: 10px;}
