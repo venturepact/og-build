@@ -32,7 +32,7 @@
      .landing-page-mid .main-heading {          font-size: 38px;        padding: 0 10px;        line-height: 42px;     }
     .landing-page-mid .input-section {        width: 75%;    }
     .result-branding {        /*display: none;*/    }
-    .page_2 .disc-set {        width: 100%;        text-align: center;  margin:10px 0 0 !important  }
+    .page_2 .disc-set {        width: 100%;        text-align: center;  margin:10px 0 0 !important ; word-break: break-word; }
     .page_2  .share-link {        margin-top: 0px !important;    }
     /*.main-bg header .logo img{        max-width: 130px !important;        max-height: 45px !important;    }*/
     .powered-by span {        float: none;        margin-right: 4px;        font-size: 10px;        white-space: nowrap;        margin-top: 0.16em    }
@@ -125,7 +125,7 @@
     .landing-page-mid {        width: 100%;        overflow: hidden;    }
     .redo-link ul li {        padding: 2px 6px !important;    }
     .redo-link ul li a {        font-size: 12px !important;    }
-    .page_2 .disc-set {        float: left;        width: 100%;    }
+    .page_2 .disc-set {        float: left;        width: 100%;   word-break: break-word; }
     .share-set {        z-index: 9999;    }
     .page_2  .share-link ul li a {        position: relative;        z-index: 9999;    }
     .landing-page-mid .input-section {        width: 90% !important;        margin: 30px auto 0 0 !important;        margin-left: 30px !important;    }
@@ -164,7 +164,7 @@
     .page_2  .share-link {        width: auto;        z-index: 999;        position: relative;    }
     .redo-link ul li {        padding: 2px 6px;    }
     .redo-link ul li a {        font-size: 12px;    }
-    .page_2 .disc-set {        float: left;        width: 100%;           }
+    .page_2 .disc-set {        float: left;        width: 100%;     word-break: break-word;      }
     .share-set {        z-index: 9999;    }
     .page_2  .share-link ul li a {        position: relative;        z-index: 9999;    }
     header .logo {        width: 100% !important;        text-align: center !important;    }
@@ -184,7 +184,7 @@
     .page-logo {        /*display: none;*/    }
     .redo-link ul li {        padding: 2px 6px !important;    }
     .redo-link ul li a {        font-size: 12px !important;    }
-    .page_2 .disc-set {        float: left;        width: 100%;    }
+    .page_2 .disc-set {        float: left;        width: 100%;  word-break: break-word;  }
     .share-set {        z-index: 9999;    }
     .page_2  .share-link ul li a {        position: relative;        z-index: 9999;    }
     .landing-page-mid .input-section {        width: 90% !important;        margin: 0 auto !important;        margin-top: 4px !important;    }
