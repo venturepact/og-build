@@ -2,6 +2,7 @@
     .opinon-scale-custom span.t6{
         font-size: 9px;
     }
+    .submit-checkbox{padding:5px !important;}
 }
 @media (min-width: 0px) and (max-width: 767px) {
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 50px 20px 0px;}
@@ -3695,6 +3696,12 @@
     }
 
     @media (max-width:640px){
+        .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{ font-size: 14px;
+            margin-top: 10px;
+            line-height: 22px;
+        }
+        .lead-popup-main button.lf-skip-btn.ripple-light{font-size: 14px;}
+        .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:0px}
         .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
         .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
         .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;}
