@@ -8677,7 +8677,7 @@ p > span > a {color: inherit; }
     float: left;
     width: 100%;
     text-transform: none;
-    margin-bottom: 35px;
+    margin-bottom: 0px;
     padding-left: 0px;
     text-align: left;
     font-size: 30px;
@@ -8761,25 +8761,8 @@ p > span > a {color: inherit; }
   }
   .template-six .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox{left: 0 !important; top:0px !important; position: relative !important}
   .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-section{margin-left: 0px; margin-right: 0}
-  .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
-  .template-section .template-container.mobile .t1-result .no-footer-links.no-header-links{position: static;}
-  .template-section .template-container.mobile .check-marks{margin-bottom: 15px;}
-  .template-section .template-container.mobile .check-marks svg {height: 45px;}
-  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-heading-temp1{font-size: 20px;}
-.lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
-  .template-section .template-container.mobile .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
-  .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
-  /* .template-section .template-container.mobile  .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;} */
-  .template-section .template-container.mobile .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:36px;left: 0px;}
-  .template-section .template-container.mobile .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:27px;left: 0px;}
-  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
-  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i {left: 10px !important;top: 10px !important;font-size: 16px;}
-  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{font-size: 13px;padding: 7px  60px 7px  35px !important; min-height: 35px;}
-  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{margin-bottom: 25px}
-  .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {padding: 7px 35px 7px 10px;border: 1px solid #d9dad3 !important;min-height: 35px;}
   .one-page-card-new   .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {padding-top: 2px;position: relative !important;font-size: 13px;min-height: auto !important;line-height: 17px;padding-left: 30px;}
-  .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
-  .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:30px}
+ .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:30px}
   .common-result-main .t1-result-leadform .input-outer span{padding: 0 10px !important}
   .template-six .common-result-main .t1-result-leadform .input-outer input{font-size: 14px}
 
@@ -8788,12 +8771,27 @@ p > span > a {color: inherit; }
 .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty + span.cust-icon-rest::after {content: 'clear';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #df2323 !important;line-height: 1;}
 .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {position: absolute;top:  0 !important;left: auto !important;right: 0 !important;width: 60px !important;bottom: 0;display: flex;align-items: center;justify-content: center;}
 .template-section .template-container.mobile .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
-.template-section .template-container.mobile  .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
-
-.template-section .template-container.mobile   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
-
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
-.template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
-.template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{font-size: 14px}
+.lead-popup-main  .lf-skip-btn{    background: none;    border: none;  opacity: 0.7;  float: none;    text-transform: uppercase;      font-size: 16px;    margin-top: 10px;    margin-left: 10px;}
+.lead-popup-main .lf-skip-btn:hover{  opacity: 1}
+
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  left: 0;
+  font-size: 18px;
+  position: relative;
+  line-height: 25px;
+  box-shadow: none;
+  z-index: 9;
+  width: 100%;
+  opacity: .8;
+  color: #363b3e;
+  float: left;
+  margin-top: 15px;
+}
+.lead-popup-head {float: left;width: 100%;margin-bottom: 35px;}
