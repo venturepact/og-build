@@ -6688,7 +6688,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-outer{margin: 0 0 25px 0 ; padding: 0px }
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:60px}
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:36px}
-.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{background-color: transparent;border: 1px solid #d9dad3 !important;border-radius: 0;outline: none;width: 100%;font-size: 16px;margin: 0 0 0px 0;padding: 16px 10px 16px 35px !important;transition: all .3s;box-sizing: border-box;color: #666e78;margin-bottom: 0;box-shadow: none;padding-left: 35px;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{background-color: transparent;border: 1px solid #d9dad3 !important;border-radius: 0;outline: none;width: 100%;font-size: 16px;margin: 0 0 0px 0;padding: 16px 10px 16px 35px !important;box-sizing: border-box;color: #666e78;margin-bottom: 0;box-shadow: none;padding-left: 35px;}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty{border-color: #df2323 !important;}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid{border-color: #2fc10e !important;}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"] + label.leadform-checkbox{padding-top: 2px; position: relative !important}
@@ -6807,3 +6807,6 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
         float: left;
         margin-top: 15px;
     }
+
+    /* .isIframe .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{max-height: 100%; overflow: visible}
+    .isIframe .lead-popup{padding: 50px 0; display: block;overflow: visible; height: 100%;} */
