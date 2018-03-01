@@ -440,7 +440,7 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     var parser = document.createElement('a');
     parser.href = window.location.href;
-    //    ga('create', gap, 'auto', 'markettingteam');
+    ga('create', gap, 'auto', 'markettingteam');
     ga('create', gad, 'auto', 'devteam', { 'allowLinker': true });
     ga('require', 'linker');
     ga('devteam.linker:autoLink', [parser.hostname]);
