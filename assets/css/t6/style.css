@@ -6940,7 +6940,6 @@ input.postfixset {
     justify-content: center;
     color: #fff;
     background-color: transparent !important;
-    font-size: 16px;
     font-weight: 700;
     position: relative
 }
@@ -8522,7 +8521,7 @@ p > span > a {color: inherit; }
     animation-duration: 500ms;
     animation-name: opacity-1;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .common-result-main .t1-result-topheading{
     animation-duration: 700ms;
