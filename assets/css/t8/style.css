@@ -1818,7 +1818,8 @@ p > span > a {color: inherit; }
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid + span.cust-icon-rest::after {content: 'done';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #2fc10e !important;line-height: 1;}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty + span.cust-icon-rest::after {content: 'clear';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #df2323 !important;line-height: 1;}
     .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {position: absolute;top:  0 !important;left: auto !important;right: 0 !important;width: 60px !important;bottom: 0;display: flex;align-items: center;justify-content: center;}
-     .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 60px}
+    .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.dropdown span.cust-icon-rest {width: auto !important;}
+    .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 60px}
     .template-section .template-container.mobile   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
 
 
@@ -1871,3 +1872,64 @@ p > span > a {color: inherit; }
         transform: scale(1);
     }
   }
+
+
+  /*blink animation*/
+
+.question-components .full-width .input-field.blink-animation input{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.selectize-control .selectize-input.dropdown-active {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.template-eight .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+.template-eight [type="checkbox"]:checked+label.leadform-checkbox::before, 
+.t1-question .ripple-dark.checkbox-outer-base [type="checkbox"]:checked+label.control::before{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.t1-question .ripple-dark.radio-outer-base [type="radio"]:checked+label.control::before{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.questions .question-section-outer .input-field.blink-animation{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+    border-radius: 5px;
+}
+.opinon-scale-custom .radio-outer::after{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.opinon-scale-custom .radio-outer.active::after{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.custom-block.rating-custom .rating-inner i.selected{
+    animation-name: blinker-color;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+@keyframes blinker {
+    from {}
+    50% {
+        border-color: #fff;
+    }
+    to {}
+}
+@keyframes blinker-color {
+    from {}
+    50% {
+        opacity: 1;
+    }
+    to {}
+}
