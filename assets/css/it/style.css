@@ -121,7 +121,6 @@ a:focus {
     margin-bottom: 15px;
     line-height: 55px;
     margin-top: 60px;
-    word-break: break-word;
 }
 .sub-heading {
     font-size: 22px;
@@ -478,7 +477,6 @@ a:focus {
     display: inline;
     float: none;
     margin-right: 4px;
-    word-break: break-word;
 }
 .t1-ques-head div {
     font-size: 20px;
@@ -651,7 +649,6 @@ a:focus {
     float: left;
     margin-top: 10px;
     opacity: 0.3;
-    word-wrap: break-word;
 }
 .temp3-questions {
     display: inline;
@@ -1848,7 +1845,6 @@ a:focus {
     min-height: 62px;
     color: #594542;
     z-index: 1;
-    word-break: break-word;
 }
 .t1-ques-head .help-outer {
     width: 23px;
@@ -1970,20 +1966,6 @@ a:focus {
     /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
 }
 .t1-question button.prime-action {
-    font-size: 18px;
-    width: auto;
-    padding: 12px 60px;
-    /*box-shadow: 1px 10px 10px 3px rgba(0,0,0,0.3);*/
-    
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 0px;
-    float: left;
-    margin-top: 30px;
-    white-space: inherit;
-}
-.t1-question a.prime-action {
     font-size: 18px;
     width: auto;
     padding: 12px 60px;
