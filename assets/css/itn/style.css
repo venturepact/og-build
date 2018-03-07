@@ -4618,3 +4618,37 @@ p > span > a {color: inherit; }
      /****** fb btn leadgen********/
   .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 0 15px 0 46px !important;}
   .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 0 15px 0 46px !important; float: left;}
+
+    /*blink animation*/
+
+.question-components .full-width .input-field.blink-animation input{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.selectize-control .selectize-input.dropdown-active {
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.t1-question .question-components input.blink-animation{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+    border-radius: 5px;
+}
+
+@keyframes blinker {
+    from {}
+    50% {
+        border-color: #fff;
+    }
+    to {}
+}
+@keyframes blinker-color {
+    from {}
+    50% {
+        opacity: 1;
+    }
+    to {}
+}
