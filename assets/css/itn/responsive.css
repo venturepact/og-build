@@ -621,6 +621,13 @@
         font-size: 14px;
         padding: 10px 40px;
     }
+    .t1-question a.prime-action {
+        float: none;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+        padding: 10px 40px;
+    }
     .t1-ques-component {
         width: auto;
         margin-bottom: 10px;
@@ -1592,6 +1599,11 @@
         font-size: 16px;
         padding: 10px 45px;
     }
+    .t1-question a.prime-action {
+        float: left;
+        font-size: 16px;
+        padding: 10px 45px;
+    }
     .t1-ques-component.leadform-inline .lf-skip-btn {
         font-size: 16px;
         position: relative;
@@ -1715,7 +1727,7 @@
         margin-top: 0;
     }
     [type="checkbox"] + label.leadform-checkbox {
-        margin-top: 9px;
+        margin-top: 0px;
     }
     .t1-question .question-components [type="checkbox"] + label.leadform-checkbox {
         font-size: 18px;
@@ -1868,6 +1880,7 @@
         font-size: 12px !important;
         top: 34px!important;
     }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span {top: 26px !important;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     .table-outer {
@@ -2276,6 +2289,10 @@
         font-size: 13px;
         padding: 9px 30px;
     }
+    .t1-question a.prime-action {
+        font-size: 13px;
+        padding: 9px 30px;
+    }
     .page_1 form .prime-action {
         margin-bottom: 10px;
         margin-top: 30px;
@@ -2499,4 +2516,46 @@
 @media (max-width:1024px){
     .common-result header.landing-page-header {        position: relative !important;      top: -10px !important;          }
 
+}
+
+@media (max-width:640px){
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {
+        font-size: 18px !important;
+    }
+    .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 0 15px 0 46px !important; float: none;}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+   .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
+   .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.dropdown span.cust-icon-rest {width: auto !important;}
+   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
+    .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
+    .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;}
+    .check-marks{margin-bottom: 15px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
+   .check-marks svg {height: 45px;}
+   .lead-popup-main .lf-skip-btn{margin-top: 3px}
+    .t1-result .lead-popup  .lead-popup-outer .lead-popup-main .custom-btn-outer{width:90px !important; border-radius:50%; height:90px !important; overflow: visible;}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
+
+   .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+}
+@media (min-width: 641px) and (max-width: 1024px) {
+    .lead-popup .lead-popup-outer{max-width: 600px}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 24px}
+    .check-marks svg {height: 50px;}
+    .check-marks{margin-bottom: 15px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div , .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px; line-height: 1}
+    /* .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{top:13px; font-size: 16px} */
+    .lead-popup-head {margin-bottom: 25px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer{margin-bottom: 20px; margin-top: 0px}
+
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span{top:38px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{font-size: 14px;    }
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 15px; line-height: 22px;  margin-top: 10px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item{font-size: 14px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{padding: 0 !important}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{font-size: 14px;    padding-left: 30px;line-height: 26px;}
 }
