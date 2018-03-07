@@ -2,14 +2,35 @@
 <html lang="en">
 <head>
 	<?php
-		$host = explode('.',$_SERVER['HTTP_HOST']);
-		array_shift($host);
-		$apiUrl = 'api.'.implode('.',$host);
-		if (strpos($apiUrl, 'outgrow') !== false) {
+		$hostName = $_SERVER['HTTP_HOST'];
+		// $host = explode('.',$_SERVER['HTTP_HOST']);
+
+		// array_shift($host);
+		//$apiUrl = 'https://api.'.implode('.',$host);
+
+		$apiUrl = 'https://outgrow-api.herokuapp.com';
+
+		if (preg_match("/outgrow\.co\.in$/", $hostName)) {
+			$apiUrl = 'https://outgrow-biz-api.herokuapp.com';
+		}
+		else if (preg_match("/rely\.co$/", $hostName)) {
+			$apiUrl = 'https://outgrow-api.herokuapp.com';
+		}
+		else if (preg_match("/outgrow\.co$/", $hostName)) {
+			$apiUrl = 'https://api.outgrow.co';
+		}
+
+		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+
+		/*if (strpos($apiUrl, 'outgrow') !== false) {
+
 			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		} else {
-			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+			$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		}
+
+		die(var_dump($apiUrl));*/
+
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
 	        CURLOPT_RETURNTRANSFER => 1,
@@ -18,14 +39,35 @@
 			CURLOPT_SSL_VERIFYPEER=>false,
 			CURLOPT_HTTPHEADER=>array('Origin: https://app.outgrow.co'),
 	    ));
-	    $resp = curl_exec($curl);
+		$resp = curl_exec($curl);
+		
 	    //close connection
 	    curl_close($curl);
-	    $response	=	json_decode($resp,true);
+	    $response = json_decode($resp,true);
 	    if(!empty($response['data']))
 	    {
 	    	// This is the URL you want to shorten
-	    	unset($curl);
+			unset($curl);
+			// curl to get calc integration
+			$curl2 = curl_init();
+			curl_setopt_array($curl2, array(
+					CURLOPT_RETURNTRANSFER => 1,
+					CURLOPT_URL => $apiUrl.'/api/v1/builder/app_integration/'.$response['data']['url'],
+					CURLOPT_USERAGENT => 'Codular Sample cURL Request',
+					CURLOPT_SSL_VERIFYPEER=>false,
+					CURLOPT_HTTPHEADER=>array('Origin: http://app.rely.co'),
+			));
+			$resp2 = curl_exec($curl2);
+			curl_close($curl2);
+			$pages = "";
+			$result=json_decode($resp2,true);			
+			if(!empty($result['data'])) {	
+			    if(result['data']['instant_articles']){
+					$pages = $result['data']['instant_articles']['page_id'];
+			    }
+			}			
+			unset($curl2);
+			// end of calc integration
 			$name = explode("?", $_SERVER['REQUEST_URI']);
 			$longUrl = $_SERVER['REQUEST_SCHEME'].'://live.outgrow.co/seo'.$name[0];
 			$apiKey = 'AIzaSyAyEiPl1ZWGqIjhCb4hPz34HgwLS_G9zZk';
@@ -66,6 +108,7 @@
 		<meta name="twitter:title" content="<?php echo $response['data']['title']; ?>">
 		<meta name="twitter:description" content="<?php echo $response['data']['description']; ?>">
 		<meta name="twitter:image" content="<?php echo $imageLink; ?>">
+		<meta property="fb:pages" content="<?php echo $pages; ?>" />
 	<?php
 	    }
 	    else
