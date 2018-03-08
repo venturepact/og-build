@@ -273,7 +273,11 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .opinon-scale-custom .radio-outer-base.active::before{opacity:1;}
 .opinon-scale-custom .radio-outer-base .mid-outer {  text-align: right;  margin-left: -8px;  margin-top: 0px;}
 
-.custom-block.rating-custom .rating-inner i.selected{background:rgba(255,255,255,0.3)}
+.custom-block.rating-custom .rating-inner i.selected{
+    /*background:rgba(255,255,255,0.3)*/
+    background: #fff;
+    opacity: 0.6;
+}
 .custom-block.rating-custom {  max-width: 420px;  text-align: center;}
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: 100%; margin-top: 0px;margin-bottom: 5px;}
