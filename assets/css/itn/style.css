@@ -2042,11 +2042,15 @@ visuals .rec-image-outer img {
     padding-left: 2px !important;
     background: none !important;
 }
-.t1-question .question-components .selectize-control.single .selectize-input input {
-    width: 0px !important;
+ .t1-question .question-components .selectize-control.single .selectize-input input {
+ 
     min-width: initial !important;
     padding: 0px !important;
     margin: 0px !important;
+}
+#old_form .t1-question .question-components .selectize-control.single .selectize-input input {
+    width: 0px !important;
+
 }
 .t1-question .question-components .selectize-control.single .selectize-input .item {
     /*width: 150px !important;*/
@@ -4652,3 +4656,32 @@ p > span > a {color: inherit; }
     }
     to {}
 }
+
+
+
+/*********************** new design ********************************/
+
+.new_control {
+    counter-reset: new_control;
+    left: -10000px;
+    opacity: 0;
+    position: relative;
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transition: opacity 0.15s linear, -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0.15s linear, -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    .new_control.visible {left: 0;opacity: 1; }
+    .new_control.complete {opacity: .3; }
+    .new_control.complete:hover {opacity: 1; }
+  
+      .new_control.visible.complete{transform: scale(0.75)}
+      .new_control .t1-ques-head div {    font-size: 30px; line-height: 40px}
+      .invisible + .w100.text-center {visibility: hidden;}
+    .visible + .w100.text-center {visibility: visible;}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; padding-right: 15px}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {font-size: 30px !important; }
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item {min-height: auto;  line-height: 40px;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
