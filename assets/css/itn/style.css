@@ -2043,7 +2043,6 @@ visuals .rec-image-outer img {
     background: none !important;
 }
  .t1-question .question-components .selectize-control.single .selectize-input input {
- 
     min-width: initial !important;
     padding: 0px !important;
     margin: 0px !important;
@@ -4620,8 +4619,8 @@ p > span > a {color: inherit; }
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup-main  .lead-heading-temp1{margin-bottom: 0px}
 
      /****** fb btn leadgen********/
-  .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 0 15px 0 46px !important;}
-  .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 0 15px 0 46px !important; float: left;}
+     .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important;}
+     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important; float: left;}
 
     /*blink animation*/
 
@@ -4658,7 +4657,6 @@ p > span > a {color: inherit; }
 }
 
 
-
 /*********************** new design ********************************/
 
 .new_control {
@@ -4674,12 +4672,36 @@ p > span > a {color: inherit; }
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .new_control.visible {left: 0;opacity: 1; }
     .new_control.complete {opacity: .3; }
+
+    .new_control.complete:hover {opacity: 1; z-index: 99; }
+
     .new_control.complete:hover {opacity: 1; }
+
   
       .new_control.visible.complete{transform: scale(0.75)}
       .new_control .t1-ques-head div {    font-size: 30px; line-height: 40px}
       .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
+
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; }
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
+    .t1-question .new_control .question-components input{font-size: 30px !important;     line-height: 40px !important; }
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item {min-height: auto;  line-height: auto;}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input{max-height: inherit !important; min-height: auto;padding-top: 0 !important}
+    .new_control.invisible{display: none;}
+    .new_control.visible{display: block;}
+
+    .template-section  .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+    .template-section .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
+    .template-section .t1-question .new_control .question-components input{font-size: 22px !important; }
+    .template-section .new_control .t1-ques-head div {    font-size: 22px; line-height: 40px}
+
+    .new_control .errorMessage{bottom: -25px}
+    .template-section .new_control .errorMessage{bottom: -25px}
+
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; padding-right: 15px}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {font-size: 30px !important; }
