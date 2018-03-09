@@ -396,7 +396,8 @@
         position: relative !important;
         right: 0 !important;
       }
-    }</style><script type="text/javascript">let hosturl = window.location.hostname;
+    }
+    #HandsontableCopyPaste{display: none !important;}</style><script type="text/javascript">let hosturl = window.location.hostname;
     let CNameUrl = window.location.href;
 
     // return true for root domain     
@@ -521,8 +522,6 @@
     });
 
     $(document).ready(function () {
-      // 
-      $('#HandsontableCopyPaste').css("display", "none");
       //-----reload if user is inactive for two hours
       let interval = null;
       let seconds = 0;
