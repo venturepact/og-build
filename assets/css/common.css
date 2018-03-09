@@ -2135,7 +2135,8 @@ ul.three-dots>li.green {
     border-radius: 1px;
     min-height: 140px;
     padding: 0 15px;
-    margin-bottom: 17px;
+    margin-bottom: 17px !important;
+    margin-top:0px !important;
     color: #333 !important;
 }
 
@@ -3203,7 +3204,7 @@ h4.opinion-email-head {
 
 .opinion-email-section .emebed-code-part pre {
     padding: 20px !important;
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 .opinion-email-code {
