@@ -2541,8 +2541,11 @@
    .lead-popup-main .lf-skip-btn{margin-top: 3px}
     .t1-result .lead-popup  .lead-popup-outer .lead-popup-main .custom-btn-outer{width:90px !important; border-radius:50%; height:90px !important; overflow: visible;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
-
    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+   .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+   .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
+   .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
+   .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
 }
 @media (min-width: 641px) and (max-width: 1024px) {
     .lead-popup .lead-popup-outer{max-width: 600px}
