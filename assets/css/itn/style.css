@@ -2839,7 +2839,7 @@ visuals .rec-image-outer img {
     color: rgba(48, 48, 48, 0.5);
 }
 .selectize-dropdown-content {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     max-height: 140px;
@@ -4686,7 +4686,7 @@ p > span > a {color: inherit; }
     .visible + .w100.text-center {visibility: visible;}
 
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; }
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 10px !important }
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
     .t1-question .new_control .question-components input{font-size: 30px !important;     line-height: 40px !important; }
