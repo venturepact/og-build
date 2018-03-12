@@ -3080,8 +3080,8 @@ input[type=number] {
     margin-left: 0px;
     border-radius: 3px;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
-    -webkit-animation: submitMove 300ms;
-    animation: submitMove 300ms;
+    -webkit-animation: submitMove 0.25s;
+    animation: submitMove 0.25s;
     z-index: 9;
     display: inline;
     line-height: 22px;
@@ -3116,9 +3116,11 @@ input[type=number] {
 @-webkit-keyframes submitMove {
     0% {
         width: 0px;
+        visiblity:hidden;
     }
     100% {
-        width: 105px;
+        width: 95px;
+        visiblity:visible;
     }
 }
 
@@ -3127,9 +3129,11 @@ input[type=number] {
 @keyframes submitMove {
     0% {
         width: 0px;
+        visiblity:hidden;
     }
     100% {
-        width: 105px;
+        width: 95px;
+        visiblity:visible;
     }
 }
 
@@ -5771,7 +5775,7 @@ button.submit-checkbox-img.ripple-light {
     /* position: absolute; */
     margin-top: 8px;
     -webkit-animation: submitMove 300ms;
-    animation: submitMove 300ms;
+    animation: submitMove 0.25s;
     text-transform: uppercase;
 }
 
@@ -5782,8 +5786,8 @@ button.submit-checkbox-img.ripple-light {
     border-radius: 3px;
     /* position: absolute; */
     margin-top: 8px;
-    -webkit-animation: submitMove 300ms;
-    animation: submitMove 300ms;
+    -webkit-animation: submitMove 0.25s;
+    animation: submitMove 0.25s;
     text-transform: uppercase;
 }
 

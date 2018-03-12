@@ -1059,13 +1059,13 @@ li {
 .t1-result .t1-overlay {
     background: rgba(0, 0, 0, 0.3);
 }
-.t1-result-top {
+/*.t1-result-top {
     float: left;
     width: 100%;
     margin-left: 0px;
     margin-bottom: 0px;
     margin-top: 30px;
-}
+}*/
 .recommendation-outer.t1-result-top {
     float: left;
     width: 100%;
@@ -3441,8 +3441,8 @@ input[type=number] {
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
     
-    -webkit-animation: submitMove 300ms;
-    animation: submitMove 300ms;
+    -webkit-animation: submitMove 0.25s;
+    animation: submitMove 0.25s;
     z-index: 9;
     display: inline;
     line-height: 22px;
@@ -3473,28 +3473,32 @@ input[type=number] {
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
     
-    -webkit-animation: submitMove 300ms;
+    -webkit-animation: submitMove 0.25s;
     /* Safari 4.0 - 8.0 */
     
-    animation: submitMove 300ms;
+    animation: submitMove 0.25s;
     padding-top: 12px;
 }
 @-webkit-keyframes submitMove {
     0% {
-        width: 0px;
+        width: auto;
+        visiblity:hidden;
     }
     100% {
-        width: 105px;
+        width: 95px;
+        visiblity:visible;
     }
 }
 /* Standard syntax */
 
 @keyframes submitMove {
     0% {
-        width: 0px;
+        width: auto;
+        visiblity:hidden;
     }
     100% {
-        width: 105px;
+        width: 95px;
+        visiblity:visible;
     }
 }
 .control--checkbox span.submit-checkbos-span {
@@ -3524,10 +3528,10 @@ input[type=number] {
     border-radius: 5px;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     
-    -webkit-animation: submitMove 300ms;
+    -webkit-animation: submitMove 0.25s;
     /* Safari 4.0 - 8.0 */
     
-    animation: submitMove 300ms;
+    animation: submitMove 0.25s;
 }
 .submit-textbox {
     border: 1px solid #d9dad3;
@@ -4955,12 +4959,12 @@ visuals.visual-outr span.graph-title {
 }
 /*.gradedquiz-main .t1-result-top{flex: 1; padding: 20px; margin-top: 0px;}*/
 
-.gradedquiz-main .t1-result-top {
+/*.gradedquiz-main .t1-result-top {
     float: left;
     width: 50%;
     padding: 25px;
     margin-top: 0px;
-}
+}*/
 .gradedquiz-main .t1-result-leadform .container-temp {
     padding: 0px;
 }
@@ -6837,3 +6841,6 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
    .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-right: 15px; padding-left: 35px}
     .template-section .template-container.mobile     .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 10px !important; left: auto !important}
     .template-section .template-container.mobile  .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 35px; padding-left: 50px}
+.checkbox-outer-base.active + .checkbox-outer-base.active {
+    border-top: 0 !important;
+}
