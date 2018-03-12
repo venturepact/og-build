@@ -2839,7 +2839,7 @@ visuals .rec-image-outer img {
     color: rgba(48, 48, 48, 0.5);
 }
 .selectize-dropdown-content {
-    overflow-y: auto;
+    overflow-y: auto !important;
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
     max-height: 140px;
@@ -4664,6 +4664,7 @@ p > span > a {color: inherit; }
 .new_control {
     counter-reset: new_control;
     left: -10000px;
+    margin-bottom: 10px;
     opacity: 0;
     position: relative;
     -webkit-transform-origin: left center;
@@ -4673,18 +4674,13 @@ p > span > a {color: inherit; }
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .new_control.visible {left: 0;opacity: 1; }
-    .new_control.complete {opacity: .3; }
-
+    .new_control.complete {opacity: .3; margin-bottom: 0px}
     .new_control.complete:hover {opacity: 1; z-index: 99; }
-
-    .new_control.complete:hover {opacity: 1; }
-
   
       .new_control.visible.complete{transform: scale(0.75)}
       .new_control .t1-ques-head div {    font-size: 30px; line-height: 40px}
       .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
-
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 10px !important }
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
@@ -4692,24 +4688,44 @@ p > span > a {color: inherit; }
     .t1-question .new_control .question-components input{font-size: 30px !important;     line-height: 40px !important; }
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item {min-height: auto;  line-height: auto;}
     .t1-question .new_control .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input{max-height: inherit !important; min-height: auto;padding-top: 0 !important}
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input{max-height: inherit !important; min-height: auto;padding-top: 0 !important; margin-top: 0px !important}
     .new_control.invisible{display: none;}
     .new_control.visible{display: block;}
 
     .template-section  .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
     .template-section .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
     .template-section .t1-question .new_control .question-components input{font-size: 22px !important; }
-    .template-section .new_control .t1-ques-head div {    font-size: 22px; line-height: 40px}
-
+    .template-section .new_control .t1-ques-head div{    font-size: 22px; line-height: 40px}
+    .template-section .new_control   .t1-ques-head div p{    font-size: 22px;}
+    .new_control .input-field label{font-size: 22px;}
     .new_control .errorMessage{bottom: -25px}
     .template-section .new_control .errorMessage{bottom: -25px}
+    .template-section .template-container.mobile .t1-question  .new_control .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
+    .template-section .template-container.mobile .new_control  .t1-ques-head div{ font-size: 16px !important; line-height: 32px !important}
+    .template-section .template-container.mobile  .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+    .template-section .template-container.mobile .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
+    .template-section .template-container.mobile .t1-question .new_control .question-components input{     font-size: 16px !important;
+        line-height: 32px !important;
+        padding-top: 0 !important;
+    
+        min-height: auto !important;
+        max-height: inherit !important;}
+        .template-section .template-container.mobile   .new_control   .t1-ques-head div p{font-size: 16px}
+        .template-section .template-container.mobile     .new_control .input-field label{font-size: 16px;}
+        .template-section .template-container.mobile .t1-question .new_control .question-components .selectize-control.single .selectize-input input {    margin-right: 10px !important;}
+        .common-result-main .common-leadform-top.t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .prime-action{float: none}
+        .new_control   .t1-ques-head div p{font-size: 30px}
+        .new_control  .t1-ques-head .help-text{left: 50%; transform: translateX(-50%); font-size: 16px;line-height: 24px}
+        .new_control  .t1-ques-head .help-text:before{left: 50%; transform: translateX(-50%);}
+        .new_control .input-field label{line-height: 40px; font-size: 30px !important;}
 
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; padding-right: 15px}
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {font-size: 30px !important; }
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item {min-height: auto;  line-height: 40px;}
-    .t1-question .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
 
-
-    .common-result-main .common-leadform-top.t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .prime-action{float: none}
-            .common-result-main .common-leadform-top.t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .prime-action{float: none}
+        .t1-question .new_control .question-components .selectize-control.single .selectize-input:after{right: 0}
+        .t1-question .new_control .question-components .selectize-control.single .selectize-input input{max-width: 220px !important}
+        .template-section .template-container.mobile .new_control .t1-ques-head div .help-text {
+            font-size: 12px!important;
+            line-height: 18px !important;
+            top: 30px;bottom: auto
+          
+        }
+        .template-section .template-container.mobile .new_control .t1-ques-head div .help-text:before{display: none}
