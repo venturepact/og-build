@@ -8670,7 +8670,7 @@ p > span > a {color: inherit; }
 
 /******** lead ************/
 .template-section .common-leadform-top.t1-result-leadform.eight-inner-wrapper.leadAsPopup{position: static}
-.template-section .lead-popup{position: absolute;}
+.template-section .lead-popup{position: absolute; z-index: 9999;}
 .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title {

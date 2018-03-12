@@ -4474,7 +4474,7 @@ p > span > a {color: inherit; }
 }
  /******** lead ************/
  .template-section .common-leadform-top.t1-result-leadform.eight-inner-wrapper.leadAsPopup{position: static}
- .template-section .lead-popup{position: absolute;}
+ .template-section .lead-popup{position: absolute; z-index: 9999;}
  .lead-popup  .lead-popup-outer .lead-popup-main .input-validation{width: 100%; margin-left: 0}
  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
  .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
@@ -4729,3 +4729,13 @@ p > span > a {color: inherit; }
           
         }
         .template-section .template-container.mobile .new_control .t1-ques-head div .help-text:before{display: none}
+        .new_control  .selectize-input:before {
+            content: " ";
+            display: block;
+            position: absolute;
+            background: #f0f0f0;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
