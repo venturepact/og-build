@@ -6829,8 +6829,8 @@ input.postfixset {
     border: 1px solid transparent;
     border-radius: 3px;
     margin-top: 30px;
-    -webkit-animation: submitMove .3s;
-    animation: submitMove .3s;
+    /* -webkit-animation: submitMove .3s;
+    animation: submitMove .3s; */
     text-transform: uppercase;
 }
 
@@ -8803,3 +8803,28 @@ p > span > a {color: inherit; }
 .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important;}
 .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important; float: none;}
 .checkbox-outer-base.active + .checkbox-outer-base.active {border-top: 0;}
+
+
+.template-six .result-v2 [type="checkbox"] + label.leadform-checkbox:before, 
+.template-six .result-v2 [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after, 
+.t1-question .result-v2 .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before{
+      background-color: transparent !important;
+      border: 1px solid #fff !important;
+      padding: 0 !important;
+}
+.template-six .result-v2 [type="checkbox"].filled-in:checked+label:before, 
+.template-six .result-v2 [type="checkbox"]:checked + label.leadform-checkbox::before, 
+.t1-question .result-v2.ripple-dark.checkbox-outer-base [type="checkbox"]:checked + label.control::before {
+    border: none;
+}
+.template-six .result-v2 .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+.template-six .result-v2 [type="checkbox"]:checked + label.leadform-checkbox::before, 
+.t1-question .result-v2 .ripple-dark.checkbox-outer-base [type="checkbox"]:checked + label.control::before{color: #fff !important;}
+
+ .result-v2 .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{
+    transform: rotate(0deg); 
+    top: 0px;
+    left: 6px;
+    width: 20px;
+    height: 20px;
+}
