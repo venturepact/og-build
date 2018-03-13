@@ -350,6 +350,7 @@
         font-size: 10px;
         bottom: -25px;
     }
+    .new_control .errorMessage{bottom: -10px !important; padding: 0}
     .t1-question .question-components .selectize-control.single .selectize-input:after {
         border-width: 5px 5px 0 5px;
         top: 30%;
@@ -1753,7 +1754,7 @@
     .t1-question .logo-resizing.v-padding {
         padding-top: 100px !important;
     }
-    .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{ left: 50% !important;}
+    .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{  left: 50% !important; bottom: 49px !important;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

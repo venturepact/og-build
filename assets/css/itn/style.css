@@ -4573,6 +4573,8 @@ p > span > a {color: inherit; }
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
+
+
     
      
 
@@ -4678,8 +4680,8 @@ p > span > a {color: inherit; }
     .new_control.complete:hover {opacity: 1; z-index: 99; }
   
       .new_control.visible.complete{transform: scale(0.75)}
-      .new_control .t1-ques-head div {    font-size: 30px; line-height: 40px}
-      .invisible + .w100.text-center {visibility: hidden;}
+      .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
+      .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 10px !important }
@@ -4696,10 +4698,12 @@ p > span > a {color: inherit; }
     .template-section .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
     .template-section .t1-question .new_control .question-components input{font-size: 22px !important; }
     .template-section .new_control .t1-ques-head div{    font-size: 22px; line-height: 40px}
-    .template-section .new_control   .t1-ques-head div p{    font-size: 22px;}
+    .template-section .new_control   .t1-ques-head div p{    font-size: 22px; line-height: 40px }
+    .template-section  .new_control .input-field label{font-size: 22px !important;line-height: 40px}
     .new_control .input-field label{font-size: 22px;}
-    .new_control .errorMessage{bottom: -25px}
-    .template-section .new_control .errorMessage{bottom: -25px}
+    .new_control .errorMessage{bottom: -5px; padding: 0}
+    .template-section .new_control .errorMessage{bottom: -6px; padding: 0}
+    .template-section .template-container.mobile .new_control .t1-ques-component .errorMessage{bottom: -15px}
     .template-section .template-container.mobile .t1-question  .new_control .question-components .selectize-control.single .selectize-dropdown.single{top: auto !important}
     .template-section .template-container.mobile .new_control  .t1-ques-head div{ font-size: 16px !important; line-height: 32px !important}
     .template-section .template-container.mobile  .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
@@ -4714,7 +4718,8 @@ p > span > a {color: inherit; }
         .template-section .template-container.mobile     .new_control .input-field label{font-size: 16px;}
         .template-section .template-container.mobile .t1-question .new_control .question-components .selectize-control.single .selectize-input input {    margin-right: 10px !important;}
         .common-result-main .common-leadform-top.t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .prime-action{float: none}
-        .new_control   .t1-ques-head div p{font-size: 30px}
+  
+        .new_control   .t1-ques-head div p{font-size: 30px; line-height: 45px !important}
         .new_control  .t1-ques-head .help-text{left: 50%; transform: translateX(-50%); font-size: 16px;line-height: 24px}
         .new_control  .t1-ques-head .help-text:before{left: 50%; transform: translateX(-50%);}
         .new_control .input-field label{line-height: 40px; font-size: 30px !important;}
@@ -4742,6 +4747,17 @@ p > span > a {color: inherit; }
 
         section.t1-result-top.common-result.result-v2.recommendation-outer{position: static}
         .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom{bottom: -10px}
-        .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom .redo-link {
-            padding: 0 !important;
-        }
+        .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom .redo-link {padding: 0 !important;}
+        .new_control .custom-block .input-field{max-height: inherit}
+        .new_control .t1-question .question-components .selectize-control{margin-bottom: 0}
+/*********** multiple outcome************/
+.result-v2 .devMode.common-result-bot.eight-inner-wrapper{width: 55%}
+.result-v2 .twitter-follow-button{margin-top:  0px !important}
+
+.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom{bottom: -10px}
+.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom .redo-link {padding: 0 !important;}
+.template-section .template-container.mobile .result-v2 .common-result-bot-icons.side-redo .crb-left{margin-right: 12px;}
+.result-v2 .common-result-main .common-result-bot-icons .crb-right .stickyfooter{float: none !important;width: auto !important}
+.result-v2 .common-result-main .common-result-bot-icons .crb-right{text-align: center}
+.template-section .template-container.mobile .t1-result-top.common-result.result-v2.recommendation-outer .mid-width span{margin-bottom: 0}
+.inline-temp-new  .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);bottom: 40px;}

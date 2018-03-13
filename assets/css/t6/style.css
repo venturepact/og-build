@@ -6799,6 +6799,7 @@ input.postfixset {
     .t1-landing .no-footer-links.no-header-links {
         position: relative
     }
+    poll-result .result-v2 .landing-page-header {left: 30px !important; top: 30px !important;}
 }
 
 .isIframe .header-next-div {
@@ -6837,6 +6838,7 @@ input.postfixset {
 .t1-question .poll-main .ripple-dark.radio-outer-base [type="radio"]+label.control::before {
     font-size: 14px !important;
     padding: 2px!important;
+    top:0px !important;
 }
 
 /*poll css*/
@@ -8831,3 +8833,5 @@ p > span > a {color: inherit; }
 .result-v2 .poll-review-icon{width:100px;}
 .result-v2 a.common-redo {bottom: 20px;}
 .result-v2 a.common-redo .help-checktip{bottom:35px !important;}
+.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo{ bottom: -3px;}
+.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo{ bottom: auto !important;}
