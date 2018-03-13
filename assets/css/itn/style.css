@@ -4765,3 +4765,6 @@ p > span > a {color: inherit; }
 .t1-question .new_control .question-components input {
     max-width: 220px !important;
 }
+.t1-question .new_control .question-components label input.postfixset {
+    max-width: inherit !important;
+}

@@ -1070,6 +1070,10 @@
     .common-header-main .landing-page-header .logo {float: left;width: 100%;}
     .t1-landing .no-footer-links { height: calc(100% - 16%) !important;}
     .input-field label.post-icon:last-child {float: right;}
+    .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo:hover .help-checktip {
+        left: 10% !important;
+        bottom: 45px !important;
+    }
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
