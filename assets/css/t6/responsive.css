@@ -1028,4 +1028,6 @@
     }
     .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:38px}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+    .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }
+.question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
 }

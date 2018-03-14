@@ -351,6 +351,8 @@
         bottom: -25px;
     }
     .new_control .errorMessage{bottom: -10px !important; padding: 0}
+    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
+
     .t1-question .question-components .selectize-control.single .selectize-input:after {
         border-width: 5px 5px 0 5px;
         top: 30%;
@@ -2554,6 +2556,8 @@
    .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
    .new_control   .t1-ques-head div p{font-size: 22px}
    .new_control .input-field label{font-size: 22px !important; line-height: 30px}
+   .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
+   .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
 }
 @media (min-width: 641px) and (max-width: 1024px) {
     .lead-popup .lead-popup-outer{max-width: 600px}
@@ -2578,4 +2582,8 @@
     .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
    .new_control   .t1-ques-head div p{font-size: 22px}
    .new_control .input-field label{font-size: 22px !important; line-height: 30px}
+}
+
+@media (max-width:1024px){
+    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
 }

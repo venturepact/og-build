@@ -8835,3 +8835,9 @@ p > span > a {color: inherit; }
 .result-v2 a.common-redo .help-checktip{bottom:35px !important;}
 .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo{ bottom: -3px;}
 .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo{ bottom: auto !important;}
+
+
+
+.question-components .input-field input.postfixset{width:calc(100% - 65px) !important }
+.question-components .input-field label~input.postfixset {width: calc(100% - 130px)!important;}
+.t1-slider-question .input-field label.pre-icon , .t1-slider-question .input-field label.post-icon{position: relative;z-index: 10}
