@@ -1947,3 +1947,13 @@ p > span > a {color: inherit; }
     border: 0px !important;
 }
 .t1-question .new_control .question-components .selectize-control.single .selectize-input:after{right: 0}
+.control-ver2 .done-icon::before {
+    content: '';
+    background: transparent;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+}
