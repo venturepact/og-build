@@ -8736,7 +8736,7 @@ p > span > a {color: inherit; }
   padding-right: 35px;
   transition: all .3s;
   box-sizing: border-box;}
-.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 999;overflow: auto;width: 100%;display: flex; align-items: center}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99999;overflow: auto;width: 100%;display: flex; align-items: center}
 .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative; width: 100%}
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow:hidden;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
 .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; max-height: calc(100vh - 100px);     overflow-y: auto;}
