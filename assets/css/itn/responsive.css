@@ -7,7 +7,7 @@
     .cta-center {
         text-align: center;
     }
-    .t1-result .no-header-links.no-footer-links {    padding: 30PX 0 !important;}
+    .t1-result .no-header-links.no-footer-links {    padding: 30PX 0 50px!important;}
     /*.main-heading{font-size:8.4vmin;margin-bottom:20px; line-height: 7.5vmin;} */
     
     .main-heading,
@@ -840,6 +840,7 @@
     .lightSticky {
         bottom: 5px;
         width: 100%;
+        left: 0;
     }
     .col {
         width: 100%;
@@ -2534,6 +2535,7 @@
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {
         font-size: 18px !important;
     }
+    .t1-question .new_control .question-components input{min-width: auto !important}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {    margin-right: 10px !important;}
     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important; float: none;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;
@@ -2590,4 +2592,8 @@
 
 @media (max-width:1024px){
     .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
+}
+@media (max-width:479px){
+    .t1-question .new_control .question-components input{min-width: auto !important; max-width: 150px !important}
+    .t1-question .new_control .question-components input.postfixset {max-width: 100px !important;}
 }
