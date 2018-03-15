@@ -4677,12 +4677,20 @@ p > span > a {color: inherit; }
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .new_control.visible {left: 0;opacity: 1; }
-    .new_control.complete {opacity: .3; margin-bottom: 0px}
-    .new_control.complete:hover {opacity: 1; z-index: 99; }
+    .new_control.complete  { margin-bottom: 0px; z-index: 99;}
+    .new_control.complete  .t1-ques-head ,  
+    .new_control.complete .t1-ques-head , 
+    .new_control.complete .t1-ques-component .custom-block,
+    .new_control.complete .t1-ques-component .selectize-input {opacity: .3;}
+    /* .new_control.complete:hover {z-index: 99; } */
+    .new_control.complete:hover  .t1-ques-head , 
+    .new_control.complete:hover .t1-ques-head , 
+    .new_control.complete:hover .t1-ques-component .custom-block ,  
+    .new_control.complete:hover .t1-ques-component .selectize-input{opacity: 1; }
   
-      .new_control.visible.complete{transform: scale(0.75)}
-      .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
-      .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
+    .new_control.visible.complete{transform: scale(0.75)}
+    .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
+    .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 10px !important }
