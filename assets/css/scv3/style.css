@@ -2085,11 +2085,11 @@ p > span > a {color: inherit; }
   animation-duration: 0.3s;
   animation-iteration-count: 3;
 }
-.selectize-control .selectize-input.dropdown-active{
+/* .selectize-control .selectize-input.dropdown-active{
   animation-name: blinker;
   animation-duration: 0.3s;
   animation-iteration-count: 3;
-}
+} */
 .sound-cloud-new .textfield.checkbox-outer.active .control {
   border: none !important;
 }
@@ -2105,9 +2105,9 @@ p > span > a {color: inherit; }
   animation-iteration-count: 3;
 }
 .questions .question-section-outer .input-field.blink-animation{
-  animation-name: blinker;
+  /* animation-name: blinker;
   animation-duration: 0.3s;
-  animation-iteration-count: 3;
+  animation-iteration-count: 3; */
   border-radius: 5px;
 }
 .custom-block.rating-custom .rating-inner i.selected{

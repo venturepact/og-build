@@ -6223,7 +6223,7 @@ span.abhi {
 .poll-main .radio-outer-base .mid-outer .poll-color { display: none;}
 
 .poll-main .pic-selector.radio-outer .poll-color {z-index: 1; display: none;}
-.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 2;text-align: left; left: 20px !important;}
+.poll-main .pic-selector.radio-outer.active2 .poll-percentage {z-index: 3;text-align: left; left: 20px !important;font-weight: bold;}
 .poll-main .pic-selector.radio-outer-base .poll-color {z-index: 1; display: none;}
 .poll-main .pic-selector.radio-outer-base.active2 .poll-percentage {z-index: 2;text-align: left; left: 20px !important;}
 
@@ -6327,16 +6327,16 @@ span.abhi {
     animation-duration: 0.3s;
     animation-iteration-count: 3;
   }
-  .selectize-control .selectize-input.dropdown-active{
+  /* .selectize-control .selectize-input.dropdown-active{
     animation-name: blinker;
     animation-duration: 0.3s;
     animation-iteration-count: 3;
-  }
-  .t1-landing-inner .input-field.blink-animation{
+  } */
+  /* .t1-landing-inner .input-field.blink-animation{
     animation-name: blinker;
     animation-duration: 0.3s;
     animation-iteration-count: 3;
-  }
+  } */
   .opinon-scale-custom .radio-outer.active{
     animation-name: blinker;
     animation-duration: 0.3s;
@@ -6848,4 +6848,21 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 .checkbox-outer.active + .checkbox-outer.active {
     border-top: 0 !important;
+}
+
+
+.lead-popup-main .submit-checkbox-img p {
+    margin: 0 !important;
+    line-height: 1
+  }
+
+.pic-selector.active2 .poll-shadow {
+    box-shadow: inset 0px -20px 20px 0px rgb(255, 255, 255);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    right: 0;
+    z-index: 3;
 }
