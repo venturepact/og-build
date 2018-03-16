@@ -1041,7 +1041,7 @@
 				value = placeholder;
 			}
 	
-			width = measureString(value, $input) + 4;
+			width = measureString(value, $input) + 9;
 			if (width !== currentWidth) {
 				currentWidth = width;
 				$input.width(width);
