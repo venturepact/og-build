@@ -5723,8 +5723,12 @@ input {
         border-width: 2px !important;
     }
 
-     .isIframe {
+     /* .isIframe {
         height: 0 !important;
+    } */
+
+    .isIframe {
+        height: auto !important;
     }
 }
 /******************/
