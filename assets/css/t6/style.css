@@ -4577,8 +4577,15 @@ visuals.visual-outr span.graph-title {
     position: relative;
     top: 3px;
     font-size: 16px;
+    float:left;
+    margin-right: 5px;
 }
-
+.ans-inner {
+    float: left;
+    color: #43c749 !important;
+    word-wrap: break-word;
+    width: auto !important;
+}
 .graded-ques-left {
     float: left;
     width: 120px;
@@ -8845,3 +8852,4 @@ p > span > a {color: inherit; }
     margin: 0 !important;
 
   }
+    .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom .redo-link ul{ display: inline-block;}

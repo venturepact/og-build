@@ -5141,6 +5141,14 @@ visuals.visual-outr span.graph-title {
     position: relative;
     top: 3px;
     font-size: 16px;
+    float: left;
+    margin-right: 5px;
+}
+.ans-inner {
+    float: left;
+    color: #43c749 !important;
+    word-wrap: break-word;
+    width: auto !important;
 }
 .graded-ques-left {
     float: left;
@@ -6884,12 +6892,12 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     margin-bottom: 0;
     margin-top: -10px;
 }
-.v2mainouter .t1-result {
+/* .v2mainouter .t1-result {
     background-image: none !important;
 }
 .v2mainouter .t1-result .result-overlay {
     background: none !important;
-}
+} */
 
 /* new result changes */
 
@@ -6922,4 +6930,12 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 }
 .structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input {
     padding-right: 0 !important;
+}
+.one-page-card-new .structure-right-align [type="radio"].with-gap:checked + label.graded-cross:after {
+    left: auto;
+    right: 5px;
+}
+.one-page-card-new .structure-right-align [type="radio"].with-gap:checked + label.graded-cross:before {
+    left: auto;
+    right: 5px;
 }

@@ -640,6 +640,10 @@ Developer: Bhawna */
    .t1-result .no-footer-links.no-header-links .t1-result-main{padding: 50px 0 0 !important}
    .opinon-scale-custom .errorMessage{top:27px;}
    .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
+
+    .graded-ques-left{width:110px;}
+    .graded-ques-right {float: left;width: calc(100% - 110px);}
+    .graded-ques-list span.ans-correct{width:100%;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1055,6 +1059,9 @@ Developer: Bhawna */
     .pic-selector label.control.defaultOptionImage {
         background-size: 85px;
     }
+    .graded-ques-left{width:110px;}
+    .graded-ques-right {float: left;width: calc(100% - 110px);}
+    .graded-ques-list span.ans-correct{width:calc( 100% - 20px)}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
