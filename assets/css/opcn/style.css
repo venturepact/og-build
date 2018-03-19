@@ -4071,7 +4071,7 @@ _:-webkit-full-screen,
     transform: rotate(45deg);
     border-radius: 0;
     background: transparent !important;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-left: 22px;
     transition: inherit;
 }
@@ -4163,7 +4163,7 @@ _:-webkit-full-screen,
     transform: rotate(45deg);
     border-radius: 0;
     background: transparent !important;
-    margin-top: 13px;
+    margin-top: 18px;
     margin-left: 22px;
     -webkit-transition: inherit;
     transition: inherit;
@@ -6115,7 +6115,8 @@ span.abhi {
 .poll-main .radio-outer-base.active2 .poll-percentage{ position: absolute; right: 10px; line-height: 28px; font-size: 16px; display: block !important; color: #666e78 !important;}
 .poll-main .radio-outer-base .poll-percentage{display: none;}
 
-
+.poll-main .pic-selector.radio-outer.active .poll-percentage{font-weight: bold !important;}
+.poll-main .pic-selector.radio-outer.active2 .poll-percentage{font-weight: bold !important;}
 
 /* builder mobile of Poll css */
 .template-section .template-container.mobile .no-footer-links.no-header-links {padding: 0;}
@@ -6832,7 +6833,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 10px !important; left: auto !important}
     .structure-right-align .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest{left: 0 !important; right: auto !important}
     .structure-right-align  .t1-slider-question.slide-1 .lf-skip-btn,   .structure-right-align .lead-popup-main button.lf-skip-btn.ripple-light{float: left;     margin-left: 0;}
-    .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 35px; padding-left: 60px; width: 100% !important;}
+    .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 35px !important; padding-left: 60px; width: 100% !important;}
    .one-page-card-new  .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox{text-align: right;padding-right: 30px;padding-left: 0px}
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:not(:checked) + label:after, 
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{right: 0; left: auto}
@@ -6868,9 +6869,9 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 
 /* new result changes */
-.v2mainouter .t1-ques-head {
+/* .v2mainouter .t1-ques-head {
     margin-bottom: 0;
-}
+} */
 
 .v2mainouter .control-ver2 .pic-selector {
     margin-bottom: 0 !important;
@@ -6881,9 +6882,44 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 }
 .v2mainouter .t1-ques-component {
     margin-bottom: 0;
+    margin-top: -10px;
 }
 .v2mainouter .t1-result {
     background-image: none !important;
 }
+.v2mainouter .t1-result .result-overlay {
+    background: none !important;
+}
 
 /* new result changes */
+
+/*rtl icon positions*/
+.one-page-card-new .structure-right-align [type="checkbox"].filled-in:checked + label.graded-cross:after {
+    left: auto;
+    right: 20px !important;
+}
+.one-page-card-new .structure-right-align [type="checkbox"].filled-in:checked + label.graded-cross:before {
+    left: auto;
+    right: 20px;
+}
+.one-page-card-new .structure-right-align [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-cross:after {
+    left: auto;
+    right: 20px !important;
+    top: 0;
+}
+.one-page-card-new .structure-right-align [type="checkbox"].filled-in:disabled:not(:checked) + label.graded-cross:before {
+    left: auto;
+    right: 20px !important;
+    top: 0;
+}
+.one-page-card-new .structure-right-align [type="radio"]:disabled:not(:checked) + label.graded-cross:after {
+    left: auto !important;
+    right:5px;
+}
+.one-page-card-new .structure-right-align [type="radio"]:disabled:not(:checked) + label.graded-cross:before {
+    left: auto !important;
+    right:5px;
+}
+.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input {
+    padding-right: 0 !important;
+}
