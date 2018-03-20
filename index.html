@@ -466,9 +466,11 @@
       }
     })();
 
+    let host = window.location.href.toLowerCase();
 
-    var gap = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0) ? "UA-82638968-1" : "UA-85018378-1";
-    var gad = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0) ? "UA-92581866-1" : "UA-82253758-1";
+    var gap = (host.indexOf("outgrow.co") < 0 || host.indexOf("outgrow.co.in") >= 0) ? "UA-82638968-1" : "UA-85018378-1";
+    var gad = (host.indexOf("outgrow.co") < 0 || host.indexOf("outgrow.co.in") >= 0) ? "UA-92581866-1" : "UA-82253758-1";
+    //var gad = (window.location.href.toLowerCase().indexOf("outgrow.co") < 0) ? "UA-92581866-1" : "UA-82253758-1";
 
 
 
