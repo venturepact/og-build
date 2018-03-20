@@ -1040,7 +1040,7 @@
 			if (!value && placeholder) {
 				value = placeholder;
 			}
-	
+
 			width = measureString(value, $input) + 9;
 			if (width !== currentWidth) {
 				currentWidth = width;
@@ -1049,7 +1049,7 @@
 			}
 		};
 	
-		$input.on('keydown keyup update blur', update);
+		$input.on('keydown keyup update', update);
 		update();
 	};
 	
