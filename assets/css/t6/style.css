@@ -1104,7 +1104,7 @@ visuals .left-sec {
     display: table;
     width: 100%;
     text-align: center;
-    min-height: 285px;
+    /* min-height: 285px; */
     position: relative;
     border: 1px solid #d9dad3;
 }
@@ -2298,9 +2298,9 @@ visuals .t1-result-inner-left #og-table-excel {
     /*border: 1px solid #ccc;*/
 }
 
-.recommendation-outer .t1-result-leadform {
+/* .recommendation-outer .t1-result-leadform {
     text-align: left !important;
-}
+} */
 
 .rec-image-outer1 {
     /*background: #e8e8e8;*/
@@ -4945,7 +4945,8 @@ npm .t1-landing-leadform select option {
 
 .t1-result-main .t1-result-top.recommendation-outer .selectize-control {
     float: left;
-    width: 98%;
+    width: 100%;
+    margin: 0;
 }
 
 .t1-result-main .t1-result-top.recommendation-outer .selectize-control.single .selectize-input {
@@ -6179,9 +6180,9 @@ button.button_textfield.submit-textbox-btn {
     border-radius: 50%;
 }
 
-.rating-custom .input-field {
+/* .rating-custom .input-field {
     padding-bottom: 60px;
-}
+} */
 
 /* Opinion scale css */
 
@@ -8020,8 +8021,8 @@ input.postfixset {
 .control-ver2 .done-iconoutr {
     position: relative;
     float: none;
-    left: 47%;
-    top: -9px;
+    left: 48.5%;
+    top: -7px;
     z-index: 999;
     width: auto;
     text-align: center;
@@ -8254,14 +8255,14 @@ input.postfixset {
 
 .active .ko-overlay1 {
     position: absolute;
-    top: 0;
+    top: 4px;
     bottom: 0;
     background: #fff;
-    left: 0;
+    left: 3px;
     right: 0;
     border-radius: 50%;
     opacity: 0.4;
-    margin: 5px;
+    margin: 2px;
 }
 
 .active2 .ko-overlay1 {

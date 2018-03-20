@@ -6939,3 +6939,39 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     left: auto;
     right: 5px;
 }
+
+
+.landing-page-mid button { -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; }
+.submit-checkbox-img { -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
+.submit-checkbox{ -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
+.t1-question .submit-textbox-btn{ -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
+
+.one-page-card-new.structure-right-align [type=radio]+label:after, .one-page-card-new.structure-right-align [type=radio]+label:before {
+    right: 0;
+    left: auto;
+}
+.one-page-card-new.structure-right-align [type=radio]:checked+label, .one-page-card-new.structure-right-align [type=radio]:not(:checked)+label {
+    padding-right: 56px;
+    padding-left: 10px;
+}
+.one-page-card-new.structure-right-align [type=radio].with-gap:checked+label.graded-cross:after, .one-page-card-new.structure-right-align [type=radio].with-gap:checked+label.graded-cross:before {
+    left: auto;
+    right: 5px;
+}
+.one-page-card-new.structure-right-align [type=radio]:disabled:not(:checked)+label.graded-cross:after, .one-page-card-new.structure-right-align [type=radio]:disabled:not(:checked)+label.graded-cross:before {
+    left: auto!important;
+    right: 5px;
+}
+.one-page-card-new.structure-right-align [type=checkbox].filled-in:checked+label.graded-cross:before {
+    left: auto;
+    right: 20px;
+}
+.one-page-card-new.structure-right-align [type=checkbox].filled-in:checked+label.graded-cross:after {
+    left: auto;
+    right: 20px;
+}
+.one-page-card-new.structure-right-align [type=checkbox].filled-in:disabled:not(:checked)+label.graded-cross:after, .one-page-card-new.structure-right-align [type=checkbox].filled-in:disabled:not(:checked)+label.graded-cross:before {
+    left: auto;
+    right: 20px!important;
+    top: 0;
+}

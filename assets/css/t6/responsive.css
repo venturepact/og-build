@@ -159,11 +159,11 @@
      @-moz-document url-prefix() {
             .fb-like + .twitter-follow-button{margin-left: 20px;}
             .recom-section .twitter-follow-button{height: 28px !important; width:100%; display: inline-block;}
-            .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;}
+            /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;} */
             .recom-section .left-sec {height: 320px !important;}
             .twitter-follow-button{margin-left: 25px;}
             .recom-section .twitter-follow-button{                height: 28px !important; width:100%; display: inline-block;}
-            .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;}
+            /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;} */
             .recom-section .left-sec {                 height: auto !important;              }
             iframe.twitter-follow-button {                width: 100%;            }
             /*visuals .left-sec{ height: 285px;}*/
@@ -171,7 +171,7 @@
 
         }
         .recom-section .left-sec {             height: auto !important;         }
-        .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important; }
+        /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important; } */
         .redo-outer-recom{ float: left; width:100%; position: relative; right: auto; bottom:auto;}
         .redo-outer-recom .redo-link{ float: left; width:100%; position: relative; right:auto; text-align: center; margin-top:0px; margin-bottom: 0; }
         .redo-outer-recom .redo-link li a{ float: none; font-size: 12px;}
@@ -262,7 +262,7 @@
     .gradedquiz-main .recommendation-outer .t1-result-inner{ overflow: visible; top: 50px;}
     .graded-tabs ul.tabs{ top: -44px;}
     .graded-tabs ul.tabs li{ min-height: 28px;}
-    .gradedquiz-main .recommendation-outer .t1-result-leadform{ text-align: left !important;}
+    /* .gradedquiz-main .recommendation-outer .t1-result-leadform{ text-align: left !important;} */
     .gradedquiz-main .btn-fb{ margin-top: 20px;;}
     .gradedquiz-main .t1-result-inner-left-table span.table-title{ padding: 10px;}
     @-moz-document url-prefix() {
@@ -384,7 +384,7 @@
     .t1-landing-leadform .t1-leadform-field { display: inline-block; width: 40%; float: none; margin-bottom: 10px; margin-right: 10px; margin-left: 10px; }
     .redo-outer .redo-link{margin-top: 0px !important }
       .redo-outer .redo-link ul{margin-bottom: 0px !important }
-    .recom-section .left-outer-hidden {width: 95% !important; margin: 16px !important}
+    /* .recom-section .left-outer-hidden {width: 95% !important; margin: 16px !important} */
     .hasBrand .t1-landing-inner{padding-bottom: 95px;}
     .hasBrand .page_2 .t1-result-main{padding-bottom: 60px;}
     .hasBrand .t1-result-main { padding-bottom: 80px; }
@@ -498,7 +498,7 @@
     .recom-section .disc-set i { display: none;}
     .redo-outer{ float: right; width:auto;  }
     .t1-question .question-components .leaded-form-c .section-head .pull-left{ max-width: 98%;}
-    .recom-section .left-outer-hidden {width: 90% !important;}
+    /* .recom-section .left-outer-hidden {width: 90% !important;} */
     .recom-section .w100 .leadform-outer{ padding: 30px;}
     .recom-section .w100 .leadform-outer h5{ text-align: center ;}
     .t1-result-full-section {width: 100%;}
@@ -910,7 +910,8 @@
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
-    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px}
+    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px;}
+    .t1-question .ripple-dark.radio-outer-base label.control{padding-right:55px;}
     .checkbox-outer-base span.t6.pull-text-right {    padding-left: 0px !important;}
     .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
