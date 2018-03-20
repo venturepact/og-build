@@ -478,9 +478,9 @@ li {
     background: #fff;
     width: 100%;
     float: left;
-    box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
+    box-shadow:20px 20px 40px 7px rgba(0,0,0,.3);
     border: 1px solid #f1f3f3;
-    border-radius: 7px;
+    border-radius: 4px;
 }
 .t1-question-slider .unslider-nav {
     position: absolute;
@@ -6701,8 +6701,8 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:60px}
 .t1-result-leadform  .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox span{top:36px}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{background-color: transparent;border: 1px solid #d9dad3 !important;border-radius: 0;outline: none;width: 100%;font-size: 16px;margin: 0 0 0px 0;padding: 16px 10px 16px 35px !important;box-sizing: border-box;color: #666e78;margin-bottom: 0;box-shadow: none;padding-left: 35px;}
-.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty{border-color: #df2323 !important;}
-.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid{border-color: #2fc10e !important;}
+/* .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty{border-color: #df2323 !important;}
+.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid{border-color: #2fc10e !important;} */
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  [type="checkbox"] + label.leadform-checkbox{padding-top: 2px; position: relative !important}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left:0 !important; top:5px;}
 .one-page-card-new .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:not(:checked) + label:after,
