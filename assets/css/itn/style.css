@@ -3601,8 +3601,11 @@ input[type=number] {
     #build .t1-result + .result-branding.logo_intmp {
         bottom: 35px;
     }
-      .isIframe {
+      /* .isIframe {
         height: 0 !important;
+    } */
+    .isIframe {
+        height: auto !important;
     }
 }
 .left-outer-hidden {
