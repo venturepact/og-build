@@ -627,7 +627,7 @@ function initIframe(iframe_id) {
         if (iWidth < 786) {
 
             var randNum = Number(Math.floor(Math.random() * (3000 - 2000) + 2000));
-            var imageUrl = "http://api.screenshotlayer.com/api/capture?access_key=0f0d6b2bad83c4e6a23de03080a3c29d&url=" + og_su + "&viewport=414x736&fullpage=1&delay=2";
+            var imageUrl = "https://api.screenshotlayer.com/api/capture?access_key=0f0d6b2bad83c4e6a23de03080a3c29d&url=" + og_su + "&viewport=414x736&fullpage=1&delay=2";
             // var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
             var og_image = document.createElement("img");
             og_image.setAttribute("id", "og_image_" + iframe_id);
