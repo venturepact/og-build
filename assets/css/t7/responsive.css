@@ -733,7 +733,7 @@
        
     }
     .page_2.hasbranding.result-fixed{ max-height: 100% !important; overflow-y: visible;}
-    .questionnaire .logo a img.horz{ width:110px !important;}
+    .questionnaire .logo a img.horz{ max-width:110px !important;}
 }
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape) {
    /*.landing-page-mid .main-heading h1 ,  .landing-page-mid .main-heading h1 {

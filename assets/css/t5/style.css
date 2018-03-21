@@ -3934,7 +3934,7 @@
     .structure-right-align .opinon-scale-custom .check-comp{float: right}
     .structure-right-align .opinon-scale-custom .radio-outer:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
     .structure-right-align .opinon-scale-custom .radio-outer-base:not(.pic-selector), .structure-right-align .opinon-scale-custom .checkbox-outer-base, .structure-right-align .opinon-scale-custom .checkbox-outer{float: none}
-    .structure-right-align .res-header .landing-page-header {    float: right; width: 100%}
+    .structure-right-align .res-header .landing-page-header {    float: right;right: 60px;}
     .structure-right-align  .opinion-postfix { float: right;    text-align: left;}
     .structure-right-align .opinion-prefix{ float: right;  padding-right:0; padding-left:10px;  text-align: right;}
     .structure-right-align  .lightSticky {    left: 0px;    direction: ltr;    right: auto;}
@@ -4489,3 +4489,5 @@ li{ list-style: none;}
     color: #43c749 !important;
     word-wrap: break-word;
 }
+.result-v2 .common-result-main .t1-result-leadform .cta-center .twitter-follow-button, 
+.result-v2 .common-result-main .t1-result-leadform .cta-center .fb-like{margin: 0 !important}
