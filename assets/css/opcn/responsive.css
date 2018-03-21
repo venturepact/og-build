@@ -1474,6 +1474,9 @@
         right: 0 !important;
         left: auto !important;
     }
+    .poll-main.check-comp .radio-outer label {
+        padding-right: 55px !important;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
