@@ -1040,8 +1040,8 @@
 			if (!value && placeholder) {
 				value = placeholder;
 			}
-	
-			width = measureString(value, $input) + 4;
+
+			width = measureString(value, $input) + 9;
 			if (width !== currentWidth) {
 				currentWidth = width;
 				$input.width(width);
@@ -1049,7 +1049,7 @@
 			}
 		};
 	
-		$input.on('keydown keyup update blur', update);
+		$input.on('keydown keyup update', update);
 		update();
 	};
 	
@@ -1127,6 +1127,7 @@
 	
 		// option-dependent defaults
 		self.settings.mode = self.settings.mode || (self.settings.maxItems === 1 ? 'single' : 'multi');
+		self.settings.dropdownDirection = self.settings.dropdownDirection || 'auto';
 		if (typeof self.settings.hideSelected !== 'boolean') {
 			self.settings.hideSelected = self.settings.mode === 'multi';
 		}
@@ -1147,7 +1148,7 @@
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	
 	$.extend(Selectize.prototype, {
-	
+
 		/**
 		 * Creates all elements and sets up event bindings.
 		 */
@@ -2115,10 +2116,10 @@
 						optgroup = '';
 					}
 					if (!groups.hasOwnProperty(optgroup)) {
-						groups[optgroup] = [];
+						groups[optgroup] = document.createDocumentFragment();
 						groups_order.push(optgroup);
 					}
-					groups[optgroup].push(option_html);
+					groups[optgroup].appendChild(option_html);
 				}
 			}
 	
@@ -2132,23 +2133,26 @@
 			}
 	
 			// render optgroup headers & join groups
-			html = [];
+			html = document.createDocumentFragment();
 			for (i = 0, n = groups_order.length; i < n; i++) {
 				optgroup = groups_order[i];
-				if (self.optgroups.hasOwnProperty(optgroup) && groups[optgroup].length) {
+				if (self.optgroups.hasOwnProperty(optgroup) && groups[optgroup].childNodes.length) {
 					// render the optgroup header and options within it,
 					// then pass it to the wrapper template
-					html_children = self.render('optgroup_header', self.optgroups[optgroup]) || '';
-					html_children += groups[optgroup].join('');
-					html.push(self.render('optgroup', $.extend({}, self.optgroups[optgroup], {
-						html: html_children
+					html_children = document.createDocumentFragment();
+					html_children.appendChild(self.render('optgroup_header', self.optgroups[optgroup]));
+					html_children.appendChild(groups[optgroup]);
+	
+					html.appendChild(self.render('optgroup', $.extend({}, self.optgroups[optgroup], {
+						html: domToString(html_children),
+						dom:  html_children
 					})));
 				} else {
-					html.push(groups[optgroup].join(''));
+					html.appendChild(groups[optgroup]);
 				}
 			}
 	
-			$dropdown_content.html(html.join(''));
+			$dropdown_content.html(html);
 	
 			// highlight matching terms inline
 			if (self.settings.highlight && results.query.length && results.tokens.length) {
@@ -2197,6 +2201,7 @@
 				self.setActiveOption(null);
 				if (triggerDropdown && self.isOpen) { self.close(); }
 			}
+			self.positionDropdown();
 		},
 	
 		/**
@@ -2780,15 +2785,33 @@
 		 * position of the dropdown.
 		 */
 		positionDropdown: function() {
+			var self = this;
+			var direction = self.settings.dropdownDirection;
+			if (direction !== 'auto') { return self.setDropdownDirection(direction); }
+	
+			self.setDropdownDirection('down');
+			var rect = self.$dropdown[0].getBoundingClientRect();
+			var inViewPort  = rect.bottom <= (window.innerHeight || $(window).height());
+			if (!inViewPort) { return self.setDropdownDirection('up'); }
+		},
+	
+		/**
+		 * Changes the dropdown position based on
+		 * a given direction.
+		 *
+		 * @param {string} direction
+		 */
+		setDropdownDirection: function (direction) {
 			var $control = this.$control;
 			var offset = this.settings.dropdownParent === 'body' ? $control.offset() : $control.position();
 			offset.top += $control.outerHeight(true);
 	
 			this.$dropdown.css({
 				width : $control.outerWidth(),
-				top   : offset.top,
-				left  : offset.left
-			});
+				left  : offset.left,
+				top   : (direction === 'down') ?  offset.top : 'auto',
+				bottom: (direction === 'down') ? 'auto'  : offset.top,
+			}).toggleClass('dropdown-up', (direction === 'down') ? false : true);
 		},
 	
 		/**
@@ -3099,26 +3122,26 @@
 			}
 	
 			// render markup
-			html = self.settings.render[templateName].apply(this, [data, escape_html]);
+			html = $(self.settings.render[templateName].apply(this, [data, escape_html]));
 	
 			// add mandatory attributes
 			if (templateName === 'option' || templateName === 'option_create') {
-				html = html.replace(regex_tag, '<$1 data-selectable');
+				html.attr('data-selectable', '');
 			}
-			if (templateName === 'optgroup') {
+			else if (templateName === 'optgroup') {
 				id = data[self.settings.optgroupValueField] || '';
-				html = html.replace(regex_tag, '<$1 data-group="' + escape_replace(escape_html(id)) + '"');
+				html.attr('data-group', id);
 			}
 			if (templateName === 'option' || templateName === 'item') {
-				html = html.replace(regex_tag, '<$1 data-value="' + escape_replace(escape_html(value || '')) + '"');
+				html.attr('data-value', value || '');
 			}
 	
 			// update cache
 			if (cache) {
-				self.renderCache[templateName][value] = html;
+				self.renderCache[templateName][value] = html[0];
 			}
 	
-			return html;
+			return html[0];
 		},
 	
 		/**
@@ -3665,3 +3688,5 @@
 
 	return Selectize;
 }));
+
+
