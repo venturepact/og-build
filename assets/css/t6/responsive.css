@@ -19,7 +19,7 @@
     .recom-section .disc-set{margin-top: 0px !important}
     .main-heading ,  .main-heading h1{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
     .main-heading p{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
-    .t1-result{    min-height: 100%;    height:auto;    }
+    .t1-result{    min-height: 100vh;    height:auto;    }
     .sub-heading , .sub-heading h2{ font-size: 16px; margin-bottom: 20px; line-height: 20px; }
     .t1-logo { width: 130px; float: none; margin: 0 auto; }
     .landing-page-header { width: 130px; float: none; margin: 0 auto; position: relative !important; top: inherit !important; left: inherit !important; }
@@ -159,11 +159,11 @@
      @-moz-document url-prefix() {
             .fb-like + .twitter-follow-button{margin-left: 20px;}
             .recom-section .twitter-follow-button{height: 28px !important; width:100%; display: inline-block;}
-            .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;}
+            /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;} */
             .recom-section .left-sec {height: 320px !important;}
             .twitter-follow-button{margin-left: 25px;}
             .recom-section .twitter-follow-button{                height: 28px !important; width:100%; display: inline-block;}
-            .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;}
+            /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important;} */
             .recom-section .left-sec {                 height: auto !important;              }
             iframe.twitter-follow-button {                width: 100%;            }
             /*visuals .left-sec{ height: 285px;}*/
@@ -171,7 +171,7 @@
 
         }
         .recom-section .left-sec {             height: auto !important;         }
-        .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important; }
+        /* .recom-section .left-outer-hidden {width: 90% !important; margin: 5% !important; } */
         .redo-outer-recom{ float: left; width:100%; position: relative; right: auto; bottom:auto;}
         .redo-outer-recom .redo-link{ float: left; width:100%; position: relative; right:auto; text-align: center; margin-top:0px; margin-bottom: 0; }
         .redo-outer-recom .redo-link li a{ float: none; font-size: 12px;}
@@ -262,7 +262,7 @@
     .gradedquiz-main .recommendation-outer .t1-result-inner{ overflow: visible; top: 50px;}
     .graded-tabs ul.tabs{ top: -44px;}
     .graded-tabs ul.tabs li{ min-height: 28px;}
-    .gradedquiz-main .recommendation-outer .t1-result-leadform{ text-align: left !important;}
+    /* .gradedquiz-main .recommendation-outer .t1-result-leadform{ text-align: left !important;} */
     .gradedquiz-main .btn-fb{ margin-top: 20px;;}
     .gradedquiz-main .t1-result-inner-left-table span.table-title{ padding: 10px;}
     @-moz-document url-prefix() {
@@ -338,7 +338,7 @@
     .range-slider1.custom-slider1 ul{ display: none;}
     .t1-landing.no-logo .no-footer-links .t1-landing-inner {
         padding-top: 20px !important;
-        padding-bottom: 40px !important;
+        padding-bottom: 70px !important;
     }
 
 
@@ -384,7 +384,7 @@
     .t1-landing-leadform .t1-leadform-field { display: inline-block; width: 40%; float: none; margin-bottom: 10px; margin-right: 10px; margin-left: 10px; }
     .redo-outer .redo-link{margin-top: 0px !important }
       .redo-outer .redo-link ul{margin-bottom: 0px !important }
-    .recom-section .left-outer-hidden {width: 95% !important; margin: 16px !important}
+    /* .recom-section .left-outer-hidden {width: 95% !important; margin: 16px !important} */
     .hasBrand .t1-landing-inner{padding-bottom: 95px;}
     .hasBrand .page_2 .t1-result-main{padding-bottom: 60px;}
     .hasBrand .t1-result-main { padding-bottom: 80px; }
@@ -498,7 +498,7 @@
     .recom-section .disc-set i { display: none;}
     .redo-outer{ float: right; width:auto;  }
     .t1-question .question-components .leaded-form-c .section-head .pull-left{ max-width: 98%;}
-    .recom-section .left-outer-hidden {width: 90% !important;}
+    /* .recom-section .left-outer-hidden {width: 90% !important;} */
     .recom-section .w100 .leadform-outer{ padding: 30px;}
     .recom-section .w100 .leadform-outer h5{ text-align: center ;}
     .t1-result-full-section {width: 100%;}
@@ -813,7 +813,7 @@
     .recom-section .input-outer{ margin-bottom: 25px;}
     .recom-section .share-heading{ text-align: left !important; font-size: 13px !important; margin-bottom: 0px;}
     .t1-result-leadform{ text-align: center !important; font-size: 13px !important; margin-bottom: 20px;}
-    .recommendation-outer .t1-result-leadform{ text-align: left !important;}
+    /* .recommendation-outer .t1-result-leadform{ text-align: left !important;} */
     .range-slider .slider-buttom-outer{ min-height: 42px;}
     .range-slider .slider-buttom-outer .submit-checkbox-img{ top: 10px;}
     .radio-outer .done-icon i{font-size: 26px !important;}
@@ -910,7 +910,8 @@
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
-    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px}
+    .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 20px 0 50px; min-height: 58px;}
+    .t1-question .ripple-dark.radio-outer-base label.control{padding-right:55px;}
     .checkbox-outer-base span.t6.pull-text-right {    padding-left: 0px !important;}
     .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
@@ -926,7 +927,7 @@
     .structure-right-align .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){ width: 100% !important;}
     .structure-right-align .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{margin-top: 0px; }
     .t1-landing{border-width:10px;}
-    .landing-page-mid leadform .input-section .input-outer span{top:52px;}
+    .landing-page-mid leadform .input-section .input-outer span{top:46px;}
     .t1-ques-component .input-outer input {       font-size: 14px;    margin: 0 0 10px 0;    transition: 0.5s;    padding: 10px 10px 10px 45px;    min-height: 42px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control  span, .t1-question .ripple-dark.radio-outer-base label.control  span{ font-size: 14px;font-weight: normal}
     .t1-slider { padding-bottom: 0px;  margin-top: 0px;}
@@ -934,7 +935,7 @@
     .template-six .landing-page-mid .input-field label{margin-top: 0px;}
     .template-six .landing-page-mid .input-field label{font-size: 14px !important; padding-top: 3px !important;}
     .input-outer i {    position: absolute;      top: 20px;    font-size: 16px;}
-    .selectize-control.single .selectize-input {    min-height: 42px;    padding: 12px 35px 12px 10px;}
+    .selectize-control.single .selectize-input {    min-height: 42px;    padding: 10px 35px 10px 10px;}
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question {    background-image: none !important;    border: 10px solid rgba(255,255,255,0.1);}
     .t1-question-slider{width:100%;}
     .t1-question .question-components .input-outer i {    position: absolute;    left: 15px;    top: 13px;    font-size: 16px;}
@@ -942,8 +943,16 @@
     .t1-question .ripple-dark label.control {    width: 130px;    height: 130px;}
     .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
     .main-heading h1 , .sub-heading h2{max-width:100% !important} 
-    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 5px 0 15px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{margin-bottom: 25px}
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 0px 0 0px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
     .control-ver2 .submit-checkbox-outr{ bottom: 0px;}
+    .landing-page-mid leadform .input-section .input-outer i {
+        top: 13px;
+    }
+    .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
+    .landing-page-mid leadform .input-section .input-outer.checkbox span , .t1-ques-component .input-section .input-outer.checkbox span{top:33px !important}
+    .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
+    .result-v2 a.common-redo{bottom:0px !important;}
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -981,4 +990,45 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:124px; height:124px;margin-left: 5px; margin-top: 5px;}
     /* .control-ver2 .done-icon{top:45px;} */
     .active2 .ko-overlay1 {width: 134px;height: 134px; left: -4px;}
+}
+
+
+@media (max-width:640px){
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;
+        margin-top: 10px;
+        line-height: 22px;
+    }
+    .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
+    .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
+    .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
+    .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.dropdown span.cust-icon-rest {width: auto !important;}
+
+    .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
+    .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;}
+    .check-marks{margin-bottom: 15px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i {left: 10px !important;top: 10px !important;font-size: 16px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{font-size: 13px;padding: 7px  60px 7px  35px !important; margin:0px ;min-height: 35px;}
+    .check-marks svg {height: 45px;}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {
+        padding: 7px 35px 7px 10px;
+        border: 1px solid #d9dad3 !important;
+        min-height: 35px;
+    }
+    
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
+
+    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {
+        padding-top: 2px;
+        position: relative !important;
+        font-size: 13px;
+        min-height: auto !important;
+        line-height: 17px;
+        padding-left: 30px;
+    }
+    .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:38px}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+    .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }
+.question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
 }

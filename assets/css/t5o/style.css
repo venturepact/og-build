@@ -424,7 +424,7 @@ input[type=number] { -moz-appearance: textfield; }
 .isIframe .t1-result-main   { height: auto; min-height: auto !important }
 .landing-page-mid > div { display: table-cell; vertical-align: middle; }
 .sub-heading { font-size: 15px; margin-top: 20px; line-height: 23px; width: 70%; opacity: .9; }
-.sub-heading h2{ font-size: 15px; margin-top: 15px; line-height: 23px; width: 80%; opacity: .9; }
+.sub-heading h2{ font-size: 15px; margin-top: 15px; line-height: 23px; width: 80%; opacity: .9; word-break: break-word;}
 .sub-heading p{ margin:0; }
 .input-field { display: flex; }
 .landing-img { display: block; }
@@ -457,7 +457,7 @@ input[type=number] { -moz-appearance: textfield; }
 #build .ques-main { flex-direction: column;}
 .main-heading , .main-heading  h1{ font-size: 36px; }
 .main-section form { width: 94%; margin: 0 3%; margin-top: 45px; }
-.main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 56px; }
+.main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 56px;word-break: break-word; }
 .t1-question { overflow: hidden; min-height: 100vh; padding: 30px 0px; padding-bottom: 50px; width: 100%; box-shadow: 0 2px 9px 2px rgba(0, 0, 0, 0.4); position: relative; background: #f8f8f8; }
 .t1-question.isIframe { min-height: 0; }
 .t1-ques-component { flex: 1 1 0; }
@@ -473,8 +473,8 @@ input[type=number] { -moz-appearance: textfield; }
 .t1-result-leadform .prime-action { padding: 12px 40px; }
 .back-action { background: none; }
 .requiredAsteric { color: #f00; font-size: 18px; display: inline; }
-.t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px; }
-.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
+.t1-ques-head { font-size: 18px; line-height: 32px; flex: 1 1 0; margin-right: 50px;   word-break: break-word;}
+.t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;  word-break: break-word;}
 .t1-ques-head div p { display: inline; }
 .t1-ques-head div ul{display: inline;}
 .t1-ques-head div ul li{display: inline;}
@@ -1466,6 +1466,11 @@ ul.tabs li.tab-link a:focus{outline: none}
     margin-bottom: 15px;
     margin-right: 15px;
 }
+.t1-question a.prime-action {
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
 
 /*new table css as per common results*/
 #table-modal .gradedModalmd .table-outer table tbody tr td,
@@ -1491,7 +1496,7 @@ ul.tabs li.tab-link a:focus{outline: none}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
 .t1-question .question-components .selectize-control.single .selectize-input div.item + input{display: none !important}
-.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;}
+.custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css */
@@ -1518,13 +1523,19 @@ ul.tabs li.tab-link a:focus{outline: none}
 
 .textfield.checkbox-outer-base { float: left; width: 100% !important;}
 .textfield.checkbox-outer { float: left; width: 100% !important;}
-.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left;  width: 50px !important; padding: 5px 15px; margin-top: 0px;}
-.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{    border-radius: 50px;height: 30px;width: 50px !important; position: relative}
+.textfield.checkbox-outer .control--checkbox  , .textfield.checkbox-outer-base .control--checkbox  , .textfield.radio-outer .control--radio  , .textfield.radio-outer-base .control--radio { float: left; position: absolute;border:0px; width: 50px !important; padding: 58px 15px; margin-top: 0px;}
+.textfield.radio-outer-base .control--radio , .textfield.checkbox-outer-base .control--checkbox{ display: none;   border-radius: 50px;height: 30px;width: 50px !important; position: relative}
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer input[type="text"] {
     float: right;
-    width: calc(100% - 60px);
+    width: 100%;
     background: transparent;
     margin-top: 0px;
+    border: 1px solid #464646;
+    padding: 5px 22px;
+    border-radius: 50px;
+    padding-left: 40px;
+    min-height: 35px;
+    margin-bottom: 0px !important
 }
 .textfield.checkbox-outer input[type="text"] , .textfield.checkbox-outer-base input[type="text"] , .textfield.radio-outer-base input[type="text"] {
     float: right;
@@ -1532,6 +1543,7 @@ ul.tabs li.tab-link a:focus{outline: none}
     background: transparent;
     margin-top: 0px;
 }
+.textfield.radio-outer-base  input[type="text"] , .textfield.checkbox-outer-base  input[type="text"]{    padding-left: 22px;}
 .textfield.radio-outer-base .control--radio::after {
     content: "\F111";
     font-family: FontAwesome;
@@ -1582,3 +1594,14 @@ ul.tabs li.tab-link a:focus{outline: none}
 .textfield .control--radio .control__indicator.icon-set > div, .textfield.checkbox-outer .control__indicator.check-set > div{margin: 0}
 
 /* other field */
+
+.textfield.active input[type="text"]::-webkit-input-placeholder {color: #fff; opacity: 0.5}
+.textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.5}
+.textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.5}
+.textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.5}
+.template-five .textfield input[type="text"]::-webkit-input-placeholder { opacity: 0.5}
+.template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.5}
+.template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.5}
+.template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.5}
+
+.structure-right-align .sub-heading h2 {float: right;}

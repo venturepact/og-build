@@ -437,6 +437,9 @@
     .t1-question button.prime-action {
         width: auto;
     }
+    .t1-question a.prime-action {
+        width: auto;
+    }
     .t1-ques-head {
         padding: 0;
         margin: 0;
@@ -453,6 +456,7 @@
         margin-top: 0px;
         padding: 0;
     }
+    .range-slider1.custom-slider1{ margin-bottom: 10px !important;}
     .t1-result-top {
         width: 100%;
         float: left;
@@ -676,6 +680,9 @@
     .t1-question button.prime-action.btn[disabled] {
         opacity: 0.45;
     }
+    .t1-question a.prime-action.btn[disabled] {
+        opacity: 0.45;
+    }
     .down-arrow-outer {
         display: block;
     }
@@ -808,6 +815,10 @@
     .ripple-dark.checkbox-outer{ margin-bottom: 8px;}
     .ripple-dark.radio-outer {margin-bottom: 8px;}
     .ripple-dark.radio-outer-base {margin-bottom: 8px;}
+    .control-ver2 .ripple-dark.radio-outer-base{margin-bottom: 0px;}
+    /*.range-slider1.custom-slider1 ul li {display: none;}
+    .range-slider1.custom-slider1 ul li:first-child {display: block;}
+    .range-slider1.custom-slider1 ul li:last-child {display: block;}*/
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -1240,6 +1251,8 @@
     .ripple-dark.radio-outer {margin-bottom: 5px;}
     .ripple-dark.radio-outer-base {margin-bottom: 5px;}
     .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
+    .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
+    .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {
