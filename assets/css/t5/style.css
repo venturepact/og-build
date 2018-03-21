@@ -4084,9 +4084,11 @@
   @keyframes blinker-color {
     from {}
     50% {
-      opacity: 1;
+      opacity: 0.5;
     }
-    to {}
+    to {
+        opacity: 1;
+    }
   }
   /* @keyframes blinker-bg {
     from {}

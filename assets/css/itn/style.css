@@ -4659,9 +4659,11 @@ p > span > a {color: inherit; }
 @keyframes blinker-color {
     from {}
     50% {
+        opacity: 0.5;
+    }
+    to {
         opacity: 1;
     }
-    to {}
 }
 
 
@@ -4783,3 +4785,6 @@ p > span > a {color: inherit; }
   }
   .inline-temp-new .lead-popup  .lead-popup-outer .lead-popup-main [type=checkbox].filled-in+label.leadform-checkbox:after, 
   .inline-temp-new .lead-popup  .lead-popup-outer .lead-popup-main [type=checkbox].filled-in+label.leadform-checkbox:before{margin: 0 !important}
+  .new_control.complete + .new_control.complete {
+    z-index: 90;
+}

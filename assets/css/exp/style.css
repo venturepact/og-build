@@ -4655,9 +4655,11 @@ p > span > a {color: inherit; }
   @keyframes blinker-color {
     from {}
     50% {
-      opacity: 1;
+      opacity: 0.5;
     }
-    to {}
+    to {
+        opacity: 1;
+    }
   }
   .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important;}
 .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important; float: left;}
