@@ -1470,6 +1470,10 @@
         width: 7px;
         height: 12px;
     }
+    .structure-right-align .common-result-main .common-leadform-top.t1-result-leadform [type=checkbox].filled-in:checked+label.leadform-checkbox:after {
+        right: 0 !important;
+        left: auto !important;
+    }
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {

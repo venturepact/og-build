@@ -1049,7 +1049,7 @@
 			}
 		};
 	
-		$input.on('keydown keyup update blur', update);
+		$input.on('keydown keyup update', update);
 		update();
 	};
 	

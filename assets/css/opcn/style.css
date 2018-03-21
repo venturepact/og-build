@@ -6975,3 +6975,21 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     right: 20px!important;
     top: 0;
 }
+.one-page-card-new.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {
+    text-align: right !important;
+    padding-right: 30px;
+    padding-left: 0;
+}
+.one-page-card-new.structure-right-align .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
+    right: 10px !important;
+    left: auto !important;
+}
+.one-page-card-new.structure-right-align .common-result-main [type=checkbox].filled-in:checked+label:after, .structure-right-align [type=checkbox].filled-in:not(:checked)+label:after{
+    right: 0 !important;
+    left: auto !important;
+}
+.structure-right-align .common-result-main .common-leadform-top.t1-result-leadform [type=checkbox].filled-in:checked+label.leadform-checkbox:before{
+    top: 0px !important;
+    right: 11px !important;
+    left: auto;
+}

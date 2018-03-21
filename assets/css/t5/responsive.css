@@ -644,6 +644,12 @@ Developer: Bhawna */
     .graded-ques-left{width:110px;}
     .graded-ques-right {float: left;width: calc(100% - 110px);}
     .graded-ques-list span.ans-correct{width:100%;}
+    .isIframe_max2.isIframe.header-next-div {
+        height: auto !important;
+    }
+    .isIframe_max2 .t1-question {
+        height: auto !important;
+    }
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -668,6 +674,7 @@ Developer: Bhawna */
     .structure-right-align .common-header-main .landing-page-header {        right: 0 !important;        left: 0 !important;    }
     .template-five.structure-right-align [type="checkbox"]:not(:checked), .template-five .structure-right-align [type="checkbox"]:checked {        right: 0;        left: 0;    }
     .structure-right-align .landing-page-mid {        margin-right: 0;    }
+    .structure-right-align .landing-right{right: 0; left:0}
     .t1-result .no-header-links.no-footer-links { padding: 30px 0 !important;    }
     .result-branding{position: static}
     .disclaimer-outrr {    position: relative;    left: 0;    right: 0;    bottom: 0;    float: left;    width: 100%;}
@@ -1018,7 +1025,7 @@ Developer: Bhawna */
 
 @media (max-width: 767px){
     .stickyfooter{ padding: 10px 20px;}
-
+    .template-five header.landing-page-header.outcome-logo{position: relative}
     /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px !important;}
     .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
