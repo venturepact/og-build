@@ -364,7 +364,7 @@ li {
     display: table-cell;
     vertical-align: middle;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 3px;
     outline: none;
 }
 .a-disable {
@@ -2562,7 +2562,7 @@ visuals .t1-result-inner-left #og-table-excel {
     font-size: 18px;
     float: left;
     width: auto;
-    padding: 13px 50px;
+    padding: 13px 40px;
     box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.2);
     border: none;
     cursor: pointer;
@@ -3438,7 +3438,7 @@ input[type=number] {
     position: relative;
     width: auto;
     margin-left: 0px;
-    border-radius: 5px;
+    border-radius: 3px;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
     
@@ -3465,11 +3465,11 @@ input[type=number] {
     position: relative;
     width: auto;
     float: left;
-    top: 10px;
+    top: 7px;
     left: 0px;
     line-height: normal;
     margin-right: 15px;
-    border-radius: 5px;
+    border-radius: 3px;
     z-index: 99;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
@@ -3526,7 +3526,7 @@ input[type=number] {
     float: left;
     width: auto;
     margin-right: 15px;
-    border-radius: 5px;
+    border-radius: 3px;
     /*box-shadow: 3px 3px 0px 1px #CBB146;*/
     
     -webkit-animation: submitMove 0.25s;
@@ -3573,7 +3573,7 @@ input[type=number] {
     margin-left: 15px;
     margin-right: 15px;
     height: 40px !important;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
 }
 .editor-page-divider .submit-textbox-btn {
@@ -3592,7 +3592,7 @@ input[type=number] {
     margin-left: 15px;
     margin-right: 15px;
     height: 40px !important;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
 }
 .submit-textbox-btnresp {
@@ -3611,7 +3611,7 @@ input[type=number] {
     width: auto;
     margin-left: 15px;
     height: 40px !important;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 0 3px 5px 1px rgba(0,0,0,.2);
 }
 .spanhide {
@@ -4486,7 +4486,7 @@ _:-webkit-full-screen,
 }
 .control.control--checkbox span {
     float: left;
-    line-height: 25px;
+    line-height: 26px;
     margin-top: 16px;
     margin-bottom: 14px;
     word-wrap: break-word;
@@ -6941,11 +6941,17 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 }
 
 
-.landing-page-mid button { -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; }
-.submit-checkbox-img { -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
-.submit-checkbox{ -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
-.t1-question .submit-textbox-btn{ -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; padding:10px 20px !important; }
-
+/*.landing-page-mid button { -webkit-border-radius: 40px !important; -moz-border-radius: 40px !important; border-radius: 40px !important; }*/
+/*.submit-checkbox-img { padding:10px 20px !important; }*/
+.submit-checkbox{  padding:10px 20px !important; }
+.t1-question .submit-textbox-btn{padding:10px 20px !important; }
+.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{border-radius: 3px !important;}
+.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action {
+    border-radius: 3px !important;
+}
+.lead-action-wrapper .submit-checkbox-img {
+    padding: 13px 20px !important;
+}
 .one-page-card-new.structure-right-align [type=radio]+label:after, .one-page-card-new.structure-right-align [type=radio]+label:before {
     right: 0;
     left: auto;
