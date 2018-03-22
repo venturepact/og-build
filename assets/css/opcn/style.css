@@ -2498,7 +2498,7 @@ visuals .t1-result-inner-left #og-table-excel {
     /*display: inline-block;*/
     
     width: 50% !important;
-    float: left !important;
+    /*float: left !important;*/
     margin-bottom: 10px;
     position: relative;
     margin-right: 0px !important;
@@ -5596,9 +5596,9 @@ visuals.visual-outr span.graph-title {
     text-overflow: ellipsis;
     max-height: 18px;
 }
-.t1-landing .selectize-input {
+/* .t1-landing .selectize-input {
     padding: 3px 35px 3px 10px;
-}
+} */
 /* .t1-landing .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) .selectize-input {
     padding: 10px 35px 10px 15px;
 } */
@@ -5768,6 +5768,9 @@ input {
 
     .isIframe {
         height: auto !important;
+    }
+    .page_0.t1-landing.isIframe {
+        height: 575px !important;
     }
 }
 /******************/
