@@ -2550,7 +2550,7 @@ visuals .t1-result-inner-left #og-table-excel {
     float: left;
     width: 100%;
     position: absolute;
-    top: 36px;
+    /* top: 36px; */
     left: 0px;
     text-align: left;
     padding-left: 2px;
@@ -5560,6 +5560,7 @@ visuals.visual-outr span.graph-title {
 .t1-landing .t1-landing-inner .selectize-control {
     float: left;
     width: 100%;
+    margin-bottom: 20px;
 }
 .t1-landing .t1-landing-inner .selectize-control.single .selectize-input {
     border: none;
@@ -6096,7 +6097,7 @@ span.abhi {
 .custom-block.rating-custom .submit-textbox { border: none;}
 .custom-block.rating-custom .rating-inner{float: left; width: auto; margin-top: 0px;margin-bottom: 5px;}
 .custom-block.rating-custom .submit-textbox-btn{top:0px;margin: 0;margin-top: 15px;}
-.custom-block.rating-custom .rating-inner i{font-size: 34px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
+.custom-block.rating-custom .rating-inner i{font-size: 31px;margin-right: 5px;cursor: pointer;padding: 5px;border-radius: 50%;}
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
 /* Opinion scale css sahil */
