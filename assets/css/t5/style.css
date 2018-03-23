@@ -4084,9 +4084,11 @@
   @keyframes blinker-color {
     from {}
     50% {
-      opacity: 1;
+      opacity: 0.5;
     }
-    to {}
+    to {
+        opacity: 1;
+    }
   }
   /* @keyframes blinker-bg {
     from {}
@@ -4491,3 +4493,7 @@ li{ list-style: none;}
 }
 .result-v2 .common-result-main .t1-result-leadform .cta-center .twitter-follow-button, 
 .result-v2 .common-result-main .t1-result-leadform .cta-center .fb-like{margin: 0 !important}
+
+.question-components input.postfixset {
+    min-height: 30px !important;
+}

@@ -177,7 +177,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .template-eight  .common-result-main .t1-result-leadform .cta-center .likes-parent img {    margin: 10px 2.5px 0px !important;}
 .template-eight  .common-result-main .t1-result-leadform .cta-center .cta-share a.btn-lg{  margin: 10px 2.5px 0px !important;}
 .poll-main .radio-outer.ripple-dark.radio-icon-custom  ,.poll-main .radio-outer.ripple-dark.radio-outer-base{    float: left !important;}
-.poll-main .radio-outer.ripple-dark.radio-icon-custom label.control  ,.poll-main .radio-outer.ripple-dark.radio-outer-base label.control{padding-right:40px;}
+.poll-main .radio-outer.ripple-dark.radio-icon-custom label.control  ,.poll-main .radio-outer.ripple-dark.radio-outer-base label.control{padding-right:60px;}
 .poll-main .radio-outer label .poll-color-light {    display: none;}
 .poll-main .radio-outer label .poll-color {    display: none;} 
 
@@ -276,7 +276,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .custom-block.rating-custom .rating-inner i.selected,.custom-block.rating-custom .rating-inner i.hovering{
     /*background:rgba(255,255,255,0.3)*/
     background: #fff;
-    opacity: 0.8;
+    opacity: 1;
 }
 .custom-block.rating-custom {  max-width: 420px;  text-align: center;}
 .custom-block.rating-custom .submit-textbox { border: none;}
@@ -1935,9 +1935,11 @@ p > span > a {color: inherit; }
 @keyframes blinker-color {
     from {}
     50% {
+        opacity: 0.5;
+    }
+    to {
         opacity: 1;
     }
-    to {}
 }
 
 .common-leadform-top.t1-result-leadform.eight-inner-wrapper.leadAsPopup .overlay-outer-eight {
@@ -1965,3 +1967,6 @@ p > span > a {color: inherit; }
 .template-eight .common-result-main .t1-result-leadform .cta-center .fb-like ,
 .template-eight .common-result-main .t1-result-leadform .cta-center .twitter-follow-button , 
 .template-eight  .common-result .common-result-bot-left #vk_subscribe iframe{margin: 5px  2.5px 0  !important}
+.t1-ques-component .input-section .input-outer.checkbox { margin-bottom: 10px; margin-top: 0;}
+
+.common-result #follow, .common-result #like , .common-result #vk_subscribe {float: none !important; }

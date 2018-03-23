@@ -3995,6 +3995,7 @@ svg.highcharts-root {
     text-overflow: ellipsis;
     max-width: 30px;
     min-width: 20px;
+    height:26px;
 }
 .slider-input-post {
     position: absolute !important;
@@ -4009,6 +4010,7 @@ svg.highcharts-root {
     max-width: 30px;
     min-width: 20px;
     left: 92%;
+    height:26px;
 }
 #build span.slider-input-post {
     left: 90%;
@@ -4655,9 +4657,11 @@ p > span > a {color: inherit; }
   @keyframes blinker-color {
     from {}
     50% {
-      opacity: 1;
+      opacity: 0.5;
     }
-    to {}
+    to {
+        opacity: 1;
+    }
   }
   .template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important;}
 .landing-page-mid button.loginBtn.loginBtn--facebook{    padding: 5px 15px 5px 46px !important; float: left;}
