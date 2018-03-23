@@ -8829,9 +8829,9 @@ p > span > a {color: inherit; }
 .t1-question .result-v2.ripple-dark.checkbox-outer-base [type="checkbox"]:checked + label.control::before {
     border: none;
 }
-.template-six .result-v2 .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+/* .template-six .result-v2 .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
 .template-six .result-v2 [type="checkbox"]:checked + label.leadform-checkbox::before, 
-.t1-question .result-v2 .ripple-dark.checkbox-outer-base [type="checkbox"]:checked + label.control::before{color: #fff !important;}
+.t1-question .result-v2 .ripple-dark.checkbox-outer-base [type="checkbox"]:checked + label.control::before{color: #fff !important;} */
 
  .result-v2 .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{
     transform: rotate(0deg); 

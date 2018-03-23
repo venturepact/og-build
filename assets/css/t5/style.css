@@ -1259,7 +1259,7 @@
         top: 3px;
     }
     .main-section .input-field label {
-        height: 29px;
+        height: 30px;
         max-width: 65px;
         min-width: 30px;
         margin: 0;
@@ -4493,3 +4493,7 @@ li{ list-style: none;}
 }
 .result-v2 .common-result-main .t1-result-leadform .cta-center .twitter-follow-button, 
 .result-v2 .common-result-main .t1-result-leadform .cta-center .fb-like{margin: 0 !important}
+
+.question-components input.postfixset {
+    min-height: 30px !important;
+}
