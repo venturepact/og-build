@@ -3610,6 +3610,9 @@ input[type=number] {
     .page_0.t1-landing.isIframe {
         height: 575px !important;
     }
+    .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question {
+        height: 575px !important;
+    }
 }
 .left-outer-hidden {
     overflow: hidden;
@@ -3953,6 +3956,7 @@ input[type=number] {
     height: auto;
     font-size: 16px;
     margin-left: 0;
+    padding-left: 0;
 }
 .t1-landing .t1-landing-inner .selectize-input .item {
     font-size: 18px;
@@ -4703,7 +4707,7 @@ p > span > a {color: inherit; }
     .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item + input{display: none !important}
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 10px !important }
+    .t1-question .new_control .question-components .selectize-control.single .selectize-input input {visibility: visible; margin-right: 0px !important }
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
     .t1-question .new_control .question-components input{font-size: 30px !important;     line-height: 40px !important; }
@@ -4781,7 +4785,7 @@ p > span > a {color: inherit; }
 .template-section .template-container.mobile .t1-result-top.common-result.result-v2.recommendation-outer .mid-width span{margin-bottom: 0}
 .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left: 50% !important;-webkit-transform: translateX(-50%);transform: translateX(-50%);bottom: 50px;}
 .page_2.t1-result{background-attachment: fixed}
-.t1-question .new_control .question-components input {max-width: 280px !important;}
+.t1-question .new_control .question-components input {max-width: 300px !important;}
 .t1-question .new_control .question-components input.postfixset {max-width: inherit !important;}
 
 .lead-popup-main .submit-checkbox-img p {
@@ -4792,4 +4796,8 @@ p > span > a {color: inherit; }
   .inline-temp-new .lead-popup  .lead-popup-outer .lead-popup-main [type=checkbox].filled-in+label.leadform-checkbox:before{margin: 0 !important}
   .new_control.complete + .new_control.complete {
     z-index: 90;
+}
+
+.t1-ques-component + .t1-ques-head {
+    margin: 0 !important;
 }

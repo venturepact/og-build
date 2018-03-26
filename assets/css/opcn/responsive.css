@@ -1323,7 +1323,7 @@
         padding-left: 0 !important;
     }
     .t1-result-main .gradedquiz-main .selectize-control {
-        width: 94% !important;
+        width: 100% !important;
     }
     .one-page-card-new [type=checkbox].filled-in:disabled:not(:checked)+label.graded-cross:after {
         margin-top: 16px!important;
@@ -1510,11 +1510,11 @@
         margin-right: 10px;
     }
     .t1-result-main .selectize-control {
-        margin-left: 7px;
-        width: 97%;
+        margin-left: 0px;
+        width: 100%;
     }
     .t1-result-main .gradedquiz-main .selectize-control {
-        width: 97% !important;
+        width: 100% !important;
     }
 }
 @media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
