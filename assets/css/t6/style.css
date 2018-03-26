@@ -8857,3 +8857,8 @@ p > span > a {color: inherit; }
 
   }
     .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom .redo-link ul{ display: inline-block;}
+    
+@supports (-ms-ime-align : auto) {
+ .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{ padding-bottom: 13px !important; }
+ .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}

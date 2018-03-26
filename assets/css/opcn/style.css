@@ -6006,11 +6006,11 @@ span.abhi {
 
 
 /*font based structure css*/
-.structure-right-align .t1-landing{ direction: rtl;}
+.structure-right-align .t1{ direction: rtl;}
 .structure-right-align .landing-page-header { right: 60px; left: initial;}
 .structure-right-align .landing-page-mid{ margin-right: 60px; text-align: right;}
 .structure-right-align .landing-page-mid button{ float: right; margin-right:0;}
-.structure-right-align .stickyfooter{ text-align: left;}
+.structure-right-align .stickyfooter{ text-align: left; direction: ltr;}
 .structure-right-align .t1-ques-head{ text-align: right; direction:rtl;}
 .structure-right-align .t1-landing-inner .input-field{ direction: rtl; width:100%;}
 .structure-right-align .t1-question .selectize-control {text-align: right}
@@ -6765,7 +6765,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 .one-page-card-new .common-result-main .t1-result-leadform .input-outer input{width: 100%; margin-left: 0px; margin-right: 0px; padding-bottom: 2px !important}
 .one-page-card-new .common-result-main .t1-result-leadform .input-outer i{left: 0px}
-.one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items input{width: auto !important}
+/* .one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items input{width: auto !important} */
 /* .one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items .item + input{display: none} */
 
 .one-page-card-new .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 0px; top:2px}
@@ -6860,7 +6860,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{right: 0; left: auto}
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{right:10px;left:auto}
    .structure-right-align  .t1-result-leadform .lead-popup .w100.text-center .submit-checkbox-img{margin-right: 0; top:0 !important}
-   .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-right: 15px; padding-left: 35px}
+   .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-right: 15px !important; padding-left: 35px !important}
     .template-section .template-container.mobile     .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 10px !important; left: auto !important}
     .template-section .template-container.mobile  .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 35px; padding-left: 50px}
 .checkbox-outer-base.active + .checkbox-outer-base.active {
@@ -6895,8 +6895,10 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 } */
 
 .v2mainouter .control-ver2 .pic-selector {
-    margin-bottom: 0 !important;
     padding-bottom: 0;
+}
+.v2mainouter .control-ver2 .pic-selector:last-child {
+    margin-bottom: 0 !important;
 }
 .v2mainouter .control-ver2 .pic-selector span.abhi {
     min-height: auto;
@@ -7012,3 +7014,13 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     right: 11px !important;
     left: auto;
 }
+
+.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item + input,
+.structure-right-align .common-result-main .common-leadform-top.t1-result-leadform .selectize-input .item + input{display: none  !important}
+.structure-right-align  .t1-result-main .selectize-dropdown [data-selectable], .structure-right-align .t1-result-main .selectize-dropdown .optgroup-header{text-align: right}
+
+@supports (-ms-ime-align : auto) {
+ .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{ padding-bottom: 13px !important; }
+ .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+
