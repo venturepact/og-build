@@ -4722,7 +4722,7 @@ p > span > a {color: inherit; }
     .template-section .t1-question .new_control .question-components input{font-size: 22px !important; }
     .template-section .new_control .t1-ques-head div{    font-size: 22px; line-height: 40px}
     .template-section .new_control   .t1-ques-head div p{    font-size: 22px; line-height: 40px }
-    .template-section  .new_control .input-field label{font-size: 22px !important;line-height: 40px}
+    .template-section  .new_control .input-field label{font-size: 22px ;line-height: 40px}
     .new_control .input-field label{font-size: 22px;}
     .new_control .errorMessage{bottom: -5px; padding: 0}
     .template-section .new_control .errorMessage{bottom: -6px; padding: 0}
@@ -4745,7 +4745,7 @@ p > span > a {color: inherit; }
         .new_control   .t1-ques-head div p{font-size: 30px; line-height: 45px !important}
         .new_control  .t1-ques-head .help-text{left: 50%; transform: translateX(-50%); font-size: 16px;line-height: 24px}
         .new_control  .t1-ques-head .help-text:before{left: 50%; transform: translateX(-50%);}
-        .new_control .input-field label{line-height: 40px; font-size: 30px !important;}
+        .new_control .input-field label{line-height: 40px; font-size: 30px ;}
 
 
         .t1-question .new_control .question-components .selectize-control.single .selectize-input:after{right: 0}
@@ -4802,5 +4802,9 @@ p > span > a {color: inherit; }
     margin: 0 !important;
 }
 @supports (-ms-ime-align : auto) {
+    .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }

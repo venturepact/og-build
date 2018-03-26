@@ -3798,3 +3798,7 @@ span.abhi {
 @supports (-ms-ime-align : auto) {
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
