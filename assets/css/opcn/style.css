@@ -6006,11 +6006,11 @@ span.abhi {
 
 
 /*font based structure css*/
-.structure-right-align .t1-landing{ direction: rtl;}
+.structure-right-align .t1{ direction: rtl;}
 .structure-right-align .landing-page-header { right: 60px; left: initial;}
 .structure-right-align .landing-page-mid{ margin-right: 60px; text-align: right;}
 .structure-right-align .landing-page-mid button{ float: right; margin-right:0;}
-.structure-right-align .stickyfooter{ text-align: left;}
+.structure-right-align .stickyfooter{ text-align: left; direction: ltr;}
 .structure-right-align .t1-ques-head{ text-align: right; direction:rtl;}
 .structure-right-align .t1-landing-inner .input-field{ direction: rtl; width:100%;}
 .structure-right-align .t1-question .selectize-control {text-align: right}
@@ -6038,7 +6038,7 @@ span.abhi {
 .structure-right-align .control.control--radio span{ float: right; position: relative;}
 .one-page-card-new .structure-right-align [type="radio"]:not(:checked) + label, .one-page-card-new .structure-right-align [type="radio"]:checked + label{ padding-right: 56px; padding-left:10px;}
 .one-page-card-new .structure-right-align  [type="radio"] + label:before, .one-page-card-new .structure-right-align [type="radio"] + label:after{ right:0; left: initial;}
-.structure-right-align .control--radio .control__indicator.icon-set{ left: initial; right: 16px;}
+.structure-right-align .control--radio .control__indicator.icon-set{ left: initial !important; right: 16px;}
 .structure-right-align .t1-question .question-components .leaded-form-c .section-head .pull-left{ float: none !important;}
 .structure-right-align .t1-ques-component .input-section .input-outer .section-head{text-align: right;}
 .structure-right-align .t1-question .leaded-form-c .input-outer input{ padding-right: 35px; padding-left: 10px;}
@@ -6316,6 +6316,7 @@ span.abhi {
     float: none !important;
     display: inline-block !important;
     word-break: break-word;
+    vertical-align: top;
 }
 .control-ver2 .pic-selector .control.control--radio span{display:none;}
 .control-ver2 .done-icon i { font-size: 24px !important; width: 16px; line-height: 0.7; position: relative; left: -4px;}
@@ -6400,8 +6401,8 @@ span.abhi {
 
 .structure-right-align .custom-block.rating-custom{text-align: right}
 .template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
-.structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
-.structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;}
+.structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;left:15px;}
+.structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;left:15px;}
 .structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
 .structure-right-align .poll-main .radio-outer-base.active .poll-percentage{ right: auto; line-height: 29px;}
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
@@ -6765,7 +6766,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 
 .one-page-card-new .common-result-main .t1-result-leadform .input-outer input{width: 100%; margin-left: 0px; margin-right: 0px; padding-bottom: 2px !important}
 .one-page-card-new .common-result-main .t1-result-leadform .input-outer i{left: 0px}
-.one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items input{width: auto !important}
+/* .one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items input{width: auto !important} */
 /* .one-page-card-new  .common-result-main .t1-result-leadform .input-outer .selectize-input.items .item + input{display: none} */
 
 .one-page-card-new .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 0px; top:2px}
@@ -6860,7 +6861,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{right: 0; left: auto}
    .one-page-card-new .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{right:10px;left:auto}
    .structure-right-align  .t1-result-leadform .lead-popup .w100.text-center .submit-checkbox-img{margin-right: 0; top:0 !important}
-   .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-right: 15px; padding-left: 35px}
+   .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-right: 15px !important; padding-left: 35px !important}
     .template-section .template-container.mobile     .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 10px !important; left: auto !important}
     .template-section .template-container.mobile  .structure-right-align  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 35px; padding-left: 50px}
 .checkbox-outer-base.active + .checkbox-outer-base.active {
@@ -6895,8 +6896,10 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
 } */
 
 .v2mainouter .control-ver2 .pic-selector {
-    margin-bottom: 0 !important;
     padding-bottom: 0;
+}
+.v2mainouter .control-ver2 .pic-selector:last-child {
+    margin-bottom: 0 !important;
 }
 .v2mainouter .control-ver2 .pic-selector span.abhi {
     min-height: auto;
@@ -7012,3 +7015,17 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     right: 11px !important;
     left: auto;
 }
+
+.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item + input,
+.structure-right-align .common-result-main .common-leadform-top.t1-result-leadform .selectize-input .item + input{display: none  !important}
+.structure-right-align  .t1-result-main .selectize-dropdown [data-selectable], .structure-right-align .t1-result-main .selectize-dropdown .optgroup-header{text-align: right}
+
+@supports (-ms-ime-align : auto) {
+ .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{ padding-bottom: 13px !important; }
+ .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+
