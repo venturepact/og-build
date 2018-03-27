@@ -6038,7 +6038,7 @@ span.abhi {
 .structure-right-align .control.control--radio span{ float: right; position: relative;}
 .one-page-card-new .structure-right-align [type="radio"]:not(:checked) + label, .one-page-card-new .structure-right-align [type="radio"]:checked + label{ padding-right: 56px; padding-left:10px;}
 .one-page-card-new .structure-right-align  [type="radio"] + label:before, .one-page-card-new .structure-right-align [type="radio"] + label:after{ right:0; left: initial;}
-.structure-right-align .control--radio .control__indicator.icon-set{ left: initial; right: 16px;}
+.structure-right-align .control--radio .control__indicator.icon-set{ left: initial !important; right: 16px;}
 .structure-right-align .t1-question .question-components .leaded-form-c .section-head .pull-left{ float: none !important;}
 .structure-right-align .t1-ques-component .input-section .input-outer .section-head{text-align: right;}
 .structure-right-align .t1-question .leaded-form-c .input-outer input{ padding-right: 35px; padding-left: 10px;}
@@ -6401,8 +6401,8 @@ span.abhi {
 
 .structure-right-align .custom-block.rating-custom{text-align: right}
 .template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
-.structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
-.structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;}
+.structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;left:15px;}
+.structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;left:15px;}
 .structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
 .structure-right-align .poll-main .radio-outer-base.active .poll-percentage{ right: auto; line-height: 29px;}
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
@@ -6895,6 +6895,17 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     margin-bottom: 0;
 } */
 
+.structure-right-align .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.structure-right-align .poll-main .pic-selector.radio-outer.active2 .poll-percentage{text-align: right;right: 20px !important; left: auto}
+.structure-right-align  .control-ver2 .done-iconoutr {
+  position: relative;
+  float: right;
+  right: -4px;
+  top: -7px;
+  left: auto;
+}
+.structure-right-align .control-ver2 .pic-selector  span.abhi,
+.v2mainouter.structure-right-align  .control-ver2 .pic-selector span.abhi {text-align: right !important}
 .v2mainouter .control-ver2 .pic-selector {
     padding-bottom: 0;
 }
@@ -7029,3 +7040,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }
 
+
+.one-page-card-new .structure-right-align [type="radio"]:not(:checked), .one-page-card-new .structure-right-align [type="radio"]:checked {
+    left: 0 !important;
+}
