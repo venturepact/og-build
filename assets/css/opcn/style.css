@@ -575,7 +575,7 @@ li {
 }
 .t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
 .t1-ques-head div p {
-    display: inline;
+    display: inline-block;
 }
 .t1-ques-head div p:last-child {
     display: inline;
@@ -6895,17 +6895,6 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     margin-bottom: 0;
 } */
 
-.structure-right-align .poll-main .pic-selector.radio-outer.active .poll-percentage,
-.structure-right-align .poll-main .pic-selector.radio-outer.active2 .poll-percentage{text-align: right;right: 20px !important; left: auto}
-.structure-right-align  .control-ver2 .done-iconoutr {
-  position: relative;
-  float: right;
-  right: -4px;
-  top: -7px;
-  left: auto;
-}
-.structure-right-align .control-ver2 .pic-selector  span.abhi,
-.v2mainouter.structure-right-align  .control-ver2 .pic-selector span.abhi {text-align: right !important}
 .v2mainouter .control-ver2 .pic-selector {
     padding-bottom: 0;
 }
@@ -7040,7 +7029,3 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }
 
-
-.one-page-card-new .structure-right-align [type="radio"]:not(:checked), .one-page-card-new .structure-right-align [type="radio"]:checked {
-    left: 0 !important;
-}
