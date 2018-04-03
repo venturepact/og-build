@@ -880,6 +880,7 @@ Developer: Bhawna */
     .common-result-main .t1-result-leadform .common-result-bot-icons .crb-left{padding-top:15px;}
     .template-five .t1-logo.res-header.common-result-outcome{ width: 100%; position: absolute; top: 20px;}
     .range-slider1.custom-slider1 ul{ display: none;}
+    html{height:100% !important;}
 }
 @media (max-width: 319px) {
     .t1-question .prime-action {
@@ -1050,7 +1051,7 @@ Developer: Bhawna */
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
-  .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
@@ -1070,6 +1071,8 @@ Developer: Bhawna */
     .graded-ques-left{width:110px;}
     .graded-ques-right {float: left;width: calc(100% - 110px);}
     .graded-ques-list span.ans-correct{width:calc( 100% - 20px)}
+    .t1-question{min-height: 100%;}
+    .header-next-div {height: auto !important;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
