@@ -1,8 +1,7 @@
-@media (min-width: 0px) and (max-width: 340px) {
+@media (min-width: 0px) and (max-width: 330px) {
     .table-outer table {
         max-width: 200px !important;
     }
-    .new_control .input-field label{max-width: 65px !important; }
 }
 @media (min-width: 0px) and (max-width: 767px) {
     .cta-center {
@@ -2562,7 +2561,7 @@
    .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
    .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
    .new_control   .t1-ques-head div p{font-size: 22px}
-   .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
+   .new_control .input-field label{font-size: 22px !important; line-height: 30px}
    .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
    .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:10% !important;}
