@@ -6403,8 +6403,8 @@ span.abhi {
 .template-section .template-container.mobile .common-result-bot-left{padding: 0px !important}
 .structure-right-align .poll-main .radio-outer.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;left:15px;}
 .structure-right-align .poll-main .radio-outer.active .poll-percentage{ right: auto; line-height: 29px;left:15px;}
-.structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {left:inherit; right: auto; line-height: 29px;}
-.structure-right-align .poll-main .radio-outer-base.active .poll-percentage{ right: auto; line-height: 29px;}
+.structure-right-align .poll-main .radio-outer-base.active2 .poll-percentage {left:15px; right: auto; line-height: 29px;}
+.structure-right-align .poll-main .radio-outer-base.active .poll-percentage{ right: auto; line-height: 29px;left:15px;}
 /* .structure-right-align label.control.control--radio.blink-border { padding-right: 20px;} */
 .one-page-card-new [type=radio]+label:after, .one-page-card-new [type=radio]+label:before{ z-index: 9;}
 .structure-right-align .editor-page-divider label.control.control--radio.blink-border { padding-right: 56px;}
@@ -6895,6 +6895,18 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     margin-bottom: 0;
 } */
 
+.structure-right-align .poll-main .pic-selector.radio-outer.active .poll-percentage,
+.structure-right-align .poll-main .pic-selector.radio-outer.active2 .poll-percentage{text-align: right;right: 20px !important; left: auto}
+.structure-right-align  .control-ver2 .done-iconoutr {
+  position: relative;
+  float: right;
+  right: -4px;
+  top: -7px;
+  left: auto;
+}
+.structure-right-align .control-ver2 .pic-selector{padding-left: 2.5%;padding-left: 0}
+.structure-right-align .control-ver2 .pic-selector  span.abhi,
+.v2mainouter.structure-right-align  .control-ver2 .pic-selector span.abhi {text-align: right !important}
 .v2mainouter .control-ver2 .pic-selector {
     padding-bottom: 0;
 }
@@ -7029,3 +7041,11 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }
 
+
+.one-page-card-new .structure-right-align [type="radio"]:not(:checked), .one-page-card-new .structure-right-align [type="radio"]:checked {
+    left: 0 !important;
+}
+.one-page-card-new .structure-right-align [type="checkbox"]:not(:checked), 
+.one-page-card-new .structure-right-align [type="checkbox"]:checked {
+    left: 0 !important;
+}
