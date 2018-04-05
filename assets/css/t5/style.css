@@ -4498,3 +4498,9 @@ li{ list-style: none;}
 .question-components input.postfixset {
     min-height: 30px !important;
 }
+
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}

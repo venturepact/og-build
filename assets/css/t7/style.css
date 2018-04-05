@@ -2717,3 +2717,26 @@ border-radius: 50%;*/
   left:-4px !important;
 }
 .template-seven .range-slider1.custom-slider1 .count{word-break: keep-all;}
+
+
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+@keyframes blinker {
+  from {}
+  50% {
+    border-color: #fff;
+  }
+  to {}
+}
+@keyframes blinker-color {
+  from {}
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
