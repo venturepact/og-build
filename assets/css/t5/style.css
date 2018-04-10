@@ -3062,7 +3062,7 @@
         height: initial;
         line-height: initial;
         position: relative !important;
-        width: auto;
+        width: 100%;
         text-align: left;
         line-height: initial;
         padding-bottom: 8px;
@@ -4411,7 +4411,7 @@ p > span > a {color: inherit; }
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 60px}
 .template-section .template-container.mobile .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
 
-.common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: auto;}
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
 .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
@@ -4497,10 +4497,4 @@ li{ list-style: none;}
 
 .question-components input.postfixset {
     min-height: 30px !important;
-}
-
-.dropdown-blink{
-    animation-name: blinker;
-    animation-duration: 0.3s;
-    animation-iteration-count: 3;
 }
