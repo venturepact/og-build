@@ -918,6 +918,7 @@
         text-align: center;
         margin: 0 auto;
         float: none !important;
+        width: 100% !important;
     }
     .col {
         width: auto;
@@ -1486,6 +1487,7 @@
         right: 30px;
         text-align: right;
     }
+    .t1-question .question-components .othersfield {padding: 18px 0px 15px !important;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -1910,7 +1912,7 @@
     }
     .landing-page-mid leadform .input-section .input-outer.dropdown span {
         font-size: 10px;
-        top: 45px;
+        top: 45px !important;
         left: 0px;
     }
     .landing-page-mid leadform .input-section .input-outer.checkbox span {
@@ -3702,7 +3704,7 @@
 }
 @media (min-width:768px) and (max-width:1024px) {
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 40px 20px 0px;}
-    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 14px 0 10px !important}
+    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 12px 0px !important}
     .textfield .submit-checkbox-img {position: relative;top: -15px;left: 40px;}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn {
         margin-left: 0;
@@ -3782,4 +3784,7 @@
         .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 15px; line-height: 22px;  margin-top: 10px;}
         .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-top: 13px !important; padding-bottom: 12px !important}
         .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item{font-size: 14px}
+    }
+    @media (max-width:1024px){
+        .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 15px !important}
     }
