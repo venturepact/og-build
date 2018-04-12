@@ -1488,6 +1488,20 @@
         text-align: right;
     }
     .t1-question .question-components .othersfield {padding: 18px 0px 15px !important;}
+    
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 15px; float: none;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 4px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+
+
+
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2506,6 +2520,14 @@
     .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
     .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 95px;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
+
+
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

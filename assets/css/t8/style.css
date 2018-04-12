@@ -1737,9 +1737,7 @@ path.highcharts-plot-band {
 
 p > span > a {color: inherit; }
 
-.t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{
-    top: 25px;
-} 
+.t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{top: 5px;position: relative;width:100%;} 
 .template-eight .common-result-main .table-outer table tbody tr{    background: #fff !important;}
 .template-eight .common-result-main .table-outer table tbody tr td.correct_graded{    background: #f2f2f2 !important;}
 .template-eight .common-result-main .table-outer table tbody tr {    border-bottom: 1px solid rgba(0,0,0,0.1) !important}
@@ -1977,3 +1975,64 @@ p > span > a {color: inherit; }
     animation-iteration-count: 3;
 }
 .template-eight [type="checkbox"]+label.leadform-checkbox {width: auto !important;}
+
+
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    background: #fb5f66;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    background: #fdb6b9;
+    color: #fb5f66;
+}
+a.gdrp-cancel-icon{ display: none;}

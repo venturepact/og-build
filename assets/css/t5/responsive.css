@@ -651,6 +651,16 @@ Developer: Bhawna */
     .isIframe_max2 .t1-question {
         height: auto !important;
     }
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 15px; float: none;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 4px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -989,6 +999,12 @@ Developer: Bhawna */
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{ left: 50% !important;}
     /*.result-v2 .common-result-bot-icons.side-redo .crb-left{ width: 90px !important;}*/
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
     /*.landing-page-header a img {
