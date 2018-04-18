@@ -1931,10 +1931,11 @@
     .t1-question .question-components .selectize-control.single .selectize-input .item {
         width: auto !important;
         padding-right: 6px;
+        vertical-align: middle;
     }
     .t1-question .question-components .selectize-control.single .selectize-input:after {
         border-width: 5px 5px 0 5px;
-        margin-top: 3px;
+        margin-top: 0px;
         right: 4px;
     }
     .question-components .selectize-control.single .selectize-input {
@@ -3062,7 +3063,7 @@
         height: initial;
         line-height: initial;
         position: relative !important;
-        width: 100%;
+        width: auto;
         text-align: left;
         line-height: initial;
         padding-bottom: 8px;
@@ -3239,7 +3240,7 @@
     }
     .t1-result-main .selectize-control {
         float: left;
-        width: 98%;
+        width: 100% !important;
     }
     .t1-result-main .selectize-control.single .selectize-input {
         border: none !important;
@@ -4411,7 +4412,7 @@ p > span > a {color: inherit; }
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 60px}
 .template-section .template-container.mobile .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
 
-.common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: auto;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
 .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
@@ -4497,4 +4498,132 @@ li{ list-style: none;}
 
 .question-components input.postfixset {
     min-height: 30px !important;
+}
+
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    background: #fb5f66;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    background: #fdb6b9;
+    color: #fb5f66;
+}
+a.gdrp-cancel-icon{ display: none;}
+
+
+/********* t5 improved ********/
+
+.t5-improved .landing-page-mid button {
+    border-radius: 2px;
+    box-shadow: 36.146px 38.762px 29px 0px rgba( 0, 0, 0 ,0.2);
+    font-size: 18px;
+    min-height: 72px;
+    min-width: 200px;
+    padding: 26px 45px 20px;
+
+  }
+  .t5-improved  .check-comp label{align-items: center}
+  .t5-improved  .opinon-scale-custom .radio-outer{box-shadow: none}
+  .t5-improved  .control-group.select{width: 100%}
+  .t5-improved  .selectize-control{z-index: 100;}
+  .t5-improved .opinon-scale-custom label.control.control--radio{display: flex; align-items: center; justify-content: center;min-height: 30px;}
+  .t5-improved .opinon-scale-custom label.control.control--radio span{line-height: 1}
+  .t5-improved .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{    border-radius: 3px;font-size: 14px;padding: 16px 35px;}
+  .t5-improved .question-number span ,  .t5-improved .question-number sub{display: none;}
+  .t5-improved .question-number {
+   
+    margin-top: 0;
+    border-radius: 3px;
+    height: 40px;
+    float: left;
+    padding: 8px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -2px;
+}
+.t5-improved .question-number sup{font-size: 16px; top: 0 !important ; position: relative;}
+.t5-improved .question-number sup::after {content: ".";margin-left: 0px;}
+.t5-improved .landing-img{box-shadow: 76px 50px 50px rgba( 0, 0, 0 ,0.2)}
+.t5-improved  .main-heading,  .t5-improved .main-heading h1 {font-size: 60px;line-height: 75px}
+.t5-improved .t1-ques-head{font-size: 24px; line-height: 34px}
+.t5-improved .question-head{font-size: 30px; line-height: 40px; ;letter-spacing: 3px}
+.t5-improved  .control, .t5-improved .question-components input, .t5-improved  .control-ver2 .pic-selector span.abhi, .t5-improved  .question-components .selectize-control.single .selectize-input{font-size: 18px}
+.t5-improved  .landing-page-mid {width: 35%}
+.t5-improved  .overlay-outerleadform.result-v2 .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label.active{transform: translateY(-100%); -webkit-transform: translateY(-100%);padding-left: 0px;}
+@media (max-width:1023px){
+    .t5-improved .main-heading, .t5-improved .main-heading h1 {font-size: 44px;line-height: 56px;}
+    .t5-improved  .landing-page-mid {width: 48%;}
+    .t5-improved .t1-ques-head {font-size: 22px;line-height: 34px;}
+    .t5-improved .question-head{font-size: 24px; line-height: 32px; ;letter-spacing: 1px}
+    .t5-improved  .control, .t5-improved .question-components input, .t5-improved  .control-ver2 .pic-selector span.abhi, .t5-improved  .question-components .selectize-control.single .selectize-input {font-size: 16px;}
+}
+@media (max-width:640px){
+    .t5-improved .main-heading, .t5-improved .main-heading h1 {font-size: 34px;line-height: 46px;}
+    .t5-improved .question-head {font-size: 22px;line-height: 32px;}
+    .t5-improved  .landing-page-mid {width: 100%;}
+    .t5-improved .t1-ques-head {font-size: 20px;line-height: 30px;}
+    .t5-improved  .control, .t5-improved .question-components input, .t5-improved  .control-ver2 .pic-selector span.abhi, .t5-improved  .question-components .selectize-control.single .selectize-input {font-size: 14px;}
+    .t5-improved .landing-page-mid button {font-size: 14px;min-height: auto;min-width: auto;padding: 15px 25px 15px; box-shadow: ( 0, 0, 0 ,0.2)}
+    .t5-improved .question-number {height: 30px;padding: 1px 4px;top: 0;}
+    .t5-improved .question-number sup {font-size: 13px;}
+    
 }

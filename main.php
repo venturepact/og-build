@@ -2,22 +2,15 @@
 <html lang="en">
 <head>
 	<?php
-		$hostName = $_SERVER['HTTP_HOST'];
-
-		$apiUrl = 'https://outgrow-api.herokuapp.com';
-
-		if (preg_match("/outgrow\.co\.in$/", $hostName)) {
-			$apiUrl = 'https://outgrow-biz-api.herokuapp.com';
-		}
-		else if (preg_match("/rely\.co$/", $hostName)) {
-			$apiUrl = 'https://outgrow-api.herokuapp.com';
-		}
-		else if (preg_match("/outgrow\.co$/", $hostName)) {
-			$apiUrl = 'https://api.outgrow.co';
-		}
-
-		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
-
+		$host = explode('.',$_SERVER['HTTP_HOST']);
+		array_shift($host);
+		$apiUrl = 'api.'.implode('.',$host);
+		/*if (strpos($apiUrl, 'outgrow') !== false) {
+			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+		} else {
+			$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
+		}*/
+        $url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
 	        CURLOPT_RETURNTRANSFER => 1,
@@ -26,35 +19,14 @@
 			CURLOPT_SSL_VERIFYPEER=>false,
 			CURLOPT_HTTPHEADER=>array('Origin: https://app.outgrow.co'),
 	    ));
-		$resp = curl_exec($curl);
-		
+	    $resp = curl_exec($curl);
 	    //close connection
 	    curl_close($curl);
-	    $response = json_decode($resp,true);
+	    $response	=	json_decode($resp,true);
 	    if(!empty($response['data']))
 	    {
 	    	// This is the URL you want to shorten
-			unset($curl);
-			// curl to get calc integration
-			$curl2 = curl_init();
-			curl_setopt_array($curl2, array(
-					CURLOPT_RETURNTRANSFER => 1,
-					CURLOPT_URL => $apiUrl.'/api/v1/builder/app_integration/'.$response['data']['url'],
-					CURLOPT_USERAGENT => 'Codular Sample cURL Request',
-					CURLOPT_SSL_VERIFYPEER=>false,
-					CURLOPT_HTTPHEADER=>array('Origin: http://app.rely.co'),
-			));
-			$resp2 = curl_exec($curl2);
-			curl_close($curl2);
-			$pages = "";
-			$result=json_decode($resp2,true);			
-			if(!empty($result['data'])) {	
-			    if(result['data']['instant_articles']){
-					$pages = $result['data']['instant_articles']['page_id'];
-			    }
-			}			
-			unset($curl2);
-			// end of calc integration
+	    	unset($curl);
 			$name = explode("?", $_SERVER['REQUEST_URI']);
 			$longUrl = $_SERVER['REQUEST_SCHEME'].'://live.outgrow.co/seo'.$name[0];
 			$apiKey = 'AIzaSyAyEiPl1ZWGqIjhCb4hPz34HgwLS_G9zZk';
@@ -80,7 +52,7 @@
 	    }else{
           $delayFactor = mt_rand(2500,5000);
 		  //$imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
-		  $imageLink = "http://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" .$shortUrl. "&viewport=1200x630&fullpage=1&delay=3";
+		  $imageLink = "https://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" .$shortUrl. "&viewport=1200x630&fullpage=1&delay=3";
 	    }
 
 	?>
@@ -95,7 +67,6 @@
 		<meta name="twitter:title" content="<?php echo $response['data']['title']; ?>">
 		<meta name="twitter:description" content="<?php echo $response['data']['description']; ?>">
 		<meta name="twitter:image" content="<?php echo $imageLink; ?>">
-		<meta property="fb:pages" content="<?php echo $pages; ?>" />
 	<?php
 	    }
 	    else
