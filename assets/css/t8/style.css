@@ -2036,4 +2036,14 @@ a.gdrp-accept:hover {
     color: #fb5f66;
 }
 a.gdrp-cancel-icon{ display: none;}
-.common-result-main .common-leadform-top.t1-result-leadform .container-temp{position: relative;z-index: 110;}
+.common-result-main .common-leadform-top.t1-result-leadform .container-temp {
+    padding: 0 !important;
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 100%;
+}
+.w100.text-center.lead-action-wrapper.eight-sec{position: relative; z-index: 9;}
+.container-temp.text-center.eight-sec {
+    z-index: 9 !important;
+}
