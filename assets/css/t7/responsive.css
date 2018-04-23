@@ -734,12 +734,6 @@
     }
     .page_2.hasbranding.result-fixed{ max-height: 100% !important; overflow-y: visible;}
     .questionnaire .logo a img.horz{ max-width:110px !important;}
-
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape) {
    /*.landing-page-mid .main-heading h1 ,  .landing-page-mid .main-heading h1 {
@@ -910,15 +904,3 @@ max-width: 160px !important;
 }
 }
 
-
-@media (min-width:0px) and (max-width:767px) {
-     /* gdpr popup css */
-     .gdpr-popup{ padding: 15px 20px;}
-     .gdpr-popup-left{ width: 100%;}
-     .gdpr-popup-right{ width: 100%; text-align: center;}
- 
-     a.gdrp-cancel{ display: none;}
-     a.gdrp-accept{ display: inline-block; margin-top: 15px; float: none;}
-     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 4px;}
-     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-}
