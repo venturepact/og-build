@@ -819,6 +819,17 @@
     /*.range-slider1.custom-slider1 ul li {display: none;}
     .range-slider1.custom-slider1 ul li:first-child {display: block;}
     .range-slider1.custom-slider1 ul li:last-child {display: block;}*/
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 15px; float: none;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 4px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -1253,6 +1264,12 @@
     .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
     .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
     .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {

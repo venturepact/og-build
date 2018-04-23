@@ -1142,7 +1142,7 @@ padding-left: 30px;
 height: initial;
 line-height: initial;
 position: relative !important;
-width: 100%;
+width: auto;
 text-align: left;
 line-height: initial;
 padding-bottom: 8px;
@@ -2137,6 +2137,81 @@ p > span > a {color: inherit; }
 .sound-cloud-new .like-cta-outer .twitter-follow-button , 
  .sound-cloud-new .like-cta-outer #vk_subscribe iframe{margin: 5px  2.5px 0  !important}
 
+
+ .dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+/**************** fb ********************/
+.landing-page-mid button.loginBtn.loginBtn--facebook{padding: 12px 15px 12px 50px;border-radius: 50px; }
+.landing-page-mid button.loginBtn.loginBtn--facebook:before{width: 40px;background-position: 10px center !important}
+.landing-page-mid  .or-class {float: left;width: 100%;text-align: center;  font-size: 16px;  text-transform: uppercase;  margin: 15px 0;}
+.template-section .template-container.mobile  .or-class{width: 100% !important; margin: 10px 0; font-size:12px;}
+.template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
+.template-section .template-container.mobile .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
+ .page_2 .result-temp2-default-section .small-bot-sec p{ margin: 0px !important;}
+
+
+
+
+/* gdpr popup css */
+.gdpr-popup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 15px 30px;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+}
+
+.gdpr-popup-left {
+  float: left;
+  width: 80%;
+}
+.gdpr-popup-left p{
+  color: #fff;
+  font-family: montserratlight;
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 0px;
+}
+
+
+.gdpr-popup-right {
+  float: right;
+  width: 15%;
+  font-family: montserratlight;
+  margin-top: 5px;
+}
+a.gdrp-cancel {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 10px;
+  float: right;
+  margin-right: 20px;
+  transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+  float: right;
+  padding: 10px 20px;
+  background: #fb5f66;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+  background: #fdb6b9;
+  color: #fb5f66;
+}
+a.gdrp-cancel-icon{ display: none;}
  .page_2 .result-temp2-default-section .small-bot-sec p{ margin: 0px !important;}
 
  .isIframe .page_1 .result-fixed1 {min-height: auto;}

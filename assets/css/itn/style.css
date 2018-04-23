@@ -2078,7 +2078,7 @@ visuals .rec-image-outer img {
     min-height: 37px;
 }
 .t1-question .question-components .selectize-control.single .selectize-dropdown.single {
-    width: 93% !important;
+    width: 100% !important;
     top: 36px !important;
     min-width: 110px;
 }
@@ -3612,6 +3612,7 @@ input[type=number] {
     }
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question {
         height: 575px !important;
+        min-height: 100vh;
     }
 }
 .left-outer-hidden {
@@ -3840,7 +3841,7 @@ input[type=number] {
     height: initial;
     line-height: initial;
     position: relative !important;
-    width: 100%;
+    width: auto;
     text-align: left;
     line-height: initial;
     padding-bottom: 10px;
@@ -4573,7 +4574,7 @@ p > span > a {color: inherit; }
     .scrollbar::-webkit-scrollbar:horizontal {height: 6px;background-color: rgba(0, 0, 0, 0.2);}
     .scrollbar::-webkit-scrollbar-thumb {border-radius: 4px;background-color: rgba(0, 0, 0, 0.2);}
     .common-result-main .t1-result-leadform .input-outer span{padding: 0 10px !important}
-    .common-result-main [type="checkbox"].filled-in + label.leadform-checkbox:before, .common-result-main [type="checkbox"].filled-in + label.leadform-checkbox:after{margin: 0}
+    .common-result-main [type="checkbox"].filled-in + label.leadform-checkbox:before, .common-result-main [type="checkbox"].filled-in + label.leadform-checkbox:after{margin: 0 !important}
     .inline-temp-new .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 2px !important}
 
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid + span.cust-icon-rest::after {content: 'done';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #2fc10e !important;line-height: 1;}
@@ -4583,7 +4584,7 @@ p > span > a {color: inherit; }
      .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 60px}
 
 
-     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
+     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width:auto;}
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:10px}
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
 
@@ -4651,14 +4652,14 @@ p > span > a {color: inherit; }
     animation-duration: 0.3s;
     animation-iteration-count: 3;
 } */
-.t1-question .question-components input.blink-animation{
+/* .t1-question .question-components input.blink-animation{
     animation-name: blinker;
     animation-duration: 0.3s;
     animation-iteration-count: 3;
     border-radius: 5px;
-}
+} */
 
-@keyframes blinker {
+/* @keyframes blinker {
     from {}
     50% {
         border-color: #fff;
@@ -4673,7 +4674,7 @@ p > span > a {color: inherit; }
     to {
         opacity: 1;
     }
-}
+} */
 
 
 /*********************** new design ********************************/
@@ -4691,7 +4692,7 @@ p > span > a {color: inherit; }
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: opacity 0.15s linear, transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.45s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
     .new_control.visible {left: 0;opacity: 1; }
-    .new_control.complete  { margin-bottom: 0px; z-index: 99;}
+    .new_control.complete  { margin-bottom: 0px; }
     .new_control.complete  .t1-ques-head ,  
     .new_control.complete .t1-ques-head , 
     .new_control.complete .t1-ques-component .custom-block,
@@ -4757,7 +4758,7 @@ p > span > a {color: inherit; }
           
         }
         .template-section .template-container.mobile .new_control .t1-ques-head div .help-text:before{display: none}
-        .new_control  .selectize-input:before {
+        /* .new_control  .selectize-input:before {
             content: " ";
             display: block;
             position: absolute;
@@ -4766,7 +4767,7 @@ p > span > a {color: inherit; }
             bottom: 0;
             left: 0;
             right: 0;
-        }
+        } */
 
         section.t1-result-top.common-result.result-v2.recommendation-outer{position: static}
         .result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .redo-outer-recom{bottom: -10px}
@@ -4794,9 +4795,9 @@ p > span > a {color: inherit; }
   }
   .inline-temp-new .lead-popup  .lead-popup-outer .lead-popup-main [type=checkbox].filled-in+label.leadform-checkbox:after, 
   .inline-temp-new .lead-popup  .lead-popup-outer .lead-popup-main [type=checkbox].filled-in+label.leadform-checkbox:before{margin: 0 !important}
-  .new_control.complete + .new_control.complete {
+  /* .new_control.complete + .new_control.complete {
     z-index: 90;
-}
+} */
 
 .t1-ques-component + .t1-ques-head {
     margin: 0 !important;
@@ -4808,3 +4809,113 @@ p > span > a {color: inherit; }
     /* IE10+ CSS styles go here */
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
 }
+.new_control .input-field label{max-width: 165px; padding: 8px 10px 0; text-transform: inherit}
+.new_control .input-field label.pre-icon{padding-left: 0px !important;text-align: left}
+.new_control .input-field label.post-icon{padding-right: 0px !important;text-align: right}
+.new_control.visible.complete.dropdown_open {
+    z-index: 91;
+}
+/* 
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+} */
+
+/* improved t3 css start sahil */
+.t3-improved .page_2.t1-result {
+    background-image: none !important;
+}
+.t3-improved .landing-page-mid {
+    margin-left: 45%;
+}
+.t3-improved .main-heading, .main-heading h1{
+    font-size: 56px;
+    line-height: 70px;
+}
+.t3-improved .landing-page-mid button{
+    border-radius: 50px;
+    box-shadow: -5px 25px 25px 4px rgba(0,0,0,0.1);
+    padding: 12px 40px;
+}
+.t3-improved .template3-outr .question-head{
+    line-height: 49px;
+    font-size: 30px;
+    padding: 8px 10px;
+}
+.template-section .t3-improved .new_control .t1-ques-head div{
+    font-size: 30px;
+}
+.t3-improved .t1-question button.prime-action{
+    border-radius: 50px;
+    box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);
+    padding: 12px 40px;
+}
+
+
+
+    /* builder mobile */
+.template-section .template-container.mobile .t3-improved .editor-page-divider .t1-landing .no-footer-links{
+    padding-left: 0px !important;
+}
+/* improved t3 css end sahil */
+
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    background: #fb5f66;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    background: #fdb6b9;
+    color: #fb5f66;
+}
+a.gdrp-cancel-icon{ display: none;}
