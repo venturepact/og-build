@@ -349,18 +349,6 @@
     .t1-slider-nav {  bottom: 30px; right: 15px; -webkit-transform: translateX(0)!important;  transform: translateX(0)!important; }
     .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
     .t1-slider-nav.slidr3{    margin-left: 0;   right: auto!important;   left: 10px!important;}
-
-
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 100%;}
-    .gdpr-popup-right{ width: 100%; text-align: center;}
-
-    a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 15px; float: none;}
-    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 4px;}
-    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -606,12 +594,6 @@
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input { width: 98%; }
 
 
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
-
-
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape) {
  
@@ -626,11 +608,6 @@
     .t1-result-main{padding-top: 70px;}
     .graded-msgbox-outr{ width: 60%;}
     .isIframe .landing-footer-outer{min-height: 36px;}
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
    
 
 }
@@ -1056,5 +1033,4 @@
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
     .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }
 .question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
-    .landing-page-mid leadform .input-section .input-outer.checkbox span{top:0 !important;}
 }
