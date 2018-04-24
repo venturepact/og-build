@@ -1,7 +1,8 @@
-@media (min-width: 0px) and (max-width: 330px) {
+@media (min-width: 0px) and (max-width: 340px) {
     .table-outer table {
         max-width: 200px !important;
     }
+    .new_control .input-field label{max-width: 65px !important; }
 }
 @media (min-width: 0px) and (max-width: 767px) {
     .cta-center {
@@ -1077,6 +1078,22 @@
         left: 10% !important;
         bottom: 45px !important;
     }
+    .t3-improved .landing-page-mid{ margin-left: auto;}
+    .t3-improved .main-heading, .main-heading h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1766,6 +1783,12 @@
         padding-top: 100px !important;
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{  left: 50% !important; bottom: 49px !important;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -1895,6 +1918,8 @@
         top: 34px!important;
     }
     .landing-page-mid leadform .input-section .input-outer.checkbox span {top: 26px !important;}
+    .t3-improved .landing-page-mid{ margin-left: 38%;}
+    .t3-improved .main-heading, .main-heading h1{font-size: 40px; line-height: 44px;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     .table-outer {
@@ -2561,7 +2586,7 @@
    .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
    .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
    .new_control   .t1-ques-head div p{font-size: 22px}
-   .new_control .input-field label{font-size: 22px !important; line-height: 30px}
+   .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
    .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
    .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:10% !important;}

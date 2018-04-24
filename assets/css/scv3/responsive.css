@@ -312,6 +312,18 @@
     /*.range-slider1.custom-slider1 ul li {display: none;}
     .range-slider1.custom-slider1 ul li:first-child {display: block;}
     .range-slider1.custom-slider1 ul li:last-child {display: block;}*/
+
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     .landing-page-mid .main-heading h1{        font-size: 42px;        line-height: 46px;        margin-top: 0px;    }
@@ -329,6 +341,11 @@
     .page_2 .mid-width p {        font-size: 16px !important;    }
     .page_0 .input-outer i {        top: 16px !important; left:0px;          }
     .page_2.hasbranding.result-fixed{ max-height: 100% !important; overflow-y: visible;}
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape) {
    .landing-page-mid .main-heading h1 ,  .landing-page-mid .main-heading h1 {        font-size: 42px;        line-height: 46px;    }
@@ -436,4 +453,9 @@
     .common-footer-main .row_1_links a{  float: none!important;margin: 0 10px!important; font-size: 12px!important;}
     .common-footer-main .disc-set { text-align: center !important; width: 100% !important;}
     .common-footer-main .stickyfooter.lightSticky{ float: none !important;}
+}
+@media (max-width:1024px){
+    .landing-page-mid .or-class{font-size: 12px}
+    .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
+    .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
 }
