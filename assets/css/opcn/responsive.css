@@ -1499,7 +1499,16 @@
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-
+    .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 10px !important;}
+    .or-class{width: 100% !important; margin: 10px 0; font-size: 12px;}
+    .loginBtn--facebook:before{
+        width: 25px !important;
+        height: 25px !important;
+        top: 4px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
 
 
 }
@@ -3739,7 +3748,9 @@
         height: auto !important;
         padding: 8px 15px !important;
     }
-    }
+    .landing-page-mid button.loginBtn.loginBtn--facebook{padding:10px 45px 10px 25px !important;}
+    .or-class{width: 100% !important; margin: 10px 0;}
+}
 
     @media (max-width:640px){
         .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{ font-size: 14px;
