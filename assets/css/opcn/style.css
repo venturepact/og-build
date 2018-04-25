@@ -5691,7 +5691,8 @@ visuals.visual-outr span.graph-title {
 }
 .one-page-card-new .t1-question [type="checkbox"] + label.leadform-checkbox {
     border-width: 1px !important;
-    width: 100% !important
+    width: 100% !important;
+    line-height: 30px; padding-top: 15px !important;
 }
 .one-page-card-new .t1-question .selectize-control.single .selectize-input,
 .one-page-card-new .t1-question .selectize-dropdown.single {
@@ -7067,6 +7068,7 @@ padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin
     text-transform: uppercase;
     margin: 15px;
     line-height: normal;
+    padding: 0 65px;
 }
 .landing-page-mid .or-class span{float: left;}
 .landing-page-mid button.loginBtn.loginBtn--facebook{
@@ -7177,3 +7179,15 @@ a.gdrp-accept:hover {
 }
 a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 25px;}
 a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+
+
+
+
+
+.control__indicator.check-set div i.fa-question.fa {
+    top: 0px;
+    position: relative;
+    left: 4px;
+    font-size: 22px !important;
+}
