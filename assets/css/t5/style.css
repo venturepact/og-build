@@ -4661,4 +4661,38 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     .V_3_5 .question-number sup {font-size: 13px;}
     
 }
+
+
+/* welcome screen text left center right */
+.landing-text-center .landing-page-mid {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.landing-text-center .landing-page-mid .highlight-div{ width: 100%;}
+.landing-text-center .sub-heading {
+    width: 100%;
+}
+.landing-text-center .landing-page-mid button {
+    float: none;
+}
+
+.landing-text-right .landing-page-mid {
+    float: right;
+    text-align: right;
+    margin-right: 17%;
+}
+.landing-text-right .sub-heading {
+    width: 100%;
+}
+.landing-text-right .landing-page-mid button {
+    float: right;
+}
+.landing-text-right .landing-right {
+    float: left;
+    left: 77px;
+}
+
+
 .template-five .custom-block.rating-custom .rating-inner i{margin-right: 0px}

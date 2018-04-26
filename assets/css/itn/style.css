@@ -4919,3 +4919,35 @@ a.gdrp-accept:hover {
 }
 a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 25px;}
 a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+
+/* welcome screen text left center right */
+
+.V_3_5 .landing-text-left .landing-page-mid {
+    margin-left: 75px;
+}
+
+.landing-text-right .landing-page-mid leadform .input-section .input-outer {
+    float: right;
+}
+.landing-text-right .checkbox.input-outer {
+    max-width: 500px;
+}
+.landing-text-left .landing-page-mid leadform .input-section .input-outer {
+    max-width: 500px;
+}
+.landing-text-center .landing-page-mid leadform .input-section .input-outer {
+    max-width: 500px;
+}
+
+.landing-text-right .landing-page-mid {
+    float: right;
+    text-align: right;
+    margin-right: 60px;
+}
+.landing-text-right .sub-heading {
+    width: 100%;
+}
+.landing-text-right .landing-page-mid button {
+    float: right;
+}

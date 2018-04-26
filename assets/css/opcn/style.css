@@ -7204,6 +7204,78 @@ leadform_question .or-class {
 
 
 
+/* welcome screen text left center right */
+.landing-text-center .landing-page-mid {
+    width: 88%;
+    text-align: center;
+}
+.landing-text-center .landing-page-mid button {
+    float: none;
+}
+.landing-text-center .t1-landing-inner .input-outer:last-child:nth-child(odd) .input-field {
+    float: none;
+    margin: 0 auto;
+    width: auto;
+    max-width: 600px;
+    display: inline-block;
+}
+.landing-text-center .t1-landing-inner .input-field {
+    max-width: 500px;
+}
+.landing-text-left .t1-landing-inner .input-field {
+    max-width: 500px;
+}
+.landing-text-center .t1-landing-inner .t2btn-outr {
+    float: none;
+    margin: 0 auto;
+}
+.landing-text-center .or-class {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+.landing-text-center .or-class span {
+    float: none;
+}
+.landing-text-center button.loginBtn.loginBtn--facebook.disabled {
+    float: none;
+}
+
+
+
+.landing-text-right .landing-page-mid {
+    float: right;
+    text-align: right;
+    margin-right: 60px;
+}
+.landing-text-right .sub-heading {
+    width: 100%;
+}
+.landing-text-right .landing-page-mid button {
+    float: right;
+}
+.landing-text-right .t1-landing-inner .t2btn-outr {
+    float: right;
+}
+.landing-text-right .or-class {
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+.landing-text-right .or-class span {
+    float: none;
+}
+.landing-text-right button.loginBtn.loginBtn--facebook.disabled {
+    float: right;
+}
+.landing-text-right .t1-landing-inner .input-field {
+    width: auto;
+    float: right;
+    max-width: 550px;
+}
+
+
+
 
 .control__indicator.check-set div i.fa-question.fa {
     top: 0px;

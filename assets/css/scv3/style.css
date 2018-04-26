@@ -2220,7 +2220,71 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
  .sound-cloud-v3 .share-heading {text-transform: none; margin-top: 15px;}
 
 
- .control__indicator.check-set div i.fa-question.fa {
+/* welcome screen text left center right */
+
+.landing-text-left .main-heading.th-bold-new {
+  text-align: left;
+}
+.landing-text-left .landing-page-mid .sub-heading {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 0;
+}
+.landing-text-left .landing-page-mid .input-section {
+  width: 68%;
+  float: left;
+}
+.landing-text-left .t2btn-outr {
+  text-align: left;
+}
+.landing-text-center .checkbox .input-field {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  float: none;
+  max-width: 270px;
+}
+.landing-text-left .checkbox .input-field {
+  max-width: 500px;
+}
+.landing-text-center .checkbox.input-outer:last-child:nth-child(odd) .input-field {
+  width: auto;
+  float: right;
+  max-width: 550px;
+}
+
+
+    /* right */
+.landing-text-right .landing-page-mid .main-heading {
+  text-align: right;
+}
+.landing-text-right .landing-page-mid .sub-heading {
+  text-align: right;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.landing-text-right .t2btn-outr {
+  text-align: right;
+}
+.landing-text-right .landing-page-mid .input-section {
+  float: right;
+}
+.landing-text-right .checkbox.input-outer:nth-child(odd) .input-field {
+  width: auto;
+  float: right;
+  max-width: 550px;
+}
+.landing-text-right .checkbox .input-field {
+  width: auto;
+  float: right;
+  max-width: 270px;
+}
+
+
+
+
+.control__indicator.check-set div i.fa-question.fa {
   top: 0px;
   position: relative;
   left: 3px;
