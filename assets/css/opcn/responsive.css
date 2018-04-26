@@ -1509,7 +1509,10 @@
         background-size: 15px !important;
         right: 5px !important;
     }
-
+    .v3-fb-outer .main-heading, .v3-fb-outer .main-heading h1, .v3-fb-outer .main-heading p {
+        font-size: 26px !important;
+        line-height: 35px !important;
+    }
 
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2536,6 +2539,10 @@
     .gdpr-popup-left{ width: 70%;}
     .gdpr-popup-right{ width: 25%; }
 
+    .v3-fb-outer .main-heading, .v3-fb-outer .main-heading h1, .v3-fb-outer .main-heading p {
+        font-size: 34px !important;
+        line-height: 37px !important;
+    }
 
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
