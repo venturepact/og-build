@@ -8938,3 +8938,17 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     top: auto !important;
     left: 0 !important;
 }
+
+.template-six .result-v2.overlay-outerleadform .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+.template-six .result-v2.overlay-outerleadform [type="checkbox"]:checked + label.leadform-checkbox::before, 
+.result-v2.overlay-outerleadform  [type="checkbox"]:checked + label.control::before{color: #fff !important}
+
+/*************** t6 improved *************/
+/******************** t6 improved **********************/
+.V_3_5 .bGImage{height: 300px}
+.V_3_5 .main-heading, .V_3_5 .main-heading h1{font-size: 52px}
+.V_3_5 .sub-heading h2{font-size: 26px; opacity: 1;}
+.V_3_5 .landing-page-mid button{ padding: 20px 40px; font-size: 16px}
+.template-six.V_3_5 .radio-outer-base.ripple-dark label.control.control--radio.radio-icon::before, 
+.template-six.V_3_5 .checkbox-outer.ripple-dark label.control.control--checkbox::before , .V_3_5  .ripple-dark.radio-outer.radio-icon-custom .mid-outer .control.control--radio::before{display:none !important}
+.template-six.V_3_5  .checkbox-outer button.submit-checkbox-img.ripple-light{top: 98%}
