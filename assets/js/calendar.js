@@ -140,18 +140,21 @@ function createCalendar(calendar, element, adjuster){
         var toDate = new Date(calendar.Selected.Year, calendar.Selected.Month, (i+1));
         if(evDate.getTime() == toDate.getTime()){
           number.className += " eventday";
-          number.setAttribute('title', calendar.Model[n].Title);
-          number.setAttribute('data-content', '<img src ="' + calendar.Model[n].Image + '" width="150px" height="150" />');
+          number.setAttribute('title', calendar.Model[n].Title + '|' + calendar.Model[n].id);
+          number.setAttribute('data-content', calendar.Model[n].Image);
           number.setAttribute('data-container',"body");
           number.setAttribute('data-toggle',"popover");
           number.setAttribute("content", calendar.Model[n].Link);
         }
       }
-      day.appendChild(number);
       // If Today..
       if((i+1) == calendar.Today.getDate() && calendar.Selected.Month == calendar.Today.Month && calendar.Selected.Year == calendar.Today.Year){
         day.className += " today";
+        let n = number.innerHTML;
+        number.innerHTML = '';
+        number.innerHTML += '<span>' + n + '</span>';
       }
+      day.appendChild(number);
       days.appendChild(day);
     }
     // Next Month's Days
