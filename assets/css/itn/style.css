@@ -4951,3 +4951,114 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .landing-text-right .landing-page-mid button {
     float: right;
 }
+
+
+
+/* improved version css start */
+.V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ label, .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label {
+    max-width: inherit;
+    border: none;
+    min-width: inherit;
+    padding: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    margin: 0;
+    margin-left: 6px;
+    padding-left: 30px;
+    width: 92%;
+    width: calc(96% - 1rem);
+    font-size: 14px;
+    text-align: left;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    cursor: text;
+    transition: .2s ease-out;
+    opacity: .7;
+}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .input-outer .input-field {
+    display: flex;
+}
+.V_3_5 .common-result-main .t1-result-leadform .input-outer i {
+    top: 2px;
+    left: 8px !important;
+}
+.V_3_5 .common-result-main .t1-result-leadform .input-outer input {
+    padding-left: 35px !important;
+}
+
+
+.V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ label:not(.label-icon).active, .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label:not(.label-icon).active {
+    font-size: 10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    text-transform: uppercase !important;
+    font-weight: 700!important;
+    color: #000 !important;
+    opacity: 1;
+}
+.V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ label:not(.label-icon).active {
+    padding-left: 0 !important;
+}
+.V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {
+    padding: 13px 40px;
+}
+
+ /* ######  landing leadform ###### */
+
+.V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field {
+    display: flex;
+}
+.V_3_5 .t1-landing-leadform .input-section .input-outer i {
+    top: 6px;
+}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer input{
+    font-size: 14px;
+    width: 90%;
+} 
+
+.V_3_5 .landing-page-mid leadform .input-section .input-outer label {
+    max-width: inherit;
+    border: none;
+    min-width: inherit;
+    padding: inherit;
+    font-size: inherit;
+    text-align: inherit;
+    margin: 0;
+    margin-left: 6px;
+    padding-left: 30px;
+    width: 92%;
+    width: calc(96% - 1rem);
+    text-align: left;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    font-size: 14px;
+    cursor: text;
+    transition: .2s ease-out;
+    font-weight: 400!important;
+    opacity: .7;
+}
+.V_3_5 leadform .input-field label:not(.label-icon).active {
+    padding-left: 0;
+}
+.V_3_5 leadform .input-field label:not(.label-icon).active {
+    font-size: 10px;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    text-transform: uppercase;
+    font-weight: 700!important;
+    top: 6px;
+    opacity: 1;
+}
+/* improved version css end */
+
