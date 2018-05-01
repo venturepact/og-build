@@ -651,6 +651,16 @@ Developer: Bhawna */
     .isIframe_max2 .t1-question {
         height: auto !important;
     }
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -880,6 +890,7 @@ Developer: Bhawna */
     .common-result-main .t1-result-leadform .common-result-bot-icons .crb-left{padding-top:15px;}
     .template-five .t1-logo.res-header.common-result-outcome{ width: 100%; position: absolute; top: 20px;}
     .range-slider1.custom-slider1 ul{ display: none;}
+    html{height:100% !important;}
 }
 @media (max-width: 319px) {
     .t1-question .prime-action {
@@ -987,7 +998,13 @@ Developer: Bhawna */
         background-size: 95px;
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{ left: 50% !important;}
-    .result-v2 .common-result-bot-icons.side-redo .crb-left{ width: 90px !important;}
+    /*.result-v2 .common-result-bot-icons.side-redo .crb-left{ width: 90px !important;}*/
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1050,7 +1067,7 @@ Developer: Bhawna */
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
-  .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
@@ -1070,6 +1087,9 @@ Developer: Bhawna */
     .graded-ques-left{width:110px;}
     .graded-ques-right {float: left;width: calc(100% - 110px);}
     .graded-ques-list span.ans-correct{width:calc( 100% - 20px)}
+    .t1-question{min-height: 100%;}
+    .header-next-div {height: auto !important;}
+    .template-five header.landing-page-header.outcome-logo{left:0 !important;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
