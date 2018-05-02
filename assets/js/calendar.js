@@ -100,7 +100,7 @@ function createCalendar(calendar, element, adjuster){
     function DayNumber(n){
       var number = document.createElement('p');
       number.className += "cld-number";
-      number.innerHTML += '<span>' + n + '</span>';
+      number.innerHTML += n;
       return number;
     }
     var days = document.createElement('ul');
