@@ -1032,6 +1032,7 @@ a.btn-done {
     .intro-overlay.builder-parent .left-button-outer-t6 {
         top: 80%;
     }
+    .btn-content{ left:33% !important}
 }
 
 @media (min-width: 1681px) and (max-width: 1920px) {
@@ -1077,6 +1078,7 @@ a.btn-done {
     .intro-overlay.builder-parent .left-button-outer-t6 {
         top: 81%;
     }
+    .btn-content{ left:33% !important}
 }
 
 @media (max-width: 1366px) {
@@ -1107,6 +1109,7 @@ a.btn-done {
     .new-webpage-design-wrapper {
         max-width: 860px !important;
     }
+    .btn-content{ left:50% !important}
 }
 
 @media (min-width: 1367px) and (max-width: 1419px) {
@@ -1158,6 +1161,7 @@ a.btn-done {
     .intro-overlay.builder-parent .left-button-outer-t4 {
         top: 77.5%;
     }
+    .btn-content{ left:53% !important}
 }
 
 @media (max-width: 1024px) {
@@ -1187,6 +1191,7 @@ a.btn-done {
     }
     .cld-number.eventday { margin: 5px 38% !important;}
     /* .cld-day.today .cld-number{ margin: 5px 38% !important;} */
+    .btn-content{ left:34% !important}
 }
 
 .template-outer-main .selectize-control.single .selectize-input input {
@@ -3611,12 +3616,37 @@ h4.opinion-email-head {
 .popover-content img{ width:45px !important; height: 45px; -webkit-border-radius: 3px;  -moz-border-radius: 3px; border-radius: 3px; }
 
 .event-template-outer{background: #4984bd !important;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border-color:#3688c0 !important; float: left ; width:100%; }
-.event-template-outer .template-event{ float: left; padding:10px; }
+.event-template-outer .template-event{ float: left; padding:10px; width:100% }
 .event-template-outer .template-event .img-outer{ float: left; width: 60px; max-height: 60px;}
-.event-template-outer .template-event .img-outer img{width: 100%;}
-.event-template-outer .template-event .content-outer{float: left; width: calc(100% - 70px);  margin-left: 10px;}
-.event-template-outer .template-event .content-outer h2{ float: left; width:160px; font-size: 13px; color:#fff; margin-top: 0;  white-space: nowrap; font-family: montserratlight;   overflow: hidden; text-overflow: ellipsis;}
+.event-template-outer .template-event .img-outer img{width: 100%; min-height:50px;}
+.event-template-outer .template-event .content-outer{float: left; width: calc(100% - 70px);  margin-left: 10px; position: relative; min-height: 50px; display: table;}
+.event-template-outer .template-event .content-outer h2{ width:160px; font-size: 13px; color:#fff; margin-top: 0;  white-space: nowrap; font-family: montserratlight;   overflow: hidden; text-overflow: ellipsis; display: table-cell; vertical-align: middle;}
 .event-template-outer .template-event .content-outer .btn-outer{ float: left; width:100%;}
 .event-template-outer .template-event .content-outer .btn-outer a{background:#cddce8; color:#fb5f66; padding: 3px 6px; float: left;  font-size: 8px; text-transform: uppercase; margin-right: 5px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-bottom:8px; }
 .event-template-outer .border-b{border-bottom:1px solid #689ccb;}
-.event-template-outer .template-event .content-outer a.temp-name{ float: left; width:100%; font-size: 13px; color:#fff; line-height: 15px;  font-family: montserratlight; }
+.event-template-outer .template-event .content-outer .temp-name{ width:100%; font-size: 13px; color:#fff; line-height: 15px; text-align: left;  font-family: montserratlight; display: table-cell; vertical-align: middle; }
+.event-template-outer .template-event .content-outer .btn-outer a i{ font-size: 9px; vertical-align: middle;}
+.event-template-outer .template-event .h-div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #4984bd;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .event-template-outer .template-event:hover .h-div {
+    height: 100%;
+  }
+  
+  .btn-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center; text-align: left; 
+  }
+  .btn-content h2{ margin-bottom: 8px; padding-top:5px !important; float: left; display: block !important; }
