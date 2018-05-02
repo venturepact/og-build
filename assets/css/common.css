@@ -439,11 +439,11 @@
     }
 
     .cld-day .cld-number.eventday { margin: 5px 14% !important;}
-    .cld-days .cld-day.today .cld-number{ margin: 5px 14% !important;}
+    /* .cld-days .cld-day.today .cld-number{ margin: 5px 14% !important;} */
 }
 @media (min-width:480px) and (max-width:767px) {
     .cld-day .cld-number.eventday { margin: 5px 35% !important;}
-    .cld-days .cld-day.today .cld-number{ margin: 5px 35% !important;}
+    /* .cld-days .cld-day.today .cld-number{ margin: 5px 35% !important;} */
 }
 
 :focus {
@@ -1186,7 +1186,7 @@ a.btn-done {
         display: none !important;
     }
     .cld-number.eventday { margin: 5px 38% !important;}
-    .cld-day.today .cld-number{ margin: 5px 38% !important;}
+    /* .cld-day.today .cld-number{ margin: 5px 38% !important;} */
 }
 
 .template-outer-main .selectize-control.single .selectize-input input {
@@ -3586,8 +3586,11 @@ h4.opinion-email-head {
 }
 
 
-.cld-day.today .cld-number{background: #3688c0 !important; min-height: 29px; color: #fff !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;}
-.cld-day.today p.cld-number span{    border: 1px solid #fff;-webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px;  padding: 3px;}
+.cld-day.today .cld-number{background: none !important; min-height: 29px; color: #333 !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;}
+.cld-day.currMonth p.cld-number.eventday.selected span{    border: 1px solid #fff;-webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px;  padding: 3px;}
+.cld-day.currMonth p.cld-number.eventday.selected{background: #3688c0 !important; min-height: 29px; color: #fff !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;}
+/* .cld-day.today .cld-number{background: #3688c0 !important; min-height: 29px; color: #fff !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;} */
+/* .cld-day.today p.cld-number span{    border: 1px solid #fff;-webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px;  padding: 3px;} */
 .cld-number.eventday {background: #45be75 !important; min-height: 29px; color: #fff !important;border-radius: 50%; height: 29px; width: 30px;  padding: 6px !important;  margin: 5px 12%; font-weight: normal!important;  font-size: 1.2rem; }
 .cld-main{ width:100% !important;}   
 .cld-labels{ margin-bottom: 0 !important} 
