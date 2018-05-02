@@ -100,7 +100,7 @@ function createCalendar(calendar, element, adjuster){
     function DayNumber(n){
       var number = document.createElement('p');
       number.className += "cld-number";
-      number.innerHTML += n;
+      number.innerHTML += '<span>' + n + '</span>';
       return number;
     }
     var days = document.createElement('ul');
@@ -150,9 +150,6 @@ function createCalendar(calendar, element, adjuster){
       // If Today..
       if((i+1) == calendar.Today.getDate() && calendar.Selected.Month == calendar.Today.Month && calendar.Selected.Year == calendar.Today.Year){
         day.className += " today";
-        let n = number.innerHTML;
-        number.innerHTML = '';
-        number.innerHTML += '<span>' + n + '</span>';
       }
       day.appendChild(number);
       days.appendChild(day);
