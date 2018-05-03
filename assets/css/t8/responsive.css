@@ -23,16 +23,6 @@
     .template-eight .common-footer-main .stickyfooter.lightSticky {
         float: none;
     }
-
-     /* gdpr popup css */
-     .gdpr-popup{ padding: 15px 20px;}
-     .gdpr-popup-left{ width: 100%; padding-top: 25px;}
-     .gdpr-popup-right{ width: 100%; text-align: center;}
- 
-     a.gdrp-cancel{ display: none;}
-     a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
-     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
-     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 
 @media(max-width:640px) {
@@ -360,10 +350,4 @@
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 15px; line-height: 22px;  margin-top: 10px;}
     /* .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-top: 13px !important; padding-bottom: 12px !important} */
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item{font-size: 14px}
-
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
 }
