@@ -718,7 +718,7 @@ border-radius: 25px!important;
 .page_2 .result-temp2-default-section .small-top-sec .right-set{float: right; width:50%; text-align: right;}
 .page_2 .result-temp2-default-section .small-top-sec .left-set{ float: left; width:50%; text-align: left; }
 
-.page_2 .result-temp2-default-section.result-half-section .small-top-sec p:nth-child(1){float: right; width:32% !important; text-align: right; word-wrap: break-word;  }
+.page_2 .result-temp2-default-section.result-half-section .small-top-sec p:nth-child(1){float: right; width:100% !important; text-align: right; word-wrap: break-word;  }
 .page_2 .result-temp2-default-section.result-half-section .small-top-sec p:nth-child(2){float: left; width:70% !important; text-align: left; word-wrap: break-word; }
 .page_2 .result-temp2-default-section.result-half-section .small-top-sec p:nth-child(2) span{ color:rgb(94,94,94);  font-size: 14px !important ;}
 .page_2.result-fixed .result-temp2-default-section.result-half-section .small-top-sec p:nth-child(2){font-size: 14px ;}
@@ -1420,7 +1420,7 @@ input:-webkit-autofill {
   margin-bottom: 0;
   border-radius: 0;
   margin-top: 5px;
-  float: left; overflow: hidden;  text-overflow: ellipsis; max-height: 18px; white-space: nowrap; margin-left: 0!important; font-weight: normal !important;
+  float: left; margin-left: 0!important; font-weight: normal !important;
 }
 .template-seven select.leadform-select {
   float: left;
@@ -2717,6 +2717,96 @@ border-radius: 50%;*/
   left:-4px !important;
 }
 .template-seven .range-slider1.custom-slider1 .count{word-break: keep-all;}
+
+
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+@keyframes blinker {
+  from {}
+  50% {
+    border-color: #fff;
+  }
+  to {}
+}
+@keyframes blinker-color {
+  from {}
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 9999;
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+  opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 25px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+.page_2 .input-section .input-outer.checkbox span {
+  position: relative;
+  top: 0;
+  float: left;
+  /* width: 100%; */
+  text-align: left;
+}
 .fb-btn-outer {
     width: 100%;
     float: left;
