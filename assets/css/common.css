@@ -1079,6 +1079,7 @@ a.btn-done {
         top: 81%;
     }
     .btn-content{ left:33% !important}
+    .cld-number.eventday.eventday{ margin:5px 18% !important;}
 }
 
 @media (max-width: 1366px) {
@@ -3596,7 +3597,7 @@ h4.opinion-email-head {
 .cld-day.currMonth p.cld-number.eventday.selected{background: #3688c0 !important; min-height: 29px; color: #fff !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;}
 /* .cld-day.today .cld-number{background: #3688c0 !important; min-height: 29px; color: #fff !important; border-radius: 50%; height: 29px;  width: 30px; padding: 6px 4px !important; margin: 5px 12%; font-weight: normal!important; font-size: 1.2rem;} */
 /* .cld-day.today p.cld-number span{    border: 1px solid #fff;-webkit-border-radius: 25px; -moz-border-radius: 25px; border-radius: 25px;  padding: 3px;} */
-.cld-number.eventday {background: #45be75 !important; min-height: 29px; color: #fff !important;border-radius: 50%; height: 29px; width: 30px;  padding: 6px !important;  margin: 5px 12%; font-weight: normal!important;  font-size: 1.2rem; }
+.cld-number.eventday {background: #45be75 !important; min-height: 29px; color: #fff !important;border-radius: 50%; height: 29px; width: 30px;  padding: 6px !important;  margin: 5px 10%; font-weight: normal!important;  font-size: 1.2rem; }
 .cld-main{ width:100% !important;}   
 .cld-labels{ margin-bottom: 0 !important} 
 .cld-labels li.cld-label{ padding:8px !important; border:1px solid #d4e1e7 !important; background: #fafafa; font-size: 1rem; }
