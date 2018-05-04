@@ -5,7 +5,6 @@
     .submit-checkbox{padding:5px !important;}
 }
 @media (min-width: 0px) and (max-width: 767px) {
-    .fb-outer{text-align: center;}
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 50px 20px 0px;}
     .textfield input.othersfield{padding: 18px 0  12px !important; font-size: 16px;line-height: 18px;     width: 90px !important;}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn {
@@ -919,7 +918,6 @@
         text-align: center;
         margin: 0 auto;
         float: none !important;
-        width: 100% !important;
     }
     .col {
         width: auto;
@@ -1488,43 +1486,6 @@
         right: 30px;
         text-align: right;
     }
-    .t1-question .question-components .othersfield {padding: 18px 0px 15px !important;}
-    
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 100%;padding-top: 25px;}
-    .gdpr-popup-right{ width: 100%; text-align: center;}
-
-    a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;position: absolute;  top: 4px; right: 20px;}
-    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
-    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-
-    .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px !important;}
-    .or-class{width: 100% !important; margin: 10px 0; font-size: 12px;padding: 0 10px !important;text-align: center;}
-    .loginBtn--facebook:before{
-        width: 25px !important;
-        height: 25px !important;
-        top: 5px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-    }
-    .v3-fb-outer .main-heading, .v3-fb-outer .main-heading h1, .v3-fb-outer .main-heading p {
-        font-size: 26px !important;
-        line-height: 35px !important;
-    }
-    .loginBtn{
-        padding: 9px 35px 9px 15px !important;
-        font-size: 13px !important;
-    }
-    .w100.text-center .submit-checkbox-img.leadform-btn {
-        width: auto;
-        margin: 0px;
-        float: none;
-        display: inline-block;
-    }
-
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -1949,7 +1910,7 @@
     }
     .landing-page-mid leadform .input-section .input-outer.dropdown span {
         font-size: 10px;
-        top: 45px !important;
+        top: 45px;
         left: 0px;
     }
     .landing-page-mid leadform .input-section .input-outer.checkbox span {
@@ -2543,18 +2504,6 @@
     .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
     .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 95px;}
-
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
-
-    .v3-fb-outer .main-heading, .v3-fb-outer .main-heading h1, .v3-fb-outer .main-heading p {
-        font-size: 34px !important;
-        line-height: 37px !important;
-    }
-
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -3753,7 +3702,7 @@
 }
 @media (min-width:768px) and (max-width:1024px) {
     .textfield label.control.control--checkbox ,   .textfield label.control.control--radio{  float: left;width: auto !important;padding: 20px 40px 20px 0px;}
-    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 12px 0px !important}
+    .otherfield-inputbtn input.othersfield, input.othersfield{padding: 14px 0 10px !important}
     .textfield .submit-checkbox-img {position: relative;top: -15px;left: 40px;}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn {
         margin-left: 0;
@@ -3766,8 +3715,7 @@
         height: auto !important;
         padding: 8px 15px !important;
     }
-    .or-class{width: 100% !important; margin: 10px 0;padding: 0 30px !important;}
-}
+    }
 
     @media (max-width:640px){
         .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{ font-size: 14px;
@@ -3835,25 +3783,3 @@
         .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-top: 13px !important; padding-bottom: 12px !important}
         .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item{font-size: 14px}
     }
-    @media (max-width:1024px){
-        .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 15px !important}
-    }
-
-@media (min-width:320px) and (max-width:455px) {
-
-    .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field {
-        max-width: 310px;
-    }
-}
-@media (min-width:456px) and (max-width:555px) {
-    
-    .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field {
-        max-width: 400px;
-    }
-}
-@media (min-width:556px) and (max-width:775px) {
-    
-    .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field {
-        max-width: 450px;
-    }
-}
