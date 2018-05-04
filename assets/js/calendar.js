@@ -152,7 +152,7 @@ function createCalendar(calendar, element, adjuster){
     }
     // Next Month's Days
     // Always same amount of days in calander
-    var extraDays = 13;
+    var extraDays = 6;
     if(days.children.length>35){extraDays = 6;}
     else if(days.children.length<29){extraDays = 20;}
 
