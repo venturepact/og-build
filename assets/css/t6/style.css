@@ -3769,7 +3769,7 @@ _:-ms-lang(x), _:-webkit-full-screen, .twitter-follow-button {
 
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
-    z-index: 999;
+    z-index: 9;
     filter: blur(0);
 }
 
@@ -8748,7 +8748,7 @@ p > span > a {color: inherit; }
   padding-right: 35px;
   transition: all .3s;
   box-sizing: border-box;}
-.lead-popup {background-color: rgba(0,0,0,1);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 999;overflow: auto;width: 100%;padding:  50px 0}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 999;overflow: auto;width: 100%;padding:  50px 0}
 .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 0 auto;position: relative; width: 100%}
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow:hidden;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
 .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */      overflow-y: auto;}
@@ -8863,4 +8863,14 @@ p > span > a {color: inherit; }
 @supports (-ms-ime-align : auto) {
  .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{ padding-bottom: 13px !important; }
  .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+.fb-btn-outer{
+    width: 100%;
+    text-align: center;
+}
+fb_lead_gen + .lf-skip-btn {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-left: 0 !important;
 }

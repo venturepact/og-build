@@ -1077,6 +1077,8 @@
         left: 10% !important;
         bottom: 45px !important;
     }
+        .fb-btn-outer{padding:0 30px;}
+    fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1766,6 +1768,8 @@
         padding-top: 100px !important;
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{  left: 50% !important; bottom: 49px !important;}
+     fb_lead_gen + .lf-skip-btn {padding: 0 55px;margin-top:15px !important;}
+    .fb-btn-outer{padding: 0 50px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

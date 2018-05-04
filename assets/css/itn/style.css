@@ -3588,7 +3588,7 @@ input[type=number] {
 }
 .left-sec.blurimgdefault .t1blur {
     opacity: 1;
-    z-index: 999;
+    z-index: 9;
     filter: blur(0);
 }
 .default-outer {
@@ -4532,7 +4532,7 @@ p > span > a {color: inherit; }
  .inline-temp-new .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before, .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{top:4px; margin:0px}
  .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 16px;display: inline-table;}
  .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer i{left: 5px !important;}
- .lead-popup {background-color: rgba(0,0,0,1);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99999;overflow: auto;width: 100%; }
+ .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99999;overflow: auto;width: 100%; }
  .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 50px auto;position: relative; width: 100%}
  .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow: hidden;  box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
  .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */    overflow-y: auto;}
@@ -4807,4 +4807,12 @@ p > span > a {color: inherit; }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     /* IE10+ CSS styles go here */
     .t1-landing .no-footer-links.no-header-links{ display: table !important;}
+}
+
+.fb-btn-outer {
+    width: auto;
+    float: none;
+}
+fb_lead_gen + .lf-skip-btn {
+    text-align: left;
 }
