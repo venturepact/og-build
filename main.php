@@ -13,6 +13,7 @@
 		else if (preg_match("/outgrow\.co$/", $hostName)) {
 			$apiUrl = 'https://api.outgrow.co';
 		}
+		$apiUrl = 'https://api.outgrow.co';
 		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 	    $curl = curl_init();
@@ -36,7 +37,7 @@
 			$curl2 = curl_init();
 			curl_setopt_array($curl2, array(
 					CURLOPT_RETURNTRANSFER => 1,
-					CURLOPT_URL => 'https://api.outgrow.co/api/v1/builder/app_integration/'.$response['data']['url'],
+					CURLOPT_URL => $apiUrl.'/api/v1/builder/app_integration/'.$response['data']['url'],
 					CURLOPT_USERAGENT => 'Codular Sample cURL Request',
 					CURLOPT_SSL_VERIFYPEER=>false,
 					CURLOPT_HTTPHEADER=>array('Origin: http://app.rely.co'),
