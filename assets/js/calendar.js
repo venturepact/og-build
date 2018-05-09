@@ -135,13 +135,26 @@ function createCalendar(calendar, element, adjuster){
       }
       var number = DayNumber(i+1);
       // Check Date against Event Dates
+      let eventname = new Set();
+      // console.log(">>>>>>>>>>>>>>",calendar);
       for(var n = 0; n < calendar.Model.length; n++){
         var evDate = calendar.Model[n].Date;
         var toDate = new Date(calendar.Selected.Year, calendar.Selected.Month, (i+1));
         if(evDate.getTime() == toDate.getTime()){
+          // eventname += calendar.Model[n].EventName + '/';
           number.className += " eventday";
           number.setAttribute("content", calendar.Model[n].Date);
+          if(calendar.Model[n].EventName) {
+            eventname.add(calendar.Model[n].EventName);
+            //number.setAttribute('data-content', eventname);
+            number.setAttribute('data-container',"body");
+            number.setAttribute('data-toggle',"popover");
+          }
         }
+      }
+      eventname=Array.from(eventname);
+      if(eventname.length) {
+        number.setAttribute('data-content', eventname.join(' / '));
       }
       // If Today..
       if((i+1) == calendar.Today.getDate() && calendar.Selected.Month == calendar.Today.Month && calendar.Selected.Year == calendar.Today.Year){
