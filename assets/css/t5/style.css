@@ -4806,3 +4806,14 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 leadform .input-outer.checkbox .input-field  {
     display:block
 }
+
+/*calander component css*/
+.cal-outer{width: 100%;float: left;}
+.cal-outer .input-group.date .input-group-addon {background: transparent;border-radius: 0;padding-right: 7px;}
+.calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#363b3e;}
+.cal-outer input{box-shadow: none;padding: 10px 5px;font-size: 18px;}
+.cal-outer input{color: #444;}
+.cal-outer input::-webkit-input-placeholder {color: #444;}
+.cal-outer input::-moz-placeholder {color: #444;}
+.cal-outer input:-ms-input-placeholder {color: #444;}
+.cal-outer input:-moz-placeholder {color: #444;}
