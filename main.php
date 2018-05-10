@@ -13,6 +13,7 @@
 		else if (preg_match("/outgrow\.co$/", $hostName)) {
 			$apiUrl = 'https://api.outgrow.co';
 		}
+		$apiUrl = 'https://api.outgrow.co';
 		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 		$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 	    $curl = curl_init();

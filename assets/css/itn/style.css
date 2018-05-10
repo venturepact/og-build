@@ -5089,8 +5089,7 @@ fb_lead_gen + .lf-skip-btn {
     padding: 0 65px;
 }
 .V_3_5 .fb-outer{width:100%;float: left;}
-.V_3_5 .template-section .template-container.mobile .fb-outer{text-align: center;}
-.V_3_5 .landing-page-mid .or-class span{line-height: normal; float: left;}
+.V_3_5 .landing-page-mid .or-class span{line-height: normal; float: none;}
 .V_3_5 .loginBtn--facebook{
     background-color: #086ca0 !important;
     background-image: linear-gradient(#086ca0, #086ca0) !important;
@@ -5114,37 +5113,20 @@ fb_lead_gen + .lf-skip-btn {
     background-position-x: 5px !important;
     background-size: 18px !important;
 }
-.V_3_5 .template-section .template-container.mobile .loginBtn:before {
-    width: 25px !important;
-    height: 25px !important;
-    top: 4px !important;
-    background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-    background-size: 15px !important;
-    right: 5px !important;
-}
 .V_3_5 .loginBtn{
     margin: 0 !important;
-    padding: 12px 47px 12px 25px !important;
+    padding: 11px 47px 11px 25px !important;
     border: none !important;
     text-align: left !important;
     line-height: normal !important;
     font-size: 16px !important;
     border-radius: 25px !important;
 }
-.V_3_5 .template-section .template-container.mobile .loginBtn{
-    margin: 0 !important;
-    padding: 9px 35px 9px 15px !important;
-    border: none;
-    text-align: left;
-    line-height: normal;
-    font-size: 13px !important;
-}
 .V_3_5 .result-v2 .loginBtn {
-    padding: 12px 47px 12px 25px !important;
+    padding: 11px 47px 11px 25px !important;
     margin: 0px !important;
     font-size: 15px !important;
 }
-.V_3_5 .template-section .template-container.mobile .or-class{width: 100% !important; margin: 10px 0; font-size:12px;text-align:center;}
 button.lf-skip-btn{
     background: none;
     border: none;
@@ -5156,8 +5138,8 @@ button.lf-skip-btn{
     margin-left:15px
 }
 .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p{
-    font-size: 66px;
-    line-height: 72px;
+    font-size: 50px;
+    line-height: 62px;
 }
 .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action {
     font-size: 16px;
@@ -5166,10 +5148,10 @@ button.lf-skip-btn{
     border-radius: 25px;
 }
 .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {
-    padding: 12px 47px 12px 25px !important;
+    padding: 11px 47px 11px 25px !important;
 }
 .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
-    padding: 12px 47px 12px 25px !important;
+    padding: 11px 47px 11px 25px !important;
     text-align: center !important;
     float: none;
 }
@@ -5193,7 +5175,18 @@ button.lf-skip-btn{
     width: 100%;
     float: left;
     left: 0;
+    padding: 0;
+    margin: 0;
 }
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
-    padding: 12px 47px 12px 25px !important;
+    padding: 11px 47px 11px 25px !important;
+}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {
+    border-radius: 25px;
+}
+#build .V_3_5 leadform_question .or-class {
+    margin-top: 0;
+}
+.V_3_5 leadform_question .or-class {
+    padding: 0;
 }

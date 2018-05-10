@@ -33,6 +33,35 @@
      a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
      a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
      a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+      .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{
+        padding: 9px 35px 9px 15px !important;
+        font-size: 14px;
+    }
+    .V_3_5 .loginBtn:before{
+        width: 25px !important;
+        height: 25px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
+    .V_3_5 fb_lead_gen {
+        width: 100%;
+        float: left;
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{
+        padding: 9px 35px 9px 15px !important;
+        float: none;
+        font-size: 13px !important;
+    }
+    .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
+        padding: 9px 35px 9px 15px !important;
+    }
+    .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
+        text-align: center;
+    }
 }
 
 @media(max-width:640px) {
@@ -340,8 +369,17 @@
   
     .t1-result .lead-popup  .lead-popup-outer .lead-popup-main .custom-btn-outer{width:90px !important; border-radius:50%; height:90px !important; overflow: visible;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
-
    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+   .template-eight .common-result.result-v2 .result-v2-box2{padding: 0 !important}
+   .template-eight .result-v2 .cta-likes {
+       right: 0;
+       top: 0;
+   }
+  
+   .template-eight   .common-result.result-v2 .common-result-main .common-result-bot .recom-section .leadform-outer h1 {
+       text-align: center !important;
+   }
+
 }
 @media (min-width: 641px) and (max-width: 1024px) {
     .lead-popup .lead-popup-outer{max-width: 600px}

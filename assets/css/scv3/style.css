@@ -888,7 +888,7 @@ margin-top: 10px;
 .page_2 .input-section .input-outer {position: relative;float: left;width: 100% !important;min-height: 51px; margin-bottom: 10px; margin-left: 0;}
 .page_2 .input-section .input-outer i{position: absolute;left: -2px;top: 11px !important; font-size: 18px; color: #666; z-index: 9;}
 .page_2 .input-field { position: initial !important; float: left; width: 100%;}
-.page_2 .redirect-heading {  text-align: center;  font-size: 14px;  text-transform: uppercase;  color: rgb(94,94,94);  width: 100%;  float: left;  margin: 3px 0 10px;}
+.page_2 .redirect-heading {  text-align: center;  font-size: 14px;  text-transform: none;  color: rgb(94,94,94);  width: 100%;  float: left;  margin: 3px 0 10px;}
 .selectize-dropdown-content::-webkit-scrollbar-track { border-radius: 0; background-color: #f5f5f5; }
 .selectize-dropdown-content::-webkit-scrollbar { width: 6px; background-color: rgba(0, 0, 0, 0.2); }
 .selectize-dropdown-content::-webkit-scrollbar:horizontal { height: 6px; background-color: rgba(0, 0, 0, 0.2); }
@@ -2217,7 +2217,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
  .isIframe .page_1 .result-fixed1 {min-height: auto;}
  .isIframe .page_1 {min-height: auto;}
  .sound-cloud-v3 .page_2 .redirect-heading {  text-transform: none; margin-top: 15px;}
- .sound-cloud-v3 .share-heading {text-transform: none; margin-top: 15px;}
+ .sound-cloud-v3 .share-heading {text-transform: none !important; margin-top: 15px;}
 
 
 /* welcome screen text left center right */
@@ -2309,3 +2309,54 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .page_2 .input-section .input-outer.checkbox .input-field{display: block}
 
 
+/*new version--login with fb*/
+.V_3_5 .or-class{
+  font-size: 14px;
+}
+.V_3_5 .fb-outer{width:100%;float: left;}
+.V_3_5 .loginBtn--facebook{
+    background-color: #086ca0 !important;
+    background-image: linear-gradient(#086ca0, #086ca0) !important;
+    text-shadow: 0 -1px 0 #086ca0 !important;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+.V_3_5 .loginBtn:before {
+    top: 5px !important;
+    right: 8px !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #fff !important;
+    border-radius: 50%;
+    background: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;
+    left: auto !important;
+}
+.V_3_5 .loginBtn--facebook:before {
+    border-right: none !important;
+    background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;
+    background-position-x: 5px !important;
+    background-size: 18px !important;
+}
+.V_3_5 .loginBtn{
+    margin: 0 !important;
+    padding: 11px 47px 11px 25px !important;
+    border: none !important;
+    text-align: left !important;
+    line-height: normal !important;
+    font-size: 14px !important;
+    border-radius: 25px !important;
+}
+.V_3_5 .result-v2 .loginBtn {
+    padding: 11px 47px 11px 25px !important;
+    margin: 0px !important;
+    font-size: 15px !important;
+}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{
+    width: 40px;
+    background-position: 6px center !important;
+    top: 5px !important;
+}
+.V_3_5 .new-lead-common .or-class {
+    color: #5e5e5e;
+    padding: 10px;
+}

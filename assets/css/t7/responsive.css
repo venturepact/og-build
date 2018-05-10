@@ -170,6 +170,23 @@
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     .like-cta-outer .fb-like{margin-bottom:6px;}
     .range-slider1.custom-slider1 ul{ display: none;}
+
+    .V_3_5 .t1-landing-leadform fb_lead_gen{text-align: center;}
+    .V_3_5 .or-class{font-size: 13px; text-align: center;}
+    .V_3_5 .loginBtn, .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
+        margin: 0 !important;
+        padding: 7px 35px 7px 12px !important;
+        border: none;
+        text-align: left;
+        line-height: normal;
+        font-size: 13px !important;
+    }
+    .V_3_5 .loginBtn:before {
+        top: 4px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
 }
 @media (max-width:375px) {  
     .footer-nav {

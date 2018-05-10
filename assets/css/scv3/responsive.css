@@ -118,6 +118,13 @@
      }
      .new-lead-common1 .new-lead-common2 + .extra-icons{display: block}
     .sound-cloud-new [type="checkbox"].tabbed:focus + label.leadform-checkbox:after {box-shadow: -1px -1px 0 2px rgba(0, 0, 0, 0.1);}
+    .landing-text-left .main-heading{padding: 0 20px;}
+    .landing-text-left .landing-page-mid .input-section{padding: 0 20px;}
+    .landing-text-left .t2btn-outr {padding: 0 20px;}
+    .landing-text-right .landing-page-mid .main-heading {padding: 0 20px;}
+    .landing-text-right .landing-page-mid .input-section{padding: 0 20px;}
+    .landing-text-right .t2btn-outr {padding: 0 20px;}
+
 }
 @media (max-width:375px) {  
     .footer-nav {        float: left;        width: 100%;        text-align: center;    }
@@ -463,4 +470,9 @@
     .landing-page-mid .or-class{font-size: 12px}
     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
     .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
+        padding: 11px 47px 11px 25px !important;
+        font-size: 13px !important;
+        float: none !important;
+    }
 }

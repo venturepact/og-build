@@ -8945,13 +8945,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 /*************** t6 improved *************/
 /******************** t6 improved **********************/
-.V_3_5 .bGImage{height: 300px}
-.V_3_5 .main-heading, .V_3_5 .main-heading h1{font-size: 52px}
-.V_3_5 .sub-heading h2{font-size: 26px; opacity: 1;}
-.V_3_5 .landing-page-mid button{ padding: 20px 40px; font-size: 16px}
-.template-six.V_3_5 .radio-outer-base.ripple-dark label.control.control--radio.radio-icon::before, 
-.template-six.V_3_5 .checkbox-outer.ripple-dark label.control.control--checkbox::before , .V_3_5  .ripple-dark.radio-outer.radio-icon-custom .mid-outer .control.control--radio::before{display:none !important}
-.template-six.V_3_5  .checkbox-outer button.submit-checkbox-img.ripple-light{top: 98%}
+
 .fb-btn-outer{
     width: 100%;
     text-align: center;
@@ -8962,3 +8956,111 @@ fb_lead_gen + .lf-skip-btn {
     text-align: center;
     margin-left: 0 !important;
 }
+
+/******************** t6 improved **********************/
+
+@media (min-width:640px){
+    .V_3_5 .bGImage{height: 300px}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1{font-size: 52px}
+    .V_3_5 .sub-heading h2{font-size: 26px; opacity: 1;}
+    .V_3_5 .landing-page-mid button{ padding: 20px 40px; font-size: 16px}
+    .template-six.V_3_5 .ripple-dark.checkbox-outer > span,.template-six.V_3_5  .pic-selector .abhi{margin: 20px 0}
+  
+    .V_3_5 button.submit-checkbox-img.ripple-light {margin-top: 12px;}
+    .V_3_5 .t1-question .ripple-dark.checkbox-outer-base [type="checkbox"] + label.control::before, .V_3_5 .t1-question .ripple-dark.radio-outer-base [type="radio"] + label.control::before {margin: 20px 18px;}
+    .V_3_5  .t1-question .textfield.checkbox-outer-base .othersfield, 
+    .V_3_5  .t1-question .textfield.radio-outer-base .othersfield ,
+    .V_3_5  .ripple-dark.checkbox-outer > span, .pic-selector .abhi, 
+    .V_3_5 .control-ver2 .pic-selector span.abhi ,
+    .V_3_5 .t1-slider-question  .selectize-input .item , 
+    .V_3_5 .t1-question .ripple-dark.checkbox-outer-base label.control span, 
+    .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control span {font-size: 20px}
+    .V_3_5 .t1-question .ripple-dark.checkbox-outer-base label.control span, 
+    .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control span {padding-top: 0px;margin: 20px 0 20px !important;line-height: 26px;}
+    .V_3_5 .question-components input{font-size: 20px}
+    .V_3_5 .t1-slider-question .input-field label.pre-icon,  .V_3_5 .t1-slider-question .input-field label.post-icon , .V_3_5 .question-components .input-field input.postfixset{height: 60px;}
+  
+    .V_3_5  .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {border-radius: 4px;padding: 18px 26px;}
+  
+  }
+  .V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input, .V_3_5 .question-components input{padding-left: 15px}
+  .V_3_5 .t1-question .ripple-dark.checkbox-outer-base label.control, 
+  .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control{border-radius: 0px;} 
+  .template-six.V_3_5 .radio-outer-base.ripple-dark label.control.control--radio.radio-icon::before, 
+  .template-six.V_3_5 .checkbox-outer.ripple-dark label.control.control--checkbox::before , .V_3_5  .ripple-dark.radio-outer.radio-icon-custom .mid-outer .control.control--radio::before , .V_3_5 .ripple-dark.pic-selector label.control::before ,
+  .template-six.V_3_5  .ripple-dark.checkbox-outer-base::after, .template-six.V_3_5  .ripple-dark.radio-outer-base::after {display:none !important}
+  .template-six.V_3_5  .checkbox-outer button.submit-checkbox-img.ripple-light{top: 92%}
+  .V_3_5 .t1-question .textfield.ripple-dark.radio-outer-base label, .V_3_5 .t1-question .textfield.ripple-dark.checkbox-outer-base label{background-color: transparent !important} 
+  .V_3_5 .t1-question .ripple-dark.checkbox-outer-base , 
+  .V_3_5 .t1-question .ripple-dark.radio-outer-base{margin-bottom: 4px !important}
+  .V_3_5 .checkbox-outer.textfield input.othersfield.extrafield, .V_3_5 .radio-outer-base.textfield input.othersfield{margin-top: 20px}
+
+
+
+
+/*new version--login with fb*/
+.V_3_5 .or-class {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.V_3_5 .fb-outer{width:100%;float: left;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {
+    background-color: #086ca0 !important;
+    background-image: linear-gradient(#086ca0, #086ca0) !important;
+    text-shadow: 0 -1px 0 #086ca0 !important;
+    border-radius: 3px !important;
+    text-transform: uppercase;
+    min-height: auto;
+    padding: 17px 52px 17px 20px !important;
+}
+.V_3_5 .loginBtn--facebook:before {
+    top: 12.5px !important;
+    right: 11px !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #fff !important;
+    border-radius: 3px !important;
+    left: auto !important;
+    border-right: none !important;
+    background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;
+    background-position-x: 5px !important;
+    background-size: 18px !important;
+}
+.V_3_5 fb_lead_gen {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.V_3_5 .t1-landing-leadform fb_lead_gen {
+    width: 100%;
+    float: left;
+    margin:0;
+}
+.V_3_5 .landing-page-mid .or-class,
+.V_3_5 .common-result-main .or-class {
+    text-align: center !important;
+}
+.V_3_5 .leadAsPopup fb_lead_gen,
+.V_3_5 .t1-result-leadform fb_lead_gen {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+.V_3_5 .leadAsPopup .loginBtn, 
+.V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
+    padding: 17px 52px 17px 20px !important;
+    float: none;
+}
+.V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1 {
+    font-size: 46px;
+    line-height: 55px;
+}
+.V_3_5 .landing-page-mid.v3-fb-outer button {
+    padding: 16px 45px 18px !important;
+    min-height: 55px;
+}
+
