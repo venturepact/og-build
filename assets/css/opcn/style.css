@@ -7212,12 +7212,12 @@ leadform_question .or-class {
     max-width: 600px;
     display: inline-block;
 }
-.landing-text-center .t1-landing-inner .input-field {
+/* .landing-text-center .t1-landing-inner .input-field {
     max-width: 500px;
 }
 .landing-text-left .t1-landing-inner .input-field {
     max-width: 500px;
-}
+} */
 .landing-text-center .t1-landing-inner .t2btn-outr {
     float: none;
     margin: 0 auto;
@@ -7283,7 +7283,7 @@ leadform_question .or-class {
     width: 100%;
 }
 .landing-page-mid leadform .input-section .input-outer.checkbox span{position: relative; top: 5px}
-.landing-page-mid leadform .input-section .input-outer{float: left;}
+.landing-page-mid leadform .input-section .input-outer{float: none; vertical-align: top}
 .fb-btn-outer {
     width: auto;
     float: left;
@@ -7294,6 +7294,7 @@ fb_lead_gen + .lf-skip-btn {
 .lead-popup .fb-btn-outer {
     width: 100%;
 }
+
 
 
 /* Improved Version Css start */
@@ -7309,11 +7310,11 @@ fb_lead_gen + .lf-skip-btn {
 }
 .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {
     border-radius: 50px !important;
-    padding: 16px 50px;
+    padding: 13px 40px;
 }
 
-
-/* .V_3_5 .t1-slider-pagination {
+/* 
+.V_3_5 .t1-slider-pagination {
     position: relative;
     width: 52%;
     margin: 0 auto;
@@ -7382,13 +7383,13 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .input-outer .input-field {
     display: flex;
 }
-.V_3_5 .common-result-main .t1-result-leadform .input-outer i {
+/* .V_3_5 .common-result-main .t1-result-leadform .input-outer i {
     top: 2px;
     left: 8px !important;
-}
-.V_3_5 .common-result-main .t1-result-leadform .input-outer input {
+} */
+/* .V_3_5 .common-result-main .t1-result-leadform .input-outer input {
     padding-left: 35px !important;
-}
+} */
 
 
 .V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ label:not(.label-icon).active, .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label:not(.label-icon).active {
@@ -7412,15 +7413,15 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field {
     display: flex;
 }
-.V_3_5 .t1-landing-leadform .input-section .input-outer i {
+/* .V_3_5 .t1-landing-leadform .input-section .input-outer i {
     top: 6px;
-}
+} */
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input{
     font-size: 14px;
     width: 90%;
 } 
 
-.V_3_5 .landing-page-mid leadform .input-section .input-outer label {
+/* .V_3_5 .landing-page-mid leadform .input-section .input-outer label {
     max-width: inherit;
     border: none;
     min-width: inherit;
@@ -7429,29 +7430,29 @@ fb_lead_gen + .lf-skip-btn {
     text-align: inherit;
     margin: 0;
     margin-left: 6px;
-    padding-left: 30px;
+    padding-left: 20px;
     width: 92%;
     width: calc(96% - 1rem);
     text-align: left;
     margin-right: 10px;
     padding-bottom: 2px;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
+  
     text-transform: none;
     position: absolute;
-    top:0px;
+
     left: 0;
     font-size: 14px;
     cursor: text;
     transition: .2s ease-out;
     font-weight: 400!important;
     opacity: .7;
-}
+} */
+.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label{padding-left: 30px; margin-left: 0; margin-top: 10px !important}
 .V_3_5 leadform .input-field label:not(.label-icon).active {
-    padding-left: 0;
+    padding-left: 0 !important;
+    text-transform: uppercase;
 }
-.V_3_5 leadform .input-field label:not(.label-icon).active {
+/* .V_3_5 leadform .input-field label:not(.label-icon).active {
     font-size: 10px;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -7459,7 +7460,8 @@ fb_lead_gen + .lf-skip-btn {
     font-weight: 700!important;
     top: 6px;
     opacity: 1;
-}
+} */
+
 
 
 .V_3_5 .progress {
@@ -7503,10 +7505,22 @@ fb_lead_gen + .lf-skip-btn {
     box-shadow: none;
     border-radius: 50px;
 }
+.V_3_5 .progress-bar {
+    text-align: right;
+    padding-right: 25px;
+}
 
 /* Improved Version Css end */
-
-
+.fb-btn-outer {
+    width: auto;
+    float: left;
+}
+fb_lead_gen + .lf-skip-btn {
+    margin-top: 10px !important;
+}
+.lead-popup .fb-btn-outer {
+    width: 100%;
+}
 
 
 /*new version--login with fb*/
@@ -7521,6 +7535,7 @@ fb_lead_gen + .lf-skip-btn {
     padding: 0 65px;
 }
 .V_3_5 .fb-outer{width:100%;float: left;text-align: left;}
+.template-section .template-container.mobile .V_3_5 .fb-outer{text-align: center;}
 .V_3_5 .landing-page-mid .or-class span{line-height: 1; float: left;}
 .V_3_5 .landing-page-mid .or-class span{float: left;}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{
@@ -7554,6 +7569,14 @@ fb_lead_gen + .lf-skip-btn {
     background-position-x: 5px !important;
     background-size: 18px !important;
 }
+.template-section .template-container.mobile .V_3_5 .loginBtn:before {
+    width: 25px !important;
+    height: 25px !important;
+    top: 4px !important;
+    background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+    background-size: 15px !important;
+    right: 5px !important;
+}
 .V_3_5 .loginBtn{
     margin: 0 !important;
     padding: 11px 47px 11px 25px !important;
@@ -7563,11 +7586,21 @@ fb_lead_gen + .lf-skip-btn {
     font-size: 16px !important;
     border-radius: 25px !important;
 }
+.template-section .template-container.mobile .V_3_5 .loginBtn{
+    margin: 0 !important;
+    padding: 9px 35px 9px 15px !important;
+    border: none;
+    text-align: left;
+    line-height: normal;
+    font-size: 13px !important;
+}
 .V_3_5 .result-v2 .loginBtn {
     padding: 10px 45px 10px 25px !important;
     margin: 0px !important;
     font-size: 15px !important;
 }
+.template-section .template-container.mobile .V_3_5 .or-class{width: 100% !important; margin: 10px 0; font-size:12px;text-align:center;}
+.template-section .template-container.mobile .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding: 9px 35px 9px 15px !important;}
 .V_3_5 button.lf-skip-btn{
     background: none;
     border: none;
@@ -7594,14 +7627,17 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
     padding: 11px 47px 11px 25px !important;
 }
-.V_3_5 leadform_question .or-class {
-    color: #28324e;
-    padding: 0;
+.V_3_5 .common-result-main .fb-outer {
+    text-align: center;
 }
 
 
 
 .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{padding-left: 0 !important}
+
+.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox .input-field ,
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox  .input-field {display: block}
+
 
 
 /*calendar component css*/
@@ -7614,3 +7650,4 @@ fb_lead_gen + .lf-skip-btn {
 .t1-question .question-components .cal-outer input::-moz-placeholder {color: #444;}
 .t1-question .question-components .cal-outer input:-ms-input-placeholder {color: #444;}
 .t1-question .question-components .cal-outer input:-moz-placeholder {color: #444;}
+

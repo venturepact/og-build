@@ -3891,7 +3891,7 @@
             left: 0;
             padding: 0 50px;
         }
-        .V_3_5 .landing-page-mid{ margin-left: 38%;}
+        /* .V_3_5 .landing-page-mid{ margin-left: 38%;} */
         .V_3_5 .main-heading, .main-heading h1{font-size: 40px !important; line-height: 44px !important;}
     }
 
@@ -3932,4 +3932,7 @@
     .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field {
         max-width: 450px;
     }
+}
+@media (min-width:1024px){
+    .one-page-card-new .leaded-form-c [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 7px;}
 }

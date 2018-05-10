@@ -4827,3 +4827,17 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     line-height: 1;
 }
 
+/*calendar component css*/
+.cal-outer{width: 100%;float: left;margin-bottom: 10px;}
+.cal-outer .form-group {margin: 0;}
+.calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#444;}
+.t1-question .question-components .cal-outer input{
+    box-shadow: none;
+    padding: 10px 5px !important;
+    margin-bottom: 0;
+}
+.cal-outer .input-group.date .input-group-addon{
+    border-radius: 0;
+    padding: 0 5px;
+    background: none;
+}

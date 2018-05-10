@@ -86,7 +86,7 @@ h2.sub-heading p {    margin-bottom: 0 !important; word-break: break-word;}
 .ripple-dark.pic-selector + .custom-btn-outer1{display: block; margin: 20px auto 10px}
 .pic-selector + .custom-btn-outer1
 .t1-button button{    font-size: 24px;    width: auto;    padding: 0px;        border: none;    cursor: pointer;       border-radius: 50%;}
-.landing-page-mid button ,  button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn ,.submit-checkbox-img-custom ,.w100.text-center .submit-checkbox-img , .landing-page-mid leadform button.prime-action{    font-size: 24px;    float: none;    width: auto;    padding: 0px;      border: none;    cursor: pointer;  line-height:1;       white-space: normal;    word-break: break-word; border-radius: 50%; width:100%;height:100%;   display: inline-block;text-align: center; align-items: center;    margin-top: 0px;}
+.landing-page-mid button ,  button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn ,.submit-checkbox-img-custom ,.w100.text-center .submit-checkbox-img , .landing-page-mid leadform .prime-action{    font-size: 24px;    float: none;    width: auto;    padding: 0px;      border: none;    cursor: pointer;  line-height:1;       white-space: normal;    word-break: break-word; border-radius: 50%; width:100%;height:100%;   display: inline-block;text-align: center; align-items: center;    margin-top: 0px;}
 .t1-button button:hover,.t1-button button:focus{  outline: none;}
 .checkbox-outer-base button.submit-checkbox-img.ripple-light {   float: left; margin-right: 10px; display:none !important}
 .t1-question .ripple-dark.checkbox-outer-base label.control , .t1-question .ripple-dark.radio-outer-base label.control {    width: 100% !important;  text-align: left;  height: auto !important; float: left; padding: 0 60px 0 30px;}
@@ -536,8 +536,8 @@ visuals .rec-image-outer img {       max-width: 640px;    width: inherit;}
 .t1-landing-inner, .result-branding{ position:relative;}
 .t1-slider-question.slide-1 .lf-skip-btn{    background: none;    border: none;  opacity: 0.7;  float: none;    text-transform: uppercase;      font-size: 16px;    margin-top: 10px;    margin-left: 10px;}
 .t1-slider-question.slide-1 .lf-skip-btn:hover{  opacity: 1}
-.landing-page-mid leadform button.prime-action.lf-skip-btn{    float: none;    background: none;    border: none;    font-size: 16px;    color: #fff;    text-transform: none;    box-shadow: none;    margin: 0 auto;    display: block;    opacity: 0.5;}
-.landing-page-mid leadform button.prime-action.lf-skip-btn:hover{    opacity: 1;}
+.landing-page-mid leadform .prime-action.lf-skip-btn{    float: none;    background: none;    border: none;    font-size: 16px;    color: #fff;    text-transform: none;    box-shadow: none;    margin: 0 auto;    display: block;    opacity: 0.5;}
+.landing-page-mid leadform .prime-action.lf-skip-btn:hover{    opacity: 1;}
 .t1-result .t1-result-leadform .lf-submitted , .t1-result .gradedquiz-main .lf-submitted{    padding: 0px;    margin: 20px 0;     font-size: 26px;    background: transparent;    display: inline-block;        text-transform: capitalize;}
  .errorMessage {        float: left;        width: 100%;        padding: 10px;        color: #f44336;        font-size: 12px    }
 a:hover,a:focus{    text-decoration: none;}
@@ -2167,3 +2167,33 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     float: none;
 
 }
+
+
+
+.t8-disclaimer {
+    float: left;
+    width: 100%;
+    margin: 10px 0 20px;
+    display: block;
+}
+.t8-disclaimer .t1-result-disclaimer {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.t8-disclaimer .lightSticky {
+    position: relative !important;
+    right: 0px;
+    left: auto;
+    bottom: 0;
+}
+.t8-disclaimer .crb-right {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.notDevMode.common-result-bot.eight-inner-wrapper.result-v2-leadformhide{column-count: 1 !important;}
+.poll-result .eight-inner-wrapper .eight-inner-wrapper{margin-bottom: 0PX !important}
