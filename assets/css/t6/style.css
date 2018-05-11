@@ -9064,3 +9064,29 @@ fb_lead_gen + .lf-skip-btn {
     min-height: 55px;
 }
 
+
+/*calendar component css*/
+.cal-outer {
+    width: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cal-outer input {
+    box-shadow: none;
+}
+.question-components .cal-outer input:focus:not([readonly]) {
+    border-color: transparent;
+    box-shadow: none;
+}
+.cal-outer .input-group-addon {
+    border: none;
+    min-width: 65px;
+    color: #fff !important;
+}
+.calendar-range {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 20px;
+}

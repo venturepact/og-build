@@ -391,6 +391,7 @@
     .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
         text-align: center;
     }
+    .cal-outer .input-group-addon{min-width: 40px;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
