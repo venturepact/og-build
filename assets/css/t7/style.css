@@ -2894,3 +2894,31 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .template-section .template-container.mobile .landing-page-mid.v3-fb-outer .landing-center-outer .prime-action {
     margin-bottom: 5px;
 }
+
+/*calendar component css*/
+.cal-outer{
+  width: 100%;
+  float: left;
+}
+.cal-outer input {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 7px;
+    background: transparent;
+}
+.cal-outer span.input-group-addon {
+    border-radius: 0;
+    background: none;
+    padding: 6px;  
+}  
+.cal-outer input:focus {
+    box-shadow: none;
+}
+.cal-outer span.input-group-addon .glyphicon{
+  font-size: 12px;
+}
+span.calendar-range{
+  width: 100%;
+  float: left;
+  text-align: center;
+}

@@ -2197,3 +2197,22 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .notDevMode.common-result-bot.eight-inner-wrapper.result-v2-leadformhide{column-count: 1 !important;}
 .poll-result .eight-inner-wrapper .eight-inner-wrapper{margin-bottom: 0PX !important}
+
+/*calendar component css*/
+.cal-outer{
+    width:100%;
+    float: left;
+}
+.cal-outer .input-group-addon {
+    min-width: 60px;
+    border-radius: 0 3px 3px 0;
+}
+span.calendar-range {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.cal-outer input:focus {
+    box-shadow: none;
+}
