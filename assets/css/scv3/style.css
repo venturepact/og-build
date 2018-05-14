@@ -2374,4 +2374,38 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     outline: none !important;
     box-shadow: none !important;
 }
-.calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#5e5e5e;}
+.calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#5e5e5e;text-align: center;}
+/*dropdown style*/
+.cal-outer .dropdown-menu {
+    padding: 10px !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>thead>tr>th {
+    text-align: center !important;
+}
+.cal-outer ul {
+    margin-bottom: 0 !important;
+}
+.cal-outer li.picker-switch.accordion-toggle {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+    padding: 10px 0 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.cal-outer .timepicker .table-condensed {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>tbody>tr>td, 
+.cal-outer .table-condensed>tbody>tr>th, 
+.cal-outer .table-condensed>tfoot>tr>td, 
+.cal-outer .table-condensed>tfoot>tr>th, 
+.cal-outer .table-condensed>thead>tr>td, 
+.cal-outer .table-condensed>thead>tr>th{
+    padding: 6px !important;
+    cursor: pointer !important;
+}

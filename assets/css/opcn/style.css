@@ -7412,6 +7412,7 @@ fb_lead_gen + .lf-skip-btn {
 
 .V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field {
     display: flex;
+    width: 100%;
 }
 /* .V_3_5 .t1-landing-leadform .input-section .input-outer i {
     top: 6px;
@@ -7651,3 +7652,37 @@ fb_lead_gen + .lf-skip-btn {
 .t1-question .question-components .cal-outer input:-ms-input-placeholder {color: #444;}
 .t1-question .question-components .cal-outer input:-moz-placeholder {color: #444;}
 
+/*dropdown style*/
+.cal-outer .dropdown-menu {
+    padding: 10px !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>thead>tr>th {
+    text-align: center !important;
+}
+.cal-outer ul {
+    margin-bottom: 0 !important;
+}
+.cal-outer li.picker-switch.accordion-toggle {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+    padding: 10px 0 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.cal-outer .timepicker .table-condensed {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>tbody>tr>td, 
+.cal-outer .table-condensed>tbody>tr>th, 
+.cal-outer .table-condensed>tfoot>tr>td, 
+.cal-outer .table-condensed>tfoot>tr>th, 
+.cal-outer .table-condensed>thead>tr>td, 
+.cal-outer .table-condensed>thead>tr>th{
+    padding: 5px !important;
+    cursor: pointer !important;
+}
