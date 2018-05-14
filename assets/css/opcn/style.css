@@ -7259,6 +7259,9 @@ leadform_question .or-class {
     float: none;
 }
 .landing-text-right button.loginBtn.loginBtn--facebook.disabled {
+    float: right !important;
+}
+.landing-text-right .landing-page-mid .or-class span {
     float: right;
 }
 .landing-text-right .t1-landing-inner .input-field {

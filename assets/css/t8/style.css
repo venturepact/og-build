@@ -1469,7 +1469,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .recommendation-outer  .common-result-main .t1-result-leadform{min-height: auto}
  .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-section{max-width:inherit} 
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 0px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
-.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-outer {  width: 50% !important;  padding: 0 10px;  min-height: auto;  margin: 0 0 25px 0;  float: left;}
+.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-outer {  width: 50% !important;  padding: 0 10px;  min-height: auto;  margin: 0 0 25px 0;  float: none;display: inline-block; vertical-align: top;}
 .template-eight .t1-result-leadform .input-outer i , .template-eight  .gradedquiz-main .common-result .t1-result-leadform .input-outer i{left: 20px !important;top: 12px !important; font-size: 17px !important;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .prime-action {  float: left;  margin-bottom: 0px;    font-size: 16px;  padding: 8px 15px;  text-transform: none;  margin-top: 0px;}
 .template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-heading-temp1 {  font-size: 20px;  text-transform: capitalize;  text-align: center; margin-bottom: 15px;}
@@ -2251,3 +2251,4 @@ span.calendar-range {
     padding: 6px !important;
     cursor: pointer !important;
 }
+
