@@ -2312,6 +2312,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 /*new version--login with fb*/
 .V_3_5 .or-class{
   font-size: 14px;
+  padding: 0 25px;
 }
 .V_3_5 .fb-outer{width:100%;float: left;}
 .V_3_5 .loginBtn--facebook{
@@ -2359,6 +2360,25 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .new-lead-common .or-class {
     color: #5e5e5e;
     padding: 10px;
+}
+.v3-fb-outer.landing-page-mid .main-heading {
+    font-size: 50px;
+    line-height: 56px;
+}
+.v3-fb-outer .prime-action{
+    font-size: 16px;
+}
+.V_3_5 .landing-text-left .or-class {
+    text-align: left;
+}
+.V_3_5 .landing-text-right .or-class {
+    text-align: right;
+}
+.V_3_5 .landing-text-left fb_lead_gen {
+    text-align: left;
+}
+.V_3_5 .landing-text-right fb_lead_gen {
+    text-align: right;
 }
 
 /*calendar component css*/

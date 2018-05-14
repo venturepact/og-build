@@ -3855,10 +3855,10 @@ input[type=number] {
     font-weight: normal !important;
     line-height: 21px;
     float: left;
+    /* max-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 24px;
-    white-space: nowrap;
+    white-space: nowrap; */
 }
 .t1-result-leadform select.leadform-select {
     width: 90%;
@@ -5098,7 +5098,7 @@ fb_lead_gen + .lf-skip-btn {
     text-transform: uppercase;
 }
 .V_3_5 .loginBtn:before {
-    top: 5px !important;
+    top: 3px !important;
     right: 8px !important;
     width: 30px !important;
     height: 30px !important;

@@ -472,8 +472,24 @@
     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
     .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
-        padding: 11px 47px 11px 25px !important;
+        padding: 11px 40px 11px 14px !important;
         font-size: 13px !important;
         float: none !important;
+    }
+        .V_3_5 .loginBtn:before{
+        width: 25px !important;
+        height: 25px !important;
+        top:8px !important;
+    }
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{
+        top:8px !important;
+        background-position: 5px center !important;
+        background-size: 15px !important;
+    }
+    .V_3_5 .loginBtn{padding: 11px 40px 11px 14px !important;}
+    .V_3_5 .landing-text-right fb_lead_gen,.V_3_5 .landing-text-left fb_lead_gen {
+        padding: 0 20px;
+        width: 100%;
+        float: left;
     }
 }

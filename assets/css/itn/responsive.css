@@ -1096,6 +1096,62 @@
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
         .fb-btn-outer{padding:0 30px;}
     fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
+
+    .V_3_5 .landing-page-mid{ margin-left: auto;}
+    .V_3_5 .main-heading, .main-heading h1 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+    }
+    .fb-btn-outer{padding:0 30px;}
+    fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
+        padding: 9px 35px 9px 15px !important;
+        font-size: 13px !important;
+        float: none !important;
+    }
+    .V_3_5 .loginBtn--facebook:before {
+        width: 25px !important;
+        height: 25px !important;
+        top: 3px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
+    .V_3_5 .or-class{text-align: center !important;padding: 15px !important;margin:0 !important;font-size: 12px;}
+    .V_3_5 .loginBtn{
+        padding:9px 35px 9px 15px !important;
+    }
+    .V_3_5 fb_lead_gen{
+        width: 100%;
+        float: left;
+        left: 0;
+        padding: 0 50px;
+        margin: 30px 0;
+        margin-top: 0px;
+    }
+    .V_3_5 form#leadform_question {
+        margin-bottom: 20px;
+    }
+    .V_3_5 .fb-outer{
+        float: none;
+        text-align: center;
+    }
+    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
+        padding: 9px 35px 9px 25px !important;
+        float: none;
+        font-size: 13px !important;
+    }
+    .V_3_5 .t1-result-leadform .lead-popup fb_lead_gen {
+        margin-top: 0;
+    }
+    .V_3_5 .common-result-main .t1-result-leadform fb_lead_gen {
+        padding: 0;
+        margin-top: 0;
+    }
+    .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {
+        padding: 9px 35px 9px 15px !important;
+        font-size: 13px !important;
+    }
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
