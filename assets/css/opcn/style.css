@@ -7468,7 +7468,7 @@ fb_lead_gen + .lf-skip-btn {
 
 
 
-.V_3_5 .progress {
+.newProgressbar.progress {
     position: absolute;
     top: 45px;
     border-radius: 0px;
@@ -7481,7 +7481,7 @@ fb_lead_gen + .lf-skip-btn {
     border-radius: 50px;
     overflow: visible;
 }
-.V_3_5 .progress::after {
+.newProgressbar.progress::after {
     content: "";
     opacity: 1;
     float: left;
@@ -7493,7 +7493,7 @@ fb_lead_gen + .lf-skip-btn {
     top: 0;
 }
 
-.V_3_5 .progress span.sr-only {
+.newProgressbar.progress span.sr-only {
     clip: inherit;
     overflow: visible;
     float: right;
@@ -7503,15 +7503,11 @@ fb_lead_gen + .lf-skip-btn {
     color: #fff;
     font-family: 'montserratlight';
 }
-.V_3_5 .progress-bar {
+.newProgressbar .progress-bar {
     text-align: right;
-    padding-right: 25px;
+    /* padding-right: 25px; */
     box-shadow: none;
     border-radius: 50px;
-}
-.V_3_5 .progress-bar {
-    text-align: right;
-    padding-right: 25px;
 }
 
 /* Improved Version Css end */

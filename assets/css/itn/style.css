@@ -5125,7 +5125,13 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .result-v2 .loginBtn {
     padding: 11px 47px 11px 25px !important;
     margin: 0px !important;
-    font-size: 15px !important;
+    font-size: 12px !important;
+}
+.V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before {
+    width: 25px !important;
+    height: 25px !important;
+    background-position-x: 4px !important;
+    background-size: 15px !important;
 }
 button.lf-skip-btn{
     background: none;
