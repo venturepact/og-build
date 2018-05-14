@@ -3659,3 +3659,10 @@ li.cld-day{ background: #fff;}
 .pt10{ padding-top:10px !important;}
 
 .event-template-outer .event-name{ float: left; width:100%; padding:8px 10px; margin-bottom:3px; font-size: 12px; text-transform: uppercase; color: #fff; border-color:rgba(255,255,255,0.4) !important; word-wrap: break-word; }
+
+.noTransition{
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
