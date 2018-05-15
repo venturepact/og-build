@@ -37,7 +37,7 @@
 			$curl2 = curl_init();
 			curl_setopt_array($curl2, array(
 					CURLOPT_RETURNTRANSFER => 1,
-					CURLOPT_URL => $apiUrl.'/api/v1/builder/app_integration/'.$response['data']['url'],
+					CURLOPT_URL => 'https://api.outgrow.co/api/v1/builder/app_integration/'.$response['data']['url'],
 					CURLOPT_USERAGENT => 'Codular Sample cURL Request',
 					CURLOPT_SSL_VERIFYPEER=>false,
 					CURLOPT_HTTPHEADER=>array('Origin: http://app.rely.co'),

@@ -2139,5 +2139,5 @@ p > span > a {color: inherit; }
 
  .page_2 .result-temp2-default-section .small-bot-sec p{ margin: 0px !important;}
 
- .isIframe .page_1 .result-fixed1 {min-height: auto;}
- .isIframe .page_1 {min-height: auto;}
+ .isIframe .page_1 .result-fixed1 {min-height: calc(100vh - 60px);}
+ .isIframe .page_1 {min-height: 100% !important;}
