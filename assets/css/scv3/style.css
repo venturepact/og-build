@@ -2214,8 +2214,8 @@ a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; dis
 a.gdrp-cancel-icon:hover{ opacity: 0.5;}
  .page_2 .result-temp2-default-section .small-bot-sec p{ margin: 0px !important;}
 
- .isIframe .page_1 .result-fixed1 {min-height: auto;}
- .isIframe .page_1 {min-height: auto;}
+ .isIframe .page_1 .result-fixed1 {min-height: calc(100vh - 60px);}
+ .isIframe .page_1 {min-height: 100% !important;}
  .sound-cloud-v3 .page_2 .redirect-heading {  text-transform: none; margin-top: 15px;}
  .sound-cloud-v3 .share-heading {text-transform: none !important; margin-top: 15px;}
 
@@ -2429,3 +2429,5 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     padding: 6px !important;
     cursor: pointer !important;
 }
+ .isIframe .page_1 .result-fixed1 {min-height: calc(100vh - 60px);}
+ .isIframe .page_1 {min-height: 100vh !important;}
