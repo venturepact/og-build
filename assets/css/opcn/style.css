@@ -7653,6 +7653,8 @@ fb_lead_gen + .lf-skip-btn {
 .t1-question .question-components .cal-outer input::-moz-placeholder {color: #444;}
 .t1-question .question-components .cal-outer input:-ms-input-placeholder {color: #444;}
 .t1-question .question-components .cal-outer input:-moz-placeholder {color: #444;}
+.t1-question .question-components .cal-outer span.month {width: auto;float: left;margin-right: 10px;}
+.t1-question .question-components .cal-outer span.month:last-child {margin-right: 0;}
 
 /*dropdown style*/
 .cal-outer .dropdown-menu {
