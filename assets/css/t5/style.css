@@ -4849,6 +4849,20 @@ fb_lead_gen + .lf-skip-btn {
     padding: 6px !important;
     cursor: pointer !important;
 }
+
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {
+    padding: 3px;
+    margin-right: 5px;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover {
+    background: none;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
+    background: #e6e3e3;
+}
+
 .V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 32px}
 .V_3_5.template-five.structure-right-align [type="checkbox"] + label.leadform-checkbox{float: right;}
 .V_3_5.template-five.selectize-control.single .selectize-input:after{left: 15PX; right: auto;}

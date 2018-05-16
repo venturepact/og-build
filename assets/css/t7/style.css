@@ -2925,8 +2925,9 @@ span.calendar-range{
 
 /*dropdown style*/
 .cal-outer .dropdown-menu {
-    padding: 10px !important;
+    padding: 9px !important;
     text-align: center !important;
+    font-size:12px !important;
 }
 .cal-outer .table-condensed>thead>tr>th {
     text-align: center !important;
@@ -2954,6 +2955,18 @@ span.calendar-range{
 .cal-outer .table-condensed>tfoot>tr>th, 
 .cal-outer .table-condensed>thead>tr>td, 
 .cal-outer .table-condensed>thead>tr>th{
-    padding: 6px !important;
+    padding: 2px !important;
     cursor: pointer !important;
+}
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {
+    padding: 3px;
+    margin-right: 5px;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover {
+    background: none;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
+    background: #e6e3e3;
 }

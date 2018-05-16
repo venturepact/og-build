@@ -9143,6 +9143,21 @@ fb_lead_gen + .lf-skip-btn {
     padding: 6px !important;
     cursor: pointer !important;
 }
+.cal-outer .datepicker-months td:hover {background: none !important;}
+.cal-outer span.month, .cal-outer span.year, .cal-outer span.decade{width: auto;float: left;margin-right: 10px;padding: 2px;}
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {
+    padding: 3px;
+    margin-right: 5px;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover {
+    background: none;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
+    background: #e6e3e3;
+}
+
 .V_3_5 .t1-ques-component .input-section .input-outer.checkbox .input-icon-outer {
     display: block;
     float: left;
