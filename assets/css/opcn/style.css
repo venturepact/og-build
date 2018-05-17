@@ -7513,6 +7513,43 @@ fb_lead_gen + .lf-skip-btn {
     border-radius: 50px;
 }
 
+.t1-slider-pagination {
+    position: absolute;
+    float: left;
+    width: 100%;
+    top: 0px;
+    height: 12px;
+}
+.t1-slider-pagination::before {
+    opacity: 0.2;
+    content: "";
+    float: left;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.t1-slider-pagination .progress-bar {
+    height: 12px;
+    z-index: 999;
+    text-align: right;
+}
+.t1-slider-pagination .progress-bar span.sr-only {
+    position: relative;
+    z-index: 9;
+    font-size: 9px;
+    right: 6px;
+    top: -4px;
+    color: #fff;
+    clip: inherit;
+}
+
+
+
+
+
+
 /* Improved Version Css end */
 .fb-btn-outer {
     width: auto;

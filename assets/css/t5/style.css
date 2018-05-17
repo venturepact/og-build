@@ -4865,7 +4865,7 @@ fb_lead_gen + .lf-skip-btn {
 
 .V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 32px}
 .V_3_5.template-five.structure-right-align [type="checkbox"] + label.leadform-checkbox{float: right;}
-.V_3_5.template-five.selectize-control.single .selectize-input:after{left: 15PX; right: auto;}
+
 .V_3_5.template-five.structure-right-align [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
     right: 10px !important;
     left: auto !important;
@@ -4877,3 +4877,5 @@ fb_lead_gen + .lf-skip-btn {
 .question-components input.postfixset {
     height: 30px !important;
 }
+.V_3_5.template-five .selectize-control.single .selectize-input:after{right: 15px; left: auto}
+.V_3_5.template-five.structure-right-align .selectize-control.single .selectize-input:after{left: 15PX; right: auto;}

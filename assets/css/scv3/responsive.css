@@ -166,6 +166,8 @@
     .page_1 {        width: 86%;        margin-left: 7%;    }
     .has-background .page_1{        width: 96%;        margin-left: 2%;        margin-bottom: 0px;    }
     .has-background .page_2{        width: 96%;        margin-left: 2%;        margin-bottom: 4%;     }
+    .isIframe .page_1{ min-height: 100% !important; }
+    .isIframe .page_1 .result-fixed1{ min-height: 0 !important;}
     .has-background .questions {        padding: 0px 20px 15px 20px;        border-bottom-left-radius: 0;        border-bottom-right-radius: 0;    }
     .has-bg header .logo{        text-align: left !important;        padding-left: 3%;    }
     .questions .question-section-outer .question-number {        width: 26px;        height: 26px;        font-size: 11px;        line-height: 27px;        left: -2px;        margin-top: -3px;    }
