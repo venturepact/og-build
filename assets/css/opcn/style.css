@@ -7226,15 +7226,18 @@ leadform_question .or-class {
     margin: 0 auto;
 }
 .landing-text-center .or-class {
-    text-align: center;
-    margin-left: 0;
-    margin-right: 0;
+    text-align: center !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 .landing-text-center .or-class span {
-    float: none;
+    float: none !important;
 }
 .landing-text-center button.loginBtn.loginBtn--facebook.disabled {
-    float: none;
+    float: none !important;
+}
+.landing-text-center .fb-outer {
+    text-align: center !important;
 }
 
 
@@ -7265,7 +7268,7 @@ leadform_question .or-class {
     float: right !important;
 }
 .landing-text-right .landing-page-mid .or-class span {
-    float: right;
+    float: right !important;
 }
 .landing-text-right .t1-landing-inner .input-field {
     width: auto;

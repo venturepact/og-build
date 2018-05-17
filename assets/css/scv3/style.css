@@ -2451,8 +2451,9 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     font-size: 90px;
     line-height: 80px;
     text-align: left;
-    padding-right: 42%;
     margin-bottom: 20px !important;
+    width: 45%;
+    float: left;
 }
 .V_3_5 .prime-action{
     font-size: 28px;
@@ -2500,4 +2501,47 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     font-size: 22px;
     line-height: 30px;
     color: #444;
+}
+.V_3_5 .sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label:after{
+    border-radius: 0px;
+    width: 19px;
+    height: 19px;
+}
+
+.V_3_5 .sound-cloud-new [type="checkbox"].filled-in:checked + label:before {
+    top: 5.5px;
+    left: 16px;
+    width: 11px;
+    height: 11px;
+    background: #ff6600;
+    border: none !important;
+    /*border-top: 2px solid #ff6600;
+    border-left: 2px solid #ff6600;
+    border-right: 2px solid #ff6600;
+    border-bottom: 2px solid #ff6600;*/
+    transform: rotate(0);
+    transform-origin: 100% 100%;
+    border-radius: 2px !important;
+}
+.V_3_5 .sound-cloud-new [type="checkbox"].filled-in:checked + label:after{
+    background: transparent !important;
+    border-radius: 3px;
+    width: 19px !important;
+    height: 19px !important;
+}
+.V_3_5 .radio-outer-base.active .control{
+    background: transparent;
+    border: none !important;
+}
+.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, 
+.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, 
+.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after {
+    border: 2px solid #f60;
+}
+.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, 
+.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{
+    background: #f60;
+}
+.V_3_5 .radio-outer-base.active .control{
+    color: #f60;
 }
