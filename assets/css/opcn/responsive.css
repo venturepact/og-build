@@ -1597,6 +1597,9 @@
         margin:0 !important;
     }
 
+    .header-next-div{height: auto !important;}
+    .header-next-div + .page_1 .t1-question{height: auto !important;}
+
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
