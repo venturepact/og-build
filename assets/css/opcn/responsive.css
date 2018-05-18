@@ -569,6 +569,7 @@
         white-space: normal;
         font-size: 14px;
     }
+    
     .recom-section .disc-set {
         width: 100%;
         text-align: center !important;
@@ -1111,6 +1112,9 @@
     }
     .one-page-card-new .t1-question .filled-in[type="checkbox"]:not(:checked) + label::after {
         margin: 14px 18px !important;
+    }
+    .V_3_5.one-page-card-new .t1-question .filled-in[type="checkbox"]:not(:checked) + label::after{
+        margin: 14px 0px !important;
     }
     .one-page-card-new .t1-question [type="checkbox"] + label.leadform-checkbox {
         min-height: 48px;
