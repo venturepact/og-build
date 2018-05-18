@@ -4879,3 +4879,10 @@ fb_lead_gen + .lf-skip-btn {
 }
 .V_3_5.template-five .selectize-control.single .selectize-input:after{right: 15px; left: auto}
 .V_3_5.template-five.structure-right-align .selectize-control.single .selectize-input:after{left: 15PX; right: auto;}
+
+.V_3_5.template-five .t1-ques-component .input-section .input-outer.checkbox span {
+    position: relative;
+    top: 5px;
+}
+
+.V_3_5.template-five .t1-result .lead-popup  [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{background-color: #fff !important}

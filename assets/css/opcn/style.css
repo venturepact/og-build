@@ -3534,6 +3534,9 @@ input[type=number] {
     
     animation: submitMove 0.25s;
 }
+.V_3_5 .w100.text-center .submit-checkbox-img{
+    border-radius: 25px !important;
+}
 .submit-textbox {
     border: 1px solid #d9dad3;
     width: 100%;
@@ -7765,25 +7768,39 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .control-ver2 .checkbox-outer-base:last-child.active  {border:0px !important; box-shadow: none}
 .V_3_5  .t1-question .question-components .check-comp .checkbox-outer-base  label ,
 .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label{min-height: auto; float: left; width: 100%;  height: auto; padding-left: 35px !important}
+.V_3_5  .t1-question  .checkbox-outer ,.V_3_5  .t1-question  .radio-icon-custom{    border: 0px;box-shadow: none;padding: 0px;}
+.V_3_5  .t1-question  .checkbox-outer .control__indicator.check-set , .V_3_5  .t1-question  .radio-icon-custom .control__indicator.icon-set{left: 0 !important; top: 18px !important}
+.V_3_5  .t1-question  .checkbox-outer:hover ,
+.V_3_5  .t1-question  .checkbox-outer.active,
 .V_3_5  .radio-outer-base:hover  , 
 .V_3_5  .radio-outer-base.active , 
 .V_3_5  .checkbox-outer-base:hover  , 
-.V_3_5  .checkbox-outer-base.active{background: transparent;}
-
+.V_3_5  .checkbox-outer-base.active , 
+.V_3_5  .t1-question  .radio-icon-custom:hover ,
+.V_3_5  .t1-question  .radio-icon-custom.active{background: transparent;}
 .V_3_5.one-page-card-new [type="radio"]:checked + label:after, 
 .V_3_5.one-page-card-new [type="radio"].with-gap:checked + label:before, 
 .V_3_5.one-page-card-new [type="radio"].with-gap:checked + label:after,
 .V_3_5.one-page-card-new [type="radio"]:not(:checked) + label:before, 
 .V_3_5.one-page-card-new [type="radio"]:not(:checked) + label:after ,
- .V_3_5.one-page-card-new [type="radio"]:checked + label:before, 
- .V_3_5.one-page-card-new [type="radio"]:checked + label:after, 
+#build .V_3_5.one-page-card-new [type="radio"]:checked + label:before, 
+#build .V_3_5.one-page-card-new [type="radio"]:checked + label:after, 
+.V_3_5.one-page-card-new [type="radio"]:checked + label:before, 
+.V_3_5.one-page-card-new [type="radio"]:checked + label:after, 
 .V_3_5.one-page-card-new [type="checkbox"]:not(:checked) + label:before, 
 .V_3_5.one-page-card-new [type="checkbox"]:not(:checked) + label:after ,
- .V_3_5.one-page-card-new [type="checkbox"]:checked + label:before, 
-.V_3_5.one-page-card-new [type="checkbox"].filled-in:checked + label:after,
- .V_3_5.one-page-card-new [type="checkbox"]:checked + label:after{margin: 18px 0 !important; top: 0 !important; left: 0 !important;}
- .V_3_5.one-page-card-new  [type="checkbox"].filled-in + label:before{    top: 2px !important;left: 1px !important;}
-.V_3_5.one-page-card-new .textfield label.control.control--checkbox, .V_3_5.one-page-card-new .textfield label.control.control--radio{padding-right: 0px !important}
+#build .V_3_5.one-page-card-new [type="checkbox"]:checked + label:before, 
+#build .V_3_5.one-page-card-new [type="checkbox"]:checked + label:after, 
+.V_3_5.one-page-card-new [type="checkbox"]:checked + label:before, 
+.V_3_5.one-page-card-new [type="checkbox"]:checked + label:after, 
+.V_3_5.one-page-card-new [type="checkbox"]:checked + label:before, 
+.V_3_5.one-page-card-new [type="checkbox"]:checked + label:after, 
+.V_3_5.one-page-card-new [type="checkbox"].filled-in:checked + label:before{margin: 18px 0 !important; top: 0 !important; left: 0 !important;}
+#build .V_3_5.one-page-card-new  [type="checkbox"].filled-in + label:before , .V_3_5.one-page-card-new  [type="checkbox"].filled-in + label:before{    top: 2px !important;left: 1px !important;}
+.V_3_5.one-page-card-new .checkbox-outer.textfield label.control.control--checkbox, 
+.V_3_5.one-page-card-new .radio-outer.textfield label.control.control--radio{padding-left: 0px !important}
+.V_3_5.one-page-card-new .checkbox-outer-base.textfield label.control.control--checkbox , 
+.V_3_5.one-page-card-new .radio-outer-base.textfield label.control.control--radio{padding-right: 0 !important}
 .V_3_5.one-page-card-new  .textfield.checkbox-outer-base .submit-checkbox-img{left: 0;}
 
 
@@ -7792,5 +7809,31 @@ fb_lead_gen + .lf-skip-btn {
     .V_3_5  .t1-question .question-components .check-comp .checkbox-outer-base  label ,
     .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label,
     .V_3_5  .t1-question .question-components .check-comp .checkbox-outer-base  label span ,
-    .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label span{font-size: 18px !important; line-height: 25px  }
+    .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label span , 
+    .V_3_5  .t1-question  .checkbox-outer , 
+    .V_3_5  .t1-question  .checkbox-outer label , 
+    .V_3_5  .t1-question  .checkbox-outer label span ,
+    .V_3_5  .t1-question  .radio-icon-custom , 
+    .V_3_5  .t1-question  .radio-icon-custom label , 
+    .V_3_5  .t1-question  .radio-icon-custom label span{font-size: 18px !important; line-height: 25px}
+    .V_3_5.one-page-card-new .t1-question  .selectize-input .item , .V_3_5.one-page-card-new .submit-textbox input[type="text"]  {font-size: 18px;}
 }
+
+
+.V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-webkit-slider-runnable-track{height: 2px; min-height: 2px;  background: #d4d4d4; }
+.V_3_5.one-page-card-new .range-slider1.custom-slider1  input[type=range]::-moz-range-track {height: 2px; min-height: 2px;  background: #d4d4d4; }
+.V_3_5.one-page-card-new .range-slider1.custom-slider1  input[type=range]::-ms-track {height: 2px; min-height: 2px;  background: #d4d4d4;   }
+.V_3_5.one-page-card-new .range-slider1.custom-slider1 .fill {  height: 2px;  }
+.V_3_5.one-page-card-new  .range-slider1.custom-slider1 span.thumb{opacity: 0; position: absolute; height: 0px;}
+.V_3_5.one-page-card-new  .range-slider1.custom-slider1 input[type='range']::-webkit-slider-thumb {     border: 2px solid #fff !important  }
+.V_3_5.one-page-card-new  .range-slider1.custom-slider1 input[type='range']::-moz-range-thumb {  border: 2px solid #fff !important   }
+.V_3_5.one-page-card-new  .submit-textbox{    border-left: 0px !important;border-right: 0px !important;border-top: 0px !important;}
+.V_3_5.one-page-card-new .submit-textbox input[type="text"] {margin: 0;}
+.V_3_5.one-page-card-new .submit-textbox input[type="text"].postfixset {padding-left: 10px;padding-right: 10px;}
+.V_3_5.one-page-card-new .t1-slider-question .input-field label.pre-icon , .V_3_5.one-page-card-new .t1-slider-question .input-field label.post-icon{border: 0px; background: transparent  }
+.V_3_5.one-page-card-new .t1-question .selectize-control.single .selectize-input, 
+.V_3_5.one-page-card-new .t1-question .selectize-dropdown.single {border-left: 0px !important;border-right: 0px !important;border-top: 0px !important; padding-left: 0px}
+
+.V_3_5.one-page-card-new .control-ver2 .checkbox-outer:last-child.active , 
+.V_3_5.one-page-card-new .control-ver2 .radio-outer.radio-icon-custom.active , 
+.V_3_5.one-page-card-new .control-ver2 .radio-outer.radio-icon-custom{border: 0px !important}
