@@ -2127,9 +2127,15 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     text-transform: uppercase;
     min-height: auto;
     padding: 11px 47px 11px 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    word-break: break-word;
+    margin: 0 auto !important;
 }
 .V_3_5 .loginBtn--facebook:before {
-    top: 7px !important;
+    top: auto !important;
     right: 8px !important;
     width: 30px !important;
     height: 30px !important;

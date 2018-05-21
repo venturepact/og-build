@@ -4735,9 +4735,14 @@ fb_lead_gen + .lf-skip-btn {
     text-transform: uppercase;
     min-height: auto;
     padding: 16px 50px 16px 18px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    word-break: break-word;
 }
 .V_3_5 .loginBtn--facebook:before {
-    top: 11px !important;
+    top: auto !important;
     right: 11px !important;
     width: 30px !important;
     height: 30px !important;
@@ -4886,3 +4891,7 @@ fb_lead_gen + .lf-skip-btn {
 }
 
 .V_3_5.template-five .t1-result .lead-popup  [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{background-color: #fff !important}
+.V_3_5 .result-v2 .leadAsPopup .loginBtn{float: left;}
+.V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
+    margin: 0 auto !important;
+}
