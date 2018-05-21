@@ -162,6 +162,8 @@
     .powered-by.lightPowered span {        color: #585858 !important;        text-shadow: none !important;        font-size: 10px;    }
     .landing-footer-outer .powered-by.lightPowered span {        /*color: #fff !important;        text-shadow: 3px 4px 3px rgba(0,0,0,0.5) !important;*/    }
     .page_2  .share-link {        width: auto;        z-index: 999;        position: relative;    }
+    .isIframe .page_1{ min-height: 100% !important; }
+    .isIframe .page_1 .result-fixed1{ min-height: 0 !important;}
     .redo-link ul li {        padding: 2px 6px;    }
     .redo-link ul li a {        font-size: 12px;    }
     .page_2 .disc-set {        float: left;        width: 100%;     word-break: break-word;      }
