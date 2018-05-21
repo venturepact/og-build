@@ -2496,6 +2496,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     font-size: 16px;
     color: #444;
     background: transparent !important;
+    display: none;
 }
 .V_3_5 .questions .section-head {
     font-size: 22px;
@@ -2521,7 +2522,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     border-bottom: 2px solid #ff6600;*/
     transform: rotate(0);
     transform-origin: 100% 100%;
-    border-radius: 2px !important;
+    border-radius: 25px !important;
 }
 .V_3_5 .sound-cloud-new [type="checkbox"].filled-in:checked + label:after{
     background: transparent !important;
@@ -2544,4 +2545,16 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .V_3_5 .radio-outer-base.active .control{
     color: #f60;
+}
+.V_3_5 .question-components {
+    padding-left: 0;
+    margin-left: 0;
+}
+.V_3_5 .section-control{
+    padding-left:0px;
+}
+.V_3_5 .questions .section-head span div {
+    width: 100%;
+    float: left;
+    font-size: 18px;
 }
