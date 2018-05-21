@@ -2485,7 +2485,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .questions .question-head {
     font-size: 22px;
     text-align: left;
-    color: #333;
     margin-bottom: 5px;
     line-height: 26px;
 }
@@ -2494,14 +2493,12 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .V_3_5 .questions .question-section-outer .question-number{
     font-size: 16px;
-    color: #444;
     background: transparent !important;
     display: none;
 }
 .V_3_5 .questions .section-head {
     font-size: 22px;
     line-height: 30px;
-    color: #444;
 }
 .V_3_5 .sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label:after{
     border-radius: 0px;
@@ -2514,12 +2511,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     left: 16px;
     width: 11px;
     height: 11px;
-    background: #ff6600;
     border: none !important;
-    /*border-top: 2px solid #ff6600;
-    border-left: 2px solid #ff6600;
-    border-right: 2px solid #ff6600;
-    border-bottom: 2px solid #ff6600;*/
     transform: rotate(0);
     transform-origin: 100% 100%;
     border-radius: 25px !important;
@@ -2534,18 +2526,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     background: transparent;
     border: none !important;
 }
-.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, 
-.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, 
-.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after {
-    border: 2px solid #f60;
-}
-.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, 
-.V_3_5 .sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{
-    background: #f60;
-}
-.V_3_5 .radio-outer-base.active .control{
-    color: #f60;
-}
 .V_3_5 .question-components {
     padding-left: 0;
     margin-left: 0;
@@ -2557,4 +2537,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     width: 100%;
     float: left;
     font-size: 18px;
+}
+.V_3_5 .sound-cloud-new .radio-outer.active .control.blink-border {
+    border: none !important;
+    background: none !important;
 }
