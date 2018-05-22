@@ -142,7 +142,9 @@ function createCalendar(calendar, element, adjuster){
         var toDate = new Date(calendar.Selected.Year, calendar.Selected.Month, (i+1));
         if(evDate.getTime() == toDate.getTime()){
           // eventname += calendar.Model[n].EventName + '/';
-          number.className += " eventday";
+          var classes = number.className.split(' ');
+          if(!classes.includes('eventday'))
+            number.className += " eventday";
           number.setAttribute("content", calendar.Model[n].Date);
           if(calendar.Model[n].EventName) {
             eventname.add(calendar.Model[n].EventName);
