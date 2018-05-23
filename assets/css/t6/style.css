@@ -8433,6 +8433,7 @@ input.postfixset {
 .likes-parent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .t1-slider-nav a{    position: relative;    width: 40px;    height: 40px;      text-align: center;    display: table-cell;    vertical-align: middle;    cursor: pointer; border-radius: 4px; outline: none;}

@@ -4928,7 +4928,27 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light i{
     font-size: 24px
 }
-.V_3_5 .t1-question .or-class {
-    padding: 0;
-    margin-bottom: -20px;
+
+
+.V_3_5 .or-class{margin: 0; padding: 0}
+.V_3_5 .t1-question .fb-outer {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
+.V_3_5 .t1-question .t1-ques-component leadform_question div + fb_lead_gen {
+    width:auto;
+    float: left;
+    margin-left: calc(50% + 50px);
+}
+.V_3_5 .t1-question leadform_question   fb_lead_gen {
+    width:auto;
+    float: left;
+    margin-left: 0;
+}
+.t1-ques-component leadform_question  fb_lead_gen  + .lf-skip-btn {
+    margin-top: 50px !important;
+    margin-left: 10px !important;
+}
+.t1-ques-component leadform_question div + fb_lead_gen + .lf-skip-btn{   margin-top: 65px !important;}
+
