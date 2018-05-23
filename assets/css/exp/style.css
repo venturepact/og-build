@@ -4893,3 +4893,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
     background: #e6e3e3;
 }
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}

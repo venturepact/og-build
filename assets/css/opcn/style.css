@@ -7749,6 +7749,9 @@ fb_lead_gen + .lf-skip-btn {
 .cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
     background: #e6e3e3;
 }
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}
 .t1-question .question-components .cal-outer span.month:last-child,.t1-question .question-components .cal-outer span.year:last-child,.t1-question .question-components .cal-outer span.decade:last-child {margin-right: 0;}
 
 .V_3_5  .t1-question-resultheading{font-size: 14px}

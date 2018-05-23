@@ -4636,15 +4636,17 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
       .V_3_5 .landing-page-mid button {font-size: 14px;min-height: auto;min-width: auto;padding: 15px 25px 15px; box-shadow:15px 15px 30px 0px rgba( 0, 0, 0 ,0.2)}
       .V_3_5 .question-number {height: 30px;padding:1px 4px 1px 7px;top: 0;}
       .V_3_5 .question-number sup {font-size: 13px;}
-      .V_3_5 button.btn.prime-action.ripple-light.back-action {
+      .V_3_5 button.btn.prime-action.ripple-light.next-new-btn,
+      .V_3_5 button.btn.prime-action.ripple-light.back-action ,
+      .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light {
         height: 36px;
-        display: flex;
-        align-items: center;
-        padding: 6px 10px
+      
+        padding: 6px 10px !important;
     }
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, 
-    .V_3_5 button.btn.prime-action.ripple-light.back-action i {
-        font-size: 18px
+    .V_3_5 button.btn.prime-action.ripple-light.back-action i ,
+    .V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light i{
+        font-size: 18px  !important;
     }
   
   }
@@ -4876,6 +4878,9 @@ fb_lead_gen + .lf-skip-btn {
 .cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
     background: #e6e3e3;
 }
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}
 
 .V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 32px}
 .V_3_5.template-five.structure-right-align [type="checkbox"] + label.leadform-checkbox{float: right;}
@@ -4908,14 +4913,22 @@ fb_lead_gen + .lf-skip-btn {
     float: none;
     margin: 0 auto;
 }
-
+.V_3_5 .t1-question .fb-outer {
+    margin-top: 50px;
+}
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, 
-.V_3_5 button.btn.prime-action.ripple-light.back-action {
+.V_3_5 button.btn.prime-action.ripple-light.back-action ,
+.V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light {
     height: 43px;
     display: flex;
     align-items: center;
 }
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, 
-.V_3_5 button.btn.prime-action.ripple-light.back-action i {
+.V_3_5 button.btn.prime-action.ripple-light.back-action i ,
+.V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light i{
     font-size: 24px
+}
+.V_3_5 .t1-question .or-class {
+    padding: 0;
+    margin-bottom: -20px;
 }

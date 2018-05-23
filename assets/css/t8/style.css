@@ -2269,6 +2269,9 @@ span.calendar-range {
 .cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
     background: #e6e3e3;
 }
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}
 
  .t1-ques-component .input-section .input-outer.checkbox {float: left; width: 100%}
  .t1-ques-component .input-section .input-outer.checkbox .input-icon-outer {display: block;float: left;}
