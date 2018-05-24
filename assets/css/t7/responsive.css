@@ -707,6 +707,20 @@
     a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+    .page_2 .input-section .input-outer.checkbox label.leadform-checkbox + div {
+        float: left;
+        width: 100%;
+        text-align: left;
+    }
+    .page_2 .input-section .input-outer.checkbox span {
+        left: 0 !important;
+        top: -10px !important;
+    }
+    .page_2 .input-section .dropdown.input-outer span{
+        top: auto !important;
+    }
+
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{

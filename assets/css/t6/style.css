@@ -8946,3 +8946,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 .template-six .input-outer.checkbox span {position: relative !important; top: 10px !important}
 .template-six  .input-outer.checkbox .input-field , .template-six  .input-outer.checkbox  .input-icon-outer{flex-direction: column}
+.template-six .result-v2.overlay-outerleadform .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+.template-six .result-v2.overlay-outerleadform [type="checkbox"]:checked + label.leadform-checkbox::before, 
+.result-v2.overlay-outerleadform  [type="checkbox"]:checked + label.control::before{color: #fff !important}
