@@ -820,34 +820,17 @@
     .range-slider1.custom-slider1 ul li:first-child {display: block;}
     .range-slider1.custom-slider1 ul li:last-child {display: block;}*/
 
-
     /* gdpr popup css */
     .gdpr-popup{ padding: 15px 20px;}
     .gdpr-popup-left{ width: 100%; padding-top: 25px;}
     .gdpr-popup-right{ width: 100%; text-align: center;}
 
     a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: relative;  bottom: 0;  right: inherit;  left: inherit;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-    .V_3_5 .or-class{font-size: 12px;}
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px !important;}
-    .V_3_5 .loginBtn{
-        padding: 9px 35px 9px 15px !important;
-        font-size: 13px !important;
-    }
-    .V_3_5 .loginBtn--facebook:before{
-        width: 25px !important;
-        height: 25px !important;
-        top: 5px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-    }
-     .V_3_5 .v3-fb-outer .t1-landing-leadform button.prime-action{
-        padding: 10px 30px !important;
-    }
+
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
