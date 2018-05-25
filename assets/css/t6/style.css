@@ -4812,10 +4812,10 @@ npm .t1-landing-leadform select option {
     margin-bottom: 0px;
     font-weight: normal;
     float: left;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 98%;
-    text-overflow: ellipsis;
-    height: 25px;
+    /* text-overflow: ellipsis;
+    height: 25px; */
     line-height: 25px;
     /* white-space: nowrap;
       transition: 0.5s; */
@@ -8874,3 +8874,78 @@ fb_lead_gen + .lf-skip-btn {
     text-align: center;
     margin-left: 0 !important;
 }
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+        margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+.template-six .input-outer.checkbox span {position: relative !important; top: 10px !important}
+.template-six  .input-outer.checkbox .input-field , .template-six  .input-outer.checkbox  .input-icon-outer{flex-direction: column}
+.template-six .result-v2.overlay-outerleadform .leaded-form-c [type="checkbox"].filled-in:checked+label:before, 
+.template-six .result-v2.overlay-outerleadform [type="checkbox"]:checked + label.leadform-checkbox::before, 
+.result-v2.overlay-outerleadform  [type="checkbox"]:checked + label.control::before{color: #fff !important}

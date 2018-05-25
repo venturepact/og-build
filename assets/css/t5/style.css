@@ -1810,7 +1810,7 @@
     }
     .selectize-dropdown {
         position: absolute;
-        z-index: 10;
+        z-index: 999;
         border: 1px solid #d0d0d0;
         background: #ffffff;
         margin: -1px 0 0 0;
@@ -4510,3 +4510,75 @@ fb_lead_gen + .lf-skip-btn {
     margin: 10px 0 !important;
     padding: 0 2px;
 }
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+
+.template-five .input-outer.checkbox span {position: relative !important; top: 10px !important}
+.template-five  .input-outer.checkbox .input-field{flex-direction: column}

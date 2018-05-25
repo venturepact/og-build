@@ -1079,6 +1079,17 @@
     }
         .fb-btn-outer{padding:0 30px;}
     fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1770,6 +1781,13 @@
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{  left: 50% !important; bottom: 49px !important;}
      fb_lead_gen + .lf-skip-btn {padding: 0 55px;margin-top:15px !important;}
     .fb-btn-outer{padding: 0 50px;}
+
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

@@ -918,6 +918,7 @@
         text-align: center;
         margin: 0 auto;
         float: none !important;
+        width: 100%;
     }
     .col {
         width: auto;
@@ -1133,7 +1134,8 @@
         font-size: 11px;
     }
     .t1-ques-component .input-section .input-outer.checkbox span {
-        top: 62px;
+        top: auto;
+        bottom: -27px;
     }
     .common-result-main .t1-result-leadform .input-outer.checkbox span {
         left: 0px;
@@ -1282,8 +1284,9 @@
         line-height: 22px;
         white-space: inherit;
     }
-    .one-page-card-new .t1-result [type="checkbox"] + label.leadform-checkbox {
+    .one-page-card-new .t1-result [type="checkbox"] + label.leadform-checkbox { 
         top: 5px;
+        white-space: normal;
     }
     .one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:after {
         height: 16px;
@@ -1486,6 +1489,21 @@
         right: 30px;
         text-align: right;
     }
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+    
+    .t1-landing .t1-landing-leadform{ width: 100%;}
+    .t1-landing .t1-landing-inner .t2btn-outr{ text-align: center;}
+    .t1-landing .t1-landing-inner .t2btn-outr button{ float: none;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .fb-like {
@@ -2428,7 +2446,7 @@
         font-size: 14px !important;
     }
     .one-page-card-new .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {
-        top: 18px;
+        top: 0.px;
         line-height: 22px;
     }
     .one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:after {
@@ -2504,6 +2522,12 @@
     .control-ver2 .pic-selector{ width: 49% !important;     padding-right: 4%; }
     .control-ver2 .pic-selector span.abhi{ font-size: 15px;}
     .t1-question .question-components .check-comp label.defaultOptionImage { background-size: 95px;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -3400,6 +3424,9 @@
     }
     .t1-landing-inner .input-field {
         height: 40px;
+    }
+    .t1-landing-inner .input-outer.checkbox .input-field{
+        height: auto;
     }
     .submit-textbox-btnresp {
         width: auto;

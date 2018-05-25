@@ -3854,10 +3854,7 @@ input[type=number] {
     font-weight: normal !important;
     line-height: 21px;
     float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 24px;
-    white-space: nowrap;
+
 }
 .t1-result-leadform select.leadform-select {
     width: 90%;
@@ -4473,9 +4470,11 @@ p > span > a {color: inherit; }
     border-radius: 50%;
     box-shadow: 8px 10px 0 10px rgba(0,0,0,.1);
     background-color: rgba(0,0,0,.1);
+    top: 3px;
 }
 .t1-landing .t1-landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{
     border-radius: 0;
+    box-shadow: -1px 1px 3px 2px rgba(0,0,0,.1);
 }
 .common-result-main [type="checkbox"]:focus + label.leadform-checkbox:after {
     -webkit-transform: scale(1);
@@ -4815,4 +4814,85 @@ p > span > a {color: inherit; }
 }
 fb_lead_gen + .lf-skip-btn {
     text-align: left;
+}
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+/********** gdpr***************/
+.inline-temp-new .landing-page-mid leadform .input-section .input-outer.checkbox span ,
+.inline-temp-new  .input-outer.checkbox span {
+    position: relative;
+    top: 10px !important;
+}
+.page_2 .input-section .input-outer.checkbox span {
+  position: relative;
+  float: left;
+  width: 100%;
+  top: 0!important;
 }

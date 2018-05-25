@@ -1970,3 +1970,77 @@ p > span > a {color: inherit; }
 .t1-ques-component .input-section .input-outer.checkbox { margin-bottom: 10px; margin-top: 0;}
 
 .common-result #follow, .common-result #like , .common-result #vk_subscribe {float: none !important; }
+
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+/******  gdpr ********/
+
+.template-eight .input-outer.checkbox span , .template-eight .common-result-main .t1-result-leadform .input-outer.checkbox  span {position: relative !important; top: 5px !important}
+.template-eight  .input-outer.checkbox .input-field , .template-eight  .input-outer.checkbox  .input-icon-outer{flex-direction: column}

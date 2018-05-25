@@ -5374,10 +5374,10 @@ visuals.visual-outr span.graph-title {
     float: left;
     /* overflow: hidden; */
     width: 98%;
-    text-overflow: ellipsis;
-    max-height: 25px;
+   
+
     line-height: 25px;
-    white-space: nowrap;
+
 }
 .one-page-card-new .leaded-form-c [type="checkbox"].filled-in:checked+label:before {
     top: 0px;
@@ -5452,6 +5452,7 @@ visuals.visual-outr span.graph-title {
 }
 .one-page-card-new .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {
     margin: 18px 11px !important;
+    left: 7px;
 }
 .one-page-card-new .landing-page-mid leadform .input-section .input-outer.w100 {
     width: 100% !important;
@@ -6678,7 +6679,7 @@ p > span > a {color: inherit; }
 }
 
 .one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox { padding-left: 35px; top: 3px; height: auto; position: relative!important;  width: 100%; text-align: left; line-height: normal;
-padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin-bottom: 0; font-weight: 400;float: left;overflow: hidden; width: 98%; text-overflow: ellipsis; max-height: 25px; line-height: 25px; white-space: nowrap;}
+padding-bottom: 8px; opacity: 1;padding-top: 0!important; cursor: pointer;margin-bottom: 0; font-weight: 400;float: left; width: 98%;line-height: 25px; }
 .one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after, .one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after { margin: 0 5px!important;border-radius: 0;}
 .one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:before {top: 2px;left: 5px;width: 8px;height: 14px;border-top: 2px solid transparent;border-left: 2px solid transparent; border-right: 2px solid #fff;border-bottom: 2px solid #fff; -webkit-transform: rotate(37deg);transform: rotate(37deg);-webkit-transform-origin: 100% 100%;transform-origin: 100% 100%;margin: 0!important;}
 
@@ -7045,4 +7046,95 @@ fb_lead_gen + .lf-skip-btn {
 }
 .lead-popup .fb-btn-outer {
     width: 100%;
+}
+
+/* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+    color: #fff;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+/******* for gdprv ********/
+
+.common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field, 
+.landing-page-mid leadform .input-section .input-outer.checkbox .input-field {
+    display: block;
+}
+ .landing-page-mid leadform .input-section .input-outer.checkbox span {
+    position: relative;
+    top: 0 !important;
+}
+.one-page-card-new .t1-question .input-outer.checkbox [type=checkbox]+label.leadform-checkbox {
+    line-height: 30px;
+    padding-top: 15px!important;
+    opacity: 1;
+}
+.common-result-main .t1-result-leadform .input-outer.checkbox span {
+    position: relative;
+    top: 5px!important;
+}
+.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .filled-in[type="checkbox"]:not(:checked) + label::before {
+    border-color: transparent !important;
 }

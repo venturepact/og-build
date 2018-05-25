@@ -581,7 +581,7 @@ temp { width: 100%; margin: 0 auto; display: block; }
 float: left;
 width: 100%;
  max-height: calc(60vh - 105px);
- overflow: auto; 
+ overflow-y: auto; 
 margin-bottom: 30px;
 padding-right: 15px;
 }
@@ -593,7 +593,7 @@ background-color: #f5f5f5;
 float: left;
 width: 100%;
 max-height: 110px;
-overflow: auto;
+overflow-y: auto;
 margin-bottom: 15px;
 }
 .result-scrolling2::-webkit-scrollbar-track {
@@ -1152,7 +1152,7 @@ cursor: pointer;
 margin-bottom: 0;
 border-radius: 0;
 margin-top: 5px;
-float: left; overflow: hidden;  text-overflow: ellipsis; max-height: 18px; white-space: nowrap; margin-left: 0!important; font-weight: normal !important;
+float: left;  margin-left: 0!important; font-weight: normal !important;
 }
 .sound-cloud-new select.leadform-select {
 float: left;
@@ -2141,3 +2141,89 @@ p > span > a {color: inherit; }
 
  .isIframe .page_1 .result-fixed1 {min-height: calc(100vh - 60px);}
  .isIframe .page_1 {min-height: 100vh !important;}
+
+
+ /* gdpr popup css */
+.gdpr-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999 !important
+}
+
+.gdpr-popup-left {
+    float: left;
+    width: 80%;
+}
+.gdpr-popup-left p{
+    color: #fff;
+    font-family: montserratlight;
+    font-size: 13px;
+    line-height: 25px;
+    margin-bottom: 0px;
+}
+.gdpr-popup-left p a{
+  color: #fff;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.gdpr-popup-left p a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.gdpr-popup-right {
+    float: right;
+    width: 15%;
+    font-family: montserratlight;
+    margin-top: 5px;
+}
+a.gdrp-cancel {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+a.gdrp-cancel:hover { opacity: 0.5;}
+a.gdrp-accept {
+    float: right;
+    padding: 10px 20px;
+    /* background: #fb5f66; */
+    border-radius: 50px;
+        margin-right: 20px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+a.gdrp-accept:hover {
+    opacity: 0.5;
+}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+
+/********** gdpr ***************/
+.landing-page-mid leadform .input-section .input-outer.checkbox span {
+  position: relative;
+  top: 15px;
+}
+.page_2 .input-section .input-outer.checkbox span {
+position: relative;
+float: left;
+width: 100%;
+top: 0!important;
+}
+.input-outer.checkbox .input-field {
+display: block;
+}
+.landing-page-mid .input-section .input-outer{float:none; display: inline-block; vertical-align: top}
+.landing-page-mid .input-section .input-outer.checkbox .input-field {width: 100%;  display: inline-block;}
