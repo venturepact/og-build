@@ -1142,6 +1142,16 @@
         min-height: 48px;
         line-height: 47px;
     }
+    .one-page-card-new.V_3_5 .t1-ques-component .input-section .input-outer.checkbox span{
+        top: auto;
+        bottom: -23px
+    }
+    .one-page-card-new.V_3_5 .t1-question .input-validation [type="checkbox"]+label.leadform-checkbox
+    {
+        line-height: 30px !important;
+        min-height: auto;
+        padding-top: 8px !important;
+    }
     .one-page-card-new .t1-question .filled-in[type="checkbox"]:not(:checked) + label.leadform-checkbox::after,
     .one-page-card-new .t1-question .filled-in[type="checkbox"]:checked + label.leadform-checkbox::after {
         margin: 12px 15px !important;
@@ -1568,7 +1578,7 @@
     .V_3_5 .loginBtn--facebook:before {
         width: 25px !important;
         height: 25px !important;
-        top: 5px !important;
+        top: auto !important;
         background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
         background-size: 15px !important;
         right: 5px !important;
@@ -1624,6 +1634,9 @@
         padding: 0 25px;
         margin:0 !important;
     }
+   .V_3_5.one-page-card-new leadform_question .or-class{text-align: center !important;}    
+   .V_3_5.one-page-card-new leadform_question .loginBtn{margin: 0 auto !important}
+   .V_3_5.one-page-card-new .leadAsPopup .or-class{text-align: center !important;}
 
 }
 @media (min-width: 480px) and (max-width: 767px) {
@@ -2608,6 +2621,16 @@
         color: #666e78!important;
         margin-bottom: 0px !important;
         font-weight: normal;
+    }
+    .one-page-card-new.V_3_5 .t1-ques-component .input-section .input-outer.checkbox span{
+        top: auto;
+        bottom: -23px
+    }
+    .one-page-card-new.V_3_5 .t1-question .input-validation [type="checkbox"]+label.leadform-checkbox
+    {
+        line-height: 30px !important;
+        min-height: auto;
+        padding-top: 8px !important;
     }
     .one-page-card-new .t1-question [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after,
     .one-page-card-new .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {

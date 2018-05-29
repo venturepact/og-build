@@ -698,6 +698,8 @@ Developer: Bhawna */
     .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
         text-align: center;
     }
+    .V_3_5 .lead-action-wrapper{width:100%;}
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: auto;margin-left: 0;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
