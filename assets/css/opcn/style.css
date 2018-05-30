@@ -7587,7 +7587,7 @@ fb_lead_gen + .lf-skip-btn {
 .template-section .template-container.mobile .V_3_5 .fb-outer{text-align: center;}
 .V_3_5 .landing-page-mid .or-class span{line-height: 1; float: left;}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{
-  padding: 11px 47px 11px 25px !important; 
+  padding: 13px 47px 12px 25px !important; 
   float: left; 
   margin: 0;
   text-transform:uppercase;
@@ -7664,13 +7664,13 @@ fb_lead_gen + .lf-skip-btn {
     margin-left:15px
 }
 .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p{
-    font-size: 66px;
-    line-height: 72px;
+    font-size: 60px;
+    line-height: 66px;
 }
 .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action {
     font-size: 16px;
     line-height: normal;
-    padding: 11px 45px;
+    padding: 13px 30px;
     border-radius: 25px;
 }
 .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {
@@ -7753,6 +7753,40 @@ fb_lead_gen + .lf-skip-btn {
 .cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
     background: none;
 }
+.cal-outer .datepicker table {
+    user-select: none;
+    margin: 0;
+}
+.cal-outer .datepicker td, .cal-outer .datepicker th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+.cal-outer .datepicker .picker-switch {
+    width: 152px;
+}
+
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span,
+.cal-outer .datepicker-years .table-condensed>tbody>tr>td span {
+    display: block;
+    width: 23%;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cal-outer .datepicker-decades .table-condensed>tbody>tr>td span.decade {
+    width: 50%;
+    margin: 0;
+    display: block;
+    float: left;
+}
 .t1-question .question-components .cal-outer span.month:last-child,.t1-question .question-components .cal-outer span.year:last-child,.t1-question .question-components .cal-outer span.decade:last-child {margin-right: 0;}
 
 .V_3_5  .t1-question-resultheading{font-size: 14px}
@@ -7801,22 +7835,16 @@ fb_lead_gen + .lf-skip-btn {
 
 .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action ,
 .V_3_5 .landing-page-mid button {       border-radius: 50px !important;}
+
 @media (min-width:767px){
-    .V_3_5 .landing-page-mid {
-        width: 50%;
-    }
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1 {
-        font-size: 72px;
-    }
-   
-    .V_3_5 .landing-page-mid button {
-
-        padding: 17px 40px;
-    }
-    .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {
-
-        padding: 13px 40px;
-    }
+    .one-page-card-new.V_3_5 .landing-page-mid .input-field label{top: 15px}
+    .V_3_5   .t1-landing.landing-text-left .landing-page-mid leadform {float: left;width: 85%;}
+    .V_3_5 .t1-landing.landing-text-center .landing-page-mid leadform {float: none;margin: 0 auto;display: inline-block;width: 85%;}
+    .V_3_5 .t1-landing.landing-text-right .landing-page-mid leadform {float: right;width: 85%;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 60px;}
+    .V_3_5 .landing-page-mid {width: 50%;}
+    .V_3_5 .landing-page-mid button {padding: 13px 30px;}
+    .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {padding: 13px 30px;}
     .V_3_5.one-page-card-new  .textfield .othersfield ,
     .V_3_5  .t1-question .question-components .check-comp .checkbox-outer-base  label ,
     .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label,
@@ -7867,3 +7895,23 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5 .landing-text-center .loginBtn{margin: 0 auto !important;}
 .V_3_5.one-page-card-new leadform_question .or-class {text-align: left !important;color: #363b3e !important;}
 .V_3_5.one-page-card-new .leadAsPopup .or-class {text-align: left !important;}
+
+
+/******* new improved *******/
+.V_3_5.one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox {top: 5px !important;}
+.V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after, 
+.V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after { margin: 0px!important;border-radius: 0; width: 18px; height: 18px; border: 1px solid #000}
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-outer i{left: 0px; width: auto}
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ input, 
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ textarea, 
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ label, 
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ .validate ~ label, 
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ .autocomplete-content,
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{padding-left: 23px !important}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.items input, 
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input{padding-left: 0 !important}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input {padding: 8px 35px 6px 0px !important; margin-top: 10px}
+.V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:before{left: 0px !important}
+.V_3_5.one-page-card-new .t1-landing-inner [type="checkbox"].filled-in:not(:checked) + label:before {top: 10px !important;left: 5px !important;margin: 0;}
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field .prefix ~ .validate ~ label:not(.label-icon).active   { padding-left: 0px !important;font-size: 12px !important;font-weight: normal !important;margin-left: 0 !important;}
+.V_3_5.one-page-card-new  .t1-landing-leadform .input-field [type="checkbox"].filled-in:checked + label:after{background-color: transparent !important}
