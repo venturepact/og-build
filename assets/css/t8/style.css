@@ -1725,7 +1725,7 @@ path.highcharts-plot-band {
     display: table;
     padding: 50px 15px;
     min-height: 480px;
-    overflow: hidden;
+    overflow: visible;
 }
 .eight-inner-wrapper.t1-landing-inner.logo-resizing {
     padding: 0;
@@ -2302,7 +2302,7 @@ span.calendar-range {
 .cal-outer .datepicker-months .table-condensed>tbody>tr>td span,
 .cal-outer .datepicker-years .table-condensed>tbody>tr>td span {
     display: block;
-    width: 23%;
+    width: 20%;
     float: left;
     margin: 1%;
     cursor: pointer;
