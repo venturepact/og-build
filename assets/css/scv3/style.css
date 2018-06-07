@@ -2323,7 +2323,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     text-transform: none;
 }
 .V_3_5 .loginBtn:before {
-    top: 5px !important;
+    top: 8px !important;
     right: 8px !important;
     width: 30px !important;
     height: 30px !important;
@@ -2497,7 +2497,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     text-transform: none;
     line-height: 24px;
     padding: 13px 40px;
-    margin-top: 20px !important;
+    margin-top: 15px !important;
 }
 .V_3_5 click-button .text-center {
     text-align: center;
@@ -2581,9 +2581,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .result-full-section {text-align: left;padding: 18px 25px;width: 100%;float: left;margin-bottom: 10px;}
 .V_3_5 .page_2 .temp2-default-result-outer.result-full-section .small-bot-sec p{width: 100%;float: left;}
 .V_3_5 .page_2 .result-scrolling-part .result-temp2-default-section {margin: 15px 0 0;padding: 0;}
-.V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-bot-sec p{font-size: 16px !important;line-height: 22px;}
+.V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-bot-sec p{font-size: 13px !important;line-height: 19px;}
 .V_3_5 .page_2 .result-full-section.result-temp2-default-section .small-top-sec p{text-align: left !important;font-size: 26px;line-height: 32px;}
-.V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-top-sec p{text-align: left !important;font-size: 22px;line-height: 28px;}
+.V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-top-sec p{text-align: left !important;font-size: 20px;line-height: 26px;}
+.V_3_5 .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 400px); padding: 0 25px;margin-bottom: 20px;}
 .V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-top-sec p {text-align: left;font-size: 28px;}
 .V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-bot-sec {width: 100% !important;float: left;}
 .V_3_5 .page_2 .temp2-default-result-outer.result-half-section .small-top-sec {width: 100% !important;float: left;text-align: left;}
@@ -2694,7 +2695,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .cal-outer .form-group { margin: 0;}
 .V_3_5 .radio-outer-base{margin-bottom: 8px;}
 .V_3_5 .radio-outer-base:last-child{margin-bottom: 0px;}
-.V_3_5 .page_2.hasbranding.result-fixed{margin-left: 9%;width: 33%;top:50px;}
+.V_3_5 .page_2.hasbranding.result-fixed{margin-left: 9%;width: 33%;top:35px;}
 .V_3_5 .page_2.result-fixed.t2haslogo{top:97px;}
 .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, 
 .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, 
@@ -2846,7 +2847,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .V_3_5 .cta-share{
     width: 100%;
-    padding: 5px 0;
+    padding: 10px 0 5px 0;
     display: block;
     margin: 0 auto !important;
     float: left;
@@ -2863,14 +2864,13 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     vertical-align: middle;
 }
 .V_3_5 i.fa-lg {
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: normal;
     vertical-align: middle !important;
     position: relative;
-    top: -2px;
+    top: -1px;
 }
 .V_3_5 .page_0 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) .selectize-input {padding: 0 !important;}
-.V_3_5 .sound-cloud-v3 .page_2 .redirect-heading{margin-bottom: 0 !important;}
 .V_3_5.sound-cloud-v3 .page_2 .redirect-heading { margin-bottom: 0 !important;}
 
 @keyframes slideInUp {
@@ -2891,8 +2891,14 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
 }
-.V_3_5 .page_2.result-fixed.t2haslogo{
+.V_3_5 .page_2{
     animation-duration: 700ms;
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
 }
+.V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{
+    max-height: calc(100vh - 425px);
+    padding: 0 25px;
+    margin-bottom: 10px;
+}
+.V_3_5.sound-cloud-v3 .share-heading{font-size: 16px;margin-top: 10px;}
