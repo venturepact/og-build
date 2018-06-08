@@ -355,14 +355,14 @@
    
    .V_3_5 .landing-page-mid .main-heading{
         padding: 0 !important;
-        font-size: 35px;
-        line-height: 42px;
+        font-size: 36px;
+        line-height: 40px;
         width: 100%;
         float: left;
     }
-    .V_3_5 .landing-page-mid .sub-heading{font-size: 18px;padding: 0;}
-    .V_3_5 .prime-action{padding: 10px 25px;margin-top: 20px;font-size: 14px;}
-    .V_3_5 .page_2 .btn.prime-action{font-size: 14px !important;margin: 30px 20px 0 !important;padding: 10px 25px;}
+    .V_3_5 .landing-page-mid .sub-heading{font-size: 14px;padding: 0;line-height: 20px;}
+    .V_3_5 .prime-action{padding: 11px 30px;margin-top: 20px;font-size: 13px;}
+    .V_3_5 .page_2 .btn.prime-action{font-size: 13px !important;margin: 30px 20px 0 !important;padding: 11px 30px !important;}
     .V_3_5 .page_2 .mid-width p {font-size: 18px !important;}
     .V_3_5 .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){font-size: 24px !important;}
     .V_3_5 .page_2 .temp2-default-result-outer.tr-bold-new.result-full-section .small-bot-sec p{font-size: 15px !important;}
@@ -379,7 +379,7 @@
     .V_3_5 .landing-text-left .landing-page-mid .input-section{padding: 0;}
     .V_3_5 .landing-text-left .t2btn-outr{padding: 0 !important;}
     .V_3_5 .landing-text-left fb_lead_gen{padding: 0 !important;}
-    .V_3_5 .landing-page-mid{padding: 80px 25px;}
+    .V_3_5 .landing-page-mid{padding: 80px 30px;}
     .V_3_5 .question-components{padding-left: 30px;}
     .V_3_5 .questions .question-section-outer .question-number{font-size: 11px;width: 22px !important;height: 22px !important;line-height: 23px;}
     .V_3_5 .page_2.result-fixed.t2haslogo{margin-top: 0 !important;}
@@ -394,8 +394,20 @@
     .V_3_5 .powered-by{box-shadow: none}
 
     /*welcome screen*/
-    .V_3_5 .landing-text-left .landing-page-mid .main-heading, .V_3_5 .landing-text-right .landing-page-mid .main-heading{width: 100%;float: left;}
-    .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 100px 40px;}
+    .V_3_5 .landing-text-left .landing-page-mid .main-heading, .V_3_5 .landing-text-right .landing-page-mid .main-heading{width: 85%;float: left;}
+    .V_3_5 .landing-text-left .landing-page-mid .sub-heading, .V_3_5 .landing-text-right .landing-page-mid .sub-heading{width: 85%;float: left;}
+    .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 80px 30px;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 11px 45px 11px 30px !important;font-size: 13px !important;float: none !important;}
+
+    .date-selector-part .cal-outer.calender-date {width: 100%;}
+    .calendar-range{width: 100%;float: left;}
+    .date-selector-part span.calendar-range {width: 100%; padding: 10px;float: left; }
+    .V_3_5 .help-text p {font-size: 13px;line-height: 19px;margin-top: 2px;}
+    .V_3_5 .page_2 .loginBtn{
+        padding:11px 45px 10px 32px !important;
+        font-size: 13px !important;
+        line-height: 19px !important;
+    }
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     .landing-page-mid .main-heading h1{        font-size: 42px;        line-height: 46px;        margin-top: 0px;    }
@@ -524,6 +536,27 @@
     .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;}
     .V_3_5 .t2haslogo .new-lead-common1 .result-mid.result-comm.result-scrolling{padding: 0 !important;}
     .V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{padding: 0 !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
+        padding: 12px 45px 12px 25px !important;
+        font-size: 16px !important;
+        float: none !important;
+    }
+    .V_3_5 .loginBtn:before{
+        width: 25px !important;
+        height: 25px !important;
+        top:8px !important;
+    }
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{
+        top:auto !important;
+        background-position: 5px center !important;
+        background-size: 15px !important;
+    }
+    .V_3_5 .loginBtn{padding: 11px 40px 11px 14px !important;}
+    .V_3_5 .landing-text-right fb_lead_gen,.V_3_5 .landing-text-left fb_lead_gen {
+        padding: 0 20px;
+        width: 100%;
+        float: left;
+    }
 }
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .main-bg{ min-height: 500px; }
@@ -571,25 +604,4 @@
     .landing-page-mid .or-class{font-size: 12px}
     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
     .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
-        padding: 12px 45px 12px 25px !important;
-        font-size: 16px !important;
-        float: none !important;
-    }
-        .V_3_5 .loginBtn:before{
-        width: 25px !important;
-        height: 25px !important;
-        top:8px !important;
-    }
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{
-        top:auto !important;
-        background-position: 5px center !important;
-        background-size: 15px !important;
-    }
-    .V_3_5 .loginBtn{padding: 11px 40px 11px 14px !important;}
-    .V_3_5 .landing-text-right fb_lead_gen,.V_3_5 .landing-text-left fb_lead_gen {
-        padding: 0 20px;
-        width: 100%;
-        float: left;
-    }
 }

@@ -2394,11 +2394,12 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     outline: none !important;
     box-shadow: none !important;
 }
-.calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#5e5e5e;text-align: center;}
+.calendar-range{width: 100%;float: left;padding: 10px 0;color:#5e5e5e;text-align: center;}
 /*dropdown style*/
 .cal-outer .dropdown-menu {
     padding: 10px !important;
     text-align: center !important;
+    font-size: 11px !important;
 }
 .cal-outer .table-condensed>thead>tr>th {
     text-align: center !important;
@@ -2478,6 +2479,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     display: block;
     float: left;
 }
+.date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 50px);}
+.date-selector-part span.calendar-range {width: 100px;padding: 0;}
+
+
  .isIframe .page_1 .result-fixed1 {min-height: calc(100vh - 60px);}
  .isIframe .page_1 {min-height: 100vh !important;}
 
@@ -2573,9 +2578,9 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .section-control{padding-left:0px;}
 .V_3_5 .questions .section-head span div {width: 100%;float: left; font-size: 18px;line-height: 24px;}
 .V_3_5.sound-cloud-new .checkbox-outer.active .control{background: none !important;border: none !important;}
-.V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:before {background: none;}
-.V_3_5.sound-cloud-new .check-comp .checkbox-outer .control__indicator.check-set{top: 3px !important;}
-.V_3_5.sound-cloud-new .check-comp .checkbox-outer.active .control__indicator.check-set i{color: #fff;border-radius: 3px;}
+.V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:before {background: none;border: none !important;top: 2px;}
+.V_3_5.sound-cloud-new .check-comp .checkbox-outer .control__indicator.check-set{top: 1px !important;}
+.V_3_5.sound-cloud-new .check-comp .checkbox-outer.active .control__indicator.check-set i{color: #fff;border-radius: 3px;font-size:16px;}
 .V_3_5.sound-cloud-new .radio-outer.active .control.blink-border {border: none !important;background: none !important;}
 .V_3_5 .page_2 .result-fixed1{padding:0;box-shadow: none;background: transparent;}
 .V_3_5 .result-full-section {text-align: left;padding: 18px 25px;width: 100%;float: left;margin-bottom: 10px;}
@@ -2637,8 +2642,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .sec-divison {width: 35px;float: left;border-radius: 1px;position: absolute;left: -40px;top: 23%;display: none;}
 .V_3_5 .question-components .check-comp label{font-size: 16px;min-height: 20px;line-height: 20px;}
 .V_3_5 .custom-block.rating-custom .rating-inner i{padding: 1px !important;}
-.V_3_5 .t2haslogo .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 440px);padding: 0 25px;margin-bottom: 20px;}
-.V_3_5 .t2haslogo .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 470px);padding: 0 25px;margin-bottom: 20px;}
+.V_3_5 .t2haslogo .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 440px);padding: 0 25px;margin-bottom: 20px;padding-left: 0px;}
+.V_3_5 .t2haslogo .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 470px);padding: 0 25px;margin-bottom: 20px;padding-left: 0px;}
+.V_3_5 .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 400px); padding: 0 25px;margin-bottom: 20px;padding-left:0px;}
+.V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 425px);padding: 0 25px;margin-bottom: 10px;padding-left: 0px;}
 .V_3_5 .page_2 .btn.prime-action{border-radius: 0px !important;padding: 12px 25px !important;font-size: 16px !important;margin-top: 15px !important;}
 .V_3_5 .section-outer{position: relative;margin-top: 0;}
 .V_3_5 .select__arrow{display: none;}
@@ -2902,3 +2909,18 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     margin-bottom: 10px;
 }
 .V_3_5.sound-cloud-v3 .share-heading{font-size: 16px;margin-top: 10px;}
+.V_3_5 .help-text p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.V_3_5 .check-comp .control--radio .control__indicator.icon-set i{font-size: 16px;top: 1px;}
+.V_3_5.sound-cloud-new .radio-outer.active .control i{font-size: 16px;}
+.V_3_5 .question-components .check-comp label:hover {background: none;}
+.V_3_5 .check-comp .checkbox-outer .control__indicator.check-set i{font-size: 16px;}
+/*fb btn leadgen css*/
+.V_3_5 .page_2 .loginBtn{
+    font-size: 16px !important;
+    padding: 12px 45px 12px 25px !important;
+    line-height: 22px !important;
+}
