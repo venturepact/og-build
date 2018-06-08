@@ -7672,12 +7672,12 @@ fb_lead_gen + .lf-skip-btn {
     border-radius: 25px;
 }
 .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {
-    padding: 11px 47px 11px 25px !important;
+    /* padding: 11px 47px 11px 25px !important; */
     margin: 0 auto !important;
 }
-.V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
+/* .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
     padding: 11px 47px 11px 25px !important;
-}
+} */
 .V_3_5 .common-result-main .fb-outer {
     text-align: center;
 }
@@ -7872,7 +7872,7 @@ fb_lead_gen + .lf-skip-btn {
     .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 60px;}
     .V_3_5 .landing-page-mid {width: 45%;}
     .V_3_5 .landing-page-mid button {padding: 13px 40px;}
-    .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {padding: 13px 30px;}
+    /* .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action {padding: 13px 30px;} */
     .V_3_5.one-page-card-new  .textfield .othersfield ,
     .V_3_5  .t1-question .question-components .check-comp .checkbox-outer-base  label ,
     .V_3_5  .t1-question .question-components .check-comp .radio-outer-base  label,
@@ -7916,7 +7916,9 @@ fb_lead_gen + .lf-skip-btn {
 .V_3_5.one-page-card-new .landing-text-center fb_lead_gen{margin: 0; }
 .V_3_5 .landing-text-center .landing-page-mid {width: 70%;max-width: 100%;float: none;margin: 0 auto;}
 .V_3_5 .landing-text-center .landing-page-mid  .main-heading, 
-.V_3_5 .landing-text-center .landing-page-mid  .main-heading h1{width: 100%}
+.V_3_5 .landing-text-center .landing-page-mid  .main-heading h1,
+.V_3_5 .landing-text-center .landing-page-mid  .main-heading h1 p,
+.V_3_5 .landing-text-center .landing-page-mid  .main-heading p{width: 100%}
 .V_3_5.one-page-card-new .landing-text-left .or-class {text-align: left !important}
 .V_3_5.one-page-card-new .landing-text-right .or-class {text-align: right !important; }
 .V_3_5.one-page-card-new .rating-custom .submit-textbox {
@@ -8066,7 +8068,7 @@ span.lead-close:hover{opacity: 1; transition: 0.5s}
 .V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox {min-height: auto;}
 .V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .input-outer.dropdown{margin-top: 0px}
 .V_3_5 .common-result-space.t1-result-main .selectize-control.single .selectize-input  input{height: auto; }
-.V_3_5 .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input{    padding-left: 0; border-bottom: 1px solid rgba(255,255,255,0.4) !important;  box-shadow: none !important;}
+/* .V_3_5 .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input{    padding-left: 0; border-bottom: 1px solid rgba(255,255,255,0.4) !important;  box-shadow: none !important;} */
 .V_3_5.one-page-card-new .common-result-space.t1-result-main [type="checkbox"].filled-in:not(:checked) + label:after,
 .V_3_5.one-page-card-new .common-result-space.t1-result-main [type="checkbox"].filled-in:not(:checked) + label:after ,
 .V_3_5.one-page-card-new .overlay-outerleadform.result-v2 .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{border-width: 1px !important; width: 18px !important; height: 18px !important;}
@@ -8089,9 +8091,7 @@ span.lead-close:hover{opacity: 1; transition: 0.5s}
 
 .V_3_5.one-page-card-new .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 0}
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input input{height:auto}
-.V_3_5.one-page-card-new  .result-v2 .common-result-bot-icons.side-redo:after{width: 120px 165px 0px 0}
-.V_3_5.one-page-card-new .result-v2 .common-result-bot-icons.side-redo .crb-left{bottom: 7px; right: 38px;}
-.V_3_5.one-page-card-new .t1-result .no-footer-links.no-header-links{padding-bottom: 60px}
+
 .V_3_5.one-page-card-new  .common-result-main .t1-result-topheading p{padding: 0}
 .V_3_5.one-page-card-new  .result-v2 .common-result-main .t1-result-topheading{margin-bottom: 15px}
 .V_3_5.one-page-card-new  .result-v2 .common-result-main .t1-result-topheading p{font-size: 26px}

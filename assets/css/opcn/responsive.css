@@ -4,6 +4,14 @@
 }
 
 @media (min-width: 0px) and (max-width: 767px) {
+    .V_3_5 .progress{
+        position: relative;
+        top: 0;
+        margin: 0 auto;
+        left: 0px;
+        right: inherit;
+        margin-top: 10px;
+    }
     .fb-outer,.landing-footer-outer .text-right,.landing-page-header,.t1-landing-top,.t1-question-mid{text-align:center}
 
 
@@ -402,7 +410,7 @@
 
 /*************************IMPROVED *************************/
 .V_3_5.one-page-card-new .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;}
-.V_3_5.one-page-card-new .landing-footer-outer .powered-by span {font-size: 8px !important;}
+.V_3_5.one-page-card-new .landing-footer-outer .powered-by span ,  .V_3_5.one-page-card-new  .result-branding .powered-by span{font-size: 8px !important;}
 .V_3_5.one-page-card-new .powered-by img {width: auto;height: 12px !important;}
 
 .V_3_5.one-page-card-new .t1-ques-head .help-text {font-size: 13px;}
@@ -1186,7 +1194,7 @@
         top: auto !important;
         background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
         background-size: 15px !important;
-        right: 5px !important;
+        right: 10px !important;
     }
     /* .V_3_5 .v3-fb-outer .main-heading, .v3-fb-outer .main-heading h1, .v3-fb-outer .main-heading p {
         font-size: 26px !important;
@@ -1259,14 +1267,7 @@
     }
 
 
-    .V_3_5 .progress{
-        position: relative;
-        top: 0;
-        margin: 0 auto;
-        left: 0px;
-        right: inherit;
-        margin-top: 10px;
-    }
+  
     .landing-text-center .landing-page-mid{
         width: 100% !important;
         text-align: center;
@@ -3805,8 +3806,8 @@
   }
   .t1-result-inner {
     width: 97%;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .t1-result-full-section {
     width: 100% !important;
