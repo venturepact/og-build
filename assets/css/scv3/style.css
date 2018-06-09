@@ -2502,7 +2502,34 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     text-transform: none;
     line-height: 24px;
     padding: 13px 40px;
-    margin-top: 15px !important;
+    margin-top: 15px !important;    
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    z-index: 9;
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+.V_3_5 .prime-action:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 0;
+    opacity: 0;
+    -webkit-transform: scale3d(0.6, 0.6, 1);
+    transform: scale3d(0.6, 0.6, 1);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.V_3_5 .prime-action:hover::before {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
 }
 .V_3_5 click-button .text-center {
     text-align: center;
@@ -2558,7 +2585,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     -webkit-transform: none;
     transform: none;
     color: #ffffff !important;
-    font-size: 17px;
+    font-size: 14px;
     left: 12px !important;
     right: 0;
     top: -1px !important;
@@ -2816,7 +2843,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .V_3_5 .page_2 .result-scrolling-part .result-temp2-default-section:first-child { margin-top: 0px;padding-top: 0px;}
 .V_3_5 .landing-text-left .landing-page-mid .input-section{float: left;}
-.V_3_5 .landing-text-right .landing-page-mid .input-section{float: right;}
+.V_3_5 .landing-text-right .landing-page-mid .input-section{float: right;padding-right:0px;}
 .V_3_5 .landing-text-left .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {float: left;}
 .V_3_5 .landing-text-right .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {float: right;}
 .V_3_5 .page_2 .prefix ~ label.active {
@@ -2937,7 +2964,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     padding: 12px 45px 12px 25px !important;
     line-height: 22px !important;
 }
-.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{top: 1px !important;left:0px !important;}
+.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{top: 2px !important;left:0px !important;}
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in + label.leadform-checkbox:before, 
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in + label.leadform-checkbox:after{
     top: 1px;
