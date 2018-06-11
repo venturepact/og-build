@@ -3,6 +3,7 @@ var og_et = '';
 var og_ee = '';
 var og_etf = '';
 var og_etv = '';
+var og_ecd = '';
 var og_p = '';
 var iframe_id = '';
 var og_start = false;
@@ -40,6 +41,7 @@ function initIframe(id) {
 	og_ee = og_e.getAttribute('data-embedExit');
 	og_etf = og_e.getAttribute('data-embedTimeFormat');
 	og_etv = og_e.getAttribute('data-embedTimeValue');
+	og_ecd = og_e.getAttribute('data-embedCookieDays');
 	var og_b = document.getElementsByTagName("body")[0];
 	var iWidth = window.innerWidth;
 	if (og_e.getAttribute('data-bgcolor')) var og_bc = og_e.getAttribute('data-bgcolor');
@@ -144,7 +146,7 @@ function initIframe(id) {
 		anchorTag.appendChild(node)
 	}
 	og_e.appendChild(anchorTag);
-	if(og_et === 'true') {
+	if(og_es === 'true' && og_et === 'true') {
 		var embedTimeout = 2500;
 		if(og_etf === '1') {
 			embedTimeout = Number(og_etv)*60*1000;
@@ -200,8 +202,8 @@ addEvent(document, "mouseout", function(event) {
     event = event ? event : window.event;
     var from = event.relatedTarget || event.toElement;
     if ( (!from || from.nodeName == "HTML") && event.clientY <= 100 ) {
-		if(og_ee === 'true' && !og_start && !readCookie('og_embed_visited')) {
-			createCookie('og_embed_visited', true, 10);
+		if(og_es === 'true' && og_ee === 'true' && !og_start && !readCookie('og_embed_visited')) {
+			createCookie('og_embed_visited', true, og_ecd);
 			if (og_p == 'outgrow-p') {
 				togglePopup(iframe_id);
 			}
@@ -214,7 +216,7 @@ addEvent(document, "mouseout", function(event) {
 
 function toggleScheduleDrawer(id) {
 	if(!og_start && !readCookie('og_embed_visited')) {
-		createCookie('og_embed_visited', true, 10);
+		createCookie('og_embed_visited', true, og_ecd);
 		og_start = true;
 		if(!document.getElementById('drawer-iframe-'+id).classList.contains('hide')) document.getElementById('drawer-iframe-'+id).src=document.getElementById('drawer-iframe-'+id).src; document.getElementById("overlay-drawer-"+id).classList.toggle("hide"); document.getElementById("drawer-iframe-"+id).classList.toggle("hide");document.getElementById("close-drawer-"+id).classList.toggle("hide");
 	}
@@ -222,7 +224,7 @@ function toggleScheduleDrawer(id) {
 
 function toggleSchedulePopup(id) {
 	if(!og_start && !readCookie('og_embed_visited')) {
-		createCookie('og_embed_visited', true, 10);
+		createCookie('og_embed_visited', true, og_ecd);
 		og_start = true;
 		var iWidth = window.innerWidth;
 		if(iWidth > 786){
