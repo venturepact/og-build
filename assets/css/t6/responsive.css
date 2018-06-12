@@ -358,40 +358,9 @@
     .gdpr-popup-right{ width: 100%; text-align: center;}
 
     a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-        font-size: 14px;
-    }
-    .V_3_5 .loginBtn:before{
-        width: 25px !important;
-        height: 25px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-        top: 8px !important;
-    }
-    .V_3_5 fb_lead_gen {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-bottom: 50px;
-    }
-    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-        float: none;
-        font-size: 13px !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
-        padding: 9px 35px 9px 15px !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
-        text-align: center;
-    }
-    .cal-outer .input-group-addon{min-width: 40px;}
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -643,12 +612,6 @@
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input { width: 98%; }
 
 
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
-
-
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape) {
  
@@ -663,11 +626,6 @@
     .t1-result-main{padding-top: 70px;}
     .graded-msgbox-outr{ width: 60%;}
     .isIframe .landing-footer-outer{min-height: 36px;}
-
-    /* gdpr popup css */
-    .gdpr-popup{ padding: 15px 20px;}
-    .gdpr-popup-left{ width: 70%;}
-    .gdpr-popup-right{ width: 25%; }
    
 
 }
@@ -1095,5 +1053,4 @@
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
     .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }
 .question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
-    .landing-page-mid leadform .input-section .input-outer.checkbox span{top:0 !important;}
 }
