@@ -411,8 +411,10 @@
     
     /*leadgen spacing*/
     .V_3_5 .landing-page-mid .input-section .input-outer input{margin-top: 0px;}
-    .V_3_5 .sound-cloud-new .landing-page-mid .input-field label{top: 7px;}
+    .V_3_5.sound-cloud-new .landing-page-mid .input-field label{top: 7px;}
     .V_3_5 .input-field .prefix{top: 9px !important;}
+    .V_3_5 .landing-page-mid .input-section .input-outer span{top: 35px;}
+    .V_3_5 .landing-page-mid .input-section{margin-top: 0px !important;}
 
     .date-selector-part .cal-outer.calender-date {width: 100%;}
     .calendar-range{width: 100%;float: left;}
@@ -541,6 +543,7 @@
     .V_3_5 .sec-divison{width:30px;left: -35px;}
     .V_3_5 .selectize-input .item{font-size: 15px;}
     .V_3_5 .landing-text-right .landing-page-mid .input-section{width: 85% !important;padding: 0px}
+    .V_3_5 .landing-text-center .landing-page-mid .input-section{width: 85% !important;}
     .V_3_5 .landing-text-left .landing-page-mid .input-section{padding: 0;width: 85% !important;}
     .V_3_5 .landing-text-left .t2btn-outr{padding: 0 !important;}
     .V_3_5 .landing-text-left fb_lead_gen{padding: 0 !important;}

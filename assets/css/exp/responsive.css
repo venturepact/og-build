@@ -852,6 +852,8 @@
     .t1-landing-leadform button.prime-action i {
         display: none;
     }
+    .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
+    .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     /*.landing-page-header a img {
