@@ -6385,7 +6385,8 @@ fb_lead_gen+.lf-skip-btn{
     width:100%;
     height:auto;
     padding-left:35px!important;
-    min-height:30px
+    min-height:30px;
+    padding-top:0!important;
 }
 .V_3_5 .t1-question .checkbox-outer,.V_3_5 .t1-question .radio-icon-custom{
     border:0;
@@ -6452,7 +6453,8 @@ fb_lead_gen+.lf-skip-btn{
 .V_3_5 .checkbox-outer label.control.control--checkbox.blink-border.defaultOptionImage,.V_3_5 .radio-outer.radio-icon-custom label.control.control--radio.blink-border.defaultOptionImage{
     min-height:30px!important;
     height:auto!important;
-    padding-left:35px!important
+    padding-left:35px!important;
+    padding-top: 0px !important;
 }
 .V_3_5 .checkbox-outer.textfield label.control.control--checkbox.blink-border.defaultOptionImage,.V_3_5 .radio-outer.radio-icon-custom.textfield label.control.control--radio.blink-border.defaultOptionImage{
     padding-left:0!important;
@@ -6500,8 +6502,8 @@ fb_lead_gen+.lf-skip-btn{
         font-size:16px!important;
         line-height:22px;
         margin:0;
-        padding-top:0!important;
-        color:#444
+     
+        color:#444;
     }
     .V_3_5.one-page-card-new .submit-textbox input[type=text],.V_3_5.one-page-card-new .t1-question .question-components .cal-outer input,.V_3_5.one-page-card-new .t1-question .selectize-input .item{
         font-size:16px

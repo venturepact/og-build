@@ -3140,4 +3140,95 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 
 
+
+/* social feeds in popup css start */
+.share-popup .new-socialBtn.btn-lg .help-checktip {
+    float: left;
+    background-color: #61696c;
+    color: #fff;
+    padding: 8px 11px;
+    width: 180px;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    border-radius: 3px;
+    visibility: hidden;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.5);
+    text-align: left;
+    left: -74px;
+    line-height: 1.42857143;
+    text-transform: none;
+    z-index: 99;
+    font-family: montserratlight;
+    bottom: inherit;
+  }
+  .share-popup .new-socialBtn.btn-lg .help-checktip:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -11px;
+    width: 10px;
+    height: 10px;
+    border-top: 6px solid #61696c;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+  }
+  .share-popup .new-socialBtn.btn-lg:hover .help-checktip {
+    visibility: visible;
+    top: -38px;
+    width: auto;
+    left: -16px;
+    min-width: 70px;
+    text-align: center;
+  }
+  .share-popup a.btn-fb.new-socialBtn, .share-popup a.btn-twitter.new-socialBtn, .share-popup a.btn-in.new-socialBtn {
+    margin: 0!important;
+    margin-left: 5px!important;
+    margin-bottom: 5px!important;
+    margin-top: 5px!important;
+    border-radius: 50% !important;
+    height: 33px !important;
+    width: 33px !important;
+    text-align: center !important;
+    display: inline-block !important; 
+    padding: 0 !important;
+    position: relative !important; 
+    background: transparent !important;
+    color: #fff;
+  }
+  .share-popup a.btn-fb.new-socialBtn i, .share-popup a.btn-twitter.new-socialBtn i, .share-popup a.btn-in.new-socialBtn i {
+    vertical-align: middle;
+    font-size: 18px !important;
+    float: none;
+    display: inline-block;
+    padding-top: 8px;
+    position: relative;
+    z-index: 1;
+    color: inherit;
+  }
+  
+  
+  .share-popup .new-socialBtn.btn-fb::before{ box-shadow: inset 0 0 0 35px #4267b2;}
+  .share-popup .new-socialBtn.btn-fb:hover{ color:#365899; }
+  .share-popup .new-socialBtn.btn-fb:hover::before { box-shadow: inset 0 0 0 2px #4267b2;}
+  
+  .share-popup .new-socialBtn.btn-twitter::before{ box-shadow: inset 0 0 0 35px #00CDFF;}
+  .share-popup .new-socialBtn.btn-twitter:hover{ color:#00CDFF; }
+  .share-popup .new-socialBtn.btn-twitter:hover::before { box-shadow: inset 0 0 0 2px #00CDFF;}
+  
+  .share-popup .new-socialBtn.btn-in::before{ box-shadow: inset 0 0 0 35px #007BB6;}
+  .share-popup .new-socialBtn.btn-in:hover{ color:#007BB6; }
+  .share-popup .new-socialBtn.btn-in:hover::before { box-shadow: inset 0 0 0 2px #007BB6;}
+  
+  .share-popup .new-socialBtn.btn-wts::before{ box-shadow: inset 0 0 0 35px #34af23;}
+  .share-popup .new-socialBtn.btn-wts:hover{ color:#34af23; }
+  .share-popup .new-socialBtn.btn-wts:hover::before { box-shadow: inset 0 0 0 2px #34af23;}
+  
+  .share-popup .new-socialBtn.btn-email::before{ box-shadow: inset 0 0 0 35px #ff4343;}
+  .share-popup .new-socialBtn.btn-email:hover{ color:#ff4343; }
+  .share-popup .new-socialBtn.btn-email:hover::before { box-shadow: inset 0 0 0 2px #ff4343;}
+  /* social feeds in popup css end */
+
+
 /* social feeds icons animation css end */
