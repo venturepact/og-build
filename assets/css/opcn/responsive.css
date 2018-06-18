@@ -481,10 +481,10 @@
     a.gdrp-cancel-icon{font-size:16px;color:#fff;transition:all .5s ease;display:block;position:absolute;right:0;padding:5px 10px;top:9px}
     a.gdrp-cancel-icon:hover{opacity:.5}
     .t1-landing .t1-landing-inner .t2btn-outr button{float:none}
-    .V_3_5.one-page-card-new .powered-by .poweredby-text{font-size:10px!important;margin-left:3px}
+    /*.V_3_5.one-page-card-new .powered-by .poweredby-text{font-size:10px!important;margin-left:3px}
     .V_3_5.one-page-card-new .powered-by{box-shadow: none !important}
     .V_3_5.one-page-card-new .landing-footer-outer .powered-by span,.V_3_5.one-page-card-new .result-branding .powered-by span{font-size:8px!important}
-    .V_3_5.one-page-card-new .powered-by img{width:auto;height:12px!important}
+    .V_3_5.one-page-card-new .powered-by img{width:auto;height:12px!important}*/
     .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:13px; line-height: 17px;}
     .V_3_5.one-page-card-new .t1-slider-question{padding:20px 20px 30px}
     .V_3_5 .landing-page-mid button{font-size:13px!important;padding:11px 30px!important}
@@ -545,10 +545,15 @@
     .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer{margin-bottom:20px}
     .V_3_5 .t1-ques-head{line-height:22px;margin-bottom: 15px !important}
     .V_3_5.one-page-card-new .t1-landing .main-heading p,
-     .V_3_5.one-page-card-new .t1-landing .main-heading {max-width: 100% !important;width: 100%;}
-     .V_3_5 .t1-landing-leadform{width: 85%}
-     .V_3_5 .control-ver2 .pic-selector:nth-child(3){margin-top: 20px !important}
-
+    .V_3_5.one-page-card-new .t1-landing .main-heading {max-width: 100% !important;width: 100%;}
+    .V_3_5 .t1-landing-leadform{width: 85%}
+    .V_3_5 .control-ver2 .pic-selector:nth-child(3){margin-top: 20px !important}
+    /*branding*/
+    .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
+    .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
+    .V_3_5 .powered-by span {font-size: 8px;}
+    .V_3_5 .powered-by img {width: auto;height: 12px;}
+    .V_3_5 .powered-by{box-shadow: none}
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
@@ -1218,6 +1223,12 @@
     .landing-page-mid button,.landing-page-mid leadform button.prime-action{margin-top:20px}
 }
 @media (min-width:768px) and (max-width:1024px){
+    .V_3_5.one-page-card-new .submit-checkbox-img, 
+    .V_3_5.one-page-card-new .submit-checkbox, 
+    .V_3_5.one-page-card-new .t1-question .submit-textbox-btn,
+     .V_3_5.one-page-card-new .submit-textbox-btnresp{padding: 6px 15px !important; font-size: 11px}
+     .V_3_5 .t1-result .no-footer-links.no-header-links {padding-top: 90px;}
+     .V_3_5.one-page-card-new .common-result .t1-logo{margin: 0 !important}
     .or-class{width:100%!important;margin:10px 0;padding:0 30px!important}
     .textfield label.control.control--checkbox,.textfield label.control.control--radio{float:left;width:auto!important;padding:20px 40px 20px 0}
     .otherfield-inputbtn input.othersfield,input.othersfield{padding:14px 0 10px!important}

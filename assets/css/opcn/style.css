@@ -6551,7 +6551,7 @@ fb_lead_gen+.lf-skip-btn{
 }
 .V_3_5.one-page-card-new .submit-textbox input[type=text]{
     margin:0;
-    padding:0 0 10px
+    padding:0 0 5px 0;
 }
 .V_3_5.one-page-card-new .submit-textbox input[type=text].postfixset{
     padding-left:10px;
@@ -6722,7 +6722,7 @@ fb_lead_gen+.lf-skip-btn{
     display:none
 }
 .V_3_5.one-page-card-new .t1-slider-question .input-field label.post-icon,.V_3_5.one-page-card-new .t1-slider-question .input-field label.pre-icon{
-    padding:0 0 10px
+    padding:0 0 5px 0
 }
 .V_3_5.one-page-card-new a.submit-checkbox-img.leadform-btn{
     font-size:14px;
@@ -7018,7 +7018,7 @@ span.lead-close:hover{
     padding:1px
 }
 .V_3_5.one-page-card-new .t1-question .question-components .cal-outer input{
-    padding:0 5px 8px 0;background-image: none;
+    padding:0 5px 5px 0;background-image: none;
     background: transparent !important;
 }
 .V_3_5.one-page-card-new .active [type=radio]+label:before,.V_3_5.one-page-card-new .active [type=checkbox]+label:after{
@@ -7175,3 +7175,6 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{
 .V_3_5.one-page-card-new [type=checkbox]+label.leadform-checkbox{opacity: 1;}
 .V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input:focus{box-shadow: none !important; border:0px !important}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 ul{margin: 10px 0 15px}
+
+
+.V_3_5.one-page-card-new .v2mainouter .t1-ques-component{margin-top: 0px !important}
