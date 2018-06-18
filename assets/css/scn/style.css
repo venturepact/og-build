@@ -3934,4 +3934,10 @@ span.abhi {
 .sound-cloud-new .otherfield-inputbtn .button_textfield{ display: none;}
 input{ outline: none;}
 
+
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
 .page_2 .result-temp2-default-section .small-bot-sec p{ margin: 0px !important;}
