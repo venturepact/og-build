@@ -341,30 +341,6 @@ Developer: Bhawna */
     .opinon-scale-custom span.t6 {font-size: 11px;}
     .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 1px;}
     .opinon-scale-custom .errorMessage{top:26px;font-size: 11px;}
-
-    /********* t5 improved 1023********/
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 38px;line-height: 44px;}
-    .V_3_5 .sub-heading h2{font-size: 18px;line-height: 22px;}
-    .V_3_5 .landing-page-mid button{font-size: 16px;line-height: 20px;padding: 12px 25px;}
-    .V_3_5 .landing-page-mid {width: 51%;    margin-left: 5%;}
-    .V_3_5 .t1-ques-head {font-size: 16px;line-height: 20px;}
-    .V_3_5 .question-head{font-size: 22px; line-height: 27px; ;letter-spacing: 1px}
-    .V_3_5 .control, .V_3_5 .question-components input, .V_3_5 .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 15px;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, .V_3_5 button.btn.prime-action.ripple-light.back-action i, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i{font-size: 18px;}
-    .date-selector-part .cal-outer.calender-date{width:calc(50% - 30px);}
-    .date-selector-part span.calendar-range{width: 50px;}
-    .V_3_5 leadform .input-section .input-outer:nth-last-child(2):nth-child(odd){margin-bottom: 30px;}
-    .V_3_5 .landing-page-mid leadform .input-section .input-outer span{top: 35px;}
-    .V_3_5 leadform .input-outer{margin-bottom: 30px;}
-    .V_3_5 .landing-right{left:56%;    width: 305px;}
-    .V_3_5 .landing-img {height: 420px;}
-    .V_3_5 .stickyfooter {padding: 10px 27px 20px !important;}
-    .V_3_5 .main-section form{padding: 0; margin-top: 40px;}
-    .V_3_5 .landing-text-right .landing-page-mid{margin-right: 5%;}
-    .V_3_5 .landing-text-right .landing-right {left: 5%;float: left;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{height: 34px;    padding: 5px 13px;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before,.V_3_5 button.btn.prime-action.ripple-light.back-action:before{line-height: 18px;}
-    .V_3_5 .question-number{height: 30px;padding: 5px 7px;}
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
     /*.landing-page-header a img {
@@ -436,10 +412,6 @@ Developer: Bhawna */
     }
 }
 @media (max-width: 767px) {
-    .t1-ques-component leadform_question fb_lead_gen + .lf-skip-btn {
-        margin-top: 42px !important;
-        margin-left: 10px !important;
-    }
     .structure-right-align .lightSticky .col{justify-content: center; width:100%}
     .structure-right-align .action-outer{margin-right: 0}
     .structure-right-align  .lead-action-wrapper{margin-right: 0}
@@ -680,50 +652,16 @@ Developer: Bhawna */
         height: auto !important;
     }
 
+
     /* gdpr popup css */
     .gdpr-popup{ padding: 15px 20px;}
     .gdpr-popup-left{ width: 100%; padding-top: 25px;}
     .gdpr-popup-right{ width: 100%; text-align: center;}
 
     a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-    }
-    .V_3_5 .loginBtn:before{
-        width: 25px !important;
-        height: 25px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-    }
-    .V_3_5 .landing-page-mid .or-class{text-align: left !important}
-    .V_3_5 fb_lead_gen {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-bottom: 50px;
-    }
-    .V_3_5 .fb-outer{
-        text-align: left;
-    }
-    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-        float: none;
-        font-size: 13px !important;
-        margin:0 !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
-        padding: 9px 35px 9px 15px !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
-        text-align: center;
-    }
-    .V_3_5 .lead-action-wrapper{width:100%;}
-    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: auto;margin-left: 0;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -953,54 +891,6 @@ Developer: Bhawna */
     .common-result-main .t1-result-leadform .common-result-bot-icons .crb-left{padding-top:15px;}
     .template-five .t1-logo.res-header.common-result-outcome{ width: 100%; position: absolute; top: 20px;}
     .range-slider1.custom-slider1 ul{ display: none;}
-    /* html{height:100% !important;} */
-    .landing-text-right .landing-right{left:0;}
-    .landing-text-right .landing-page-mid{margin-right: 0;}
-
-    /*********** t5 improved 640 ************/
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 34px;line-height: 38px;}
-    .V_3_5 .sub-heading h2{font-size: 16px;line-height: 20px;}
-    .V_3_5 .question-head {font-size: 20px;line-height: 24px;}
-    .V_3_5 .landing-page-mid {width: 100%;  margin-left: 0;padding: 0 25px; padding-bottom: 70px;}
-    .V_3_5 .t1-ques-head {font-size: 15px;line-height: 20px;}
-    .V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 14px;margin-bottom:0px !important;}
-    .V_3_5 .landing-page-mid button {font-size: 13px;min-height: auto;min-width: auto;padding: 11px 30px; box-shadow:15px 15px 30px 0px rgba( 0, 0, 0 ,0.2)}
-    .V_3_5 .question-number {height: 26px;padding:1px 4px 1px 7px;top: -2px;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, 
-    .V_3_5 button.btn.prime-action.ripple-light.back-action {padding: 5px 10px !important;}
-    .V_3_5 .lead-popup .lead-popup-outer .lead-action-wrapper a.leadform-btn{font-size: 13px !important;height: auto; padding:  11px 30px !important;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, 
-    .V_3_5 button.btn.prime-action.ripple-light.back-action i ,
-    .V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i { font-size: 16px; }
-    .V_3_5 .question-subhead{font-size: 13px;}
-    .date-selector-part .cal-outer.calender-date{width: 100%;}
-    .date-selector-part span.calendar-range{width: 100%;}
-    .V_3_5 .t1-question{padding: 28px 0;}
-    .V_3_5 .ques-header {padding: 0 28px;}
-    .V_3_5 .main-section { width: 100%; padding: 30px 28px;margin: 0;}
-    .V_3_5 .t1-ques-component.action-outer {margin-left: 0;width: 100%;float: none;justify-content: center;display: flex;}
-    .V_3_5 button.btn.prime-action.ripple-light.back-action{margin-right: 6px;}
-    .V_3_5 .question-components .selectize-control, .V_3_5 .question-components .input-field, .V_3_5 .check-comp, .V_3_5 .range-slider{padding-bottom: 0px !important;}
-    .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-bottom: 10px;}
-    .V_3_5.template-five .errorMessage { font-size: 10px;top: 40px;}
-    .V_3_5 .main-section form {  padding: 0; margin-top: 30px;}
-    .V_3_5 .section-sub {margin-bottom: 30px;}
-    .V_3_5 .t1-ques-component leadform_question .input-section .input-outer .section-head { margin-bottom: 5px !important;}
-    .V_3_5 .lead-action-wrapper {  width: 100%;  display: flex;  justify-content: center;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{padding: 5px 10px;}
-    .V_3_5 .question-components input{margin-bottom: 10px;}   
-     /*branding*/
-    .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
-    .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
-    .V_3_5 .powered-by span {font-size: 8px;}
-    .V_3_5 .powered-by img {width: auto;height: 12px;}
-    .V_3_5 .powered-by{box-shadow: none}
-
-    /*logo*/
-    .V_3_5 .t1-logo { padding: 0 25px; margin-top: 25px;}
-    .V_3_5 .landing-right{  left: 0;   width: 100%;  padding-right: 25px; padding-left: 25px; }
-    .V_3_5 .t1-landing.no-logo .landing-img-mobile.for-tint-img { margin-top: 20px;}
-    .V_3_5 .landing-text-right .landing-right{left: 0;}
 }
 @media (max-width: 319px) {
     .t1-question .prime-action {
@@ -1108,7 +998,7 @@ Developer: Bhawna */
         background-size: 95px;
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{ left: 50% !important;}
-    /*.result-v2 .common-result-bot-icons.side-redo .crb-left{ width: 90px !important;}*/
+    .result-v2 .common-result-bot-icons.side-redo .crb-left{ width: 90px !important;}
 
 
     /* gdpr popup css */
@@ -1177,7 +1067,7 @@ Developer: Bhawna */
     .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
     .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
-    .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+  .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
     .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
@@ -1197,17 +1087,6 @@ Developer: Bhawna */
     .graded-ques-left{width:110px;}
     .graded-ques-right {float: left;width: calc(100% - 110px);}
     .graded-ques-list span.ans-correct{width:calc( 100% - 20px)}
-    .t1-question{min-height: 100%;}
-    .header-next-div {height: auto !important;}
-    .template-five header.landing-page-header.outcome-logo{left:0 !important;}
-    
-    .V_3_5 .result-v2.common-result .leadAsPopup .or-class {
-        text-align: left !important;
-    }
-    .V_3_5 .landing-text-center .or-class {
-        text-align: center !important;
-        padding: 10px 0;
-    }
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
