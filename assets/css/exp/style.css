@@ -2888,7 +2888,7 @@ input[type=number] {
     padding-left: 52px;
     cursor: pointer;
     display: block;
-    z-index: 0;
+    z-index: 0 !important;
     /*height: 58px;*/
     
     line-height: 23px;
@@ -2960,7 +2960,7 @@ input[type=number] {
     width: 15px;
     background-color: transparent;
     top: 0px;
-    z-index: 0;
+    z-index: 0 !important;
     margin: 7px;
     margin-left: 0;
     border-radius: 50%;
@@ -2984,7 +2984,7 @@ input[type=number] {
     top: 0;
     width: 15px;
     height: 15px;
-    z-index: 0;
+    z-index: 0 !important;
     margin: 7px;
     margin-left: 0px;
     border-radius: 50%;
@@ -3057,7 +3057,7 @@ input[type=number] {
     margin-left: 0;
     width: 15px;
     height: 15px;
-    z-index: 0;
+    z-index: 0 !important;
     transition: .28s ease;
 }
 /* Unchecked styles */
@@ -3613,7 +3613,7 @@ input[type=number] {
     left: 0;
     width: 15px;
     height: 15px;
-    z-index: 0;
+    z-index: 0 !important;
     border-radius: 1px;
     margin-top: 2px;
     /*-webkit-transition: .2s;
