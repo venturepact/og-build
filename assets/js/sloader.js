@@ -707,7 +707,20 @@ function initHeight(iframe_id) {
             checkOrigin: false,
             minHeight: height
         }, "#og_iframe_" + iframe_id);
+		initHeightTimed(iframe_id, height);
     }
+}
+
+function initHeightTimed(iframe_id, height) {
+	setTimeout(function(){
+		var iframes = iFrameResize({
+			log: false,
+			autoResize: true,
+			enablePublicMethods: true,
+			checkOrigin: false,
+			minHeight: height
+		}, "#og_iframe_" + iframe_id);
+	}, 1000);
 }
 
 function initMobileFrames(iframe_id) {
