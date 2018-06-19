@@ -150,7 +150,7 @@ function createCalendar(calendar, element, adjuster){
             eventname.add(calendar.Model[n].EventName);
             //number.setAttribute('data-content', eventname);
             number.setAttribute('data-container',"body");
-            number.setAttribute('data-toggle',"popover");
+            // number.setAttribute('data-toggle',"popover");
           }
         }
       }
