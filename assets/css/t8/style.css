@@ -86,7 +86,7 @@ h2.sub-heading p {    margin-bottom: 0 !important; word-break: break-word;}
 .ripple-dark.pic-selector + .custom-btn-outer1{display: block; margin: 20px auto 10px}
 .pic-selector + .custom-btn-outer1
 .t1-button button{    font-size: 24px;    width: auto;    padding: 0px;        border: none;    cursor: pointer;       border-radius: 50%;}
-.landing-page-mid button ,  button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn ,.submit-checkbox-img-custom ,.w100.text-center .submit-checkbox-img , .landing-page-mid leadform button.prime-action{    font-size: 24px;    float: none;    width: auto;    padding: 0px;      border: none;    cursor: pointer;  line-height:1;       white-space: normal;    word-break: break-word; border-radius: 50%; width:100%;height:100%;   display: inline-block;text-align: center; align-items: center;    margin-top: 0px;}
+.landing-page-mid button ,  button.submit-checkbox-img.ripple-light , .t1-question .submit-textbox-btn ,.submit-checkbox-img-custom ,.w100.text-center .submit-checkbox-img , .landing-page-mid leadform .prime-action{    font-size: 24px;    float: none;    width: auto;    padding: 0px;      border: none;    cursor: pointer;  line-height:1;       white-space: normal;    word-break: break-word; border-radius: 50%; width:100%;height:100%;   display: inline-block;text-align: center; align-items: center;    margin-top: 0px;}
 .t1-button button:hover,.t1-button button:focus{  outline: none;}
 .checkbox-outer-base button.submit-checkbox-img.ripple-light {   float: left; margin-right: 10px; display:none !important}
 .t1-question .ripple-dark.checkbox-outer-base label.control , .t1-question .ripple-dark.radio-outer-base label.control {    width: 100% !important;  text-align: left;  height: auto !important; float: left; padding: 0 60px 0 30px;}
@@ -536,8 +536,8 @@ visuals .rec-image-outer img {       max-width: 640px;    width: inherit;}
 .t1-landing-inner, .result-branding{ position:relative;}
 .t1-slider-question.slide-1 .lf-skip-btn{    background: none;    border: none;  opacity: 0.7;  float: none;    text-transform: uppercase;      font-size: 16px;    margin-top: 10px;    margin-left: 10px;}
 .t1-slider-question.slide-1 .lf-skip-btn:hover{  opacity: 1}
-.landing-page-mid leadform button.prime-action.lf-skip-btn{    float: none;    background: none;    border: none;    font-size: 16px;    color: #fff;    text-transform: none;    box-shadow: none;    margin: 0 auto;    display: block;    opacity: 0.5;}
-.landing-page-mid leadform button.prime-action.lf-skip-btn:hover{    opacity: 1;}
+.landing-page-mid leadform .prime-action.lf-skip-btn{    float: none;    background: none;    border: none;    font-size: 16px;    color: #fff;    text-transform: none;    box-shadow: none;    margin: 0 auto;    display: block;    opacity: 0.5;}
+.landing-page-mid leadform .prime-action.lf-skip-btn:hover{    opacity: 1;}
 .t1-result .t1-result-leadform .lf-submitted , .t1-result .gradedquiz-main .lf-submitted{    padding: 0px;    margin: 20px 0;     font-size: 26px;    background: transparent;    display: inline-block;        text-transform: capitalize;}
  .errorMessage {        float: left;        width: 100%;        padding: 10px;        color: #f44336;        font-size: 12px    }
 a:hover,a:focus{    text-decoration: none;}
@@ -1469,7 +1469,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight  .recommendation-outer  .common-result-main .t1-result-leadform{min-height: auto}
  .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-section{max-width:inherit} 
 .template-eight .gradedquiz-main .common-result .t1-result-leadform .input-outer input , .template-eight .common-result-main .t1-result-leadform .input-outer input{  background-color:rgba(255,255,255,0.2);    border:2px solid transparent ;    border-radius:3px;  box-shadow: none;  outline:none;    width:100%;    font-size:17px;    margin:0 0 0px 0;  transition: 0.5s;  padding:5px 20px;  min-height: 40px;   box-shadow:none;  padding-left: 35px;   transition:all 0.3s;    -moz-box-sizing:border-box;    -webkit-box-sizing:border-box;    box-sizing:border-box;}
-.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-outer {  width: 50% !important;  padding: 0 10px;  min-height: auto;  margin: 0 0 25px 0;  float: left;}
+.template-eight  .common-result-main .common-leadform-top.t1-result-leadform .input-outer {  width: 50% !important;  padding: 0 10px;  min-height: auto;  margin: 0 0 25px 0;  float: none;display: inline-block; vertical-align: top;}
 .template-eight .t1-result-leadform .input-outer i , .template-eight  .gradedquiz-main .common-result .t1-result-leadform .input-outer i{left: 20px !important;top: 12px !important; font-size: 17px !important;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform .prime-action {  float: left;  margin-bottom: 0px;    font-size: 16px;  padding: 8px 15px;  text-transform: none;  margin-top: 0px;}
 .template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-heading-temp1 {  font-size: 20px;  text-transform: capitalize;  text-align: center; margin-bottom: 15px;}
@@ -1725,7 +1725,7 @@ path.highcharts-plot-band {
     display: table;
     padding: 50px 15px;
     min-height: 480px;
-    overflow: hidden;
+    overflow: visible;
 }
 .eight-inner-wrapper.t1-landing-inner.logo-resizing {
     padding: 0;
@@ -1737,9 +1737,7 @@ path.highcharts-plot-band {
 
 p > span > a {color: inherit; }
 
-.t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{
-    top: 25px;
-} 
+.t1-ques-component .input-section .input-outer.checkbox span , .landing-page-mid leadform .input-section .input-outer.checkbox span{top: 5px;position: relative;width:100%;} 
 .template-eight .common-result-main .table-outer table tbody tr{    background: #fff !important;}
 .template-eight .common-result-main .table-outer table tbody tr td.correct_graded{    background: #f2f2f2 !important;}
 .template-eight .common-result-main .table-outer table tbody tr {    border-bottom: 1px solid rgba(0,0,0,0.1) !important}
@@ -1778,7 +1776,7 @@ p > span > a {color: inherit; }
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-outer i {position: absolute;left: 10px !important;top: 12px !important;color: rgba(40,50,58,.4) ;font-size: 17px;}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 20px;display: inline-table;}
 .t1-result .lead-popup  .lead-popup-outer .lead-popup-main .custom-btn-outer{width:110px;overflow: visible; border-radius:50%; height:110px}
-.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index:99999;overflow: auto;width: 100%;padding:  50px 0}
+.lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index:999999 !important;overflow: auto;width: 100%;padding:  50px 0}
 .lead-popup  .lead-popup-outer {max-width: 600px; padding:0 15px;margin: 0 auto;position: relative; width: 100%}
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;overflow:hidden;border-radius: 5px; border:12px solid transparent; box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
 .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */      overflow-y: auto;}
@@ -1827,7 +1825,7 @@ p > span > a {color: inherit; }
     .template-section .template-container.mobile   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
 
 
-    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: 100%;}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{white-space: normal;max-height: inherit !important;overflow: visible;text-overflow: unset; width: auto;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  span{position: relative; top:0px  !important}
      .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox  .input-icon-outer{display: block;}
     .template-section .template-container.mobile .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox [type=checkbox]+label.leadform-checkbox{font-size: 14px}
@@ -1971,6 +1969,15 @@ p > span > a {color: inherit; }
 
 .common-result #follow, .common-result #like , .common-result #vk_subscribe {float: none !important; }
 
+.dropdown-blink{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+.template-eight [type="checkbox"]+label.leadform-checkbox {width: auto !important;}
+
+
+
 
 /* gdpr popup css */
 .gdpr-popup {
@@ -2037,10 +2044,208 @@ a.gdrp-accept {
 a.gdrp-accept:hover {
     opacity: 0.5;
 }
-a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 5px;}
+a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 25px;}
 a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+.common-result-main .common-leadform-top.t1-result-leadform .container-temp {
+    padding: 0 !important;
+    position: relative;
+    z-index: 10;
+    float: left;
+    width: 100%;
+}
+.w100.text-center.lead-action-wrapper.eight-sec{position: relative; z-index: 9;}
+.container-temp.text-center.eight-sec {
+    z-index: 9 !important;
+}
 
-/******  gdpr ********/
 
-.template-eight .input-outer.checkbox span , .template-eight .common-result-main .t1-result-leadform .input-outer.checkbox  span {position: relative !important; top: 5px !important}
-.template-eight  .input-outer.checkbox .input-field , .template-eight  .input-outer.checkbox  .input-icon-outer{flex-direction: column}
+
+.control__indicator.check-set div i.fa-question.fa {
+    top: 2px;
+    position: relative;
+    left: 5px;
+    font-size: 22px;
+}
+
+
+
+/********* multiple outcome ************/
+.template-eight .result-v2-box2 {
+    float: left;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    border: 0px
+}
+.template-eight .result-v2 .common-leadform-top.t1-result-leadform.eight-inner-wrapper {
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+    padding-bottom: 0px;
+}
+.template-eight .common-result-bot.eight-inner-wrapper .common-result-bot.eight-inner-wrapper {
+    padding: 0;
+    border: 0px;
+    box-shadow: none !important;
+    padding-bottom: 0px;
+}
+.template-eight .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input{background:  transparent !important}
+.template-eight .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{border-radius: 4px !important; font-size: 16px;text-transform: inherit;font-weight: normal;}
+.template-eight .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{background: rgba(255, 255, 255, 0.2) !important}
+.template-eight .overlay-outerleadform.result-v2 .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
+    border: 1px solid transparent;
+    width: 16px !important;
+    margin-left: 0 !important;
+}
+
+
+.template-eight  .common-result-bot-left.CTA-3 {
+    position: absolute;
+    right: -100px;
+    width: 35px;
+    top: -30px;
+    text-align: right;
+}
+.template-eight .result-v2 .cta-likes{right: -80px; top: -10px;}
+@media (min-width:640px){
+    .template-eight  .result-v2 .common-result-main .common-leadform-top.t1-result-leadform .input-outer{width: 50% !important}
+}
+.template-eight .result-v2 .outcome_like {
+    top: -5px;
+}
+.template-section .template-container.mobile .result-v2-box2{padding: 0 !important}
+.template-section .template-container.mobile .result-v2 .recom-section .left-outer-hidden{margin: 0 !important}
+.template-eight .result-v2 .devMode.common-result-bot.eight-inner-wrapper , .template-eight .result-v2 .notDevMode .common-result-bot.eight-inner-wrapper.result-v2-leadformhide{
+    width: 100%;
+}
+/*new version--login with fb*/
+.V_3_5 .or-class {
+    width: 100%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.V_3_5 .fb-outer{width:100%;float: left;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {
+    background-color: #086ca0 !important;
+    background-image: linear-gradient(#086ca0, #086ca0) !important;
+    text-shadow: 0 -1px 0 #086ca0 !important;
+    border-radius: 25px !important;
+    text-transform: uppercase;
+    min-height: auto;
+    padding: 11px 47px 11px 25px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    word-break: break-word;
+    margin: 0 auto !important;
+}
+.V_3_5 .loginBtn--facebook:before {
+    top: auto !important;
+    right: 8px !important;
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #fff !important;
+    border-radius: 25px !important;
+    left: auto !important;
+    border-right: none !important;
+    background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;
+    background-position-x: 5px !important;
+    background-size: 18px !important;
+}
+.V_3_5 fb_lead_gen {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+.V_3_5 .t1-landing-leadform fb_lead_gen {
+    width: 100%;
+    float: left;
+    margin:0;
+}
+.V_3_5 .landing-page-mid .or-class,
+.V_3_5 .common-result-main .or-class {
+    text-align: center !important;
+}
+.V_3_5 .leadAsPopup fb_lead_gen,
+.V_3_5 .t1-result-leadform fb_lead_gen {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+}
+.V_3_5 .leadAsPopup .loginBtn, 
+.V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
+    padding: 11px 47px 11px 25px !important;
+    float: none;
+
+}
+
+
+
+.t8-disclaimer {
+    float: left;
+    width: 100%;
+    margin: 10px 0 20px;
+    display: block;
+}
+.t8-disclaimer .t1-result-disclaimer {
+    float: left;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+}
+.t8-disclaimer .lightSticky {
+    position: relative !important;
+    right: 0px;
+    left: auto;
+    bottom: 0;
+}
+.t8-disclaimer .crb-right {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.notDevMode.common-result-bot.eight-inner-wrapper.result-v2-leadformhide{column-count: 1 !important;}
+.poll-result .eight-inner-wrapper .eight-inner-wrapper{margin-bottom: 0PX !important}
+
+/*calendar component css*/
+.cal-outer{  width:100%; float: left;}
+.cal-outer .input-group-addon {  min-width: 60px; border-radius: 0 3px 3px 0;}
+span.calendar-range { width: 100%;  float: left;  text-align: center;  padding-bottom: 15px;}
+.cal-outer input:focus { box-shadow: none;}
+.date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 25px);}
+.date-selector-part span.calendar-range {width: 50px;padding: 10px 0;}
+/*dropdown style*/
+.cal-outer .dropdown-menu { padding: 10px !important; text-align: center !important;font-size: 11px !important;}
+.cal-outer .table-condensed>thead>tr>th {  text-align: center !important;}
+.cal-outer ul { margin-bottom: 0 !important;}
+.cal-outer li.picker-switch.accordion-toggle { width: 100% !important;  float: left !important;  text-align: center !important;  padding: 10px 0 0 !important;  display: flex !important;  align-items: center !important; justify-content: center !important;}
+.cal-outer .timepicker .table-condensed {  width: 100% !important;  float: left !important;   text-align: center !important;}
+.cal-outer .table-condensed>tbody>tr>td, 
+.cal-outer .table-condensed>tbody>tr>th, 
+.cal-outer .table-condensed>tfoot>tr>td, 
+.cal-outer .table-condensed>tfoot>tr>th, 
+.cal-outer .table-condensed>thead>tr>td, 
+.cal-outer .table-condensed>thead>tr>th{   padding: 6px !important;  cursor: pointer !important;}
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {   padding: 3px;  margin-right: 5px;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover { background: none;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover { background: #e6e3e3;}
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {  background: none;}
+.cal-outer .datepicker table {  user-select: none;  margin: 0;}
+.cal-outer .datepicker td, .cal-outer .datepicker th {  text-align: center;  width: 20px;   height: 20px;-webkit-border-radius: 4px;  -moz-border-radius: 4px; border-radius: 4px; border: none;}
+.cal-outer .datepicker .picker-switch {  width: 152px;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span,
+.cal-outer .datepicker-years .table-condensed>tbody>tr>td span { display: block; width: 20%;  float: left; margin: 1%;  cursor: pointer;  -webkit-border-radius: 4px;  -moz-border-radius: 4px; border-radius: 4px;}
+.cal-outer .datepicker-decades .table-condensed>tbody>tr>td span.decade { width: 50%;  margin: 0;  display: block;  float: left;}
+.t1-ques-component .input-section .input-outer.checkbox {float: left; width: 100%}
+.t1-ques-component .input-section .input-outer.checkbox .input-icon-outer {display: block;float: left;}
+glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.checkbox span{position: relative; top: 0;}  .template-eight.V_3_5 .common-result-main .multiple-outcome-outr .common-result-bot-icons {  position: relative;  BOTTOM: 0; margin-bottom: 0;}
+.result-v2 .common-result-bot .recom-section .leadform-outer .custom-btn-outer { border-radius: 40px !important;}

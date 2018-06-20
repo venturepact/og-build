@@ -1,9 +1,18 @@
-@media (min-width: 0px) and (max-width: 330px) {
+@media (min-width: 0px) and (max-width: 340px) {
     .table-outer table {
         max-width: 200px !important;
     }
+    .new_control .input-field label{max-width: 65px !important; }
 }
 @media (min-width: 0px) and (max-width: 767px) {
+    .V_3_5 .t1-landing-leadform .input-section {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        float: none;
+    }
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer input{padding-top: 6px ; padding-bottom: 6px }
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 25px }
     .cta-center {
         text-align: center;
     }
@@ -1077,9 +1086,7 @@
         left: 10% !important;
         bottom: 45px !important;
     }
-        .fb-btn-outer{padding:0 30px;}
-    fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
-
+   
 
     /* gdpr popup css */
     .gdpr-popup{ padding: 15px 20px;}
@@ -1087,9 +1094,71 @@
     .gdpr-popup-right{ width: 100%; text-align: center;}
 
     a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;  position: relative;  bottom: 0;  right: inherit;  left: inherit;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none;position: absolute;  top: 4px; right: 20px;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+        .fb-btn-outer{padding:0 30px;}
+    fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
+
+    .V_3_5 .landing-page-mid{ width: 88%;}
+    .V_3_5 .main-heading, .main-heading h1 {
+        font-size: 32px !important;
+        line-height: 36px !important;
+    }
+    .fb-btn-outer{padding:0 30px;}
+    fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
+        padding: 10px 35px 10px 15px !important;
+        font-size: 13px !important;
+        float: none !important;
+    }
+    .V_3_5 .loginBtn--facebook:before {
+        width: 25px !important;
+        height: 25px !important;
+        top: 3px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
+    .V_3_5 .or-class{text-align: center !important;padding: 15px !important;padding-top:0px !important;margin:0 !important;font-size: 12px !important;}
+    .V_3_5 .result-v2 .or-class,.V_3_5 .t1-landing-leadform .or-class{padding-top: 15px !important;}
+    .V_3_5 .loginBtn{
+        padding:9px 35px 9px 15px !important;
+        font-size: 14px !important;
+    }
+    .V_3_5 fb_lead_gen{
+        width: 100%;
+        float: left;
+        left: 0;
+        padding: 0 50px;
+        margin: 30px 0;
+        margin-top: 0px;
+    }
+    .V_3_5 form#leadform_question {
+        margin-bottom: 20px;
+    }
+    .V_3_5 .fb-outer{
+        float: none;
+        text-align: center;
+    }
+    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {
+        padding: 9px 35px 9px 25px !important;
+        float: none;
+        font-size: 13px !important;
+    }
+    .V_3_5 .t1-result-leadform .lead-popup fb_lead_gen {
+        margin-top: 0;
+    }
+    .V_3_5 .common-result-main .t1-result-leadform fb_lead_gen {
+        padding: 0;
+        margin-top: 0;
+    }
+    .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {
+        padding: 9px 35px 9px 15px !important;
+        font-size: 13px !important;
+    }
+    .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{font-size: 13px !important;}
+    .V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before{top:3px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1779,6 +1848,12 @@
         padding-top: 100px !important;
     }
     .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{  left: 50% !important; bottom: 49px !important;}
+
+
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
      fb_lead_gen + .lf-skip-btn {padding: 0 55px;margin-top:15px !important;}
     .fb-btn-outer{padding: 0 50px;}
 
@@ -1788,6 +1863,10 @@
     .gdpr-popup{ padding: 15px 20px;}
     .gdpr-popup-left{ width: 70%;}
     .gdpr-popup-right{ width: 25%; }
+
+    /*template t3 improved version 1023*/
+    .V_3_5 .landing-page-mid{ width: 100%;float: left}
+    .V_3_5 .main-heading, .main-heading h1{font-size: 40px !important; line-height: 44px !important;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2583,7 +2662,7 @@
    .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
    .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
    .new_control   .t1-ques-head div p{font-size: 22px}
-   .new_control .input-field label{font-size: 22px !important; line-height: 30px}
+   .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
    .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
    .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:10% !important;}
