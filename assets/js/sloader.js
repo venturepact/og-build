@@ -720,7 +720,7 @@ function initHeightTimed(iframe_id, height) {
 			checkOrigin: false,
 			minHeight: height
 		}, "#og_iframe_" + iframe_id);
-	}, 1000);
+	}, 3000);
 }
 
 function initMobileFrames(iframe_id) {
