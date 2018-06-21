@@ -6838,7 +6838,8 @@ fb_lead_gen+.lf-skip-btn{
 .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img{
     border-radius:25px!important;
     padding:12px 40px!important;
-    font-size:14px
+    font-size:14px;
+    height:auto !important;
 }
 .V_3_5.one-page-card-new .lead-popup-header .lead-popup-head{
     float:none;
@@ -7026,7 +7027,7 @@ span.lead-close:hover{
     padding:1px
 }
 .V_3_5.one-page-card-new .t1-question .question-components .cal-outer input{
-    padding:0 5px 5px 0;background-image: none;
+    padding:0 5px 0px 0;background-image: none;
     background: transparent !important;
     height:auto;
 }
@@ -7190,3 +7191,12 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa !important}
 .V_3_5.one-page-card-new  [type="radio"]:disabled:checked + label:before{background: transparent !important;}
 .V_3_5.one-page-card-new  .control-ver2 .pic-selector span.abhi{min-height:auto;} 
 .V_3_5.one-page-card-new .input-group-addon{padding: 4px 6px !important}
+
+.V_3_5.one-page-card-new .t1-ques-head{float: left; width: 100%}
+.V_3_5.one-page-card-new .t1-ques-head .help-text , .V_3_5.one-page-card-new .t1-ques-head .help-outer{float: left; width: 100%; top: 0px !important}
+.V_3_5.one-page-card-new .t1-ques-head .help-text {margin-top: 8px}
+.V_3_5.one-page-card-new .submit-textbox input[type="email"] {
+    margin: 0;
+    width: 100% !important;
+    padding: 0 0 5px 0 !important;
+}

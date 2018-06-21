@@ -1089,7 +1089,7 @@
     .V_3_5 .landing-page-mid{width: 82%;}
     .V_3_5 .t1-landing-leadform .input-section {text-align: center; max-width: 500px;margin: 0 auto; float: none;width: 100%;}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer input{padding-top: 6px ; padding-bottom: 6px }
-    .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 25px;margin-right:  0;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 25px;margin-right:  0; padding-right: 0 !important;}
     .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 40px !important;line-height: 44px !important;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 10px 35px 10px 15px !important;font-size: 13px !important;float: none !important;}
     .V_3_5 .loginBtn--facebook:before {width: 25px !important;height: 25px !important;top: 3px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
@@ -1108,6 +1108,13 @@
     .V_3_5 .landing-page-mid button{font-size: 13px !important;line-height: 17px;min-height: auto;min-width: auto;padding: 11px 30px !important;}
     .V_3_5 .landing-page-header{left: 40px;}
     .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;}
+    .V_3_5 .landing-text-left .landing-page-mid {width: 82%;float: none;margin: 0 auto;}
+    .V_3_5 .landing-text-right .landing-page-mid {width: 82%;float: none;margin: 0 auto;}
+    .V_3_5 .landing-text-left .fb-outer{float: left;}
+    .V_3_5 .landing-text-right .fb-outer{float: right;}
+    .V_3_5 .template3-outr {float: left;width: 100%;margin-top: 10px;margin-bottom: 30px;padding-left: 30px;margin-top: 30px;}
+    .V_3_5 .template3-outr .question-head {padding: 8px 10px;font-size: 20px;}
+    .V_3_5 .new_control .t1-ques-head div{font-size: 22px;line-height: 30px;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
@@ -1826,6 +1833,9 @@
     .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p {font-size: 34px;line-height: 42px;}
     .V_3_5 fb_lead_gen {width: 100%;float: left;left: 0;padding: 0 50px;}
     .V_3_5 .landing-page-mid button{padding: 12px 25px;}
+    .V_3_5 .template3-outr {float: left;width: 100%;margin-top: 10px;padding-left: 50px;padding-right: 50px;}
+    .V_3_5 .template3-outr .question-subhead{margin-top: 5px ;}
+    .V_3_5 .template3-outr .question-head{font-size: 26px;line-height: 45px;padding: 8px 10px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

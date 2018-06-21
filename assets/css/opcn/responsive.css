@@ -370,6 +370,7 @@
     .common-result-main .t1-result-leadform .input-outer.checkbox span{left:0;top:32px}
     .t1-ques-component .input-section .input-outer{margin-bottom:27px}
     .t1-slider-question.slide-1 .lf-skip-btn{margin-top:0;font-size:14px}
+  
     .input-field label:not(.label-icon).active{font-size:.9rem!important;-webkit-transform:translateY(-80%);transform:translateY(-80%);text-transform:uppercase;font-weight:700!important}
     .input-field .prefix~.autocomplete-content,.input-field .prefix~.validate~label,.input-field .prefix~input,.input-field .prefix~label,.input-field .prefix~textarea,.t1-landing-leadform select{font-size:15px}
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{margin-bottom:15px;font-size:15px}
@@ -485,7 +486,7 @@
     .V_3_5.one-page-card-new .powered-by{box-shadow: none !important}
     .V_3_5.one-page-card-new .landing-footer-outer .powered-by span,.V_3_5.one-page-card-new .result-branding .powered-by span{font-size:8px!important}
     .V_3_5.one-page-card-new .powered-by img{width:auto;height:12px!important}*/
-    .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:13px; line-height: 17px;}
+    .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:14px; line-height: 18px;}
     .V_3_5.one-page-card-new .t1-slider-question{padding:20px 20px 30px}
     .V_3_5 .landing-page-mid button{font-size:13px!important;padding:11px 30px!important}
     .V_3_5.one-page-card-new .submit-textbox input[type=text],.V_3_5.one-page-card-new .t1-question .question-components .cal-outer input,.V_3_5.one-page-card-new .t1-question .selectize-input .item,.V_3_5.one-page-card-new .t1-question .selectize-input input{font-size:14px;line-height:18px}
@@ -602,6 +603,7 @@
     .common-result-main .t1-result-leadform .input-outer.checkbox span{left:0;top:32px}
     .t1-ques-component .input-section .input-outer{margin-bottom:27px}
     .t1-slider-question.slide-1 .lf-skip-btn{margin-top:0;font-size:14px}
+    .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn {margin-top: 10px;font-size: 14px;margin-left: 0px; margin-right: 0px;float: none;}
     .input-field label:not(.label-icon).active{font-size:.9rem!important;-webkit-transform:translateY(-80%);transform:translateY(-80%);text-transform:uppercase;font-weight:700!important}
     .input-field .prefix~.autocomplete-content,.input-field .prefix~.validate~label,.input-field .prefix~input,.input-field .prefix~label,.input-field .prefix~textarea,.t1-landing-leadform select{font-size:15px}
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{margin-bottom:15px;font-size:15px}
@@ -1256,6 +1258,7 @@
     .V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label{height: 35px;}
 }
 @media (max-width:640px){
+    .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn {margin-top: 10px;font-size: 14px;margin-left: 0px; margin-right: 0px;float: none;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size:14px;margin-top:10px;line-height:22px}
     .common-result-main .common-leadform-top.t1-result-leadform .selectize-input .item,.t1-result-main .selectize-dropdown .optgroup-header,.t1-result-main .selectize-dropdown [data-selectable]{font-size:13px!important}
     .lead-popup-main button.lf-skip-btn.ripple-light,.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size:14px}
@@ -1300,8 +1303,9 @@
 @media (max-width:1024px){
     .t1-landing .t1-landing-inner .selectize-control{margin-bottom:15px!important}
 }
-@media (min-width:320px) and (max-width:455px){
+@media  (max-width:455px){
     .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field{max-width:310px}
+    .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size: 13px !important; line-height: 17px !important}
 }
 @media (min-width:456px) and (max-width:555px){
     .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .input-field{max-width:400px}
