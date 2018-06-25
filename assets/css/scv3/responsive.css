@@ -416,7 +416,8 @@
     .V_3_5.sound-cloud-new .landing-page-mid .input-field label:not(.label-icon).active{font-size: 11px !important;}
     .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width: 100% !important;}
     .V_3_5.sound-cloud-new .landing-page-mid .input-field label p {margin: 0;}
-
+    .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 8px !important;}
+    .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 8px !important;}
     .date-selector-part .cal-outer.calender-date {width: 100%;}
     .calendar-range{width: 100%;float: left;}
     .date-selector-part span.calendar-range {width: 100%; padding: 10px;float: left; }
@@ -518,11 +519,7 @@
     }
     #vk_subscribe iframe{margin-top:10px !important;}
     .V_3_5 .main-bg header .logo {padding: 28px 40px;}
-    .V_3_5 .landing-page-mid .main-heading{
-        padding: 0 !important;
-        font-size: 56px;
-        line-height: 60px;
-    }
+    .V_3_5 .landing-page-mid .main-heading{padding: 0 !important;font-size: 56px;line-height: 60px;}
     .V_3_5 .landing-text-left .landing-page-mid .main-heading, .V_3_5 .landing-text-right .landing-page-mid .main-heading{width: 90%;}
     .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 100px 40px;}
     .V_3_5 .landing-text-left .landing-page-mid .input-section, .V_3_5 .landing-text-right .landing-page-mid .input-section{width: 70%;}
@@ -557,28 +554,13 @@
     .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:before, .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:after{margin: 0px 12px !important;}
     .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{margin: 0px 12px !important;}
     .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;}
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
-        padding: 12px 45px 12px 25px !important;
-        font-size: 16px !important;
-        float: none !important;
-    }
-    .V_3_5 .loginBtn:before{
-        width: 25px !important;
-        height: 25px !important;
-        top:8px !important;
-    }
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{
-        top:auto !important;
-        background-position: 5px center !important;
-        background-size: 15px !important;
-    }
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 12px 45px 12px 25px !important;font-size: 16px !important;float: none !important;}
+    .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;top:8px !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{top:auto !important;background-position: 5px center !important;background-size: 15px !important;}
     .V_3_5 .loginBtn{padding: 11px 40px 11px 14px !important;}
-    .V_3_5 .landing-text-right fb_lead_gen,.V_3_5 .landing-text-left fb_lead_gen {
-        padding: 0 20px;
-        width: 100%;
-        float: left;
-    }
+    .V_3_5 .landing-text-right fb_lead_gen,.V_3_5 .landing-text-left fb_lead_gen {padding: 0 20px;width: 100%;float: left;}
     .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label, .sound-cloud-new [type="radio"]:checked + label{line-height: 20px !important;min-height: 20px !important;}
+    .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 8px !important;}
 }
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .main-bg{ min-height: 500px; }
