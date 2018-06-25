@@ -414,8 +414,7 @@
     .V_3_5 .landing-page-mid .input-section .input-outer span{top: 35px;font-size: 10px !important;}
     .V_3_5 .landing-page-mid .input-section{margin-top: 0px !important;}
     .V_3_5.sound-cloud-new .landing-page-mid .input-field label:not(.label-icon).active{font-size: 11px !important;}
-    .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width: 100% !important;}
-    .V_3_5.sound-cloud-new .landing-page-mid .input-field label p {margin: 0;}
+    .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width: 100% !important;}\
     .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 8px !important;}
     .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 8px !important;}
     .date-selector-part .cal-outer.calender-date {width: 100%;}
@@ -424,6 +423,7 @@
     .V_3_5 .help-text p {font-size: 13px;line-height: 19px;margin-top: 2px;}
     .V_3_5 .page_2 .loginBtn{padding:11px 45px 10px 32px !important;font-size: 13px !important; line-height: 19px !important; }
     .V_3_5 .page_2.result-fixed {width: 100%; float: left; margin-left: 0 !important;padding-left: 15px; padding-right: 15px;}
+    .V_3_5 .sound-cloud-new .landing-page-mid .input-field label p {margin: 0;}
 
     /*no logo css*/
     .V_3_5.sound-cloud-new .page_1 input:not([readonly]){font-size: 14px !important;}
@@ -553,7 +553,7 @@
     .V_3_5 .page_2 .result-temp2-default-section { padding: 18px 25px; width: 100%; margin-bottom: 20px;}
     .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:before, .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:after{margin: 0px 12px !important;}
     .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{margin: 0px 12px !important;}
-    .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;}
+    .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;position: relative;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 12px 45px 12px 25px !important;font-size: 16px !important;float: none !important;}
     .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;top:8px !important;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{top:auto !important;background-position: 5px center !important;background-size: 15px !important;}

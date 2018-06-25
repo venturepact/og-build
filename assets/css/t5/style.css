@@ -4680,6 +4680,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .t1-ques-head{font-size: 18px; line-height: 24px}
 .V_3_5 .no-logo .main-section { margin-top: 0;}
 #build .V_3_5 .main-section .help-text{letter-spacing: 0.02em;}
+.V_3_5 .graded-msgbox::before{left: 7px;top: 2px;}
 
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}

@@ -1220,6 +1220,8 @@ Developer: Bhawna */
         text-align: center !important;
         padding: 10px 0;
     }
+    .V_3_5 .graded-msgbox {margin-top: 3px;}
+    .V_3_5 .graded-msgbox::before {top: 2px;left: 5px;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}

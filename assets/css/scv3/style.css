@@ -2318,7 +2318,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .loginBtn{margin: 0 !important;padding: 13px 45px 13px 30px !important;border: none !important;text-align: left !important;line-height: 24px !important;font-size: 18px !important;border-radius: 0 !important;}
 .V_3_5 .result-v2 .loginBtn {padding: 11px 47px 11px 25px !important;margin: 0px !important;font-size: 15px !important;}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{width: 40px;background-position: 6px center !important;top: 8px !important;}
-.V_3_5 .new-lead-common .or-class {color: #fff;padding: 10px;}
+.V_3_5 .new-lead-common .or-class {padding: 10px;}
 .v3-fb-outer.landing-page-mid .main-heading {font-size: 50px;line-height: 56px;}
 .v3-fb-outer .prime-action{font-size: 16px;}
 .V_3_5 .landing-text-left .or-class {text-align: left;}
@@ -2372,7 +2372,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .questions .question-section-outer .question-number{font-size: 12px;width: 24px !important;height: 24px !important;line-height: 24px;}
 .V_3_5 .questions .section-head {font-size: 22px;line-height: 28px;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label:after{border-radius: 3px;width: 16px;height: 16px;margin: 0 12px;top: 2px;}
-.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #ffffff !important;font-size: 14px;left: 12px !important;right: 0;top: -1px !important;bottom: 0;width: auto;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;}
+.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;font-size: 14px;left: 12px !important;right: 0;top: -1px !important;bottom: 0;width: auto;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:after{border-radius: 3px;width: 16px !important;height: 16px !important;margin-top: 0 !important;margin-bottom: 0 !important;top: 2px;left: 0px !important;}
 .V_3_5 .radio-outer-base.active .control{background: transparent;border: none !important;}
 .V_3_5 .question-components {margin-left: 0;padding-bottom: 30px;padding-left: 35px;}
@@ -2437,13 +2437,13 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .landing-text-right .landing-page-mid .main-heading {text-align: right;float: right;}
 .V_3_5 .landing-text-right .landing-page-mid .sub-heading {text-align: right;float: right;}
 .V_3_5 .landing-text-center .landing-page-mid .main-heading {float: none;text-align: center;margin: 0 auto !important;margin-bottom: 20px !important;}
-.V_3_5 .landing-text-center .landing-page-mid .sub-heading {text-align: center;margin: 0 auto !important;float: none;}
-.V_3_5 .landing-text-center .landing-page-mid .input-section {margin: 20px auto 0 !important;}
+.V_3_5 .landing-text-center .landing-page-mid .sub-heading {text-align: center;margin: 0 auto !important;float: none;margin-bottom:20px !important;}
+.V_3_5 .landing-text-center .landing-page-mid .input-section {margin: 0px auto !important;}
 .V_3_5 .landing-text-center .t2btn-outr {text-align: center;}
 .V_3_5 .result-branding.logo_1.Result{display: none;}
 .V_3_5 .page_2 .disc-in-ques{display: none;}
 .V_3_5 .page_2 .disc-set{display: none;}
-.V_3_5 .input-field {display: flex;margin: 0;}
+.V_3_5 .input-field {display: flex;margin: 0;flex-direction: column;}
 .V_3_5 .input-field .prefix {left: 0px;width: auto;top: 18px !important;font-size: 18px !important;position: absolute;}
 .V_3_5 .landing-page-mid .input-section .input-outer input {padding-bottom: 0 !important;padding-left: 25px !important;font-size: 16px !important;}
 .V_3_5.sound-cloud-new .landing-page-mid .input-field label:not(.label-icon).active {padding: 0px !important;font-size: 12px !important;font-weight: normal !important;margin: 0 !important;letter-spacing: 1px;}
@@ -2473,20 +2473,19 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .range-slider1.custom-slider1 .count{font-size: 10px !important;padding: 3px 10px !important;}
 .V_3_5 .page_2 .temp2-default-result-outer.tr-bold-new.result-full-section .small-bot-sec p{font-size: 16px !important;line-height: 22px !important;width: 100%;float: left;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {width: 100% !important;text-align: center;float: none;display: inline-block;margin: 0 auto !important;}
-.V_3_5 .landing-text-center .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: auto;float: none;}
-.V_3_5 .landing-text-left .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: auto;float: left;}
-.V_3_5 .landing-text-right .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: auto;float: right;}
+.V_3_5 .landing-text-center .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: 100%;float: none;max-width: 100%;padding-right: 0 !important;}
+.V_3_5 .landing-text-left .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: 100%;float: left;max-width: 100%;}
+.V_3_5 .landing-text-right .checkbox.input-outer:last-child:nth-child(odd) .input-field {width: 100%;float: right;max-width: 100%;}
 .V_3_5.sound-cloud-new .landing-page-mid .input-field label.leadform-checkbox div {font-size: 16px;}
-.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {left: 1px;top: 4px;}
-.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox span{top: 100%;width: 100%;float: left;display: block; position: relative;margin-top: 2px;}
-.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox {margin-bottom: 0;text-align: left;}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox span{top: 100%;width: 100%;float: left;display: block; position: absolute;margin-top: 2px;}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox {text-align: left;}
 .V_3_5 .selectize-control.leadform-select.single .selectize-input:after {top: 13px;}
 .V_3_5 .landing-page-mid .input-section .input-outer .selectize-input.items input {padding: 0 !important;position: relative;top: 7px;}
 .V_3_5 .landing-page-mid .selectize-control.single .selectize-input {min-height: 32px;margin: 10px 0 !important;font-size: 16px !important;}
 .V_3_5 .page_2 .result-scrolling-part .result-temp2-default-section:first-child { margin-top: 0px;padding-top: 0px;}
 .V_3_5 .landing-text-left .landing-page-mid .input-section{float: left;}
 .V_3_5 .landing-text-right .landing-page-mid .input-section{float: right;padding-right:0px;}
-.V_3_5 .landing-text-left .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {float: left;}
+.V_3_5 .landing-text-left .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {float: left;padding-right: 0px !important;}
 .V_3_5 .landing-text-right .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {float: right;}
 .V_3_5 .page_2 .prefix ~ label.active {left: 0 !important;padding-left: 0 !important;font-weight: normal !important;font-size: 12px !important;margin: 0;line-height: 18px !important;text-transform: uppercase;letter-spacing: 1px;padding-top: 0px;}
 .V_3_5 .page_2 .input-section{padding: 10px 0 0;}
@@ -2512,6 +2511,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5.sound-cloud-new .page_1 input.othersfield {font-size: 15px!important;line-height: 19px;padding-bottom: 3px !important;}
 .V_3_5 .radio-outer-base.textfield.active label {margin-right: 0 !important;padding: 0 !important;}
 .V_3_5 .radio-outer.textfield.active label {padding: 0 !important;margin-right: 0 !important;}
+.V_3_5.sound-cloud-new .landing-page-mid .selectize-dropdown.single{z-index: 9999;top: 32px !important;}
+.V_3_5 .landing-text-center .checkbox .input-field{max-width: 100%;}
 @keyframes slideInUp {
     from {
       -webkit-transform: translate3d(0, 50%, 0);

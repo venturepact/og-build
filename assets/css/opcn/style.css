@@ -5954,7 +5954,7 @@ leadform_question .or-class{
 .landing-text-right .landing-page-mid{
     float:right;
     text-align:right;
-    margin-right:30px
+    margin-right:60px
 }
 .landing-text-right .sub-heading{
     width:100%
@@ -6041,10 +6041,7 @@ leadform_question .or-class{
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{
     padding:13px 40px
 }
-.V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field{
-    display:flex;
-    width:100%
-}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field{display:flex;width:100%;max-width: 100%;}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input{
     font-size:14px;
     width:90%
@@ -6480,6 +6477,13 @@ fb_lead_gen+.lf-skip-btn{
     top:1px!important
 }
 @media (min-width:767px){
+  
+    .V_3_5.one-page-card-new.structure-right-align  .newProgressbar.progress{float: right;left: 70px; right: auto;}
+    .V_3_5.one-page-card-new.structure-right-align  .landing-page-header{right: 60px !important; left: auto !important;}
+    .V_3_5.one-page-card-new.structure-right-align .t1-question .landing-page-header{right: 30px !important; left: auto !important;}
+
+    .V_3_5.one-page-card-new.structure-right-align .result-v2 .common-result-bot-left.CTA-3 {padding: 0 0px !important;left: -50px !important;}
+    .V_3_5.one-page-card-new.structure-right-align leadform_question .newLeadGenV_3_5 + fb_lead_gen .or-class {text-align: right !important;margin: 10px 0 !important;padding: 0 15px !important;}
     .V_3_5.one-page-card-new leadform_question .newLeadGenV_3_5 + fb_lead_gen .or-class {text-align: left !important;}
     .V_3_5.one-page-card-new .t1-slider-question .newLeadGenV_3_5 + fb_lead_gen + .lf-skip-btn {margin-top: -33px !important;}
     .V_3_5.one-page-card-new .t1-ques-head {font-size: 24px; line-height: 30px;}
@@ -6995,9 +6999,7 @@ span.lead-close:hover{
 .V_3_5.one-page-card-new .t1-question .landing-page-header{
     left:30px
 }
-.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer span{
-    top:35px
-}
+.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer span{top:35px; font-size: 10px;}
 .V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer.checkbox span{
     top:5px
 }
@@ -7186,8 +7188,49 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa !important}
 .V_3_5.one-page-card-new .t1-ques-head{float: left; width: 100%}
 .V_3_5.one-page-card-new .t1-ques-head .help-text , .V_3_5.one-page-card-new .t1-ques-head .help-outer{float: left; width: 100%; top: 0px !important}
 .V_3_5.one-page-card-new .t1-ques-head .help-text {margin-top: 8px}
-.V_3_5.one-page-card-new .submit-textbox input[type="email"] {
-    margin: 0;
-    width: 100% !important;
-    padding: 0 0 5px 0 !important;
-}
+.V_3_5.one-page-card-new .submit-textbox input[type="email"] {margin: 0;width: 100% !important;padding: 0 0 5px 0 !important;}
+
+
+/*************** improved  rtl **************/
+
+.V_3_5.one-page-card-new.structure-right-align .submit-textbox-btnresp{float: right;}
+.V_3_5.one-page-card-new.structure-right-align  .t1-question .question-components .check-comp .checkbox-outer-base label, 
+.V_3_5.one-page-card-new.structure-right-align  .t1-question .question-components .check-comp .radio-outer-base label,
+.V_3_5.one-page-card-new.structure-right-align .checkbox-outer label.control.control--checkbox, 
+.V_3_5.one-page-card-new.structure-right-align .radio-outer.radio-icon-custom label.control.control--radio {padding-right: 35px!important;min-height: 30px;padding-top: 0!important;text-align: right;padding-left: 0px !important;float: right;}
+.V_3_5.one-page-card-new.structure-right-align  .otherfield-inputbtn input.othersfield, 
+.V_3_5.one-page-card-new.structure-right-align  input.othersfield ,
+.V_3_5.one-page-card-new.structure-right-align  .checkbox-outer .submit-checkbox-img,
+.V_3_5.one-page-card-new.structure-right-align .checkbox-outer-base .submit-checkbox-img, 
+.V_3_5.one-page-card-new.structure-right-align .radio-outer-base button.button_textfield.submit-textbox-btn,
+.V_3_5.one-page-card-new.structure-right-align .otherfield-inputbtn ,
+.V_3_5.one-page-card-new.structure-right-align .submit-checkbox-img, 
+.V_3_5.one-page-card-new.structure-right-align .t1-question .submit-textbox-btn {float: right;}
+.V_3_5.one-page-card-new.structure-right-align [type="checkbox"]:not(:checked), 
+.V_3_5.one-page-card-new.structure-right-align [type="checkbox"]:checked ,
+.V_3_5.one-page-card-new.structure-right-align [type="radio"]:not(:checked), 
+.V_3_5.one-page-card-new.structure-right-align [type="radio"]:checked{left: 0px; margin-left: 0px}
+.V_3_5.one-page-card-new.structure-right-align .t1-question .checkbox-outer .control__indicator.check-set, 
+.V_3_5.one-page-card-new.structure-right-align .t1-question .radio-icon-custom .control__indicator.icon-set{right: 0px !important; left: auto !important;}
+.V_3_5.one-page-card-new.structure-right-align .textfield label.control.control--checkbox, 
+.V_3_5.one-page-card-new.structure-right-align .textfield label.control.control--radio{float: right;}
+.V_3_5.one-page-card-new.structure-right-align .otherfield-inputbtn button.button_textfield.submit-textbox-btn {float: right !important;margin-right: 0px !important;margin-left: 15px !important;}
+.V_3_5.one-page-card-new.structure-right-align .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer input{padding: 0 25px 0 0}
+.V_3_5.one-page-card-new.structure-right-align .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer i{right: 0; left: auto !important;}
+.V_3_5.one-page-card-new.structure-right-align .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer [type=checkbox]+label.leadform-checkbox{padding-right: 30px !important; text-align: right;padding-left: 0px !important;}
+.V_3_5.one-page-card-new.structure-right-align .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .selectize-input input{padding-right: 0px !important; float: right;}
+.V_3_5.one-page-card-new.structure-right-align  .newProgressbar.progress span.sr-only{left: -10px; right: auto;}
+.V_3_5.one-page-card-new.structure-right-align  .newProgressbar.progress  .progress-bar{float: right;}
+.V_3_5.one-page-card-new.structure-right-align  .control.control--checkbox span{padding-right: 0px}
+.V_3_5.one-page-card-new.structure-right-align .textfield.checkbox-outer-base .submit-checkbox-img,
+.V_3_5.one-page-card-new.structure-right-align .checkbox-outer label.control.control--checkbox.blink-border.defaultOptionImage.active button.submit-checkbox-img.ripple-light{margin-right: 0px; margin-left: 15px; left: auto !important; right: 0px;}
+.V_3_5.one-page-card-new.structure-right-align .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .selectize-input{padding-right: 0px !important; padding-left: 20px !important}
+.V_3_5.one-page-card-new.structure-right-align  .landing-text-left .landing-page-mid {float: left;}
+.V_3_5.one-page-card-new.structure-right-align .landing-text-right .landing-page-mid{float: right;     margin-right: 60px;}
+.V_3_5.one-page-card-new.structure-right-align .landing-page-mid leadform .input-section .input-outer.checkbox label {padding-left: 0;float: right;width: 100%;text-align: right;padding-bottom: 0;}
+.V_3_5.one-page-card-new.structure-right-align .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input {padding: 8px 0px 6px 35px !important;margin-top: 0;}
+.V_3_5.one-page-card-new.structure-right-align .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.items input{float: right;padding-right: 0px !important;}
+.V_3_5.one-page-card-new.structure-right-align  .landing-page-mid .input-field label, 
+.V_3_5.one-page-card-new.structure-right-align  .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{padding-right: 30px !important; padding-left: 0px !important}
+.V_3_5.one-page-card-new.structure-right-align  .landing-page-mid .input-field label {float: right;left: auto;right: 0;margin-right: 0;}
+.V_3_5.one-page-card-new.structure-right-align .t1-landing-leadform .input-field .prefix~.validate~label:not(.label-icon).active{padding-right: 0px !important}
