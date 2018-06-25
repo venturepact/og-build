@@ -28,7 +28,9 @@
     .t1-landing { width: 100% !important; }
     .t1-question { width: 100% !important; }
     .t1-result { width: 100% !important; }
-    .landing-page-mid leadform .input-section .input-outer input, .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input , .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{ font-size: 14px !important;  }
+    .landing-page-mid leadform .input-section .input-outer input, 
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input , 
+    .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{ font-size: 14px !important;  }
     .t1-landing-top { position: absolute; top: 20px; left: 0; width: 100%; text-align: center; }
     .t1-ques-component .input-outer input{padding-left: 45px;}
     .landing-page-mid leadform { width: 100%; }
@@ -331,7 +333,7 @@
     a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 9px 35px 9px 15px !important;font-size: 14px;}
+
     .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;top: 8px !important;}
     .V_3_5 fb_lead_gen {width: 100%;float: left;margin-left: 0;margin-bottom: 50px;    }
     .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 9px 35px 9px 15px !important;float: none;font-size: 13px !important;}
@@ -757,7 +759,8 @@
     .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header{ font-size: 13px; padding: 10px 15px;}
     .main-heading ,  .main-heading h1, .main-heading p{ font-size: 40px !important; line-height: 46px; margin-bottom: 16px;}
     .sub-heading{ font-size: 18px !important; margin-bottom: 16px; line-height: 20px;}
-    .landing-page-mid leadform .input-section .input-outer input, .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ font-size: 14px !important;  }
+    .landing-page-mid leadform .input-section .input-outer input, 
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ font-size: 14px !important;  }
     .pull-text-right{padding-left: 100px; }
     .submit-textbox-btnresp{ width: auto; font-size: 11px; padding: 6px 10px; height: 30px !important}
     .errorMessage{ font-size: 11px;}
@@ -822,6 +825,8 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{padding-bottom: 0px}
+    .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 14px 30px;font-size: 12px;}
     .t1-slider-question .input-field label{width: 40px}
     .t1-slider-question .input-field label~input {width: calc(100% - 72px)!important;}
     .t1-slider-question .input-field.new-class1 label~input , .input-field input.postfixset {width: calc(100% - 36px)!important;}
@@ -846,13 +851,13 @@
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {      padding: 6px 10px;    font-size: 12px;}
     .t1-landing .t1-landing-inner .selectize-control{margin-bottom: 0}
     .t1-ques-component input{padding: 10px 15px; min-height: 42px; margin-bottom: 0px;}
-    .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox{margin-top: 0px}
+    .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {margin-top: 0px;min-height: auto;padding-bottom: 0;    }
     .t1-slider-nav a i {    font-size: 24px;}
     .custom-pager {    bottom: 40px;    }
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
     .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
     .t1-ques-component .input-section .input-outer span{top:48px !important;}
-    .bGImage{height: auto; padding-top: 25%}
+    .bGImage{height: 150px; padding-top: 0}
     .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
@@ -891,14 +896,17 @@
     .landing-page-mid leadform .input-section .input-outer { width: 100% !important;}
     .main-heading h1 , .sub-heading h2{max-width:100% !important} 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{margin-bottom: 25px}
-    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 0px 0 0px 0;    padding: 10px 20px;    min-height: 42px;    padding-left: 45px;}
+    .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 0px 0 0px 0;    padding: 0px 20px;    min-height: 40px;    padding-left: 40px;}
     .control-ver2 .submit-checkbox-outr{ bottom: 0px;}
     .landing-page-mid leadform .input-section .input-outer i {top: 13px;}
+   .V_3_5 .landing-page-mid leadform .input-section .input-outer i {top: 50%; transform: translateY(-50%);} 
     .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
     .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
     .result-v2 a.common-redo{bottom:0px !important;}
     .w100.text-center.lead-action-wrapper .submit-checkbox-img{display: inline-block;float: none;margin:0;font-size: 12px}
     .lead-popup-main button.lf-skip-btn.ripple-light{width: 100%;float: left;margin-left:0px;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 11px 35px 10px 15px !important;font-size: 12px;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before {top: 10px !important;}
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -958,5 +966,5 @@
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
     .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }
     .question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
-    .landing-page-mid leadform .input-section .input-outer.checkbox span{top:0 !important;}
+    .landing-page-mid leadform .input-section .input-outer.checkbox span{top:5px !important;}
 }

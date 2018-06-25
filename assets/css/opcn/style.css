@@ -6480,14 +6480,11 @@ fb_lead_gen+.lf-skip-btn{
     top:1px!important
 }
 @media (min-width:767px){
+    .V_3_5.one-page-card-new leadform_question .newLeadGenV_3_5 + fb_lead_gen .or-class {text-align: left !important;}
+    .V_3_5.one-page-card-new .t1-slider-question .newLeadGenV_3_5 + fb_lead_gen + .lf-skip-btn {margin-top: -33px !important;}
     .V_3_5.one-page-card-new .t1-ques-head {font-size: 24px; line-height: 30px;}
-    .one-page-card-new.V_3_5 .landing-page-mid .input-field label{
-        top:5px
-    }
-    .V_3_5 .t1-landing.landing-text-left .landing-page-mid leadform{
-        float:left;
-        width:100%
-    }
+    .one-page-card-new.V_3_5 .landing-page-mid .input-field label{top:5px}
+    .V_3_5 .t1-landing.landing-text-left .landing-page-mid leadform{float:left;width:100%}
     .V_3_5 .t1-landing.landing-text-center .landing-page-mid leadform{
         float:none;
         margin:0 auto;
@@ -6502,7 +6499,7 @@ fb_lead_gen+.lf-skip-btn{
         font-size:60px
     }
     .V_3_5 .landing-page-mid{
-        width:45%
+        width:60%
     }
     .V_3_5 .landing-page-mid button{
         padding:13px 40px
@@ -6835,12 +6832,7 @@ fb_lead_gen+.lf-skip-btn{
     width:20px;
     height:20px
 }
-.V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img{
-    border-radius:25px!important;
-    padding:12px 40px!important;
-    font-size:14px;
-    height:auto !important;
-}
+.V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img{border-radius:25px!important;padding:12px 40px!important;font-size:14px;height:auto !important;text-transform: uppercase}
 .V_3_5.one-page-card-new .lead-popup-header .lead-popup-head{
     float:none;
     width:100%;
@@ -6936,10 +6928,7 @@ fb_lead_gen+.lf-skip-btn{
     display:block;
     width:100%
 }
-.V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .or-class{
-    text-align:center!important;
-    margin:10px 0!important
-}
+.V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .or-class {text-align: center!important;margin: 10px 0!important;float: left;width: 100% !important;}
 .V_3_5 .lead-popup .lead-popup-outer .lead-popup-main button.lf-skip-btn{
     display:inline-block;
     clear:both;
