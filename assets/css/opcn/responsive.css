@@ -980,7 +980,7 @@
     .V_3_5 .or-class{width:100%!important;margin:10px 0!important;padding:0 70px!important;font-size:12px!important}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{padding:11px 35px!important;font-size:14px!important}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook,.V_3_5 .loginBtn,.V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook,.V_3_5 .result-v2 .loginBtn.loginBtn--facebook{padding:11px 40px 11px 14px!important;font-size:14px!important}
-    .V_3_5 .loginBtn:before{top:auto!important;right:8px!important;width:25px!important;height:25px!important;background-size:15px!important}
+    .V_3_5 .loginBtn:before{top:50%!important;right:8px!important; transform:translateY(-50%);width:25px!important;height:25px!important;background-size:15px!important}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}
@@ -1133,6 +1133,7 @@
     .redo-outer-recom .redo-link{text-align:center;width:100%!important}
     .pic-selector{width:inherit;margin-bottom:1.5%!important;margin-right:.5%!important;margin-left:.5%!important}
     .t1-result-top.recommendation-outer{width:91%!important;margin-left:35px}
+    .V_3_5 .t1-result-top.recommendation-outer{width:100%!important;margin-left:0px}
     .recom-section .recom-sctioninner{width:50%!important}
     .recom-section .recom-sctioninner.w100{width:100%!important}
     .recom-section .leadform-outer{float:none;padding:22px 25px 0 10px;display:table-cell;text-align:left}
