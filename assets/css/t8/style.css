@@ -2199,3 +2199,9 @@ span.calendar-range { width: 100%;  float: left;  text-align: center;  padding-b
 glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.checkbox span{position: relative; top: 0;}  
 .template-eight .common-result-main .multiple-outcome-outr .common-result-bot-icons {  position: relative;  BOTTOM: 0; margin-bottom: 0;}
 .result-v2 .common-result-bot .recom-section .leadform-outer .custom-btn-outer { border-radius: 40px !important;}
+.question-components .cal-outer input {
+    background: 0 0;
+}
+.template-eight .common-leadform-top.t1-result-leadform.eight-inner-wrapper+.common-result-bot.eight-inner-wrapper .overlay-outer-eight {
+    padding-bottom: 40px !important;
+}

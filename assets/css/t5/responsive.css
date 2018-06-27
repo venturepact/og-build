@@ -693,40 +693,21 @@ Developer: Bhawna */
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-    }
-    .V_3_5 .loginBtn:before{
-        width: 25px !important;
-        height: 25px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-    }
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 9px 35px 9px 15px !important;}
+    .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
     .V_3_5 .landing-page-mid .or-class{text-align: left !important}
-    .V_3_5 fb_lead_gen {
-        width: 100%;
-        float: left;
-        margin-left: 0;
-        margin-bottom: 50px;
-    }
-    .V_3_5 .fb-outer{
-        text-align: left;
-    }
-    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{
-        padding: 9px 35px 9px 15px !important;
-        float: none;
-        font-size: 13px !important;
-        margin:0 !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {
-        padding: 9px 35px 9px 15px !important;
-    }
-    .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {
-        text-align: center;
-    }
+    .V_3_5 fb_lead_gen {width: 100%;float: left;margin-left: 0;margin-bottom: 50px;}
+    .V_3_5 .fb-outer{text-align: left;}
+    .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 9px 35px 9px 15px !important;float: none;font-size: 13px !important;margin:0 !important;}
+    .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {padding: 9px 35px 9px 15px !important;}
+    .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {text-align: center;}
     .V_3_5 .lead-action-wrapper{width:100%;}
-    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: auto;margin-left: 0;}
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: auto;margin-left: 0;} 
+    .V_3_5 .result-v2.common-result .leadAsPopup .or-class {text-align: left !important;}
+    .V_3_5 .landing-text-center .or-class {text-align: center !important;padding: 10px 0;}
+    .V_3_5 .graded-msgbox {margin-top: 3px;}
+    .V_3_5 .graded-msgbox::before {top: 2px;left: 5px;}
+    .V_3_5 .landing-text-right .landing-page-mid {margin-right: 0;margin-left: 0;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -1212,16 +1193,6 @@ Developer: Bhawna */
     .t1-question{min-height: 100%;}
     .header-next-div {height: auto !important;}
     .template-five header.landing-page-header.outcome-logo{left:0 !important;}
-    
-    .V_3_5 .result-v2.common-result .leadAsPopup .or-class {
-        text-align: left !important;
-    }
-    .V_3_5 .landing-text-center .or-class {
-        text-align: center !important;
-        padding: 10px 0;
-    }
-    .V_3_5 .graded-msgbox {margin-top: 3px;}
-    .V_3_5 .graded-msgbox::before {top: 2px;left: 5px;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
