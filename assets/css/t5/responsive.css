@@ -359,12 +359,15 @@ Developer: Bhawna */
     .V_3_5 .landing-right{left:56%;    width: 305px;}
     .V_3_5 .landing-img {height: 420px;}
     .V_3_5 .stickyfooter {padding: 10px 27px 20px !important;}
+    .V_3_5 .common-footer-main .stickyfooter.lightSticky{padding-right: 10px !important;}
     .V_3_5 .main-section form{padding: 0; margin-top: 40px;}
-    .V_3_5 .landing-text-right .landing-page-mid{margin-right: 5%;}
+    .V_3_5 .landing-text-right .landing-page-mid{margin-right: 5%;margin-left: 0;padding-left: 10px;}
     .V_3_5 .landing-text-right .landing-right {left: 5%;float: left;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{height: 34px;    padding: 5px 13px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before,.V_3_5 button.btn.prime-action.ripple-light.back-action:before{line-height: 18px;}
     .V_3_5 .question-number{height: 30px;padding: 5px 7px;}
+    .V_3_5 .common-footer-inner{width: 30%;}
+    .V_3_5 .common-footer-linktext{width: 70%;}
     /*t5 result*/
     .V_3_5.template-five .common-result .t1-logo {padding: 0 38px !important;}
     .V_3_5 .t1-result .no-footer-links.no-header-links{padding-top: 90px !important;}
@@ -949,7 +952,7 @@ Developer: Bhawna */
     .V_3_5 .t1-ques-head {font-size: 15px;line-height: 20px;}
     .V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 14px;margin-bottom:0px !important;}
     .V_3_5 .landing-page-mid button {font-size: 13px;min-height: auto;min-width: auto;padding: 11px 30px; box-shadow:15px 15px 30px 0px rgba( 0, 0, 0 ,0.2)}
-    .V_3_5 .question-number {height: 26px;padding:1px 4px 1px 7px;top: -2px;}
+    .V_3_5 .question-number {height: 26px;padding:1px 7px 1px 4px;top: -2px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, 
     .V_3_5 button.btn.prime-action.ripple-light.back-action {padding: 5px 10px !important;}
     .V_3_5 .lead-popup .lead-popup-outer .lead-action-wrapper a.leadform-btn{font-size: 13px !important;height: auto; padding:  11px 30px !important;}
@@ -960,7 +963,7 @@ Developer: Bhawna */
     .date-selector-part .cal-outer.calender-date{width: 100%;}
     .date-selector-part span.calendar-range{width: 100%;}
     .V_3_5 .t1-question{padding: 28px 0;}
-    .V_3_5 .ques-header {padding: 0 28px;}
+    .V_3_5 .ques-header {padding: 0 28px;text-align: center;}
     .V_3_5 .main-section { width: 100%; padding: 30px 28px;margin: 0;}
     .V_3_5 .t1-ques-component.action-outer {margin-left: 0;width: 100%;float: none;justify-content: center;display: flex;}
     .V_3_5 button.btn.prime-action.ripple-light.back-action{margin-right: 6px;}
@@ -981,7 +984,7 @@ Developer: Bhawna */
     .V_3_5 .powered-by{box-shadow: none}
 
     /*logo*/
-    .V_3_5 .t1-logo { padding: 0 25px; margin-top: 25px;}
+    .V_3_5 .t1-logo { padding: 0 25px; margin-top: 25px;text-align: center;}
     .V_3_5 .landing-right{  left: 0;   width: 100%;  padding-right: 25px; padding-left: 25px; }
     .V_3_5 .t1-landing.no-logo .landing-img-mobile.for-tint-img { margin-top: 20px;}
     .V_3_5 .landing-text-right .landing-right{left: 0;}

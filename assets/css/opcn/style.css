@@ -5344,7 +5344,7 @@ p>span>a{
 }
 .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{
     padding-top:2px;
-    position:relative!important
+    position:relative !important
 }
 .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before{
     left:0!important;
@@ -6920,7 +6920,8 @@ fb_lead_gen+.lf-skip-btn{
     margin-bottom:30px
 }
 .V_3_5.one-page-card-new .common-result-main .t1-result-leadform .lead-popup [type=checkbox]+label.leadform-checkbox{
-    padding-bottom:0
+    padding-bottom:0;
+    float:left; width: 100%;
 }
 .V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox::after,.V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before,.V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:not(:checked)+label:after{
     top:0!important;
@@ -7194,8 +7195,9 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa !important}
 
 
 /*************** improved  rtl **************/
-.V_3_5.one-page-card-new .structure-right-align .t1-landing.landing-text-left .t1-landing-leadform {float: left; text-align: left;}
-.V_3_5.one-page-card-new .structure-right-align .t1-landing.landing-text-left .landing-page-mid button{float: left;}
+.V_3_5.one-page-card-new.structure-right-align .landing-text-left .landing-page-mid{float: left; text-align: left;}
+.V_3_5.one-page-card-new.structure-right-align .t1-landing.landing-text-left .landing-page-mid button{float: left;}
+.V_3_5.one-page-card-new.structure-right-align .landing-text-left .landing-page-mid .sub-heading h2{float: left;}
 .V_3_5.one-page-card-new.structure-right-align .control-ver2 .pic-selector {padding-left: 2.5% !important;padding-right: 0 !important;}
 .V_3_5.one-page-card-new.structure-right-align .submit-textbox-btnresp{float: right;}
 .V_3_5.one-page-card-new.structure-right-align  .t1-question .question-components .check-comp .checkbox-outer-base label, 
@@ -7245,3 +7247,4 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa !important}
 .V_3_5.one-page-card-new.structure-right-align .poll-main .poll-color{right: 0px; left: auto;}
 .V_3_5.one-page-card-new.structure-right-align .t1-ques-head .help-text, 
 .V_3_5.one-page-card-new.structure-right-align .t1-ques-head .help-outer{text-align: right}
+.V_3_5.one-page-card-new.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox{float: left; width: 100%;}

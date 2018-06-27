@@ -4979,18 +4979,20 @@ button.lf-skip-btn{
 
 /*questionner starts*/
 .V_3_5 .new_control .t1-ques-head div {font-size: 30px;line-height: 45px;}
-.V_3_5 .template3-outr {float: left;width: 32%;padding-left: 75px;padding-right: 35px;margin-top: 10px;}
+.V_3_5 .template3-outr {float: left;width: 32%;padding-left: 60px;padding-right: 35px;margin-top: 10px;}
 .V_3_5 .template3-outr .question-head {line-height: 48px;font-size: 28px;padding: 8px 10px;}
 .V_3_5 .t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {box-shadow: none}
 .V_3_5 .page_1 form .prime-action {margin-bottom: 0px;border-radius: 50px;-webkit-box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 12px 40px;}
 .V_3_5 .page_2.t1-result {background-image: none !important;}
-.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 12px 40px;}
+.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 12px 35px;font-size: 14px;line-height: 20px;}
 .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input input{max-width: 340px !important;}
 .V_3_5 .t1-question .new_control .question-components input{max-width: 360px !important;margin-bottom: 0px !important;}
 .V_3_5 .new_control .input-field label.post-icon {padding-right: 0px !important;text-align: right;margin-bottom: 0 !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .V_3_5 .new_control .input-field label.pre-icon {padding-left: 0px !important;text-align: left;margin-bottom: 0 !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input{padding-top: 7px !important; }/*questionner ends*/
 .V_3_5 .t1-question .question-components .selectize-control{margin-bottom: 0px !important;display: inline-block;}
+.V_3_5 .new_control .errorMessage{bottom: -17px; font-size: 10px;}
+.V_3_5 .t1-ques-head i{transform: rotate(0.03deg);}
 /*fb login starts*/
 .V_3_5 .landing-page-mid fb_lead_gen {width: 100%;float: left;left: 0;padding: 0;margin: 0 auto;}
 .V_3_5 .or-class {float: left;width: 100%;text-align: center;font-size: 14px !important;text-transform: uppercase;margin: 15px 0;line-height: normal;padding: 0 65px;}

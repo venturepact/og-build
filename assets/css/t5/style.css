@@ -4660,7 +4660,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .landing-page-mid {width: 48%;  margin-left: 10%;}
 .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 60px;line-height: 66px}
 .V_3_5 .sub-heading h2{font-size: 20px;line-height: 26px;}
-.V_3_5 .landing-page-mid button {border-radius: 2px;box-shadow: 36.146px 38.762px 29px 0px rgba( 0, 0, 0 ,0.2);font-size: 18px;line-height:24px;padding: 13px 30px;margin-top: 15px;transition: all .5s ease;  }
+.V_3_5 .landing-page-mid button {border-radius: 2px;box-shadow: 36.146px 38.762px 29px 0px rgba( 0, 0, 0 ,0.2);font-size: 18px;line-height:24px;padding: 13px 30px;margin-top: 15px;transition: all .5s ease; text-transform: none !important; }
 .V_3_5 .landing-page-mid button:hover { box-shadow: 9px 11px 29px 0px rgba( 0, 0, 0 ,0.1);}
 .V_3_5 .landing-img{box-shadow: 76px 50px 50px rgba( 0, 0, 0 ,0.2);}
 .V_3_5 .landing-text-right .landing-page-mid { margin-left: 17%;  margin-right: 10%;}
@@ -4738,10 +4738,12 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 leadform .input-outer.checkbox span {position: relative;top: 7px !important;}
 .V_3_5 leadform .input-outer.checkbox .input-field  {display:block}
 .V_3_5 .t1-question .question-components .input-outer i{top: 1px;}
-.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{border: none !important; border: 0px !important; content: 'done'; font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 15px; left: 8px !important;right: 0;top: 0px !important; bottom: 0;width: 17px; height: 17px;padding: 0 !important;}
-.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left:7px;}
+.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{border: none !important; border: 0px !important; content: 'done'; font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 15px; left: 2px !important;right: 0;top: 0px !important; bottom: 0;width: 17px; height: 17px;padding: 0 !important;}
+.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left:1px;}
 .V_3_5 .t1-question .leaded-form-c.question-section .selectize-control.single .selectize-input input:focus { border-bottom: none !important; box-shadow: none !important;}
 /*material checkbox for leadgen*/
+.V_3_5.template-five .t1-question [type="checkbox"] + label.leadform-checkbox:before, .V_3_5.template-five .t1-question [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{margin: 0px !important;left: 0 !important;}
+.V_3_5.template-five .t1-question .t1-ques-component [type="checkbox"] + label.leadform-checkbox{padding-left: 30px !important;}
 .V_3_5.template-five .landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {border: 0px !important; content: 'done';font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 16px;left: 0px !important;right: 0;top: 0px !important;bottom: 0;width: auto; height: auto;padding: 0 !important; border-radius: 3px;z-index: 999; float: left;}
 /*.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title {color: #444 !important;}*/
 .V_3_5 .t1-result-leadform .input-outer input::-webkit-input-placeholder {color: #444 !important;opacity: 0.5;}
@@ -4751,7 +4753,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .input-outer{margin-bottom: 30px;}
 .V_3_5 .t1-ques-component .input-section .input-outer span{top: 30px;font-size: 10px;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){margin-bottom: 30px;}
-.V_3_5 .landing-text-right .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .landing-text-right .loginBtn--facebook {align-items: flex-end;float: right;}
+.V_3_5 .landing-text-right .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .landing-text-right .loginBtn--facebook {float: right;}
 .V_3_5 .landing-text-right .landing-page-mid .or-class, .V_3_5 .landing-text-right .common-result-main .or-class {text-align: right !important;}
 .V_3_5 .landing-text-right .landing-page-mid button{margin-right: 0;}
 .V_3_5 .landing-text-left .landing-page-mid .or-class, .V_3_5 .landing-text-left .common-result-main .or-class {text-align: left !important;padding-left: 10px;}

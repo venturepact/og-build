@@ -1106,7 +1106,7 @@
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{font-size: 13px !important;}
     .V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before{top:3px !important;}
     .V_3_5 .landing-page-mid button{font-size: 13px !important;line-height: 17px;min-height: auto;min-width: auto;padding: 11px 30px !important;}
-    .V_3_5 .landing-page-header{left: 40px;}
+    .V_3_5 .landing-page-header{left: 0px;width: 100%;}
     .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 16px;line-height: 22px;}
     .V_3_5 .landing-text-left .landing-page-mid {width: 100%;float: none;margin: 0 auto;padding: 0 25px;}
     .V_3_5 .landing-text-right .landing-page-mid {width: 100%;float: none;margin: 0 auto;padding: 0 25px;}
@@ -1119,8 +1119,10 @@
     .V_3_5 .t1-ques-component{margin-bottom: 0;}
     .V_3_5 .new_control.visible {margin-bottom: 0px !important;}
     .V_3_5 .common-result.result-v2 .common-result-main .t1-result-topheading p {font-size: 22px !important;float: left;width: 100%;margin-bottom: 10px;}
-    .V_3_5 .t1-question .new_control .question-components input{margin-bottom: 10px !important;}
+    .V_3_5 .t1-question .new_control .question-components input{margin-bottom: 10px !important;min-width: 180px !important;}
     .V_3_5 .t1-question .question-components .selectize-control {display: inline-block !important;margin-bottom: 10px !important;}
+    .V_3_5 .new_control .errorMessage {bottom: -8px !important;font-size: 10px;}
+    .V_3_5 .t1-question button.prime-action{font-size: 13px;line-height: 17px;padding: 11px 30px;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
@@ -1842,6 +1844,8 @@
     .V_3_5 .template3-outr {float: left;width: 100%;margin-top: 10px;padding-left: 50px;padding-right: 50px;}
     .V_3_5 .template3-outr .question-subhead{margin-top: 5px ;}
     .V_3_5 .template3-outr .question-head{font-size: 26px;line-height: 45px;padding: 8px 10px;}
+    .V_3_5 .landing-page-header {position: absolute;top: 30px;left: 50px;}
+    .V_3_5 .t1-question button.prime-action{font-size: 14px;line-height: 18px;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
