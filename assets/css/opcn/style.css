@@ -6171,14 +6171,15 @@ fb_lead_gen+.lf-skip-btn{
     text-transform:uppercase
 }
 .V_3_5 .loginBtn:before{
-    top:auto!important;
+    top:50%!important;
     right:8px!important;
     width:30px!important;
     height:30px!important;
     background-color:#fff!important;
     border-radius:50%;
     background:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;
-    left:auto!important
+    left:auto!important;
+    transform: translateY(-50%);
 }
 .V_3_5 .loginBtn--facebook:before{
     border-right:none!important;
@@ -6486,7 +6487,7 @@ fb_lead_gen+.lf-skip-btn{
     .V_3_5.one-page-card-new.structure-right-align .result-v2 .common-result-bot-left.CTA-3 {padding: 0 0px !important;left: -50px !important;}
     .V_3_5.one-page-card-new.structure-right-align leadform_question .newLeadGenV_3_5 + fb_lead_gen .or-class {text-align: right !important;margin: 10px 0 !important;padding: 0 15px !important;}
     .V_3_5.one-page-card-new leadform_question .newLeadGenV_3_5 + fb_lead_gen .or-class {text-align: left !important;}
-    .V_3_5.one-page-card-new .t1-slider-question .newLeadGenV_3_5 + fb_lead_gen + .lf-skip-btn {margin-top: -33px !important;}
+    .V_3_5.one-page-card-new .t1-slider-question leadform_question fb_lead_gen + .lf-skip-btn {margin-top: -33px !important;}
     .V_3_5.one-page-card-new .t1-ques-head {font-size: 24px; line-height: 30px;}
     .one-page-card-new.V_3_5 .landing-page-mid .input-field label{top:5px}
     .V_3_5 .t1-landing.landing-text-left .landing-page-mid leadform{float:left;width:100%}
@@ -7193,6 +7194,8 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa !important}
 
 
 /*************** improved  rtl **************/
+.V_3_5.one-page-card-new .structure-right-align .t1-landing.landing-text-left .t1-landing-leadform {float: left; text-align: left;}
+.V_3_5.one-page-card-new .structure-right-align .t1-landing.landing-text-left .landing-page-mid button{float: left;}
 .V_3_5.one-page-card-new.structure-right-align .control-ver2 .pic-selector {padding-left: 2.5% !important;padding-right: 0 !important;}
 .V_3_5.one-page-card-new.structure-right-align .submit-textbox-btnresp{float: right;}
 .V_3_5.one-page-card-new.structure-right-align  .t1-question .question-components .check-comp .checkbox-outer-base label, 
