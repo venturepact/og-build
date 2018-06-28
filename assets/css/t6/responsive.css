@@ -825,6 +825,7 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    
     .V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{padding-bottom: 0px}
     .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 14px 30px;font-size: 12px;}
     .t1-slider-question .input-field label{width: 40px}
@@ -907,6 +908,8 @@
     .lead-popup-main button.lf-skip-btn.ripple-light{width: 100%;float: left;margin-left:0px;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 11px 35px 10px 15px !important;font-size: 12px;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before {top: 10px !important;}
+     /*********************** leadfrom after question*********************/
+     .V_3_5 .question-components .newLeadGenV_3_5 .input-outer input {padding: 0 20px 0 45px;margin: 0 !important;}
 }
 
 @media (min-width:768px) and (max-width:1024px) {

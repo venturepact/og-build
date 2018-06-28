@@ -4530,15 +4530,15 @@ p > span > a {color: inherit; }
      border-top-color: transparent !important;
      border-left-color: transparent !important;
  }
- .inline-temp-new .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left: 0px}
- .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 16px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
- .inline-temp-new .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before, .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{top:4px; margin:0px}
- .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 16px;display: inline-table;}
- .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer i{left: 5px !important;}
+ .inline-temp-new .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left: 0px}
+ .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 16px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
+ .inline-temp-new .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before, .common-result-main .lead-popup  .lead-popup-outer .lead-popup-main [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{top:4px; margin:0px}
+ .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div {color: #28324e;font-size: 16px;display: inline-table;}
+ .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer i{left: 5px !important;}
  .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 999999 !important;overflow: auto;width: 100%; }
- .lead-popup  .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 50px auto;position: relative; width: 100%}
- .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow: hidden;  box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
- .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */    overflow-y: auto;}
+ .lead-popup .lead-popup-outer {max-width: 700px; padding:0 15px;margin: 50px auto;position: relative; width: 100%}
+ .lead-popup .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow: hidden;  box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
+ .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */    overflow-y: auto;}
  .check-marks svg{height: 60px;}
  .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  .input-outer.checkbox .leadform-checkbox{position: relative !important; min-height: auto; padding-bottom:2px ; margin: 0 !important}
  .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer input{width: 100%}
@@ -4976,6 +4976,10 @@ button.lf-skip-btn{
 .V_3_5 .t1-ques-component .input-section .input-outer span {font-size: 10px;}
 .V_3_5.inline-temp-new .input-outer.checkbox span {top: 10px !important;}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input[type="checkbox"] + label div p{margin-bottom: 0px;}
+.V_3_5.inline-temp-new .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before{border-color: transparent !important;}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox .leadform-checkbox {line-height: 20px !important;margin-top: 8px !important;padding-bottom: 0 !important;}
+.V_3_5 .lead-popup .lead-popup-outer .lead-popup-main .input-validation{width: 100%;margin-left: 0;display: flex !important;flex: 1 1 100%;flex-direction: column;}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox .leadform-checkbox div p {margin: 0;}
 /*leadgen ends*/
 
 /*questionner starts*/
@@ -5030,5 +5034,5 @@ button.lf-skip-btn{
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-top-sec{margin-bottom: 5px;}
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-top-sec{margin-bottom: 5px;}
 .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action {margin-bottom: 0px;border-radius: 50px !important;-webkit-box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 13px 30px !important;}
-.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{line-height: 20px;}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{line-height: 20px;font-size: 14px;padding: 10px 30px;}
 /*result ends*/
