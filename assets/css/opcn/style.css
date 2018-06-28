@@ -5761,6 +5761,10 @@ button.lf-skip-btn{
     right:10px!important;
     left:auto!important
 }
+.V_3_5.one-page-card-new.structure-right-align .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before{
+    right:0px!important;
+    left:auto!important
+}
 .one-page-card-new.structure-right-align .common-result-main [type=checkbox].filled-in:checked+label:after,.structure-right-align [type=checkbox].filled-in:not(:checked)+label:after{
     right:0!important;
     left:auto!important
@@ -6921,7 +6925,7 @@ fb_lead_gen+.lf-skip-btn{
 }
 .V_3_5.one-page-card-new .common-result-main .t1-result-leadform .lead-popup [type=checkbox]+label.leadform-checkbox{
     padding-bottom:0;
-    float:left; width: 100%;
+    float:left !important; width: 100% !important;
 }
 .V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox::after,.V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before,.V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:not(:checked)+label:after{
     top:0!important;
