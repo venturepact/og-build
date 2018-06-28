@@ -4717,31 +4717,24 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 button.btn.prime-action.ripple-light.back-action:before {content: 'trending_flat'; font-family: 'Material Icons'; font-size: 22px; -webkit-transform: rotate(180deg); transform: rotate(180deg); float: left; top: auto; line-height: 22px;}
 .V_3_5 a.sliding-next:before { content: 'trending_flat'; font-family: 'Material Icons';font-size: 22px; float: left; top: auto;line-height: 22px;}
 .V_3_5 .action-outer{margin-left: 45px;}
-
-
 .V_3_5 .control-group.select{width: 100%}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{ border-radius: 2px;font-size: 14px;padding: 16px 35px;text-transform:none;font-weight:normal;}
-
 .V_3_5 .t1-question .prime-action {padding: 5px 15px;font-size: 14px;border-radius: 2px;}
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i{transform: rotate(180deg);}
 .V_3_5 .overlay-outerleadform.result-v2 .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label.active{transform: translateY(-100%); -webkit-transform: translateY(-100%);padding-left: 0px;}
-
 .V_3_5 label.control.control--checkbox.blink-border.defaultOptionImage.active {border: 0px;background: transparent !important;}
 .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action {border-radius: 3px !important;font-size: 14px !important;padding: 16px 35px !important;}
 .template-five .custom-block.rating-custom .rating-inner i{margin-right: 0px}
-
-
-
 /*leadgen*/
-.V_3_5 .input-outer i{font-size: 18px;top: 6px;}
+.V_3_5 .input-outer i{font-size: 18px;top: 6px;left: 0;}
 .V_3_5 .common-result-main .t1-result-leadform .input-outer input , .V_3_5 .landing-page-mid leadform .input-section .input-outer input{border-bottom-width: 1px !important;font-size: 16px;padding-left: 25px;}
 .V_3_5 leadform .input-field label:not(.label-icon).active{padding-left: 0;font-size: 12px;letter-spacing: 1px;font-weight: normal !important;top: 5px;}
 .V_3_5 leadform .input-outer span{top: 37px;font-size: 9px;}
 .V_3_5 leadform .input-outer.checkbox span {position: relative;top: 7px !important;}
 .V_3_5 leadform .input-outer.checkbox .input-field  {display:block}
 .V_3_5 .t1-question .question-components .input-outer i{top: 1px;}
-.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{border: none !important; border: 0px !important; content: 'done'; font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 15px; left: 2px !important;right: 0;top: 0px !important; bottom: 0;width: 17px; height: 17px;padding: 0 !important;}
-.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left:1px;}
+.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{border: none !important; border: 0px !important; content: 'done'; font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 15px; left: 2px !important;right: 0;top: 0px !important; bottom: 0;width: 18px; height: 18px;padding: 0 !important;}
+.V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left:1px;margin:0px !important;}
 .V_3_5 .t1-question .leaded-form-c.question-section .selectize-control.single .selectize-input input:focus { border-bottom: none !important; box-shadow: none !important;}
 /*material checkbox for leadgen*/
 .V_3_5.template-five .t1-question [type="checkbox"] + label.leadform-checkbox:before, .V_3_5.template-five .t1-question [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{margin: 0px !important;left: 0 !important;}
@@ -4752,7 +4745,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .t1-result-leadform .input-outer input::-moz-placeholder {color: #444 !important;opacity: 0.5;}
 .V_3_5 .t1-result-leadform .input-outer input:-ms-input-placeholder {color: #444 !important;opacity: 0.5;}
 .V_3_5 .t1-result-leadform .input-outer input:-moz-placeholder {color: #444 !important; opacity: 0.5;}
-.V_3_5 .input-outer{margin-bottom: 30px;}
+.V_3_5 .input-outer{margin-bottom: 30px;margin-top: 0;}
 .V_3_5 .t1-ques-component .input-section .input-outer span{top: 30px;font-size: 10px;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){margin-bottom: 30px;}
 .V_3_5 .landing-text-right .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .landing-text-right .loginBtn--facebook {float: right;}
@@ -4788,6 +4781,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .lead-popup-main .lf-skip-btn{width: 100%;float: left;text-align: left;}
 .V_3_5 .landing-text-right .landing-img { margin-top: 50px;}
 .V_3_5 .common-result a.sliding-next:before{display: none;}
+0 0!important
 
 /*new version--login with fb*/
 .V_3_5 .or-class { width: 100%;float: left; padding: 10px; padding-left: 0;text-align: center; font-size: 14px;text-transform: uppercase;}
