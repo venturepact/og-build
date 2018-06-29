@@ -1431,12 +1431,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     .V_3_5 .question-components input{padding:0 20px;margin-bottom:0}
     .V_3_5 .t1-question .textfield.checkbox-outer-base label.control.control--checkbox,
     .V_3_5 .t1-question .textfield.radio-outer-base label.control.control--radio{height:51px!important}
-    .V_3_5 .t1-question .textfield.checkbox-outer-base .othersfield,
-    .V_3_5 .t1-question .textfield.radio-outer-base .othersfield{min-height:40px}
-    .V_3_5 .slider-buttom-outer button.submit-checkbox-img.ripple-light,
-    .V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light,
-    .V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light ,
-    .V_3_5 button.button_textfield.submit-textbox-btn{height:40px;padding:0 20px;font-size:12px;line-height: 1}
+
     .V_3_5 .date-selector-part{max-width:770px;margin:0 auto}
     .V_3_5 .question-components .postfixset+button.button_textfield.submit-textbox-btn {margin-top: 0!important;position: absolute;float: left;-webkit-animation: none;animation: none;right: 76px;margin-left: 0;-webkit-transform: none; transform: none;top: 4px;    left: auto;}
     .V_3_5 .question-components .new-class2 .postfixset+button.button_textfield.submit-textbox-btn ,
@@ -1446,9 +1441,16 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     .V_3_5 .question-components .input-field input.postfixset{margin-bottom: 0px !important}
     .V_3_5 .t1-ques-head .help-text{float: left; margin-top: 10px}
 }
+.V_3_5 .t1-question .textfield.checkbox-outer-base .othersfield,
+.V_3_5 .t1-question .textfield.radio-outer-base .othersfield{min-height:40px}
+.V_3_5 .slider-buttom-outer button.submit-checkbox-img.ripple-light,
+.V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light,
+.V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light ,
+.V_3_5 button.button_textfield.submit-textbox-btn{height:40px;padding:0 20px !important;font-size:12px !important;line-height: 1}
 .V_3_5  .slider-buttom-outer {float: left;width: 100%;text-align: center;margin-top: 10px;}
 .V_3_5 .cal-outer .form-group {margin-bottom: 15px;float: left;width: 100%;}
 .V_3_5 .question-components .errorMessage {margin-top: 0;text-align: center;max-width: 100%;float: left;padding: 10px 0; top: 0px; position: relative;}
+
 /**********after question leadform start************/
 .V_3_5 .question-components .newLeadGenV_3_5 .input-outer input {padding-left: 45px;}
 .V_3_5 .t1-question   .question-components .newLeadGenV_3_5 .input-outer i {left: 15px;top: 50% !important;transform: translateY(-50%);}

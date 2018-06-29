@@ -275,6 +275,7 @@
     .opinon-scale-custom .radio-outer-base span.t6.hide{margin:0 !important;}
     .opinon-scale-custom .ripple-dark .mid-outer  .control.control--radio{min-height: 20px;}
     .custom-block.rating-custom .rating-inner i{font-size: 16px;margin-right: 3px;padding: 4px;}
+    .V_3_5 .custom-block.rating-custom .rating-inner i{font-size: 22px;margin-right: 2px;padding: 2px;}
     
     /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px !important;}
@@ -318,7 +319,7 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:112px; height:112px;}
     .active2 .ko-overlay1{width:124px; height:124px;}
     .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
-    .V_3_5 .control-ver2 .pic-selector span.abhi {font-size: 13px;min-height: auto;margin-left: 0;line-height: 18px !important;margin-top: 20px;}
+    .V_3_5 .control-ver2 .pic-selector span.abhi {font-size: 14px !important;min-height: auto;margin-left: 0;line-height: 18px !important;margin-top: 15px;}
     .range-slider1.custom-slider1 ul{ display: none;}
     .t1-landing.no-logo .no-footer-links .t1-landing-inner {padding-top: 20px !important;padding-bottom: 70px !important;}
     .custom-pager { bottom: 40px; }
@@ -344,7 +345,7 @@
     .cal-outer .input-group-addon{min-width: 40px;}
     .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
     .date-selector-part span.calendar-range {width: 100%;padding:0 0 10px 0;}
-    .V_3_5 button.button_textfield.submit-textbox-btn.ripple-light {font-size: 12px;padding: 8px 20px;}
+    /* .V_3_5 button.button_textfield.submit-textbox-btn.ripple-light {font-size: 12px;padding: 8px 20px;} */
 }
 @media (min-width:480px) and (max-width:767px) {
     .fb-like {        float: none;        margin-bottom: 10px;        vertical-align: top;        margin-top: 20px;        display: inline-block !important;    }
@@ -828,7 +829,8 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
-    
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 32px !important;line-height: 38px !important;}
+    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2, .V_3_5 .sub-heading h2 p {font-size: 16px !important;line-height: 20px !important;opacity: 1 !important;}
     .V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{padding-bottom: 0px}
     .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 14px 30px;font-size: 12px;}
     .t1-slider-question .input-field label{width: 40px}
@@ -905,6 +907,7 @@
     .landing-page-mid leadform .input-section .input-outer i {top: 13px;}
    .V_3_5 .landing-page-mid leadform .input-section .input-outer i {top: 50%; transform: translateY(-50%);} 
     .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
+    .V_3_5 .common-result .selectize-control.single .selectize-input {    min-height: auto !important;   }
     .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
     .result-v2 a.common-redo{bottom:0px !important;}
     .w100.text-center.lead-action-wrapper .submit-checkbox-img{display: inline-block;float: none;margin:0;font-size: 12px}
