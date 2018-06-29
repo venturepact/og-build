@@ -1387,7 +1387,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 @media (min-width:640px){
    
     .V_3_5 .landing-page-mid leadform .input-section .input-outer{float:none;vertical-align:top;display:inline-block;margin-bottom:30px}
-    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px;line-height:55px}
+    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
     .V_3_5 .page_0.t1-landing .landing-page-mid .input-outer i{top:50% !important;transform:translateY(-50%);line-height:1; left: 30px;}
     .V_3_5 .main-heading h1{max-width:80%}
     .V_3_5 .sub-heading h2{max-width:70%}
@@ -1441,12 +1441,17 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     .V_3_5 .question-components .input-field input.postfixset{margin-bottom: 0px !important}
     .V_3_5 .t1-ques-head .help-text{float: left; margin-top: 10px}
 }
+.V_3_5 .checkbox-outer button.submit-checkbox-img.ripple-light,
+.V_3_5 .submit-checkbox-outr button.submit-checkbox.ripple-light,
+.V_3_5 button.submit-checkbox-img.ripple-light,
+.textfield button.button_textfield.submit-textbox-btn{padding:0 15px !important;font-size:12px;height:35px}
 .V_3_5 .t1-question .textfield.checkbox-outer-base .othersfield,
 .V_3_5 .t1-question .textfield.radio-outer-base .othersfield{min-height:40px}
 .V_3_5 .slider-buttom-outer button.submit-checkbox-img.ripple-light,
 .V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light,
 .V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light ,
 .V_3_5 button.button_textfield.submit-textbox-btn{height:40px;padding:0 20px !important;font-size:12px !important;line-height: 1}
+
 .V_3_5  .slider-buttom-outer {float: left;width: 100%;text-align: center;margin-top: 10px;}
 .V_3_5 .cal-outer .form-group {margin-bottom: 15px;float: left;width: 100%;}
 .V_3_5 .question-components .errorMessage {margin-top: 0;text-align: center;max-width: 100%;float: left;padding: 10px 0; top: 0px; position: relative;}
@@ -1528,3 +1533,4 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .V_3_5.template-six .opinon-scale-custom {width: 100%;max-width: 570px;margin: 0 auto;}
 .V_3_5.template-six .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{box-sizing: border-box}
 .t6-pagination{float: left; width: 100%; position: absolute; bottom: 0; left: 0; right: 0;}
+.V_3_5 .poll-result .poll-right-text .common-result-bot-left .t1-result-cta .text-center a.prime-action {padding: 12px 20px !important;border-radius: 3px !important;}
