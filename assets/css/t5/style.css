@@ -4667,14 +4667,15 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .landing-text-right .landing-right {left: 10%;float: left;}
 .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align {width: 100%;margin: 0;padding: 0 60px;}
 .V_3_5 .isFullScreenBg.landing-inner {background-size: cover;}
+.V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align {width: 100%;margin: 0;padding: 0 60px;}
 /*questionner*/
 .V_3_5 .main-section form{width: 100%;float: left;margin:0;margin-top: 35px;padding: 0 35px;}
 .V_3_5 .section-count{margin-bottom: 5px;text-transform: uppercase;opacity: 0.6;}
-.V_3_5 .question-head{font-size: 24px; line-height: 30px; ;letter-spacing: 3px}
+.V_3_5 .question-head{font-size: 26px; line-height: 32px; ;letter-spacing: 3px}
 .V_3_5 .question-subhead{font-size: 14px;line-height: 20px;opacity:1;margin-top: 0px;}
 .V_3_5 .question-head p{margin-bottom: 5px;}
 .V_3_5 .section-sub{margin-bottom: 30px;}
-.V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 35px;float: left;padding: 8px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;}
+.V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 35px;float: left;padding: 0px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;margin-right: 15px;}
 .V_3_5 .question-number sup{font-size: 12px; top: 0 !important ; position: relative;}
 .V_3_5 .question-number sup::after {content: ".";margin-left: 0px;}
 .V_3_5 .question-number span , .V_3_5 .question-number sub{display: none;}
@@ -4706,6 +4707,9 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-right: 10px;}
 .V_3_5 .errorMessage { font-size: 10px;top: 40px;left: 10px;}
 .V_3_5 .no-logo .no-header-links.no-footer-links {padding-top: 0px !important;}
+.V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 20px;padding-left: 40px;}
+.V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
+.V_3_5 .textfield.checkbox-outer label i {top: 3px !important;position: relative;left: -4px;}
 
 /*prev and next btn*/
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, 
