@@ -1753,7 +1753,7 @@ p > span > a {color: inherit; }
 .template-section .lead-popup{position: absolute; z-index: 9999;}
 .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
-.common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title {
+.common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .lead-title ,.lead-popup  .lead-popup-outer .lead-popup-main .lead-title {
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
@@ -1769,7 +1769,7 @@ p > span > a {color: inherit; }
     text-align: center;
     word-break: break-word;
 }
-.template-eight .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{padding-left: 0px}
+.template-eight .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span ,  .lead-popup-outer .lead-popup-main .input-outer span{padding-left: 0px}
 
 .lead-popup  .lead-popup-outer .lead-popup-main .question-section.leaded-form-c{max-width: 100%}
 .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .section-head {font-size: 20px;margin-bottom: 10px;color: #666e78;width: 100%;float: left;word-break: break-word;text-align: left;}
@@ -1779,7 +1779,7 @@ p > span > a {color: inherit; }
 .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index:999999 !important;overflow: auto;width: 100%;padding:  50px 0}
 .lead-popup  .lead-popup-outer {max-width: 600px; padding:0 15px;margin: 0 auto;position: relative; width: 100%}
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;overflow:hidden;border-radius: 5px; border:12px solid transparent; box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
-.lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */      overflow-y: auto;}
+.lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%; /*max-height: calc(100vh - 100px);   */  overflow: visible    }
 .check-marks svg{height: 60px;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main  .input-outer.checkbox .leadform-checkbox{position: relative !important}
 .template-eight .t1-result-main .t1-result-top .lead-popup  .lead-popup-outer .lead-popup-main .selectize-control.single .selectize-input{margin-bottom: 0px}
@@ -1836,12 +1836,13 @@ p > span > a {color: inherit; }
         margin-bottom: 35px;
     }
 
-    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{display: block;background: none;border: none;padding: 0;left: 0;font-size: 18px;position: relative;line-height: 25px;box-shadow: none;z-index: 9;width: 100%;opacity: .8;color: #363b3e;float: left;margin-top: 15px;
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title , .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{display: block;background: none;border: none;padding: 0;left: 0;font-size: 18px;position: relative;line-height: 25px;box-shadow: none;z-index: 9;width: 100%;opacity: .8;color: #363b3e;float: left;margin-top: 15px;
     }
     .lead-popup-main .lf-skip-btn {background: none;border: none;opacity: 0.7;float: none;text-transform: uppercase;font-size: 16px;margin-top: 10px;margin-left: 10px;}
     
     .lead-popup-main .lf-skip-btn:hover {opacity: 1}
     .w100.text-center.lead-action-wrapper.eight-sec {float: left;width: 100%;display: flex;justify-content: center;}
+
 
     
 /* Css animation scaleIn*/
@@ -2126,7 +2127,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .template-eight .or-class {width: 100%;float: left;padding: 10px;text-align: center;font-size: 14px;text-transform: uppercase;}
 .template-eight .fb-outer{width:100%;float: left;}
 .template-eight .landing-page-mid button.loginBtn.loginBtn--facebook, .template-eight .loginBtn--facebook {background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important;text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 25px !important;min-height: auto;padding: 11px 47px 11px 25px !important;display: flex;align-items: center;justify-content: center;vertical-align: middle;word-break: break-word;margin: 0 auto !important;}
-.template-eight .loginBtn--facebook:before {top: auto !important;right: 8px !important;width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 25px !important;left: auto !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x: 5px !important;background-size: 18px !important;}
+.template-eight .loginBtn--facebook:before {top: 50% !important; transform:translateY(-50%);right: 8px !important;width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 25px !important;left: auto !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x: 5px !important;background-size: 18px !important;}
 .template-eight fb_lead_gen {width: 100%;float: left;text-align: center;}
 .template-eight .t1-landing-leadform fb_lead_gen {width: 100%;float: left;margin:0;}
 .template-eight .landing-page-mid .or-class,
@@ -2134,7 +2135,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .template-eight .leadAsPopup fb_lead_gen,
 .template-eight .t1-result-leadform fb_lead_gen {width: 100%;float: left;margin-left: 0;}
 .template-eight .leadAsPopup .loginBtn, 
-.template-eight .t1-result-leadform fb_lead_gen .loginBtn {padding: 11px 47px 11px 25px !important;float: none;}
+.template-eight .t1-result-leadform fb_lead_gen .loginBtn {padding: 11px 47px 11px 25px !important;float: none; display: inline-block;}
 
 
 
@@ -2177,7 +2178,7 @@ span.calendar-range { width: 100%;  float: left;  text-align: center;  padding-b
 .cal-outer .dropdown-menu { padding: 10px !important; text-align: center !important;font-size: 11px !important;}
 .cal-outer .table-condensed>thead>tr>th {  text-align: center !important;}
 .cal-outer ul { margin-bottom: 0 !important;}
-.cal-outer li.picker-switch.accordion-toggle { width: 100% !important;  float: left !important;  text-align: center !important;  padding: 10px 0 0 !important;  display: flex !important;  align-items: center !important; justify-content: center !important;}
+.cal-outer li.picker-switch.accordion-toggle { width: 100% !important;  float: left !important;  text-align: center !important;  padding: 0 !important;  display: flex !important;  align-items: center !important; justify-content: center !important;    font-size: 18px;}
 .cal-outer .timepicker .table-condensed {  width: 100% !important;  float: left !important;   text-align: center !important;}
 .cal-outer .table-condensed>tbody>tr>td, 
 .cal-outer .table-condensed>tbody>tr>th, 
@@ -2221,3 +2222,19 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     margin: 10px 0;
 }
 .template-eight .share-popup .lead-popup-header+.container-temp.text-center .text-center.question-section.leaded-form-c { min-height: auto;}
+.leadPopupVisibleNow {overflow: hidden;}
+.share-popup.share-like .cta-share {float: left;width: 100%;margin-bottom: 20px;}
+.share-popup .likes-parent .outcome_like, .share-popup .likes-parent .outcome_follow, .share-popup .likes-parent #vk_subscribe_fromPopup {
+    float: none !important;
+    margin: 0 !important;
+    top: 0 !important;
+    width: auto !important;
+    display: inline-block
+}
+.share-popup .likes-parent .outcome_like .fb-like, .share-popup .likes-parent .outcome_follow iframe, .share-popup .likes-parent #vk_subscribe_fromPopup iframe {
+    margin: 0 !important;
+    top: 0 !important;
+}
+.share-popup.lead-popup .input-section {
+    max-width: 100%;
+}

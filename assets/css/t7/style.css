@@ -2943,10 +2943,11 @@ span.calendar-range{
     width: 100% !important;
     float: left !important;
     text-align: center !important;
-    padding: 10px 0 0 !important;
+    padding: 0 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    font-size: 18px;
 }
 .cal-outer .timepicker .table-condensed {
     width: 100% !important;
