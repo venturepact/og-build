@@ -391,13 +391,33 @@
       border: none;
     }
 
+    .error-msg-new {
+      float: left;
+      width: 98%;
+    }
+
+    .btn-hide-new {
+      position: absolute;
+      right: 6px;
+      background: none;
+      border: none;
+      top: 10px;
+    }
+
+    .btn-hide-new i {
+      font-size: 18px;
+    }
+
     @media (max-width:1250px) {
       .btn-hide {
         position: relative !important;
         right: 0 !important;
       }
     }
-    #HandsontableCopyPaste{display: none !important;}</style><script type="text/javascript">let hosturl = window.location.hostname;
+
+    #HandsontableCopyPaste {
+      display: none !important;
+    }</style><script type="text/javascript">let hosturl = window.location.hostname;
     let CNameUrl = window.location.href;
 
     // return true for root domain
@@ -417,6 +437,10 @@
       document.getElementById('serverError').classList.add('hide');
     }
 
+    function removeClassIE() {
+      document.getElementById('serverErrorIE').classList.add('hide');
+    }
+
     function chnagesEventFire() {
       let pageType = localStorage.getItem('chnage_page').trim();
       let event = new CustomEvent('undoEvent', {
@@ -428,7 +452,7 @@
         console.log('Event fire: ', e);
       });
       window.dispatchEvent(event);
-    }</script><div id="serverError" class="error-msg-outer hide"><span class="error-msg">Oops, looks like something went wrong. Try connecting in a few seconds.</span> <a class="try-reload" href="javascript:window.location.reload()">Try reloading</a> <button class="try-reload btn-hide" id="removeHide" onclick="removeClass()">Hide</button></div><div class="toast"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="socketMessage" id="socketMessage"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="error-toast"><i class="material-icons error-toast-ic">warning</i> <span></span> <button type="button" class="btn toast-btn error-toast-btn"><i class="material-icons">clear</i></button></div><div class="ticker"><i class="material-icons">notifications</i> <span></span> <button type="button" class="btn ticker-btn"><i class="material-icons">clear</i></button></div><div id="main-div"><!--/*<app-root>Loading...</app-root>*/--><sd-app><div class="loader"></div></sd-app></div><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script><!-- <script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script> --><!-- Bootstrap Material Design : jQuery --><script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script><!-- Analytics Tracking Snippets Ends --><script type="text/javascript" src="assets/js/clipboard.min.js"></script><script type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--[if IE]>
+    }</script><div id="serverError" class="error-msg-outer hide"><span class="error-msg">Oops, looks like something went wrong. Try connecting in a few seconds.</span> <a class="try-reload" href="javascript:window.location.reload()">Try reloading</a> <button class="try-reload btn-hide" id="removeHide" onclick="removeClass()">Hide</button></div><div id="serverErrorIE" class="error_ie error-msg-outer hide"><span class="error-msg-new">You are trying to access our builder from Internet Explorer. Our builder leverages modern technology so its best to use the builder on Chrome or Firefox. </span><button class="try-reload btn-hide-new" id="removeHide" onclick="removeClassIE()"><i class="material-icons">close</i></button></div><div class="toast"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="socketMessage" id="socketMessage"><i class="material-icons toast-ic">check</i> <span></span> <button type="button" class="btn toast-btn"><i class="material-icons">clear</i></button></div><div class="error-toast"><i class="material-icons error-toast-ic">warning</i> <span></span> <button type="button" class="btn toast-btn error-toast-btn"><i class="material-icons">clear</i></button></div><div class="ticker"><i class="material-icons">notifications</i> <span></span> <button type="button" class="btn ticker-btn"><i class="material-icons">clear</i></button></div><div id="main-div"><!--/*<app-root>Loading...</app-root>*/--><sd-app><div class="loader"></div></sd-app></div><script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script><!-- <script src="assets/js/bootstrap.min.js" crossorigin="anonymous"></script> --><!-- Bootstrap Material Design : jQuery --><script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script><!-- Analytics Tracking Snippets Ends --><script type="text/javascript" src="assets/js/clipboard.min.js"></script><script type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--[if IE]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
     <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
