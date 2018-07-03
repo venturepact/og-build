@@ -705,12 +705,13 @@
     .main-heading p{ font-size: 42px; line-height: 48px;}
 }
 @media (min-width:641px) and (max-width:1024px) {
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -65px}
     .textfield  button.button_textfield.submit-textbox-btn {display: block;float: left;margin-top: 10px;margin-right: 0;padding: 10px;height: auto;min-height: auto;font-size: 14px;}
     .t1-question .textfield.checkbox-outer-base .othersfield{font-size: 15px}
     .t1-question .textfield.radio-outer-base .othersfield{font-size: 13px; margin: 10px 0 !important}
-    .powered-by span{font-size: 8px !important;}
-    .powered-by .poweredby-text{font-size: 10px !important}
-    .powered-by img{width: 14px !important;}
+    .powered-by span{font-size: 9px !important;}
+    .powered-by .poweredby-text{font-size: 9px !important}
+    .powered-by img{height: 14px !important;}
     .img-graded-box i{font-size: 16px;}
     .t1-question .ripple-dark label.control{width:130px;height: 130px; padding: 0 !important;}
     .graded-tick .img-graded-box {    width: 25px;    height: 25px;    padding: 5px 0;    top: 95px;     }
@@ -811,6 +812,8 @@
 }
 
 @media (max-width:479px){
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -58px !important}
+    .V_3_5 .bGImage{height: 100px; padding-top: 0}
     .t1-question .ripple-dark label.control {width: 120px!important;height: 120px!important;}
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 160px !important;}
     .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 160px !important;}
@@ -830,6 +833,7 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -65px}
     .V_3_5.template-six .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{min-height: 40px !important}
     .V_3_5.template-six .common-result-main .t1-result-leadform .input-outer span ,
     .V_3_5.template-six .common-result-main .t1-result-leadform .input-outer.dropdown span{font-size: 10px;top: 43px;}
@@ -851,6 +855,7 @@
     .V_3_5.template-six .powered-by{box-shadow: none}
     .V_3_5.template-six .powered-by .poweredby-text {font-size: 9px !important;margin-left: 3px;}
     .V_3_5.template-six .powered-by img {width: auto;height: 12px;}
+    .V_3_5.template-six .powered-by span{font-size: 9px !important;}
     .V_3_5.template-six  .result-branding .powered-by span ,  .template-six.V_3_5  .landing-footer-outer .powered-by span  {font-size: 9px;}
     .V_3_5.template-six .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span {top: 43px;}
     .V_3_5.template-six .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i {left: 15px!important;font-size: 16px;}
@@ -980,6 +985,7 @@
 
 }
 @media (max-width:359px){
+  
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 100% !important;}
     .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector {    width: 100% !important;}
     .poll-main .ko-progress-circle{left:80px;}

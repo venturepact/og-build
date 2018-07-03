@@ -646,7 +646,7 @@ npm .t1-landing-leadform select option{font-size:16px;padding:10px}
 .t1-result-leadform select{padding:5px;border:none;border-bottom:2px solid rgba(40,50,58,.4);margin-left:5px}
 .t1-result-leadform select option{font-size:16px;padding:10px}
 .t1-result-leadform label.leadform-checkbox{position:relative!important;cursor:pointer;display:block;line-height:16px;height:initial;top:0;font-size:16px;border-top:0;border-left:0;border-right:0;float:left;width:100%;text-align:left;padding:10px 10px 10px 40px}
-.t1-question .ripple-dark.checkbox-outer-base [type=checkbox]+label.control::before,.template-six [type=checkbox]+label.leadform-checkbox:before,.template-six [type=checkbox]:not(.filled-in)+label.leadform-checkbox:after{content:'';position:absolute;top:2px;left:6px;width:20px;height:20px;z-index:0;background-color:#fff;border:1px solid transparent;border-radius:1px;margin:0;padding:0 2px 1px}
+.t1-question .ripple-dark.checkbox-outer-base [type=checkbox]+label.control::before,.template-six [type=checkbox]+label.leadform-checkbox:before,.template-six [type=checkbox]:not(.filled-in)+label.leadform-checkbox:after{content:'';position:absolute;top:2px;left:0px;width:20px;height:20px;z-index:0;background-color:#fff;border:1px solid transparent;border-radius:1px;margin:0;padding:0 2px 1px}
 .t1-question .ripple-dark.radio-outer-base [type=radio]+label.control::before{content:'';position:absolute;top:2px;left:0;width:20px;height:20px;z-index:1;border-radius:50%!important;background-color:#fff;border:1px solid transparent;padding:1px;font-size:16px!important}
 .t1-question .ripple-dark.checkbox-outer-base [type=checkbox]+label.control::before,.t1-question .ripple-dark.radio-outer-base [type=radio]+label.control::before{margin:18.5px}
 .template-six .leaded-form-c [type=checkbox]+label{padding-left:35px;height:initial;line-height:initial}
@@ -1415,7 +1415,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     .template-six.V_3_5 .question-components input{font-size:16px!important}
     .V_3_5 .t1-question .question-components .input-outer i{left:15px;top:20px}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span,
-    .V_3_5 .t1-ques-component .input-section .input-outer span{top:55px;font-size:10px}
+    .V_3_5 .t1-ques-component .input-section .input-outer span{top:52px;font-size:10px; padding: 0px !important}
     .V_3_5 .input-icon-outer .selectize-input,
     .V_3_5 .landing-page-mid .input-outer.dropdown .selectize-input,
     .V_3_5 .question-components .selectize-input{min-height:50px!important;padding:15px 30px 15px 15px!important;font-size:16px}
@@ -1560,6 +1560,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .template-six.V_3_5 .result-v2 .common-leadform-top.t1-result-leadform.eight-inner-wrapper ,
 .template-six.V_3_5  .result-v2-box2 ,
 .template-six.V_3_5 .result-v2-box1{box-shadow: none !important}
-.V_3_5 .poll-main .ko-progress-circle {left: 17.5px; top: -2px; background: transparent !important}
+.V_3_5 .poll-main .ko-progress-circle {left: 50%; top: -2px; background: transparent !important; margin-left: -82px;}
 .V_3_5 .active .ko-overlay1{top: 0px; left: 0px; margin: 3px !important;} 
 .V_3_5  .active2 .ko-overlay1 {margin: 0;top: -4px;left: -4px;}
+.poll-main .radio-outer-base.active .mid-outer .poll-color-light {display: block !important;}
