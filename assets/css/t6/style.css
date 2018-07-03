@@ -1481,8 +1481,8 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .V_3_5 .or-class{width:100%;float:left;padding:10px;text-align:center;font-size:14px;text-transform:uppercase}
 .V_3_5 .fb-outer{width:100%;float:left}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook,.V_3_5 .loginBtn--facebook{background-color:#086ca0!important;background-image:linear-gradient(#086ca0,#086ca0)!important;text-shadow:0 -1px 0 #086ca0!important;border-radius:3px!important;text-transform:uppercase;min-height:auto;padding:16px 52px 16px 20px!important}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{top: 12px !important;}
-.V_3_5 .loginBtn--facebook:before{top:6px!important;right:11px!important;width:30px!important;height:30px!important;background-color:#fff!important;border-radius:3px!important;left:auto!important;border-right:none!important;background-image:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x:5px!important;background-size:18px!important}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{top: 50% !important;}
+.V_3_5 .loginBtn--facebook:before{top:50%!important;right:11px!important;width:30px!important;height:30px!important;background-color:#fff!important;border-radius:3px!important;left:auto!important;border-right:none!important;background-image:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x:5px!important;background-size:18px!important; transform: translateY(-50%)}
 .V_3_5 fb_lead_gen{width:100%;float:left;text-align:center}
 .V_3_5 .t1-landing-leadform fb_lead_gen{width:100%;float:left;margin:0}
 .V_3_5 .common-result-main .or-class,.V_3_5 .landing-page-mid .or-class{text-align:center!important}
@@ -1556,3 +1556,10 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .template-six.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer .selectize-control.single .selectize-input input ,
 .V_3_5.template-six .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input ,
 .V_3_5.template-six .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{background: transparent !important;}
+
+.template-six.V_3_5 .result-v2 .common-leadform-top.t1-result-leadform.eight-inner-wrapper ,
+.template-six.V_3_5  .result-v2-box2 ,
+.template-six.V_3_5 .result-v2-box1{box-shadow: none !important}
+.V_3_5 .poll-main .ko-progress-circle {left: 17.5px; top: -2px; background: transparent !important}
+.V_3_5 .active .ko-overlay1{top: 0px; left: 0px; margin: 3px !important;} 
+.V_3_5  .active2 .ko-overlay1 {margin: 0;top: -4px;left: -4px;}

@@ -2229,7 +2229,8 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     margin: 0 !important;
     top: 0 !important;
     width: auto !important;
-    display: inline-block
+    display: inline-block;
+    vertical-align:top;
 }
 .share-popup .likes-parent .outcome_like .fb-like, .share-popup .likes-parent .outcome_follow iframe, .share-popup .likes-parent #vk_subscribe_fromPopup iframe {
     margin: 0 !important;
@@ -2237,4 +2238,22 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 }
 .share-popup.lead-popup .input-section {
     max-width: 100%;
+}
+.template-eight .result-v2.common-result .leadAsPopup .w100.text-center .custom-btn-outer .submit-checkbox-img {
+    padding: 0 !important;
+   
+}
+.template-eight .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-heading-temp1 {
+    margin: 0 !important;
+}
+.share-popup.lead-popup .likes-parent #vk_subscribe_fromPopup {
+    width: 160px !important;
+    height: 28px !important;
+}
+.share-popup.lead-popup .likes-parent #vk_subscribe_fromPopup iframe {
+    min-height: 28px !important;
+    display: inline-block !important;
+    background: #5181b8;
+    border-radius: 3px;
+    padding: 3px 0;
 }

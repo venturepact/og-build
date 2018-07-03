@@ -4986,6 +4986,7 @@ button.lf-skip-btn{
 .V_3_5 .common-result-main .t1-result-leadform .input-outer span{left:0px;}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{padding-left: 25px !important;}
 .V_3_5 .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span{color: #f44336;}
+.V_3_5.inline-temp-new .result-v2 .outcome_like {top: 0 !important;}
 /*leadgen ends*/
 
 /*questionner starts*/
@@ -4994,7 +4995,7 @@ button.lf-skip-btn{
 .V_3_5 .template3-outr {float: left;width: 32%;padding-left: 60px;padding-right: 35px;margin-top: 10px;}
 .V_3_5 .template3-outr .question-head {line-height: 48px;font-size: 28px;padding: 8px 10px;}
 .V_3_5 .t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {box-shadow: none}
-.V_3_5 .page_1 form .prime-action {margin-bottom: 0px;border-radius: 50px;-webkit-box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 12px 35px;}
+.V_3_5 .page_1 form .prime-action {font-size:14px;margin-bottom: 0px;border-radius: 50px;-webkit-box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);box-shadow: 4px 20px 20px -3px rgba(0,0,0,0.1);padding: 12px 35px;}
 .V_3_5 .page_1 form .prime-action{position: relative;text-decoration: none;transition: 0.2s -webkit-transform ease-in-out;-webkit-transition: 0.2s -webkit-transform ease-in-out;transition: 0.2s transform ease-in-out;transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;will-change: transform;overflow: hidden;}
 .V_3_5 .page_1 form .prime-action::after {content: '';border-radius: 3rem;content: '';display: block;height: 100%;width: 100%;position: absolute;left: -3px;top: 0;-webkit-transform: translate(-100%, 0);transform: translate(-100%, 0);-webkit-transform-origin: top;transform-origin: center;transition: 0.3s -webkit-transform ease-out;-webkit-transition: 0.3s -webkit-transform ease-out;transition: 0.3s transform ease-out;transition: 0.3s transform ease-out, 0.3s -webkit-transform ease-out;will-change: transform;z-index: -1;}
 .V_3_5 .page_1 form .prime-action:hover::after {-webkit-transform: translate(0, 0);transform: translate(0, 0);left: 0;}
@@ -5053,4 +5054,5 @@ button.lf-skip-btn{
 .V_3_5 .share-popup .input-section .twitter-follow-button{margin-top: 0;top: 0;}
 .V_3_5 .share-popup .input-section #vk_subscribe_fromPopup{top: 0 !important;}
 .V_3_5 .inline-temp-new .result-v2 .outcome_like{top: 0px !important;}
+.V_3_5.inline-temp-new .common-result-main .common-result-bot .recom-section .leadform-outer h1{text-align: left !important;}
 /*result ends*/
