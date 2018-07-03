@@ -716,6 +716,7 @@ Developer: Bhawna */
     .V_3_5 .landing-text-right .landing-page-mid {margin-right: 0;margin-left: 0;}
     .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align{padding: 0 25px;}
     .V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align{padding: 0 25px;}
+    .isFullScreenBg .t1-landing-top + .landing-page-mid {display: table;height: 100vh;padding-top: 100px;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
