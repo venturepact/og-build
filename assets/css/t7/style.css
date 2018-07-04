@@ -2806,6 +2806,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
   float: left;
   /* width: 100%; */
   text-align: left;
+  left: 0px;
 }
 .fb-btn-outer {
     width: 100%;
@@ -3250,3 +3251,7 @@ span.calendar-range{
 .share-popup .new-socialBtn.btn-email:hover{ color:#ff4343; }
 .share-popup .new-socialBtn.btn-email:hover::before { box-shadow: inset 0 0 0 2px #ff4343;}
 /* social feeds in popup css end */
+
+.template-seven .landing-page-mid .landing-center-outer [type=checkbox]+label.leadform-checkbox p {
+  margin: 0;
+}
