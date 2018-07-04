@@ -2656,9 +2656,7 @@ input[type=number]{
     padding-bottom:80px
 }
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
-    .pic-selector label.control{
-        height:100%!important
-    }
+    .pic-selector label.control{height:100%!important}
     .question-pic img{
         max-width:60vw;
         position:relative;

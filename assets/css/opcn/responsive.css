@@ -82,6 +82,9 @@
     .submit-checkbox{padding:5px!important}
 }
 @media (min-width:0px) and (max-width:767px){
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        ::i-block-chrome,  .header-next-div{height: 700px !important;}
+    }
     .V_3_5.one-page-card-new.structure-right-align .landing-page-header{right: 0px; left: 0px !important; text-align: center;}
     .V_3_5 .progress,.recom-footer-outer .redo-outer-recom{position:relative}
     .fb-outer,.landing-footer-outer,
