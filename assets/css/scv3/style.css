@@ -2638,9 +2638,11 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .page_2 .results-outer .result-scrolling-part .result-temp2-default-section:first-child .small-top-sec p {font-size: 26px !important;line-height: 32px !important;margin-bottom: 5px;}
 .V_3_5 .page_2 .results-outer .result-scrolling-part .result-temp2-default-section:first-child .small-bot-sec p {font-size: 16px !important;line-height: 22px !important;}
 .V_3_5 .leadform-outer.result-scrolling.new-lead2 .or-class{padding: 10px;}
-.V_3_5 .page_2.result-fixed.t2haslogo .results-outer {height: calc(50vh - 165px);max-height: calc(100vh - 120px);}
+.V_3_5 .page_2.result-fixed.t2haslogo .results-outer {height: calc(50vh - 175px);max-height: calc(100vh - 120px);min-height: 150px;}
 .V_3_5 .page_2.result-fixed.t2haslogo .cta-outer {margin-bottom: 0 !important;}
 .V_3_5 .page_2.result-fixed.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: calc(50vh - 75px);}
+.V_3_5 .page_2.result-fixed.t2haslogo .results-outer.resultVisible {height: auto;}
 /*lead with result ends*/
-
 .V_3_5 .page_2 .input-section .input-outer span{font-size: 10px;width: 100%;}
+.V_3_5 .lead-submitted span {width: 100%;float: left;padding: 10px;}
+.V_3_5 .page_2 .leadform-outer .lf-submitted{margin: 0 auto !important;padding: 0;}
