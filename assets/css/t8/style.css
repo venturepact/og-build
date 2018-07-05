@@ -2260,3 +2260,11 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 
 .V_3_5 .t1-ques-component .input-section .input-outer .input-validation {float: left;width: 100%;}
 .V_3_5 .t1-ques-component .input-section .input-outer.checkbox{margin-bottom: 20px}
+
+.lead-popup.share-popup .likes-parent #like,  
+.lead-popup.share-popup .likes-parent #follow, 
+.lead-popup.share-popup .likes-parent #vk_subscribe_fromPopup {top: 0px !important;margin: 0 0px 5px 0px !important;     display: inline-block;vertical-align: top;}
+.lead-popup.share-popup .likes-parent #like iframe,  
+.lead-popup.share-popup .likes-parent #follow iframe,  
+.lead-popup.share-popup .likes-parent #vk_subscribe_fromPopup iframe {margin: 0 !important;top: 0;}
+.lead-popup.share-popup .input-section .fb-like{margin: 0 !important}
