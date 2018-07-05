@@ -1,0 +1,941 @@
+.ripple-light {
+    position: relative;
+    overflow: hidden; outline: none;
+}
+
+.ripple-light:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s
+}
+
+.ripple-light:active:after {
+    transform: scale(0, 0);
+    opacity: .2;
+    transition: 0s
+}
+
+
+.ripple-dark {
+    position: relative;
+    overflow: hidden ;outline: none;
+}
+
+.ripple-dark:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s
+}
+
+.ripple-dark:active:after {
+    transform: scale(0, 0);
+    opacity: .2;
+    transition: 0s
+}
+
+
+
+/*.selectize-input  {
+    position: relative;
+   overflow: hidden; z-index: 99;
+}
+
+.selectize-input :after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s
+}
+
+.selectize-input :active:after {
+    transform: scale(0, 0);
+    opacity: .2;
+    transition: 0s
+}*/
+
+
+/* Remove default checkbox */
+.one-page-card-new [type="checkbox"]:not(:checked),
+.one-page-card-new [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  
+}
+
+.one-page-card-new [type="checkbox"] {
+  /* checkbox aspect */
+}
+
+.one-page-card-new [type="checkbox"] + label {
+  position: relative;
+  padding-left: 52px;
+  cursor: pointer;
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  font-size: 16px;
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+}
+
+.one-page-card-new [type="checkbox"] + label:before,
+.one-page-card-new [type="checkbox"]:not(.filled-in) + label:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  border: 2px solid #5a5a5a;
+  border-radius: 1px;
+  margin-top: 2px;
+  transition: .2s;
+}
+
+.one-page-card-new [type="checkbox"]:not(.filled-in) + label:after {
+  border: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.one-page-card-new [type="checkbox"]:not(:checked):disabled + label:before {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new [type="checkbox"].tabbed:focus + label:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 0;
+  border-radius: 50%;
+  box-shadow: -5px 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.one-page-card-new [type="checkbox"]:checked + label:before {
+  top: -4px;
+  left: -5px;
+  width: 12px;
+  height: 22px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #26a69a;
+  border-bottom: 2px solid #26a69a;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.one-page-card-new [type="checkbox"]:checked:disabled + label:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+}
+
+/* Indeterminate checkbox */
+.one-page-card-new [type="checkbox"]:indeterminate + label:before {
+  top: -11px;
+  left: -12px;
+  width: 10px;
+  height: 22px;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #26a69a;
+  border-bottom: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+
+.one-page-card-new [type="checkbox"]:indeterminate:disabled + label:before {
+  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  background-color: transparent;
+}
+
+
+
+.one-page-card-new [type="checkbox"].filled-in + label:before,
+.one-page-card-new [type="checkbox"].filled-in + label:after {
+  content: '';
+  left: 0;
+  position: absolute;
+  /* .1s delay is for check animation */
+  transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+  z-index: 1;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:before {
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  left: 20px;
+  top: 26px;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 20% 40%;
+  transform-origin: 100% 100%; 
+  /*-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;*/
+}
+
+.one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:after {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #5a5a5a;
+  top: 2px;
+  z-index: 0; margin: 18px;
+   /*-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;*/
+}
+
+.one-page-card-new [type="checkbox"].filled-in:checked + label:before {
+  top: 18px;
+  left: 19px;
+  width: 8px;
+  height: 14px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:checked + label:after {
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #26a69a;
+  background-color: #26a69a;
+  z-index: 0; margin: 18px;
+   /*-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border-radius: 50%;*/
+  
+}
+
+.one-page-card-new [type="checkbox"].filled-in.tabbed:focus + label:after {
+  border-radius: 0px !important;
+  border-color: #5a5a5a;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.one-page-card-new [type="checkbox"].filled-in.tabbed:checked:focus + label:after {
+  border-radius: 2px;
+  background-color: #26a69a;
+  border-color: #26a69a;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:disabled:not(:checked) + label:before {
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:disabled:not(:checked) + label:after {
+  border-color: transparent;
+  background-color: #BDBDBD;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:disabled:checked + label:before {
+  background-color: transparent;
+}
+
+.one-page-card-new [type="checkbox"].filled-in:disabled:checked + label:after {
+  background-color: #BDBDBD;
+  border-color: #BDBDBD;
+}
+
+/* Radio Buttons
+   ========================================================================== */
+.one-page-card-new [type="radio"]:not(:checked),
+.one-page-card-new [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.one-page-card-new [type="radio"]:not(:checked) + label,
+.one-page-card-new [type="radio"]:checked + label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 52px;
+  transition: .28s ease;
+  /* webkit (konqueror) browsers */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; padding-right: 15px; padding-top: 2px; display: block;
+}
+
+.one-page-card-new [type="radio"] + label:before,
+.one-page-card-new [type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  transition: .28s ease; margin: 20px;
+}
+
+/* Unchecked styles */
+.one-page-card-new [type="radio"]:not(:checked) + label:before,
+.one-page-card-new [type="radio"]:not(:checked) + label:after,
+.one-page-card-new [type="radio"]:checked + label:before,
+.one-page-card-new [type="radio"]:checked + label:after,
+.one-page-card-new [type="radio"].with-gap:checked + label:before,
+.one-page-card-new [type="radio"].with-gap:checked + label:after {
+  border-radius: 50%;
+}
+
+.one-page-card-new [type="radio"]:not(:checked) + label:before,
+.one-page-card-new [type="radio"]:not(:checked) + label:after {
+  border: 2px solid #5a5a5a;
+  margin: 19px;
+}
+
+.one-page-card-new [type="radio"]:not(:checked) + label:after {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+/* Checked styles */
+.one-page-card-new [type="radio"]:checked + label:before {
+  border: 2px solid transparent;
+
+}
+
+
+.one-page-card-new [type="radio"]:checked + label:after,
+.one-page-card-new [type="radio"].with-gap:checked + label:before,
+.one-page-card-new [type="radio"].with-gap:checked + label:after {
+  border: 2px solid #26a69a;
+  margin: 19px;
+}
+
+.one-page-card-new [type="radio"]:checked + label:after,
+.one-page-card-new [type="radio"].with-gap:checked + label:after {
+  background-color: #26a69a;
+}
+
+.one-page-card-new [type="radio"]:checked + label:after {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+/* Radio With gap */
+.one-page-card-new [type="radio"].with-gap:checked + label:after {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+/* Focused styles */
+.one-page-card-new [type="radio"].tabbed:focus + label:before {
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Disabled Radio With gap */
+.one-page-card-new [type="radio"].with-gap:disabled:checked + label:before {
+  border: 2px solid rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new [type="radio"].with-gap:disabled:checked + label:after {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+
+/* Disabled style */
+.one-page-card-new [type="radio"]:disabled:not(:checked) + label:before,
+.one-page-card-new [type="radio"]:disabled:checked + label:before {
+  /*background-color: transparent;*/
+  border-color: rgba(0, 0, 0, 0.26);
+  background-color: #BDBDBD;
+}
+
+.one-page-card-new [type="radio"]:disabled + label {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new [type="radio"]:disabled:not(:checked) + label:before {
+  border-color: rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new [type="radio"]:disabled:checked + label:after {
+  background-color: rgba(0, 0, 0, 0.26);
+  border-color: #BDBDBD;
+}
+
+
+
+/* Text Inputs + Textarea
+   ========================================================================== */
+/* Style Placeholders */
+
+.one-page-card-new :-ms-input-placeholder {
+  color: #d1d1d1;
+}
+
+.one-page-card-new .landing-page-mid ::-webkit-input-placeholder {
+  color: #fff !important;
+}
+
+.one-page-card-new .landing-page-mid :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fff !important;
+}
+
+.one-page-card-new .landing-page-mid ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff !important;
+}
+
+.one-page-card-new .landing-page-mid :-ms-input-placeholder {
+  color: #fff !important;
+}
+
+/* Text inputs */
+.one-page-card-new .page_0.t1-landing input:not([type]),
+.one-page-card-new .page_0.t1-landing input[type=text],
+.one-page-card-new .page_0.t1-landing input[type=password],
+.one-page-card-new .page_0.t1-landing input[type=firstName],
+.one-page-card-new .page_0.t1-landing input[type=lastName],
+.one-page-card-new .page_0.t1-landing input[type=fullName],
+.one-page-card-new .page_0.t1-landing input[type=others],
+.one-page-card-new .page_0.t1-landing input[type=email],
+.one-page-card-new .page_0.t1-landing input[type=url],
+.one-page-card-new .page_0.t1-landing input[type=time],
+.one-page-card-new .page_0.t1-landing input[type=date],
+.one-page-card-new .page_0.t1-landing input[type=datetime],
+.one-page-card-new .page_0.t1-landing input[type=datetime-local],
+.one-page-card-new .page_0.t1-landing input[type=tel],
+.one-page-card-new .page_0.t1-landing input[type=tel_us],
+.one-page-card-new .page_0.t1-landing input[type=number],
+.one-page-card-new .page_0.t1-landing input[type=search],
+.one-page-card-new .page_0.t1-landing textarea.materialize-textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+  padding: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  transition: all 0.3s;
+}
+
+.one-page-card-new input:not([type]):disabled, .one-page-card-new input:not([type])[readonly="readonly"],
+.one-page-card-new input[type=text]:disabled,
+.one-page-card-new input[type=text][readonly="readonly"],
+.one-page-card-new input[type=password]:disabled,
+.one-page-card-new input[type=password][readonly="readonly"],
+.one-page-card-new input[type=email]:disabled,
+.one-page-card-new input[type=email][readonly="readonly"],
+.one-page-card-new input[type=firstName]:disabled,
+.one-page-card-new input[type=firstName][readonly="readonly"],
+.one-page-card-new input[type=lastName]:disabled,
+.one-page-card-new input[type=lastName][readonly="readonly"],
+.one-page-card-new input[type=fullName]:disabled,
+.one-page-card-new input[type=fullName][readonly="readonly"],
+.one-page-card-new input[type=others]:disabled,
+.one-page-card-new input[type=others][readonly="readonly"],
+.one-page-card-new input[type=url]:disabled,
+.one-page-card-new input[type=url][readonly="readonly"],
+.one-page-card-new input[type=time]:disabled,
+.one-page-card-new input[type=time][readonly="readonly"],
+.one-page-card-new input[type=date]:disabled,
+.one-page-card-new input[type=date][readonly="readonly"],
+.one-page-card-new input[type=datetime]:disabled,
+.one-page-card-new input[type=datetime][readonly="readonly"],
+.one-page-card-new input[type=datetime-local]:disabled,
+.one-page-card-new input[type=datetime-local][readonly="readonly"],
+.one-page-card-new input[type=tel]:disabled,
+.one-page-card-new input[type=tel][readonly="readonly"],
+.one-page-card-new input[type=tel_us]:disabled,
+.one-page-card-new input[type=tel_us][readonly="readonly"],
+.one-page-card-new input[type=number]:disabled,
+.one-page-card-new input[type=number][readonly="readonly"],
+.one-page-card-new input[type=search]:disabled,
+.one-page-card-new input[type=search][readonly="readonly"],
+.one-page-card-new textarea.materialize-textarea:disabled,
+.one-page-card-new textarea.materialize-textarea[readonly="readonly"] {
+  color: rgba(0, 0, 0, 0.26);
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new input:not([type]):disabled + label,
+.one-page-card-new input:not([type])[readonly="readonly"] + label,
+.one-page-card-new input[type=text]:disabled + label,
+.one-page-card-new input[type=text][readonly="readonly"] + label,
+.one-page-card-new input[type=password]:disabled + label,
+.one-page-card-new input[type=password][readonly="readonly"] + label,
+.one-page-card-new input[type=firstName]:disabled + label,
+.one-page-card-new input[type=firstName][readonly="readonly"],
+.one-page-card-new input[type=lastName]:disabled + label,
+.one-page-card-new input[type=lastName][readonly="readonly"],
+.one-page-card-new input[type=fullName]:disabled + label,
+.one-page-card-new input[type=fullName][readonly="readonly"],
+.one-page-card-new input[type=others]:disabled + label,
+.one-page-card-new input[type=others][readonly="readonly"],
+.one-page-card-new input[type=email]:disabled + label,
+.one-page-card-new input[type=email][readonly="readonly"] + label,
+.one-page-card-new input[type=url]:disabled + label,
+.one-page-card-new input[type=url][readonly="readonly"] + label,
+.one-page-card-new input[type=time]:disabled + label,
+.one-page-card-new input[type=time][readonly="readonly"] + label,
+.one-page-card-new input[type=date]:disabled + label,
+.one-page-card-new input[type=date][readonly="readonly"] + label,
+.one-page-card-new input[type=datetime]:disabled + label,
+.one-page-card-new input[type=datetime][readonly="readonly"] + label,
+.one-page-card-new input[type=datetime-local]:disabled + label,
+.one-page-card-new input[type=datetime-local][readonly="readonly"] + label,
+.one-page-card-new input[type=tel]:disabled + label,
+.one-page-card-new input[type=tel][readonly="readonly"] + label,
+.one-page-card-new input[type=tel_us]:disabled + label,
+.one-page-card-new input[type=tel_us][readonly="readonly"] + label,
+.one-page-card-new input[type=number]:disabled + label,
+.one-page-card-new input[type=number][readonly="readonly"] + label,
+.one-page-card-new input[type=search]:disabled + label,
+.one-page-card-new input[type=search][readonly="readonly"] + label,
+.one-page-card-new textarea.materialize-textarea:disabled + label,
+.one-page-card-new textarea.materialize-textarea[readonly="readonly"] + label {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.one-page-card-new input:not([type]):focus:not([readonly]),
+.one-page-card-new input[type=text]:focus:not([readonly]),
+.one-page-card-new input[type=password]:focus:not([readonly]),
+.one-page-card-new input[type=email]:focus:not([readonly]),
+.one-page-card-new input[type=firstName]:focus:not([readonly]),
+.one-page-card-new input[type=lastName]:focus:not([readonly]),
+.one-page-card-new input[type=fullName]:focus:not([readonly]),
+.one-page-card-new input[type=others]:focus:not([readonly]),
+.one-page-card-new input[type=url]:focus:not([readonly]),
+.one-page-card-new input[type=time]:focus:not([readonly]),
+.one-page-card-new input[type=date]:focus:not([readonly]),
+.one-page-card-new input[type=datetime]:focus:not([readonly]),
+.one-page-card-new input[type=datetime-local]:focus:not([readonly]),
+.one-page-card-new input[type=tel]:focus:not([readonly]),
+.one-page-card-new input[type=tel_us]:focus:not([readonly]),
+.one-page-card-new input[type=number]:focus:not([readonly]),
+.one-page-card-new input[type=search]:focus:not([readonly]),
+.one-page-card-new textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+
+.one-page-card-new input:not([type]):focus:not([readonly]) + label,
+.one-page-card-new input[type=text]:focus:not([readonly]) + label,
+.one-page-card-new input[type=password]:focus:not([readonly]) + label,
+.one-page-card-new input[type=email]:focus:not([readonly]) + label,
+.one-page-card-new input[type=firstName]:focus:not([readonly]) + label,
+.one-page-card-new input[type=lastName]:focus:not([readonly]) + label,
+.one-page-card-new input[type=fullName]:focus:not([readonly]) + label,
+.one-page-card-new input[type=others]:focus:not([readonly]) + label,
+.one-page-card-new input[type=url]:focus:not([readonly]) + label,
+.one-page-card-new input[type=time]:focus:not([readonly]) + label,
+.one-page-card-new input[type=date]:focus:not([readonly]) + label,
+.one-page-card-new input[type=datetime]:focus:not([readonly]) + label,
+.one-page-card-new input[type=datetime-local]:focus:not([readonly]) + label,
+.one-page-card-new input[type=tel]:focus:not([readonly]) + label,
+.one-page-card-new input[type=tel_us]:focus:not([readonly]) + label,
+.one-page-card-new input[type=number]:focus:not([readonly]) + label,
+.one-page-card-new input[type=search]:focus:not([readonly]) + label,
+.one-page-card-new textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #26a69a;
+}
+
+.one-page-card-new input:not([type]).valid, 
+.one-page-card-new input:not([type]):focus.valid,
+.one-page-card-new input[type=text].valid,
+.one-page-card-new input[type=text]:focus.valid,
+.one-page-card-new input[type=password].valid,
+.one-page-card-new input[type=password]:focus.valid,
+.one-page-card-new input[type=firstName].valid,
+.one-page-card-new input[type=firstName]:focus.valid,
+.one-page-card-new input[type=lastName].valid,
+.one-page-card-new input[type=lastName]:focus.valid,
+.one-page-card-new input[type=fullName].valid,
+.one-page-card-new input[type=fullName]:focus.valid,
+.one-page-card-new input[type=others].valid,
+.one-page-card-new input[type=others]:focus.valid,
+.one-page-card-new input[type=email].valid,
+.one-page-card-new input[type=email]:focus.valid,
+.one-page-card-new input[type=url].valid,
+.one-page-card-new input[type=url]:focus.valid,
+.one-page-card-new input[type=time].valid,
+.one-page-card-new input[type=time]:focus.valid,
+.one-page-card-new input[type=date].valid,
+.one-page-card-new input[type=date]:focus.valid,
+.one-page-card-new input[type=datetime].valid,
+.one-page-card-new input[type=datetime]:focus.valid,
+.one-page-card-new input[type=datetime-local].valid,
+.one-page-card-new input[type=datetime-local]:focus.valid,
+.one-page-card-new input[type=tel].valid,
+.one-page-card-new input[type=tel]:focus.valid,
+.one-page-card-new input[type=tel_us].valid,
+.one-page-card-new input[type=tel_us]:focus.valid,
+.one-page-card-new input[type=number].valid,
+.one-page-card-new input[type=number]:focus.valid,
+.one-page-card-new input[type=search].valid,
+.one-page-card-new input[type=search]:focus.valid,
+.one-page-card-new textarea.materialize-textarea.valid,
+.one-page-card-new textarea.materialize-textarea:focus.valid {
+  /*border-bottom: 1px solid #4CAF50;
+  box-shadow: 0 1px 0 0 #4CAF50;*/
+}
+
+.one-page-card-new input:not([type]).valid + label:after,
+.one-page-card-new input:not([type]):focus.valid + label:after,
+.one-page-card-new input[type=text].valid + label:after,
+.one-page-card-new input[type=text]:focus.valid + label:after,
+.one-page-card-new input[type=password].valid + label:after,
+.one-page-card-new input[type=password]:focus.valid + label:after,
+.one-page-card-new input[type=firstName].valid + label:after,
+.one-page-card-new input[type=firstName]:focus.valid + label:after,
+.one-page-card-new input[type=lastName].valid + label:after,
+.one-page-card-new input[type=lastName]:focus.valid + label:after,
+.one-page-card-new input[type=fullName].valid + label:after,
+.one-page-card-new input[type=fullName]:focus.valid + label:after,
+.one-page-card-new input[type=others].valid + label:after,
+.one-page-card-new input[type=others]:focus.valid + label:after,
+.one-page-card-new input[type=email].valid + label:after,
+.one-page-card-new input[type=email]:focus.valid + label:after,
+.one-page-card-new input[type=url].valid + label:after,
+.one-page-card-new input[type=url]:focus.valid + label:after,
+.one-page-card-new input[type=time].valid + label:after,
+.one-page-card-new input[type=time]:focus.valid + label:after,
+.one-page-card-new input[type=date].valid + label:after,
+.one-page-card-new input[type=date]:focus.valid + label:after,
+.one-page-card-new input[type=datetime].valid + label:after,
+.one-page-card-new input[type=datetime]:focus.valid + label:after,
+.one-page-card-new input[type=datetime-local].valid + label:after,
+.one-page-card-new input[type=datetime-local]:focus.valid + label:after,
+.one-page-card-new input[type=tel].valid + label:after,
+.one-page-card-new input[type=tel]:focus.valid + label:after,
+.one-page-card-new input[type=tel_us].valid + label:after,
+.one-page-card-new input[type=tel_us]:focus.valid + label:after,
+.one-page-card-new input[type=number].valid + label:after,
+.one-page-card-new input[type=number]:focus.valid + label:after,
+.one-page-card-new input[type=search].valid + label:after,
+.one-page-card-new input[type=search]:focus.valid + label:after,
+.one-page-card-new textarea.materialize-textarea.valid + label:after,
+.one-page-card-new textarea.materialize-textarea:focus.valid + label:after {
+  content: attr(data-success);
+  color: #4CAF50;
+  opacity: 1;
+}
+
+/*.one-page-card-new input:not([type]).invalid, .one-page-card-new input:not([type]):focus.invalid,
+.one-page-card-new input[type=text].invalid,
+.one-page-card-new input[type=text]:focus.invalid,
+.one-page-card-new input[type=password].invalid,
+.one-page-card-new input[type=password]:focus.invalid,
+.one-page-card-new input[type=firstName].invalid,
+.one-page-card-new input[type=firstName]:focus.invalid,
+.one-page-card-new input[type=lastName].invalid,
+.one-page-card-new input[type=lastName]:focus.invalid,
+.one-page-card-new input[type=fullName].invalid,
+.one-page-card-new input[type=fullName]:focus.invalid,
+.one-page-card-new input[type=others].invalid,
+.one-page-card-new input[type=others]:focus.invalid,
+.one-page-card-new input[type=email].invalid,
+.one-page-card-new input[type=email]:focus.invalid,
+.one-page-card-new input[type=url].invalid,
+.one-page-card-new input[type=url]:focus.invalid,
+.one-page-card-new input[type=time].invalid,
+.one-page-card-new input[type=time]:focus.invalid,
+.one-page-card-new input[type=date].invalid,
+.one-page-card-new input[type=date]:focus.invalid,
+.one-page-card-new input[type=datetime].invalid,
+.one-page-card-new input[type=datetime]:focus.invalid,
+.one-page-card-new input[type=datetime-local].invalid,
+.one-page-card-new input[type=datetime-local]:focus.invalid,
+.one-page-card-new input[type=tel].invalid,
+.one-page-card-new input[type=tel]:focus.invalid,
+.one-page-card-new input[type=tel_us].invalid,
+.one-page-card-new input[type=tel_us]:focus.invalid,
+.one-page-card-new input[type=number].invalid,
+.one-page-card-new input[type=number]:focus.invalid,
+.one-page-card-new input[type=search].invalid,
+.one-page-card-new input[type=search]:focus.invalid,
+.one-page-card-new textarea.materialize-textarea.invalid,
+.one-page-card-new textarea.materialize-textarea:focus.invalid {
+  border-bottom: 2px solid #F44336 !important;
+  box-shadow: 0 1px 0 0 #F44336;
+}*/
+
+.one-page-card-new input:not([type]).invalid + label:after,
+.one-page-card-new input:not([type]):focus.invalid + label:after,
+.one-page-card-new input[type=text].invalid + label:after,
+.one-page-card-new input[type=text]:focus.invalid + label:after,
+.one-page-card-new input[type=password].invalid + label:after,
+.one-page-card-new input[type=password]:focus.invalid + label:after,
+.one-page-card-new input[type=firstName].invalid + label:after,
+.one-page-card-new input[type=firstName]:focus.invalid + label:after,
+.one-page-card-new input[type=lastName].invalid + label:after,
+.one-page-card-new input[type=lastName]:focus.invalid + label:after,
+.one-page-card-new input[type=fullName].invalid + label:after,
+.one-page-card-new input[type=fullName]:focus.invalid + label:after,
+.one-page-card-new input[type=others].invalid + label:after,
+.one-page-card-new input[type=others]:focus.invalid + label:after,
+.one-page-card-new input[type=email].invalid + label:after,
+.one-page-card-new input[type=email]:focus.invalid + label:after,
+.one-page-card-new input[type=url].invalid + label:after,
+.one-page-card-new input[type=url]:focus.invalid + label:after,
+.one-page-card-new input[type=time].invalid + label:after,
+.one-page-card-new input[type=time]:focus.invalid + label:after,
+.one-page-card-new input[type=date].invalid + label:after,
+.one-page-card-new input[type=date]:focus.invalid + label:after,
+.one-page-card-new input[type=datetime].invalid + label:after,
+.one-page-card-new input[type=datetime]:focus.invalid + label:after,
+.one-page-card-new input[type=datetime-local].invalid + label:after,
+.one-page-card-new input[type=datetime-local]:focus.invalid + label:after,
+.one-page-card-new input[type=tel].invalid + label:after,
+.one-page-card-new input[type=tel]:focus.invalid + label:after,
+.one-page-card-new input[type=tel_us].invalid + label:after,
+.one-page-card-new input[type=tel_us]:focus.invalid + label:after,
+.one-page-card-new input[type=number].invalid + label:after,
+.one-page-card-new input[type=number]:focus.invalid + label:after,
+.one-page-card-new input[type=search].invalid + label:after,
+.one-page-card-new input[type=search]:focus.invalid + label:after,
+.one-page-card-new textarea.materialize-textarea.invalid + label:after,
+.one-page-card-new textarea.materialize-textarea:focus.invalid + label:after {
+  content: attr(data-error);
+  color: #F44336;
+  opacity: 1;
+}
+
+.one-page-card-new input:not([type]).validate + label,
+.one-page-card-new input[type=text].validate + label,
+.one-page-card-new input[type=password].validate + label,
+.one-page-card-new input[type=email].validate + label,
+.one-page-card-new input[type=firstName].validate + label,
+.one-page-card-new input[type=lastName].validate + label,
+.one-page-card-new input[type=fullName].validate + label,
+.one-page-card-new input[type=others].validate + label,
+.one-page-card-new input[type=url].validate + label,
+.one-page-card-new input[type=time].validate + label,
+.one-page-card-new input[type=date].validate + label,
+.one-page-card-new input[type=datetime].validate + label,
+.one-page-card-new input[type=datetime-local].validate + label,
+.one-page-card-new input[type=tel].validate + label,
+.one-page-card-new input[type=tel_us].validate + label,
+.one-page-card-new input[type=number].validate + label,
+.one-page-card-new input[type=search].validate + label,
+.one-page-card-new textarea.materialize-textarea.validate + label {
+  width: 96%;
+  pointer-events: none;
+}
+
+.one-page-card-new input:not([type]) + label:after,
+.one-page-card-new input[type=text] + label:after,
+.one-page-card-new input[type=password] + label:after,
+.one-page-card-new input[type=email] + label:after,
+.one-page-card-new input[type=firstName] + label:after,
+.one-page-card-new input[type=lastName] + label:after,
+.one-page-card-new input[type=fullName] + label:after,
+.one-page-card-new input[type=others] + label:after
+.one-page-card-new input[type=url] + label:after,
+.one-page-card-new input[type=time] + label:after,
+.one-page-card-new input[type=date] + label:after,
+.one-page-card-new input[type=datetime] + label:after,
+.one-page-card-new input[type=datetime-local] + label:after,
+.one-page-card-new input[type=tel] + label:after,
+.one-page-card-new input[type=tel_us] + label:after,
+.one-page-card-new input[type=number] + label:after,
+.one-page-card-new input[type=search] + label:after,
+.one-page-card-new textarea.materialize-textarea + label:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 60px;
+  opacity: 0;
+  transition: .2s opacity ease-out, .2s color ease-out;
+}
+.input-field.inline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.input-field.inline input,
+.input-field.inline .select-dropdown {
+  margin-bottom: 1rem;
+}
+
+.input-field.col label {
+  left: 0.75rem;
+}
+
+.input-field.col .prefix ~ label,
+.input-field.col .prefix ~ .validate ~ label {
+  width: calc(100% - 3rem - 1.5rem);
+}
+
+.one-page-card-new .landing-page-mid .input-field label {
+  position: absolute;
+  top: 17px;
+  left: 0;
+  font-size: 14px;
+  cursor: text;
+  transition: .2s ease-out; font-weight: normal !important;opacity: 0.7; text-align: left;
+}
+
+.input-field label:not(.label-icon).active {
+  font-size: 1.1rem !important;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  text-transform: uppercase;   
+  font-weight: bold !important;     
+}
+
+.input-field .prefix {
+  position: absolute;
+  width: 3rem;
+  font-size: 2rem;
+  transition: color .2s;
+}
+
+.input-field .prefix.active {
+  color: #26a69a;
+}
+
+.input-field .prefix ~ input,
+.input-field .prefix ~ textarea,
+.input-field .prefix ~ label,
+.input-field .prefix ~ .validate ~ label,
+.input-field .prefix ~ .autocomplete-content {
+  margin-left: 6px; padding-left: 30px;
+  width: 92%;
+  width: calc(96% - 3rem); font-size: 16px; text-align: left; margin-right: 10px; padding-bottom:2px;
+   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.input-field .prefix ~ label {
+  margin-left: 3rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .input-field .prefix ~ input {
+    width: 86%;
+    width: calc(100% - 3rem);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .input-field .prefix ~ input {
+    width: 80%;
+    width: calc(100% - 3rem);
+  }
+}
+
+/* Search Field */
+.input-field input[type=search] {
+  display: block;
+  line-height: inherit;
+  padding-left: 4rem;
+  width: calc(100% - 4rem);
+}
+
+.input-field input[type=search]:focus {
+  background-color: #fff;
+  border: 0;
+  box-shadow: none;
+  color: #444;
+}
+
+.input-field input[type=search]:focus + label i,
+.input-field input[type=search]:focus ~ .mdi-navigation-close,
+.input-field input[type=search]:focus ~ .material-icons {
+  color: #444;
+}
+
+.input-field input[type=search] + label {
+  left: 1rem;
+}
+
+.input-field input[type=search] ~ .mdi-navigation-close,
+.input-field input[type=search] ~ .material-icons {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  color: transparent;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: .3s color;
+}
+
+
+.one-page-card-new  [type="checkbox"].filled-in:not(:checked) + label.check-icon:after {display: none;}
+.one-page-card-new [type="checkbox"].filled-in:checked + label.check-icon:before{display: none;}
+.one-page-card-new [type="checkbox"].filled-in:checked + label.check-icon:after {display: none !important;}
+
+
+.one-page-card-new [type="radio"]:not(:checked) + label.radio-icon:before, .one-page-card-new [type="radio"]:not(:checked) + label.radio-icon:after{ display: none;}
+.one-page-card-new [type="radio"]:checked + label.radio-icon:after, .one-page-card-new [type="radio"].with-gap:checked + label.radio-icon:before,
+.one-page-card-new [type="radio"].with-gap:checked + label.radio-icon:after { display: none;}
+
+
+.one-page-card-new .t1-question [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, 
+.one-page-card-new .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{
+      border-radius: 0;
+}
