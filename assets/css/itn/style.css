@@ -4987,6 +4987,12 @@ button.lf-skip-btn{
 .V_3_5 .input-field label:last-child{margin-left: 0px !important;}
 .V_3_5.inline-temp-new .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {top: 0px;left: 0px;}
 .V_3_5.inline-temp-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .or-class{z-index: 1; font-size: 11px !important;}
+.V_3_5 .t1-ques-component .input-section .input-outer div{font-size: 20px;}
+.V_3_5 .t1-ques-component .input-section .input-outer div p{margin-bottom: -3px;}
+.V_3_5 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single{top: 35px !important;}
+.V_3_5 .t1-ques-component.leadform-inline {width: 63%;float: left;margin: 0;}
+.V_3_5 .t1-ques-component.leadform-inline form#leadform_question {width: 100%;float: left;}
+.V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{padding-left: 25px !important;}
 /*leadgen ends*/
 
 /*questionner starts*/
@@ -5019,7 +5025,7 @@ button.lf-skip-btn{
 .V_3_5 leadform_question .or-class {padding: 0 10px;text-align: left;margin-top: 0px;font-size: 12px;}
 .V_3_5 leadform_question .loginBtn--facebook {padding: 14px 47px 14px 25px !important;font-size: 14px !important;}
 .V_3_5 .t1-result-leadform fb_lead_gen {width: 100%;float: left;left: auto;}
-.V_3_5 fb_lead_gen {width: 68%;float: right;position: relative;}
+.V_3_5 fb_lead_gen {width: 100%;float: right;position: relative;}
 .V_3_5.inline-temp-new .result-v2 .loginBtn.loginBtn--facebook {padding: 11px 47px 11px 25px !important;}
 .V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook {padding: 11px 47px 11px 25px !important;text-align: center !important;float: none;font-size: 14px !important;}
 .V_3_5.inline-temp-new .result-v2 .leadAsPopup .or-class{text-align: center !important;}
