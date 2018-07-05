@@ -1137,6 +1137,12 @@
     .V_3_5 leadform_question .loginBtn--facebook :before{top: 4px !important;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single{top: 32px !important}
     .V_3_5 .t1-ques-component.leadform-inline{width: 100%;float: left;}
+    .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type=checkbox].filled-in:checked+label.leadform-checkbox:after{width: 18px;left:0;}
+    .V_3_5 .t1-question .question-components leadform_question .question-section.leaded-form-c .selectize-control.single .selectize-input{min-height: 31px;}
+    .V_3_5 .t1-ques-component .input-section .input-outer div{font-size: 18px;}
+    .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type=checkbox].filled-in:checked+label.leadform-checkbox:after{width: 18px;left: 0;}
+    .V_3_5 .t1-question .question-components .input-outer i{top: 9px !important; left: 0;font-size: 18px !important;}
+    .V_3_5 .t1-question .question-components leadform_question .question-section.leaded-form-c .selectize-control.single .selectize-input{min-height: 22px;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
@@ -1864,6 +1870,7 @@
     .V_3_5 leadform_question .or-class{margin-top: 10px;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single{top: 30px !important}
     .V_3_5 .t1-ques-component.leadform-inline{width: 100%;float: left;}
+    .V_3_5 .t1-question .question-components .input-outer i{top: 7px !important; left: 0;font-size: 20px !important;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
