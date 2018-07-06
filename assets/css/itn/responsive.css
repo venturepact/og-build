@@ -1147,6 +1147,9 @@
     .V_3_5 .t1-ques-component .input-section .input-outer.checkbox {margin-bottom: 23px;display: inline-block;float: none;margin-right: 0;}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span{top: 30px;}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox {margin-top: 7px;}
+    .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{padding-top: 6px;}
+    .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox:before{padding-top: 6px;}
+    .V_3_5 .t1-question .new_control .question-components input.postfixset{max-width: inherit !important;float: none;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}

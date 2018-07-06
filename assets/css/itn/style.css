@@ -4992,11 +4992,12 @@ button.lf-skip-btn{
 .V_3_5 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single{top: 35px !important;}
 .V_3_5 .t1-ques-component.leadform-inline {width: 63%;float: left;margin: 0;}
 .V_3_5 .t1-ques-component.leadform-inline form#leadform_question {width: 100%;float: left;}
-.V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{width:100%;padding-left: 25px !important;padding-top: 6px !important;display: inline;float: none;}
-.V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox:before{top: 5px !important;}
+.V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{width:100%;padding-left: 25px !important;padding-top: 10px !important;display: inline-block;float: none;}
+.V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox:before{top: 10px !important;}
 .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top: 5px !important;}
 .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{top: 6px !important;}
 .V_3_5 .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span{width: 100%;}
+.V_3_5 .t1-ques-component .input-section .input-outer.checkbox{display: inline-block;margin-top: 2px;margin-bottom: 18px;float: none;}
 /*leadgen ends*/
 
 /*questionner starts*/
