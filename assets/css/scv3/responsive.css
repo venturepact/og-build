@@ -387,6 +387,7 @@
     .V_3_5 .page_2 .results-outer .result-scrolling-part .result-temp2-default-section:first-child .small-bot-sec p{font-size: 15px !important;}
     .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input {margin:0 !important;}
     .V_3_5 .loginBtn--facebook:before{background-position-x: 4px !important;background-size: 16px !important;width: 25px !important;height: 25px !important;right: 10px !important;top: 7px !important;}
+    .V_3_5 .page_2 .result-temp2-default-section{max-height: 100%;overflow:visible;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;}
     .V_3_5 .powered-by.lightPowered span{font-size: 8px;}
@@ -545,7 +546,7 @@
     .V_3_5 .landing-text-left.no-logo .landing-page-mid, 
     .V_3_5 .landing-text-right.no-logo .landing-page-mid, 
     .V_3_5 .landing-text-center.no-logo .landing-page-mid {padding: 60px 40px;}
-    .V_3_5 .page_2 .result-temp2-default-section { padding: 18px 25px; width: 100%; margin-bottom: 20px;}
+    .V_3_5 .page_2 .result-temp2-default-section { padding: 18px 25px; width: 100%; margin-bottom: 20px;max-height: 100%;overflow:visible;}
     .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:before, .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:after{margin: 0px 12px !important;}
     .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{margin: 0px 12px !important;}
     .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;position: relative;}
