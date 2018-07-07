@@ -12,7 +12,7 @@
 .leadform-outer .prime-action{ margin-left: 0;}
 .graph-outer-new{ padding:0; }
 .section-part:nth-child(1){ width:40%;}
-/* .template-seven .common-header-main .logo a img.horz { max-width: 110px!important;  max-height: 55px!important;} */
+.template-seven .common-header-main .logo a img.horz { max-width: 110px!important;  max-height: 55px!important;}
 }
 
 
@@ -115,9 +115,6 @@
         left:0 !important;
         top:51px !important; width:100%;
     }
-    .landing-page-mid .input-section .input-outer.checkbox span {
-        top:0px !important;
-    }
     .col {
         width: 100%;
         float: left;
@@ -173,23 +170,6 @@
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
     .like-cta-outer .fb-like{margin-bottom:6px;}
     .range-slider1.custom-slider1 ul{ display: none;}
-
-    .V_3_5 .t1-landing-leadform fb_lead_gen{text-align: center;}
-    .V_3_5 .or-class{font-size: 13px; text-align: center;}
-    .V_3_5 .loginBtn, .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {
-        margin: 0 !important;
-        padding: 7px 35px 7px 12px !important;
-        border: none;
-        text-align: left;
-        line-height: normal;
-        font-size: 13px !important;
-    }
-    .V_3_5 .loginBtn:before {
-        top: 4px !important;
-        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
-        background-size: 15px !important;
-        right: 5px !important;
-    }
 }
 @media (max-width:375px) {  
     .footer-nav {
@@ -956,15 +936,3 @@ max-width: 160px !important;
 }
 }
 
-
-@media (min-width:0px) and (max-width:767px) {
-     /* gdpr popup css */
-     .gdpr-popup{ padding: 15px 20px;}
-     .gdpr-popup-left{ width: 100%; padding-top: 25px;}
-     .gdpr-popup-right{ width: 100%; text-align: center;}
- 
-     a.gdrp-cancel{ display: none;}
-     a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
-     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
-     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
-}
