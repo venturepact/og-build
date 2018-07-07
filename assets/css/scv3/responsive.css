@@ -388,6 +388,7 @@
     .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input {margin:0 !important;}
     .V_3_5 .loginBtn--facebook:before{background-position-x: 4px !important;background-size: 16px !important;width: 25px !important;height: 25px !important;right: 10px !important;top: 7px !important;}
     .V_3_5 .page_2 .result-temp2-default-section{max-height: 100%;overflow:visible;}
+    .V_3_5 .page_2.result-fixed.t2haslogo .results-outer{max-height: 100%;height: 100%;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;}
     .V_3_5 .powered-by.lightPowered span{font-size: 8px;}
@@ -527,7 +528,7 @@
     .V_3_5 .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){font-size: 26px !important;}
     .V_3_5 .page_2 .temp2-default-result-outer.tr-bold-new.result-full-section .small-bot-sec p{font-size: 15px !important;}
     .V_3_5 .questions { padding: 0 7%;}
-    .V_3_5 .has-background .page_1{width: 100%;margin: 0;padding-top: 28px;}
+    .V_3_5 .has-background .page_1{width: 100%;margin: 0;padding-top: 28px;min-height: auto;}
     .V_3_5 .page-logo{padding-left: 50px;margin-bottom: 28px;}
     .V_3_5 .questions .question-head {font-size: 22px;line-height: 27px;}
     .V_3_5 .questions .section-head span div{font-size: 16px;line-height: 26px;}
@@ -561,6 +562,9 @@
     .V_3_5 .page_2.hasbranding.result-fixed .lead-before-result .result-scrolling.new-lead1{position: relative;}
     .V_3_5 .page_2 .results-outer .result-scrolling-part .result-temp2-default-section:first-child .small-top-sec p {font-size: 26px !important;line-height: 30px !important;}
     .V_3_5 .page_2 .results-outer .result-scrolling-part .result-temp2-default-section:first-child .small-bot-sec p{font-size: 15px !important;}
+    .down-arrow-outer{display: block;}
+    .V_3_5 .page_2.result-fixed.t2haslogo .results-outer{height: auto;max-height: 100%;}
+    .V_3_5 .page_1 .result-fixed1{min-height: auto;}
 }
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .main-bg{ min-height: 500px; }

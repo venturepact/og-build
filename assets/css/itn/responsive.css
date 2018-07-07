@@ -2714,3 +2714,6 @@
     .t1-question .new_control .question-components input{min-width: auto !important; max-width: 150px !important}
     .t1-question .new_control .question-components input.postfixset {max-width: 100px !important;}
 }
+@media (min-width:0px) and (max-width:340px){
+    .V_3_5 .t1-question .new_control .question-components input.postfixset {max-width: 200px!important;float: none;min-width: 100px!important;padding-right: 0 !important;}
+}
