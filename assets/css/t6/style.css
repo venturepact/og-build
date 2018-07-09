@@ -1571,3 +1571,8 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .ripple-light:hover > span {opacity: 0;-webkit-transform: translate(0px,-40px);transform: translate(0px,-40px);}
 .ripple-light:hover::before {opacity: 1;-webkit-transform: translate(0, 0);transform: translate(0, 0);}
 
+.isIframe  .calendar-after {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+}
