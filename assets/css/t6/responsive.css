@@ -5,9 +5,9 @@
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
-        .safari .header-next-div{height: 100% !important;}
-        .safari .t1-question{height: 100% !important; min-height: 700px}
-        .safari .t1-landing{height: 100% !important; min-height: 700px}
+        .safari .header-next-div.isIframe{height: 100% !important;}
+        .safari .t1-question.isIframe{height: 100% !important; min-height: 700px}
+        .safari .t1-landing.isIframe{height: 100% !important; min-height: 700px}
     }
     /* .safari .header-next-div{height: 100% !important;}
     .safari .t1-question{height: 100% !important; min-height: 700px} */
@@ -258,7 +258,8 @@
     .t1-result-main .selectize-input {padding: 6px 35px 7px 5px;}
     .t1-result-main .t1-result-top.recommendation-outer .selectize-input{ padding-left: 5px;}
     .t1-result-main .gradedquiz-main .t1-result-leadform .input-section{ margin-left: -5px; padding-left:0 !important;}
-    .t1-result-main .gradedquiz-main .selectize-control{ width:94% !important;}
+    /* .t1-result-main .gradedquiz-main .selectize-control{ width:94% !important;} */
+
     .template-six [type=checkbox].filled-in:disabled:not(:checked)+label.graded-cross:after{margin-top: 16px!important;}
     .gradedquiz-main visuals .t1-result-inner-left-video iframe{ min-width: 80% !important; width: 100%;}
     .control.control--radio span{  line-height: 18px;}
@@ -366,7 +367,7 @@
     .recom-section .leadform-outer .fb-like {        margin-top: 20px;    }
     .recom-section .btn-fb, .recom-section .btn-twitter, .recom-section .btn-in {        margin-right: 10px;    }
     .t1-result-main .selectize-control { margin-left: 7px;  width: 97%;}
-    .t1-result-main .gradedquiz-main .selectize-control { width: 97% !important;}
+    /* .t1-result-main .gradedquiz-main .selectize-control { width: 97% !important;} */
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:portrait) {
   
@@ -714,7 +715,7 @@
     .main-heading p{ font-size: 42px; line-height: 48px;}
 }
 @media (min-width:641px) and (max-width:1024px) {
-    .V_3_5 .poll-main .ko-progress-circle{margin-left: -65px}
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
     .textfield  button.button_textfield.submit-textbox-btn {display: block;float: left;margin-top: 10px;margin-right: 0;padding: 10px;height: auto;min-height: auto;font-size: 14px;}
     .t1-question .textfield.checkbox-outer-base .othersfield{font-size: 15px}
     .t1-question .textfield.radio-outer-base .othersfield{font-size: 13px; margin: 10px 0 !important}
@@ -728,6 +729,10 @@
     .t1-question-slider { width: 90%; }
     .radio-outer.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
     .radio-outer-base.ripple-dark , .checkbox-outer.ripple-dark {      padding: 0 6px;}
+    .V_3_5 .radio-outer-base.ripple-dark , 
+    .V_3_5 .checkbox-outer.ripple-dark ,
+    .V_3_5 .radio-outer.ripple-dark ,
+    .V_3_5 .checkbox-outer.ripple-dark {      padding: 0px;}
     .ripple-dark.checkbox-outer > span, .pic-selector .abhi ,.ripple-dark .mid-outer span{font-size: 14px; }
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question{border-width: 15px;}
     .t1-question .ripple-dark.checkbox-outer-base label.control, .t1-question .ripple-dark.radio-outer-base label.control{padding: 0 60px !important}
@@ -821,7 +826,7 @@
 }
 
 @media (max-width:479px){
-    .V_3_5 .poll-main .ko-progress-circle{margin-left: -58px !important}
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -62px !important}
     .V_3_5 .bGImage{height: 100px; padding-top: 0}
     .t1-question .ripple-dark label.control {width: 120px!important;height: 120px!important;}
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 160px !important;}
@@ -842,7 +847,8 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
-    .V_3_5 .poll-main .ko-progress-circle{margin-left: -65px}
+    .V_3_5 .result-v2 .common-result-bot-icons.side-redo .crb-left{right: 4px !important;}
+    .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
     .V_3_5.template-six .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{min-height: 40px !important}
     .V_3_5.template-six .common-result-main .t1-result-leadform .input-outer span ,
     .V_3_5.template-six .common-result-main .t1-result-leadform .input-outer.dropdown span{font-size: 10px;top: 43px;}

@@ -4960,10 +4960,10 @@ button.lf-skip-btn{
 .V_3_5 leadform .input-field label:not(.label-icon).active {padding: 0;font-weight: normal;-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity: 1;top: 5px;font-size: 12px;}
 .V_3_5 .t1-landing .t1-landing-inner .selectize-control{width: 100%;}
 .V_3_5 .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{min-height: 30px;max-height: 30px;}
-.V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width: 100% !important;padding-right: 0;}
+.V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width: 100% !important;padding-right: 0;max-width: 100%;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) input{width: 100%;}
 .V_3_5 .landing-text-left .landing-page-mid leadform .input-section .input-outer,.V_3_5 .landing-text-right .landing-page-mid leadform .input-section .input-outer{max-width: 100%;}
-.V_3_5 .t1-landing .t1-landing-inner .landing-page-mid .input-section .input-outer .selectize-input{padding: 7px 35px 7px 0px;}
+.V_3_5 .t1-landing .t1-landing-inner .landing-page-mid .input-section .input-outer .selectize-input{padding: 7px 35px 7px 0px !important;}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input[type="checkbox"] + label div {cursor: pointer;}
 .V_3_5 .t1-landing .t1-landing-inner .selectize-input .item{font-size: 16px;position: relative;top: -1px;}
 .V_3_5 .t1-landing .t1-landing-inner .selectize-control.single .selectize-input input::-webkit-input-placeholder {opacity: 1;}
@@ -4974,7 +4974,7 @@ button.lf-skip-btn{
 .V_3_5 .t1-question .question-components leadform_question input { border-width: 1px;padding-left: 25px !important;}
 .V_3_5 .t1-question .question-components leadform_question .question-section.leaded-form-c .selectize-control.single .selectize-input {border-bottom-width: 1px;max-width: 220px !important;}
 .V_3_5 .t1-ques-component .input-section .input-outer span {font-size: 10px;top: 40px;}
-.V_3_5.inline-temp-new .input-outer.checkbox span {top: 100% !important;width: auto;float: left;left: 0;position: absolute;}
+.V_3_5.inline-temp-new .input-outer.checkbox span {top: calc(100% - 15px) !important;width: auto;float: left;left: 0;position: absolute;}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input[type="checkbox"] + label div p{margin-bottom: 0px;}
 .V_3_5.inline-temp-new .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox:before{border-color: transparent !important;}
 .V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.checkbox .leadform-checkbox {line-height: 20px !important;margin-top: 8px !important;padding-bottom: 0 !important;}

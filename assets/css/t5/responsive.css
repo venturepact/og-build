@@ -349,7 +349,7 @@ Developer: Bhawna */
     .V_3_5 .landing-page-mid {width: 51%;    margin-left: 5%;}
     .V_3_5 .t1-ques-head {font-size: 16px;line-height: 22px;}
     .V_3_5 .question-head{font-size: 24px; line-height: 30px; ;letter-spacing: 1px}
-    .V_3_5 .control, .V_3_5 .question-components input, .V_3_5 .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 15px;line-height: 19px;padding-bottom: 2px;}
+    .V_3_5 .control, .V_3_5 .question-components input, .V_3_5 .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 15px;line-height: normal;padding-bottom: 2px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, .V_3_5 button.btn.prime-action.ripple-light.back-action i, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i{font-size: 18px;}
     .date-selector-part .cal-outer.calender-date{width:calc(50% - 30px);}
     .date-selector-part span.calendar-range{width: 50px;}
@@ -371,6 +371,9 @@ Developer: Bhawna */
     .V_3_5 .checkbox-outer-base label, .V_3_5 .checkbox-outer label{padding: 4px 22px !important;}
     .V_3_5 .radio-outer-base label, .V_3_5 .radio-outer-custom label{padding: 4px 22px !important;}
     .V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding: 4px 22px !important;}
+    .V_3_5 .t1-question .fb-outer{margin-top: 10px;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 12px 45px 12px 20px !important;}
+    .V_3_5 .loginBtn--facebook:before{background-position-x: 5px !important;background-size: 15px !important;width: 26px !important;height: 26px !important;}
     /*t5 result*/
     .V_3_5.template-five .common-result .t1-logo {padding: 0 38px !important;}
     .V_3_5 .t1-result .no-footer-links.no-header-links{padding-top: 90px !important;}
@@ -699,8 +702,8 @@ Developer: Bhawna */
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 9px 35px 9px 15px !important;}
-    .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 10px 40px 10px 18px !important;}
+    .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 8px !important;}
     .V_3_5 .landing-page-mid .or-class{text-align: left !important}
     .V_3_5 fb_lead_gen {width: 100%;float: left;margin-left: 0;margin-bottom: 50px;}
     .V_3_5 .fb-outer{text-align: left;}
@@ -708,7 +711,7 @@ Developer: Bhawna */
     .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {padding: 9px 35px 9px 15px !important;}
     .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {text-align: center;}
     .V_3_5 .lead-action-wrapper{width:100%;}
-    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: auto;margin-left: 0;} 
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: 100%;margin-left: 0;margin-top:-30px;;} 
     .V_3_5 .result-v2.common-result .leadAsPopup .or-class {text-align: left !important;}
     .V_3_5 .landing-text-center .or-class {text-align: center !important;padding: 10px 0;}
     .V_3_5 .graded-msgbox {margin-top: 3px;}
@@ -717,6 +720,9 @@ Developer: Bhawna */
     .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align{padding: 0 25px;}
     .V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align{padding: 0 25px;}
     .isFullScreenBg .t1-landing-top + .landing-page-mid {display: table;height: 100vh;padding-top: 100px;}
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen .or-class {text-align: center;padding: 0;}
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen .fb-outer {margin: 10px auto;text-align: center;}
+    .V_3_5 .t1-question leadform_question div + fb_lead_gen .fb-outer .loginBtn {margin: 0 auto;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -975,7 +981,7 @@ Developer: Bhawna */
     .V_3_5 button.btn.prime-action.ripple-light.back-action{margin-right: 6px;}
     .V_3_5 .question-components .selectize-control, .V_3_5 .question-components .input-field, .V_3_5 .check-comp, .V_3_5 .range-slider{padding-bottom: 0px !important;}
     .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-bottom: 10px;}
-    .V_3_5.template-five .errorMessage { font-size: 10px;top: 40px;}
+    .V_3_5.template-five .errorMessage { font-size: 10px;bottom: -10px;}
     .V_3_5 .main-section form {  padding: 0; margin-top: 30px;}
     .V_3_5 .section-sub {margin-bottom: 30px;}
     .V_3_5 .t1-ques-component leadform_question .input-section .input-outer .section-head { margin-bottom: 5px !important;}
@@ -983,6 +989,7 @@ Developer: Bhawna */
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{padding: 5px 10px;}
     .V_3_5 .question-components input{margin-bottom: 10px;}   
     .V_3_5 .t1-question .prime-action{padding: 5px 10px !important;}
+    .V_3_5 .radio-outer:not(.pic-selector) label, .V_3_5 .radio-outer-base:not(.pic-selector) label{line-height: normal;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}

@@ -626,7 +626,7 @@ visuals.visual-outr span.graph-title{position:relative;top:0;width:100%;text-ali
 .graded-ques-list .graded-right-inner i.gradedcross{color:#43C749}
 .graded-ques-list .graded-right-inner span.ans-incorrect{color:#FF4E4E;width:80%}
 .graded-ques-list span.ans-correct i{color:#43c749;position:relative;top:3px;font-size:16px;float:left;margin-right:5px}
-.ans-inner{float:left;color:#43c749!important;word-wrap:break-word;width:auto!important}
+.ans-inner{float:left;color:#43c749!important;word-wrap:break-word;width:80%!important}
 .graded-ques-left{float:left;width:120px}
 .graded-ques-right{float:left;width:80%}
 .dropdown-set{position:relative}
@@ -1560,7 +1560,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .template-six.V_3_5 .result-v2 .common-leadform-top.t1-result-leadform.eight-inner-wrapper ,
 .template-six.V_3_5  .result-v2-box2 ,
 .template-six.V_3_5 .result-v2-box1{box-shadow: none !important}
-.V_3_5 .poll-main .ko-progress-circle {left: 50%; top: -2px; background: transparent !important; margin-left: -82px;}
+.V_3_5 .poll-main .ko-progress-circle {left: 50% !important; top: -2px; background: transparent !important; margin-left: -77px;}
 .V_3_5 .active .ko-overlay1{top: 0px; left: 0px; margin: 3px !important;} 
 .V_3_5  .active2 .ko-overlay1 {margin: 0;top: -4px;left: -4px;}
 .poll-main .radio-outer-base.active .mid-outer .poll-color-light {display: block !important;}
@@ -1571,8 +1571,5 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .ripple-light:hover > span {opacity: 0;-webkit-transform: translate(0px,-40px);transform: translate(0px,-40px);}
 .ripple-light:hover::before {opacity: 1;-webkit-transform: translate(0, 0);transform: translate(0, 0);}
 
-.isIframe  .calendar-after {
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-}
+.isIframe  .calendar-after {min-height: 450px;display: flex;align-items: center;}
+.V_3_5 .control-ver2 .pic-selector {padding: 0 15px !important;}

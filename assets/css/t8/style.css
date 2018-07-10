@@ -2169,7 +2169,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 /*calendar component css*/
 .cal-outer{  width:100%; float: left;}
-.cal-outer .input-group-addon {  min-width: 60px; border-radius: 0 3px 3px 0;}
+.cal-outer .input-group-addon {  min-width: 50px; border-radius: 0 3px 3px 0; background-color: transparent !important; border-left: 0px !important}
 span.calendar-range { width: 100%;  float: left;  text-align: center;  padding-bottom: 15px;}
 .cal-outer input:focus { box-shadow: none;}
 .date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 25px);}
@@ -2205,6 +2205,7 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .result-v2 .common-result-bot .recom-section .leadform-outer .custom-btn-outer { border-radius: 40px !important;}
 .question-components .cal-outer input {
     background: 0 0;
+    border-right: 0px !important;
 }
 
 .poll-answers-outr{margin-bottom: 10px}
