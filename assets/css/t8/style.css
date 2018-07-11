@@ -311,6 +311,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .graded-ques-list{    float: left;    margin-bottom: 25px;    width: 100%;}
 .graded-ques-list p{    float: left;    width: 100%;    color: #363b3e;    font-size: 17px !important;    margin-bottom: 5px;}
 .graded-ques-list span{    float: left;    width: 100%;    color: #363b3e;    font-size: 17px !important;}
+.graded-ques-list span.ans-correct{  width: calc(100% - 30px);float: right;}
 .graded-ques-list span.isCorrect{    float: left;    width: 100%;    color: #17a717;    font-size: 17px;}
 .graded-ques-list span.isIncorrect{    float: left;    width: 100%;    color: #f33a3c;    font-size: 17px;}
 .graded-ques-list span.ans-correct{    color: #17a717;}
@@ -321,7 +322,7 @@ button.button_textfield.submit-textbox-btn{display: flex; align-items: center; j
 .graded-ques-list .graded-right-inner span.ans-correct {    color: #17a717;   width: calc(100% - 30px);}
 .graded-ques-list .graded-right-inner i.gradedcross {    color: #17a717;}
 .graded-ques-list .graded-right-inner span.ans-incorrect {    color: #f33a3c;    width: calc(100% - 30px);}
-.graded-ques-list span.ans-correct i{    color: #17a717;    position: relative;    top: 3px;    font-size: 16px;}
+.graded-ques-list span.ans-correct i{    color: #17a717;    position: absolute; left: -30px;    top: 3px;    font-size: 16px;}
 .graded-ques-left{    float: left;    width: 120px;}
 .graded-ques-right{    float: left;     width: calc(100% - 120px);}
 .template-eight  .cta-share .btn-lg {  padding: 6px 15px;   border-radius: 3px;}
@@ -2169,7 +2170,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 /*calendar component css*/
 .cal-outer{  width:100%; float: left;}
-.cal-outer .input-group-addon {  min-width: 50px; border-radius: 0 3px 3px 0; background-color: transparent !important; border-left: 0px !important}
+.cal-outer .input-group-addon {  min-width: 35px; border-radius: 0 3px 3px 0; background-color: transparent !important; border-left: 0px !important; padding: 5px 0} 
 span.calendar-range { width: 100%;  float: left;  text-align: center;  padding-bottom: 15px;}
 .cal-outer input:focus { box-shadow: none;}
 .date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 25px);}
@@ -2206,6 +2207,7 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .question-components .cal-outer input {
     background: 0 0;
     border-right: 0px !important;
+    padding-right: 0px;
 }
 
 .poll-answers-outr{margin-bottom: 10px}

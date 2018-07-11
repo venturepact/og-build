@@ -751,11 +751,11 @@ Developer: Bhawna */
     .t1-result .no-header-links.no-footer-links { padding: 30px 0 !important;    }
     .result-branding{position: static}
     .disclaimer-outrr {    position: relative;    left: 0;    right: 0;    bottom: 0;    float: left;    width: 100%;}
-.numeral-result .table-outer table{max-width: 480px}
+    .numeral-result .table-outer table{max-width: 480px}
     .t1-question , .t1-result-main{padding-bottom: 0px;}
     .landing-page-mid {           width: 100%;                padding: 0px 20px 70px;        display: block;                height: auto;              min-height: initial;                margin: 0;        }
     .no-bg + .t1-landing-top + .landing-page-mid {    display: table;    height: 100vh;    padding-top:100px; }
-        .no-logo .no-bg + .t1-landing-top + .landing-page-mid {    padding-top: 20px;}
+    .no-logo .no-bg + .t1-landing-top + .landing-page-mid {    padding-top: 20px;}
     .graded-tabs .small-top-sec p{font-size: 20px;}
     label.control .img-graded-box i{top:0px;}
     .no-logo .landing-page-mid{padding-top: 0px}
@@ -981,7 +981,6 @@ Developer: Bhawna */
     .V_3_5 button.btn.prime-action.ripple-light.back-action{margin-right: 6px;}
     .V_3_5 .question-components .selectize-control, .V_3_5 .question-components .input-field, .V_3_5 .check-comp, .V_3_5 .range-slider{padding-bottom: 0px !important;}
     .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-bottom: 10px;}
-    .V_3_5.template-five .errorMessage { font-size: 10px;bottom: -10px;}
     .V_3_5 .main-section form {  padding: 0; margin-top: 30px;}
     .V_3_5 .section-sub {margin-bottom: 30px;}
     .V_3_5 .t1-ques-component leadform_question .input-section .input-outer .section-head { margin-bottom: 5px !important;}
@@ -990,6 +989,10 @@ Developer: Bhawna */
     .V_3_5 .question-components input{margin-bottom: 10px;}   
     .V_3_5 .t1-question .prime-action{padding: 5px 10px !important;}
     .V_3_5 .radio-outer:not(.pic-selector) label, .V_3_5 .radio-outer-base:not(.pic-selector) label{line-height: normal;}
+    .V_3_5 .errorMessage {bottom: -15px;}
+    .V_3_5 .checkbox .errorMessage{bottom: -5px;}
+    .V_3_5 .radio_button .errorMessage{bottom: -5px;}
+    .V_3_5 .opinon-scale-custom .errorMessage{top: 50px;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}

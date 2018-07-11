@@ -4683,6 +4683,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .no-logo .main-section { margin-top: 0;}
 #build .V_3_5 .main-section .help-text{letter-spacing: 0.02em;}
 .V_3_5 .graded-msgbox::before{left: 7px;top: 2px;}
+.V_3_5 .header-next-div{height: calc(100vh - 60px) !important;}
 
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}
@@ -4705,7 +4706,11 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .radio-outer:not(.pic-selector) label:hover, .V_3_5 .radio-outer-base:not(.pic-selector) label:hover { box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5); -webkit-transform: translateY(-0.25em); transform: translateY(-0.25em);}
 .V_3_5 .opinon-scale-custom .radio-outer:not(.pic-selector) label:hover, .V_3_5 .opinon-scale-custom .radio-outer-base:not(.pic-selector) label:hover {box-shadow: none !important;transform: none;}
 .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-right: 10px;}
-.V_3_5 .errorMessage { font-size: 10px;bottom: 10px;left: 10px;}
+.V_3_5 .errorMessage { font-size: 10px;bottom: 0px;left: 0px;}
+.V_3_5 .checkbox .errorMessage {bottom: 7px;left: 10px;}
+.V_3_5 .radio_button .errorMessage {bottom: 7px;left: 10px;}
+.V_3_5 .opinon-scale-custom .errorMessage {top: 38px;}
+.V_3_5 .calendar .errorMessage {top: 38px;}
 .V_3_5 .no-logo .no-header-links.no-footer-links {padding-top: 0px !important;}
 .V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 20px;padding-left: 40px;}
 .V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
@@ -4745,6 +4750,10 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{border: none !important; border: 0px !important; content: 'done'; font-family: 'Material Icons'; -webkit-transform: none;transform: none; font-size: 15px; left: 2px !important;right: 0;top: 0px !important; bottom: 0;width: 18px; height: 18px;padding: 0 !important;}
 .V_3_5.template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{left:1px;margin:0px !important;}
 .V_3_5 .t1-question .leaded-form-c.question-section .selectize-control.single .selectize-input input:focus { border-bottom: none !important; box-shadow: none !important;}
+.V_3_5 .t1-landing .landing-inner .selectize-control.single .selectize-input input:focus {border: none !important;box-shadow: none !important;}
+.V_3_5.template-five .lead-popup .lead-popup-outer .lead-action-wrapper a {border-radius: 2px!important;margin-right: 0!important;}
+.V_3_5.template-five .lead-popup .lead-popup-outer .lead-action-wrapper a {display: inline-block!important;float: none!important;padding: 13px 30px!important;font-size: 14px!important;line-height: 20px!important;height: auto!important;}
+.V_3_5.template-five .t1-result .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox:before, .V_3_5.template-five .t1-result .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]:not(.filled-in)+label.leadform-checkbox:after{border:none!important;}
 /*material checkbox for leadgen*/
 .V_3_5.template-five .t1-question [type="checkbox"] + label.leadform-checkbox:before, .V_3_5.template-five .t1-question [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after{margin: 0px !important;left: 0 !important;}
 .V_3_5.template-five .t1-question .t1-ques-component [type="checkbox"] + label.leadform-checkbox{padding-left: 30px !important;}
@@ -4793,10 +4802,12 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .common-result a.sliding-next:before{display: none;}
 .V_3_5 .landing-page-mid .or-class {padding: 15px;}
 .V_3_5 .pic-selector label.control .img-graded-box i {top: 10px;}
+.V_3_5 .t1-landing .landing-inner .selectize-dropdown.single{z-index: 9999;}
+.V_3_5 .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input{box-shadow: none !important;}
 /*new version--login with fb*/
 .V_3_5 .or-class { width: 100%;float: left; padding: 10px; padding-left: 0;text-align: center; font-size: 14px;text-transform: uppercase;}
 .V_3_5 .fb-outer{width:100%;float: left;}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important;text-transform: uppercase; min-height: auto; padding: 16px 50px 16px 18px !important;display: flex; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important;text-transform: uppercase; min-height: auto; padding: 16px 50px 16px 18px !important;display: flex !important; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;}
 .V_3_5 .loginBtn--facebook:before {top: auto !important;right: 11px !important; width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 0;left: auto !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x: 5px !important; background-size: 18px !important;}
 .V_3_5 fb_lead_gen { width: calc(50% - 50px);float: right;margin-left: 50px;}
 .V_3_5 .t1-landing-leadform fb_lead_gen {width: 100%; float: left;  margin:0;}
@@ -4816,3 +4827,4 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-top-sec {margin-bottom: 5px;}
 .V_3_5 .share-popup .input-section #vk_subscribe_fromPopup{top: 0px !important;}
 .V_3_5 .input-outer.checkbox {margin-bottom: 20px;}
+.V_3_5 .common-footer-main{z-index: 0!important;}
