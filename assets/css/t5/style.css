@@ -4666,7 +4666,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .landing-text-right .landing-page-mid { margin-left: 17%;  margin-right: 10%;}
 .V_3_5 .landing-text-right .landing-right {left: 10%;float: left;}
 .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align {width: 100%;margin: 0;padding: 0 60px;}
-.V_3_5 .isFullScreenBg.landing-inner {background-size: cover;}
+.isFullScreenBg.landing-inner {background-size: cover;}
 .V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align {width: 100%;margin: 0;padding: 0 60px;}
 /*questionner*/
 .V_3_5 .main-section form{width: 100%;float: left;margin:0;margin-top: 35px;padding: 0 35px;}
@@ -4715,7 +4715,8 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 20px;padding-left: 40px;}
 .V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
 .V_3_5 .textfield.checkbox-outer label i {top: 3px !important;position: relative;left: -4px;}
-
+.V_3_5.template-five label.control.graded-tick .img-graded-box .img-graded-tick{color: #008000 !important;}
+.V_3_5.template-five label.control.graded-cross .img-graded-box .img-graded-cross {color: #ff4e4e !important;}
 /*prev and next btn*/
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, 
 .V_3_5 button.btn.prime-action.ripple-light.back-action ,
