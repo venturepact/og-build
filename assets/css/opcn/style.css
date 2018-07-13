@@ -123,7 +123,7 @@ li,ul{list-style:none}
 .t1-ques-component .prime-action:hover{display:none}
 .pic-selector{text-align:center;float:left!important;border:none!important;background:0 0!important;width:24%;margin-bottom:1.5%!important;margin-right:.5%!important;margin-left:.5%!important;position:relative}
 .t1-ques-component .pic-selector input{border:none;opacity:0;display:none}
-.t1-ques-component .section-head div{color:#28324e;font-size:20px;display:inline-table}
+.t1-ques-component .section-head div{color:#363b3e;font-size:20px;display:inline-table}
 .t1-ques-component .input-outer input{background-color:transparent;border-width:1px;border-style:solid;border-color:#d9dad3;border-radius:0;outline:0;width:100%;font-size:16px;margin:0 0 15px;padding:16px 2%;box-shadow:none;transition:border-color .3s;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 .pic-selector label.control,
 .xs-img-hover{-webkit-transition:all .1s ease-in;overflow:hidden;cursor:pointer}
@@ -955,7 +955,7 @@ input{-webkit-transform:translate3d(0,0,0)}
     60%{text-shadow:.25em 0 0 #fff,.5em 0 0 transparent}
     100%,80%{text-shadow:.25em 0 0 #fff,.5em 0 0 #fff}
 }
-.no-logo .t1-landing-inner{padding-top:0}
+.no-logo .t1-landing-inner {padding-top: 40px !important;}
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
     .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{padding-bottom:13px!important}
     .t1-landing-inner .input-field{position:relative;float:left;width:93%!important}
@@ -1480,7 +1480,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .t1-question .question-components .cal-outer input::-moz-placeholder{color:#444}
 .t1-question .question-components .cal-outer input:-ms-input-placeholder{color:#444}
 .t1-question .question-components .cal-outer input:-moz-placeholder{color:#444}
-.cal-outer .dropdown-menu{padding:10px!important;text-align:center!important;font-size:11px!important}
+.cal-outer .dropdown-menu{padding:10px!important;text-align:center!important;font-size:11px!important;left:0px !important;right:auto !important;}
 .cal-outer .table-condensed>thead>tr>th{text-align:center!important}
 .cal-outer ul{margin-bottom:0!important}
 .cal-outer li.picker-switch.accordion-toggle{padding:10px 0 0!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:18px}
@@ -1593,7 +1593,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
     .V_3_5 .t1-landing.landing-text-center .landing-page-mid leadform{float:none;margin:0 auto;display:inline-block;width:85%}
     .V_3_5 .t1-landing.landing-text-right .landing-page-mid leadform{float:right;width:100%}
     .V_3_5 .main-heading,
-    .V_3_5 .main-heading h1{font-size:60px}
+    .V_3_5 .main-heading h1{font-size:58px}
     .V_3_5 .landing-page-mid{width:60%}
     .V_3_5 .landing-page-mid button{padding:14px 40px 12px}
     .V_3_5 .t1-question .checkbox-outer,
@@ -1679,7 +1679,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5 .sub-heading{opacity:1}
 .V_3_5 .main-heading,
 .V_3_5 .main-heading h1,
-.V_3_5 .main-heading p{font-size:60px;line-height:66px}
+.V_3_5 .main-heading p{font-size:58px;line-height:64px}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox{top:5px!important}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after,
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{margin:0!important;border-radius:0;width:18px;height:18px;border:1px solid #000}
@@ -1933,7 +1933,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 .V_3_5.one-page-card-new [type=radio]:disabled:checked+label.graded-cross:before,
 .V_3_5.one-page-card-new [type=radio]:disabled:not(:checked)+label.graded-cross:before{background-color:#FB545B!important}
 .isIframe .calendar-after{min-height:350px;display:flex;align-items:center}
-
+.V_3_5.one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:after{width: 20px !important; height: 20px !important;}
 /**********fb btn css ************/
 
 .loginBtn,

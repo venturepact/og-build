@@ -374,6 +374,9 @@ Developer: Bhawna */
     .V_3_5 .t1-question .fb-outer{margin-top: 10px;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook{padding: 12px 45px 12px 20px !important;}
     .V_3_5 .loginBtn--facebook:before{background-position-x: 5px !important;background-size: 15px !important;width: 26px !important;height: 26px !important;}
+    .V_3_5 .opinon-scale-custom .check-comp{padding-bottom: 12px !important; }
+    .V_3_5 .opinon-scale-custom .errorMessage{top: 35px !important;font-size: 10px !important;}
+    .V_3_5 .t1-ques-component .leaded-form-c .input-section .input-outer span {top: 23px !important;}
     /*t5 result*/
     .V_3_5.template-five .common-result .t1-logo {padding: 0 38px !important;}
     .V_3_5 .t1-result .no-footer-links.no-header-links{padding-top: 90px !important;}
@@ -711,7 +714,7 @@ Developer: Bhawna */
     .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {padding: 9px 35px 9px 15px !important;}
     .V_3_5 .t1-result-leadform fb_lead_gen .fb-outer {text-align: center;}
     .V_3_5 .lead-action-wrapper{width:100%;}
-    .V_3_5 .t1-question leadform_question div + fb_lead_gen{width: 100%;margin-left: 0;margin-top:-30px;;} 
+    .V_3_5 .t1-question .t1-ques-component leadform_question div + fb_lead_gen{width: 100%;margin-left: 0;} 
     .V_3_5 .result-v2.common-result .leadAsPopup .or-class {text-align: left !important;}
     .V_3_5 .landing-text-center .or-class {text-align: center !important;padding: 10px 0;}
     .V_3_5 .graded-msgbox {margin-top: 3px;}
@@ -724,6 +727,7 @@ Developer: Bhawna */
     .V_3_5 .t1-question leadform_question div + fb_lead_gen .fb-outer {margin: 10px auto;text-align: center;}
     .V_3_5 .t1-question leadform_question div + fb_lead_gen .fb-outer .loginBtn {margin: 0 auto !important;}
     .V_3_5 .t1-ques-component leadform_question div + fb_lead_gen + .lf-skip-btn{margin: 0 auto !important;width: 100%;text-align: center;margin-top: -45px !important;}
+    .V_3_5 .new-template-five.no-logo .t1-question {padding-top: 0;}
 }
 @media (max-width: 767px) and (orientation: landscape) {
     /*.landing-page-header a img {
@@ -985,7 +989,7 @@ Developer: Bhawna */
     .V_3_5 .main-section form {  padding: 0; margin-top: 30px;}
     .V_3_5 .section-sub {margin-bottom: 30px;}
     .V_3_5 .t1-ques-component leadform_question .input-section .input-outer .section-head { margin-bottom: 5px !important;}
-    .V_3_5 .lead-action-wrapper {  width: 100%;  display: flex;  justify-content: center;}
+    .V_3_5 .lead-action-wrapper {  width: 100%;  display: flex;  justify-content: center;margin-bottom: 0;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{padding: 5px 10px;}
     .V_3_5 .question-components input{margin-bottom: 10px;}   
     .V_3_5 .t1-question .prime-action{padding: 5px 10px !important;}
@@ -994,6 +998,7 @@ Developer: Bhawna */
     .V_3_5 .checkbox .errorMessage{bottom: -5px;}
     .V_3_5 .radio_button .errorMessage{bottom: -5px;}
     .V_3_5 .opinon-scale-custom .errorMessage{top: 50px;}
+    .V_3_5 .t1-ques-component .lf-skip-btn {width: auto;float: none;margin-left: 45% !important;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
@@ -1155,9 +1160,8 @@ Developer: Bhawna */
     }
 }
 @media (min-width: 640px) and (max-width: 767px) {
-    .table-outer {
-        max-width: 550px;
-    }
+    .table-outer {max-width: 550px;}
+    .V_3_5 .t1-ques-component .lf-skip-btn{margin-left: 0px !important;}
 }
 @media (min-width: 768px) and (max-width: 1399px) {
     .fancybox-outer .fancybox-inner {

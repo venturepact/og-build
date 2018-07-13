@@ -4622,7 +4622,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 25px);}
 .date-selector-part span.calendar-range {width: 50px;padding: 10px 0;}
 /*dropdown style*/
-.cal-outer .dropdown-menu {padding: 10px !important;text-align: center !important;font-size: 11px !important;}
+.cal-outer .dropdown-menu {padding: 10px !important;text-align: center !important;font-size: 11px !important;left:0px !important;right:auto !important;}
 .cal-outer .table-condensed>thead>tr>th { text-align: center !important;}
 .cal-outer ul { margin-bottom: 0 !important;}
 .cal-outer li.picker-switch.accordion-toggle { width: 100% !important;float: left !important;text-align: center !important;padding: 0 !important;display: flex !important;align-items: center !important;justify-content: center !important;    font-size: 18px;}
@@ -4683,7 +4683,6 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .no-logo .main-section { margin-top: 0;}
 #build .V_3_5 .main-section .help-text{letter-spacing: 0.02em;}
 .V_3_5 .graded-msgbox::before{left: 7px;top: 2px;}
-.V_3_5 .header-next-div{height: calc(100vh - 60px) !important;}
 
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}
@@ -4740,6 +4739,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .landing-inner [type=checkbox]+label.leadform-checkbox {padding-bottom: 0;padding-left: 30px;}
 .V_3_5.template-five .t1-landing .landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{margin:0px !important;}
 .V_3_5.template-five .landing-inner [type=checkbox]+label.leadform-checkbox div p {margin: 0;}
+.V_3_5 .t1-ques-component .lf-skip-btn {width: auto;float: left;margin-left: calc(50% + 50px);margin-top: 0;}
 /*leadgen*/
 .V_3_5 .input-outer i{font-size: 18px;top: 6px;left: 0;}
 .V_3_5 .common-result-main .t1-result-leadform .input-outer input , .V_3_5 .landing-page-mid leadform .input-section .input-outer input{border-bottom-width: 1px !important;font-size: 16px;padding-left: 25px;}
@@ -4794,11 +4794,12 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .t1-ques-component .input-section .input-outer.checkbox span { position: relative;top: 5px;}
 .V_3_5 .result-v2 .leadAsPopup .loginBtn{float: left;}
 .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {margin: 0 auto !important;}
-.V_3_5 .landing-text-center .landing-page-mid button.loginBtn.loginBtn--facebook {float: none;margin: 0 auto;}
+.V_3_5 .landing-text-center .landing-page-mid button.loginBtn.loginBtn--facebook {float: none;margin: 0 auto !important;}
 .V_3_5 .t1-question .fb-outer { margin-top: 15px; margin-bottom: 20px;}
 .V_3_5 .t1-question .t1-ques-component leadform_question div + fb_lead_gen {width:auto;float: left;margin-left: calc(50% + 50px);}
-.V_3_5 .t1-question leadform_question div + fb_lead_gen { width:auto;float: left;  margin-left: calc(50% + 50px);margin-top: -15px;}
-.V_3_5 .t1-question leadform_question fb_lead_gen { width:auto; float: left; margin-left: 0;}
+.V_3_5 .t1-question .t1-ques-component leadform_question div + fb_lead_gen { width:auto;float: left;  margin-left: calc(50% + 50px);margin-top: -15px;}
+.V_3_5 .t1-question leadform_question fb_lead_gen { width:100%; float: left; margin-left: 0;}
+.V_3_5 .t1-ques-component leadform_question fb_lead_gen + .lf-skip-btn{margin-top: 0px !important;margin-left: 0 !important;}
 .V_3_5 .lead-popup-main .lf-skip-btn{width: 100%;float: left;text-align: left;}
 .V_3_5 .landing-text-right .landing-img { margin-top: 50px;}
 .V_3_5 .common-result a.sliding-next:before{display: none;}
@@ -4809,7 +4810,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*new version--login with fb*/
 .V_3_5 .or-class { width: 100%;float: left; padding: 10px; padding-left: 0;text-align: center; font-size: 14px;text-transform: uppercase;}
 .V_3_5 .fb-outer{width:100%;float: left;}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important; min-height: auto; padding: 16px 50px 16px 18px !important;display: flex; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;margin:0 !important;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important; min-height: auto; padding: 16px 50px 16px 18px !important;display: flex !important; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;margin:0 !important;}
 .V_3_5 .loginBtn--facebook:before {top: auto !important;right: 11px !important; width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 0;left: auto !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x: 5px !important; background-size: 18px !important;}
 .V_3_5 fb_lead_gen { width: calc(50% - 50px);float: right;margin-left: 50px;}
 .V_3_5 .t1-landing-leadform fb_lead_gen {width: 100%; float: left;  margin:0;}
