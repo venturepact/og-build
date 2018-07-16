@@ -2450,7 +2450,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .input-field {display: flex;margin: 0;flex-direction: column;}
 .V_3_5 .input-field .prefix {left: 0px;width: auto;top: 18px !important;font-size: 18px !important;position: absolute;}
 .V_3_5 .landing-page-mid .input-section .input-outer input {padding-bottom: 0 !important;padding-left: 25px !important;font-size: 16px !important;}
-.V_3_5.sound-cloud-new .landing-page-mid .input-field label:not(.label-icon).active {padding: 0px !important;font-size: 12px !important;font-weight: normal !important;margin: 0 !important;letter-spacing: 1px;}
+.V_3_5.sound-cloud-new .landing-page-mid .input-field label:not(.label-icon).active {padding: 0px !important;font-size: 12px !important;font-weight: normal !important;margin: 0 !important;letter-spacing: 1px;top:20px !important;}
 .V_3_5.sound-cloud-new .landing-page-mid .input-field label{padding-left: 25px !important;}
 .V_3_5 .cal-outer .form-group { margin: 0;}
 .V_3_5 .radio-outer-base,.V_3_5 .radio-outer{margin-bottom: 8px;}
@@ -2498,6 +2498,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 5px !important;top: 2px !important;font-size: 13px;}
 .V_3_5.sound-cloud-new .page_2 [type=checkbox].filled-in:checked+label.leadform-checkbox:after{top: 0;left: 3px !important;}
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after{top: 0;left: 3px;}
+.V_3_5 .landing-page-mid .input-section .input-outer{min-height: 55px;}
 .V_3_5 .landing-text-left .landing-page-mid .input-section .input-outer {padding-left: 0 !important;}
 .V_3_5 .landing-text-right .landing-page-mid .input-section .input-outer {padding-right: 0 !important;}
 .V_3_5 .page_2 .input-section .input-outer.checkbox [type="checkbox"] + label.leadform-checkbox{padding-bottom: 16px;z-index: 0;}
@@ -2533,7 +2534,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
       transform: translate3d(0, 0, 0);
     }
   }
-.V_3_5 .ques-sect{animation-duration: 700ms;-webkit-animation-name: slideInUp;animation-name: slideInUp;}
+.V_3_5 .page_1{animation-duration: 700ms;-webkit-animation-name: slideInUp;animation-name: slideInUp;}
 .V_3_5 .page_2{animation-duration: 700ms;-webkit-animation-name: slideInUp;animation-name: slideInUp;}
 .V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 425px);padding: 0 25px;margin-bottom: 10px;padding-left:0px;}
 .V_3_5 .share-heading{font-size: 16px;margin-top: 10px;text-transform: none;}
@@ -2550,17 +2551,20 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in + label.leadform-checkbox:after{top: 2px; left: 5px;}
 .V_3_5 .landing-footer-outer.isIframe {height: auto !important;bottom: 0 !important;top: auto !important;}
 /* Chrome/Opera/Safari */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-webkit-input-placeholder {opacity: 0.5;}
- /* Firefox 19+ */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-moz-placeholder {opacity: 0.5;}
-/* IE 10+ */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-ms-input-placeholder {opacity: 0.5;}
-/* Firefox 18- */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-webkit-input-placeholder {opacity: 0.5;} /* Firefox 19+ */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-moz-placeholder {opacity: 0.5;}/* IE 10+ */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-ms-input-placeholder {opacity: 0.5;}/* Firefox 18- */
 .V_3_5.sound-cloud-new .page_1 input:not([readonly]):-moz-placeholder {opacity: 0.5;}
+
+.cal-outer input::-webkit-input-placeholder {opacity: 0.5;}/* Firefox 19+ */
+.cal-outer input::-moz-placeholder {opacity: 0.5;}/* IE 10+ */
+.cal-outer input:-ms-input-placeholder {opacity: 0.5;}/* Firefox 18- */
+.cal-outer input:-moz-placeholder {opacity: 0.5;}
+
 /*no logo css*/
 .V_3_5 .landing-text-left.no-logo .landing-page-mid, .V_3_5 .landing-text-right.no-logo .landing-page-mid {padding: 80px 60px;}
 .V_3_5 .landing-text-center.no-logo .landing-page-mid{ padding: 80px 0px;}
-.V_3_5 .landing-page-mid .input-section .input-outer span{font-size: 10px !important; top: 45px;text-transform: none;}
+.V_3_5 .landing-page-mid .input-section .input-outer span{font-size: 10px !important; top: 42px;text-transform: none;}
 /* Sacnite */
 .button.button--sacnite {width: 70px;height: 70px;min-width: 0;padding: 0;color: #fff;-webkit-transition: color 0.3s;transition: color 0.3s;}
 .button--scanite.button--round-l {border-radius: 50%;}

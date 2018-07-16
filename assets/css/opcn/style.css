@@ -1409,7 +1409,7 @@ a.gdrp-cancel{text-decoration:underline;margin-top:10px;margin-right:20px}
 a.gdrp-accept{padding:10px 20px;border-radius:50px}
 a.gdrp-cancel-icon{font-size:16px;color:#fff;transition:all .5s ease;display:block;position:absolute;right:0;padding:5px 10px;top:25px}
 leadform_question .or-class{color:#28324e;padding:0}
-.fb-outer{width:100%;float:left}
+.fb-outer{width:100%;float:left;text-align: left}
 .landing-text-center .landing-page-mid{width:88%;text-align:center}
 .landing-text-center .landing-page-mid button{float:none}
 .landing-text-center .t1-landing-inner .t2btn-outr{float:none;margin:0 auto}
@@ -1611,28 +1611,30 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
     .V_3_5.one-page-card-new .t1-question .question-components .cal-outer input,
     .V_3_5.one-page-card-new .t1-question .selectize-input .item{font-size:16px}
     .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:16px;line-height:22px}
-    .V_3_5 button.ripple-light span::before  ,
-    .V_3_5 .leadform-btn.ripple-light span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;}
-    .V_3_5 button.ripple-light span ,
-    .V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block}
-    .V_3_5 button.ripple-light:hover span ,
-    .V_3_5 .leadform-btn.ripple-light:hover span {-webkit-transform: translate3d(-10px, 0, 0);transform: translate3d(-10px, 0, 0);}
-    .V_3_5 button.ripple-light:hover span::before ,
-    .V_3_5 .leadform-btn.ripple-light:hover span::before ,
-    .V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img:hover span::before {opacity: 1;right: -25px;transition: all 300ms ease-out;will-change: right, opacity;}
-    .V_3_5 .t1-result-leadform  .lead-popup .leadform-btn.ripple-light span::before{color:#fff  !important;}
-    .V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img span::before {content: '';background-image: url(https://dlvkyia8i4zmz.cloudfront.net/OWKFnmF9ROG3e5gWs0Qa_arrow.svg);width: 14px;height: 10px;z-index: 1000;position: absolute;background-repeat: no-repeat;opacity:0;transform: none;top: auto;}
-    .V_3_5.one-page-card-new .submit-checkbox-img ,
-    .V_3_5.one-page-card-new .submit-checkbox , 
-    .V_3_5.one-page-card-new .t1-question .submit-textbox-btn ,
-    .V_3_5.one-page-card-new .submit-textbox-btnresp{opacity: 0.6; transition: 0.5s}
-    .V_3_5.one-page-card-new .submit-checkbox-img:hover ,
-    .V_3_5.one-page-card-new .submit-checkbox:hover , 
-    .V_3_5.one-page-card-new .t1-question .submit-textbox-btn:hover ,
-    .V_3_5.one-page-card-new .submit-textbox-btnresp:hover{opacity: 1; transition: 0.5s}
-    .V_3_5.one-page-card-new .lead-popup .submit-checkbox-img {opacity: 1 !important;}
+
 
 }
+.V_3_5 button.ripple-light span::before  ,
+.V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;     text-transform: none;}
+.V_3_5 button.ripple-light span ,
+.V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block}
+.V_3_5 button.ripple-light:hover span ,
+.V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action:hover span {-webkit-transform: translate3d(-10px, 0, 0);transform: translate3d(-10px, 0, 0);}
+.V_3_5 button.ripple-light:hover span::before ,
+.V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action:hover span::before ,
+.V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img:hover span::before {opacity: 1;right: -25px;transition: all 300ms ease-out;will-change: right, opacity;}
+.V_3_5 .t1-result-leadform  .lead-popup .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action span::before{color:#fff  !important;}
+.V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img span::before {content: '';background-image: url(https://dlvkyia8i4zmz.cloudfront.net/OWKFnmF9ROG3e5gWs0Qa_arrow.svg);width: 14px;height: 10px;z-index: 1000;position: absolute;background-repeat: no-repeat;opacity:0;transform: none;top: auto;}
+.V_3_5.one-page-card-new .submit-checkbox-img ,
+.V_3_5.one-page-card-new .submit-checkbox , 
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn ,
+.V_3_5.one-page-card-new .submit-textbox-btnresp{opacity: 0.6; transition: 0.5s}
+.V_3_5.one-page-card-new .submit-checkbox-img:hover ,
+.V_3_5.one-page-card-new .submit-checkbox:hover , 
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn:hover ,
+.V_3_5.one-page-card-new .submit-textbox-btnresp:hover{opacity: 1; transition: 0.5s}
+.V_3_5.one-page-card-new .lead-popup .submit-checkbox-img {opacity: 1 !important;}
+
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-webkit-slider-runnable-track{height:2px;min-height:2px;background:#d4d4d4}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-moz-range-track{height:2px;min-height:2px;background:#d4d4d4}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-ms-track{height:2px;min-height:2px;background:#d4d4d4}
@@ -1683,7 +1685,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox{top:5px!important}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after,
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{margin:0!important;border-radius:0;width:18px;height:18px;border:1px solid #000}
-.V_3_5.one-page-card-new .t1-landing-leadform .input-outer i{left:0;width:auto;top:50%;transform:translateY(-50%)}
+.V_3_5.one-page-card-new .t1-landing-leadform .input-outer i{left:0;width:auto;top:50% !important;transform:translateY(-50%)}
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.autocomplete-content,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label,
@@ -1934,32 +1936,40 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 .V_3_5.one-page-card-new [type=radio]:disabled:not(:checked)+label.graded-cross:before{background-color:#FB545B!important}
 .isIframe .calendar-after{min-height:350px;display:flex;align-items:center}
 .V_3_5.one-page-card-new [type="checkbox"].filled-in:not(:checked) + label:after{width: 20px !important; height: 20px !important;}
-/**********fb btn css ************/
-
-.loginBtn,
-.result-v2 .leadAsPopup .loginBtn,
-.result-v2 .loginBtn{padding:10px 45px 10px 25px!important}
 .landing-page-mid leadform .input-section .input-outer.dropdown span{top:45px}
 .dropdown-blink{animation-name:blinker;animation-duration:.3s;animation-iteration-count:3}
-.landing-page-mid button.loginBtn.loginBtn--facebook{padding:10px 45px 10px 25px!important;float:left;margin:0;text-transform:uppercase;border-radius:25px;line-height:normal}
+/**********fb btn css ************/
+.or-class {
+    text-align: left;
+    padding: 0 15px!important;
+    margin: 10px 0!important;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.V_3_5 .loginBtn,
+.V_3_5 .result-v2 .leadAsPopup .loginBtn,
+.V_3_5 .result-v2 .loginBtn{padding:10px 45px 10px 25px!important}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:10px 45px 10px 25px!important;float:left;margin:0;text-transform:uppercase;border-radius:25px;line-height:normal}
 .loginBtn,
 .result-v2 .loginBtn{margin:0!important}
 .V_3_5 .loginBtn:before{top:5px!important;right:8px!important;width:30px!important;height:30px!important;background-color:#fff!important;border-radius:50%;background:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;left:auto!important}
 .V_3_5 .loginBtn--facebook:before{border-right:none!important;background-image:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x:5px!important;background-size:18px!important}
 .V_3_5 .loginBtn{border:none!important;text-align:left!important;line-height:normal!important;font-size:16px!important;border-radius:25px!important}
 .result-v2 .loginBtn{font-size:15px!important}
-.landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none!important}
-.landing-text-center .fb-outer{text-align:center!important}
-.landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none}
+.V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none!important}
+.V_3_5 .landing-text-center .fb-outer{text-align:center!important}
+.V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none}
 .V_3_5 .landing-text-center .or-class span,
 .V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook{float:none!important}
-.landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none!important}
-.landing-text-center .fb-outer{text-align:center!important}
-.landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none}
+.V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none!important}
+.V_3_5 .landing-text-center .fb-outer{text-align:center!important}
+.V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook.disabled{float:none}
 .V_3_5 .landing-text-center .or-class span,
 .V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook{float:none!important}
-.landing-text-right .landing-page-mid .or-class span,
-.landing-text-right button.loginBtn.loginBtn--facebook.disabled{float:right!important}
+.V_3_5 .landing-text-right .landing-page-mid .or-class span,
+.V_3_5 .landing-text-right button.loginBtn.loginBtn--facebook.disabled{float:right!important}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:13px 47px 12px 25px!important;float:left;margin:0;border-radius:25px;line-height:normal}
 .V_3_5 .loginBtn--facebook{background-color:#086ca0!important;background-image:linear-gradient(#086ca0,#086ca0)!important;text-shadow:0 -1px 0 #086ca0!important;border-radius:25px;text-transform:uppercase}
 .V_3_5 .loginBtn:before{top:50%!important;right:8px!important;width:30px!important;height:30px!important;background-color:#fff!important;border-radius:50%;background:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;left:auto!important;transform:translateY(-50%)}
