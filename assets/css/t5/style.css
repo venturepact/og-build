@@ -4771,7 +4771,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .input-outer{margin-bottom: 30px;margin-top: 0;}
 .V_3_5 .t1-ques-component .input-section .input-outer span{top: 30px;font-size: 10px;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){margin-bottom: 30px;}
-.V_3_5 .t1-ques-component .input-section .input-outer.dropdown span {top: 35px;}
+.V_3_5 .t1-ques-component .leaded-form-c .input-section .input-outer.dropdown span {top: 35px !important;}
 .V_3_5 .landing-text-right .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .landing-text-right .loginBtn--facebook {float: right;}
 .V_3_5 .landing-text-right .landing-page-mid .or-class, .V_3_5 .landing-text-right .common-result-main .or-class {text-align: right !important;}
 .V_3_5 .landing-text-right .landing-page-mid button{margin-right: 0;}
@@ -4792,7 +4792,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five.structure-right-align.textfield.radio-outer input[type="text"],
 .V_3_5.template-five.structure-right-align .textfield.radio-outer-base input[type="text"]{padding-right: 40px; padding-left: 22px}
 .V_3_5.template-five.structure-right-align .selectize-control.single .selectize-input:after{left: 15PX; right: auto;}
-.V_3_5.template-five .t1-ques-component .input-section .input-outer.checkbox span { position: relative;top: 5px;}
+.V_3_5.template-five .t1-ques-component .input-section .input-outer.checkbox span { position: relative;top: 5px !important;}
 .V_3_5 .result-v2 .leadAsPopup .loginBtn{float: left;}
 .V_3_5 .t1-result-leadform fb_lead_gen .loginBtn {margin: 0 auto !important;}
 .V_3_5 .landing-text-center .landing-page-mid button.loginBtn.loginBtn--facebook {float: none;margin: 0 auto !important;}
@@ -4833,3 +4833,4 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .input-outer.checkbox {margin-bottom: 20px;}
 .V_3_5 .common-footer-main{z-index: 0!important;}
 .V_3_5 .share-popup .likes-parent{display:block !important;}
+.V_3_5.template-five .common-result-main [type="checkbox"] + label.leadform-checkbox{line-height: 20px !important;}
