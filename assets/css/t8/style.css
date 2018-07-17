@@ -1547,7 +1547,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight .gradedquiz-main.poll-result .common-result-bot-left {    padding: 0 0px;}
 .template-eight .poll-result .poll-right-text .small-bot-sec p{opacity:1}
 .template-eight .poll-right-text p{font-size: 17px}
-.template-eight .gradedquiz-main .common-result-main .t1-result-leadform .common-result-bot-icons {    bottom: 5px;    right: 0;    min-height: 30px;}
+.template-eight .gradedquiz-main .common-result-main .t1-result-leadform .common-result-bot-icons {    bottom: -12px;    right: 0;    min-height: 30px;}
 .template-eight   .gradedquiz-main .common-result-main visuals .left-sec{margin-bottom: 10px;}
 .template-eight .common-result .common-result-bot .t1-result-leadform .likes-parent{margin-top: 0px}
 
@@ -2276,4 +2276,13 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .template-eight .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{transform: translateY(-50%) !important; top: 50% !important}
 .t1-question .selectize-dropdown-content {
     max-height: 150PX;
+}
+
+.newLeadGenV_3_5 .input-validation {
+    float: left;
+    width: 100%;
+}
+.newLeadGenV_3_5 {
+    float: left;
+    width: 100%;
 }

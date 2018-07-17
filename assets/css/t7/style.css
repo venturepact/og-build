@@ -1420,7 +1420,7 @@ input:-webkit-autofill {
   margin-bottom: 0;
   border-radius: 0;
   margin-top: 5px;
-  float: left; margin-left: 0!important; font-weight: normal !important;
+  float: right; margin-left: 0!important; font-weight: normal !important;
 }
 .template-seven select.leadform-select {
   float: left;
@@ -1550,7 +1550,7 @@ input:-webkit-autofill {
 
 
 /*leadgen selectize css  */
-.page_0 .landing-page-mid .selectize-control{ float: left; width:70%; position: relative;}
+.page_0 .landing-page-mid .selectize-control{ float: right; width:65%; position: relative;}
 .landing-page-mid .selectize-control.single .selectize-input{ border:none !important; border-bottom:1px solid #fff !important; background: none !important; box-shadow: none !important; width: 100% !important; float: left; text-align: left; font-size: 16px !important; min-height: 47px; color:#fff !important;  }
 .page_0 .landing-page-mid .selectize-dropdown.single { border-color: #d9dad3;background: none;background-color:#fff;width: 100% !important; float: left; text-align: left; font-size: 14px !important;  }
 .page_0 .landing-page-mid .selectize-control.single .selectize-input input{ height: auto; font-size: 16px; margin-left: 0;}
@@ -1927,7 +1927,7 @@ input {
 /*leadeform dropdown Placeholder setting css*/
 
 
-.landing-page-mid .input-section .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 84% !important; min-height: 22px !important; pointer-events: none;}
+.landing-page-mid .input-section .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 84% !important; min-height: 22px !important; pointer-events: none; float: left;}
 .landing-page-mid .input-section .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width: 95% !important; box-shadow: initial!important;   }
 .t1-question .leaded-form-c .input-outer .selectize-input.items input{ border-bottom: 0 !important; width: 100% !important;}
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){ border: 0 !important; width:95% !important; box-shadow: initial!important;   }
@@ -3265,6 +3265,7 @@ span.calendar-range{
   float: left;
   /* width: 100%; */
   text-align: left;
+  left: 35%;
 
 }
 
