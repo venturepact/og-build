@@ -734,7 +734,7 @@ function initMobileFrames(iframe_id) {
         var og_style = document.createElement("style");
         var IS_IPHONE = (navigator.userAgent.match(/iPhone/i) != null) || (navigator.userAgent.match(/iPod/i) != null);
         if (IS_IPHONE) {
-            var style_node = document.createTextNode("body, html {height: 100%;margin: 0;}.fullScreen {z-index:9990;width: 100%;height: 100% !important;position: fixed;top: 0;left: 0;}.hide{display:none;}.height-auto{height: 100vh;}.ovr-hid{overflow: hidden !important;}")
+            var style_node = document.createTextNode("body, html {height: 100%;margin: 0;}.fullScreen {z-index:9990;width: 100%;height: 100% !important;position: fixed;top: 0;left: 0;}.hide{display:none;}.height-auto{height: 100vh;margin-bottom:0px}.ovr-hid{overflow: hidden !important;}")
         } else {
             var style_node = document.createTextNode("body, html {height: 100%;margin: 0;}.fullScreen {z-index:9990;width: 100%;height: 100% !important;position: fixed;top: 0;left: 0;}.hide{display:none;}.height-auto{height: 100%; margin-bottom: -10px;}.ovr-hid{overflow: hidden !important;}")
         }

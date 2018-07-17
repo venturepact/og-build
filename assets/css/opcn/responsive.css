@@ -89,6 +89,9 @@
         .safari .t1-question{height: 100% !important; min-height: 700px}
         .safari .t1-landing{height: 100% !important; min-height: 700px}
     }
+    .t1-result-leadform .lead-popup .fb-outer {
+        text-align: center;
+    }
     .V_3_5.one-page-card-new.structure-right-align .landing-page-header{right: 0px; left: 0px !important; text-align: center;}
     .V_3_5 .progress,.recom-footer-outer .redo-outer-recom{position:relative}
     .fb-outer,.landing-footer-outer,
@@ -109,7 +112,7 @@
     .t1-landing .no-header-links.no-footer-links{padding:70px 0!important}
     .V_3_5 .t1-landing .no-header-links.no-footer-links{padding:100px 0!important}
     .t1-result .no-header-links.no-footer-links{padding:30px 0!important}
-    .no-logo .isIframe.no-header-links.no-footer-links{padding-top:30px!important}
+    .no-logo .isIframe.no-header-links.no-footer-links{padding-top:30px!important ; padding-bottom:50px!important}
     .no-logo .t1-landing-inner {padding-top: 30px !important;}
     .recom-section .t1-social-links{margin:0!important}
     .redo-link>ul,.redo-outer-recom .redo-link{margin:0}
@@ -1329,7 +1332,7 @@
     .check-marks svg{height:50px}
     .check-marks{margin-bottom:15px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head,.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size:16px}
-    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{top:13px;font-size:16px}
+    .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{font-size:16px}
     .lead-popup-head{margin-bottom:25px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer{margin-bottom:20px}
     .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{font-size:14px;padding-bottom:0;min-height:auto;line-height:22px}

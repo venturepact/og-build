@@ -1200,7 +1200,7 @@ p>span>a{color:inherit}
 .t1-ques-head{-webkit-animation-name:bounceInRight;position:relative}
 .t1-ques-head{animation-duration:.7s;animation-name:bounceInRight}
 .t1-ques-component{animation-duration:1s;animation-name:bounceInRight}
-.t1-ques-component.textfield{animation-duration:1s;-webkit-animation-name:bounceInRight;animation-name:rightin;position:relative}
+.t1-ques-component.textfield{animation-duration:0.7s;-webkit-animation-name:bounceInRight;animation-name:rightin;position:relative}
 .t1-ques-component .input-section .input-outer:nth-child(1){animation-duration:.8s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
 .t1-ques-component .input-section .input-outer:nth-child(2){animation-duration:.9s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
 .t1-ques-component .input-section .input-outer:nth-child(3){animation-duration:1s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
@@ -1983,3 +1983,6 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 .template-section .template-container.mobile .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px!important}
 .V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook{float:none;display:inline-block}
 .V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook{padding:12px 47px 12px 25px!important;font-size:14px!important}
+.t1-result-leadform .lead-popup .fb-outer {
+    text-align: left;
+}

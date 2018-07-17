@@ -1094,7 +1094,7 @@
     .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 25px;margin-right:  0; padding-right: 0 !important;}
     .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 36px !important;line-height: 40px !important;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 10px 35px 10px 15px !important;font-size: 13px !important;float: none !important;}
-    .V_3_5 .loginBtn--facebook:before {width: 25px !important;height: 25px !important;top: auto !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
+    .V_3_5 .loginBtn--facebook:before {width: 25px !important;height: 25px !important;top: 50% !important;transform:translateY(-50%);background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
     .V_3_5 .or-class{text-align: center !important;padding: 15px !important;padding-top:0 !important;margin:0 !important;font-size: 12px !important;}
     .V_3_5 .result-v2 .or-class,.V_3_5 .t1-landing-leadform .or-class{padding-top: 15px !important;}
     .V_3_5 .loginBtn{padding:9px 35px 9px 15px !important;font-size: 14px !important;}
@@ -1106,7 +1106,7 @@
     .V_3_5 .common-result-main .t1-result-leadform fb_lead_gen {padding: 0;margin-top: 0;}
     .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {padding: 9px 35px 9px 15px !important;font-size: 13px !important;}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{font-size: 13px !important;}
-    .V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before{top:3px !important;}
+    .V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before{top: 50% !important;transform:translateY(-50%);}
     .V_3_5 .landing-page-mid button{font-size: 12px !important;line-height: 17px;min-height: auto;min-width: auto;padding: 11px 30px !important;}
     .V_3_5 .landing-page-header{left: 0px;width: 100%;}
     .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 14px;line-height: 20px;}
@@ -1134,9 +1134,8 @@
     .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{margin-bottom: 10px !important;padding: 11px 30px !important;}
     .V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ label, .V_3_5 .common-result-main .t1-result-leadform .input-outer .input-field .prefix ~ .validate ~ label{font-size: 14px !important;}
     .V_3_5.inline-temp-new .result-v2 .loginBtn.loginBtn--facebook {padding: 10px 37px 10px 25px !important;line-height:15px !important;}
-    .V_3_5.inline-temp-new .result-v2 .loginBtn.loginBtn--facebook:before{top: auto !important;}
-    .V_3_5 leadform_question .loginBtn--facebook {padding: 11px 38px 11px 25px !important;font-size: 12px !important;margin: 0 auto !important;}
-    .V_3_5 leadform_question .loginBtn--facebook :before{top: 4px !important;}
+    .V_3_5 leadform_question .loginBtn--facebook {padding: 11px 37px 11px 20px !important;font-size: 12px !important;margin: 0 auto !important;}
+    .V_3_5 leadform_question .loginBtn--facebook :before{top: 50% !important;transform:translateY(-50%);}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c .selectize-control.single .selectize-dropdown.single{top: 32px !important}
     .V_3_5 .t1-ques-component.leadform-inline{width: 100%;float: left;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type=checkbox].filled-in:checked+label.leadform-checkbox:after{width: 18px;left:0;}
@@ -1156,6 +1155,11 @@
     .V_3_5 .t1-question .question-components .selectize-control.single .selectize-input:after{top: 40%;}
     .V_3_5 .t1-ques-component.leadform-inline leadform_question form .input-section .input-outer.dropdown .selectize-control.single .selectize-input:after{top: 20%;}
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: 0 !important;}
+    .V_3_5 .no-logo .no-header-links.no-footer-links{padding-top: 0px !important;}
+    .V_3_5 .no-logo .inline-tablecell {padding-top: 30px;}
+    .V_3_5 .no-logo .t1-landing-inner .landing-page-mid{padding-top:30px !important;}
+    .V_3_5 .t1-result.no-logo .no-header-links.no-footer-links {padding-top: 30px !important;}
+    .V_3_5 .no-logo .template3-outr {margin-top: 0 !important;margin-bottom: 15px !important;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}

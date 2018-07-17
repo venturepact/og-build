@@ -796,7 +796,7 @@ label.control.graded-cross{border-color:#ff3b3b!important}
 label.control.graded-tick{border-color:#00a651!important}
 .control__indicator .hide{display:block!important}
 .ripple-dark .mid-outer>span{float:left;width:100%;font-size:16px;margin:10px 0}
-.graded-cross .img-graded-box,.graded-tick .img-graded-box{width:32px;height:32px;display:table;position:absolute;border-radius:50%;padding:4px 0;top:115px;right:10px;color:#fff;box-shadow:0 1px 8px rgba(0,0,0,.8);text-align:center}
+.graded-cross .img-graded-box,.graded-tick .img-graded-box{width:32px;height:32px;display:table;position:absolute;border-radius:50%;padding:4px 0;top:105px;right:0px;color:#fff;box-shadow:0 1px 8px rgba(0,0,0,.8);text-align:center}
 .graded-cross .img-graded-box{background:#ff3b3b}
 .graded-tick .img-graded-box{background:#00a651}
 .graded-cross .img-graded-box .img-graded-tick,.graded-tick .img-graded-box .img-graded-cross{display:none}
@@ -1573,3 +1573,6 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 
 .isIframe  .calendar-after {min-height: 450px;display: flex;align-items: center;}
 .V_3_5 .control-ver2 .pic-selector {padding: 0 15px !important;}
+.ripple-light.loading:before {
+    content: '' !important;
+  }
