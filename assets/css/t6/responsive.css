@@ -5,12 +5,11 @@
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
-        .safari .header-next-div.isIframe{height: 100% !important;}
+        /* .safari .header-next-div.isIframe{height: 100% !important;}
         .safari .t1-question.isIframe{height: 100% !important; min-height: 700px}
-        .safari .t1-landing.isIframe{height: 100% !important; min-height: 700px}
+        .safari .t1-landing.isIframe{height: 100% !important; min-height: 700px} */
     }
-    /* .safari .header-next-div{height: 100% !important;}
-    .safari .t1-question{height: 100% !important; min-height: 700px} */
+
     .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
     .postfixset {        top: -21px;    }
     .t1-slider-question .input-field label {width: 50px;padding: 14px 5px ;}
