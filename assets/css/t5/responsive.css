@@ -351,7 +351,7 @@ Developer: Bhawna */
     .V_3_5 .question-head{font-size: 24px; line-height: 30px; ;letter-spacing: 1px}
     .V_3_5 .control, .V_3_5 .question-components input, .V_3_5 .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 15px;line-height: normal;padding-bottom: 2px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, .V_3_5 button.btn.prime-action.ripple-light.back-action i, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i{font-size: 18px;}
-    .date-selector-part .cal-outer.calender-date{width:calc(50% - 30px);}
+    .date-selector-part .cal-outer.calender-date{width:100%;padding: 0px;}
     .date-selector-part span.calendar-range{width: 50px;}
     .V_3_5 leadform .input-section .input-outer:nth-last-child(2):nth-child(odd){margin-bottom: 30px;}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span{top: 35px;}
@@ -377,6 +377,7 @@ Developer: Bhawna */
     .V_3_5 .opinon-scale-custom .check-comp{padding-bottom: 12px !important; }
     .V_3_5 .opinon-scale-custom .errorMessage{top: 35px !important;font-size: 10px !important;}
     .V_3_5 .t1-ques-component .leaded-form-c .input-section .input-outer span {top: 23px !important;}
+    .V_3_5.template-five .result-v2 .loginBtn.loginBtn--facebook, .V_3_5.template-five .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 13px 47px 13px 16px !important;}
     /*t5 result*/
     .V_3_5.template-five .common-result .t1-logo {padding: 0 38px !important;}
     .V_3_5 .t1-result .no-footer-links.no-header-links{padding-top: 90px !important;}
@@ -980,7 +981,7 @@ Developer: Bhawna */
     .V_3_5  a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i { font-size: 16px; }
     .V_3_5 .question-subhead{font-size: 13px;}
     .date-selector-part .cal-outer.calender-date{width: 100%;}
-    .date-selector-part span.calendar-range{width: 100%;}
+    .date-selector-part span.calendar-range{width: 100%;padding:0px;}
     .V_3_5 .t1-question{padding: 28px 0;}
     .V_3_5 .ques-header {padding: 0 28px;text-align: center;}
     .V_3_5 .main-section { width: 100%; padding: 30px 28px;margin: 0;}
@@ -1001,6 +1002,7 @@ Developer: Bhawna */
     .V_3_5 .radio_button .errorMessage{bottom: -5px;}
     .V_3_5 .opinon-scale-custom .errorMessage{top: 50px;}
     .V_3_5 .t1-ques-component .lf-skip-btn {width: auto;float: none;margin-left: 45% !important;}
+    .V_3_5.template-five .result-v2 .loginBtn.loginBtn--facebook, .V_3_5.template-five .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 10px 40px 10px 15px !important;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}

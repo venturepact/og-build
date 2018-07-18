@@ -11,7 +11,8 @@
 }
 @media (min-width: 0px) and (max-width: 767px) {
     html {
-        overflow: auto !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
     .cta-center {
         text-align: center;
