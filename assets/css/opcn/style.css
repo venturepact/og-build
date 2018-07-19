@@ -955,7 +955,7 @@ input{-webkit-transform:translate3d(0,0,0)}
     60%{text-shadow:.25em 0 0 #fff,.5em 0 0 transparent}
     100%,80%{text-shadow:.25em 0 0 #fff,.5em 0 0 #fff}
 }
-.no-logo .t1-landing-inner {padding-top: 40px !important;}
+.no-logo .t1-landing-inner {padding-top: 50px !important;}
 @media all and (-ms-high-contrast:none),(-ms-high-contrast:active){
     .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{padding-bottom:13px!important}
     .t1-landing-inner .input-field{position:relative;float:left;width:93%!important}
@@ -1988,3 +1988,4 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 .t1-result-leadform .lead-popup .fb-outer {
     text-align: left;
 }
+.V_3_5  .landing-page-mid button span{font-size: 18px }

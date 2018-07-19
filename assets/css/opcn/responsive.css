@@ -82,6 +82,7 @@
     .submit-checkbox{padding:5px!important}
 }
 @media (min-width:0px) and (max-width:767px){
+    .V_3_5 .landing-page-mid button span {font-size: 13px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
@@ -859,6 +860,7 @@
     .table-outer table{max-width:450px}
 }
 @media (min-width:768px) and (max-width:1024px){
+    .V_3_5 .landing-page-mid button span {font-size: 16px;}
     .recom-footer-outer .redo-outer-recom,.redo-outer-recom{position:relative}
     .recom-section .t1-social-links{margin:0!important}
     .redo-link>ul{margin:0}
