@@ -721,9 +721,9 @@ Developer: Bhawna */
     .V_3_5 .landing-text-center .or-class {text-align: center !important;padding: 10px 0;}
     .V_3_5 .graded-msgbox {margin-top: 3px;}
     .V_3_5 .graded-msgbox::before {top: 2px;left: 5px;}
-    .V_3_5 .landing-text-right .landing-page-mid {margin-right: 0;margin-left: 0;}
-    .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align{padding: 0 25px;}
-    .V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align{padding: 0 25px;}
+    .V_3_5 .landing-text-right .landing-page-mid {margin-right: 0;margin-left: 0;padding-left: 25px;}
+    .V_3_5 .landing-text-center .landing-page-mid.no-bg-center-align{padding: 90px 25px;}
+    .V_3_5 .landing-text-center .landing-page-mid.with-bg-center-align{padding: 90px 25px;padding-bottom: 75px !important;}
     .isFullScreenBg .t1-landing-top + .landing-page-mid {display: table;height: 100vh;padding-top: 100px;}
     .V_3_5 .t1-question leadform_question div + fb_lead_gen .or-class {text-align: center;padding: 0;}
     .V_3_5 .t1-question leadform_question div + fb_lead_gen .fb-outer {margin: 10px auto;text-align: center;}
@@ -1004,6 +1004,8 @@ Developer: Bhawna */
     .V_3_5 .opinon-scale-custom .errorMessage{top: 50px;}
     .V_3_5 .t1-ques-component .lf-skip-btn {width: auto;float: none;margin-left: 45% !important;}
     .V_3_5.template-five .result-v2 .loginBtn.loginBtn--facebook, .V_3_5.template-five .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 10px 40px 10px 15px !important;}
+    .V_3_5 .t1-question{min-height: calc(100vh - 60px);}
+    .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main {padding-top: 0 !important;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
     .V_3_5 .landing-footer-outer .powered-by span {font-size: 8px;}
