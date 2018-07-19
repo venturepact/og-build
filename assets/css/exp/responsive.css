@@ -11,7 +11,8 @@
 }
 @media (min-width: 0px) and (max-width: 767px) {
     html {
-        overflow: auto !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
     }
     .cta-center {
         text-align: center;
@@ -826,16 +827,34 @@
     .gdpr-popup-right{ width: 100%; text-align: center;}
 
     a.gdrp-cancel{ display: none;}
-    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: relative;  bottom: 0;  right: inherit;  left: inherit;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-
+    .or-class{font-size: 12px;}
+    .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px !important;}
+    .loginBtn{
+        padding: 9px 35px 9px 15px !important;
+        font-size: 13px !important;
+    }
+    .loginBtn--facebook:before{
+        width: 25px !important;
+        height: 25px !important;
+        top: 5px !important;
+        background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;
+        background-size: 15px !important;
+        right: 5px !important;
+    }
+    .v3-fb-outer .t1-landing-leadform button.prime-action{
+        padding: 10px 30px !important;
+    }
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
         display: none;
     }
+    .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
+    .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     /*.landing-page-header a img {
