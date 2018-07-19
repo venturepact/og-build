@@ -3,33 +3,18 @@
 <head>
 	<?php
 		$hostName = $_SERVER['HTTP_HOST'];
-		// $host = explode('.',$_SERVER['HTTP_HOST']);
-
-		// array_shift($host);
-		//$apiUrl = 'https://api.'.implode('.',$host);
-
 		$apiUrl = 'https://outgrow-api.herokuapp.com';
-
 		if (preg_match("/outgrow\.co\.in$/", $hostName)) {
 			$apiUrl = 'https://outgrow-biz-api.herokuapp.com';
-		}
-		else if (preg_match("/rely\.co$/", $hostName)) {
+		} else if (preg_match("/rely\.co$/", $hostName)) {
 			$apiUrl = 'https://outgrow-api.herokuapp.com';
-		}
-		else if (preg_match("/outgrow\.co$/", $hostName)) {
+		} else if (preg_match("/outgrow\.co$/", $hostName)) {
 			$apiUrl = 'https://api.outgrow.co';
+		} else if (preg_match("/safacademy\.cricket$/", $hostName)) {
+			$apiUrl = 'https://og-safacademy.herokuapp.com';
 		}
 		$apiUrl = 'https://api.outgrow.co';
 		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
-
-		/*if (strpos($apiUrl, 'outgrow') !== false) {
-
-			$url = $_SERVER['REQUEST_SCHEME'].'://'.$apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
-		} else {
-			$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
-		}
-
-		die(var_dump($apiUrl));*/
 
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
