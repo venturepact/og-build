@@ -1051,3 +1051,10 @@
     .question-components .input-field label~input.postfixset {width: calc(100% - 80px)!important;}
     .landing-page-mid leadform .input-section .input-outer.checkbox span{top:5px !important;}
 }
+
+
+@media (min-width: 641px) and (max-width: 995px) {
+    .common-result .landing-page-header {
+        left: 15px !important;
+    }
+}

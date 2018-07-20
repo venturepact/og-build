@@ -2372,7 +2372,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .questions .question-section-outer .question-number{font-size: 12px;width: 24px !important;height: 24px !important;line-height: 24px;}
 .V_3_5 .questions .section-head {font-size: 22px;line-height: 28px;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label:after{border-radius: 3px;width: 16px;height: 16px;margin: 0 12px;top: 2px;}
-.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;font-size: 14px;left: 12px !important;right: 0;top: -1px !important;bottom: 0;width: auto;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;}
+.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;font-size: 14px;left: 12px !important;right: 0;top: -1px !important;bottom: 0;width: auto;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;white-space: nowrap;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:after{border-radius: 3px;width: 16px !important;height: 16px !important;margin-top: 0 !important;margin-bottom: 0 !important;top: 2px;left: 0px !important;}
 .V_3_5 .radio-outer-base.active .control{background: transparent;border: none !important;}
 .V_3_5 .question-components {margin-left: 0;padding-bottom: 30px;padding-left: 35px;}
@@ -2662,3 +2662,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 /*prefix--suffix*/
 .V_3_5 .input-field.pre-div {flex-direction: row;}
 .V_3_5.sound-cloud-new .page_1 .input-field label:not(.label-icon){background: transparent;border: none;float: left;padding: 0;border-bottom: 1px solid #d9dad3 !important;border-radius: 0px;font-size: 15px !important;font-weight: normal !important;text-transform: none;}
+
+.V_3_5 .isIframe .page_1, 
+.V_3_5 .isIframe .page_1 .result-fixed1,
+.V_3_5 .isIframe .results-outer{min-height:auto !important;height: auto !important; max-height: inherit !important;}

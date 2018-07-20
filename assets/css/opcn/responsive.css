@@ -82,7 +82,7 @@
     .submit-checkbox{padding:5px!important}
 }
 @media (min-width:0px) and (max-width:767px){
-    .V_3_5 .landing-page-mid button span {font-size: 13px;}
+    .V_3_5 .landing-page-mid button span {font-size: 14px !important;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
@@ -588,7 +588,7 @@
     .V_3_5 .powered-by img {width: auto;height: 12px;}
     .V_3_5 .powered-by{box-shadow: none}
     .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn {margin-top: 10px;font-size: 14px;margin-left: 0px; margin-right: 0px;float: none;}
-    .V_3_5 .newLeadGenV_3_5 .w100.text-center.lead-action-wrapper  .submit-checkbox-img{display: inline-block;float: none;margin:0;font-size: 12px;}
+    .V_3_5 .newLeadGenV_3_5 .w100.text-center.lead-action-wrapper  .submit-checkbox-img{display: inline-block;float: none;margin:0;font-size: 12px; padding: 10px 30px 9px!important}
     .V_3_5.one-page-card-new .leadAsPopup .or-class,.V_3_5.one-page-card-new leadform_question .or-class{text-align:center!important;     margin: 10PX 0 !important;}
     .V_3_5.one-page-card-new leadform_question .loginBtn{margin:0 auto!important}
     .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer [type=checkbox]+label.leadform-checkbox{font-size: 14px !important}
@@ -1165,6 +1165,7 @@
     .recom-section .lead-heading-temp1{text-align:left;font-size:13px}
     .recom-section .t1-result-leadform .input-section{padding:0}
     .t1-question-slider{width:80%}
+    .V_3_5 .t1-question-slider{width:75%}
     .t1-ques-head{font-size:16px;line-height:22px;margin-bottom:20px}
     .t1-ques-head .help-text{font-size:13px;opacity:.6;line-height:18px;margin-top:4px}
     .landing-page-mid{width:60%;margin-left:40px}
@@ -1173,7 +1174,7 @@
     .t1-landing .t1-landing-inner{padding-bottom:100px;padding-top:100px}
     .landing-page-mid button.prime-action,.landing-page-mid leadform button.prime-action{padding:11px 40px;font-size:16px;margin-bottom:0}
     .text-overlay{padding-bottom:105%;height:auto;bottom:0}
-    .t1-slider-question{padding-top:20px!important;border-radius:5px;padding:25px}
+    .t1-slider-question{padding-top:20px!important;border-radius:5px;padding:30px}
     .t1-question .question-components .check-comp label{min-height:43px;height:43px;padding-left:40px}
     .control.control--radio span{margin-top:9px;margin-bottom:9px;font-size:13px;line-height:18px}
     .one-page-card-new [type=radio].with-gap:checked+label:after,.one-page-card-new [type=radio].with-gap:checked+label:before,.one-page-card-new [type=radio]:checked+label:after,.one-page-card-new [type=radio]:not(:checked)+label:after,.one-page-card-new [type=radio]:not(:checked)+label:before{margin:12px;width:16px;height:16px}
@@ -1383,3 +1384,9 @@
 }
 
     
+@media (min-width: 641px) and (max-width: 995px) {
+
+    .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img {
+        padding: 11px 28px 9px!important;
+    }
+}

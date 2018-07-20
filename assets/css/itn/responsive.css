@@ -1156,8 +1156,9 @@
     .V_3_5 .t1-ques-component.leadform-inline leadform_question form .input-section .input-outer.dropdown .selectize-control.single .selectize-input:after{top: 20%;}
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: 0 !important;}
     .V_3_5 .no-logo .no-header-links.no-footer-links{padding-top: 0px !important;}
-    .V_3_5 .no-logo .inline-tablecell {padding-top: 30px;}
-    .V_3_5 .no-logo .t1-landing-inner .landing-page-mid{padding-top:30px !important;}
+    .V_3_5 .no-logo .inline-tablecell {padding-top: 30px !important;}
+    /*.V_3_5 .no-logo .t1-landing-inner .landing-page-mid{padding-top:30px !important;}*/
+    .V_3_5 .t1-landing.no-logo .no-header-links.no-footer-links{padding-top:30px !important;}
     .V_3_5 .t1-result.no-logo .no-header-links.no-footer-links {padding-top: 30px !important;}
     .V_3_5 .no-logo .template3-outr {margin-top: 0 !important;margin-bottom: 15px !important;}
     /*branding*/
@@ -1166,10 +1167,11 @@
     .V_3_5 .powered-by span {font-size: 8px;}
     .V_3_5 .powered-by img {width: auto;height: 12px;}
     .V_3_5 .powered-by{box-shadow: none}
+    .V_3_5 .stickyfooter {left: 0;}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo:after{border-width: 75px 90px 0 0 !important;}
     .safari .header-next-div{height: auto !important;min-height: 660px;}
-    .safari .header-next-div .t1-question{height: 100% !important; min-height: 700px}
-    .safari .header-next-div .t1-landing{height: 100% !important; min-height: 700px}
+    .safari .header-next-div .inline-tablecell {height: 100% !important; min-height: 700px}
+    .safari .header-next-div .t1-landing-inner{height: 100% !important; min-height: 700px}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1897,6 +1899,8 @@
     .V_3_5 .t1-question .question-components leadform_question input{font-size: 20px !important;max-height: 35px;}
     .V_3_5 .t1-ques-component .input-section .input-outer span{top: 38px;}
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: -5px !important;}
+    .V_3_5.inline-temp-new .common-result header.landing-page-header {position: absolute !important;top: 30px !important;}
+    .V_3_5.inline-temp-new .common-result .t1-logo{margin:0 !important;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
