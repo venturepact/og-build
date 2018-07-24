@@ -363,7 +363,7 @@ Developer: Bhawna */
     .V_3_5 .main-section form{padding: 0; margin-top: 40px;}
     .V_3_5 .landing-text-right .landing-page-mid{margin-right: 5%;margin-left: 0;padding-left: 10px;}
     .V_3_5 .landing-text-right .landing-right {left: 5%;float: left;}
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn{height: 34px;    padding: 5px 13px;}
+    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn, .V_3_5 button.btn.prime-action.ripple-light.back-action, .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn,.V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light{height: 34px;padding: 5px 13px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before,.V_3_5 button.btn.prime-action.ripple-light.back-action:before{line-height: 18px;}
     .V_3_5 .question-number{height: 30px;padding: 5px 7px;}
     .V_3_5 .common-footer-inner{width: 30%;}
@@ -966,6 +966,7 @@ Developer: Bhawna */
     .landing-text-right .landing-page-mid{margin-right: 0;}
 
     /*********** t5 improved 640 ************/
+    .V_3_5 .landing-inner{min-height: 700px !important;height: 100% !important;}
     .V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 40px;line-height: 44px;}
     .V_3_5 .sub-heading h2{font-size: 16px;line-height: 20px;}
     .V_3_5 .question-head {font-size: 22px;line-height: 28px;}
@@ -1170,6 +1171,9 @@ Developer: Bhawna */
 @media (min-width: 640px) and (max-width: 767px) {
     .table-outer {max-width: 550px;}
     .V_3_5 .t1-ques-component .lf-skip-btn{margin-left: 0px !important;}
+    .V_3_5 .landing-img {height: 390px;}
+    .V_3_5 .landing-right{left:50%;}
+    .V_3_5 .landing-page-mid{width: 45%;}
 }
 @media (min-width: 768px) and (max-width: 1399px) {
     .fancybox-outer .fancybox-inner {
@@ -1226,6 +1230,8 @@ Developer: Bhawna */
     .t1-question{min-height: 100%;}
     .header-next-div {height: auto !important;}
     .template-five header.landing-page-header.outcome-logo{left:0 !important;}
+    .isFullScreenBg .t1-landing-top + .landing-page-mid{min-height: 700px !important;height: auto !important;}
+    .V_3_5 .t1-question{min-height: 700px !important;height:100% !important;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
