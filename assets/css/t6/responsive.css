@@ -425,9 +425,18 @@
     .pull-text-right{        padding-left: 130px; padding-top: 0;    }
     .table-outer table { max-width: 450px;}
 }
-
+@media (min-width:1024px){
+    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
+}
+@media (min-width:641px) and (max-width:1024px) {
+    .V_3_5 .main-heading h1 , .V_3_5 .sub-heading h2{max-width: 85% !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 42px !important; line-height: 48px !important}
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:18px !important;opacity:1;line-height:24px !important}
+}
 @media (min-width:768px) and (max-width:1024px) {
-        .t1-ques-head{font-size: 36px; line-height: 42px}
+   
+    .t1-ques-head{font-size: 36px; line-height: 42px}
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .recom-section .disc-set{margin-top: 0px !important}
@@ -846,6 +855,7 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;line-height:20px !important}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo .crb-left{right: 4px !important;}
     .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
     .V_3_5.template-six .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{min-height: 40px !important}
