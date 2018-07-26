@@ -357,8 +357,8 @@ Developer: Bhawna */
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span{top: 35px;}
     .V_3_5 leadform .input-outer{margin-bottom: 30px;}
     .V_3_5 .landing-right{left:56%;    width: 305px;}
-    .V_3_5 .landing-img {height: 420px;}
-    .V_3_5 .stickyfooter {padding: 10px 27px 20px !important;}
+    .V_3_5 .landing-img {height: 400px;}
+    .V_3_5 .stickyfooter {padding: 10px 27px 10px !important;}
     .V_3_5 .common-footer-main .stickyfooter.lightSticky{padding-right: 10px !important;}
     .V_3_5 .main-section form{padding: 0; margin-top: 40px;}
     .V_3_5 .landing-text-right .landing-page-mid{margin-right: 5%;margin-left: 0;padding-left: 10px;}
@@ -1013,7 +1013,7 @@ Developer: Bhawna */
     .V_3_5 .powered-by span {font-size: 8px;}
     .V_3_5 .powered-by img {width: auto;height: 12px;}
     .V_3_5 .powered-by{box-shadow: none}
-
+    .V_3_5 .stickyfooter{padding-bottom: 20px !important;}
     /*logo*/
     .V_3_5 .t1-logo { padding: 0 25px; margin-top: 25px;text-align: center;}
     .V_3_5 .landing-right{  left: 0;   width: 100%;  padding-right: 25px; padding-left: 25px; }
@@ -1174,6 +1174,7 @@ Developer: Bhawna */
     .V_3_5 .landing-img {height: 390px;}
     .V_3_5 .landing-right{left:50%;}
     .V_3_5 .landing-page-mid{width: 45%;}
+    .V_3_5 .main-section { width: 100%; padding: 30px 28px;margin: 0;}
 }
 @media (min-width: 768px) and (max-width: 1399px) {
     .fancybox-outer .fancybox-inner {
@@ -1232,6 +1233,7 @@ Developer: Bhawna */
     .template-five header.landing-page-header.outcome-logo{left:0 !important;}
     .isFullScreenBg .t1-landing-top + .landing-page-mid{min-height: 700px !important;height: auto !important;}
     .V_3_5 .t1-question{min-height: 700px !important;height:100% !important;}
+    .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main{padding-top: 0px !important;}
 }
 @media (max-width: 520px){
     .numeral-result .table-outer table{max-width: 360px}
