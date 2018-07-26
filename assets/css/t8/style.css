@@ -2289,3 +2289,9 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .template-six.V_3_5 .newLeadGenV_3_5 .selectize-control.single .selectize-input input {
     background: transparent !important;
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .template-eight .result-v2-box2{flex-direction: row !important;}
+    .template-eight .result-v2 .devMode.common-result-bot.eight-inner-wrapper, 
+    .template-eight .result-v2 .notDevMode .common-result-bot.eight-inner-wrapper.result-v2-leadformhide{max-width: 540px !important}
+    .overlay-outer-eight{max-width: inherit !important}
+ }
