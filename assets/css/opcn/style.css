@@ -1443,9 +1443,9 @@ leadform_question .or-class{color:#28324e;padding:0}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input{font-size:14px;width:90%}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label{padding-left:30px;margin-left:0;margin-top:0!important}
 .V_3_5 leadform .input-field label:not(.label-icon).active{padding-left:0!important;text-transform:uppercase}
-.newProgressbar.progress{position: relative;top: 0;height: 9px;background: #fff;width: 200px !important; right: 0; -webkit-box-shadow: none; box-shadow: none; border: none; border-radius: 50px;overflow: visible;text-align: center; margin: 0 auto;margin-top: 35px;}
+.newProgressbar.progress{position:absolute;top:45px;height:9px;background:0 0;width:120px!important;right:70px;box-shadow:none;border:1px solid #fff;border-radius:50px;overflow:visible}
 .newProgressbar.progress::after{content:"";opacity:1;float:left;width:100%;height:18px;position:absolute;left:0;z-index:99999;top:0}
-.newProgressbar.progress span.sr-only{clip: inherit;overflow: visible; float: right; right: -4px; top: -23px; font-size: 9px; color: #666 !important;font-family: 'montserratregular'; position: relative; background: #f2f2f2; width: auto; height: auto; padding: 0 5px; border-radius: 4px; line-height: 17px;}
+.newProgressbar.progress span.sr-only{clip:inherit;overflow:visible;float:right;right:-10px;top:-3px;font-size:11px;color:#fff;font-family:montserratlight}
 .newProgressbar .progress-bar{text-align:right;box-shadow:none;border-radius:50px}
 .t1-slider-pagination{position:absolute;float:left;width:100%;top:0;height:12px}
 .t1-slider-pagination::before{opacity:.2;content:"";float:left;height:12px;position:absolute;top:0;left:0;right:0}
