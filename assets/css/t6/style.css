@@ -1387,11 +1387,11 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 @media (min-width:641px){
    
     .V_3_5 .landing-page-mid leadform .input-section .input-outer{float:none;vertical-align:top;display:inline-block;margin-bottom:30px}
-    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
+    /* .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px} */
     .V_3_5 .page_0.t1-landing .landing-page-mid .input-outer i{top:50% !important;transform:translateY(-50%);line-height:1; left: 30px;}
     .V_3_5 .main-heading h1{max-width:80%}
     .V_3_5 .sub-heading h2{max-width:70%}
-    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
+    /* .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px} */
     .V_3_5 .landing-page-mid button, 
     .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 18px 40px;font-size: 14px; margin-bottom: 0px}
     .template-six.V_3_5 .pic-selector .abhi,
@@ -1577,3 +1577,6 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     content: '' !important;
   }
   .template-six.V_3_5 .question-components .selectize-input input {background: transparent !important}
+  
+.V_3_5 .lead-popup-header+form .w100.text-center.lead-action-wrapper.eight-sec a.submit-checkbox-img:hover , .V_3_5 .lead-popup-header+form .w100.text-center.lead-action-wrapper.eight-sec a.submit-checkbox-img:focus{color:#fff !important}
+.V_3_5 .lead-popup-header+form .w100.text-center.lead-action-wrapper.eight-sec a.submit-checkbox-img:hover span{visibility: hidden;}
