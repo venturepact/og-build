@@ -4701,7 +4701,7 @@ p > span > a {color: inherit; }
     .new_control.complete:hover .t1-ques-component .custom-block ,  
     .new_control.complete:hover .t1-ques-component .selectize-input{opacity: 1; }
   
-    .new_control.visible.complete{transform: scale(0.75); z-index: 1;}
+    .new_control.visible.complete{transform: scale(0.75)}
     .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
     .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
@@ -5077,44 +5077,3 @@ button.lf-skip-btn{
 .V_3_5.inline-temp-new .result-v2 .common-result-bot-left.CTA-1 .outcome_like {top: -5px !important;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links {padding-top: 0;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links .inline-tablecell {padding-top: 50px;}
-
-
-/******** date/time css start ********/
-.V_3_5 .t1-question .new_control .question-components .form-group {
-    margin: 0;
-}
-.V_3_5 .t1-question .new_control .question-components .input-group {
-    display: inline-block;
-}
-.V_3_5 .t1-question .new_control .question-components calendar .input-group input {
-    width: 245px;
-    float: none;
-    min-height: 51px;
-    background: transparent;
-    box-shadow: none;
-}
-.new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
-    width: 335px !important;
-}
-.editor-page-divider .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
-    width: 255px !important;
-}
-.new_control.visible.complete .t1-ques-component .question-components calendar .cal-outer.calender-date {
-    opacity: .3;
-}
-.new_control.visible.complete:hover .t1-ques-component .question-components calendar .cal-outer.calender-date {
-    opacity: 1;
-}
-.V_3_5 .t1-question .new_control .question-components input{
-    min-width: 245px;
-}
-.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon {
-    position: absolute;
-    right: 12px;
-    top: 6px;
-    background: transparent;
-    border: none;
-}
-.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon i.fa.fa-calendar {
-    font-size: 24px;
-}
