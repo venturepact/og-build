@@ -60,7 +60,13 @@ function createCalendar(calendar, element, adjuster){
         var rwd = document.createElement('a');
         rwd.className += " cld-rwd cld-nav";
         rwd.href = 'javascript:void(0)';
-        rwd.addEventListener('click', function(){createCalendar(calendar, element, -1);} );
+        rwd.addEventListener('click', function(){
+          $('.calendar-outer').fadeOut(1000, 'linear', () => {
+            $('.calendar-outer').fadeIn(1000, 'linear', () => {
+              createCalendar(calendar, element, -1);
+            });
+          });
+        });
         rwd.innerHTML = '<i class="material-icons">keyboard_arrow_left</i>';
         datetime.appendChild(rwd);
       }
@@ -72,7 +78,13 @@ function createCalendar(calendar, element, adjuster){
         var fwd = document.createElement('a');
         fwd.className += " cld-fwd cld-nav";
         fwd.href = 'javascript:void(0)';
-        fwd.addEventListener('click', function(){createCalendar(calendar, element, 1);} );
+        fwd.addEventListener('click', function(){
+          $('.calendar-outer').fadeOut(1000, 'linear', () => {
+            $('.calendar-outer').fadeIn(1000, 'linear', () => {
+              createCalendar(calendar, element, 1);
+            });
+          });
+        });
         fwd.innerHTML = '<i class="material-icons">keyboard_arrow_right</i>';
         datetime.appendChild(fwd);
       }

@@ -1205,7 +1205,7 @@ a.btn-done {
     .hello-bar-demo span {
         width: 80.5% !important;
     }
-    
+
 }
 @media (min-width: 1024px) and (max-width: 1024px) {
     .cld-day .cld-number.eventday { margin: 5px 40% !important;}
@@ -3612,7 +3612,7 @@ h4.opinion-email-head {
 .show-exact  .show-exact-row .def-lab , .show-exact  .show-exact-row .div-drop select{
     margin-bottom: 0
 }
-#publish-upgrade.mac-compatible .modal-dialog{ width: 600px !important} 
+#publish-upgrade.mac-compatible .modal-dialog{ width: 600px !important}
 #publish-upgrade.mac-compatible .modal-content{ background-color: #fff !important;}
 #publish-upgrade.mac-compatible .modal-content .left-sec{width:100% !important; background: none !important;}
 #publish-upgrade.mac-compatible .modal-content i{color: #888 !important}
@@ -3852,10 +3852,10 @@ a.forgot-link {
     margin: 4px 12%;
     font-weight: normal!important;
     font-size: 10px;}
-.cld-number.eventday:hover{background:#45be75 !important ; color:#fff !important;}  
+.cld-number.eventday:hover{background:#45be75 !important ; color:#fff !important;}
 .cld-day.currMonth.today .cld-number.eventday:hover{ background: #fff !important; color:#333 !important; cursor: default;}
-.cld-main{ width:100% !important;}   
-.cld-labels{ margin-bottom: 0 !important} 
+.cld-main{ width:100% !important;}
+.cld-labels{ margin-bottom: 0 !important}
 .cld-labels li.cld-label{ padding:8px !important;  background: #fff; font-size:10px; }
 .cld-day{ border: none !important;  border-right: 1px solid #d9e0e4 !important;  border-bottom: 1px solid #d9e0e4 !important;}
 .cld-labels li.cld-label{   border-right: 1px solid #d9e0e4;  border-bottom: 1px solid #d9e0e4;}
@@ -3911,7 +3911,7 @@ ul.cld-days{ margin-bottom:0 !important;}
     margin-bottom: 40px;
     background-repeat: no-repeat;
 }
-li.cld-day{ background: #fff;}   
+li.cld-day{ background: #fff;}
 
 
 .custom-tabs-outer{
@@ -4093,7 +4093,7 @@ a.help-link span {
     display: flex;
     align-items: center;
 }
-li.cld-day{ background: #fff;}   
+li.cld-day{ background: #fff;}
 .pt10{ padding-top:10px !important;}
 
 .event-template-outer .event-name{ float: left; width:100%; padding:8px 10px; margin-bottom:3px; font-size: 12px; text-transform: uppercase; color: #fff; border-color:rgba(255,255,255,0.4) !important; word-wrap: break-word; }
@@ -4147,6 +4147,9 @@ li.cld-day{ background: #fff;}
     -o-transition: none !important;
     transition: none !important;
 }
+
+.mobile-tt{background: #45be75 !important; border-color:#45be75 !important;-webkit-border-radius: 3px !important; -moz-border-radius: 3px !important; border-radius: 3px !important;max-width: 150px !important;     position: absolute;
+    padding: 5px 8px; top: -27px; left: -2px;}
 .live-link-help {
     width: 55px !important;
     top: 20px !important;
@@ -4355,7 +4358,7 @@ li.cld-day{ background: #fff;}
         height: 28px;
         display: inline-block;
         position: relative;
-    
+
 }
 .top-outer-help .help-sec svg {
     position: absolute;
