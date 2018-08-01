@@ -491,6 +491,47 @@ a:focus {
     margin-right: 4px;
     word-break: break-word;
 }
+.V_3_5 .t1-ques-head {
+    color: #333 !important;
+}
+.V_3_5 .t1-question .question-components input {
+    color: #333 !important;
+    border-bottom-color: #333 !important;
+}
+.V_3_5 .new_control .input-field label.pre-icon {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+.V_3_5 .new_control .input-field label.post-icon {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+.V_3_5 .t1-question .question-components .selectize-control.single .selectize-input {
+    color: #333 !important;
+    border-color: #333 !important;
+}
+.V_3_5 .t1-question .question-components .selectize-control.single .selectize-input:after {
+    border-color: #333 transparent transparent transparent;
+}
+.V_3_5 .t1-question .question-components input::-webkit-input-placeholder {
+    color: #333;
+    opacity: 0.5;
+}
+.V_3_5 .t1-question .question-components input::-moz-placeholder {
+    color: #333;
+    opacity: 0.5;
+}
+.V_3_5 .t1-question .question-components input:-ms-input-placeholder {
+    color: #333;
+    opacity: 0.5;
+}
+.V_3_5 .t1-question .question-components input:-moz-placeholder {
+    color: #333;
+    opacity: 0.5;
+}
+.V_3_5.inline-temp-new input[type=text]:focus:not([readonly]) + label {
+    color: #333 !important;
+}
 .t1-ques-head div {
     font-size: 20px;
     line-height: 40px;
