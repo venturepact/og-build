@@ -4742,7 +4742,7 @@ p > span > a {color: inherit; }
     .new_control.complete:hover .t1-ques-component .custom-block ,  
     .new_control.complete:hover .t1-ques-component .selectize-input{opacity: 1; }
   
-    .new_control.visible.complete{transform: scale(0.75); z-index: 1;}
+    .new_control.visible.complete{transform: scale(0.75); z-index: 9;}
     .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
     .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
