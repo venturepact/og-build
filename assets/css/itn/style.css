@@ -4742,7 +4742,7 @@ p > span > a {color: inherit; }
     .new_control.complete:hover .t1-ques-component .custom-block ,  
     .new_control.complete:hover .t1-ques-component .selectize-input{opacity: 1; }
   
-    .new_control.visible.complete{transform: scale(0.75)}
+    .new_control.visible.complete{transform: scale(0.75); z-index: 9;}
     .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
     .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
@@ -5052,9 +5052,9 @@ button.lf-skip-btn{
 .V_3_5 .template3-outr {float: left;width: 32%;padding-left: 60px;padding-right: 35px;margin-top: 10px;}
 .V_3_5 .template3-outr .question-head {line-height: 54px;font-size: 28px;padding: 8px 10px;padding-top: 12px;}
 .V_3_5 .t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {box-shadow: none}
-.V_3_5 .page_1 form .prime-action {font-size:14px;margin-bottom: 0px;border-radius: 50px;box-shadow: none;padding: 12px 35px;transition: all 0.3s;}
+.V_3_5 .page_1 form .prime-action {font-size:14px;margin-bottom: 0px;border-radius: 50px;box-shadow: none;padding: 12px 35px;transition: all 0.3s; margin-right: 15px;}
 .V_3_5 .page_2.t1-result {background-image: none !important;}
-.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow:none;padding: 12px 35px;font-size: 14px;line-height: 20px;}
+.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow:none;padding: 12px 35px;font-size: 14px;line-height: 20px; margin-right: 15px;}
 .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input input{max-width: 340px !important;}
 .V_3_5 .t1-question .new_control .question-components input{max-width: 360px !important;margin-bottom: 10px !important;}
 .V_3_5 .new_control .input-field label.post-icon {padding-right: 0px !important;text-align: right;margin-bottom: 0 !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -5118,3 +5118,153 @@ button.lf-skip-btn{
 .V_3_5.inline-temp-new .result-v2 .common-result-bot-left.CTA-1 .outcome_like {top: -5px !important;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links {padding-top: 0;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links .inline-tablecell {padding-top: 50px;}
+
+
+/******** date/time css start ********/
+.V_3_5 .t1-question .new_control .question-components .form-group {
+    margin: 0;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group {
+    display: inline-block;
+}
+.V_3_5 .t1-question .new_control .question-components calendar .input-group input {
+    width: 245px;
+    float: none;
+    min-height: 51px;
+    background: transparent;
+    box-shadow: none;
+}
+.V_3_5 .new_control.visible .question-components calendar .input-group input {
+    width: 335px !important;
+}
+.V_3_5 .editor-page-divider .new_control.visible .question-components calendar .input-group input {
+    width: 245px !important;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 335px !important;
+}
+.editor-page-divider .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 255px !important;
+}
+.template-section .template-container.mobile .editor-page-divider .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 245px !important;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .cal-outer.calender-date {
+    opacity: .3;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .cal-outer.calender-date + span.calendar-range {
+    opacity: 0.3;
+}
+.new_control.visible.complete:hover .t1-ques-component .question-components calendar .cal-outer.calender-date {
+    opacity: 1;
+}
+.new_control.visible.complete:hover .t1-ques-component .question-components calendar .cal-outer.calender-date + span.calendar-range {
+    opacity: 1;
+}
+.V_3_5 .t1-question .new_control .question-components input{
+    min-width: 245px;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    background: transparent;
+    border: none;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon i.fa.fa-calendar {
+    font-size: 24px;
+}
+.template-section .template-container.mobile .V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon {
+    top: 0px;
+}
+.template-section .template-container.mobile .V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon i.fa.fa-calendar {
+    font-size: 18px;
+}
+/*dropdown style*/
+.cal-outer .dropdown-menu {
+    padding: 10px !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    left:0px !important;
+    right:auto !important;
+}
+.cal-outer .table-condensed>thead>tr>th {
+    text-align: center !important;
+}
+.cal-outer ul {
+    margin-bottom: 0 !important;
+}
+.cal-outer li.picker-switch.accordion-toggle {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px;
+}
+.cal-outer .timepicker .table-condensed {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>tbody>tr>td, 
+.cal-outer .table-condensed>tbody>tr>th, 
+.cal-outer .table-condensed>tfoot>tr>td, 
+.cal-outer .table-condensed>tfoot>tr>th, 
+.cal-outer .table-condensed>thead>tr>td, 
+.cal-outer .table-condensed>thead>tr>th{
+    padding: 5px !important;
+    cursor: pointer !important;
+}
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {
+    padding: 3px;
+    margin-right: 5px;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover {
+    background: none;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
+    background: #e6e3e3;
+}
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}
+.cal-outer .datepicker table {
+    user-select: none;
+    margin: 0;
+}
+.cal-outer .datepicker td, .cal-outer .datepicker th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+.cal-outer .datepicker .picker-switch {
+    width: 152px;
+}
+
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span,
+.cal-outer .datepicker-years .table-condensed>tbody>tr>td span {
+    display: block;
+    width: 23%;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cal-outer .datepicker-decades .table-condensed>tbody>tr>td span.decade {
+    width: 50%;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.t1-question .question-components .cal-outer span.month:last-child,.t1-question .question-components .cal-outer span.year:last-child,.t1-question .question-components .cal-outer span.decade:last-child {margin-right: 0;}
