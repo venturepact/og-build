@@ -1172,6 +1172,18 @@
     .safari .header-next-div{height: auto !important;min-height: 660px;}
     .safari .header-next-div .inline-tablecell {height: 100% !important; min-height: 700px}
     .safari .header-next-div .t1-landing-inner{height: 100% !important; min-height: 700px}
+    
+    .V_3_5 .result-v2 .common-result-bot-icons.side-redo:after{border-width: 75px 90px 0 0 !important;}
+    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 255px !important; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group input { width: 255px !important;  font-size: 22px !important; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon { top: 8px; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon i.fa.fa-calendar { font-size: 22px !important; }
+
+    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 255px !important; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group input { width: 255px !important;  font-size: 22px !important; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon { top: 8px; }
+    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon i.fa.fa-calendar { font-size: 22px !important; }
+
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1901,6 +1913,26 @@
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: -5px !important;}
     .V_3_5.inline-temp-new .common-result header.landing-page-header {position: absolute !important;top: 30px !important;}
     .V_3_5.inline-temp-new .common-result .t1-logo{margin:0 !important;}
+
+    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 265px !important; font-size: 24px !important;}
+    .cal-outer.calender-date {
+        display: inline;
+    }
+    .V_3_5 .t1-question .new_control .question-components .cal-outer.calender-date .form-group {
+        display: inline;
+    }
+    .cal-outer.calender-date + span.calendar-range {
+        font-size: 30px;
+        line-height: 45px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .V_3_5 .new_control.visible .question-components calendar .input-group input {
+        width: 295px !important;
+        font-size: 26px !important;
+    }
+
+
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
