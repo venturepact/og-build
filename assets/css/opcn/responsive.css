@@ -106,7 +106,7 @@
     .t1-result-leadform-heading,
     .t1-result-small-container,
     .t1-result-topheading{text-align:center}
-    .V_3_5 .progress{top:0;margin:10px auto 0;left:inherit;right:inherit;margin-top: 35px;}
+    .V_3_5 .progress{top:0;margin:10px auto 0;left:-20px;right:inherit}
     .textfield label.control.control--checkbox,.textfield label.control.control--radio{float:left;width:auto!important;padding:20px 50px 20px 0}
     .textfield input.othersfield{padding:18px 0 12px!important;font-size:16px;line-height:18px;width:90px!important}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn{margin-left:0;position:relative;top:10px;left:0;float:left!important;display:block!important;font-size:13px!important;height:auto!important;padding:8px 15px!important}
@@ -594,11 +594,6 @@
     .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer [type=checkbox]+label.leadform-checkbox{font-size: 14px !important}
     .V_3_5.one-page-card-new leadform_question .loginBtn {padding: 12px 40px 12px 20px!important; font-size: 12px !important}
     .V_3_5.one-page-card-new leadform_question .loginBtn--facebook:before{width: 25px!important; height: 25px!important;top: 50%; background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important; background-size: 15px!important;right: 10px!important; transform: translateY(-50%);}
-
-    .V_3_5 .liveresult-outr{ position: relative; top: inherit; right: inherit; max-width: 100%; padding-left: 15px; padding-right: 15px;}
-    .V_3_5 .liveresult-outr .t1-question-liveresult{ text-align: center; }
-    .V_3_5 .liveresult-outr .t1-question-resultheading{ text-align: center; }
-
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
