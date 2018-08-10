@@ -47,7 +47,7 @@
 			$pages = "";
 			$result=json_decode($resp2,true);			
 			if(!empty($result['data'])) {	
-			    if(result['data']['instant_articles']){
+			    if($result['data']['instant_articles']){
 					$pages = $result['data']['instant_articles']['page_id'];
 			    }
 			}			
