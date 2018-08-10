@@ -1175,14 +1175,9 @@
     
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo:after{border-width: 75px 90px 0 0 !important;}
     .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 255px !important; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group input { width: 255px !important;  font-size: 22px !important; }
     .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon { top: 8px; }
     .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon i.fa.fa-calendar { font-size: 22px !important; }
 
-    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 255px !important; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group input { width: 255px !important;  font-size: 22px !important; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon { top: 8px; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon i.fa.fa-calendar { font-size: 22px !important; }
     .custom-block.inpu-file-uploader i.material-icons{ font-size: 20px; top: 15px;}
     /* .cal-outer.calender-date {
         display: block;
@@ -1196,9 +1191,9 @@
         font-size: 22px;
     } */
 
-    .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 215px !important;}
+    .V_3_5 .new_control.visible .question-components calendar .input-group input{ font-size: 22px !important; }
     .cal-outer.calender-date+span.calendar-range{ font-size:22px }
-    .isIframe.no-header-links.no-footer-links { min-height: 570px; }
+    .isIframe.no-header-links.no-footer-links { min-height: 580px; }
 
 }
 
@@ -2800,4 +2795,7 @@
         font-size: 22px;
     }
     .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 255px !important;}
+}
+@media (min-width:767px) and (max-width:600px){
+    .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 245px !important;}
 }
