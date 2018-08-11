@@ -4724,9 +4724,9 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, 
 .V_3_5 button.btn.prime-action.ripple-light.back-action i ,
 .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light i{display: none;}
-.V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before {content: 'trending_flat'; font-family: 'Material Icons'; -webkit-transform: none; transform: none; font-size: 22px;  float: left; top: auto;  line-height: 22px;}
-.V_3_5 button.btn.prime-action.ripple-light.back-action:before {content: 'trending_flat'; font-family: 'Material Icons'; font-size: 22px; -webkit-transform: rotate(180deg); transform: rotate(180deg); float: left; top: auto; line-height: 22px;}
-.V_3_5 a.sliding-next:before { content: 'trending_flat'; font-family: 'Material Icons';font-size: 22px; float: left; top: auto;line-height: 22px;}
+.V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before {content: 'trending_flat'; font-family: 'Material Icons'; -webkit-transform: none; transform: none; font-size: 22px;  float: left; top: auto;  line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
+.V_3_5 button.btn.prime-action.ripple-light.back-action:before {content: 'trending_flat'; font-family: 'Material Icons'; font-size: 22px; -webkit-transform: rotate(180deg); transform: rotate(180deg); float: left; top: auto; line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
+.V_3_5 a.sliding-next:before { content: 'trending_flat'; font-family: 'Material Icons';font-size: 22px; float: left; top: auto;line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
 .V_3_5 .action-outer{margin-left: 45px;}
 .V_3_5 .control-group.select{width: 100%}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{ border-radius: 2px;font-size: 14px;padding: 16px 35px;text-transform:none;font-weight:normal;margin-right: 0px;}
@@ -4842,3 +4842,10 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .main-section .input-field label.pre-icon, .V_3_5 .main-section .input-field label.post-icon {
     border-bottom-width: 1px !important;
 }
+
+/* @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light, 
+    .V_3_5 button.btn.prime-action.ripple-light.back-action, 
+    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{width: 56px}
+} */
