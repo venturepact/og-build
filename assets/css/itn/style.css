@@ -4463,13 +4463,22 @@ p > span > a {color: inherit; }
 
 /* Css animation */
 
-/* -webkit-animation-name: slideInUp; */
+.safari .template3-outr, .safari .t1-question form{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    -webkit-animation-name: none !important;  
+    animation-name: none !important;
+}
 .template3-outr {
-    animation-duration: 500ms;   
+    animation-duration: 500ms; 
+    -webkit-animation-name: slideInUp;  
     animation-name: slideInUp;
 }
 .t1-question form {
     animation-duration: 700ms;
+    -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
 }
 /* .common-result-main .t1-result-leadform{
