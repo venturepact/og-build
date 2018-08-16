@@ -437,9 +437,10 @@
     .V_3_5 .page_2.result-fixed.bothLeadsOn.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: 100%;}
     .V_3_5 .page_2.result-fixed.bothLeadsOn .leadform-outer.result-scrolling.new-lead2{max-height: 100% ;}
     .V_3_5 .page_2.result-fixed.bothLeadsOn .result-fixed1 {margin-bottom: 100px;}
-    .V_3_5 .leadform-outer.result-scrolling.new-lead1 .text-center.materialLead{max-height: 100% !important;}
-    .V_3_5 .leadform-outer.result-scrolling.new-lead1 a.btn.prime-action{bottom: -45px;}
-    .V_3_5 .page_2 .leadform-outer.result-scrolling.new-lead1 fb_lead_gen{bottom: -125px;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform{max-height: 100% !important;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 a.btn.prime-action{bottom: -40px;}
+    .V_3_5 .page_2 .leadform-outer.result-scrolling.new-lead1 fb_lead_gen{bottom: -120px;}
+    .V_3_5 .t2haslogo .leadform-outer.result-scrolling.new-lead1 leadform {max-height: 100%;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     .landing-page-mid .main-heading h1{        font-size: 42px;        line-height: 46px;        margin-top: 0px;    }
@@ -585,7 +586,8 @@
     .V_3_5 .page_2.result-fixed.bothLeadsOn.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: 100%;}
     .V_3_5 .page_2.result-fixed.bothLeadsOn .leadform-outer.result-scrolling.new-lead2{max-height: 100% ;}
     .V_3_5 .page_2.result-fixed.bothLeadsOn .result-fixed1 {margin-bottom: 100px;}
-    .V_3_5 .leadform-outer.result-scrolling.new-lead1 .text-center.materialLead{max-height: 100% !important;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform{max-height: 100% !important;}
+    .V_3_5 .t2haslogo .leadform-outer.result-scrolling.new-lead1 leadform {max-height: 100%;}
 }
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .main-bg{ min-height: 500px; }
