@@ -5,7 +5,8 @@
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
-        .safari .header-next-div{height: auto !important;min-height: 660px;}
+        /* .safari .header-next-div{height: auto !important;min-height: 660px;} */
+        .safari .isIframe.header-next-div{height: auto !important;min-height: auto;}
         .safari .header-next-div .t1-question{height: 100% !important; min-height: 700px}
         .safari .header-next-div .t1-landing{height: 100% !important; min-height: 700px}
     }
