@@ -1260,6 +1260,20 @@ p>span>a{color:inherit}
 .t1-ques-component .input-section .input-outer:nth-child(10){animation-duration:2.4s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
 .t1-ques-component .input-section .input-outer:nth-child(11){animation-duration:2.6s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
 .t1-ques-component .input-section .input-outer:nth-child(12){animation-duration:2.8s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
+
+.safari .t1-ques-head{animation-duration:.6s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component, .safari .t1-ques-component .input-section .input-outer:nth-child(1){animation-duration:.8s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(2){animation-duration:.9s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(3){animation-duration:1s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(4){animation-duration:1.2s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(5){animation-duration:1.4s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(6){animation-duration:1.6s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(7){animation-duration:1.8s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(8){animation-duration:2s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(9){animation-duration:2.2s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(10){animation-duration:2.4s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(11){animation-duration:2.6s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
+.safari .t1-ques-component .input-section .input-outer:nth-child(12){animation-duration:2.8s;-webkit-animation-name:bounceInRightSafari;animation-name:bounceInRightSafari;position:relative}
 @keyframes rightin{
     0%{left:70%;opacity:0}
     25%,50%{opacity:0}
@@ -1278,14 +1292,15 @@ p>span>a{color:inherit}
     90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}
     to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 }
-@-webkit-keyframes bounceInRight{
+@-webkit-keyframes bounceInRightSafari{
     60%,75%,90%,from,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}
-    from{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}
-    60%{-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}
-    75%{opacity:1;-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}
-    90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}
-    to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+    from{opacity:0;-webkit-transform:translateX(3000px);transform:translateX(3000px)}
+    60%{-webkit-transform:translateX(-25px);transform:translateX(-25px)}
+    75%{opacity:1;-webkit-transform:translateX(10px);transform:translateX(10px)}
+    90%{-webkit-transform:translateX(-5px);transform:translateX(-5px)}
+    to{-webkit-transform:translateX(0);transform:translateX(0)}
 }
+
 .t1-ques-component .input-section .input-outer.checkbox span{top:25px}
 .template-section .template-container.mobile .landing-page-mid leadform .input-section .input-outer.checkbox span{top:23px!important}
 .template-section .template-container.mobile .common-result .selectize-control.single .selectize-input{min-height:32px;padding:6px 35px 6px 10px}

@@ -4464,12 +4464,9 @@ p > span > a {color: inherit; }
 /* Css animation */
 
 .safari .template3-outr, .safari .t1-question form{
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-    -webkit-animation-name: none !important;  
-    animation-name: none !important;
+     animation-duration: 500ms; 
+    -webkit-animation-name: slideInUpSafari;  
+    animation-name: slideInUpSafari;
 }
 .template3-outr {
     animation-duration: 500ms; 
@@ -4511,6 +4508,20 @@ p > span > a {color: inherit; }
     to {
       -webkit-transform: translate3d(0, 0, 0);
       transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInUpSafari {
+    from {
+      -webkit-transform: translateY(100%);
+      transform: translateY(100%);
+      visibility: visible;
+      opacity: 0;
+    }
+  
+    to {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
       opacity: 1;
     }
   }
@@ -5111,7 +5122,7 @@ button.lf-skip-btn{
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-top-sec{margin-bottom: 5px;}
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-top-sec{margin-bottom: 5px;}
 .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action {margin-bottom: 0px;border-radius: 50px !important;padding: 13px 30px !important;transition: all 0.3s;}
-.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{line-height: 20px;font-size: 14px;padding: 10px 30px;transition: all 0.3s; color: #fff ;}
+.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{line-height: 20px;font-size: 14px;padding: 10px 30px;transition: all 0.3s; color: #fff ; position: relative; overflow: hidden;}
 .V_3_5 .result-v2 .common-result-main .t1-result-small-section.t1-result-full-section .small-bot-sec p, .V_3_5 .result-v2 .common-result-main .t1-result-small-section .t1-result-full-container .small-bot-sec p:first-child, .V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-bot-sec p{line-height: 22px;}
 /*.V_3_5 .share-popup .likes-parent {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;justify-content: center;}*/
 .V_3_5 .share-popup .input-section .twitter-follow-button{margin-top: 0;top: 0;}
