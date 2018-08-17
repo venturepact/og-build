@@ -14,6 +14,15 @@
       display: none !important;
     }
     
+    .fb_in_app .template3-outr, .fb_in_app .t1-question form{
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+        -webkit-animation-name: none !important;  
+        animation-name: none !important;
+    }
+    
     .preLoaderFull {
       background-color: #ffffff;
       width: 100%;
@@ -23,19 +32,10 @@
     } else {
       jQuery('.showPreLoader').addClass('preLoaderFull');
     }
-    function isFacebookApp() {
-        var ua = navigator.userAgent || navigator.vendor || window.opera;
-        //alert(ua);
-        return (ua.indexOf("FB") > -1) || (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-    }
-
-    if(isFacebookApp()) {
-        var customCSS = document.createElement('style');
-        customCSS.type = 'text/css';
-        customCSS.id = 'customCSS';
-        document.getElementsByTagName('head')[0].appendChild(customCSS);
-        var style = '.template3-outr, .t1-question form{-webkit-transition: none !important;-moz-transition: none !important;-o-transition: none !important;transition: none !important;-webkit-animation-name: none !important;animation-name: none !important;}';
-        jQuery('#customCSS').html(style);
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var is_in_app_fb = (ua.indexOf("FB") > -1) || (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+    if (is_in_app_fb) {
+      jQuery('html').addClass('fb_in_app');
     }
     // var gap = (window.location.href.toLowerCase().indexOf("outgrow.co") >= 0 || window.location.href.toLowerCase().indexOf("outgrow.us") >= 0) ? "UA-85018378-1" : "UA-82638968-1";
     // var gad = (window.location.href.toLowerCase().indexOf("outgrow.co") >= 0 || window.location.href.toLowerCase().indexOf("outgrow.us") >= 0) ? "UA-82253758-1" : "UA-92581866-1";
