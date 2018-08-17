@@ -1315,7 +1315,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .landing-text-left fb_lead_gen {text-align: left;}
 .V_3_5 .landing-text-right fb_lead_gen {text-align: right;}
 .V_3_5 .page_2 .fb-outer {margin-top: 0px;}
-.V_3_5 .page_2 fb_lead_gen {width: 100%;float: left;padding: 18px 0;}
+.V_3_5 .page_2 fb_lead_gen {width: 100%;float: left;padding: 18px 0 30px;}
 /*calendar component css*/
 .cal-outer{width: 100%;float: left;}
 .cal-outer input{display: flex !important;width: 100% !important;float: left !important;border-radius: 5px 0 0 5px !important;padding: 5px 15px !important;font-size: 16px !important;margin-bottom: 0px !important;outline: none !important;box-shadow: none !important;background: transparent !important; border: none !important;padding-left: 0 !important;border-bottom: 1px solid #d9dad3 !important;border-radius: 0 !important;padding-top: 0px !important;height:26px;}
@@ -1363,7 +1363,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .questions .question-section-outer .question-number{font-size: 12px;width: 24px !important;height: 24px !important;line-height: 24px;}
 .V_3_5 .questions .section-head {font-size: 22px;line-height: 28px;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label:after{border-radius: 3px;width: 16px;height: 16px;margin: 0 12px;top: 2px;}
-.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;font-size: 14px;left: 13px !important;right: 0;top: -2px !important;bottom: 0;width: auto;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;white-space: nowrap;}
+.V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:before {border: 0px !important;content: 'done';font-family: 'Material Icons';-webkit-transform: none;transform: none;font-size: 14px;left: 13px !important;right: 0;top: -2px !important;bottom: 0;width: 100%;height: auto;padding: 0 !important;border-radius: 3px;z-index: 999;white-space: nowrap;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label:after{border-radius: 3px;width: 16px !important;height: 16px !important;margin-top: 0 !important;margin-bottom: 0 !important;top: 2px;left: 0px !important;}
 .V_3_5 .radio-outer-base.active .control{background: transparent;border: none !important;}
 .V_3_5 .question-components {margin-left: 0;padding-bottom: 30px;padding-left: 35px;}
@@ -1645,7 +1645,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .lead-before-result .like-cta-outer {display: none;}
 
 /*lead with result*/
-.V_3_5 .leadform-outer.result-scrolling.new-lead2{max-height: calc(50vh - 55px);border-radius: 0px !important;padding: 18px 25px !important;  top: 0px;box-shadow: 0px 0px 30px rgba(0,0,0,0.2);background: #f8f8f4 !important;margin-bottom:54px !important;}
+.V_3_5 .leadform-outer.result-scrolling.new-lead2{max-height: calc(50vh - 55px);border-radius: 0px !important;padding: 18px 25px 0 !important;  top: 0px;box-shadow: 0px 0px 30px rgba(0,0,0,0.2);background: #f8f8f4 !important;margin-bottom:54px !important;}
 .V_3_5 .leadform-outer.result-scrolling.new-lead2 .lead-heading-temp1 {font-size: 18px;line-height: 30px;text-align: left;margin-bottom: 8px;color: #313131 !important;}
 .V_3_5 .leadform-outer.result-scrolling.new-lead2 .lead-heading-temp1 .container-temp{width: 100%;}
 .V_3_5 .results-outer{padding: 18px 25px;margin-bottom: 20px;min-height: 100px;height:auto;max-height: calc(100vh - 480px);overflow-y: auto;}
@@ -1719,7 +1719,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 /*leadgen before result fixed btn*/
 .V_3_5 .leadform-outer.result-scrolling.new-lead1{max-height:inherit !important;overflow:visible !important;border-radius: 0px !important;padding: 0 !important;top: 0px;margin-bottom:50px !important;}
-.V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform {float: left;width: 100%;max-height: calc(100vh - 220px);overflow-y: auto;margin-bottom: 0px;padding: 18px 25px;}
+.V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform {float: left;width: 100%;max-height: calc(100vh - 220px);overflow-y: auto;margin-bottom: 0px;padding: 18px 25px 0;}
 .V_3_5 .t2haslogo .leadform-outer.result-scrolling.new-lead1 leadform {max-height: calc(100vh - 300px);}
 .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform::-webkit-scrollbar {width: 6px;background-color: rgba(255, 255, 255, 0.7);}
 .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform::-webkit-scrollbar:horizontal {height: 6px;background-color: rgba(255, 255, 255, 0.7);}
