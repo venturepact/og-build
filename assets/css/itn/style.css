@@ -4768,7 +4768,8 @@ p > span > a {color: inherit; }
     .new_control.complete:hover .t1-ques-component .custom-block ,  
     .new_control.complete:hover .t1-ques-component .selectize-input{opacity: 1; }
   
-    .new_control.visible.complete{transform: scale(0.75)}
+    .new_control.visible.complete{transform: scale(0.75); z-index: 9;}
+    .new_control.visible.complete.t3-calendar { z-index: 99; }
     .new_control .t1-ques-head div {    font-size: 30px; line-height: 45px}
     .invisible + .w100.text-center {visibility: hidden;}      .invisible + .w100.text-center {visibility: hidden;}
     .visible + .w100.text-center {visibility: visible;}
@@ -5078,9 +5079,9 @@ button.lf-skip-btn{
 .V_3_5 .template3-outr {float: left;width: 32%;padding-left: 60px;padding-right: 35px;margin-top: 10px;}
 .V_3_5 .template3-outr .question-head {line-height: 56px;font-size: 28px;padding:8px 11px 8px ;}
 .V_3_5 .t1-landing .t1-landing-inner [type="checkbox"]:focus + label.leadform-checkbox:after {box-shadow: none}
-.V_3_5 .page_1 form .prime-action {font-size:14px;margin-bottom: 0px;border-radius: 50px;box-shadow: none;padding: 12px 35px;transition: all 0.3s; position: relative; overflow: hidden;}
+.V_3_5 .page_1 form .prime-action {font-size:13px;margin-bottom: 0px;border-radius: 50px;box-shadow: none;padding: 8px 25px;transition: all 0.3s; margin-right: 15px; position: relative; overflow: hidden;}
 .V_3_5 .page_2.t1-result {background-image: none !important;}
-.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow:none;padding: 12px 35px;font-size: 14px;line-height: 20px; position: relative; overflow: hidden;}
+.V_3_5 .t1-question button.prime-action{border-radius: 50px;box-shadow:none;padding: 8px 25px;font-size: 13px;line-height: 20px; margin-right: 15px; position: relative; overflow: hidden;}
 .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input input{max-width: 340px !important;}
 .V_3_5 .t1-question .new_control .question-components input{max-width: 360px !important;margin-bottom: 10px !important;}
 .V_3_5 .new_control .input-field label.post-icon {padding-right: 0px !important;text-align: right;margin-bottom: 0 !important;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; transition: all 0.3s;}
@@ -5144,6 +5145,181 @@ button.lf-skip-btn{
 .V_3_5.inline-temp-new .result-v2 .common-result-bot-left.CTA-1 .outcome_like {top: -5px !important;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links {padding-top: 0;}
 .V_3_5 .no-logo .t1-question .no-header-links.no-footer-links .inline-tablecell {padding-top: 50px;}
+
+
+/******** date/time css start ********/
+.V_3_5 .t1-question .new_control .question-components .form-group {
+    margin: 0;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group {
+    display: inline-block;
+}
+.V_3_5 .t1-question .new_control .question-components calendar .input-group input {
+    width: 245px;
+    float: none;
+    min-height: 51px;
+    background: transparent;
+    box-shadow: none;
+}
+.V_3_5 .new_control.visible .question-components calendar .input-group input {
+    width: 335px !important;
+}
+.V_3_5 .editor-page-divider .new_control.visible .question-components calendar .input-group input {
+    width: 245px !important;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 335px !important;
+}
+.editor-page-divider .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 255px !important;
+}
+.template-section .template-container.mobile .editor-page-divider .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input {
+    width: 245px !important;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .cal-outer.calender-date {
+    opacity: .3;
+}
+.new_control.visible.complete .t1-ques-component .question-components calendar .cal-outer.calender-date + span.calendar-range {
+    opacity: 0.3;
+}
+.new_control.visible.complete:hover .t1-ques-component .question-components calendar .cal-outer.calender-date {
+    opacity: 1;
+}
+.new_control.visible.complete:hover .t1-ques-component .question-components calendar .cal-outer.calender-date + span.calendar-range {
+    opacity: 1;
+}
+.V_3_5 .t1-question .new_control .question-components input{
+    min-width: 245px;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon {
+    position: absolute;
+    right: 12px;
+    top: 6px;
+    background: transparent;
+    border: none;
+}
+.V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon i.fa.fa-calendar {
+    font-size: 24px;
+}
+.template-section .template-container.mobile .V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon {
+    top: 0px;
+}
+.template-section .template-container.mobile .V_3_5 .t1-question .new_control .question-components .input-group span.input-group-addon i.fa.fa-calendar {
+    font-size: 18px;
+}
+/*dropdown style*/
+.cal-outer .dropdown-menu {
+    padding: 10px !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    left:0px !important;
+    right:auto !important;
+}
+.cal-outer .table-condensed>thead>tr>th {
+    text-align: center !important;
+}
+.cal-outer ul {
+    margin-bottom: 0 !important;
+}
+.cal-outer li.picker-switch.accordion-toggle {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px;
+}
+.cal-outer .timepicker .table-condensed {
+    width: 100% !important;
+    float: left !important;
+    text-align: center !important;
+}
+.cal-outer .table-condensed>tbody>tr>td, 
+.cal-outer .table-condensed>tbody>tr>th, 
+.cal-outer .table-condensed>tfoot>tr>td, 
+.cal-outer .table-condensed>tfoot>tr>th, 
+.cal-outer .table-condensed>thead>tr>td, 
+.cal-outer .table-condensed>thead>tr>th{
+    padding: 5px !important;
+    cursor: pointer !important;
+}
+.cal-outer .table-condensed>tbody>tr>td.active {background: #e6e3e3;}
+.cal-outer .table-condensed>tbody>tr>td:hover {background: #e6e3e3;}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span {
+    padding: 3px;
+    margin-right: 5px;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td:hover {
+    background: none;
+}
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-years .table-condensed>tbody>tr>td span:hover, .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span:hover {
+    background: #e6e3e3;
+}
+.cal-outer .timepicker .table-condensed>tbody>tr>td.separator:hover {
+    background: none;
+}
+.cal-outer .datepicker table {
+    user-select: none;
+    margin: 0;
+}
+.cal-outer .datepicker td, .cal-outer .datepicker th {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: none;
+}
+.cal-outer .datepicker .picker-switch {
+    width: 152px;
+}
+
+.cal-outer .datepicker-months .table-condensed>tbody>tr>td span,
+.cal-outer .datepicker-years .table-condensed>tbody>tr>td span {
+    display: block;
+    width: 23%;
+    float: left;
+    margin: 1%;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.cal-outer .datepicker-decades .table-condensed>tbody>tr>td span.decade {
+    width: 50%;
+    margin: 0;
+    display: block;
+    float: left;
+}
+.t1-question .question-components .cal-outer span.month:last-child,.t1-question .question-components .cal-outer span.year:last-child,.t1-question .question-components .cal-outer span.decade:last-child {margin-right: 0;}
+.custom-block.inpu-file-uploader {
+    position: relative;
+}
+.custom-block.inpu-file-uploader input[type="text"] {
+    padding-right: 30px !important;
+    width: 205px !important;
+}
+.custom-block.inpu-file-uploader i.material-icons {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.cal-outer.calender-date {
+    display: inline;
+}
+.cal-outer.calender-date .form-group {
+    display: inline;
+}
+.cal-outer.calender-date + span.calendar-range {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action:hover{background: transparent !important; color: #fff !important; border-color: 3px solid #fff  !important;}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{ background: #fff !important;}
 .V_3_5 .landing-page-mid button:hover::before { content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0;opacity: 0.2;}
@@ -5155,3 +5331,42 @@ button.lf-skip-btn{
 .V_3_5 .t1-question button.prime-action span{ position: relative;}
 .V_3_5 .page_1 form .prime-action span{ position: relative;}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action span { position: relative; }
+.V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input + .selectize-dropdown.single { min-width: 245px !important;}
+.V_3_5 .t1-question button.prime-action:disabled { cursor: default;}
+file .file-loader span{ font-size: 22px;}
+
+/*** TEXT AREA  ***/
+.V_3_5 .submit-textbox textarea {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 5px;
+    font-size: 16px;
+    color: #666e78;
+    box-sizing: border-box;
+    border: none;
+    float: left;
+    background: transparent;
+    border-radius: 0;
+    outline: 0;
+    min-height: 72px;
+    resize: none;
+}
+.V_3_5 .submit-textbox textarea::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: #f5f5f5;
+}
+
+.V_3_5 .submit-textbox textarea::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.V_3_5 .submit-textbox textarea::-webkit-scrollbar:horizontal {
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.V_3_5 .submit-textbox textarea::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);padding-right:10px; margin-right:10px;
+}
