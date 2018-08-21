@@ -1988,7 +1988,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 .V_3_5 .landing-text-center .loginBtn{margin:0 auto!important}
 .template-section .template-container.mobile .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px!important}
 .V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook{float:none;display:inline-block}
-.V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook{padding:12px 47px 12px 25px!important;font-size:14px!important}
+.V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook{padding: 14px 47px 14px 25px !important;font-size:14px!important}
 .t1-result-leadform .lead-popup .fb-outer {
     text-align: left;
 }
@@ -2051,4 +2051,8 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
     white-space: normal;
     color: #666e78;
     font-size: 16px;
+}
+.V_3_5 .t1-question .loginBtn--facebook {
+    font-size: 14px !important;
+    padding: 10px 47px 10px 25px !important;
 }

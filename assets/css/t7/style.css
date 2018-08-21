@@ -3103,3 +3103,8 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
 .custom-block.inpu-file-uploader .input-field input {border: none;}
 .custom-block.inpu-file-uploader i.material-icons {font-size: 18px;position: relative;top: 5px;-webkit-transform: rotate(0.03deg);transform: rotate(0.03deg);}
 .custom-block.inpu-file-uploader .input-field input:disabled {border-bottom: none !important;}
+/*file loader*/
+.file-loader{padding: 0px !important;font-size: 13px !important;}
+.file-uploader-name {width: 100%;float: left;font-size: 13px;word-break: break-word;display: flex;align-items: center;}
+.file-loader span {display: flex;align-items: center;width: auto;float: left;}
+.questions .section-head .file-loader span > .dots1, .questions .section-head .file-loader span > .dots2, .questions .section-head .file-loader span > .dots3{width: 2px !important;}
