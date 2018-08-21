@@ -2324,16 +2324,33 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     margin: 0 auto;
     width: 100%;
 }
-.custom-block.inpu-file-uploader .input-field input + span {
-    position: absolute;
-    right: 0;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    top: 0;
-    bottom: 0;
+.custom-block.inpu-file-uploader .input-field .upload-icons {position: absolute;right: 0;width: 50px;align-items: center;justify-content: center;cursor: pointer;display: flex;top: 0;bottom: 0;}
+.custom-block.inpu-file-uploader .input-field .upload-icons i{font-size: 18px}
+.custom-block.inpu-file-uploader .input-field input {
+    padding: 0 !important;
+    border: 0px !important;
+    background: transparent !important;
+    height: auto !important;
+    min-height: auto !important;
 }
-.custom-block.inpu-file-uploader .input-field input + span i{
-    font-size: 18px;
+.custom-block.inpu-file-uploader .input-field {
+    max-width: 100%;
+    text-align: left;
+    display: inline-block;
+    float: left;
+    padding: 5px 15px 4px 15px;
+    border-radius: 3px;
+    border: 2px solid #333;
+    background: rgba(255,255,255,0.1);
+    font-size: 17px;
+    min-height: 40px;
+    transition: border-color 0.5s;
+    padding-right: 40px;
 }
+.file-uploader-name {
+    float: left;
+    width: 100%;
+    white-space: normal;
+    word-wrap: break-word;
+}
+.file-loader{padding: 0px !important}

@@ -4946,9 +4946,13 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 /* social feeds in popup css end */
 
 /*file upload*/
-.custom-block.inpu-file-uploader .input-field input {border: none;margin-bottom: 0px;}
-.custom-block.inpu-file-uploader i.material-icons {font-size: 22px;position: relative;top: 6px;-webkit-transform: rotate(0.03deg);transform: rotate(0.03deg);}
+.custom-block.inpu-file-uploader .input-field input {border: none;margin-bottom: 0px;cursor: pointer;}
+.custom-block.inpu-file-uploader i.material-icons {font-size: 22px;position: relative;top: 6px;-webkit-transform: rotate(0.03deg);transform: rotate(0.03deg);cursor: pointer;}
 .custom-block.inpu-file-uploader .input-field{margin-bottom: 13px;}
+/*file loader*/
+.file-loader{padding: 0px !important;font-size: 15px !important;display: block !important;bottom: auto !important;}
+.file-loader.hide{display: none !important;}
+.file-uploader-name {width: 100%;float: left;word-break: break-word;}
 
 /*textarea*/
 .input-field textarea {border: none;font-size: 15px;padding: 0 5px 5px 0;max-width: 100%;width: 100% !important;background: transparent;margin-bottom: 13px;min-height: 72px; resize: none;}
