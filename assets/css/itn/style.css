@@ -4462,6 +4462,14 @@ button:focus{outline: none !important}
 p > span > a {color: inherit; }
 
 /* Css animation */
+.fb_in_app .template3-outr, .fb_in_app .t1-question form{
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    -webkit-animation-name: none !important;  
+    animation-name: none !important;
+}
 
 .safari .template3-outr, .safari .t1-question form{
      animation-duration: 500ms; 
