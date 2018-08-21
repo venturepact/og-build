@@ -2056,3 +2056,22 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
     font-size: 14px !important;
     padding: 10px 47px 10px 25px !important;
 }
+.ecom-card .ecom-front .common-leadform-top.t1-result-leadform .bothLeadGenOn a.prime-action.leadform-btn {
+    bottom: 45px !important;
+}
+.ecom-card .ecom-front .common-leadform-top.t1-result-leadform fb_lead_gen .or-class {
+    display: none;
+}
+.ecom-card .ecom-front .common-leadform-top.t1-result-leadform fb_lead_gen button.loginBtn.loginBtn--facebook {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    border-radius: 0 !important;
+}
+/* .ecom-card .ecom-front .common-leadform-top.t1-result-leadform fb_lead_gen button.loginBtn.loginBtn--facebook::before {
+    right: 60px !important;
+} */
+leadform .bothLeadGenOn .input-section.scrollbar {
+    max-height: 180px !important;
+}
