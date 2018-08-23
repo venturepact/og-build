@@ -125,18 +125,9 @@
     .landing-text-right .landing-page-mid .input-section{padding: 0 20px;}
     .landing-text-right .t2btn-outr {padding: 0 20px;}
     .V_3_5.disc-outer{display: block;padding: 10px;}
-    .V_3_5.disc-outer .disc-in-ques{
-        width: 100%;
-        float: left;
-        display: block;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .V_3_5.disc-outer .result-branding.logo_1.res{
-        width: 100%;
-        float: left;
-        display: block;
-    }
+    .V_3_5.disc-outer .disc-in-ques{width: 100%;float: left;display: block;text-align: center;margin-bottom: 10px;}
+    .V_3_5.disc-outer .result-branding.logo_1.res{width: 100%;float: left;display: block;}
+    .V_3_5 .page_1 .result-fixed1 section:last-of-type .questions .ques-sect:last-child .dropdown-set{margin-bottom: 0px;}
 }
 @media (max-width:375px) {  
     .footer-nav {        float: left;        width: 100%;        text-align: center;    }
