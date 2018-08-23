@@ -392,6 +392,7 @@
     .V_3_5 .page_2.result-fixed.t2haslogo .results-outer{max-height: 100% !important;height: 100% !important;}
     .V_3_5 .results-outer{height: auto !important;}
     .V_3_5 .landing-page-mid{min-height: calc(100vh - 60px);height:calc(100vh - 60px);}
+    .V_3_5 .input-outer .section-head{font-size: 15px;line-height: 25px;}
     /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;}
     .V_3_5 .powered-by.lightPowered span{font-size: 8px;}
@@ -410,6 +411,7 @@
     .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 100px 30px;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 11px 45px 11px 30px !important;font-size: 13px !important;float: none !important;}
     /*leadgen spacing*/
+    .V_3_5 .sound-cloud-new leadform_question .input-outer .input-validation input{line-height: 20px;}
     .V_3_5 .landing-page-mid .input-section .input-outer input{margin-top: 0px;height: 23px;font-size: 14px !important;}
     .V_3_5.sound-cloud-new .landing-page-mid .input-field label{top: 0px;}
     .V_3_5 .input-field .prefix{top: 3px !important;}
@@ -421,7 +423,7 @@
     .calendar-range{width: 100%;float: left;}
     .date-selector-part span.calendar-range {width: 100%; padding: 10px;float: left; }
     .V_3_5 .help-text p {font-size: 13px;line-height: 19px;margin-top: 2px;}
-    .V_3_5 .page_2 .loginBtn{padding:11px 45px 10px 32px !important;font-size: 13px !important; line-height: 19px !important; }
+    .V_3_5 .page_2 .loginBtn{padding:10px 40px 10px 15px !important;font-size: 13px !important; line-height: 20px !important; }
     .V_3_5 .page_2.result-fixed {width: 100%; float: left; margin-left: 0 !important;padding-left: 15px; padding-right: 15px;}
     .V_3_5.sound-cloud-new .landing-page-mid .input-field label p {margin: 0;}
     .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in:checked + label.leadform-checkbox:before{left: 4px !important;top: 0px !important;}
@@ -429,6 +431,19 @@
     .V_3_5.sound-cloud-new .page_1 input:not([readonly]){font-size: 14px !important;}
     .V_3_5 .landing-text-left.no-logo .landing-page-mid, .V_3_5 .landing-text-right.no-logo .landing-page-mid {padding: 40px 30px 80px;}
     .V_3_5 .landing-text-center.no-logo .landing-page-mid{ padding: 40px 0px 80px 0;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead2{margin-bottom: 40px !important;}
+    .V_3_5 .input-field textarea{font-size: 14px;}
+    .V_3_5 .page_2.result-fixed.t2haslogo .results-outer.resultVisible {max-height: 100% !important;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: 100%;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn .leadform-outer.result-scrolling.new-lead2{max-height: 100% ;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn .result-fixed1 {margin-bottom: 100px;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform{max-height: 100% !important;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 a.btn.prime-action{bottom: -40px;}
+    .V_3_5 .page_2 .leadform-outer.result-scrolling.new-lead1 fb_lead_gen{bottom: -120px;}
+    .V_3_5 .t2haslogo .leadform-outer.result-scrolling.new-lead1 leadform {max-height: 100%;}
+    .V_3_5 .page_2 .loginBtn{max-width: 245px;}
+    .file-loader{font-size: 14px !important;}
+    .file-uploader-name{font-size: 14px !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     .landing-page-mid .main-heading h1{        font-size: 42px;        line-height: 46px;        margin-top: 0px;    }
@@ -512,11 +527,7 @@
     .range-slider.char-count-slider .irs-single {        font-size: 12px !important;        top: -10px;    }
 }
 @media (min-width:768px) and (max-width:1024px){
-   .custom-block.rating-custom .rating-inner i {
-        font-size: 23px !important;
-        margin-right: 5px !important;
-        padding: 4px !important;
-    }
+   .custom-block.rating-custom .rating-inner i {font-size: 23px !important;margin-right: 5px !important;padding: 4px !important;}
     #vk_subscribe iframe{margin-top:10px !important;}
     .V_3_5 .main-bg header .logo {padding: 28px 40px;}
     .V_3_5 .landing-page-mid .main-heading{padding: 0 !important;font-size: 56px;line-height: 60px;}
@@ -570,6 +581,19 @@
     .V_3_5 .page_2.result-fixed.t2haslogo .results-outer{height: auto !important;max-height: 100% !important;}
     .V_3_5 .page_1 .result-fixed1{min-height: auto;}
     .V_3_5 .page_2 .result-fixed1{margin-bottom: 20px;}    
+    .V_3_5 .input-outer .section-head{font-size: 16px;line-height: 26px;}
+    .V_3_5 leadform_question .input-outer i{top: 36px;}
+    .V_3_5 .sound-cloud-new leadform_question .input-outer .input-validation input{line-height: 20px;}
+    .V_3_5 .input-field textarea{font-size: 15px;}
+    .V_3_5 .page_2.result-fixed.t2haslogo .results-outer.resultVisible {max-height: 100% !important;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: 100%;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn .leadform-outer.result-scrolling.new-lead2{max-height: 100% ;}
+    .V_3_5 .page_2.result-fixed.bothLeadsOn .result-fixed1 {margin-bottom: 100px;}
+    .V_3_5 .leadform-outer.result-scrolling.new-lead1 leadform{max-height: 100% !important;}
+    .V_3_5 .t2haslogo .leadform-outer.result-scrolling.new-lead1 leadform {max-height: 100%;}
+    .V_3_5 .page_2 .loginBtn{max-width: 590px;}
+    .file-loader{font-size: 15px !important;}
+    .file-uploader-name{font-size: 15px !important;}
 }
 @media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
     .main-bg{ min-height: 500px; }
