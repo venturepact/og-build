@@ -2075,3 +2075,24 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important}
 leadform .bothLeadGenOn .input-section.scrollbar {
     max-height: 180px !important;
 }
+
+.V_3_5 .timerView + .liveresult-outr {
+    position: relative;
+    right: inherit;
+    top: inherit;
+    max-width: 55%;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: auto;
+    margin: 0 auto;
+}
+.V_3_5 .timerView + .liveresult-outr .t1-question-liveresult {
+    font-size: 24px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.V_3_5 .timerView + .liveresult-outr .t1-question-resultheading {
+    font-size: 13px;
+    margin-bottom: 0px;
+    text-align: center;
+}

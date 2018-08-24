@@ -1589,6 +1589,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .page_2.result-fixed.bothLeadsOn .new-lead1 fb_lead_gen{padding: 0;position: absolute;left: 0;right: 0;bottom: -135px;}
 .V_3_5 .page_2.result-fixed.bothLeadsOn .new-lead1 fb_lead_gen .loginBtn,.V_3_5 .page_2.result-fixed.bothLeadsOn .new-lead2 fb_lead_gen .loginBtn{max-width: 100%;}
 /*remove space on submit*/
-.V_3_5 .page_2.result-fixed.bothLeadsOn .resultSubmitted.result-fixed1 {margin-bottom: 0 !important;}
+.V_3_5 .page_2.result-fixed.bothLeadsOn .resultSubmitted.result-fixed1 {margin-bottom: 30px !important;}
+.V_3_5 .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {margin-bottom: 0 !important;}
+.V_3_5 .page_2.result-fixed .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {max-height: 100% !important;}
 /*single result case*/
 .V_3_5 .lead-not-in-result .result-full-section.single-result {max-height: calc(100vh - 250px);}
