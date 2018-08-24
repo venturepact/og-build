@@ -4849,3 +4849,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     .V_3_5 button.btn.prime-action.ripple-light.back-action, 
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{width: 56px}
 } */
+.V_3_5 .main-heading p strong {
+    display: inherit;
+    line-height: 1;
+}
