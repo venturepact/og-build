@@ -4901,3 +4901,59 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     display: inherit;
     line-height: 1;
 }
+
+
+/*** css toast  for quizz ***/
+
+.quiz-usersCount {
+    position: absolute;
+    bottom: 35px;
+    left: 35px;
+    float: left;
+    width: 260px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
+    z-index: 9;
+}
+.quiz-usersCount i.material-icons {
+    font-size: 32px;
+    color: #04629a;
+    float: none;
+    display: inline-block;
+    margin-right: 15px;
+    float: left;
+}
+.quiz-usersCount p {
+    margin: 0;
+    display: inline-block;
+    color: #04629a;
+    font-size: 14px;
+    float: left;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+    .quiz-usersCount {
+        width: 100px;
+        padding: 10px 7px;
+        bottom: 10px;
+        left: 10px;
+    }
+    .quiz-usersCount i.material-icons {
+        font-size: 28px;
+        float: none;
+        margin: 0;
+    }
+    .quiz-usersCount p {
+        line-height: normal;
+        font-size: 12px;
+        font-weight: normal;
+    }
+
+}
+
+/*** css toast  for quizz ***/

@@ -1259,6 +1259,15 @@ Developer: Bhawna */
     .opinon-scale-custom label.control.control--radio{padding:4px 0px !important;}
 }
 @media (max-width:640px){
+    .template-five .timerView {
+        position: relative;
+        right: auto;
+        top: 0px;
+        left: auto;
+        margin: 20px auto 0px !important;
+        display: flex;
+        justify-content: center;
+    }
     .custom-block.inpu-file-uploader .input-field , .t1-ques-component .material-textarea .input-field {margin-bottom: 0px}
     .question-components .input-field textarea , .file-uploader-name {font-size: 14px}
     .lead-popup-main .lf-skip-btn{margin-top: 4px}

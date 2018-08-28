@@ -1277,7 +1277,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .t2haslogo .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 440px);padding: 0 25px;margin-bottom: 20px;}
 .V_3_5 .t2haslogo .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 470px);padding: 0 25px;}
 .V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 425px);padding: 0 25px;margin-bottom: 10px;}
-.V_3_5 .page_2 .btn.prime-action{border-radius: 0px !important;padding: 12px 25px !important;font-size: 14px !important;margin-top: 15px !important;}
+.V_3_5 .page_2 .btn.prime-action{border-radius: 0px !important;padding: 12px 25px !important;font-size: 14px;margin-top: 15px !important;}
 .V_3_5 .section-outer{position: relative;margin-top: 0;}
 .V_3_5 .select__arrow{display: none;}
 .V_3_5 .selectize-control .selectize-input.dropdown-active{border: none !important;}
@@ -1593,4 +1593,60 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {margin-bottom: 0 !important;}
 .V_3_5 .page_2.result-fixed .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {max-height: 100% !important;}
 /*single result case*/
-.V_3_5 .lead-not-in-result .result-full-section.single-result {max-height: calc(100vh - 250px);}
+.V_3_5 .result-full-section.single-result {max-height: calc(100vh - 250px);}
+.V_3_5 .no-space{margin-bottom: 0px !important;}
+
+/*** css toast  for quizz ***/
+
+.quiz-usersCount {
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  float: left;
+  width: 260px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center;
+  box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
+  z-index: 9;
+}
+.quiz-usersCount i.material-icons {
+  font-size: 32px;
+  color: #04629a;
+  float: none;
+  display: inline-block;
+  margin-right: 15px;
+  float: left;
+}
+.quiz-usersCount p {
+  margin: 0;
+  display: inline-block;
+  color: #04629a;
+  font-size: 14px;
+  float: left;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 640px) {
+  .quiz-usersCount {
+      width: 100px;
+      padding: 10px 7px;
+      bottom: 10px;
+      left: 10px;
+  }
+  .quiz-usersCount i.material-icons {
+      font-size: 28px;
+      float: none;
+      margin: 0;
+  }
+  .quiz-usersCount p {
+      line-height: normal;
+      font-size: 12px;
+      font-weight: normal;
+  }
+
+}
+
+/*** css toast  for quizz ***/
