@@ -1268,7 +1268,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5.disc-outer .result-branding.logo_1.res {width: 30%;float: left;display: inline-flex;justify-content: flex-end;}
 .V_3_5.disc-outer .disc-in-ques {display: inline-flex;width: 70%;float: left;}
 .V_3_5 .new-lead-common .result-mid.result-comm::after{top: -30px;opacity: 1;background: #fff !important; }
-.V_3_5 .page_1{margin-left: 30px;padding-top: 30px;}
+.V_3_5 .page_1{margin-left: 30px;padding-top: 30px;min-height: calc(100vh - 40px)}
+.V_3_5 .page_1 .result-fixed1{min-height: auto;}
 .V_3_5 .page-logo{margin-bottom: 20px;}
 .V_3_5 .questions{padding-left: 10%;}
 .V_3_5 .sec-divison {width: 35px;float: left;border-radius: 1px;position: absolute;left: -40px;top: 23%;display: none;}
