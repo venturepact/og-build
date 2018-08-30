@@ -261,7 +261,7 @@ Developer: Bhawna */
     .text-highlight .main-heading ,  .text-highlight .main-heading h1{  line-height: 40px    }
   
     .text-highlight .main-heading p {        line-height: 48px;    }
-    .main-heading p {   line-height: 36px;}
+    .main-heading p {   line-height: inherit; display: inline-block;} 
 
     leadform .input-section .input-outer:nth-last-child(2):nth-child(odd) {
         margin-bottom: 20px;
