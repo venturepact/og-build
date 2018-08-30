@@ -2,6 +2,9 @@
     .isIframe {height: 100% !important;}
 }
 @media (min-width:0px) and (max-width:767px) {
+    .popup-feedback span.close {right: 10px;top: 6px;z-index: 99999;}
+    .popup-feedback span.close i{color: #000}
+    .popup-feedback .graded-msgbox p {font-size: 14px;line-height: 20px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}

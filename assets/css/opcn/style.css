@@ -2076,6 +2076,7 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     max-height: 180px !important;
 }
 
+.V_3_5 .timerView{ position: fixed;}
 .V_3_5 .timerView + .liveresult-outr {
     position: relative;
     right: inherit;
@@ -2100,7 +2101,7 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 /*** css toast  for quizz ***/
 
 .quiz-usersCount {
-    position: absolute;
+    position: fixed;
     bottom: 35px;
     left: 35px;
     float: left;

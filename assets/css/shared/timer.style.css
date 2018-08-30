@@ -11,3 +11,37 @@
   .timerView .timer .coutndown-circle.coutndown-circle-right {width: 40px !important;height: 40px !important;clip: rect(0px, 20px, 40px, 0px) !important;}
   .timerView .timer .coutndown-wrapper-time {width: 40px !important;height: 40px !important;line-height: 40px !important}
   }
+  .timerView.active .timer .coutndown-circle.coutndown-circle-right ,  .timerView.active .timer .coutndown-circle.coutndown-circle-left{opacity: 0.3;}
+  .template-section .template-container.mobile .timerView .timer {width: 40px;height: 40px;}
+  .template-section .template-container.mobile .timerView .timer .coutndown-wrapper {width: 40px !important;height: 40px !important;clip: rect(0px, 40px, 40px, 20px) !important;}
+  .template-section .template-container.mobile .timerView .timer .coutndown-circle.coutndown-circle-left,
+  .template-section .template-container.mobile .timerView .timer .coutndown-circle.coutndown-circle-right {width: 40px !important;height: 40px !important;clip: rect(0px, 20px, 40px, 0px) !important;}
+  .template-section .template-container.mobile .timerView .timer .coutndown-wrapper-time {width: 40px !important;height: 40px !important;line-height: 40px !important}
+  .template-section .template-container.mobile .timerView {position: relative;right: auto;top: 0;display: flex;justify-content: center;}
+  .timerView.active {
+    border-radius: 50%;
+    z-index: 10;
+}
+  .active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    border-radius: inherit;
+    -webkit-transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, -webkit-transform .3s;
+    transition: opacity .3s, transform .3s;
+    transition: opacity .3s, transform .3s, -webkit-transform .3s;
+    -webkit-animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    animation: pulse-animation 1s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+    z-index: -1;
+}
+@-webkit-keyframes pulse-animation{
+  0%{opacity:1;-webkit-transform:scale(1);transform:scale(1)}
+  50%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
+  100%{opacity:0;-webkit-transform:scale(1.5);transform:scale(1.5)}
+}
