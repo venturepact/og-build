@@ -2413,10 +2413,9 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     position: relative;
     right: auto;
     left: auto;
-    display: flex;
+    display: inline-block;
     margin: 0 auto 10px;
     top: 0 !important;
-    float: none;
-    text-align: center;
-    justify-content: center;
+  
 }
+.t1-landing-inner{text-align: center}

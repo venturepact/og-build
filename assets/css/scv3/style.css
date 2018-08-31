@@ -1597,9 +1597,11 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 /*single result case*/
 .V_3_5 .result-full-section.single-result {max-height: calc(100vh - 250px);}
 .V_3_5 .no-space{margin-bottom: 0px !important;}
+/*only leadgen on*/
+.V_3_5 .onlyLeadGenOn .leadform-outer.result-scrolling.new-lead2 {margin-bottom: 54px !important;}
+.V_3_5 .onlyLeadGenOn .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {margin-bottom: 0px !important;}
 
 /*** css toast  for quizz ***/
-
 .quiz-usersCount {
   position: fixed;
   bottom: 35px;
