@@ -1575,8 +1575,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .page_2.result-fixed.bothLeadsOn.t2haslogo .leadform-outer.result-scrolling.new-lead2 {max-height: calc(50vh - 180px);}
 .V_3_5 .page_2.result-fixed.bothLeadsOn .leadform-outer.result-scrolling.new-lead2{max-height: calc(50vh - 125px);margin-bottom:54px !important;}
 .V_3_5 .page_2.result-fixed.bothLeadsOn .new-lead2 fb_lead_gen {position: absolute;bottom: 0;top: 100%;left: 0;right: 0;padding: 0px;}
-.V_3_5 .page_2.result-fixed .leadform-outer.result-scrolling.new-lead2 a.prime-action p{overflow: hidden;text-overflow: ellipsis;max-width: 100%;white-space: nowrap;}
-.V_3_5 .page_2.result-fixed .leadform-outer.result-scrolling.new-lead1 a.prime-action p {overflow: hidden;max-width: 100%;white-space: nowrap;text-overflow: ellipsis;}
+.V_3_5 .page_2.result-fixed .leadform-outer.result-scrolling.new-lead2 a.prime-action p,.V_3_5 .page_2.result-fixed .leadform-outer.result-scrolling.new-lead1 a.prime-action p{display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;overflow: hidden;}
+
 /*both leads on*/
 
 /*leadgen before result fixed btn*/
