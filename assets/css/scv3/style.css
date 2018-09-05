@@ -1602,28 +1602,43 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .onlyLeadGenOn .resultSubmitted .leadform-outer.result-scrolling.new-lead2 {margin-bottom: 0px !important;}
 
 /*** css toast  for quizz ***/
+.sound-cloud-new {
+  position: relative;
+}
+.sound-cloud-new .quiz-usersCount {
+  position: relative;
+    float: left;
+    width: 100%;
+}
+.editor-page-divider  .quiz-usersCount {
+    position: absolute !important;
+}
+.common-footer-main + .quiz-usersCount {
+  bottom: 85px;
+}
 .quiz-usersCount {
   position: fixed;
   bottom: 35px;
   left: 35px;
   float: left;
-  width: 245px;
+  width: 175px;
   background: #fff;
   border-radius: 10px;
-  padding: 18px;
+  padding: 13px 18px;
   text-align: center;
+  -webkit-box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
   box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
   z-index: 9;
-    -webkit-animation: Slidemove 500ms linear; /* Safari 4.0 - 8.0 */
-    animation: Slidemove 500ms linear;
+  -webkit-animation: Slidemove 500ms linear;
+  animation: Slidemove 500ms linear;
 }
 @-webkit-keyframes Slidemove {
-    0%   {bottom: -10px; opacity: 0;}
-    100%  {bottom: 35px; opacity: 1;}
+  0%   {bottom: -10px; opacity: 0;}
+  100%  {bottom: 35px; opacity: 1;}
 }
 @keyframes Slidemove {
-    0%   {bottom: -10px; opacity: 0;}
-    100%  {bottom: 35px; opacity: 1;}
+  0%   {bottom: -10px; opacity: 0;}
+  100%  {bottom: 35px; opacity: 1;}
 }
 .quiz-usersCount i.material-icons {
   font-size: 30px;
@@ -1633,14 +1648,27 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
   margin-right: 15px;
   float: left;
 }
+.quiz-usersCount span {
+  margin: 0;
+  display: inline-block;
+  color: #04629a;
+  font-size: 24px;
+  float: left;
+  line-height: normal;
+  width: 90px;
+  text-align: left;
+  font-family: montserratlight;
+  font-weight: normal;
+}
 .quiz-usersCount p {
   margin: 0;
   display: inline-block;
   color: #04629a;
   font-size: 13px;
   float: left;
-  line-height: 32px;
-  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  font-family: montserratlight;
 }
 
 @media (min-width: 300px) and (max-width: 640px) {
