@@ -2375,6 +2375,12 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     -webkit-animation: Slidemove 500ms linear;
     animation: Slidemove 500ms linear;
 }
+.quiz-usersCount.footer-visible {
+    bottom: 85px;
+}
+.quiz-usersCount.noWelcomeScreen {
+    bottom: 35px;
+}
 @-webkit-keyframes Slidemove {
     0%   {bottom: -10px; opacity: 0;}
     100%  {bottom: 35px; opacity: 1;}
@@ -2416,20 +2422,37 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 
 @media (min-width: 300px) and (max-width: 640px) {
     .quiz-usersCount {
-        width: 100px;
+        width: 80px;
         padding: 10px 7px;
         bottom: 10px;
         left: 10px;
     }
     .quiz-usersCount i.material-icons {
-        font-size: 28px;
-        float: none;
+        font-size: 16px;
+        float: left;
         margin: 0;
+        margin-right: 3px;
+        margin-top: 3px;
+        transform: rotate(.03deg);
+    }
+    .quiz-usersCount span {
+        margin: 0;
+        display: inline-block;
+        color: #04629a;
+        font-size: 16px;
+        float: left;
+        line-height: normal;
+        width: 38px;
+        text-align: left;
+        font-family: montserratregular;
+        font-weight: normal;
     }
     .quiz-usersCount p {
         line-height: normal;
-        font-size: 12px;
+        font-size: 10px;
+        font-family: montserratregular;
         font-weight: normal;
+        text-align: center;
     }
 
 }
