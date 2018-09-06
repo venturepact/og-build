@@ -3121,10 +3121,10 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
   bottom: 35px;
   left: 35px;
   float: left;
-  width: 175px;
+  width: 155px;
   background: #fff;
   border-radius: 10px;
-  padding: 13px 18px;
+  padding: 8px;
   text-align: center;
   -webkit-box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
   box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
@@ -3151,7 +3151,7 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
   color: #04629a;
   float: none;
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 5px;
   float: left;
 }
 .quiz-usersCount span {
@@ -3179,8 +3179,10 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
 
 @media (min-width: 300px) and (max-width: 640px) {
   .quiz-usersCount {
-    width: 80px;
-    padding: 10px 7px;
+    width: 78px;
+    padding: 10px 9px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     bottom: 10px;
     left: 10px;
 }
@@ -3209,7 +3211,7 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
     font-size: 10px;
     font-family: montserratregular;
     font-weight: normal;
-    text-align: center;
+    text-align: left;
 }
 
 }
