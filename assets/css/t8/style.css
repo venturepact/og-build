@@ -2392,7 +2392,6 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .quiz-usersCount i.material-icons {
     font-size: 30px;
     color: #04629a;
-    float: none;
     display: inline-block;
     margin-right: 5px;
     float: left;
@@ -2404,7 +2403,7 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     font-size: 24px;
     float: left;
     line-height: normal;
-    width: 90px;
+    max-width: 90px;
     text-align: left;
     font-family: montserratlight;
     font-weight: normal;
@@ -2416,8 +2415,15 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     font-size: 13px;
     float: left;
     width: 100%;
-    text-align: left;
+    text-align: center;
     font-family: montserratlight;
+    margin-top: -7px;
+}
+.quiz-userCountInner {
+    margin: 0 auto;
+    max-width: 100%;
+    display: inline-block;
+    width: auto;
 }
 
 @media (min-width: 300px) and (max-width: 640px) {
@@ -2444,7 +2450,7 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
         font-size: 16px;
         float: left;
         line-height: normal;
-        width: 38px;
+        max-width: 38px;
         text-align: left;
         font-family: montserratregular;
         font-weight: normal;
@@ -2454,7 +2460,6 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
         font-size: 10px;
         font-family: montserratregular;
         font-weight: normal;
-        text-align: left;
     }
 
 }
