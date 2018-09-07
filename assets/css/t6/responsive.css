@@ -2,9 +2,6 @@
     .isIframe {height: 100% !important;}
 }
 @media (min-width:0px) and (max-width:767px) {
-    .popup-feedback span.close {right: 10px;top: 6px;z-index: 99999;}
-    .popup-feedback span.close i{color: #000}
-    .popup-feedback .graded-msgbox p {font-size: 14px;line-height: 20px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
@@ -859,7 +856,6 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
-    .V_3_5 outcome-result .result-v2 .common-result-bot-icons.side-redo:after{border-width:75px 90px 0px 0;}  
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;line-height:20px !important}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo .crb-left{right: 4px !important;}
     .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
@@ -1044,7 +1040,6 @@
 
 
 @media (max-width:640px){
-    .question-components .input-field textarea {font-size: 14px !important}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;margin-top: 10px;line-height: 22px;}
     .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
     .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
