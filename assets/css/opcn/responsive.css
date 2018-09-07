@@ -1006,6 +1006,9 @@
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{padding:11px 35px!important;font-size:14px!important}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook,.V_3_5 .loginBtn,.V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook,.V_3_5 .result-v2 .loginBtn.loginBtn--facebook{padding:11px 40px 11px 14px!important;font-size:14px!important}
     .V_3_5 .loginBtn:before{top:50%!important;right:8px!important; transform:translateY(-50%);width:25px!important;height:25px!important;background-size:15px!important}
+
+    .safari .header-next-div{height: auto !important;min-height: 800px;}
+    .safari .header-next-div .t1-question{height: auto !important; min-height: 800px}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}
