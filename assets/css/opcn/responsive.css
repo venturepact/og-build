@@ -82,6 +82,8 @@
     .submit-checkbox{padding:5px!important}
 }
 @media (min-width:0px) and (max-width:767px){
+    .V_3_5 .header-next-div .timerView{top: 115px}
+
     .V_3_5 .landing-page-mid button span {font-size: 14px !important;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
@@ -873,7 +875,7 @@
     .recom-section .disc-set{margin-top:0!important}
     .recom-footer-outer{min-height:auto!important;padding:10px 0}
     .t1-result-small-section{margin-top:20px;margin-left:0;width:50%;padding-left:30px;padding-right:30px}
-    .t1-question-slider{width:100%}
+    /* .t1-question-slider{width:100%} */
     .gradedquiz-main .recommendation-outer.t1-result-top{width:100%!important;margin-left:0!important}
     .recom-section .leadform-outer h1{margin-top:15px}
     .t1-result-full-section{margin-top:0}
@@ -1064,7 +1066,7 @@
     .landing-page-mid button.prime-action,.t1-result-leadform .t1-result-cta .prime-action{border-radius:5px}
     .t1-slider-nav a{width:48px;height:48px}
     .t1-slider-nav a i{margin-top:12px}
-    .t1-question-slider{width:75%}
+    /* .t1-question-slider{width:75%} */
     .t1-question .leaded-form-c .input-outer input{padding-left:45px;margin-bottom:10px}
     .t1-ques-component .input-section .input-outer span{top:57px}
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){width:78%}
@@ -1141,7 +1143,7 @@
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape){
     .main-heading,.main-heading h1,.main-heading p{font-size:42px;margin-bottom:15px;line-height:48px}
     .sub-heading,.sub-heading h2{font-size:18px;margin-bottom:25px;line-height:24px}
-    .t1-question-slider{width:90%}
+    /* .t1-question-slider{width:90%} */
     .landing-page-mid button.prime-action{font-size:14px;padding:12px 45px}
     .landing-page-mid leadform button.prime-action{font-size:16px;padding:14px 45px}
     .input-outer i{top:13px}
@@ -1312,6 +1314,8 @@
     .V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label{height: 35px;}
 }
 @media (max-width:640px){
+    .V_3_5 .liveresult-outr.timerOn{margin-bottom: 80px !important}
+    .V_3_5 .timerView {position: relative !important;top: 0 !important;margin-top: -110px;}
     .question-components .or-class , .question-components .fb-outer{text-align: center !important}  
     .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn {margin-top: 10px;font-size: 14px;margin-left: 0px; margin-right: 0px;float: none;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size:14px;margin-top:10px;line-height:22px}
