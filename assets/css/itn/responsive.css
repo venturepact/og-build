@@ -1202,7 +1202,7 @@
     .V_3_5 .new_control.visible .question-components calendar .input-group input{ font-size: 22px !important; }
     .cal-outer.calender-date+span.calendar-range{ font-size:22px }
     .isIframe.no-header-links.no-footer-links { min-height: 630px; }
-
+    .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input + .selectize-dropdown.single{min-width: 165px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1912,7 +1912,7 @@
 
     /*t3 improved 1023*/
     .V_3_5 .landing-page-mid{ width: 84% !important;float: none;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 56px !important; line-height: 60px !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 50px !important; line-height: 56px !important;}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{margin-bottom: 0px !important;}
     .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p {font-size: 34px;line-height: 42px;}
     .V_3_5 fb_lead_gen {width: 100%;float: left;left: 0;padding: 0 50px;margin: 0 0 20px;}
