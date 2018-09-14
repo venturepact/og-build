@@ -2,8 +2,16 @@
 .timerView {position: absolute;right: 20px;top: 20px;}
 .timerView .timer .coutndown-wrapper {width: 60px;height: 60px;position: absolute;clip: rect(0px, 60px, 60px, 30px);}
 .timerView .timer .coutndown-circle.coutndown-circle-left, .timerView .timer .coutndown-circle.coutndown-circle-right {  width: 60px !important;height: 60px !important;border: 0px !important;  border-radius: 60px !important;box-sizing: border-box !important;position: absolute;  clip: rect(0px, 30px, 60px, 0px);}
-.timerView .timer .coutndown-wrapper-time {color: #666 !important;font-size: 12px !important;}
-
+.timerView .timer .coutndown-wrapper-time {color: #666 !important;font-size: 18px !important;}
+.timerView .timer .coutndown-wrapper-time{font-family: montserratBold !important}
+@media (min-width:641px) and (max-width:995px){
+  .timerView .timer .coutndown-wrapper-time {color: #666 !important;font-size: 16px !important;}
+  .timerView .timer {width: 50px;height: 50px;}
+  .timerView .timer .coutndown-wrapper {width: 50px !important;height: 50px !important;clip: rect(0px, 50px, 50px, 25px) !important;}
+  .timerView .timer .coutndown-circle.coutndown-circle-left,
+  .timerView .timer .coutndown-circle.coutndown-circle-right {width: 50px !important;height: 50px !important;clip: rect(0px, 25px, 50px, 0px) !important;}
+  .timerView .timer .coutndown-wrapper-time {width: 50px !important;height: 50px !important;line-height: 50px !important}
+  }
 @media (max-width:640px){
   .timerView .timer {width: 40px;height: 40px;}
   .timerView {
@@ -16,6 +24,7 @@
     justify-content: center;
     margin-bottom: 20px;
 }
+.timerView .timer .coutndown-wrapper-time {color: #666 !important;font-size: 14px !important;}
   .timerView .timer .coutndown-wrapper {width: 40px !important;height: 40px !important;clip: rect(0px, 40px, 40px, 20px) !important;}
   .timerView .timer .coutndown-circle.coutndown-circle-left,
   .timerView .timer .coutndown-circle.coutndown-circle-right {width: 40px !important;height: 40px !important;clip: rect(0px, 20px, 40px, 0px) !important;}
