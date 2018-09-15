@@ -2212,7 +2212,13 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     }
 
 }
-
+.input-field.submit-textbox + button.button_textfield.submit-textbox-btnresp.ripple-light {margin-top: 5px !important;}
 /*** css toast  for quizz ***/
 .V_3_5 .header-next-div .timerView {top: 80PX;}
 .V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action:hover{opacity: 0.8; transition: 0.5s;}
+.V_3_5.one-page-card-new .custom-block.inpu-file-uploader .submit-textbox{margin-bottom: 0px !important}
+
+.V_3_5.one-page-card-new .submit-textbox textarea::-webkit-input-placeholder {color: #444;opacity: 0.6;}
+.V_3_5.one-page-card-new .submit-textbox textarea::-moz-placeholder {color: #444;opacity: 0.6}
+.V_3_5.one-page-card-new .submit-textbox textarea:-ms-input-placeholder {color: #444;opacity: 0.6}
+.V_3_5.one-page-card-new .submit-textbox textarea:-moz-placeholder {color: #444;opacity: 0.6}
