@@ -261,7 +261,7 @@ Developer: Bhawna */
     .text-highlight .main-heading ,  .text-highlight .main-heading h1{  line-height: 40px    }
   
     .text-highlight .main-heading p {        line-height: 48px;    }
-    .main-heading p {   line-height: inherit; display: inline-block;} 
+    .main-heading p {   line-height: 36px;}
 
     leadform .input-section .input-outer:nth-last-child(2):nth-child(odd) {
         margin-bottom: 20px;
@@ -1005,7 +1005,7 @@ Developer: Bhawna */
     .V_3_5 .opinon-scale-custom .errorMessage{top: 50px;}
     .V_3_5 .t1-ques-component .lf-skip-btn {width: auto;float: none;margin-left: 45% !important;}
     .V_3_5.template-five .result-v2 .loginBtn.loginBtn--facebook, .V_3_5.template-five .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook{padding: 10px 40px 10px 15px !important;}
-    /*.V_3_5 .t1-question{min-height: calc(100vh - 60px);}*/
+    .V_3_5 .t1-question{min-height: calc(100vh - 60px);}
     .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main {padding-top: 0 !important;}
      /*branding*/
     .V_3_5 .powered-by .poweredby-text {font-size: 10px !important;margin-left: 3px;line-height: 17px;}
@@ -1259,17 +1259,6 @@ Developer: Bhawna */
     .opinon-scale-custom label.control.control--radio{padding:4px 0px !important;}
 }
 @media (max-width:640px){
-    .template-five .timerView {
-        position: relative;
-        right: auto;
-        top: 0px;
-        left: auto;
-        margin: 20px auto 0px !important;
-        display: flex;
-        justify-content: center;
-    }
-    .custom-block.inpu-file-uploader .input-field , .t1-ques-component .material-textarea .input-field {margin-bottom: 0px}
-    .question-components .input-field textarea , .file-uploader-name {font-size: 14px}
     .lead-popup-main .lf-skip-btn{margin-top: 4px}
     .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
     .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
