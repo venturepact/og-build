@@ -82,11 +82,13 @@
     .submit-checkbox{padding:5px!important}
 }
 @media (min-width:0px) and (max-width:767px){
+    .V_3_5 .header-next-div .timerView{top: 115px}
+
     .V_3_5 .landing-page-mid button span {font-size: 14px !important;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
-        /* .safari .header-next-div{height: auto !important;min-height: 660px;} */
+        .safari .header-next-div{height: auto !important;min-height: 660px;}
         .safari .isIframe.header-next-div{height: auto !important;min-height: auto;}
         .safari .header-next-div .t1-question{height: 100% !important; min-height: 700px}
         .safari .header-next-div .t1-landing{height: 100% !important; min-height: 700px}
@@ -107,7 +109,7 @@
     .t1-result-leadform-heading,
     .t1-result-small-container,
     .t1-result-topheading{text-align:center}
-    .V_3_5 .progress{top:0;margin:10px auto 0;left:-20px;right:inherit}
+    .V_3_5 .progress{top:0;margin:10px auto 0;left:inherit;right:inherit;margin-top: 35px;}
     .textfield label.control.control--checkbox,.textfield label.control.control--radio{float:left;width:auto!important;padding:20px 50px 20px 0}
     .textfield input.othersfield{padding:18px 0 12px!important;font-size:16px;line-height:18px;width:90px!important}
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn{margin-left:0;position:relative;top:10px;left:0;float:left!important;display:block!important;font-size:13px!important;height:auto!important;padding:8px 15px!important}
@@ -456,8 +458,7 @@
     .structure-right-align .t1-slider-nav a.prev{right:25%;bottom:-60px!important;top:inherit}
     .structure-right-align .t1-slider-nav a.next{left:25%;bottom:-60px;top:inherit}
     .structure-right-align .t1-slider-nav a.go{left:25%;bottom:20px;top:inherit}
-    .logo-resizing.v-padding{padding-top:75px}
-    .logo-resizing.h-padding{padding-top:80px}
+    
     .page_1 .common-result-space{padding-top:30px!important}
     .opinion-label-outer{font-size:11px}
     .opinon-scale-custom span.t6{margin-top:10px;margin-bottom:5px}
@@ -595,6 +596,11 @@
     .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer [type=checkbox]+label.leadform-checkbox{font-size: 14px !important}
     .V_3_5.one-page-card-new leadform_question .loginBtn {padding: 12px 40px 12px 20px!important; font-size: 12px !important}
     .V_3_5.one-page-card-new leadform_question .loginBtn--facebook:before{width: 25px!important; height: 25px!important;top: 50%; background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important; background-size: 15px!important;right: 10px!important; transform: translateY(-50%);}
+
+    .V_3_5 .liveresult-outr{ position: relative; top: inherit; right: inherit; max-width: 100%; padding-left: 15px; padding-right: 15px;}
+    .V_3_5 .liveresult-outr .t1-question-liveresult{ text-align: center; }
+    .V_3_5 .liveresult-outr .t1-question-resultheading{ text-align: center; }
+
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
@@ -1007,8 +1013,8 @@
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook,.V_3_5 .loginBtn,.V_3_5 .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook,.V_3_5 .result-v2 .loginBtn.loginBtn--facebook{padding:11px 40px 11px 14px!important;font-size:14px!important}
     .V_3_5 .loginBtn:before{top:50%!important;right:8px!important; transform:translateY(-50%);width:25px!important;height:25px!important;background-size:15px!important}
 
-    .safari .header-next-div{height: auto !important;min-height: 800px;}
-    .safari .header-next-div .t1-question{height: auto !important; min-height: 800px}
+    .safari .header-next-div{height: auto !important;min-height: 820px;}
+    .safari .header-next-div .t1-question{height: auto !important; min-height: 820px}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}
@@ -1291,7 +1297,7 @@
     .otherfield-inputbtn button.button_textfield.submit-textbox-btn{margin-left:0;position:relative;top:6px;left:0;float:left!important;display:block!important;font-size:11px!important;height:auto!important;padding:8px 15px!important}
     .V_3_5 .main-heading,
     .V_3_5 .main-heading h1,
-    .V_3_5 .main-heading p{font-size:56px!important;line-height:60px!important;  margin: 0px !important}
+    .V_3_5 .main-heading p{font-size:50px!important;line-height:56px!important;  margin: 0px !important}
     .V_3_5.one-page-card-new  control.main-heading {max-width: 90%;display: inline-block;margin: 0px 0 20px !important;}
     .V_3_5.one-page-card-new .sub-heading, 
     .V_3_5.one-page-card-new .sub-heading h2 ,
@@ -1307,6 +1313,10 @@
     .V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label{height: 35px;}
 }
 @media (max-width:640px){
+    .logo-resizing.v-padding{padding-top:75px}
+    .logo-resizing.h-padding{padding-top:80px}
+    .V_3_5 .liveresult-outr.timerOn{margin-bottom: 80px !important}
+    .V_3_5 .timerView {position: relative !important;top: 0 !important;margin-top: -100px;}
     .question-components .or-class , .question-components .fb-outer{text-align: center !important}  
     .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn {margin-top: 10px;font-size: 14px;margin-left: 0px; margin-right: 0px;float: none;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size:14px;margin-top:10px;line-height:22px}
@@ -1389,8 +1399,13 @@
 
     
 @media (min-width: 641px) and (max-width: 995px) {
+    .V_3_5.one-page-card-new.v2mainouter .t1-ques-component{margin-bottom: 0px !important}
+    .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img {padding: 11px 28px 9px!important;}
+    .V_3_5 .t1-landing .no-header-links.no-footer-links{padding:120px 0!important}
+    .V_3_5  .logo-resizing{padding: 130px 0 !important}
+    .V_3_5.one-page-card-new .t1-slider-question {padding: 28px !important;    min-height: 120px;display: flex;align-items: center;}
+    .V_3_5 .t1-ques-head {margin-bottom: 20px!important;}
+    .landing-text-center .landing-page-mid{padding: 0 30px !important}
+    .isIframe .calendar-after{min-height: auto !important}
 
-    .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img {
-        padding: 11px 28px 9px!important;
-    }
 }
