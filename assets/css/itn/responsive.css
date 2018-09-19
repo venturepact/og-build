@@ -1121,7 +1121,7 @@
     .V_3_5 .landing-text-right .fb-outer{float: right;padding:0px;}
     .V_3_5 .template3-outr {float: left;width: 100%;margin-bottom: 30px;padding-left: 30px;margin-top: 0px;}
     .V_3_5 .template3-outr .question-head {padding: 8px 10px;font-size: 20px;line-height:42px;padding-top: 10px;}
-    .V_3_5 .new_control .t1-ques-head div{font-size: 22px;line-height: 30px; display: inline-block;}
+    .V_3_5 .new_control .t1-ques-head div{font-size: 22px;line-height: 30px;}
     .V_3_5 .landing-text-right .landing-page-mid leadform .input-section .input-outer.checkbox .input-field{float: right;}
     .V_3_5 .t1-ques-component{margin-bottom: 0;}
     .V_3_5 .new_control.visible {margin-bottom: 0px !important;}
@@ -1154,9 +1154,7 @@
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{padding-top: 6px;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox:before{padding-top: 6px;}
     .V_3_5 .t1-question .new_control .question-components input.postfixset{max-width: 170px !important;float: none;min-width: 150px !important;}
-    .V_3_5 .new_control .input-field label{max-width: 70px;} 
-    .safari .V_3_5 .new_control .input-field label{padding-top: 3px; line-height: 38px;} 
-    .safari .V_3_5 .t1-question .new_control .question-components input{line-height: 41px !important; padding-top: 0 !important;}
+    .V_3_5 .new_control .input-field label{max-width: 70px;}    
     .V_3_5 .t1-ques-component.leadform-inline .lf-skip-btn {margin: 15px auto 30px !important;width: 110px !important;float: none;text-align: center;}
     .V_3_5 .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook {padding: 12px 35px 12px 20px !important;font-size: 12px !important;line-height: 16px !important;}
     .V_3_5 .t1-question .question-components .selectize-control.single .selectize-input:after{top: 40%;}
@@ -1164,7 +1162,6 @@
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: 0 !important;}
     .V_3_5 .no-logo .no-header-links.no-footer-links{padding-top: 0px !important;}
     .V_3_5 .no-logo .inline-tablecell {padding-top: 30px !important;}
-    .V_3_5 .no-header-links.no-footer-links .inline-tablecell {height: 100vh;}
     /*.V_3_5 .no-logo .t1-landing-inner .landing-page-mid{padding-top:30px !important;}*/
     .V_3_5 .t1-landing.no-logo .no-header-links.no-footer-links{padding-top:30px !important;}
     .V_3_5 .t1-result.no-logo .no-header-links.no-footer-links {padding-top: 30px !important;}
@@ -1177,33 +1174,10 @@
     .V_3_5 .powered-by{box-shadow: none}
     .V_3_5 .stickyfooter {left: 0;}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo:after{border-width: 75px 90px 0 0 !important;}
-    .safari .header-next-div{height: auto !important;min-height: 660px;}
-    .safari .isIframe.header-next-div{height: auto !important;min-height: 660px;}
+    /* .safari .header-next-div{height: auto !important;min-height: 660px;} */
+    .safari .isIframe.header-next-div{height: auto !important;min-height: auto;}
     .safari .header-next-div .inline-tablecell {height: 100% !important; min-height: 700px}
     .safari .header-next-div .t1-landing-inner{height: 100% !important; min-height: 700px}
-    
-    .V_3_5 .result-v2 .common-result-bot-icons.side-redo:after{border-width: 75px 90px 0 0 !important;}
-    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 255px !important; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon { top: 8px; }
-    .V_3_5 .new_control.visible .question-components calendar .input-group span.input-group-addon i.fa.fa-calendar { font-size: 22px !important; }
-
-    .custom-block.inpu-file-uploader i.material-icons{ font-size: 20px; top: 15px;}
-    /* .cal-outer.calender-date {
-        display: block;
-    }
-    .cal-outer.calender-date .form-group {
-        display: block;
-    }
-    .cal-outer.calender-date + span.calendar-range {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 22px;
-    } */
-
-    .V_3_5 .new_control.visible .question-components calendar .input-group input{ font-size: 22px !important; }
-    .cal-outer.calender-date+span.calendar-range{ font-size:22px }
-    .isIframe.no-header-links.no-footer-links { min-height: 630px; }
-    .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input + .selectize-dropdown.single{min-width: 165px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1913,7 +1887,7 @@
 
     /*t3 improved 1023*/
     .V_3_5 .landing-page-mid{ width: 84% !important;float: none;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 50px !important; line-height: 56px !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 56px !important; line-height: 60px !important;}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{margin-bottom: 0px !important;}
     .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p {font-size: 34px;line-height: 42px;}
     .V_3_5 fb_lead_gen {width: 100%;float: left;left: 0;padding: 0 50px;margin: 0 0 20px;}
@@ -1935,26 +1909,6 @@
     .V_3_5 .new_control .dropdown-set .errorMessage {bottom: -5px !important;}
     .V_3_5.inline-temp-new .common-result header.landing-page-header {position: absolute !important;top: 30px !important;}
     .V_3_5.inline-temp-new .common-result .t1-logo{margin:0 !important;}
-
-    .new_control.visible.complete .t1-ques-component .question-components calendar .input-group input { width: 265px !important; font-size: 24px !important;}
-    .cal-outer.calender-date {
-        display: inline;
-    }
-    .V_3_5 .t1-question .new_control .question-components .cal-outer.calender-date .form-group {
-        display: inline;
-    }
-    .cal-outer.calender-date + span.calendar-range {
-        font-size: 30px;
-        line-height: 45px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .V_3_5 .new_control.visible .question-components calendar .input-group input {
-        width: 295px !important;
-        font-size: 26px !important;
-    }
-
-
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2732,31 +2686,30 @@
         margin-top: 10px;
         line-height: 22px;
     }
-    .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
-    .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.dropdown span.cust-icon-rest {width: auto !important;}
-    .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
+   .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
+   .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer.dropdown span.cust-icon-rest {width: auto !important;}
+   .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
     .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 20px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head div{font-size: 14px}
     .lead-popup .lead-popup-outer{width: 100%; max-width: 360px;}
     .check-marks{margin-bottom: 15px;}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .section-head{font-size: 14px;margin-bottom: 5px}
-    .check-marks svg {height: 45px;}
-    .lead-popup-main .lf-skip-btn{margin-top: 3px}
+   .check-marks svg {height: 45px;}
+   .lead-popup-main .lf-skip-btn{margin-top: 3px}
     .t1-result .lead-popup  .lead-popup-outer .lead-popup-main .custom-btn-outer{width:90px !important; border-radius:50%; height:90px !important; overflow: visible;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
-    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
-    .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
-    .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
-    .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
-    .new_control   .t1-ques-head div p{font-size: 22px}
-    .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
-    .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
-    .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
-    .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:10% !important;}
+   .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
+   .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
+   .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
+   .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
+   .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
+   .new_control   .t1-ques-head div p{font-size: 22px}
+   .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
+   .t1-ques-component .new_control .errorMessage{bottom: -8px; padding: 0}
+   .new_control .dropdown-set .errorMessage {bottom: -15px !important;}
+   .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:10% !important;}
     .w100.text-center.lead-action-wrapper .submit-checkbox-img{display: inline-block;float: none;margin:0;font-size: 12px;}
     .lead-popup-main button.lf-skip-btn.ripple-light{width: 100%;float: left;margin-left:0px;}
-    .timerView{top: auto !important;}
 }
 @media (min-width: 641px) and (max-width: 1024px) {
     .lead-popup .lead-popup-outer{max-width: 600px}
@@ -2792,22 +2745,4 @@
 }
 @media (min-width:0px) and (max-width:340px){
     .V_3_5 .t1-question .new_control .question-components input.postfixset {max-width: 200px!important;float: none;min-width: 100px!important;padding-right: 0 !important;}
-}
-
-@media (min-width:0px) and (max-width:540px){
-    .cal-outer.calender-date {
-        display: block;
-    }
-    .cal-outer.calender-date .form-group {
-        display: block;
-    }
-    .cal-outer.calender-date + span.calendar-range {
-        margin-left: 0;
-        margin-right: 0;
-        font-size: 22px;
-    }
-    .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 255px !important;}
-}
-@media (min-width:600px) and (max-width:767px){
-    .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 245px !important;}
 }
