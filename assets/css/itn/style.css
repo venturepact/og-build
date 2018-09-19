@@ -5095,7 +5095,7 @@ button.lf-skip-btn{
 /*fb login starts*/
 .V_3_5 .landing-page-mid fb_lead_gen {width: 100%;float: left;left: 0;padding: 0;margin: 0 auto;}
 .V_3_5 .or-class {float: left;width: 100%;text-align: center;font-size: 14px !important;text-transform: uppercase;margin: 15px 0;line-height: normal;padding: 0 65px;z-index: 1;}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 14px 47px 14px 25px !important;float: none;font-size: 14px !important;color: #fff !important;border: 3px solid #086ca0 !important;letter-spacing: normal;margin: 0 auto !important;display: flex;align-items: center;justify-content: center;vertical-align: middle;border-radius: 50px !important;text-align: center !important;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 14px 47px 14px 25px !important;float: none;font-size: 14px !important;color: #fff !important;border: 3px solid #086ca0 !important;letter-spacing: normal;margin: 0 auto !important;display: flex;align-items: center;justify-content: center;vertical-align: middle;border-radius: 50px !important;text-align: center !important;transition: all 0.5s;}
 .V_3_5 .fb-outer{width:100%;float: left;margin: 0 auto;}
 .V_3_5 .landing-page-mid .or-class span{line-height: normal; float: none;}
 .V_3_5 .loginBtn--facebook{background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important;text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 25px;}
@@ -5505,3 +5505,8 @@ file .file-loader span{ font-size: 24px;}
 }
 
 /*** css toast  for quizz ***/
+/* fb btn hover */
+.V_3_5 .loginBtn--facebook{border: 3px solid #086ca0 !important;transition: all 0.5s;}
+.V_3_5 button.loginBtn.loginBtn--facebook:hover {background: transparent !important;border: 3px solid #086ca0 !important;color: #086ca0 !important;}
+.V_3_5 button.loginBtn.loginBtn--facebook:hover span {color: #086ca0 !important;}
+.V_3_5 .loginBtn.loginBtn--facebook:hover::before {background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png) 6px center no-repeat;opacity: 1;background-color: #fff !important;}
