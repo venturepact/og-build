@@ -55,7 +55,7 @@ function initIframe(id) {
 		if (iWidth > 786) {
 			og_b.setAttribute("onresize", "ogOnLoadHandler();")
 		}
-		og_b.setAttribute("style", "margin:0;padding:0;")
+		og_b.setAttribute("style", "padding:0;")
 	}
 	if (og_e.getAttribute('data-embedBorderRadius')) var og_br = og_e.getAttribute('data-embedBorderRadius');
 	else var og_br = '0';
