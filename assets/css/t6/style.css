@@ -1749,3 +1749,26 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 body.feedbackPopupVisibleNow {
     overflow: hidden !important;
 }
+/* Full Screnn BG */
+section.landing-page-mid {position:static !important}
+section.landing-page-mid .bGImage.isFullScreenBg{
+     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    height: 100% !important;
+    display: none;
+    background-position: center 0;
+    background-size: cover;
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+section.landing-page-mid * {
+    position: relative;
+    z-index: 1;
+}
+
+.template-section .template-container.mobile .template-six.V_3_5 .bGImage.isFullScreenBg{height:100% !important}
