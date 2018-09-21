@@ -2124,6 +2124,11 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     -webkit-animation: Slidemove 500ms linear;
     animation: Slidemove 500ms linear;
 }
+.landing-text-left .quiz-usersCount {
+    right: 20px !important;
+    left: auto !important;
+    bottom: 55px !important;
+}
 .quiz-usersCount.footer-visible {
     bottom: 85px;
 }
