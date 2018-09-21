@@ -1603,8 +1603,9 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 /*** css toast  for quizz ***/
 .sound-cloud-new {position: relative;width: 100%;float: left;}
-.sound-cloud-new .quiz-usersCount {position: absolute;float: left;right: 25px;left: auto;bottom: 55px;}
+.sound-cloud-new .landing-text-left .quiz-usersCount {position: absolute;float: left;right: 25px;left: auto;bottom: 55px;}
 .editor-page-divider  .quiz-usersCount {position: absolute !important;}
+.landing-text-left + div + .quiz-usersCount {position: absolute !important;float: left !important;right: 25px !important;left: auto !important;bottom: 55px !important;}
 .common-footer-main + .quiz-usersCount {bottom: 85px;}
 .quiz-usersCount {position: fixed;bottom: 35px;left: 35px;float: left;width: 155px;background: #fff;border-radius: 10px;padding: 8px;text-align: center;-webkit-box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);z-index: 9;-webkit-animation: Slidemove 500ms linear;animation: Slidemove 500ms linear;}
 .quiz-usersCount.footer-visible {bottom: 85px;}

@@ -1766,7 +1766,7 @@ section.landing-page-mid .bGImage.isFullScreenBg{
     top: 0;
     bottom: 0;
 }
-section.landing-page-mid * {
+section.landing-page-mid > div {
     position: relative;
     z-index: 1;
 }
