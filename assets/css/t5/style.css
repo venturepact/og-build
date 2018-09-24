@@ -5013,3 +5013,9 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 }
 
 /*** css toast  for quizz ***/
+.V_3_5.structure-right-align button.btn.prime-action.ripple-light.next-new-btn:before {
+    transform: rotate(-180deg);
+}
+.V_3_5.structure-right-align button.btn.prime-action.ripple-light.back-action:before {
+    transform: rotate(0deg);
+}
