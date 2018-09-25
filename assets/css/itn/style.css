@@ -5430,6 +5430,11 @@ file .file-loader span{ font-size: 24px;}
 .quiz-usersCount.noWelcomeScreen {
     bottom: 35px;
 }
+.landing-text-left.quiz-usersCount {
+    left: auto;
+    right: 25px;
+    bottom: 55px;
+}
 @-webkit-keyframes Slidemove {
     0%   {bottom: -10px; opacity: 0;}
     100%  {bottom: 35px; opacity: 1;}
