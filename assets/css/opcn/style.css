@@ -2475,3 +2475,48 @@ a.view-feedback {
     padding: 20px 30px !important;
   
   }
+
+.V_3_5 .landing-text-center button.loginBtn.loginBtn--facebook {
+    transition: all 0.5s ease;
+}
+.V_3_5  .loginBtn--facebook:hover::before {
+    opacity: 1;
+    right: 13px !important;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    will-change: right;
+}
+.V_3_5  .loginBtn--facebook:hover{
+    right: 0;
+    top: 50%;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    will-change: right;
+    text-transform: none;
+}
+.V_3_5  .loginBtn--facebook:hover::before {
+    opacity: 1;
+    right: 12px !important;
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    will-change: right;
+}
+.V_3_5 .loginBtn--facebook span {
+    -webkit-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    position: relative;
+    display: block;
+}
+.V_3_5 .loginBtn--facebook:hover span {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+}
+.V_3_5.one-page-card-new .v2mainouter .t1-ques-component .newLeadGenV_3_5 .input-outer {
+    animation: no-animation !important;
+}
+.V_3_5.one-page-card-new .v2mainouter .t1-ques-component.leadform_question {
+    animation-name: rightin;
+    animation-duration: 0.9s;
+}

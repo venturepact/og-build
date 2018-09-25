@@ -3,9 +3,10 @@
 }
 @media (min-width:0px) and (max-width:767px) {
     .popup-feedback .graded-msgbox .incorrect span ,  .popup-feedback .graded-msgbox .correct span{margin-bottom: 5px !important;}
-    .V_3_5 .popup-feedback .graded-msgbox{padding: 20px !important}
-    .popup-feedback span.close {right: 10px;top: 35px;z-index: 99999;}
-    .popup-feedback span.close i{color: #000}
+    .V_3_5 .popup-feedback .graded-msgbox{padding: 10px 0  !important}
+    .scrol-part {padding: 10px 20px !important;}
+    .popup-feedback span.close {right: 10px;top: 10px;z-index: 99999;}
+    .popup-feedback span.close i{color: #000 !important; font-size: 20px !important}
     .popup-feedback .graded-msgbox p {font-size: 14px;line-height: 20px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
