@@ -1605,7 +1605,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .question-components .input-field textarea::-webkit-scrollbar:horizontal {height: 6px;    background-color: rgba(0, 0, 0, 0.2);}
 .question-components .input-field textarea::-webkit-scrollbar-thumb {border-radius: 4px;background-color: rgba(0, 0, 0, 0.2);padding-right:10px; margin-right:10px;}
 
-.custom-block.inpu-file-uploader .input-field span.upload-icons {position: absolute;width: 50px;right: 0;height: 100%;top: 0;bottom: 0;align-items: center;justify-content: center;display: flex;}
+.custom-block.inpu-file-uploader .input-field span.upload-icons {position: absolute;width: 50px;right: 0;height: 100%;top: 0;bottom: 0;align-items: center;justify-content: center;display: flex; cursor: pointer;}
 .custom-block.inpu-file-uploader .input-field span.upload-icons i {font-size: 18px;}
 .custom-block.inpu-file-uploader .input-field {background: rgb(255, 255, 255) ;border-color: rgb(255, 255, 255);min-height: 50px;display: flex;align-items: center;padding: 0 20px;border: 1px solid rgb(255, 255, 255);border-radius: 3px;outline: 0;width: 100%!important;margin: 0 0 20px;min-height: 50px;box-shadow: none;transition: all .3s;box-sizing: border-box;font-size: 16px;position: relative;padding-right: 40px;padding-top: 5px;padding-bottom: 5px;}
 .custom-block.inpu-file-uploader .input-field input {padding: 0px;width: auto !important;margin: 0 !important;background-color: transparent !important;border: 0px !important;height: auto !important;min-height: auto !important;}
