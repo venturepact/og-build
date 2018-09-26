@@ -2812,3 +2812,6 @@
 @media (min-width:600px) and (max-width:767px){
     .V_3_5 .new_control.visible .question-components calendar .input-group input{ width: 245px !important;}
 }
+@media (max-width: 767px) and (min-width: 0px){
+.table-outer table {width: 100%;}
+}

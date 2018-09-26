@@ -2433,8 +2433,9 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 .graded-msgbox-outr.popup-feedback::after{position: fixed;left: 0; right: 0; bottom: 0; left: 0}
 .popup-feedback {top: 0;bottom: 0;z-index: 99999;display: block; height: 100vh; padding:20px;transform: none;left: 0;right: 0;max-width: 100%;}
 .popup-feedback .graded-msgbox {background: #f3f4f5;padding: 10px 0 !important;max-width: 600px !important;width: 100% !important;border-radius: 5px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); min-height: 250px;}
-.popup-feedback .graded-msgbox p {color: #666;float: left;width: 100%;text-align: left;font-size: 16px;line-height: 24px; white-space: normal; word-wrap: break-word}
+.popup-feedback .graded-msgbox p {color: #666;float: left;width: 100%;text-align: left;font-size: 16px;line-height: 24px; white-space: normal; word-wrap: break-word; word-break: break-all}
 .feedback-img {float: left;width: 100%;margin-bottom: 20px;}
+.popup-feedback .graded-msgbox span{color: #666;}
 .feedback-img img {height: 210px;object-fit: cover;float: left;width: 100%;}
 .popup-feedback .correct {float: left;width: 100%;color: #00a651;margin-bottom: 20px;font-size: 24px;text-transform: capitalize;line-height: 1;}
 .popup-feedback .incorrect {float: left;width: 100%;color: #f33a3c;margin-bottom: 20px;font-size: 24px;text-transform: capitalize;}
@@ -2524,4 +2525,7 @@ a.view-feedback {
 .V_3_5.one-page-card-new .v2mainouter .t1-ques-component.leadform_question {
     animation-name: rightin;
     animation-duration: 0.9s;
+}
+.V_3_5 .common-header-main + .page_1 .timerView,.V_3_5 .common-header-main + .page_0 .timerView {
+    top: 90px;
 }

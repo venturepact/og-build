@@ -84,6 +84,8 @@
 @media (min-width:0px) and (max-width:767px){
     .V_3_5 .popup-feedback .graded-msgbox{padding: 10px 0  !important}
     .scrol-part {padding: 10px 20px !important;}
+    .popup-feedback span.close {right: 10px;top: 10px;z-index: 99999;}
+    .popup-feedback span.close i{color: #000 !important; font-size: 20px !important}
     .V_3_5 .header-next-div .timerView{top: 115px}
 
     .V_3_5 .landing-page-mid button span {font-size: 14px !important;}
