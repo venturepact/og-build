@@ -641,3 +641,8 @@
     .landing-page-mid button.loginBtn.loginBtn--facebook{    padding:7px 15px 7px 40px !important;margin: 0;font-size: 13px !important;}
     .landing-page-mid button.loginBtn.loginBtn--facebook:before {width: 35px;background-position: 10px center !important;background-size: 16px;}
 }
+
+@media (min-width: 641px) and (max-width: 1024px){
+    .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 120px 40px !important;}
+    .V_3_5 .landing-text-center .landing-page-mid {padding: 120px 0 !important;}
+}
