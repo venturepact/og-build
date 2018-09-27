@@ -2461,14 +2461,15 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 }
 a.view-feedback {
     position: absolute;
-    left: 20px;
-    bottom: 15px;
+    right: 20px;
+    bottom: 20px;
     font-size: 12px;
     z-index: 1000;
     line-height: 1;
     cursor: pointer;
     opacity: 0.6;
     transition: 0.5s;
+    color: #000;
   }
   a.view-feedback:hover{opacity: 1; transition: 0.5s;}
   a.view-feedback i {
