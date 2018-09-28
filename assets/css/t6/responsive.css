@@ -862,6 +862,13 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .safari .header-next-div{height: auto !important;}
+    .range-slider1.char-count-slider .well1{width: calc(100% - 75px)}
+    .range-slider1 input.slider-input {
+      float: left;
+      width: 50px !important;
+    }
+    .timerView.realtime{margin-top: 20px !important; margin-bottom: 0px !important}
     a.view-feedback{bottom: 75px !important}
     .t1-landing-inner.logo-resizing{padding-top: 120px}
     .V_3_5 outcome-result .result-v2 .common-result-bot-icons.side-redo:after{border-width:75px 90px 0px 0;}  

@@ -1409,15 +1409,15 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5.sound-cloud-new .page_2 [type="checkbox"].filled-in + label.leadform-checkbox:after{top: 2px; left: 5px;}
 .V_3_5 .landing-footer-outer.isIframe {height: auto !important;bottom: 0 !important;top: auto !important;}
 /* Chrome/Opera/Safari */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-webkit-input-placeholder {opacity: 0.5;} /* Firefox 19+ */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-moz-placeholder {opacity: 0.5;}/* IE 10+ */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-ms-input-placeholder {opacity: 0.5;}/* Firefox 18- */
-.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-moz-placeholder {opacity: 0.5;}
+.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-webkit-input-placeholder {opacity: 0.7;} /* Firefox 19+ */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly])::-moz-placeholder {opacity: 0.7;}/* IE 10+ */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-ms-input-placeholder {opacity: 0.7;}/* Firefox 18- */
+.V_3_5.sound-cloud-new .page_1 input:not([readonly]):-moz-placeholder {opacity: 0.7;}
 
-.cal-outer input::-webkit-input-placeholder {opacity: 0.5;}/* Firefox 19+ */
-.cal-outer input::-moz-placeholder {opacity: 0.5;}/* IE 10+ */
-.cal-outer input:-ms-input-placeholder {opacity: 0.5;}/* Firefox 18- */
-.cal-outer input:-moz-placeholder {opacity: 0.5;}
+.cal-outer input::-webkit-input-placeholder {opacity: 0.7;}/* Firefox 19+ */
+.cal-outer input::-moz-placeholder {opacity: 0.7;}/* IE 10+ */
+.cal-outer input:-ms-input-placeholder {opacity: 0.7;}/* Firefox 18- */
+.cal-outer input:-moz-placeholder {opacity: 0.7;}
 
 /*no logo css*/
 .V_3_5 .landing-text-left.no-logo .landing-page-mid, .V_3_5 .landing-text-right.no-logo .landing-page-mid {padding: 80px 60px;}

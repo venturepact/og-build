@@ -4280,14 +4280,14 @@ p > span > a {color: inherit; }
   }
 .common-result-main [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{top:3px !important;  }
 
-.textfield.active input[type="text"]::-webkit-input-placeholder {color: #fff; opacity: 0.5}
-.textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.5}
-.textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.5}
-.textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.5}
-.template-five .textfield input[type="text"]::-webkit-input-placeholder { opacity: 0.5}
-.template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.5}
-.template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.5}
-.template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.5}
+.textfield.active input[type="text"]::-webkit-input-placeholder {color: #fff; opacity: 0.7}
+.textfield.active input[type="text"]::-moz-placeholder {color: #fff;  opacity: 0.7}
+.textfield.active input[type="text"]:-ms-input-placeholder {color: #fff;  opacity: 0.7}
+.textfield.active input[type="text"]:-moz-placeholder { color: #fff;  opacity: 0.7}
+.template-five .textfield input[type="text"]::-webkit-input-placeholder { opacity: 0.7}
+.template-five .textfield input[type="text"]::-moz-placeholder {  opacity: 0.7}
+.template-five .textfield input[type="text"]:-ms-input-placeholder {  opacity: 0.7}
+.template-five .textfield input[type="text"]:-moz-placeholder {   opacity: 0.7}
 
 
  /******** lead ************/
@@ -4767,10 +4767,10 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .t1-landing .landing-inner [type=checkbox]+label.leadform-checkbox:before, .V_3_5.template-five .t1-landing .landing-inner [type=checkbox]:not(.filled-in)+label.leadform-checkbox:after {margin-left: 0;}
 .V_3_5.template-five .t1-landing .landing-inner [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{margin-left: 0px;}
 /*.V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title {color: #444 !important;}*/
-.V_3_5 .t1-result-leadform .input-outer input::-webkit-input-placeholder {color: #444 !important;opacity: 0.5;}
-.V_3_5 .t1-result-leadform .input-outer input::-moz-placeholder {color: #444 !important;opacity: 0.5;}
-.V_3_5 .t1-result-leadform .input-outer input:-ms-input-placeholder {color: #444 !important;opacity: 0.5;}
-.V_3_5 .t1-result-leadform .input-outer input:-moz-placeholder {color: #444 !important; opacity: 0.5;}
+.V_3_5 .t1-result-leadform .input-outer input::-webkit-input-placeholder {color: #444 !important;opacity: 0.7;}
+.V_3_5 .t1-result-leadform .input-outer input::-moz-placeholder {color: #444 !important;opacity: 0.7;}
+.V_3_5 .t1-result-leadform .input-outer input:-ms-input-placeholder {color: #444 !important;opacity: 0.7;}
+.V_3_5 .t1-result-leadform .input-outer input:-moz-placeholder {color: #444 !important; opacity: 0.7;}
 .V_3_5 .input-outer{margin-bottom: 30px;margin-top: 0;}
 .V_3_5 .t1-ques-component .input-section .input-outer span{top: 30px;font-size: 10px;}
 .V_3_5 .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){margin-bottom: 30px;}
