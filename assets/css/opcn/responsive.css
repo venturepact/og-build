@@ -1416,3 +1416,11 @@
     .isIframe .calendar-after{min-height: auto !important}
 
 }
+@media (min-width: 641px) and (max-width: 769px) {
+    .V_3_5 .common-header-main + .no-footer-links .timerView {
+        top: 120px;
+    }
+    .V_3_5 .common-header-main + .header-next-div .timerView {
+        top: 120px;
+    }
+}
