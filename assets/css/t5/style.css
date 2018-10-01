@@ -5037,3 +5037,23 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     bottom: 20px !important;
 }
 .V_3_5 .header-next-div{position: unset !important;}
+.V_3_5.structure-right-align .t1-question .question-components .input-outer i{right: 0; left: auto}
+
+.V_3_5.structure-right-align .t1-question .t1-ques-component leadform_question div+fb_lead_gen {
+width: auto;
+float: right;
+margin-right: calc(50% + 50px);
+margin-top: -15px;
+margin-left: 0 !important;
+}
+.V_3_5.structure-right-align .newLeadGenV_3_5 + fb_lead_gen .or-class {
+text-align: right;
+padding: 0;
+}
+.V_3_5.structure-right-align .landing-page-mid leadform .input-section .input-outer i {
+right: 0;
+left: auto !important;
+}
+.V_3_5.structure-right-align .landing-text-left .landing-page-mid .or-class{text-align: right !important}
+.V_3_5.structure-right-align .landing-text-left .landing-page-mid button.loginBtn.loginBtn--facebook{float: right;}
+.V_3_5.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 0 !important; left: auto !important;}
