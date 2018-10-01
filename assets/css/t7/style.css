@@ -2338,7 +2338,7 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 }
 .common-result-main .table-outer table tbody tr td, .common-result-main .table-outer table thead tr th {
     padding: 12px 30px !important;
-    font-size: 12px!important;
+    font-size: 13px!important;
 }
 .common-result-main .table-outer table tbody tr.dark, .common-result-main .table-outer table tbody tr.light {
     background: #fff !important;
@@ -2851,6 +2851,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;
     background-position-x: 3px !important;
     background-size: 15px !important;
+    transition: all .3s ease-out;
 }
 .template-section .template-container.mobile .V_3_5 .loginBtn,
 .template-section .template-container.mobile .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {

@@ -406,7 +406,7 @@
     .gradedquiz-main visuals.visual-outr{float:left;width:100%}
     .graded-msgbox-outr{width:80%}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer{max-width:100%;width:100%;margin:0 auto;float:none}
-    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{width:100%;padding-bottom:10px;padding-top:5px;max-width:100%;margin:0 auto}
+    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{width:100% !important;padding-bottom:10px;padding-top:5px;max-width:100%;margin:0 auto}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table thead tr th{padding:12px!important}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table{width:90%;margin:16px 16px 0}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-graph{margin:0 16px 16px;width:90%}
@@ -663,7 +663,7 @@
     .gradedquiz-main visuals.visual-outr{float:left;width:100%}
     .graded-msgbox-outr{width:80%}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer{max-width:100%;width:100%;margin:0 auto;float:none}
-    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{width:100%;padding-bottom:10px;padding-top:5px;max-width:100%;margin:0 auto}
+    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{width:100%!important;padding-bottom:10px;padding-top:5px;max-width:100%;margin:0 auto}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table thead tr th{padding:12px!important}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table{width:90%;margin:16px 16px 0}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-graph{margin:0 16px 16px;width:90%}
@@ -1335,6 +1335,9 @@
 
     /* no header no realtime */
     .V_3_5 .no-header-links.no-footer-links .progress.newProgressbar {margin-top: 80px;}
+
+    /* no header no timer */
+    .V_3_5 .no-footer-links .liveresult-outr + div + .progress.newProgressbar {margin-top: 35px !important;}
     
 
     /*.safari .V_3_5 .liveresult-outr.timerOn{margin-bottom: 60px !important}    
