@@ -327,10 +327,10 @@ visuals .t1-result-inner-left #og-table-excel{margin:0 auto;width:42%;height:290
 .range-slider .slider-buttom-outer .submit-checkbox-img{left:0;top:20px}
 .t1-question .input-field{position:relative;float:left;width:100%!important}
 .t1-question .leaded-form-c .input-outer input{padding-left:35px}
-.t1-question .leaded-form-c .input-outer input::-webkit-input-placeholder{color:#666e78;opacity:.7}
-.t1-question .leaded-form-c .input-outer input::-moz-placeholder{color:#666e78;opacity:.7}
-.t1-question .leaded-form-c .input-outer input:-ms-input-placeholder{color:#666e78;opacity:.7}
-.t1-question .leaded-form-c .input-outer input:-moz-placeholder{color:#666e78;opacity:.7}
+.t1-question .leaded-form-c .input-outer input::-webkit-input-placeholder{color:#666e78;opacity:.6}
+.t1-question .leaded-form-c .input-outer input::-moz-placeholder{color:#666e78;opacity:.6}
+.t1-question .leaded-form-c .input-outer input:-ms-input-placeholder{color:#666e78;opacity:.6}
+.t1-question .leaded-form-c .input-outer input:-moz-placeholder{color:#666e78;opacity:.6}
 .t1-ques-head .help-outer{width:100%;position:relative;display:inline-block;top:0;padding-left:0}
 .t1-ques-head .help-text{display:block;background:0 0;border:none;padding:0;left:0;font-size:18px;position:relative;line-height:25px;box-shadow:none;z-index:9;width:100%;opacity:.8;color:#363b3e}
 .landing-page-mid button,
@@ -1191,10 +1191,10 @@ input{-webkit-transform:translate3d(0,0,0)}
 .otherfield-inputbtn{float:left;width:calc(100% - 50px);position:relative}
 .otherfield-inputbtn input.othersfield,input.othersfield{width:calc(100% - 200px)!important;float:left;border:none;box-shadow:none!important;padding:18px 0 15px!important}
 .otherfield-inputbtn button.button_textfield.submit-textbox-btn{margin-left:0;position:relative;top:10px;left:0;float:left!important}
-input.othersfield::-webkit-input-placeholder{opacity:.7}
-input.othersfield::-moz-placeholder{opacity:.7}
-input.othersfield:-ms-input-placeholder{opacity:.7}
-input.othersfield:-moz-placeholder{opacity:.7}
+input.othersfield::-webkit-input-placeholder{opacity:.6}
+input.othersfield::-moz-placeholder{opacity:.6}
+input.othersfield:-ms-input-placeholder{opacity:.6}
+input.othersfield:-moz-placeholder{opacity:.6}
 p>span>a{color:inherit}
 .t1-slider-question{animation-duration:.3s;animation-name:opacity-1;position:relative;overflow:hidden}
 .t1-ques-component,
@@ -1481,10 +1481,10 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .cal-outer .input-group.date .input-group-addon{background:0 0;border-radius:0;padding-right:7px;position:relative;top:-1px}
 .calendar-range{padding:0 0 10px;color:#363b3e}
 .t1-question .question-components .cal-outer input{box-shadow:none;padding:10px 5px;font-size:18px;color:#444}
-.t1-question .question-components .cal-outer input::-webkit-input-placeholder{color:#444; opacity: 0.7;}
-.t1-question .question-components .cal-outer input::-moz-placeholder{color:#444; opacity: 0.7;}
-.t1-question .question-components .cal-outer input:-ms-input-placeholder{color:#444;opacity: 0.7;}
-.t1-question .question-components .cal-outer input:-moz-placeholder{color:#444;opacity: 0.7;}
+.t1-question .question-components .cal-outer input::-webkit-input-placeholder{color:#444; opacity: 0.6;}
+.t1-question .question-components .cal-outer input::-moz-placeholder{color:#444; opacity: 0.6;}
+.t1-question .question-components .cal-outer input:-ms-input-placeholder{color:#444;opacity: 0.6;}
+.t1-question .question-components .cal-outer input:-moz-placeholder{color:#444;opacity: 0.6;}
 .cal-outer .dropdown-menu{padding:10px!important;text-align:center!important;font-size:11px!important;left:0px !important;right:auto !important;}
 .cal-outer .table-condensed>thead>tr>th{text-align:center!important}
 .cal-outer ul{margin-bottom:0!important}
@@ -1840,10 +1840,10 @@ span.lead-close:hover{opacity:1;transition:.5s}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp.poll-main .radio-outer.radio-icon-custom [type=radio]+label.control.control--radio:before{top:12px!important;left:5px!important}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp.poll-main .radio-outer.radio-icon-custom .control__indicator.icon-set{left:5px!important;top:10px!important}
 body .V_3_5.one-page-card-new{color:#444}
-body .V_3_5.one-page-card-new input::-webkit-input-placeholder{color:#aaa!important;opacity: 0.7;}
-body .V_3_5.one-page-card-new input::-moz-placeholder{color:#aaa!important;opacity: 0.7;}
-body .V_3_5.one-page-card-new input:-ms-input-placeholder{color:#aaa!important;opacity: 0.7;}
-body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacity: 0.7;}
+body .V_3_5.one-page-card-new input::-webkit-input-placeholder{color:#aaa!important;opacity: 0.6;}
+body .V_3_5.one-page-card-new input::-moz-placeholder{color:#aaa!important;opacity: 0.6;}
+body .V_3_5.one-page-card-new input:-ms-input-placeholder{color:#aaa!important;opacity: 0.6;}
+body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacity: 0.6;}
 .V_3_5.one-page-card-new .t1-ques-head .help-text{opacity:.8}
 .V_3_5 .control-ver2 .pic-selector{padding-bottom:0;margin-bottom:0!important;margin-top:20px}
 .V_3_5 .control-ver2 .pic-selector:first-child,
@@ -2235,10 +2235,10 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 .V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action:hover{opacity: 0.8; transition: 0.5s;}
 .V_3_5.one-page-card-new .custom-block.inpu-file-uploader .submit-textbox{margin-bottom: 0px !important}
 
-.V_3_5.one-page-card-new .submit-textbox textarea::-webkit-input-placeholder {color: #444;opacity: 0.7;}
-.V_3_5.one-page-card-new .submit-textbox textarea::-moz-placeholder {color: #444;opacity: 0.7}
-.V_3_5.one-page-card-new .submit-textbox textarea:-ms-input-placeholder {color: #444;opacity: 0.7}
-.V_3_5.one-page-card-new .submit-textbox textarea:-moz-placeholder {color: #444;opacity: 0.7}
+.V_3_5.one-page-card-new .submit-textbox textarea::-webkit-input-placeholder {color: #444;opacity: 0.6;}
+.V_3_5.one-page-card-new .submit-textbox textarea::-moz-placeholder {color: #444;opacity: 0.6}
+.V_3_5.one-page-card-new .submit-textbox textarea:-ms-input-placeholder {color: #444;opacity: 0.6}
+.V_3_5.one-page-card-new .submit-textbox textarea:-moz-placeholder {color: #444;opacity: 0.6}
 
 
 
