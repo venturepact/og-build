@@ -1325,6 +1325,8 @@
     .V_3_5 .timerView { position: absolute !important; top: -140px!important; margin-top: 0; width: 100%;}
     .V_3_5 .liveresult-outr.timerOn + div + .progress.newProgressbar {margin-top: 35px !important;}
     .V_3_5 .liveresult-outr.timerOn + div + div + .t1-question-mid form .timerView { margin-top: 0; top: -200px !important; width: 100%;}
+    .V_3_5 .header-next-div .progress.newProgressbar {  margin-top: 110px; }
+    .V_3_5 .header-next-div .progress.newProgressbar.timerNotVisible { margin-top: 35px; }
     
     /* header on */
     .V_3_5 .no-footer-links .progress.newProgressbar {margin-bottom: 0px;margin-top: 100px;}
@@ -1340,7 +1342,7 @@
     /* no header no timer */
     .V_3_5 .no-footer-links .liveresult-outr + div + .progress.newProgressbar {margin-top: 35px !important;}
     .V_3_5 .no-header-links.no-footer-links .progress.newProgressbar.timerNotVisible {margin-top: 0px;}
-    
+
     /* header on timer off no realtime */
     .V_3_5 .no-footer-links .progress.newProgressbar.timerNotVisible { margin-top: 35px;}
     
