@@ -2469,7 +2469,7 @@ a.view-feedback {
     position: absolute;
     right: 0;
     bottom: 0;
-    font-size: 11px;
+    font-size: 10px;
     z-index: 1000;
     line-height: 1;
     cursor: pointer;
@@ -2480,10 +2480,11 @@ a.view-feedback {
     background-color: #dadada;
     left: 0;
     text-align: left;
-    padding: 5px 40px;
+    padding: 7px 40px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     text-transform: uppercase;
+    letter-spacing: 2px
 }
   a.view-feedback:hover{opacity: 1; transition: 0.5s;}
   a.view-feedback i {

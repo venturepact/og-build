@@ -1,4 +1,4 @@
-.timerView .timer {width: 60px;height: 60px;background: rgba(255,255,255,0.6);  border-radius: 50%;position: relative;overflow: hidden;  box-sizing: border-box;}
+.timerView .timer { transform: scale(1.25);width: 60px;height: 60px;background: rgba(255,255,255,0.6);  border-radius: 50%;position: relative;overflow: hidden;  box-sizing: border-box;}
 .timerView {position: absolute;right: 20px;top: 20px;}
 .timerView .timer .coutndown-wrapper {width: 60px;height: 60px;position: absolute;clip: rect(0px, 60px, 60px, 30px);}
 .timerView .timer .coutndown-circle.coutndown-circle-left, 
