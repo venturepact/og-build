@@ -692,7 +692,7 @@
         display: flex;
         width: 365px;
         align-items: center;
-        height: 100%;
+        height: calc(100% - 80px);
         left: 52%;
     }
     .landing-right.no-bg {

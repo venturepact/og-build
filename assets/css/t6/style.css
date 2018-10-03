@@ -1794,7 +1794,7 @@ a.view-feedback {
   .scrol-part {
     float: left;
     width: 100%;
-    max-height: 90vh;
+    max-height: 85vh;
     overflow-y: auto !important;
     padding: 20px 30px !important;
   
@@ -1839,3 +1839,13 @@ button.loginBtn.loginBtn--facebook:hover::after {
     justify-content: center;
 
   }
+
+  .center-block.nocontent .graded-msgbox {
+    display: flex;
+    align-items: center;
+}
+.popup-feedback .center-block.nocontent .graded-msgbox  .incorrect , .popup-feedback .center-block.nocontent .graded-msgbox  .correct{margin-bottom: 0px}
+
+.popup-feedback .graded-msgbox .incorrect span i , .popup-feedback .graded-msgbox .correct span i {
+    font-size: 22px;
+}

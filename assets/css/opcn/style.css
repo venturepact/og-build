@@ -2444,8 +2444,8 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 .feedback-img {float: left;width: 100%;margin-bottom: 20px;}
 .popup-feedback .graded-msgbox span{color: #666;}
 .feedback-img img {height: 210px;object-fit: cover;float: left;width: 100%;}
-.popup-feedback .correct {float: left;width: 100%;color: #00a651;margin-bottom: 20px;font-size: 24px;text-transform: capitalize;line-height: 1;}
-.popup-feedback .incorrect {float: left;width: 100%;color: #f33a3c;margin-bottom: 20px;font-size: 24px;text-transform: capitalize;}
+.popup-feedback .correct {float: left;width: 100%;color: #00a651;margin-bottom: 15px;font-size: 24px;text-transform: capitalize;line-height: 1;}
+.popup-feedback .incorrect {float: left;width: 100%;color: #f33a3c;margin-bottom: 15px;font-size: 24px;text-transform: capitalize;}
 .graded-msgbox-outr-builder.popup-feedback{    overflow: visible;display: flex;align-items: center;    height: auto;}
 .popup-feedback .graded-msgbox .correct span {  display: flex;width: 40px;height: 40px;border: 2px solid #00a651;margin: 0 auto 15px;border-radius: 50%;color: #00a651;align-items: center;justify-content: center;}
 .popup-feedback .graded-msgbox .incorrect span {display: flex;width: 40px;height: 40px;border: 2px solid #f33a3c;margin: 0 auto 15px;border-radius: 50%;color: #f33a3c;align-items: center;justify-content: center;}
@@ -2467,16 +2467,24 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 }
 a.view-feedback {
     position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 12px;
+    right: 0;
+    bottom: 0;
+    font-size: 11px;
     z-index: 1000;
     line-height: 1;
     cursor: pointer;
-    opacity: 0.6;
+    opacity: 0.8;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
-    color: #000;
-  }
+    color: #797979;
+    background-color: #dadada;
+    left: 0;
+    text-align: left;
+    padding: 5px 40px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-transform: uppercase;
+}
   a.view-feedback:hover{opacity: 1; transition: 0.5s;}
   a.view-feedback i {
    margin-right: 5px
@@ -2484,7 +2492,7 @@ a.view-feedback {
   .scrol-part {
     float: left;
     width: 100%;
-    max-height: 90vh;
+    max-height: 85vh;
     overflow-y: auto !important;
     padding: 20px 30px !important;
   
