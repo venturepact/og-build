@@ -433,6 +433,7 @@
     .table-outer table { max-width: 450px;}
 }
 @media (min-width:1024px){
+    .popup-feedback .graded-msgbox{max-width: 90% !important}
     .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
 }
