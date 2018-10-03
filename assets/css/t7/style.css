@@ -810,6 +810,7 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .landing-page-mid .input-section .input-outer span { float: left; width: 65%; position: absolute; top: 24px; left:35% ; font-size: 9px; line-height: 1}
 /*.landing-page-mid .container-temp { width: 100%; margin: 0 auto; display: inline-block; min-height: 100px; }*/
 .container-temp { width: 98%; margin: 0 auto; display: inline-block; }
+.v3-fb-outer .container-temp.text-center {display: block;}
 .landing-page-mid .main-heading h1{ font-size: 20px; line-height: 24px; float: none;; width: 100%; text-align: left; margin-bottom: 0px !important; margin-top: 0px ; display: table-cell; word-break: break-word;}
 .landing-page-mid .main-heading { font-size: 20px; line-height: 24px; float: left; width: 100%; text-align: left; margin-bottom: 5px !important; margin-top: 0;word-break: break-word; }
 
@@ -2815,8 +2816,13 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     float: left;
     text-align: left;
 }
-.loginBtn{
-  font-size: 13px !important;
+.V_3_5 template-seven button.loginBtn{
+  font-size: 11px !important;
+  padding: 7px 35px 7px 10px !important;
+  border-radius: 25px !important;
+}
+.V_3_5 template-seven button.loginBtn::before{
+  border-radius: 25px !important;
 }
 
 /*new version--login with fb*/
@@ -2824,6 +2830,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     width: 100%;
     float: left;
     padding: 10px;
+    padding-top: 0px;
     text-align: left;
     font-size: 14px;
     text-transform: uppercase;
@@ -2833,10 +2840,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     background-color: #086ca0 !important;
     background-image: linear-gradient(#086ca0, #086ca0) !important;
     text-shadow: 0 -1px 0 #086ca0 !important;
-    border-radius: 0px !important;
-    text-transform: uppercase;
-    min-height: auto;
-    padding: 7px 40px 7px 15px !important;
     font-size: 13px !important;
 }
 .V_3_5 .loginBtn--facebook:before {
@@ -2894,6 +2897,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
 .V_3_5 .temp-seven-outer fb_lead_gen .or-class {
     text-align: center;
+    padding:10px !important;
 }
 .template-section .template-container.mobile .landing-page-mid.v3-fb-outer .landing-center-outer .prime-action {
     margin-bottom: 5px;
