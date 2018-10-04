@@ -562,7 +562,7 @@
     .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:before, .V_3_5.sound-cloud-new [type="radio"]:not(:checked) + label:after{margin: 0px 12px !important;}
     .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"]:checked + label:after, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:before, .V_3_5.sound-cloud-new .radio-outer-base.active [type="radio"].with-gap:checked + label:after{margin: 0px 12px !important;}
     .V_3_5 .page_2.hasbranding.result-fixed, .V_3_5 .page_2.result-fixed{width: 100%;float: left;top: 0px !important;left: 0px !important;margin-left: 0px !important;padding: 0 7% !important;margin-top: 15px;position: relative;}
-    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 12px 45px 12px 15px !important;font-size: 16px !important;float: none !important;}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 11px 45px 11px 15px !important;font-size: 13px !important;float: none !important;line-height: 19px !important;}
     .V_3_5 .loginBtn:before{width: 25px !important;height: 25px !important;top:50% !important;transform: translateY(-50%);}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before{background-position: 5px center !important;background-size: 15px !important;}
     .V_3_5 .loginBtn{padding: 11px 40px 11px 14px !important;}
@@ -645,7 +645,8 @@
 @media (min-width: 641px) and (max-width: 1024px){
     .V_3_5 .landing-text-left .landing-page-mid, .V_3_5 .landing-text-right .landing-page-mid{padding: 120px 40px !important;}
     .V_3_5 .landing-text-center .landing-page-mid {padding: 120px 0 !important;}
-    .V_3_5 .landing-text-left.no-logo  .landing-page-mid, .V_3_5 .landing-text-right.no-logo  .landing-page-mid, .V_3_5 .landing-text-center.no-logo .landing-page-mid {padding-top: 50px!important;}
+    .V_3_5 .landing-text-left.no-logo  .landing-page-mid, .V_3_5 .landing-text-right.no-logo  .landing-page-mid, .V_3_5 .landing-text-center.no-logo .landing-page-mid {padding-top: 50px!important;padding-bottom: 50px!important;}
     .V_3_5 .landing-text-left .landing-page-mid.nobranding, .V_3_5 .landing-text-right .landing-page-mid.nobranding,.V_3_5 .landing-text-center .landing-page-mid.nobranding {padding-bottom: 50px !important;}
     .V_3_5 .landing-page-mid .input-section .input-outer {min-height: 60px;}
+    .V_3_5 .landing-page-mid.isIframe{height: auto !important;}
 }
