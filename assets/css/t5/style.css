@@ -4248,6 +4248,8 @@ p > span > a {color: inherit; }
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp;
 }
+ .main-section .newLeadGenV_3_5 form{ -webkit-animation-name: none;
+    animation-name: none;}
 .t1-lead-component, .t1-ques-component{
     animation-duration: 700ms;
     -webkit-animation-name: slideInUp;
@@ -5057,3 +5059,6 @@ left: auto !important;
 .V_3_5.structure-right-align .landing-text-left .landing-page-mid .or-class{text-align: right !important}
 .V_3_5.structure-right-align .landing-text-left .landing-page-mid button.loginBtn.loginBtn--facebook{float: right;}
 .V_3_5.structure-right-align .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{right: 0 !important; left: auto !important;}
+.V_3_5 .t1-ques-head.mobile-margn {
+    margin-bottom: 0px !important;
+}
