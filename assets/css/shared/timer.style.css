@@ -1,5 +1,5 @@
 .timerView .timer { transform: scale(1.25);width: 60px;height: 60px;background: rgba(255,255,255,0.6);  border-radius: 50%;position: relative;overflow: hidden;  box-sizing: border-box;}
-.timerView {position: absolute;right: 20px;top: 20px;}
+.timerView {position: absolute;right: 40px;top: 30px;}
 .timerView .timer .coutndown-wrapper {width: 60px;height: 60px;position: absolute;clip: rect(0px, 60px, 60px, 30px);}
 .timerView .timer .coutndown-circle.coutndown-circle-left, 
 .timerView .timer .coutndown-circle.coutndown-circle-right {  width: 60px !important;height: 60px !important;border: 0px !important;  border-radius: 60px !important;box-sizing: border-box !important;position: absolute;  clip: rect(0px, 30px, 60px, 0px);}

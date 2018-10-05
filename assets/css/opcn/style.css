@@ -1573,10 +1573,11 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .checkbox-outer-base .submit-checkbox-img,
 .V_3_5.one-page-card-new .radio-outer-base button.button_textfield.submit-textbox-btn{float:left;position:relative;top:-4px;margin-right:10px;height:30px!important;animation:none!important;line-height:1;padding:0 15px!important}
 .V_3_5.one-page-card-new .checkbox-outer label.control.control--checkbox.blink-border.defaultOptionImage.active button.submit-checkbox-img.ripple-light{left:35px}
-.V_3_5.one-page-card-new .otherfield-inputbtn input.othersfield,
-.V_3_5.one-page-card-new input.othersfield{padding-top:0!important;padding-bottom:0!important; width: 100% !important;}
+.V_3_5.one-page-card-new .otherfield-inputbtn input.othersfield{padding-top:0!important;padding-bottom:0!important; width: 100% !important;}
 .V_3_5.one-page-card-new .otherfield-inputbtn button.button_textfield.submit-textbox-btn + input.othersfield, .V_3_5.one-page-card-new button.button_textfield.submit-textbox-btn + input.othersfield {
     width: calc(100% - 90px)!important; transition: unset;}
+.V_3_5.one-page-card-new input.othersfield{width: calc(100% - 36px) !important;padding-top: 0px !important;padding-bottom: 0px !important;}
+.V_3_5.one-page-card-new .checkbox-outer-base.active input.othersfield { width: calc(100% - 125px) !important;transition: unset;}
 .V_3_5 .checkbox-outer label.control.control--checkbox,
 .V_3_5 .radio-outer.radio-icon-custom label.control.control--radio{min-height:30px!important;height:auto!important;padding-left:35px!important;padding-top:0!important}
 .V_3_5 .checkbox-outer.textfield label.control.control--checkbox,
@@ -2139,8 +2140,8 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     left: inherit;
     -webkit-box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
     box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
-    -webkit-animation: sk-bounce 1s linear;
-    animation: sk-bounce 1s linear;
+    -webkit-animation: sk-bounce 600ms ease-in ;
+    animation: sk-bounce 600ms ease-in ;
     z-index: 999;
     padding-top: 120px;
     padding-left: 35px;
@@ -2267,6 +2268,34 @@ leadform .bothLeadGenOn .input-section.scrollbar {
         float: left;
         line-height: normal; 
         max-width: 38px;*/
+        text-align: left;
+        font-family: montserratregular;
+        font-weight: normal;
+    }
+    .quiz-usersCount p {
+        line-height: normal;
+        font-size: 11px;
+        font-family: montserratregular;
+        font-weight: normal;
+    }
+
+}
+@media (min-width: 680px) and (max-width: 780px) {
+
+    .quiz-usersCount {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px 0 0;
+        padding-top: 90px;
+    }
+    .quiz-usersCount i.material-icons {
+        margin: 0;
+        margin-right: 3px;
+        transform: rotate(.03deg);
+    }
+    .quiz-usersCount span {
+        display: inline-block;
+        color: #04629a;
         text-align: left;
         font-family: montserratregular;
         font-weight: normal;
