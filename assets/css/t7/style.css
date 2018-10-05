@@ -2574,7 +2574,7 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 .template-section .template-container.mobile .t1-question form{ margin-bottom: 0px;}
 
 
-.t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;}
+/* .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;} */
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0;}
 .t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
@@ -3238,3 +3238,5 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
 
 }
 /*** css toast  for quizz ***/
+.t1-landing .header-next-div.no-header-links{float: none !important;}
+.t1-landing .no-footer-links.no-header-links{padding: 0 !important;}

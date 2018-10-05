@@ -969,3 +969,13 @@ max-width: 160px !important;
      a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
      a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 }
+@media (min-width: 768px) and (max-width: 1023px){
+    .V_3_5.template-seven .common-footer-main .row_1{text-align: left;}
+    .V_3_5.template-seven .common-footer-main .row_1_links{width: auto;}
+    .V_3_5.template-seven .common-footer-main .disc-set{width: 100%;text-align: left;}
+    .V_3_5.template-seven .common-footer-main .row_1_links a{float: left;}
+    .V_3_5.template-seven .common-footer-main{display: flex;}
+    .V_3_5.template-seven .common-footer-linktext{width: 75%;}
+    .V_3_5.template-seven .common-footer-inner{width: 25%;justify-content: flex-end;}
+    .V_3_5.template-seven .common-footer-main .row_1_links a:last-child {margin-right: 0;}
+}
