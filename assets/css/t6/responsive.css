@@ -433,7 +433,7 @@
     .table-outer table { max-width: 450px;}
 }
 @media (min-width:1024px){
-    .popup-feedback .graded-msgbox{max-width: 90% !important}
+    
     .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
 }
@@ -864,13 +864,13 @@
 }
 @media (min-width:0px) and (max-width:640px) {
     .safari .header-next-div{height: auto !important;}
-    .range-slider1.char-count-slider .well1{width: calc(100% - 75px)}
-    .range-slider1 input.slider-input {
+    .range-slider1.char-count-slider.fisher .well1{width: calc(100% - 75px)}
+    .range-slider1.fisher input.slider-input {
       float: left;
       width: 50px !important;
     }
     .timerView.realtime{margin-top: 20px !important; margin-bottom: 0px !important}
-    a.view-feedback{bottom: 70px !important; left: 0; right: 0;}
+    a.view-feedback{bottom: 90px !important; left: 0; right: 0;}
     /* .t1-landing-inner.logo-resizing{padding-top: 120px} */
     .V_3_5 outcome-result .result-v2 .common-result-bot-icons.side-redo:after{border-width:75px 90px 0px 0;}  
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;line-height:20px !important}
@@ -1087,4 +1087,7 @@
     .common-result .landing-page-header {
         left: 15px !important;
     }
+}
+@media (max-width:1024px){
+    .popup-feedback .graded-msgbox{max-width: 90% !important}
 }
