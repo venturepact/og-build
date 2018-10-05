@@ -2110,9 +2110,9 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 }
 
 /*** css toast  for quizz ***/
-.common-footer-main + .quiz-usersCount {
+/* .common-footer-main + .quiz-usersCount {
     bottom: 85px;
-  }
+  } */
   .quiz-usersCount {
     /* position: fixed;
     bottom: 20px;
@@ -2140,8 +2140,8 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     left: inherit;
     -webkit-box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
     box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
-    -webkit-animation: sk-bounce 600ms ease-in ;
-    animation: sk-bounce 600ms ease-in ;
+    -webkit-animation: sk-bounce 400ms linear ;
+    animation: sk-bounce 400ms linear;
     z-index: 999;
     padding-top: 120px;
     padding-left: 35px;
@@ -2153,6 +2153,9 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     right: -150px;
     bottom: -150px;
     opacity:0;
+  }
+  50% {
+    opacity:0.2;
   }
   100% {
     border-radius: 200px 0 0 0;
@@ -2167,6 +2170,9 @@ leadform .bothLeadGenOn .input-section.scrollbar {
       bottom: -150px;
       opacity:0;
     }
+    50% {
+        opacity:0.2;
+      }
     100% {
       border-radius: 190px 0 0 0;
       opacity:1; 
@@ -2247,10 +2253,10 @@ leadform .bothLeadGenOn .input-section.scrollbar {
         padding-bottom: 6px;
         bottom: 25px;
         left: 10px; */
-        width: 200px;
-        height: 200px;
-        border-radius: 200px 0 0;
-        padding-top: 90px;
+        width: 180px;
+        height: 180px;
+        border-radius: 180px 0 0;
+        padding-top: 80px;
     }
     .quiz-usersCount i.material-icons {
         /* font-size: 18px;

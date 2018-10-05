@@ -4690,7 +4690,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}
 .V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input{font-size: 16px;line-height: 20px;border-bottom-width: 1px;}
-.V_3_5 .check-comp .checkbox-outer label, .V_3_5 .check-comp .checkbox-outer-base label{padding: 7px 22px 3px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
+.V_3_5 .check-comp .checkbox-outer label, .V_3_5 .check-comp .checkbox-outer-base label{padding: 6px 22px 3px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
 .V_3_5 .check-comp .checkbox-outer label:hover, .V_3_5 .check-comp .checkbox-outer-base label:hover { box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5); -webkit-transform: translateY(-0.25em);transform: translateY(-0.25em);}
 .V_3_5 .control--radio .control__indicator.icon-set > div, .V_3_5 .check-comp .checkbox-outer .control__indicator.check-set > div{margin-right: 8px;}
 .V_3_5 .check-comp .control__indicator i{font-size: 16px;}
@@ -4908,11 +4908,11 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 
 
 /*** css toast  for quizz ***/
-.common-footer-main + .quiz-usersCount {
+/* .common-footer-main + .quiz-usersCount {
     bottom: 85px;
-  }
-.quiz-usersCount {
-    position: fixed;
+  } */
+  .quiz-usersCount {
+    /* position: fixed;
     bottom: 20px;
     left: 35px;
     float: left;
@@ -4925,14 +4925,89 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     box-shadow: 3px 4px 12px 5px rgba(0,0,0,0.2);
     z-index: 99;
     -webkit-animation: Slidemove 500ms linear;
-    animation: Slidemove 500ms linear;
+    animation: Slidemove 500ms linear; */
+
+
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    border-radius: 250px 0 0 0;
+    right: 0;
+    left: inherit;
+    -webkit-box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
+    box-shadow: -13px -8px 30px 5px rgba(0,0,0,0.4);
+    -webkit-animation: sk-bounce 400ms linear ;
+    animation: sk-bounce 400ms linear;
+    z-index: 999;
+    padding-top: 120px;
+    padding-left: 35px;
+    text-align: center;
 }
-.quiz-usersCount.footer-visible {
+@keyframes sk-bounce {
+  0% {
+    border-radius: 250px;
+    right: -150px;
+    bottom: -150px;
+    opacity:0;
+  }
+  50% {
+    opacity:0.2;
+}
+  100% {
+    border-radius: 250px 0 0 0;
+    opacity:1; 
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+    0% {
+      border-radius: 250px;
+      right: -150px;
+      bottom: -150px;
+      opacity:0;
+    }
+    50% {
+        opacity:0.2;
+    }
+    100% {
+      border-radius: 250px 0 0 0;
+      opacity:1; 
+    }
+}
+
+@keyframes sk-bounceBack {
+    0% {
+      border-radius: 200px;
+      opacity:1;
+    }
+    100% {
+      border-radius: 200px 0 0 0;
+      right: -150px;
+      bottom: -150px;
+      opacity:0;
+    }
+  }
+  
+  @-webkit-keyframes sk-bounceBack {
+      0% {
+        border-radius: 200px 0 0 0;
+        opacity:1;
+      }
+      100% {
+        border-radius: 200px 0 0 0;
+        right: -150px;
+        bottom: -150px;
+        opacity:0;
+      }
+  }
+/* .quiz-usersCount.footer-visible {
     bottom: 85px;
 }
 .quiz-usersCount.noWelcomeScreen {
     bottom: 35px;
-}
+} */
 @-webkit-keyframes Slidemove {
     0%   {bottom: -10px; opacity: 0;}
     100%  {bottom: 35px; opacity: 1;}
@@ -4980,36 +5055,69 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 
 @media (min-width: 300px) and (max-width: 640px) {
     .quiz-usersCount {
-        width: 78px;
+        /* width: 78px;
         padding: 10px 9px;
         padding-top: 6px;
         padding-bottom: 6px;
         bottom: 25px;
-        left: 10px;
+        left: 10px; */
+        width: 180px;
+        height: 180px;
+        border-radius: 180px 0 0;
+        padding-top: 80px;
     }
     .quiz-usersCount i.material-icons {
-        font-size: 18px;
-        float: left;
+        /* font-size: 18px;
+        float: left; */
         margin: 0;
         margin-right: 3px;
-        margin-top: 2px;
+        /* margin-top: 2px; */
         transform: rotate(.03deg);
     }
     .quiz-usersCount span {
-        margin: 0;
+        /* margin: 0; */
         display: inline-block;
         color: #04629a;
-        font-size: 16px;
+        /* font-size: 16px;
         float: left;
-        line-height: normal;
-        max-width: 38px;
+        line-height: normal; 
+        max-width: 38px;*/
         text-align: left;
         font-family: montserratregular;
         font-weight: normal;
     }
     .quiz-usersCount p {
         line-height: normal;
-        font-size: 10px;
+        font-size: 11px;
+        font-family: montserratregular;
+        font-weight: normal;
+    }
+
+}
+@media (min-width: 680px) and (max-width: 780px) {
+
+    .quiz-usersCount {
+        width: 200px;
+        height: 200px;
+        border-radius: 200px 0 0;
+        padding-top: 90px;
+    }
+    .quiz-usersCount i.material-icons {
+        
+        margin: 0;
+        margin-right: 3px;
+        transform: rotate(.03deg);
+    }
+    .quiz-usersCount span {
+        display: inline-block;
+        color: #04629a;
+        text-align: left;
+        font-family: montserratregular;
+        font-weight: normal;
+    }
+    .quiz-usersCount p {
+        line-height: normal;
+        font-size: 11px;
         font-family: montserratregular;
         font-weight: normal;
     }
@@ -5022,7 +5130,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.structure-right-align button.btn.prime-action.ripple-light.back-action:before {transform: rotate(0deg);}
 .V_3_5.structure-right-align .t1-question .question-components .input-outer i{right: 0; left: auto}
 
-.landing-text-left .quiz-usersCount {
+/* .landing-text-left .quiz-usersCount {
     right: 20px !important;
     left: auto !important;
     bottom: 55px !important;
@@ -5037,7 +5145,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 }
 .landing-text-left.quiz-usersCount.landing-text-left.noPoweredby {
     bottom: 20px !important;
-}
+} */
 .V_3_5 .header-next-div{position: unset !important;}
 .V_3_5.structure-right-align .t1-question .question-components .input-outer i{right: 0; left: auto}
 
