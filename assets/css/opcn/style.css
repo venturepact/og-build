@@ -1574,7 +1574,9 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .radio-outer-base button.button_textfield.submit-textbox-btn{float:left;position:relative;top:-4px;margin-right:10px;height:30px!important;animation:none!important;line-height:1;padding:0 15px!important}
 .V_3_5.one-page-card-new .checkbox-outer label.control.control--checkbox.blink-border.defaultOptionImage.active button.submit-checkbox-img.ripple-light{left:35px}
 .V_3_5.one-page-card-new .otherfield-inputbtn input.othersfield,
-.V_3_5.one-page-card-new input.othersfield{padding-top:0!important;padding-bottom:0!important}
+.V_3_5.one-page-card-new input.othersfield{padding-top:0!important;padding-bottom:0!important; width: 100% !important;}
+.V_3_5.one-page-card-new .otherfield-inputbtn button.button_textfield.submit-textbox-btn + input.othersfield, .V_3_5.one-page-card-new button.button_textfield.submit-textbox-btn + input.othersfield {
+    width: calc(100% - 90px)!important; transition: unset;}
 .V_3_5 .checkbox-outer label.control.control--checkbox,
 .V_3_5 .radio-outer.radio-icon-custom label.control.control--radio{min-height:30px!important;height:auto!important;padding-left:35px!important;padding-top:0!important}
 .V_3_5 .checkbox-outer.textfield label.control.control--checkbox,

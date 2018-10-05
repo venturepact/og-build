@@ -18,7 +18,7 @@
 @media (max-width:640px){
   .timerView .timer{transform: scale(0.85);}
   .timerView {position: relative;right: auto;top: 20px;text-align: center;left: auto;    display: flex;    justify-content: center;    margin-bottom: 20px;}
-  .template-eight .timerView {position: absolute;right: 20px;margin: 0;}
+  .template-eight .timerView {position: absolute;right: 10px;margin: 0; top:10px}
   /* .timerView .timer .coutndown-wrapper-time {color: #666 !important;font-size: 12px !important;background: #fff;border-radius: 50%;left: 50%;top: 50%;transform: translate(-50% , -50%); width: 35px !important; height:35px !important; line-height: 35px !important;}
   .timerView .timer {width: 45px;height: 45px;}
   .timerView {position: relative;right: auto;top: 20px;text-align: center;left: auto;    display: flex;    justify-content: center;    margin-bottom: 20px;}

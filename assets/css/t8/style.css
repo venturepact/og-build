@@ -72,7 +72,7 @@ ul, li {
 .t1-landing .eight-inner-wrapper{    background-size: cover;    background-repeat: no-repeat;    background-position: top center;}
 .eight-inner-wrapper , .eight-inner-wrapper.header-next-div.no-header-links, .eight-inner-wrapper.no-header-links.no-footer-links{min-height: 480px;height: auto;transition:height 0.5s; border:12px solid transparent; display:table !important; position:relative; width:100%; float:left; box-shadow: 0px 0px 10px rgba(0,0,0,0.25); padding-left:0px; padding-right:0px}
 .t1-landing-inner{    display: table-cell;    vertical-align: middle;    height: 100%;    padding: 80px 15px 50px; }
-.template-eight  .t1-landing .no-footer-links .t1-landing-inner{padding-top: 80px  !important;    padding-bottom: 50px !important;}
+.template-eight  .t1-landing .no-footer-links .t1-landing-inner{padding-top: 50px  !important;    padding-bottom: 50px !important;}
 .eight-inner-wrapper.no-header-links.no-footer-links{margin: 20px 0 70px}
 .main-heading h1{max-width: 380px;  margin: 0px auto 10px !important; }
 .main-heading h1 p{margin-bottom: 0px}
@@ -1725,7 +1725,7 @@ path.highcharts-plot-band {
   
     width: 100%;
     display: table;
-    padding: 80px 15px 50px;
+    padding: 50px 15px 50px;
     min-height: 480px;
     overflow: visible;
 }
@@ -2475,3 +2475,6 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
   
 } */
 .t1-landing-inner{text-align: center}
+
+
+.template-eight .overlay-inner-ques.timerOn{padding-top: 100px !important}
