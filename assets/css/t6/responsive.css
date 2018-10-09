@@ -2,6 +2,12 @@
     .isIframe {height: 100% !important;}
 }
 @media (min-width:0px) and (max-width:767px) {
+    .popup-feedback .graded-msgbox .incorrect span ,  .popup-feedback .graded-msgbox .correct span{margin-bottom: 5px !important;}
+    .V_3_5 .popup-feedback .graded-msgbox{padding: 10px 0  !important}
+    .scrol-part {padding: 10px 20px !important;}
+    .popup-feedback span.close {right: 10px;top: 10px;z-index: 99999;}
+    .popup-feedback span.close i{color: #000 !important; font-size: 20px !important}
+    .popup-feedback .graded-msgbox p {font-size: 14px;line-height: 20px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
@@ -147,7 +153,7 @@
     .recommendation-outer .redo-link {position:absolute; right:0px;bottom: 0px;}
     .pull-text-right {padding-left: 0px; padding-top:40px;}
     .t1-landing .t1-landing-inner{ padding-bottom: 85px; padding-top: 85px;}
-    .t1-landing-inner{   padding-bottom: 35px; padding-top: 15px; box-shadow: none;}
+    .t1-landing-inner{   padding-bottom: 60px; padding-top: 15px; box-shadow: none;}
     .has-brand .t1-landing-inner{padding-bottom: 90px;}
     .result-branding .powered-by{   float: none;    text-align: center;bottom: 1px; }
     .result-branding .powered-by span{     float: none;  font-size: 10px;    white-space: nowrap;}
@@ -240,7 +246,7 @@
     .gradedquiz-main visuals.visual-outr {        float: left;        width: 100%;    }
     .graded-msgbox-outr{ width: 100%;}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer{ max-width: 100%; width: 100%; margin: 0 auto; float: none;}
-    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{ width: 100%; padding-bottom: 10px; padding-top: 5px; max-width: 100%; margin: 0 auto;}
+    .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table{ width: 100% !important; padding-bottom: 10px; padding-top: 5px; max-width: 100%; margin: 0 auto;}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table .table-outer table thead tr th{ padding:12px !important;}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table{ width: 90%; margin: 16px; margin-bottom: 0; }
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-graph { margin: 16px; width: 90%; margin-top: 0px;}
@@ -332,11 +338,11 @@
     .V_3_5 .control-ver2 .pic-selector span.abhi {font-size: 14px !important;min-height: auto;margin-left: 0;line-height: 18px !important;margin-top: 15px;}
     .range-slider1.custom-slider1 ul{ display: none;}
     .t1-landing.no-logo .no-footer-links .t1-landing-inner {padding-top: 30px !important;padding-bottom: 70px !important;}
-    .custom-pager { bottom: 40px; }
+    .custom-pager { bottom: 50px; }
     .t1-slider-nav.slidr4 , .t1-slider-nav.slidr2 , .t1-slider-nav.lead-done-button{  margin-left: 0px; left: auto !important; right: 10px !important;}
     .t1-slider-nav.slidr3 , .t1-slider-nav.slidr1 , .t1-slider-nav.slidr5{    margin-left: 0px; right: auto !important; left: 10px !important;} 
-    .t1-slider-nav {  bottom: 30px; right: 15px; -webkit-transform: translateX(0)!important;  transform: translateX(0)!important; }
-    .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
+    .t1-slider-nav {  bottom: 35px; right: 15px; -webkit-transform: translateX(0)!important;  transform: translateX(0)!important; }
+    .result-branding .stickyfooter.lightSticky {    bottom: 25px;      width: 100%; left:0}
     .t1-slider-nav.slidr3{    margin-left: 0;   right: auto!important;   left: 10px!important;}
     /* gdpr popup css */
     .gdpr-popup{ padding: 15px 20px;}
@@ -427,6 +433,7 @@
     .table-outer table { max-width: 450px;}
 }
 @media (min-width:1024px){
+    
     .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
 }
@@ -856,6 +863,16 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .safari .header-next-div{height: auto !important;}
+    .range-slider1.char-count-slider.fisher .well1{width: calc(100% - 75px)}
+    .range-slider1.fisher input.slider-input {
+      float: left;
+      width: 50px !important;
+    }
+    .timerView.realtime{margin-top: 20px !important; margin-bottom: 0px !important}
+    a.view-feedback{bottom: 85px !important; left: 0; right: 0;}
+    /* .t1-landing-inner.logo-resizing{padding-top: 120px} */
+    .V_3_5 outcome-result .result-v2 .common-result-bot-icons.side-redo:after{border-width:75px 90px 0px 0;}  
     .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;line-height:20px !important}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo .crb-left{right: 4px !important;}
     .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
@@ -943,12 +960,12 @@
     .t1-ques-component input{padding: 10px 15px; min-height: 42px; margin-bottom: 0px;}
     .template-six .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {margin-top: 0px;min-height: auto;padding-bottom: 0;    }
     .t1-slider-nav a i {    font-size: 24px;}
-    .custom-pager {    bottom: 40px;    }
+    .custom-pager {    bottom: 50px;    }
     .radio-outer.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
     .radio-outer-base.radio-icon-custom.ripple-dark, .ripple-dark.checkbox-outer , .ripple-dark.pic-selector  {   width: 200px !important;}
     .t1-ques-component .input-section .input-outer span{top:48px !important;}
     .bGImage{height: 150px; padding-top: 0}
-    .result-branding .stickyfooter.lightSticky {    bottom: 15px;      width: 100%; left:0}
+    .result-branding .stickyfooter.lightSticky {    bottom: 20px;      width: 100%; left:0}
     .landing-footer-outer .lightSticky {    bottom: 5px;    width: 100%;}
     .control__indicator.check-set .done-icon i{font-size: 24px !important}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    margin-top: 14px;}
@@ -959,7 +976,7 @@
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
     .graded-msgbox span{font-size: 12px;}
     .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
-    .t1-slider-nav{bottom: 30px; right: 15px; transform: translateX(0) !important}
+    .t1-slider-nav{bottom: 35px; right: 15px; transform: translateX(0) !important}
     .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px;  margin: 0px 0px 15px 0}
     .graded-tick .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 90px;     }
     .graded-cross .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 90px;     }
@@ -1000,7 +1017,8 @@
     /* .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook:before {top: 10px !important;} */
      /*********************** leadfrom after question*********************/
      .V_3_5 .question-components .newLeadGenV_3_5 .input-outer input {padding: 0 20px 0 40px;margin: 0 !important;}
-}
+     .V_3_5.template-six .result-v2 .common-result-bot-icons.side-redo .crb-left{bottom: 5px !important;right: 15px !important;}
+    }
 
 @media (min-width:768px) and (max-width:1024px) {
     .structure-right-align .landing-page-mid [type="checkbox"].filled-in:checked + label.leadform-checkbox:before { right: 10px; }
@@ -1040,6 +1058,7 @@
 
 
 @media (max-width:640px){
+    .question-components .input-field textarea {font-size: 14px !important}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;margin-top: 10px;line-height: 22px;}
     .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
     .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
@@ -1068,4 +1087,7 @@
     .common-result .landing-page-header {
         left: 15px !important;
     }
+}
+@media (max-width:1024px){
+    .popup-feedback .graded-msgbox{max-width: 90% !important}
 }

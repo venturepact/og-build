@@ -831,7 +831,7 @@
     a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
     a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
-    .or-class{font-size: 12px;}
+    .or-class{font-size: 12px;line-height: 16px;}
     .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px !important;}
     .loginBtn{
         padding: 9px 35px 9px 15px !important;
@@ -847,7 +847,9 @@
     }
     .v3-fb-outer .t1-landing-leadform button.prime-action{
         padding: 10px 30px !important;
+        margin-bottom: 0px;
     }
+    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}    
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -855,6 +857,7 @@
     }
     .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
     .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
+    .input-field textarea{font-size: 16px !important;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     /*.landing-page-header a img {
