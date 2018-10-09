@@ -1221,7 +1221,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .radio-outer-base.active .control{background: transparent;border: none !important;}
 .V_3_5 .question-components {margin-left: 0;padding-bottom: 30px;padding-left: 35px;}
 .V_3_5 .section-control{padding-left:0px;}
-.V_3_5 .questions .section-head span div {width: 100%;float: left; font-size: 18px;line-height: 24px;color:#313131;}
+.V_3_5 .questions .section-head span div {width: 100%;float: left; font-size: 18px;line-height: 26px;color:#313131;}
 .V_3_5.sound-cloud-new .checkbox-outer.active .control{background: none !important;border: none !important;margin-left: -14px !important;}
 .V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:before {background: none;border: none !important;top: 2px;content: '';}
 .V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:after {background: none !important;}
@@ -1273,7 +1273,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .page-logo{margin-bottom: 20px;}
 .V_3_5 .questions{padding-left: 10%;}
 .V_3_5 .sec-divison {width: 35px;float: left;border-radius: 1px;position: absolute;left: -40px;top: 23%;display: none;}
-.V_3_5 .question-components .check-comp label{font-size: 16px;min-height: 20px;line-height: 20px;margin-top: 0 !important;padding-left: 40px !important;}
+.V_3_5 .question-components .check-comp label{font-size: 16px;min-height: 20px;line-height: 22px;margin-top: 0 !important;padding-left: 40px !important;}
 .V_3_5 .custom-block.rating-custom .rating-inner i{padding: 1px !important;}
 .V_3_5 .t2haslogo .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 440px);padding: 0 25px;margin-bottom: 20px;}
 .V_3_5 .t2haslogo .lead-not-in-result .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 470px);padding: 0 25px;}
@@ -1392,7 +1392,8 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     }
   }
 .overflow-hide{overflow: hidden !important;}
-.V_3_5 .overlay-outer{animation-duration: 700ms;-webkit-animation-name: slideInUp; animation-name: slideInUp;}
+/* .V_3_5 .overlay-outer{animation-duration: 700ms;-webkit-animation-name: slideInUp; animation-name: slideInUp;} */
+.V_3_5 .page_1,.V_3_5 .page_2{animation-duration: 700ms;-webkit-animation-name: slideInUp; animation-name: slideInUp;}
 .V_3_5 .new-lead-common1 .result-mid.result-comm.result-scrolling{max-height: calc(100vh - 425px);padding: 0 25px;margin-bottom: 10px;padding-left:0px;}
 .V_3_5 .share-heading{font-size: 16px;margin-top: 10px;text-transform: none;color: #313131;}
 .V_3_5 .help-text p {font-size: 14px !important;line-height: 20px !important;}
