@@ -966,6 +966,27 @@ input{-webkit-transform:translate3d(0,0,0)}
 .loading{text-align:center}
 .loading>div{width:2px;height:2px;margin-right:1px;background-color:#fff;border-radius:100%;display:inline-block;-webkit-animation:sk-bouncedelay 1.4s infinite ease-in-out both;animation:sk-bouncedelay 1.4s infinite ease-in-out both}
 .loading>div.bounce1{font-size:5px}
+.loading>div {
+    float: right;
+    position: relative;
+    top: -9px;
+    right: -20px;
+    margin-left: 2px;
+}
+.leadform_question a.loading>div {
+    float: right;
+    position: relative;
+    top: -6px;
+    right: -20px;
+    margin-left: 2px;
+}
+.leadAsPopup a.loading>div {
+    float: right;
+    position: relative;
+    top: -9px;
+    right: -20px;
+    margin-left: 2px;
+}
 .loading .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}
 .loading .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}
 @-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}
@@ -2525,7 +2546,7 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 .graded-msgbox-outr.popup-feedback::after{position: fixed;left: 0; right: 0; bottom: 0; left: 0}
 .popup-feedback {top: 0;bottom: 0;z-index: 99999;display: block; height: 100vh; padding:20px;transform: none;left: 0;right: 0;max-width: 100%;}
 .popup-feedback .graded-msgbox {background: #f3f4f5;padding: 10px 0 !important;max-width: 600px !important;width: 100% !important;border-radius: 5px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); min-height: 250px;}
-.popup-feedback .graded-msgbox p {color: #666;float: left;width: 100%;text-align: left;font-size: 16px;line-height: 24px; white-space: normal; word-wrap: break-word; word-break: break-all}
+.popup-feedback .graded-msgbox p {color: #666;float: left;width: 100%;text-align: left;font-size: 16px;line-height: 24px; white-space: normal; word-wrap: break-word;}
 .feedback-img {float: left;width: 100%;margin-bottom: 20px;}
 .popup-feedback .graded-msgbox span{color: #666;}
 .feedback-img img {height: 210px;object-fit: cover;float: left;width: 100%;}
