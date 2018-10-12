@@ -1643,6 +1643,26 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 
 
 }
+.V_3_5 button.ripple-light span::before  ,
+.V_3_5 .leadform-btn.ripple-light span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;    text-transform: none;}
+.V_3_5 button.ripple-light span ,
+.V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block}
+.V_3_5 button.ripple-light:hover span ,
+.V_3_5 .leadform-btn.ripple-light:hover span {-webkit-transform: translate3d(-10px, 0, 0);transform: translate3d(-10px, 0, 0);}
+.V_3_5 button.ripple-light:hover span::before ,
+.V_3_5 .leadform-btn.ripple-light:hover span::before ,
+.V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img:hover span::before {opacity: 1;right: -25px;transition: all 300ms ease-out;will-change: right, opacity;}
+.V_3_5 .t1-result-leadform  .lead-popup .leadform-btn.ripple-light span::before{color:#fff  !important;}
+.V_3_5 .newLeadGenV_3_5 a.ripple-light.submit-checkbox-img span::before {content: '';background-image: url(https://dlvkyia8i4zmz.cloudfront.net/OWKFnmF9ROG3e5gWs0Qa_arrow.svg);width: 14px;height: 10px;z-index: 1000;position: absolute;background-repeat: no-repeat;opacity:0;transform: none;top: auto;}
+.V_3_5.one-page-card-new .submit-checkbox-img ,
+.V_3_5.one-page-card-new .submit-checkbox , 
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn ,
+.V_3_5.one-page-card-new .submit-textbox-btnresp{opacity: 1; transition: 0.5s}
+.V_3_5.one-page-card-new .submit-checkbox-img:hover ,
+.V_3_5.one-page-card-new .submit-checkbox:hover , 
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn:hover ,
+.V_3_5.one-page-card-new .submit-textbox-btnresp:hover{opacity: 0.8; transition: 0.5s}
+.V_3_5.one-page-card-new .lead-popup .submit-checkbox-img {opacity: 1 !important;}
 @media (min-width:420px){
 .V_3_5 button.ripple-light span::before  ,
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;     text-transform: none;}
