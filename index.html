@@ -38,4 +38,13 @@
     // ga('require', 'linker');
     // ga('devteam.linker:autoLink', [parser.hostname]);
     // ga('markettingteam.linker:autoLink', [parser.hostname]);
-    // ga('markettingteam.send', 'pageview');</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script><script async type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8" async defer></script>--><div id="dynamicScripts"></div><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/inline.bundle.js"></script><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/polyfills.bundle.js"></script><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/main.bundle.js"></script></body></html>
+    // ga('markettingteam.send', 'pageview');
+    // ours
+    var parser = document.createElement('a');
+    parser.href = window.location.href;
+    // let gap = (window.location.href.toLowerCase().indexOf("outgrow.co") >= 0 || window.location.href.toLowerCase().indexOf("outgrow.us") >= 0) ? "UA-85018378-1" : "UA-82638968-1";
+    let gad = (window.location.href.toLowerCase().indexOf("outgrow.co") >= 0 || window.location.href.toLowerCase().indexOf("outgrow.us") >= 0) ? "UA-82253758-1" : "UA-92581866-1";
+    ga('create', gad, 'auto', 'devteam', { 'allowLinker': true });
+    ga('require', 'linker');
+    ga('devteam.linker:autoLink', [parser.hostname]);
+    ga('devteam.send', 'pageview');</script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script><script async type="text/javascript" src="//static.filestackapi.com/v3/filestack.js"></script><!--<script type="text/javascript" src="//platform.twitter.com/widgets.js" charset="utf-8" async defer></script>--><div id="dynamicScripts"></div><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/inline.bundle.js"></script><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/polyfills.bundle.js"></script><script type="text/javascript" src="//dyv6f9ner1ir9.cloudfront.net/main.bundle.js"></script></body></html>
