@@ -989,6 +989,14 @@ input{-webkit-transform:translate3d(0,0,0)}
 }
 .loading .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}
 .loading .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}
+.V_3_5 .landing-page-mid leadform button.prime-action.loading span {
+    display: block;
+}
+.ecom-card .ecom-front .common-leadform-top.t1-result-leadform a.btn.prime-action.leadform-btn.loading div {
+    position: relative;
+    top: 9px;
+    left: -65px;
+}
 @-webkit-keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0)}
 40%{-webkit-transform:scale(1)}
 }
