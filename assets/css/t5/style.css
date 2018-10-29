@@ -3828,9 +3828,8 @@
 
 /* Opinion scale css */
 #build .opinon-scale-custom .check-comp{border-spacing: 9px 0;margin:0 -5px;}
-.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;border-spacing: 12px 0;margin:0 -10px;}
-.opinon-scale-custom .radio-outer { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
-.opinon-scale-custom .radio-outer-base { border: none; width: auto; float: none; margin-bottom: 2px;  margin-top: -3px; margin-left: -1px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: table-cell;border: 1px solid #464646;}
+.opinon-scale-custom .check-comp { position: relative; display: flex; width:calc(100% + 10px); margin:0 -5px;}
+.opinon-scale-custom .radio-outer ,.opinon-scale-custom .radio-outer-base { border: none; width: auto; float: none; margin: 0 5px;  padding: 1px; box-shadow: 0 0 0 1px #f7f6f6; outline: none; display: block; flex:1;border: 1px solid #464646;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
 .opinon-scale-custom label.control.control--radio { padding: 4px !important;border:none;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
@@ -4108,7 +4107,7 @@
 
 .structure-right-align .textfield.checkbox-outer-base label.control--checkbox {    float: right;}
 .no-footer-links .landing-right{height: calc(100% - 70px)}
-.no-footer-links.no-header-links .landing-right{height: 100%}
+.no-footer-links.no-header-links .landing-right{height: calc(100% - 25px)}
 .structure-right-align  .graded-msgbox{float: right; padding-right:25px;padding-left:0px }
 .structure-right-align  .graded-msgbox::before{right: 0; left: auto}
 .structure-right-align  label.control .img-graded-box i{margin-right: 0px !important; margin-left: 0px;}
