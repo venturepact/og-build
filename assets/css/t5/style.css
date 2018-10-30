@@ -4689,7 +4689,8 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}
 .V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input{font-size: 16px;line-height: 20px;border-bottom-width: 1px;}
-.V_3_5 .check-comp .checkbox-outer label, .V_3_5 .check-comp .checkbox-outer-base label{padding: 6px 22px 3px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
+.V_3_5 .check-comp .checkbox-outer label{padding: 10px 22px 6px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
+.V_3_5 .check-comp .checkbox-outer-base label{padding: 10px 22px 7px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
 .V_3_5 .check-comp .checkbox-outer label:hover, .V_3_5 .check-comp .checkbox-outer-base label:hover { box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5); -webkit-transform: translateY(-0.25em);transform: translateY(-0.25em);}
 .V_3_5 .control--radio .control__indicator.icon-set > div, .V_3_5 .check-comp .checkbox-outer .control__indicator.check-set > div{margin-right: 8px;}
 .V_3_5 .check-comp .control__indicator i{font-size: 16px;}
@@ -4703,7 +4704,8 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .custom-block.rating-custom .rating-inner i.selected { padding: 1px;margin-right: 5px;}
 .V_3_5.template-five .custom-block.rating-custom .rating-inner i.hovering { padding: 1px;margin-right: 5px;}
 .V_3_5.template-five .custom-block.rating-custom .rating-inner i{margin-right: 5px}
-.V_3_5 .radio-outer:not(.pic-selector) label, .V_3_5 .radio-outer-base:not(.pic-selector) label {font-size: 14px !important;padding: 7px 22px 3px; border-width: 2px;transition: transform 0.5s ease;}
+.V_3_5 .radio-outer:not(.pic-selector) label{font-size: 14px !important;padding: 10px 22px 6px; border-width: 2px;transition: transform 0.5s ease;}
+.V_3_5 .radio-outer-base:not(.pic-selector) label {font-size: 14px !important;padding: 10px 22px 7px; border-width: 2px;transition: transform 0.5s ease;}
 .V_3_5 .radio-outer:not(.pic-selector) label:hover, .V_3_5 .radio-outer-base:not(.pic-selector) label:hover { box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5); -webkit-transform: translateY(-0.25em); transform: translateY(-0.25em);}
 .V_3_5 .opinon-scale-custom .radio-outer:not(.pic-selector) label:hover, .V_3_5 .opinon-scale-custom .radio-outer-base:not(.pic-selector) label:hover {box-shadow: none !important;transform: none;}
 .V_3_5 .radio-outer-base:not(.pic-selector), .V_3_5 .checkbox-outer-base, .V_3_5 .checkbox-outer{margin-right: 10px;}
