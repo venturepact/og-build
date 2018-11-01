@@ -1524,6 +1524,10 @@
     .V_3_5 .common-header-main + .header-next-div .timerView {
         top: 120px;
     }
+    .timerView {
+        position: absolute !important;
+        right: 30px !important;
+    }
 }
 /* @media (min-width:641px) and (max-width:995px){
     .inline-temp-new .common-result.result-v2 .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip{left:50% !important;}

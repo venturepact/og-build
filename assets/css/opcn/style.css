@@ -2573,7 +2573,7 @@ leadform .bothLeadGenOn .input-section.scrollbar {
 .popup-feedback::after {background: #000;opacity: 0.75;content: '';position: absolute;    left: 0px;right: 0px;bottom: 0px;top: 0px;z-index: 100;}
 .graded-msgbox-outr.popup-feedback::after{position: fixed;left: 0; right: 0; bottom: 0; left: 0}
 .popup-feedback {top: 0;bottom: 0;z-index: 99999;display: block; height: 100vh; padding:20px;transform: none;left: 0;right: 0;max-width: 100%;}
-.popup-feedback .graded-msgbox {background: #f3f4f5;padding: 10px 0 !important;max-width: 600px !important;width: 100% !important;border-radius: 5px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); min-height: 250px;}
+.popup-feedback .graded-msgbox {background: #f3f4f5;padding: 10px 0 !important;max-width: 600px !important;width: 100% !important;border-radius: 5px; box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4); min-height: 250px; align-items: center; display: flex}
 .popup-feedback .graded-msgbox p {color: #666;float: left;width: 100%;text-align: left;font-size: 16px;line-height: 24px; white-space: normal; word-wrap: break-word;}
 .feedback-img {float: left;width: 100%;margin-bottom: 20px;}
 .popup-feedback .graded-msgbox span{color: #666;}
