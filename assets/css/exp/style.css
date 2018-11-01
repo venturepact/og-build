@@ -3900,7 +3900,7 @@ visuals.visual-outr span.graph-title {
     content: '';
 }
 .graph-icon .vis-outer:hover + .help-text {
-    display: block !important;
+    display: none !important;
     z-index: 999;
 }
 .info-icon .help-outer {

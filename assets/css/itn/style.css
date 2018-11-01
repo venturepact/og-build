@@ -595,16 +595,7 @@ a:focus {
     width: 100%;
 }
 .no-footer-links .inline-tablecell {
-    height: calc(100vh - 75px);
-}
-.no-header-links.no-footer-links .inline-tablecell {
-    height: 100vh;
-}
-.header-next-div.no-header-links .inline-tablecell {
-    height: calc(100vh - 75px);
-}
-.header-next-div .inline-tablecell {
-    height: calc(100vh - 75px);
+    height: 80vh;
 }
 .t1-ques-component .input-section .input-outer {
     margin-bottom: 20px;
