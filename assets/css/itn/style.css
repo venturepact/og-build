@@ -594,6 +594,9 @@ a:focus {
     display: table;
     width: 100%;
 }
+.no-footer-links .inline-tablecell {
+    height: 80vh;
+}
 .t1-ques-component .input-section .input-outer {
     margin-bottom: 20px;
     position: relative;
