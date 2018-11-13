@@ -521,6 +521,8 @@
     .overlay-outer {min-height: 100vh;}
     .range-slider.char-count-slider .irs-min, .range-slider.char-count-slider .irs-max {        font-size: 12px !important;        top: -10px !important;    }
     .range-slider.char-count-slider .irs-single {        font-size: 12px !important;        top: -10px;    }
+    .V_3_5 .overlay-outer, .V_3_5 .has-background-tint {min-height: 100%;}
+    .V_3_5 .questions{margin-bottom: 45px;}
 }
 @media (min-width:768px) and (max-width:1024px){
    .custom-block.rating-custom .rating-inner i {font-size: 23px !important;margin-right: 5px !important;padding: 4px !important;}
