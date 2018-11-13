@@ -849,7 +849,8 @@
         padding: 10px 30px !important;
         margin-bottom: 0px;
     }
-    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}    
+    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}  
+    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{visibility: hidden !important;}  
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -1287,6 +1288,9 @@
     .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
     .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
     .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
+    .t1-result-leadform .new-socialBtn.btn-plus:hover .help-checktip{min-width: 76px;left: -32px;}
+    .t1-result-leadform .new-socialBtn.btn-plus .help-checktip::before {left: 70%;}
+    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{padding: 8px;}
 
 
     /* gdpr popup css */
