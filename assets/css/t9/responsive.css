@@ -1,0 +1,65 @@
+@media (min-width:641px) and (max-width:995px){
+    section.landing-page-mid{width:50%;margin-left:50%;padding:40px 25px 100px;float:left}
+    .banner-img{width:50%}
+    .main-heading h1{font-size:22px;line-height:1.4}
+    .main-heading h1 p{font-size:22px;padding:12px 30px}
+    section.landing-page-mid>div , .t1-landing leadform form .text-center{max-width:90%}
+    .btn.prime-action{font-size:18px;padding:14px 25px 11px;line-height:24px}
+    .Leadform,form#new_form{max-width:100%}
+    .custom-block .input-field input[type=text],.leadform_question form#leadform_question .input-outer input,input.othersfield{font-size:22px;height:36px}
+    .leadform_question #leadform_question .input-outer,.questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{padding:12px 30px;font-size:22px}
+    .t1-landing leadform form .input-section .input-outer{padding:12px 30px;}
+    .checkbox-outer label,.checkbox-outer-base label,.radio-outer label{padding:12px 30px 12px 55px;border-radius:50px;font-size:22px}
+    .checkbox-outer-base label,.radio-outer label.no-icon{padding-left:30px!important}
+    .t1-ques-component .go-btn{width:55px;height:55px;font-size:22px;line-height:55px}
+    .checkbox-outer .control__indicator.check-set i,.radio-outer label .control__indicator.icon-set i{font-size:24px}
+    .input-group.date input.form-control{background:0 0!important;font-size:22px;width:260px}
+    .checkbox-outer .control__indicator.check-set,.radio-outer label .control__indicator.icon-set{position:absolute;top:8px;left:22px}
+    fb_lead_gen .fb-outer .loginBtn{font-size:18px}
+    .t1-landing leadform form .input-section .input-outer input{    height: auto;font-size: 18px;padding-bottom: 3px;padding-left: 25px;}
+    .t1-landing leadform form .input-section .input-outer i {top: 17px;left: 30px;font-size: 18px;}
+}
+@media(max-width:640px){
+    .t1-question .leadform_question form#leadform_question .input-outer i{position:absolute;left:0;top:4px}
+    .t1-question .leadform_question form#leadform_question .input-outer input{padding-left:25px}
+    .questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{max-width:90%}
+    .spinner>span{width:10px;height:10px}
+    .leadform_question #leadform_question .input-outer,.questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{padding:12px 22px;font-size:18px;line-height:1.3}
+    fb_lead_gen .fb-outer .loginBtn{padding:13px 25px 11px 40px;font-size:16px;line-height:20px}
+    fb_lead_gen .fb-outer .loginBtn:before{width:35px;background-position:15px center;background-size:14px}
+    .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox,.t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox{padding-left:30px!important}
+    .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox::before,.t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox::before{width:20px;height:20px;top:0}
+    .t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after,.t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after{width:20px;font-size:16px;padding-left:0;top:0;left:2px}
+    .t1-landing leadform form .input-section .input-outer{padding:15px 25px;font-size:16px}
+    .custom-block .input-field input[type=text],.t1-landing leadform form .input-section .input-outer input,input.othersfield{height:25px;font-size:16px;padding-bottom:7px;padding-left:25px;max-width:auto}
+    .leadform_question form#leadform_question .input-outer input{height:25px;font-size:16px;padding-bottom:7px;padding-left:25px;max-width:155px}
+    form#new_form,section.landing-page-mid>div{max-width:100%}
+    .t1-landing leadform form .input-section .input-outer i{position:absolute;top:15px;left:25px;font-size:18px}
+    .selectize-control.single .selectize-input .item,.selectize-control.single .selectize-input input{padding:0 0 5px;font-size:16px}
+    .main-heading h1{font-size:18px;line-height:1.3;text-align:left}
+    .main-heading h1 p{font-size:18px;padding:12px 22px}
+    .stickyfooter.lightSticky{float:none;display:inline-block;position:relative}
+    section.landing-footer-outer{position:absolute;bottom:0;padding:0;text-align:center;float:left;width:100%}
+    button.back-action.back-btn i{font-size:28px}
+    .t1-question{padding:10vh 10px!important}
+    .banner-img{width:100%;float:left;height:45vh;position:relative}
+    section.landing-page-mid{margin-left:0;padding:30px 20px 60px;float:left;width:100%;text-align:center}
+    .btn.prime-action{float:none;font-size:16px;padding:12px 22px 11px;line-height:22px;display:inline-block}
+    .checkbox-outer,.checkbox-outer-base,.radio-outer{margin-right:10px;margin-bottom:10px;float:none}
+    .checkbox-outer label,.checkbox-outer-base label,.radio-outer label{padding:12px 22px 12px 40px!important;font-size:18px;line-height:1.3;cursor:pointer}
+    .t1-ques-component .go-btn{width:45px;height:45px;margin-bottom:25px;font-size:14px;line-height:45px;margin-left:10px}
+    .t1-ques-component .go-btn.active{padding:12px 0}
+    .t1-ques-component .go-btn.active i{font-size:22px;display:inline-block}
+    .checkbox-outer-base label,.radio-outer label.no-icon{padding-left:22px!important}
+    .checkbox-outer .control__indicator.check-set i,.radio-outer label .control__indicator.icon-set i{font-size:16px}
+    .outer-section{display:block;vertical-align:middle;height:100%;float:left}
+    .custom-block .input-field input[type=text]{max-width:auto;margin-left:10px;height:30px;font-size:16px;padding-left:0}
+    .checkbox-outer .control__indicator.check-set,.radio-outer label .control__indicator.icon-set{top:8px;left:15px}
+    .rating-inner i{font-size:18px}
+    .input-group.date input.form-control{font-size:14px;width:160px;height:30px;margin-left:10px;padding:0!important}
+    .input-group.date span.input-group-addon{width:22px}
+    .input-group.date span.input-group-addon i{font-size:14px}
+    .table-condensed>tbody>tr>td,.table-condensed>tbody>tr>th,.table-condensed>tfoot>tr>td,.table-condensed>tfoot>tr>th,.table-condensed>thead>tr>td,.table-condensed>thead>tr>th{padding:2px;font-size:10px}
+    .bootstrap-datetimepicker-widget.dropdown-menu{margin:2px 0;padding:4px;width:auto!important}
+    .V_3_5.template-nine .result-v2 .common-result-bot-icons.side-redo .crb-left{bottom:3px!important;right:15px!important}
+}
