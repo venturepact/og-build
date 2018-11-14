@@ -18,7 +18,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             b = ["moz", "webkit", "o", "ms"];
         for (a = 0; a < b.length && !O; a += 1) {
             O = window[b[a] + "RequestAnimationFrame"];
-        } O || h("setup", "RequestAnimationFrame not supported");
+        }O || h("setup", "RequestAnimationFrame not supported");
     }
 
     function e(a) {
@@ -87,7 +87,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
                             b = !0;
                             break;
                         }
-                    } return b;
+                    }return b;
                 }
 
                 function b() {
@@ -152,7 +152,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             function a(a, b) {
                 function c() {
                     Q[f] ? A(Q[f].iframe, f) : d();
-                } ["scroll", "resize"].forEach(function (d) {
+                }["scroll", "resize"].forEach(function (d) {
                     h(f, a + d + " listener for sendPageInfo"), b(window, d, c);
                 });
             }
@@ -507,13 +507,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         function c() {
             var a = document.querySelector("body"),
                 c = {
-                    attributes: !0,
-                    attributeOldValue: !1,
-                    characterData: !0,
-                    characterDataOldValue: !1,
-                    childList: !0,
-                    subtree: !0
-                };
+                attributes: !0,
+                attributeOldValue: !1,
+                characterData: !0,
+                characterDataOldValue: !1,
+                childList: !0,
+                subtree: !0
+            };
             new d(b).observe(a, c);
         }
         var d = window.MutationObserver || window.WebKitMutationObserver;
@@ -601,48 +601,48 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             N = null,
             O = window.requestAnimationFrame,
             P = {
-                max: 1,
-                scroll: 1,
-                bodyScroll: 1,
-                documentElementScroll: 1
-            },
+            max: 1,
+            scroll: 1,
+            bodyScroll: 1,
+            documentElementScroll: 1
+        },
             Q = {},
             R = null,
             S = "Host Page",
             T = {
-                autoResize: !0,
-                bodyBackground: null,
-                bodyMargin: null,
-                bodyMarginV1: 8,
-                bodyPadding: null,
-                checkOrigin: !0,
-                inPageLinks: !1,
-                enablePublicMethods: !0,
-                heightCalculationMethod: "bodyOffset",
-                id: "iFrameResizer",
-                interval: 32,
-                log: !1,
-                maxHeight: 1 / 0,
-                maxWidth: 1 / 0,
-                minHeight: 0,
-                minWidth: 0,
-                resizeFrom: "parent",
-                scrolling: !1,
-                sizeHeight: !0,
-                sizeWidth: !1,
-                warningTimeout: 5e3,
-                tolerance: 0,
-                widthCalculationMethod: "scroll",
-                closedCallback: function closedCallback() { },
-                initCallback: function initCallback() { },
-                messageCallback: function messageCallback() {
-                    j("MessageCallback function not defined");
-                },
-                resizedCallback: function resizedCallback() { },
-                scrollCallback: function scrollCallback() {
-                    return !0;
-                }
+            autoResize: !0,
+            bodyBackground: null,
+            bodyMargin: null,
+            bodyMarginV1: 8,
+            bodyPadding: null,
+            checkOrigin: !0,
+            inPageLinks: !1,
+            enablePublicMethods: !0,
+            heightCalculationMethod: "bodyOffset",
+            id: "iFrameResizer",
+            interval: 32,
+            log: !1,
+            maxHeight: 1 / 0,
+            maxWidth: 1 / 0,
+            minHeight: 0,
+            minWidth: 0,
+            resizeFrom: "parent",
+            scrolling: !1,
+            sizeHeight: !0,
+            sizeWidth: !1,
+            warningTimeout: 5e3,
+            tolerance: 0,
+            widthCalculationMethod: "scroll",
+            closedCallback: function closedCallback() {},
+            initCallback: function initCallback() {},
+            messageCallback: function messageCallback() {
+                j("MessageCallback function not defined");
             },
+            resizedCallback: function resizedCallback() {},
+            scrollCallback: function scrollCallback() {
+                return !0;
+            }
+        },
             U = {};
         window.jQuery && F(window.jQuery), "function" == typeof define && define.amd ? define([], E) : "object" == (typeof module === "undefined" ? "undefined" : _typeof(module)) && "object" == _typeof(module.exports) ? module.exports = E() : window.iFrameResize = window.iFrameResize || E();
     }
@@ -664,13 +664,12 @@ function initIframe(iframe_id) {
         var og_w = og_e.getAttribute('data-width');
         var og_b = document.getElementsByTagName("body")[0];
         var og_h = document.getElementsByTagName("html")[0];
-        og_b.setAttribute("style", "overflow:scroll;height: 100%;-webkit-overflow-scrolling: touch !important;");
+        og_b.setAttribute("style", "overflow:scroll !important;height: 100%;-webkit-overflow-scrolling: touch !important;");
         var og_js = document.createElement("script");
         og_e.parentElement.setAttribute("style", "width:100% !important;");
         if (iWidth < 786) {
             var randNum = Number(Math.floor(Math.random() * (3000 - 2000) + 2000));
-            var imageUrl = "https://dzvexx2x036l1.cloudfront.net/screenshot/" + iframe_id + "__m.png";
-            // var imageUrl = "https://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" + og_su + "&viewport=414x736&fullpage=1&delay=3&force=1";
+            var imageUrl = "https://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" + og_su + "&viewport=414x736&fullpage=1&delay=3&force=1";
             // var imageUrl = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=agent:mobile,delay:" + randNum + ",width:" + iWidth + "/" + og_su;
             var og_image = document.createElement("img");
             og_image.setAttribute("id", "og_image_" + iframe_id);
