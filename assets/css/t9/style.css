@@ -24,7 +24,12 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .outer-section{display:table-cell;vertical-align:middle;height:100%}
 .banner-img{width:50%;float:left;height:100%;position:absolute;left:0;right:auto;top:0;bottom:0;background-size:cover;background-repeat:no-repeat;background-position:center}
 .content-section{float:left;width:45%;padding:150px 50px;box-sizing:border-box;margin-left:55%}
-.editor-page-divider,.main-heading,.main-heading h1,.questions-list,.questions-list div.t1-ques-head,.sub-heading h2{float:left;width:100%}
+.editor-page-divider,
+.main-heading,
+.main-heading h1,
+.questions-list,
+.questions-list div.t1-ques-head,
+.sub-heading h2{float:left;width:100%}
 .main-heading{margin-bottom:0}
 .main-heading h1{font-size:24px;line-height:1.4;margin:0;width:100%}
 .main-heading h1 p{font-size:24px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:20px 40px;border-radius:50px;max-width:100%;display:block;box-shadow:8px 10px 20px rgba(0,0,0,.05)}
@@ -47,19 +52,26 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .sec_0 .inline-tablecell.logo-resizing{padding:20vh 0 0}
 a.go-btn:hover{text-decoration:none}
 .questions-list>div.t1-ques-head div p.active:last-child{border-bottom-left-radius:0!important}
-.Leadform,form#new_form{max-width:65%;margin:0 auto;padding:0;position:relative;-webkit-transition:2s cubic-bezier(.23,1,.32,1);-moz-transition:2s cubic-bezier(.23,1,.32,1);-o-transition:2s cubic-bezier(.23,1,.32,1);transition:2s cubic-bezier(.23,1,.32,1);text-align:left;display:inline-block;width:100%}
+.Leadform,
+form#new_form{max-width:65%;margin:0 auto;padding:0;position:relative;-webkit-transition:2s cubic-bezier(.23,1,.32,1);-moz-transition:2s cubic-bezier(.23,1,.32,1);-o-transition:2s cubic-bezier(.23,1,.32,1);transition:2s cubic-bezier(.23,1,.32,1);text-align:left;display:inline-block;width:100%}
 .t1-ques-component{float:left;text-align:right;width:100%}
 .sec_0 form#new_form{margin:0 auto 20vh}
-.questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:80%;font-size:24px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
+.questions-list>div.t1-ques-head p,
+.t1-ques-component .question-components,
+div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:80%;font-size:24px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
 .questions-list>.t1-ques-head.prev p{opacity:.4!important}
 .questions-list>.t1-ques-head.prev p:hover{opacity:1!important}
 .t1-landing.questionsVisible{position:fixed;left:0;top:0;bottom:0;right:0;transform:scale(.998);opacity:.06;transition:transform .8s,-webkit-transform .8s,filter .8s,-webkit-filter .8s,opacity .8s,margin 0s}
 .questions-list>.t1-ques-head{position:relative;display:block;opacity:1;line-height:1.3}
 .t1-ques-head.spin-loader.active p{display:block;opacity:1;position:relative;z-index:1}
 .cal-outer.calender-date{display:inline-block}
-.editor-page-divider .questions-list>.t1-ques-head,.questions-list>.t1-ques-head p.active,.questions-list>.t1-ques-head.active,.questions-list>.t1-ques-head.prev{z-index:1;position:relative;display:block;opacity:1}
-.questions-list>.t1-ques-head p{position:absolute;transform:translateY(50%);transition:.2s cubic-bezier(.23,1,.32,1);opacity:0;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;display:inline-block}
-.editor-page-divider .questions-list>.t1-ques-head div p,.questions-list>.t1-ques-head.active div p,div.t1-ques-head p{z-index:1;position:relative;display:inline-block;opacity:1;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);-webkit-transition:.2s cubic-bezier(.23,1,.32,1);transition:.2s cubic-bezier(.23,1,.32,1);animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;float:left;clear:both!important}
+.editor-page-divider .questions-list>.t1-ques-head,
+.questions-list>.t1-ques-head p.active,.questions-list>.t1-ques-head.active,
+.questions-list>.t1-ques-head.prev{z-index:1;position:relative;display:block;opacity:1}
+.questions-list>.t1-ques-head p{position:absolute;transition:.2s cubic-bezier(.23,1,.32,1);opacity:0;display:inline-block}
+.editor-page-divider .questions-list>.t1-ques-head div p,
+.questions-list>.t1-ques-head.active div p,
+div.t1-ques-head p{z-index:1;position:relative;display:inline-block;opacity:1;float:left;clear:both!important}
 .editor-page-divider .t1-ques-component,.t1-ques-component.active{z-index:1;position:relative;display:block;opacity:1}
 .t1-ques-component{position:absolute;display:none;opacity:0}
 .t1-ques-component .question-components{position:relative;display:block;opacity:1;float:right}
@@ -74,16 +86,30 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control:-ms-input-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control:-moz-placeholder{color:#fff;opacity:.5}
 .powered-by{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.9);border-radius:4px;padding:0 1px 0 5px;-webkit-box-shadow:0 3px 5px 1px rgba(0,0,0,.2);box-shadow:0 3px 5px 1px rgba(0,0,0,.2)}
-.editor-page-divider .t1-ques-component .question-components.transparent-bg,.t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0;margin:0 0 00px;text-align:right}
-.checkbox-outer,.checkbox-outer-base,.radio-outer{display:inline-block;margin-bottom:25px;margin-right:25px;float:LEFT}
-.checkbox-outer-base label,.radio-outer label.no-icon{padding-left:40px!important}
-.checkbox-outer .control__indicator.check-set,.radio-outer label .control__indicator.icon-set{position:absolute;top:15px;left:30px}
-.checkbox-outer .control__indicator.check-set i,.radio-outer label .control__indicator.icon-set i{font-size:30px;vertical-align:middle}
-.checkbox-outer label,.checkbox-outer-base label,.radio-outer label{padding:20px 40px 20px 70px;border-radius:50px;font-size:24px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
-.checkbox-outer label span,.checkbox-outer-base label span,.radio-outer label span{font-weight:400}
-.checkbox-outer label input[type=checkbox],.checkbox-outer-base label input[type=checkbox],.radio-outer label input[type=radio]{position:absolute!important;opacity:0;margin:0!important}
+.editor-page-divider .t1-ques-component .question-components.transparent-bg,
+.t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0;margin:0 0 00px;text-align:right}
+.checkbox-outer,
+.checkbox-outer-base,
+.radio-outer{display:inline-block;margin-bottom:25px;margin-right:25px;float:LEFT}
+.checkbox-outer-base label,
+.radio-outer label.no-icon{padding-left:40px!important}
+.checkbox-outer .control__indicator.check-set,
+.radio-outer label .control__indicator.icon-set{position:absolute;top:15px;left:30px}
+.checkbox-outer .control__indicator.check-set i,
+.radio-outer label .control__indicator.icon-set i{font-size:30px;vertical-align:middle}
+.checkbox-outer label,
+.checkbox-outer-base label,
+.radio-outer label{padding:20px 40px 20px 70px;border-radius:50px;font-size:24px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
+.checkbox-outer label span,
+.checkbox-outer-base label span,
+.radio-outer label span{font-weight:400}
+.checkbox-outer label input[type=checkbox],
+.checkbox-outer-base label input[type=checkbox],
+.radio-outer label input[type=radio]{position:absolute!important;opacity:0;margin:0!important}
 .custom-block{display:inline-block}
-.custom-block .input-field input[type=text],.leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:360px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:40px;font-size:24px;color:#fff}
+.custom-block .input-field input[type=text],
+.leadform_question form#leadform_question .input-outer input,
+input.othersfield{background:0 0;max-width:360px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:40px;font-size:24px;color:#fff}
 calendar,calendar>div{display:inline-block;float:none}
 calendar>div .form-group{margin:0}
 .input-group.date input.form-control{background:0 0!important;font-size:24px;width:300px;border:0!important;box-shadow:none;border-bottom:1.5px dashed #fff!important;opacity:1!important;height:40px;margin-left:10px;padding:0!important;color:#fff}
@@ -95,14 +121,18 @@ calendar>div .form-group{margin:0}
 .t1-ques-component .go-btn.active i{font-size:30px;display:inline-block}
 .t1-ques-component .go-btn i{display:none}
 .result-branding.logo_intmp{float:left;width:100%;position:relative;z-index:10;height:auto}
-.checkbox-outer-base:last-child,.checkbox-outer:last-child,.radio-outer:last-child{margin-left:0;margin-right:0}
-.editor-page-divider .questions-list>.t1-ques-head div p img,.questions-list>.t1-ques-head.active div p img{height:30px!important;vertical-align:top}
+.checkbox-outer-base:last-child,
+.checkbox-outer:last-child,
+.radio-outer:last-child{margin-left:0;margin-right:0}
+.editor-page-divider .questions-list>.t1-ques-head div p img,
+.questions-list>.t1-ques-head.active div p img{height:30px!important;vertical-align:top}
 .t1-landing .text-center{float:left;width:100%}
 .editor-page-divider form#new_form{display:block;height:auto}
 .editor-page-divider .question-components.transparent-bg{background:0 0!important;padding:0!important;margin:0;box-shadow:none}
 .powered-by .poweredby-text,.powered-by span{float:left;color:#585858;margin-right:4px;font-family:montserratregular}
-@keyframes slideInUp{from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}
-to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+@keyframes slideInUp{
+  from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}
+  to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 }
 .slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}
 .animated{-webkit-animation-duration:1s;animation-duration:1s}
@@ -116,16 +146,26 @@ to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
 .animated.faster{-webkit-animation-duration:.5s;animation-duration:.5s}
 .animated.slow{-webkit-animation-duration:2s;animation-duration:2s}
 .animated.slower{-webkit-animation-duration:3s;animation-duration:3s}
-@media (prefers-reduced-motion){.animated{-webkit-animation:unset!important;animation:unset!important;-webkit-transition:none!important;transition:none!important}
+@media (prefers-reduced-motion){
+  .animated{-webkit-animation:unset!important;animation:unset!important;-webkit-transition:none!important;transition:none!important}
 }
 .hide .t1-question button.back-action.back-btn{opacity:0;left:1.6em;top:1.5em;transition:.5s}
-.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:2em!important;top:2.2em!important;opacity:1!important;transition:.5s;transition-delay:2.2s;padding:0!important;background:0 0;border:0!important}
+.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:2em!important;top:22px !important;opacity:1!important;transition:.5s;transition-delay:2.2s;padding:0!important;background:0 0;border:0!important; display: flex; align-items: center; height: 65px;}
 button.back-action.back-btn i{font-size:42px;line-height:1;vertical-align:middle}
-.ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left}
+.ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left; height: 65px; display: flex; align-items: center}
 .logo-slide .ques-header{left:80px!important}
-.checkbox-outer label,.checkbox-outer-base label,.radio-outer label,.ripple-light{position:relative;overflow:hidden;float:left}
-.checkbox-outer label:active:after,.checkbox-outer-base label:active:after,.radio-outer label:active:after,.ripple-light:active:after{-webkit-transform:scale(0,0);transform:scale(0,0);opacity:.2;-webkit-transition:0s;transition:0s}
-.checkbox-outer label:after,.checkbox-outer-base label:after,.radio-outer label:after,.ripple-light:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#fff 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;-webkit-transform:scale(10,10);transform:scale(10,10);opacity:0;-webkit-transition:opacity 1s,-webkit-transform .5s;transition:opacity 1s,-webkit-transform .5s;transition:transform .5s,opacity 1s;transition:transform .5s,opacity 1s,-webkit-transform .5s}
+.checkbox-outer label,
+.checkbox-outer-base label,
+.radio-outer label,
+.ripple-light{position:relative;overflow:hidden;float:left}
+.checkbox-outer label:active:after,
+.checkbox-outer-base label:active:after,
+.radio-outer label:active:after,
+.ripple-light:active:after{-webkit-transform:scale(0,0);transform:scale(0,0);opacity:.2;-webkit-transition:0s;transition:0s}
+.checkbox-outer label:after,
+.checkbox-outer-base label:after,
+.radio-outer label:after,
+.ripple-light:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#fff 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;-webkit-transform:scale(10,10);transform:scale(10,10);opacity:0;-webkit-transition:opacity 1s,-webkit-transform .5s;transition:opacity 1s,-webkit-transform .5s;transition:transform .5s,opacity 1s;transition:transform .5s,opacity 1s,-webkit-transform .5s}
 .col,.stickyfooter{display:inline-block}
 .editor-page-divider .t1-question{float:left;width:100%;padding:30px 0;min-height:100vh}
 .t1-ques-component .go-btn:focus{text-decoration:none!important}
@@ -151,13 +191,17 @@ p.spinner{float:left;clear:both!important;border-bottom-left-radius:0!important}
 @keyframes sk-bouncedelay{0%,100%,80%{-webkit-transform:scale(0);transform:scale(0);opacity:0}
 40%{-webkit-transform:scale(1);transform:scale(1);opacity:1}
 }
-.errorMessage{position:fixed;top:130px;background:#000;margin:0 auto;font-size:14px;border-radius:50px;padding:15px 30px;display:block;left:50%;transform:translateX(-50%);transition:.2s cubic-bezier(.23,1,.32,1);z-index:1000;box-shadow:0 2px 0 0 rgba(0,0,0,.1);white-space:nowrap}
+.errorMessage , 
+.t1-question .leadform_question .input-outer .input-validation span{position:fixed;top:130px;background:#000;margin:0 auto;font-size:14px;border-radius:50px;padding:15px 30px;display:block;left:50%;transform:translateX(-50%);transition:.2s cubic-bezier(.23,1,.32,1);z-index:1000;box-shadow:0 2px 0 0 rgba(0,0,0,.1);white-space:nowrap; min-width: 280px;text-align: center}
 .template-nine .t1-result{width:100%;height:100vh;max-width:100%;display:flex;position:fixed;background-size:cover;top:0;right:0;z-index:9999;justify-content:center;overflow-y:auto;opacity:0}
 .template-section .template-nine .t1-result{opacity:1}
 .template-nine .t1-result::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#000;content:'';opacity:.7}
 .t1-result-main{display:table-cell;vertical-align:middle;height:100%;padding:90px 0 60px;position:relative;z-index:10}
-.V_3_5 .common-result-main [type=checkbox]+label.leadform-checkbox:before,.V_3_5 .common-result-main [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:before, .t1-question.hide,.selectize-input .item+input{display:none!important}
-.template-nine .editor-page-divider .t1-result,.template-nine .editor-page-divider .t1-result::after{position:absolute}
+.V_3_5 .common-result-main [type=checkbox]+label.leadform-checkbox:before,
+.V_3_5 .common-result-main [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:before, 
+.t1-question.hide,.selectize-input .item+input{display:none!important}
+.template-nine .editor-page-divider .t1-result,
+.template-nine .editor-page-divider .t1-result::after{position:absolute}
 .t1-landing leadform form{float:left;width:100%}
 .t1-landing leadform form .text-center{float:right;width:100%;max-width:75%}
 .t1-landing leadform form .input-section .input-outer{position:relative;width:100%;margin-top:0;margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:100%;font-size:20px;box-shadow:0 5px 10px rgba(0,0,0,.05);line-height:1.4;float:right}
@@ -178,7 +222,9 @@ body.no-scrol{overflow:hidden}
 .selectize-dropdown{text-align:left}
 .leadform_question #leadform_question .input-outer{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 45px;text-align:left;max-width:100%;float:right;font-size:24px;-webkit-box-shadow:8px 10px 20px rgba(0,0,0,.05);box-shadow:8px 10px 20px rgba(0,0,0,.05);position:relative;clear:both;line-height:1.4}
 .leadform_question .section-head{float:left;color:#fff}
-.leadform_question .input-validation,.leadform_question .section-head div,.leadform_question .section-head p{float:left;margin:0 5px 0 0}
+.leadform_question .input-validation,
+.leadform_question .section-head div,
+.leadform_question .section-head p{float:left;margin:0 5px 0 0}
 .leadform_question .question-components{padding:0!important;background:0 0!important;box-shadow:none!important}
 form#leadform_question{float:left;width:100%}
 fb_lead_gen{float:right;text-align:right}
@@ -189,14 +235,20 @@ fb_lead_gen .fb-outer .loginBtn:before{width:48px;background-position:15px cente
 .V_3_5.template-nine .result-v2 fb_lead_gen .fb-outer .loginBtn:before{width:40px;background-position:10px center}
 .t1-question .editor-page-divider{margin:0!important}
 .t1-question .sec_0.editor-page-divider button.back-action.back-btn{display:block!important}
-.t1-landing leadform .input-outer input[type=checkbox],.t1-question .leadform_question .input-outer input[type=checkbox]{position:absolute!important;opacity:0;margin:0!important;width:0!important}
+.t1-landing leadform .input-outer input[type=checkbox],
+.t1-question .leadform_question .input-outer input[type=checkbox]{position:absolute!important;opacity:0;margin:0!important;width:0!important}
 .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox::before,.t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox::before{float:left;width:24px;height:24px;border:1px solid #fff;padding:0;margin:0;position:absolute!important;top:4px;border-radius:3px;content:'';left:0}
 .selectize-dropdown-content{overflow-y:auto;overflow-x:hidden;max-height:25vh}
-.t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after,.t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after{content:'done';font-family:'Material Icons';font-size:24px;padding-left:0;top:2px;float:left;font-weight:400;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;position:absolute;left:0}
-.t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::before,.t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::before{background:#fff}
-.t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox,.t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox{float:left;min-height:auto;padding-left:35px!important;font-weight:400!important;position:relative}
-.t1-landing leadform .input-outer .input-validation span,.t1-question .leadform_question .input-outer .input-validation span{font-size:14px;float:left;position:absolute;left:40px;right:0;bottom:-20px}
-.t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox p,.t1-question .leadform_questio .input-outer input[type=checkbox]+label.leadform-checkbox p,.template-nine .checkbox,.template-nine .radio{margin:0}
+.t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after,
+.t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after{content:'done';font-family:'Material Icons';font-size:24px;padding-left:0;top:2px;float:left;font-weight:400;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;position:absolute;left:0}
+.t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::before,
+.t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::before{background:#fff}
+.t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox,
+.t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox{float:left;min-height:auto;padding-left:35px!important;font-weight:400!important;position:relative}
+.t1-landing leadform .input-outer .input-validation span{font-size:14px;float:left;position:absolute;left:40px;right:0;bottom:-20px}
+.t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox p,
+.t1-question .leadform_questio .input-outer input[type=checkbox]+label.leadform-checkbox p,
+.template-nine .checkbox,.template-nine .radio{margin:0}
 .button-3.btn.prime-action.sliding-next.og-lead-ques.leadform-btn.ripple-light{display:none!important}
 .t1-ques-component{margin-bottom:25px!important}
 .or-class{float:left;width:100%;margin:15px 0}
@@ -223,12 +275,16 @@ p.requiredAsteric{display:none!important}
 .btn.prime-action.sliding-next.og-lead-ques.leadform-btn.ripple-light {display: none !important;}
 
 .sec_0.isIframe .inline-tablecell.logo-resizing{padding: 100px 0 0}
-.sec_0.isIframe form#new_form {  margin: 0 auto 100px;}
+.sec_0.isIframe form#new_form {  margin: 0 auto 0px;}
 
 /* extra css for animation */
-.questions-list>.t1-ques-head p.next,.questions-list>.t1-ques-head.next, .questions-list>.t1-ques-head.next div p, .t1-ques-component.next
+.questions-list>.t1-ques-head p.next,.questions-list>.t1-ques-head.next, 
+.questions-list>.t1-ques-head.next div p, .t1-ques-component.next
 {
   position:relative;
   display:block;
   opacity:0
+}
+.sec_0.secBlockOne form {
+  margin-bottom: 0 !important;
 }
