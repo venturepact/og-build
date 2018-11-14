@@ -1,13 +1,14 @@
 @media (min-width:641px) and (max-width:995px){
-    section.landing-page-mid{width:50%;margin-left:50%;padding:40px 25px;float:left}
+    section.landing-page-mid{width:50%;margin-left:50%;padding:40px 25px 100px;float:left}
     .banner-img{width:50%}
     .main-heading h1{font-size:22px;line-height:1.4}
     .main-heading h1 p{font-size:22px;padding:12px 30px}
-    section.landing-page-mid>div{max-width:90%}
+    section.landing-page-mid>div , .t1-landing leadform form .text-center{max-width:90%}
     .btn.prime-action{font-size:18px;padding:14px 25px 11px;line-height:24px}
     .Leadform,form#new_form{max-width:100%}
     .custom-block .input-field input[type=text],.leadform_question form#leadform_question .input-outer input,input.othersfield{font-size:22px;height:36px}
     .leadform_question #leadform_question .input-outer,.questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{padding:12px 30px;font-size:22px}
+    .t1-landing leadform form .input-section .input-outer{padding:12px 30px;}
     .checkbox-outer label,.checkbox-outer-base label,.radio-outer label{padding:12px 30px 12px 55px;border-radius:50px;font-size:22px}
     .checkbox-outer-base label,.radio-outer label.no-icon{padding-left:30px!important}
     .t1-ques-component .go-btn{width:55px;height:55px;font-size:22px;line-height:55px}
@@ -15,6 +16,8 @@
     .input-group.date input.form-control{background:0 0!important;font-size:22px;width:260px}
     .checkbox-outer .control__indicator.check-set,.radio-outer label .control__indicator.icon-set{position:absolute;top:8px;left:22px}
     fb_lead_gen .fb-outer .loginBtn{font-size:18px}
+    .t1-landing leadform form .input-section .input-outer input{    height: auto;font-size: 18px;padding-bottom: 3px;padding-left: 25px;}
+    .t1-landing leadform form .input-section .input-outer i {top: 17px;left: 30px;font-size: 18px;}
 }
 @media(max-width:640px){
     .t1-question .leadform_question form#leadform_question .input-outer i{position:absolute;left:0;top:4px}

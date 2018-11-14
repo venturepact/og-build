@@ -89,8 +89,8 @@ calendar>div .form-group{margin:0}
 .input-group.date input.form-control{background:0 0!important;font-size:24px;width:300px;border:0!important;box-shadow:none;border-bottom:1.5px dashed #fff!important;opacity:1!important;height:40px;margin-left:10px;padding:0!important;color:#fff}
 .input-group.date span.input-group-addon i{color:#fff;font-size:22px}
 .input-group.date span.input-group-addon{background:0 0;border:0!important;position:absolute;right:0;width:50px;top:0;bottom:0;padding:0;display:flex;align-items:center;justify-content:center;z-index:10;cursor:pointer}
-.preview-mode .t1-question{position:relative;z-index:99;float:left;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:0 4em;width:100%}
-.preview-mode .t1-question::after{position:fixed;left:0;right:0;content:'';top:0;bottom:0;opacity:.5}
+ .t1-question{position:relative;z-index:99;float:left;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:0 4em;width:100%}
+ .t1-question::after{position:fixed;left:0;right:0;content:'';top:0;bottom:0;opacity:.5}
 .t1-ques-component .go-btn.active{font-size:0;padding:16px 0}
 .t1-ques-component .go-btn.active i{font-size:30px;display:inline-block}
 .t1-ques-component .go-btn i{display:none}
@@ -156,7 +156,7 @@ p.spinner{float:left;clear:both!important;border-bottom-left-radius:0!important}
 .template-section .template-nine .t1-result{opacity:1}
 .template-nine .t1-result::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#000;content:'';opacity:.7}
 .t1-result-main{display:table-cell;vertical-align:middle;height:100%;padding:90px 0 60px;position:relative;z-index:10}
-.V_3_5 .common-result-main [type=checkbox]+label.leadform-checkbox:before,.V_3_5 .common-result-main [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:before,.preview-mode .t1-question.hide,.selectize-input .item+input{display:none!important}
+.V_3_5 .common-result-main [type=checkbox]+label.leadform-checkbox:before,.V_3_5 .common-result-main [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:before, .t1-question.hide,.selectize-input .item+input{display:none!important}
 .template-nine .editor-page-divider .t1-result,.template-nine .editor-page-divider .t1-result::after{position:absolute}
 .t1-landing leadform form{float:left;width:100%}
 .t1-landing leadform form .text-center{float:right;width:100%;max-width:75%}
@@ -221,3 +221,14 @@ p.requiredAsteric{display:none!important}
 .V_3_5.template-nine .outcome_like{top:-5px!important}
 .stickyfooter.lightSticky{float:none;display:inline-block;position:relative}
 .btn.prime-action.sliding-next.og-lead-ques.leadform-btn.ripple-light {display: none !important;}
+
+.sec_0.isIframe .inline-tablecell.logo-resizing{padding: 100px 0 0}
+.sec_0.isIframe form#new_form {  margin: 0 auto 100px;}
+
+/* extra css for animation */
+.questions-list>.t1-ques-head p.next,.questions-list>.t1-ques-head.next, .questions-list>.t1-ques-head.next div p, .t1-ques-component.next
+{
+  position:relative;
+  display:block;
+  opacity:0
+}
