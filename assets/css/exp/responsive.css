@@ -416,7 +416,7 @@
         margin-bottom: 20px;
     }
     .landing-page-mid button {
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px 40px;
         margin-bottom: 10px;
     }
@@ -849,8 +849,7 @@
         padding: 10px 30px !important;
         margin-bottom: 0px;
     }
-    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}  
-    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{visibility: hidden !important;}  
+    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}    
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {
@@ -858,7 +857,7 @@
     }
     .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
     .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
-    .input-field textarea{font-size: 16px !important;padding-top: 2px;}
+    .input-field textarea{font-size: 16px !important;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     /*.landing-page-header a img {
@@ -1288,9 +1287,6 @@
     .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
     .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
     .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
-    .t1-result-leadform .new-socialBtn.btn-plus:hover .help-checktip{min-width: 76px;left: -32px;}
-    .t1-result-leadform .new-socialBtn.btn-plus .help-checktip::before {left: 70%;}
-    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{padding: 8px;}
 
 
     /* gdpr popup css */
@@ -1702,8 +1698,6 @@
     .seperator {
         font-size: 18px;
     }
-    .cal-outer {width: 90%;}
-    .input-field textarea{font-size: 18px;}
 }
 @media(min-width: 1920px){
     .slider-input-post{
