@@ -3833,6 +3833,10 @@
         .tabs-wrapper #my-account .nav-tabs.nav-justified>li:nth-child(3)>a {
             padding: 18px 12px
         }
+        .tabs-wrapper #my-account .nav-tabs.nav-justified>li:nth-child(3)>a span {
+            display: block;
+        }
+        .tabs-wrapper #my-account .nav-tabs.nav-justified>li:nth-child(3)>a div{ display: none;}
         #companies .companies-card {
             padding: 0
         }
