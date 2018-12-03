@@ -60,8 +60,12 @@
     .t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after{font-size: 20px}
     .selectize-control.single .selectize-input .item, 
     .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0 !important;}
+    .t1-ques-component .question-components{ max-width: calc(100% - 85px);}
 }
 @media(max-width:640px){
+    .animated{-webkit-animation-duration:1s;animation-duration:1s}
+    .t1-ques-component {width: 90%;}
+    .t1-ques-component .question-components{ max-width: 100% !important;}
     .leadform_question #leadform_question .input-outer{min-height: auto}
     .logo a img.horz{max-height: 40px !important}
     .t1-landing leadform form .input-section .input-outer span{left: 25px}

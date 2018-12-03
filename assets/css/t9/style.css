@@ -12,7 +12,7 @@
 }
 .t1-landing,img{max-width:100%}
 .col,.powered-by{-webkit-box-align:center}
-.t1-landing{width:100%;min-height:100vh;position:relative;display:table}
+.t1-landing{width:100%;min-height:100vh;position:relative;display:table; overflow: hidden;}
 ::-webkit-scrollbar-track{border-radius:0;background-color:#f5f5f5}
 ::-webkit-scrollbar{width:10px;background-color:rgba(0,0,0,.2)}
 ::-webkit-scrollbar:horizontal{height:10px;background-color:rgba(0,0,0,.2)}
@@ -41,7 +41,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .questions-list{position:relative;height:100%}
 .t1-ques-component .t1-ques-head{float:none;display:inline;text-align:left}
 .question-inner,.question-mid,.question-mid .questions-block{float:left;width:100%}
-.t1-ques-component .t1-ques-head p{margin:0 5px 0 0!important;display:inline;}
+.t1-ques-component .t1-ques-head p{margin:0 5px 0 0!important;display:inline-block;}
 .landing-header,.question-header{float:left;width:100%;position:absolute;top:0;left:0;right:0;padding:40px;z-index:10}
 .question-mid{padding:150px 0}
 .wrap{max-width:80%;margin:0 auto;width:100%}
@@ -54,17 +54,18 @@ a.go-btn:hover{text-decoration:none}
 .questions-list>div.t1-ques-head div p.active:last-child{border-bottom-left-radius:0!important}
 .Leadform,
 form#new_form{max-width:65%;margin:0 auto;padding:0;position:relative;-webkit-transition:2s cubic-bezier(.23,1,.32,1);-moz-transition:2s cubic-bezier(.23,1,.32,1);-o-transition:2s cubic-bezier(.23,1,.32,1);transition:2s cubic-bezier(.23,1,.32,1);text-align:left;display:inline-block;width:100%}
-.t1-ques-component{float:left;text-align:right;width:100%}
+.t1-ques-component{float:right;text-align:right;width:85%}
 .sec_0 form#new_form{margin:0 auto 20vh}
 .questions-list>div.t1-ques-head p,
 .t1-ques-component .question-components,
 div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:85%;font-size:22px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
 .questions-list>.t1-ques-head.prev p{opacity:.4!important}
-.questions-list>.t1-ques-head.prev p:hover{opacity:1!important}
+.questions-list>.t1-ques-head.prev p:hover ,
+.t1-ques-component.active.prev:hover{opacity:1!important}
 .t1-landing.questionsVisible{position:fixed;left:0;top:0;bottom:0;right:0;transform:scale(.998);opacity:.06;transition:transform .8s,-webkit-transform .8s,filter .8s,-webkit-filter .8s,opacity .8s,margin 0s}
 .questions-list>.t1-ques-head{position:relative;display:block;opacity:1;line-height:1.3}
 .t1-ques-head.spin-loader.active p{display:block;opacity:1;position:relative;z-index:1}
-.cal-outer.calender-date{display:inline-block; float: left;}
+.cal-outer.calender-date{display:inline-block; float: none;}
 .editor-page-divider .questions-list>.t1-ques-head,
 .questions-list>.t1-ques-head p.active,.questions-list>.t1-ques-head.active,
 .questions-list>.t1-ques-head.prev{z-index:1;position:relative;display:block;opacity:1}
@@ -74,7 +75,7 @@ div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding
 div.t1-ques-head p{z-index:1;position:relative;display:inline-block;opacity:1;float:left;clear:both!important}
 .editor-page-divider .t1-ques-component,.t1-ques-component.active{position:relative;display:flex;opacity:1; justify-content: flex-end; align-items: flex-end}
 .t1-ques-component{position:absolute;display:none;opacity:0}
-.t1-ques-component .question-components{position:relative;display:block;opacity:1;float:right}
+.t1-ques-component .question-components{position:relative;display:block;opacity:1;float:right; max-width: calc(100% - 95px);}
 .t1-ques-component .go i.material-icons{color:#fff;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:45px}
 section.landing-footer-outer{position:absolute;bottom:0;padding:10px 20px 15px;text-align:right;width:100%}
 input::-webkit-input-placeholder{color:#fff;opacity:.5}
@@ -269,7 +270,7 @@ fb_lead_gen .fb-outer .loginBtn:before{width:48px;background-position:15px cente
 .t1-question .or-class{margin-top:-10px !important; font-size: 14px !important; padding: 0px 20px 15px 0px }
 .template-nine .common-result-space{padding:60px 0!important}
 .rating-inner i{float:left;font-size:30px;cursor:pointer}
-.custom-block.rating-custom{float:none;display:inline-block;vertical-align:sub}
+.custom-block.rating-custom{float:none;display:inline-block;vertical-align:sub; position: relative; top: 3px}
 p.requiredAsteric{display:none!important}
 .t1-question .leadform_question form#leadform_question .input-outer i{position:absolute;left:0px;top:5px}
 .t1-question .leadform_question form#leadform_question .input-outer input{padding-left:30px}
@@ -409,8 +410,10 @@ leadform_question fb_lead_gen + button.lf-skip-btn.ripple-light {
 .template-nine .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{text-transform: unset}
 span.calendar-range {
   float: none;
-  padding: 5px;
+  padding:0 10px;
   width: auto;
+  position: relative;
+  top: -3px;
   line-height: 1;
 }
 .t1-ques-component.calendar .t1-ques-head p {
@@ -424,8 +427,7 @@ span.calendar-range {
 }
 .landing-page-mid {visibility: hidden; opacity: 0;float: left;width: 100%; animation-delay: 0s;animation-duration: 0.8s}
 .landing-page-mid.active{visibility: visible; opacity: 1;animation-delay: 0s; animation-duration: 0.8s}
-.banner-img{visibility: hidden; opacity:0; animation-delay: 0s; transition: 0.5s}
-.banner-img.active{visibility: visible; opacity:1;animation-delay: 0s; transition: 0.5s}
+/* .banner-img{visibility: visible; opacity:1; animation-delay: 0s; transition: 0.5s} */
 
 .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input .item, 
 .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input input {padding: 0 0 8px 0 !important}
