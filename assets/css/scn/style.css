@@ -3206,13 +3206,15 @@ input:-webkit-autofill {
     border-radius: 0;
     margin-top: 5px;
     float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 18px;
-    white-space: nowrap;
     margin-left: 0!important;
     font-weight: normal !important;
 }
+.landing-page-mid .input-section .input-outer.checkbox span {
+    top: auto;
+  }
+  .checkbox .input-field {
+    flex-direction: column;
+  }
 .sound-cloud-new select.leadform-select {
     float: left;
     width: 100%;
