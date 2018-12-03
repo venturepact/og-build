@@ -863,6 +863,10 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .template-six.V_3_5 .newLeadGenV_3_5 + fb_lead_gen button.loginBtn.loginBtn--facebook::after{padding: 10px 40px 8px 15px !important}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook::after {padding: 11px 35px 10px 15px !important;}
+    .template-six.V_3_5 .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook::after  {padding: 12px 38px 10px 15px !important;}
+    .V_3_5 .result-v2 .loginBtn::after {padding: 9px 35px 9px 15px !important;}
     .safari .header-next-div{height: auto !important;}
     .range-slider1.char-count-slider.fisher .well1{width: calc(100% - 75px)}
     .range-slider1.fisher input.slider-input {
@@ -1018,6 +1022,10 @@
      /*********************** leadfrom after question*********************/
      .V_3_5 .question-components .newLeadGenV_3_5 .input-outer input {padding: 0 20px 0 40px;margin: 0 !important;}
      .V_3_5.template-six .result-v2 .common-result-bot-icons.side-redo .crb-left{bottom: 5px !important;right: 15px !important;}
+
+     .V_3_5.template-six .share-like .lead-popup-header +.container-temp.text-center .text-center.question-section.leaded-form-c {
+        min-height: 220px;
+    }
     }
 
 @media (min-width:768px) and (max-width:1024px) {

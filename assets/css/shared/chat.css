@@ -1,0 +1,416 @@
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	/* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+.og-chat-box iframe {
+	/* height: calc(100% - 65px); */
+	/* max-height: 700px !important;
+    
+	min-height: 550px; */
+	height: 100%;
+	border: none !important;
+}
+
+.bot-circle {
+	width: 65px;
+	height: 65px;
+	background-color: #FF3C5D;
+	border-radius: 40px;
+	position: fixed;
+	bottom: 17px !important;
+	right: 20px;
+	display: block;
+	-webkit-animation: fadeInUp1 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+	animation: fadeInUp1 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+	color: #fff;
+	text-align: center;
+	line-height: 75px;
+	box-shadow: none !important;
+	outline: none !important;
+}
+.bot-circle:focus{ outline: none !important;}
+.bot-circle:hover { color: #fff !important;}
+
+.bot-circle .bot-circle-icon-open,
+.bot-circle .bot-circle-icon-close {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	box-shadow: 2px 4px 25px -4px rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+	-webkit-transition: opacity .08s linear, -webkit-transform .16s linear;
+	transition: opacity .08s linear, -webkit-transform .16s linear;
+	transition: transform .5s linear, opacity .08s linear;
+	transition: transform .5s linear, opacity .08s linear, -webkit-transform .16s linear;
+}
+
+.bot-circle .bot-circle-icon-open {
+	opacity: 1;
+	-webkit-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+}
+
+.bot-circle.active .bot-circle-icon-open {
+	opacity: 0;
+	-webkit-transform: rotate(30deg) scale(0);
+	transform: rotate(30deg) scale(0);
+}
+
+.bot-circle .bot-circle-icon-close {
+	opacity: 0;
+	-webkit-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+
+.bot-circle.active .bot-circle-icon-close {
+	opacity: 1;
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+a.bot-circle.left {
+	left: 50px;
+	right: inherit;
+}
+
+a.bot-circle.left .og-chat-tooltip {
+	left: 30px;
+	border-radius: 50px 50px 50px 0px;
+}
+
+a.bot-circle.left+.og-chat-box {
+	left: 30px;
+	right: inherit;
+}
+
+.og-chat-box-top {
+	float: left;
+	width: 100%;
+	height: 65px;
+	background: #FF3C5D;
+	display: none;
+}
+
+.og-chat-box-top .bot-circle-mobile {
+	width: 40px;
+	height: 40px;
+	margin: 0 auto;
+	border-radius: 8px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 2147483003;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-position: 50%;
+	margin: 12px 8px 12px 2px;
+	transition: all 500ms ease-in-out;
+	box-shadow: none !important;
+	
+}
+
+.og-chat-box-top .bot-circle-mobile:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.og-chat-box-top .bot-circle-mobile .bot-circle-icon-close {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+.og-chat-box {
+	z-index: 999999 !important;
+	position: fixed!important;
+	right: 20px;
+	width: 400px!important;
+	min-height: 250px!important;
+	max-height: 704px!important;
+	-webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)!important;
+	box-shadow: 0 5px 40px rgba(0, 0, 0, .16)!important;
+	border-radius: 8px!important;
+	overflow: hidden!important;
+	height: calc(100% - 20px - 80px - 20px);
+	bottom: calc(20px + 80px);
+	opacity: 0;
+	-webkit-animation: fadeInUp 0.8s ease-in-out 0.5s forwards;
+	animation: fadeInUp 0.8s ease-in-out 0.5s forwards;
+}
+
+.og-chat-box.hide {
+	-webkit-animation: fadeOut 0.8s ease-out 0.6s forwards;
+	animation: fadeOut 0.8s ease-out 0.6s forwards;
+	z-index: -1 !important;
+}
+
+.og-chat-box.no-animation {
+	-webkit-animation: fadeOutDown 0s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+	animation: fadeOutDown 0s cubic-bezier(0.65, 0.05, 0.36, 1) forwards;
+	z-index: -1 !important;
+}
+
+.og-chat-tooltip {
+	position: absolute;
+	padding: 20px 10px;
+	box-shadow: 2px 4px 25px -4px rgba(0, 0, 0, 0.3);
+	background: #fff;
+	float: left;
+	min-width: auto;
+	width: 190px;
+	max-width: 400px;
+	right: 30px;
+	border-radius: 50px 50px 0px 50px;
+	text-align: center;
+	min-height: 20px;
+	-webkit-animation: fadeInUp2 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+	animation: fadeInUp2 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.og-chat-tooltip p {
+	display: inline-block;
+	margin: 0;
+	line-height: 20px;
+	color: #000;
+	padding: 0;
+	float: right;
+	width: 100%;
+	/* font-family: cursive; */
+	font-size: 13px;
+	text-align: center;
+}
+
+a.bot-circle.active .og-chat-tooltip {
+	-webkit-animation: fadeOutDown2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+	animation: fadeOutDown2 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+@-webkit-keyframes fadeOutDown {
+	from {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 20%, 0);
+		transform: translate3d(0, 20%, 0);
+	}
+}
+
+@keyframes fadeOutDown {
+	from {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 20%, 0);
+		transform: translate3d(0, 20%, 0);
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 8%, 0);
+		transform: translate3d(0, 8%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 8%, 0);
+		transform: translate3d(0, 8%, 0);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@-webkit-keyframes fadeInUp1 {
+	from {
+		opacity: 0;
+		bottom: 0px;
+	}
+	to {
+		opacity: 1;
+		bottom: 17px;
+	}
+}
+
+@keyframes fadeInUp1 {
+	from {
+		opacity: 0;
+		bottom: 0px;
+	}
+	to {
+		opacity: 1;
+		bottom: 17px;
+	}
+}
+
+@-webkit-keyframes fadeInUp2 {
+	from {
+		opacity: 0;
+		bottom: 0px;
+	}
+	to {
+		opacity: 1;
+		bottom: 85px;
+	}
+}
+
+@keyframes fadeInUp2 {
+	from {
+		opacity: 0;
+		bottom: 0px;
+	}
+	to {
+		opacity: 1;
+		bottom: 85px;
+	}
+}
+
+@-webkit-keyframes fadeOutDown2 {
+	from {
+		opacity: 1;
+		bottom: 85px;
+	}
+	to {
+		opacity: 0;
+		bottom: 0px;
+	}
+}
+
+@keyframes fadeOutDown2 {
+	from {
+		opacity: 1;
+		bottom: 85px;
+	}
+	to {
+		opacity: 0;
+		bottom: 0px;
+	}
+}
+
+@-webkit-keyframes fadeOutDown22 {
+	from {
+		opacity: 1;
+		bottom: calc(20px + 80px);
+	}
+	to {
+		opacity: 0;
+		bottom: 0px;
+	}
+}
+
+@keyframes fadeOutDown22 {
+	from {
+		opacity: 1;
+		bottom: calc(20px + 80px);
+	}
+	to {
+		opacity: 0;
+		bottom: 0px;
+	}
+}
+
+
+/* resposnive */
+
+@media (max-width: 640px) {
+	@supports (-webkit-overflow-scrolling: touch) {
+		.og-chat-box {
+			-webkit-overflow-scrolling: touch;
+			overflow: scroll !important;
+		} 
+	}
+	.og-chat-box {
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		max-width: 100% !important;
+		min-width: 100% !important;
+		border-radius: 0px !important;
+	}
+	a.bot-circle.active {
+		display: none;
+	}
+	a.bot-circle.left+.og-chat-box {
+		left: 0px;
+	}
+	.og-chat-box-top{
+		display: block;
+		background: transparent;
+		height: auto;
+	}
+	.og-chat-box-top .bot-circle-mobile {
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.og-chat-box iframe{
+		-webkit-overflow-scrolling: touch;
+	}
+}

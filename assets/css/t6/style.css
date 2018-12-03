@@ -1431,7 +1431,8 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
     .template-six.V_3_5 .question-components input{font-size:16px!important}
     .V_3_5 .t1-question .question-components .input-outer i{left:15px;top:20px}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span,
-    .V_3_5 .t1-ques-component .input-section .input-outer span{top:55px;font-size:10px; padding: 0px !important}
+    .V_3_5 .t1-ques-component .input-section .input-outer span{top:53px;font-size:10px; padding: 0px !important}
+    .V_3_5  .t1-ques-component .input-section .input-outer{margin-bottom: 25px}
     .V_3_5 .input-icon-outer .selectize-input,
     .V_3_5 .landing-page-mid .input-outer.dropdown .selectize-input,
     .V_3_5 .question-components .selectize-input{min-height:50px!important;padding:15px 30px 15px 15px!important;font-size:16px}
@@ -1971,3 +1972,11 @@ button.loginBtn.loginBtn--facebook:hover::after {
     animation-name: rightin !important;
     animation-duration: 0.4s;
   }
+.V_3_5.template-six .lead-popup-header+.container-temp.text-center .text-center.question-section.leaded-form-c {
+    min-height: 90px;
+}
+.V_3_5.template-six .share-like .lead-popup-header +.container-temp.text-center .text-center.question-section.leaded-form-c {
+    min-height: 140px;
+  }
+  .V_3_5 .result-v2 .loginBtn.loginBtn--facebook::after   {padding: 13px 47px 13px 30px !important;}
+  .V_3_5 .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook::after {padding: 12px 47px 12px 25px !important}
