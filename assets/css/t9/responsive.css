@@ -63,6 +63,9 @@
     .t1-ques-component .question-components{ max-width: calc(100% - 85px);}
 }
 @media(max-width:640px){
+    .V_3_5.template-nine .common-ctas a.btn-fb.new-socialBtn i, 
+    .V_3_5.template-nine .common-ctas a.btn-twitter.new-socialBtn i, 
+    .V_3_5.template-nine .common-ctas a.btn-in.new-socialBtn i{padding-top: 10px}
     .animated{-webkit-animation-duration:1s;animation-duration:1s}
     .t1-ques-component {width: 90%;}
     .t1-ques-component .question-components{ max-width: 100% !important;}
