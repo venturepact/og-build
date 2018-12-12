@@ -63,7 +63,7 @@
     .t1-ques-component .question-components{ max-width: calc(100% - 85px);}
 }
 @media(max-width:640px){
-
+    .logo a img.vert{max-height: 40px !important}
     .t1-ques-component.prev .go-btn {display: none;}
 
     .V_3_5.template-nine .common-ctas a.btn-fb.new-socialBtn i, 
@@ -137,7 +137,7 @@
     .t1-ques-component .go-btn.active i{font-size:20px;display:inline-block}
     .checkbox-outer-base label,.radio-outer label.no-icon{padding-left:30px!important}
     .checkbox-outer .control__indicator.check-set i,
-    .radio-outer label .control__indicator.icon-set i{font-size:16px}
+    .radio-outer label .control__indicator.icon-set i{font-size:18px}
     .outer-section{display:block;vertical-align:middle;height:100%;float:left; width: 100%}
     .custom-block .input-field input[type=text],
     .custom-block .input-field input[type=email]{max-width:auto;margin-left:0px;height:28px;font-size:16px;padding-left:0}
