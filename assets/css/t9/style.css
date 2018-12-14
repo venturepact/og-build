@@ -153,7 +153,9 @@ calendar>div .form-group{margin:0}
 button.back-action.back-btn i{font-size:32px;line-height:1;vertical-align:middle; opacity: 0.6;transition: 0.5s}
 button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
 .ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
-.logo-slide .ques-header{left:80px!important;position:relative}
+
+.logo-slide .ques-header{left:30px!important; position:relative}
+.logo-slide .Landing  + .Questionnaire .t1-question .ques-header{left: 80px!important;}
 .checkbox-outer label,
 .checkbox-outer-base label,
 .radio-outer label,
@@ -324,14 +326,12 @@ span.calendar-range{float:none;padding:0 10px;width:auto;position:relative;top:-
 .t1-ques-component .go-btn.active span{display:flex;align-items:center;justify-content:center}
 .t1-question form#leadform_question .selectize-control{width:220px!important;float:left}
 .result-v2-box2 .recom-section{float:left;width:100%}
-.t1-question header.landing-page-header{display:none}
+.Landing  + .Questionnaire .t1-question header.landing-page-header{display:none}
 body.t9-body-scroll.full-inpage-embed {max-height: initial;overflow: visible;}
 body.t9-body-scroll.full-inpage-embed {
   max-height: initial;
   overflow: visible;
 }
-body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{
-  max-height: 700px;
-  overflow-y: auto
-}
+body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 700px;overflow-y: auto}
 body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto}
+.logo a img.horz{max-height: 60px !important}

@@ -61,9 +61,13 @@
     .selectize-control.single .selectize-input .item, 
     .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0 !important;}
     .t1-ques-component .question-components{ max-width: calc(100% - 85px);}
+    body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 100vh;overflow-y: auto}
+    body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: 100vh}
 }
 @media(max-width:640px){
     .logo a img.vert{max-height: 40px !important}
+    body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 100vh;overflow-y: auto}
+    body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: 100vh}
     .t1-ques-component.prev .go-btn {display: none;}
     .t1-question button.back-action.back-btn::before {content: '';position: fixed;background: #fff;left: 0;right: 0;top: 0;width: 100% !important;float: left;height: 60px;box-shadow: 8px 10px 20px rgba(0,0,0,.05);z-index: -1;}
     .V_3_5.template-nine .common-ctas a.btn-fb.new-socialBtn i, 
@@ -79,7 +83,8 @@
     .ques-header{top: 10px; height: 40px; left:15px}
     .t1-question button.back-action.back-btn {left: 15px!important;top: 10px!important;height: 40px;}
     .sec_0 .inline-tablecell.logo-resizing {padding: 10px 0 0 !important;}
-    .logo-slide .ques-header {left: 50px!important; position: fixed}
+    .logo-slide .ques-header {left: 15px!important; position: fixed;}
+    .logo-slide .Landing  + .Questionnaire .t1-question .ques-header{left: 50px!important;}
     .checkbox-outer, .checkbox-outer-base, .radio-outer {margin-right: 0px;margin-bottom: 10px; margin-left: 10px; float:none}
     .main-heading h1 p,
     .questions-list>div.t1-ques-head p, 
