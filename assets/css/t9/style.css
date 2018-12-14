@@ -103,6 +103,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .radio-outer label input[type=radio]{position:absolute!important;opacity:0;margin:0!important}
 .custom-block{display:inline-block}
 .custom-block .input-field input[type=email],
+.custom-block .input-field input[type=number],
 .custom-block .input-field input[type=text],
 .leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:220px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;padding-bottom:8px}
 calendar,calendar>div{display:inline-block;float:none;vertical-align:sub}
@@ -145,13 +146,13 @@ calendar>div .form-group{margin:0}
   .animated{-webkit-animation:unset!important;animation:unset!important;-webkit-transition:none!important;transition:none!important}
 }
 .hide .t1-question button.back-action.back-btn{opacity:0;left:15px;top:22px;transition:.5s}
-.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:35px!important;top:22px!important;opacity:1!important;transition:.5s;transition-delay:2.2s;padding:0!important;background:0 0;border:0!important;display:flex;align-items:center;height:65px}
+.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:35px!important;top:22px!important;opacity:1!important;transition:.5s;padding:0!important;background:0 0;border:0!important;display:flex;align-items:center;height:65px}
 .ques-header,
 .t1-ques-component.calendar,
 .t1-ques-component.textfield{align-items:center}
-button.back-action.back-btn i{font-size:32px;line-height:1;vertical-align:middle}
-.ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,
-  .195,1.185);float:left;height:65px;display:flex}
+button.back-action.back-btn i{font-size:32px;line-height:1;vertical-align:middle; opacity: 0.6;transition: 0.5s}
+button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
+.ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
 .logo-slide .ques-header{left:80px!important;position:relative}
 .checkbox-outer label,
 .checkbox-outer-base label,

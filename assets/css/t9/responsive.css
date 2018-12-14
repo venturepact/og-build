@@ -65,7 +65,7 @@
 @media(max-width:640px){
     .logo a img.vert{max-height: 40px !important}
     .t1-ques-component.prev .go-btn {display: none;}
-
+    .t1-question button.back-action.back-btn::before {content: '';position: fixed;background: #fff;left: 0;right: 0;top: 0;width: 100% !important;float: left;height: 60px;box-shadow: 8px 10px 20px rgba(0,0,0,.05);z-index: -1;}
     .V_3_5.template-nine .common-ctas a.btn-fb.new-socialBtn i, 
     .V_3_5.template-nine .common-ctas a.btn-twitter.new-socialBtn i, 
     .V_3_5.template-nine .common-ctas a.btn-in.new-socialBtn i{padding-top: 10px}
@@ -79,7 +79,7 @@
     .ques-header{top: 10px; height: 40px; left:15px}
     .t1-question button.back-action.back-btn {left: 15px!important;top: 10px!important;height: 40px;}
     .sec_0 .inline-tablecell.logo-resizing {padding: 10px 0 0 !important;}
-    .logo-slide .ques-header {left: 50px!important;}
+    .logo-slide .ques-header {left: 50px!important; position: fixed}
     .checkbox-outer, .checkbox-outer-base, .radio-outer {margin-right: 0px;margin-bottom: 10px; margin-left: 10px; float:none}
     .main-heading h1 p,
     .questions-list>div.t1-ques-head p, 
@@ -102,15 +102,11 @@
     div.t1-ques-head p{padding:16px 30px;font-size:16px;line-height:1.3}
     fb_lead_gen .fb-outer .loginBtn{padding:13px 35px 11px 25px;font-size:16px;line-height:20px}
     fb_lead_gen .fb-outer .loginBtn:before{width:35px;background-position:8px center;background-size:14px}
-    /* .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox,
-    .t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox{padding-left:30px!important}
-    .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox::before,
-    .t1-question .leadform_question .input-outer input[type=checkbox]+label.leadform-checkbox::before{width:20px;height:20px;top:0}
-    .t1-landing leadform .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after,
-    .t1-question .leadform_question .input-outer input[type=checkbox]:checked+label.leadform-checkbox::after{width:20px;font-size:16px;padding-left:0;top:0;left:2px} */
+    
     .t1-landing leadform form .input-section .input-outer{padding:16px 30px;font-size:16px}
     .custom-block .input-field input[type=text],
     .custom-block .input-field input[type=email],
+    .custom-block .input-field input[type=number],
     .t1-landing leadform form .input-section .input-outer input,
     input.othersfield{height:25px;font-size:16px;padding-bottom:7px;padding-left:25px;max-width:auto}
     .leadform_question form#leadform_question .input-outer input{height:25px;font-size:16px;padding-bottom:7px;padding-left:25px;max-width:155px}
@@ -122,9 +118,9 @@
     .main-heading h1 p{font-size:16px;padding:16px 30px; margin-bottom: 15px}
     .stickyfooter.lightSticky{float:none;display:inline-block;position:relative}
     section.landing-footer-outer{position:absolute;bottom:0;text-align:center;float:left;width:100%}
-    button.back-action.back-btn i{font-size:28px}
-    .t1-question{padding:10vh 20px!important}
-    .t9-body-scroll .t1-question{padding:35px 20px!important;}
+    button.back-action.back-btn i{font-size:24px}
+    .t1-question{padding:70px 20px 30px !important}
+    /* .t9-body-scroll .t1-question{padding:70px 20px 30px!important;} */
     .banner-img{width:100%;float:left;height:45vh;position:relative}
     section.landing-page-mid{margin-left:0;padding:30px 20px 70px;float:left;width:100%;text-align:center}
     .btn.prime-action{float:none;font-size:14px;padding:12px 30px 11px;line-height:22px;display:inline-block}
@@ -140,7 +136,8 @@
     .radio-outer label .control__indicator.icon-set i{font-size:18px}
     .outer-section{display:block;vertical-align:middle;height:100%;float:left; width: 100%}
     .custom-block .input-field input[type=text],
-    .custom-block .input-field input[type=email]{max-width:auto;margin-left:0px;height:28px;font-size:16px;padding-left:0}
+    .custom-block .input-field input[type=number],
+    .custom-block .input-field input[type=email]{max-width:auto;margin-left:0px;height:25px;font-size:16px;padding-left:0}
     .checkbox-outer .control__indicator.check-set,
     .radio-outer label .control__indicator.icon-set{top:12px;left:25px}
     .rating-inner i{font-size:22px}
