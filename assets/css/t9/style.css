@@ -154,8 +154,9 @@ button.back-action.back-btn i{font-size:32px;line-height:1;vertical-align:middle
 button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
 .ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
 
-.logo-slide .ques-header{left:30px!important; position:relative}
-.logo-slide .Landing  + .Questionnaire .t1-question .ques-header{left: 80px!important;}
+.logo-slide .common-header-main.ques-header{left:30px!important;}
+.logo-slide .ques-header{left:80px!important;}
+
 .checkbox-outer label,
 .checkbox-outer-base label,
 .radio-outer label,
@@ -334,4 +335,5 @@ body.t9-body-scroll.full-inpage-embed {
 }
 body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 700px;overflow-y: auto}
 body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto}
-.logo a img.horz{max-height: 60px !important}
+.logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
+.custom-block .input-field input[type=number]{-moz-appearance: none; -webkit-appearance: none}
