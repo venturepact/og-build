@@ -295,7 +295,7 @@ p.requiredAsteric{display:none!important}
 @-moz-document url-prefix(){.t1-landing{height:100vh}
 }
 body.t9-body-scroll{max-height:700px;overflow-y:auto}
-.safari body.t9-body-scroll .template-nine.V_3_5{max-height:700px;overflow-y:auton}
+.safari body.t9-body-scroll .template-nine.V_3_5{max-height:700px;overflow-y:auto}
 button.lf-skip-btn.ripple-light{BACKGROUND:transparent!important;border:0!important;text-align:right;float:right;font-size:16px;color:#000;text-transform:capitalize;opacity:.4;position:relative;right:95px;bottom:0}
 button.lf-skip-btn.ripple-light:hover{opacity:1}
 .question-components.transparent-bg+.go-btn{margin-left:0!important}
@@ -329,12 +329,13 @@ span.calendar-range{float:none;padding:0 10px;width:auto;position:relative;top:-
 .result-v2-box2 .recom-section{float:left;width:100%}
 .Landing  + .Questionnaire .t1-question header.landing-page-header{display:none}
 body.t9-body-scroll.full-inpage-embed {max-height: initial;overflow: visible;}
-body.t9-body-scroll.full-inpage-embed {
+body.t9-body-scroll.inpage-embed , body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 ,{
   max-height: initial;
   overflow: visible;
 }
-body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 100vh;overflow-y: auto}
-/* body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto} */
+ body.t9-body-scroll.inpage-embed .template-nine.V_3_5 {max-height: 700px;overflow-y: auto}
+ body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto}
+body.t9-body-scroll.inpage-embed .t1-landing{min-height: auto}
 .logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
