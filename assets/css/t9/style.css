@@ -333,7 +333,13 @@ body.t9-body-scroll.full-inpage-embed {
   max-height: initial;
   overflow: visible;
 }
-body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 700px;overflow-y: auto}
-body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto}
+body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5{max-height: 100vh;overflow-y: auto}
+/* body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto} */
 .logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
-.custom-block .input-field input[type=number]{-moz-appearance: none; -webkit-appearance: none}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
