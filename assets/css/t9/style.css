@@ -44,7 +44,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .t1-ques-component .question-components .t1-ques-head{width:auto!important}
 .t1-ques-component .go-btn{display:flex;width:73px;height:73px;margin-left:20px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:25px;font-size:22px;line-height:73px;color:#fff;align-items:center;justify-content:center}
 .inline-tablecell.logo-resizing{position:relative;z-index:1;text-align:center;float:left;width:100%;padding:0}
-.sec_0 .inline-tablecell.logo-resizing{padding:20vh 0 0}
+.sec_0 .inline-tablecell.logo-resizing{padding:40px 0 0}
 a.go-btn:hover{text-decoration:none}
 .questions-list>div.t1-ques-head div p.active:last-child{border-bottom-left-radius:0!important}
 .Leadform,form#new_form{max-width:65%;margin:0 auto;padding:0;position:relative;-webkit-transition:2s cubic-bezier(.23,1,.32,1);-moz-transition:2s cubic-bezier(.23,1,.32,1);-o-transition:2s cubic-bezier(.23,1,.32,1);transition:2s cubic-bezier(.23,1,.32,1);text-align:left;display:inline-block;width:100%}
@@ -115,7 +115,7 @@ calendar>div .form-group{margin:0}
 .t1-landing .text-center,
 .t1-question{width:100%;float:left}
 .t1-question{position:relative;z-index:99;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:0 4em}
-.t1-question::after{position:fixed;left:0;right:0;content:'';top:0;bottom:0;opacity:.5}
+.t1-question::after{position:fixed;left:0;right:10px;content:'';top:0;bottom:0;opacity:.5}
 .t1-ques-component .go-btn.active{font-size:0;padding:16px 0}
 .t1-ques-component .go-btn.active i{font-size:30px;display:inline-block}
 .t1-ques-component .go-btn i{display:none}
@@ -155,7 +155,7 @@ button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
 .ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
 
 .logo-slide .common-header-main.ques-header{left:30px!important;}
-.logo-slide .ques-header{left:80px!important;}
+.logo-slide .ques-header{left:80px!important; position: relative;}
 
 .checkbox-outer label,
 .checkbox-outer-base label,
@@ -214,7 +214,7 @@ body.no-scrol::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#00
 .t1-landing leadform form .input-section .input-outer i{position:absolute;top:19px;left:40px;font-size:22px}
 .t1-landing leadform form .input-section .input-outer input{background:0 0;max-width:100%;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;width:100%!important;padding-bottom:10px;box-sizing:border-box;float:left;padding-left:35px}
 section.landing-page-mid>div{max-width:75%;float:left;width:100%}
-.t1-landing leadform form .input-section .input-outer span{font-size:10px;float:left;position:absolute;left:40px;bottom:-15px;color:red!important}
+.t1-landing leadform form .input-section .input-outer span{font-size:10px;float:left;position:absolute;left:40px;top:102%;color:red!important; line-height: 1.1}
 .t1-landing leadform form .container-temp.text-center.eight-sec .btn.prime-action{float:right}
 .selectize-control.single .selectize-input .item,
 .selectize-control.single .selectize-input input{padding:0 0 10px!important;margin:0!important}
@@ -284,7 +284,7 @@ p.requiredAsteric{display:none!important}
 .V_3_5.template-nine .common-result-bot .recom-section .leadform-outer .prime-action{padding:12px 30px!important}
 .V_3_5.template-nine .outcome_like{top:-5px!important}
 .stickyfooter.lightSticky{float:none;display:inline-block;position:relative}
-.sec_0.isIframe .inline-tablecell.logo-resizing{padding:0}
+/* .sec_0.isIframe .inline-tablecell.logo-resizing{padding:0} */
 .sec_0.isIframe form#new_form{margin:0 auto}
 .sec_0.secBlockOne form,
 .sec_0.secBlockOne form#new_form{margin-bottom:0!important}
@@ -334,7 +334,7 @@ body.t9-body-scroll.inpage-embed , body.t9-body-scroll.full-inpage-embed .templa
   overflow: visible;
 }
  body.t9-body-scroll.inpage-embed .template-nine.V_3_5 {max-height: 700px;overflow-y: auto}
- body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto}
+ body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto; position: relative;z-index: 99;}
 body.t9-body-scroll.inpage-embed .t1-landing{min-height: auto}
 .logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
 input[type=number]::-webkit-inner-spin-button, 
