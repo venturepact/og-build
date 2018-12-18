@@ -1,4 +1,10 @@
 @media (min-width:641px) and (max-width:1024px){
+    .safari body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 ,
+    .safari body.t9-body-scroll.inpage-embed  {
+    max-height: initial;
+    overflow: visible;
+    }s
+
     section.landing-page-mid{width:55%;margin-left:45%;padding:70px 25px;float:left}
     .banner-img{width:45%}
     .main-heading h1{font-size:20px;line-height:1.4}

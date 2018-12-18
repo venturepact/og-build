@@ -266,7 +266,7 @@ fb_lead_gen .fb-outer .loginBtn:before{width:48px;background-position:15px cente
 .or-class{float:left;width:100%;padding:10px 20px}
 .t1-question .or-class{margin-top:-10px!important;font-size:14px!important;padding:0 20px 15px 0}
 .template-nine .common-result-space{padding:60px 0!important}
-.rating-inner i{float:left;font-size:30px;cursor:pointer;line-height:1.2}
+.rating-inner i{float:left;font-size:30px;cursor:pointer;line-height:1}
 .custom-block.rating-custom{float:none;display:inline-block;vertical-align:sub;position:relative}
 p.requiredAsteric{display:none!important}
 .t1-question .leadform_question form#leadform_question .input-outer i{position:absolute;left:0;top:5px}
@@ -329,18 +329,16 @@ span.calendar-range{float:none;padding:0 10px;width:auto;position:relative;top:-
 .result-v2-box2 .recom-section{float:left;width:100%}
 .Landing  + .Questionnaire .t1-question header.landing-page-header{display:none}
 body.t9-body-scroll.full-inpage-embed {max-height: initial;overflow: visible;}
-body.t9-body-scroll.inpage-embed , body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 ,{
+body.t9-body-scroll.inpage-embed , 
+body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5   {
   max-height: initial;
   overflow: visible;
 }
  body.t9-body-scroll.inpage-embed .template-nine.V_3_5 {max-height: 700px;overflow-y: auto}
- body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto; position: relative;z-index: 99;}
-body.t9-body-scroll.inpage-embed .t1-landing{min-height: auto}
+ body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto; position: relative;z-index: 99; }
+body.t9-body-scroll.inpage-embed .t1-landing , body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto}
 .logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
 input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;-moz-appearance: none;appearance: none;margin: 0; }
+.V_3_5 .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer .disc-set{color: #fff}
+.pac-container{z-index:9999}
