@@ -85,7 +85,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0;margin:0 0 00px;text-align:right}
 .checkbox-outer,
 .checkbox-outer-base,
-.radio-outer{display:inline-block;margin-bottom:18px;margin-right:20px;float:none}
+.radio-outer{display:inline-block;margin-bottom:18px;margin-left:20px;float:none}
 .checkbox-outer-base label,
 .radio-outer label.no-icon{padding-left:40px!important}
 .checkbox-outer .control__indicator.check-set,
@@ -115,7 +115,7 @@ calendar>div .form-group{margin:0}
 .t1-landing .text-center,
 .t1-question{width:100%;float:left}
 .t1-question{position:relative;z-index:99;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:0 4em}
-.t1-question::after{position:fixed;left:0;right:10px;content:'';top:0;bottom:0;opacity:.5}
+.t1-question::after{position:fixed;left:0;right:0px;content:'';top:0;bottom:0;opacity:.5}
 .t1-ques-component .go-btn.active{font-size:0;padding:16px 0}
 .t1-ques-component .go-btn.active i{font-size:30px;display:inline-block}
 .t1-ques-component .go-btn i{display:none}
@@ -127,8 +127,8 @@ calendar>div .form-group{margin:0}
 .powered-by .poweredby-text,
 .powered-by span{float:left;color:#585858;margin-right:4px;font-family:montserratregular}
 @keyframes slideInUp{
-  from{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}
-  to{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+  from{-webkit-transform:translateY(100%);transform:translateY(100%);visibility:visible}
+  to{-webkit-transform:translateY(0,0,0);transform:translateY(0,0,0)}
 }
 .slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}
 .animated{-webkit-animation-duration:.6s;animation-duration:.6s}
@@ -298,7 +298,7 @@ body.t9-body-scroll{max-height:700px;overflow-y:auto}
 .safari body.t9-body-scroll .template-nine.V_3_5{max-height:700px;overflow-y:auto}
 button.lf-skip-btn.ripple-light{BACKGROUND:transparent!important;border:0!important;text-align:right;float:right;font-size:16px;color:#000;text-transform:capitalize;opacity:.4;position:relative;right:95px;bottom:0}
 button.lf-skip-btn.ripple-light:hover{opacity:1}
-.question-components.transparent-bg+.go-btn{margin-left:0!important}
+/* .question-components.transparent-bg+.go-btn{margin-left:0!important} */
 .t1-ques-head.spin-loader p.spinner{padding:15px 30px!important}
 .selectize-control.single .selectize-input:after{content:' ';display:block;position:absolute;top:50%;right:0;margin-top:-3px;width:0;height:0;transform:translateY(-50%);border-style:solid;border-width:5px 5px 0;border-color:grey transparent transparent}
 .selectize-input.dropdown-active::before{content:' ';display:block;position:absolute;background:#f0f0f0;height:1px;bottom:0;left:0;right:0}
@@ -330,15 +330,17 @@ span.calendar-range{float:none;padding:0 10px;width:auto;position:relative;top:-
 .Landing  + .Questionnaire .t1-question header.landing-page-header{display:none}
 body.t9-body-scroll.full-inpage-embed {max-height: initial;overflow: visible;}
 body.t9-body-scroll.inpage-embed , 
-body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5   {
-  max-height: initial;
-  overflow: visible;
-}
+body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5   {max-height: initial;overflow: visible;}
  body.t9-body-scroll.inpage-embed .template-nine.V_3_5 {max-height: 700px;overflow-y: auto}
- body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto; position: relative;z-index: 99; }
+ body.t9-body-scroll.full-inpage-embed .template-nine.V_3_5 .Questionnaire ,
+ body.t9-body-scroll.inpage-embed .template-nine.V_3_5 .Questionnaire{max-height: 100vh;overflow-y: auto; position: relative;z-index: 99; }
 body.t9-body-scroll.inpage-embed .t1-landing , body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: auto}
 .logo a img.horz , .common-header-main .logo a img.horz{max-height: 60px !important}
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;-moz-appearance: none;appearance: none;margin: 0; }
-.V_3_5 .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer .disc-set{color: #fff}
+.V_3_5 .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer .disc-set , 
+.result-v2 .new-heading .t1-result-disclaimer .disc-set{color: #fff}
 .pac-container{z-index:9999}
+input[type=number] {
+  -moz-appearance:textfield;
+}
