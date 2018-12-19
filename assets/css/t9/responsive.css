@@ -72,7 +72,7 @@
 }
 
 @media(max-width:640px){
-    .t1-question::after{right:10px;}
+ 
     .logo a img.vert , .common-header-main .logo a img.vert{max-height: 40px !important}
 
     /* body.t9-body-scroll.full-inpage-embed .t1-landing{min-height: 100vh} */
@@ -191,5 +191,5 @@
     .result-v2 .common-result-main .common-result-bot-icons .crb-right{margin-top: 0px !important}
     .selectize-control.single .selectize-input .item, .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0px !important;}
     .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input .item, .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input input{padding: 0 0 5px 0 !important}
-    .errorMessage, .t1-question .leadform_question .input-outer .input-validation span{min-width: 205px;padding: 12px 25px; font-size: 14px; top: 80px}
+    .errorMessage, .t1-question .leadform_question .input-outer .input-validation span{min-width: 310px;padding: 12px 25px; font-size: 14px; top: 80px}
 }
