@@ -158,6 +158,8 @@
     .V_3_5 .stickyfooter{padding:10px 27px 25px!important}
     .V_3_5 .common-footer-main .stickyfooter,
     .V_3_5 .common-footer-main .stickyfooter.lightSticky{padding-right:10px!important}
+    .V_3_5 .common-footer-main .stickyfooter.lightSticky .col1 {flex: 0;}
+    .V_3_5 .common-footer-main .stickyfooter.lightSticky .col {justify-content: center; flex: 1;}
     .V_3_5 .main-section form{padding:0;margin-top:30px}
     .V_3_5 .landing-text-right .landing-page-mid{margin-right:5%;margin-left:0;padding-left:10px}
     .V_3_5 .landing-text-right .landing-right{left:5%;float:left}
