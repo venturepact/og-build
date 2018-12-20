@@ -3,7 +3,7 @@
 .t1-landing,img{max-width:100%}
 .col,
 .powered-by{-webkit-box-align:center}
-.t1-landing{width:100%;min-height:100vh;position:relative;display:table;overflow:hidden}
+.t1-landing{width:100%;min-height:100vh;position:relative;display:table;}
 ::-webkit-scrollbar-track{border-radius:0;background-color:#f5f5f5}
 ::-webkit-scrollbar{width:10px;background-color:rgba(0,0,0,.2)}
 ::-webkit-scrollbar:horizontal{height:10px;background-color:rgba(0,0,0,.2)}
@@ -295,7 +295,6 @@ p.requiredAsteric{display:none!important}
 @-moz-document url-prefix(){.t1-landing{height:100vh}
 }
 body.t9-body-scroll{max-height:700px;overflow-y:auto}
-.safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
 button.lf-skip-btn.ripple-light{BACKGROUND:transparent!important;border:0!important;text-align:right;float:right;font-size:16px;color:#000;text-transform:capitalize;opacity:.4;position:relative;right:95px;bottom:0}
 button.lf-skip-btn.ripple-light:hover{opacity:1}
 /* .question-components.transparent-bg+.go-btn{margin-left:0!important} */
@@ -344,7 +343,7 @@ input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none;-moz-ap
 input[type=number] {
   -moz-appearance:textfield;
 }
-.leadform_question #leadform_question .input-outer:last-child {
+.prev.leadform_question #leadform_question .input-outer:last-child {
   margin-bottom: 0px !important;
 }
-.result-v2 .new-heading .t1-result-disclaimer{margin-bottom: 10px}
+.V_3_5 .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer .disc-set,.result-v2 .new-heading .t1-result-disclaimer{margin-bottom: 10px !important;}
