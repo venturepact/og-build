@@ -294,8 +294,8 @@ p.requiredAsteric{display:none!important}
 .t1-ques-component.next{position:relative;display:block;opacity:0}
 @-moz-document url-prefix(){.t1-landing{height:100vh}
 }
-/* body.t9-body-scroll{max-height:700px;overflow-y:auto} */
-.safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{max-height:700px;overflow-y:auto}
+body.t9-body-scroll{max-height:700px;overflow-y:auto}
+.safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
 button.lf-skip-btn.ripple-light{BACKGROUND:transparent!important;border:0!important;text-align:right;float:right;font-size:16px;color:#000;text-transform:capitalize;opacity:.4;position:relative;right:95px;bottom:0}
 button.lf-skip-btn.ripple-light:hover{opacity:1}
 /* .question-components.transparent-bg+.go-btn{margin-left:0!important} */
