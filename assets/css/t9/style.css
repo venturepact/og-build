@@ -23,7 +23,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .sub-heading h2{float:left;width:100%}
 .main-heading{margin-bottom:0}
 .main-heading h1{font-size:22px;line-height:1.4;margin:0;width:100%}
-.main-heading h1 p{font-size:22px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:20px 40px;border-radius:50px;max-width:100%;display:block;box-shadow:8px 10px 20px rgba(0,0,0,.05)}
+.main-heading h1 p{font-size:22px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:18px 38px;border-radius:50px;max-width:100%;display:block;box-shadow:8px 10px 20px rgba(0,0,0,.05)}
 .main-heading h1 p:last-child{border-radius:50px 50px 50px 0}
 .btn.prime-action{float:left;font-size:18px;padding:18px 30px 16px;border-radius:50px;color:#fff;line-height:23px;white-space:normal;word-wrap:break-word;overflow:hidden;box-shadow:8px 10px 20px rgba(0,0,0,.05)!important;position:relative}
 .editor-page-divider{margin-bottom:35px;position:relative}
@@ -42,7 +42,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .question-mid .questions-block p.prev,
 .t1-ques-component.active.prev{opacity:.4}
 .t1-ques-component .question-components .t1-ques-head{width:auto!important}
-.t1-ques-component .go-btn{display:flex;width:73px;height:73px;margin-left:20px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:25px;font-size:22px;line-height:73px;color:#fff;align-items:center;justify-content:center}
+.t1-ques-component .go-btn{display:flex;width:67px;height:67px;margin-left:20px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:25px;font-size:22px;line-height:67px;color:#fff;align-items:center;justify-content:center}
 .inline-tablecell.logo-resizing{position:relative;z-index:1;text-align:center;float:left;width:100%;padding:0}
 .sec_0 .inline-tablecell.logo-resizing{padding:40px 0 0}
 a.go-btn:hover{text-decoration:none}
@@ -51,7 +51,7 @@ a.go-btn:hover{text-decoration:none}
 .t1-ques-component{float:right;text-align:right;width:85%}
 .sec_0 form#new_form{margin:0 auto 20vh}
 .questions-list>div.t1-ques-head p,
-.t1-ques-component .question-components,div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:85%;font-size:22px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
+.t1-ques-component .question-components,div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:85%;font-size:22px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
 .questions-list>.t1-ques-head.prev p{opacity:.4!important}
 .questions-list>.t1-ques-head.prev p:hover,
 .t1-ques-component.active.prev:hover{opacity:1!important}
@@ -94,7 +94,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .radio-outer label .control__indicator.icon-set i{font-size:30px;vertical-align:middle}
 .checkbox-outer label,
 .checkbox-outer-base label,
-.radio-outer label{padding:20px 40px 20px 70px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
+.radio-outer label{padding:18px 38px 18px 68px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
 .checkbox-outer label span,
 .checkbox-outer-base label span,
 .radio-outer label span{font-weight:400}
@@ -105,7 +105,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .custom-block .input-field input[type=email],
 .custom-block .input-field input[type=number],
 .custom-block .input-field input[type=text],
-.leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:220px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;padding-bottom:8px}
+.leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:220px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;padding-bottom:6px; margin-bottom: 2px}
 calendar,calendar>div{display:inline-block;float:none;vertical-align:sub}
 calendar>div .form-group{margin:0}
 .cal-outer.calender-date.timePiece .input-group.date input.form-control{width:270px}
@@ -127,11 +127,11 @@ calendar>div .form-group{margin:0}
 .powered-by .poweredby-text,
 .powered-by span{float:left;color:#585858;margin-right:4px;font-family:montserratregular}
 @keyframes slideInUp{
-  from{-webkit-transform:translateY(100%);transform:translateY(100%);visibility:visible}
+  from{-webkit-transform:translateY(100px);transform:translateY(100px);visibility:visible}
   to{-webkit-transform:translateY(0,0,0);transform:translateY(0,0,0)}
 }
 .slideInUp{-webkit-animation-name:slideInUp;animation-name:slideInUp}
-.animated{-webkit-animation-duration:.6s;animation-duration:.6s}
+.animated{-webkit-animation-duration:.4s;animation-duration:.4s;transition-timing-function: linear;}
 .animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}
 .animated.delay-1s{-webkit-animation-delay:1s;animation-delay:1s}
 .animated.delay-2s{-webkit-animation-delay:2s;animation-delay:2s}
@@ -210,7 +210,7 @@ body.no-scrol::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#00
 .template-nine .editor-page-divider .t1-result::after{position:absolute}
 .t1-landing leadform form{float:left;width:100%}
 .t1-landing leadform form .text-center{float:right;width:100%;max-width:85%}
-.t1-landing leadform form .input-section .input-outer{position:relative;width:100%;margin-top:0;margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:100%;font-size:22px;box-shadow:0 5px 10px rgba(0,0,0,.05);line-height:1.4;float:right}
+.t1-landing leadform form .input-section .input-outer{position:relative;width:100%;margin-top:0;margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:100%;font-size:22px;box-shadow:0 5px 10px rgba(0,0,0,.05);line-height:1.4;float:right}
 .t1-landing leadform form .input-section .input-outer i{position:absolute;top:19px;left:40px;font-size:22px}
 .t1-landing leadform form .input-section .input-outer input{background:0 0;max-width:100%;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;width:100%!important;padding-bottom:10px;box-sizing:border-box;float:left;padding-left:35px}
 section.landing-page-mid>div{max-width:75%;float:left;width:100%}
@@ -227,7 +227,7 @@ body.no-scrol{overflow:hidden !important}
 .V_3_5.template-nine .overlay-outerleadform.result-v2 .common-result-main [type=checkbox].filled-in:checked+label.leadform-checkbox::after{font-family:'Material Icons';content:'done';position:absolute;left:0;font-size:20px;top:-3px;color:#000;border:0!important;width:20px!important;height:20px!important}
 .selectize-control{position:relative;Z-INDEX:100}
 .selectize-dropdown{text-align:left}
-.leadform_question #leadform_question .input-outer{margin-bottom:25px;background:#fff;border-radius:50px;padding:20px 40px;text-align:left;max-width:100%;float:right;font-size:22px;-webkit-box-shadow:8px 10px 20px rgba(0,0,0,.05);box-shadow:8px 10px 20px rgba(0,0,0,.05);position:relative;clear:both;line-height:1.4;min-height:73px}
+.leadform_question #leadform_question .input-outer{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:100%;float:right;font-size:22px;-webkit-box-shadow:8px 10px 20px rgba(0,0,0,.05);box-shadow:8px 10px 20px rgba(0,0,0,.05);position:relative;clear:both;line-height:1.4;min-height:73px}
 .leadform_question .section-head{float:left;color:#fff}
 .leadform_question .input-validation,
 .leadform_question .section-head div,
@@ -322,7 +322,7 @@ span.calendar-range{float:none;padding:0 10px;width:auto;position:relative;top:-
 .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input .item,
 .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input input{padding:0 0 8px!important}
 .input-field label.post-icon,
-.input-field label.pre-icon{margin:0 5px!important}
+.input-field label.pre-icon{margin:0 5px 0 0!important}
 .t1-ques-component .go-btn.active span{display:flex;align-items:center;justify-content:center}
 .t1-question form#leadform_question .selectize-control{width:220px!important;float:left}
 .result-v2-box2 .recom-section{float:left;width:100%}
@@ -347,3 +347,10 @@ input[type=number] {
   margin-bottom: 0px !important;
 }
 .V_3_5 .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer .disc-set,.result-v2 .new-heading .t1-result-disclaimer{margin-bottom: 10px !important;}
+
+
+
+
+@media (hover: none) {
+  .t1-ques-component.active.prev:hover { opacity: 0.4 !important;}
+}
