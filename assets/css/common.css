@@ -748,6 +748,39 @@ a.btn-done {
     left: 2px;
 }
 
+.intro-overlay.builder-parent .left-button-outer-t9 {
+    top: 415px;
+}
+
+.left-button-outer-t9 {
+    position: absolute;
+    width: 450px;
+    left: 20px;
+    top: 360px;
+}
+
+.left-button-outer-t9 img {
+    float: left;
+    margin-left: 10px;
+}
+
+.left-button-outer-t9 .intro-text-left {
+    float: left;
+    color: #fff;
+    margin-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.left-button-outer-t9 .intro-text-left span {
+    font-size: 24px;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+
+
 .add-btn {
     padding: 12px;
     color: #1483b7;
@@ -1958,7 +1991,8 @@ ul.custom-tab-part.nav.nav-tabs {
 }
 
 ul.custom-tab-part.nav.nav-tabs>li {
-    flex: 1;
+    /* flex: 1; */
+    flex: auto;
     text-align: center;
     margin: 0
 }
@@ -1989,6 +2023,10 @@ ul.custom-tab-part.nav.nav-tabs>li:last-child>a {
 
 ul.custom-tab-part.nav.nav-tabs>li.active>a {
     background: #f6f8f9
+}
+ul.custom-tab-part.nav.nav-tabs>li:nth-child(2) .help-tip.tabs-helptip {
+    left: inherit !important;
+    right: 10% !important;
 }
 
 .web-page-header {
@@ -2513,6 +2551,9 @@ button.launch-btn {
     margin-bottom: 5px;
     color: #62696d;
     font-family: montserratlight;
+}
+.custom-iframee .popup-mode label {
+    font-family: montserratregular;
 }
 
 .custom-popover ul li>span, .custom-popover ul li>div.buttonlink {
@@ -3123,6 +3164,8 @@ input.disabled.custom-input {
 .email-demo {
     width: 100%;
     float: left;
+    max-width: 480px;
+    overflow: auto;
 }
 
 .opinion-email-alert {
@@ -3612,9 +3655,24 @@ h4.opinion-email-head {
 .show-exact  .show-exact-row .def-lab , .show-exact  .show-exact-row .div-drop select{
     margin-bottom: 0
 }
+
+.show-exact-row.mb0{ margin-bottom: 0px;}
+.embed-p-style{
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 25px;
+    width: calc(100% - 90px) !important;
+    font-family: montserratlight;
+    font-size: 11px;
+    color: #62696d;
+    opacity: 0.8;
+    float: left;
+}
 #publish-upgrade.mac-compatible .modal-dialog{ width: 600px !important}
 #publish-upgrade.mac-compatible .modal-content{ background-color: #fff !important;}
-#publish-upgrade.mac-compatible .modal-content .left-sec{width:100% !important;}
+#publish-upgrade.mac-compatible .modal-content .left-sec{width:100% !important;border-radius: 5px;}
 #publish-upgrade.mac-compatible .modal-content i{color: #888 !important}
 
 #publish-upgrade .icon.icon--order-success.svg {
