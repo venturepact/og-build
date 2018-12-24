@@ -379,7 +379,7 @@ a.bot-circle.active .og-chat-tooltip {
 
 /* resposnive */
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
 	@supports (-webkit-overflow-scrolling: touch) {
 		.og-chat-box {
 			-webkit-overflow-scrolling: touch;
