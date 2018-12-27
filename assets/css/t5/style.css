@@ -4815,6 +4815,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .pic-selector label.control .img-graded-box i {top: 10px;}
 .V_3_5 .t1-landing .landing-inner .selectize-dropdown.single{z-index: 9999;}
 .V_3_5 .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input{box-shadow: none !important;}
+.V_3_5 .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input:focus{border: none !important; box-shadow: none !important;}
 /*new version--login with fb*/
 .V_3_5 .or-class { width: 100%;float: left; padding: 10px; padding-left: 0;text-align: center; font-size: 14px;text-transform: uppercase;}
 .V_3_5 .fb-outer{width:100%;float: left;}

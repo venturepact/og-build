@@ -354,3 +354,7 @@ input[type=number] {
 @media (hover: none) {
   .t1-ques-component.active.prev:hover { opacity: 0.4 !important;}
 }
+.prev.leadform_question .fbOn + fb_lead_gen .or-class {
+  padding-top: 15px !important;
+  margin-top: 0 !important;
+}

@@ -46,6 +46,8 @@
 	line-height: 75px;
 	box-shadow: none !important;
 	outline: none !important;
+	left: calc(100% - 85px);
+	top: calc(100% - 82px);
 }
 .bot-circle:focus{ outline: none !important;}
 .bot-circle:hover { color: #fff !important;}
@@ -172,16 +174,18 @@ a.bot-circle.left+.og-chat-box {
 	right: 20px;
 	width: 400px!important;
 	min-height: 250px!important;
-	max-height: 704px!important;
+	max-height: 700px!important;
 	-webkit-box-shadow: 0 5px 40px rgba(0, 0, 0, .16)!important;
 	box-shadow: 0 5px 40px rgba(0, 0, 0, .16)!important;
 	border-radius: 8px!important;
 	overflow: hidden!important;
 	height: calc(100% - 20px - 80px - 20px);
-	bottom: calc(20px + 80px);
+	bottom: 100px;
 	opacity: 0;
 	-webkit-animation: fadeInUp 0.8s ease-in-out 0.5s forwards;
 	animation: fadeInUp 0.8s ease-in-out 0.5s forwards;
+	left: calc(100% - 420px);
+	/* top: calc(100% - 800px) */
 }
 
 .og-chat-box.hide {
@@ -379,13 +383,14 @@ a.bot-circle.active .og-chat-tooltip {
 
 /* resposnive */
 
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
 	@supports (-webkit-overflow-scrolling: touch) {
 		.og-chat-box {
 			-webkit-overflow-scrolling: touch;
 			overflow: scroll !important;
 		} 
 	}
+
 	.og-chat-box {
 		width: 100%;
 		height: 100%;
@@ -395,6 +400,8 @@ a.bot-circle.active .og-chat-tooltip {
 		max-width: 100% !important;
 		min-width: 100% !important;
 		border-radius: 0px !important;
+		left: 0px;
+		top: 0px;
 	}
 	a.bot-circle.active {
 		display: none;
