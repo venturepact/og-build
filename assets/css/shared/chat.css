@@ -383,6 +383,13 @@ a.bot-circle.active .og-chat-tooltip {
 
 /* resposnive */
 
+@media (max-width: 1024px) {
+.og-chat-box {
+
+ top: calc(100% - 800px) 
+}
+}
+
 @media (max-width: 640px) {
 	@supports (-webkit-overflow-scrolling: touch) {
 		.og-chat-box {
@@ -401,7 +408,7 @@ a.bot-circle.active .og-chat-tooltip {
 		min-width: 100% !important;
 		border-radius: 0px !important;
 		left: 0px;
-		top: 0px;
+		top: 0px ;
 	}
 	a.bot-circle.active {
 		display: none;
