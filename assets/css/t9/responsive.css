@@ -63,8 +63,9 @@
     .selectize-control.single .selectize-input .item, 
     .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0 !important;}
     .t1-ques-component .question-components{ max-width: calc(100% - 85px);}
-
+    .t1-question{padding:0 30px}
     .safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
+    .t1-question button.back-action.back-btn{left: 30px !important;}
 }
 
 @media(max-width:640px){
@@ -129,7 +130,7 @@
     .selectize-control.single .selectize-input input{padding:0 0 5px;font-size:15px}
     .main-heading h1{font-size:15px;line-height:1.3;text-align:left}
     .main-heading h1 p{font-size:15px;padding:14px 28px; margin-bottom: 15px}
-    .stickyfooter.lightSticky{float:none;display:inline-block;position:relative}
+    .stickyfooter{float:none;display:inline-block;position:relative}
     section.landing-footer-outer{position:absolute;bottom:0;text-align:center;float:left;width:100%}
     button.back-action.back-btn i{font-size:24px}
     .t1-question{padding:70px 20px 0px !important}
@@ -187,6 +188,6 @@
     .selectize-control.single .selectize-input .item, .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0px !important;}
     .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input .item, .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input input{padding: 0 0 5px 0 !important}
     .errorMessage, .t1-question .leadform_question .input-outer .input-validation span{min-width: 300px;padding: 12px 20px; font-size: 12px; top: 80px}
-
+   .safari .V_3_5.template-nine .common-result.recommendation-outer{padding-bottom: 60px !important}
     .safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
 }
