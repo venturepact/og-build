@@ -384,13 +384,27 @@ a.bot-circle.active .og-chat-tooltip {
 /* resposnive */
 
 @media (max-width: 1024px) {
-.og-chat-box {
-
- top: calc(100% - 800px) 
-}
+	.og-chat-box-outer{
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 999999;
+		right: 0;
+		padding-left:  calc(100% - 420px);
+		padding-top:  calc(100% - 420px)
+	}
+	.og-chat-box-outer .og-chat-box {
+ position: relative;
+ left: auto;
+ top: auto;
+	}
 }
 
 @media (max-width: 640px) {
+	.og-chat-box-outer{
+		padding: 0px !important;
+	}
 	@supports (-webkit-overflow-scrolling: touch) {
 		.og-chat-box {
 			-webkit-overflow-scrolling: touch;
