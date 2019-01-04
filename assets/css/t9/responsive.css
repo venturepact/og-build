@@ -11,27 +11,27 @@
     .custom-block .input-field input[type=text],
     .custom-block .input-field input[type=email],
     .leadform_question form#leadform_question .input-outer input,
-    input.othersfield{font-size:20px;height:28px}
+    input.othersfield{font-size:18px;height:28px}
     .leadform_question #leadform_question .input-outer,
     .questions-list>div.t1-ques-head p,
     .t1-ques-component .question-components,
-    div.t1-ques-head p{padding:16px 28px;font-size:20px}
+    div.t1-ques-head p{padding:16px 28px;font-size:18px}
     .t1-landing leadform form .input-section .input-outer{ padding: 16px 28px; font-size: 20px}
     .checkbox-outer label,
     .checkbox-outer-base label,
-    .radio-outer label{padding:16px 28px 16px 53px;border-radius:50px;font-size:20px}
+    .radio-outer label{padding:16px 28px 16px 53px;border-radius:50px;font-size:18px}
     .checkbox-outer-base label,
     .radio-outer label.no-icon{padding-left:30px!important}
-    .t1-ques-component .go-btn{width:60px;height:60px;font-size:20px;line-height:60px;margin-left: 12px}
+    .t1-ques-component .go-btn{width:57px;height:57px;font-size:18px;line-height:57px;margin-left: 12px}
     .checkbox-outer .control__indicator.check-set i,.radio-outer label .control__indicator.icon-set i{font-size:24px}
-    .input-group.date input.form-control{background:0 0!important;font-size:20px;width:175px}
+    .input-group.date input.form-control{background:0 0!important;font-size:18px;width:175px}
     .checkbox-outer .control__indicator.check-set,
     .radio-outer label .control__indicator.icon-set{position:absolute;top:14px;left:22px}
     fb_lead_gen .fb-outer .loginBtn{font-size:16px;padding: 14px 45px 12px 25px}
     .t1-landing leadform form .input-section .input-outer input{    height: auto;font-size: 20px;padding-bottom: 5px;padding-left: 30px;}
     .t1-landing leadform form .text-center{max-width: 90%}
     .t1-landing leadform form .input-section .input-outer i {top: 23px;left: 30px;font-size: 20px;}
-    .selectize-control.single .selectize-input .item{font-size: 20px;}
+    .selectize-control.single .selectize-input .item{font-size: 18px;}
 
     .checkbox-outer, .checkbox-outer-base, .radio-outer {margin-left: 12px;margin-bottom: 10px}
     .main-heading h1 p,
@@ -42,7 +42,7 @@
      div.t1-ques-head p {margin-bottom: 18px}
      .t1-ques-component {margin-bottom: 20px!important;}
      .input-group.date span.input-group-addon{width: 25px}
-     .rating-inner i {font-size: 26px;}
+     .rating-inner i {font-size: 24px;}
      .t1-question .leadform_question form#leadform_question .input-outer input {padding-left: 30px;}
      /* fb_lead_gen + button.lf-skip-btn.ripple-light{bottom: 105px} */
      button.lf-skip-btn.ripple-light{bottom: 0px}
@@ -51,7 +51,7 @@
      .t1-question leadform_question div + fb_lead_gen {padding-right: 75px;}
      leadform_question fb_lead_gen + button.lf-skip-btn.ripple-light {bottom: 10px;}
      leadform_question div + fb_lead_gen + button.lf-skip-btn.ripple-light{bottom: 0px; right: 85px}
-     .t1-question .leadform_question form#leadform_question .input-outer i{top: 3px}
+     .t1-question .leadform_question form#leadform_question .input-outer i{top: 1px; font-size: 22px}
     .leadform_question #leadform_question .input-outer{min-height: 64px}
     .errorMessage , .t1-question .leadform_question .input-outer .input-validation span{font-size: 16px}
     .t1-landing leadform .input-outer input[type=checkbox]+label.leadform-checkbox::before{width:20px;height:20px;top: 3px}
@@ -66,6 +66,8 @@
     .t1-question{padding:0 30px}
     .safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
     .t1-question button.back-action.back-btn{left: 30px !important;}
+    .spinner>span{width:10px;height:10px}
+    .t1-ques-head.spin-loader p.spinner {padding: 12px 30px 14px!important;}
 }
 
 @media(max-width:640px){
@@ -82,7 +84,7 @@
     .animated{-webkit-animation-duration:1s;animation-duration:1s}
     .t1-ques-component {width: 90%;}
     .t1-ques-component .question-components{ max-width: 100% !important;}
-    .leadform_question #leadform_question .input-outer{min-height: auto}
+    .leadform_question #leadform_question .input-outer{min-height: auto; margin-bottom: 15px;}
     .logo a img.horz , .common-header-main .logo a img.horz{max-height: 40px !important}
     .t1-landing leadform form .input-section .input-outer span{left: 25px}
     form#leadform_question .container-temp.text-center{display: block}
@@ -109,12 +111,14 @@
     .t1-question .leadform_question form#leadform_question .input-outer i{position:absolute;left:0;top:2px;font-size: 17px}
     .t1-question .leadform_question form#leadform_question .input-outer input{padding-left:25px}
     .questions-list>div.t1-ques-head p,.t1-ques-component .question-components,div.t1-ques-head p{max-width:90%}
-    .spinner>span{width:10px;height:10px}
+    .spinner>span{width:8px;height:8px}
+    .t1-ques-head.spin-loader p.spinner {padding: 12px 30px 14px!important;}
     .leadform_question #leadform_question .input-outer,
     .questions-list>div.t1-ques-head p,
     .t1-ques-component .question-components,
     div.t1-ques-head p{padding:14px 28px;font-size:15px;line-height:1.3}
     fb_lead_gen .fb-outer .loginBtn{padding:13px 35px 11px 25px;font-size:15px;line-height:20px}
+    .t1-landing fb_lead_gen .fb-outer .loginBtn{font-size: 16px;}
     fb_lead_gen .fb-outer .loginBtn:before{width:35px;background-position:8px center;background-size:14px}
     
     .t1-landing leadform form .input-section .input-outer{padding:15px 28px;font-size:16px}
@@ -128,8 +132,8 @@
     .t1-landing leadform form .input-section .input-outer i{position:absolute;top:16px;left:30px;font-size:18px}
     .selectize-control.single .selectize-input .item,
     .selectize-control.single .selectize-input input{padding:0 0 5px;font-size:15px}
-    .main-heading h1{font-size:15px;line-height:1.3;text-align:left}
-    .main-heading h1 p{font-size:15px;padding:14px 28px; margin-bottom: 15px}
+    .main-heading h1{font-size:18px;line-height:1.4;text-align:left}
+    .main-heading h1 p{font-size:18px;padding:14px 28px; margin-bottom: 15px}
     .stickyfooter{float:none;display:inline-block;position:relative}
     section.landing-footer-outer{position:absolute;bottom:0;text-align:center;float:left;width:100%}
     button.back-action.back-btn i{font-size:24px}
@@ -137,7 +141,7 @@
     /* .t9-body-scroll .t1-question{padding:70px 20px 30px!important;} */
     .banner-img{width:100%;float:left;height:300px;position:relative}
     section.landing-page-mid{margin-left:0;padding:30px 20px 70px;float:left;width:100%;text-align:center}
-    .btn.prime-action{float:none;font-size:14px;padding:12px 30px 11px;line-height:22px;display:inline-block}
+    .btn.prime-action{float:none;font-size:16px;padding:12px 30px 11px;line-height:22px;display:inline-block}
     .checkbox-outer label,
     .checkbox-outer-base label,
     .radio-outer label{padding:14px 28px 14px 48px!important;font-size:15px;line-height:1.3;cursor:pointer}
@@ -190,4 +194,8 @@
     .errorMessage, .t1-question .leadform_question .input-outer .input-validation span{min-width: 300px;padding: 12px 20px; font-size: 12px; top: 80px}
    .safari .V_3_5.template-nine .common-result.recommendation-outer{padding-bottom: 60px !important}
     .safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
+    .t1-landing leadform form .input-section .input-outer input{font-size:18px;}
+}
+@media (max-width:359px){
+    .t1-question form#leadform_question .selectize-control{width:160px!important;float:left}
 }
