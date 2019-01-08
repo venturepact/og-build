@@ -261,7 +261,9 @@
     .recommendation-outer .redo-link{position:absolute;right:0;bottom:0}
     .pull-text-right{padding-left:0;padding-top:40px}
     .t1-landing .t1-landing-inner{padding-bottom:65px;padding-top:65px}
-    .t1-landing-inner{padding-bottom:60px;padding-top:15px;box-shadow:none}
+    .t1-landing-inner{
+        /* padding-bottom:60px;padding-top:15px; */
+        box-shadow:none}
     .has-brand .t1-landing-inner{padding-bottom:90px}
     .result-branding .powered-by{float:none;text-align:center;bottom:1px}
     .result-branding .powered-by span{float:none;font-size:10px;white-space:nowrap}
@@ -1100,7 +1102,7 @@
     .landing-page-mid leadform button.prime-action{font-size:16px;padding:10px 40px}
     .landing-footer-outer{position:absolute;float:right;padding-right:15px;margin-top:16px}
     .t1-landing .t1-landing-inner{padding-bottom:85px;padding-top:100px}
-    .t1-landing-inner{padding-bottom:75x;padding-top:55px}
+    .t1-landing-inner{padding-bottom:85px;padding-top:100px}
     .t1-result-main{padding-top:70px}
     .graded-msgbox-outr{width:60%}
 }
@@ -1179,7 +1181,7 @@
     .landing-page-mid leadform button.prime-action{font-size:16px;padding:10px 40px}
     .landing-footer-outer{position:absolute;float:right;padding-right:15px;margin-top:16px}
     .t1-landing .t1-landing-inner{padding-bottom:85px;padding-top:100px}
-    .t1-landing-inner{padding-bottom:75x;padding-top:55px}
+    .t1-landing-inner{padding-bottom:85px;padding-top:100px}
     .t1-result-main{padding-top:70px}
     .graded-msgbox-outr{width:60%}
 }
@@ -1463,7 +1465,7 @@
     .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img {padding: 11px 28px 9px!important;}
     .V_3_5 .newLeadGenV_3_5 .w100.text-center.lead-action-wrapper .submit-checkbox-img span:before { margin-top: 3px;}
     .V_3_5 .t1-landing .no-header-links.no-footer-links{padding:100px 0!important}
-    .V_3_5 .logo-resizing{padding: 120px 0 100px !important}
+    /* .V_3_5 .logo-resizing{padding: 120px 0 100px !important} */
     .V_3_5.one-page-card-new .t1-slider-question {padding: 28px !important;    min-height: 120px;display: flex;align-items: center;}
     .V_3_5 .t1-ques-head {margin-bottom: 20px!important;}
     .landing-text-center .landing-page-mid{padding: 0 30px !important}

@@ -9,7 +9,7 @@
 .bot-circle.active .bot-circle-icon-open{opacity:0;-webkit-transform:rotate(30deg) scale(0);transform:rotate(30deg) scale(0)}
 .bot-circle .bot-circle-icon-close{opacity:0;-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}
 .bot-circle.active .bot-circle-icon-close{opacity:1;-webkit-transform:rotate(0);transform:rotate(0)}
-a.bot-circle.left{left:50px;right:inherit}
+a.bot-circle.left{left:30px;right:inherit}
 a.bot-circle.left .og-chat-tooltip{left:30px;border-radius:50px 50px 50px 0}
 a.bot-circle.left + .og-chat-box-outer .og-chat-box{left:30px !important;right:inherit}
 .og-chat-box-top{float:left;width:100%;height:65px;background:#FF3C5D;display:none}
@@ -74,7 +74,7 @@ to{opacity:0;bottom:0}
 }
 .og-chat-box{width:100%;height:100%;bottom:0;right:0;max-width:100%!important;min-width:100%!important;border-radius:0!important;left:0;top:0}
 a.bot-circle.active{display:none}
-a.bot-circle.left+ .og-chat-box-outer .og-chat-box{left:0}
+a.bot-circle.left+ .og-chat-box-outer .og-chat-box{left:0 !important}
 .og-chat-box-top{display:block;background:0 0;height:auto}
 .og-chat-box-top .bot-circle-mobile{background:rgba(0,0,0,.2)}
 .og-chat-box iframe{-webkit-overflow-scrolling:touch}
