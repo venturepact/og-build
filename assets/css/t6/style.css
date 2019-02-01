@@ -1980,3 +1980,27 @@ button.loginBtn.loginBtn--facebook:hover::after {
   }
   .V_3_5 .result-v2 .loginBtn.loginBtn--facebook::after   {padding: 13px 47px 13px 30px !important;}
   .V_3_5 .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook::after {padding: 12px 47px 12px 25px !important}
+
+  .bootstrap-datetimepicker-widget .picker-switch td span {
+    line-height: 1 !important;
+    height: auto !important;
+    width: 100%;
+    margin: 0 !important;
+  }
+  .cal-outer .table-condensed>tbody>tr>td, .cal-outer .table-condensed>tbody>tr>th, .cal-outer .table-condensed>tfoot>tr>td, .cal-outer .table-condensed>tfoot>tr>th, .cal-outer .table-condensed>thead>tr>td, .cal-outer .table-condensed>thead>tr>th{
+    padding: 2px !important
+  }
+  .V_3_5 .bootstrap-datetimepicker-widget table td span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .V_3_5 .bootstrap-datetimepicker-widget table td {
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+  }
