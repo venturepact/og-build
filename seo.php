@@ -15,7 +15,7 @@ if(!empty($response['data'])) {
 	if(isset($response['data']['seoImage']) && !empty($response['data']['seoImage'])) {
 		$imageLink = $response['data']['seoImage'];
 	} else {
-		$imageLink = 'https://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
+		$imageLink = 'http://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
 	}
 ?>
 	<title><?php echo $response['data']['title']; ?></title>
