@@ -15,8 +15,7 @@ if(!empty($response['data'])) {
 	if(isset($response['data']['seoImage']) && !empty($response['data']['seoImage'])) {
 		$imageLink = $response['data']['seoImage'];
 	} else {
-		$imageLink	   = 'http://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
-		$imageLink_ssl = 'https://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
+		$imageLink = 'https://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
 	}
 ?>
 	<title><?php echo $response['data']['title']; ?></title>
@@ -24,8 +23,6 @@ if(!empty($response['data'])) {
 	<meta property="og:title" content="<?php echo $response['data']['title']; ?>" />
 	<meta property="og:description" content="<?php echo $response['data']['description']; ?>" />
 	<meta property="og:image" content="<?php echo $imageLink; ?>" />
-	<meta property="og:image:url" content="<?php echo $imageLink; ?>" />
-	<meta property="og:image:secure_url" content="<?php echo $imageLink_ssl; ?>" />
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="<?php echo $response['data']['title']; ?>">
 	<meta name="twitter:description" content="<?php echo $response['data']['description']; ?>">
