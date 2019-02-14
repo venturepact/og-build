@@ -1,0 +1,568 @@
+@media (min-width: 0px) and (max-width: 330px) {
+    .table-outer table {max-width: 215px !important;}
+    #graph-container {min-width: 200px !important;}
+    .t1-question .question-components .selectize-control.single .selectize-input .item {max-width: 190px;}
+}
+@media (min-width: 0px) and (max-width: 767px) {
+    html {overflow-y: auto !important;overflow-x: hidden !important;}
+    .cta-center {text-align: center;}
+    /*selectize css*/
+    .t1-question .question-components .selectize-control.single .selectize-input {padding:0!important; margin-right: 0px !important; font-size: 16px !important;min-height: auto;margin-bottom: 0px;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single {top: 20px!important;min-width: 80px!important;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single .option {font-size: 14px;}
+    .t1-question .question-components .selectize-control.single .selectize-input .item {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 11px;word-break: break-word;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single .selectize-dropdown-content {max-height: 140px;}
+    .t1-question .question-components .selectize-control.single .selectize-input:after {border-width: 5px 5px 0 5px;top: 30%;}
+    /*selectize css ends*/
+    .t1-ques-component .section-head div {font-size: 16px;}
+    .t1-ques-component .input-outer input {font-size: 14px;}
+    .t1-ques-component input {font-size: 14px;padding: 12px;}
+    .t1-result-full-container {text-align: center;width: 100%;}
+    .t1-result-small-container {text-align: center;}
+    .t1-result-leadform-heading {margin-top: 30px;text-align: center;}
+    .t1-result-leadform-inner {width: 100%;margin-bottom: 10px;}
+    .t1-leadform-field {margin-bottom: 30px;}
+    .t1-result-leadform-inner input {font-size: 14px;}
+    .t1-leadform-btnoutr {text-align: center;}
+    .t1-result-leadform .input-section {width: 100%;}
+    .t1-result-leadform .page_2 click-button .prime-action {padding: 15px 25px;font-size: 14px;}
+    .page_2 click-button .text-center {text-align: center!important;}
+    .t1-result-leadform .container-temp {text-align: center;}
+    .t1-social-links {float: left;width: 100%;text-align: center;margin-top: 15px;margin-bottom: 15px;}
+    .t1-social-links li {display: inline;float: none;}
+    .t1-social-links li p {display: inline;float: none;font-size: 14px;}
+    .t1-social-links li a {display: inline;float: none;}
+    .t1-result-leadform .input-outer {width: 100%;}
+    .t1-result-leadform .input-outer input {font-size: 13px;border-bottom: 1px solid #434343;}
+    .page_2 .prime-action {padding: 13px 20px;font-size: 14px;}
+    .t1-result-leadform .t1-result-cta .prime-action {float: none;}
+    .t1-question .t1-ques-component.leadform-inline .question-components input {margin-bottom: 15px!important;padding-left: 30px !important;}
+    .t1-ques-component .text-center.question-section {margin-top: 0px;}
+    .t1-ques-component.leadform-inline .input-section .input-outer div {margin-bottom: 0px;}
+    .t1-ques-component.leadform-inline .input-section .input-outer span {text-align: left;bottom: -5px;left: 0px;padding: 0;display: block;font-size: 12px;}
+    .t1-result-leadform {text-align: center;padding:0 10px;}
+    .t1-ques-component.leadform-inline .lf-skip-btn {font-size: 14px;position: relative;margin: 0 auto;width: 110px;display: block;right: inherit;top: inherit;bottom: inherit;float: none;}
+    .t1-landing-leadform button.prime-action.lf-skip-btn {float: none;margin: 0 auto;display: block;width: 120px;font-size: 12px;}
+    .btn-fb {margin-bottom: 10px;}
+    .btn-twitter {margin-bottom: 10px;}
+    .btn-in {margin-bottom: 10px;}
+    .btn-fb + .btn-twitter + .btn-in,.btn-fb + .btn-in {margin-top: 0px;margin-bottom: 20px;}
+    @-moz-document url-prefix() {
+        .recom-section .left-outer {height: 320px !important;}
+        .twitter-follow-button{margin-top: 10px;}
+        .fb-like{margin-top: 10px !important;}
+        .fb_iframe_widget_fluid{display: inline-block !important;}
+    }
+    .t1-question .question-components .input-field label ~ input {
+    width: auto !important;float: left;}
+    .input-field label {font-size: 16px;margin-bottom: 0;}
+    .input-field label:last-child {float: left;}
+    .t1-result-small-section.t1-result-full-section.result-full-section-bg {margin: -15px;margin-right: 0px;width: calc(100% + 30px);margin-bottom: 0px;padding: 20px;padding-top: 240px;}
+    .result-full-container-bg {width: calc(100% + 40px)!important;margin: -20px;padding: 25px 15px;}
+    .result-full-section-bg:before {content: none;}
+    .t1-question .question-components .input-outer i {left: 6px;top: 10px;font-size: 18px;}
+    .t1-result-main {padding: 0px;}
+    .result-branding .powered-by {float: none;text-align: center;}
+    .result-branding .powered-by img {max-width: 21px;}
+    .leadform-outer .fb-like {vertical-align: top;margin-top: 20px;margin-bottom: 15px;}
+    .t1-result-leadform .redirect-heading {text-align: center;font-size: 13px;padding: 0 15px;}
+    .lightSticky,
+    .stickyfooter {bottom: 0px;position: relative;width: 100%;}
+    visuals .rec-image-outer img {max-width: 100% !important;}
+    .sahil #graph-container {width: 320px !important;max-width: 100%;height: 350px !important;}
+    #graph-container {width: 100%;max-width: 100%;height: 350px !important;}    
+    .t4-default-result-outer.t1-result-small-section .small-top-sec p {font-size: 16px;}
+    .w100 .redo-outer-recom {float: right;width: 100%;text-align: center;}
+    .table-outer table {display: inline-block;overflow-x: auto;overflow-y: auto;max-width: 330px;}
+    #tooltip {padding: 6px;font-size: 12px;}
+    .w100 .t1-result-leadform .text-center {text-align: center !important;}    
+    visuals.visual-outr span.graph-title {padding: 0 7px;font-size: 20px;margin-top: 20px;}
+    /*experian css*/
+    .landing-page-header .logo {width: 100%;float: left;}
+    .t1-logo {width: 100%;float: none;margin: 0 auto;}.t1-logo .landing-page-header {width: 100%;float: left;margin: 0 auto;position: relative!important;top: 10px !important;left: inherit!important;padding-left: 20px;}
+    .t1-landing {width: 100%!important;}
+    .t1-landing-top {position: absolute;top: 10px;left: 0;width: 100%;text-align: center;}
+    /*logo*/
+    .experian-outer {width: 100%;float: left;min-height: 100%;}
+    .t1-result {width: 100%;height: 100%;max-width: 100%;position: relative;background-size: cover;float: left;}
+    .template3-outr {width: 100%;margin-bottom: 10px;padding: 0 22px;margin-top: 10px;}
+    .landing-page-mid {margin: 0 auto;margin-top: 30px;width: 100%;padding: 20px;}
+    .t1-landing-inner {padding: 0 20px;padding-top: 70px;padding-bottom: 75px;}
+    .main-heading,.main-heading h1 {font-size: 28px;}
+    .sub-heading,.sub-heading h2 {font-size: 16px;width: 100%;}
+    .landing-page-mid leadform .input-section .input-outer input {font-size: 14px;width: 100%}
+    .input-outer i {top: 8px;font-size: 18px !important;}
+    .landing-page-mid leadform .input-section .input-outer span {font-size: 10px;top: 35px;}
+    .landing-page-mid leadform .input-section .input-outer {margin-bottom: 20px;}
+    .landing-page-mid button {font-size: 14px;padding: 14px 30px;margin-bottom: 10px;}
+    .template3-outr .question-head {font-size: 20px;}
+    .template3-outr .question-subhead {font-size: 14px;}
+    .t1-question {width: 100%!important;min-height: 0px !important;}
+    .t1-question form {padding: 0 22px;float: left;height: auto !important;}
+    .t1-question button.prime-action {width: auto;}
+    .t1-question a.prime-action {width: auto;}
+    .t1-ques-head {padding: 0;margin: 0;margin-right: 10px;}
+    .t1-ques-head div {font-size: 15px;}
+    .t1-ques-head div p {font-size: 15px;}
+    .t1-ques-component {margin-bottom: 15px;margin-top: 0px;padding: 0;}
+    .range-slider1.custom-slider1{ margin-bottom: 10px !important;}
+    .t1-result-top {width: 100%;float: left;}
+    .t1-result-inner {padding: 0;width: 100%;min-height: 100%;padding-top: 25px;}
+    .t1-result-topheading p {text-align: left;padding: 0;}
+    .mid-width {font-size: 15px;padding-left: 12px;width: 45%;}
+    .t1-question .question-components input {font-size: 16px!important;margin-bottom: 0px;height: 24px;padding: 0px !important;padding-left: 0 !important;}
+    .inline-tablecell {padding: 20px 0px;padding-bottom: 40px;}
+    .result-outer-scroll {height: auto !important;min-height: auto;padding-right: 0px;}
+    .landing-page-mid leadform button.prime-action {padding: 13px 35px;font-size: 14px;}
+    .t1-ques-component .errorMessage {font-size: 10px;bottom: -10px;top: 3px;}
+    /*slider starts*/
+    .range-slider1 .well1 { text-align: center;width: calc(100% - 100px);float: left;}
+    .t1-result-main {display: block;}
+    .slider-set .range-slider1 input.slider-input{width: 85px!important;margin-left: 14px !important;padding: 1px 3px!important;top: 0px !important;}
+    .slider-input-pre {top: 5px !important;max-width: 27px;margin-left: 5px !important;}
+    .slider-input-post {top: 5px !important;max-width: 27px;margin-left: -1px !important;}
+    .slider-set .range-slider1 .slider-input-pre ~ input.slider-input{padding-left: 20px !important;}
+    .slider-set .range-slider1 input.slider-input.suffix-text {padding-right: 25px !important;}
+    /*powered-by css starts*/
+    .landing-footer-outer {position: absolute;bottom: 1px;right: inherit;width: 100%;float: left;text-align: center;left: 0;}
+    .landing-footer-outer .text-right {text-align: center;}
+    .question-number {display: none;}
+    .graph-icon-mainDiv {position: relative;padding: 0px;}
+    visuals.visual-outr {padding: 15px;}
+    .experian .landing-page-mid .input-field label.active {font-size: 10px !important;}
+    .ques-header .landing-page-header {padding: 21px !important;padding-left: 22px !important;}
+    .result_first.t1-result-small-section .small-top-sec p {font-size: 17px;}
+    .page_2 click-button .prime-action {font-size: 14px!important;padding: 8px 30px !important;}
+    .page_1 click-button .prime-action {font-size: 14px!important;padding: 8px 30px !important;}
+    .result_first {border-radius: 0;padding: 0;}
+    .result_first .t1-result-small-container {border-radius: 0;padding: 20px;}
+    .share-heading {padding: 0 15px;font-size: 13px;}
+    .t1-result-small-section .small-top-sec p {font-size: 16px;}
+    visuals.visual-outr {display: block;}
+    visuals.visual-outr > div {display: block;}
+    .t1-result-full-section {text-align: center;margin-top: 0;padding: 12px 20px;}
+    .t1-result-small-section {padding: 12px 20px;}
+    .result_first.t1-result-small-section {padding: 0 !important;}
+    .input-field label.pre-icon {height: 24px;padding-top: 0;}
+    .input-field label.post-icon {height: 24px;padding-top: 0;}
+    .t1-result-inner-left-table span.table-title {font-size: 20px;padding: 0 7px;}
+    /*experian css ends*/
+    .landing-page-mid leadform .input-field [type="checkbox"] + label {white-space: inherit;}
+    .col {width: 100%;float: left;text-align: center;-ms-flex-pack: center;-ms-flex-item-align: center;-ms-grid-row-align: center;align-self: center;align-items: center;justify-content: center;}
+    .col,
+    .t1-result .col {-webkit-box-pack: center;justify-content: center;}
+    .graph-icon-mainDiv {border: none;}
+    .selectize-dropdown-content {max-height: 110px;}
+    .table-outer table thead tr th {padding: 10px 20px !important;}
+    .table-outer table tbody tr td {padding: 10px 20px !important;}
+    .rtr-outer.butnShow {display: block;}
+    .range-slider .irs-slider {top: 5px !important;width: 23px !important;height: 23px !important;z-index: 0 !important;}
+    .t1-question button.prime-action.btn[disabled] {opacity: 0.45;}
+    .t1-question a.prime-action.btn[disabled] {opacity: 0.45;}
+    .down-arrow-outer {display: block;}
+    .no-logo .t1-landing-inner{padding-bottom:65px;}
+    @-webkit-keyframes graphanimationIn {
+       from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        } 
+    }
+    @keyframes graphanimationIn {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+        }
+
+        to {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+    }
+    @-webkit-keyframes graphanimationOut {
+        from {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform:  translate3d(0, -100%, 0);
+        }
+    }
+    @keyframes graphanimationOut {
+        from {
+            opacity: 1;
+            -webkit-transform: none;
+            transform: none;
+        }
+
+        to {
+            opacity: 0;
+            -webkit-transform: translate3d(0, -100%, 0);
+            transform:  translate3d(0, -100%, 0);
+        }
+    }
+    .charts-label{ width: auto;}
+    /* .t1-question .question-components input.othersfield{ width: calc(100% - 50px) !important;} */
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .experian .radio-outer-base.textfield label { padding-right: 0px !important; margin-top: 0;}
+    .checkbox-outer.textfield.active label{ margin-top: 0px;}
+    .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
+    .experian .radio-outer.textfield label{ margin-top: 0px; padding-right: 0px !important;}
+    .experian .radio-outer-base.textfield label{ margin-top: 0px; padding-right: 0px !important;}
+    .experian .checkbox-outer.textfield label{ margin-top: 0px;}
+    .opinion-label-outer{font-size: 11px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 4px; padding: 4px;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
+     /* common Header Footer responsive css sahil */
+    .common-header-main{ padding: 10px !important;}
+    .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
+    .common-header-main .common-header-inner { float: left !important;  width: 100%; text-align: center; }
+    .common-header-main .common-header-inner a { float: none !important; font-size: 12px !important; }
+    .common-header-main .common-header a:last-child{ float: none!important;}
+    .t1-result .no-footer-links .t1-result-main{padding: 10px 0 0 0 !important;}
+    .poll-svgouter{ padding: 25px;}
+    .t1-result .no-footer-links{ height: auto !important;}
+    .common-result-main .common-result-bot-icons .crb-left .t1-result-disclaimer{ text-align: center;}
+    .common-footer-main .disc-set{ text-align: center !important; width: 100% !important;}
+    .common-footer-main .disc-set p{ top: 3px !important;  font-size: 12px!important; margin-bottom: 0!important;}
+    .common-footer-main .stickyfooter.lightSticky{float: none!important;  margin: 0 auto; width: 100%!important; margin-bottom: 8px; }
+    .common-footer-main .common-footer{text-align: center;  margin: 0; width: 100%;}
+    .common-footer-main .common-footer a{ float: none !important; font-size: 12px;}
+    /*.header-next-div{ height: auto;}*/
+    .header-next-div .landing-page-mid{margin-top: 0px;}
+    .header-next-div .landing-page-mid h1.main-heading{margin-top: 0px;}
+    .common-footer-main .col_1_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_2_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_3_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_4_links{ width: 100% !important; margin-bottom: 10px; text-align: center;}
+    .common-footer-main .col_1_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_2_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_3_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .col_4_links a{ text-align: center !important; font-size: 12px !important;}
+    .common-footer-main .row_1_links a{ float: none !important; margin: 0 10px !important ;font-size: 12px !important;}
+    .common-footer-main .row_1_links{ width: 100% !important; text-align: center !important}
+    .common-header-main .landing-page-header {position: relative;width: 100%;float: left;top: 0!important;left: 0;text-align: center;}
+    .t1-landing .no-footer-links.no-header-links{ padding:0 20px !important;}
+    .twitter-follow-button{padding-top:0;}
+    .fb-like, .twitter-follow-button {margin-top: 0 !important;margin-bottom: 10px !important;}
+    .table-outer{min-height:300px;}
+    .preview.experian.t1-result{min-height: 100%;top: 0px;}
+    .preview.experian.t1-result.yes-header-links{min-height: 100%;top: 70px;}
+    .preview.experian.t1-result.yes-header-links.yes-footer-links{min-height: 100%;top: 0px;}
+    .experian.t1-result{min-height:100% ;top: 0px;}
+    .header-next-div{ display: inline-block;  height: 100%;}
+    #vk_subscribe iframe{ margin-top: 0 !important;}
+    .common-header-main+.header-next-div{ margin-top: 90px;}
+    .range-slider1.custom-slider1 ul{ display: none;}
+    .control-ver2 .ripple-dark.radio-outer-base{margin-bottom: 0px;}
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 100%; padding-top: 25px;}
+    .gdpr-popup-right{ width: 100%; text-align: center;}
+    a.gdrp-cancel{ display: none;}
+    a.gdrp-accept{ display: inline-block; margin-top: 0px; float: none; position: absolute;  top: 4px; right: 20px;}
+    a.gdrp-cancel-icon{ font-size: 16px; color: #fff; transition: all 0.5s ease; display: block; position: absolute; right: 0; padding: 5px 10px; top: 9px;}
+    a.gdrp-cancel-icon:hover{ opacity: 0.5;}
+    .or-class{font-size: 12px;}
+    .landing-page-mid button.loginBtn.loginBtn--facebook{padding:9px 35px 9px 15px !important;}
+    .loginBtn{padding: 9px 35px 9px 15px !important;font-size: 13px !important;}
+    .loginBtn--facebook:before{width: 25px !important;height: 25px !important;top: 5px !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
+    .v3-fb-outer .t1-landing-leadform button.prime-action{
+    padding: 10px 30px !important;margin-bottom: 0px;}
+    .custom-block.inpu-file-uploader i.material-icons{top: 0px;}  
+    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{visibility: hidden !important;}  
+    .custom-block.inpu-file-uploader .input-field {margin-bottom: 0;}
+    .input-field textarea, .cal-outer, .ripple-dark.checkbox-outer{margin-bottom: 0;}
+    .t1-question .question-components .selectize-control.single .selectize-input{height: 28px;}  
+}
+@media (min-width: 0px) and (max-width: 768px) {
+    .t1-landing-leadform button.prime-action i {display: none;}
+    .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
+    .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
+    .input-field textarea{font-size: 16px !important;padding-top: 2px;}
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    .t1-landing-inner {padding: 0 20px;padding-top: 60px;padding-bottom: 75px;}
+    .t1-result-leadform {width: 100%;padding: 0 10%;}
+    .t1-result-leadform .lead-heading-temp1 {text-align: center;}
+    .landing-page-mid {padding: 30px;}
+    .sub-heading {width: 80%;}
+    .main-heading,.main-heading h1 {font-size: 28px;}
+    .inline-tablecell {padding: 20px;}
+    .result_first {border-radius: 6px;}
+    .t1-result-inner {padding: 30px 20px;}
+    .ques-header .landing-page-header {padding-left: 35px !important;}
+    .t1-logo .landing-page-header {padding-left: 20px;}
+    .table-outer table {max-width: 430px;}
+    .slider-input-post {margin-left: 3px !important;}
+}
+@media (min-width: 640px) and (max-width: 767px) {
+    .landing-page-mid {width: 65% !important;}
+    .main-heading,.main-heading h1 {margin-bottom: 15px;}
+    .sub-heading,.sub-heading h2 {font-size: 16px;}
+    .table-outer table {max-width: 590px;}
+    .slider-input-post {margin-left: 23px !important;}
+}
+@media (min-width: 480px) and (max-width: 640px) {
+    .slider-input-post {margin-left: 16px !important;}
+}
+@media (min-width: 0px) and (max-width: 640px) {
+    .experian [type="radio"]:not(:checked) + label,.experian [type="radio"]:checked + label {padding: 8px 25px;padding-left: 20px;font-size: 15px;}
+    .experian [type="radio"] + label:before,.experian [type="radio"] + label:after {margin: 7px;margin-left: 0;width: 14px;height: 14px;}
+    .check-comp .control--radio .control__indicator.icon-set i {top: 5px;}
+    .experian [type="checkbox"] + label {font-size: 15px;}
+    .experian .checkbox-outer-base [type="checkbox"].filled-in:not(:checked) + label:after {height: 14px;width: 14px;margin: 8px;margin-left: 0;}
+    .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:after {width: 14px;height: 14px;margin: 8px;margin-left: 0;}
+    .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:before {top: 10px;left: 1px;width: 6px;height: 9px;}
+    .t1-question .question-components .selectize-control.single .selectize-input {font-size: 15px;}
+}
+@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+    .t1-landing-leadform .t1-leadform-field {width: 100%;margin-bottom: 10px;}
+    .landing-page-mid leadform .input-section .input-outer {width: 100%;}
+    .landing-page-mid button {padding: 14px 30px!important;}
+}
+@media (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
+    .landing-page-mid {width: 100%;}
+    .sub-heading {margin-bottom: 18px;}
+    .landing-page-mid leadform .input-section .input-outer input {padding: 7px 5px;width: 100%;font-size: 11px;padding-left: 30px !important;}
+    .landing-page-mid button {padding: 14px 30px;}
+    .t1-landing-leadform .t1-leadform-field {display: inline-block;width: 40%;float: none;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}
+    .landing-page-mid leadform .input-section .input-outer input {font-size: 11px;padding: 7px 5px;width: 95%;}
+    .t1-landing-top {position: absolute;top: 10px;left: 0;width: 100%;text-align: center;}
+    .input-outer i {top: 8px;font-size: 16px !important;}
+    .landing-page-mid leadform .input-section .input-outer span {bottom: -46%;}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .mid-width {font-size: 16px;width: 40%;}
+    .experian-outer {width: 57%;float: left;}
+    .t1-result {width: 43% !important;max-width: 100% !important;display: block !important;position: fixed !important;background-size: cover !important;float: right !important;right: 0 !important;min-height: 100% !important;}
+    .landing-page-mid {width: 70%;margin: 0 auto;padding: 40px;}
+    .t1-landing-inner {padding: 0 30px;padding-top: 100px;padding-bottom: 75px;}
+    .main-heading,.main-heading h1 {font-size: 32px;margin-bottom: 10px;margin-top: 0;}
+    .sub-heading h2 {font-size: 16px;margin-bottom: 20px;width: 100%;}
+    .sub-heading {font-size: 16px;margin-bottom: 20px;width: 90%;}
+    .landing-page-mid leadform button.prime-action {font-size: 13px;padding: 13px 40px;}
+    .t1-ques-head div {font-size: 15px;display: inline;}
+    .t1-question {min-height: 100vh;}
+    .radio-outer.ripple-dark.active label.radio-icon {padding: 4px 25px !important;}
+    .radio-outer-base.ripple-dark.active label.radio-icon {padding: 4px 25px !important;}
+    .t1-result-inner {padding: 20px 10px 65px 15px;}
+    .check-comp .checkbox-outer .control__indicator.check-set i {top: 4px !important;}
+    .check-comp .checkbox-outer.active .control__indicator.check-set i {top: 4px !important;}
+    .check-comp .control--radio .control__indicator.icon-set i {top: 4px !important;}
+    .check-comp .radio-outer.ripple-dark.active .control--radio .control__indicator.icon-set i {top: 0px !important;}
+    .check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set i {top: 0px !important;}
+    .ques-header .landing-page-header {padding: 22px !important;padding-bottom: 5px !important;}
+    .inline-tablecell {padding: 20px 0;padding-right: 10px;}
+    .t1-question form {padding-right: 30px;}
+    .result_first {padding-right: 5px;}
+    .t1-question .question-components .selectize-control.single .selectize-input {z-index: 0;}
+    .result_first.t1-result-small-section .small-top-sec p {font-size: 17px;}
+    .result-outer-scroll {padding: 0px;}
+    .t1-result-leadform .t1-result-cta .prime-action {padding: 12px 20px;font-size: 13px;}
+    .result_first.t1-result-small-section .small-bot-sec p {font-size: 13px;}
+    .t1-result-small-section .small-bot-sec p {font-size: 12px;}
+    .t1-result-small-section .small-top-sec p {font-size: 16px;}
+    .input-outer i {top: 7px !important;font-size: 18px !important;}
+    #tooltip {font-size: 11px !important;}
+    .t1-result-topheading {padding-right: 0;margin-bottom: 10px;}
+    .result_first .t1-result-small-container {padding: 12px 16px;border-radius: 0;padding-right: 10px;}
+    .t1-result-leadform .redirect-heading {padding-right: 5px;}
+    .share-heading {padding-right: 5px;}
+    .table-outer table {max-width: 730px;}
+    .table-outer table thead tr th {padding: 10px 20px !important;}
+    .table-outer table tbody tr td {padding: 10px 20px !important;}
+    .graph-icon-mainDiv {padding: 10px;padding-top: 30px;}
+    .errorMessage {top: -10px;}
+    .rating-custom .errorMessage{top: 0px;}
+    .slider-input-post {margin-left: 0 !important;}
+    .t1-result-disclaimer {margin-top: 27px;}
+    .question-outer:last-child .selectize-dropdown-content {max-height: 48px;}
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .experian .radio-outer-base.textfield label { padding-right: 0px !important;  margin-top: 0;}
+    .checkbox-outer.textfield.active label{ margin-top: 0px;}
+    .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
+    .experian .radio-outer.textfield label{ margin-top: 8px; padding-right: 0px !important;}
+    .experian .radio-outer-base.textfield label{ margin-top: 0px; padding-right: 0px !important;}
+    .experian .checkbox-outer.textfield label{ margin-top: 0px;}
+    .opinion-label-outer{font-size: 13px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;margin-right: 5px;cursor: pointer;padding: 3px;}
+    .t1-landing .no-footer-links.no-header-links{ padding:0 30px !important;}
+    .t1-result.experian.hide.yes-header-links{ top: inherit;}
+    .t1-result.experian.yes-header-links{ top: 70px;}
+    @-moz-document url-prefix() {#vk_subscribe iframe{margin-top:10px !important;}}
+    .t1-question .question-components .ripple-dark.active label.radio-icon span{padding-left:15px;}
+    .radio-outer-base.ripple-dark label.radio-icon{padding: 4px 25px !important;}
+    .ripple-dark.radio-outer-base {margin-bottom: 0 !important;}
+    .ripple-dark.radio-outer {margin-bottom: 5px;}
+    .ripple-dark.radio-outer-base {margin-bottom: 5px;}
+    .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
+    .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
+    .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
+    .t1-result-leadform .new-socialBtn.btn-plus:hover .help-checktip{min-width: 76px;left: -32px;}
+    .t1-result-leadform .new-socialBtn.btn-plus .help-checktip::before {left: 70%;}
+    .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{padding: 8px;}
+    /* gdpr popup css */
+    .gdpr-popup{ padding: 15px 20px;}
+    .gdpr-popup-left{ width: 70%;}
+    .gdpr-popup-right{ width: 25%; }
+}
+@media (min-width:768px) and (max-width:830px){
+    @-moz-document url-prefix() {
+        .twitter-follow-button{margin-top: 10px !important;}
+        .fb-like{margin-top: 10px !important;}
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    .t1-landing-leadform .t1-leadform-field {width: 100%;margin-bottom: 10px;}
+    .landing-page-mid leadform .input-section .input-outer {width: 100%;margin-bottom: 20px;}
+    .t1-question .question-components .selectize-control.single .selectize-input .item {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 11px;word-break: break-word;}
+}
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+    .sub-heading {font-size: 14px;margin-bottom: 20px;}
+    .t1-landing-leadform .t1-leadform-field {margin-left: 10px;margin-right: 10px;}
+    .landing-page-mid leadform .input-section .input-outer {margin-left: 3px;margin-right: 3px;}
+    .landing-page-mid leadform .input-section .input-outer input {font-size: 13px;}
+    .landing-page-mid button {font-size: 14px;padding: 14px 30px;}
+    .landing-page-mid leadform button.prime-action {font-size: 14px;padding: 14px 30px;}
+    .t1-question .question-components .selectize-control.single .selectize-input .item {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 11px;word-break: break-word;}
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+    .t1-result-small-section .small-top-sec p {font-size: 16px;}
+    .result_first.t1-result-small-section .small-top-sec p {font-size: 20px}
+}
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) {
+    .main-heading,.main-heading h1 {font-size: 32px;margin-bottom: 10px;}
+    .sub-heading,.sub-heading h2 {font-size: 16px;margin-bottom: 25px;}
+    .landing-page-mid leadform .input-section .input-outer input {font-size: 13px;}
+    .t1-question-slider {width: 90%;}
+    .landing-page-mid button {font-size: 14px;padding: 14px 30px;}
+    .landing-page-mid leadform button.prime-action {font-size: 14px;padding: 14px 30px;}
+    .result-outer-scroll {height: 200px !important;}
+}
+@media (min-width: 1680px) {
+    .landing-page-mid leadform .t1-leadform-field {margin-bottom: 40px;}
+    .landing-page-mid leadform .input-section .input-outer {margin-bottom: 30px;}
+    .text-overlay {top: 5px;padding-bottom: 100%;}
+    .result-branding .powered-by span {margin-top: 6px;}
+    .main-heading,.main-heading h1 {font-size: 40px;margin-bottom: 18px;}
+    .sub-heading h2 {font-size: 20px;width: 100%;margin-bottom: 25px;}
+    .sub-heading {font-size: 20px;width: 90%;margin-bottom: 25px;}
+    .experian .page_0.t1-landing input:not([type]),
+    .experian .page_0.t1-landing input[type=text],
+    .experian .page_0.t1-landing input[type=password],
+    .experian .page_0.t1-landing input[type=firstName],
+    .experian .page_0.t1-landing input[type=lastName],
+    .experian .page_0.t1-landing input[type=fullName],
+    .experian .page_0.t1-landing input[type=others],
+    .experian .page_0.t1-landing input[type=email],
+    .experian .page_0.t1-landing input[type=url],
+    .experian .page_0.t1-landing input[type=time],
+    .experian .page_0.t1-landing input[type=date],
+    .experian .page_0.t1-landing input[type=datetime],
+    .experian .page_0.t1-landing input[type=datetime-local],
+    .experian .page_0.t1-landing input[type=tel],
+    .experian .page_0.t1-landing input[type=tel_us],
+    .experian .page_0.t1-landing input[type=number],
+    .experian .page_0.t1-landing input[type=search],
+    .experian .page_0.t1-landing textarea.materialize-textarea {font-size: 20px !important;padding-left: 25px !important;}
+    .input-field .prefix ~ input,
+    .input-field .prefix ~ textarea,
+    .input-field .prefix ~ label,
+    .input-field .prefix ~ .validate ~ label,
+    .input-field .prefix ~ .autocomplete-content {font-size: 14px !important;top: -4px;}
+    .landing-page-mid leadform .input-section .input-outer span {font-size: 14px;}
+    .template3-outr .question-head {font-size: 24px;}
+    .template3-outr .question-subhead {font-size: 18px;}
+    .input-outer i {position: absolute;left: 0px;top: 4px;font-size: 20px;}
+    .t1-ques-head div {font-size: 20px;}
+    .experian [type="radio"]:not(:checked) + label,.experian [type="radio"]:checked + label {padding: 10px 25px !important;font-size: 20px;line-height: 28px;}
+    .experian [type="radio"] + label:before,.experian [type="radio"] + label:after {width: 18px !important;height: 18px !important;margin: 14px !important;margin-left: 0 !important;}
+    .experian [type="checkbox"] + label {font-size: 20px;line-height: 28px;}
+    .control--checkbox {padding: 10px 25px !important;}
+    .experian [type="checkbox"].filled-in:checked + label:after {width: 18px !important;height: 18px !important;margin: 16px !important;margin-left: 0 !important;}
+    .experian [type="checkbox"].filled-in:checked + label:before {top: 18px !important;left: 0px !important;width: 8px !important;height: 12px !important;}
+    .experian [type="checkbox"].filled-in:not(:checked) + label:after {height: 18px !important;width: 18px !important;margin: 16px !important;margin-left: 0 !important;}
+    .landing-page-mid leadform .input-field [type="checkbox"].filled-in:checked + label:before{top: 5px !important;left: 0px !important;width: 10px !important;height: 15px !important;}
+    .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{max-height: 38px;}
+    .irs {margin-top: 6px;}
+    .range-slider .irs-slider {top: 9px !important;width: 20px !important;height: 20px !important;}    
+    .slider-set .range-slider1 input.slider-input{font-size: 20px !important;}
+    .ques-num span {font-size: 20px;}
+    .mid-width {font-size: 27px;}
+    .disclaimer-icon-outer a i {font-size: 24px;}
+    .graph-icon i {font-size: 24px !important;margin-top: 3px;}
+    .check-comp .checkbox-outer .control__indicator.check-set i {left: 0px;top: 10px;font-size: 24px;}
+    .check-comp .checkbox-outer.active .control__indicator.check-set i {position: absolute;top: 11px;left: 15px;}
+    .check-comp .control--radio .control__indicator.icon-set i {left: 0px;top: 10px;font-size: 24px;}
+    .check-comp .radio-outer.ripple-dark.active .control--radio .control__indicator.icon-set i {left: 0px;position: absolute;top: 11px;}
+    .check-comp .radio-outer-base.ripple-dark.active .control--radio .control__indicator.icon-set i {left: 0px;position: absolute;top: 11px;}
+    .t1-ques-component {padding-left: 26px;}
+    .t1-question .question-components input {font-size: 18px !important;}
+    .t1-question .question-components input::-webkit-input-placeholder {font-size: 18px;}
+    .t1-question .question-components input::-moz-placeholder {font-size: 18px;}
+    .t1-question .question-components input:-ms-input-placeholder {font-size: 18px;}
+    .t1-question .question-components input:-moz-placeholder {font-size: 18px;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single .option {font-size: 18px;}
+    .t1-question .question-components .selectize-control.single .selectize-input {font-size: 18px !important;width: 90%;}
+    .question-outer {margin-bottom: 25px;}
+    .experian-outer {width: 55%;}
+    #build .experian-outer {width: 60%;}
+    .t1-result {width: 45%;}
+    .input-field {width: 90%;}
+    .slider-set {width: 90%;}
+    .result_first.t1-result-small-section .small-top-sec p {font-size: 22px !important;}
+    .result_first.t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
+    .t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
+    .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
+    .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-top-sec p {font-size: 20px;}
+    .t4-default-result-outer.t1-result-small-section .small-top-sec p {font-size: 20px;}
+    .t1-result-leadform .t1-result-cta .prime-action {font-size: 18px;}
+    .t1-question .question-components .selectize-control.single .selectize-dropdown.single {width: 90%!important;top: 36px!important;min-width: 100px;}
+    .landing-page-mid leadform .input-field [type="checkbox"] + label {font-size: 20px;}
+    .charts-label {font-size: 16px;margin-left: 4px;}
+    .graph-icon .help-text {right: 10px;}
+    .info-icon .help-text:before {left: 10px;}
+    .slider-input-pre {font-size: 20px !important;}
+    .slider-input-post {font-size: 20px !important;max-width: 40px !important;min-width: 20px !important;left: 83% !important;}
+    .disc-outer i.material-icons {margin-top: 5px;}
+    .seperator {font-size: 18px;}
+    .cal-outer {width: 90%;}
+    .input-field textarea{font-size: 18px;}
+    .opinon-scale-custom .check-comp{width: 90%;}
+    .experian leadform [type="checkbox"].filled-in + label:before, .experian leadform [type="checkbox"].filled-in + label:after {left: 1px;}
+    .landing-page-mid leadform [type="checkbox"] + label:before, .landing-page-mid leadform [type="checkbox"]:not(.filled-in) + label:after {width: 20px;height: 20px;}
+}
+@media(min-width: 1920px){
+    .slider-input-post{left: auto !important;right: 10%;}
+    .slider-set .range-slider1 input.slider-input.suffix-text {padding-right: 45px !important;}
+}
+@media (min-width: 1367px) and (max-width: 1920px) {
+    .btn-fb {font-size: 14px;}
+    .btn-twitter {font-size: 14px;}
+    .btn-in {font-size: 14px}
+}
+@media (max-width: 776px) {
+    #tooltip:after{width: 0;height: 0;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #61696c;content: '';position: absolute;left: 50%;bottom: -10px;margin-left: -10px;}
+    #tooltip.top:after {border-top-color: transparent;border-bottom: 10px solid #61696c;top: -20px;bottom: auto;}
+    #tooltip.left:after {left: 10px;margin: 0;}
+    #tooltip.right:after {right: 10px;left: auto;margin: 0;}
+    .recom-section .left-sec {height: auto !important;}
+}
+@media (min-width: 930px) and (max-width: 1023px){
+    .landing-page-mid {width: 50%;}
+}
