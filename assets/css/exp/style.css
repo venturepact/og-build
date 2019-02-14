@@ -648,7 +648,7 @@ visuals .rec-image-outer img {
     font-size: 14px;
     position: absolute;
     color: #fff;
-    line-height: 18px;
+    line-height: 1.4;
     -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 3px 3px 10px 0px rgba(224, 221, 224, 1);
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
@@ -841,7 +841,7 @@ visuals .rec-image-outer img {
     color: #303030;
     font-family: inherit;
     font-size: 13px;
-    line-height: 18px;
+    line-height: 1.4;
     -webkit-font-smoothing: inherit;
 }
 .selectize-input,
@@ -1423,24 +1423,25 @@ visuals .rec-image-outer img {
 }
 .main-heading,
 .main-heading h1 {
-    font-size: 30px;
+    font-size: 36px;
     margin-bottom: 20px;
-    line-height: 34px;
+    line-height: 1.2;
     margin-top: 0;
     word-break: break-word;
 }
 .sub-heading h2 {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 20px;
-    line-height: 24px;
+    line-height: 1.4;
     width: 85%;
     word-break: break-word;
 }
 .sub-heading {
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 20px;
     line-height: 24px;
     width: 100%;
+    line-height: 1.4;
 }
 /*experian landing page leadform css*/
 
@@ -1475,8 +1476,9 @@ visuals .rec-image-outer img {
 }
 .t1-landing-leadform button.prime-action {
     font-size: 16px;
+    line-height: 1.2;
     width: auto;
-    padding: 12px 50px;
+    padding: 14px 40px;
     border: none;
     cursor: pointer;
     text-transform: none;
@@ -1496,12 +1498,11 @@ visuals .rec-image-outer img {
 }
 .t1-button button {
     font-size: 16px;
+    line-height: 1.4;
     width: auto;
-    padding: 12px 50px;
+    padding: 14px 40px;
     border: none;
     cursor: pointer;
-    /*text-transform: uppercase;*/
-    
     border-radius: 0px;
     white-space: inherit;
     float: left;
@@ -1613,6 +1614,7 @@ visuals .rec-image-outer img {
 }
 .mid-width{
     font-size: 16px;
+    line-height: 1.4;
     float: left;
     width: 50%;
     min-height: 32px;
@@ -1831,6 +1833,7 @@ visuals .rec-image-outer img {
     width: 100%;
     float: left;
     font-size: 13px;
+    line-height: 1.4;
     padding-right: 10px;
     text-align: left;
     margin: 0px;
@@ -1839,6 +1842,7 @@ visuals .rec-image-outer img {
     float: left;
     width: 100%;
     font-size: 18px;
+    line-height: 1.4;
     margin-bottom: 0px;
 }
 .t1-result-sm-value {
@@ -2025,7 +2029,7 @@ visuals .rec-image-outer img {
     width: 100%;
     float: right;
     font-size: 23px;
-    line-height: 23px;
+    line-height: 1.4;
     text-align: right;
 }
 .result_first.t1-result-small-section .small-bot-sec p {
@@ -2038,6 +2042,7 @@ visuals .rec-image-outer img {
 }
 .t1-result-leadform .redirect-heading {
     font-size: 16px;
+    line-height: 1.4;
     text-transform: none;
     clear: both;
     display: block;
@@ -2049,6 +2054,7 @@ visuals .rec-image-outer img {
 }
 .share-heading {
     font-size: 16px;
+    line-height: 1.4;
     text-transform: none;
     display: block;
     width: 100%;
@@ -2083,12 +2089,7 @@ visuals .rec-image-outer img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /*align-items: center;*/
 }
-/*.recom-section .share-heading{
-    margin-bottom: 0px;
-    margin-top: 10px;
-}*/
 
 .leadform-outer .twitter-follow-button {
     margin: 40px 0;
@@ -2250,7 +2251,7 @@ img.vk-follow-btn {
     margin-bottom: 5px;
 }
 .checkbox-outer label.control.control--checkbox {
-    line-height: 19px;
+    line-height: 1.4;
 }
 .check-comp .checkbox-outer .control__indicator.check-set i {
     font-size: 20px;
@@ -2430,27 +2431,23 @@ label.control.control--radio.lable-style.no-icon:focus {
 
 .t1-question .question-components .selectize-control.single .selectize-input {
     display: inline-flex !important;
-    max-width: 100% !important;
-    border-top: none !important;
-    border-left: none !important;
-    border-right: none !important;
+    border: none !important;
     margin-right: 10px !important;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
+    border-bottom-width: 2px !important;
+    border-bottom-style: solid !important;
     border-radius: 0px !important;
     font-size: 15px !important;
-    padding: 6px !important;
-    padding-bottom: 0px !important;
+    padding: 7px !important;
     padding-left: 2px !important;
     background: none !important;
-    margin-bottom: 0;
-    line-height: 26px;
-    min-height: 37px;
+    line-height: 1.4;
+    height: 34px;
     margin-bottom: 13px;
     z-index: 0;
 }
 .t1-question .question-components .selectize-control.single .selectize-dropdown.single .option {
     font-size: 15px;
+    line-height: 1.4;
 }
 .t1-question .question-components .selectize-control.single .selectize-input input {
     width: 0px !important;
@@ -2554,6 +2551,7 @@ input[type=number] {
     margin-bottom: 13px;
     font-size: 15px !important;
     border-bottom-width: 2px;
+    line-height: 1.4
 }
 .t1-question .question-components .input-field label {
     font-size: 15px;
@@ -2583,7 +2581,7 @@ input[type=number] {
     color: #444444;
     opacity: 0.8;
     font-size: 15px;
-    line-height: 22px;
+    line-height: 1.4;
 }
 .t1-ques-head {
     display: inline-block;
@@ -2595,7 +2593,7 @@ input[type=number] {
 }
 .t1-ques-head div {
     font-size: 15px;
-    line-height: 22px;
+    line-height: 1.4;
     display: inline;
 }
 .t1-ques-head div h1,.t1-ques-head div h2,.t1-ques-head div h3,.t1-ques-head div h4,.t1-ques-head div h5,.t1-ques-head div h6{display: inline;}
@@ -2618,13 +2616,13 @@ input[type=number] {
 }
 .template3-outr .question-head {
     font-size: 20px;
+    line-height: 1.4;
     text-align: left;
     word-break: break-word;
     padding: 0px;
     display: block;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    line-height: 28px;
     color: #444444 !important;
     margin-bottom: 0;
 }
@@ -2637,6 +2635,7 @@ input[type=number] {
     opacity: 0.6;
     color: #444444;
     word-break: break-word;
+    line-height: 1.4;
 }
 .t1-question form {
     float: left;
@@ -2664,6 +2663,7 @@ input[type=number] {
 .slider-set {
     float: left;
     width: 100%;
+    margin-top: 10px;
 }
 .range-slider1 .well1 { 
     width: calc(100% - 130px );
@@ -2751,7 +2751,7 @@ input[type=number] {
     text-overflow: ellipsis;
     padding: 1px 11px  !important;
     text-align: center;
-    min-height: 33px;
+    min-height: 43px;
 }
 /*custom range slider css ends*/
 
@@ -2858,6 +2858,7 @@ input[type=number] {
     position: relative;
     overflow: hidden;
     outline: none;
+    margin-top: 5px;
 }
 .ripple-dark:after {
     content: "";
@@ -2894,21 +2895,12 @@ input[type=number] {
     cursor: pointer;
     display: block;
     z-index: 0 !important;
-    /*height: 58px;*/
-    
-    line-height: 23px;
+    line-height: 1.4;
     font-size: 14px;
     -webkit-user-select: none;
-    /* webkit (safari, chrome) browsers */
-    
     -moz-user-select: none;
-    /* mozilla browsers */
-    
     -khtml-user-select: none;
-    /* webkit (konqueror) browsers */
-    
     -ms-user-select: none;
-    /* IE10+ */
 }
 .experian [type="checkbox"]:not(.filled-in) + label:after {
     border: 0;
@@ -2944,34 +2936,27 @@ input[type=number] {
     content: '';
     left: 0;
     position: absolute;
-    /* .1s delay is for check animation */
-    
     transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
     z-index: 1;
 }
-.experian [type="checkbox"].filled-in:not(:checked) + label:before {
-    /*width: 0;
-  height: 0;
-  border: 3px solid transparent;
-  left: 20px;
-  top: 26px;
-  -webkit-transform: rotateZ(37deg);
-  transform: rotateZ(37deg);
-  -webkit-transform-origin: 20% 40%;
-  transform-origin: 100% 100%; */
+.landing-page-mid leadform [type="checkbox"]:checked + label:before {
+    left: 5px !important;
+    top: 3px !important;
 }
+.landing-page-mid leadform [type="checkbox"] + label:before,
+.landing-page-mid leadform [type="checkbox"]:checked + label:before  {transition: none !important;}
 .experian .checkbox-outer-base [type="checkbox"].filled-in:not(:checked) + label:after {
     height: 15px;
     width: 15px;
     background-color: transparent;
     top: 0px;
     z-index: 0 !important;
-    margin: 7px;
+    margin: 6px;
     margin-left: 0;
     border-radius: 50%;
 }
 .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:before {
-    top: 9px;
+    top: 8px;
     left: 1px;
     width: 6px;
     height: 10px;
@@ -2990,7 +2975,7 @@ input[type=number] {
     width: 15px;
     height: 15px;
     z-index: 0 !important;
-    margin: 7px;
+    margin: 6px;
     margin-left: 0px;
     border-radius: 50%;
 }
@@ -3031,16 +3016,10 @@ input[type=number] {
 .experian [type="radio"]:not(:checked) + label,
 .experian [type="radio"]:checked + label {
     position: relative;
-    /*padding-left: 50px;*/
-    
     cursor: pointer;
     display: inline-block;
-    /*height: 25px;*/
-    
-    line-height: 23px;
+    line-height: 1.4;
     transition: .28s ease;
-    /* webkit (konqueror) browsers */
-    
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -3058,12 +3037,13 @@ input[type=number] {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 7px;
+    margin: 6px;
     margin-left: 0;
     width: 15px;
     height: 15px;
     z-index: 0 !important;
     transition: .28s ease;
+    line-height: 1.4;
 }
 /* Unchecked styles */
 
@@ -3600,36 +3580,29 @@ input[type=number] {
 .landing-page-mid leadform .input-field [type="checkbox"] + label {
     position: relative;
     cursor: pointer;
-    display: block;
     font-size: 14px;
     text-align: left;
     padding-left: 25px;
     margin-bottom: 0px;
-    top: -3px;
-    float: left;
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    max-height: 31px;
-    white-space: nowrap; */
+    float: left; 
+    display: block;
+    top: 0px;
+    padding-top: 0;
 }
 
 .landing-page-mid leadform [type="checkbox"] + label:before,
 .landing-page-mid leadform [type="checkbox"]:not(.filled-in) + label:after {
     content: '';
     position: absolute;
-    top: 9px;
+    top: 2px;
     left: 0;
     width: 15px;
     height: 15px;
     z-index: 0 !important;
     border-radius: 1px;
     margin-top: 2px;
-    /*-webkit-transition: .2s;
-    transition: .2s;*/
 }
 .landing-page-mid leadform [type="checkbox"]:checked + label:before {
-    top: 9px;
-    left: 3px;
     width: 8px;
     height: 13px;
     border-top: 2px solid transparent;
@@ -3832,6 +3805,7 @@ visuals.visual-outr span.graph-title {
     min-height: 28px;
     max-height: 28px;
     margin-bottom: 5px;
+    line-height: 1.2;
 }
 .t1-landing .t1-landing-inner .selectize-dropdown.single {
     border-color: #d9dad3;
@@ -3886,7 +3860,7 @@ visuals.visual-outr span.graph-title {
     font-size: 14px;
     position: absolute;
     color: #fff;
-    line-height: 18px;
+    line-height: 1.4;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
     z-index: 9;
     text-align: center;
@@ -3925,7 +3899,7 @@ visuals.visual-outr span.graph-title {
     font-size: 14px;
     position: absolute;
     color: #fff;
-    line-height: 18px;
+    line-height: 1.4;
     box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
     z-index: 9;
     text-align: center;
@@ -3964,11 +3938,10 @@ visuals.visual-outr span.graph-title {
 }
 .charts-label {
     width: 120px;
-    text-align: left;
     font-size: 13px;
     float: right;
     text-align: right;
-    line-height: 16px;
+    line-height: 1.4;
     margin-left: 3px;
 }
 .vis-outer {
@@ -4296,6 +4269,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 .down-arrow-outer h3 {
     font-size: 14px;
+    line-height: 1.4;
 }
 .down-arrow-outer i {
     font-size: 24px;
@@ -4464,7 +4438,7 @@ span.abhi {
 .custom-block.rating-custom .rating-inner i.selected {border-radius: 50%;}
 
  /*Opinion scale css*/
-.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;z-index: 0;}
+.opinon-scale-custom .check-comp { position: relative; display: table; width: 100%; table-layout: fixed;z-index: 0;margin-top: 8px;}
 .opinon-scale-custom .radio-outer {width: auto;float: none;margin-bottom: 2px;margin-top: -3px;margin-left: -1px; padding: 0;box-shadow: none;outline: none;display: table-cell;}
 .opinon-scale-custom .radio-outer:last-child{width: auto;float: none;margin-bottom: 2px;margin-top: -3px; margin-left: -1px;padding: 0;box-shadow: none;outline: none;display: table-cell;}
 .opinon-scale-custom label::before,.opinon-scale-custom label::after { display: none;}
@@ -4474,7 +4448,7 @@ span.abhi {
 .opinion-prefix{width: 50%;float: left;text-align: left;padding-top: 5px;padding-right: 10px;word-break: break-word;}
 .opinion-postfix{width: 50%;float: right;text-align: right;padding-top: 5px;padding-left: 10px;word-break: break-word;}
 .opinon-scale-custom .radio-outer::after {content: "";width: 100%;float:left;left: 0;right: 0;height: 6px;z-index: 1;opacity:1;top: 80%;transform:none;background: linear-gradient(to bottom, #DDD -50%, #FFF 150%);border: 1px solid #CCC;}
-.opinon-scale-custom .mid-outer .control.control--radio {background: none;}
+.opinon-scale-custom .mid-outer .control.control--radio {background: none;line-height: 1.4;}
 .opinon-scale-custom span.t6 { width: 92%; text-align: center;}
 
 
@@ -4579,8 +4553,8 @@ span.abhi {
 .radio-outer-base{ width: auto; float: left;}
 
 .otherfield-inputbtn .button_textfield{ display: none;}
-.radio-outer.ripple-dark label.radio-icon{line-height:19px;}
-.radio-outer-base.ripple-dark label.radio-icon{line-height:19px;}
+/* .radio-outer.ripple-dark label.radio-icon{line-height:19px;}
+.radio-outer-base.ripple-dark label.radio-icon{line-height:19px;} */
 .t1-button button > div{display:inline-block;float: left;}
 
 p > span > a {color: inherit; }
@@ -4836,7 +4810,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     line-height: 1;
     padding: 12px 30px;
 }
-.v3_fb_outer .main-heading, .main-heading h1 {
+.v3_fb_outer .main-heading, .v3_fb_outer .main-heading h1 {
     font-size: 28px;
 }
 .landing-page-mid button.loginBtn.loginBtn--facebook:hover{opacity: 0.8;transition: all 0.3s ease 0s !important;}
@@ -4872,7 +4846,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .cal-outer .datepicker-years .table-condensed>tbody>tr>td span {display: block;width: 23%;float: left;margin: 1%;cursor: pointer;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
 .cal-outer .datepicker-decades .table-condensed>tbody>tr>td span.decade {width: 50%;margin: 0;display: block;float: left;}
 .date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 35px);}
-.date-selector-part span.calendar-range {width: 70px;padding: 10px 0;}
+.date-selector-part span.calendar-range {width: 70px;padding: 10px 0;line-height: 1.4;}
 
 /* Sacnite */
 .button.button--sacnite {width: 70px;height: 70px;min-width: 0;padding: 0;color: #fff;-webkit-transition: color 0.3s;transition: color 0.3s;}
@@ -4960,7 +4934,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .file-loader + input, .template-section .template-container.mobile .file-loader + input{z-index: -1;}
 
 /*textarea*/
-.input-field textarea {border: none;font-size: 15px;padding: 8px 5px 5px 0;max-width: 100%;width: 100% !important;background: transparent;margin-bottom: 13px;min-height: 72px; resize: none;}
+.input-field textarea {border: none;font-size: 15px;line-height: 1.4;padding: 8px 5px 5px 0;max-width: 100%;width: 100% !important;background: transparent;margin-bottom: 13px;min-height: 72px; resize: none;}
 .button_textfield {display: none;}
 .input-field textarea::-webkit-scrollbar-track {border-radius: 0px;background-color: #f5f5f5;}
 .input-field textarea::-webkit-scrollbar {width: 6px;background-color: rgba(0, 0, 0, 0.2);}
@@ -5112,23 +5086,14 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 
 @media (min-width: 300px) and (max-width: 640px) {
     .quiz-usersCount {
-        /* width: 78px;
-        padding: 10px 9px;
-        padding-top: 6px;
-        padding-bottom: 6px;
-        bottom: 25px;
-        left: 10px; */
         width: 180px;
         height: 180px;
         border-radius: 180px 0 0;
         padding-top: 80px;
     }
     .quiz-usersCount i.material-icons {
-        /* font-size: 18px;
-        float: left; */
         margin: 0;
         margin-right: 3px;
-        /* margin-top: 2px; */
         transform: rotate(.03deg);
     }
     .quiz-usersCount span {

@@ -7,7 +7,7 @@
     .scrol-part {padding: 10px 20px !important;}
     .popup-feedback span.close {right: 10px;top: 10px;z-index: 99999;}
     .popup-feedback span.close i{color: #000 !important; font-size: 20px !important}
-    .popup-feedback .graded-msgbox p {font-size: 14px;line-height: 20px;}
+    .popup-feedback .graded-msgbox p {font-size: 14px;}
     @media screen and (-webkit-min-device-pixel-ratio:0) {
         ::i-block-chrome,.header-next-div{height: 100% !important;}
         ::i-block-chrome,.t1-question{height: 100% !important; min-height: 700px}
@@ -17,7 +17,7 @@
         .safari .header-next-div .t1-landing{height: 100% !important; min-height: 700px}
     }
 
-    .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
+    .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 16px;  padding: 12px 20px;    }
     .postfixset {        top: -21px;    }
     .t1-slider-question .input-field label {width: 50px;padding: 14px 5px ;}
     .liveresult-outr{position: relative; padding: 15px 0 0; text-align: center;max-width: 100%;}
@@ -26,15 +26,15 @@
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .t1-ques-head .help-text{font-size: 14px;}
-    .V_3_5 .t1-ques-head .help-text{font-size: 14px; line-height: 20px}
+    .V_3_5 .t1-ques-head .help-text{font-size: 14px; }
     .recom-footer-outer{min-height: auto !important; padding: 10px 0}
     .recom-footer-outer   .redo-outer-recom{position: relative}
     .redo-outer-recom .redo-link{margin: 0px}
     .recom-section .disc-set{margin-top: 0px !important}
-    .main-heading ,  .main-heading h1{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
-    .main-heading p{         font-size: 32px;        margin-bottom: 20px; line-height: 43px;         }
+    .main-heading ,  .main-heading h1{         font-size: 32px;        margin-bottom: 20px;          }
+    .main-heading p{         font-size: 32px;        margin-bottom: 20px;          }
     .t1-result{    min-height: 100%;    height:auto;    }
-    .sub-heading , .sub-heading h2{ font-size: 16px; margin-bottom: 20px; line-height: 20px; }
+    .sub-heading , .sub-heading h2{ font-size: 16px; margin-bottom: 20px;  }
     .t1-logo { width: 130px; float: none; margin: 0 auto; }
     .landing-page-header { width: 130px; float: none; margin: 0 auto; position: relative !important; top: inherit !important; left: inherit !important; }
     .landing-page-header { width: 100%; float: none; text-align: center; left: inherit; }
@@ -251,11 +251,11 @@
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-table{ width: 90%; margin: 16px; margin-bottom: 0; }
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-graph { margin: 16px; width: 90%; margin-top: 0px;}
     .gradedquiz-main .graded-tabs .visual-outr .t1-result-inner-left-video { margin: 16px; width: 88%;}
-    .t3-default-result-outer.t1-result-full-section .small-top-sec p{font-size: 18px !important; line-height: 22px;}
+    .t3-default-result-outer.t1-result-full-section .small-top-sec p{font-size: 18px !important; }
     .gradedquiz-main .gradded-graph-flex{ display: block;}
     .t1-landing .t1-landing-inner .selectize-input .item{ font-size: 14px;}
   .template-six .t1-question [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after, .template-six .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{ margin: 17px 15px !important;}*/
-    .template-six .t1-question .selectize-input { padding: 9px 35px 14px 15px;line-height: 1.2; max-height: 50px;}
+    .template-six .t1-question .selectize-input { padding: 9px 35px 14px 15px; max-height: 50px;}
     .graded-msgbox{ padding: 7px 12px;}
     .graded-msgbox p{ font-size: 13px;}
     .graded-msgbox p span{ font-size: 13px;}
@@ -268,8 +268,8 @@
 
     .template-six [type=checkbox].filled-in:disabled:not(:checked)+label.graded-cross:after{margin-top: 16px!important;}
     .gradedquiz-main visuals .t1-result-inner-left-video iframe{ min-width: 80% !important; width: 100%;}
-    .control.control--radio span{  line-height: 18px;}
-    .control.control--checkbox span{  line-height: 18px; padding-top: 0px;}
+    .control.control--radio span{  }
+    .control.control--checkbox span{   padding-top: 0px;}
     .gradedquiz-main .recommendation-outer .t1-result-inner{ overflow: visible; top: 50px;}
     .graded-tabs ul.tabs{ top: -44px;}
     .graded-tabs ul.tabs li{ min-height: 28px;}
@@ -335,7 +335,7 @@
     .poll-main .ko-progress-circle .ko-progress-circle__overlay{width:112px; height:112px;}
     .active2 .ko-overlay1{width:124px; height:124px;}
     .control-ver2 .pic-selector span.abhi{ font-size: 13px;}
-    .V_3_5 .control-ver2 .pic-selector span.abhi {font-size: 14px !important;min-height: auto;margin-left: 0;line-height: 18px !important;margin-top: 15px;}
+    .V_3_5 .control-ver2 .pic-selector span.abhi {font-size: 14px !important;min-height: auto;margin-left: 0;margin-top: 15px;}
     .range-slider1.custom-slider1 ul{ display: none;}
     .t1-landing.no-logo .no-footer-links .t1-landing-inner {padding-top: 30px !important;padding-bottom: 70px !important;}
     .custom-pager { bottom: 50px; }
@@ -385,7 +385,7 @@
     .redo-outer{ float: left; width:100%; position: relative; right: auto; bottom:auto;}
     .redo-outer .redo-link{ float: left; width:100%; position: relative; right:auto; text-align: center; margin-top:15px; margin-right: 0px; }
     .redo-outer .redo-link li a{ float: none;}    
-     .sub-heading , .sub-heading h2{font-size: 16px; margin-bottom: 20px; line-height: 24px;}
+     .sub-heading , .sub-heading h2{font-size: 16px; margin-bottom: 20px; }
        .redo-outer .redo-link{margin-top: 0px !important }
       .redo-outer .redo-link ul{margin-bottom: 0px !important }
 }
@@ -422,7 +422,7 @@
 }
 @media (min-width:0px) and (max-width:420px) and (orientation:portrait) {
     .main-heading ,  .main-heading h1{ margin-bottom: 2%; }
-   .sub-heading , .sub-heading h2{ font-size: 14px; margin-bottom: 5%; line-height: 20px; }
+   .sub-heading , .sub-heading h2{ font-size: 14px; margin-bottom: 5%;  }
   
 
 }
@@ -434,17 +434,22 @@
 }
 @media (min-width:1024px){
     
-    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;line-height:55px}
-    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;line-height:26px}
+    .V_3_5 .main-heading,.V_3_5 .main-heading h1,.V_3_5 .main-heading h1 p{font-size:45px !important;}
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:20px;opacity:1;}
 }
 @media (min-width:641px) and (max-width:1024px) {
     .V_3_5 .main-heading h1 , .V_3_5 .sub-heading h2{max-width: 85% !important;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 42px !important; line-height: 48px !important}
-    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:18px !important;opacity:1;line-height:24px !important}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 42px !important; }
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:18px !important;opacity:1;}
+    .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {
+        padding: 17px 35px;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
 }
 @media (min-width:768px) and (max-width:1024px) {
-   
-    .t1-ques-head{font-size: 36px; line-height: 42px}
+    .landing-page-mid leadform button.prime-action , .landing-page-mid button{padding: 15px 25px; font-size: 16px;}
+    .t1-ques-head{font-size: 36px;}
     .recom-section .t1-social-links{margin: 0px !important}
     .redo-link > ul{margin: 0px}
     .recom-section .disc-set{margin-top: 0px !important}
@@ -468,7 +473,7 @@
     .pic-selector input[type="checkbox"]:checked + .control__indicator::after { font-size: 35px; right: 40px; top: 0%; padding-top: 0%; }
     .pic-selector input[type="radio"]:checked + .control__indicator::after { font-size: 35px; right: 30px; top: 0%; padding-top: 0%; }
     .pic-selector input[type="radio"]:checked + .control__indicator::before { font-size: 30px; right: 5px; top: 0%; padding-top: 0%; opacity: 0; }
-    .submit-checkbox{font-size: 12px; padding: 6px 15px; width: auto; margin-left: 0px; line-height: 23px; }
+    .submit-checkbox{font-size: 12px; padding: 6px 15px; width: auto; margin-left: 0px;  }
     .t1-question .question-components .leaded-form-c .section-head .pull-left{margin-bottom: 8px;}
     .pull-text-right {        padding-left: 120px;    }
     .submit-textbox input{        width: 100% !important;        max-width: inherit;    }
@@ -610,8 +615,8 @@
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape) {
 
     .main-heading ,  .main-heading h1{ font-size: 46px; margin-bottom: 10px;  }
-    .main-heading p{ font-size: 46px; margin-bottom: 10px; line-height: 50px; }
-   .sub-heading , .sub-heading h2{ font-size: 18px; margin-bottom: 20px; line-height: 24px; }
+    .main-heading p{ font-size: 46px; margin-bottom: 10px; ; }
+   .sub-heading , .sub-heading h2{ font-size: 18px; margin-bottom: 20px;  }
     .t1-landing-leadform .t1-leadform-field { margin-left: 10px; margin-right: 10px; }
     .landing-footer-outer { position: absolute; float: right; padding-right: 15px; margin-top: 16px; }
     .t1-landing .t1-landing-inner { padding-bottom: 100px; padding-top: 100px; }
@@ -638,16 +643,16 @@
 
 @media (min-width:1024px) and (max-width:1365px) and (orientation:portrait) {
 
-    .main-heading ,  .main-heading h1{font-size: 42px;margin-bottom: 15px; line-height: 36px;}
-    .main-heading p{font-size: 42px;margin-bottom: 15px; line-height: 36px;}
+    .main-heading ,  .main-heading h1{font-size: 42px;margin-bottom: 15px; }
+    .main-heading p{font-size: 42px;margin-bottom: 15px; }
     .landing-page-mid button {font-size: 20px; padding: 18px 30px; margin-top: 15px;}
     .template-six .landing-page-mid .input-field label{font-size: 14px !important}
     
     }
 @media (min-width:1024px) and (max-width:1365px) and (orientation:landscape) {
     .main-heading ,  .main-heading h1{ font-size: 42px; margin-bottom: 15px; }
-    .main-heading p{ font-size: 42px; margin-bottom: 15px; line-height: 48px; }
-   .sub-heading , .sub-heading h2{ font-size: 18px; margin-bottom: 25px; line-height: 24px; }
+    .main-heading p{ font-size: 42px; margin-bottom: 15px;  }
+   .sub-heading , .sub-heading h2{ font-size: 18px; margin-bottom: 25px;  }
      .t1-question-slider { width: 90%; }
      .template-six .landing-page-mid .input-field label{font-size: 14px !important}
     .t1new-result-newoutr{ width: 80%;}
@@ -661,7 +666,7 @@
     .t1-slider-nav a i{    font-size: 32px;    }
     .ripple-dark {padding: 0 20px;}
     .submit-textbox input{max-width: 90%;}
-    .main-heading ,  .main-heading h1{ font-size: 52px; line-height: 60px; margin-bottom: 20px; }
+    .main-heading ,  .main-heading h1{ font-size: 52px;  margin-bottom: 20px; }
     .main-heading p{ font-size: 60px; margin-bottom: 30px; }
     .sub-heading , .sub-heading h2{ font-size: 26px; margin-bottom: 38px; }
     .landing-page-mid leadform .t1-leadform-field { margin-bottom: 40px; }
@@ -699,18 +704,21 @@
     .t3-default-result-outer.tr-bold-new.t1-result-full-section .small-bot-sec p:nth-child(1){ font-size: 18px !important;}
     .t1-result-small-section .small-top-sec p:nth-child(1){ font-size: 26px !important;}
     .t3-default-result-outer.t1-result-small-section .small-bot-sec p{ font-size: 16px !important;}
-    .t1-result-disclaimer{ font-size: 15px;line-height: 25px;}
+    .t1-result-disclaimer{ font-size: 15px;}
     .t1-result-disclaimer i{ font-size: 16px; top: 3px;}
     .redo-outer .redo-link li a{ font-size: 14px;}
     .recom-section .leadform-outer h5{ font-size: 18px;}
     .recommendation-outer .mid-width span{ font-size: 28px;}
-    .recom-section .disc-set{font-size: 15px;line-height: 25px;}
+    .recom-section .disc-set{font-size: 15px;}
     .recom-section .disc-set i{ font-size: 16px; top: 3px;}
     .recom-section .leadform-outer{ padding-top: 30px;}
     .recom-section .leadform-outer .container-temp .prime-action{ width: 96%;}
     .t1-landing-leadform select { margin-bottom: 15px;}
     .t1-result-leadform select { padding: 9px !important;}
    
+    @-moz-document url-prefix() {
+        .t1-landing.isIframe{height:auto !important}
+    }
 }
 
 @media (min-width:1367px) and (max-width:1920px){
@@ -718,6 +726,9 @@
     .btn-twitter{font-size: 14px;}
     .btn-in{font-size: 14px;}
     .pic-selector label.control .text-overlay span{font-size: 18px;}
+
+
+
 }
 
 @media (min-width:1200px) and (max-width:1366px){
@@ -727,8 +738,8 @@
 }
 
 @media (min-width:880px) and (max-width:900px) and (orientation:landscape) {
-    .main-heading ,  .main-heading h1{ font-size: 42px; line-height: 48px;}
-    .main-heading p{ font-size: 42px; line-height: 48px;}
+    .main-heading ,  .main-heading h1{ font-size: 42px; }
+    .main-heading p{ font-size: 42px; }
 }
 @media (min-width:641px) and (max-width:1024px) {
     .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
@@ -781,20 +792,20 @@
     .page_0 .t1-question, .page_0.t1-question, .page_1 .t1-question, .page_1.t1-question{        min-height: 500px;    }
     .text-overlay{ top: 0px; padding-bottom: 105%;height: auto; bottom: 0px;}
     .t1-slider-question{ padding-top: 20px !important; border-radius: 5px; padding: 25px;}
-    .control.control--radio span{ margin-top: 9px; margin-bottom: 9px; font-size: 13px; line-height: 18px;}
+    .control.control--radio span{ margin-top: 9px; margin-bottom: 9px; font-size: 13px; }
     .control{ font-size: 15px;}
-    .pic-selector label.control .text-overlay span{ font-size: 13px; line-height: 16px; font-size: 13px; }
+    .pic-selector label.control .text-overlay span{ font-size: 13px;  font-size: 13px; }
     .recom-section .leadform-outer h1{ font-size: 18px; margin-top: 5px;}
     .recom-section .leadform-outer h1 p{ margin-bottom: 5px;}
-    .recom-section .leadform-outer h5{ font-size: 13px; line-height: 19px; margin-top: 3px; padding-bottom: 5px; margin-bottom: 5px;}
+    .recom-section .leadform-outer h5{ font-size: 13px;  margin-top: 3px; padding-bottom: 5px; margin-bottom: 5px;}
     .t1-result-leadform .input-outer input{font-size: 13px;}
     .t1-result-leadform .input-outer span{ font-size: 11px;}
     .recom-footer-outer{min-height: auto;}
     .recom-section .disc-set{text-align: left!important; width: 80%; font-size: 12px; margin-top: 8px;}
     .redo-outer-recom{ float: right; width: 20%; position: relative; right: auto;}
     .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header{ font-size: 13px; padding: 10px 15px;}
-    .main-heading ,  .main-heading h1, .main-heading p{ font-size: 40px !important; line-height: 46px; margin-bottom: 16px;}
-    .sub-heading{ font-size: 18px !important; margin-bottom: 16px; line-height: 20px;}
+    .main-heading ,  .main-heading h1, .main-heading p{ font-size: 40px !important; margin-bottom: 16px;}
+    .sub-heading{ font-size: 18px !important; margin-bottom: 16px; }
     .landing-page-mid leadform .input-section .input-outer input, 
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{ font-size: 14px !important;  }
     .pull-text-right{padding-left: 100px; }
@@ -817,17 +828,17 @@
     .t1-result-topheading p{ font-size: 20px;}
     .t1-result-inner{ width: 97%; margin-left: 10px; margin-right: 10px;}
     .t1-result-full-section{ width:100% !important;} 
-    .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-top-sec p{ font-size: 22px !important; line-height: 26px;}
-    .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-bot-sec p{ font-size: 14px !important; line-height: 20px;}
-    .t1-result-small-section .small-top-sec p:nth-child(1){ font-size: 18px !important; line-height: 24px;}
-    .t3-default-result-outer.t1-result-small-section .small-bot-sec p{ font-size: 13px !important; line-height: 18px;}
+    .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-top-sec p{ font-size: 22px !important;}
+    .t3-default-result-outer.t1-result-small-section.t1-result-full-section .small-bot-sec p{ font-size: 14px !important; }
+    .t1-result-small-section .small-top-sec p:nth-child(1){ font-size: 18px !important; }
+    .t3-default-result-outer.t1-result-small-section .small-bot-sec p{ font-size: 13px !important; }
     .redirect-heading{ font-size: 14px;}
     .page_2 .prime-action{ margin-left: 0px; margin-bottom: 0; font-size: 11px; padding: 10px 20px;}
     .share-heading{ font-size: 14px; top: 25px;}
     .btn-fb{ margin-bottom: 0px;}
     .btn-twitter{ margin-bottom: 0px;}
     .btn-in{ margin-bottom: 0px;}
-    .t3-default-result-outer.t1-result-full-section .small-top-sec p{font-size: 22px !important; line-height: 26px;}
+    .t3-default-result-outer.t1-result-full-section .small-top-sec p{font-size: 22px !important; }
     .gradedquiz-main .fb-like{ margin-bottom: 0px;}
     .gradedquiz-main .fb-like + .twitter-follow-button{ top: 10px; margin-bottom: 5px;}
     .graded-msgbox{ padding: 7px 12px;}
@@ -853,7 +864,7 @@
     .landing-page-mid leadform .input-section .input-outer {    min-height: auto !important;}
     .t1-landing-leadform .input-outer .input-field .selectize-control {    margin-top: 5px;}
     .input-outer i{left:15px; top:19px;}
-    .main-heading, .main-heading h1 ,.main-heading p{font-size: 24px; line-height: 28px}
+    .main-heading, .main-heading h1 ,.main-heading p{font-size: 24px; }
     .t1-ques-head{font-size: 18px ; line-height: 1.2}
     .t1-landing-leadform .input-outer .input-field .selectize-control{margin-top: 0px !important}
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd){padding: 0px !important}
@@ -863,6 +874,7 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .V_3_5 .common-result header.landing-page-header .logo{margin-bottom: 20px !important;}
     .template-six.V_3_5 .newLeadGenV_3_5 + fb_lead_gen button.loginBtn.loginBtn--facebook::after{padding: 10px 40px 8px 15px !important}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook::after {padding: 11px 35px 10px 15px !important;}
     .template-six.V_3_5 .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook::after  {padding: 12px 38px 10px 15px !important;}
@@ -877,7 +889,7 @@
     a.view-feedback{bottom: 85px !important; left: 0; right: 0;}
     /* .t1-landing-inner.logo-resizing{padding-top: 120px} */
     .V_3_5 outcome-result .result-v2 .common-result-bot-icons.side-redo:after{border-width:75px 90px 0px 0;}  
-    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;line-height:20px !important}
+    .V_3_5 .sub-heading,.V_3_5 .sub-heading h2,.V_3_5 .sub-heading h2 p{font-size:14px !important;opacity:1;}
     .V_3_5 .result-v2 .common-result-bot-icons.side-redo .crb-left{right: 4px !important;}
     .V_3_5 .poll-main .ko-progress-circle{margin-left: -66px}
     .V_3_5.template-six .overlay-outerleadform.result-v2 .common-result-main .t1-result-leadform .input-outer input{min-height: 40px !important}
@@ -892,7 +904,7 @@
     .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action {font-size: 12PX !important;padding: 12PX 20PX 10px !important;}
     .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{border-radius: 4px !important}
     .V_3_5 .t1-question .question-components .newLeadGenV_3_5 .lead-action-wrapper a.submit-checkbox-img {font-size: 12px !important;padding: 10px 30px 8px !important;}
-    .V_3_5 .newLeadGenV_3_5 + fb_lead_gen button.loginBtn.loginBtn--facebook {padding: 10px 40px 8px 15px !important;font-size: 12px !important;line-height: 18px;margin: 0;}
+    .V_3_5 .newLeadGenV_3_5 + fb_lead_gen button.loginBtn.loginBtn--facebook {padding: 10px 40px 8px 15px !important;font-size: 12px !important;margin: 0;}
     .template-six.V_3_5 .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer [type="checkbox"] + label.leadform-checkbox{padding-bottom: 0px}
     .template-six.V_3_5 .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer span{font-size: 10px !important; top: 43px !important }
     .template-six.V_3_5 .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer.checkbox span{top: 5px !important}
@@ -911,7 +923,7 @@
     .template-six.V_3_5  .ripple-dark.checkbox-outer > span,
     .template-six.V_3_5 .ripple-dark .mid-outer span, .pic-selector .abhi{margin-top: 10px; font-size: 14px !important}
     .template-six.V_3_5 .question-components .postfixset + button.button_textfield.submit-textbox-btn{top:60px}
-    .template-six.V_3_5 .t1-ques-head {font-size: 22px;line-height: 28px;}
+    .template-six.V_3_5 .t1-ques-head {font-size: 22px;}
     .template-six.V_3_5 .checkbox-outer button.submit-checkbox-img.ripple-light ,
     .template-six.V_3_5 .pic-selector.submit-checkbox-outr button.submit-checkbox.ripple-light {font-size: 10px !important;height: 30px;}
     .template-six.V_3_5 .textfield button.button_textfield.submit-textbox-btn ,
@@ -923,7 +935,7 @@
     .V_3_5 .t1-question .ripple-dark.checkbox-outer-base [type=checkbox]+label.control::before,
     .V_3_5 .t1-question .ripple-dark.radio-outer-base [type=radio]+label.control::before{margin:15px 18px ; left: 0; top:0px}
     .V_3_5 .t1-question .ripple-dark.checkbox-outer-base label.control span, 
-    .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control span {margin: 16px 0 15px!important;line-height: 18px;font-size: 14px !important;}
+    .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control span {margin: 16px 0 15px!important;font-size: 14px !important;}
     .V_3_5 .t1-question .ripple-dark.checkbox-outer-base label.control, .V_3_5 .t1-question .ripple-dark.radio-outer-base label.control{min-height: auto}
     .V_3_5 .t1-slider-question .input-field.new-class1.pre-div label~input, .input-field input.postfixset {width: calc(100% - 40px)!important;}
     .V_3_5 .t1-slider-question .input-field.pre-div label~input, .input-field input.postfixset {width: calc(100% - 80px)!important;}
@@ -932,12 +944,13 @@
     .V_3_5 .slider-button-outer button.submit-checkbox-img.ripple-light, 
     .V_3_5 button.button_textfield.submit-textbox-btn{height: 36px !important;}
     .V_3_5 .t1-slider-question .input-field label{height: 40px;line-height: 40px; min-height: 40px}
-    .template-six.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {min-height: 40px; padding: 0 20px 0 40px;font-size: 14px!important;}
+    .template-six.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {min-height: 40px; padding: 0 20px 0 40px;font-size: 16px!important; margin: 0}
+    .template-six.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer {margin-bottom: 25px;}
     .template-six.V_3_5 .question-components input{min-height: 40px; padding: 0 15px;font-size: 14px!important;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 32px !important;line-height: 38px !important;}
-    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2, .V_3_5 .sub-heading h2 p {font-size: 14px !important;line-height: 20px !important;opacity: 1 !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 32px !important;}
+    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2, .V_3_5 .sub-heading h2 p {font-size: 16px !important; opacity: 1 !important;}
     .V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer{padding-bottom: 0px}
-    .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 14px 30px;font-size: 12px;}
+    .V_3_5 .landing-page-mid button, .V_3_5 .landing-page-mid.v3-fb-outer button {padding: 14px 30px;font-size: 16px;}
     .t1-slider-question .input-field label{width: 40px}
     .t1-slider-question .input-field label~input {width: calc(100% - 72px)!important;}
     .t1-slider-question .input-field.new-class1 label~input , .input-field input.postfixset {width: calc(100% - 36px)!important;}
@@ -979,7 +992,7 @@
     .submit-checkbox-outr button.submit-checkbox.ripple-light{    padding: 6px 10px;    font-size: 12px;        }
      button.btn.prime-action.back-action.ripple-light{    font-size: 14px;    padding: 10px 20px;    }
     .graded-msgbox span{font-size: 12px;}
-    .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 14px;  padding: 12px 20px;    }
+    .landing-page-mid leadform button.prime-action ,  .landing-page-mid button{    font-size: 16px;  padding: 12px 20px;    }
     .t1-slider-nav{bottom: 35px; right: 15px; transform: translateX(0) !important}
     .ripple-dark.checkbox-outer > span , .ripple-dark .mid-outer span ,  .pic-selector .abhi{font-size: 14px;  margin: 0px 0px 15px 0}
     .graded-tick .img-graded-box {    width: 22px;    height: 22px;    padding: 4px 0;    top: 90px;     }
@@ -1010,7 +1023,7 @@
     .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input {    font-size: 14px;    margin: 0px 0 0px 0;    padding: 0px 20px;    min-height: 40px;    padding-left: 40px;}
     .control-ver2 .submit-checkbox-outr{ bottom: 0px;}
     .landing-page-mid leadform .input-section .input-outer i {top: 13px;}
-   .V_3_5 .landing-page-mid leadform .input-section .input-outer i {top: 50%; transform: translateY(-50%);} 
+   .V_3_5 .landing-page-mid leadform .input-section .input-outer i {top: 50%; transform: translateY(-50%);font-size: 18px} 
     .common-result .selectize-control.single .selectize-input {    min-height: 32px;   }
     .V_3_5 .common-result .selectize-control.single .selectize-input {    min-height: auto !important;   }
     .landing-page-mid leadform .input-section .input-outer.checkbox{height: auto !important;padding-bottom: 10px;}
@@ -1042,9 +1055,9 @@
     .poll-main .ko-progress-circle{left:80px;}
 }
 @media (max-width:319px){
-    .main-heading, .main-heading h1, .main-heading p {    font-size: 18px;    line-height: 1.2;}
+    .main-heading, .main-heading h1, .main-heading p {    font-size: 18px;    }
     .landing-page-mid leadform button.prime-action, .landing-page-mid button , button.submit-checkbox-img.ripple-light, .t1-question .submit-textbox-btn, .w100.text-center .submit-checkbox-img{    font-size: 12px;    padding: 8px 16px;}
-    .t1-ques-head {    font-size: 18px;    line-height: 1.2;}
+    .t1-ques-head {    font-size: 18px;    }
     .t1-ques-head .help-text {    font-size: 13px;}
     .checkbox-outer-base button.submit-checkbox-img.ripple-light {    position: relative !important;}
     .check-comp .checkbox-outer-base.active.ripple-dark span.t6.pull-text-right {    padding-left: 0px !important;    margin: 18px 0 10px !important;}
@@ -1067,7 +1080,7 @@
 
 @media (max-width:640px){
     .question-components .input-field textarea {font-size: 14px !important}
-    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;margin-top: 10px;line-height: 22px;}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .sub-lead-title{font-size: 14px;margin-top: 10px;}
     .template-section .template-container.mobile  .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input + span.cust-icon-rest::after {font-size: 18px !important;}
     .common-result-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span.cust-icon-rest {width: 50px !important}
     .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-right: 50px}
@@ -1082,7 +1095,7 @@
     .check-marks svg {height: 45px;}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input {padding: 7px 35px 7px 10px;border: 1px solid #d9dad3 !important;min-height: 35px;}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action{padding: 7px 20px;}
-    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {padding-top: 2px;position: relative !important;font-size: 13px;        min-height: auto !important;line-height: 17px;padding-left: 30px;}
+    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type="checkbox"] + label.leadform-checkbox {padding-top: 2px;position: relative !important;font-size: 13px;        min-height: auto !important;padding-left: 30px;}
     .common-result-main .t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer span{top:38px}
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
     .question-components .input-field input.postfixset{width:calc(100% - 40px) !important }

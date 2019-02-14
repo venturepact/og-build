@@ -26,7 +26,7 @@
     .sub-heading h2 {
         font-size: 16px;
         margin-bottom: 20px;
-        line-height: 24px;
+        line-height: 1.4;
     }
     .t1-logo {
         width: 100%;
@@ -836,9 +836,12 @@
         text-align: center;
     }
     .lightSticky {
-        bottom: 5px;
+        bottom: 8px;
         width: 100%;
         left: 0;
+    }
+    .stickyfooter{
+        padding: 7px 20px !important;
     }
     .col {
         width: 100%;
@@ -982,6 +985,7 @@
         line-height: 24px;
         margin-top: -4px;
     }
+    .V_3_5 .t1-landing .t1-landing-inner .selectize-input .item{ font-size: 16px !important;}
     .landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) {
         width: 100% !important;
     }
@@ -1092,12 +1096,13 @@
     fb_lead_gen + .lf-skip-btn {text-align: left;padding: 0 35px;width: auto !important;margin: 0 !important;margin-top: 15px !important;}
     /*t3 improved 768*/
     .V_3_5 .landing-page-mid{width: 100%;padding: 0 25px;}
-    .V_3_5 .t1-landing-leadform .input-section {text-align: center; max-width: 500px;margin: 0 auto; float: none;width: 100%;}
-    .V_3_5 .landing-page-mid leadform .input-section .input-outer input{padding-top: 10px ; padding-bottom: 6px }
-    .V_3_5 .t1-landing-leadform .input-section .input-outer i{top: 8px;}
-    .V_3_5 leadform .input-field label:not(.label-icon).active{font-size: 11px;top: 7px;}
-    .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 25px;margin-right:  0; padding-right: 0 !important;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 36px !important;line-height: 40px !important;}
+    .V_3_5 .t1-landing-leadform .input-section {text-align: center; max-width: 500px;margin: 0 auto; float: none;width: 100%; margin-top: 15px;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer input{padding-top: 13px ; padding-bottom: 6px;font-size: 16px !important;  padding-left: 28px; }
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer label{ font-size: 16px; padding-left: 28px; line-height: normal;}
+    .V_3_5 .t1-landing-leadform .input-section .input-outer i{top: 9px;}
+    .V_3_5 leadform .input-field label:not(.label-icon).active{font-size: 11px;top: 5px; padding-left: 0px;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer{width: 100% !important; margin-bottom: 30px;margin-right:  0; padding-right: 0 !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p {font-size: 36px !important;line-height: 1.2 !important;}
     .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook {padding: 10px 35px 10px 15px !important;font-size: 13px !important;float: none !important;}
     .V_3_5 .loginBtn--facebook:before {width: 25px !important;height: 25px !important;top: 50% !important;transform:translateY(-50%);background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-size: 15px !important;right: 5px !important;}
     .V_3_5 .or-class{text-align: center !important;padding: 15px !important;padding-top:0 !important;margin:0 !important;font-size: 12px !important;}
@@ -1112,9 +1117,9 @@
     .V_3_5 .result-v2 .loginBtn.loginBtn--facebook {padding: 9px 35px 9px 15px !important;font-size: 13px !important;}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{font-size: 13px !important;}
     .V_3_5 .result-v2 .loginBtn.loginBtn--facebook:before{top: 50% !important;transform:translateY(-50%);}
-    .V_3_5 .landing-page-mid button{font-size: 12px !important;line-height: 17px;min-height: auto;min-width: auto;padding: 11px 30px !important;}
+    .V_3_5 .landing-page-mid button{font-size: 13px !important;line-height: 17px;min-height: auto;min-width: auto;padding: 13px 26px !important;}
     .V_3_5 .landing-page-header{left: 0px;width: 100%;}
-    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 14px;line-height: 20px;}
+    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 18px;line-height:1.4;}
     .V_3_5 .landing-text-left .landing-page-mid {width: 100%;float: none;margin: 0 auto;padding: 0 25px;}
     .V_3_5 .landing-text-right .landing-page-mid {width: 100%;float: none;margin: 0 auto;padding: 0 25px;}
     .V_3_5 .landing-text-left .fb-outer{float: left;padding: 0px;}
@@ -1133,7 +1138,7 @@
     .V_3_5 .result-v2.common-result .leadAsPopup .w100.text-center .submit-checkbox-img{display: none;}
     .V_3_5 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .prime-action {padding: 10px 30px !important;font-size: 12px;line-height: 16px;}
     .V_3_5 .t1-question form{width: 100%;}
-    .V_3_5 .page_0 form .prime-action,.V_3_5 .page_1 form .prime-action{padding: 9px 30px;font-size: 11px;}
+    .V_3_5 .page_0 form .prime-action,.V_3_5 .page_1 form .prime-action{padding: 13px 26px;font-size: 13px;}
     .V_3_5 .result-v2 .common-result-main .t1-result-full-section .t1-result-full-container .small-top-sec p {font-size: 26px !important;line-height: 32px !important;}
     .V_3_5.inline-temp-new .result-v2 .outcome_like{top: -5px !important;}
     .V_3_5 .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{margin-bottom: 10px !important;padding: 11px 30px !important;}
@@ -1150,7 +1155,7 @@
     .V_3_5 .t1-question .question-components leadform_question .question-section.leaded-form-c .selectize-control.single .selectize-input{min-height: 22px;margin-bottom: 10px;}
     .V_3_5 .t1-ques-component .input-section .input-outer.checkbox {margin-bottom: 23px;display: inline;float: none;margin-right: 0;}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer span{top: 30px;}
-    .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox {margin-top: 7px;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox {margin-top: 5px;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox{padding-top: 6px;}
     .V_3_5 .t1-question .question-components .question-section.leaded-form-c [type="checkbox"] + label.leadform-checkbox:before{padding-top: 6px;}
     .V_3_5 .t1-question .new_control .question-components input.postfixset{max-width: 170px !important;float: none;min-width: 150px !important;}
@@ -1204,6 +1209,7 @@
     .cal-outer.calender-date+span.calendar-range{ font-size:22px }
     .isIframe.no-header-links.no-footer-links { min-height: 630px; }
     .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input + .selectize-dropdown.single{min-width: 165px !important;}
+    .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {line-height: 1.4 !important; font-size: 14px !important; padding-top: 0 !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1303,7 +1309,7 @@
         font-size: 12px;
         padding-left: 30px !important;
     }
-    .landing-page-mid leadform .input-section .input-outer .selectize-input input{padding-left: 0 !important;font-size: 12px !important}
+    .landing-page-mid leadform .input-section .input-outer .selectize-input input{padding-left: 0 !important;}
     .landing-page-mid button {
         padding: 7px 30px;
     }
@@ -1474,7 +1480,7 @@
     .sub-heading h2 {
         font-size: 14px;
         margin-bottom: 5%;
-        line-height: 20px;
+        line-height: 1.4;
     }
     .landing-page-mid button {
         padding: 7px 30px;
@@ -1923,11 +1929,11 @@
 
     /*t3 improved 1023*/
     .V_3_5 .landing-page-mid{ width: 84% !important;float: none;}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 50px !important; line-height: 56px !important;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1, .V_3_5 .main-heading h1 p{font-size: 50px !important; line-height: 1.2 !important;}
     .V_3_5 .landing-page-mid.v3-fb-outer leadform button.prime-action{margin-bottom: 0px !important;}
-    .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p {font-size: 34px;line-height: 42px;}
+    .V_3_5 .v3-fb-outer .main-heading, .V_3_5 .v3-fb-outer .main-heading h1, .V_3_5 .v3-fb-outer .main-heading p {font-size: 34px;line-height: 1.2;}
     .V_3_5 fb_lead_gen {width: 100%;float: left;left: 0;padding: 0 50px;margin: 0 0 20px;}
-    .V_3_5 .landing-page-mid button{padding: 12px 25px !important;}
+    .V_3_5 .landing-page-mid button{padding: 14px 26px !important;}
     .V_3_5 .template3-outr {float: left;width: 100%;margin-top: 0px;padding-left: 50px;padding-right: 50px;}
     .V_3_5 .template3-outr .question-subhead{margin-top: 5px ;}
     .V_3_5 .template3-outr .question-head{font-size: 26px;line-height: 45px;padding: 8px 10px;padding-top: 12px;}
@@ -1963,6 +1969,8 @@
         width: 295px !important;
         font-size: 26px !important;
     }
+    .V_3_5 .page_1 form .prime-action{padding: 14px 26px;}
+    .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 18px;line-height:1.4;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {
@@ -2048,7 +2056,7 @@
     .sub-heading h2 {
         font-size: 18px;
         margin-bottom: 20px;
-        line-height: 24px;
+        line-height: 1.4;
     }
     .t1-landing-leadform .t1-leadform-field {
         margin-left: 10px;
@@ -2070,7 +2078,7 @@
         padding: 10px 40px;
     }
     .input-outer i {
-        top: 10px !important;
+        top: 8px !important;
         font-size: 18px !important;
     }
     .t1-question .question-components .selectize-control.single .selectize-input {
@@ -2165,7 +2173,7 @@
     .sub-heading h2 {
         font-size: 18px;
         margin-bottom: 25px;
-        line-height: 24px;
+        line-height: 1.4;
     }
     .landing-page-mid leadform .input-section .input-outer input {
         font-size: 13px;
@@ -2445,7 +2453,7 @@
     .sub-heading h2 {
         font-size: 15px;
         margin-bottom: 16px;
-        line-height: 18px;
+        line-height: 1.4;
     }
     .landing-page-mid button {
         margin-bottom: 0px;
