@@ -1900,10 +1900,11 @@ body .V_3_5.one-page-card-new input::-moz-placeholder{color:#aaa!important;opaci
 body .V_3_5.one-page-card-new input:-ms-input-placeholder{color:#aaa!important;opacity: 0.6;}
 body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacity: 0.6;}
 .V_3_5.one-page-card-new .t1-ques-head .help-text{opacity:.8}
-.V_3_5 .control-ver2 .pic-selector{padding-bottom:0;margin-bottom:0!important;margin-top:20px}
+.V_3_5 .control-ver2 .pic-selector{padding-bottom:0;margin-bottom:10px!important;margin-top:0px}
 .V_3_5 .control-ver2 .pic-selector:first-child,
 .V_3_5 .control-ver2 .pic-selector:nth-child(2),
 .V_3_5 .control-ver2 .pic-selector:nth-child(3){margin-top:0!important}
+.V_3_5 .control-ver2 .pic-selector:last-child {margin-bottom: 0px !important;}
 .V_3_5.one-page-card-new [type=checkbox]+label.leadform-checkbox{opacity:1}
 .V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input:focus{box-shadow:none!important;border:0!important}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 ul{margin:10px 0 15px}
