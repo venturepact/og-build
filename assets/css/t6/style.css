@@ -1541,7 +1541,7 @@ fb_lead_gen+.lf-skip-btn{width:100%;float:left;text-align:center;margin-left:0!i
 .V_3_5 .t1-ques-component .input-section .input-outer.checkbox span{top:0!important;position:relative}
 .V_3_5 .t1-ques-component .input-section .input-outer{float:left;width:100%}
 .V_3_5 .t1-slider-question.slide-1 .lf-skip-btn{float:left;width:100%;margin-left:0;margin-right:0;margin-top:10px!important}
-.V_3_5.template-six .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{float:left;width:100%;margin-top:8px;line-height:1.4;font-size:16px;min-height:auto}
+.V_3_5.template-six .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{float:left;width:100%;margin-top:5px;line-height:1.4;font-size:16px;min-height:auto}
 .V_3_5.template-six .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:after,.V_3_5.template-six .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before,.V_3_5.template-six .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:not(:checked)+label:after,.V_3_5.template-six .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:not(:checked)+label:before{top:0!important;width:20px!important;height:20px!important;border:1px solid #9e9e9e!important}
 .V_3_5 .common-result-main .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox].filled-in:checked+label.leadform-checkbox:before{display:flex;align-items:center;justify-content:center}
 .V_3_5.template-six .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input:focus{box-shadow:none!important;border:0!important}
@@ -2013,3 +2013,10 @@ button.loginBtn.loginBtn--facebook:hover::after {
     padding: 13px 30px;
 }
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action p{display: inline;}
+.landing-page-mid .input-section .input-outer:nth-last-child(1):nth-child(odd) .leadform-checkbox {
+    margin-top: 0 !important;
+  }
+  .V_3_5.template-six .lead-popup .leaded-form-c .input-outer .section-head, .V_3_5.template-six .lead-popup .leaded-form-c .input-outer .section-head div{margin-bottom: 5px !important}
+  .V_3_5.template-six .common-result-main .common-leadform-top.t1-result-leadform .input-outer.checkbox .leadform-checkbox p {
+    margin: 0;
+}

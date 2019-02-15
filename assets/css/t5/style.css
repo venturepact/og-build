@@ -3173,13 +3173,13 @@
     }
     .t1-landing .landing-inner .selectize-control.single .selectize-input input {
         height: auto;
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 0;
         padding-left: 0 !important;
         width: 100%!important;
     }
     .t1-landing .landing-inner .selectize-input .item {
-        font-size: 14px;
+        font-size: 18px;
         margin-left: 1px;
         float: left;
         overflow: hidden;
@@ -4791,7 +4791,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*.V_3_5.template-five .t1-result .lead-popup [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{background-color: #fff !important}*/
 .V_3_5 .lead-popup a.sliding-next:before {content: '';}
 .V_3_5 .main-section .help-text{font-size: 14px;line-height: 1.4;margin-top: 5px;}
-.V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 26px;padding-bottom: 2px !important;padding-left: 2px !important;}
+.V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 26px;padding-bottom: 4px !important;padding-left: 2px !important;}
 .V_3_5.template-five.structure-right-align [type="checkbox"] + label.leadform-checkbox{float: right;}
 .V_3_5.template-five.structure-right-align [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {  right: 10px !important;left: auto !important;}
 .V_3_5.template-five.structure-right-align .textfield.checkbox-outer input[type="text"], 
@@ -5200,3 +5200,4 @@ left: auto !important;
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input + label{font-size: 18px; padding-left: 30px; top: 4px}
 .V_3_5 .landing-page-mid leadform .input-outer span{top: 35px;font-size: 10px; letter-spacing: 0.5px !important;}
 .V_3_5 .landing-page-mid leadform .input-field label:not(.label-icon).active{padding-left: 0;font-size: 12px;letter-spacing: 1px;font-weight: 600 !important;top: 0px;}
+.V_3_5.template-five .common-result-main [type="checkbox"] + label.leadform-checkbox{padding-left: 35px }
