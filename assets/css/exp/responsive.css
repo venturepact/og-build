@@ -7,7 +7,7 @@
     html {overflow-y: auto !important;overflow-x: hidden !important;}
     .cta-center {text-align: center;}
     /*selectize css*/
-    .t1-question .question-components .selectize-control.single .selectize-input {padding:0!important; margin-right: 0px !important; font-size: 16px !important;min-height: auto;margin-bottom: 0px;}
+    .t1-question .question-components .selectize-control.single .selectize-input {padding:0!important; margin-right: 0px !important; font-size: 15px !important;min-height: auto;margin-bottom: 0px;}
     .t1-question .question-components .selectize-control.single .selectize-dropdown.single {top: 20px!important;min-width: 80px!important;}
     .t1-question .question-components .selectize-control.single .selectize-dropdown.single .option {font-size: 14px;}
     .t1-question .question-components .selectize-control.single .selectize-input .item {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;padding-right: 11px;word-break: break-word;}
@@ -110,7 +110,7 @@
     .t1-result-inner {padding: 0;width: 100%;min-height: 100%;padding-top: 25px;}
     .t1-result-topheading p {text-align: left;padding: 0;}
     .mid-width {font-size: 15px;padding-left: 12px;width: 45%;}
-    .t1-question .question-components input {font-size: 16px!important;margin-bottom: 0px;height: 24px;padding: 0px !important;padding-left: 0 !important;}
+    .t1-question .question-components input {margin-bottom: 0px;height: 24px;padding: 0px !important;padding-left: 0 !important;}
     .inline-tablecell {padding: 20px 0px;padding-bottom: 40px;}
     .result-outer-scroll {height: auto !important;min-height: auto;padding-right: 0px;}
     .landing-page-mid leadform button.prime-action {padding: 13px 35px;font-size: 14px;}
@@ -292,7 +292,7 @@
     .t1-landing-leadform button.prime-action i {display: none;}
     .date-selector-part .cal-outer.calender-date {float: left;width: 100%;}
     .date-selector-part span.calendar-range {width: 100%;padding: 10px 0;float: left;}
-    .input-field textarea{font-size: 16px !important;padding-top: 2px;}
+    .input-field textarea{padding-top: 2px;}
 }
 @media (min-width: 480px) and (max-width: 767px) {
     .t1-landing-inner {padding: 0 20px;padding-top: 60px;padding-bottom: 75px;}
