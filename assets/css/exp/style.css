@@ -2741,7 +2741,7 @@ input[type=number] {
 }
 .slider-set .range-slider1 input.slider-input{
     position: absolute !important;
-    top: 0px !important;
+    top: 10px !important;
     width: 115px !important;
     background: none !important;
     border-radius: 0px !important;
@@ -2751,7 +2751,7 @@ input[type=number] {
     text-overflow: ellipsis;
     padding: 1px 11px  !important;
     text-align: center;
-    min-height: 43px;
+    min-height: 33px;
 }
 /*custom range slider css ends*/
 
@@ -2951,12 +2951,12 @@ input[type=number] {
     background-color: transparent;
     top: 0px;
     z-index: 0 !important;
-    margin: 6px;
+    margin: 7px;
     margin-left: 0;
     border-radius: 50%;
 }
 .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:before {
-    top: 8px;
+    top: 9px;
     left: 1px;
     width: 6px;
     height: 10px;
@@ -2975,7 +2975,7 @@ input[type=number] {
     width: 15px;
     height: 15px;
     z-index: 0 !important;
-    margin: 6px;
+    margin: 7px;
     margin-left: 0px;
     border-radius: 50%;
 }
@@ -3037,7 +3037,7 @@ input[type=number] {
     position: absolute;
     left: 0;
     top: 0;
-    margin: 6px;
+    margin: 7px;
     margin-left: 0;
     width: 15px;
     height: 15px;
@@ -3118,7 +3118,7 @@ input[type=number] {
 .check-comp .control--radio .control__indicator.icon-set i {
     font-size: 20px;
     position: absolute;
-    top: 3px;
+    top: 4px;
     left: 0px;
 }
 .check-comp .radio-outer.ripple-dark.active .control--radio .control__indicator.icon-set i {
@@ -3967,7 +3967,7 @@ svg.highcharts-root {
 }
 .slider-input-pre {
     position: absolute !important;
-    top: 5px !important;
+    top: 15px !important;
     font-size: 15px !important;
     margin-left: 17px !important;
     text-align: right;
@@ -3981,7 +3981,7 @@ svg.highcharts-root {
 }
 .slider-input-post {
     position: absolute !important;
-    top: 5px !important;
+    top: 15px !important;
     font-size: 15px !important;
     margin-left: 21px !important;
     text-align: center;

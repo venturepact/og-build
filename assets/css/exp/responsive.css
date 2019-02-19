@@ -118,9 +118,9 @@
     /*slider starts*/
     .range-slider1 .well1 { text-align: center;width: calc(100% - 100px);float: left;}
     .t1-result-main {display: block;}
-    .slider-set .range-slider1 input.slider-input{width: 85px!important;margin-left: 14px !important;padding: 1px 3px!important;top: 0px !important;}
-    .slider-input-pre {top: 5px !important;max-width: 27px;margin-left: 5px !important;}
-    .slider-input-post {top: 5px !important;max-width: 27px;margin-left: -1px !important;}
+    .slider-set .range-slider1 input.slider-input{width: 85px!important;margin-left: 14px !important;padding: 1px 3px!important;}
+    .slider-input-pre {max-width: 27px;margin-left: 5px !important;}
+    .slider-input-post {max-width: 27px;margin-left: -1px !important;}
     .slider-set .range-slider1 .slider-input-pre ~ input.slider-input{padding-left: 20px !important;}
     .slider-set .range-slider1 input.slider-input.suffix-text {padding-right: 25px !important;}
     /*powered-by css starts*/
