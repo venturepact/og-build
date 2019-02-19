@@ -227,8 +227,10 @@
         setTime: function (time) {
             var that = this;
             this.wrapperTime.html(time);
-            const timerEvent = new CustomEvent('count-down-timer-interval', { detail: { timeInterval: time, elem: that.element } });
-            document.dispatchEvent(timerEvent);
+            if (that.element) {
+                const timerEvent = new CustomEvent('count-down-timer-interval', { detail: { timeInterval: time, elem: that.element } });
+                document.dispatchEvent(timerEvent);
+            }
         },
         destroy: function () {
             this.hide();
