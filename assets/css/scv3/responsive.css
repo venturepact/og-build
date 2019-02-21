@@ -358,7 +358,7 @@
     .V_3_5.sound-cloud-new .page_1 input:not([readonly]){font-size: 14px !important;}
     .V_3_5.sound-cloud-new .page_1 .input-field label:not(.label-icon).active{font-size: 14px !important;}
     .V_3_5 .selectize-control.single .selectize-input{font-size: 14px;}
-    .V_3_5 .has-background .page_1,.V_3_5 .page_1{width: 100%;margin:0;padding-top: 28px;}
+    .V_3_5 .has-background .page_1,.V_3_5 .page_1{width: 100%;margin:0;padding-top: 28px;min-height: auto !important;}
     .V_3_5 .page_2.hasbranding.result-fixed{width: 100%;float: left;margin-left:0 !important;padding: 0 20px !important;margin-top: 0 !important}
     .V_3_5 .sec-divison{width:15px;left: -17px;}
     .V_3_5 .selectize-input .item{font-size: 14px;}
@@ -440,6 +440,7 @@
     .V_3_5 .result-scrolling{overflow: visible !important;}
     .quiz-usersCount.noWelcomeScreen {bottom: 85px;}
     .V_3_5 .like-cta-outer .cta-share .btn-lg:hover .help-checktip{visibility: hidden;}
+    .V_3_5 .questions{padding: 0 20px 15px 20px;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     .landing-page-mid .main-heading h1{        font-size: 42px;        line-height: 46px;        margin-top: 0px;    }
