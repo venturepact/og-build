@@ -988,14 +988,16 @@
         background: #bec5c9
     }
     .membership-details-sec .table-responsive .table>thead>tr>th {
-        line-height: 24px;
+        line-height: 1.4;
         border-bottom: none;
         color: #fff;
-        font-size: 12px;
+        font-size: 11px;
         border-top: none;
-        font-family: montserratregular;
-        padding: 8px 30px;
-        vertical-align: middle
+        font-family: montserratbold;
+        padding: 14px 30px;
+        vertical-align: middle;
+        text-transform: uppercase; 
+        letter-spacing: 0.5px;
     }
     .membership-details-sec .table>thead:first-child>tr:first-child>th {
         font-weight: 100
@@ -1068,20 +1070,22 @@
         background: #bec5c9
     }
     .payment-method .table-responsive .table>thead>tr>th {
-        line-height: 24px;
+        line-height: 1.4;
         border-bottom: none;
         color: #fff;
-        font-size: 12px;
+        font-size: 11px;
         border-top: none;
-        font-family: montserratregular;
-        padding: 8px 30px
+        font-family: montserratbold;
+        padding: 14px 30px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
     }
-    .payment-method .table>thead:first-child>tr:first-child>th {
+    /* .payment-method .table>thead:first-child>tr:first-child>th {
         color: #fff;
         font-weight: 100;
         font-size: 12px;
         font-family: montserratregular
-    }
+    } */
     .payment-method .table-responsive .table tbody {
         background: #fff
     }
@@ -4353,9 +4357,9 @@
     .payment-history .table>tfoot>tr>th,
     .payment-history .table>thead>tr>td,
     .payment-history .table>thead>tr>th {
-        padding: 20px 15px;
+        padding: 18px;
         color: #62696d;
-        font-size: 14px;
+        font-size: 13px;
         border-top: none;
         font-family: montserratregular
     }
@@ -4384,15 +4388,17 @@
         border-top: none
     }
     .payment-history .table>thead:first-child>tr:first-child>th {
-        line-height: 24px;
+        line-height: 1.4;
         border-bottom: none;
         color: #fff;
-        font-size: 12px;
+        font-size: 11px;
         border-top: none;
-        font-family: montserratregular;
-        padding: 8px 15px;
-        font-weight: 100;
-        vertical-align: middle
+        font-family: montserratbold;
+        padding: 14px 15px;
+        /* font-weight: 100; */
+        vertical-align: middle;
+        text-transform: uppercase; 
+        letter-spacing: 0.5px;
     }
     .payment-history .payment-history-header i.material-icons {
         color: #fff!important
@@ -4404,13 +4410,14 @@
         color: rgba(98, 105, 109, .8)!important
     }
     td a.pdf-download {
-        font-size: 10px;
-        color: #f6f8f9;
-        background: #8a8e91;
-        font-family: montserratbold;
+        font-size: 11px;
+        color: #888888;
+        /* background: #8a8e91; */
+        font-family: montserratregular;
         padding: 2px 7px;
         border-radius: 20px
     }
+    td a.pdf-download i{ margin-right: 4px;}
     .payment-history tbody tr {
         padding: 8px 30px;
         line-height: 40px
