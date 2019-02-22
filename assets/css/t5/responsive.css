@@ -2,7 +2,7 @@
     .question-head,
     .text-highlight .question-number sup,
     .text-highlight .t1-ques-component .input-section .input-outer .section-head,
-    .text-highlight .t1-ques-head{line-height:24px}
+    .text-highlight .t1-ques-head{}
     .range-slider .irs-single{font-size:16px}
     .range-slider .irs-max,
     .range-slider .irs-min,
@@ -13,7 +13,7 @@
     .question-components .selectize-control{width:80%}
     .question-number sup,
     .t1-ques-component .input-section .input-outer .section-head,
-    .t1-ques-head{font-size:18px;line-height:24px}
+    .t1-ques-head{font-size:18px;}
     .control,
     .main-section .input-field label,
     .t1-question .prime-action,
@@ -24,8 +24,8 @@
     leadform .input-section .input-outer span{font-size:11px;top:36px}
     .main-heading,
     .main-heading h1{font-size:5.3vmin}
-    .text-highlight .main-heading p{line-height:8.5vmin}
-    .main-heading p{line-height:6.5vmin}
+    /* .text-highlight .main-heading p{line-height:8.5vmin}
+    .main-heading p{line-height:6.5vmin} */
     .landing-page-mid button{font-size:2vmin}
     .landing-img{height:62vmin}
     .landing-right{width:475px}
@@ -51,6 +51,9 @@
     label.control .img-graded-box i{top:0}
 }
 @media (max-width:1023px){
+    
+    .V_3_5 .sub-heading h2{margin-bottom: 20px}
+
     .structure-right-align .landing-page-mid{margin-right:5%!important;margin-left:0!important}
     .t1-landing.isIframe .landing-page-mid{height:auto!important;min-height:460px}
     .t1-result-inner-left-table span.table-title{font-size:16px}
@@ -68,9 +71,9 @@
     .landing-page-mid{width:58%;margin-left:5%}
     .ques-header{padding:0 5%}
     .t1-ques-component .input-section .input-outer .section-head,
-    .t1-ques-head{font-size:18px;line-height:24px}
+    .t1-ques-head{font-size:18px;}
     .text-highlight .t1-ques-component .input-section .input-outer .section-head,
-    .text-highlight .t1-ques-head{line-height:24px}
+    .text-highlight .t1-ques-head{}
     .main-section .input-field label,
     .question-components input{border-bottom-width:2px}
     .t1-result-small-section{margin-top:16px}
@@ -93,7 +96,7 @@
     .radio-outer,
     .radio-outer-base{margin-bottom:5px}
     .result-scrolling{height:auto;max-height:none;width:100%;padding:0}
-    leadform{margin-top:15px}
+    leadform{margin-top:10px}
     leadform .input-outer{width:100%!important;margin-bottom:20px}
     .t1-result-leadform leadform .input-outer{width:calc(100% / 2 - 15px)!important}
     .t1-landing-leadform leadform .input-outer:nth-child(even),
@@ -103,15 +106,15 @@
     .recommendation-outer .mid-width p{text-align:center}
     .main-section form{width:100%;margin:40px 0 0}
     .question-components .selectize-control.single .selectize-input,
-    .question-components input{font-size:15px;line-height:20px}
+    .question-components input{font-size:15px;}
     .check-comp,
     .range-slider{width:100%}
     .t1-result-leadform leadform .button-outer{width:100%;float:left;text-align:center}
     .main-heading,
-    .main-heading h1{font-size:28px;line-height:34px}
+    .main-heading h1{font-size:28px;}
     .text-highlight .main-heading,
-    .text-highlight .main-heading h1{line-height:40px}
-    .text-highlight .main-heading p{line-height:48px}
+    .text-highlight .main-heading h1{}
+    .text-highlight .main-heading p{}
     .main-heading p{line-height:inherit;display:inline-block}
     leadform .input-section .input-outer:nth-last-child(2):nth-child(odd){margin-bottom:20px}
     .landing-page-mid button{padding:10px 25px}
@@ -137,16 +140,17 @@
     .custom-block.rating-custom .rating-inner i{font-size:18px;margin-right:1px}
     .opinon-scale-custom .errorMessage{top:26px;font-size:11px}
     .V_3_5 .main-heading,
-    .V_3_5 .main-heading h1{font-size:48px;line-height:54px}
-    .V_3_5 .sub-heading h2{font-size:18px;line-height:24px}
-    .V_3_5 .landing-page-mid button{font-size:16px;line-height:20px;padding:12px 25px}
+    .V_3_5 .main-heading h1{font-size:48px;}
+    .V_3_5 .sub-heading h2{font-size:18px;}
+    .V_3_5 .landing-page-mid button{font-size:16px;padding:14px 30px}
+    .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding: 14px 50px 14px 30px !important;}
     .V_3_5 .landing-page-mid{width:51%;margin-left:5%}
-    .V_3_5 .t1-ques-head{font-size:18px;line-height:24px}
-    .V_3_5 .question-head{font-size:24px;line-height:30px;letter-spacing:1px}
+    .V_3_5 .t1-ques-head{font-size:18px;}
+    .V_3_5 .question-head{font-size:24px;letter-spacing:1px}
     .V_3_5 .control,
     .V_3_5 .control-ver2 .pic-selector span.abhi,
     .V_3_5 .question-components .selectize-control.single .selectize-input,
-    .V_3_5 .question-components input{font-size:15px;line-height:21px;padding-bottom:2px}
+    .V_3_5 .question-components input{font-size:15px;padding-bottom:2px}
     .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i,
     .V_3_5 button.btn.prime-action.ripple-light.back-action i,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i{font-size:18px}
@@ -168,7 +172,7 @@
     .V_3_5 button.btn.prime-action.ripple-light.back-action,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{height:34px;padding:5px 13px}
     .V_3_5 button.btn.prime-action.ripple-light.back-action:before,
-    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before{line-height:18px}
+    .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before{}
     .V_3_5 .question-number{height:38px;padding:10px 7px 0}
     .V_3_5 .common-footer-inner{width:30%}
     .V_3_5 .common-footer-linktext{width:70%}
@@ -197,8 +201,8 @@
     .t1-result-inner{padding:100px 50px}
     .main-heading,
     .main-heading h1{font-size:36px}
-    .text-highlight .main-heading p{line-height:58px}
-    .main-heading p{line-height:42px}
+    .text-highlight .main-heading p{}
+    .main-heading p{}
     .landing-page-mid button{padding:10px 25px}
     .t1-result-topheading p{font-size:26px}
     .small-bot-sec p:nth-child(2){font-size:14px}
@@ -316,6 +320,10 @@
     .V_3_5 .t1-ques-component .leaded-form-c .input-section .input-outer.dropdown span{top:30px!important}
 }
 @media (max-width:640px){
+    .V_3_5 .t1-landing .landing-inner .selectize-input .item ,
+    .V_3_5 .t1-landing .landing-inner .selectize-control.single .selectize-input input{font-size: 16px}
+    .V_3_5 .landing-page-mid leadform  .input-outer i{font-size: 18px !important;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer input ,.V_3_5 .landing-page-mid leadform .input-section .input-outer input + label {font-size: 16px;padding-left: 28px;}
     .V_3_5 .t1-ques-head, .V_3_5 .question-number{padding-top: 0px; top: 0}
     .disclaimer-outrr,
     .landing-inner,
@@ -356,12 +364,12 @@
     .landing-right{left:0;margin-top:40px;padding:50px 20px 30px;min-height:100%}
     .landing-img{height:360px;background-size:100%}
     .landing-inner{left:0;right:0;bottom:0;min-height:100vh}
-    .text-highlight .main-heading p{padding:0;line-height:42px}
-    .main-heading p{padding:0;line-height:34px}
+    .text-highlight .main-heading p{padding:0;}
+    .main-heading p{padding:0;}
     .main-heading,
-    .main-heading h1{font-size:24px;line-height:34px}
+    .main-heading h1{font-size:24px;}
     .text-highlight .main-heading,
-    .text-highlight .main-heading h1{line-height:40px}
+    .text-highlight .main-heading h1{}
     .landing-page-mid button{padding:8px 20px;font-size:14px;max-width:100%}
     .landing-img-mobile{display:block;background-repeat:no-repeat;position:relative;background-position:50%}
     .landing-img,
@@ -391,9 +399,9 @@
     .isIframe.landing-inner{height:auto;min-height:initial!important}
     .t1-question button.back-action{margin-bottom:25px}
     .t1-ques-component .input-section .input-outer .section-head,
-    .t1-ques-head{font-size:16px;line-height:24px}
+    .t1-ques-head{font-size:16px;}
     .text-highlight .t1-ques-component .input-section .input-outer .section-head,
-    .text-highlight .t1-ques-head{line-height:24px}
+    .text-highlight .t1-ques-head{}
     .lightSticky{position:absolute;right:0;bottom:0;width:100%;left:0}
     .common-result .t1-logo{margin-top:10px!important}
     .common-result-main .t1-result-leadform .common-result-bot-icons .crb-left{padding-top:15px}
@@ -402,16 +410,16 @@
     .landing-text-right .landing-page-mid{margin-right:0}
     .V_3_5 .landing-inner{min-height:700px!important;height:100%!important}
     .V_3_5 .main-heading,
-    .V_3_5 .main-heading h1{font-size:34px;line-height:40px}
-    .V_3_5 .sub-heading h2{font-size:16px;line-height:22px}
-    .V_3_5 .question-head{font-size:22px;line-height:28px}
+    .V_3_5 .main-heading h1{font-size:34px;}
+    .V_3_5 .sub-heading h2{font-size:16px;}
+    .V_3_5 .question-head{font-size:22px;}
     .V_3_5 .landing-page-mid{width:100%;margin-left:0;padding:0 25px 70px}
-    .V_3_5 .t1-ques-head{font-size:18px;line-height:24px}
+    .V_3_5 .t1-ques-head{font-size:18px;}
     .V_3_5 .control,
     .V_3_5 .control-ver2 .pic-selector span.abhi,
     .V_3_5 .question-components .selectize-control.single .selectize-input,
     .V_3_5 .question-components input{font-size:14px;margin-bottom:0!important}
-    .V_3_5 .landing-page-mid button{font-size:13px;min-height:auto;min-width:auto;padding:11px 30px;box-shadow:15px 15px 30px 0 rgba(0,0,0 ,.2)}
+    .V_3_5 .landing-page-mid button{font-size:15px;min-height:auto;min-width:auto;padding:14px 30px;box-shadow:0px 15px 25px 0 rgba(0,0,0 ,.1)}
     .V_3_5 .question-number{height:26px;padding:1px 7px 1px 4px;top:-2px}
     .V_3_5 button.btn.prime-action.ripple-light.back-action,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{padding:5px 10px!important}
@@ -453,7 +461,7 @@
     .V_3_5.template-five .result-v2 .leadAsPopup .loginBtn.loginBtn--facebook,
     .V_3_5.template-five .result-v2 .loginBtn.loginBtn--facebook{padding:10px 40px 10px 15px!important}
     .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main{padding-top:0!important}
-    .V_3_5 .powered-by .poweredby-text{font-size:10px!important;margin-left:3px;line-height:17px}
+    .V_3_5 .powered-by .poweredby-text{font-size:10px!important;margin-left:3px;}
     .V_3_5 .landing-footer-outer .powered-by span,
     .V_3_5 .powered-by span{font-size:8px}
     .V_3_5 .powered-by img{width:auto;height:12px}
@@ -500,8 +508,8 @@
     .gdpr-popup{padding:15px 20px}
     .gdpr-popup-left{width:70%}
     .gdpr-popup-right{width:25%}
-    .V_3_5 .main-heading, .V_3_5 .main-heading h1{ font-size: 48px; line-height: 54px;}
-    .V_3_5 .sub-heading h2{font-size: 18px; line-height: 24px;}
+    .V_3_5 .main-heading, .V_3_5 .main-heading h1{ font-size: 48px; }
+    .V_3_5 .sub-heading h2{font-size: 18px; }
 }
 @media (max-width:776px){
     .recom-section .left-sec{height:auto!important}
@@ -617,10 +625,10 @@
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer i{top:13px;font-size:16px}
     .lead-popup-head{margin-bottom:25px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer{margin-bottom:20px;margin-top:0}
-    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{font-size:14px;padding-bottom:0;min-height:auto;line-height:22px}
+    .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox{font-size:14px;padding-bottom:0;min-height:auto;}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .input-outer span{top:46px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input{padding-top:10px!important;padding-bottom:10px!important;font-size:14px}
-    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size:15px;line-height:22px;margin-top:10px}
+    .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .sub-lead-title{font-size:15px;margin-top:10px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{padding-top:10px!important;padding-bottom:12px!important;max-height:inherit}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input .item{font-size:14px}
     .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{padding:0!important}

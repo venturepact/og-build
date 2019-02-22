@@ -292,7 +292,7 @@
         font-size: 12px;
         margin-left: 10px;
         color: rgba(40, 50, 78, 0.7);
-        line-height: 25px;
+        line-height: 1.4;
     }
     .leadform-outer .t1-social-links {
         float: right;
@@ -320,7 +320,7 @@
         font-size: 12px;
         margin-left: 10px;
         color: rgba(40, 50, 78, 0.7);
-        line-height: 25px;
+        line-height: 1.4;
     }
     /* one temp and temp 2 css */
     
@@ -393,7 +393,7 @@
     .recom-section .leadform-outer h5 {
         margin: 0;
         font-size: 14px;
-        line-height: 24px;
+        line-height: 1.4;
     }
     .recom-section .leadform-outer h5 p {
         margin: 0px;
@@ -634,14 +634,14 @@
     .sub-heading {
         font-size: 15px;
         margin-top: 20px;
-        line-height: 23px;
+        line-height: 1.4;
         width: 70%;
         opacity: .9;
     }
     .sub-heading h2 {
         font-size: 15px;
         margin-top: 15px;
-        line-height: 23px;
+        line-height: 1.4;
         width: 80%;
         opacity: .9;
         float:left;
@@ -724,7 +724,7 @@
         word-break: break-word;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        line-height: 34px;
+        line-height: 1.4;
     }
     .question-subhead {
         margin-top: 5px;
@@ -757,8 +757,8 @@
         margin: 0 3%;
         margin-top: 35px;
     }
-    .text-highlight .main-heading , .text-highlight .main-heading h1 , .text-highlight .main-heading p{line-height: 56px;}
-    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 46px;  word-break: break-word;}
+    .text-highlight .main-heading , .text-highlight .main-heading h1 , .text-highlight .main-heading p{line-height: 1.2;}
+    .main-heading , .main-heading h1 , .main-heading p{ padding: 0px 0px; display: inline; -webkit-box-decoration-break: clone; box-decoration-break: clone; line-height: 1.2;  word-break: break-word;}
     .t1-question {
         overflow: hidden;
         min-height: 100vh;
@@ -780,7 +780,7 @@
     }
     .t1-ques-component .input-section .input-outer .section-head {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 1.4;
         width: 50%;
         float: left;
         text-align: left;
@@ -843,10 +843,10 @@
         font-size: 18px;
         display: inline;
     }
-    .text-highlight .t1-ques-head{line-height: 32px}
+    .text-highlight .t1-ques-head{line-height: 1.4}
     .t1-ques-head {
         font-size: 18px;
-        line-height: 28px;
+        line-height: 1.4;
         flex: 1 1 0;
         margin-right: 50px;
         word-break: break-word;
@@ -1039,7 +1039,7 @@
         font-size: 13px;
         position: absolute;
         color: #fff;
-        line-height: 18px;
+        line-height: 1.4;
         box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
         z-index: 9;
         text-align: left;
@@ -1078,7 +1078,7 @@
         left: 0;
         font-size: 14px;
         position: relative;
-        line-height: 26px;
+        line-height: 1.4;
         box-shadow: none;
         z-index: 9;
         width: 100%;
@@ -1107,7 +1107,7 @@
         margin-top: 0px;
         font-family: "montserratregular";
         letter-spacing: normal;
-        line-height: 21px;
+        line-height: 1.4;
     }
     .powered-by a {
         display: -webkit-box;
@@ -1670,7 +1670,7 @@
         color: #303030;
         opacity: 0.4;
         margin-top: -12px;
-        line-height: 20px;
+        line-height: 1.4;
         font-size: 20px !important;
     }
     .selectize-dropdown-header-close:hover {
@@ -1715,7 +1715,7 @@
         color: #303030;
         font-family: inherit;
         font-size: 13px;
-        line-height: 18px;
+        line-height: 1.4;
         -webkit-font-smoothing: inherit;
     }
     .selectize-input,
@@ -1940,7 +1940,7 @@
         right: 4px;
     }
     .question-components .selectize-control.single .selectize-input {
-        line-height: 24px;
+        line-height: 1.4;
         min-height: 37px;
     }
     /*Selectize End */
@@ -2056,7 +2056,7 @@
         cursor: pointer;
         border-radius: 5px;
         vertical-align: middle;
-        line-height: 14px;
+        line-height: 1.4;
         display: inline-block;
     }
     .redo-outer .redo-link li a i {
@@ -2235,7 +2235,7 @@
         width: 100%;
     }
     leadform {
-        margin-top: 30px;
+        margin-top: 20px;
         width: 100%;
         float: left;
     }
@@ -2954,7 +2954,7 @@
         padding-left: 32px;
         cursor: pointer;
         display: block;
-        line-height: 16px;
+        line-height: 1.4;
         height: initial;
         top: 0;
         font-size: 15px;
@@ -2971,7 +2971,7 @@
     .template-five [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
         content: '';
         position: absolute;
-        top: 3px;
+        top: 2px;
         left: 0;
         width: 18px;
         height: 18px;
@@ -2990,7 +2990,7 @@
     .template-five .t1-question [type="checkbox"]:not(.filled-in) + label.leadform-checkbox:after {
         content: '';
         position: absolute;
-        top: 3px;
+        top: 2px;
         left: -4px !important;
         width: 18px;
         height: 18px;
@@ -3017,7 +3017,7 @@
         /*-webkit-transform: rotateZ(37deg);    transform: rotateZ(37deg);    -webkit-transform-origin: 100% 100%;    transform-origin: 100% 100%;*/
     }
     .template-five [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
-        top: 4px;
+        top: 2px;
         width: 18px;
         height: 18px;
         border: 2px solid #3a5771;
@@ -3027,7 +3027,7 @@
     }
     .template-five .t1-question [type="checkbox"].filled-in:checked + label.leadform-checkbox::after {
         left:0px;
-        top: 3px;
+        top: 2px;
         width: 18px;
         height: 18px;
         border: 2px solid #3a5771;
@@ -3073,7 +3073,7 @@
         padding-top: 0px !important;
         cursor: pointer;
         margin-bottom: 5px;
-        line-height: 25px;
+        line-height: 1.4;
         float: left;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -3114,7 +3114,7 @@
     }
     .template-five .t1-question [type="checkbox"] + label.leadform-checkbox {
         min-height: 25px;
-        line-height: 25px;
+        line-height: 1.4;
         padding: 0 0 0 40px !important;
         color: #666e78!important;
         margin-bottom: 0px !important;
@@ -3159,7 +3159,7 @@
         border-radius: 0;
         min-height: 31px;
         max-height: 32px;
-        line-height: 22px;
+        line-height: 1.4;
     }
     .t1-landing .landing-inner .selectize-dropdown.single {
         border-color: #d9dad3;
@@ -3173,13 +3173,13 @@
     }
     .t1-landing .landing-inner .selectize-control.single .selectize-input input {
         height: auto;
-        font-size: 16px;
+        font-size: 18px;
         margin-left: 0;
         padding-left: 0 !important;
         width: 100%!important;
     }
     .t1-landing .landing-inner .selectize-input .item {
-        font-size: 14px;
+        font-size: 18px;
         margin-left: 1px;
         float: left;
         overflow: hidden;
@@ -4388,7 +4388,7 @@ p > span > a {color: inherit; }
         left: 0;
         font-size: 18px;
         position: relative;
-        line-height: 25px;
+        line-height: 1.4;
         box-shadow: none;
         z-index: 9;
         width: 100%;
@@ -4406,7 +4406,7 @@ p > span > a {color: inherit; }
     top: 0 !important;
     margin: 0 !important;
     min-height: auto !important;
-    line-height: 24px;
+    line-height: 1.4;
 } 
 .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-valid + span.cust-icon-rest::after {content: 'done';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #2fc10e !important;line-height: 1;}
 .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input.ng-invalid.ng-dirty + span.cust-icon-rest::after {content: 'clear';font-family: "Material Icons";text-rendering: optimizeLegibility;font-feature-settings: 'liga' 1;font-size: 24px;color: #df2323 !important;line-height: 1;}
@@ -4437,7 +4437,7 @@ p > span > a {color: inherit; }
         left: 0;
         font-size: 18px;
         position: relative;
-        line-height: 25px;
+        line-height: 1.4;
         box-shadow: none;
         z-index: 9;
         width: 100%;
@@ -4533,7 +4533,7 @@ li{ list-style: none;}
     color: #fff;
     font-family: montserratlight;
     font-size: 13px;
-    line-height: 25px;
+    line-height: 1.4;
     margin-bottom: 0px;
 }
 
@@ -4661,9 +4661,9 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .t1-logo{padding: 0 40px;margin-top: 28px;}
 .V_3_5 .landing-right{left:60%;}
 .V_3_5 .landing-page-mid {width: 46%;  margin-left: 10%;}
-.V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 60px;line-height: 66px}
-.V_3_5 .sub-heading h2{font-size: 20px;line-height: 26px;}
-.V_3_5 .landing-page-mid button {border-radius: 2px;box-shadow: 36.146px 38.762px 29px 0px rgba( 0, 0, 0 ,0.2);font-size: 18px;line-height:24px;padding: 13px 30px;margin-top: 15px;transition: all .5s ease; text-transform: none !important; }
+.V_3_5 .main-heading, .V_3_5 .main-heading h1 {font-size: 60px;line-height: 1.2}
+.V_3_5 .sub-heading h2{font-size: 20px;line-height: 1.4;}
+.V_3_5 .landing-page-mid button {border-radius: 2px;box-shadow: 0px 20px 29px 0 rgba(0,0,0 ,.1);font-size: 18px;line-height:1.4;padding: 14px 30px;margin-top: 5px;transition: all .5s ease; text-transform: none !important; }
 .V_3_5 .landing-page-mid button:hover { box-shadow: 9px 11px 29px 0px rgba( 0, 0, 0 ,0.1);}
 .V_3_5 .landing-img{box-shadow: 76px 50px 50px rgba( 0, 0, 0 ,0.2);}
 .V_3_5 .landing-text-right .landing-page-mid { margin-left: 17%;  margin-right: 10%;}
@@ -4674,22 +4674,22 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*questionner*/
 .V_3_5 .main-section form{width: 100%;float: left;margin:0;margin-top: 35px;padding: 0 35px;}
 .V_3_5 .section-count{margin-bottom: 5px;text-transform: uppercase;opacity: 0.6;}
-.V_3_5 .question-head{font-size: 26px; line-height: 32px; ;letter-spacing: 3px}
-.V_3_5 .question-subhead{font-size: 14px;line-height: 20px;opacity:1;margin-top: 0px;}
+.V_3_5 .question-head{font-size: 26px; line-height: 1.4; ;letter-spacing: 3px}
+.V_3_5 .question-subhead{font-size: 14px;line-height: 1.4;opacity:1;margin-top: 0px;}
 .V_3_5 .question-head p{margin-bottom: 5px;}
 .V_3_5 .section-sub{margin-bottom: 30px;}
 .V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 38px;float: left;padding: 0px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;margin-right: 15px;}
 .V_3_5 .question-number sup{font-size: 12px; top: 0 !important ; position: relative;}
 .V_3_5 .question-number sup::after {content: ".";margin-left: 0px;}
 .V_3_5 .question-number span , .V_3_5 .question-number sub{display: none;}
-.V_3_5 .t1-ques-head{font-size: 18px; line-height: 24px}
+.V_3_5 .t1-ques-head{font-size: 18px; line-height: 1.4}
 .V_3_5 .no-logo .main-section { margin-top: 0;}
 #build .V_3_5 .main-section .help-text{letter-spacing: 0.02em;}
 .V_3_5 .graded-msgbox::before{left: 7px;top: 2px;}
 
 /*question components*/
 .V_3_5 .check-comp label{align-items: center}
-.V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input{font-size: 16px;line-height: 22px;border-bottom-width: 1px;}
+.V_3_5 .control, .V_3_5 .question-components input, .V_3_5  .control-ver2 .pic-selector span.abhi, .V_3_5  .question-components .selectize-control.single .selectize-input{font-size: 16px;line-height: 1.4;border-bottom-width: 1px;}
 .V_3_5 .check-comp .checkbox-outer label{padding: 10px 22px 8px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
 .V_3_5 .check-comp .checkbox-outer-base label{padding: 10px 22px 7px;font-size: 14px;border-width: 2px;transition: all .5s ease;}
 .V_3_5 .check-comp .checkbox-outer label:hover, .V_3_5 .check-comp .checkbox-outer-base label:hover { box-shadow: 0 0.5em 0.5em -0.4em rgba(0, 0, 0, 0.5); -webkit-transform: translateY(-0.25em);transform: translateY(-0.25em);}
@@ -4716,7 +4716,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .opinon-scale-custom .errorMessage {top: 38px;}
 .V_3_5 .calendar .errorMessage {top: 38px;}
 .V_3_5 .no-logo .no-header-links.no-footer-links {padding-top: 0px !important;}
-.V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 20px;padding-left: 40px;}
+.V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 1.4;padding-left: 40px;}
 .V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
 .V_3_5 .textfield.checkbox-outer label i {top: 3px !important;position: relative;left: -4px;}
 .V_3_5.template-five label.control.graded-tick .img-graded-box .img-graded-tick{color: #008000 !important;}
@@ -4730,9 +4730,9 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i, 
 .V_3_5 button.btn.prime-action.ripple-light.back-action i ,
 .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light i{display: none;}
-.V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before {content: 'trending_flat'; font-family: 'Material Icons'; -webkit-transform: none; transform: none; font-size: 22px;  float: left; top: auto;  line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
-.V_3_5 button.btn.prime-action.ripple-light.back-action:before {content: 'trending_flat'; font-family: 'Material Icons'; font-size: 22px; -webkit-transform: rotate(180deg); transform: rotate(180deg); float: left; top: auto; line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
-.V_3_5 a.sliding-next:before { content: 'trending_flat'; font-family: 'Material Icons';font-size: 22px; float: left; top: auto;line-height: 22px; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
+.V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before {content: 'trending_flat'; font-family: 'Material Icons'; -webkit-transform: none; transform: none; font-size: 22px;  float: left; top: auto;  line-height: 1; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
+.V_3_5 button.btn.prime-action.ripple-light.back-action:before {content: 'trending_flat'; font-family: 'Material Icons'; font-size: 22px; -webkit-transform: rotate(180deg); transform: rotate(180deg); float: left; top: auto; line-height: 1; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
+.V_3_5 a.sliding-next:before { content: 'trending_flat'; font-family: 'Material Icons';font-size: 22px; float: left; top: auto;line-height: 1; -webkit-font-feature-settings: 'liga';font-feature-settings: 'liga'}
 .V_3_5 .action-outer{margin-left: 45px;}
 .V_3_5 .control-group.select{width: 100%}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{ border-radius: 2px;font-size: 14px;padding: 16px 35px;text-transform:none;font-weight:normal;margin-right: 0px;}
@@ -4760,7 +4760,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .t1-question .leaded-form-c.question-section .selectize-control.single .selectize-input input:focus { border-bottom: none !important; box-shadow: none !important;}
 .V_3_5 .t1-landing .landing-inner .selectize-control.single .selectize-input input:focus {border: none !important;box-shadow: none !important;}
 .V_3_5.template-five .lead-popup .lead-popup-outer .lead-action-wrapper a {border-radius: 2px!important;margin-right: 0!important;}
-.V_3_5.template-five .lead-popup .lead-popup-outer .lead-action-wrapper a {display: inline-block!important;float: none!important;padding: 13px 30px!important;font-size: 14px!important;line-height: 20px!important;height: auto!important;}
+.V_3_5.template-five .lead-popup .lead-popup-outer .lead-action-wrapper a {display: inline-block!important;float: none!important;padding: 13px 30px!important;font-size: 14px!important;line-height: 1.4!important;height: auto!important;}
 .V_3_5.template-five .t1-result .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]+label.leadform-checkbox:before, .V_3_5.template-five .t1-result .lead-popup .lead-popup-outer .lead-popup-main [type=checkbox]:not(.filled-in)+label.leadform-checkbox:after{border:none!important;}
 .V_3_5 .t1-ques-component leadform_question div + fb_lead_gen + .lf-skip-btn {float: left;margin-left: calc(50% + 50px) !important;margin-top: 0 !important;}
 .V_3_5 .lead-action-wrapper{margin-bottom: 20px;}
@@ -4790,8 +4790,8 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5.template-five .lead-popup .selectize-control.single .selectize-input:after{color: #444 !important;}
 /*.V_3_5.template-five .t1-result .lead-popup [type="checkbox"].filled-in:checked + label.leadform-checkbox::after{background-color: #fff !important}*/
 .V_3_5 .lead-popup a.sliding-next:before {content: '';}
-.V_3_5 .main-section .help-text{font-size: 14px;line-height: 20px;margin-top: 5px;}
-.V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 26px;padding-bottom: 2px !important;padding-left: 2px !important;}
+.V_3_5 .main-section .help-text{font-size: 14px;line-height: 1.4;margin-top: 5px;}
+.V_3_5 .question-components .leaded-form-c .selectize-control.single .selectize-input {min-height: 26px;padding-bottom: 4px !important;padding-left: 2px !important;}
 .V_3_5.template-five.structure-right-align [type="checkbox"] + label.leadform-checkbox{float: right;}
 .V_3_5.template-five.structure-right-align [type="checkbox"].filled-in:checked + label.leadform-checkbox:before {  right: 10px !important;left: auto !important;}
 .V_3_5.template-five.structure-right-align .textfield.checkbox-outer input[type="text"], 
@@ -4819,7 +4819,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 /*new version--login with fb*/
 .V_3_5 .or-class { width: 100%;float: left; padding: 10px; padding-left: 0;text-align: center; font-size: 14px;text-transform: uppercase;}
 .V_3_5 .fb-outer{width:100%;float: left;}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff !important; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important; min-height: auto; padding: 16px 50px 16px 18px !important;display: flex !important; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;margin:0 !important;}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook, .V_3_5 .loginBtn--facebook {color:#fff !important; background-color: #086ca0 !important;background-image: linear-gradient(#086ca0, #086ca0) !important; text-shadow: 0 -1px 0 #086ca0 !important;border-radius: 2px !important; min-height: auto; padding: 14px 50px 14px 18px !important;display: flex !important; align-items: center; justify-content: center;vertical-align: middle;word-break: break-word;margin-top: 0;margin-left: 0px;text-transform: none;margin:0 !important;}
 .V_3_5 .loginBtn--facebook:before {top: 50% !important;transform: translateY(-50%);right: 11px !important; width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 0;left: auto !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog)!important;background-position-x: 5px !important; background-size: 18px !important;transition: all .3s ease-out;}
 .V_3_5 fb_lead_gen { width: calc(50% - 50px);float: right;margin-left: 50px;}
 .V_3_5 .t1-landing-leadform fb_lead_gen {width: 100%; float: left;  margin:0;}
@@ -4841,7 +4841,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .input-outer.checkbox {margin-bottom: 20px;}
 .V_3_5 .common-footer-main{z-index: 0!important;}
 .V_3_5 .share-popup .likes-parent{display:block !important;}
-.V_3_5.template-five .common-result-main [type="checkbox"] + label.leadform-checkbox{line-height: 20px !important;}
+.V_3_5.template-five .common-result-main [type="checkbox"] + label.leadform-checkbox{line-height: 1.4 !important;}
 /*result no logo*/
 .V_3_5 .no-logo-result.no-header-links.no-footer-links {padding-top: 50px !important;}
 .no-logo .no-header-links.no-footer-links .isFullScreenBg .t1-landing-top + .landing-page-mid {padding-top: 60px !important;}
@@ -4857,7 +4857,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{width: 56px}
 } */
 
-.question-components .input-field textarea {float: left;width: 100%;border: 0px;border-bottom: 1px solid #404040;resize: none;background: transparent;font-size: 16px;line-height: 20px;padding: 5px;height: 80px;}
+.question-components .input-field textarea {float: left;width: 100%;border: 0px;border-bottom: 1px solid #404040;resize: none;background: transparent;font-size: 16px;line-height: 1.4;padding: 5px;height: 80px;}
 .question-components .material-textarea button.button_textfield {display: none;}
 .question-components .input-field textarea::-webkit-scrollbar-track {border-radius: 0px;background-color: #f5f5f5;}
 .question-components .input-field textarea::-webkit-scrollbar {width: 6px;background-color: rgba(0, 0, 0, 0.2);}
@@ -4895,7 +4895,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
     width: 100%;
     border: 0px !important;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.4;
     padding: 5px;
     white-space: normal;
     word-wrap: break-word;
@@ -4906,7 +4906,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 }
 .V_3_5 .main-heading p strong {
     display: inherit;
-    line-height: 1;
+    /* line-height: 1; */
 }
 
 
@@ -5176,3 +5176,32 @@ left: auto !important;
 .V_3_5.template-five .t1-landing .landing-inner{position: relative;}
 
 .V_3_5 .t1-ques-head, .V_3_5 .question-number {padding-top: 10px; top: -2px}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding: 14px 60px 14px 30px !important;}
+.V_3_5 .leadAsPopup fb_lead_gen{margin-bottom: 20px !important}
+
+@media (min-width:640px){
+    .onlyFbButton .t1-ques-component.t1-lead-component {
+        float: left;
+        width: 50%;
+    }
+    .onlyFbButton .section-header {
+        float: left;
+        width: 50%;
+    }
+    .V_3_5 .onlyFbButton .t1-ques-component.t1-lead-component  .fb-outer {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
+/****** again welcome screen leadgen design ******/
+.V_3_5 .landing-page-mid leadform  .input-outer i{font-size: 20px;top: 50%;left:0;     transform: translateY(-50%);}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer{margin-bottom: 35px}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer input{border-bottom-width: 1px !important;font-size: 18px;padding-left: 30px; box-shadow: 0px 1px 0px 0 rgb(0, 0, 0, 0.2);}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer input + label{font-size: 18px; padding-left: 30px; top: 4px}
+.V_3_5 .landing-page-mid leadform .input-outer span{top: 35px;font-size: 10px; letter-spacing: 0.5px !important;}
+.V_3_5 .landing-page-mid leadform .input-field label:not(.label-icon).active{padding-left: 0;font-size: 12px;letter-spacing: 1px;font-weight: 600 !important;top: 0px;}
+.V_3_5.template-five .common-result-main [type="checkbox"] + label.leadform-checkbox{padding-left: 35px }
+.V_3_5.template-five .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input{
+    padding-top: 3px !important;
+    padding-bottom: 3px !important
+  }

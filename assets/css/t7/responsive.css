@@ -329,7 +329,6 @@
         width: 26px;
         height: 26px;
         font-size: 11px;
-        line-height: 27px;
         left: -2px;
         margin-top: -3px;
     }
@@ -577,7 +576,7 @@
     .question-components{
         padding-left: 28px;
     }
-    .questions .section-head {        font-size: 13px;        line-height: 15px;    }
+    .questions .section-head {font-size: 13px;}
     .landing-page-mid .input-section .input-outer { min-height: 62px !important; }
     .page_2 .input-section input { background: none;  }
     .page_2 .input-section .input-outer { width: 100%; margin-left: 0;min-height: 65px !important }
@@ -663,7 +662,7 @@
      .page_2 .selectize-dropdown.single{ top:30px !important;}
      .fixed-width.template-seven{ width: 100% !important;}
       .page_0 .landing-page-mid .selectize-control{ width:100% !important}
-      .question-components .check-comp label{ line-height: 17px !important;}
+      /* .question-components .check-comp label{ line-height: 17px !important;} */
       .template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label{padding-top: 2px !important;}
       .template-seven .radio-outer [type="radio"]:not(:checked) + label, .template-seven .radio-outer [type="radio"]:checked + label{padding-top: 3px !important;}
       .template-seven .radio-outer-base [type="radio"]:not(:checked) + label, .template-seven .radio-outer-base [type="radio"]:checked + label{padding-top: 3px !important;}
@@ -736,13 +735,15 @@
     }
     .page_2 .input-section .input-outer.checkbox span {
         left: 0 !important;
-        top: -10px !important;
     }
     .page_2 .input-section .dropdown.input-outer span{
         top: auto !important;
         bottom: 0px;
     }
     .like-cta-outer .new-socialBtn.btn-lg:hover .help-checktip{visibility: hidden;}
+    .check-comp .checkbox-outer .control__indicator.check-set{top: 2px;}
+    .control--radio .control__indicator.icon-set{top: 3px;}
+    .template-seven .landing-page-mid .landing-center-outer [type="checkbox"] + label.leadform-checkbox{width: 100%;line-height: 1.4 !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:landscape){
     /*.landing-page-mid .main-heading h1{
@@ -902,8 +903,8 @@
     /*.landing-page-header .logo img{ max-width: 110px !important;}*/
     /*.questions .question-head{ font-size: 16px; line-height: 22px; margin-bottom: 0px; }
     .questions .question-subhead{ font-size: 14px; line-height: 18px;}*/
-    .questions .section-head{ font-size: 13px; line-height: 19px;}
-    .questions .question-section-outer .question-number{width: 25px; height: 25px;line-height: 26px;left: 0px; font-size: 10px;}
+    .questions .section-head{ font-size: 13px;}
+    .questions .question-section-outer .question-number{width: 25px; height: 25px;left: 0px; font-size: 10px;}
     .irs-min, .irs-max{ font-size: 10px;}
     .irs-single,.irs-to{ font-size: 10px;}
     .selectize-input .item{ font-size: 13px;}
@@ -916,7 +917,7 @@
     .radio-outer-base{ margin-bottom: 0px;}
     .template-seven [type="radio"]:not(:checked) + label:before, .template-seven [type="radio"]:not(:checked) + label:after{ margin: 4px 12px;}
     /*.questions .question-section-outer .input-field input{padding: 9px 15px;}*/
-    .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 16px; line-height: 22px;}
+    .page_2 .result-full-section.result-temp2-default-section .small-top-sec p:nth-child(1){ font-size: 16px;}
     .template-seven .page_2 [type="checkbox"] + label.leadform-checkbox{ margin-top: 6px;}
     /*logo styling*/
     .questionnaire .logo a img.vert {
