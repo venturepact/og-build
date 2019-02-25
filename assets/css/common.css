@@ -3168,8 +3168,27 @@ h4.opinion-email-head {
 .opinion-email-section .emebed-code-part pre {
     padding: 20px !important;
     margin-top: 20px !important;
+    max-height: 300px;
+}
+.opinion-email-section .emebed-code-part pre::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: #f5f5f5;
 }
 
+.opinion-email-section .emebed-code-part pre::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.opinion-email-section .emebed-code-part pre::-webkit-scrollbar:horizontal {
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.opinion-email-section .emebed-code-part pre::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 .opinion-email-code {
     width: 100%;
     float: left;
@@ -3496,6 +3515,7 @@ h4.opinion-email-head {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     box-shadow: none !important;
+    height: 28px;
 }
 
 .show-exact {
@@ -4447,7 +4467,7 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 /* overlay mid section  */
 .mid-sec{position:relative;left:0;width:100%;top:280px;display: flex;align-items: center;flex-direction: column;}
 .mid-sec img{max-width:45px;position:absolute;left:30vw;top: -70px;}
-.mid-sec-info{position:relative;top:0;left:30px;width:auto;float: left;text-align:center;margin:0;background:#fff;border-radius:5px;padding:30px;box-shadow:7px 7px 13px 5px rgba(0,0,0,0.55)}
+.mid-sec-info{position:relative;top:0;left:30px;width:auto;float: left;text-align:center;margin:0;background:#fff;border-radius:5px;padding:30px;box-shadow:0px 0px 20px 5px rgba(0,0,0,0.2)}
 .mid-sec-info h3{font-size:34px;color:#555;font-family:montserratregular;margin-top:0;margin-bottom:10px}
 .mid-sec-info h6{font-size:28px;line-height:1.3;color:#555;font-family:montserratlight;margin:0}
 .mid-sec img.left-arrow{left:auto;top:230px;right: 350px;}
@@ -5027,6 +5047,9 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 
 .prof-card-head.danger span {
     color: #ec4e52 !important;
+}
+.prof-card-head.success span {
+    color: #42c07e !important;
 }
 .semi-circle-outer.cssProgress-success svg path + path {
     stroke: #42c07e !important;
