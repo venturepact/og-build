@@ -4747,8 +4747,8 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 
 .prof-card-mid{ float: left; width: 100%; background: #fff;-webkit-border-radius: 5px;height: 100%;  -moz-border-radius: 5px;  border-radius: 5px; box-shadow: 0 0 25px 1px rgba(0, 0, 0, .1);  }
 .prof-card-mid .top-sec{ float: left; width: 100%; padding: 20px 30px;}
-.prof-card-mid .top-sec .sec-part{ float: left; width: 100%; padding-left:55px; position: relative; margin-top:20px;}
-.prof-card-mid .top-sec .sec-part i{  font-size: 36px; position: absolute; left:0; top:10px; color: #888888; }
+.prof-card-mid .top-sec .sec-part{ float: left; width: 100%; padding-left:40px; position: relative; margin-top:20px;}
+.prof-card-mid .top-sec .sec-part i{  font-size: 30px; position: absolute; left:0; top:10px; color: #888888; }
 .prof-card-mid .top-sec .sec-part h3{ float: left; font-size: 22px; color: #555555; margin-top:10px !important; font-family: 'montserratlight';}
 .prof-card-mid .top-sec .sec-part .mw250{ max-width: 250px;}
 .prof-card-mid .box-sec{ float: left; width: 100%;}
@@ -4974,7 +4974,7 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 
 	}
 	@media (min-width:1000px) and (max-width:1024px) { 	
-		.rs-np{ padding:0 !important}
+   
 		#container svg { height: 160px; width: 188px !important; }
 		#container .progressbar-text {left: 48% !important;}
 		.prof-card-mid .box-sec .small-part{ font-size: 13px;}
@@ -4982,11 +4982,14 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 		.prof-card-mid .box-sec .small-part a{ font-size: 11px;}
 	
 	}
-	@media (max-width:1024px) {
+	@media (max-width:1365px) {
 
-	
-
-
+        .row.flex-row .col-md-6, .row.flex-row .col-md-3 , .row.flex-row .col-md-7 , .row.flex-row .col-md-5 {
+            padding: 0 7px !important;
+        }
+        .prof-card-mid .top-sec .sec-part i{font-size: 28px}
+        .prof-card-mid .top-sec .sec-part {padding-left: 42px;}
+        .prof-card-mid .top-sec .sec-part h3 {font-size: 17px;}
 	.prof-card-end .outer-c{ margin-top: 10px;}
 	.prof-card-end{ margin-bottom:15px !important; }
 
