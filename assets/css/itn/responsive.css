@@ -312,7 +312,7 @@
         display: inline;
     }
     .t1-question .question-components .selectize-control.single .selectize-input {
-        max-width:200px !important;
+        max-width:150px !important;
         padding-bottom: 0px!important;
         padding: 0!important;
         line-height: normal;
@@ -1210,6 +1210,8 @@
     .isIframe.no-header-links.no-footer-links { min-height: 630px; }
     .V_3_5 .t1-question .new_control .question-components .selectize-control.single .selectize-input + .selectize-dropdown.single{min-width: 165px !important;}
     .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {line-height: 1.4 !important; font-size: 14px !important; padding-top: 0 !important;}
+
+    .logo{ height: 55px;display: flex;justify-content: center;align-items: center;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
