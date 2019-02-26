@@ -25,7 +25,7 @@ if(!empty($response['data'])) {
 ?>
 	<title><?php echo $response['data']['title']; ?></title>
 	<meta name="description" content="<?php echo $response['data']['description']; ?>">
-	<meta property="og:title" content="<?php echo $response['data']['title'].' Test'; ?>" />
+	<meta property="og:title" content="<?php echo $response['data']['title']; ?>" />
 	<meta property="og:description" content="<?php echo $response['data']['description']; ?>" />
 	<meta property="og:image" content="<?php echo $imageLink; ?>" />
 	<meta name="twitter:card" content="summary">
@@ -36,13 +36,13 @@ if(!empty($response['data'])) {
 } else {
 ?>
 	<title>Outgrow</title>
-	<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
-	<meta property="og:title" content="Interactive Calculators & Quizzes" />
-	<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
+	<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic 123.">
+	<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow 123" />
+	<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic 123." />
 	<meta property="og:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq"/>
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow">
-	<meta name="twitter:description" content="Easily create interactive experiences that increase conversion and bring traffic.">
+	<meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow 123">
+	<meta name="twitter:description" content="Easily create interactive experiences that increase conversion and bring traffic 123.">
 	<meta name="twitter:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq">
 <?php
 }
