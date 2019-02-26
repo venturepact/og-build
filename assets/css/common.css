@@ -5147,3 +5147,10 @@ label.radio-label label:after {
 .row.flex-row {
     display: flex;
 }
+.small-part.danger {
+    background: transparent !important;
+}
+.prof-card-head.success , .prof-card-head.danger{
+    background: transparent !important;
+    color: rgba(85,85,85,0.5);
+}
