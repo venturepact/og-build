@@ -2,6 +2,7 @@
     .table-outer table {max-width: 215px !important;}
     #graph-container {min-width: 200px !important;}
     .t1-question .question-components .selectize-control.single .selectize-input .item {max-width: 190px;}
+    .custom-block.rating-custom .rating-inner i {font-size: 18px;}
 }
 @media (min-width: 0px) and (max-width: 767px) {
     html {overflow-y: auto !important;overflow-x: hidden !important;}
@@ -224,7 +225,7 @@
     .experian .radio-outer-base.textfield label{ margin-top: 0px; padding-right: 0px !important;}
     .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 11px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 4px; padding: 4px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 21px;margin-right: 2px; padding: 2px;}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
      /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px !important;}
