@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
 <?php
-$uri = $_SERVER['REQUEST_URI'];
-if (strpos($uri, 'do') !== false) {
-    $uri_parts = explode('/',$uri);
-	$uri = '/'.$uri_parts[1];
-}
-$url	=	'https://api.outgrow.co/api/v1/builder/get_calc'.$uri;
+$url	=	'https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 $opts	=	array(
 				'http' =>	array(
 					'header'  => 'Origin: https://app.outgrow.co'
@@ -35,14 +30,14 @@ if(!empty($response['data'])) {
 <?php
 } else {
 ?>
-	<title>Outgrow 123</title>
-	<meta name="description" content="<?php echo $url; ?> Easily create interactive experiences that increase conversion and bring traffic.">
-	<meta property="og:title" content="<?php echo $uri; ?> Interactive Calculators & Quizzes from Outgrow" />
-	<meta property="og:description" content="<?php echo $url; ?> Easily create interactive experiences that increase conversion and bring traffic." />
+	<title>Outgrow</title>
+	<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
+	<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
+	<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
 	<meta property="og:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq"/>
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="<?php echo $uri; ?> Interactive Calculators & Quizzes from Outgrow">
-	<meta name="twitter:description" content="<?php echo $uri; ?> Easily create interactive experiences that increase conversion and bring traffic.">
+	<meta name="twitter:title" content="Interactive Calculators & Quizzes from Outgrow">
+	<meta name="twitter:description" content="Easily create interactive experiences that increase conversion and bring traffic.">
 	<meta name="twitter:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq">
 <?php
 }
