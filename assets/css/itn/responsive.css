@@ -312,7 +312,7 @@
         display: inline;
     }
     .t1-question .question-components .selectize-control.single .selectize-input {
-        max-width:150px !important;
+        max-width:180px !important;
         padding-bottom: 0px!important;
         padding: 0!important;
         line-height: normal;
@@ -1126,7 +1126,7 @@
     .V_3_5 .landing-text-right .fb-outer{float: right;padding:0px;}
     .V_3_5 .template3-outr {float: left;width: 100%;margin-bottom: 30px;padding-left: 30px;margin-top: 0px;}
     .V_3_5 .template3-outr .question-head {padding: 8px 10px;font-size: 20px;line-height:42px;padding-top: 10px;}
-    .V_3_5 .new_control .t1-ques-head div{font-size: 22px;line-height: 30px; display: inline-block;}
+    .V_3_5 .new_control .t1-ques-head div{font-size: 22px;line-height: 30px; display: inline-block; margin-bottom: 5px !important;}
     .V_3_5 .landing-text-right .landing-page-mid leadform .input-section .input-outer.checkbox .input-field{float: right;}
     .V_3_5 .t1-ques-component{margin-bottom: 0;}
     .V_3_5 .new_control.visible {margin-bottom: 0px !important;}
@@ -2765,7 +2765,7 @@
     .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size: 20px;}
     .t1-question .new_control .question-components .selectize-control.single .selectize-input .item ,
     .t1-question .new_control .question-components .selectize-control.single .selectize-input input ,
-    .t1-question .new_control .question-components input{font-size: 20px !important;     line-height: 30px !important; }
+    .t1-question .new_control .question-components input{font-size: 18px !important;     line-height: 30px !important; }
     .new_control .t1-ques-head div {    font-size: 22px; line-height: 30px}
     .new_control   .t1-ques-head div p{font-size: 22px}
     .new_control .input-field label{font-size: 20px !important; line-height: 30px;max-width: 100px; padding: 8px 8px 0; text-transform: inherit}
