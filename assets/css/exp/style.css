@@ -4303,7 +4303,13 @@ input::-webkit-contacts-auto-fill-button {
     }
 }
 .question-outer:last-child .selectize-dropdown-content {
-    max-height: 60px;
+    max-height: 90px;
+}
+.question-outer:last-child .selectize-dropdown {
+    margin-bottom: 30px;
+}
+.question-outer:last-of-type .t1-ques-component:last-child .dropdown-set {
+    margin-bottom: 75px;
 }
 .loading {
     text-align: center;
