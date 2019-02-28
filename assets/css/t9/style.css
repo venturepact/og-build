@@ -25,7 +25,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .main-heading h1{font-size:22px;line-height:1.4;margin:0;width:100%}
 .main-heading h1 p{font-size:22px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:18px 38px;border-radius:50px;max-width:100%;display:block;box-shadow:8px 10px 20px rgba(0,0,0,.05)}
 .main-heading h1 p:last-child{border-radius:50px 50px 50px 0}
-.btn.prime-action{float:left;font-size:18px;padding:18px 30px 16px;border-radius:50px;color:#fff;line-height:23px;white-space:normal;word-wrap:break-word;overflow:hidden;box-shadow:8px 10px 20px rgba(0,0,0,.05)!important;position:relative}
+.btn.prime-action{float:left;font-size:18px;padding:18px 30px 16px;border-radius:50px;color:#fff;line-height:1.4;white-space:normal;word-wrap:break-word;overflow:hidden;box-shadow:8px 10px 20px rgba(0,0,0,.05)!important;position:relative}
 .editor-page-divider{margin-bottom:35px;position:relative}
 .btn.bounce:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}
 .btn.bounce{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);-webkit-transition:.2s cubic-bezier(.55,.26,0,1);-webkit-transition:.2s cubic-bezier(.55,.26,0,1.65);-moz-transition:.2s cubic-bezier(.55,.26,0,1.65);-o-transition:.2s cubic-bezier(.55,.26,0,1.65);transition:.2s cubic-bezier(.55,.26,0,1.65)}
@@ -44,7 +44,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .t1-ques-component .question-components .t1-ques-head{width:auto!important}
 .t1-ques-component .go-btn{display:flex;width:67px;height:67px;margin-left:20px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:25px;font-size:22px;line-height:67px;color:#fff;align-items:center;justify-content:center}
 .inline-tablecell.logo-resizing{position:relative;z-index:1;text-align:center;float:left;width:100%;padding:0}
-.sec_0 .inline-tablecell.logo-resizing{padding:40px 0 0}
+/* .sec_0 .inline-tablecell.logo-resizing{padding:40px 0 0} */
 a.go-btn:hover{text-decoration:none}
 .questions-list>div.t1-ques-head div p.active:last-child{border-bottom-left-radius:0!important}
 .Leadform,form#new_form{max-width:65%;margin:0 auto;padding:0;position:relative;-webkit-transition:2s cubic-bezier(.23,1,.32,1);-moz-transition:2s cubic-bezier(.23,1,.32,1);-o-transition:2s cubic-bezier(.23,1,.32,1);transition:2s cubic-bezier(.23,1,.32,1);text-align:left;display:inline-block;width:100%}
@@ -56,7 +56,7 @@ a.go-btn:hover{text-decoration:none}
 .questions-list>.t1-ques-head.prev p:hover,
 .t1-ques-component.active.prev:hover{opacity:1!important}
 .t1-landing.questionsVisible{position:fixed;left:0;top:0;bottom:0;right:0;transform:scale(.998);opacity:.06;transition:transform .8s,-webkit-transform .8s,filter .8s,-webkit-filter .8s,opacity .8s,margin 0s}
-.questions-list>.t1-ques-head{position:relative;display:block;opacity:1;line-height:1.3}
+.questions-list>.t1-ques-head{position:relative;display:block;opacity:1;line-height:1.4}
 .t1-ques-head.spin-loader.active p{display:block;opacity:1;position:relative;z-index:1}
 .cal-outer.calender-date{display:inline-block;float:none}
 .editor-page-divider .questions-list>.t1-ques-head,
@@ -114,7 +114,7 @@ calendar>div .form-group{margin:0}
 .input-group.date span.input-group-addon{background:0 0;border:0!important;position:absolute;right:0;width:25px;top:0;bottom:0;padding:0;display:flex;align-items:center;justify-content:center;z-index:10;cursor:pointer}
 .t1-landing .text-center,
 .t1-question{width:100%;float:left}
-.t1-question{position:relative;z-index:99;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:0 4em}
+.t1-question{position:relative;z-index:99;left:0;right:0;top:0;bottom:0;opacity:1;display:block!important;padding:4em}
 .t1-question::after{position:fixed;left:0;right:0px;content:'';top:0;bottom:0;opacity:1}
 .t1-ques-component .go-btn.active{font-size:0;padding:16px 0}
 .t1-ques-component .go-btn.active i{font-size:30px;display:inline-block}
@@ -146,16 +146,16 @@ calendar>div .form-group{margin:0}
   .animated{-webkit-animation:unset!important;animation:unset!important;-webkit-transition:none!important;transition:none!important}
 }
 .hide .t1-question button.back-action.back-btn{opacity:0;left:15px;top:22px;transition:.5s}
-.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:35px!important;top:22px!important;opacity:1!important;transition:.5s;padding:0!important;background:0 0;border:0!important;display:flex;align-items:center;height:65px}
+.t1-question button.back-action.back-btn{position:fixed;width:auto;cursor:pointer;pointer-events:all;z-index:1000;left:35px!important;top:22px!important;opacity:1!important;transition:.5s;padding:0!important;background:0 0;border:0!important;display:flex;align-items:center;height:65px; display: none !important}
 .ques-header,
 .t1-ques-component.calendar,
 .t1-ques-component.textfield{align-items:center}
 button.back-action.back-btn i{font-size:32px;line-height:1;vertical-align:middle; opacity: 0.6;transition: 0.5s}
 button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
-.ques-header{position:absolute;z-index:1000;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
+.ques-header{position:absolute;z-index:10;top:22px;left:30px;transition:.6s cubic-bezier(1,-.13,.195,1.185);float:left;height:65px;display:flex}
 
-.logo-slide .common-header-main.ques-header{left:30px!important;}
-.logo-slide .ques-header{left:80px!important; position: relative;}
+.logo-slide .common-header-main.ques-header{}
+.logo-slide .ques-header{position: relative;}
 
 .checkbox-outer label,
 .checkbox-outer-base label,
@@ -171,11 +171,11 @@ button.back-action.back-btn i:hover{opacity: 1; transition: 0.5s}
 .ripple-light:after{content:"";display:block;position:absolute;width:100%;height:100%;top:0;left:0;pointer-events:none;background-image:radial-gradient(circle,#fff 10%,transparent 10.01%);background-repeat:no-repeat;background-position:50%;-webkit-transform:scale(10,10);transform:scale(10,10);opacity:0;-webkit-transition:opacity 1s,-webkit-transform .5s;transition:opacity 1s,-webkit-transform .5s;transition:transform .5s,opacity 1s;transition:transform .5s,opacity 1s,-webkit-transform .5s}
 .col,
 .stickyfooter{display:inline-block}
-.editor-page-divider .t1-question{float:left;width:100%;padding:30px 0;min-height:100vh}
+.editor-page-divider .t1-question{float:left;width:100%;padding:50px 0;min-height:100vh}
 .t1-ques-component .go-btn:focus{text-decoration:none!important}
 .editor-page-divider .ques-header{position:absolute}
 .editor-page-divider .t1-question button.back-action.back-btn{position:relative;top:0!important;display:none}
-.powered-by .poweredby-text{text-transform:uppercase;font-size:12px;margin-left:2px;margin-top:0;letter-spacing:normal;line-height:20px}
+.powered-by .poweredby-text{text-transform:uppercase;font-size:12px;margin-left:2px;margin-top:0;letter-spacing:normal;line-height:1.4}
 .powered-by img{width:auto;height:16px}
 control.sub-heading{display:none!important}
 .powered-by span{font-size:10px;margin-top:0}
@@ -240,7 +240,7 @@ fb_lead_gen{float:right;text-align:right;width:100%!important}
 leadform_question div+fb_lead_gen+button.lf-skip-btn.ripple-light{margin-top:15px!important;position:relative;right:105px;bottom:0}
 .t1-result-leadform .fb-outer,
 .t1-result-leadform fb_lead_gen{text-align:center;width:100%;float:left}
-fb_lead_gen .fb-outer .loginBtn{margin:0;padding:18px 45px 16px 25px;font-size:18px;border-radius:50px;line-height:24px}
+fb_lead_gen .fb-outer .loginBtn{margin:0;padding:18px 45px 16px 25px;font-size:18px;border-radius:50px;line-height:1.4}
 fb_lead_gen .fb-outer .loginBtn:before{width:48px;background-position:15px center}
 .V_3_5.template-nine .result-v2 .loginBtn.loginBtn--facebook{padding:13px 35px 13px 20px!important}
 .V_3_5.template-nine .result-v2 fb_lead_gen .fb-outer .loginBtn:before{width:38px;background-position:10px center;background-size:14px}
@@ -307,7 +307,7 @@ form#leadform_question .container-temp.text-center{display:flex;align-items:flex
 leadform_question{float:left;width:100%;position:relative}
 leadform_question fb_lead_gen+button.lf-skip-btn.ripple-light{bottom:0;margin-top:15px!important;right:0}
 .no-bg .main-heading h1{max-width:85%}
-.no-bg section.landing-page-mid{width:100%;max-width:65%;float:none;margin:0 auto;padding:100px 0;display:inline-block;text-align:left}
+.no-bg section.landing-page-mid{width:100%;max-width:520px;float:none;margin:0 auto;padding:100px 0;display:inline-block;text-align:left}
 .no-bg.t1-landing{text-align:center}
 .no-bg section.landing-page-mid>div{max-width:100%}
 .template-nine .common-result-bot-left a.btn-fb.new-socialBtn i,

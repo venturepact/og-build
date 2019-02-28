@@ -20,7 +20,7 @@ a,button:focus,input,textarea{outline:0}
 li,ul{list-style:none}
 .hide{display:none!important}
 .t1-landing{width:100%;height:100vh;position:relative;display:table;background-size:cover;background-position:top center}
-.t1-landing-inner{display:table-cell;vertical-align:middle;height:100%;padding-top:100px;padding-bottom:100px}
+.t1-landing-inner{display:table-cell;vertical-align:middle;height:100%;padding-top:100px;padding-bottom:120px}
 .t1-overlay{background:rgba(0,0,0,.3)}
 .np{padding:0}
 .logo,
@@ -31,10 +31,10 @@ li,ul{list-style:none}
 .main-heading h1{font-size:56px;margin-bottom:15px;line-height:60px;word-break:break-word}
 .main-heading p{font-size:56px;line-height:56px}
 .sub-heading,
-.sub-heading h2{font-size:20px;margin-bottom:25px;line-height:26px}
+.sub-heading h2{font-size:20px;margin-bottom:20px;line-height:1.4;}
 .sub-heading{width:100%}
-.sub-heading h2{width:90%;word-break:break-word;line-height:26px; }
-.t1-landing-leadform{width:80%;margin:0 auto;display:inline-block}
+.sub-heading h2{width:90%;word-break:break-word;line-height:1.4; }
+.t1-landing-leadform{width:85%;margin:0 auto;display:inline-block}
 .t1-landing-leadform .t1-leadform-field{display:inline-block;width:40%;float:none;margin-bottom:20px}
 .t1-landing-leadform .t1-leadform-field input{float:left;width:88%;border:2px solid rgba(255,255,255,.4);color:#fff;font-size:16px;padding:10px;background:0 0}
 .t1-landing-leadform .input-section .input-outer{display:inline-block;width:40%;float:none;margin-bottom:20px;position:relative}
@@ -85,7 +85,7 @@ li,ul{list-style:none}
 .t1-slider-pagination a p{position:absolute;top:0;z-index:9;font-size:9px;right:4px;color:#fff}
 .editor-page-divider{margin-bottom:35px}
 .t1-slider-question-divider{margin-bottom:0px}
-.t1-slider-question{padding:30px 40px 40PX;background:#fff;width:100%;float:left;box-shadow:0 30px 40px 7px rgba(0,0,0,.3);border:1px solid #f1f3f3;border-radius:4px}
+.t1-slider-question{padding: 30px 40px;min-height: 200px; display: flex; justify-content: center; align-items: center; background:#fff;width:100%;float:left;box-shadow:0 30px 40px 7px rgba(0,0,0,.3);border:1px solid #f1f3f3;border-radius:4px}
 .t1-question-slider .unslider-nav{position:absolute;top:-60px;text-align:center;width:100%}
 .t1-question-slider .unslider-nav ol li{width:3px;height:3px;border:1px solid #fff}
 .t1-question-slider .unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer;width:42px;height:42px;color:#232f3f}
@@ -348,7 +348,7 @@ visuals .t1-result-inner-left #og-table-excel{margin:0 auto;width:42%;height:290
 .page_0 logo{width:180px}
 .landing-page-mid leadform .input-section .input-outer{width:50%!important;margin-bottom:10px;position:relative;margin-right:0!important;margin-left:0!important;padding:0 10px;min-height:47px}
 .landing-page-mid leadform .input-section .input-outer input,
-.page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{float:left;width:100%;font-size:16px;padding:12px 12px 0 35px;background:0 0}
+.page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{float:left;width:100%;font-size:18px;padding:12px 12px 0 35px;background:0 0;box-shadow: 0px 1px 0px 0 rgb(0, 0, 0, 0.2) !important;}
 .landing-page-mid leadform .input-section .input-outer span,
 .landing-page-mid leadform .input-section .input-outer.checkbox span,
 .landing-page-mid leadform .input-section .input-outer.dropdown span{width:100%;left:0;text-align:left;padding-left:2px;color:#f44336;font-size:12px;float:left}
@@ -450,6 +450,7 @@ img.twitter-follow-button{width:auto!important;display:inline-block;height:28px!
     .template-section .page_0 .input-outer i{left:2px}
     .t1-ques-component .input-outer input{border:2px solid #d9dad3}
     .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label{margin-left: 2px !important; top: 7px !important;}
+    .V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label p{margin: 0px !important;}
 }
 .likes-parent{margin-bottom:20px}
 .fb-like{margin:20px 10px 20px 0;cursor:pointer;float:none}
@@ -481,7 +482,7 @@ input[type=number]{-moz-appearance:textfield}
 .input-field input[type=number]{flex:1;-webkit-flex:1}
 .t1-slider-question .input-field label{margin-bottom:0;width:98px;padding:16px 5px;font-size:16px;border:1px solid #d9dad3;border-top:0;border-bottom:0;text-align:center;margin-right:-1px;margin-left:-1px;float:left;background:#f6f8f9;font-weight:400!important;font-family:inherit;overflow:hidden;text-overflow:ellipsis}
 .t1-slider-question .input-field label~input{width:80%!important;float:left}
-.t1-slider-question .input-field label:not(.label-icon).active{transform:none;font-weight:400!important;font-size:16px!important;text-transform:inherit}
+.t1-slider-question .input-field label:not(.label-icon).active{transform:none;font-weight:400!important;font-size:16px !important;text-transform:inherit}
 .elem,
 .elem.elem-rotate i.material-icons{font-size:13px}
 .redo-outer .redo-link li a,
@@ -494,7 +495,7 @@ input[type=number]{-moz-appearance:textfield}
 .elem-rotate{animation-name:rotate;animation-duration:2s;animation-iteration-count:infinite;animation-timing-function:linear;color:#fb545b}
 .recom-section .btn-twitter{margin-top:10px}
 .input-outer i{position:absolute;left:15px;top:15px;color:rgba(255,255,255,.6);font-size:20px}
-.t1-landing-leadform .input-outer i{position:absolute;left:2px;top:18px;color:rgba(255,255,255,.6);font-size:18px}
+.t1-landing-leadform .input-outer i{position:absolute;left:2px;top:18px;color:rgba(255,255,255,.6);font-size:20px}
 .t1-result-leadform .input-outer i{position:absolute;left:5px;top:7px;color:rgba(40,50,58,.4);font-size:20px;z-index:9}
 .t1-question .question-components .input-outer i{position:absolute;left:10px;top:19px;color:rgba(40,50,58,.4);font-size:20px}
 .redo-outer{position:relative;float:right}
@@ -565,7 +566,7 @@ input[type=number]{-moz-appearance:textfield}
 .selectize-dropdown,
 .selectize-input,
 .selectize-input input{color:#666e78}
-.selectize-input .item{font-size:16px}
+.selectize-input .item{font-size:16px; line-height: 1.4;}
 .selectize-dropdown{-webkit-animation:anim .3s ease-in-out;animation:anim .3s ease-in-out;z-index:9999}
 @-webkit-keyframes anim{
     0%{display:none;opacity:0}
@@ -706,7 +707,7 @@ input[type=number]{-moz-appearance:textfield}
 .template-section .page_0.t1-landing .landing-page-mid .input-section .input-outer input{padding-top:0;padding-bottom:0}
 .template-section .page_0.t1-landing .input-outer i{top:19px!important;left:0}
 .template-section .t1-result-leadform .input-outer i{left:-2px}
-.control.control--checkbox span{float:left;line-height:26px;margin-top:16px;margin-bottom:14px;word-wrap:break-word;white-space:normal;word-break:break-word;padding-left:0!important}
+.control.control--checkbox span{float:left;line-height:1.4;margin-top:16px;margin-bottom:14px;word-wrap:break-word;white-space:normal;word-break:break-word;padding-left:0!important}
 .pic-selector .control.control--checkbox span{float:left;margin-top:0;margin-bottom:0}
 .control.control--radio span{float:left;line-height:25px;margin-top:15px;margin-bottom:11px;word-wrap:break-word;white-space:normal;word-break:break-word;position:relative}
 .pic-selector .control.control--radio span{float:left;margin-top:0;margin-bottom:0;position:absolute;left:0;width:100%;bottom:0}
@@ -744,10 +745,10 @@ visuals.visual-outr span.graph-title{position:relative;top:0;width:100%;text-ali
 }
 .graded-msgbox-outr-builder{top:45px;width:100%;animation:fadein 1s}
 .editor-page-divider .graded-msgbox-outr{top:-75px;width:100%;animation:fadein 1s}
-.graded-msgbox-outr{position:fixed;top:10%;z-index:999;float:none;width:53%;text-align:center;-webkit-animation:fadein 1s;left:0;right:0;margin:0 auto;-moz-animation:fadein 1s;-ms-animation:fadein 1s;-o-animation:fadein 1s;animation:fadein 1s}
+.graded-msgbox-outr{position:fixed;top:10%; left:0px;z-index:999;float:none;width:100%;text-align:center;-webkit-animation:fadein 1s;left:0;right:0;margin:0 auto;-moz-animation:fadein 1s;-ms-animation:fadein 1s;-o-animation:fadein 1s;animation:fadein 1s}
 .editor-page-divider .graded-msgbox,
 .graded-msgbox{margin:0 auto;width:auto!important;border-radius:6px;box-shadow:0 0 10px 2px rgba(0,0,0,.2);position:relative;display:inline-block;z-index:9999;color:#fff}
-.graded-msgbox{max-width:100%;padding:15px 20px}
+.graded-msgbox{max-width:50%;padding:15px 20px}
 .editor-page-divider .graded-msgbox{max-width:53%;padding:10px 20px}
 .gradedquiz-main visuals .t1-result-inner-left-graph h1 img,
 .gradedquiz-main visuals .t1-result-inner-left-table h1 img,
@@ -915,7 +916,7 @@ to{opacity:1}
 .t1-result-main .selectize-control{float:left;width:97%}
 .t1-result-main .selectize-control.single .selectize-input{border:none!important;border-bottom:2px solid rgba(40,50,58,.4)!important;background:0 0;box-shadow:none;width:100%!important;float:none;display:inline-flex;text-align:left;font-size:16px!important}
 .t1-result-main .selectize-input{padding:6px 35px 7px 15px}
-.selectize-dropdown .option{padding:10px 15px}
+.selectize-dropdown .option{padding:10px 15px; line-height: 1.4;}
 .template-section .gradedquiz-main .t1-result-leadform .input-outer i{left:-2px!important}
 .one-page-card-new .filled-in[type=checkbox]:not(:checked)+label::after,
 .one-page-card-new [type=radio]:not(:checked)+label::after,
@@ -1062,7 +1063,7 @@ input{-webkit-transform:translate3d(0,0,0)}
 .structure-right-align .t1-slider-pagination{direction:rtl!important}
 .one-page-card-new .page_0.t1-landing .selectize-input.items input{border-bottom:0!important;width:100%!important}
 .one-page-card-new .page_0.t1-landing .selectize-input.items.focus.input-active input:focus:not([readonly]){border:0!important;width:95%!important;position:absolute!important;box-shadow:initial!important}
-.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.input-active.focus {min-height: 33px; border-width: 0px !important;}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.input-active.focus {min-height: 31px; border-width: 0px !important;}
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.input-active.focus.not-full {border-width: 1px !important;}
 .t1-question .leaded-form-c .input-outer .selectize-input.items input{border-bottom:0!important;width:100%!important;visibility:visible!important}
 .t1-question .leaded-form-c .input-outer .selectize-input.items.focus.input-active input:focus:not([readonly]){border:0!important;width:95%!important;position:absolute!important;box-shadow:initial!important}
@@ -1134,7 +1135,7 @@ input{-webkit-transform:translate3d(0,0,0)}
 .template-section .template-container.mobile .common-footer-main .col_2_links,
 .template-section .template-container.mobile .common-footer-main .col_3_links,
 .template-section .template-container.mobile .common-footer-main .col_4_links{width:100%;margin-bottom:10px;text-align:center!important}
-.t1-landing .no-footer-links.no-header-links{width:100%;display:table-cell;vertical-align:middle;height:100%;padding-top:100px;padding-bottom:100px}
+.t1-landing .no-footer-links.no-header-links{width:100%;display:table-cell;vertical-align:middle;height:100%;padding-top:100px;padding-bottom:120px}
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position:static;box-shadow:none;padding:0;display:initial!important}
 .template-section .template-container.mobile .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid{width:100%;max-width:80%}
 .t1-result .no-footer-links.no-header-links{width:100%;display:table;height:100vh;padding-top:100px;padding-bottom:100px;position:relative;z-index:9}
@@ -1146,8 +1147,8 @@ input{-webkit-transform:translate3d(0,0,0)}
 .checkbox-outer.active .control__indicator.check-set{display:none}
 .video-sec iframe.vid{height:100%;width:100%;position:absolute;left:0;right:0;bottom:0;top:0}
 .video-sec{float:none;width:100%;max-width:720px;margin:0 auto 35px!important;height:300px;position:relative;display:block}
-.common-header-main .logo a img.vert{max-width:50px!important;max-height:50px!important}
-.common-header-main .logo a img.horz{max-width:150px!important;max-height:45px!important}
+.common-header-main .logo a img.vert{max-width:80px!important;max-height:65px!important}
+.common-header-main .logo a img.horz{max-width:180px!important;max-height:55px!important}
 .template-section .template-container.mobile .otherfield-inputbtn input.othersfield{width:80%!important;float:left;margin-left:40px!important}
 .template-section .template-container.mobile .otherfield-inputbtn button.button_textfield.submit-textbox-btn{position:relative;top:0;display:block!important;float:left;margin-left:50px;margin-bottom:20px}
 .poll-result .result-branding{position:relative;width:100%;float:left}
@@ -1229,22 +1230,22 @@ input.othersfield:-moz-placeholder{opacity:.6}
 p>span>a{color:inherit}
 .t1-slider-question{animation-duration:.3s;animation-name:opacity-1;position:relative;overflow:hidden}
 .t1-ques-component,
-.t1-ques-head{-webkit-animation-name:bounceInRight;position:relative}
-.t1-ques-head{animation-duration:.7s;animation-name:bounceInRight}
-.t1-ques-component{animation-duration:1s;animation-name:bounceInRight}
-.t1-ques-component.textfield{animation-duration:0.7s;-webkit-animation-name:bounceInRight;animation-name:rightin;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(1){animation-duration:.8s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(2){animation-duration:.9s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(3){animation-duration:1s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(4){animation-duration:1.2s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(5){animation-duration:1.4s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(6){animation-duration:1.6s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(7){animation-duration:1.8s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(8){animation-duration:2s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(9){animation-duration:2.2s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(10){animation-duration:2.4s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(11){animation-duration:2.6s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
-.t1-ques-component .input-section .input-outer:nth-child(12){animation-duration:2.8s;-webkit-animation-name:bounceInRight;animation-name:bounceInRight;position:relative}
+.t1-ques-head{-webkit-animation-name:rightin;position:relative}
+.t1-ques-head{animation-duration:.6s;animation-name:rightin}
+.t1-ques-component{animation-duration:0.7s;animation-name:rightin}
+.t1-ques-component.textfield{animation-duration:0.6s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(1){animation-duration:.7s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(2){animation-duration:.8s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(3){animation-duration:0.9s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(4){animation-duration:1s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(5){animation-duration:1.2s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(6){animation-duration:1.4s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(7){animation-duration:1.6s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(8){animation-duration:1.8s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(9){animation-duration:2s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(10){animation-duration:2.2s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(11){animation-duration:2.4s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
+.t1-ques-component .input-section .input-outer:nth-child(12){animation-duration:2.6s;-webkit-animation-name:rightin;animation-name:rightin;position:relative}
 @keyframes rightin{0%{left:70%;opacity:0}
 25%,50%{opacity:0}
 75%{opacity:.5}
@@ -1473,11 +1474,14 @@ leadform_question .or-class{color:#28324e;padding:0}
 .V_3_5 .overlay-outerleadform.result-v2 .common-result-main .common-leadform-top.t1-result-leadform .prime-action{padding:14px 40px 12px}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer .input-field{display:flex;width:100%;max-width:100%}
 .V_3_5 .landing-page-mid leadform .input-section .input-outer input{font-size:14px;width:90%}
-.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label{padding-left:30px;margin-left:0;margin-top:0!important}
+.V_3_5 .landing-page-mid leadform .input-section .input-outer.checkbox label{padding-left:30px;margin-left:0;margin-top:0!important; line-height: 1.4 !important;font-size: 16px !important; padding-top: 0px !important;}
 .V_3_5 leadform .input-field label:not(.label-icon).active{padding-left:0!important;text-transform:uppercase}
-.newProgressbar.progress{position: relative;top: 0;height: 9px;background: #fff;width: 200px !important; right: 0; -webkit-box-shadow: none; box-shadow: none; border: none; border-radius: 50px;overflow: visible;text-align: center; margin: 0 auto;margin-top: 35px; margin-bottom: 25px;}
+
+.newProgressbar-Inner {position: relative; margin: 15px auto 25px; width: 240px;}
+.newProgressbar.progress{position: relative;top: 0;height: 9px;background: #fff;width: 200px !important; right: 0; border: none; border-radius: 50px;overflow: visible;text-align: center; margin: 0px !important;box-shadow: inset 0px 0px 2px rgba(0,0,0,0.2);}
 .newProgressbar.progress::after{content:"";opacity:1;float:left;width:100%;height:18px;position:absolute;left:0;z-index:99999;top:0}
-.newProgressbar.progress span.sr-only{clip: inherit;overflow: visible; float: right; right: -4px; top: -23px; font-size: 9px; color: #666 !important;font-family: 'montserratregular'; position: relative; background: #f2f2f2; width: auto; height: auto; padding: 0 5px; border-radius: 4px; line-height: 17px;}
+.newProgressbar-Inner .newProgressbar.progress span.sr-only{position: absolute;}
+.newProgressbar.progress span.sr-only{clip: inherit;overflow: visible;float: right;right: -45px;top: -3px;font-size: 10px;color: #444!important;font-family: montserratregular;position: relative; background: #fff;width: auto;line-height: 15px;height: auto;padding: 0 5px;border-radius: 50px;letter-spacing: 0.5px;}
 .newProgressbar .progress-bar{text-align:right;box-shadow:none;border-radius:50px}
 .V_3_5 .liveresult-outr {position: absolute; right: 30px; top: 25px; max-width: 300px; width: auto;}
 .V_3_5 .liveresult-outr .t1-question-liveresult { font-size: 24px;text-align: right; }
@@ -1503,7 +1507,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .calendar-range{width:100%;float:left}
 .cal-outer .timepicker .table-condensed,
 .cal-outer li.picker-switch.accordion-toggle{width:100%!important;float:left!important;text-align:center!important}
-.V_3_5 .landing-page-mid leadform button.prime-action{font-size:16px;line-height:normal;padding:14px 40px 12px;border-radius:25px}
+.V_3_5 .landing-page-mid leadform button.prime-action{font-size:18px;line-height:normal;padding: 15px 40px 14px;border-radius:25px}
 .V_3_5 .landing-page-mid leadform button.prime-action span { display: inline-block;}
 
 .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input{padding-left:0!important}
@@ -1595,7 +1599,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5 .checkbox-outer,
 .V_3_5 .checkbox-outer-base,
 .V_3_5 .radio-outer-base,
-.V_3_5 .radio-outer.radio-icon-custom{float:left;width:100%;padding:0!important;margin-bottom:10px!important}
+.V_3_5 .radio-outer.radio-icon-custom{float:left;width:100%;padding:0!important;margin-bottom:15px!important}
 .V_3_5 .checkbox-outer-base:last-child,
 .V_3_5 .checkbox-outer:last-child,
 .V_3_5 .radio-outer-base:last-child,
@@ -1616,7 +1620,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5 .radio-outer.radio-icon-custom.textfield button.button_textfield.submit-textbox-btn{margin-top:-4px;left:0;margin-right:10px;line-height:1;height:30px;padding:0 15px!important}
 .V_3_5 .t1-ques-component.checkbox{margin:0}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .radio-outer-base [type=radio]+label.control.control--radio:after,
-.V_3_5.one-page-card-new .t1-question .question-components .check-comp .radio-outer-base [type=radio]+label.control.control--radio:before{top:1px!important}
+.V_3_5.one-page-card-new .t1-question .question-components .check-comp .radio-outer-base [type=radio]+label.control.control--radio:before{top:3px!important}
 @media (min-width:767px){
     .V_3_5.one-page-card-new .landing-text-right .landing-page-mid{margin-right:60px}
     .V_3_5.one-page-card-new.structure-right-align .newProgressbar.progress{float:right;left:70px;right:auto}
@@ -1626,7 +1630,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
     .V_3_5.one-page-card-new.structure-right-align leadform_question .newLeadGenV_3_5+fb_lead_gen .or-class{text-align:right!important;margin:10px 0!important;padding:0 15px!important}
     .V_3_5.one-page-card-new leadform_question .newLeadGenV_3_5+fb_lead_gen .or-class{text-align:left!important}
     .V_3_5.one-page-card-new .t1-slider-question leadform_question fb_lead_gen+.lf-skip-btn{margin-top:-33px!important}
-    .V_3_5.one-page-card-new .t1-ques-head{font-size:24px;line-height:30px}
+    .V_3_5.one-page-card-new .t1-ques-head{line-height:1.4}
     .V_3_5.one-page-card-new .landing-page-mid .input-field label{top:5px}
     .V_3_5 .t1-landing.landing-text-left .landing-page-mid leadform{float:left;width:100%}
     .V_3_5 .t1-landing.landing-text-center .landing-page-mid leadform{float:none;margin:0 auto;display:inline-block;width:85%}
@@ -1634,7 +1638,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
     .V_3_5 .main-heading,
     .V_3_5 .main-heading h1{font-size:58px}
     .V_3_5 .landing-page-mid{width:60%}
-    .V_3_5 .landing-page-mid button{padding:14px 40px 12px}
+    .V_3_5 .landing-page-mid button{padding:15px 40px 14px;}
     .V_3_5 .t1-question .checkbox-outer,
     .V_3_5 .t1-question .checkbox-outer label,
     .V_3_5 .t1-question .checkbox-outer label span,
@@ -1649,14 +1653,14 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
     .V_3_5.one-page-card-new .submit-textbox input[type="text"],.V_3_5.one-page-card-new .submit-textbox input[type="number"],
     .V_3_5.one-page-card-new .t1-question .question-components .cal-outer input,
     .V_3_5.one-page-card-new .t1-question .selectize-input .item{font-size:16px}
-    .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:16px;line-height:22px}
+    .V_3_5.one-page-card-new .t1-ques-head .help-text{font-size:16px;line-height:1.4}
 
 
 }
 .V_3_5 button.ripple-light span::before  ,
 .V_3_5 .leadform-btn.ripple-light span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;    text-transform: none;}
 .V_3_5 button.ripple-light span ,
-.V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block}
+.V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block; letter-spacing: 0.5px;}
 .V_3_5 button.ripple-light:hover span ,
 .V_3_5 .leadform-btn.ripple-light:hover span {-webkit-transform: translate3d(-10px, 0, 0);transform: translate3d(-10px, 0, 0);}
 .V_3_5 button.ripple-light:hover span::before ,
@@ -1738,28 +1742,30 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .leadAsPopup .or-class{text-align:left!important}
 .V_3_5.one-page-card-new .t1-question .question-components .dropdown-set .selectize-control.single .selectize-input,
 .V_3_5.one-page-card-new .t1-question .question-components .dropdown-set .selectize-dropdown.single{border-bottom:1px solid #d9dad3!important}
-.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer{min-height:auto;margin-bottom:30px}
+.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer{min-height:auto;margin-bottom:25px}
 .V_3_5.one-page-card-new .main-heading,
-.V_3_5.one-page-card-new .main-heading h1{margin-top:0; margin-bottom: 27px;}
+.V_3_5.one-page-card-new .main-heading h1{margin-top:0; margin-bottom: 15px;}
 .V_3_5 .sub-heading{opacity:1}
 .V_3_5 .main-heading,
 .V_3_5 .main-heading h1,
-.V_3_5 .main-heading p{font-size:58px;line-height:64px}
+.V_3_5 .main-heading p{font-size:58px;line-height:1.2}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox]+label.leadform-checkbox{top:5px!important}
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:checked+label.leadform-checkbox:after,
 .V_3_5.one-page-card-new .landing-page-mid [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:after{margin:0!important;border-radius:0;width:20px;height:20px;border:1px solid #000; top: 0}
-.V_3_5.one-page-card-new .t1-landing-leadform .input-outer i{left:0;width:auto;top:50% !important;transform:translateY(-50%)}
+.V_3_5.one-page-card-new .t1-landing-leadform .input-outer i{left: 0px; width: auto; top: 16% !important; transform:rotate(0.03deg); }
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.autocomplete-content,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~input,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~label,
-.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~textarea{padding-left:30px!important;margin-left:0;margin-bottom:0;padding-top:0}
+.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~textarea{padding-left:30px!important;margin-left:0;margin-bottom:0;padding-top:0 !important;font-size: 18px; line-height: 1;}
+.V_3_5.one-page-card-new .landing-page-mid .input-field label {padding-top: 2px !important;}
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input,
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.items input{padding-left:0!important}
-.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input{padding:8px 35px 6px 0!important;margin-top:0}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input{padding:8px 35px 6px 0!important;margin-top:0;padding-top: 0 !important;padding-bottom: 0 !important; box-shadow: 0px 1px 0px 0 rgb(0, 0, 0, 0.2) !important;}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input .item {font-size: 18px; min-height: 30px; padding-top: 6px;}
 .V_3_5.one-page-card-new .t1-landing-inner [type=checkbox].filled-in:not(:checked)+label:before{top:10px!important;left:5px!important;margin:0}
-.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label:not(.label-icon).active{padding-left:0!important;font-size:12px!important;font-weight:400!important;margin-left:0!important}
+.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label:not(.label-icon).active{padding-left:0!important;font-size:12px!important;font-weight:600!important;margin-left:0!important; top: 0 !important;letter-spacing: 1px;}
 .V_3_5.one-page-card-new .submit-textbox input{width:100%!important}
 .V_3_5.one-page-card-new .submit-checkbox-img,
 .V_3_5.one-page-card-new .t1-question .submit-textbox-btn{float:left}
@@ -1767,7 +1773,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .submit-checkbox,
 .V_3_5.one-page-card-new .submit-checkbox-img,
 .V_3_5.one-page-card-new .submit-textbox-btnresp,
-.V_3_5.one-page-card-new .t1-question .submit-textbox-btn{margin-right:0;border-radius:50px;padding:0 15px!important;text-align:center;font-size:12px;line-height:1;height:30px!important;top:0;animation:none;box-shadow:none;margin-left:0}
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn{margin-right:0;border-radius:50px;padding:0 15px!important;text-align:center;font-size:12px;line-height:1;height:30px!important;top:0;animation:none;box-shadow:none;margin-left:0; letter-spacing: 0.5px;}
 .V_3_5.one-page-card-new .input-field.submit-textbox .submit-textbox-btn{height:31px!important;top:-4px;display:none}
 .V_3_5.one-page-card-new .t1-slider-question .input-field label.post-icon,
 .V_3_5.one-page-card-new .t1-slider-question .input-field label.pre-icon{padding:0 0 5px}
@@ -1790,7 +1796,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .template-section .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer input{height:30px}
 .template-section .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .selectize-input input{height:auto}
 .one-page-card-new .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .section-head,
-.one-page-card-new .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .section-head div{font-size:12px;text-transform:uppercase;margin-bottom:0}
+.one-page-card-new .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer .section-head div{font-size:12px;text-transform:uppercase;margin-bottom:0; line-height: 1.4;}
 .V_3_5.one-page-card-new .t1-landing-inner .newLeadGenV_3_5 .leaded-form-c .input-outer [type=checkbox].filled-in:not(:checked)+label:before{top:0!important;left:0!important;margin:0;border:0!important;width:20px;height:20px}
 .V_3_5 .newLeadGenV_3_5 .w100.text-center .submit-checkbox-img{border-radius:25px!important;padding:14px 40px 12px!important;font-size:14px;height:auto!important;text-transform:uppercase;opacity:1}
 .V_3_5 .newLeadGenV_3_5 .w100.text-center.lead-action-wrapper .submit-checkbox-img span:before { margin-top: 2px;}
@@ -1829,10 +1835,10 @@ span.lead-close:hover{opacity:1;transition:.5s}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-webkit-slider-thumb{width:14px;height:14px;border-width:1.2px!important;margin-top:-7px!important}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 input[type=range]::-moz-range-thumb{width:14px;height:14px;border-width:1.2px!important;margin-top:-7px!important}
 .V_3_5.one-page-card-new .t1-question .landing-page-header{left:30px}
-.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer span{top:35px;font-size:10px}
+.V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer span{top:35px;font-size:10px;letter-spacing: 0.5px;}
 .V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer.checkbox span{top:5px}
 .V_3_5.one-page-card-new .t1-landing .t1-landing-inner .selectize-control{margin-bottom:0}
-.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input input{height:auto}
+.V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input input{height:auto;min-height: 30px !important;box-shadow: none !important;}
 .V_3_5.one-page-card-new .opinon-scale-custom label.control.control--radio{min-height:40px}
 .V_3_5.one-page-card-new .opinon-scale-custom label.control.control--radio span{margin-top:9px;margin-bottom:auto}
 .V_3_5.one-page-card-new .custom-block.rating-custom .rating-inner i{padding:1px}
@@ -1849,7 +1855,7 @@ span.lead-close:hover{opacity:1;transition:.5s}
 .V_3_5.one-page-card-new .video-sec{margin-bottom:20px!important}
 .date-selector-part span.calendar-range{width:100px;padding:4px 0}
 .date-selector-part .cal-outer.calender-date{float:left;width:calc(50% - 50px)}
-.V_3_5.one-page-card-new .landing-page-mid leadform .input-section{margin-left:-10px;margin-right:-10px}
+.V_3_5.one-page-card-new .landing-page-mid leadform .input-section{margin-left:-10px;margin-right:-10px; margin-top: 15px;}
 .V_3_5 .t1-landing-inner .input-field.blink-animation{border-bottom-width:1px!important}
 .V_3_5.one-page-card-new .submit-textbox input:focus:not([readonly]){border:0!important;box-shadow:none!important}
 .t1-question .cal-outer.calender-date .input-group.date{border-bottom:1px solid #d9dad3}
@@ -1900,11 +1906,11 @@ body .V_3_5.one-page-card-new input::-moz-placeholder{color:#aaa!important;opaci
 body .V_3_5.one-page-card-new input:-ms-input-placeholder{color:#aaa!important;opacity: 0.6;}
 body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacity: 0.6;}
 .V_3_5.one-page-card-new .t1-ques-head .help-text{opacity:.8}
-.V_3_5 .control-ver2 .pic-selector{padding-bottom:0;margin-bottom:10px!important;margin-top:0px}
+.V_3_5 .control-ver2 .pic-selector{padding-bottom:0;margin-bottom:10px !important;margin-top:0px}
 .V_3_5 .control-ver2 .pic-selector:first-child,
 .V_3_5 .control-ver2 .pic-selector:nth-child(2),
 .V_3_5 .control-ver2 .pic-selector:nth-child(3){margin-top:0!important}
-.V_3_5 .control-ver2 .pic-selector:last-child {margin-bottom: 0px !important;}
+.V_3_5 .control-ver2 .pic-selector:last-child { margin-bottom: 0px !important;}
 .V_3_5.one-page-card-new [type=checkbox]+label.leadform-checkbox{opacity:1}
 .V_3_5.one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer .selectize-input input:focus{box-shadow:none!important;border:0!important}
 .V_3_5.one-page-card-new .range-slider1.custom-slider1 ul{margin:10px 0 15px}
@@ -1914,12 +1920,12 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .btn.focus,
 .btn:focus,
 .btn:hover,button.focus,button:focus,button:hover{outline:0!important}
-.V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{border-radius:30px!important;margin-bottom:10px!important;padding:11px 30px!important}
+.V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{border-radius:30px!important;margin-bottom:10px!important;padding:11px 30px!important; letter-spacing: 0.5px;}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .checkbox-outer-base.active [type=checkbox]:checked+label.graded-tick:before,
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .checkbox-outer.active [type=checkbox]:checked+label.graded-tick:before{content:''}
 .V_3_5.one-page-card-new .control-ver2 .pic-selector span.abhi{min-height:auto}
 .V_3_5.one-page-card-new .input-group-addon{padding:4px 6px!important}
-.V_3_5.one-page-card-new .t1-ques-head{float:left;width:100%}
+.V_3_5.one-page-card-new .t1-ques-head{float:left;width:100%; line-height: 1.4;}
 .V_3_5.one-page-card-new .t1-ques-head .help-outer,
 .V_3_5.one-page-card-new .t1-ques-head .help-text{float:left;width:100%;top:0!important}
 .V_3_5.one-page-card-new .t1-ques-head .help-text{margin-top:8px}
@@ -2016,7 +2022,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .V_3_5 .loginBtn,
 .V_3_5 .result-v2 .leadAsPopup .loginBtn,
 .V_3_5 .result-v2 .loginBtn{padding:10px 45px 10px 25px!important}
-.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:10px 45px 10px 25px!important;float:left;margin:0;text-transform:uppercase;border-radius:25px;line-height:normal}
+.V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding:10px 45px 10px 25px!important;float:left;margin:0;text-transform:uppercase;border-radius:25px;line-height:normal; letter-spacing: 1.5px;}
 .loginBtn,
 .result-v2 .loginBtn{margin:0!important}
 .V_3_5 .loginBtn:before{top:5px!important;right:8px!important;width:30px!important;height:30px!important;background-color:#fff!important;border-radius:50%;background:url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;left:auto!important}
@@ -2051,7 +2057,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .t1-result-leadform .lead-popup .fb-outer {
     text-align: left;
 }
-.V_3_5  .landing-page-mid button span{font-size: 18px }
+.V_3_5  .landing-page-mid button span{font-size: 18px ; letter-spacing: 0.5px;}
 
 .custom-block.inpu-file-uploader i.material-icons {
     font-size: 22px;
@@ -2065,7 +2071,8 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
     width: 100%;
     margin: 0;
     padding: 0 0 5px;
-    font-size: 14px;
+    font-size: 16px !important;
+    line-height: 1.4;
     color: #666e78;
     box-sizing: border-box;
     border: none;
@@ -2146,6 +2153,7 @@ leadform .bothLeadGenOn .input-section.scrollbar {
     padding-right: 15px;
     width: auto;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .V_3_5 .liveresult-outr.timerOn .t1-question-liveresult  ,.V_3_5 .liveresult-outr.timerOn .t1-question-resultheading {
     text-align: center
@@ -2690,3 +2698,15 @@ a.view-feedback {
 .popup-feedback .graded-msgbox .incorrect span i , .popup-feedback .graded-msgbox .correct span i {font-size: 22px;}
 .graded-msgbox.incorrect-feedback.nocontent {display: flex;align-items: center;}
 .V_3_5 .landing-page-mid button { word-break: break-word !important;}
+.V_3_5 .result-v2 .common-result-main .t1-result-topheading p{ line-height: 1.4 !important;}
+.V_3_5 .result-v2 .common-result-main .t1-result-full-section .t1-result-full-container .small-top-sec p,.V_3_5 .result-v2 .common-result-main .t1-result-small-section .small-bot-sec p{ line-height: 1.4 !important;}
+.custom-button {float: left; width: 100%; margin-top: 10px;}
+.custom-button button { padding: 14px 36px 12px; font-size: 14px; border-radius: 50px; border: none; transition: 0.5s;}
+.custom-button button:hover{opacity: 0.8;}
+.V_3_5.one-page-card-new .textfield .othersfield, .V_3_5 .t1-question .question-components .check-comp .checkbox-outer-base label, .V_3_5 .t1-question .question-components .check-comp .radio-outer-base label, .V_3_5 .t1-question .question-components .check-comp .checkbox-outer-base label span, .V_3_5 .t1-question .question-components .check-comp .radio-outer-base label span, .V_3_5 .t1-question .checkbox-outer, .V_3_5 .t1-question .checkbox-outer label, .V_3_5 .t1-question .checkbox-outer label span, .V_3_5 .t1-question .radio-icon-custom, .V_3_5 .t1-question .radio-icon-custom label, .V_3_5 .t1-question .radio-icon-custom label span{ line-height: 1.4;}
+.V_3_5.one-page-card-new .submit-textbox { margin-bottom: 10px;}
+.V_3_5.one-page-card-new .t1-ques-head {font-size: 24px; line-height: 1.4;}
+.V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label{display: flex;justify-content: center; align-items: center; float: none;}
+.V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label span{margin: 0px;}
+.t1-landing.landing-text-left section.landing-page-mid { width: 50%;}
+.t1-landing.landing-text-right section.landing-page-mid { width: 50%;}
