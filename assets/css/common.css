@@ -4721,7 +4721,10 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
     /* .intro-overlay.t5-temp{clip-path:polygon(0% 0%,0% 100%,290px 100%,290px 210px,420px 210px,420px 270px,0% 270px,0% 100%,100% 100%,100% 0%)} */
     .intro-overlay.t2-temp.without-banner .mid-sec img {top: 37vh;}
 }
-
+.graph-outer #container svg {
+    width: 100%;
+    height: 100%;
+}
 .collapse.panel-open {
     display: block;
 }
@@ -4752,7 +4755,7 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 .prof-card-mid .top-sec .sec-part h3{ float: left; font-size: 22px; color: #555555; margin-top:10px !important; font-family: 'montserratlight';}
 .prof-card-mid .top-sec .sec-part .mw250{ max-width: 250px;}
 .prof-card-mid .box-sec{ float: left; width: 100%;}
-.prof-card-mid .box-sec .small-part{ float: left; width: 50%; justify-content: center; padding:25px 15px; min-height: 330px;display: flex; align-items: center; text-align: center; font-size: 14px; color: #555; line-height: 1.4;}
+.prof-card-mid .box-sec .small-part{ float: left; width: 50%; justify-content: center; padding:25px 15px; min-height: 260px;display: flex; align-items: center; text-align: center; font-size: 14px; color: #555; line-height: 1.4;}
 .small-part.success{background:#f9fdfb; }
 
 .prof-card-mid .box-sec .small-part{ border-top: 1px solid #f1f3f4;  border-right: 1px solid #f1f3f4;}
