@@ -4,7 +4,7 @@
 <?php
 //$url	=	'https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 $uri = $_SERVER['REQUEST_URI'];
-if (strpos($uri, 'do') !== false) {
+if (strpos($uri, '/do/') !== false) {
     $uri_parts = explode('/',$uri);
 	$uri = '/'.$uri_parts[2];
 }
