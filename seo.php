@@ -37,7 +37,7 @@ if(!empty($response['data'])) {
 } else {
 ?>
 	<title>Outgrow</title>
-	<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic..">
+	<meta name="description" content="Easily create interactive experiences that increase conversion and bring traffic.">
 	<meta property="og:title" content="Interactive Calculators & Quizzes from Outgrow" />
 	<meta property="og:description" content="Easily create interactive experiences that increase conversion and bring traffic." />
 	<meta property="og:image" content="https://cdn.filestackcontent.com/1lm3eyhnQ8Kfh2li09Kq"/>

@@ -4825,8 +4825,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .cal-outer{width: 100%;float: left;margin-bottom: 10px;}
 .cal-outer .form-group {margin: 0;}
 .calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#444;text-align: center;}
-.t1-question .question-components .cal-outer input{box-shadow: none;padding: 10px 5px !important;margin-bottom: 0;z-index: 0; background: transparent !important;height: 35px;}
-.cal-outer .input-group.date .input-group-addon{border-radius: 0;padding: 0 5px;background: none;}
+.t1-question .question-components .cal-outer input{box-shadow: none;padding: 10px 5px !important;margin-bottom: 0;z-index: 0; background: transparent !important;}
+.cal-outer .input-group.date .input-group-addon{border-radius: 0;padding: 7px 15px;background: none;}
+.input-group.date {position: relative;display: flex;align-items: flex-end;flex-direction: row;}
+.cal-outer .input-group.date .input-group-addon i {position: relative;float: left;left: -7px;}
 /*dropdown style*/
 .cal-outer .dropdown-menu {padding: 10px !important;text-align: center !important;font-size: 11px !important;left:0px !important;right:auto !important;}
 .cal-outer .table-condensed>thead>tr>th {text-align: center !important;}
@@ -5120,7 +5122,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
         font-family: montserratregular;
         font-weight: normal;
     }
-
 }
 @media (min-width: 680px) and (max-width: 780px) {
 
@@ -5149,17 +5150,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
         font-family: montserratregular;
         font-weight: normal;
     }
-
 }
-
-
 /*** css toast  for quizz ***/
-
-.cta-share{
-    align-items: center;
-    justify-content: center;
-    float: left;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
+.cta-share{align-items: center;justify-content: center;float: left;display: flex;width: 100%;flex-wrap: wrap;}
