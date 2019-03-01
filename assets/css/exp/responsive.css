@@ -289,6 +289,7 @@
     .input-field textarea, .cal-outer, .ripple-dark.checkbox-outer{margin-bottom: 0;}
     .t1-question .question-components .selectize-control.single .selectize-input{height: 28px;}  
     .question-outer:last-of-type .t1-ques-component:last-child .dropdown-set{margin-bottom: 0;}
+    .t1-button button i{margin-top: 1px;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {display: none;}
@@ -423,6 +424,7 @@
     .gdpr-popup{ padding: 15px 20px;}
     .gdpr-popup-left{ width: 70%;}
     .gdpr-popup-right{ width: 25%; }
+    .t1-button button i{margin-top: 1px;}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {
