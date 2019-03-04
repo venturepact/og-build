@@ -1461,6 +1461,7 @@ visuals .rec-image-outer img {
 .landing-page-mid leadform .input-section .input-outer {
     width: 85% !important;
     float: left;
+    margin-top: 0px;
     margin-bottom: 15px;
     position: relative;
 }
@@ -1486,7 +1487,6 @@ visuals .rec-image-outer img {
     float: left;
     white-space: inherit;
     border-radius: 3px;
-    margin-top: 10px;
     transition: all 0.5s ease;
 }
 .t1-landing-leadform button.prime-action i {
@@ -1516,7 +1516,7 @@ visuals .rec-image-outer img {
     font-size: 18px;
     float: right;
     margin-left: 5px;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 /*experian landing page css ends*/
 
@@ -1762,7 +1762,7 @@ visuals .rec-image-outer img {
     float: left;
     width: 100%;
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 0px;
     text-align: left;
     padding-left: 2px;
@@ -3208,7 +3208,7 @@ input[type=number] {
     border: none;
     border-radius: 0;
     outline: none;
-    height: 30px;
+    height: 27px;
     width: 100%;
     margin: 0 0 10px 0;
     padding: 0;
@@ -3487,7 +3487,7 @@ input[type=number] {
     opacity: 0.7;
 }
 .experian .landing-page-mid .input-field label.active {
-    top: 9px;
+    top: 10px;
     font-size: 10px;
 }
 .input-field label:not(.label-icon).active {
@@ -4303,7 +4303,13 @@ input::-webkit-contacts-auto-fill-button {
     }
 }
 .question-outer:last-child .selectize-dropdown-content {
-    max-height: 60px;
+    max-height: 90px;
+}
+.question-outer:last-child .selectize-dropdown {
+    margin-bottom: 30px;
+}
+.question-outer:last-of-type .t1-ques-component:last-child .dropdown-set {
+    margin-bottom: 75px;
 }
 .loading {
     text-align: center;
@@ -4819,8 +4825,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .cal-outer{width: 100%;float: left;margin-bottom: 10px;}
 .cal-outer .form-group {margin: 0;}
 .calendar-range{width: 100%;float: left;padding: 0 0 10px 0;color:#444;text-align: center;}
-.t1-question .question-components .cal-outer input{box-shadow: none;padding: 10px 5px !important;margin-bottom: 0;z-index: 0; background: transparent !important;height: 35px;}
-.cal-outer .input-group.date .input-group-addon{border-radius: 0;padding: 0 5px;background: none;}
+.t1-question .question-components .cal-outer input{box-shadow: none;padding: 10px 5px !important;margin-bottom: 0;z-index: 0; background: transparent !important;}
+.cal-outer .input-group.date .input-group-addon{border-radius: 0;padding: 7px 15px;background: none;}
+.input-group.date {position: relative;display: flex;align-items: flex-end;flex-direction: row;}
+.cal-outer .input-group.date .input-group-addon i {position: relative;float: left;left: -7px;}
 /*dropdown style*/
 .cal-outer .dropdown-menu {padding: 10px !important;text-align: center !important;font-size: 11px !important;left:0px !important;right:auto !important;}
 .cal-outer .table-condensed>thead>tr>th {text-align: center !important;}
@@ -5114,7 +5122,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
         font-family: montserratregular;
         font-weight: normal;
     }
-
 }
 @media (min-width: 680px) and (max-width: 780px) {
 
@@ -5143,17 +5150,6 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
         font-family: montserratregular;
         font-weight: normal;
     }
-
 }
-
-
 /*** css toast  for quizz ***/
-
-.cta-share{
-    align-items: center;
-    justify-content: center;
-    float: left;
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
+.cta-share{align-items: center;justify-content: center;float: left;display: flex;width: 100%;flex-wrap: wrap;}

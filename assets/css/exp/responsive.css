@@ -2,6 +2,7 @@
     .table-outer table {max-width: 215px !important;}
     #graph-container {min-width: 200px !important;}
     .t1-question .question-components .selectize-control.single .selectize-input .item {max-width: 190px;}
+    .custom-block.rating-custom .rating-inner i {font-size: 18px;}
 }
 @media (min-width: 0px) and (max-width: 767px) {
     html {overflow-y: auto !important;overflow-x: hidden !important;}
@@ -224,7 +225,7 @@
     .experian .radio-outer-base.textfield label{ margin-top: 0px; padding-right: 0px !important;}
     .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 11px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 18px;margin-right: 4px; padding: 4px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 23px;margin-right: 3px; padding: 1px;margin-top: 4px}
     .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
      /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px !important;}
@@ -287,6 +288,8 @@
     .custom-block.inpu-file-uploader .input-field {margin-bottom: 0;}
     .input-field textarea, .cal-outer, .ripple-dark.checkbox-outer{margin-bottom: 0;}
     .t1-question .question-components .selectize-control.single .selectize-input{height: 28px;}  
+    .question-outer:last-of-type .t1-ques-component:last-child .dropdown-set{margin-bottom: 0;}
+    .t1-button button i{margin-top: 1px;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {display: none;}
@@ -328,6 +331,7 @@
     .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:after {width: 14px;height: 14px;margin: 8px;margin-left: 0;}
     .experian .checkbox-outer-base [type="checkbox"].filled-in:checked + label:before {top: 10px;left: 1px;width: 6px;height: 9px;}
     .t1-question .question-components .selectize-control.single .selectize-input {font-size: 15px;}
+    .ripple-dark{margin-top: 0px;}
 }
 @media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {width: 100%;margin-bottom: 10px;}
@@ -390,7 +394,7 @@
     .rating-custom .errorMessage{top: 0px;}
     .slider-input-post {margin-left: 0 !important;}
     .t1-result-disclaimer {margin-top: 27px;}
-    .question-outer:last-child .selectize-dropdown-content {max-height: 48px;}
+    /* .question-outer:last-child .selectize-dropdown-content {max-height: 48px;} */
     .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
     .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
     .experian .radio-outer-base.textfield label { padding-right: 0px !important;  margin-top: 0;}
@@ -400,7 +404,7 @@
     .experian .radio-outer-base.textfield label{ margin-top: 0px; padding-right: 0px !important;}
     .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 13px;}
-    .custom-block.rating-custom .rating-inner i{font-size: 23px;margin-right: 5px;cursor: pointer;padding: 3px;}
+    .custom-block.rating-custom .rating-inner i{font-size: 26px;margin-right: 3px;cursor: pointer;padding: 0px;}
     .t1-landing .no-footer-links.no-header-links{ padding:0 30px !important;}
     .t1-result.experian.hide.yes-header-links{ top: inherit;}
     .t1-result.experian.yes-header-links{ top: 70px;}
@@ -420,6 +424,7 @@
     .gdpr-popup{ padding: 15px 20px;}
     .gdpr-popup-left{ width: 70%;}
     .gdpr-popup-right{ width: 25%; }
+    .t1-button button i{margin-top: 1px;}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {

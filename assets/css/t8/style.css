@@ -79,7 +79,7 @@ ul, li {
 .main-heading ,  .main-heading h1{    font-size:44px;    margin-bottom: 20px;    line-height: 1.2;    text-transform: none; word-break: break-word;}
 .main-heading p{    font-size: 44px;    line-height: 1.2;}
 .sub-heading h2{max-width: 460px;  margin: 10px auto 18px !important; font-size: 18px;word-break: break-word; float: left;width: 100%;}
-.sub-heading{    font-size: 18px;    margin-bottom: 18px;    line-height: normal;    width: 100%;}
+.sub-heading{    font-size: 18px;    margin-bottom: 18px;    line-height: 1.4;    width: 100%; opacity: 0.9;}
 h2.sub-heading p {    margin-bottom: 0 !important; word-break: break-word;}
 .custom-btn-outer {cursor:pointer; width: 110px;display: inline-block;border: 8px solid rgba(0,0,0,0); background:rgba(0,0,0,0.1);position:relative;border-radius: 50%;height: 110px; z-index:100;}
 .custom-btn-outer1 {cursor:pointer;width: 70px;display: inline-block;border: 8px solid rgba(0,0,0,0); background:rgba(0,0,0,0.1);position:relative; border-radius: 50%;height: 70px;  z-index:100;margin-top: 20px; margin-bottom: 10px}
@@ -1460,7 +1460,7 @@ span.current::after {    content: "/";    margin: 0 2px;}
 .template-eight .poll-review-icon{bottom: 10px}
 .template-eight .common-result-main .t1-result-leadform {position: static}
 .template-eight .common-result-main .common-result-bot{display: table-cell; vertical-align: middle; float: none}
-.eight-inner-wrapper1.no-header-links.no-footer-links {  position: relative; margin: 20px 0 0; float: left}
+.eight-inner-wrapper1.no-header-links.no-footer-links {  position: relative; margin: 15px 0 0; float: left}
 .template-eight  .common-result-main .t1-result-leadform .common-result-bot-icons{bottom:25px; right:15px; min-height:30px;}
 .template-eight  .recommendation-outer .common-result-main .t1-result-leadform .common-result-bot-icons{bottom:5px; right:0px; min-height:30px;}
 .template-eight  .common-result-main .common-leadform-top.t1-result-leadform{ float: left;  width: 100%;  padding: 20px 30px 0;  margin-top: 0;  background: transparent;  box-shadow: none;  position: relative;}

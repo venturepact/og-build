@@ -31,10 +31,10 @@ li,ul{list-style:none}
 .main-heading h1{font-size:56px;margin-bottom:15px;line-height:60px;word-break:break-word}
 .main-heading p{font-size:56px;line-height:56px}
 .sub-heading,
-.sub-heading h2{font-size:20px;margin-bottom:20px;line-height:1.4;}
+.sub-heading h2{font-size:22px;margin-bottom:25px;line-height:1.4;}
 .sub-heading{width:100%}
 .sub-heading h2{width:90%;word-break:break-word;line-height:1.4; }
-.t1-landing-leadform{width:85%;margin:0 auto;display:inline-block}
+.t1-landing-leadform{width:80%;margin:0 auto;display:inline-block}
 .t1-landing-leadform .t1-leadform-field{display:inline-block;width:40%;float:none;margin-bottom:20px}
 .t1-landing-leadform .t1-leadform-field input{float:left;width:88%;border:2px solid rgba(255,255,255,.4);color:#fff;font-size:16px;padding:10px;background:0 0}
 .t1-landing-leadform .input-section .input-outer{display:inline-block;width:40%;float:none;margin-bottom:20px;position:relative}
@@ -1660,7 +1660,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5 button.ripple-light span::before  ,
 .V_3_5 .leadform-btn.ripple-light span::before {content: 'keyboard_backspace';position: absolute;right: 0px;color: #fff;line-height: 1;font-family: 'Material Icons';white-space: nowrap;-webkit-font-feature-settings: 'liga'; font-feature-settings: 'liga';font-size: 18px;transform: translateY(-50%) rotate(180deg); top:50%; transition: all 300ms ease-out;will-change: right, opacity;opacity: 0;    text-transform: none;}
 .V_3_5 button.ripple-light span ,
-.V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block}
+.V_3_5 .leadform-btn.ripple-light span{transition: all 300ms ease-out;-webkit-transform: translate3d(0px, 0, 0);transform: translate3d(0px, 0, 0); position: relative; display: block; letter-spacing: 0.5px;}
 .V_3_5 button.ripple-light:hover span ,
 .V_3_5 .leadform-btn.ripple-light:hover span {-webkit-transform: translate3d(-10px, 0, 0);transform: translate3d(-10px, 0, 0);}
 .V_3_5 button.ripple-light:hover span::before ,
@@ -1729,7 +1729,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .landing-text-right .fb-outer{float:right;text-align:right}
 .V_3_5.one-page-card-new .landing-text-right fb_lead_gen{float:right;left:0;padding:0;margin:0;width:100%!important}
 .V_3_5.one-page-card-new .landing-text-center fb_lead_gen{margin:0}
-.V_3_5 .landing-text-center .landing-page-mid{width:70%;max-width:100%;float:none;margin:0 auto}
+.V_3_5 .landing-text-center .landing-page-mid{width:60%;max-width:100%;float:none;margin:0 auto}
 .V_3_5 .landing-text-center .landing-page-mid .main-heading,
 .V_3_5 .landing-text-center .landing-page-mid .main-heading h1,
 .V_3_5 .landing-text-center .landing-page-mid .main-heading h1 p,
@@ -1758,7 +1758,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~input,
 .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~label,
-.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~textarea{padding-left:30px!important;margin-left:0;margin-bottom:0;padding-top:0;font-size: 18px; line-height: 1;}
+.V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~textarea{padding-left:30px!important;margin-left:0;margin-bottom:0;padding-top:0 !important;font-size: 18px; line-height: 1;}
 .V_3_5.one-page-card-new .landing-page-mid .input-field label {padding-top: 2px !important;}
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input,
 .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input.items input{padding-left:0!important}
@@ -1773,7 +1773,7 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .submit-checkbox,
 .V_3_5.one-page-card-new .submit-checkbox-img,
 .V_3_5.one-page-card-new .submit-textbox-btnresp,
-.V_3_5.one-page-card-new .t1-question .submit-textbox-btn{margin-right:0;border-radius:50px;padding:0 15px!important;text-align:center;font-size:12px;line-height:1;height:30px!important;top:0;animation:none;box-shadow:none;margin-left:0}
+.V_3_5.one-page-card-new .t1-question .submit-textbox-btn{margin-right:0;border-radius:50px;padding:0 15px!important;text-align:center;font-size:12px;line-height:1;height:30px!important;top:0;animation:none;box-shadow:none;margin-left:0; letter-spacing: 0.5px;}
 .V_3_5.one-page-card-new .input-field.submit-textbox .submit-textbox-btn{height:31px!important;top:-4px;display:none}
 .V_3_5.one-page-card-new .t1-slider-question .input-field label.post-icon,
 .V_3_5.one-page-card-new .t1-slider-question .input-field label.pre-icon{padding:0 0 5px}
@@ -1920,7 +1920,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .btn.focus,
 .btn:focus,
 .btn:hover,button.focus,button:focus,button:hover{outline:0!important}
-.V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{border-radius:30px!important;margin-bottom:10px!important;padding:11px 30px!important}
+.V_3_5.one-page-card-new .result-v2 .common-result-main .t1-result-cta .text-center .prime-action{border-radius:30px!important;margin-bottom:10px!important;padding:11px 30px!important; letter-spacing: 0.5px;}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .checkbox-outer-base.active [type=checkbox]:checked+label.graded-tick:before,
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .checkbox-outer.active [type=checkbox]:checked+label.graded-tick:before{content:''}
 .V_3_5.one-page-card-new .control-ver2 .pic-selector span.abhi{min-height:auto}
@@ -2057,7 +2057,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .t1-result-leadform .lead-popup .fb-outer {
     text-align: left;
 }
-.V_3_5  .landing-page-mid button span{font-size: 18px }
+.V_3_5  .landing-page-mid button span{font-size: 18px ; letter-spacing: 0.5px;}
 
 .custom-block.inpu-file-uploader i.material-icons {
     font-size: 22px;
@@ -2710,3 +2710,4 @@ a.view-feedback {
 .V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label span{margin: 0px;}
 .t1-landing.landing-text-left section.landing-page-mid { width: 50%;}
 .t1-landing.landing-text-right section.landing-page-mid { width: 50%;}
+.V_3_5.one-page-card-new .t1-ques-head { margin-bottom: 20px;}
