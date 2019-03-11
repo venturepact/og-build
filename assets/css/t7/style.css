@@ -777,7 +777,8 @@ input[type=range]:focus::-ms-fill-upper { background: #ccc; }
 .range-slider .irs-slider { top: 27px; width: 14px; height: 14px; z-index: 98 !important; }
 .range-slider .irs-single { border-radius: 8px !important; padding: 1px 9px !important; font-size: 10px !important; line-height: 13px !important; }
 .selectize-input { border: 1px solid #d9dad3; padding: 4px 35px 4px 4px; width: 100%; display: inline-block; width: 100%; overflow: hidden; position: relative; z-index: 1; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 0px; font-size: 14px; }
-.selectize-input .item { font-size: 13px; }
+.selectize-input .item { font-size: 13px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.questions .selectize-control.single .selectize-input{white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 .selectize-dropdown .active { background-color: #ff6600; color: #ffffff; }
 .selectize-dropdown [data-selectable], .selectize-dropdown .optgroup-header { padding: 6px 10px; font-size: 13px; }
 .selectize-dropdown [data-selectable] { cursor: pointer; overflow: hidden; line-height: 1.4;}

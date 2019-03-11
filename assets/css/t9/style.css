@@ -201,7 +201,7 @@ p.spinner{float:left;clear:both!important;border-bottom-left-radius:0!important}
 .template-section .template-nine .t1-result{opacity:1}
 body.no-scrol::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#000;content:'';opacity:.9; z-index: 1000;}
 .template-nine .t1-result-main{display:table!important;padding:60px 0;position:relative}
-.t1-result-main outcome-result{display:table-cell;vertical-align:middle;height:100%;position:relative;z-index:10;text-align:center;width:100%}
+.t1-result-main outcome-result{display:table-cell;vertical-align:middle;height:100%;z-index:10;text-align:center;width:100%}
 .V_3_5 .common-result-main [type=checkbox]+label.leadform-checkbox:before,
 .V_3_5 .common-result-main [type=checkbox].filled-in:not(:checked)+label.leadform-checkbox:before,
 .t1-question.hide,
@@ -279,7 +279,7 @@ p.requiredAsteric{display:none!important}
 .V_3_5.template-nine .common-result-space.t1-result-main .overlay-outerleadform.result-v2 .selectize-control.single .selectize-input input{padding:0 0 7px!important}
 .V_3_5.template-nine .result-v2 .common-result-bot-left.CTA-1 span.share-heading{float:left;width:100%}
 .template-section .V_3_5.template-nine .common-result.recommendation-outer{position:static}
-.V_3_5.template-nine .common-result.recommendation-outer{position:relative;padding-bottom:30px}
+.V_3_5.template-nine .common-result.recommendation-outer{padding-bottom:30px}
 .V_3_5.template-nine .common-result .recom-section .recom-tabsection{padding:0!important}
 .V_3_5.template-nine .common-result-bot .recom-section .leadform-outer .prime-action{padding:12px 30px!important}
 .V_3_5.template-nine .outcome_like{top:-5px!important}
