@@ -2564,7 +2564,7 @@ visuals.visual-outr{float: left;width: 100%;text-align: center; max-width: 100% 
 
 /* .t1-landing .no-footer-links.no-header-links{width: 100%; display: table-cell; vertical-align: middle; height: 100%; padding-top: 100px; padding-bottom: 100px;} */
 .t1-landing .no-footer-links.no-header-links .t1-landing-inner{position: static; box-shadow:  none; padding: 0;}
-.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 100px; padding-bottom: 100px;}
+.t1-result .no-footer-links.no-header-links{width: 100%; display: table;  height: 100%; padding-top: 0px; padding-bottom: 0px;}
 .t1-result .no-footer-links.no-header-links .t1-result-main{position: static; float:none; width:100%; padding: 0px !important;}
 .t1-result .no-footer-links.no-header-links .t1-result-main .common-result-bot-icons{ padding-bottom: 0px;}
 .editor-page-divider .t1-landing .no-footer-links.no-header-links{ height: 100%;}
@@ -3351,8 +3351,8 @@ div#graph-container {FLOAT: LEFT;WIDTH: 100%;TEXT-ALIGN: CENTER !IMPORTANT;DISPL
 .input-outer.checkbox label {
   margin-bottom: 5px;
 }
-.t1-landing .header-next-div.no-header-links{float: none;}
-.t1-landing .common-header-main,.backg_page_1 .common-footer-main {
+.t1-landing .header-next-div.no-header-links{float: none !important;}
+.t1-landing .common-header-main,.backg_page_1 .common-footer-main, .backg_page_1 .common-header-main {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
