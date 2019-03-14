@@ -2233,6 +2233,7 @@ label.control.graded-cross:after {
 .t1-landing-leadform .input-section {
     float: left;
     width: 100%;
+    position: relative; z-index: 2 !important; 
 }
 leadform {
     margin-top: 20px;
@@ -3184,7 +3185,7 @@ visuals .rec-image-outer img {
     float: left;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-height: 18px;
+    max-height: 22px;
 }
 .t1-landing .landing-inner .selectize-input {
     padding: 3px 35px 3px 3px;
