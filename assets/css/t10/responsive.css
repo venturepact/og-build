@@ -19,7 +19,7 @@
   .ques-innerBox calendar .bootstrap-datetimepicker-widget.dropdown-menu { width: 18em;}
   .ques-innerBox calendar .bootstrap-datetimepicker-widget.dropdown-menu .datepicker table td.day {line-height: 20px;}
   .ques-innerBox .opinon-scale-custom .check-comp .radio-outer label.control.control--radio{ font-size: 16px;}
-  .custom-block.rating-custom .rating-inner i { font-size: 28px !important;}
+  .custom-block.rating-custom .rating-inner i { font-size: 26px !important;}
   .result-leadform-input-outr.checkbox{max-width: inherit !important;}
 
   .section-buildoutgrow .buildOutgrow {left: inherit;transform: none;}
@@ -39,6 +39,15 @@
 }
 
 /* Mobile css start */
+
+
+/* Tab css start */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sec-landing-inner{padding: 100px 40px 120px;}
+
+}
+
+
 
 @media (min-width: 680px) and (max-width: 780px) {
 
