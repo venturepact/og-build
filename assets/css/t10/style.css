@@ -114,7 +114,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .question-button button {cursor:pointer;padding: 12px 25px; border: none; border-radius: 30px; font-size: 16px; color: #fff;letter-spacing: 1px; line-height: 1.4; transition: 0.5s;word-break: break-word; white-space: normal;}
 .question-button button:hover{ opacity: 0.8;}
 .question-button {display: block;width: 100%; float: left; margin-top: 20px;}
-.question-button a {cursor:pointer;padding: 18px 25px; border: none; border-radius: 30px; font-size: 18px; display: inline-block; color: #fff; letter-spacing: 1px; line-height: 1.4; transition: 0.5s;word-break: break-word; white-space: normal;}
+.question-button a {cursor:pointer;padding: 12px 25px; border: none; border-radius: 30px; font-size: 16px; display: inline-block; color: #fff; letter-spacing: 1px; line-height: 1.4; transition: 0.5s;word-break: break-word; white-space: normal;}
 .question-button a:hover{ opacity: 0.8;}
 .lead-popup .section.result-leadform .question-button {text-align: center !important;}
 .question-mainBox.checkbox-image .question-button {margin-top: 0;}
@@ -276,7 +276,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .template-ten-main .ques-innerBox calendar input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;color: #444;font-size: 18px;padding: 7px 15px;border-radius: 5px;-webkit-transition: 0.5s;transition: 0.5s;margin-top: 0px;border: 2px solid transparent;height: auto;box-shadow: none;}
 .template-ten-main .ques-innerBox calendar input + span.input-group-addon {border: 2px solid transparent !important;background: #f1f2f1;border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important;}
 .template-ten-main .ques-innerBox calendar input + span.input-group-addon i {font-size: 24px;}
-.template-ten-main .ques-innerBox calendar input:focus{ border: 2px solid;}
+.template-ten-main .ques-innerBox calendar input:focus{ border: 2px solid !important;}
 .template-ten-main .ques-innerBox calendar input:focus ~ span.input-group-addon {border: 2px solid; border-left: none !important;}
 .template-ten-main .ques-innerBox calendar .form-group {margin: 0;}
 .ques-innerBox calendar span.input-group-addon {border: 2px solid transparent !important;background: #f1f2f1;border-top-left-radius: 0px !important;border-bottom-left-radius: 0px !important;}
@@ -450,6 +450,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .numeric-result.oneResult {display: flex; justify-content: center; align-items: center; text-align: center;}
 .numeric-result.oneResult .small-top-sec p {font-size: 32px;}
 .numeric-result.oneResult .small-bot-sec p {font-size: 18px;}
+.small-top-sec a.tag_delete {display: none;}
 
 /* leadform before result */
 .lead-popup {background-color: rgba(0,0,0,0.8);position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 999999 !important;overflow: auto;width: 100%;padding:  50px 0}
@@ -580,9 +581,9 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .sec-landing-inner leadform .or-class {text-align: center!important;margin-left: 0!important;margin-right: 0!important;width: 97%;padding: 0 15px!important;margin: 20px 0!important;float: left;font-size: 14px;text-transform: uppercase;line-height: normal;}
 
 .sec-question-inner leadform_question .fb-outer {width: 100%;float: left;text-align: left;}
-.sec-question-inner leadform_question button.loginBtn.loginBtn--facebook {transition: .5s;padding: 18px 47px 18px 25px!important;opacity: 1; letter-spacing: 1.5px;margin: 0 auto!important;word-break: break-word!important;border-radius: 50px!important;border: none!important;text-align: left!important;line-height: 1.4!important;font-size: 18px!important;background-color: #086ca0!important;background-image: -webkit-gradient(linear,left top,left bottom,from(#086ca0),to(#086ca0))!important;background-image: linear-gradient(#086ca0,#086ca0)!important;text-shadow: 0 -1px 0 #086ca0!important;cursor: pointer;position: relative;color: #fff;white-space: normal;}
+.sec-question-inner leadform_question button.loginBtn.loginBtn--facebook {transition: .5s;padding: 12px 47px 12px 25px!important;opacity: 1; letter-spacing: 1.5px;margin: 0 auto!important;word-break: break-word!important;border-radius: 50px!important;border: none!important;text-align: left!important;line-height: 1.4!important;font-size: 16px!important;background-color: #086ca0!important;background-image: -webkit-gradient(linear,left top,left bottom,from(#086ca0),to(#086ca0))!important;background-image: linear-gradient(#086ca0,#086ca0)!important;text-shadow: 0 -1px 0 #086ca0!important;cursor: pointer;position: relative;color: #fff;white-space: normal;}
 .sec-question-inner leadform_question button.loginBtn.loginBtn--facebook::before {content: "";-webkit-box-sizing: border-box;box-sizing: border-box;position: absolute;border-right: none!important;background-position-x: 5px!important;background-size: 18px!important;-webkit-transition: .3s ease-out;transition: .3s ease-out;top: 50%!important;-webkit-transform: translateY(-50%);transform: translateY(-50%);right: 8px!important;width: 30px!important;height: 30px!important;background-color: #fff!important;border-radius: 50%;background: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;left: auto!important;}
-.sec-question-inner leadform_question button.loginBtn.loginBtn--facebook span {-webkit-transition: .3s ease-out;transition: .3s ease-out;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);position: relative;display: block;font-size: 18px;letter-spacing: .5px;}
+.sec-question-inner leadform_question button.loginBtn.loginBtn--facebook span {-webkit-transition: .3s ease-out;transition: .3s ease-out;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);position: relative;display: block;font-size: 16px;letter-spacing: .5px;}
 .sec-question-inner leadform_question .or-class {text-align: left!important;margin-left: 0!important;margin-right: 0!important;width: 97%;padding: 0 15px!important;margin: 20px 0!important;float: left;font-size: 14px;text-transform: uppercase;line-height: normal;}
 
 .sec-result-inner leadform .fb-outer {width: 100%;float: left;text-align: center;}
