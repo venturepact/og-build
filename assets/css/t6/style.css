@@ -2036,3 +2036,8 @@ button.loginBtn.loginBtn--facebook:hover::after {
   }
   .template-six [type="checkbox"] + label.leadform-checkbox p{margin-bottom: 0}
   .template-six  .t1-landing .t1-landing-inner .selectize-input .item{font-size: 18px; padding-top: 2px}
+  .V_3_5.template-six .question-components .custom-block.inpu-file-uploader .input-field.blink-animation{
+    animation-name: blinker;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+  }
