@@ -266,6 +266,8 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .ques-innerBox .custom-block.rating-custom {float: left;width: 100%; margin-top: 20px;}
 .ques-innerBox .cal-outer.calender-date {float: left;width: 100%;margin-top: 20px;}
 .ques-innerBox .cal-outer.calender-date + span.calendar-range {margin-top: 20px; display: inline-block;}
+.ques-innerBox .date-selector-part .cal-outer.calender-date {float: left;width: calc(50% - 30px);}
+.ques-innerBox .date-selector-part .cal-outer.calender-date + span.calendar-range {width: 60px;padding: 4px 0;float: left; text-align: center; margin-top: 35px;}
 
 .ques-innerBox .custom-block.inpu-file-uploader {float: left;width: 100%;margin-top: 20px; position: relative;}
 .ques-innerBox .custom-block.inpu-file-uploader input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;color: #444;font-size: 18px !important;padding: 7px 15px;border-radius: 5px;-webkit-transition: 0.5s;transition: 0.5s;margin-top: 0px;border: 2px solid transparent;height: auto;box-shadow: none;}
@@ -603,10 +605,10 @@ leadform_question{ position: relative; float: left; width: 100%;}
 .lead-popup .likes-parent #vk_subscribe_fromPopup iframe {float: none!important; width: auto!important; display: inline-block!important; max-width: 160px!important;background: #5181b8; height: 28px; border-radius: 3px; padding: 3px 0; margin-top: 0!important;}
 
 .sec_1 .sec-question-inner {padding-top: 0 !important;}
-.sec_1 .sec-question-inner custom_html {text-align: center;}
+/* .sec_1 .sec-question-inner custom_html {text-align: center;} */
 .sec_1 .sec-question-inner custom_html h1, .sec_1 .sec-question-inner custom_html p, .sec_1 .sec-question-inner custom_html a {margin: 0; margin-bottom: 10px !important;}
-.sec_1 .sec-question-inner .ques-heading {text-align: center;margin-bottom: 10px;}
-.sec_1 .sec-question-inner control + .question-button {text-align: center !important;}
+.sec_1 .sec-question-inner .ques-heading {margin-bottom: 10px;}
+/* .sec_1 .sec-question-inner control + .question-button {text-align: center !important;} */
 
 /* no of visitors */
 .editor-page-divider .quiz-usersCount {position: absolute !important; animation: no-animation;}
