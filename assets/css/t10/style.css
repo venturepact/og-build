@@ -602,6 +602,10 @@ leadform_question{ position: relative; float: left; width: 100%;}
 .lead-popup .likes-parent #like {position: relative;top: -5px;}
 .lead-popup .likes-parent #vk_subscribe_fromPopup iframe {float: none!important; width: auto!important; display: inline-block!important; max-width: 160px!important;background: #5181b8; height: 28px; border-radius: 3px; padding: 3px 0; margin-top: 0!important;}
 
+.sec_1 .sec-question-inner custom_html {text-align: center;}
+.sec_1 .sec-question-inner custom_html h1, .sec_1 .sec-question-inner custom_html p, .sec_1 .sec-question-inner custom_html a {margin: 0; margin-bottom: 10px !important;}
+.sec_1 .sec-question-inner .ques-heading {text-align: center;margin-bottom: 10px;}
+.sec_1 .sec-question-inner .question-button {text-align: center;}
 
 /* no of visitors */
 .editor-page-divider .quiz-usersCount {position: absolute !important; animation: no-animation;}
