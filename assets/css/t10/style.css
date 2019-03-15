@@ -13,6 +13,9 @@ p,ol, ul { margin: 0 !important;}
 label{font-weight: normal;}
 
 
+@font-face{font-family:montserratregular;font-style:normal;font-weight:400;src:url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.eot) format("embedded-opentype"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.woff2) format("woff2"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.woff) format("woff"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-regular-webfont.ttf) format("truetype")}
+@font-face{font-family:montserratbold;font-style:normal;font-weight:400;src:url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.eot) format("embedded-opentype"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.woff2) format("woff2"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.woff) format("woff"),url(../../fonts/templateFonts/fonts_varient/fonts/montserrat-bold-webfont.ttf) format("truetype")}
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(../../fonts/MaterialIcons-Regular.eot);src:local('Material Icons'),local('materialIcons-Regular'),url(../../fonts/materialIcons-Regular.woff2) format('woff2'),url(../../fonts/materialIcons-Regular.woff) format('woff'),url(../../fonts/materialIcons-Regular.ttf) format('truetype')}
 
 input::-webkit-input-placeholder {color: #444; opacity: 0.4;}
 input::-moz-placeholder {color: #444; opacity: 0.4;}
@@ -429,7 +432,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .result-socia-inner .likes-parent {padding-top: 30px; float: none; width: 100%;}
 .section-social {float: none;width: 100%;text-align: center; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;}
 .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: left;width: auto!important;margin-right: 5px;}
-.result-socia-inner .likes-parent #like {top: -6px !important;position: relative;}
+.result-socia-inner .likes-parent #like {top: 0px !important;position: relative;}
 .result-socia-inner .likes-parent #vk_subscribe iframe {float: none!important;width: auto!important;display: inline-block!important;max-width: 160px!important;background: #5181b8;height: 28px;border-radius: 3px;padding: 3px 0;margin-top: 0 !important;}
 .section-social-heading {font-size: 20px;color: #444;line-height: 1.4;margin-top: 35px; float: left; width: 100%;}
 .result-media visuals.visual-outr .t1-result-inner-left-img {text-align: center;background: #f6f6f6; min-height: 360px;display: flex;justify-content: center; align-items: center;}
