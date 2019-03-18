@@ -4750,14 +4750,16 @@ ul.text-box h6{font-size:16px;font-family:montserratregular;line-height:normal;m
 
 .prof-card-mid{ float: left; width: 100%; background: #fff;-webkit-border-radius: 5px;height: 100%;  -moz-border-radius: 5px;  border-radius: 5px; box-shadow: 0 0 25px 1px rgba(0, 0, 0, .1);  }
 .prof-card-mid .top-sec{ float: left; width: 100%; padding: 20px 30px;}
-.prof-card-mid .top-sec .sec-part{ float: left; width: 100%; padding-left:40px; position: relative; margin-top:20px;}
+.prof-card-mid .top-sec .sec-part{ float: left; width: 100%; padding-left:45px; position: relative; margin-top:20px;}
 .prof-card-mid .top-sec .sec-part i{  font-size: 30px; position: absolute; left:0; top:10px; color: #888888; }
 .prof-card-mid .top-sec .sec-part h3{ float: left; font-size: 22px; color: #555555; margin-top:10px !important; font-family: 'montserratlight';}
 .prof-card-mid .top-sec .sec-part .mw250{ max-width: 250px;}
 .prof-card-mid .box-sec{ float: left; width: 100%;}
-.prof-card-mid .box-sec .small-part{ float: left; width: 50%; justify-content: center; padding:25px 15px; min-height: 260px;display: flex; align-items: center; text-align: center; font-size: 14px; color: #555; line-height: 1.4;}
+.prof-card-mid .box-sec .small-part{ float: left; width: 50%; justify-content: center; padding:25px 15px; min-height: 250px;display: flex; align-items: center; text-align: center; font-size: 14px; color: #555; line-height: 1.4;}
 .small-part.success{background:#f9fdfb; }
-
+.prof-card-mid .top-sec .sec-part i.fas.fa-user-plus {
+    left: -4px;
+}
 .prof-card-mid .box-sec .small-part{ border-top: 1px solid #f1f3f4;  border-right: 1px solid #f1f3f4;}
 .prof-card-mid .box-sec .small-part i{ display: block;font-size: 35px;margin-bottom: 20px; color: #888888;}
 .prof-card-mid .box-sec .small-part a{ float: left; width: 100%; text-decoration: none; font-size: 12px; letter-spacing: 0.5px; text-align: center; text-transform: uppercase;  font-family: 'montserratBold'; margin-top:15px; margin-bottom: 0;}
@@ -5156,4 +5158,14 @@ label.radio-label label:after {
 .prof-card-head.success , .prof-card-head.danger{
     background: transparent !important;
     color: rgba(85,85,85,0.5);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.form-group input:-internal-autofill-selected {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
