@@ -830,7 +830,6 @@ span.cust-close:hover{transition: 0.5s; color: #fff}
 .leadform-outer.result-scrolling.new-lead1 {
 position: absolute;z-index: 100;background: #fff;padding: 25px 40px;border-radius: 5px;box-shadow: 0px 20px 30px rgba(0,0,0,0.2); float: left;width: 100%;overflow: auto !important;margin-bottom: 20px}
 .has-background-tint{float: left; width: 100%;}
-.V_3_5 .isIframe .page_1 {min-height: 550px !important;}
 .new-lead-common  .leadform-outer.result-scrolling.new-lead1  .lead-heading-temp1{font-size: 18px}
 .new-lead-common2 .leadform-outer.result-scrolling.new-lead1{display: none}
 .template-section .result-branding .lightSticky, #build .template-section .result-branding .stickyfooter, .template-section .result-branding .stickyfooter{bottom: 0}
@@ -1223,7 +1222,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .radio-outer-base.active .control{background: transparent;border: none !important;}
 .V_3_5 .question-components {margin-left: 0;padding-bottom: 30px;padding-left: 35px;}
 .V_3_5 .section-control{padding-left:0px;}
-.V_3_5 .questions .section-head span div {width: 100%;float: left; font-size: 1.4;line-height: 26px;color:#313131;}
+.V_3_5 .questions .section-head span div {width: 100%;float: left; font-size: 18px;line-height: 1.4;color:#313131;}
 .V_3_5.sound-cloud-new .checkbox-outer.active .control{background: none !important;border: none !important;margin-left: -14px !important;}
 .V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:before {background: none;border: none !important;top: 2px;content: '';}
 .V_3_5.sound-cloud-new .checkbox-outer [type="checkbox"].filled-in:checked + label:after {background: none !important;}
@@ -1907,3 +1906,4 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .landing-page-mid .input-field .prefix {font-size: 20px !important;top: 17px !important;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:not(:checked) + label.leadform-checkbox:after {width: 18px;height: 18px;top: 1px;}
 .V_3_5.sound-cloud-new [type="checkbox"].filled-in:checked + label.leadform-checkbox:after {width: 18px !important;height: 18px !important;top: 1px !important;}
+.V_3_5 .isIframe .page_1, .V_3_5 .isIframe .page_1.t2haslogo {min-height: 550px !important;}
