@@ -23,9 +23,9 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .sub-heading h2{float:left;width:100%}
 .main-heading{margin-bottom:0}
 .main-heading h1{font-size:22px;line-height:1.4;margin:0;width:100%}
-.main-heading h1 p{font-size:22px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:18px 38px;border-radius:50px;max-width:100%;display:block;box-shadow:8px 10px 20px rgba(0,0,0,.05)}
+.main-heading h1 p{font-size:22px;line-height:inherit;margin:0 0 25px;background:#fff;float:left;padding:18px 28px;border-radius:50px;max-width:100%;display:block;}
 .main-heading h1 p:last-child{border-radius:50px 50px 50px 0}
-.btn.prime-action{float:left;font-size:18px;padding:18px 30px 16px;border-radius:50px;color:#fff;line-height:1.4;white-space:normal;word-wrap:break-word;overflow:hidden;box-shadow:8px 10px 20px rgba(0,0,0,.05)!important;position:relative}
+.btn.prime-action{float:left;font-size:18px;padding:18px 30px 16px;border-radius:50px;color:#fff;line-height:1.4;white-space:normal;word-wrap:break-word;overflow:hidden;position:relative}
 .editor-page-divider{margin-bottom:35px;position:relative}
 .btn.bounce:hover{-webkit-transform:scale(1.1);-moz-transform:scale(1.1);-ms-transform:scale(1.1);-o-transform:scale(1.1);transform:scale(1.1)}
 .btn.bounce{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);-o-transform:scale(1);transform:scale(1);-webkit-transition:.2s cubic-bezier(.55,.26,0,1);-webkit-transition:.2s cubic-bezier(.55,.26,0,1.65);-moz-transition:.2s cubic-bezier(.55,.26,0,1.65);-o-transition:.2s cubic-bezier(.55,.26,0,1.65);transition:.2s cubic-bezier(.55,.26,0,1.65)}
@@ -51,7 +51,7 @@ a.go-btn:hover{text-decoration:none}
 .t1-ques-component{float:right;text-align:right;width:85%}
 .sec_0 form#new_form{margin:0 auto 20vh}
 .questions-list>div.t1-ques-head p,
-.t1-ques-component .question-components,div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:85%;font-size:22px;box-shadow:8px 10px 20px rgba(0,0,0,.05);line-height:1.4}
+.t1-ques-component .question-components,div.t1-ques-head p{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 28px;text-align:left;max-width:85%;font-size:22px;line-height:1.4}
 .questions-list>.t1-ques-head.prev p{opacity:.4!important}
 .questions-list>.t1-ques-head.prev p:hover,
 .t1-ques-component.active.prev:hover{opacity:1!important}
@@ -80,21 +80,21 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control::-moz-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control:-ms-input-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control:-moz-placeholder{color:#fff;opacity:.5}
-.powered-by{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.9);border-radius:4px;padding:0 1px 0 5px;-webkit-box-shadow:0 3px 5px 1px rgba(0,0,0,.2);box-shadow:0 3px 5px 1px rgba(0,0,0,.2)}
+.powered-by{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.9);border-radius:4px;padding:0 1px 0 5px;}
 .editor-page-divider .t1-ques-component .question-components.transparent-bg,
 .t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0;margin:0 0 00px;text-align:right}
 .checkbox-outer,
 .checkbox-outer-base,
-.radio-outer{display:inline-block;margin-bottom:18px;margin-left:20px;float:none}
+.radio-outer{display:inline-block;margin-bottom:18px;margin-left:10px;float:none}
 .checkbox-outer-base label,
-.radio-outer label.no-icon{padding-left:40px!important}
+.radio-outer label.no-icon{padding-left:28px!important}
 .checkbox-outer .control__indicator.check-set,
-.radio-outer label .control__indicator.icon-set{position:absolute;top:15px;left:30px}
+.radio-outer label .control__indicator.icon-set{position:absolute;top:15px;left:28px}
 .checkbox-outer .control__indicator.check-set i,
 .radio-outer label .control__indicator.icon-set i{font-size:30px;vertical-align:middle}
 .checkbox-outer label,
 .checkbox-outer-base label,
-.radio-outer label{padding:18px 38px 18px 68px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
+.radio-outer label{padding:18px 28px 18px 65px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
 .checkbox-outer label span,
 .checkbox-outer-base label span,
 .radio-outer label span{font-weight:400}
@@ -196,7 +196,7 @@ p.spinner{float:left;clear:both!important;border-bottom-left-radius:0!important}
 40%{-webkit-transform:scale(1);transform:scale(1);opacity:1}
 }
 .errorMessage,
-.t1-question .leadform_question .input-outer .input-validation span{position:fixed;top:80px;background:#000;margin:0 auto;font-size:18px;border-radius:50px;padding:15px 30px;display:block;left:50%;transform:translateX(-50%);transition:.2s cubic-bezier(.23,1,.32,1);box-shadow:0 10px 30px rgba(0,0,0,.3);white-space:nowrap;min-width:400px;text-align:center;z-index:9999}
+.t1-question .leadform_question .input-outer .input-validation span{position:fixed;top:40px;background:#000;margin:0 auto;font-size:18px;border-radius:50px;padding:15px 30px;display:block;left:50%;transform:translateX(-50%);transition:.2s cubic-bezier(.23,1,.32,1);white-space:nowrap;min-width:400px;text-align:center;z-index:9999}
 .template-nine .t1-result{width:100%;height:100vh;max-width:100%;display:flex;position:fixed;background-size:cover;top:0;right:0;z-index:1040;justify-content:center;overflow-y:auto;opacity:0;min-height: auto!important;}
 .template-section .template-nine .t1-result{opacity:1}
 body.no-scrol::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#000;content:'';opacity:.9; z-index: 1000;}
@@ -210,8 +210,8 @@ body.no-scrol::after{position:fixed;left:0;right:0;top:0;bottom:0;background:#00
 .template-nine .editor-page-divider .t1-result::after{position:absolute}
 .t1-landing leadform form{float:left;width:100%}
 .t1-landing leadform form .text-center{float:right;width:100%;max-width:85%}
-.t1-landing leadform form .input-section .input-outer{position:relative;width:100%;margin-top:0;margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:100%;font-size:22px;box-shadow:0 5px 10px rgba(0,0,0,.05);line-height:1.4;float:right}
-.t1-landing leadform form .input-section .input-outer i{position:absolute;top:19px;left:40px;font-size:22px}
+.t1-landing leadform form .input-section .input-outer{position:relative;width:100%;margin-top:0;margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 28px;text-align:left;max-width:100%;font-size:22px;line-height:1.4;float:right}
+.t1-landing leadform form .input-section .input-outer i{position:absolute;top:19px;left:30px;font-size:22px}
 .t1-landing leadform form .input-section .input-outer input{background:0 0;max-width:100%;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;width:100%!important;padding-bottom:6px;box-sizing:border-box;float:left;padding-left:35px}
 section.landing-page-mid>div{max-width:75%;float:left;width:100%}
 .t1-landing leadform form .input-section .input-outer span{font-size:10px;float:left;position:absolute;left:40px;top:102%;color:red!important; line-height: 1.1}
@@ -227,13 +227,13 @@ body.no-scrol{overflow:hidden !important}
 .V_3_5.template-nine .overlay-outerleadform.result-v2 .common-result-main [type=checkbox].filled-in:checked+label.leadform-checkbox::after{font-family:'Material Icons';content:'done';position:absolute;left:0;font-size:20px;top:-3px;color:#000;border:0!important;width:20px!important;height:20px!important}
 .selectize-control{position:relative;Z-INDEX:100}
 .selectize-dropdown{text-align:left}
-.leadform_question #leadform_question .input-outer{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 38px;text-align:left;max-width:100%;float:right;font-size:22px;-webkit-box-shadow:8px 10px 20px rgba(0,0,0,.05);box-shadow:8px 10px 20px rgba(0,0,0,.05);position:relative;clear:both;line-height:1.4;min-height:73px}
+.leadform_question #leadform_question .input-outer{margin-bottom:25px;background:#fff;border-radius:50px;padding:18px 28px;text-align:left;max-width:100%;float:right;font-size:22px;position:relative;clear:both;line-height:1.4;min-height:73px}
 .leadform_question .section-head{float:left;color:#fff}
 .leadform_question .input-validation,
 .leadform_question .section-head div,
 .leadform_question .section-head p{float:left}
 .leadform_question .section-head div,
-.leadform_question .section-head p{margin:0 10px 0 0}
+.leadform_question .section-head p{margin:0 15px 0 0}
 .leadform_question .question-components{padding:0!important;background:0 0!important;box-shadow:none!important}
 form#leadform_question{float:left;width:100%}
 fb_lead_gen{float:right;text-align:right;width:100%!important}

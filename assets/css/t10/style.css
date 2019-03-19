@@ -97,7 +97,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .pg-bar-outr {background-color: #fff !important; position: relative;border-radius: 5px;border: 0.5px solid #ddd;}
 .progressComponent .pg-bar-outr label {position: absolute;top: -22px;left: 0;font-size: 12px;color: #444;}
 .pg-bar-inner {background-color: #2ec77b !important;height: 8px;border-radius: 5px; transition: 0.5s;}
-.question-mainBox {width: 100%; margin: 0 auto;display: flex;max-width: 648px;background: #fff;min-height: 250px;padding: 10px; align-items: center; border-radius:5px;flex-direction: column; justify-content: center; position: relative;}
+.question-mainBox {width: 100%; margin: 0 auto;display: flex;max-width: 648px;background: #fff;min-height: 250px;padding: 10px; align-items: center; border-radius:5px;flex-direction: column; justify-content: center; position: relative; z-index: 9;}
 .ques-image {display: inline-block;}
 .ques-image img {max-width: 100%;max-height: 330px;}
 .ques-innerBox {float: left;width: 100%;display: block; padding: 15px 25px;}
@@ -470,7 +470,6 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .lead-popup  .lead-popup-outer .lead-popup-main {background: #fff;border-radius: 5px;overflow:hidden;box-shadow: 0px 0px 50px rgba(0,0,0,0.2);display: inline-block; width:100%;}
 .lead-popup  .lead-popup-outer .lead-popup-main .lead-overlay{padding: 30px 60px;float: left; width: 100%;      overflow-y: auto;}
 .template-ten-main .common-leadform-top.t1-result-leadform.eight-inner-wrapper.leadAsPopup{position: static}
-.template-ten-main .lead-popup{position: absolute;  z-index: 999;display: flex; align-items: center; overflow: visible}
 .lead-popup  .lead-popup-outer .lead-popup-main .input-outer.checkbox .input-field [type="checkbox"] + label{padding-bottom: 0; top: 0 !important;}
 .common-result-main .common-leadform-top.t1-result-leadform .lead-popup  .lead-popup-outer .lead-popup-main .input-outer{width: 100% !important;min-height: auto;}
 .template-ten-main .template-ten-main .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-icon-outer input {height: 30px !important;}
