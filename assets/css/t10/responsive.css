@@ -29,7 +29,7 @@
   .result-leadform-outr {padding: 10px 20px;}
   .result-mainBox.Result-section{ border-radius: 0px; min-height: 280px;}
   .result-media visuals.visual-outr .t1-result-inner-left-img{ min-height: 280px;}
-  .result-innerBox{ padding: 0 15px;}
+  .result-innerBox{ padding: 0 15px; width: 98%;}
   .result-heading{margin-top: 0px;font-size: 36px;}
   .result-leadform-input-outr {flex: 1;}
   .social-icons li a {width: 42px; height: 42px;}
@@ -41,6 +41,8 @@
   .result-socia-inner .likes-parent #follow iframe {position: relative !important; top: 5px !important;}
   .result-media .t1-result-inner-left-table .table-outer{ max-width: 357px;}
   .result-media .t1-result-inner-left-table table tbody tr td, .result-media .t1-result-inner-left-table table thead tr th {padding: 12px 20px!important;font-size: 12px!important;}
+  .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip { right: 25px;}
+  .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip:before { left: inherit; right: 7px;}
 }
 
 /* Mobile css start */
