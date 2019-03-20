@@ -196,9 +196,11 @@
     .selectize-control.single .selectize-input .item, .selectize-control.single .selectize-input input {padding: 0px 0px 6px 0 !important;margin: 0px !important;}
     .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input .item, .leadform_question form#leadform_question .input-outer .selectize-control.single .selectize-input input{padding: 0 0 5px 0 !important}
     .errorMessage, .t1-question .leadform_question .input-outer .input-validation span{min-width: 300px;padding: 12px 20px; font-size: 12px; top: 40px}
-   .safari .V_3_5.template-nine .common-result.recommendation-outer{padding-bottom: 60px !important}
+   /* .safari .V_3_5.template-nine .common-result.recommendation-outer{padding-bottom: 60px !important} */
     .safari body.t9-body-scroll .template-nine.V_3_5 .t1-question{height:700px;overflow-y:auto}
     .t1-landing leadform form .input-section .input-outer input{font-size:18px;}
+    .safari .V_3_5.template-nine .common-result.recommendation-outer {padding-bottom: 100px !important;position: relative;}
+    .safari .result-v2 .common-result-bot-icons.side-redo{bottom:40px}
 }
 @media (max-width:359px){
     .t1-question form#leadform_question .selectize-control{width:160px!important;float:left}

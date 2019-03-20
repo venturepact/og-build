@@ -97,7 +97,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .pg-bar-outr {background-color: #fff !important; position: relative;border-radius: 5px;border: 0.5px solid #ddd;}
 .progressComponent .pg-bar-outr label {position: absolute;top: -22px;left: 0;font-size: 12px;color: #444;}
 .pg-bar-inner {background-color: #2ec77b !important;height: 8px;border-radius: 5px; transition: 0.5s;}
-.question-mainBox {width: 100%; margin: 0 auto;display: flex;max-width: 648px;background: #fff;min-height: 250px;padding: 10px; align-items: center; border-radius:5px;flex-direction: column; justify-content: center; position: relative; z-index: 9;}
+.question-mainBox {width: 100%; margin: 0 auto;display: flex;max-width: 648px;background: #fff;min-height: 250px;padding: 10px; align-items: center; border-radius:5px;flex-direction: column; justify-content: center; position: relative;}
 .ques-image {display: inline-block;}
 .ques-image img {max-width: 100%;max-height: 330px;}
 .ques-innerBox {float: left;width: 100%;display: block; padding: 15px 25px;}
@@ -249,7 +249,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .ques-radio-Component.opinion-radio ul li label {width: auto;min-height: 40px; font-size:18px;padding: 0;display: flex;justify-content: center;align-items: center;  transition: 0.5s;}
 .ques-radio-Component.opinion-radio ul li label:hover{ background: #2ec77b; color: #fff;}
 .ques-radio-Component.opinion-radio input[type=radio]:checked + label{ background: #2ec77b; color: #fff;}
-.ques-radio-Component ul li input.othersfield {float: left;width: calc(100% - 50px);border: none;background: #f1f2f1;color: #444;font-size: 22px; line-height: 1.4; border-radius: 5px;-webkit-transition: 0.15s;transition: 0.15s;margin-top: 0px;border: 2px solid transparent;margin-left: 28px;margin-top: 15px;}
+.ques-radio-Component ul li input.othersfield {float: left;width: calc(100% - 50px);border: none;background: transparent;color: #444;font-size: 22px; line-height: 1.4; border-radius: 5px;-webkit-transition: 0.15s;transition: 0.15s;margin-top: 0px;border: 2px solid transparent;margin-left: 28px;margin-top: 13px;}
 .ques-radio-Component ul li input.othersfield:focus {background: #f1f2f1;padding: 7px 15px;-webkit-transition: 0.5s;transition: 0.5s; line-height: 40px;}
 
 
@@ -320,8 +320,8 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .ques-innerBox selectbox .selectize-control .selectize-input.dropdown-active .item + input {width: 0px !important;}
 .ques-innerBox selectbox .selectize-control .selectize-input::after { content: ' ';display: block;position: absolute;top: 50%;right: 15px;margin-top: -3px;width: 0;height: 0;border-style: solid; border-width: 8px 8px 0 8px; border-color: #808080 transparent transparent transparent;}
 .ques-innerBox selectbox .selectize-control .selectize-input.dropdown-active::after {margin-top: -4px;border-width: 0 8px 8px 8px;border-color: transparent transparent #808080 transparent;}
-.ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single {background: #f1f2f1;box-shadow: none;width: 100%!important; font-size: 18px;padding: 0px;position: absolute;margin: -1px 0 0;border-radius: 0px 0px 5px 5px;top: 57px !important;bottom: auto !important;}
-.ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content {overflow-y: auto;overflow-x: hidden; max-height: 28vh;}
+.ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single {background: #f1f2f1;box-shadow: none;width: 100%!important; font-size: 18px;padding: 0px;position: absolute;margin: -1px 0 0;border-radius: 0px 0px 5px 5px;top: 57px !important;bottom: auto !important; z-index: 9;}
+.ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content {overflow-y: auto;overflow-x: hidden; max-height: 26vh;}
 .ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content .option {padding: 10px 15px;line-height: 1.4;cursor: pointer; overflow: hidden;font-size: 18px;}
 .ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content .option.active, .result-leadform-input-outr.dropdown .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content .option:hover { color: #fff !important;}
 .ques-innerBox .selectize-control.single .selectize-input input[type="text"] {padding: 0;margin: 0; border: none;}
@@ -670,7 +670,25 @@ leadform_question{ position: relative; float: left; width: 100%;}
 .quiz-usersCount span {margin: 0;display: inline-block;color: #04629a;font-size: 24px;float: left;line-height: normal;max-width: 90px;text-align: left;font-family: montserratlight; font-weight: normal;}
 .quiz-usersCount p {margin: 0;display: inline-block;color: #04629a;font-size: 13px; float: left;width: 100%;text-align: center;font-family: montserratlight; margin-top: -7px;}
 .quiz-userCountInner {margin: 0 auto;max-width: 100%;display: inline-block; width: auto;}
-
+/* fadeout/in animation */
+@-webkit-keyframes fadeOut {
+  from {opacity: 1;}
+  to { opacity: 0;}
+}
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+.fadeOut {-webkit-animation-name: fadeOut;animation-name: fadeOut;-webkit-animation-duration: 500ms;animation-duration: 500ms; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+@-webkit-keyframes fadeIn {
+  from { opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to { opacity: 1;}
+}
+.fadeIn {-webkit-animation-name: fadeIn;animation-name: fadeIn;-webkit-animation-duration: 400ms;animation-duration: 400ms; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
 /*css for mozilla */
 @-moz-document url-prefix() {
   
