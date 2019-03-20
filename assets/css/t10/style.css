@@ -28,7 +28,7 @@ textarea:-ms-input-placeholder {color: #444; opacity: 0.4;}
 textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 
 .editor-template-tabs .main-scrollDiv{position: relative;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
-.main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
+.main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch}
 .errorMessage {float: left;width: 100%;padding: 10px 10px 0px 0;padding-top:5px;color: #f44336;font-size: 12px}
 
 /* Landing Css star */
@@ -63,7 +63,8 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .buildOutgrow a span {font-weight: 600; font-size: 11px;}
 
 
-.realtime-Progressbar {background-color: #e8ede9;position: absolute;bottom: 0;z-index: 9;float: left;width: 100%;min-height: 70px;box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.05);border-top: 1px solid #ddd;}
+.realtime-Progressbar {background-color: #e8ede9;position: absolute;bottom: 0;z-index: 9;float: left;width: 100%;min-height: 70px;box-shadow: 0px 0px 0px 2px rgba(0,0,0,0.05);border-top: 1px solid rgba(0,0,0,0.2);}
+.realtime-Progressbar::before {content: "";position: absolute; top: 0; bottom: 0; background: rgba(0,0,0,0.05); width: 100%;}
 .realtime-Progressbar + section.question-Section{position: fixed;height: calc(100% - 70px);overflow-y: auto;overflow-x: hidden;z-index: 1;width: 100%;top: 0px;}
 .realtime-Progressbar .landing-logo{ top: 15px; display: none;}
 .realtime-Progressbar .realtime-result{ top: 12px; right: inherit;right: 40px;text-align: right;}
@@ -74,7 +75,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 
 .t1-landing-leadform .result-leadform-input-outr.checkbox input[type=checkbox] {opacity: 0;position: absolute; left: -88888px;}
 
-.t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
+.t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 1.4!important; font-size: 18px;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
 .t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox::before {background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .t1-landing-leadform .result-leadform-input-outr.checkbox input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px; width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0;margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 16px; text-align: center; border-radius: 3px;}
 .question-leadform .question-input-outr label.leadform-checkbox + div span {color: red;font-size: 12px;margin-top: 5px; display: inline-block;}
@@ -234,7 +235,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .question-leadform .selectize-input, .selectize-control.single .selectize-input.input-active {background: #f1f2f1 !important;}
 .question-leadform .question-input-outr input[type=checkbox] {opacity: 0;position: absolute; left: -88888px;}
 
-.question-leadform .question-input-outr label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #666e78!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
+.question-leadform .question-input-outr label.leadform-checkbox {border: 0!important;line-height: 1.4!important; font-size: 18px;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #666e78!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
 .question-leadform .question-input-outr label.leadform-checkbox::before {background: #fff !important;  content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .question-leadform .question-input-outr input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px; width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0; margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 16px; text-align: center;border-radius: 3px;}
 .question-leadform .question-input-outr label.leadform-checkbox + div span {color: red;font-size: 12px;margin-top: 5px; display: inline-block;}
@@ -415,11 +416,11 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .numeric-result .small-bot-sec p {float: left;width: 100%;margin-top: 5px;font-size: 16px;line-height: 1.4;color: #444;word-break: break-word;white-space: normal;}
 
 .result-leadform-outr{width: 100%;margin: 0 auto;max-width: 762px;padding: 10px; border-radius: 5px;display: inline-block;}
-.result-leadform{ margin-top: 0px; display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;width: 80%; margin: 0 auto;}
+.result-leadform{ margin-top: 0px; display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;width: 90%; margin: 0 auto;}
 .result-leadform-input-outr {display: flex;align-items: center; margin: 5px; margin-bottom: 10px; min-width: 48%; position: relative;}
 .result-leadform-input-outr:nth-last-child(1):nth-child(odd) {width: 48%;}
 .result-leadform-input-outr.odd:nth-last-child(1):nth-child(odd) { width: 97.5%;}
-.result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #444!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
+.result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 1.4!important; font-size: 18px;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #444!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
 .result-leadform-input-outr.checkbox label.leadform-checkbox::before {background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .result-leadform-input-outr.checkbox input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px;width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0;margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 18px; text-align: center;border-radius: 3px;}
 .result-leadform-input-outr.odd { width: 97.5%;}
