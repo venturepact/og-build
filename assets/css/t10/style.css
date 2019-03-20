@@ -75,7 +75,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .t1-landing-leadform .result-leadform-input-outr.checkbox input[type=checkbox] {opacity: 0;position: absolute; left: -88888px;}
 
 .t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
-.t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox::before {border: 1px solid #ccc !important; background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
+.t1-landing-leadform .result-leadform-input-outr.checkbox label.leadform-checkbox::before {background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .t1-landing-leadform .result-leadform-input-outr.checkbox input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px; width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0;margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 16px; text-align: center; border-radius: 3px;}
 .question-leadform .question-input-outr label.leadform-checkbox + div span {color: red;font-size: 12px;margin-top: 5px; display: inline-block;}
 
@@ -235,7 +235,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .question-leadform .question-input-outr input[type=checkbox] {opacity: 0;position: absolute; left: -88888px;}
 
 .question-leadform .question-input-outr label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #666e78!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
-.question-leadform .question-input-outr label.leadform-checkbox::before {border: 1px solid #ccc !important; background: #fff !important;  content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
+.question-leadform .question-input-outr label.leadform-checkbox::before {background: #fff !important;  content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .question-leadform .question-input-outr input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px; width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0; margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 16px; text-align: center;border-radius: 3px;}
 .question-leadform .question-input-outr label.leadform-checkbox + div span {color: red;font-size: 12px;margin-top: 5px; display: inline-block;}
 .result-leadform-input-outr.checkbox{max-width: 48%;}
@@ -415,12 +415,12 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .numeric-result .small-bot-sec p {float: left;width: 100%;margin-top: 5px;font-size: 16px;line-height: 1.4;color: #444;word-break: break-word;white-space: normal;}
 
 .result-leadform-outr{width: 100%;margin: 0 auto;max-width: 762px;padding: 10px; border-radius: 5px;display: inline-block;}
-.result-leadform{ margin-top: 0px; display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;}
+.result-leadform{ margin-top: 0px; display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;width: 80%; margin: 0 auto;}
 .result-leadform-input-outr {display: flex;align-items: center; margin: 5px; margin-bottom: 10px; min-width: 48%; position: relative;}
 .result-leadform-input-outr:nth-last-child(1):nth-child(odd) {width: 48%;}
 .result-leadform-input-outr.odd:nth-last-child(1):nth-child(odd) { width: 97.5%;}
 .result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 20px!important;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #444!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
-.result-leadform-input-outr.checkbox label.leadform-checkbox::before {border: 1px solid #ccc !important; background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
+.result-leadform-input-outr.checkbox label.leadform-checkbox::before {background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .result-leadform-input-outr.checkbox input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px;width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0;margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 18px; text-align: center;border-radius: 3px;}
 .result-leadform-input-outr.odd { width: 97.5%;}
 .result-leadform-input-outr i {font-size: 20px;margin-left: 15px; position: absolute; transition: 0.5s; transform: rotate(0.03deg);}
@@ -489,7 +489,7 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .template-ten-main .lead-popup.common-result-main .common-leadform-top.t1-result-leadform .lead-heading-temp1{margin-bottom: 0px}
 .template-ten-main .lead-popup-header .lead-popup-head {float: none;width: 100%;margin-bottom: 0;max-width: 400px;margin: 0 auto;}
 .lead-popup .result-leadform input {float: left;width: 100%;line-height: 40px;background: #f1f2f1;color: #444;font-size: 18px;padding: 7px 15px;padding-left: 45px;border-radius: 5px;-webkit-transition: 0.5s;transition: 0.5s;margin-top: 0px; border: 2px solid transparent;}
-.lead-popup .section.result-leadform {padding-left: 50px;padding-right: 50px;margin-top: 20px;}
+.lead-popup .section.result-leadform {padding-left: 50px;padding-right: 50px;margin-top: 20px; width:100%;}
 .check-marks{float: left; text-align:center;width: 100%;margin-bottom: 10px}
 .path {stroke-dasharray: 1000;stroke-dashoffset: 0;}
 .path.circle {-webkit-animation: dash 0.9s ease-in-out;animation: dash 0.9s ease-in-out;}
