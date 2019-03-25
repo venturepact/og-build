@@ -54,7 +54,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .leadform-button a {cursor:pointer;padding: 18px 25px; border: none; border-radius: 30px; font-size: 18px; color: #fff;background: #2ec77b;  letter-spacing: 1px; line-height: 1.4; transition: 0.5s;word-break: break-word; white-space: normal;}
 .leadform-button a:hover{ opacity: 0.8;}
 .buildOutgrow-outr {float: left;width: 100%;}
-.buildOutgrow {position: absolute;bottom: 30px; right: 40px; background: #fff; display: flex; flex-direction: row;padding: 2px 3px; border-radius: 15px; box-shadow:4px 3px 7px 1px rgba(0,0,0,0.3)}
+.buildOutgrow {position: absolute;bottom: 30px; right: 40px; background: #fff; display: flex; justify-content: center; align-items: center; flex-direction: row;padding: 2px 3px; border-radius: 15px; box-shadow:4px 3px 7px 1px rgba(0,0,0,0.3)}
 .buildOutgrow p {font-size: 10px;display: flex;flex-direction: column-reverse; margin-left: 3px !important; margin-right: 4px !important;letter-spacing: 0.8px; margin-bottom: 0px; font-family: 'montserratregular' !important;}
 .buildOutgrow span {font-size: 10px;display: flex;flex-direction: column-reverse; margin-left: 3px !important; margin-right: 4px !important;letter-spacing: 0.8px;}
 .buildOutgrow a { display: flex;}
@@ -696,5 +696,9 @@ leadform_question{ position: relative; float: left; width: 100%;}
   .section-landing{ height: 100vh;}
   .ques-innerBox selectbox .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content{ max-height: 25vh;}
   .result-leadform{width: 90%;}
+  .template-ten-main .ques-innerBox calendar input::-webkit-input-placeholder {color: #444; opacity: 0.6;}
+  .template-ten-main .ques-innerBox calendar input::-moz-placeholder {color: #444; opacity: 0.6;}
+  .template-ten-main .ques-innerBox calendar input:-ms-input-placeholder {color: #444; opacity: 0.6;}
+  .template-ten-main .ques-innerBox calendar input:-moz-placeholder {color: #444; opacity: 0.6;}
 }
 

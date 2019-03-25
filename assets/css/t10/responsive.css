@@ -50,6 +50,11 @@
   .result-media .t1-result-inner-left-table table tbody tr td, .result-media .t1-result-inner-left-table table thead tr th {padding: 12px 20px!important;font-size: 12px!important;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip { right: 25px;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip:before { left: inherit; right: 7px;}
+
+  /* iphone changes css */
+  .result-leadform-input-outr i{left: 0; top: 22px;}
+  .ques-radio-Component.checkbox ul li .check:before{left: 3px; top: 3px;}
+  .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
 }
 
 /* Mobile css start */
