@@ -11,7 +11,7 @@
   .realtime-Progressbar .realtime-result {right: 0;left: inherit;max-width: 50%;text-align: center;top: 11px;width: 100%; float: right;padding-right: 20px;}
   .progressComponent{ margin-left: 20px; width: 180px;}
   .question-mainBox {margin-left: 0;margin-right: 0; max-width: 100%; margin-bottom: 0px; border-radius: 0px;border-left: 0; border-right: 0;}
-  .ques-innerBox{ padding: 15px;}
+  .ques-innerBox{ padding: 10px;}
   .realtime-result span,.realtime-result p {text-align: right;}
   .navigation-outr {display: flex; justify-content: center; align-items: center; width: 260px; position: absolute; bottom: -30px;float: left; z-index: 9;}
   a.prev {left: 34%;z-index: 9;transform: translateX(-34%);}
@@ -55,6 +55,7 @@
   .result-leadform-input-outr i{left: 0; top: 22px;}
   .ques-radio-Component.checkbox ul li .check:before{left: 3px; top: 3px;}
   .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
+  .template-ten-main .lead-popup .lead-popup-outer button.close{right: 14px; top: 0px; opacity: 1;background: rgba(0,0,0,0.5);}
 }
 
 /* Mobile css start */
