@@ -292,7 +292,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .ques-heading div p{display: inline;}
 .question-mainBox .ques-heading span.requiredAsteric { display: inline-block;color: red;}
 .errMessage {color: red;font-size: 12px; margin-top: 5px; display: inline-block;}
-.ques-innerBox .selectize-control.single .selectize-input {float: left;width: 100%;line-height: 40px;border: none !important;color: #444;background: #f1f2f1;font-size: 18px !important;padding: 7px 15px;padding-left: 15px;border-radius: 5px;transition: 0.5s;margin-top: 0px;border: 1px solid transparent !important;}
+.ques-innerBox .selectize-control.single .selectize-input {float: left;width: 100%;line-height: 40px;border: none !important;color: #444;background: #f1f2f1;font-size: 18px !important;padding: 7px 15px;padding-left: 15px;border-radius: 5px;transition: 0.5s;margin-top: 0px;border: 2px solid transparent !important;}
 .editor-page-divider .realtime-Progressbar { position: relative;}
 .editor-page-divider .realtime-Progressbar + section.question-Section {position: relative;}
 .file-loader span span {font-size: 18px; padding: 7px;}
@@ -303,7 +303,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .template-ten-main .lead-popup .social-icons+span {display: none;}
 /* dropdown */
 .result-leadform-input-outr.dropdown .selectize-control {float: left;width: 100%; position: relative;}
-.result-leadform-input-outr.dropdown .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1 ;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 1px solid transparent !important;}
+.result-leadform-input-outr.dropdown .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1 ;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 2px solid transparent !important;}
 .result-leadform-input-outr.dropdown .selectize-control .selectize-input .item {font-size: 18px;display: inline;float: left;}
 .result-leadform-input-outr.dropdown .selectize-control .selectize-input input {width:100%;display: inline-block!important;padding: 0!important; min-height: 0!important; max-height: none!important;  max-width: 100%!important;margin: 0 1px!important;text-indent: 0!important;border: 0!important;background: 0 0!important;line-height: inherit!important;-webkit-user-select: auto!important;-webkit-box-shadow: none!important;box-shadow: none!important;}
 .result-leadform-input-outr.dropdown .selectize-control .selectize-input.dropdown-active .item + input {width: 0px !important;}
@@ -315,7 +315,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .result-leadform-input-outr.dropdown .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content .option.active, .result-leadform-input-outr.dropdown .selectize-control .selectize-input + .selectize-dropdown.single .selectize-dropdown-content .option:hover { color: #fff !important;}
 
 .ques-innerBox selectbox .selectize-control {float: left;width: 100%; position: relative; margin-top: 20px;}
-.ques-innerBox selectbox .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 1px solid transparent !important;}
+.ques-innerBox selectbox .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 2px solid transparent !important;}
 .ques-innerBox selectbox .selectize-control .selectize-input .item {font-size: 18px;display: inline;float: left;}
 .ques-innerBox selectbox .selectize-control .selectize-input input {width:100%;display: inline-block!important;padding: 0!important; min-height: 0!important; max-height: none!important;  max-width: 100%!important;margin: 0 1px!important;text-indent: 0!important;border: 0!important;background: 0 0!important;line-height: inherit!important;-webkit-user-select: auto!important;-webkit-box-shadow: none!important;box-shadow: none!important;}
 .ques-innerBox selectbox .selectize-control .selectize-input.dropdown-active .item + input {width: 0px !important;}
@@ -329,7 +329,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 
 
 .ques-innerBox leadform_question .selectize-control {float: left;width: 100%; position: relative;}
-.ques-innerBox leadform_question .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 1px solid transparent !important;}
+.ques-innerBox leadform_question .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 2px solid transparent !important;}
 .ques-innerBox leadform_question .selectize-control .selectize-input .item {font-size: 18px;display: inline;float: left;}
 .ques-innerBox leadform_question .selectize-control .selectize-input input {width:100%;display: inline-block!important;padding: 0!important; min-height: 0!important; max-height: none!important;  max-width: 100%!important;margin: 0 1px!important;text-indent: 0!important;border: 0!important;background: 0 0!important;line-height: inherit!important;-webkit-user-select: auto!important;-webkit-box-shadow: none!important;box-shadow: none!important;}
 .ques-innerBox leadform_question .selectize-control .selectize-input.dropdown-active .item + input {width: 0px !important;}
@@ -342,7 +342,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .ques-innerBox .selectize-control.single .selectize-input input[type="text"] {padding: 0;margin: 0; border: none;}
 
 .result-leadform-outr .lead-popup .selectize-control {float: left;width: 100%; position: relative;}
-.result-leadform-outr .lead-popup .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 1px solid transparent !important;}
+.result-leadform-outr .lead-popup .selectize-control .selectize-input {float: left;width: 100%;line-height: 40px;border: none;background: #f1f2f1;font-size: 18px;padding: 10px 15px;border-radius: 5px;-webkit-transition: 0.5s; transition: 0.5s;cursor: pointer;overflow: hidden;z-index: 1;border: 2px solid transparent !important;}
 .result-leadform-outr .lead-popup .selectize-control .selectize-input .item {font-size: 18px;display: inline;float: left;}
 .result-leadform-outr .lead-popup .selectize-control .selectize-input input {width:100%;display: inline-block!important;padding: 0!important; min-height: 0!important; max-height: none!important;  max-width: 100%!important;margin: 0 1px!important;text-indent: 0!important;border: 0!important;background: 0 0!important;line-height: inherit!important;-webkit-user-select: auto!important;-webkit-box-shadow: none!important;box-shadow: none!important;}
 .result-leadform-outr .lead-popup .selectize-control .selectize-input.dropdown-active .item + input {width: 0px !important;}
