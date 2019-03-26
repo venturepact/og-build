@@ -45,7 +45,7 @@
   .result-socia-outr {padding: 0px 20px 30px 20px;}
   .result-socia-inner .likes-parent{ text-align: center;}
   .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: none;display: inline-block;  margin-bottom: 5px; }
-  .result-socia-inner .likes-parent #like{ top: 0px !important;}
+  .result-socia-inner .likes-parent #like,.result-socia-inner .likes-parent #follow{ top: -5px !important; position: relative;}
   .result-socia-inner .likes-parent #follow iframe {position: relative !important; top: 5px !important;}
   .result-media .t1-result-inner-left-table .table-outer{ max-width: 334px;}
   .result-media .t1-result-inner-left-table table tbody tr td, .result-media .t1-result-inner-left-table table thead tr th {padding: 12px 20px!important;font-size: 12px!important;}
