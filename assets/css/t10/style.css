@@ -242,7 +242,7 @@ a.next {right: -75px;top: 44%;position: absolute;height: 48px;width: 48px;border
 .result-leadform-input-outr.checkbox{max-width: 48%;}
 form.result-leadform.full-width .result-leadform-input-outr {min-width: 50%;}
 .result-leadform-input-outr.checkbox.odd { max-width: 97.5%;}
-.result-leadform-input-outr.checkbox label + div span {float: left;width: 100%;position: absolute;left: 0;bottom: -20px;color: #f44336;font-size: 12px;}
+.result-leadform-input-outr.checkbox label + div span {float: left;width: 100%;position: absolute;left: 0;bottom: -13px;color: red;font-size: 12px;}
 .result-leadform input[type=checkbox] {position: absolute; left: -88888px; opacity: 0;}
 .ques-radio-Component.opinion-radio {margin-top: 20px;}
 .ques-radio-Component.opinion-radio ul {display: table;table-layout: fixed;width: 100%;position: relative;}
@@ -421,7 +421,7 @@ form.result-leadform.full-width .result-leadform-input-outr {min-width: 50%;}
 .result-leadform-input-outr {display: flex;align-items: center; margin: 5px; margin-bottom: 10px; min-width: 48%; position: relative;}
 .result-leadform-input-outr:nth-last-child(1):nth-child(odd) {width: 48%;}
 .result-leadform-input-outr.odd:nth-last-child(1):nth-child(odd) { width: 97.5%;}
-.result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 1.4!important; font-size: 18px;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #444!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
+.result-leadform-input-outr.checkbox label.leadform-checkbox {border: 0!important;line-height: 1.4!important; color: #444 !important; font-size: 18px;min-height: auto;float: left;width: 100%;top: 0;margin-top: 8px;opacity: 1;padding: 0 10px 0 32px!important;color: #444!important;margin-bottom: 0!important;font-weight: 400;text-align: left;position: relative;cursor: pointer;}
 .result-leadform-input-outr.checkbox label.leadform-checkbox::before {background: #fff !important; content: '';font-size: 17px;left: 0!important;right: 0;top: 0!important;bottom: 0;width: 20px;height: 20px;padding: 0!important;display: -webkit-box;display: -ms-flexbox; display: flex;-webkit-box-align: center;-ms-flex-align: center;align-items: center;-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;position: absolute; border-radius: 3px;}
 .result-leadform-input-outr.checkbox input[type=checkbox].filled-in:checked+ label.leadform-checkbox::after {top: 5px;width: 10px;height: 10px;border: 2px solid #3a5771;background-color: #3a5771;z-index: 0;margin: 18px;position: absolute;z-index: 1;content: '';font-family: 'Material Icons';-webkit-transform: none;transform: none;color: #fff;left: 5px;margin: 0;line-height: 18px; text-align: center;border-radius: 3px;}
 .result-leadform-input-outr.odd { width: 97.5%;}
