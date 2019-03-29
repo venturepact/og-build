@@ -191,6 +191,7 @@
         background-size: 15px !important;
         right: 5px !important;
     } */
+    .page_2,.page_2.result-fixed{position:relative!important;margin-left:0;float:left;padding: 0 !important;}
 }
 @media (max-width:375px) {  
     .footer-nav {
@@ -298,7 +299,7 @@
 }
 .t1-result .no-header-links.no-footer-links {    padding: 30PX 0 !important;}
 .section-part:nth-child(2){ padding-left:0px !important;}
-.questions .question-section-outer .input-field input{padding: 4px 0px}
+.questions .question-section-outer .input-field input{padding: 4px 0px 3px;}
 .selectize-input{padding-left: 0px;}
 .page_2.hasbranding.result-fixed {margin: 0;    background: #f8f8f9;}
     .temp2-bg{display:none;}

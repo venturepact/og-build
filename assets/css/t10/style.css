@@ -27,6 +27,8 @@ textarea::-moz-placeholder {color: #444; opacity: 0.4;}
 textarea:-ms-input-placeholder {color: #444; opacity: 0.4;}
 textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 
+.tag_delete{display: none !important;}
+
 .editor-template-tabs .main-scrollDiv{position: relative;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
 .main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch}
 .errorMessage {float: left;width: 100%;padding: 10px 10px 0px 0;padding-top:5px;color: #f44336;font-size: 12px}
