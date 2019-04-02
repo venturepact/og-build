@@ -32,7 +32,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .editor-template-tabs .main-scrollDiv{position: relative;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
 .main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch}
 .errorMessage {float: left;width: 100%;padding: 10px 10px 0px 0;padding-top:5px;color: #f44336;font-size: 12px}
-
+.leadPopupVisibleNow .main-scrollDiv{overflow: hidden}
 /* Landing Css star */
 .section-landing{float: none;width: 100%;display: table;min-height: 100vh;height: 100%; position: relative;}
 .landing-bg{ background-repeat: no-repeat; background-size: cover;}
@@ -614,8 +614,8 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .sec-result-inner leadform .or-class {text-align: center!important;margin-left: 0!important;margin-right: 0!important;width: 97%;padding: 0 15px!important;margin: 20px 0!important;float: left;font-size: 14px;text-transform: uppercase;line-height: normal;}
 
 leadform_question{ position: relative; float: left; width: 100%;}
-.ques-leaform-outr + button.lf-skip-btn.ripple-light {background: 0 0; border: none;float: right;text-transform: uppercase;color: #ccc;font-size: 16px;margin-top: 0px; position: absolute;right: 0;bottom: 5px; transition: 0.5s;}
-.ques-leaform-outr + button.lf-skip-btn.ripple-light:hover{ color: #888;}
+button.lf-skip-btn.ripple-light.skipButton {background: 0 0; border: none;float: right;text-transform: uppercase;color: #ccc;font-size: 16px;margin-top: 0px; position: absolute;right: 0;bottom: 5px; transition: 0.5s;}
+button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
 
 
 .lead-popup .lead-popup-outer button.lf-skip-btn {background: 0 0;border: none; float: left;text-transform: uppercase;color: #ccc;font-size: 16px;margin-top: 20px;position: relative;transition: 0.5s;width: 100%;}
