@@ -32,7 +32,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .editor-template-tabs .main-scrollDiv{position: relative;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
 .main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch}
 .errorMessage {float: left;width: 100%;padding: 10px 10px 0px 0;padding-top:5px;color: #f44336;font-size: 12px}
-
+.leadPopupVisibleNow .main-scrollDiv{overflow: hidden}
 /* Landing Css star */
 .section-landing{float: none;width: 100%;display: table;min-height: 100vh;height: 100%; position: relative;}
 .landing-bg{ background-repeat: no-repeat; background-size: cover;}
