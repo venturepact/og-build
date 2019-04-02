@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+body{min-height: 100vh !important;}
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -5170,4 +5170,17 @@ input:-webkit-autofill:active  {
 }
 .form-group input:-internal-autofill-selected {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important;
+}
+@-moz-document url-prefix() {
+    input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+    }
 }
