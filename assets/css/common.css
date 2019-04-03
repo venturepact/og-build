@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+body{min-height: 100vh !important;}
 @font-face {
     font-family: 'Material Icons';
     font-style: normal;
@@ -4398,7 +4398,7 @@ li.cld-day {background: #fff;}
 .modal-backdrop.in {opacity: 0.7 !important;}
 .golive-popup .modal-dialog {width: 560px !important;}
 .golive-popup .modal-body {box-shadow: 0 7px 50px 18px rgba(0, 0, 0, 0.41);}
-.tabs-helptip.help-tip {position: absolute !important;left: 76%;top: 10px;}
+.tabs-helptip.help-tip {position: absolute !important;left: 50%;top: 20px;}
 .tabs-helptip.help-tip i {font-size: 14px !important;color: #aaa !important;}
 .tabs-helptip .help-checktip:before {position: absolute;top: -5px;left: 47%;display: inline-block;border-right: 5px solid transparent;border-bottom: 5px solid #62696d;border-left: 5px solid transparent;border-bottom-color: #62696d;content: '';border-top: transparent;height: 5px;}
 /******* ecom intro ********/
@@ -5170,4 +5170,17 @@ input:-webkit-autofill:active  {
 }
 .form-group input:-internal-autofill-selected {
     -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    margin: 0 !important;
+}
+@-moz-document url-prefix() {
+    input[type=number] {
+        -moz-appearance:textfield; /* Firefox */
+    }
 }
