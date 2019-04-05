@@ -47,10 +47,11 @@
   .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: none;display: inline-block;  margin-bottom: 5px; }
   .result-socia-inner .likes-parent #like,.result-socia-inner .likes-parent #follow{ top: -5px !important; position: relative;}
   .result-socia-inner .likes-parent #follow iframe {position: relative !important; top: 5px !important;}
-  .result-media .t1-result-inner-left-table .table-outer{ max-width: 334px;}
+  .result-media .t1-result-inner-left-table .table-outer{  width: 100%;}
   .result-media .t1-result-inner-left-table table tbody tr td, .result-media .t1-result-inner-left-table table thead tr th {padding: 12px 20px!important;font-size: 12px!important;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip { right: 25px;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip:before { left: inherit; right: 7px;}
+  .result-media visuals.visual-outr .t1-result-inner-left-table { width: 97vw;}
 
   /* iphone changes css */
   .safari .result-leadform-input-outr i{left: 0; top: 22px;}
@@ -62,6 +63,9 @@
 
 /* Mobile css start */
 
+@media (max-width:480px) {
+    .result-media visuals.visual-outr .t1-result-inner-left-table { width: 95vw;}
+}
 
 /* Tab css start */
 @media (min-width: 768px) and (max-width: 1024px) {
