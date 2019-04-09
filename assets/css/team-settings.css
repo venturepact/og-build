@@ -2159,7 +2159,7 @@
         text-align: center;
         font-family: montserratregular;
         position: relative;
-        color: #62696d
+        color: #62696d; 
     }
     .active-users-card .active-users-box .img-block-blue {
         background: #269fd8;
@@ -2294,7 +2294,7 @@
     }
     .active-users-dropdown-wrapper .dropdown-menu {
         padding: 10px 0;
-        z-index: 1;
+        z-index: 9999;
         top: 13px;
         left: -70px;
         min-width: 148px;
