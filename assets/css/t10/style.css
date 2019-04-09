@@ -30,7 +30,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .tag_delete{display: none !important;}
 
 .editor-template-tabs .main-scrollDiv{position: relative;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;}
-.main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch}
+.main-scrollDiv{position: fixed;overflow-y: auto;overflow-x: hidden;z-index: 1; height: 100%;width: 100%;-webkit-overflow-scrolling:touch  !important;}
 .errorMessage {float: left;width: 100%;padding: 10px 10px 0px 0;padding-top:5px;color: #f44336;font-size: 12px}
 .leadPopupVisibleNow .main-scrollDiv{overflow: hidden}
 /* Landing Css star */
@@ -483,7 +483,7 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .template-ten-main .lead-popup .lead-popup-outer button.close { position: absolute; right: -15px;  top: -15px;  opacity: 0.5;}
 .template-ten-main .lead-popup .lead-popup-outer button.close i.material-icons { color: #fff; text-shadow: none;}
 .template-ten-main .template-container.mobile .lead-popup .lead-popup-outer button.close {right: 2px;  top: -23px;}
-.template-ten-main .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 0 0 35px 0}
+.template-ten-main .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding: 0 0 35px 0;max-height: calc(100vh - 100px);overflow-x: hidden;}
 .template-ten-main .lead-popup .lead-popup-header + fb_lead_gen{display: flex;justify-content: center; align-items: center;min-height: 160px;padding-top: 30px; float: left; width: 100%;}
 .template-ten-main .lead-popup-header {float: left;width: 100%;background: #eef2f2;padding: 15px 25px;}
 .template-ten-main .check-marks svg {height: 45px;}
