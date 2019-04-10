@@ -5653,3 +5653,16 @@ file .file-loader span{ font-size: 24px;}
 .custom-button button:hover::before {content: ""; position: absolute; top: 0; bottom: 0; left: 0; right: 0; opacity: 0.2;}
 .t1-landing.landing-text-left section.landing-page-mid { width: 50%;}
 .t1-landing.landing-text-right section.landing-page-mid { width: 50%;}
+.V_3_5 .bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 22em;
+    padding: 5px !important;
+}
+.V_3_5 .cal-outer .datepicker td, .V_3_5 .cal-outer .datepicker th {
+    padding: 3px !important;
+    width: 15px !important;
+    height: 15px !important;
+}
+.V_3_5 .bootstrap-datetimepicker-widget .picker-switch td span {
+    line-height: normal;
+    height: auto;
+}

@@ -364,3 +364,29 @@ input[type=number] {
 .result-v2 .common-result-bot-icons.side-redo a#refresh-button:hover, .result-v2 .common-result-bot-icons.side-redo a#refresh-button:focus{text-decoration: none; outline: none;}
 .questions-list>.t1-ques-head.active div p:last-child {border-bottom-left-radius: 0px !important; margin-bottom: 15px !important}
 .questions-list>.t1-ques-head.active.prev div p{border-bottom-left-radius: 50px}
+.chat-avtar {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  BORDER-RADIUS: 50%;
+  bottom: 15px;
+  float: left;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
+  transition: .2s cubic-bezier(.23,1,.32,1);
+}
+.questions-list>.t1-ques-head{padding-left: 70px}
+.t1-ques-head.active .chat-avtar ,
+.t1-ques-head.spin-loader.active .chat-avtar {display: block;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
+  transition: .2s cubic-bezier(.23,1,.32,1);}

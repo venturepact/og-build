@@ -475,6 +475,7 @@ img.btn-fb-like{margin:30px 10px 30px 0;cursor:pointer;display:inline-block}
     0%,100%{left:0}
     50%{left:10px}
 }
+.V_3_5.one-page-card-new .structure-right-align .newProgressbar-Inner .newProgressbar.progress span.sr-only {left: -45px;}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 input[type=number]{-moz-appearance:textfield}
 .input-field{display:flex}
@@ -1636,11 +1637,13 @@ fb_lead_gen+.lf-skip-btn{margin-top:10px!important}
 .V_3_5.one-page-card-new .t1-question .question-components .check-comp .radio-outer-base [type=radio]+label.control.control--radio:before{top:3px!important}
 @media (min-width:767px){
     .V_3_5.one-page-card-new .landing-text-right .landing-page-mid{margin-right:60px}
-    .V_3_5.one-page-card-new.structure-right-align .newProgressbar.progress{float:right;left:70px;right:auto}
-    .V_3_5.one-page-card-new.structure-right-align .landing-page-header{right:60px!important;left:auto!important}
-    .V_3_5.one-page-card-new.structure-right-align .t1-question .landing-page-header{right:30px!important;left:auto!important}
-    .V_3_5.one-page-card-new.structure-right-align .result-v2 .common-result-bot-left.CTA-3{padding:0!important;left:-50px!important}
-    .V_3_5.one-page-card-new.structure-right-align leadform_question .newLeadGenV_3_5+fb_lead_gen .or-class{text-align:right!important;margin:10px 0!important;padding:0 15px!important}
+    .V_3_5.one-page-card-new .structure-right-align .newProgressbar.progress{float:right;left:70px;right:auto}
+    .V_3_5.one-page-card-new .structure-right-align .landing-page-header{right:60px!important;left:auto!important}
+    .V_3_5.one-page-card-new .structure-right-align .t1-question .landing-page-header{right:30px!important;left:auto!important}
+    .V_3_5.one-page-card-new .structure-right-align .newProgressbar.progress {left: 70px;right: auto;}
+    .V_3_5.one-page-card-new .structure-right-align .newProgressbar-Inner .newProgressbar.progress { float: none; left: inherit;  right: inherit;}
+    .V_3_5.one-page-card-new .structure-right-align .result-v2 .common-result-bot-left.CTA-3{padding:0!important;left:-50px!important}
+    .V_3_5.one-page-card-new .structure-right-align leadform_question .newLeadGenV_3_5+fb_lead_gen .or-class{text-align:right!important;margin:10px 0!important;padding:0 15px!important}
     .V_3_5.one-page-card-new leadform_question .newLeadGenV_3_5+fb_lead_gen .or-class{text-align:left!important}
     .V_3_5.one-page-card-new .t1-slider-question leadform_question fb_lead_gen+.lf-skip-btn{margin-top:-33px!important}
     .V_3_5.one-page-card-new .t1-ques-head{line-height:1.4}
@@ -1959,7 +1962,7 @@ body .V_3_5.one-page-card-new input:-moz-placeholder{color:#aaa!important;opacit
 .V_3_5.one-page-card-new.structure-right-align .radio-outer-base button.button_textfield.submit-textbox-btn,
 .V_3_5.one-page-card-new.structure-right-align .submit-checkbox-img,
 .V_3_5.one-page-card-new.structure-right-align .t1-question .submit-textbox-btn,
-.V_3_5.one-page-card-new.structure-right-align input.othersfield{float:right;margin-right:0;margin-left:10px}
+.V_3_5.one-page-card-new.structure-right-align input.othersfield{float:right !important;margin-right:0;margin-left:10px}
 .V_3_5.one-page-card-new.structure-right-align [type=checkbox]:checked,
 .V_3_5.one-page-card-new.structure-right-align [type=checkbox]:not(:checked),
 .V_3_5.one-page-card-new.structure-right-align [type=radio]:checked,

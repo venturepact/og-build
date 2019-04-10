@@ -36,7 +36,7 @@
   .result-leadform-outr {padding: 10px 20px;}
   .result-mainBox.Result-section{ border-radius: 0px; min-height: 280px;}
   .result-media visuals.visual-outr .t1-result-inner-left-img{ min-height: 230px;}
-  .result-media .t1-result-inner-left-video{ min-height: 230px; display: flex; justify-content: center; align-items: center;}
+  .result-media .t1-result-inner-left-video{ min-height: 230px;}
   .result-innerBox{ padding: 0 15px; width: 98%;}
   .result-heading{margin-top: 0px;font-size: 36px;}
   .result-leadform-input-outr {flex: 1;}
@@ -47,19 +47,27 @@
   .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: none;display: inline-block;  margin-bottom: 5px; }
   .result-socia-inner .likes-parent #like,.result-socia-inner .likes-parent #follow{ top: -5px !important; position: relative;}
   .result-socia-inner .likes-parent #follow iframe {position: relative !important; top: 5px !important;}
-  .result-media .t1-result-inner-left-table .table-outer{ max-width: 334px;}
+  .result-media .t1-result-inner-left-table .table-outer{  width: 100%;}
   .result-media .t1-result-inner-left-table table tbody tr td, .result-media .t1-result-inner-left-table table thead tr th {padding: 12px 20px!important;font-size: 12px!important;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip { right: 25px;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip:before { left: inherit; right: 7px;}
+  .result-media visuals.visual-outr .t1-result-inner-left-table { width: 95vw;}
 
   /* iphone changes css */
   .safari .result-leadform-input-outr i{left: 0; top: 22px;}
+  /* .safari .ques-radio-Component.image-checkbox ul li .check:before{left: 2px; top: 2px;}
   .safari .ques-radio-Component.checkbox ul li .check:before{left: 2px; top: 2px;}
-  .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
+  .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;} */
   .safari .template-ten-main .lead-popup .lead-popup-outer button.close{right: 14px; top: 0px; opacity: 1;background: rgba(0,0,0,0.5); z-index: 9999;}
 }
 
 /* Mobile css start */
+@media (max-width:640px) {
+    .result-media visuals.visual-outr .t1-result-inner-left-table { width: 94vw;}
+}
+@media (max-width:540px) {
+    .result-media visuals.visual-outr .t1-result-inner-left-table { width: 93vw;}
+}
 
 
 /* Tab css start */
@@ -68,9 +76,10 @@
   .sec-result-inner {padding-left: 50px; padding-right: 50px;}
 
   /* iphone changes css */
+  .ques-radio-Component.image-checkbox ul li .check:before{left: 2px; top: 2px;}
   .safari .result-leadform-input-outr i{left: 0; top: 22px;}
-  .safari .ques-radio-Component.checkbox ul li .check:before{left: 2px; top: 2px;}
-  .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
+  /* .safari .ques-radio-Component.checkbox ul li .check:before{left: 2px; top: 2px;}
+  .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;} */
 
 }
 
