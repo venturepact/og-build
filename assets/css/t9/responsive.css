@@ -74,7 +74,8 @@
 }
 
 @media(max-width:640px){
- 
+    .t1-ques-head .chat-avtar {width: 49px;height: 49px;}
+    .questions-list>.t1-ques-head {padding-left: 55px !important;}
     .logo a img.vert , .common-header-main .logo a img.vert{max-height: 40px !important}
     .no-bg.t1-landing{display: flex; align-items: center}
     .sec_0 form#new_form{margin-bottom: 0px !important}
