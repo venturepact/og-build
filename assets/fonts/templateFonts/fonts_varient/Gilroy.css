@@ -15,7 +15,9 @@
     src: url('fonts/gilroy-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/gilroy-medium-webfont.woff2') format('woff2'),
          url('fonts/gilroy-medium-webfont.woff') format('woff'),
-         url('fonts/gilroy-medium-webfont.ttf') format('truetype'),
+         url('fonts/gilroy-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
@@ -24,5 +26,7 @@
     src: url('fonts/gilroy-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('fonts/gilroy-medium-webfont.woff2') format('woff2'),
          url('fonts/gilroy-medium-webfont.woff') format('woff'),
-         url('fonts/gilroy-medium-webfont.ttf') format('truetype'),
+         url('fonts/gilroy-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
