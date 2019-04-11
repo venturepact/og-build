@@ -49,7 +49,7 @@
     label.control .img-graded-box i{top:0}
 }
 @media (max-width:1023px){
-    
+    .opinon-scale-custom .radio-outer, .opinon-scale-custom .radio-outer-base{margin: 0 2px !important}
     .V_3_5 .sub-heading h2{margin-bottom: 20px}
     .structure-right-align .landing-page-mid{margin-right:5%!important;margin-left:0!important}
     .t1-landing.isIframe .landing-page-mid{height:auto!important;min-height:460px}
@@ -57,7 +57,7 @@
     .graded-tabs ul.tabs li i{font-size:18px;padding:6px 16px}
     .graded-tabs ul.tabs li a{min-height:30px}
     .t1-result-top{display:block}
-    .t1-ques-head{margin-bottom:15px}
+    .t1-ques-head{margin-bottom:15px; margin-right: 30px}
     .pic-selector{width:calc(100% / 2 - 1%)!important}
     .question-components .input-field,
     .question-components .selectize-control{width:100%}
@@ -368,6 +368,7 @@
     .question-components .input-field textarea , 
     .file-uploader-name  ,
     .V_3_5 .check-comp .checkbox-outer label ,
+    .V_3_5 .radio-outer-base:not(.pic-selector) label ,
     .V_3_5 .check-comp .checkbox-outer-base label{font-size: 16px !important}
     .V_3_5 .t1-landing .landing-inner .selectize-input .item ,
     .V_3_5 .t1-landing .landing-inner .selectize-control.single .selectize-input input{font-size: 16px}
@@ -465,19 +466,19 @@
     .V_3_5 .landing-page-mid{width:100%;margin-left:0;padding:0 25px 70px}
     .V_3_5 .t1-ques-head{font-size:18px;}
     .V_3_5 .landing-page-mid button{font-size:15px;min-height:auto;min-width:auto;padding:14px 30px;box-shadow:0px 15px 25px 0 rgba(0,0,0 ,.1)}
-    .V_3_5 .question-number{height:26px;padding:1px 7px 1px 4px;top:-2px}
+    .V_3_5 .question-number{height:26px;padding:1px 10px 1px 0px;top:0px; margin-right: 0px}
     .V_3_5 button.btn.prime-action.ripple-light.back-action,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{padding:5px 10px!important}
     .V_3_5 .lead-popup .lead-popup-outer .lead-action-wrapper a.leadform-btn{font-size:13px!important;height:auto;padding:11px 30px!important}
     .V_3_5 a.btn.prime-action.sliding-next.og-lead-ques.ripple-light.leadform-btn i,
     .V_3_5 button.btn.prime-action.ripple-light.back-action i,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn i{font-size:16px}
-    .V_3_5 .question-subhead{font-size:13px}
+    .V_3_5 .question-subhead{font-size:16px}
     .date-selector-part .cal-outer.calender-date{width:100%}
     .date-selector-part span.calendar-range{width:100%;padding:0}
     .V_3_5 .t1-question{padding:28px 0 60px}
     .V_3_5 .ques-header{padding:0 28px;text-align:center}
-    .V_3_5 .main-section{width:100%;padding:30px 28px;margin:0}
+    .V_3_5 .main-section{width:100%;padding:0px 25px;margin:0; float: left;}
     .V_3_5 .t1-ques-component.action-outer{margin-left:0;width:100%;float:none;justify-content:center;display:flex}
     .V_3_5 button.btn.prime-action.ripple-light.back-action{margin-right:6px}
     .V_3_5 .check-comp,

@@ -4677,10 +4677,10 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .main-section form{width: 100%;float: left;margin:0;margin-top: 35px;padding: 0 35px;}
 .V_3_5 .section-count{margin-bottom: 5px;text-transform: uppercase;opacity: 0.6;}
 .V_3_5 .question-head{font-size: 26px; line-height: 1.4; ;letter-spacing: 3px}
-.V_3_5 .question-subhead{font-size: 18px;line-height: 1.4;opacity:1;margin-top: 0px;}
+.V_3_5 .question-subhead{font-size: 18px;line-height: 1.4;opacity:0.6;margin-top: 5px;}
 .V_3_5 .question-head p{margin-bottom: 5px;}
 .V_3_5 .section-sub{margin-bottom: 30px;}
-.V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 38px;float: left;padding: 0px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;margin-right: 15px;}
+.V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 38px;float: left;padding: 0px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;margin-right: 15px; padding-left: 0px !important}
 .V_3_5 .question-number sup{font-size: 18px; top: 0 !important ; position: relative;}
 .V_3_5 .question-number sup::after {content: ".";margin-left: 0px;}
 .V_3_5 .question-number span , .V_3_5 .question-number sub{display: none;}
