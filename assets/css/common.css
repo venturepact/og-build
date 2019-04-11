@@ -5088,6 +5088,15 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
     position: absolute;
     left: -999px;
 }
+.email-integrations-inner {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.email-integrations-inner:last-child {
+    margin-bottom: 0;
+}
+
 label.checkbox-label label, label.radio-label label {
     content: "";
     display: inline-block;
