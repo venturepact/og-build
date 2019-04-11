@@ -52,6 +52,7 @@
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip { right: 25px;}
   .result-question .common-result-bot-icons.side-redo .crb-left a.common-redo .help-checktip:before { left: inherit; right: 7px;}
   .result-media visuals.visual-outr .t1-result-inner-left-table { width: 95vw;}
+  .safari .result-media visuals.visual-outr .t1-result-inner-left-table { width: 97vw;}
 
   /* iphone changes css */
   .safari .result-leadform-input-outr i{left: 0; top: 22px;}
@@ -64,9 +65,15 @@
 /* Mobile css start */
 @media (max-width:640px) {
     .result-media visuals.visual-outr .t1-result-inner-left-table { width: 94vw;}
+    .safari .result-media visuals.visual-outr .t1-result-inner-left-table { width: 96vw;}
 }
 @media (max-width:540px) {
     .result-media visuals.visual-outr .t1-result-inner-left-table { width: 93vw;}
+    .safari .result-media visuals.visual-outr .t1-result-inner-left-table { width: 96vw;}
+}
+@media (max-width:400px) {
+    .result-media visuals.visual-outr .t1-result-inner-left-table { width: 90vw;}
+    .safari .result-media visuals.visual-outr .t1-result-inner-left-table { width: 95vw;}
 }
 
 
