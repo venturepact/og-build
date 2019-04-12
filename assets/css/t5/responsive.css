@@ -1,3 +1,8 @@
+@media (max-width: 1920px) and (min-width: 1680px){
+   .template-five .common-header-main .logo a img.horz {
+        max-height: 55px !important;
+    }
+}
 @media (min-width:1680px){
     .question-head,
     .text-highlight .question-number sup,
@@ -364,6 +369,7 @@
     .V_3_5 .control, 
     .V_3_5 .question-components input, 
     .V_3_5  .control-ver2 .pic-selector span.abhi, 
+    .V_3_5.template-five .t1-question .t1-ques-component [type="checkbox"] + label.leadform-checkbox,
     .V_3_5  .question-components .selectize-control.single .selectize-input {font-size: 16px !important;margin-bottom:0px !important;}
     .question-components .input-field textarea , 
     .file-uploader-name  ,

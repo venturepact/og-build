@@ -377,18 +377,20 @@ input[type=number] {
   background-size: 100%;
   background-repeat: no-repeat;
   opacity: 0;
-  -webkit-transform: translateY(50%);
+  /* -webkit-transform: translateY(50%);
   transform: translateY(50%);
   -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
-  transition: .2s cubic-bezier(.23,1,.32,1);
+  transition: .2s cubic-bezier(.23,1,.32,1); */
 }
 .questions-list>.t1-ques-head{padding-left: 70px}
 .t1-ques-head.active .chat-avtar ,
-.t1-ques-head.spin-loader.active .chat-avtar {display: block;
-  -webkit-transform: translateY(0);
-  transform: translateY(0);
+.t1-ques-head.spin-loader.active .chat-avtar {
+  display: block;
   opacity: 1;
+  /* -webkit-transform: translateY(0);
+  transform: translateY(0);
   -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
-  transition: .2s cubic-bezier(.23,1,.32,1);}
+  transition: .2s cubic-bezier(.23,1,.32,1); */
+}
   .t1-ques-head.active.prev .chat-avtar{opacity: 0.4;}
 .t1-ques-head.active.prev:hover .chat-avtar{opacity: 1;}
