@@ -593,6 +593,7 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .section-landing.landing-bg.landing-text-left .sec-landing-inner .section.section-subheading {text-align: left;}
 .section-landing.landing-bg.landing-text-left .sec-landing-inner form.result-leadform {margin-left: 0;}
 .section-landing.landing-bg.landing-text-left .sec-landing-inner .result-leadform-button {justify-content: end;}
+.section-landing.landing-bg.landing-text-left .section.leadform-button {justify-content: end;}
 
 .section-landing.landing-bg.landing-text-center .sec-landing-inner .section-heading {text-align: center;}
 .section-landing.landing-bg.landing-text-center .sec-landing-inner .section.section-subheading {text-align: center;}
@@ -604,6 +605,7 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 .section-landing.landing-bg.landing-text-right .sec-landing-inner .section.section-subheading {text-align: right;}
 .section-landing.landing-bg.landing-text-right .sec-landing-inner form.result-leadform {margin-right: 0;}
 .section-landing.landing-bg.landing-text-right .sec-landing-inner .result-leadform-button {justify-content: flex-end;}
+.section-landing.landing-bg.landing-text-right .section.leadform-button {justify-content: flex-end;}
 /* Landing text alignment */
 
 /*landing re-changes */
@@ -727,6 +729,11 @@ button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
   .template-ten-main .ques-innerBox calendar input:-ms-input-placeholder {color: #444; opacity: 0.6;}
   .template-ten-main .ques-innerBox calendar input:-moz-placeholder {color: #444; opacity: 0.6;}
 }
+
+.main-scrollDiv .sec-landing-inner .video-sec {height: auto; position: relative; min-height: 200px; padding-bottom: 46.5%; left: 0; right: 0; top: 0;bottom: 0; margin: 0 auto !important; margin-bottom: 40px !important; max-width: 630px;}
+.main-scrollDiv .sec-landing-inner .video-sec iframe { height: 100%; width: 100%;position: absolute; left: 0; right: 0; bottom: 0; top: 0;}
+.main-scrollDiv .landing-text-left .sec-landing-inner .video-sec {margin-left: 0 !important;margin-bottom: 40px !important;}
+.main-scrollDiv .landing-text-right .sec-landing-inner .video-sec {margin-right: 0 !important;margin-bottom: 40px !important;}
 
 /* iphone changes css */
 .safari .result-leadform-input-outr i{left: 0; top: 22px;}
