@@ -876,6 +876,10 @@
      
 }
 @media (min-width:0px) and (max-width:640px) {
+    .V_3_5 .radio-outer-base .graded-tick .img-graded-box  ,   
+    .V_3_5 .checkbox-outer-base .graded-tick .img-graded-box ,
+    .V_3_5 .checkbox-outer-base .graded-cross .img-graded-box, 
+    .V_3_5 .radio-outer-base .graded-cross .img-graded-box {top: 12px !important}
     .template-six  .t1-landing .t1-landing-inner .selectize-input .item{font-size: 16px; }
     .V_3_5 .common-result header.landing-page-header .logo{margin-bottom: 20px !important;}
     .template-six.V_3_5 .newLeadGenV_3_5 + fb_lead_gen button.loginBtn.loginBtn--facebook::after{padding: 10px 40px 8px 15px !important}

@@ -2042,7 +2042,7 @@ button.loginBtn.loginBtn--facebook:hover::after {
     animation-iteration-count: 3;
   }
   section.landing-page-mid .bGImage.isFullScreenBg::after {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.4);
     content: '';
     position: absolute;
     left: 0;

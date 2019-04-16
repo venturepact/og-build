@@ -2601,3 +2601,20 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
     background-image: none !important;
 
 }
+.landing-page-mid video-view .video-sec {
+    position: relative;
+
+    height: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto 25px !important;
+}
+
+.landing-page-mid video-view .video-sec::before {
+    padding-top: 56.25%;
+    content: '';
+    display: block;
+}
