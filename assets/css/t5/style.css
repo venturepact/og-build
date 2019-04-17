@@ -4718,8 +4718,12 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .opinon-scale-custom .errorMessage {top: 38px;}
 .V_3_5 .calendar .errorMessage {top: 38px;}
 .V_3_5 .no-logo .no-header-links.no-footer-links {padding-top: 0px !important;}
-.V_3_5 .textfield.checkbox-outer input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"], .V_3_5 .textfield.radio-outer input[type="text"], .V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 14px;line-height: 1.4;padding-left: 40px;}
-.V_3_5 .textfield.radio-outer-base input[type="text"], .V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
+.V_3_5 .textfield.checkbox-outer input[type="text"], 
+.V_3_5 .textfield.checkbox-outer-base input[type="text"], 
+.V_3_5 .textfield.radio-outer input[type="text"], 
+.V_3_5 .textfield.radio-outer-base input[type="text"] {border-width: 2px;padding: 5px 22px;font-size: 18px;line-height: 1.4;padding-left: 40px;}
+.V_3_5 .textfield.radio-outer-base input[type="text"], 
+.V_3_5 .textfield.checkbox-outer-base input[type="text"]{padding:5px 22px !important;}
 .V_3_5 .textfield.checkbox-outer label i {top: 3px !important;position: relative;left: -4px;}
 .V_3_5.template-five label.control.graded-tick .img-graded-box .img-graded-tick{color: #008000 !important;}
 .V_3_5.template-five label.control.graded-cross .img-graded-box .img-graded-cross {color: #ff4e4e !important;}

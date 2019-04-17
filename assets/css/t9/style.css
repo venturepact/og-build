@@ -394,3 +394,8 @@ input[type=number] {
 }
   .t1-ques-head.active.prev .chat-avtar{opacity: 0.4;}
 .t1-ques-head.active.prev:hover .chat-avtar{opacity: 1;}
+.landing-page-mid video-view .video-sec::before {
+  padding-top: 56.25%;
+  content: '';
+  display: block;
+}

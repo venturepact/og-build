@@ -245,7 +245,7 @@
     .t1-question button.back-action{margin-right:6px}
     .t1-result-inner{margin-bottom:0;display:block;padding:75px 5%}
     .t1-logo{padding:0 5%}
-    .t1-ques-component{flex:1 1 100%;margin-left:30px}
+    .t1-ques-component{flex:1 1 100%;margin-left:23px}
     .input-validation,
     .t1-lead-component,leadform .input-outer:nth-child(even),leadform_question .prime-action{margin-left:0}
     .t1-ques-component .input-section .input-outer .section-head{margin-bottom:15px}
@@ -364,6 +364,7 @@
     .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main{padding-top:0!important}
 }
 @media (max-width:640px){
+
     .V_3_5 .check-comp .control__indicator i{font-size: 18px !important}
     .V_3_5 .custom-block.rating-custom .rating-inner i{font-size: 24px !important}
     .V_3_5 .control, 
@@ -376,6 +377,10 @@
     .V_3_5 .check-comp .checkbox-outer label ,
     .V_3_5 .radio-outer-base:not(.pic-selector) label ,
     .V_3_5 .cal-outer .input-group.date .input-group-addon i, .custom-block.inpu-file-uploader .input-field span i,
+    .V_3_5 .textfield.checkbox-outer input[type="text"], 
+    .V_3_5 .textfield.checkbox-outer-base input[type="text"], 
+    .V_3_5 .textfield.radio-outer input[type="text"], 
+    .V_3_5 .textfield.radio-outer-base input[type="text"] ,
     .V_3_5 .check-comp .checkbox-outer-base label{font-size: 16px !important}
     .V_3_5 .t1-landing .landing-inner .selectize-input .item ,
     .V_3_5 .t1-landing .landing-inner .selectize-control.single .selectize-input input{font-size: 16px}
