@@ -447,7 +447,7 @@ form.result-leadform.full-width .result-leadform-input-outr {min-width: 50%;}
 .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: left;width: auto!important;margin-right: 5px;}
 .result-socia-inner .likes-parent #like {top: 0px !important;position: relative;}
 .result-socia-inner .likes-parent #vk_subscribe iframe {float: none!important;width: auto!important;display: inline-block!important;max-width: 160px!important;background: #5181b8;height: 28px;border-radius: 3px;padding: 3px 0;margin-top: 0 !important;}
-.section-social-heading {font-size: 20px;color: #444;line-height: 1.4;margin-top: 35px; float: left; width: 100%; text-align: center;}
+.section-social-heading {font-size: 20px;color: #444;line-height: 1.4;margin-top: 35px; float: left; width: 100%; text-align: center; padding: 0px 30px !important;}
 span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: left;width: 100%;text-align: center; padding-bottom: 20px;}
 .template-ten-main .lead-popup .section-social label.section-social-heading{display: none;}
 .result-socia-inner .likes-parent .section-social-heading {margin-bottom: 30px;margin-top: 0;}
@@ -734,6 +734,7 @@ button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
 .main-scrollDiv .sec-landing-inner .video-sec iframe { height: 100%; width: 100%;position: absolute; left: 0; right: 0; bottom: 0; top: 0;}
 .main-scrollDiv .landing-text-left .sec-landing-inner .video-sec {margin-left: 0 !important;margin-bottom: 40px !important;}
 .main-scrollDiv .landing-text-right .sec-landing-inner .video-sec {margin-right: 0 !important;margin-bottom: 40px !important;}
+.main-scrollDiv .section-landing .landing-img { max-width: 100%; margin-bottom: 40px; width: 504px; min-height: 290px;}
 
 /* iphone changes css */
 .safari .result-leadform-input-outr i{left: 0; top: 22px;}

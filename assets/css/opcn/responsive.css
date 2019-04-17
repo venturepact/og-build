@@ -687,6 +687,8 @@
 
     .logo{ height: 55px;display: flex;justify-content: center;align-items: center;}
     /* .V_3_5 .landing-text-center .landing-page-mid{width: 85% !important;} */
+
+    .V_3_5 .t1-landing .landing-img {min-height: auto;}
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
@@ -1106,6 +1108,7 @@
     .safari .header-next-div .t1-question{height: auto !important; min-height: 820px}
     .V_3_5 .landing-page-mid leadform button.prime-action{padding: 14px 30px 13px;}
     .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input .item{ font-size: 16px !important;}
+    .V_3_5 .t1-landing .video-sec{ padding-bottom: 38.5%;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}
