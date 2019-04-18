@@ -627,6 +627,18 @@
           $('.error-toast').delay(1500).fadeOut(500);
         }
       }
+
+      window.onlyErrorToast = function (message) {
+        $(".error-toast span").text(message);
+        $(".error-toast").show();
+        $('.error-toast').animate({
+          bottom: '+90px',
+          easing: 'linear'
+        }, 1500);
+        $('.error-toast').css("bottom", "0px");
+          $('.error-toast').delay(1500).fadeOut(500);
+    
+      }
       window.tickerNotification = function (message) {
         $(".ticker span").text(message);
         $(".ticker").show();
