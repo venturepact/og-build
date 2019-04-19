@@ -12,26 +12,29 @@ section.barEmbed {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 50px;
+    min-height: 30px;
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 section.barEmbed p {
     color: #fff;
     font-size: 16px;
-    font-family: montserrat;
+    /* font-family: montserrat; */
     display: inline-block;
     max-width: 80%;
     text-align: center;
-    text-overflow: ellipsis;
+    /* text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden;
-    padding-left: 30px;
-    padding-right: 30px;
+    overflow: hidden; */
     font-weight: 300;
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 1.4;
 }
 
 section.barEmbed button {
@@ -48,7 +51,7 @@ section.barEmbed button {
     cursor: pointer;
     transition: 0.5s ease;
 }
-section.barEmbed a {
+section.barEmbed a.greet-popup-open {
     border: none;
     background: #fff;
     border-radius: 3px;
@@ -125,6 +128,14 @@ section.greet_popup iframe {
     .close-popup {
         right: 30px;
         top: 5px !important;
+    }
+    section.barEmbed {
+        display: inline-block;
+        text-align: center;
+    }
+    section.barEmbed a.greet-popup-open{
+        display: inline-block;
+        margin-top: 15px;
     }
 }
 
