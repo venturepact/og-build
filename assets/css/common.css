@@ -2337,6 +2337,131 @@ button.launch-btn {
     border-radius: 5px;
     margin-top: -35px;
 }
+#greetBar .popup-mode>ul {
+    justify-content: inherit;
+}
+#greetBar .popup-mode>ul>li.ripple-dark {
+    width: 85px !important;
+}
+#greetBar .popup-mode>ul>li.ripple-dark:nth-child(2) {
+    margin-left: 20px !important;
+}
+
+#greetBar .left-part {
+    float: left;
+    width: 34%;
+    max-width: 100%;
+}
+#greetBar .right-part {
+    float: right;
+    width: 48%;
+    max-width: 100%;
+}
+#greetBar .custom-popover {
+    width: 400px;
+    position: absolute;
+    background: #fff;
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1;
+    margin-left: 12px;
+    border-radius: 5px;
+    margin-top: -35px;
+    top: 25px;
+    right: 0px;
+    left: inherit;
+}
+#greetBar .custom-popover::before {
+    top: -24px;
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    right: 38%;
+    left: inherit;
+    transform: translatex(-38%);
+}
+#greetBar .custom-popover::after {
+    top: -21px;
+    border-bottom: 12px solid #fff;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    right: 38%;
+    left: inherit;
+    transform: translatex(-38%);
+}
+#greetBar .launch-outer {
+    width: 100%;
+}
+#greetBar .popover-part {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+#greetBar section.barEmbed {
+    background: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#greetBar section.barEmbed p {
+    color: #fff;
+    font-size: 16px;
+    font-family: montserrat;
+    display: inline-block;
+    max-width: 80%;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 300;
+    margin: 0;
+    width: auto;
+}
+
+#greetBar section.barEmbed button {
+    border: none;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px 15px;
+    font-size: 12px;
+    /* text-transform: uppercase; */
+    color: #666;
+    max-width: calc(100% - 80%);
+    margin-right: 20px;
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+#greetBar section.barEmbed button:focus {
+    outline: none;
+}
+#greetBar section.barEmbed button:hover {
+    opacity: 0.9;
+}
+#greetBar .greetbar-popupClose{
+    background: url(https://cdn.filestackcontent.com/D5NFRzLOSWCX666wU7Yx);
+    position: fixed;
+    top: 15px !important;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 99999 !important;
+    background-size: 18px;
+    background-repeat: no-repeat;
+}
+
 
 .popover-part {
     display: flex;
