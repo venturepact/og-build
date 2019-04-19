@@ -2377,18 +2377,18 @@ button.launch-btn {
     border-bottom: 12px solid #ccc;
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
-    right: 38%;
+    right: 48%;
     left: inherit;
-    transform: translatex(-38%);
+    transform: translatex(-48%);
 }
 #greetBar .custom-popover::after {
     top: -21px;
     border-bottom: 12px solid #fff;
     border-right: 12px solid transparent;
     border-left: 12px solid transparent;
-    right: 38%;
+    right: 48%;
     left: inherit;
-    transform: translatex(-38%);
+    transform: translatex(-48%);
 }
 #greetBar .launch-outer {
     width: 100%;
@@ -2410,6 +2410,7 @@ button.launch-btn {
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 }
 
 #greetBar section.barEmbed p {
@@ -2452,14 +2453,15 @@ button.launch-btn {
 #greetBar .greetbar-popupClose{
     background: url(https://cdn.filestackcontent.com/D5NFRzLOSWCX666wU7Yx);
     position: fixed;
-    top: 15px !important;
-    right: 0px;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 99999 !important;
     background-size: 18px;
     background-repeat: no-repeat;
+    position: absolute;
+    top: 15px !important;
+    right: 0 !important;
 }
 
 
