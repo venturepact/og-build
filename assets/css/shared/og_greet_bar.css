@@ -19,6 +19,7 @@ section.barEmbed {
     top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    z-index: 9999999;
 }
 
 section.barEmbed p {
@@ -35,6 +36,7 @@ section.barEmbed p {
     padding-left: 50px;
     padding-right: 50px;
     line-height: 1.4;
+    margin: 0px;
 }
 
 section.barEmbed button {
@@ -57,14 +59,15 @@ section.barEmbed a.greet-popup-open {
     border-radius: 3px;
     padding: 5px 15px;
     font-size: 12px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #666;
     max-width: calc(100% - 80%);
     margin-right: 20px;
     box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: 0.5s ease;
-	text-decoration: none;
+    text-decoration: none;
+    font-weight: normal;
 }
 section.barEmbed button:focus {
     outline: none;
@@ -83,6 +86,8 @@ section.barEmbed button:hover {
     z-index: 99999 !important;
     background-size: 18px;
     background-repeat: no-repeat;
+    box-shadow: none !important;
+    border: none !important;
 }
 
 /**** popup Css ****/
@@ -98,6 +103,7 @@ section.greet_popup {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 999999999;
 }
 section.greet_popup iframe {
     z-index: 9;
