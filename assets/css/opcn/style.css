@@ -2732,8 +2732,8 @@ a.view-feedback {
 .V_3_5 .t1-landing.landing-text-left .video-sec { margin-left: 0px !important; margin-bottom: 40px !important; padding-bottom: 44.8% !important; }
 .V_3_5 .t1-landing.landing-text-right .video-sec { margin-right: 0px !important; margin-bottom: 40px !important; padding-bottom: 44.8% !important; }
 
-.V_3_5 .t1-landing .landing-img { max-width: 100%; margin-bottom: 40px; width: 504px; min-height: 290px;}
-.V_3_5 .editor-page-divider .t1-landing .landing-img {min-height: auto;}
+.V_3_5 .t1-landing .landing-img { max-width: 504px;  max-height: 300px; margin-bottom: 40px; }
+.V_3_5 .editor-page-divider .t1-landing .landing-img {max-width: 100%;}
 
 .V_3_5 .range-input {
     direction: ltr !important;

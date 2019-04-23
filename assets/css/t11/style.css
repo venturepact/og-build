@@ -4,17 +4,20 @@ body{color: #666;}
 .default-outer {width: 100%;float: left;position: relative;margin-top: 75px;}
 .t11 {width: 100%;float: left;}
 .t11 p {margin-bottom: 0;}
+input, textarea, button:focus {outline: none;}
+
+ul, li {list-style: none;}
 
 /* top timer bar */
 #build .timer-top-fixed , #build .fixed-header{position: relative;}
 .fixed-header{position: fixed;left: 0;right: 0;top: 0;z-index: 1;}
 .timer-top-fixed {width: 100%;float: left;min-height: 75px;background: #46c3cf;padding: 23px;display: flex;align-items: center;justify-content: space-around;vertical-align: middle;flex-wrap: wrap;}
-.timer-info {font-size: 22px;line-height: 30px;text-transform: uppercase;color: #fff;text-align: center;}
+.timer-info {font-size: 22px;line-height: 30px;text-transform: uppercase;color: #fff;text-align: center;display: inline-flex;align-items: center;justify-content: center;flex-wrap: wrap;}
 .timer-info a {color: #fff;font-size: 22px;line-height: 30px;font-weight: bold;text-decoration: underline;margin-left: 5px;}
 .timer-info img {width: 18px;height: 18px;margin: 0 5px;}
-.timer-info i {font-size: 25px;margin: 0 5px;}
+.timer-info i {font-size: 25px;margin: 0 5px;transform: rotate(0.03deg);}
 .socialshare-header {display: flex;align-items: center;}
-.socialshare-header .social-share-text {font-size: 22px;color: #fff;}
+.socialshare-header .social-share-text {font-size: 22px;color: #fff;margin-right: 10px;}
 .timer-top-fixed .section-social {padding: 0;}
 
 /* notification bar */
@@ -75,7 +78,7 @@ body{color: #666;}
 .section-social {width: 100%;float: left;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;text-align: center;padding-top: 40px;}
 ul.social-icons {width: 100%;margin: 0;float: left;text-align: center;}
 .social-icons li {display: inline-block;width: auto;position: relative;margin: 3px!important;}
-.social-icons li a {display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;border: 1px solid #fff;border-radius: 50%;color: #fff;transition: 0.2s ease-in-out;cursor: pointer;}
+.social-icons li a {display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;border: 1px solid #fff;border-radius: 50%;color: #fff;transition: 0.2s ease-in-out;cursor: pointer;text-decoration: none;}
 .social-icons li a:hover {background: rgba(255,255,255,0.2);}
 .social-icons li a:hover i.fa-google-plus + .tooltip {min-width: 80px;}
 .social-icons li a:hover .tooltip {float: left;display: block;background-color: #61696c;text-align: center;color: #fff;padding: 8px 11px;max-width: 180px;min-width: 60px;font-size: 10px;position: absolute;bottom: -40px;border-radius: 3px;box-shadow: 0 1px 2px 0 rgba(0,0,0,.5);line-height: 1.42857143;text-transform: none;z-index: 199;opacity: 1;}
