@@ -175,7 +175,7 @@
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn{height:34px;padding:5px 13px}
     .V_3_5 button.btn.prime-action.ripple-light.back-action:before,
     .V_3_5 button.btn.prime-action.ripple-light.next-new-btn:before{}
-    .V_3_5 .question-number{height:38px;padding:10px 7px 0}
+    .V_3_5 .question-number{height:38px;padding:0px 7px 0}
     .V_3_5 .common-footer-inner{width:30%}
     .V_3_5 .common-footer-linktext{width:70%}
     /* .V_3_5 .checkbox-outer-base label{padding: 10px 22px 10px !important;}
@@ -364,7 +364,7 @@
     .V_3_5 .t1-result .no-footer-links.no-header-links .t1-result-main{padding-top:0!important}
 }
 @media (max-width:640px){
-
+    .V_3_5 .question-number sup{top: 0px !important}
     .V_3_5 .check-comp .control__indicator i{font-size: 18px !important}
     .V_3_5 .custom-block.rating-custom .rating-inner i{font-size: 24px !important}
     .V_3_5 .control, 

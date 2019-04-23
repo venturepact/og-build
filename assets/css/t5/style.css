@@ -4681,7 +4681,7 @@ fb_lead_gen + .lf-skip-btn { margin: 10px 0 !important; padding: 0 2px;}
 .V_3_5 .question-head p{margin-bottom: 5px;}
 .V_3_5 .section-sub{margin-bottom: 30px;}
 .V_3_5 .question-number {margin-top: 0;border-radius: 2px;height: 38px;float: left;padding: 0px;line-height: 1;display: flex;align-items: center;justify-content: center;position: relative;top: -5px;margin-right: 15px; padding-left: 0px !important}
-.V_3_5 .question-number sup{font-size: 18px; top: 0 !important ; position: relative;}
+.V_3_5 .question-number sup{font-size: 18px; top: -4px !important ; position: relative;}
 .V_3_5 .question-number sup::after {content: ".";margin-left: 0px;}
 .V_3_5 .question-number span , .V_3_5 .question-number sub{display: none;}
 .V_3_5 .t1-ques-head{font-size: 18px; line-height: 1.4}
@@ -5181,7 +5181,7 @@ margin-bottom: 0px !important;
 }
 .V_3_5.template-five .t1-landing .landing-inner{position: relative;}
 
-.V_3_5 .t1-ques-head, .V_3_5 .question-number {padding-top: 10px; top: -2px}
+.V_3_5 .t1-ques-head, .V_3_5 .question-number {padding-top: 0px; top: 0px}
 .V_3_5 .landing-page-mid button.loginBtn.loginBtn--facebook{padding: 14px 60px 14px 30px !important;}
 .V_3_5 .leadAsPopup fb_lead_gen{margin-bottom: 20px !important}
 
