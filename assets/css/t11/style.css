@@ -9,48 +9,48 @@ input, textarea, button:focus {outline: none;}
 /* top timer bar */
 #build .timer-top-fixed , #build .fixed-header{position: relative;}
 .fixed-header{position: fixed;left: 0;right: 0;top: 0;z-index: 1;}
-.timer-top-fixed {width: 100%;float: left;min-height: 75px;background: #46c3cf;padding: 23px;display: flex;align-items: center;justify-content: space-around;vertical-align: middle;flex-wrap: wrap;}
-.timer-info {font-size: 22px;line-height: 30px;text-transform: uppercase;color: #fff;text-align: center;display: inline-flex;align-items: center;flex-wrap: wrap;justify-content: center;}
-.timer-info a {color: #fff;font-size: 22px;line-height: 30px;font-weight: bold;text-decoration: underline;margin-left: 5px;}
-.timer-info img {width: 18px;height: 18px;margin: 0 5px;}
-.timer-info i {font-size: 25px;margin: 0 5px;transform: rotate(0.03deg);}
+.timer-top-fixed {width: 100%;float: left;background: rgba(0, 0, 0, 0.05);padding: 18px;display: flex;align-items: center;justify-content: space-around;vertical-align: middle;flex-wrap: wrap;}
+.timer-info {font-size: 18px;line-height: 1.4;color: #fff;text-align: center;display: inline-flex;align-items: center;flex-wrap: wrap;justify-content: center;}
+.timer-info a {color: #fff;text-decoration: underline;margin-left: 5px;}
+.timer-info img {width: 18px;height: 18px;margin: 0 5px;position: relative;top: -1px;}
+.timer-info i {font-size: 20px;margin: 0 5px;transform: rotate(0.03deg);}
 .socialshare-header {display: flex;align-items: center;}
 .socialshare-header .social-share-text {font-size: 22px;color: #fff;margin-right: 10px;}
 .timer-top-fixed .section-social {padding: 0;}
 
 /* notification bar */
-.notification-toast {position: absolute;width: 310px;float: right;background: #fff;border-radius: 5px;left: auto;right: 40px;top: 105px;display: flex;align-items: center;padding: 20px 25px;box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.24);}
-.notification-toast img {float: left;width: 54px !important;height: 54px !important;}
-.notification-text {color: #666;font-size: 16px;font-family: montserratregular;float: left;padding-left: 15px;}
-.notification-text span {font-family: montserratsemibold;}
+.notification-toast {position: absolute;width: 260px;float: right;background: #fff;border-radius: 5px;left: auto;right: 40px;top: 105px;display: flex;align-items: center;padding: 20px;box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);}
+.notification-toast img {float: left;min-width: 54px !important;width: 54px !important;height: 54px !important;}
+.notification-text {color: #666;font-size: 13px;float: left;padding-left: 15px;}
 
 /* landing page css */
 .landing-page {width: 100%;min-height: 100%;display: block;float: left;background-repeat: no-repeat;background-size: cover;background-position: top center;}
 .landing-logo {padding: 30px 60px;width: 100%;float: left;}
-.landing-outer {width: 100%;max-width: 800px;float: left;padding: 100px 60px;margin: 0 auto;min-height: 100%;display: flex;align-items: flex-start;justify-content: center;flex-direction: column;flex-wrap: wrap;}
+.landing-outer {width: 100%;max-width: 800px;float: left;padding: 100px 60px;margin: 0 auto;min-height: calc(100vh - 260px);display: flex;align-items: flex-start;justify-content: center;flex-direction: column;flex-wrap: wrap;}
 .landing-page-mid {display: flex;flex-direction: column;flex-wrap: wrap;width: 100%;float: left;}
 .landing-heading {width: 100%;float: left;}
 .landing-subheading {width: 100%;float: left;margin-top: 20px;}
-.landing-heading h1, .landing-heading p {font-size: 64px;line-height: 1.4;margin: 0;color: #fff;word-break: break-word;}
-.landing-subheading h2, .landing-subheading p {font-size: 30px;line-height: 1.2;margin: 0;color: #fff;}
+.landing-heading h1, .landing-heading p {font-size: 56px;line-height: 1.2;margin: 0;color: #fff;word-break: break-word;}
+.landing-subheading h2, .landing-subheading p {font-size: 22px;line-height: 1.4;margin: 0;color: #fff;}
 
 /* landing page cta */
-.landing-cta-outer {width: 100%;float: left;margin-top: 50px;}
-.landing-cta-outer .btn {width: auto;float: left;font-size: 26px;line-height: normal;background: #fff;color: #51cbd8;border-radius: 4px;padding: 20px 45px;}
+.landing-cta-outer {width: 100%;float: left;margin-top: 30px;}
+.landing-cta-outer .btn {width: auto;float: left;font-size: 18px;line-height: 1.4;background: #fff;color: #51cbd8;border-radius: 4px;padding: 20px 45px;}
+.landing-cta-outer .btn:focus {outline: none;box-shadow: none;}
 
 /* branding--built with Outgrow */
-.buildOutgrow-outr {float: left;width: 100%;padding: 25px 35px;}
-.buildOutgrow{background: #fff;width: auto;float: right;display: flex;align-items: center;justify-content: center;border-radius: 10px;padding: 2px;box-shadow: 4px 3px 7px 1px rgba(0,0,0,0.3);}
-.buildOutgrow p {font-size: 10px;letter-spacing: 0.8px;margin: 0 5px !important;float: left;}
+.buildOutgrow-outr {float: left;width: 100%;padding: 25px 35px;display: flex;align-items: center;justify-content: flex-end}
+.buildOutgrow{background: #fff;width: auto;float: right;display: flex;align-items: center;justify-content: center;border-radius: 5px;padding: 2px;box-shadow: 4px 3px 7px 1px rgba(0,0,0,0.3);}
+.buildOutgrow p {font-size: 10px;letter-spacing: 0.7px;margin: 0 5px !important;float: left;position: relative;top:0.8px;}
 .buildOutgrow a {display: flex;align-items: center;justify-content: center;}
 .buildOutgrow a img {height: 20px;}
-.buildOutgrow a p {font-size: 11px !important;color: #444;font-weight: 600;}
+.buildOutgrow a p {font-size: 13px !important;color: #444;top:1px;}
 
 /* result page */
 .result-page {width: 100%;float: left;background: #fff;padding: 100px;}
-.sec-outer {width: 100%;float: none;margin: 0 auto;text-align: center;display: flex;flex-direction: column;flex-wrap: wrap;max-width: 80%;margin: 0 auto;}
-.page-heading {width: 100%;float: left;font-size: 52px;margin: 0 0 30px;}
-.page-sub-heading {width: 100%;float: left;font-size: 30px;margin: 0 0 30px;}
+.sec-outer {width: 100%;float: none;margin: 0 auto;text-align: center;display: flex;flex-direction: column;flex-wrap: wrap;max-width: 60%;margin: 0 auto;}
+.page-heading {width: 100%;float: left;font-size: 38px;margin: 0 0 20px;line-height: 1.2;}
+.page-sub-heading {width: 100%;float: left;font-size: 22px;margin: 0 0 30px;line-height: 1.4;}
 .page-sub-heading a {color: #666;border-bottom: 3px solid #666;cursor: pointer;}
 .contest-info-outer {width: 100%;float: left;}
 /* .contest-info-outer .video-sec {max-width: 650px;max-height: 420px;display: flex;margin: 0 auto 50px;} */
@@ -59,18 +59,18 @@ input, textarea, button:focus {outline: none;}
 .contest-info-outer a.tag_delete img {display: none;}
 .sec-inner{margin-bottom: 90px;}
 .sec-inner:last-child {margin: 0;}
-.sec-head {width: 100%;float: left;font-size: 30px;margin-bottom: 30px;}
-.sec-sub-head {width: 100%;float: left;font-size: 18px;line-height: 30px;}
+.sec-head {width: 100%;float: left;font-size: 24px;margin-bottom: 20px;line-height: 1.4;}
+.sec-sub-head {width: 100%;float: left;font-size: 16px;line-height: 1.4;}
 
 /* footer */
 .footer-outer {width: 100%;float: left;background: #51cbd8;padding: 0 65px 40px;}
 .footer-inner {width: 100%;float: left;}
-.footer-heading {font-size: 52px; width: 100%;text-align: center;margin: 0;padding-top: 40px;color: #fff;}
+.footer-heading {font-size: 52px; width: 100%;text-align: center;margin: 0;padding-top: 40px;color: #fff;line-height: 1.2;}
 
 /* footer CTA */
 .footer-cta-outer {width: 100%;float: left;text-align: center;}
 /* section.contest-cta {display: flex;align-items: center;justify-content: center;width: 100%;float: left;flex-direction: column;} */
-.footer-outer .btn {width: auto;float: none;font-size: 26px;line-height: normal;background: #fff;color: #51cbd8;border-radius: 4px;padding: 20px 45px;margin-top: 40px;}
+.footer-outer .btn {width: auto;float: none;font-size: 18px;line-height: 1.4;background: #fff;color: #51cbd8;border-radius: 4px;padding: 20px 45px;margin-top: 40px;}
 
 /* social share icons */
 .section-social {width: 100%;float: left;display: flex;align-items: center;justify-content: center;flex-wrap: wrap;text-align: center;padding-top: 40px;}
