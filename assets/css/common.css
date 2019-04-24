@@ -4622,7 +4622,7 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
 /* .intro-overlay.t2-temp.builder-parent .mid-sec img.left-arrow,
 .intro-overlay.t8-temp.builder-parent .mid-sec img.left-arrow {top: 50px;} */
 .intro-overlay.t2-temp.builder-parent .mid-sec img {top: 36vh;}
-.intro-overlay.t8-temp .mid-sec svg.btn-arrow-position {left: 49vw;top: 34vh;transform: rotateY(170deg) rotate(-200deg);}
+.intro-overlay.t8-temp .mid-sec svg.btn-arrow-position {left: 52vw;top: 34vh;transform: rotateY(170deg) rotate(-200deg);}
 /* t7 overlay */
 .intro-overlay.t7-temp img.t7-ques{position:absolute;left:325px;top:265px;display:block!important}
 .intro-overlay.t7-temp .right-sec-info{background:url(https://dlvkyia8i4zmz.cloudfront.net/UsNTM8vDTnKQ40wMA0WB_question_title.PNG);width:290px;float:right;height:100%;background-repeat:no-repeat;position:absolute;right:10px;top:210px}
@@ -5249,7 +5249,7 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-.mid-sec img.t2-cta {display: none;}
+.mid-sec img.t2-cta, .mid-sec img.t8-cta {display: none;}
 .mid-sec svg {position: absolute;left: 32vw;top: -45px;}
 .intro-overlay svg {max-width: 65px;height: 75px;transform: rotate(-15deg);}
 .right-button-outer img {float: right;margin-right: 10px;position: relative;top: 40px;width: 40px;}
@@ -5265,5 +5265,7 @@ input[type=number]::-webkit-outer-spin-button {
 .intro-overlay.t2-temp .mid-sec img.t2-cta {width: 121px !important;max-width: 100% !important;position: absolute;height: 38px;top: 35.5vh !important;left: 21.5vw !important;display: block !important;border: 2px solid #000;}
 .intro-overlay.t2-temp svg.right-arrow {top: 50px;}
 .intro-overlay.t2-temp.without-banner svg.right-arrow {top: 110px;}
-.intro-overlay.t8-temp.without-banner .mid-sec svg.btn-arrow-position {top: 25vh;}
+.intro-overlay.t8-temp.without-banner .mid-sec svg.btn-arrow-position {top: 22vh;}
 .intro-overlay.t2-temp.without-banner .mid-sec img.t2-cta {top: 34vh !important;}
+.intro-overlay.t8-temp .mid-sec img.t8-cta{width: 80px !important;max-width: 100% !important;position: absolute;height: auto;top: 36.5vh !important;left: 44vw !important;display: block !important;}
+.intro-overlay.t8-temp.without-banner .mid-sec img.t8-cta {top: 24.5vh !important;}
