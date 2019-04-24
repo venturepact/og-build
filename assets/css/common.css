@@ -4804,7 +4804,7 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
 .prof-head i.success {color: #42c07e !important;  }
 .box-sec-row {display: flex;float: left;width: 100%;}
 
-.prof-card-mid{ float: left; width: 100%; background: #fff;-webkit-border-radius: 5px;height: 100%;  -moz-border-radius: 5px;  border-radius: 5px; box-shadow: 0 0 25px 1px rgba(0, 0, 0, .1);  }
+.prof-card-mid{ float: left; width: 100%; background: #fff;-webkit-border-radius: 5px;height: 100%;  -moz-border-radius: 5px; overflow:hidden; border-radius: 5px; box-shadow: 0 0 25px 1px rgba(0, 0, 0, .1);  }
 .prof-card-mid .top-sec{ float: left; width: 100%; padding: 20px 30px;}
 .prof-card-mid .top-sec .sec-part{ float: left; width: 100%; padding-left:45px; position: relative; margin-top:20px;}
 .prof-card-mid .top-sec .sec-part i{  font-size: 30px; position: absolute; left:0; top:10px; color: #888888; }
