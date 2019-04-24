@@ -123,6 +123,11 @@ section.greet_popup iframe {
     box-shadow: none !important;
 }
 
+.fadeOut {
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
 @media (max-width: 767px) and (min-width: 0px){
     section.greet_popup iframe {
         width: 100%;

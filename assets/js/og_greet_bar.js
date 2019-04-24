@@ -1,1 +1,1 @@
-function closeGreetBar(){document.getElementById("barEmbed").style.display="none"}function openGreetPopup(){document.getElementById("greet_popup").style.display=""}function closeGreetPopup(){document.getElementById("greet_popup").style.display="none"}
+function closeGreetBar(){document.getElementById("barEmbed").classList.add("fadeOut")}function openGreetPopup(){document.getElementById("greet_popup").style.display=""}function closeGreetPopup(){document.getElementById("greet_popup").style.display="none"}
