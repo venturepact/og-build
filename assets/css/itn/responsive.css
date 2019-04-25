@@ -1212,8 +1212,11 @@
     .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {line-height: 1.4 !important; font-size: 14px !important; padding-top: 0 !important;}
 
     .logo{ height: 55px;display: flex;justify-content: center;align-items: center;}
-    .V_3_5 .t1-landing .landing-img { max-width: 100%;}
+    .V_3_5 .t1-landing .landing-img { max-width: 100%; margin-bottom: 20px !important;}
     .V_3_5 .t1-landing video-view{ width: 100% !important;}
+    .V_3_5 .t1-landing video-view .video-sec {margin-bottom: 20px !important;}
+    .V_3_5 .t1-landing.landing-text-left video-view .video-sec{ margin-bottom: 20px !important;}
+    .V_3_5 .t1-landing.landing-text-right video-view .video-sec{ margin-bottom: 20px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {

@@ -688,11 +688,12 @@
     .logo{ height: 55px;display: flex;justify-content: center;align-items: center;}
     /* .V_3_5 .landing-text-center .landing-page-mid{width: 85% !important;} */
 
-    .V_3_5 .t1-landing .landing-img {max-width: 100%;}
+    .V_3_5 .t1-landing .landing-img {max-width: 100%; margin-bottom: 20px !important;}
     .V_3_5 .landing-text-center .landing-page-mid {width: 100%; padding: 0px 25px;  max-width: 100%; }
     .V_3_5 .t1-landing.landing-text-center video-view,
     .V_3_5 .t1-landing.landing-text-left video-view,
     .V_3_5 .t1-landing.landing-text-right video-view{ width: 100% !important;}
+    .V_3_5 .t1-landing video-view .video-sec {margin-bottom: 20px !important;}
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
