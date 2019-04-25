@@ -690,6 +690,9 @@
 
     .V_3_5 .t1-landing .landing-img {max-width: 100%;}
     .V_3_5 .landing-text-center .landing-page-mid {width: 100%; padding: 0px 25px;  max-width: 100%; }
+    .V_3_5 .t1-landing.landing-text-center video-view,
+    .V_3_5 .t1-landing.landing-text-left video-view,
+    .V_3_5 .t1-landing.landing-text-right video-view{ width: 100% !important;}
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
@@ -804,7 +807,7 @@
     .structure-right-align .t1-slider-nav a.next{left:25%;bottom:-60px;top:inherit}
     .structure-right-align .t1-slider-nav a.go{left:25%;bottom:20px;top:inherit}
     .logo-resizing.v-padding{padding-top:95px}
-    .logo-resizing.h-padding{padding-top:120px}
+    .logo-resizing.h-padding{padding-top:100px}
     .page_1 .common-result-space{padding-top:30px!important}
     .opinion-label-outer{font-size:11px}
     .opinon-scale-custom span.t6{margin-top:10px;margin-bottom:5px}
@@ -1109,7 +1112,9 @@
     .safari .header-next-div .t1-question{height: auto !important; min-height: 820px}
     .V_3_5 .landing-page-mid leadform button.prime-action{padding: 14px 30px 13px;}
     .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input .item{ font-size: 16px !important;}
-    .V_3_5 .t1-landing .video-sec{ padding-bottom: 38.5%;}
+    /* .V_3_5 .t1-landing .video-sec{ padding-bottom: 38.5%;} */
+    .V_3_5 .t1-landing.landing-text-left video-view{width: 62% !important;}
+    .V_3_5 .t1-landing.landing-text-right video-view{width: 62% !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}

@@ -3,7 +3,7 @@
 @media (max-width: 767px) {
   .sec-landing-inner {padding-left: 30px;padding-right: 30px;}
   .landing-logo {width: 100%;max-width: 100%;left: 0;right: 0;display: flex;justify-content: center;align-items: center;}
-  .section-heading {font-size: 46px;}
+  .section-heading {font-size: 42px;}
   .section-subheading {font-size: 20px;}
   .leadform-input-outr {flex: 1;}
   .buildOutgrow {left: 50%;right: auto;transform: translateX(-50%);}
@@ -85,6 +85,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .sec-landing-inner{padding: 100px 40px 120px;}
   .sec-result-inner {padding-left: 50px; padding-right: 50px;}
+  .section-heading {font-size: 52px;}
 
   /* iphone changes css */
   .ques-radio-Component.image-checkbox ul li .check:before{left: 2px; top: 2px;}
