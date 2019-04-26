@@ -742,3 +742,18 @@ button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
 .safari .ques-radio-Component.image-checkbox.checkbox ul li .check:before{left: 3px; top: 3px;}
 .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
 .safari .ques-radio-Component.image-radio ul li .check:before{left: 5px; top: 5px;}
+
+/* internet explorer css */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .result-leadform input{line-height: normal; }
+  .result-leadform-input-outr i{left:0px; top:15px;}
+  .question-leadform input{line-height: normal; }
+  .question-input-outr.number label.post-icon{ top:10px; width:auto;line-height: normal;}
+  .ques-radio-Component ul li .check::before{ left:2px; top:2px; }
+  .ques-innerBox .opinon-scale-custom .check-comp .radio-outer label.control.control--radio{ line-height: 40px;}
+  
+  
+  }
+/* internet explorer css */
