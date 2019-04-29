@@ -1909,10 +1909,13 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .V_3_5 .isIframe .page_1, .V_3_5 .isIframe .page_1.t2haslogo {min-height: 550px !important;}
 
 /* video & image on welcome screen */
-video-view {width: 35%;float: none;display: inline-block;margin: 0 auto;}
 .video-sec {height: auto;position: relative;padding-bottom: 57.55%;left: 0;right: 0;top: 0;bottom: 0;margin: 0 auto 40px!important;float: left;width: 100%;display: block;}
 .video-sec iframe {height: 100%;width: 100%;position: absolute;left: 0;right: 0;bottom: 0;top: 0;}
+img.landing-image {max-width: 100%;margin-bottom: 40px;width: 504px;min-height: 290px;float: left;}
+.landing-media-outer {width: 60%;margin: 0 auto;float: none;}
+video-view {width: 60%;float: none;display: inline-block;margin: 0 auto;}
 .landing-text-right .video-sec , .landing-text-right img.landing-image {float: right;}
 .landing-text-center .video-sec, .landing-text-center img.landing-image {float: none;}
-.landing-text-right .video-sec,.landing-text-left .video-sec {padding-bottom: 23.6%;}
-img.landing-image {max-width: 100%;margin-bottom: 40px;width: 504px;min-height: 290px;float: left;}
+.landing-text-left .landing-media-outer, .landing-text-left .landing-media-outer video-view {float: left;width: 63%;}
+.landing-text-right .landing-media-outer, .landing-text-right .landing-media-outer video-view {float: right;width: 63%;}
+.landing-text-left .video-sec, .landing-text-right .video-sec{padding-bottom: 57%;}
