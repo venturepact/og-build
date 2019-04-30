@@ -16,14 +16,10 @@
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr;
-    /* Support for all WebKit browsers. */
-    -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
-    text-rendering: optimizeLegibility;
-    /* Support for Firefox. */
-    -moz-osx-font-smoothing: grayscale;
-    /* Support for IE. */
-    font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;/* Support for all WebKit browsers. */
+    text-rendering: optimizeLegibility;/* Support for Safari and Chrome. */
+    -moz-osx-font-smoothing: grayscale;/* Support for Firefox. */
+    font-feature-settings: 'liga';/* Support for IE. */
 }
 *{margin: 0;padding: 0;box-sizing: border-box;}
 body{color: #666;}
@@ -119,9 +115,25 @@ ul.social-icons {width: 100%;margin: 0;float: left;text-align: center;}
 .likes-parent #vk_subscribe_fromPopup iframe {float: none!important;width: auto!important;display: inline-block!important;max-width: 160px!important;background: #5181b8;height: 28px;border-radius: 3px;padding: 3px 0;margin-top: 0!important;}
 
 /* leadform  */
-#build section.leadform-outer{position: absolute;}
-section.leadform-outer {width: 100%;float: left;position: fixed;top: 60px;background: rgba(0,0,0,0.25);left: 0;right: 0;bottom:0px;display: flex;align-items: flex-start;justify-content: center;vertical-align: middle;}
-.leadpopup {position: relative;width: 100%;max-width: 520px;padding: 40px;background: #ffff;border-radius: 3px;margin: 45px auto;float: none;max-height: calc(100vh - 140px);overflow-y: auto; overflow-x: hidden;}
+#build section.leadform-outer{position: absolute;top:0px}
+section.leadform-outer {width: 100%;float: left;position: fixed;top: 61px;background: rgba(0,0,0,0.25);left: 0;right: 0;bottom:0px;display: flex;align-items: flex-start;justify-content: center;vertical-align: middle;z-index: 9;}
+.leadform-inner{
+    width: 100%;
+    float: none;
+    margin: 45px auto;
+    max-width: 520px;
+    position: relative;
+}
+.leadpopup {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background: #ffff;
+    border-radius: 3px;
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
 .t1-landing-leadform,.section-leadform {width: 100%;float: left;}
 .lead-heading {
     font-size: 30px;
@@ -133,12 +145,21 @@ section.leadform-outer {width: 100%;float: left;position: fixed;top: 60px;backgr
     line-height: 1.4;
     margin-bottom: 20px;
 }
+a.leadgen-close {
+    position: absolute;
+    left: auto;
+    right: -25px;
+    top: -12px;
+    color: #fff;
+    opacity: 1;
+    z-index: 9;
+}
+
 .leadform-btn {width: auto;padding: 18px 20px;font-size: 18px;}
 .result-leadform-input-outr {width: 100%;float: left;margin-top: 0px;margin-bottom: 15px;position: relative;}
 .result-leadform-input-outr input {width: 100%;float: right;position: relative;padding-left: 30px;font-size: 20px;border: 1px solid #e8e8e8 !important;border-radius: 3px;padding: 20px 25px 20px 45px}
 .result-leadform-input-outr i {position: absolute;left: auto;font-size: 23px;transform: rotate(0.03deg);top: 50%;transform: translateY(-50%);left: 20px;}
 span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 70px;font-size: 12px;left: 0;}
-a.leadgen-close {position: absolute;left: auto;right: -30px;top: -12px;color: #fff;opacity: 0.45;}
 .result-leadform-input-outr .leadform-select {width: 100%;float: left;text-align: left;}
 .result-leadform-input-outr .leadform-select .selectize-input {width:100%;float:left;position:relative;border: none;box-shadow: none !important;background: #fff;text-align: left;padding: 0;font-size: 20px;color: #aaa;}
 .result-leadform-input-outr .leadform-select .selectize-input input {float: left;padding: 20px 25px !important;width: 100% !important;}

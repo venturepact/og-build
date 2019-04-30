@@ -70,6 +70,9 @@ html {
     height: auto !important;
     -webkit-overflow-scrolling: touch;
 }
+html.safari {
+    overflow: visible;
+}
 body {
     margin: 0;
     padding: 0;
@@ -77,6 +80,9 @@ body {
     height: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+}
+html.safari body {
+    overflow: visible;
 }
 .np {
     padding: 0px;
