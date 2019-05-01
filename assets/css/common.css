@@ -4572,7 +4572,7 @@ img.t7-ques{display:none!important}
 .btn-position ul.text-box li{text-align:left;padding-top:0;justify-content:flex-start}
 .btn-position ul.text-box li:last-child{padding-bottom:0}
 .btn-position ul.text-box li i{float:left;margin-left:0;margin-right:10px}
-.btn-position.left-button-outer-t2 ul.text-box {left: 70px;top: 60px;}
+.btn-position.left-button-outer-t2 ul.text-box {left: 10px;top: 110px;}
 ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;margin:0}
 .text-box li i{font-size:15px;color:#1483b7;float:right;margin-left:10px}
 /* go live button */
@@ -4639,8 +4639,8 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
 .intro-overlay.t8-temp .right-sec-info img {display: none;}
 .intro-overlay.t9-temp .mid-sec-info{left:-15px;}
 .intro-overlay.t9-temp .btn-position{top:230px}
-.intro-overlay.t2-temp .mid-sec .mid-sec-info{left:-40px}
-
+.intro-overlay.t2-temp .mid-sec .mid-sec-info{left:-40px;top: 60px;}
+.btn-position.left-button-outer-t2 svg {transform: rotate(80deg);top: 50px;left: 70px;}
 .btn-position.left-button-outer-t8 ul.text-box,
 .btn-position.left-button-outer-t9 ul.text-box {left: 60px;}
 .intro-overlay.builder-parent{top: 0px !important;}
@@ -4725,7 +4725,10 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
     .btn-position.left-button-outer-t9 ul.text-box {left: 0;}
     .intro-overlay.t2-temp .mid-sec img{left: 440px;}  
 }
-
+@media(min-width: 1367px){
+    .intro-overlay.t7-temp.without-banner img.t7-ques{left: 26%;}
+    .intro-overlay.t7-temp svg.btn-arrow-position{left: 34%;}
+}
 @media (min-width: 1400px) and (max-width: 1440px) {
     .intro-overlay.t7-temp img.t7-ques{left:360px}
     .intro-overlay.t7-temp svg.btn-arrow-position {left: 500px;}
