@@ -84,7 +84,6 @@ section.barEmbed button:hover {
     background-repeat: no-repeat;
     box-shadow: none !important;
     border: none !important;
-    -webkit-overflow-scrolling: touch;
 }
 
 /**** popup Css ****/
@@ -101,6 +100,8 @@ section.greet_popup {
     left: 0;
     right: 0;
     z-index: 999999999;
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
 }
 section.greet_popup iframe {
     z-index: 9;
@@ -128,9 +129,14 @@ section.greet_popup iframe {
     opacity: 0;
     transition: opacity 500ms;
 }
-@media (max-width: 1024px) and (min-width: 768px){
+@media (max-width: 790px) and (min-width: 768px){
     section.greet_popup{
         align-items: end;
+    }
+    section.greet_popup iframe {width: 100%;}
+    .close-popup {
+        right: 30px;
+        top: 5px !important;
     }
 }
 @media (max-width: 767px) and (min-width: 0px){
