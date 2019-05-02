@@ -183,3 +183,6 @@ span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 
 .result-leadform-input-outr input::-webkit-input-placeholder {color: #aaa;} /* Edge */
 .result-leadform-input-outr input:-ms-input-placeholder {color: #aaa;}/* Internet Explorer 10-11 */
 .result-leadform-input-outr input::placeholder {color: #aaa;}
+
+/* landing page image and video */
+.contest-info-outer img, img.landing-image{max-width: 504px;max-height: 300px;margin-bottom: 25px;width: 100%;}
