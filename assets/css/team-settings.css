@@ -2155,11 +2155,11 @@
         box-shadow: 0 0 5px rgba(0, 0, 0, .2);
         padding: 20px 20px 25px;
         margin: 15px 0;
-        min-height: 207px;
+        min-height: 249px;
         text-align: center;
         font-family: montserratregular;
         position: relative;
-        color: #62696d
+        color: #62696d; 
     }
     .active-users-card .active-users-box .img-block-blue {
         background: #269fd8;
@@ -2294,7 +2294,7 @@
     }
     .active-users-dropdown-wrapper .dropdown-menu {
         padding: 10px 0;
-        z-index: 1;
+        z-index: 9999;
         top: 13px;
         left: -70px;
         min-width: 148px;
