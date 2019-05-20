@@ -5008,15 +5008,15 @@ button.lf-skip-btn{
 /*template t3 improved version*/
 
 /*landing page starts*/
-.V_3_5 .landing-page-mid {width: 70%;float: none;margin: 0 auto;}
+.V_3_5 .landing-page-mid {width: 70%;float: none;margin: 0 auto; text-align: center;}
 .V_3_5 .main-heading, .V_3_5 .main-heading h1{font-size: 56px;line-height: 1.2;text-align: center; width: 100%;margin: 0 auto;margin-bottom: 15px;}
 .V_3_5 .main-heading p{margin: 0;}
 .V_3_5 .sub-heading, .V_3_5 .sub-heading h2 {font-size: 22px;line-height: 1.4;word-break: break-word;text-align: center;width: 85%;margin: 0 auto;margin-bottom: 20px;}
 .V_3_5 .landing-page-mid button{border-radius: 50px;-webkit-box-shadow: -5px 25px 25px 4px rgba(0,0,0,0.1);box-shadow: -5px 25px 25px 4px rgba(0,0,0,0.1);padding: 15px 30px;float: none;box-shadow: none;letter-spacing: 1.5px;font-size: 14px;line-height: 20px;transition: all 0.3s; position: relative; overflow: hidden;}
 .V_3_5 .landing-text-left .sub-heading, .V_3_5 .landing-text-left .sub-heading h2 {text-align: left;margin-left: 0}
 .V_3_5 .landing-text-left .main-heading, .V_3_5 .landing-text-left .main-heading h1, .V_3_5 .landing-text-left .main-heading h1 p {text-align: left;}
-.V_3_5 .landing-text-left .landing-page-mid {width: 60%;float: left;margin-left: 60px;}
-.V_3_5 .landing-text-right .landing-page-mid {width: 60%;float: right;margin-right: 60px;}
+.V_3_5 .landing-text-left .landing-page-mid {width: 60%;float: left;margin-left: 60px;  text-align: left;}
+.V_3_5 .landing-text-right .landing-page-mid {width: 60%;float: right;margin-right: 60px;  text-align: right;}
 .V_3_5 .landing-text-right .sub-heading, .V_3_5 .landing-text-right .sub-heading h2 {text-align: right;margin-right:0;}
 .V_3_5 .landing-text-right .main-heading, .V_3_5 .landing-text-right .main-heading h1, .V_3_5 .landing-text-right .main-heading h1 p {text-align: right;}
 .V_3_5 .landing-text-left .landing-page-mid button {float: left;}
@@ -5666,3 +5666,15 @@ file .file-loader span{ font-size: 24px;}
     line-height: normal;
     height: auto;
 }
+
+.V_3_5 .t1-landing video-view {width: 60%; display: inline-block; margin: 0 auto;}
+.V_3_5 .t1-landing video-view .video-sec {height: auto; position: relative;padding-bottom: 55.25%; left: 0; right: 0; top: 0;bottom: 0; margin: 0 auto !important; margin-bottom: 25px !important; max-width: 504px;}
+.V_3_5 .t1-landing video-view .video-sec iframe { height: 100%; width: 100%;position: absolute; left: 0; right: 0; bottom: 0; top: 0;}
+.V_3_5 .t1-landing.landing-text-center video-view { width: 51.4%;}
+.V_3_5 .t1-landing.landing-text-left video-view .video-sec { margin-left: 0px !important; margin-bottom: 25px !important;  }
+.V_3_5 .t1-landing.landing-text-right video-view .video-sec { margin-right: 0px !important; margin-bottom: 25px !important; } 
+
+.V_3_5 .t1-landing .landing-img { max-width: 504px;  max-height: 300px; margin: 0 auto; margin-bottom: 25px; display: block;}
+.V_3_5 .landing-text-left.t1-landing .landing-img { margin-left: 0 !important;}
+.V_3_5 .landing-text-right.t1-landing .landing-img { margin-right: 0 !important;}
+.V_3_5 .new_control .t1-ques-head .help-text {font-size: 16px; line-height: 24px;}

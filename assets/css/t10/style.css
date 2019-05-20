@@ -41,7 +41,7 @@ textarea:-moz-placeholder {color: #444; opacity: 0.4;}
 .section{ float: left; width: 100%;}
 .landing-logo{ float: left; width: 100%; max-width: 210px; position: absolute; left: 40px; top: 30px;}
 .landing-logo img {max-width: 209px;}
-.section-heading { color: #fff; font-size: 58px; line-height: 1.2; text-align: center; font-family: clear_sansbold; word-break: break-word; white-space: normal;}
+.section-heading { color: #fff; font-size: 56px; line-height: 1.2; text-align: center; font-family: clear_sansbold; word-break: break-word; white-space: normal;}
 .section-subheading { color: #fff; font-size: 22px; line-height: 1.4; text-align: center; margin-top: 20px;  font-family: clear_sansregular; word-break: break-word; white-space: normal;}
 .section-leadform{ margin-top: 25px; display: flex; justify-content: center;flex-direction: row; flex-wrap: wrap;}
 .leadform-input-outr {display: flex;align-items: center; margin: 5px;min-width: 48%; position: relative;}
@@ -447,7 +447,7 @@ form.result-leadform.full-width .result-leadform-input-outr {min-width: 50%;}
 .result-socia-inner .likes-parent #follow, .result-socia-inner .likes-parent #like, .result-socia-inner .likes-parent #vk_subscribe {float: left;width: auto!important;margin-right: 5px;}
 .result-socia-inner .likes-parent #like {top: 0px !important;position: relative;}
 .result-socia-inner .likes-parent #vk_subscribe iframe {float: none!important;width: auto!important;display: inline-block!important;max-width: 160px!important;background: #5181b8;height: 28px;border-radius: 3px;padding: 3px 0;margin-top: 0 !important;}
-.section-social-heading {font-size: 20px;color: #444;line-height: 1.4;margin-top: 35px; float: left; width: 100%; text-align: center;}
+.section-social-heading {font-size: 20px;color: #444;line-height: 1.4;margin-top: 35px; float: left; width: 100%; text-align: center; padding: 0px 30px !important;}
 span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: left;width: 100%;text-align: center; padding-bottom: 20px;}
 .template-ten-main .lead-popup .section-social label.section-social-heading{display: none;}
 .result-socia-inner .likes-parent .section-social-heading {margin-bottom: 30px;margin-top: 0;}
@@ -585,6 +585,29 @@ span.redirect-heading {font-size: 20px;line-height: 1.4;margin-top: 35px;float: 
 /* before result popup */
 
 
+/* Landing text alignment */
+.V_3_5 .landing-text-center .landing-page-mid .main-heading {text-align: center;}
+
+.section-landing.landing-bg.landing-text-left .sec-landing-inner {margin-left: 0;padding-left: 40px;}
+.section-landing.landing-bg.landing-text-left .sec-landing-inner .section-heading {text-align: left;}
+.section-landing.landing-bg.landing-text-left .sec-landing-inner .section.section-subheading {text-align: left;}
+.section-landing.landing-bg.landing-text-left .sec-landing-inner form.result-leadform {margin-left: 0;}
+.section-landing.landing-bg.landing-text-left .sec-landing-inner .result-leadform-button {justify-content: end;}
+.section-landing.landing-bg.landing-text-left .section.leadform-button {justify-content: end;}
+
+.section-landing.landing-bg.landing-text-center .sec-landing-inner .section-heading {text-align: center;}
+.section-landing.landing-bg.landing-text-center .sec-landing-inner .section.section-subheading {text-align: center;}
+.section-landing.landing-bg.landing-text-center .sec-landing-inner .result-leadform-button {justify-content: center;}
+
+
+.section-landing.landing-bg.landing-text-right .sec-landing-inner {margin-right: 0;padding-right: 40px;}
+.section-landing.landing-bg.landing-text-right .sec-landing-inner .section-heading {text-align: right;}
+.section-landing.landing-bg.landing-text-right .sec-landing-inner .section.section-subheading {text-align: right;}
+.section-landing.landing-bg.landing-text-right .sec-landing-inner form.result-leadform {margin-right: 0;}
+.section-landing.landing-bg.landing-text-right .sec-landing-inner .result-leadform-button {justify-content: flex-end;}
+.section-landing.landing-bg.landing-text-right .section.leadform-button {justify-content: flex-end;}
+/* Landing text alignment */
+
 /*landing re-changes */
 .section-heading h1.main-heading.th-bold-new {margin: 0;line-height: inherit !important;font-weight: inherit !important;font-size: inherit !important;}
 .section-subheading .sub-heading {opacity: 1 !important;font-size: inherit !important;margin: 0;line-height: inherit;font-weight: inherit;}
@@ -631,7 +654,7 @@ button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
 .sec_1 .sec-question-inner {padding-top: 0 !important;}
 /* .sec_1 .sec-question-inner custom_html {text-align: center;} */
 .sec_1 .sec-question-inner custom_html h1, .sec_1 .sec-question-inner custom_html p, .sec_1 .sec-question-inner custom_html a {margin: 0; margin-bottom: 10px !important;}
-.sec_1 .sec-question-inner .ques-heading {margin-bottom: 10px;}
+/* .sec_1 .sec-question-inner .ques-heading {margin-bottom: 10px;} */
 .custom-button {text-align: left!important; display: block;width: 100%;float: left;margin-top: 20px;}
 .custom-button button { cursor: pointer;padding: 12px 25px;border: none;border-radius: 30px; font-size: 16px;color: #fff; letter-spacing: 1px; line-height: 1.4; -webkit-transition: .5s; transition: .5s; word-break: break-word; white-space: normal;}
 /* .sec_1 .sec-question-inner control + .question-button {text-align: center !important;} */
@@ -707,8 +730,30 @@ button.lf-skip-btn.ripple-light.skipButton:hover{ color: #888;}
   .template-ten-main .ques-innerBox calendar input:-moz-placeholder {color: #444; opacity: 0.6;}
 }
 
+.main-scrollDiv .sec-landing-inner video-view {width: 60%; display: inline-block; margin: 0 auto;}
+.main-scrollDiv .sec-landing-inner .video-sec {height: auto; position: relative; padding-bottom: 56.25%; left: 0; right: 0; top: 0;bottom: 0; margin: 0 auto !important; margin-bottom: 15px !important; max-width: 504px;}
+.main-scrollDiv .sec-landing-inner .video-sec iframe { height: 100%; width: 100%;position: absolute; left: 0; right: 0; bottom: 0; top: 0;}
+.main-scrollDiv .landing-text-left .sec-landing-inner .video-sec {margin-left: 0 !important;margin-bottom: 15px !important; padding-bottom: 57.1%;}
+.main-scrollDiv .landing-text-right .sec-landing-inner .video-sec {margin-right: 0 !important;margin-bottom: 15px !important; padding-bottom: 57.1%;}
+.main-scrollDiv .section-landing .landing-img { max-width: 504px;  max-height: 300px; margin-bottom: 15px;}
+
 /* iphone changes css */
 .safari .result-leadform-input-outr i{left: 0; top: 22px;}
 .safari .ques-radio-Component.image-checkbox.checkbox ul li .check:before{left: 3px; top: 3px;}
 .safari .ques-radio-Component ul li .check:before{left: 2px; top: 2px;}
 .safari .ques-radio-Component.image-radio ul li .check:before{left: 5px; top: 5px;}
+
+/* internet explorer css */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+  .result-leadform input{line-height: normal; }
+  .result-leadform-input-outr i{left:0px; top:15px;}
+  .question-leadform input{line-height: normal; }
+  .question-input-outr.number label.post-icon{ top:10px; width:auto;line-height: normal;}
+  .ques-radio-Component ul li .check::before{ left:2px; top:2px; }
+  .ques-innerBox .opinon-scale-custom .check-comp .radio-outer label.control.control--radio{ line-height: 40px;}
+  
+  
+  }
+/* internet explorer css */

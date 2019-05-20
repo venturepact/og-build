@@ -72,7 +72,7 @@ ul, li {
 .t1-landing .eight-inner-wrapper{    background-size: cover;    background-repeat: no-repeat;    background-position: top center;}
 .eight-inner-wrapper , .eight-inner-wrapper.header-next-div.no-header-links, .eight-inner-wrapper.no-header-links.no-footer-links{min-height: 480px;height: auto;transition:height 0.5s; border:12px solid transparent; display:table !important; position:relative; width:100%; float:left; box-shadow: 0px 0px 10px rgba(0,0,0,0.25); padding-left:0px; padding-right:0px}
 .t1-landing-inner{    display: table-cell;    vertical-align: middle;    height: 100%;    padding: 80px 15px 50px; }
-.template-eight  .t1-landing .no-footer-links .t1-landing-inner{padding-top: 50px  !important;    padding-bottom: 50px !important;}
+.template-eight  .t1-landing .no-footer-links .t1-landing-inner{padding-top: 40px  !important;    padding-bottom: 40px !important;}
 .eight-inner-wrapper.no-header-links.no-footer-links{margin: 20px 0 70px}
 .main-heading h1{max-width: 380px;  margin: 0px auto 10px !important; }
 .main-heading h1 p{margin-bottom: 0px}
@@ -2070,7 +2070,18 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     z-index: 9 !important;
 }
 
+/* welcome screen text left center right */
 
+.landing-text-left .main-heading.th-bold-new {text-align: left;margin-left: 0 !important;}
+.landing-text-left .landing-page-mid .sub-heading {text-align: left;margin-right: 0;margin-left: 0;}
+.landing-text-left .landing-page-mid .input-section {width: 68%;float: left;}
+.landing-text-left .t2btn-outr {text-align: left;}
+
+    /* right */
+.landing-text-right .landing-page-mid .main-heading {text-align: right;margin-right: 0 !important;}
+.landing-text-right .landing-page-mid .sub-heading {text-align: right;margin-right: 0;margin-left: 0;width: 100%;}
+.landing-text-right .t2btn-outr {text-align: right;}
+.landing-text-right .landing-page-mid .input-section {float: right;}
 
 .control__indicator.check-set div i.fa-question.fa {
     top: 2px;
@@ -2600,4 +2611,30 @@ glyphicon glyphicon-calendar .t1-ques-component .input-section .input-outer.chec
 .template-eight.temp-eight-outer-iframe .t1-result {
     background-image: none !important;
 
+}
+.landing-page-mid video-view .video-sec {
+    position: relative;
+
+    height: auto;
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto 25px !important;
+}
+
+.landing-page-mid video-view .video-sec::before {
+    padding-top: 56.25%;
+    content: '';
+    display: block;
+}
+
+img.bgimg {
+    margin-bottom: 25px;
+    float: none;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 25px;
+    display: inline-block;
 }

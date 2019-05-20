@@ -42,7 +42,7 @@ section.landing-page-mid{width:50%;margin-left:50%;padding:40px 50px 100px;float
 .question-mid .questions-block p.prev,
 .t1-ques-component.active.prev{opacity:.4}
 .t1-ques-component .question-components .t1-ques-head{width:auto!important}
-.t1-ques-component .go-btn{display:flex;width:62px;height:62px;margin-left:8px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:8px;font-size:22px;line-height:62px;color:#fff;align-items:center;justify-content:center}
+.t1-ques-component .go-btn{display:flex;width:58px;height:58px;margin-left:8px;position:relative;border-radius:50%;background:red;float:right;margin-bottom:8px;font-size:22px;line-height:58px;color:#fff;align-items:center;justify-content:center}
 .inline-tablecell.logo-resizing{position:relative;z-index:1;text-align:center;float:left;width:100%;padding:0}
 /* .sec_0 .inline-tablecell.logo-resizing{padding:40px 0 0} */
 a.go-btn:hover{text-decoration:none}
@@ -82,7 +82,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .input-group.date input.form-control:-moz-placeholder{color:#fff;opacity:.5}
 .powered-by{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:rgba(255,255,255,.9);border-radius:4px;padding:0 1px 0 5px;}
 .editor-page-divider .t1-ques-component .question-components.transparent-bg,
-.t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0;margin:0 0 00px;text-align:right}
+.t1-ques-component.active .question-components.transparent-bg{background-color:transparent!important;box-shadow:none;padding:0 !important;margin:0 0 00px;text-align:right}
 .checkbox-outer,
 .checkbox-outer-base,
 .radio-outer{display:inline-block;margin-bottom:1px;margin-left:8px;float:none}
@@ -94,7 +94,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .radio-outer label .control__indicator.icon-set i{font-size:30px;vertical-align:middle}
 .checkbox-outer label,
 .checkbox-outer-base label,
-.radio-outer label{padding:16px 28px 16px 60px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
+.radio-outer label{padding:14px 28px 14px 60px;border-radius:50px;font-size:22px;line-height:1.4;cursor:pointer;text-align:left;margin:0}
 .checkbox-outer label span,
 .checkbox-outer-base label span,
 .radio-outer label span{font-weight:400}
@@ -105,7 +105,7 @@ input:-moz-placeholder{color:#fff;opacity:.5}
 .custom-block .input-field input[type=email],
 .custom-block .input-field input[type=number],
 .custom-block .input-field input[type=text],
-.leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:220px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;padding-bottom:6px; margin-bottom: 2px}
+.leadform_question form#leadform_question .input-outer input,input.othersfield{background:0 0;max-width:220px;margin-left:0;border:0;border-bottom:1.5px dashed #fff;height:30px;font-size:22px;color:#fff;padding-bottom:0px; margin-bottom: 2px}
 calendar,calendar>div{display:inline-block;float:none;vertical-align:sub}
 calendar>div .form-group{margin:0}
 .cal-outer.calender-date.timePiece .input-group.date input.form-control{width:270px}
@@ -364,3 +364,49 @@ input[type=number] {
 .result-v2 .common-result-bot-icons.side-redo a#refresh-button:hover, .result-v2 .common-result-bot-icons.side-redo a#refresh-button:focus{text-decoration: none; outline: none;}
 .questions-list>.t1-ques-head.active div p:last-child {border-bottom-left-radius: 0px !important; margin-bottom: 15px !important}
 .questions-list>.t1-ques-head.active.prev div p{border-bottom-left-radius: 50px}
+.chat-avtar {
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  left: 0;
+  background: #fff;
+  BORDER-RADIUS: 50%;
+  top: 2px;
+  float: left;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  /* -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
+  transition: .2s cubic-bezier(.23,1,.32,1); */
+}
+.questions-list>.t1-ques-head.chat-icons{padding-left: 70px}
+.t1-ques-head.active .chat-avtar ,
+.t1-ques-head.spin-loader.active .chat-avtar {
+  display: block;
+  opacity: 1;
+  /* -webkit-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: .2s cubic-bezier(.23,1,.32,1);
+  transition: .2s cubic-bezier(.23,1,.32,1); */
+}
+  .t1-ques-head.active.prev .chat-avtar{opacity: 0.4;}
+.t1-ques-head.active.prev:hover .chat-avtar{opacity: 1;}
+.landing-page-mid video-view .video-sec::before {
+  padding-top: 56.25%;
+  content: '';
+  display: block;
+}
+.V_3_5.template-nine .t1-ques-component .question-components {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.questions-list>.t1-ques-head.spin-loader.spin-loader {
+  padding-left: 0 !important;
+}
+.V_3_5.template-nine .t1-ques-component.calendar .question-components {
+  padding-bottom: 9px !important;
+  padding-top: 12px !important;
+}

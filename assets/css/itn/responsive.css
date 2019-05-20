@@ -1212,6 +1212,11 @@
     .t1-landing .t1-landing-inner [type="checkbox"] + label.leadform-checkbox {line-height: 1.4 !important; font-size: 14px !important; padding-top: 0 !important;}
 
     .logo{ height: 55px;display: flex;justify-content: center;align-items: center;}
+    .V_3_5 .t1-landing .landing-img { max-width: 100%; margin-bottom: 20px !important;}
+    .V_3_5 .t1-landing video-view{ width: 100% !important;}
+    .V_3_5 .t1-landing video-view .video-sec {margin-bottom: 20px !important;}
+    .V_3_5 .t1-landing.landing-text-left video-view .video-sec{ margin-bottom: 20px !important;}
+    .V_3_5 .t1-landing.landing-text-right video-view .video-sec{ margin-bottom: 20px !important;}
 }
 
 @media (min-width: 150px) and (max-width: 319px) {
@@ -1973,6 +1978,7 @@
     }
     .V_3_5 .page_1 form .prime-action{padding: 14px 26px;}
     .V_3_5 .sub-heading, .V_3_5 .sub-heading h2{width: 100%;font-size: 18px;line-height:1.4;}
+    .V_3_5 .t1-landing.landing-text-center video-view { width: 60%;}
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .t1-landing-leadform .t1-leadform-field {

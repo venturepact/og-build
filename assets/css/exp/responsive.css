@@ -102,7 +102,7 @@
     .t1-question form {padding: 0 22px;float: left;height: auto !important;}
     .t1-question button.prime-action {width: auto;}
     .t1-question a.prime-action {width: auto;}
-    .t1-ques-head {padding: 0;margin: 0;margin-right: 10px;}
+    .t1-ques-head {padding: 0;margin: 0;}
     .t1-ques-head div {font-size: 15px;}
     .t1-ques-head div p {font-size: 15px;}
     .t1-ques-component {margin-bottom: 15px;margin-top: 0px;padding: 0;}
@@ -110,7 +110,7 @@
     .t1-result-top {width: 100%;float: left;}
     .t1-result-inner {padding: 0;width: 100%;min-height: 100%;padding-top: 25px;}
     .t1-result-topheading p {text-align: left;padding: 0;}
-    .mid-width {font-size: 15px;padding-left: 12px;width: 45%;}
+    .mid-width {font-size: 15px;padding-left: 20px;width: 45%;}
     .t1-question .question-components input {margin-bottom: 0px;height: 24px;padding: 0px !important;padding-left: 0 !important;}
     .inline-tablecell {padding: 20px 0px;padding-bottom: 40px;}
     .result-outer-scroll {height: auto !important;min-height: auto;padding-right: 0px;}
@@ -286,10 +286,12 @@
     .custom-block.inpu-file-uploader i.material-icons{top: 0px;}  
     .t1-result-leadform .new-socialBtn.btn-lg .help-checktip{visibility: hidden !important;}  
     .custom-block.inpu-file-uploader .input-field {margin-bottom: 0;}
-    .input-field textarea, .cal-outer, .ripple-dark.checkbox-outer{margin-bottom: 0;}
+    .input-field textarea, .cal-outer{margin-bottom: 0;}
     .t1-question .question-components .selectize-control.single .selectize-input{height: 28px;}  
     .question-outer:last-of-type .t1-ques-component:last-child .dropdown-set{margin-bottom: 0;}
     .t1-button button i{margin-top: 1px;}
+    .t1-result-small-section:after {width: calc(100% + 35px);left: -18px;}
+    .ripple-dark.checkbox-outer.active .control--checkbox{min-height: 31px;}
 }
 @media (min-width: 0px) and (max-width: 768px) {
     .t1-landing-leadform button.prime-action i {display: none;}
@@ -414,7 +416,7 @@
     .ripple-dark.radio-outer-base {margin-bottom: 0 !important;}
     .ripple-dark.radio-outer {margin-bottom: 5px;}
     .ripple-dark.radio-outer-base {margin-bottom: 5px;}
-    .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;}
+    /* .ripple-dark.checkbox-outer .control--checkbox{padding:4px 25px !important;} */
     .experian leadform [type="checkbox"].filled-in:not(:checked) + label:after {margin: 0 !important;}
     .experian leadform [type="checkbox"].filled-in:checked + label:after {margin: 0px !important;}
     .t1-result-leadform .new-socialBtn.btn-plus:hover .help-checktip{min-width: 76px;left: -32px;}
@@ -425,6 +427,7 @@
     .gdpr-popup-left{ width: 70%;}
     .gdpr-popup-right{ width: 25%; }
     .t1-button button i{margin-top: 1px;}
+    .t1-result-small-section:after {width: calc(100% + 23px);left: -16px;}
 }
 @media (min-width:768px) and (max-width:830px){
     @-moz-document url-prefix() {
