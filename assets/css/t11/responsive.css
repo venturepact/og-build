@@ -20,7 +20,7 @@
     .page-heading{font-size: 28px;}
     .page-sub-heading{font-size: 18px;}
     .footer-heading{font-size: 28px;}
-    .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr{margin: 22px 0 0;}
+    .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr, .disc-set{margin: 22px 0 0;}
     .result-leadform-button{flex-wrap: wrap;align-items: center;justify-content: center;}
     .disc-leadform.T11 {padding: 0;margin-top: 15px;font-size: 13px;text-align: center;}
     .footer-outer{padding-bottom: 22px;}    
@@ -32,6 +32,8 @@
     .t11 .loginBtn--facebook {padding: 16px 45px 16px 20px!important;}
     .fb-outer, .or-class{text-align: center;}
     .social-icons li a:hover .tooltip{display: none;}
+    video-view .video-sec{padding-bottom: 61%;}
+    .sec-outer video-view {width: 100%;}
 }
 @media (min-width:768px) and (max-width: 1023px){
     .landing-logo {padding: 30px 40px 0px;}
@@ -39,7 +41,7 @@
     .result-page{padding: 80px 70px;}
     .landing-outer {max-width: 70%;padding: 100px 40px;}
     .socialshare-header, .timer-info{width: auto;justify-content: center;align-items: center;}
-    .landing-outer video-view {width: 100%;}
+    .landing-outer video-view {width: 90%;}
     .landing-heading h1, .landing-heading p{font-size: 44px;}
     .landing-subheading h2, .landing-subheading p{font-size: 20px;}
     .landing-cta-outer .btn, .footer-outer .btn{padding: 16px 30px;}
@@ -47,7 +49,7 @@
     .page-heading{font-size: 28px;}
     .page-sub-heading{font-size: 18px;}
     .footer-heading{font-size: 28px;}
-    .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr{margin: 22px 0 0;}
+    .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr, .disc-set{margin: 22px 0 0;}
     .footer-outer{padding-bottom: 22px;}  
     .t11 .loginBtn--facebook {padding: 16px 45px 16px 20px!important;}
 }
