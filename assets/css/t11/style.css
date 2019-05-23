@@ -29,7 +29,7 @@
 
 * {margin: 0;padding: 0;box-sizing: border-box;}
 html {-webkit-overflow-scrolling: touch;}
-body {color: #666;}
+body {color: #555;}
 .default-outer {width: 100%;height: 100%;float: left;position: relative;}
 .t11 {width: 100%;float: left;}
 .t11 p {margin-bottom: 0;}
@@ -177,7 +177,7 @@ input,textarea,button:focus {outline: none;}
 }
 
 .notification-text {
-  color: #666;
+  color: #555;
   font-size: 13px;
   float: left;
   padding-left: 15px;
@@ -380,7 +380,7 @@ input,textarea,button:focus {outline: none;}
   width: 100%;
   float: left;
   font-size: 38px;
-  margin: 0 0 30px;
+  margin: 0 0 40px;
   line-height: 1.2;
   letter-spacing: 0.5px;
 }
@@ -389,13 +389,13 @@ input,textarea,button:focus {outline: none;}
   width: 100%;
   float: left;
   font-size: 22px;
-  margin: -10px 0 30px;
+  margin: -10px 0 40px;
   line-height: 1.4;
 }
 
 .page-sub-heading a {
-  color: #666;
-  border-bottom: 3px solid #666;
+  color: #555;
+  border-bottom: 3px solid #555;
   cursor: pointer;
 }
 
@@ -605,7 +605,7 @@ a.leadgen-close i {font-size: 28px;}
 .leadform-btn {width: auto;padding: 18px 25px;font-size: 16px;transition: all 0.3s ease;white-space: normal;}
 .result-leadform-input-outr {width: 100%;float: left;margin-top: 0px;margin-bottom: 20px;position: relative;}
 .result-leadform-input-outr input {width: 100%;float: right;position: relative;padding-left: 30px;font-size: 17px;border: 1px solid #e8e8e8 !important;border-radius: 3px;padding: 15px 25px 15px 45px;transition: all 0.3s ease;}
-.result-leadform-input-outr i {position: absolute;font-size: 20px;transform: rotate(0.03deg);top: 17px;left: 20px;color: #666;}
+.result-leadform-input-outr i {position: absolute;font-size: 20px;transform: rotate(0.03deg);top: 17px;left: 20px;color: #555;}
 span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 55px;font-size: 10px;left: 0;}
 .result-leadform-input-outr .leadform-select {width: 100%;float: left;text-align: left;position: relative;}
 .result-leadform-input-outr .leadform-select .selectize-input {float: left;width: 100%;line-height: 40px;padding: 7px 25px;border-radius: 5px;-webkit-transition: .5s;transition: .5s;margin-top: 0;font-size: 17px;color: #aaa;border: 1px solid #e8e8e8 !important;background: #fff !important;}
@@ -619,15 +619,15 @@ span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 
 .result-leadform-input-outr .selectize-dropdown-content .option {padding: 10px;cursor: pointer;}
 .result-leadform-input-outr input[type=checkbox] {position: absolute;left: -999px;}
 .result-leadform-input-outr .leadform-checkbox {border: 0 !important;line-height: 1.4 !important;font-size: 17px;min-height: auto;float: left;width: 100%;opacity: 1;padding: 0 0px 0 32px !important;margin-bottom: 0 !important;text-align: left;position: relative;cursor: pointer;color: #aaa;}
-.result-leadform-input-outr .leadform-checkbox::before {content: '';left: 0 !important;right: 0;top: 1px !important;bottom: 0;width: 20px;height: 20px;padding: 0 !important;display: flex;align-items: center;justify-content: center;position: absolute;border-radius: 3px;border: 1px solid #666;}
+.result-leadform-input-outr .leadform-checkbox::before {content: '';left: 0 !important;right: 0;top: 1px !important;bottom: 0;width: 20px;height: 20px;padding: 0 !important;display: flex;align-items: center;justify-content: center;position: absolute;border-radius: 3px;border: 1px solid #555;}
 .result-leadform-input-outr input[type=checkbox].filled-in:checked+label.leadform-checkbox::after {top: 10px;transform: translateY(-50%);position: absolute;z-index: 1;content: 'check';font-family: 'Material Icons';left: 2px;margin: 0;font-size: 16px;width: 20px;height: 20px;}
 .result-leadform-input-outr.checkbox {padding: 0px;}
 .result-leadform-button {width: 100%;float: left;display: flex;align-items: center;flex-wrap: wrap;}
-.disc-leadform.T11 {width: auto;float: left;font-size: 15px;color: #666;margin-top: 15px;word-break: break-word;}
+.disc-leadform.T11 {width: auto;float: left;font-size: 15px;color: #555;margin-top: 15px;word-break: break-word;}
 .result-leadform-input-outr.checkbox span.errMessage {position: relative; top: auto;}
 
 /* fb button */
-.or-class {width: 100%;float: left;padding: 10px;font-size: 12px;color: #666;}
+.or-class {width: 100%;float: left;padding: 10px 0;font-size: 12px;color: #555;}
 .fb-outer {width: 100%;float: left;}
 .t11 .loginBtn--facebook {background-image: linear-gradient(#086ca0, #086ca0) !important;text-shadow: 0 -1px 0 #086ca0 !important;text-transform: none;margin: 0 !important;padding: 18px 45px 18px 25px !important;border: none !important;text-align: left !important;line-height: 1.2 !important;font-size: 16px !important;border-radius: 3px !important;opacity: 1;color: #fff;transition: all 0.3s ease;}
 .t11 .loginBtn.loginBtn--facebook:before {content: "";top: 50% !important;-webkit-transform: translateY(-50%);transform: translateY(-50%);right: 8px !important;width: 30px !important;height: 30px !important;background-color: #fff !important;border-radius: 3px;background: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) 6px center no-repeat;left: auto !important;background-position: 10px center !important;border-right: none !important;background-image: url(https://cdn.filestackcontent.com/Niv1bFDSCaWz2Mvrsuog) !important;background-position-x: 6.5px !important;background-size: 16px !important;}
@@ -699,7 +699,7 @@ video-view .video-sec {height: auto;position: relative;padding-bottom: 55.25%;le
 }
 
 .lf-submitted.lead-submitted.new-thankyou span {
-  color: #666;
+  color: #555;
   width: 100%;
   float: left;
   text-align: center;
