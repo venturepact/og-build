@@ -38,6 +38,9 @@
   .result-media visuals.visual-outr .t1-result-inner-left-img{ min-height: 230px;}
   .result-media .t1-result-inner-left-video{ min-height: 230px;}
   .result-innerBox{ padding: 0 15px; width: 98%;}
+  .numeric-result { margin-top: 15px;}
+  .numeric-result:nth-last-child(1):nth-child(odd) {margin-bottom: 15px;}
+  .numeric-result:nth-last-child(1):nth-child(even) {margin-bottom: 15px;}
   .result-heading{margin-top: 0px;font-size: 36px;}
   .result-leadform-input-outr {flex: 1;}
   .social-icons li a {width: 42px; height: 42px;}
