@@ -613,6 +613,7 @@ span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 
 .result-leadform-input-outr .leadform-select .selectize-input input:focus {box-shadow: none;}
 .result-leadform-input-outr .selectize-dropdown-content .option:hover {background: #f1f2f3;}
 .result-leadform-input-outr .leadform-select .selectize-input input {float: left;padding: 0px !important;width: 100% !important;border: none !important;background: #fff !important;}
+.result-leadform-input-outr .leadform-select .selectize-input.has-items input {display: none !important;}
 .result-leadform-input-outr .selectize-control.single .selectize-input:after {content: ' ';display: block;position: absolute;top: 50%;right: 15px;margin-top: -3px;width: 0;height: 0;border-style: solid;border-width: 5px 5px 0 5px;border-color: #808080 transparent transparent transparent;}
 .result-leadform-input-outr .selectize-control.single .selectize-input.dropdown-active:after {border-width: 0 5px 5px 5px;border-color: transparent transparent #808080 transparent;}
 .result-leadform-input-outr .selectize-dropdown-content {overflow-y: auto;overflow-x: hidden;max-height: 200px;border: 1px solid #e8e8e8 !important;}
@@ -623,7 +624,7 @@ span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 
 .result-leadform-input-outr input[type=checkbox].filled-in:checked+label.leadform-checkbox::after {top: 10px;transform: translateY(-50%);position: absolute;z-index: 1;content: 'check';font-family: 'Material Icons';left: 2px;margin: 0;font-size: 16px;width: 20px;height: 20px;}
 .result-leadform-input-outr.checkbox {padding: 0px;}
 .result-leadform-button {width: 100%;float: left;display: flex;align-items: center;flex-wrap: wrap;}
-.disc-leadform.T11 {width: auto;float: left;font-size: 15px;color: #555;margin-top: 15px;word-break: break-word;}
+.disc-leadform.T11 {width: 100%;float: left;font-size: 15px;color: #555;margin-top: 15px;word-break: break-word;}
 .result-leadform-input-outr.checkbox span.errMessage {position: relative; top: auto;}
 
 /* fb button */
