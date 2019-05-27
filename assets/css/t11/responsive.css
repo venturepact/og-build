@@ -34,6 +34,7 @@
     .social-icons li a:hover .tooltip{display: none;}
     video-view .video-sec{padding-bottom: 61%;}
     .sec-outer video-view {width: 100%;}
+    .footer-inner{max-width: 100%;}
 }
 @media (min-width:768px) and (max-width: 1023px){
     .landing-logo {left: 40px;}
@@ -52,4 +53,5 @@
     .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr, .disc-set{margin: 22px 0 0;}
     .footer-outer{padding-bottom: 22px;}  
     .t11 .loginBtn--facebook {padding: 16px 45px 16px 20px!important;}
+    .footer-inner{max-width: 100%;}
 }

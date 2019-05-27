@@ -433,11 +433,16 @@ input,textarea,button:focus {outline: none;}
   width: 100%;
   float: left;
   padding: 0 65px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-inner {
   width: 100%;
   float: left;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .footer-heading {
