@@ -2452,13 +2452,13 @@ button.launch-btn {
     opacity: 0.9;
 }
 #greetBar .greetbar-popupClose{
-    background: url(https://dlvkyia8i4zmz.cloudfront.net/yJ1fLTLtQBKzToBDSPjm_cross.png);
+    background: url(https://dlvkyia8i4zmz.cloudfront.net/dzKrK0jIRVe7nYrjG158_np_close_85663_FFFFFF.svg);
     position: fixed;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 99 !important;
-    background-size: 14px;
+    background-size: 18px;
     background-repeat: no-repeat;
     position: absolute;
     top: 15px !important;
@@ -4645,11 +4645,12 @@ ul.text-box h6{font-size:14px;font-family:montserratregular;line-height:normal;m
 .btn-position.left-button-outer-t8 ul.text-box,
 .btn-position.left-button-outer-t9 ul.text-box {left: 60px;}
 .intro-overlay.builder-parent{top: 0px !important;}
-.intro-overlay.builder-parent .left-button-outer{top:410px!important;}
+.intro-overlay.builder-parent .left-button-outer{top:390px!important;}
 .intro-overlay.builder-parent .top-outer{top:40px;}
 .intro-overlay.builder-parent .mid-sec{top:300px;}
 .intro-overlay.builder-parent .right-button-outer{top:85px;}
-.intro-overlay.builder-parent .right-sec-info {top: 486px;}
+.intro-overlay.builder-parent .right-sec-info {top: 445px;}
+.intro-overlay.builder-parent svg.right-arrow {top: 130px;}
 .intro-overlay.t9-temp.builder-parent .btn-position{top:251px;}
 .intro-overlay.t8-temp.builder-parent .right-sec-info{top:413px;}
 .intro-overlay.t8-temp.builder-parent .mid-sec{top:320px;}
