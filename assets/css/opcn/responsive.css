@@ -1292,7 +1292,7 @@
     .t1-slider-question{border-radius:5px;padding:30px}
     .t1-question .question-components .check-comp label{min-height:43px;height:43px;padding-left:40px}
     .control.control--radio span{margin-top:9px;margin-bottom:9px;font-size:14px;line-height:18px}
-    .one-page-card-new [type=radio].with-gap:checked+label:after,.one-page-card-new [type=radio].with-gap:checked+label:before,.one-page-card-new [type=radio]:checked+label:after,.one-page-card-new [type=radio]:not(:checked)+label:after,.one-page-card-new [type=radio]:not(:checked)+label:before{margin:12px;width:16px;height:16px}
+    .one-page-card-new [type=radio].with-gap:checked+label:after,.one-page-card-new [type=radio].with-gap:checked+label:before,.one-page-card-new [type=radio]:checked+label:after,.one-page-card-new [type=radio]:not(:checked)+label:after,.one-page-card-new [type=radio]:not(:checked)+label:before{margin:12px;width:18px;height:18px}
     .one-page-card-new [type=radio]:checked+label,.one-page-card-new [type=radio]:not(:checked)+label{padding-left:40px}
     .control{font-size:15px}
     .pic-selector label.control .text-overlay span{line-height:16px;font-size:13px}
@@ -1371,7 +1371,7 @@
     .one-page-card-new [type=radio].with-gap:disabled:checked+label:after{margin-top:12px}
     .one-page-card-new [type=radio].with-gap:checked+label.graded-cross:after{margin-top:10px!important}
     .one-page-card-new .t1-landing .t1-landing-inner [type=checkbox].filled-in:checked+label.leadform-checkbox::after,.one-page-card-new .t1-landing .t1-landing-inner [type=checkbox].filled-in:not(:checked)+label:after{width:18px;height:18px;margin:12px}
-    .one-page-card-new .t1-question [type=checkbox].filled-in:checked+label.leadform-checkbox::after,.one-page-card-new .t1-question [type=checkbox].filled-in:not(:checked)+label:after{width:16px;height:16px;margin:12px}
+    .one-page-card-new .t1-question [type=checkbox].filled-in:checked+label.leadform-checkbox::after,.one-page-card-new .t1-question [type=checkbox].filled-in:not(:checked)+label:after{width:18px;height:18px;margin:12px}
     .one-page-card-new [type=radio]:disabled:not(:checked)+label.graded-tick:before,.one-page-card-new [type=radio]:not(:checked)+label.graded-tick:after{margin-top:10px;margin-left:16px}
     .gradedquiz-main .gradded-graph-flex{display:block}
     .one-page-card-new [type=checkbox].filled-in:disabled:not(:checked)+label.graded-tick:after{margin-left:17px;margin-top:10px}
@@ -1414,7 +1414,7 @@
     .V_3_5 .t1-landing.landing-text-left .landing-page-mid leadform {float: left;width: 70%;}
     .V_3_5 .t1-landing.landing-text-right .landing-page-mid leadform {float: right;width: 70%;}
     .V_3_5 .t1-landing .landing-page-mid .t1-landing-leadform {width: 100%;}
-    .V_3_5.one-page-card-new .t1-ques-head {margin-bottom: 20px;font-size: 24px;line-height: 1.4;}
+    .V_3_5.one-page-card-new .t1-ques-head {margin-bottom: 15px;font-size: 24px;line-height: 1.4;}
     .V_3_5.one-page-card-new .t1-question .question-components .opinon-scale-custom .check-comp label{height: 35px;}
 }
 @media (max-width:640px){
