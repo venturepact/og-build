@@ -2,7 +2,7 @@
     .landing-logo{top: 30px;left: 0;width: 100%;text-align: center;}
     .buildOutgrow-outr{justify-content: center;}
     .result-page{padding: 30px;}
-    .landing-outer{max-width: 100%;padding: 100px 30px;}
+    .landing-outer{max-width: 100%;padding: 100px 30px !important;}
     .sec-outer{max-width: 100%;}
     img.landing-image{margin-bottom: 20px;}
     .contest-info-outer img, img.landing-image{max-width: 100%;}
@@ -47,11 +47,12 @@
     .landing-subheading h2, .landing-subheading p{font-size: 20px;}
     .landing-cta-outer .btn, .footer-outer .btn{padding: 16px 30px;}
     .leadform-btn{padding: 16px 20px;}
-    .page-heading{font-size: 28px;}
+    .page-heading{font-size: 34px;}
     .page-sub-heading{font-size: 18px;}
     .footer-heading{font-size: 28px;}
     .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr, .disc-set{margin: 22px 0 0;}
     .footer-outer{padding-bottom: 22px;}  
     .t11 .loginBtn--facebook {padding: 16px 45px 16px 20px!important;}
     .footer-inner{max-width: 100%;}
+    .page-heading + .page-sub-heading {margin-top: 13px;}
 }
