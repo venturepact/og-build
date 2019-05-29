@@ -140,7 +140,7 @@
     .t1-landing,.t1-question,.t1-result{width:100%!important}
     .t1-landing-top{position:absolute;top:20px;left:0;width:100%}
     .landing-page-mid{margin-top:30px;width:85%;margin-left:30px}
-    .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid {max-width: 85% !important;width: 100%; margin-top: 0px; margin: 0 auto !important; }
+    .t1-landing .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid {max-width: 85% !important;width: 100%; margin-top: 0px; margin: 0 auto !important; padding: 0px !important; }
     .t1-landing.landing-text-right .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid { margin-right: 30px !important;}
     .t1-landing.landing-text-left .no-footer-links.no-header-links .t1-landing-inner .landing-page-mid { margin-left: 30px !important;}
     .landing-page-mid button.prime-action,.landing-page-mid leadform button.prime-action{font-size:16px;padding:13px 30px}
@@ -540,8 +540,8 @@
     .V_3_5.one-page-card-new .submit-checkbox-img,.V_3_5.one-page-card-new .submit-textbox-btnresp{display:block;margin-left:0;padding:6px 14px 5px!important;font-size:11px;margin-bottom:0;border-radius:50px;box-shadow:none;float:left;    height: auto !important; line-height:17px;margin-right:0;top:0}
     .t1-slider-question .input-field label:not(.label-icon).active{line-height:1.4;padding-top:0!important}
     /* .V_3_5.one-page-card-new label.control.control--checkbox.blink-border.defaultOptionImage.active button.submit-checkbox-img.ripple-light{margin-top:-21PX} */
-    .V_3_5.one-page-card-new .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer input{padding-bottom:0;padding-left:30px;padding-right:0;font-size:14px}
-    .V_3_5.one-page-card-new .t1-question .newLeadGenV_3_5 .input-outer i{left:0;top:50%;font-size:16px;transform:translateY(-50%)}
+    .V_3_5.one-page-card-new .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer input{padding-bottom:0;padding-left:25px;padding-right:0;font-size:14px}
+    .V_3_5.one-page-card-new .t1-question .newLeadGenV_3_5 .input-outer i{left:0;top:50%;font-size:18px;transform:translateY(-50%)}
     .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer span{font-size:10px;top:35px}
     .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-section .input-outer.checkbox span{top:5px}
     .V_3_5.one-page-card-new .lead-popup .lead-popup-outer .lead-popup-main .lead-overlay{padding:0 0 35px}
@@ -564,7 +564,8 @@
     .V_3_5 .t1-question .question-components .check-comp .radio-outer-base label span,
     .V_3_5 .t1-question .radio-icon-custom,.V_3_5 .t1-question .radio-icon-custom label,
     .V_3_5 .t1-question .radio-icon-custom label span,
-    .V_3_5.one-page-card-new .textfield .othersfield{font-size:16px!important;line-height:1.4;margin:0; color:#444}
+    .V_3_5.one-page-card-new .textfield .othersfield{font-size:16px!important;line-height:1.4;margin:0; color:#444; }
+    .V_3_5 .t1-question .question-components .check-comp .radio-outer-base label span{padding-top:3px; }
     .V_3_5.one-page-card-new .checkbox-outer-base .submit-checkbox-img, 
     .V_3_5.one-page-card-new .checkbox-outer .submit-checkbox-img, 
     .V_3_5 .radio-outer.radio-icon-custom.textfield button.button_textfield.submit-textbox-btn ,
@@ -577,7 +578,7 @@
     .V_3_5.one-page-card-new .radio-outer.radio-icon-custom.textfield label.control.control--radio{padding-left:0px !important;}
     .V_3_5.one-page-card-new .opinon-scale-custom label.control.control--radio{min-height:35px;line-height:35px;height:35px}
     .one-page-card-new.V_3_5 .landing-page-mid .input-field label{top:5px!important}
-    .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input input .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input .items,.one-page-card-new.V_3_5 .landing-page-mid .input-field label,.one-page-card-new.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{font-size:16px}
+    .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input input .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input .items,.one-page-card-new.V_3_5 .landing-page-mid .input-field label,.one-page-card-new.V_3_5 .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input{font-size:18px}
     .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .selectize-input{padding-top:0!important}
     .V_3_5.one-page-card-new .landing-page-mid leadform .input-section .input-outer span{font-size:10px}
     .V_3_5.one-page-card-new .t1-landing .t1-landing-inner .selectize-control{margin-bottom:0!important}
@@ -589,10 +590,10 @@
     .V_3_5.one-page-card-new .leadAsPopup .lead-popup .lead-popup-outer .lead-popup-main .loginBtn.loginBtn--facebook::before {top: 50%!important;  background-size: 15px!important;  right: 7px!important;   -webkit-transform: translateY(-50%);    transform: translateY(-50%);}
     .V_3_5.one-page-card-new .common-result-main .common-leadform-top.t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .lead-title,.V_3_5.one-page-card-new .lead-popup .lead-popup-outer .lead-popup-main .lead-title{font-size:22px;line-height:26px}
     .one-page-card-new .t1-result-leadform .lead-popup .lead-popup-outer .lead-popup-main .question-section .input-outer{margin-bottom:20px}
-    .V_3_5 .t1-ques-head{line-height:22px;margin-bottom: 25px !important; margin-top: 0px !important;}
+    .V_3_5 .t1-ques-head{line-height:22px;margin-bottom: 15px !important; margin-top: 0px !important;}
     .V_3_5.one-page-card-new .t1-landing .main-heading p,
     .V_3_5.one-page-card-new .t1-landing .main-heading {max-width: 100% !important;width: 100%; margin-top: 0px !important;}
-    .V_3_5 .t1-landing .t1-landing-leadform{width: 85%}
+    .V_3_5 .t1-landing .t1-landing-leadform{width: 100%}
     /* .V_3_5 .control-ver2 .pic-selector:nth-child(3){margin-top: 20px !important} */
     .V_3_5 .result-v2.common-result #vk_subscribe{margin-right: 0px;}
     /*branding*/
@@ -697,6 +698,7 @@
     .V_3_5 .t1-landing.landing-text-right video-view{ width: 100% !important;}
     .V_3_5 .t1-landing video-view .video-sec {margin-bottom: 20px !important;}
     .V_3_5.one-page-card-new .t1-question-slider.Poll .t1-ques-head{ margin-bottom: 10px !important;}
+    .t1-question .newLeadGenV_3_5 .leaded-form-c .input-outer input{ font-size: 16px;}
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape){
     .landing-page-mid{width:90%}
@@ -898,7 +900,7 @@
     .selectize-dropdown-content{max-height:115px}
     .t1-landing .selectize-input{padding:8px 35px 3px 10px}
     .t1-landing .t1-landing-inner .selectize-control.single .selectize-input{min-height:31px;max-height:35px;margin-bottom:0}
-    .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-outer input{font-size: 14px !important}
+    .V_3_5.one-page-card-new .t1-ques-component .newLeadGenV_3_5 .input-outer input{font-size: 16px !important}
 }
 @media (min-width:480px) and (max-width:767px){
     .fb-like{float:none;margin-bottom:10px;vertical-align:top;margin-top:20px;display:inline-block!important}
@@ -1120,6 +1122,8 @@
     .V_3_5 .t1-landing.landing-text-left video-view{width: 62% !important;}
     .V_3_5 .t1-landing.landing-text-right video-view{width: 62% !important;}
     .V_3_5.one-page-card-new .t1-question-slider.Poll .t1-ques-head{ margin-bottom: 10px !important;}
+    .V_3_5.one-page-card-new .t1-landing-leadform .input-outer i { top: 20% !important;}
+    .V_3_5.one-page-card-new .page_0.t1-landing .landing-page-mid leadform .input-section .input-outer input, .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.autocomplete-content, .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~.validate~label, .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~input, .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~label, .V_3_5.one-page-card-new .t1-landing-leadform .input-field .prefix~textarea{ font-size: 18px !important;}
 }
 @media (min-width:768px) and (max-width:1023px) and (orientation:portrait){
     .t1-landing-leadform .t1-leadform-field{width:100%;margin-bottom:10px}
@@ -1324,7 +1328,7 @@
     .t1-ques-component .section-head div{font-size:13px}
     .t1-ques-component .input-section .input-outer .section-head{margin-bottom:0;font-size:14px}
     /* .t1-ques-component .input-outer input{padding:10px 2%;font-size:13px!important;padding-left:30px!important} */
-    .t1-question .question-components .input-outer i{font-size:14px;top:12px}
+    .t1-question .question-components .input-outer i{font-size:18px;top:12px}
     .t1-ques-component .input-section .input-outer span{font-size:11px!important}
     .recom-section .input-outer{margin-bottom:25px}
     .recom-section .share-heading{text-align:left!important;font-size:13px!important;margin-bottom:0}
@@ -1515,7 +1519,7 @@
     .V_3_5 .t1-landing .no-header-links.no-footer-links{padding:100px 0 120px 0px!important;}
     /* .V_3_5 .logo-resizing{padding: 120px 0 100px !important} */
     .V_3_5.one-page-card-new .t1-slider-question {padding: 28px !important;    min-height: 120px;display: flex;align-items: center;}
-    .V_3_5 .t1-ques-head {margin-bottom: 25px!important;}
+    .V_3_5 .t1-ques-head {margin-bottom: 15px!important;}
     .landing-text-center .landing-page-mid{padding: 0 30px !important}
     .isIframe .calendar-after{min-height: auto !important}
     .V_3_5 .common-result.result-v2 .common-result-main .t1-result-full-section .t1-result-full-container .small-top-sec p,.V_3_5 .common-result.result-v2 .common-result-main .t1-result-small-section .small-bot-sec p{ line-height: 1.4 !important;}
