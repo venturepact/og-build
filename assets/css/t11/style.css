@@ -99,7 +99,7 @@ input,textarea,button:focus {outline: none;}
 .contest-info-outer a.tag_delete img {display: none;}
 .sec-inner {width: 100%;float: left;margin-bottom: 60px;}
 .sec-inner:last-child {margin: 0;}
-.sec-head {width: 100%;float: left;font-size: 24px;margin-bottom: 20px;line-height: 1.4;}
+.sec-head {width: 100%;float: left;font-size: 24px;margin-bottom: 15px;line-height: 1.4;}
 .sec-sub-head {width: 100%;float: left;font-size: 16px;line-height: 1.6;}
 .section-page-header{width: 100%;float: left;margin-bottom: 60px;}
 .sec-sub-head p {opacity: 0.8;}
@@ -157,7 +157,7 @@ span.errMessage {width: 100%;float: left;color: #fb5f66;position: absolute;top: 
 .result-leadform-input-outr .selectize-dropdown-content {overflow-y: auto;overflow-x: hidden;max-height: 200px;border: 1px solid #e8e8e8 !important;}
 .result-leadform-input-outr .selectize-dropdown-content .option {padding: 10px;cursor: pointer;}
 .result-leadform-input-outr input[type=checkbox] {position: absolute;left: -999px;}
-.result-leadform-input-outr .leadform-checkbox {border: 0 !important;line-height: 1.4 !important;font-size: 17px;min-height: auto;float: left;width: 100%;opacity: 1;padding: 0 0px 0 32px !important;margin-bottom: 0 !important;text-align: left;position: relative;cursor: pointer;color: #aaa;}
+.result-leadform-input-outr .leadform-checkbox {border: 0 !important;line-height: 1.4 !important;font-size: 17px;min-height: auto;float: left;width: 100%;opacity: 1;padding: 0 0px 0 32px !important;margin-bottom: 0 !important;text-align: left;position: relative;cursor: pointer;color: #888;}
 .result-leadform-input-outr .leadform-checkbox::before {content: '';left: 0 !important;right: 0;top: 1px !important;bottom: 0;width: 20px;height: 20px;padding: 0 !important;display: flex;align-items: center;justify-content: center;position: absolute;border-radius: 3px;border: 1px solid #555;}
 .result-leadform-input-outr input[type=checkbox].filled-in:checked+label.leadform-checkbox::after {top: 10px;transform: translateY(-50%);position: absolute;z-index: 1;content: 'check';font-family: 'Material Icons';left: 2px;margin: 0;font-size: 16px;width: 20px;height: 20px;}
 .result-leadform-input-outr.checkbox {padding: 0px;}

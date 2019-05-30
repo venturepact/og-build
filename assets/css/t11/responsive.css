@@ -1,7 +1,7 @@
 @media (min-width:0px) and (max-width: 767px){
     .landing-logo{top: 30px;left: 0;width: 100%;text-align: center;}
     .buildOutgrow-outr{justify-content: center;}
-    .result-page{padding: 30px;}
+    .result-page{padding: 30px;padding-bottom: 0;}
     .landing-outer{max-width: 100%;padding: 100px 30px !important;}
     .sec-outer{max-width: 100%;}
     img.landing-image{margin-bottom: 20px;}
@@ -17,7 +17,7 @@
     .landing-subheading h2, .landing-subheading p{font-size: 20px;}
     .landing-cta-outer .btn, .footer-outer .btn{padding: 16px 30px;}
     .leadform-btn{padding: 16px 20px;}
-    .page-heading{font-size: 28px;}
+    .page-heading{font-size: 30px;}
     .page-sub-heading{font-size: 18px;}
     .footer-heading{font-size: 28px;}
     .footer-heading, .footer-outer .btn, .likes-parent, .section-social, .buildOutgrow-outr, .disc-set{margin: 22px 0 0;}
@@ -35,6 +35,12 @@
     video-view .video-sec{padding-bottom: 61%;}
     .sec-outer video-view {width: 100%;}
     .footer-inner{max-width: 100%;}
+    .page-heading + .page-sub-heading {margin-top: 13px;}
+    .section-page-header {margin-bottom: 50px;}
+    .sec-inner:last-child {margin-bottom: 60px;}
+    .leadpopup {padding: 28px 30px 40px;}
+    .lead-heading{text-align: center;}
+    .lead-subheading{text-align: center;}
 }
 @media (min-width:768px) and (max-width: 1023px){
     .landing-logo {left: 40px;}

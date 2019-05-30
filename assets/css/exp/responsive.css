@@ -5,6 +5,12 @@
     .custom-block.rating-custom .rating-inner i {font-size: 18px;}
 }
 @media (min-width: 0px) and (max-width: 767px) {
+    .expLeadSubmit fb_lead_gen {float: left;width: 100%;}
+    .t1-result-leadform .fb-outer .loginBtn--facebook{padding-top: 10px; padding-bottom: 10px}
+    .expLeadSubmit .fb-outer {width: auto;float: none;display: inline-block;}
+    .expLeadSubmit {float: left;width: 100%;text-align: center;}
+    .expLeadSubmit .or-class {width: 100%;text-align: center;}
+    .expLeadSubmit a.btn.prime-action.ripple-light.leadform-btn {margin-top: 0 !important;float: none;display: inline-block;padding:10px 25px !important}
     html {overflow-y: auto !important;overflow-x: hidden !important;}
     .cta-center {text-align: center;}
     /*selectize css*/
@@ -354,6 +360,15 @@
     .landing-page-mid leadform .input-section .input-outer span {bottom: -46%;}
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+    .custom-line{left: -15px;width: calc(100% + 30px)}
+    .expLeadSubmit fb_lead_gen {float: left;width: 100%;}
+    .or-class {padding: 8px 8px;font-size: 12px;}
+    .t1-result-leadform .fb-outer .loginBtn--facebook{font-size:12px !important; padding: 10px 35px 10px 15px !important}
+    .t1-result-leadform .fb-outer .loginBtn--facebook:before {top: 9px !important;right: 8px !important;width: 22px !important;height: 22px !important;background-size: 13px !important}
+    .expLeadSubmit .fb-outer {width: auto;float: none;display: inline-block;}
+    .expLeadSubmit {float: left;width: 100%;text-align: center;}
+    .expLeadSubmit .or-class {width: 100%;text-align: center;}
+    .expLeadSubmit a.btn.prime-action.ripple-light.leadform-btn {margin-top: 0 !important;float: none;display: inline-block; padding:10px 20px !important;font-size: 12px;}
     .mid-width {font-size: 16px;width: 40%;}
     .t1-result-leadform .lead-heading-temp1{font-size: 16px;}
     .experian-outer {width: 57%;float: left;}
@@ -576,4 +591,11 @@
 }
 @media (min-width: 930px) and (max-width: 1023px){
     .landing-page-mid {width: 50%;}
+}
+@media (min-width:1024px) and (max-width:1365px) {
+    .or-class {padding: 10px 8px;font-size: 12px;}
+    .expLeadSubmit a.btn.prime-action.ripple-light.leadform-btn {font-size: 12px;padding: 12px 20px 12px 20px !important;}
+    .t1-result-leadform .fb-outer .loginBtn--facebook{font-size:12px !important; padding: 12px 35px 12px 15px !important}
+    .t1-result-leadform .fb-outer .loginBtn--facebook:before {top: 9px !important;right: 8px !important;width: 22px !important;height: 22px !important;background-size: 13px !important}
+
 }

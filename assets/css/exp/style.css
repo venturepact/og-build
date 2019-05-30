@@ -55,7 +55,7 @@
     font-feature-settings: 'liga';
 }
 html{
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 a,
 input,
@@ -1913,18 +1913,7 @@ visuals .rec-image-outer img {
     width: 100%;
     float: left;
 }
-#build .result-outer-scroll {
-    max-height: 280px;
-}
-.result-outer-scroll {
-    overflow-x: auto;
-    float: left;
-    width: 100%;
-    overflow: auto;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    max-height: 45vh;
-}
+.result-outer-scroll{overflow-x: auto;float: left;width: 100%;overflow: auto;margin-bottom: 15px;padding-right: 15px;max-height: calc(50vh - 130px)}
 .result-outer-scroll::-webkit-scrollbar-track {
     border-radius: 0;
     background-color: #bec5c9;
@@ -5001,10 +4990,10 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
     margin-bottom: 25px;
     margin-top: 15px;
 }
-.t1-result-leadform {float: left;width: 100%;padding: 0 0 0 15px;position: relative; margin-top: 30px}
+.t1-result-leadform {float: left;width: 100%;padding: 0 0 0 15px;position: relative; margin-top: 0px}
 /* .t1-result-leadform .input-section {float: left;width: 100%;max-height: 40vh;overflow-y: auto; padding-top: 20px} */
 .t1-result-leadform form {padding: 0 !important; margin:0}
-.t1-result-leadform .input-outer {float: left;width: 100% !important;margin: 0 0 45px 0;}
+.t1-result-leadform .input-outer {float: left;width: 100% !important;margin: 0 0 30px 0;}
 .t1-result-leadform .input-outer .input-field {position: relative; }
 .t1-result-leadform .input-outer .input-field input {padding-left: 25px !important;width: 100% !important;background: transparent;border-width: 1px !important;box-shadow:none !important;font-size: 14px !important;margin: 0 !important;padding-top: 0px !important;}
 .t1-result-leadform .input-outer .input-field input + label {position: absolute;left: 0;margin: 0 !important;   transition: .2s ease-out;opacity: .7;     font-size: 14px !important; padding: 1px 0 0 25px; top:0px; }
@@ -5022,7 +5011,7 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .t1-result-leadform .input-outer .input-field .selectize-dropdown [data-selectable]{font-size: 14px}
 .t1-result-leadform .fb-outer .loginBtn--facebook{letter-spacing: 0.5px}
 
-.result-outer-scroll-exp{overflow-y: auto;float: left;width: 100%;margin-bottom: 15px;padding-right: 15px; max-height: 40vh; margin-top: 0px}
+.result-outer-scroll-exp{overflow-y: auto;float: left;width: 100%;margin-bottom: 15px;padding-right: 15px;max-height: calc(50vh - 130px); margin-top: 0px}
 .result-outer-scroll-exp::-webkit-scrollbar-track {border-radius: 0;background-color: #bec5c9;}
 .result-outer-scroll-exp::-webkit-scrollbar {width: 6px;}
 .result-outer-scroll-exp::-webkit-scrollbar:horizontal {height: 6px;}
@@ -5031,3 +5020,9 @@ a.gdrp-cancel-icon:hover{ opacity: 0.5;}
 .t1-result-leadform a.btn.prime-action.leadform-btn:focus{opacity: 0.8;}
 .t1-result-leadform .input-outer .input-field input:focus, .t1-result-leadform .selectize-input:focus  , .selectize-control .selectize-input.dropdown-active{outline: none !important;border-width: 0 0 1px 0px !important;}
 .t1-result-leadform .input-outer i{top: 3px !important; font-size: 16px !important}
+.expLeadSubmit {float: left;width: 100%;}
+.expLeadSubmit a.btn.prime-action.ripple-light.leadform-btn {margin-top: 0 !important;float: left;}
+.expLeadSubmit .or-class {width: auto;}
+.expLeadSubmit .fb-outer {width: auto;float: left;}
+.t1-result-leadform .lead-heading-temp1 p {margin-bottom: 0px;}
+.result-leadgen-off hr.custom-line {display: none !important;}
