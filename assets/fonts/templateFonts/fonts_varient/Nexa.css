@@ -1,7 +1,7 @@
 ﻿@font-face {
     font-family: 'Nexa';
-    src: url('fonts/Nexa_Regular-webfont.eot');
-    src: url('fonts/Nexa_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/Nexa_Regular-webfont.eot'),
+         url('fonts/Nexa_Regular-webfont.woff2') format('woff2'),
          url('fonts/Nexa_Regular-webfont.woff') format('woff'),
          url('fonts/Nexa_Regular-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'Nexa-Light';
-    src: url('fonts/Nexa_Light-webfont.eot');
-    src: url('fonts/Nexa_Light-webfont.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/Nexa_Light-webfont.eot'),
+         url('fonts/Nexa_Light-webfont.woff2') format('woff2'),
          url('fonts/Nexa_Light-webfont.woff') format('woff'),
          url('fonts/Nexa_Light-webfont.ttf') format('truetype');
     font-weight: normal;
@@ -22,12 +22,14 @@
 
 @font-face {
     font-family: 'Nexa-Bold';
-    src: url('fonts/Nexa_Bold-webfont.eot');
-    src: url('fonts/Nexa_Bold-webfont.eot?#iefix') format('embedded-opentype'),url('fonts/Nexa_Bold-webfont.woff') format('woff'),
+    src: url('fonts/Nexa_Bold-webfont.eot'),
+         url('fonts/Nexa_Bold-webfont.woff2') format('woff2'),
+         url('fonts/Nexa_Bold-webfont.woff') format('woff'),
          url('fonts/Nexa_Bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
+
 
 

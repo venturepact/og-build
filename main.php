@@ -6,16 +6,16 @@
 		$apiUrl = 'https://outgrow-api.herokuapp.com';
 		if (preg_match("/outgrow\.co\.in$/", $hostName)) {
 			$apiUrl = 'https://outgrow-biz-api.herokuapp.com';
-		} else if (preg_match("/rely\.co$/", $hostName)) {
+		}
+		else if (preg_match("/rely\.co$/", $hostName)) {
 			$apiUrl = 'https://outgrow-api.herokuapp.com';
-		} else if (preg_match("/outgrow\.co$/", $hostName)) {
+		}
+		else if (preg_match("/outgrow\.co$/", $hostName)) {
 			$apiUrl = 'https://api.outgrow.co';
-		} else if (preg_match("/safacademy\.cricket$/", $hostName)) {
-			$apiUrl = 'https://og-safacademy.herokuapp.com';
 		}
 		$apiUrl = 'https://api.outgrow.co';
 		$url = $apiUrl.'/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
-
+		$url ='https://api.outgrow.co/api/v1/builder/get_calc'.$_SERVER['REQUEST_URI'];
 	    $curl = curl_init();
 	    curl_setopt_array($curl, array(
 	        CURLOPT_RETURNTRANSFER => 1,
@@ -37,7 +37,7 @@
 			$curl2 = curl_init();
 			curl_setopt_array($curl2, array(
 					CURLOPT_RETURNTRANSFER => 1,
-					CURLOPT_URL => $apiUrl.'/api/v1/builder/app_integration/'.$response['data']['url'],
+					CURLOPT_URL => 'https://api.outgrow.co/api/v1/builder/app_integration/'.$response['data']['url'],
 					CURLOPT_USERAGENT => 'Codular Sample cURL Request',
 					CURLOPT_SSL_VERIFYPEER=>false,
 					CURLOPT_HTTPHEADER=>array('Origin: http://app.rely.co'),
@@ -78,9 +78,9 @@
 	    }else{
           $delayFactor = mt_rand(2500,5000);
 		  //$imageLink = "http://process.filestackapi.com/A3ygIw4hISSCdApqW4SAwz/urlscreenshot=delay:{$delayFactor}/".$shortUrl;
-		  $imageLink = "http://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" .$shortUrl. "&viewport=1200x630&fullpage=1&delay=3";
-		  $imageLink = 'https://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
-		}
+			$imageLink = "http://api.screenshotlayer.com/api/capture?access_key=8df67e5f400883f215f8e8d7a7588bf4&url=" .$shortUrl. "&viewport=1200x630&fullpage=1&delay=3";
+			$imageLink = 'https://dzvexx2x036l1.cloudfront.net/screenshot/' . $response['data']['parentApp'] . "__w.png";
+	    }
 
 	?>
 		<title>
