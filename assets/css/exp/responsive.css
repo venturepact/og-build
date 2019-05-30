@@ -234,7 +234,7 @@
     .experian .checkbox-outer.textfield label{ margin-top: 0px;}
     .opinion-label-outer{font-size: 11px;}
     .custom-block.rating-custom .rating-inner i{font-size: 23px;margin-right: 3px; padding: 1px;margin-top: 4px}
-    .custom-block.rating-custom .rating-inner{margin-bottom: 0;}
+    .custom-block.rating-custom .rating-inner{margin-bottom: 0;margin-top: 0;}
      /* common Header Footer responsive css sahil */
     .common-header-main{ padding: 10px !important;}
     .common-header-main .common-header{ width: 100% !important;  margin: 0 !important; margin-top: 10px !important; text-align: center;}
@@ -572,6 +572,7 @@
     .opinon-scale-custom .check-comp{width: 90%;}
     .experian leadform [type="checkbox"].filled-in + label:before, .experian leadform [type="checkbox"].filled-in + label:after {left: 1px;}
     .landing-page-mid leadform [type="checkbox"] + label:before, .landing-page-mid leadform [type="checkbox"]:not(.filled-in) + label:after {width: 20px;height: 20px;}
+    .date-selector-part .cal-outer.calender-date {width: calc(45% - 35px);}
 }
 @media(min-width: 1920px){
     .slider-input-post{left: auto !important;right: 10%;}
