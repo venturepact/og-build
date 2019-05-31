@@ -41,12 +41,13 @@
     .leadpopup {padding: 28px 30px 40px;}
     .lead-heading{text-align: center;}
     .lead-subheading{text-align: center;}
+    .result-page .fadeInUp, .footer-outer .fadeInUp {opacity: 1 !important;transform: none !important;animation: none;}
 }
 @media (min-width:768px) and (max-width: 1023px){
     .landing-logo {left: 40px;}
     .sec-outer{max-width: 100%;}
     .result-page{padding: 80px 70px;}
-    .landing-outer {max-width: 70%;padding: 100px 40px;padding-top: 110px;}
+    .landing-outer {max-width: 70%;padding: 100px 40px;}
     .socialshare-header, .timer-info{width: auto;justify-content: center;align-items: center;}
     .landing-outer video-view {width: 90%;}
     .landing-heading h1, .landing-heading p{font-size: 44px;}

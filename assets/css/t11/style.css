@@ -195,6 +195,7 @@ video-view .video-sec {height: auto;position: relative;padding-bottom: 55.25%;le
 .landing-text-right video-view .video-sec {margin-right: 0 !important;}
 .landing-text-left video-view .video-sec {margin-left: 0 !important;}
 .sec-outer video-view{width: 504px;}
+.landing-outer.no-logo .video-wrapper .video-sec, .landing-outer.no-logo img.landing-image {margin-top: 0 !important;}
 
 .contest-info-outer img{margin-top: 0px;margin-bottom: 25px;}
 .contest-info-outer video-view .video-sec{margin-top: 0px;margin-bottom: 25px;}
@@ -268,7 +269,7 @@ video-view .video-sec {height: auto;position: relative;padding-bottom: 55.25%;le
     transform: scale(1.1);
 } */
 
-.landing-page::after {content: '';width: 100%;position: absolute;left: 0;right: 0;bottom: 0;background: #fff;animation: animate-top-bottom 0.7s cubic-bezier(0.4, 0, 1, 1);z-index: 9;}
+/* .landing-page::after {content: '';width: 100%;position: absolute;left: 0;right: 0;bottom: 0;background: #fff;animation: animate-top-bottom 0.7s cubic-bezier(0.4, 0, 1, 1);z-index: 9;} */
 @-webkit-keyframes animate-top-bottom {
   0% {
     top: 0px;

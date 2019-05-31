@@ -224,8 +224,8 @@
     }
     .charts-label{ width: auto;}
     /* .t1-question .question-components input.othersfield{ width: calc(100% - 50px) !important;} */
-    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
-    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; }
+    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; }
     .experian .radio-outer-base.textfield label { padding-right: 0px !important; margin-top: 0;}
     .checkbox-outer.textfield.active label{ margin-top: 0px;}
     .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
@@ -415,8 +415,8 @@
     .slider-input-post {margin-left: 0 !important;}
     .t1-result-disclaimer {margin-top: 27px;}
     /* .question-outer:last-child .selectize-dropdown-content {max-height: 48px;} */
-    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
-    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; line-height: 19px;}
+    .radio-outer.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; }
+    .radio-outer-base.textfield.active label .control__indicator.icon-set i{ padding-left: 10px; padding-right: 10px; }
     .experian .radio-outer-base.textfield label { padding-right: 0px !important;  margin-top: 0;}
     .checkbox-outer.textfield.active label{ margin-top: 0px;}
     .experian .checkbox-outer-base.textfield label{ margin-top: 0px;}
@@ -481,8 +481,8 @@
     /* {height: 200px !import .result-outer-scrollant;} */
 }
 @media (min-width: 1680px) {
-    .landing-page-mid leadform .t1-leadform-field {margin-bottom: 40px;}
-    .landing-page-mid leadform .input-section .input-outer {margin-bottom: 30px;}
+    /* .landing-page-mid leadform .t1-leadform-field {margin-bottom: 40px;}
+    .landing-page-mid leadform .input-section .input-outer {margin-bottom: 30px;} */
     .text-overlay {top: 5px;padding-bottom: 100%;}
     .result-branding .powered-by span {margin-top: 6px;}
     .main-heading,.main-heading h1 {font-size: 40px;margin-bottom: 18px;}
@@ -506,19 +506,19 @@
     .experian .page_0.t1-landing input[type=number],
     .experian .page_0.t1-landing input[type=search],
     .experian .page_0.t1-landing textarea.materialize-textarea {font-size: 20px !important;padding-left: 25px !important;}
-    .input-field .prefix ~ input,
+    /* .input-field .prefix ~ input,
     .input-field .prefix ~ textarea,
     .input-field .prefix ~ label,
     .input-field .prefix ~ .validate ~ label,
     .input-field .prefix ~ .autocomplete-content {font-size: 14px !important;top: -4px;}
-    .landing-page-mid leadform .input-section .input-outer span {font-size: 14px;}
+    .landing-page-mid leadform .input-section .input-outer span {font-size: 14px;} */
     .template3-outr .question-head {font-size: 24px;}
     .template3-outr .question-subhead {font-size: 18px;}
     .input-outer i {position: absolute;left: 0px;top: 4px;font-size: 20px;}
     .t1-ques-head div {font-size: 20px;}
-    .experian [type="radio"]:not(:checked) + label,.experian [type="radio"]:checked + label {padding: 10px 25px !important;font-size: 20px;line-height: 28px;}
+    .experian [type="radio"]:not(:checked) + label,.experian [type="radio"]:checked + label {padding: 10px 25px !important;font-size: 20px;}
     .experian [type="radio"] + label:before,.experian [type="radio"] + label:after {width: 18px !important;height: 18px !important;margin: 14px !important;margin-left: 0 !important;}
-    .experian [type="checkbox"] + label {font-size: 20px;line-height: 28px;}
+    .experian [type="checkbox"] + label {font-size: 20px;}
     .control--checkbox {padding: 10px 25px !important;}
     .experian [type="checkbox"].filled-in:checked + label:after {width: 18px !important;height: 18px !important;margin: 16px !important;margin-left: 0 !important;}
     .experian [type="checkbox"].filled-in:checked + label:before {top: 18px !important;left: 0px !important;width: 8px !important;height: 12px !important;}
@@ -552,9 +552,9 @@
     .input-field {width: 90%;}
     .slider-set {width: 90%;}
     .result_first.t1-result-small-section .small-top-sec p {font-size: 22px !important;}
-    .result_first.t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
-    .t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
-    .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-bot-sec p {font-size: 18px !important;line-height: 28px;}
+    .result_first.t1-result-small-section .small-bot-sec p {font-size: 18px !important;}
+    .t1-result-small-section .small-bot-sec p {font-size: 18px !important;}
+    .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-bot-sec p {font-size: 18px !important;}
     .t4-default-result-outer.t1-result-full-section.t1-result-small-section .small-top-sec p {font-size: 20px;}
     .t4-default-result-outer.t1-result-small-section .small-top-sec p {font-size: 20px;}
     .t1-result-leadform .t1-result-cta .prime-action {font-size: 18px;}
